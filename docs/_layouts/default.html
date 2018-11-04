@@ -1,9 +1,11 @@
+{%- assign articleDir = "//github.com/" | append: site.github.owner_name | append: "/" | append: {{site.github.repository_name}} | append: "/blob/master/" -%}
 <!DOCTYPE html>
 <html>
   <head>
       {% include meta.html %}
   </head>
   <body>
+    <p><a href="{{articleDir}}">このページをGitHubで編集する</a></p>
     <div class="container-lg px-3 my-5 markdown-body">
       {{content}}
 
