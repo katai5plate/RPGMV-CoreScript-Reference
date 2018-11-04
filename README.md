@@ -33,6 +33,8 @@
 8. `Create pull request`をクリック
 9. 管理者がマージするのを待つ
 
+<details><summary>JSDoc作成を行う場合</summary><p></p>
+
 ## JSDoc作成を行う場合
 - コアスクリプトの大幅変更などにより、内容の大量変更が必要になった際に行う。
 
@@ -70,5 +72,9 @@ npm install gulp-cli -g
 gulp -v
 ```
 ### 手順
-1. `./src`フォルダを作り、そこにjsファイルを置く
-2. `yarn build`
+1. `git clone https://github.com/katai5plate/RPGMV-CoreScript-Reference.git`
+2. `cd RPGMV-CoreScript-Reference && yarn install`
+3. `./src`フォルダを作り、そこにjsファイルを置く
+4. `yarn build`
+
+</p></details>
