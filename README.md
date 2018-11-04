@@ -1,6 +1,13 @@
 # RPGMV-CoreScript-Reference
 
-# 必要環境
+## 編集の基本方針
+- [`docs/jsdoc/`](tree/master/docs/jsdocs) を直接書き換える。
+- 基本的に変更はブランチを分けて行い、切りのよいところでPullRequestを提出
+    - PullRequest が問題なければ、 masterブランチにマージを行う
+
+## JSDoc作成を行う場合
+- コアスクリプトの大幅変更などにより、内容の大量変更が必要になった際に行う。
+### 必要環境
 1. Node.js をインストール
 - [一番簡単な方の方法（インストーラーから）](https://qiita.com/Masayuki-M/items/840a997a824e18f576d8)
 - [後々困りにくい方の方法（Nodistから）](https://qiita.com/nt_tn/items/f3193cde496399b41e51)
@@ -37,3 +44,6 @@ npm install gulp-cli -g
 ```
 gulp -v
 ```
+### 手順
+1. `./_src`フォルダを作り、そこにjsファイルを置く
+2. `yarn build`
