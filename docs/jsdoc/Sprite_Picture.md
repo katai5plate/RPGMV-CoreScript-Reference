@@ -10,14 +10,14 @@ The sprite for displaying a picture.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pictureId` | [Number](Number.html) |  |
+| `pictureId` | [Number](Number.md) |  |
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_pictureId` | [Number](Number.html) |  |
-| `_pictureName` | [String](String.html) |  |
+| `_pictureId` | [Number](Number.md) |  |
+| `_pictureName` | [String](String.md) |  |
 | `_isPicture` | Boolean |  |
 
 <dl>
@@ -25,7 +25,7 @@ The sprite for displaying a picture.
 
 ### Extends
 
-* [Sprite](Sprite.html)
+* [Sprite](Sprite.md)
 
 ### Methods
 
@@ -58,7 +58,7 @@ The sprite for displaying a picture.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pictureId` | [Number](Number.html) |  |
+| `pictureId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -68,7 +68,7 @@ The sprite for displaying a picture.
 <dl>
 </dl>
 
-#### picture () → {[Game_Picture](Game_Picture.html)}
+#### picture () → {[Game_Picture](Game_Picture.md)}
 
 <dl>
 </dl>

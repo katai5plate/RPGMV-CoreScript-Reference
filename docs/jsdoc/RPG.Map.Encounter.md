@@ -1,6 +1,6 @@
 # Class: Encounter
 
-## [RPG](RPG.html) [.Map](RPG.Map.html).  Encounter ()
+## [RPG](RPG.md) [.Map](RPG.Map.md).  Encounter ()
 
 #### new Encounter ()
 
@@ -10,9 +10,9 @@ The JSON data structure of an encounter setting.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `troopId` | [Number](Number.html) | The enemy troop ID. |
-| `weight` | [Number](Number.html) | Weight. |
-| `regionSet` | [Array](Array.html).<[Number](Number.html)> | An array containing region IDs. |
+| `troopId` | [Number](Number.md) | The enemy troop ID. |
+| `weight` | [Number](Number.md) | Weight. |
+| `regionSet` | [Array](Array.md).<[Number](Number.md)> | An array containing region IDs. |
 
 <dl>
 </dl>

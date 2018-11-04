@@ -10,21 +10,21 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_scene` | [Scene_Base](Scene_Base.html) | [static]現在のシーン |
-| `_nextScene` | [Scene_Base](Scene_Base.html) | [static]次のシーン |
-| `_stack` | [Array](Array.html).<function()> | [static]シーンなどの履歴 |
+| `_scene` | [Scene_Base](Scene_Base.md) | [static]現在のシーン |
+| `_nextScene` | [Scene_Base](Scene_Base.md) | [static]次のシーン |
+| `_stack` | [Array](Array.md).<function()> | [static]シーンなどの履歴 |
 | `_stopped` | Boolean | [static] |
 | `_sceneStarted` | Boolean | [static] |
 | `_exiting` | Boolean | [static] |
 | `_previousClass` | function | [static]前のシーンなど |
-| `_backgroundBitmap` | [Bitmap](Bitmap.html) | [static] |
-| `_screenWidth` | [Number](Number.html) | [static]画面の幅(ピクセル) |
-| `_screenHeight` | [Number](Number.html) | [static]画面の高さ(ピクセル) |
-| `_boxWidth` | [Number](Number.html) | [static]幅(ピクセル) |
-| `_boxHeight` | [Number](Number.html) | [static]高さ(ピクセル) |
-| `_deltaTime` | [Number](Number.html) | [static] |
-| `_currentTime` | [Number](Number.html) | [static] |
-| `_accumulator` | [Number](Number.html) | [static] |
+| `_backgroundBitmap` | [Bitmap](Bitmap.md) | [static] |
+| `_screenWidth` | [Number](Number.md) | [static]画面の幅(ピクセル) |
+| `_screenHeight` | [Number](Number.md) | [static]画面の高さ(ピクセル) |
+| `_boxWidth` | [Number](Number.md) | [static]幅(ピクセル) |
+| `_boxHeight` | [Number](Number.md) | [static]高さ(ピクセル) |
+| `_deltaTime` | [Number](Number.md) | [static] |
+| `_currentTime` | [Number](Number.md) | [static] |
+| `_accumulator` | [Number](Number.md) | [static] |
 
 <dl>
 </dl>
@@ -37,7 +37,7 @@
 <dl>
 </dl>
 
-#### (static) backgroundBitmap () → {[Bitmap](Bitmap.html)}
+#### (static) backgroundBitmap () → {[Bitmap](Bitmap.md)}
 
  生成された背景用に(ぼかした)スナップショットを返す。
 <dl>
@@ -182,7 +182,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `sceneClass` | [Scene_Base](Scene_Base.html) |  |
+| `sceneClass` | [Scene_Base](Scene_Base.md) |  |
 
 <dl>
 </dl>
@@ -204,7 +204,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `sceneClass` | [Scene_Base](Scene_Base.html) |  |
+| `sceneClass` | [Scene_Base](Scene_Base.md) |  |
 
 <dl>
 </dl>
@@ -283,7 +283,7 @@
 <dl>
 </dl>
 
-#### (static) preferableRendererType () → {[String](String.html)}
+#### (static) preferableRendererType () → {[String](String.md)}
 
  環境に適したレンダ方式を返す。
 <dl>
@@ -313,7 +313,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `sceneClass` | [Scene_Base](Scene_Base.html) |  |
+| `sceneClass` | [Scene_Base](Scene_Base.md) |  |
 
 <dl>
 </dl>
@@ -344,7 +344,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `sceneClass` | [Scene_Base](Scene_Base.html) |  シーンオブジェクト |
+| `sceneClass` | [Scene_Base](Scene_Base.md) |  シーンオブジェクト |
 
 <dl>
 </dl>
@@ -370,7 +370,7 @@
                 </dd>
             </dl>
 
-#### (static) snap () → {[Bitmap](Bitmap.html)}
+#### (static) snap () → {[Bitmap](Bitmap.md)}
 
  スナップショットを返す。
 <dl>

@@ -10,22 +10,22 @@ The game object class for the state of the message window that displays text or 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_texts` | [Array](Array.html).<[String](String.html)> |  |
-| `_choices` | [Array](Array.html).<[String](String.html)> |  |
-| `_faceName` | [String](String.html) |  |
-| `_faceIndex` | [Number](Number.html) |  |
-| `_background` | [Number](Number.html) |  |
-| `_positionType` | [Number](Number.html) |  |
-| `_choiceDefaultType` | [Number](Number.html) |  |
-| `_choiceCancelType` | [Number](Number.html) |  |
-| `_choiceBackground` | [Number](Number.html) |  |
-| `_choicePostionType` | [Number](Number.html) |  |
-| `_numInputVariableId` | [Number](Number.html) |  |
-| `_numInputMaxDigits` | [Number](Number.html) |  |
-| `_itemChoiceVariableId` | [Number](Number.html) |  |
-| `_itemChoiceItypeId` | [Number](Number.html) |  |
+| `_texts` | [Array](Array.md).<[String](String.md)> |  |
+| `_choices` | [Array](Array.md).<[String](String.md)> |  |
+| `_faceName` | [String](String.md) |  |
+| `_faceIndex` | [Number](Number.md) |  |
+| `_background` | [Number](Number.md) |  |
+| `_positionType` | [Number](Number.md) |  |
+| `_choiceDefaultType` | [Number](Number.md) |  |
+| `_choiceCancelType` | [Number](Number.md) |  |
+| `_choiceBackground` | [Number](Number.md) |  |
+| `_choicePostionType` | [Number](Number.md) |  |
+| `_numInputVariableId` | [Number](Number.md) |  |
+| `_numInputMaxDigits` | [Number](Number.md) |  |
+| `_itemChoiceVariableId` | [Number](Number.md) |  |
+| `_itemChoiceItypeId` | [Number](Number.md) |  |
 | `_scrollMode` | Boolean |  |
-| `_scrollSpeed` | [Number](Number.html) |  |
+| `_scrollSpeed` | [Number](Number.md) |  |
 | `_scrollNoFast` | Boolean |  |
 | `_choiceCallback` | function |  |
 
@@ -42,12 +42,12 @@ The game object class for the state of the message window that displays text or 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.html) |  |
+| `text` | [String](String.md) |  |
 
 <dl>
 </dl>
 
-#### allText () → {[String](String.html)}
+#### allText () → {[String](String.md)}
 
 Returns all of the text contained within the message.
 <dl>
@@ -62,7 +62,7 @@ The game object class for the state of the message window that displays text or 
                 </dd>
             </dl>
 
-#### background () → {[Number](Number.html)}
+#### background () → {[Number](Number.md)}
 
 Returns the background associated with the message; this is the background
 <dl>
@@ -77,7 +77,7 @@ The game object class for the state of the message window that displays text or 
                 </dd>
             </dl>
 
-#### choiceBackground () → {[Number](Number.html)}
+#### choiceBackground () → {[Number](Number.md)}
 
 Returns the background type of the choice window.
 <dl>
@@ -102,7 +102,7 @@ The game object class for the state of the message window that displays text or 
 <dl>
 </dl>
 
-#### choicePositionType () → {[Number](Number.html)}
+#### choicePositionType () → {[Number](Number.md)}
 
 Returns the position of the choice window.
 <dl>
@@ -127,7 +127,7 @@ The game object class for the state of the message window that displays text or 
 <dl>
 </dl>
 
-#### faceIndex () → {[Number](Number.html)}
+#### faceIndex () → {[Number](Number.md)}
 
 Returns the face index within the face image to display the correct face.
 <dl>
@@ -142,7 +142,7 @@ The game object class for the state of the message window that displays text or 
                 </dd>
             </dl>
 
-#### faceName () → {[String](String.html)}
+#### faceName () → {[String](String.md)}
 
 Returns the name of the face image used for the message.
 <dl>
@@ -238,7 +238,7 @@ The game object class for the state of the message window that displays text or 
                 </dd>
             </dl>
 
-#### itemChoiceItypeId () → {[Number](Number.html)}
+#### itemChoiceItypeId () → {[Number](Number.md)}
 
 Returns the item choice item type id.
 <dl>
@@ -253,7 +253,7 @@ The game object class for the state of the message window that displays text or 
                 </dd>
             </dl>
 
-#### itemChoiceVariableId () → {[Number](Number.html)}
+#### itemChoiceVariableId () → {[Number](Number.md)}
 
 Returns the item choice variable id.
 <dl>
@@ -274,7 +274,7 @@ The game object class for the state of the message window that displays text or 
 <dl>
 </dl>
 
-#### numInputMaxDigits () → {[Number](Number.html)}
+#### numInputMaxDigits () → {[Number](Number.md)}
 
 Returns the number input maximum digits.
 <dl>
@@ -289,7 +289,7 @@ The game object class for the state of the message window that displays text or 
                 </dd>
             </dl>
 
-#### numInputVariableId () → {[Number](Number.html)}
+#### numInputVariableId () → {[Number](Number.md)}
 
 Returns the number input variable id.
 <dl>
@@ -310,12 +310,12 @@ The game object class for the state of the message window that displays text or 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `n` | [Number](Number.html) |  |
+| `n` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### positionType () → {[Number](Number.html)}
+#### positionType () → {[Number](Number.md)}
 
 Returns the current position type of the message window.
 <dl>
@@ -360,7 +360,7 @@ The game object class for the state of the message window that displays text or 
                 </dd>
             </dl>
 
-#### scrollSpeed () → {[Number](Number.html)}
+#### scrollSpeed () → {[Number](Number.md)}
 
 Returns the scroll speed.
 <dl>
@@ -383,7 +383,7 @@ The game object class for the state of the message window that displays text or 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `background` | [Number](Number.html) |  |
+| `background` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -394,7 +394,7 @@ The game object class for the state of the message window that displays text or 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `background` | [Number](Number.html) |  |
+| `background` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -420,7 +420,7 @@ The game object class for the state of the message window that displays text or 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `positionType` | [Number](Number.html) |  |
+| `positionType` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -433,9 +433,9 @@ The game object class for the state of the message window that displays text or 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `choices` | [Array](Array.html).<[String](String.html)> |  |
-| `defaultType` | [Number](Number.html) |  |
-| `cancelType` | [Number](Number.html) |  |
+| `choices` | [Array](Array.md).<[String](String.md)> |  |
+| `defaultType` | [Number](Number.md) |  |
+| `cancelType` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -446,8 +446,8 @@ The game object class for the state of the message window that displays text or 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `faceName` | [String](String.html) |  |
-| `faceIndex` | [Number](Number.html) |  |
+| `faceName` | [String](String.md) |  |
+| `faceIndex` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -460,8 +460,8 @@ The game object class for the state of the message window that displays text or 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `variableId` | [Number](Number.html) |  |
-| `itemType` | [Number](Number.html) |  |
+| `variableId` | [Number](Number.md) |  |
+| `itemType` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -474,8 +474,8 @@ The game object class for the state of the message window that displays text or 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `variableId` | [Number](Number.html) |  |
-| `maxDigits` | [Number](Number.html) |  |
+| `variableId` | [Number](Number.md) |  |
+| `maxDigits` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -488,7 +488,7 @@ The game object class for the state of the message window that displays text or 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `positionType` | [Number](Number.html) |  |
+| `positionType` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -501,7 +501,7 @@ The game object class for the state of the message window that displays text or 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `speed` | [Number](Number.html) |  |
+| `speed` | [Number](Number.md) |  |
 | `noFast` | Boolean |  |
 
 <dl>

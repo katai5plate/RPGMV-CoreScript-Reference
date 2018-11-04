@@ -12,21 +12,21 @@ The sprite for displaying an animation.
 | --- | --- | --- |
 | `_checker1` | Object | [static]{key: RPG.Animation} |
 | `_checker2` | Object | [static]{key: RPG.Animation} |
-| `z` | [Number](Number.html) |  |
-| `_target` | [Sprite_Base](Sprite_Base.html) |  |
-| `_animation` | [RPG.Animation](RPG.Animation.html) |  |
+| `z` | [Number](Number.md) |  |
+| `_target` | [Sprite_Base](Sprite_Base.md) |  |
+| `_animation` | [RPG.Animation](RPG.Animation.md) |  |
 | `_mirror` | Boolean |  |
-| `_delay` | [Number](Number.html) |  |
-| `_rate` | [Number](Number.html) |  |
-| `_duration` | [Number](Number.html) |  |
-| `_flashColor` | [Array](Array.html).<[Number](Number.html)> |  |
-| `_flashDuration` | [Number](Number.html) |  |
-| `_screenFlashDuration` | [Number](Number.html) |  |
-| `_hidingDuration` | [Number](Number.html) |  |
-| `_bitmap1` | [Bitmap](Bitmap.html) |  |
-| `_bitmap2` | [Bitmap](Bitmap.html) |  |
-| `_cellSprites` | [Array](Array.html).<[Sprite](Sprite.html)> |  |
-| `_screenFlashSprite` | [ScreenSprite](ScreenSprite.html) |  |
+| `_delay` | [Number](Number.md) |  |
+| `_rate` | [Number](Number.md) |  |
+| `_duration` | [Number](Number.md) |  |
+| `_flashColor` | [Array](Array.md).<[Number](Number.md)> |  |
+| `_flashDuration` | [Number](Number.md) |  |
+| `_screenFlashDuration` | [Number](Number.md) |  |
+| `_hidingDuration` | [Number](Number.md) |  |
+| `_bitmap1` | [Bitmap](Bitmap.md) |  |
+| `_bitmap2` | [Bitmap](Bitmap.md) |  |
+| `_cellSprites` | [Array](Array.md).<[Sprite](Sprite.md)> |  |
+| `_screenFlashSprite` | [ScreenSprite](ScreenSprite.md) |  |
 | `_duplicated` | Boolean |  |
 | `_reduceArtifacts` | Boolean |  |
 
@@ -35,7 +35,7 @@ The sprite for displaying an animation.
 
 ### Extends
 
-* [Sprite](Sprite.html)
+* [Sprite](Sprite.md)
 
 ### Methods
 
@@ -60,7 +60,7 @@ The sprite for displaying an animation.
                 </dd>
             </dl>
 
-#### absoluteX () → {[Number](Number.html)}
+#### absoluteX () → {[Number](Number.md)}
 
 Returns the absolute x position of the sprite animation.
 <dl>
@@ -75,7 +75,7 @@ The sprite for displaying an animation.
                 </dd>
             </dl>
 
-#### absoluteY () → {[Number](Number.html)}
+#### absoluteY () → {[Number](Number.md)}
 
 Returns the absolute y position of the sprite aniamtion.
 <dl>
@@ -108,7 +108,7 @@ The sprite for displaying an animation.
 <dl>
 </dl>
 
-#### currentFrameIndex () → {[Number](Number.html)}
+#### currentFrameIndex () → {[Number](Number.md)}
 
 Returns the current frame index of the sprite aniamtion.
 <dl>
@@ -176,7 +176,7 @@ The sprite for displaying an animation.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `timing` | [RPG.Animation.Timing](RPG.Animation.Timing.html) |  |
+| `timing` | [RPG.Animation.Timing](RPG.Animation.Timing.md) |  |
 
 <dl>
 </dl>
@@ -193,10 +193,10 @@ The sprite for displaying an animation.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Sprite_Base](Sprite_Base.html) |  |
-| `animation` | [RPG.Animation](RPG.Animation.html) |  |
+| `target` | [Sprite_Base](Sprite_Base.md) |  |
+| `animation` | [RPG.Animation](RPG.Animation.md) |  |
 | `mirror` | Boolean |  |
-| `delay` | [Number](Number.html) |  |
+| `delay` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -217,8 +217,8 @@ The sprite for displaying an animation.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `color` | [Array](Array.html).<[Number](Number.html)> |  |
-| `duration` | [Number](Number.html) |  |
+| `color` | [Array](Array.md).<[Number](Number.md)> |  |
+| `duration` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -231,7 +231,7 @@ The sprite for displaying an animation.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.html) | The duration of the hide. |
+| `duration` | [Number](Number.md) | The duration of the hide. |
 
 <dl>
 </dl>
@@ -242,8 +242,8 @@ The sprite for displaying an animation.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `color` | [Array](Array.html).<[Number](Number.html)> |  |
-| `duration` | [Number](Number.html) |  |
+| `color` | [Array](Array.md).<[Number](Number.md)> |  |
+| `duration` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -259,7 +259,7 @@ The sprite for displaying an animation.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `frame` | [Array](Array.html).<[Array](Array.html).<[Number](Number.html)>> |  |
+| `frame` | [Array](Array.md).<[Array](Array.md).<[Number](Number.md)>> |  |
 
 <dl>
 </dl>
@@ -270,8 +270,8 @@ The sprite for displaying an animation.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `sprite` | [Sprite](Sprite.html) |  |
-| `cell` | [Array](Array.html).<[Number](Number.html)> |  |
+| `sprite` | [Sprite](Sprite.md) |  |
+| `cell` | [Array](Array.md).<[Number](Number.md)> |  |
 
 <dl>
 </dl>

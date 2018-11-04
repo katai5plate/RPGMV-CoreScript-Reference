@@ -4,35 +4,35 @@
 
 #### (abstract) new Sprite (bitmap)
 
- 描画のための基本オブジェクト。 PIXI.Sprite ([http://pixijs.download/release/docs/PIXI.Sprite.html](http://pixijs.download/release/docs/PIXI.Sprite.html)) の子クラス。 [Sprite_Animation](Sprite_Animation.html), [Sprite_Button](Sprite_Button.html), [Sprite_Damage](Sprite_Damage.html), [Sprite_Destination](Sprite_Destination.html), [Sprite_Picture](Sprite_Picture.html), [Sprite_StateIcon](Sprite_StateIcon.html), [Sprite_Timer](Sprite_Timer.html) および [Spriteset_Base](Spriteset_Base.html) と [Sprite_Base](Sprite_Base.html) のスーパークラス。
+ 描画のための基本オブジェクト。 PIXI.Sprite ([http://pixijs.download/release/docs/PIXI.Sprite.html](http://pixijs.download/release/docs/PIXI.Sprite.md)) の子クラス。 [Sprite_Animation](Sprite_Animation.md), [Sprite_Button](Sprite_Button.md), [Sprite_Damage](Sprite_Damage.md), [Sprite_Destination](Sprite_Destination.md), [Sprite_Picture](Sprite_Picture.md), [Sprite_StateIcon](Sprite_StateIcon.md), [Sprite_Timer](Sprite_Timer.md) および [Spriteset_Base](Spriteset_Base.md) と [Sprite_Base](Sprite_Base.md) のスーパークラス。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `bitmap` | [Bitmap](Bitmap.html) |  スプライトに設定する画像 |
+| `bitmap` | [Bitmap](Bitmap.md) |  スプライトに設定する画像 |
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_counter` | [Number](Number.html) | [static] スプライトの(生成順)番号 |
+| `_counter` | [Number](Number.md) | [static] スプライトの(生成順)番号 |
 | `voidFilter` | PIXI.filters.VoidFilter | [static] |
-| `spriteId` | [Number](Number.html) |  |
+| `spriteId` | [Number](Number.md) |  |
 | `opaque` | Boolean |  不[透明状態]か |
-| `bitmap` | [Bitmap](Bitmap.html) |  スプライトに設定する画像 |
-| `width` | [Number](Number.html) |  拡大縮小前の画像の幅 |
-| `height` | [Number](Number.html) |  拡大縮小前の画像の高さ |
-| `opacity` | [Number](Number.html) |  不透明度 (0 〜 255) |
+| `bitmap` | [Bitmap](Bitmap.md) |  スプライトに設定する画像 |
+| `width` | [Number](Number.md) |  拡大縮小前の画像の幅 |
+| `height` | [Number](Number.md) |  拡大縮小前の画像の高さ |
+| `opacity` | [Number](Number.md) |  不透明度 (0 〜 255) |
 | `visible` | Boolean |  表示中か |
-| `x` | [Number](Number.html) | x座標 |
-| `y` | [Number](Number.html) | y座標 |
-| `point` | [Point](Point.html) |  基点 ( (0, 0) 〜 (1, 1) ) |
-| `scale` | [Point](Point.html) |  拡大量 |
-| `rotation` | [Number](Number.html) |  回転角(ラジアン) |
-| `blendMode` | [Number](Number.html) | [合成方法](0: 通常, 1: 加算, 2: 乗算, 3: スクリーン) |
-| `filters` | [Array](Array.html).<PIXI.Filter> |  フィルタの配列 |
-| `children` | [Array](Array.html).<PIXI.DisplayObject> | [read-only] 子表示オブジェクトの配列 |
+| `x` | [Number](Number.md) | x座標 |
+| `y` | [Number](Number.md) | y座標 |
+| `point` | [Point](Point.md) |  基点 ( (0, 0) 〜 (1, 1) ) |
+| `scale` | [Point](Point.md) |  拡大量 |
+| `rotation` | [Number](Number.md) |  回転角(ラジアン) |
+| `blendMode` | [Number](Number.md) | [合成方法](0: 通常, 1: 加算, 2: 乗算, 3: スクリーン) |
+| `filters` | [Array](Array.md).<PIXI.Filter> |  フィルタの配列 |
+| `children` | [Array](Array.md).<PIXI.DisplayObject> | [read-only] 子表示オブジェクトの配列 |
 | `parent` | PIXI.Container | [read-only] 親コンテナオブジェクト |
 
 <dl>
@@ -50,8 +50,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `w` | [Number](Number.html) |  |
-| `h` | [Number](Number.html) |  |
+| `w` | [Number](Number.md) |  |
+| `h` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -62,10 +62,10 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `w` | [Number](Number.html) |  |
-| `h` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `w` | [Number](Number.md) |  |
+| `h` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -76,10 +76,10 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `w` | [Number](Number.html) |  |
-| `h` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `w` | [Number](Number.md) |  |
+| `h` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -139,7 +139,7 @@
 <dl>
 </dl>
 
-#### (static) getBlendColor () → {[Array](Array.html)}
+#### (static) getBlendColor () → {[Array](Array.md)}
 
  合成される色(r, g, b)と不透明度(a)を返す。
 <dl>
@@ -155,7 +155,7 @@
                 </dd>
             </dl>
 
-#### (static) getColorTone () → {[Array](Array.html)}
+#### (static) getColorTone () → {[Array](Array.md)}
 
  補正される色調(r, g, b)とグレー(gray)を返す。
 <dl>
@@ -179,7 +179,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `bitmap` | [Bitmap](Bitmap.html) |  |
+| `bitmap` | [Bitmap](Bitmap.md) |  |
 
 <dl>
 </dl>
@@ -192,8 +192,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) | x座標 |
-| `y` | [Number](Number.html) | y座標 |
+| `x` | [Number](Number.md) | x座標 |
+| `y` | [Number](Number.md) | y座標 |
 
 <dl>
 </dl>
@@ -206,7 +206,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `color` | [Array](Array.html) | [r, g, b, a] の配列 |
+| `color` | [Array](Array.md) | [r, g, b, a] の配列 |
 
 <dl>
 </dl>
@@ -219,7 +219,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tone` | [Array](Array.html) | [r, g, b, gray] の配列 |
+| `tone` | [Array](Array.md) | [r, g, b, gray] の配列 |
 
 <dl>
 </dl>
@@ -232,10 +232,10 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  枠のx座標 |
-| `y` | [Number](Number.html) |  枠のy座標 |
-| `width` | [Number](Number.html) |  枠の幅 |
-| `height` | [Number](Number.html) |  枠の高さ |
+| `x` | [Number](Number.md) |  枠のx座標 |
+| `y` | [Number](Number.md) |  枠のy座標 |
+| `width` | [Number](Number.md) |  枠の幅 |
+| `height` | [Number](Number.md) |  枠の高さ |
 
 <dl>
 </dl>

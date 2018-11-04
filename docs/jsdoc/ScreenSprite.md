@@ -11,14 +11,14 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `YEPWarned` | Boolean | [static] |
-| `opacity` | [Number](Number.html) |  不透明度 (0 〜 255) |
-| `anchor` | [Point](Point.html) |  |
-| `blendMode` | [Number](Number.html) | [合成方法] (PIXI.BLEND_MODES.NOMAL | ADD | MULTIPLY | SCREEN) |
+| `opacity` | [Number](Number.md) |  不透明度 (0 〜 255) |
+| `anchor` | [Point](Point.md) |  |
+| `blendMode` | [Number](Number.md) | [合成方法] (PIXI.BLEND_MODES.NOMAL | ADD | MULTIPLY | SCREEN) |
 | `_graphics` | PIXI.Graphics |  画像 |
-| `_red` | [Number](Number.html) |  赤 (0 〜 255) |
-| `_green` | [Number](Number.html) |  緑 (0 〜 255) |
-| `_blue` | [Number](Number.html) |  青 (0 〜 255) |
-| `_colorText` | [String](String.html) |  色文字列(ex: 'red') |
+| `_red` | [Number](Number.md) |  赤 (0 〜 255) |
+| `_green` | [Number](Number.md) |  緑 (0 〜 255) |
+| `_blue` | [Number](Number.md) |  青 (0 〜 255) |
+| `_colorText` | [String](String.md) |  色文字列(ex: 'red') |
 
 <dl>
 </dl>
@@ -54,9 +54,9 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `r` | [Number](Number.html) | The red value in the range (0, 255) |
-| `g` | [Number](Number.html) | The green value in the range (0, 255) |
-| `b` | [Number](Number.html) | The blue value in the range (0, 255) |
+| `r` | [Number](Number.md) | The red value in the range (0, 255) |
+| `g` | [Number](Number.md) | The green value in the range (0, 255) |
+| `b` | [Number](Number.md) | The blue value in the range (0, 255) |
 
 <dl>
 </dl>

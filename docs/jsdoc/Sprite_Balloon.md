@@ -10,15 +10,15 @@ The sprite for displaying a balloon icon.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_balloonId` | [Number](Number.html) |  |
-| `_duration` | [Number](Number.html) |  |
+| `_balloonId` | [Number](Number.md) |  |
+| `_duration` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Sprite_Base](Sprite_Base.html)
+* [Sprite_Base](Sprite_Base.md)
 
 ### Methods
 
@@ -43,7 +43,7 @@ The sprite for displaying a balloon icon.
                 </dd>
             </dl>
 
-#### frameIndex () → {[Number](Number.html)}
+#### frameIndex () → {[Number](Number.md)}
 
 Returns the frame index of the balloon animation.
 <dl>
@@ -140,7 +140,7 @@ The sprite for displaying a balloon icon.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `balloonId` | [Number](Number.html) |  |
+| `balloonId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -159,7 +159,7 @@ The sprite for displaying a balloon icon.
                 </dd>
             </dl>
 
-#### speed () → {[Number](Number.html)}
+#### speed () → {[Number](Number.md)}
 
 Returns the speed of the balloon animation.
 <dl>
@@ -182,9 +182,9 @@ The sprite for displaying a balloon icon.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `animation` | [RPG.Animation](RPG.Animation.html) |  |
+| `animation` | [RPG.Animation](RPG.Animation.md) |  |
 | `mirror` | Boolean |  |
-| `delay` | [Number](Number.html) |  |
+| `delay` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -245,7 +245,7 @@ The sprite for displaying a balloon icon.
                 </dd>
             </dl>
 
-#### waitTime () → {[Number](Number.html)}
+#### waitTime () → {[Number](Number.md)}
 
 Returns the wait time.
 <dl>

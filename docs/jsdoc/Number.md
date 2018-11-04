@@ -10,7 +10,7 @@ Add some methods to standerd JavaScript object.
 
 ### Methods
 
-#### clamp (min, max) → {[Number](Number.html)}
+#### clamp (min, max) → {[Number](Number.md)}
 
 Returns a number whose value is limited to the given range.
 
@@ -18,8 +18,8 @@ Add some methods to standerd JavaScript object.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `min` | [Number](Number.html) | The lower boundary |
-| `max` | [Number](Number.html) | The upper boundary |
+| `min` | [Number](Number.md) | The lower boundary |
+| `max` | [Number](Number.md) | The upper boundary |
 
 <dl>
 </dl>
@@ -34,7 +34,7 @@ Add some methods to standerd JavaScript object.
                 </dd>
             </dl>
 
-#### mod (n) → {[Number](Number.html)}
+#### mod (n) → {[Number](Number.md)}
 
 Returns a modulo value which is always positive.
 
@@ -42,7 +42,7 @@ Add some methods to standerd JavaScript object.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `n` | [Number](Number.html) | The divisor |
+| `n` | [Number](Number.md) | The divisor |
 
 <dl>
 </dl>
@@ -57,7 +57,7 @@ Add some methods to standerd JavaScript object.
                 </dd>
             </dl>
 
-#### padZero (length) → {[String](String.html)}
+#### padZero (length) → {[String](String.md)}
 
 Makes a number string with leading zeros.
 
@@ -65,7 +65,7 @@ Add some methods to standerd JavaScript object.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `length` | [Number](Number.html) | The length of the output string |
+| `length` | [Number](Number.md) | The length of the output string |
 
 <dl>
 </dl>

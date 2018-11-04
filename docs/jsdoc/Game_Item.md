@@ -10,8 +10,8 @@ Game_Item The game object class for handling skills, items, weapons. armor. This
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_dataClass` | [String](String.html) |  |
-| `_itemId` | [Number](Number.html) |  |
+| `_dataClass` | [String](String.md) |  |
+| `_itemId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -129,7 +129,7 @@ Game_Item The game object class for handling skills, items, weapons. armor. This
                 </dd>
             </dl>
 
-#### itemId () → {[Number](Number.html)}
+#### itemId () → {[Number](Number.md)}
 
 Returns the current itemId.
 <dl>
@@ -144,7 +144,7 @@ Game_Item The game object class for handling skills, items, weapons. armor. This
                 </dd>
             </dl>
 
-#### object () → {[RPG.BaseItem](RPG.BaseItem.html)}
+#### object () → {[RPG.BaseItem](RPG.BaseItem.md)}
 
 <dl>
 </dl>
@@ -165,7 +165,7 @@ Game_Item The game object class for handling skills, items, weapons. armor. This
 | Name | Type | Description |
 | --- | --- | --- |
 | `isWeapon` | Boolean |  |
-| `itemId` | [Number](Number.html) |  |
+| `itemId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -178,7 +178,7 @@ Game_Item The game object class for handling skills, items, weapons. armor. This
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
 
 <dl>
 </dl>

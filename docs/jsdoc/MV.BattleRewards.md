@@ -1,6 +1,6 @@
 # Class: BattleRewards
 
-## [MV](MV.html).  BattleRewards ()
+## [MV](MV.md).  BattleRewards ()
 
 #### new BattleRewards ()
 
@@ -8,9 +8,9 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `gold` | [Number](Number.html) |  |
-| `exp` | [Number](Number.html) |  |
-| `items` | [Array](Array.html).<[RPG.BaseItem](RPG.BaseItem.html)> |  |
+| `gold` | [Number](Number.md) |  |
+| `exp` | [Number](Number.md) |  |
+| `items` | [Array](Array.md).<[RPG.BaseItem](RPG.BaseItem.md)> |  |
 
 <dl>
 </dl>

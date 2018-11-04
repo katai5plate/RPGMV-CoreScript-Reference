@@ -4,71 +4,71 @@
 
 #### (abstract) new Game_Character ()
 
-[Game_Player](Game_Player.html), [Game_Follower](Game_Follower.html), [Game_Vehicle](Game_Vehicle.html) および [Game_Event](Game_Event.html) のスーパークラス。
+[Game_Player](Game_Player.md), [Game_Follower](Game_Follower.md), [Game_Vehicle](Game_Vehicle.md) および [Game_Event](Game_Event.md) のスーパークラス。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `ROUTE_END` | [Number](Number.html) | [static] |
-| `ROUTE_MOVE_DOWN` | [Number](Number.html) | [static] |
-| `ROUTE_MOVE_LEFT` | [Number](Number.html) | [static] |
-| `ROUTE_MOVE_RIGHT` | [Number](Number.html) | [static] |
-| `ROUTE_MOVE_UP` | [Number](Number.html) | [static] |
-| `ROUTE_MOVE_LOWER_L` | [Number](Number.html) | [static] |
-| `ROUTE_MOVE_LOWER_R` | [Number](Number.html) | [static] |
-| `ROUTE_MOVE_UPPER_L` | [Number](Number.html) | [static] |
-| `ROUTE_MOVE_UPPER_R` | [Number](Number.html) | [static] |
-| `ROUTE_MOVE_RANDOM` | [Number](Number.html) | [static] |
-| `ROUTE_MOVE_TOWARD` | [Number](Number.html) | [static] |
-| `ROUTE_MOVE_AWAY` | [Number](Number.html) | [static] |
-| `ROUTE_MOVE_FORWARD` | [Number](Number.html) | [static] |
-| `ROUTE_MOVE_BACKWARD` | [Number](Number.html) | [static] |
-| `ROUTE_JUMP` | [Number](Number.html) | [static] |
-| `ROUTE_WAIT` | [Number](Number.html) | [static] |
-| `ROUTE_TURN_DOWN` | [Number](Number.html) | [static] |
-| `ROUTE_TURN_LEFT` | [Number](Number.html) | [static] |
-| `ROUTE_TURN_RIGHT` | [Number](Number.html) | [static] |
-| `ROUTE_TURN_UP` | [Number](Number.html) | [static] |
-| `ROUTE_TURN_90D_R` | [Number](Number.html) | [static] |
-| `ROUTE_TURN_90D_L` | [Number](Number.html) | [static] |
-| `ROUTE_TURN_180D` | [Number](Number.html) | [static] |
-| `ROUTE_TURN_90D_R_L` | [Number](Number.html) | [static] |
-| `ROUTE_TURN_RANDOM` | [Number](Number.html) | [static] |
-| `ROUTE_TURN_TOWARD` | [Number](Number.html) | [static] |
-| `ROUTE_TURN_AWAY` | [Number](Number.html) | [static] |
-| `ROUTE_SWITCH_ON` | [Number](Number.html) | [static] |
-| `ROUTE_SWITCH_OFF` | [Number](Number.html) | [static] |
-| `ROUTE_CHANGE_SPEED` | [Number](Number.html) | [static] |
-| `ROUTE_CHANGE_FREQ` | [Number](Number.html) | [static] |
-| `ROUTE_WALK_ANIME_ON` | [Number](Number.html) | [static] |
-| `ROUTE_WALK_ANIME_OFF` | [Number](Number.html) | [static] |
-| `ROUTE_STEP_ANIME_ON` | [Number](Number.html) | [static] |
-| `ROUTE_STEP_ANIME_OFF` | [Number](Number.html) | [static] |
-| `ROUTE_DIR_FIX_ON` | [Number](Number.html) | [static] |
-| `ROUTE_DIR_FIX_OFF` | [Number](Number.html) | [static] |
-| `ROUTE_THROUGH_ON` | [Number](Number.html) | [static] |
-| `ROUTE_THROUGH_OFF` | [Number](Number.html) | [static] |
-| `ROUTE_TRANSPARENT_ON` | [Number](Number.html) | [static] |
-| `ROUTE_TRANSPARENT_OFF` | [Number](Number.html) | [static] |
-| `ROUTE_CHANGE_IMAGE` | [Number](Number.html) | [static] |
-| `ROUTE_CHANGE_OPACITY` | [Number](Number.html) | [static] |
-| `ROUTE_CHANGE_BLEND_MODE` | [Number](Number.html) | [static] |
-| `ROUTE_PLAY_SE` | [Number](Number.html) | [static] |
-| `ROUTE_SCRIPT` | [Number](Number.html) | [static] |
+| `ROUTE_END` | [Number](Number.md) | [static] |
+| `ROUTE_MOVE_DOWN` | [Number](Number.md) | [static] |
+| `ROUTE_MOVE_LEFT` | [Number](Number.md) | [static] |
+| `ROUTE_MOVE_RIGHT` | [Number](Number.md) | [static] |
+| `ROUTE_MOVE_UP` | [Number](Number.md) | [static] |
+| `ROUTE_MOVE_LOWER_L` | [Number](Number.md) | [static] |
+| `ROUTE_MOVE_LOWER_R` | [Number](Number.md) | [static] |
+| `ROUTE_MOVE_UPPER_L` | [Number](Number.md) | [static] |
+| `ROUTE_MOVE_UPPER_R` | [Number](Number.md) | [static] |
+| `ROUTE_MOVE_RANDOM` | [Number](Number.md) | [static] |
+| `ROUTE_MOVE_TOWARD` | [Number](Number.md) | [static] |
+| `ROUTE_MOVE_AWAY` | [Number](Number.md) | [static] |
+| `ROUTE_MOVE_FORWARD` | [Number](Number.md) | [static] |
+| `ROUTE_MOVE_BACKWARD` | [Number](Number.md) | [static] |
+| `ROUTE_JUMP` | [Number](Number.md) | [static] |
+| `ROUTE_WAIT` | [Number](Number.md) | [static] |
+| `ROUTE_TURN_DOWN` | [Number](Number.md) | [static] |
+| `ROUTE_TURN_LEFT` | [Number](Number.md) | [static] |
+| `ROUTE_TURN_RIGHT` | [Number](Number.md) | [static] |
+| `ROUTE_TURN_UP` | [Number](Number.md) | [static] |
+| `ROUTE_TURN_90D_R` | [Number](Number.md) | [static] |
+| `ROUTE_TURN_90D_L` | [Number](Number.md) | [static] |
+| `ROUTE_TURN_180D` | [Number](Number.md) | [static] |
+| `ROUTE_TURN_90D_R_L` | [Number](Number.md) | [static] |
+| `ROUTE_TURN_RANDOM` | [Number](Number.md) | [static] |
+| `ROUTE_TURN_TOWARD` | [Number](Number.md) | [static] |
+| `ROUTE_TURN_AWAY` | [Number](Number.md) | [static] |
+| `ROUTE_SWITCH_ON` | [Number](Number.md) | [static] |
+| `ROUTE_SWITCH_OFF` | [Number](Number.md) | [static] |
+| `ROUTE_CHANGE_SPEED` | [Number](Number.md) | [static] |
+| `ROUTE_CHANGE_FREQ` | [Number](Number.md) | [static] |
+| `ROUTE_WALK_ANIME_ON` | [Number](Number.md) | [static] |
+| `ROUTE_WALK_ANIME_OFF` | [Number](Number.md) | [static] |
+| `ROUTE_STEP_ANIME_ON` | [Number](Number.md) | [static] |
+| `ROUTE_STEP_ANIME_OFF` | [Number](Number.md) | [static] |
+| `ROUTE_DIR_FIX_ON` | [Number](Number.md) | [static] |
+| `ROUTE_DIR_FIX_OFF` | [Number](Number.md) | [static] |
+| `ROUTE_THROUGH_ON` | [Number](Number.md) | [static] |
+| `ROUTE_THROUGH_OFF` | [Number](Number.md) | [static] |
+| `ROUTE_TRANSPARENT_ON` | [Number](Number.md) | [static] |
+| `ROUTE_TRANSPARENT_OFF` | [Number](Number.md) | [static] |
+| `ROUTE_CHANGE_IMAGE` | [Number](Number.md) | [static] |
+| `ROUTE_CHANGE_OPACITY` | [Number](Number.md) | [static] |
+| `ROUTE_CHANGE_BLEND_MODE` | [Number](Number.md) | [static] |
+| `ROUTE_PLAY_SE` | [Number](Number.md) | [static] |
+| `ROUTE_SCRIPT` | [Number](Number.md) | [static] |
 | `_moveRouteForcing` | Boolean |  |
-| `_moveRoute` | [RPG.MoveRoute](RPG.MoveRoute.html) |  |
-| `_moveRouteIndex` | [Number](Number.html) |  |
-| `_originalMoveRoute` | [RPG.MoveRoute](RPG.MoveRoute.html) |  |
-| `_originalMoveRouteIndex` | [Number](Number.html) |  |
-| `_waitCount` | [Number](Number.html) |  |
+| `_moveRoute` | [RPG.MoveRoute](RPG.MoveRoute.md) |  |
+| `_moveRouteIndex` | [Number](Number.md) |  |
+| `_originalMoveRoute` | [RPG.MoveRoute](RPG.MoveRoute.md) |  |
+| `_originalMoveRouteIndex` | [Number](Number.md) |  |
+| `_waitCount` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Game_CharacterBase](Game_CharacterBase.html)
+* [Game_CharacterBase](Game_CharacterBase.md)
 
 ### Methods
 
@@ -83,7 +83,7 @@
                 </dd>
             </dl>
 
-#### animationId () → {[Number](Number.html)}
+#### animationId () → {[Number](Number.md)}
 
  アニメーションIDを返す。
 <dl>
@@ -106,7 +106,7 @@
                 </dd>
             </dl>
 
-#### animationWait () → {[Number](Number.html)}
+#### animationWait () → {[Number](Number.md)}
 
  アニメーションの待ち時間を返す。
 <dl>
@@ -130,7 +130,7 @@
                 </dd>
             </dl>
 
-#### balloonId () → {[Number](Number.html)}
+#### balloonId () → {[Number](Number.md)}
 
  フキダシアイコンIDを返す。
 <dl>
@@ -153,7 +153,7 @@
                 </dd>
             </dl>
 
-#### blendMode () → {[Number](Number.html)}
+#### blendMode () → {[Number](Number.md)}
 
 [合成方法]を返す。
 <dl>
@@ -177,7 +177,7 @@
                 </dd>
             </dl>
 
-#### bushDepth () → {[Number](Number.html)}
+#### bushDepth () → {[Number](Number.md)}
 
 [茂み]の深さを返す。
 <dl>
@@ -209,9 +209,9 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  タイル数 |
-| `y` | [Number](Number.html) |  タイル数 |
-| `d` | [Number](Number.html) |  向き(テンキー対応) |
+| `x` | [Number](Number.md) |  タイル数 |
+| `y` | [Number](Number.md) |  タイル数 |
+| `d` | [Number](Number.md) |  向き(テンキー対応) |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -241,10 +241,10 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  タイル数 |
-| `y` | [Number](Number.html) |  タイル数 |
-| `horz` | [Number](Number.html) |  横方向(テンキー対応) |
-| `vert` | [Number](Number.html) |  縦方向(テンキー対応) |
+| `x` | [Number](Number.md) |  タイル数 |
+| `y` | [Number](Number.md) |  タイル数 |
+| `horz` | [Number](Number.md) |  横方向(テンキー対応) |
+| `vert` | [Number](Number.md) |  縦方向(テンキー対応) |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -266,7 +266,7 @@
                 </dd>
             </dl>
 
-#### characterIndex () → {[Number](Number.html)}
+#### characterIndex () → {[Number](Number.md)}
 
  キャラクタ画像の番号を返す。
 <dl>
@@ -289,7 +289,7 @@
                 </dd>
             </dl>
 
-#### characterName () → {[String](String.html)}
+#### characterName () → {[String](String.md)}
 
  キャラクタ画像のファイル名を返す。
 <dl>
@@ -320,8 +320,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  タイル数 |
-| `y` | [Number](Number.html) |  タイル数 |
+| `x` | [Number](Number.md) |  タイル数 |
+| `y` | [Number](Number.md) |  タイル数 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -351,7 +351,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `d` | [Number](Number.html) |  向き(テンキー対応) |
+| `d` | [Number](Number.md) |  向き(テンキー対応) |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -372,7 +372,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `threshold` | [Number](Number.html) |  停止カウントの閾値(フレーム) |
+| `threshold` | [Number](Number.md) |  停止カウントの閾値(フレーム) |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -402,7 +402,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `character` | [Game_Player](Game_Player.html) |  |
+| `character` | [Game_Player](Game_Player.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -415,7 +415,7 @@
                 </dd>
             </dl>
 
-#### deltaXFrom (x) → {[Number](Number.html)}
+#### deltaXFrom (x) → {[Number](Number.md)}
 
  指定した x座標と自身の x座標の差分を返す。
 
@@ -423,7 +423,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  タイル数 |
+| `x` | [Number](Number.md) |  タイル数 |
 
 <dl>
 </dl>
@@ -438,7 +438,7 @@
                 </dd>
             </dl>
 
-#### deltaYFrom (y) → {[Number](Number.html)}
+#### deltaYFrom (y) → {[Number](Number.md)}
 
  指定した y座標と自身の y座標の差分を返す。
 
@@ -446,7 +446,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `y` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.md) |  タイル数 |
 
 <dl>
 </dl>
@@ -461,7 +461,7 @@
                 </dd>
             </dl>
 
-#### direction () → {[Number](Number.html)}
+#### direction () → {[Number](Number.md)}
 
  向きを返す。
 <dl>
@@ -485,7 +485,7 @@
                 </dd>
             </dl>
 
-#### distancePerFrame () → {[Number](Number.html)}
+#### distancePerFrame () → {[Number](Number.md)}
 
  フレーム毎の移動距離を返す。
 <dl>
@@ -536,7 +536,7 @@
                 </dd>
             </dl>
 
-#### findDirectionTo (goalX, goalY) → {[Number](Number.html)}
+#### findDirectionTo (goalX, goalY) → {[Number](Number.md)}
 
  指定座標へたどり着くための向きを返す。
 
@@ -544,8 +544,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `goalX` | [Number](Number.html) |  タイル数 |
-| `goalY` | [Number](Number.html) |  タイル数 |
+| `goalX` | [Number](Number.md) |  タイル数 |
+| `goalY` | [Number](Number.md) |  タイル数 |
 
 <dl>
 </dl>
@@ -568,7 +568,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `moveRoute` | [RPG.MoveRoute](RPG.MoveRoute.html) |  |
+| `moveRoute` | [RPG.MoveRoute](RPG.MoveRoute.md) |  |
 
 <dl>
 </dl>
@@ -715,8 +715,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  タイル数 |
-| `y` | [Number](Number.html) |  タイル数 |
+| `x` | [Number](Number.md) |  タイル数 |
+| `y` | [Number](Number.md) |  タイル数 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -746,8 +746,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  タイル数 |
-| `y` | [Number](Number.html) |  タイル数 |
+| `x` | [Number](Number.md) |  タイル数 |
+| `y` | [Number](Number.md) |  タイル数 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -777,8 +777,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  タイル数 |
-| `y` | [Number](Number.html) |  タイル数 |
+| `x` | [Number](Number.md) |  タイル数 |
+| `y` | [Number](Number.md) |  タイル数 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -900,9 +900,9 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  タイル数 |
-| `y` | [Number](Number.html) |  タイル数 |
-| `d` | [Number](Number.html) |  向き(テンキー対応) |
+| `x` | [Number](Number.md) |  タイル数 |
+| `y` | [Number](Number.md) |  タイル数 |
+| `d` | [Number](Number.md) |  向き(テンキー対応) |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -932,8 +932,8 @@
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `x` | [Number](Number.html) | <optional> |  |
-| `y` | [Number](Number.html) | <optional> |  |
+| `x` | [Number](Number.md) | <optional> |  |
+| `y` | [Number](Number.md) | <optional> |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1232,8 +1232,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `xPlus` | [Number](Number.html) | x方向の移動(タイル数) |
-| `yPlus` | [Number](Number.html) | y方向の移動(タイル数) |
+| `xPlus` | [Number](Number.md) | x方向の移動(タイル数) |
+| `yPlus` | [Number](Number.md) | y方向の移動(タイル数) |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1246,7 +1246,7 @@
                 </dd>
             </dl>
 
-#### jumpHeight () → {[Number](Number.html)}
+#### jumpHeight () → {[Number](Number.md)}
 
  現在のジャンプの高さを返す。
 <dl>
@@ -1278,8 +1278,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  タイル数 |
-| `y` | [Number](Number.html) |  タイル数 |
+| `x` | [Number](Number.md) |  タイル数 |
+| `y` | [Number](Number.md) |  タイル数 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1292,7 +1292,7 @@
                 </dd>
             </dl>
 
-#### maxPattern () → {[Number](Number.html)}
+#### maxPattern () → {[Number](Number.md)}
 
  最大パターン数を返す。
 <dl>
@@ -1329,7 +1329,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `character` | [Game_Character](Game_Character.html) |  |
+| `character` | [Game_Character](Game_Character.md) |  |
 
 <dl>
 </dl>
@@ -1354,8 +1354,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `horz` | [Number](Number.html) |  水平向き(4: 左, 6:右) |
-| `vert` | [Number](Number.html) |  垂直向き(2: 下, 8: 上) |
+| `horz` | [Number](Number.md) |  水平向き(4: 左, 6:右) |
+| `vert` | [Number](Number.md) |  垂直向き(2: 下, 8: 上) |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1374,7 +1374,7 @@
 <dl>
 </dl>
 
-#### moveFrequency () → {[Number](Number.html)}
+#### moveFrequency () → {[Number](Number.md)}
 
  移動[頻度]を返す。
 <dl>
@@ -1404,7 +1404,7 @@
 <dl>
 </dl>
 
-#### moveSpeed () → {[Number](Number.html)}
+#### moveSpeed () → {[Number](Number.md)}
 
  移動[速度]を返す。
 <dl>
@@ -1436,7 +1436,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `d` | [Number](Number.html) |  向き(テンキー対応) |
+| `d` | [Number](Number.md) |  向き(テンキー対応) |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1457,7 +1457,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `character` | [Game_Character](Game_Character.html) |  |
+| `character` | [Game_Character](Game_Character.md) |  |
 
 <dl>
 </dl>
@@ -1468,7 +1468,7 @@
 <dl>
 </dl>
 
-#### opacity () → {[Number](Number.html)}
+#### opacity () → {[Number](Number.md)}
 
 [不透明度]を返す。
 <dl>
@@ -1492,7 +1492,7 @@
                 </dd>
             </dl>
 
-#### pattern () → {[Number](Number.html)}
+#### pattern () → {[Number](Number.md)}
 
  歩行パターンの番号を返す。
 <dl>
@@ -1523,8 +1523,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1554,8 +1554,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1585,7 +1585,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `command` | [RPG.MoveCommand](RPG.MoveCommand.html) |  |
+| `command` | [RPG.MoveCommand](RPG.MoveCommand.md) |  |
 
 <dl>
 </dl>
@@ -1596,7 +1596,7 @@
 <dl>
 </dl>
 
-#### realMoveSpeed () → {[Number](Number.html)}
+#### realMoveSpeed () → {[Number](Number.md)}
 
 (ダッシュ状態も考慮して)現在の移動速度を返す。
 <dl>
@@ -1633,7 +1633,7 @@
                 </dd>
             </dl>
 
-#### regionId () → {[Number](Number.html)}
+#### regionId () → {[Number](Number.md)}
 
  乗っているリージョンIDを返す。
 <dl>
@@ -1664,7 +1664,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `animationId` | [Number](Number.html) |  |
+| `animationId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1685,7 +1685,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `balloonId` | [Number](Number.html) |  |
+| `balloonId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1732,7 +1732,7 @@
 <dl>
 </dl>
 
-#### reverseDir (d) → {[Number](Number.html)}
+#### reverseDir (d) → {[Number](Number.md)}
 
  指定向きの逆向きを返す。
 
@@ -1740,7 +1740,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `d` | [Number](Number.html) |  向き(テンキー対応) |
+| `d` | [Number](Number.md) |  向き(テンキー対応) |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1763,7 +1763,7 @@
                 </dd>
             </dl>
 
-#### screenX () → {[Number](Number.html)}
+#### screenX () → {[Number](Number.md)}
 
  画面上の x座標を返す。
 <dl>
@@ -1787,7 +1787,7 @@
                 </dd>
             </dl>
 
-#### screenY () → {[Number](Number.html)}
+#### screenY () → {[Number](Number.md)}
 
  画面上の y座標を返す。
 <dl>
@@ -1811,7 +1811,7 @@
                 </dd>
             </dl>
 
-#### screenZ () → {[Number](Number.html)}
+#### screenZ () → {[Number](Number.md)}
 
  重なり位置を返す。
 <dl>
@@ -1835,7 +1835,7 @@
                 </dd>
             </dl>
 
-#### scrolledX () → {[Number](Number.html)}
+#### scrolledX () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1863,7 +1863,7 @@
                 </dd>
             </dl>
 
-#### scrolledY () → {[Number](Number.html)}
+#### scrolledY () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1891,7 +1891,7 @@
                 </dd>
             </dl>
 
-#### searchLimit () → {[Number](Number.html)}
+#### searchLimit () → {[Number](Number.md)}
 
  ルート検索の上限数を返す。
 <dl>
@@ -1914,7 +1914,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `blendMode` | [Number](Number.html) | 0: 通常, 1: 加算, 2: 乗算, 3: スクリーン |
+| `blendMode` | [Number](Number.md) | 0: 通常, 1: 加算, 2: 乗算, 3: スクリーン |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1935,7 +1935,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `d` | [Number](Number.html) |  向き(テンキー対応) |
+| `d` | [Number](Number.md) |  向き(テンキー対応) |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1977,8 +1977,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `characterName` | [String](String.html) |  ファイル名 |
-| `characterIndex` | [Number](Number.html) |  番号 |
+| `characterName` | [String](String.md) |  ファイル名 |
+| `characterIndex` | [Number](Number.md) |  番号 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1999,7 +1999,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `moveFrequency` | [Number](Number.html) | 1: 最低, 2: 低, 3: 通常, 4: 高, 5: 最高 |
+| `moveFrequency` | [Number](Number.md) | 1: 最低, 2: 低, 3: 通常, 4: 高, 5: 最高 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2041,7 +2041,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `moveRoute` | [RPG.MoveRoute](RPG.MoveRoute.html) |  |
+| `moveRoute` | [RPG.MoveRoute](RPG.MoveRoute.md) |  |
 
 <dl>
 </dl>
@@ -2054,7 +2054,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `moveSpeed` | [Number](Number.html) | 1: 1/8倍速, 2: 1/4倍速, 3: 1/2倍速, 4: 通常速, 5: 2倍速, 6: 4倍速 |
+| `moveSpeed` | [Number](Number.md) | 1: 1/8倍速, 2: 1/4倍速, 3: 1/2倍速, 4: 通常速, 5: 2倍速, 6: 4倍速 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2075,7 +2075,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `opacity` | [Number](Number.html) | 0〜255 |
+| `opacity` | [Number](Number.md) | 0〜255 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2096,7 +2096,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pattern` | [Number](Number.html) |  |
+| `pattern` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2117,8 +2117,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  タイル数 |
-| `y` | [Number](Number.html) |  タイル数 |
+| `x` | [Number](Number.md) |  タイル数 |
+| `y` | [Number](Number.md) |  タイル数 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2139,7 +2139,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `priorityType` | [Number](Number.html) | 0: 通常キャラの下, 1:通常キャラと同じ , 2: 通常キャラの上 |
+| `priorityType` | [Number](Number.md) | 0: 通常キャラの下, 1:通常キャラと同じ , 2: 通常キャラの上 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2202,7 +2202,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.html) |  タイルID |
+| `tileId` | [Number](Number.md) |  タイルID |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2257,7 +2257,7 @@
                 </dd>
             </dl>
 
-#### shiftY () → {[Number](Number.html)}
+#### shiftY () → {[Number](Number.md)}
 
  縦方向へのシフト量を返す。
 <dl>
@@ -2331,12 +2331,12 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `character` | [Game_Character](Game_Character.html) |  |
+| `character` | [Game_Character](Game_Character.md) |  |
 
 <dl>
 </dl>
 
-#### terrainTag () → {[Number](Number.html)}
+#### terrainTag () → {[Number](Number.md)}
 
  乗っている[地形タグ]を返す。
 <dl>
@@ -2359,7 +2359,7 @@
                 </dd>
             </dl>
 
-#### tileId () → {[Number](Number.html)}
+#### tileId () → {[Number](Number.md)}
 
  タイルIDを返す。
 <dl>
@@ -2396,7 +2396,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `character` | [Game_Character](Game_Character.html) |  |
+| `character` | [Game_Character](Game_Character.md) |  |
 
 <dl>
 </dl>
@@ -2439,7 +2439,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `character` | [Game_Character](Game_Character.html) |  |
+| `character` | [Game_Character](Game_Character.md) |  |
 
 <dl>
 </dl>

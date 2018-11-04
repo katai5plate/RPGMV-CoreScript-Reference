@@ -10,24 +10,24 @@ The sprite object for a tiling image.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `bitmap` | [Bitmap](Bitmap.html) | The image for the tiling sprite |
+| `bitmap` | [Bitmap](Bitmap.md) | The image for the tiling sprite |
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `bitmap` | [Bitmap](Bitmap.html) | The image for the tiling sprite. |
-| `opacity` | [Number](Number.html) | The opacity of the tiling sprite (0 to 255). |
-| `spriteId` | [Number](Number.html) |  |
-| `origin` | [Point](Point.html) | The origin point of the tiling sprite for scrolling. |
-| `x` | [Number](Number.html) | The x coordinate of the tiling sprite. |
-| `y` | [Number](Number.html) | The y coordinate of the tiling sprite. |
-| `spriteId` | [Number](Number.html) |  |
-| `visibility` | [Number](Number.html) | The visibility of the tiling sprite. |
-| `_bitmap` | [Bitmap](Bitmap.html) |  |
-| `_width` | [Number](Number.html) |  |
-| `_height` | [Number](Number.html) |  |
-| `_frame` | [Number](Number.html) |  |
+| `bitmap` | [Bitmap](Bitmap.md) | The image for the tiling sprite. |
+| `opacity` | [Number](Number.md) | The opacity of the tiling sprite (0 to 255). |
+| `spriteId` | [Number](Number.md) |  |
+| `origin` | [Point](Point.md) | The origin point of the tiling sprite for scrolling. |
+| `x` | [Number](Number.md) | The x coordinate of the tiling sprite. |
+| `y` | [Number](Number.md) | The y coordinate of the tiling sprite. |
+| `spriteId` | [Number](Number.md) |  |
+| `visibility` | [Number](Number.md) | The visibility of the tiling sprite. |
+| `_bitmap` | [Bitmap](Bitmap.md) |  |
+| `_width` | [Number](Number.md) |  |
+| `_height` | [Number](Number.md) |  |
+| `_frame` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -94,7 +94,7 @@ The sprite object for a tiling image.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `bitmap` | [Bitmap](Bitmap.html) |  |
+| `bitmap` | [Bitmap](Bitmap.md) |  |
 
 <dl>
 </dl>
@@ -107,10 +107,10 @@ The sprite object for a tiling image.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) | The x coordinate of the tiling sprite |
-| `y` | [Number](Number.html) | The y coordinate of the tiling sprite |
-| `width` | [Number](Number.html) | The width of the tiling sprite |
-| `height` | [Number](Number.html) | The height of the tiling sprite |
+| `x` | [Number](Number.md) | The x coordinate of the tiling sprite |
+| `y` | [Number](Number.md) | The y coordinate of the tiling sprite |
+| `width` | [Number](Number.md) | The width of the tiling sprite |
+| `height` | [Number](Number.md) | The height of the tiling sprite |
 
 <dl>
 </dl>
@@ -123,10 +123,10 @@ The sprite object for a tiling image.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) | The x coordinate of the frame |
-| `y` | [Number](Number.html) | The y coordinate of the frame |
-| `width` | [Number](Number.html) | The width of the frame |
-| `height` | [Number](Number.html) | The height of the frame |
+| `x` | [Number](Number.md) | The x coordinate of the frame |
+| `y` | [Number](Number.md) | The y coordinate of the frame |
+| `width` | [Number](Number.md) | The width of the frame |
+| `height` | [Number](Number.md) | The height of the frame |
 
 <dl>
 </dl>

@@ -1,6 +1,6 @@
 # Class: AudioParameters
 
-## [MV](MV.html).  AudioParameters ()
+## [MV](MV.md).  AudioParameters ()
 
 #### new AudioParameters ()
 
@@ -8,11 +8,11 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.html) |  |
-| `volume` | [Number](Number.html) |  |
-| `pitch` | [Number](Number.html) |  |
-| `pan` | [Number](Number.html) |  |
-| `pos` | [Number](Number.html) |  |
+| `name` | [String](String.md) |  |
+| `volume` | [Number](Number.md) |  |
+| `pitch` | [Number](Number.md) |  |
+| `pan` | [Number](Number.md) |  |
+| `pos` | [Number](Number.md) |  |
 
 <dl>
 </dl>

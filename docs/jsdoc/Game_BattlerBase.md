@@ -4,89 +4,89 @@
 
 #### (abstract) new Game_BattlerBase ()
 
-The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains parameters calculation.
+The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains parameters calculation.
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `TRAIT_ELEMENT_RATE` | [Number](Number.html) | [static] |
-| `TRAIT_DEBUFF_RATE` | [Number](Number.html) | [static] |
-| `TRAIT_STATE_RATE` | [Number](Number.html) | [static] |
-| `TRAIT_STATE_RESIST` | [Number](Number.html) | [static] |
-| `TRAIT_PARAM` | [Number](Number.html) | [static] |
-| `TRAIT_XPARAM` | [Number](Number.html) | [static] |
-| `TRAIT_SPARAM` | [Number](Number.html) | [static] |
-| `TRAIT_ATTACK_ELEMENT` | [Number](Number.html) | [static] |
-| `TRAIT_ATTACK_STATE` | [Number](Number.html) | [static] |
-| `TRAIT_ATTACK_SPEED` | [Number](Number.html) | [static] |
-| `TRAIT_ATTACK_TIMES` | [Number](Number.html) | [static] |
-| `TRAIT_STYPE_ADD` | [Number](Number.html) | [static] |
-| `TRAIT_STYPE_SEAL` | [Number](Number.html) | [static] |
-| `TRAIT_SKILL_ADD` | [Number](Number.html) | [static] |
-| `TRAIT_SKILL_SEAL` | [Number](Number.html) | [static] |
-| `TRAIT_EQUIP_WTYPE` | [Number](Number.html) | [static] |
-| `TRAIT_EQUIP_ATYPE` | [Number](Number.html) | [static] |
-| `TRAIT_EQUIP_LOCK` | [Number](Number.html) | [static] |
-| `TRAIT_EQUIP_SEAL` | [Number](Number.html) | [static] |
-| `TRAIT_SLOT_TYPE` | [Number](Number.html) | [static] |
-| `TRAIT_ACTION_PLUS` | [Number](Number.html) | [static] |
-| `TRAIT_SPECIAL_FLAG` | [Number](Number.html) | [static] |
-| `TRAIT_COLLAPSE_TYPE` | [Number](Number.html) | [static] |
-| `TRAIT_PARTY_ABILITY` | [Number](Number.html) | [static] |
-| `FLAG_ID_AUTO_BATTLE` | [Number](Number.html) | [static] |
-| `FLAG_ID_GUARD` | [Number](Number.html) | [static] |
-| `FLAG_ID_SUBSTITUTE` | [Number](Number.html) | [static] |
-| `FLAG_ID_PRESERVE_TP` | [Number](Number.html) | [static] |
-| `ICON_BUFF_START` | [Number](Number.html) | [static] |
-| `ICON_DEBUFF_START` | [Number](Number.html) | [static] |
-| `hp` | [Number](Number.html) | [read-only] Hit Points |
-| `mp` | [Number](Number.html) | [read-only] Magic Points |
-| `tp` | [Number](Number.html) | [read-only] Tactical Points |
-| `mhp` | [Number](Number.html) | [read-only] Maximum Hit Points |
-| `mmp` | [Number](Number.html) | [read-only] Maximum Magic Points |
-| `atk` | [Number](Number.html) | [read-only] ATtacK power |
-| `def` | [Number](Number.html) | [read-only] DEFense power |
-| `mat` | [Number](Number.html) | [read-only] Magic ATtack power |
-| `mdf` | [Number](Number.html) | [read-only] Magic DeFense power |
-| `agi` | [Number](Number.html) | [read-only] AGIlity |
-| `luk` | [Number](Number.html) | [read-only] LUcK |
-| `hit` | [Number](Number.html) | [read-only] HIT rate |
-| `eva` | [Number](Number.html) | [read-only] EVAsion rate |
-| `cri` | [Number](Number.html) | [read-only] CRItical rate |
-| `cev` | [Number](Number.html) | [read-only] Critical EVasion rate |
-| `mev` | [Number](Number.html) | [read-only] Magic EVasion rate |
-| `mrf` | [Number](Number.html) | [read-only] Magic ReFlection rate |
-| `cnt` | [Number](Number.html) | [read-only] CouNTer attack rate |
-| `hrg` | [Number](Number.html) | [read-only] Hp ReGeneration rate |
-| `mrg` | [Number](Number.html) | [read-only] Mp ReGeneration rate |
-| `trg` | [Number](Number.html) | [read-only] Tp ReGeneration rate |
-| `tgr` | [Number](Number.html) | [read-only] TarGet Rate |
-| `grd` | [Number](Number.html) | [read-only] GuaRD effect rate |
-| `rec` | [Number](Number.html) | [read-only] RECovery effect rate |
-| `pha` | [Number](Number.html) | [read-only] PHArmacology |
-| `mcr` | [Number](Number.html) | [read-only] Mp Cost Rate |
-| `tcr` | [Number](Number.html) | [read-only] Tp Charge Rate |
-| `pdr` | [Number](Number.html) | [read-only] Physical Damage Rate |
-| `mdr` | [Number](Number.html) | [read-only] Magical Damage Rate |
-| `fdr` | [Number](Number.html) | [read-only] Floor Damage Rate |
-| `exr` | [Number](Number.html) | [read-only] EXperience Rate |
-| `_hp` | [Number](Number.html) |  |
-| `_mp` | [Number](Number.html) |  |
-| `_tp` | [Number](Number.html) |  |
+| `TRAIT_ELEMENT_RATE` | [Number](Number.md) | [static] |
+| `TRAIT_DEBUFF_RATE` | [Number](Number.md) | [static] |
+| `TRAIT_STATE_RATE` | [Number](Number.md) | [static] |
+| `TRAIT_STATE_RESIST` | [Number](Number.md) | [static] |
+| `TRAIT_PARAM` | [Number](Number.md) | [static] |
+| `TRAIT_XPARAM` | [Number](Number.md) | [static] |
+| `TRAIT_SPARAM` | [Number](Number.md) | [static] |
+| `TRAIT_ATTACK_ELEMENT` | [Number](Number.md) | [static] |
+| `TRAIT_ATTACK_STATE` | [Number](Number.md) | [static] |
+| `TRAIT_ATTACK_SPEED` | [Number](Number.md) | [static] |
+| `TRAIT_ATTACK_TIMES` | [Number](Number.md) | [static] |
+| `TRAIT_STYPE_ADD` | [Number](Number.md) | [static] |
+| `TRAIT_STYPE_SEAL` | [Number](Number.md) | [static] |
+| `TRAIT_SKILL_ADD` | [Number](Number.md) | [static] |
+| `TRAIT_SKILL_SEAL` | [Number](Number.md) | [static] |
+| `TRAIT_EQUIP_WTYPE` | [Number](Number.md) | [static] |
+| `TRAIT_EQUIP_ATYPE` | [Number](Number.md) | [static] |
+| `TRAIT_EQUIP_LOCK` | [Number](Number.md) | [static] |
+| `TRAIT_EQUIP_SEAL` | [Number](Number.md) | [static] |
+| `TRAIT_SLOT_TYPE` | [Number](Number.md) | [static] |
+| `TRAIT_ACTION_PLUS` | [Number](Number.md) | [static] |
+| `TRAIT_SPECIAL_FLAG` | [Number](Number.md) | [static] |
+| `TRAIT_COLLAPSE_TYPE` | [Number](Number.md) | [static] |
+| `TRAIT_PARTY_ABILITY` | [Number](Number.md) | [static] |
+| `FLAG_ID_AUTO_BATTLE` | [Number](Number.md) | [static] |
+| `FLAG_ID_GUARD` | [Number](Number.md) | [static] |
+| `FLAG_ID_SUBSTITUTE` | [Number](Number.md) | [static] |
+| `FLAG_ID_PRESERVE_TP` | [Number](Number.md) | [static] |
+| `ICON_BUFF_START` | [Number](Number.md) | [static] |
+| `ICON_DEBUFF_START` | [Number](Number.md) | [static] |
+| `hp` | [Number](Number.md) | [read-only] Hit Points |
+| `mp` | [Number](Number.md) | [read-only] Magic Points |
+| `tp` | [Number](Number.md) | [read-only] Tactical Points |
+| `mhp` | [Number](Number.md) | [read-only] Maximum Hit Points |
+| `mmp` | [Number](Number.md) | [read-only] Maximum Magic Points |
+| `atk` | [Number](Number.md) | [read-only] ATtacK power |
+| `def` | [Number](Number.md) | [read-only] DEFense power |
+| `mat` | [Number](Number.md) | [read-only] Magic ATtack power |
+| `mdf` | [Number](Number.md) | [read-only] Magic DeFense power |
+| `agi` | [Number](Number.md) | [read-only] AGIlity |
+| `luk` | [Number](Number.md) | [read-only] LUcK |
+| `hit` | [Number](Number.md) | [read-only] HIT rate |
+| `eva` | [Number](Number.md) | [read-only] EVAsion rate |
+| `cri` | [Number](Number.md) | [read-only] CRItical rate |
+| `cev` | [Number](Number.md) | [read-only] Critical EVasion rate |
+| `mev` | [Number](Number.md) | [read-only] Magic EVasion rate |
+| `mrf` | [Number](Number.md) | [read-only] Magic ReFlection rate |
+| `cnt` | [Number](Number.md) | [read-only] CouNTer attack rate |
+| `hrg` | [Number](Number.md) | [read-only] Hp ReGeneration rate |
+| `mrg` | [Number](Number.md) | [read-only] Mp ReGeneration rate |
+| `trg` | [Number](Number.md) | [read-only] Tp ReGeneration rate |
+| `tgr` | [Number](Number.md) | [read-only] TarGet Rate |
+| `grd` | [Number](Number.md) | [read-only] GuaRD effect rate |
+| `rec` | [Number](Number.md) | [read-only] RECovery effect rate |
+| `pha` | [Number](Number.md) | [read-only] PHArmacology |
+| `mcr` | [Number](Number.md) | [read-only] Mp Cost Rate |
+| `tcr` | [Number](Number.md) | [read-only] Tp Charge Rate |
+| `pdr` | [Number](Number.md) | [read-only] Physical Damage Rate |
+| `mdr` | [Number](Number.md) | [read-only] Magical Damage Rate |
+| `fdr` | [Number](Number.md) | [read-only] Floor Damage Rate |
+| `exr` | [Number](Number.md) | [read-only] EXperience Rate |
+| `_hp` | [Number](Number.md) |  |
+| `_mp` | [Number](Number.md) |  |
+| `_tp` | [Number](Number.md) |  |
 | `_hidden` | Boolean |  |
-| `_paramPlus` | [Array](Array.html).<[Number](Number.html)> |  |
-| `_states` | [Array](Array.html).<[Number](Number.html)> |  |
+| `_paramPlus` | [Array](Array.md).<[Number](Number.md)> |  |
+| `_states` | [Array](Array.md).<[Number](Number.md)> |  |
 | `_stateTurns` | Object | {[stateId: number]: number} |
-| `_buffs` | [Array](Array.html).<[Number](Number.html)> |  |
-| `_buffTurns` | [Array](Array.html).<[Number](Number.html)> |  |
+| `_buffs` | [Array](Array.md).<[Number](Number.md)> |  |
+| `_buffTurns` | [Array](Array.md).<[Number](Number.md)> |  |
 
 <dl>
 </dl>
 
 ### Methods
 
-#### actionPlusSet () → {[Array](Array.html).<[Number](Number.html)>}
+#### actionPlusSet () → {[Array](Array.md).<[Number](Number.md)>}
 
 <dl>
 </dl>
@@ -100,7 +100,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### addedSkills () → {[Array](Array.html).<[Number](Number.html)>}
+#### addedSkills () → {[Array](Array.md).<[Number](Number.md)>}
 
 <dl>
 </dl>
@@ -114,7 +114,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### addedSkillTypes () → {[Array](Array.html).<[Number](Number.html)>}
+#### addedSkillTypes () → {[Array](Array.md).<[Number](Number.md)>}
 
 <dl>
 </dl>
@@ -136,7 +136,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -147,13 +147,13 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
-| `value` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### allIcons () → {[Array](Array.html).<[Number](Number.html)>}
+#### allIcons () → {[Array](Array.md).<[Number](Number.md)>}
 
 Returns all of the icons attached to the battler.
 <dl>
@@ -168,7 +168,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### allTraits () → {[Array](Array.html).<[RPG.Trait](RPG.Trait.html)>}
+#### allTraits () → {[Array](Array.md).<[RPG.Trait](RPG.Trait.md)>}
 
 Returns all the traits of the battler.
 <dl>
@@ -189,7 +189,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 <dl>
 </dl>
 
-#### attackElements () → {[Array](Array.html).<[Number](Number.html)>}
+#### attackElements () → {[Array](Array.md).<[Number](Number.md)>}
 
 Returns the attack elements of the battler as a list of numbers.
 <dl>
@@ -204,7 +204,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### attackSkillId () → {[Number](Number.html)}
+#### attackSkillId () → {[Number](Number.md)}
 
 Returns the attack skill id in the database.
 <dl>
@@ -219,7 +219,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### attackSpeed () → {[Number](Number.html)}
+#### attackSpeed () → {[Number](Number.md)}
 
 Returns the attack speed of the battler.
 <dl>
@@ -234,7 +234,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### attackStates () → {[Array](Array.html).<[Number](Number.html)>}
+#### attackStates () → {[Array](Array.md).<[Number](Number.md)>}
 
 Returns the attack states of the battler as a list of numbers.
 <dl>
@@ -255,12 +255,12 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### attackTimesAdd () → {[Number](Number.html)}
+#### attackTimesAdd () → {[Number](Number.md)}
 
 Returns the number of attacks available to the battler.
 <dl>
@@ -275,7 +275,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### buff (paramId) → {[Number](Number.html)}
+#### buff (paramId) → {[Number](Number.md)}
 
 Buffs the current parameter id.
 
@@ -283,7 +283,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -297,14 +297,14 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### buffIconIndex (buffLevel, paramId) → {[Number](Number.html)}
+#### buffIconIndex (buffLevel, paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `buffLevel` | [Number](Number.html) |  |
-| `paramId` | [Number](Number.html) |  |
+| `buffLevel` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -318,7 +318,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### buffIcons () → {[Array](Array.html).<[Number](Number.html)>}
+#### buffIcons () → {[Array](Array.md).<[Number](Number.md)>}
 
 Returns the array of buff icons attached to the battler; this is determined by the active buffs on the battler.
 <dl>
@@ -333,7 +333,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### buffLength () → {[Number](Number.html)}
+#### buffLength () → {[Number](Number.md)}
 
 Returns the length of the buff.
 <dl>
@@ -371,7 +371,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RPG.EquipItem.html) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
 
 <dl>
 </dl>
@@ -393,7 +393,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RPG.EquipItem.html) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
 
 <dl>
 </dl>
@@ -415,7 +415,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RPG.EquipItem.html) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
 
 <dl>
 </dl>
@@ -481,7 +481,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
 </dl>
@@ -503,7 +503,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableItem](RPG.UsableItem.html) |  |
+| `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
 
 <dl>
 </dl>
@@ -533,7 +533,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 <dl>
 </dl>
 
-#### collapseType () → {[Number](Number.html)}
+#### collapseType () → {[Number](Number.md)}
 
 Returns the collapse type of the battler.
 <dl>
@@ -548,7 +548,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### confusionLevel () → {[Number](Number.html)}
+#### confusionLevel () → {[Number](Number.md)}
 
 Returns the confusion level of the battler.
 <dl>
@@ -563,7 +563,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### deathStateId () → {[Number](Number.html)}
+#### deathStateId () → {[Number](Number.md)}
 
 Returns the death state id.
 <dl>
@@ -578,13 +578,13 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### debuffRate (paramId) → {[Number](Number.html)}
+#### debuffRate (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -604,7 +604,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -615,13 +615,13 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 <dl>
 </dl>
 
-#### elementRate (elementId) → {[Number](Number.html)}
+#### elementRate (elementId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `elementId` | [Number](Number.html) |  |
+| `elementId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -641,7 +641,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -654,12 +654,12 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### guardSkillId () → {[Number](Number.html)}
+#### guardSkillId () → {[Number](Number.md)}
 
 Returns the guard skill id in the database.
 <dl>
@@ -680,7 +680,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 <dl>
 </dl>
 
-#### hpRate () → {[Number](Number.html)}
+#### hpRate () → {[Number](Number.md)}
 
 Returns the percentage of the battler's hp left as a float.
 <dl>
@@ -701,7 +701,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -783,7 +783,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -803,7 +803,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -823,7 +823,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -887,7 +887,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -952,7 +952,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `atypeId` | [Number](Number.html) |  |
+| `atypeId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -972,7 +972,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `etypeId` | [Number](Number.html) |  |
+| `etypeId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -992,7 +992,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `etypeId` | [Number](Number.html) |  |
+| `etypeId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1012,7 +1012,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `wtypeId` | [Number](Number.html) |  |
+| `wtypeId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1062,7 +1062,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1082,7 +1082,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1104,7 +1104,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableItem](RPG.UsableItem.html) |  |
+| `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
 
 <dl>
 </dl>
@@ -1154,7 +1154,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stypeId` | [Number](Number.html) |  |
+| `stypeId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1174,7 +1174,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stypeId` | [Number](Number.html) |  |
+| `stypeId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1196,7 +1196,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
 </dl>
@@ -1218,7 +1218,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1240,7 +1240,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1260,7 +1260,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1288,7 +1288,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### maxTp () → {[Number](Number.html)}
+#### maxTp () → {[Number](Number.md)}
 
 Returns the maximum tp of the battler.
 <dl>
@@ -1311,7 +1311,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.Item](RPG.Item.html) |  |
+| `item` | [RPG.Item](RPG.Item.md) |  |
 
 <dl>
 </dl>
@@ -1333,7 +1333,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
 </dl>
@@ -1353,7 +1353,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableItem](RPG.UsableItem.html) |  |
+| `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
 
 <dl>
 </dl>
@@ -1367,7 +1367,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### mostImportantStateText () → {[String](String.html)}
+#### mostImportantStateText () → {[String](String.md)}
 
 <dl>
 </dl>
@@ -1381,7 +1381,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### mpRate () → {[Number](Number.html)}
+#### mpRate () → {[Number](Number.md)}
 
 Returns the percentage of the battler's mp left as a float.
 <dl>
@@ -1408,13 +1408,13 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
-| `turns` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
+| `turns` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### param (paramId) → {[Number](Number.html)}
+#### param (paramId) → {[Number](Number.md)}
 
 Returns a standard parameter, given a paramId; standard parameters include: HP, MP, Atk, M.Atk, Def, M.Def, Luck, Agility.
 
@@ -1422,7 +1422,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1436,7 +1436,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### paramBase (paramId) → {[Number](Number.html)}
+#### paramBase (paramId) → {[Number](Number.md)}
 
 Returns the base parameters of the battler; this is determined by their current level and the paramId given.
 
@@ -1444,7 +1444,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1458,13 +1458,13 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### paramBuffRate (paramId) → {[Number](Number.html)}
+#### paramBuffRate (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1478,13 +1478,13 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### paramMax (paramId) → {[Number](Number.html)}
+#### paramMax (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1498,13 +1498,13 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### paramMin (paramId) → {[Number](Number.html)}
+#### paramMin (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1518,13 +1518,13 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### paramPlus (paramId) → {[Number](Number.html)}
+#### paramPlus (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1538,13 +1538,13 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### paramRate (paramId) → {[Number](Number.html)}
+#### paramRate (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1564,7 +1564,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `abilityId` | [Number](Number.html) |  |
+| `abilityId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1586,7 +1586,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
 </dl>
@@ -1611,12 +1611,12 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### restriction () → {[Number](Number.html)}
+#### restriction () → {[Number](Number.md)}
 
 Returns the number of the restriction.
 <dl>
@@ -1645,7 +1645,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `hp` | [Number](Number.html) |  |
+| `hp` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1658,7 +1658,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `mp` | [Number](Number.html) |  |
+| `mp` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1671,12 +1671,12 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tp` | [Number](Number.html) |  |
+| `tp` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### skillMpCost (skill) → {[Number](Number.html)}
+#### skillMpCost (skill) → {[Number](Number.md)}
 
 Returns the mp cost of the skill.
 
@@ -1684,7 +1684,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
 </dl>
@@ -1698,7 +1698,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### skillTpCost (skill) → {[Number](Number.html)}
+#### skillTpCost (skill) → {[Number](Number.md)}
 
 Returns the tp cost of the skill.
 
@@ -1706,7 +1706,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
 </dl>
@@ -1720,7 +1720,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### slotType () → {[Number](Number.html)}
+#### slotType () → {[Number](Number.md)}
 
 Returns the battler slot type of a trait.
 <dl>
@@ -1741,13 +1741,13 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 <dl>
 </dl>
 
-#### sparam (sparamId) → {[Number](Number.html)}
+#### sparam (sparamId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `sparamId` | [Number](Number.html) |  |
+| `sparamId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1767,7 +1767,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `flagId` | [Number](Number.html) |  |
+| `flagId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1781,7 +1781,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### stateIcons () → {[Array](Array.html).<[Number](Number.html)>}
+#### stateIcons () → {[Array](Array.md).<[Number](Number.md)>}
 
 Returns the array of state icons attached to the battler; this is determined by the active states on the battler.
 <dl>
@@ -1796,7 +1796,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### stateMotionIndex () → {[Number](Number.html)}
+#### stateMotionIndex () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -1810,7 +1810,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### stateOverlayIndex () → {[Number](Number.html)}
+#### stateOverlayIndex () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -1824,13 +1824,13 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### stateRate (stateId) → {[Number](Number.html)}
+#### stateRate (stateId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1844,7 +1844,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### stateResistSet () → {[Array](Array.html).<[Number](Number.html)>}
+#### stateResistSet () → {[Array](Array.md).<[Number](Number.md)>}
 
 <dl>
 </dl>
@@ -1858,7 +1858,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### states () → {[Array](Array.html).<[RPG.State](RPG.State.html)>}
+#### states () → {[Array](Array.md).<[RPG.State](RPG.State.md)>}
 
 Returns the states applied to the battler.
 <dl>
@@ -1873,7 +1873,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### tpRate () → {[Number](Number.html)}
+#### tpRate () → {[Number](Number.md)}
 
 Returns the percentage of the battler's tp left as a float.
 <dl>
@@ -1888,7 +1888,7 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### traitObjects () → {[Array](Array.html).<*>}
+#### traitObjects () → {[Array](Array.md).<*>}
 
 Returns an array of the all objects having traits. States only here.
 <dl>
@@ -1903,13 +1903,13 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### traits (code) → {[Array](Array.html).<[RPG.Trait](RPG.Trait.html)>}
+#### traits (code) → {[Array](Array.md).<[RPG.Trait](RPG.Trait.md)>}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) |  |
+| `code` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1923,14 +1923,14 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### traitsPi (code, id) → {[Number](Number.html)}
+#### traitsPi (code, id) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) |  |
-| `id` | [Number](Number.html) |  |
+| `code` | [Number](Number.md) |  |
+| `id` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1944,13 +1944,13 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### traitsSet (code) → {[Array](Array.html).<[Number](Number.html)>}
+#### traitsSet (code) → {[Array](Array.md).<[Number](Number.md)>}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) |  |
+| `code` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1964,14 +1964,14 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### traitsSum (code, id) → {[Number](Number.html)}
+#### traitsSum (code, id) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) |  |
-| `id` | [Number](Number.html) |  |
+| `code` | [Number](Number.md) |  |
+| `id` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1985,13 +1985,13 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### traitsSumAll (code) → {[Number](Number.html)}
+#### traitsSumAll (code) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) |  |
+| `code` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -2005,14 +2005,14 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
                 </dd>
             </dl>
 
-#### traitsWithId (code, id) → {[Array](Array.html).<[RPG.Trait](RPG.Trait.html)>}
+#### traitsWithId (code, id) → {[Array](Array.md).<[RPG.Trait](RPG.Trait.md)>}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) |  |
-| `id` | [Number](Number.html) |  |
+| `code` | [Number](Number.md) |  |
+| `id` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -2037,13 +2037,13 @@ The superdeclare class of [Game_Battler](Game_Battler.html). It mainly contains 
 <dl>
 </dl>
 
-#### xparam (xparamId) → {[Number](Number.html)}
+#### xparam (xparamId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `xparamId` | [Number](Number.html) |  |
+| `xparamId` | [Number](Number.md) |  |
 
 <dl>
 </dl>

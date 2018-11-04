@@ -10,14 +10,14 @@ The wrapper class for an actor array. Use as global variable [$gameActors](globa
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_data` | [Array](Array.html).<[Game_Actor](Game_Actor.html)> |  |
+| `_data` | [Array](Array.md).<[Game_Actor](Game_Actor.md)> |  |
 
 <dl>
 </dl>
 
 ### Methods
 
-#### actor (actorId) → {[Game_Actor](Game_Actor.html)}
+#### actor (actorId) → {[Game_Actor](Game_Actor.md)}
 
 Returns the actor with the specified id.
 
@@ -25,7 +25,7 @@ The wrapper class for an actor array. Use as global variable [$gameActors](globa
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actorId` | [Number](Number.html) |  |
+| `actorId` | [Number](Number.md) |  |
 
 <dl>
 </dl>

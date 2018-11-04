@@ -10,9 +10,9 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_path` | [String](String.html) | [static] プラグインフォルダのパス |
-| `_scripts` | [Array](Array.html).<[String](String.html)> | [static] |
-| `_errorUrls` | [Array](Array.html).<[String](String.html)> | [static] |
+| `_path` | [String](String.md) | [static] プラグインフォルダのパス |
+| `_scripts` | [Array](Array.md).<[String](String.md)> | [static] |
+| `_errorUrls` | [Array](Array.md).<[String](String.md)> | [static] |
 | `_parameters` | Object | [static] {[key: string]: {[key: string]: string}} |
 
 <dl>
@@ -34,7 +34,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.html) |  スクリプトファイル名 |
+| `name` | [String](String.md) |  スクリプトファイル名 |
 
 <dl>
 </dl>
@@ -60,7 +60,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.html) |  プラグイン名(英字の大小を区別しない) |
+| `name` | [String](String.md) |  プラグイン名(英字の大小を区別しない) |
 
 <dl>
 </dl>
@@ -83,7 +83,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.html) |  プラグイン名(英字の大小を区別しない) |
+| `name` | [String](String.md) |  プラグイン名(英字の大小を区別しない) |
 | `parameters` | Object |  パラメータのキーと値の組み合わせ |
 
 <dl>
@@ -97,7 +97,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `plugins` | [Array](Array.html).<[MV.PluginSettings](MV.PluginSettings.html)> |  |
+| `plugins` | [Array](Array.md).<[MV.PluginSettings](MV.PluginSettings.md)> |  |
 
 <dl>
 </dl>

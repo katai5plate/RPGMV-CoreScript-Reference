@@ -10,8 +10,8 @@ The sprite class with a feature which displays animations.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_animationSprites` | [Array](Array.html).<[Sprite_Animation](Sprite_Animation.html)> | The animation sprites assigned to the sprite object. |
-| `_effectTarget` | [Sprite_Base](Sprite_Base.html) | The target that will have the animations applied to it. |
+| `_animationSprites` | [Array](Array.md).<[Sprite_Animation](Sprite_Animation.md)> | The animation sprites assigned to the sprite object. |
+| `_effectTarget` | [Sprite_Base](Sprite_Base.md) | The target that will have the animations applied to it. |
 | `_hiding` | Boolean | Property determining the sprite's visibility. |
 
 <dl>
@@ -19,7 +19,7 @@ The sprite class with a feature which displays animations.
 
 ### Extends
 
-* [Sprite](Sprite.html)
+* [Sprite](Sprite.md)
 
 ### Methods
 
@@ -85,9 +85,9 @@ The sprite class with a feature which displays animations.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `animation` | [RPG.Animation](RPG.Animation.html) |  |
+| `animation` | [RPG.Animation](RPG.Animation.md) |  |
 | `mirror` | Boolean |  |
-| `delay` | [Number](Number.html) |  |
+| `delay` | [Number](Number.md) |  |
 
 <dl>
 </dl>

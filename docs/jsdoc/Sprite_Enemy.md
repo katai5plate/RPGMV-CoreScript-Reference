@@ -10,22 +10,22 @@ The sprite for displaying an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `battler` | [Game_Enemy](Game_Enemy.html) |  |
-| `_enemy` | [Game_Enemy](Game_Enemy.html) |  |
+| `battler` | [Game_Enemy](Game_Enemy.md) |  |
+| `_enemy` | [Game_Enemy](Game_Enemy.md) |  |
 | `_appeared` | Boolean |  |
-| `_battlerName` | [String](String.html) |  |
-| `_battlerHue` | [Number](Number.html) |  |
-| `_effectType` | [String](String.html) |  |
-| `_effectDuration` | [Number](Number.html) |  |
-| `_shake` | [Number](Number.html) |  |
-| `_stateIconSprite` | [Sprite_StateIcon](Sprite_StateIcon.html) |  |
+| `_battlerName` | [String](String.md) |  |
+| `_battlerHue` | [Number](Number.md) |  |
+| `_effectType` | [String](String.md) |  |
+| `_effectDuration` | [Number](Number.md) |  |
+| `_shake` | [Number](Number.md) |  |
+| `_stateIconSprite` | [Sprite_StateIcon](Sprite_StateIcon.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Sprite_Battler](Sprite_Battler.html)
+* [Sprite_Battler](Sprite_Battler.md)
 
 ### Methods
 
@@ -55,7 +55,7 @@ The sprite for displaying an enemy.
 <dl>
 </dl>
 
-#### damageOffsetX () → {[Number](Number.html)}
+#### damageOffsetX () → {[Number](Number.md)}
 
 <dl>
                 <dt>Overrides:</dt>
@@ -77,7 +77,7 @@ The sprite for displaying an enemy.
                 </dd>
             </dl>
 
-#### damageOffsetY () → {[Number](Number.html)}
+#### damageOffsetY () → {[Number](Number.md)}
 
 <dl>
                 <dt>Overrides:</dt>
@@ -144,7 +144,7 @@ The sprite for displaying an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `battler` | [Game_Enemy](Game_Enemy.html) |  |
+| `battler` | [Game_Enemy](Game_Enemy.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -250,8 +250,8 @@ The sprite for displaying an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.html) |  |
-| `hue` | [Number](Number.html) |  |
+| `name` | [String](String.md) |  |
+| `hue` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -284,7 +284,7 @@ The sprite for displaying an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `battler` | [Game_Enemy](Game_Enemy.html) | Instance of game enemy. |
+| `battler` | [Game_Enemy](Game_Enemy.md) | Instance of game enemy. |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -305,8 +305,8 @@ The sprite for displaying an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -374,9 +374,9 @@ The sprite for displaying an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `animation` | [RPG.Animation](RPG.Animation.html) |  |
+| `animation` | [RPG.Animation](RPG.Animation.md) |  |
 | `mirror` | Boolean |  |
-| `delay` | [Number](Number.html) |  |
+| `delay` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -425,7 +425,7 @@ The sprite for displaying an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `effectType` | [String](String.html) |  |
+| `effectType` | [String](String.md) |  |
 
 <dl>
 </dl>
@@ -442,9 +442,9 @@ The sprite for displaying an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `duration` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `duration` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>

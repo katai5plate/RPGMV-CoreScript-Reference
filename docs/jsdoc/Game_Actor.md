@@ -10,25 +10,25 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `level` | [Number](Number.html) | [read-only] Level |
-| `_actorId` | [Number](Number.html) |  |
-| `_name` | [String](String.html) |  |
-| `_nickname` | [String](String.html) |  |
-| `_profile` | [String](String.html) |  |
-| `_classId` | [Number](Number.html) |  |
-| `_level` | [Number](Number.html) |  |
-| `_characterName` | [String](String.html) |  |
-| `_characterIndex` | [Number](Number.html) |  |
-| `_faceName` | [String](String.html) |  |
-| `_faceIndex` | [Number](Number.html) |  |
-| `_battlerName` | [String](String.html) |  |
+| `level` | [Number](Number.md) | [read-only] Level |
+| `_actorId` | [Number](Number.md) |  |
+| `_name` | [String](String.md) |  |
+| `_nickname` | [String](String.md) |  |
+| `_profile` | [String](String.md) |  |
+| `_classId` | [Number](Number.md) |  |
+| `_level` | [Number](Number.md) |  |
+| `_characterName` | [String](String.md) |  |
+| `_characterIndex` | [Number](Number.md) |  |
+| `_faceName` | [String](String.md) |  |
+| `_faceIndex` | [Number](Number.md) |  |
+| `_battlerName` | [String](String.md) |  |
 | `_exp` | Object | {[classId: number]: number} |
-| `_skills` | [Array](Array.html).<[Number](Number.html)> |  |
-| `_equips` | [Array](Array.html).<[Game_Item](Game_Item.html)> |  |
-| `_actionInputIndex` | [Number](Number.html) |  |
-| `_lastMenuSkill` | [Game_Item](Game_Item.html) |  |
-| `_lastBattleSkill` | [Game_Item](Game_Item.html) |  |
-| `_lastCommandSymbol` | [String](String.html) |  |
+| `_skills` | [Array](Array.md).<[Number](Number.md)> |  |
+| `_equips` | [Array](Array.md).<[Game_Item](Game_Item.md)> |  |
+| `_actionInputIndex` | [Number](Number.md) |  |
+| `_lastMenuSkill` | [Game_Item](Game_Item.md) |  |
+| `_lastBattleSkill` | [Game_Item](Game_Item.md) |  |
+| `_lastCommandSymbol` | [String](String.md) |  |
 | `_stateSteps` | Object | {[stateId: number]: number} |
 
 <dl>
@@ -36,17 +36,17 @@
 
 ### Extends
 
-* [Game_Battler](Game_Battler.html)
+* [Game_Battler](Game_Battler.md)
 
 ### Methods
 
-#### action (index) → {[Game_Action](Game_Action.html)}
+#### action (index) → {[Game_Action](Game_Action.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -68,7 +68,7 @@
                 </dd>
             </dl>
 
-#### actionPlusSet () → {[Array](Array.html).<[Number](Number.html)>}
+#### actionPlusSet () → {[Array](Array.md).<[Number](Number.md)>}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -90,7 +90,7 @@
                 </dd>
             </dl>
 
-#### actor () → {[RPG.Actor](RPG.Actor.html)}
+#### actor () → {[RPG.Actor](RPG.Actor.md)}
 
 Returns the database information of the actor.
 <dl>
@@ -105,7 +105,7 @@
                 </dd>
             </dl>
 
-#### actorId () → {[Number](Number.html)}
+#### actorId () → {[Number](Number.md)}
 
 Returns the id of the actor.
 <dl>
@@ -128,8 +128,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
-| `turns` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
+| `turns` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -150,8 +150,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
-| `turns` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
+| `turns` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -164,7 +164,7 @@
                 </dd>
             </dl>
 
-#### addedSkills () → {[Array](Array.html).<[Number](Number.html)>}
+#### addedSkills () → {[Array](Array.md).<[Number](Number.md)>}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -186,7 +186,7 @@
                 </dd>
             </dl>
 
-#### addedSkillTypes () → {[Array](Array.html).<[Number](Number.html)>}
+#### addedSkillTypes () → {[Array](Array.md).<[Number](Number.md)>}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -216,7 +216,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -235,8 +235,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
-| `value` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -257,7 +257,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -270,7 +270,7 @@
                 </dd>
             </dl>
 
-#### allIcons () → {[Array](Array.html).<[Number](Number.html)>}
+#### allIcons () → {[Array](Array.md).<[Number](Number.md)>}
 
 Returns all of the icons attached to the battler.
 <dl>
@@ -293,7 +293,7 @@
                 </dd>
             </dl>
 
-#### allTraits () → {[Array](Array.html).<[RPG.Trait](RPG.Trait.html)>}
+#### allTraits () → {[Array](Array.md).<[RPG.Trait](RPG.Trait.md)>}
 
 Returns all the traits of the battler.
 <dl>
@@ -330,7 +330,7 @@
                 </dd>
             </dl>
 
-#### armors () → {[Array](Array.html).<[RPG.Armor](RPG.Armor.html)>}
+#### armors () → {[Array](Array.md).<[RPG.Armor](RPG.Armor.md)>}
 
 Returns the armor of the actor.
 <dl>
@@ -345,7 +345,7 @@
                 </dd>
             </dl>
 
-#### attackAnimationId1 () → {[Number](Number.html)}
+#### attackAnimationId1 () → {[Number](Number.md)}
 
 Returns the first attack animation id.
 <dl>
@@ -360,7 +360,7 @@
                 </dd>
             </dl>
 
-#### attackAnimationId2 () → {[Number](Number.html)}
+#### attackAnimationId2 () → {[Number](Number.md)}
 
 Returns the second attack animation id.
 <dl>
@@ -375,7 +375,7 @@
                 </dd>
             </dl>
 
-#### attackElements () → {[Array](Array.html).<[Number](Number.html)>}
+#### attackElements () → {[Array](Array.md).<[Number](Number.md)>}
 
 Returns the attack element ids.
 <dl>
@@ -398,7 +398,7 @@
                 </dd>
             </dl>
 
-#### attackSkillId () → {[Number](Number.html)}
+#### attackSkillId () → {[Number](Number.md)}
 
 Returns the attack skill id in the database.
 <dl>
@@ -421,7 +421,7 @@
                 </dd>
             </dl>
 
-#### attackSpeed () → {[Number](Number.html)}
+#### attackSpeed () → {[Number](Number.md)}
 
 Returns the attack speed of the battler.
 <dl>
@@ -444,7 +444,7 @@
                 </dd>
             </dl>
 
-#### attackStates () → {[Array](Array.html).<[Number](Number.html)>}
+#### attackStates () → {[Array](Array.md).<[Number](Number.md)>}
 
 Returns the attack states of the battler as a list of numbers.
 <dl>
@@ -473,7 +473,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -486,7 +486,7 @@
                 </dd>
             </dl>
 
-#### attackTimesAdd () → {[Number](Number.html)}
+#### attackTimesAdd () → {[Number](Number.md)}
 
 Returns the number of attacks available to the battler.
 <dl>
@@ -509,7 +509,7 @@
                 </dd>
             </dl>
 
-#### bareHandsAnimationId () → {[Number](Number.html)}
+#### bareHandsAnimationId () → {[Number](Number.md)}
 
 Returns the animation id for a barehanded attack.
 <dl>
@@ -524,7 +524,7 @@
                 </dd>
             </dl>
 
-#### bareHandsElementId () → {[Number](Number.html)}
+#### bareHandsElementId () → {[Number](Number.md)}
 
 Returns the element id of barehanded attacks.
 <dl>
@@ -539,7 +539,7 @@
                 </dd>
             </dl>
 
-#### basicFloorDamage () → {[Number](Number.html)}
+#### basicFloorDamage () → {[Number](Number.md)}
 
 Returns the basic floor damage.
 <dl>
@@ -554,7 +554,7 @@
                 </dd>
             </dl>
 
-#### battlerName () → {[String](String.html)}
+#### battlerName () → {[String](String.md)}
 
 <dl>
 </dl>
@@ -568,7 +568,7 @@
                 </dd>
             </dl>
 
-#### benchMembersExpRate () → {[Number](Number.html)}
+#### benchMembersExpRate () → {[Number](Number.md)}
 
 Returns the exp rate of actors not in battle; this is set in the database.
 <dl>
@@ -591,12 +591,12 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `slotId` | [Number](Number.html) |  |
+| `slotId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### buff (paramId) → {[Number](Number.html)}
+#### buff (paramId) → {[Number](Number.md)}
 
 Buffs the current parameter id.
 
@@ -604,7 +604,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -626,14 +626,14 @@
                 </dd>
             </dl>
 
-#### buffIconIndex (buffLevel, paramId) → {[Number](Number.html)}
+#### buffIconIndex (buffLevel, paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `buffLevel` | [Number](Number.html) |  |
-| `paramId` | [Number](Number.html) |  |
+| `buffLevel` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -655,7 +655,7 @@
                 </dd>
             </dl>
 
-#### buffIcons () → {[Array](Array.html).<[Number](Number.html)>}
+#### buffIcons () → {[Array](Array.md).<[Number](Number.md)>}
 
 Returns the array of buff icons attached to the battler; this is determined by the active buffs on the battler.
 <dl>
@@ -678,7 +678,7 @@
                 </dd>
             </dl>
 
-#### buffLength () → {[Number](Number.html)}
+#### buffLength () → {[Number](Number.md)}
 
 Returns the length of the buff.
 <dl>
@@ -701,7 +701,7 @@
                 </dd>
             </dl>
 
-#### calcEquipItemPerformance (item) → {[Number](Number.html)}
+#### calcEquipItemPerformance (item) → {[Number](Number.md)}
 
 Calculates the equip item performance and returns the sum/difference.
 
@@ -709,7 +709,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RPG.EquipItem.html) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
 
 <dl>
 </dl>
@@ -754,7 +754,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RPG.EquipItem.html) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -784,7 +784,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RPG.EquipItem.html) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -814,7 +814,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RPG.EquipItem.html) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -912,7 +912,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -942,7 +942,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableItem](RPG.UsableItem.html) |  |
+| `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -972,7 +972,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `classId` | [Number](Number.html) |  |
+| `classId` | [Number](Number.md) |  |
 | `keepExp` | Boolean |  |
 
 <dl>
@@ -986,8 +986,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `slotId` | [Number](Number.html) |  |
-| `item` | [RPG.EquipItem](RPG.EquipItem.html) |  |
+| `slotId` | [Number](Number.md) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
 
 <dl>
 </dl>
@@ -1000,8 +1000,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `etypeId` | [Number](Number.html) |  |
-| `itemId` | [Number](Number.html) |  |
+| `etypeId` | [Number](Number.md) |  |
+| `itemId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1014,7 +1014,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `exp` | [Number](Number.html) |  |
+| `exp` | [Number](Number.md) |  |
 | `show` | Boolean |  |
 
 <dl>
@@ -1028,13 +1028,13 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `level` | [Number](Number.html) |  |
+| `level` | [Number](Number.md) |  |
 | `show` | Boolean |  |
 
 <dl>
 </dl>
 
-#### characterIndex () → {[Number](Number.html)}
+#### characterIndex () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -1048,7 +1048,7 @@
                 </dd>
             </dl>
 
-#### characterName () → {[String](String.html)}
+#### characterName () → {[String](String.md)}
 
 <dl>
 </dl>
@@ -1068,7 +1068,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `damageRate` | [Number](Number.html) |  |
+| `damageRate` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1246,7 +1246,7 @@
                 </dd>
             </dl>
 
-#### collapseType () → {[Number](Number.html)}
+#### collapseType () → {[Number](Number.md)}
 
 Returns the collapse type of the battler.
 <dl>
@@ -1269,7 +1269,7 @@
                 </dd>
             </dl>
 
-#### confusionLevel () → {[Number](Number.html)}
+#### confusionLevel () → {[Number](Number.md)}
 
 Returns the confusion level of the battler.
 <dl>
@@ -1300,7 +1300,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableItem](RPG.UsableItem.html) |  |
+| `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1313,7 +1313,7 @@
                 </dd>
             </dl>
 
-#### currentAction () → {[Game_Action](Game_Action.html)}
+#### currentAction () → {[Game_Action](Game_Action.md)}
 
 Returns the current action of the battler.
 <dl>
@@ -1336,7 +1336,7 @@
                 </dd>
             </dl>
 
-#### currentClass () → {[RPG.Class](RPG.Class.html)}
+#### currentClass () → {[RPG.Class](RPG.Class.md)}
 
 Returns the current class of the actor from the database.
 <dl>
@@ -1351,7 +1351,7 @@
                 </dd>
             </dl>
 
-#### currentExp () → {[Number](Number.html)}
+#### currentExp () → {[Number](Number.md)}
 
 Returns the current experience points of the actor.
 <dl>
@@ -1366,7 +1366,7 @@
                 </dd>
             </dl>
 
-#### currentLevelExp () → {[Number](Number.html)}
+#### currentLevelExp () → {[Number](Number.md)}
 
 Returns the current level's experience for the actor.
 <dl>
@@ -1381,7 +1381,7 @@
                 </dd>
             </dl>
 
-#### deathStateId () → {[Number](Number.html)}
+#### deathStateId () → {[Number](Number.md)}
 
 Returns the death state id.
 <dl>
@@ -1404,13 +1404,13 @@
                 </dd>
             </dl>
 
-#### debuffRate (paramId) → {[Number](Number.html)}
+#### debuffRate (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1438,7 +1438,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1486,7 +1486,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RPG.EquipItem.html) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
 
 <dl>
 </dl>
@@ -1499,12 +1499,12 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `newSkills` | [Array](Array.html).<[RPG.Skill](RPG.Skill.html)> |  |
+| `newSkills` | [Array](Array.md).<[RPG.Skill](RPG.Skill.md)> |  |
 
 <dl>
 </dl>
 
-#### effectType () → {[String](String.html)}
+#### effectType () → {[String](String.md)}
 
 Returns the effect type of the battler.
 <dl>
@@ -1527,13 +1527,13 @@
                 </dd>
             </dl>
 
-#### elementRate (elementId) → {[Number](Number.html)}
+#### elementRate (elementId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `elementId` | [Number](Number.html) |  |
+| `elementId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1555,7 +1555,7 @@
                 </dd>
             </dl>
 
-#### equips () → {[Array](Array.html).<[RPG.EquipItem](RPG.EquipItem.html)>}
+#### equips () → {[Array](Array.md).<[RPG.EquipItem](RPG.EquipItem.md)>}
 
 Returns the equipment of the actor.
 <dl>
@@ -1570,7 +1570,7 @@
                 </dd>
             </dl>
 
-#### equipSlots () → {[Array](Array.html).<[Number](Number.html)>}
+#### equipSlots () → {[Array](Array.md).<[Number](Number.md)>}
 
 Returns the equip slots of the actor.
 <dl>
@@ -1591,7 +1591,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1612,7 +1612,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -1645,7 +1645,7 @@
 <dl>
 </dl>
 
-#### expForLevel (level) → {[Number](Number.html)}
+#### expForLevel (level) → {[Number](Number.md)}
 
 Returns the exp required to level.
 
@@ -1653,7 +1653,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `level` | [Number](Number.html) |  |
+| `level` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1667,7 +1667,7 @@
                 </dd>
             </dl>
 
-#### faceIndex () → {[Number](Number.html)}
+#### faceIndex () → {[Number](Number.md)}
 
 Returns the face index of the actor.
 <dl>
@@ -1682,7 +1682,7 @@
                 </dd>
             </dl>
 
-#### faceName () → {[String](String.html)}
+#### faceName () → {[String](String.md)}
 
 Returns the face name of the actor; this is the image of faces for the actor.
 <dl>
@@ -1697,7 +1697,7 @@
                 </dd>
             </dl>
 
-#### finalExpRate () → {[Number](Number.html)}
+#### finalExpRate () → {[Number](Number.md)}
 
 Returns the final exp rate of the actor based on if the actor is a reserved party member or an active battle member.
 <dl>
@@ -1712,13 +1712,13 @@
                 </dd>
             </dl>
 
-#### findNewSkills (lastSkills) → {[Array](Array.html).<[RPG.Skill](RPG.Skill.html)>}
+#### findNewSkills (lastSkills) → {[Array](Array.md).<[RPG.Skill](RPG.Skill.md)>}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `lastSkills` | [Array](Array.html).<[RPG.Skill](RPG.Skill.html)> |  |
+| `lastSkills` | [Array](Array.md).<[RPG.Skill](RPG.Skill.md)> |  |
 
 <dl>
 </dl>
@@ -1738,8 +1738,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skillId` | [Number](Number.html) |  |
-| `targetIndex` | [Number](Number.html) |  |
+| `skillId` | [Number](Number.md) |  |
+| `targetIndex` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1760,8 +1760,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `slotId` | [Number](Number.html) |  |
-| `item` | [RPG.EquipItem](RPG.EquipItem.html) |  |
+| `slotId` | [Number](Number.md) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
 
 <dl>
 </dl>
@@ -1774,12 +1774,12 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skillId` | [Number](Number.html) |  |
+| `skillId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### friendsUnit () → {[Game_Party](Game_Party.html)}
+#### friendsUnit () → {[Game_Party](Game_Party.md)}
 
 <dl>
 </dl>
@@ -1801,7 +1801,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `exp` | [Number](Number.html) |  |
+| `exp` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1814,7 +1814,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.html) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1835,7 +1835,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.html) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1856,7 +1856,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.html) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1877,7 +1877,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.html) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1890,7 +1890,7 @@
                 </dd>
             </dl>
 
-#### guardSkillId () → {[Number](Number.html)}
+#### guardSkillId () → {[Number](Number.md)}
 
 Returns the guard skill id in the database.
 <dl>
@@ -1921,7 +1921,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `armor` | [RPG.Armor](RPG.Armor.html) |  |
+| `armor` | [RPG.Armor](RPG.Armor.md) |  |
 
 <dl>
 </dl>
@@ -1956,7 +1956,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skillId` | [Number](Number.html) |  |
+| `skillId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1978,7 +1978,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `weapon` | [RPG.Weapon](RPG.Weapon.html) |  |
+| `weapon` | [RPG.Weapon](RPG.Weapon.md) |  |
 
 <dl>
 </dl>
@@ -2006,7 +2006,7 @@
                 </dd>
             </dl>
 
-#### hpRate () → {[Number](Number.html)}
+#### hpRate () → {[Number](Number.md)}
 
 Returns the percentage of the battler's hp left as a float.
 <dl>
@@ -2035,7 +2035,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2048,7 +2048,7 @@
                 </dd>
             </dl>
 
-#### index () → {[Number](Number.html)}
+#### index () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -2070,7 +2070,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `equips` | [Array](Array.html).<[Number](Number.html)> |  |
+| `equips` | [Array](Array.md).<[Number](Number.md)> |  |
 
 <dl>
 </dl>
@@ -2089,7 +2089,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actorId` | [Number](Number.html) |  |
+| `actorId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -2141,7 +2141,7 @@
                 </dd>
             </dl>
 
-#### inputtingAction () → {[Game_Action](Game_Action.html)}
+#### inputtingAction () → {[Game_Action](Game_Action.md)}
 
 Returns action the actor is inputting.
 <dl>
@@ -2313,7 +2313,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2341,7 +2341,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2369,7 +2369,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2422,7 +2422,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `gameClass` | [RPG.Class](RPG.Class.html) |  |
+| `gameClass` | [RPG.Class](RPG.Class.md) |  |
 
 <dl>
 </dl>
@@ -2532,7 +2532,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2651,7 +2651,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `atypeId` | [Number](Number.html) |  |
+| `atypeId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2681,7 +2681,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `slotId` | [Number](Number.html) |  |
+| `slotId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -2703,7 +2703,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RPG.EquipItem.html) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
 
 <dl>
 </dl>
@@ -2723,7 +2723,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `etypeId` | [Number](Number.html) |  |
+| `etypeId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2751,7 +2751,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `etypeId` | [Number](Number.html) |  |
+| `etypeId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2779,7 +2779,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `wtypeId` | [Number](Number.html) |  |
+| `wtypeId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2915,7 +2915,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skillId` | [Number](Number.html) |  |
+| `skillId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -2935,7 +2935,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2963,7 +2963,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3053,7 +3053,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableItem](RPG.UsableItem.html) |  |
+| `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3149,7 +3149,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stypeId` | [Number](Number.html) |  |
+| `stypeId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3177,7 +3177,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stypeId` | [Number](Number.html) |  |
+| `stypeId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3205,7 +3205,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -3250,7 +3250,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3280,7 +3280,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3310,7 +3310,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3338,7 +3338,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3368,7 +3368,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3486,7 +3486,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `wtypeId` | [Number](Number.html) |  |
+| `wtypeId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -3500,7 +3500,7 @@
                 </dd>
             </dl>
 
-#### lastBattleSkill () → {[RPG.Skill](RPG.Skill.html)}
+#### lastBattleSkill () → {[RPG.Skill](RPG.Skill.md)}
 
 Returns the last battle skill of the actor.
 <dl>
@@ -3515,7 +3515,7 @@
                 </dd>
             </dl>
 
-#### lastCommandSymbol () → {[String](String.html)}
+#### lastCommandSymbol () → {[String](String.md)}
 
 Returns the last command symbol that the actor used.
 <dl>
@@ -3530,7 +3530,7 @@
                 </dd>
             </dl>
 
-#### lastMenuSkill () → {[RPG.Skill](RPG.Skill.html)}
+#### lastMenuSkill () → {[RPG.Skill](RPG.Skill.md)}
 
 Returns the last menu skill of the actor.
 <dl>
@@ -3553,7 +3553,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skillId` | [Number](Number.html) |  |
+| `skillId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -3570,7 +3570,7 @@
 <dl>
 </dl>
 
-#### makeActionList () → {[Array](Array.html).<[Game_Action](Game_Action.html)>}
+#### makeActionList () → {[Array](Array.md).<[Game_Action](Game_Action.md)>}
 
 Creates the action list for the actor.
 <dl>
@@ -3598,7 +3598,7 @@
                 </dd>
             </dl>
 
-#### makeActionTimes () → {[Number](Number.html)}
+#### makeActionTimes () → {[Number](Number.md)}
 
 Creates the number of times for an action.
 <dl>
@@ -3646,7 +3646,7 @@
                 </dd>
             </dl>
 
-#### maxFloorDamage () → {[Number](Number.html)}
+#### maxFloorDamage () → {[Number](Number.md)}
 
 Returns the max floor damage.
 <dl>
@@ -3667,7 +3667,7 @@
 <dl>
 </dl>
 
-#### maxSlipDamage () → {[Number](Number.html)}
+#### maxSlipDamage () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3689,7 +3689,7 @@
                 </dd>
             </dl>
 
-#### maxTp () → {[Number](Number.html)}
+#### maxTp () → {[Number](Number.md)}
 
 Returns the maximum tp of the battler.
 <dl>
@@ -3720,7 +3720,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.Item](RPG.Item.html) |  |
+| `item` | [RPG.Item](RPG.Item.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3750,7 +3750,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3778,7 +3778,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableItem](RPG.UsableItem.html) |  |
+| `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -3800,7 +3800,7 @@
                 </dd>
             </dl>
 
-#### mostImportantStateText () → {[String](String.html)}
+#### mostImportantStateText () → {[String](String.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3822,7 +3822,7 @@
                 </dd>
             </dl>
 
-#### motionType () → {[String](String.html)}
+#### motionType () → {[String](String.md)}
 
 Returns the motion type of the battler.
 <dl>
@@ -3845,7 +3845,7 @@
                 </dd>
             </dl>
 
-#### mpRate () → {[Number](Number.html)}
+#### mpRate () → {[Number](Number.md)}
 
 Returns the percentage of the battler's mp left as a float.
 <dl>
@@ -3876,12 +3876,12 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.html) |  |
+| `name` | [String](String.md) |  |
 
 <dl>
 </dl>
 
-#### nextLevelExp () → {[Number](Number.html)}
+#### nextLevelExp () → {[Number](Number.md)}
 
 Returns the experience points for the next level of the actor.
 <dl>
@@ -3896,7 +3896,7 @@
                 </dd>
             </dl>
 
-#### nextRequiredExp () → {[Number](Number.html)}
+#### nextRequiredExp () → {[Number](Number.md)}
 
 Returns the next required experience points for the actor to level up.
 <dl>
@@ -3911,7 +3911,7 @@
                 </dd>
             </dl>
 
-#### nickname () → {[String](String.html)}
+#### nickname () → {[String](String.md)}
 
 Returns the nickname of the actor.
 <dl>
@@ -3926,7 +3926,7 @@
                 </dd>
             </dl>
 
-#### numActions () → {[Number](Number.html)}
+#### numActions () → {[Number](Number.md)}
 
 Returns the number of battler actions.
 <dl>
@@ -3994,7 +3994,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.html) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4040,7 +4040,7 @@
                 </dd>
             </dl>
 
-#### opponentsUnit () → {[Game_Troop](Game_Troop.html)}
+#### opponentsUnit () → {[Game_Troop](Game_Troop.md)}
 
 <dl>
 </dl>
@@ -4066,8 +4066,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
-| `turns` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
+| `turns` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4080,7 +4080,7 @@
                 </dd>
             </dl>
 
-#### param (paramId) → {[Number](Number.html)}
+#### param (paramId) → {[Number](Number.md)}
 
 Returns a standard parameter, given a paramId; standard parameters include: HP, MP, Atk, M.Atk, Def, M.Def, Luck, Agility.
 
@@ -4088,7 +4088,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4110,13 +4110,13 @@
                 </dd>
             </dl>
 
-#### paramBase (paramId) → {[Number](Number.html)}
+#### paramBase (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -4138,13 +4138,13 @@
                 </dd>
             </dl>
 
-#### paramBuffRate (paramId) → {[Number](Number.html)}
+#### paramBuffRate (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4166,13 +4166,13 @@
                 </dd>
             </dl>
 
-#### paramMax (paramId) → {[Number](Number.html)}
+#### paramMax (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -4194,13 +4194,13 @@
                 </dd>
             </dl>
 
-#### paramMin (paramId) → {[Number](Number.html)}
+#### paramMin (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4222,13 +4222,13 @@
                 </dd>
             </dl>
 
-#### paramPlus (paramId) → {[Number](Number.html)}
+#### paramPlus (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -4250,13 +4250,13 @@
                 </dd>
             </dl>
 
-#### paramRate (paramId) → {[Number](Number.html)}
+#### paramRate (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4284,7 +4284,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `abilityId` | [Number](Number.html) |  |
+| `abilityId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4314,7 +4314,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4333,7 +4333,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `action` | [Game_Action](Game_Action.html) |  |
+| `action` | [Game_Action](Game_Action.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -4365,7 +4365,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `action` | [Game_Action](Game_Action.html) |  |
+| `action` | [Game_Action](Game_Action.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -4511,7 +4511,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
+| `target` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4530,7 +4530,7 @@
 <dl>
 </dl>
 
-#### profile () → {[String](String.html)}
+#### profile () → {[String](String.md)}
 
 Returns the actor profile.
 <dl>
@@ -4675,7 +4675,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4723,7 +4723,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4742,7 +4742,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `timing` | [Number](Number.html) |  |
+| `timing` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4774,7 +4774,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `effectType` | [String](String.html) |  |
+| `effectType` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4795,7 +4795,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `motionType` | [String](String.html) |  |
+| `motionType` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4829,7 +4829,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -4842,7 +4842,7 @@
                 </dd>
             </dl>
 
-#### restriction () → {[Number](Number.html)}
+#### restriction () → {[Number](Number.md)}
 
 Returns the number of the restriction.
 <dl>
@@ -4865,7 +4865,7 @@
                 </dd>
             </dl>
 
-#### result () → {[Game_ActionResult](Game_ActionResult.html)}
+#### result () → {[Game_ActionResult](Game_ActionResult.md)}
 
 Returns the battler action result.
 <dl>
@@ -4951,8 +4951,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
-| `action` | [Game_Action](Game_Action.html) |  |
+| `index` | [Number](Number.md) |  |
+| `action` | [Game_Action](Game_Action.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4971,7 +4971,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actionState` | [String](String.html) |  |
+| `actionState` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4992,7 +4992,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `battlerName` | [String](String.html) |  |
+| `battlerName` | [String](String.md) |  |
 
 <dl>
 </dl>
@@ -5003,8 +5003,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `characterName` | [String](String.html) |  |
-| `characterIndex` | [Number](Number.html) |  |
+| `characterName` | [String](String.md) |  |
+| `characterIndex` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -5017,8 +5017,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `faceName` | [String](String.html) |  |
-| `faceIndex` | [Number](Number.html) |  |
+| `faceName` | [String](String.md) |  |
+| `faceIndex` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -5031,7 +5031,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `hp` | [Number](Number.html) |  |
+| `hp` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5050,7 +5050,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
 </dl>
@@ -5063,7 +5063,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `symbol` | [String](String.html) |  |
+| `symbol` | [String](String.md) |  |
 
 <dl>
 </dl>
@@ -5074,7 +5074,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
 </dl>
@@ -5085,7 +5085,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
+| `target` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5106,7 +5106,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `mp` | [Number](Number.html) |  |
+| `mp` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5127,7 +5127,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.html) |  |
+| `name` | [String](String.md) |  |
 
 <dl>
 </dl>
@@ -5140,7 +5140,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `nickname` | [String](String.html) |  |
+| `nickname` | [String](String.md) |  |
 
 <dl>
 </dl>
@@ -5153,7 +5153,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `profile` | [String](String.html) |  |
+| `profile` | [String](String.md) |  |
 
 <dl>
 </dl>
@@ -5166,7 +5166,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tp` | [Number](Number.html) |  |
+| `tp` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5185,12 +5185,12 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actorId` | [Number](Number.html) |  |
+| `actorId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### shiftAnimation () → {[MV.BattlerAnimation](MV.BattlerAnimation.html)}
+#### shiftAnimation () → {[MV.BattlerAnimation](MV.BattlerAnimation.md)}
 
 Shifts the battler animation.
 <dl>
@@ -5240,7 +5240,7 @@
 <dl>
 </dl>
 
-#### skillMpCost (skill) → {[Number](Number.html)}
+#### skillMpCost (skill) → {[Number](Number.md)}
 
 Returns the mp cost of the skill.
 
@@ -5248,7 +5248,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5270,7 +5270,7 @@
                 </dd>
             </dl>
 
-#### skills () → {[Array](Array.html).<[RPG.Skill](RPG.Skill.html)>}
+#### skills () → {[Array](Array.md).<[RPG.Skill](RPG.Skill.md)>}
 
 Returns the actor's skills; even if the skills are not usable.
 <dl>
@@ -5285,7 +5285,7 @@
                 </dd>
             </dl>
 
-#### skillTpCost (skill) → {[Number](Number.html)}
+#### skillTpCost (skill) → {[Number](Number.md)}
 
 Returns the tp cost of the skill.
 
@@ -5293,7 +5293,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5315,7 +5315,7 @@
                 </dd>
             </dl>
 
-#### slotType () → {[Number](Number.html)}
+#### slotType () → {[Number](Number.md)}
 
 Returns the battler slot type of a trait.
 <dl>
@@ -5352,13 +5352,13 @@
                 </dd>
             </dl>
 
-#### sparam (sparamId) → {[Number](Number.html)}
+#### sparam (sparamId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `sparamId` | [Number](Number.html) |  |
+| `sparamId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5386,7 +5386,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `flagId` | [Number](Number.html) |  |
+| `flagId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5408,7 +5408,7 @@
                 </dd>
             </dl>
 
-#### speed () → {[Number](Number.html)}
+#### speed () → {[Number](Number.md)}
 
 Returns the speed of the battler.
 <dl>
@@ -5439,9 +5439,9 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `animationId` | [Number](Number.html) |  |
+| `animationId` | [Number](Number.md) |  |
 | `mirror` | Boolean |  |
-| `delay` | [Number](Number.html) |  |
+| `delay` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -5476,7 +5476,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `weaponImageId` | [Number](Number.html) |  |
+| `weaponImageId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5489,7 +5489,7 @@
                 </dd>
             </dl>
 
-#### stateIcons () → {[Array](Array.html).<[Number](Number.html)>}
+#### stateIcons () → {[Array](Array.md).<[Number](Number.md)>}
 
 Returns the array of state icons attached to the battler; this is determined by the active states on the battler.
 <dl>
@@ -5512,7 +5512,7 @@
                 </dd>
             </dl>
 
-#### stateMotionIndex () → {[Number](Number.html)}
+#### stateMotionIndex () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5534,7 +5534,7 @@
                 </dd>
             </dl>
 
-#### stateOverlayIndex () → {[Number](Number.html)}
+#### stateOverlayIndex () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5556,13 +5556,13 @@
                 </dd>
             </dl>
 
-#### stateRate (stateId) → {[Number](Number.html)}
+#### stateRate (stateId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5584,7 +5584,7 @@
                 </dd>
             </dl>
 
-#### stateResistSet () → {[Array](Array.html).<[Number](Number.html)>}
+#### stateResistSet () → {[Array](Array.md).<[Number](Number.md)>}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5606,7 +5606,7 @@
                 </dd>
             </dl>
 
-#### states () → {[Array](Array.html).<[RPG.State](RPG.State.html)>}
+#### states () → {[Array](Array.md).<[RPG.State](RPG.State.md)>}
 
 Returns the states applied to the battler.
 <dl>
@@ -5629,7 +5629,7 @@
                 </dd>
             </dl>
 
-#### stepsForTurn () → {[Number](Number.html)}
+#### stepsForTurn () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -5649,12 +5649,12 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
 
 <dl>
 </dl>
 
-#### tpRate () → {[Number](Number.html)}
+#### tpRate () → {[Number](Number.md)}
 
 Returns the percentage of the battler's tp left as a float.
 <dl>
@@ -5685,8 +5685,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `newItem` | [RPG.EquipItem](RPG.EquipItem.html) |  |
-| `oldItem` | [RPG.EquipItem](RPG.EquipItem.html) |  |
+| `newItem` | [RPG.EquipItem](RPG.EquipItem.md) |  |
+| `oldItem` | [RPG.EquipItem](RPG.EquipItem.md) |  |
 
 <dl>
 </dl>
@@ -5700,7 +5700,7 @@
                 </dd>
             </dl>
 
-#### traitObjects () → {[Array](Array.html).<*>}
+#### traitObjects () → {[Array](Array.md).<*>}
 
 <dl>
                 <dt>Overrides:</dt>
@@ -5722,13 +5722,13 @@
                 </dd>
             </dl>
 
-#### traits (code) → {[Array](Array.html).<[RPG.Trait](RPG.Trait.html)>}
+#### traits (code) → {[Array](Array.md).<[RPG.Trait](RPG.Trait.md)>}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) |  |
+| `code` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5750,14 +5750,14 @@
                 </dd>
             </dl>
 
-#### traitsPi (code, id) → {[Number](Number.html)}
+#### traitsPi (code, id) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) |  |
-| `id` | [Number](Number.html) |  |
+| `code` | [Number](Number.md) |  |
+| `id` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5779,13 +5779,13 @@
                 </dd>
             </dl>
 
-#### traitsSet (code) → {[Array](Array.html).<[Number](Number.html)>}
+#### traitsSet (code) → {[Array](Array.md).<[Number](Number.md)>}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) |  |
+| `code` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5807,14 +5807,14 @@
                 </dd>
             </dl>
 
-#### traitsSum (code, id) → {[Number](Number.html)}
+#### traitsSum (code, id) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) |  |
-| `id` | [Number](Number.html) |  |
+| `code` | [Number](Number.md) |  |
+| `id` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5836,13 +5836,13 @@
                 </dd>
             </dl>
 
-#### traitsSumAll (code) → {[Number](Number.html)}
+#### traitsSumAll (code) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) |  |
+| `code` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5864,14 +5864,14 @@
                 </dd>
             </dl>
 
-#### traitsWithId (code, id) → {[Array](Array.html).<[RPG.Trait](RPG.Trait.html)>}
+#### traitsWithId (code, id) → {[Array](Array.md).<[RPG.Trait](RPG.Trait.md)>}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) |  |
-| `id` | [Number](Number.html) |  |
+| `code` | [Number](Number.md) |  |
+| `id` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5918,7 +5918,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `state` | [RPG.State](RPG.State.html) |  |
+| `state` | [RPG.State](RPG.State.md) |  |
 
 <dl>
 </dl>
@@ -5936,7 +5936,7 @@
                 </dd>
             </dl>
 
-#### usableSkills () → {[Array](Array.html).<[RPG.Skill](RPG.Skill.html)>}
+#### usableSkills () → {[Array](Array.md).<[RPG.Skill](RPG.Skill.md)>}
 
 Returns the usable skills of the actor.
 <dl>
@@ -5959,7 +5959,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableItem](RPG.UsableItem.html) |  |
+| `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5972,7 +5972,7 @@
                 </dd>
             </dl>
 
-#### weaponImageId () → {[Number](Number.html)}
+#### weaponImageId () → {[Number](Number.md)}
 
 Returns the weapon image id.
 <dl>
@@ -5995,7 +5995,7 @@
                 </dd>
             </dl>
 
-#### weapons () → {[Array](Array.html).<[RPG.Weapon](RPG.Weapon.html)>}
+#### weapons () → {[Array](Array.md).<[RPG.Weapon](RPG.Weapon.md)>}
 
 Returns the weapon of the actor.
 <dl>
@@ -6010,13 +6010,13 @@
                 </dd>
             </dl>
 
-#### xparam (xparamId) → {[Number](Number.html)}
+#### xparam (xparamId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `xparamId` | [Number](Number.html) |  |
+| `xparamId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>

@@ -1,6 +1,6 @@
 # Class: Troop
 
-## [RPG](RPG.html).  Troop ()
+## [RPG](RPG.md).  Troop ()
 
 #### new Troop ()
 
@@ -10,10 +10,10 @@ The JSON data structure of a troop. Define to [$dataTroops](global.html#$dataTro
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `id` | [Number](Number.html) | The troop ID. |
-| `name` | [String](String.html) | The troop name. |
-| `members` | [Array](Array.html).<[Troop.Member](Troop.Member.html)> | The troop members. |
-| `pages` | [Array](Array.html).<[RPG.BattleEventPage](RPG.BattleEventPage.html)> | The battle events. |
+| `id` | [Number](Number.md) | The troop ID. |
+| `name` | [String](String.md) | The troop name. |
+| `members` | [Array](Array.md).<[Troop.Member](Troop.Member.md)> | The troop members. |
+| `pages` | [Array](Array.md).<[RPG.BattleEventPage](RPG.BattleEventPage.md)> | The battle events. |
 
 <dl>
 </dl>

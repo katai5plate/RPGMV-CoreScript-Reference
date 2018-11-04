@@ -2,330 +2,330 @@
 
 ### Members
 
-#### $dataActors :[Array](Array.html).<[RPG.Actor](RPG.Actor.html)>
+#### $dataActors :[Array](Array.md).<[RPG.Actor](RPG.Actor.md)>
 
  アクター用JSON( data/Actors.json )のデータ構造。
 
 ##### Type:
 
-* [Array](Array.html).<[RPG.Actor](RPG.Actor.html)>
+* [Array](Array.md).<[RPG.Actor](RPG.Actor.md)>
 
 <dl>
 </dl>
 
-#### $dataAnimations :[Array](Array.html).<[RPG.Animation](RPG.Animation.html)>
+#### $dataAnimations :[Array](Array.md).<[RPG.Animation](RPG.Animation.md)>
 
  アニメーション用JSON( data/Animations.json )のデータ構造。
 
 ##### Type:
 
-* [Array](Array.html).<[RPG.Animation](RPG.Animation.html)>
+* [Array](Array.md).<[RPG.Animation](RPG.Animation.md)>
 
 <dl>
 </dl>
 
-#### $dataArmors :[Array](Array.html).<[RPG.Armor](RPG.Armor.html)>
+#### $dataArmors :[Array](Array.md).<[RPG.Armor](RPG.Armor.md)>
 
  防具用JSON( data/Armors.json )のデータ構造。
 
 ##### Type:
 
-* [Array](Array.html).<[RPG.Armor](RPG.Armor.html)>
+* [Array](Array.md).<[RPG.Armor](RPG.Armor.md)>
 
 <dl>
 </dl>
 
-#### $dataClasses :[Array](Array.html).<[RPG.Class](RPG.Class.html)>
+#### $dataClasses :[Array](Array.md).<[RPG.Class](RPG.Class.md)>
 
  クラス用JSON( data/Classes.json )のデータ構造。
 
 ##### Type:
 
-* [Array](Array.html).<[RPG.Class](RPG.Class.html)>
+* [Array](Array.md).<[RPG.Class](RPG.Class.md)>
 
 <dl>
 </dl>
 
-#### $dataCommonEvents :[Array](Array.html).<[RPG.CommonEvent](RPG.CommonEvent.html)>
+#### $dataCommonEvents :[Array](Array.md).<[RPG.CommonEvent](RPG.CommonEvent.md)>
 
  コモンイベント用JSON( data/CommonEvents.json )のデータ構造。
 
 ##### Type:
 
-* [Array](Array.html).<[RPG.CommonEvent](RPG.CommonEvent.html)>
+* [Array](Array.md).<[RPG.CommonEvent](RPG.CommonEvent.md)>
 
 <dl>
 </dl>
 
-#### $dataEnemies :[Array](Array.html).<[RPG.Enemy](RPG.Enemy.html)>
+#### $dataEnemies :[Array](Array.md).<[RPG.Enemy](RPG.Enemy.md)>
 
  敵用JSON( data/Enemies.json )のデータ構造。 RPGMakerMV Enemy data.
 
 ##### Type:
 
-* [Array](Array.html).<[RPG.Enemy](RPG.Enemy.html)>
+* [Array](Array.md).<[RPG.Enemy](RPG.Enemy.md)>
 
 <dl>
 </dl>
 
-#### $dataItems :[Array](Array.html).<[RPG.Item](RPG.Item.html)>
+#### $dataItems :[Array](Array.md).<[RPG.Item](RPG.Item.md)>
 
  アイテム用JSON( data/Items.json )のデータ構造。
 
 ##### Type:
 
-* [Array](Array.html).<[RPG.Item](RPG.Item.html)>
+* [Array](Array.md).<[RPG.Item](RPG.Item.md)>
 
 <dl>
 </dl>
 
-#### $dataMap :[RPG.Map](RPG.Map.html)
+#### $dataMap :[RPG.Map](RPG.Map.md)
 
  現在のマップ用JSON( data/MapXXX.json( XXX は3桁の数値) )のデータ構造。
 
 ##### Type:
 
-* [RPG.Map](RPG.Map.html)
+* [RPG.Map](RPG.Map.md)
 
 <dl>
 </dl>
 
-#### $dataMapInfos :[Array](Array.html).<[RPG.MapInfo](RPG.MapInfo.html)>
+#### $dataMapInfos :[Array](Array.md).<[RPG.MapInfo](RPG.MapInfo.md)>
 
  マップ情報用JSON( data/MapInfo.json )のデータ構造。
 
 ##### Type:
 
-* [Array](Array.html).<[RPG.MapInfo](RPG.MapInfo.html)>
+* [Array](Array.md).<[RPG.MapInfo](RPG.MapInfo.md)>
 
 <dl>
 </dl>
 
-#### $dataSkills :[Array](Array.html).<[RPG.Skill](RPG.Skill.html)>
+#### $dataSkills :[Array](Array.md).<[RPG.Skill](RPG.Skill.md)>
 
  スキル用JSON( data/Skills.json )のデータ構造。
 
 ##### Type:
 
-* [Array](Array.html).<[RPG.Skill](RPG.Skill.html)>
+* [Array](Array.md).<[RPG.Skill](RPG.Skill.md)>
 
 <dl>
 </dl>
 
-#### $dataStates :[Array](Array.html).<[RPG.State](RPG.State.html)>
+#### $dataStates :[Array](Array.md).<[RPG.State](RPG.State.md)>
 
  状態用JSON( data/States.json )のデータ構造。
 
 ##### Type:
 
-* [Array](Array.html).<[RPG.State](RPG.State.html)>
+* [Array](Array.md).<[RPG.State](RPG.State.md)>
 
 <dl>
 </dl>
 
-#### $dataSystem :[RPG.System](RPG.System.html)
+#### $dataSystem :[RPG.System](RPG.System.md)
 
  システム用JSON( data/System.json )のデータ構造。
 
 ##### Type:
 
-* [RPG.System](RPG.System.html)
+* [RPG.System](RPG.System.md)
 
 <dl>
 </dl>
 
-#### $dataTilesets :[Array](Array.html).<[RPG.Tileset](RPG.Tileset.html)>
+#### $dataTilesets :[Array](Array.md).<[RPG.Tileset](RPG.Tileset.md)>
 
  タイルセット用JSON( data/Tilesets.json )のデータ構造。
 
 ##### Type:
 
-* [Array](Array.html).<[RPG.Tileset](RPG.Tileset.html)>
+* [Array](Array.md).<[RPG.Tileset](RPG.Tileset.md)>
 
 <dl>
 </dl>
 
-#### $dataTroops :[Array](Array.html).<[RPG.Troop](RPG.Troop.html)>
+#### $dataTroops :[Array](Array.md).<[RPG.Troop](RPG.Troop.md)>
 
  敵グループ用JSON( data/Troops.json )のデータ構造。
 
 ##### Type:
 
-* [Array](Array.html).<[RPG.Troop](RPG.Troop.html)>
+* [Array](Array.md).<[RPG.Troop](RPG.Troop.md)>
 
 <dl>
 </dl>
 
-#### $dataWeapons :[Array](Array.html).<[RPG.Weapon](RPG.Weapon.html)>
+#### $dataWeapons :[Array](Array.md).<[RPG.Weapon](RPG.Weapon.md)>
 
  武器用JSON( data/Weapons.json )のデータ構造。
 
 ##### Type:
 
-* [Array](Array.html).<[RPG.Weapon](RPG.Weapon.html)>
+* [Array](Array.md).<[RPG.Weapon](RPG.Weapon.md)>
 
 <dl>
 </dl>
 
-#### $gameActors :[Game_Actors](Game_Actors.html)
+#### $gameActors :[Game_Actors](Game_Actors.md)
 
 [アクター]管理用の静的クラス。
 
 ##### Type:
 
-* [Game_Actors](Game_Actors.html)
+* [Game_Actors](Game_Actors.md)
 
 <dl>
 </dl>
 
-#### $gameMap :[Game_Map](Game_Map.html)
+#### $gameMap :[Game_Map](Game_Map.md)
 
 [マップ]管理用の静的クラス。
 
 ##### Type:
 
-* [Game_Map](Game_Map.html)
+* [Game_Map](Game_Map.md)
 
 <dl>
 </dl>
 
-#### $gameMessage :[Game_Message](Game_Message.html)
+#### $gameMessage :[Game_Message](Game_Message.md)
 
  メッセージ管理用の静的クラス。
 
 ##### Type:
 
-* [Game_Message](Game_Message.html)
+* [Game_Message](Game_Message.md)
 
 <dl>
 </dl>
 
-#### $gameParty :[Game_Party](Game_Party.html)
+#### $gameParty :[Game_Party](Game_Party.md)
 
 [パーティー]管理用の静的クラス。
 
 ##### Type:
 
-* [Game_Party](Game_Party.html)
+* [Game_Party](Game_Party.md)
 
 <dl>
 </dl>
 
-#### $gamePlayer :[Game_Player](Game_Player.html)
+#### $gamePlayer :[Game_Player](Game_Player.md)
 
 [プレイヤー]管理用の静的クラス。
 
 ##### Type:
 
-* [Game_Player](Game_Player.html)
+* [Game_Player](Game_Player.md)
 
 <dl>
 </dl>
 
-#### $gameScreen :[Game_Screen](Game_Screen.html)
+#### $gameScreen :[Game_Screen](Game_Screen.md)
 
  画面管理用の静的クラス。
 
 ##### Type:
 
-* [Game_Screen](Game_Screen.html)
+* [Game_Screen](Game_Screen.md)
 
 <dl>
 </dl>
 
-#### $gameSelfSwitches :[Game_SelfSwitches](Game_SelfSwitches.html)
+#### $gameSelfSwitches :[Game_SelfSwitches](Game_SelfSwitches.md)
 
 [セルフスイッチ]管理用の静的クラス。
 
 ##### Type:
 
-* [Game_SelfSwitches](Game_SelfSwitches.html)
+* [Game_SelfSwitches](Game_SelfSwitches.md)
 
 <dl>
 </dl>
 
-#### $gameSwitches :[Game_Switches](Game_Switches.html)
+#### $gameSwitches :[Game_Switches](Game_Switches.md)
 
 [スイッチ]管理用の静的クラス。
 
 ##### Type:
 
-* [Game_Switches](Game_Switches.html)
+* [Game_Switches](Game_Switches.md)
 
 <dl>
 </dl>
 
-#### $gameSystem :[Game_System](Game_System.html)
+#### $gameSystem :[Game_System](Game_System.md)
 
 [システム]管理用の静的クラス。※セーブされる
 
 ##### Type:
 
-* [Game_System](Game_System.html)
+* [Game_System](Game_System.md)
 
 <dl>
 </dl>
 
-#### $gameTemp :[Game_Temp](Game_Temp.html)
+#### $gameTemp :[Game_Temp](Game_Temp.md)
 
 RPGMakerMV Temporary game data; not saved with the game.
 
 ##### Type:
 
-* [Game_Temp](Game_Temp.html)
+* [Game_Temp](Game_Temp.md)
 
 <dl>
 </dl>
 
-#### $gameTimer :[Game_Timer](Game_Timer.html)
+#### $gameTimer :[Game_Timer](Game_Timer.md)
 
  タイマー管理用の静的クラス。
 
 ##### Type:
 
-* [Game_Timer](Game_Timer.html)
+* [Game_Timer](Game_Timer.md)
 
 <dl>
 </dl>
 
-#### $gameTroop :[Game_Troop](Game_Troop.html)
+#### $gameTroop :[Game_Troop](Game_Troop.md)
 
 [敵グループ]管理用の静的クラス。
 
 ##### Type:
 
-* [Game_Troop](Game_Troop.html)
+* [Game_Troop](Game_Troop.md)
 
 <dl>
 </dl>
 
-#### $gameVariables :[Game_Variables](Game_Variables.html)
+#### $gameVariables :[Game_Variables](Game_Variables.md)
 
 [変数]管理用の静的クラス。
 
 ##### Type:
 
-* [Game_Variables](Game_Variables.html)
+* [Game_Variables](Game_Variables.md)
 
 <dl>
 </dl>
 
-#### $plugins :[Array](Array.html).<[MV.PluginSettings](MV.PluginSettings.html)>
+#### $plugins :[Array](Array.md).<[MV.PluginSettings](MV.PluginSettings.md)>
 
 RPGツクールMV プラグイン設定( js/plugins.js )の配列。
 
 ##### Type:
 
-* [Array](Array.html).<[MV.PluginSettings](MV.PluginSettings.html)>
+* [Array](Array.md).<[MV.PluginSettings](MV.PluginSettings.md)>
 
 <dl>
 </dl>
 
-#### $testEvent :[Array](Array.html).<[RPG.EventCommand](RPG.EventCommand.html)>
+#### $testEvent :[Array](Array.md).<[RPG.EventCommand](RPG.EventCommand.md)>
 
 ##### Type:
 
-* [Array](Array.html).<[RPG.EventCommand](RPG.EventCommand.html)>
+* [Array](Array.md).<[RPG.EventCommand](RPG.EventCommand.md)>
 
 <dl>
 </dl>

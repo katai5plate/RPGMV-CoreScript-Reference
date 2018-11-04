@@ -1,6 +1,6 @@
 # Class: Motion
 
-## [MV](MV.html).  Motion ()
+## [MV](MV.md).  Motion ()
 
 #### new Motion ()
 
@@ -8,7 +8,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 | `loop` | Boolean |  |
 
 <dl>

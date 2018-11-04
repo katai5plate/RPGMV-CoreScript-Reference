@@ -1,6 +1,6 @@
 # Class: EventCommand
 
-## [RPG](RPG.html).  EventCommand ()
+## [RPG](RPG.md).  EventCommand ()
 
 #### new EventCommand ()
 
@@ -10,9 +10,9 @@ The JSON data structure of an event command.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) | The event code. |
-| `indent` | [Number](Number.html) | The indent depth. Usually 0. The [Conditional Branch] command, among others, adds 1 with every step deeper. |
-| `parameters` | [Array](Array.html).<*> | An array containing the Event command's arguments. The contents vary for each command. |
+| `code` | [Number](Number.md) | The event code. |
+| `indent` | [Number](Number.md) | The indent depth. Usually 0. The [Conditional Branch] command, among others, adds 1 with every step deeper. |
+| `parameters` | [Array](Array.md).<*> | An array containing the Event command's arguments. The contents vary for each command. |
 
 <dl>
 </dl>

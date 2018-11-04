@@ -1,6 +1,6 @@
 # Class: MapInfo
 
-## [RPG](RPG.html).  MapInfo ()
+## [RPG](RPG.md).  MapInfo ()
 
 #### new MapInfo ()
 
@@ -10,9 +10,9 @@ The JSON data structure of a map information. Define to [$dataMapInfos](global.h
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.html) | The map name. |
-| `parentId` | [Number](Number.html) | The parent map ID. |
-| `order` | [Number](Number.html) | The map tree display order, which is used internally. |
+| `name` | [String](String.md) | The map name. |
+| `parentId` | [Number](Number.md) | The parent map ID. |
+| `order` | [Number](Number.md) | The map tree display order, which is used internally. |
 
 <dl>
 </dl>

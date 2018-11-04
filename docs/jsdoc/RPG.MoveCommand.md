@@ -1,6 +1,6 @@
 # Class: MoveCommand
 
-## [RPG](RPG.html).  MoveCommand ()
+## [RPG](RPG.md).  MoveCommand ()
 
 #### new MoveCommand ()
 
@@ -10,8 +10,8 @@ The JSON data structure of a movement command.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) | Move command code. |
-| `parameters` | [Array](Array.html).<*> | An array containing the Move command's arguments. The contents vary for each command. |
+| `code` | [Number](Number.md) | Move command code. |
+| `parameters` | [Array](Array.md).<*> | An array containing the Move command's arguments. The contents vary for each command. |
 
 <dl>
 </dl>

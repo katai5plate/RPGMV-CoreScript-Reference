@@ -1,32 +1,32 @@
 # Class: UsableItem
 
-## [RPG](RPG.html).  UsableItem ()
+## [RPG](RPG.md).  UsableItem ()
 
 #### new UsableItem ()
 
-The Superclass of [RPG.Skill](RPG.Skill.html) and [RPG.Item](RPG.Item.html)
+The Superclass of [RPG.Skill](RPG.Skill.md) and [RPG.Item](RPG.Item.md)
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `scope` | [Number](Number.html) | The scope of effects. 0: None 1: One Enemy 2: All Enemies 3: One Random Enemy 4: Two Random Enemies 5: Three Random Enemies 6: Four Random Enemies 7: One Ally 8: All Allies 9: One Ally (Dead) 10: All Allies (Dead) 11: The User |
-| `occasion` | [Number](Number.html) | When the item/skill may be used. 0: Always 1: Only in battle 2: Only from the menu 3: Never |
-| `speed` | [Number](Number.html) | The speed correction. |
-| `successRate` | [Number](Number.html) | The success rate. |
-| `repeats` | [Number](Number.html) | The number of repeats. |
-| `tpGain` | [Number](Number.html) | The number of TP gained. |
-| `hitType` | [Number](Number.html) | The type of hit. 0: Certain hit 1: Physical attack 2: Magical attack |
-| `animationId` | [Number](Number.html) | The animation ID. |
-| `damage` | [RPG.Damage](RPG.Damage.html) | Damage. |
-| `effects` | [Array](Array.html).<[RPG.Effect](RPG.Effect.html)> | A list of use effects. An RPG.Effect array. |
+| `scope` | [Number](Number.md) | The scope of effects. 0: None 1: One Enemy 2: All Enemies 3: One Random Enemy 4: Two Random Enemies 5: Three Random Enemies 6: Four Random Enemies 7: One Ally 8: All Allies 9: One Ally (Dead) 10: All Allies (Dead) 11: The User |
+| `occasion` | [Number](Number.md) | When the item/skill may be used. 0: Always 1: Only in battle 2: Only from the menu 3: Never |
+| `speed` | [Number](Number.md) | The speed correction. |
+| `successRate` | [Number](Number.md) | The success rate. |
+| `repeats` | [Number](Number.md) | The number of repeats. |
+| `tpGain` | [Number](Number.md) | The number of TP gained. |
+| `hitType` | [Number](Number.md) | The type of hit. 0: Certain hit 1: Physical attack 2: Magical attack |
+| `animationId` | [Number](Number.md) | The animation ID. |
+| `damage` | [RPG.Damage](RPG.Damage.md) | Damage. |
+| `effects` | [Array](Array.md).<[RPG.Effect](RPG.Effect.md)> | A list of use effects. An RPG.Effect array. |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [RPG.BaseItem](RPG.BaseItem.html)
+* [RPG.BaseItem](RPG.BaseItem.md)
 
  <br>
 

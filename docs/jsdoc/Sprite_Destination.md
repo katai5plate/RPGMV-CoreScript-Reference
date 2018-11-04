@@ -10,14 +10,14 @@ The sprite for displaying the destination place of the touch input.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_frameCount` | [Number](Number.html) |  |
+| `_frameCount` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Sprite](Sprite.html)
+* [Sprite](Sprite.md)
 
 ### Methods
 

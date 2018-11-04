@@ -10,16 +10,16 @@ The resource class. Allows to be collected as a garbage if not use for some time
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `cache` | [CacheMap](CacheMap.html) | resource manager |
-| `key` | [String](String.html) | url of the resource |
-| `item` | [String](String.html) | Bitmap, HTML5Audio, WebAudio - whatever you want to store in the cache |
+| `cache` | [CacheMap](CacheMap.md) | resource manager |
+| `key` | [String](String.md) | url of the resource |
+| `item` | [String](String.md) | Bitmap, HTML5Audio, WebAudio - whatever you want to store in the cache |
 
 <dl>
 </dl>
 
 ### Methods
 
-#### allocate () → {[CacheEntry](CacheEntry.html)}
+#### allocate () → {[CacheEntry](CacheEntry.md)}
 
 Allocates the resource
 <dl>
@@ -61,7 +61,7 @@ The resource class. Allows to be collected as a garbage if not use for some time
                 </dd>
             </dl>
 
-#### setTimeToLive (ticks opt, seconds opt) → {[CacheEntry](CacheEntry.html)}
+#### setTimeToLive (ticks opt, seconds opt) → {[CacheEntry](CacheEntry.md)}
 
 Sets the time to live
 
@@ -69,8 +69,8 @@ The resource class. Allows to be collected as a garbage if not use for some time
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `ticks` | [Number](Number.html) | <optional> | TTL in ticks, 0 if not set |
-| `seconds` | [Number](Number.html) | <optional> | TTL in seconds, 0 if not set |
+| `ticks` | [Number](Number.md) | <optional> | TTL in ticks, 0 if not set |
+| `seconds` | [Number](Number.md) | <optional> | TTL in seconds, 0 if not set |
 
 <dl>
 </dl>

@@ -10,14 +10,14 @@ The sprite for displaying the timer.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_seconds` | [Number](Number.html) |  |
+| `_seconds` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Sprite](Sprite.html)
+* [Sprite](Sprite.md)
 
 ### Methods
 
@@ -60,7 +60,7 @@ The sprite for displaying the timer.
 <dl>
 </dl>
 
-#### timerText () → {[String](String.html)}
+#### timerText () → {[String](String.md)}
 
 Returns the text of the timer.
 <dl>

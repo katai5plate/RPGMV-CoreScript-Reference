@@ -42,7 +42,7 @@ The game object class for self switches. Use as global variable [$gameSelfSwitch
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `key` | [Array](Array.html).<*> |  |
+| `key` | [Array](Array.md).<*> |  |
 | `value` | Boolean |  |
 
 <dl>
@@ -56,7 +56,7 @@ The game object class for self switches. Use as global variable [$gameSelfSwitch
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `key` | [Array](Array.html).<*> |  |
+| `key` | [Array](Array.md).<*> |  |
 
 <dl>
 </dl>

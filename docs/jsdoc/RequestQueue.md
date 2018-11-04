@@ -20,8 +20,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `key` | [String](String.html) |  |
-| `value` | [Bitmap](Bitmap.html) |  |
+| `key` | [String](String.md) |  |
+| `value` | [Bitmap](Bitmap.md) |  |
 
 <dl>
 </dl>
@@ -38,7 +38,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `key` | [String](String.html) |  |
+| `key` | [String](String.md) |  |
 
 <dl>
 </dl>

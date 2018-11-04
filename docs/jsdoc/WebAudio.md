@@ -10,16 +10,16 @@ The audio object of Web Audio API.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `url` | [String](String.html) | The url of the audio file |
+| `url` | [String](String.md) | The url of the audio file |
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `url` | [String](String.html) | [read-only] The url of the audio file. |
-| `volume` | [Number](Number.html) | The volume of the audio. |
-| `pitch` | [Number](Number.html) | The pitch of the audio. |
-| `pan` | [Number](Number.html) | The pan of the audio. |
+| `url` | [String](String.md) | [read-only] The url of the audio file. |
+| `volume` | [Number](Number.md) | The volume of the audio. |
+| `pitch` | [Number](Number.md) | The pitch of the audio. |
+| `pan` | [Number](Number.md) | The pan of the audio. |
 | `_context` | AudioContext |  |
 | `_masterGainNode` | GainNode |  |
 | `_initialized` | Boolean |  |
@@ -73,7 +73,7 @@ The audio object of Web Audio API.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.html) |  |
+| `duration` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -84,7 +84,7 @@ The audio object of Web Audio API.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.html) |  |
+| `duration` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -95,7 +95,7 @@ The audio object of Web Audio API.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `url` | [String](String.html) |  |
+| `url` | [String](String.md) |  |
 
 <dl>
 </dl>
@@ -143,7 +143,7 @@ The audio object of Web Audio API.
 | Name | Type | Description |
 | --- | --- | --- |
 | `array` | Uint8Array |  |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -155,7 +155,7 @@ The audio object of Web Audio API.
 | Name | Type | Description |
 | --- | --- | --- |
 | `array` | Uint8Array |  |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -167,7 +167,7 @@ The audio object of Web Audio API.
 | Name | Type | Description |
 | --- | --- | --- |
 | `array` | Uint8Array |  |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -190,8 +190,8 @@ The audio object of Web Audio API.
 | Name | Type | Description |
 | --- | --- | --- |
 | `array` | Uint8Array |  |
-| `index` | [Number](Number.html) |  |
-| `size` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
+| `size` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -245,7 +245,7 @@ The audio object of Web Audio API.
 | Name | Type | Description |
 | --- | --- | --- |
 | `loop` | Boolean |  |
-| `offset` | [Number](Number.html) |  |
+| `offset` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -318,7 +318,7 @@ The audio object of Web Audio API.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.html) | Master volume (min: 0, max: 1) |
+| `value` | [Number](Number.md) | Master volume (min: 0, max: 1) |
 
 <dl>
 </dl>
@@ -363,7 +363,7 @@ The audio object of Web Audio API.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.html) | Fade-in time in seconds |
+| `duration` | [Number](Number.md) | Fade-in time in seconds |
 
 <dl>
 </dl>
@@ -376,7 +376,7 @@ The audio object of Web Audio API.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.html) | Fade-out time in seconds |
+| `duration` | [Number](Number.md) | Fade-out time in seconds |
 
 <dl>
 </dl>
@@ -444,7 +444,7 @@ The audio object of Web Audio API.
 | Name | Type | Description |
 | --- | --- | --- |
 | `loop` | Boolean | Whether the audio data play in a loop |
-| `offset` | [Number](Number.html) | The start position to play in seconds |
+| `offset` | [Number](Number.md) | The start position to play in seconds |
 
 <dl>
 </dl>

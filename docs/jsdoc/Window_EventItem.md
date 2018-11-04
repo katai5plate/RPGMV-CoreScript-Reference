@@ -10,13 +10,13 @@ The window used for the event command [Select Item].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `messageWindow` | [Window_Message](Window_Message.html) |  |
+| `messageWindow` | [Window_Message](Window_Message.md) |  |
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_messageWindow` | [Window_Message](Window_Message.html) |  |
+| `_messageWindow` | [Window_Message](Window_Message.md) |  |
 
 <dl>
 </dl>
@@ -29,7 +29,7 @@ The window used for the event command [Select Item].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
 
 <dl>
 </dl>
@@ -51,7 +51,7 @@ The window used for the event command [Select Item].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `messageWindow` | [Window_Message](Window_Message.html) |  |
+| `messageWindow` | [Window_Message](Window_Message.md) |  |
 
 <dl>
 </dl>
@@ -62,7 +62,7 @@ The window used for the event command [Select Item].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
 
 <dl>
 </dl>
@@ -76,7 +76,7 @@ The window used for the event command [Select Item].
                 </dd>
             </dl>
 
-#### numVisibleRows () → {[Number](Number.html)}
+#### numVisibleRows () → {[Number](Number.md)}
 
 Returns the number of visible rows.
 <dl>
@@ -112,7 +112,7 @@ The window used for the event command [Select Item].
 <dl>
 </dl>
 
-#### windowHeight () → {[Number](Number.html)}
+#### windowHeight () → {[Number](Number.md)}
 
 Returns the height off the window.
 <dl>

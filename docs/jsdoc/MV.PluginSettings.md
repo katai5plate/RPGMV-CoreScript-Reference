@@ -1,6 +1,6 @@
 # Class: PluginSettings
 
-## [MV](MV.html).  PluginSettings ()
+## [MV](MV.md).  PluginSettings ()
 
 #### new PluginSettings ()
 
@@ -8,9 +8,9 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.html) |  |
-| `status` | [String](String.html) |  |
-| `description` | [String](String.html) |  |
+| `name` | [String](String.md) |  |
+| `status` | [String](String.md) |  |
+| `description` | [String](String.md) |  |
 | `parameters` | Object | {[key: string]: string} |
 
 <dl>

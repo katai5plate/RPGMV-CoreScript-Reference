@@ -8,7 +8,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `limit` | [Number](Number.html) | [static] |
+| `limit` | [Number](Number.md) | [static] |
 
 <dl>
 </dl>
@@ -21,19 +21,19 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `key` | [String](String.html) |  |
-| `value` | [Bitmap](Bitmap.html) |  |
+| `key` | [String](String.md) |  |
+| `value` | [Bitmap](Bitmap.md) |  |
 
 <dl>
 </dl>
 
-#### get (key) → {null|[Bitmap](Bitmap.html)}
+#### get (key) → {null|[Bitmap](Bitmap.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `key` | [String](String.html) |  |
+| `key` | [String](String.md) |  |
 
 <dl>
 </dl>
@@ -47,7 +47,7 @@
                 </dd>
             </dl>
 
-#### getErrorBitmap () → {null|[Bitmap](Bitmap.html)}
+#### getErrorBitmap () → {null|[Bitmap](Bitmap.md)}
 
 <dl>
 </dl>
@@ -87,7 +87,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `reservationId` | [Number](Number.html) |  |
+| `reservationId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -98,9 +98,9 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `key` | [String](String.html) |  |
-| `value` | [Bitmap](Bitmap.html) |  |
-| `reservationId` | [Number](Number.html) |  |
+| `key` | [String](String.md) |  |
+| `value` | [Bitmap](Bitmap.md) |  |
+| `reservationId` | [Number](Number.md) |  |
 
 <dl>
 </dl>

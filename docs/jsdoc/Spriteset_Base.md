@@ -4,28 +4,28 @@
 
 #### (abstract) new Spriteset_Base ()
 
-[Spriteset_Map](Spriteset_Map.html) と [Spriteset_Battle](Spriteset_Battle.html) のスーパークラス。
+[Spriteset_Map](Spriteset_Map.md) と [Spriteset_Battle](Spriteset_Battle.md) のスーパークラス。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_tone` | [Array](Array.html).<[Number](Number.html)> |  |
-| `_baseSprite` | [Sprite](Sprite.html) |  |
-| `_blackScreen` | [ScreenSprite](ScreenSprite.html) |  |
-| `_toneFilter` | [ToneFilter](ToneFilter.html) |  |
-| `_toneSprite` | [ToneSprite](ToneSprite.html) |  |
-| `_pictureContainer` | [Sprite](Sprite.html) |  |
-| `_timerSprite` | [Sprite_Timer](Sprite_Timer.html) |  |
-| `_flashSprite` | [ScreenSprite](ScreenSprite.html) |  |
-| `_fadeSprite` | [ScreenSprite](ScreenSprite.html) |  |
+| `_tone` | [Array](Array.md).<[Number](Number.md)> |  |
+| `_baseSprite` | [Sprite](Sprite.md) |  |
+| `_blackScreen` | [ScreenSprite](ScreenSprite.md) |  |
+| `_toneFilter` | [ToneFilter](ToneFilter.md) |  |
+| `_toneSprite` | [ToneSprite](ToneSprite.md) |  |
+| `_pictureContainer` | [Sprite](Sprite.md) |  |
+| `_timerSprite` | [Sprite_Timer](Sprite_Timer.md) |  |
+| `_flashSprite` | [ScreenSprite](ScreenSprite.md) |  |
+| `_fadeSprite` | [ScreenSprite](ScreenSprite.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Sprite](Sprite.html)
+* [Sprite](Sprite.md)
 
 ### Methods
 

@@ -10,7 +10,7 @@ Add some methods and properties to standerd JavaScript object.
 
 ### Methods
 
-#### clone () → {[Array](Array.html)}
+#### clone () → {[Array](Array.md)}
 
 Makes a shallow copy of the array.
 <dl>
@@ -57,7 +57,7 @@ Add some methods and properties to standerd JavaScript object.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `array` | [Array](Array.html) | The array to compare to |
+| `array` | [Array](Array.md) | The array to compare to |
 
 <dl>
 </dl>

@@ -1,6 +1,6 @@
 # Class: Action
 
-## [RPG](RPG.html) [.Enemy](RPG.Enemy.html).  Action ()
+## [RPG](RPG.md) [.Enemy](RPG.Enemy.md).  Action ()
 
 #### new Action ()
 
@@ -10,11 +10,11 @@ The JSON data structure of an enemy [Actions].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skillId` | [Number](Number.html) | The ID of skills to be employed as actions. |
-| `conditionType` | [Number](Number.html) | The type of condition. 0: Always 1: Turn No. 2: HP 3: MP 4: State 5: Party Level 6: Switch |
-| `conditionParam1` | [Number](Number.html) | The first parameter of the condition. |
-| `conditionParam2` | [Number](Number.html) | The second parameter of the condition. |
-| `rating` | [Number](Number.html) | The action's priority rating (1..10). |
+| `skillId` | [Number](Number.md) | The ID of skills to be employed as actions. |
+| `conditionType` | [Number](Number.md) | The type of condition. 0: Always 1: Turn No. 2: HP 3: MP 4: State 5: Party Level 6: Switch |
+| `conditionParam1` | [Number](Number.md) | The first parameter of the condition. |
+| `conditionParam2` | [Number](Number.md) | The second parameter of the condition. |
+| `rating` | [Number](Number.md) | The action's priority rating (1..10). |
 
 <dl>
 </dl>

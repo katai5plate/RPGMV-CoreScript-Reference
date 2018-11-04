@@ -10,9 +10,9 @@ The JSON data structure of a troop member.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `enemyId` | [Number](Number.html) | The enemy ID. |
-| `x` | [Number](Number.html) | The troop member's x-coordinate. |
-| `y` | [Number](Number.html) | The troop member's y-coordinate. |
+| `enemyId` | [Number](Number.md) | The enemy ID. |
+| `x` | [Number](Number.md) | The troop member's x-coordinate. |
+| `y` | [Number](Number.md) | The troop member's y-coordinate. |
 | `hidden` | Boolean | The truth value of the [Appear Halfway] option. |
 
 <dl>

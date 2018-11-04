@@ -10,15 +10,15 @@ The game object declare class for a common event. It contains functionality for 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_commonEventId` | [Number](Number.html) |  |
-| `_interpreter` | [Game_Interpreter](Game_Interpreter.html) |  |
+| `_commonEventId` | [Number](Number.md) |  |
+| `_interpreter` | [Game_Interpreter](Game_Interpreter.md) |  |
 
 <dl>
 </dl>
 
 ### Methods
 
-#### event () → {[RPG.CommonEvent](RPG.CommonEvent.html)}
+#### event () → {[RPG.CommonEvent](RPG.CommonEvent.md)}
 
 Returns the common event information from the database.
 <dl>
@@ -54,7 +54,7 @@ The game object declare class for a common event. It contains functionality for 
                 </dd>
             </dl>
 
-#### list () → {[Array](Array.html).<[RPG.EventCommand](RPG.EventCommand.html)>}
+#### list () → {[Array](Array.md).<[RPG.EventCommand](RPG.EventCommand.md)>}
 
 Returns the common event's list of event commands.
 <dl>

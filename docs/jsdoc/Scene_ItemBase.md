@@ -4,21 +4,21 @@
 
 #### (abstract) new Scene_ItemBase ()
 
-The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.html).
+The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_actorWindow` | [Window_MenuActor](Window_MenuActor.html) |  |
-| `_itemWindow` | [Window_Selectable](Window_Selectable.html) |  |
+| `_actorWindow` | [Window_MenuActor](Window_MenuActor.md) |  |
+| `_itemWindow` | [Window_Selectable](Window_Selectable.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Scene_MenuBase](Scene_MenuBase.html)
+* [Scene_MenuBase](Scene_MenuBase.md)
 
 ### Methods
 
@@ -28,7 +28,7 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 <dl>
 </dl>
 
-#### actor () → {[Game_Actor](Game_Actor.html)}
+#### actor () → {[Game_Actor](Game_Actor.md)}
 
 Returns the current game actor.
 <dl>
@@ -91,7 +91,7 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.html) |  追加位置 |
+| `index` | [Number](Number.md) |  追加位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -238,7 +238,7 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### createWindowLayer ()
 
- ウィンドウレイヤー[WindowLayer](WindowLayer.html) を生成。
+ ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -283,7 +283,7 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
                 </dd>
             </dl>
 
-#### fadeSpeed () → {[Number](Number.html)}
+#### fadeSpeed () → {[Number](Number.md)}
 
  フェード速度を返す。
 <dl>
@@ -314,7 +314,7 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `window` | [Window_Base](Window_Base.html) |  |
+| `window` | [Window_Base](Window_Base.md) |  |
 
 <dl>
 </dl>
@@ -447,7 +447,7 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
                 </dd>
             </dl>
 
-#### itemTargetActors () → {[Game_Actor](Game_Actor.html)}
+#### itemTargetActors () → {[Game_Actor](Game_Actor.md)}
 
 <dl>
 </dl>
@@ -565,7 +565,7 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  取り除く位置 |
+| `index` | [Number](Number.md) |  取り除く位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -594,7 +594,7 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `opacity` | [Number](Number.html) |  |
+| `opacity` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -615,12 +615,12 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `window` | [Window_Base](Window_Base.html) |  |
+| `window` | [Window_Base](Window_Base.md) |  |
 
 <dl>
 </dl>
 
-#### slowFadeSpeed () → {[Number](Number.html)}
+#### slowFadeSpeed () → {[Number](Number.md)}
 
  遅いフェード速度を返す。
 <dl>
@@ -666,7 +666,7 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードインにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードインにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -688,7 +688,7 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードアウトにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードアウトにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -792,7 +792,7 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 <dl>
 </dl>
 
-#### user () → {[Game_Actor](Game_Actor.html)}
+#### user () → {[Game_Actor](Game_Actor.md)}
 
 Returns the current game actor.
 <dl>

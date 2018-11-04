@@ -4,13 +4,13 @@
 
 #### new ShaderTilemap ()
 
-WebGL を使ったタイルマップ。バージョン1.3.0以降は、こっちが実際に使用されているクラスで、[Tilemap](Tilemap.html) の方は実質的に継承されるために存在する abstract(抽象)クラスになっている。
+WebGL を使ったタイルマップ。バージョン1.3.0以降は、こっちが実際に使用されているクラスで、[Tilemap](Tilemap.md) の方は実質的に継承されるために存在する abstract(抽象)クラスになっている。
 <dl>
 </dl>
 
 ### Extends
 
-* [Tilemap](Tilemap.html)
+* [Tilemap](Tilemap.md)
 
 ### Methods
 
@@ -26,10 +26,10 @@ WebGL を使ったタイルマップ。バージョン1.3.0以降は、こっち
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `layers` | [Array](Array.html) |  |
-| `tileId` | [Number](Number.html) |  |
-| `dx` | [Number](Number.html) |  |
-| `dy` | [Number](Number.html) |  |
+| `layers` | [Array](Array.md) |  |
+| `tileId` | [Number](Number.md) |  |
+| `dx` | [Number](Number.md) |  |
+| `dy` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -40,10 +40,10 @@ WebGL を使ったタイルマップ。バージョン1.3.0以降は、こっち
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `layers` | [Array](Array.html) |  |
-| `tileId` | [Number](Number.html) |  |
-| `dx` | [Number](Number.html) |  |
-| `dy` | [Number](Number.html) |  |
+| `layers` | [Array](Array.md) |  |
+| `tileId` | [Number](Number.md) |  |
+| `dx` | [Number](Number.md) |  |
+| `dy` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -54,9 +54,9 @@ WebGL を使ったタイルマップ。バージョン1.3.0以降は、こっち
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `shadowBits` | [Number](Number.html) |  |
-| `dx` | [Number](Number.html) |  |
-| `dy` | [Number](Number.html) |  |
+| `shadowBits` | [Number](Number.md) |  |
+| `dx` | [Number](Number.md) |  |
+| `dy` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -67,10 +67,10 @@ WebGL を使ったタイルマップ。バージョン1.3.0以降は、こっち
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `layers` | [Array](Array.html) |  |
-| `tileId` | [Number](Number.html) |  |
-| `dx` | [Number](Number.html) |  |
-| `dy` | [Number](Number.html) |  |
+| `layers` | [Array](Array.md) |  |
+| `tileId` | [Number](Number.md) |  |
+| `dx` | [Number](Number.md) |  |
+| `dy` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -81,10 +81,10 @@ WebGL を使ったタイルマップ。バージョン1.3.0以降は、こっち
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `layers` | [Array](Array.html) |  |
-| `tileId` | [Number](Number.html) |  |
-| `dx` | [Number](Number.html) |  |
-| `dy` | [Number](Number.html) |  |
+| `layers` | [Array](Array.md) |  |
+| `tileId` | [Number](Number.md) |  |
+| `dx` | [Number](Number.md) |  |
+| `dy` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -118,8 +118,8 @@ WebGL を使ったタイルマップ。バージョン1.3.0以降は、こっち
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `startX` | [Number](Number.html) |  |
-| `startY` | [Number](Number.html) |  |
+| `startX` | [Number](Number.md) |  |
+| `startY` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -132,10 +132,10 @@ WebGL を使ったタイルマップ。バージョン1.3.0以降は、こっち
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `startX` | [Number](Number.html) |  始点のx座標 |
-| `startY` | [Number](Number.html) |  始点のy座標 |
-| `x` | [Number](Number.html) | x座標 |
-| `y` | [Number](Number.html) | y座標 |
+| `startX` | [Number](Number.md) |  始点のx座標 |
+| `startY` | [Number](Number.md) |  始点のy座標 |
+| `x` | [Number](Number.md) | x座標 |
+| `y` | [Number](Number.md) | y座標 |
 
 <dl>
 </dl>
@@ -146,8 +146,8 @@ WebGL を使ったタイルマップ。バージョン1.3.0以降は、こっち
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `startX` | [Number](Number.html) |  |
-| `startY` | [Number](Number.html) |  |
+| `startX` | [Number](Number.md) |  |
+| `startY` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -236,7 +236,7 @@ WebGL を使ったタイルマップ。バージョン1.3.0以降は、こっち
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.html) |  追加位置 |
+| `index` | [Number](Number.md) |  追加位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -363,7 +363,7 @@ WebGL を使ったタイルマップ。バージョン1.3.0以降は、こっち
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  取り除くオブジェクトの位置 |
+| `index` | [Number](Number.md) |  取り除くオブジェクトの位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -394,9 +394,9 @@ WebGL を使ったタイルマップ。バージョン1.3.0以降は、こっち
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `width` | [Number](Number.html) |  マップの幅(タイル数) |
-| `height` | [Number](Number.html) |  マップの高さ(タイル数) |
-| `data` | [Array](Array.html) |  一次元配列によるマップのデータ |
+| `width` | [Number](Number.md) |  マップの幅(タイル数) |
+| `height` | [Number](Number.md) |  マップの高さ(タイル数) |
+| `data` | [Array](Array.md) |  一次元配列によるマップのデータ |
 
 <dl>
                 <dt>Inherited From:</dt>

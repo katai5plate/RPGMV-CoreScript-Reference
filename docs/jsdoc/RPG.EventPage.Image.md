@@ -1,6 +1,6 @@
 # Class: Image
 
-## [RPG](RPG.html) [.EventPage](RPG.EventPage.html).  Image ()
+## [RPG](RPG.md) [.EventPage](RPG.EventPage.md).  Image ()
 
 #### new Image ()
 
@@ -10,11 +10,11 @@ The data class for the Event page [Graphics].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.html) | The tile ID. If the specified graphic is not a tile, this value is 0. |
-| `characterName` | [String](String.html) | The file name of the character's graphic. |
-| `characterIndex` | [Number](Number.html) | The index of the character's graphic file (0..7). |
-| `direction` | [Number](Number.html) | The direction in which the character is facing (2: down, 4: left, 6: right, 8: up). |
-| `pattern` | [Number](Number.html) | The character's pattern (0..2). |
+| `tileId` | [Number](Number.md) | The tile ID. If the specified graphic is not a tile, this value is 0. |
+| `characterName` | [String](String.md) | The file name of the character's graphic. |
+| `characterIndex` | [Number](Number.md) | The index of the character's graphic file (0..7). |
+| `direction` | [Number](Number.md) | The direction in which the character is facing (2: down, 4: left, 6: right, 8: up). |
+| `pattern` | [Number](Number.md) | The character's pattern (0..2). |
 
 <dl>
 </dl>

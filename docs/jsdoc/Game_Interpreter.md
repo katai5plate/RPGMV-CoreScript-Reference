@@ -10,27 +10,27 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `depth` | [Number](Number.html) |  |
+| `depth` | [Number](Number.md) |  |
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_depth` | [Number](Number.html) |  |
+| `_depth` | [Number](Number.md) |  |
 | `_branch` | Object |  |
-| `_params` | [Array](Array.html).<*> |  |
-| `_indent` | [Number](Number.html) |  |
-| `_frameCount` | [Number](Number.html) |  |
-| `_freezeChecker` | [Number](Number.html) |  |
-| `_mapId` | [Number](Number.html) |  |
-| `_eventId` | [Number](Number.html) |  |
-| `_list` | [Array](Array.html).<[RPG.EventCommand](RPG.EventCommand.html)> |  |
-| `_index` | [Number](Number.html) |  |
-| `_waitCount` | [Number](Number.html) |  |
-| `_waitMode` | [String](String.html) |  |
-| `_comments` | [String](String.html) |  |
-| `_character` | [Game_Event](Game_Event.html) |  |
-| `_childInterpreter` | [Game_Interpreter](Game_Interpreter.html) |  |
+| `_params` | [Array](Array.md).<*> |  |
+| `_indent` | [Number](Number.md) |  |
+| `_frameCount` | [Number](Number.md) |  |
+| `_freezeChecker` | [Number](Number.md) |  |
+| `_mapId` | [Number](Number.md) |  |
+| `_eventId` | [Number](Number.md) |  |
+| `_list` | [Array](Array.md).<[RPG.EventCommand](RPG.EventCommand.md)> |  |
+| `_index` | [Number](Number.md) |  |
+| `_waitCount` | [Number](Number.md) |  |
+| `_waitMode` | [String](String.md) |  |
+| `_comments` | [String](String.md) |  |
+| `_character` | [Game_Event](Game_Event.md) |  |
+| `_childInterpreter` | [Game_Interpreter](Game_Interpreter.md) |  |
 
 <dl>
 </dl>
@@ -43,8 +43,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `list` | [Array](Array.html).<[RPG.EventCommand](RPG.EventCommand.html)> |  |
-| `commonList` | [Array](Array.html).<*> |  |
+| `list` | [Array](Array.md).<[RPG.EventCommand](RPG.EventCommand.md)> |  |
+| `commonList` | [Array](Array.md).<*> |  |
 
 <dl>
 </dl>
@@ -55,20 +55,20 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Number](Number.html) |  |
-| `value` | [Number](Number.html) |  |
-| `allowDeath` | [Number](Number.html) |  |
+| `target` | [Number](Number.md) |  |
+| `value` | [Number](Number.md) |  |
+| `allowDeath` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### character (param) → {[Game_Character](Game_Character.html)}
+#### character (param) → {[Game_Character](Game_Character.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param` | [Number](Number.html) |  |
+| `param` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1788,7 +1788,7 @@
                 </dd>
             </dl>
 
-#### currentCommand () → {[RPG.EventCommand](RPG.EventCommand.html)}
+#### currentCommand () → {[RPG.EventCommand](RPG.EventCommand.md)}
 
 Returns the current event command.
 <dl>
@@ -1803,7 +1803,7 @@
                 </dd>
             </dl>
 
-#### eventId () → {[Number](Number.html)}
+#### eventId () → {[Number](Number.md)}
 
 Returns the currrent eventId.
 <dl>
@@ -1833,7 +1833,7 @@
                 </dd>
             </dl>
 
-#### fadeSpeed () → {[Number](Number.html)}
+#### fadeSpeed () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -1847,15 +1847,15 @@
                 </dd>
             </dl>
 
-#### gameDataOperand (type, param1, param2) → {[Number](Number.html)}
+#### gameDataOperand (type, param1, param2) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `type` | [Number](Number.html) |  |
-| `param1` | [Number](Number.html) |  |
-| `param2` | [Number](Number.html) |  |
+| `type` | [Number](Number.md) |  |
+| `param1` | [Number](Number.md) |  |
+| `param2` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1896,8 +1896,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param1` | [Number](Number.html) |  |
-| `param2` | [Number](Number.html) |  |
+| `param1` | [Number](Number.md) |  |
+| `param2` | [Number](Number.md) |  |
 | `callback` | function |  |
 
 <dl>
@@ -1909,7 +1909,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param` | [Number](Number.html) |  |
+| `param` | [Number](Number.md) |  |
 | `callback` | function |  |
 
 <dl>
@@ -1921,7 +1921,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param` | [Number](Number.html) |  |
+| `param` | [Number](Number.md) |  |
 | `callback` | function |  |
 
 <dl>
@@ -1933,8 +1933,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param1` | [Number](Number.html) |  |
-| `param2` | [Number](Number.html) |  |
+| `param1` | [Number](Number.md) |  |
+| `param2` | [Number](Number.md) |  |
 | `callback` | function |  |
 
 <dl>
@@ -1946,7 +1946,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param` | [Number](Number.html) |  |
+| `param` | [Number](Number.md) |  |
 | `callback` | function |  |
 
 <dl>
@@ -1958,12 +1958,12 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### nextEventCode () → {[Number](Number.html)}
+#### nextEventCode () → {[Number](Number.md)}
 
 Returns the next event code.
 <dl>
@@ -1978,15 +1978,15 @@
                 </dd>
             </dl>
 
-#### operateValue (operation, operandType, operand) → {[Number](Number.html)}
+#### operateValue (operation, operandType, operand) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `operation` | [Number](Number.html) |  |
-| `operandType` | [Number](Number.html) |  |
-| `operand` | [Number](Number.html) |  |
+| `operation` | [Number](Number.md) |  |
+| `operandType` | [Number](Number.md) |  |
+| `operand` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -2006,9 +2006,9 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `variableId` | [Number](Number.html) |  |
-| `operationType` | [Number](Number.html) |  |
-| `value` | [Number](Number.html) |  |
+| `variableId` | [Number](Number.md) |  |
+| `operationType` | [Number](Number.md) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -2021,8 +2021,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `command` | [String](String.html) |  コマンド名 |
-| `args` | [Array](Array.html).<string> |  引数の配列 |
+| `command` | [String](String.md) |  コマンド名 |
+| `args` | [Array](Array.md).<string> |  引数の配列 |
 
 <dl>
 </dl>
@@ -2045,8 +2045,8 @@ Game_Interpreter.prototype.pluginCommand = function ( command, args ){
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `list` | [Array](Array.html).<[RPG.EventCommand](RPG.EventCommand.html)> |  |
-| `eventId` | [Number](Number.html) |  |
+| `list` | [Array](Array.md).<[RPG.EventCommand](RPG.EventCommand.md)> |  |
+| `eventId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -2057,8 +2057,8 @@ Game_Interpreter.prototype.pluginCommand = function ( command, args ){
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `list` | [Array](Array.html).<[RPG.EventCommand](RPG.EventCommand.html)> |  |
-| `eventId` | [Number](Number.html) |  |
+| `list` | [Array](Array.md).<[RPG.EventCommand](RPG.EventCommand.md)> |  |
+| `eventId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -2069,7 +2069,7 @@ Game_Interpreter.prototype.pluginCommand = function ( command, args ){
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `params` | [Array](Array.html).<*> |  |
+| `params` | [Array](Array.md).<*> |  |
 
 <dl>
 </dl>
@@ -2080,7 +2080,7 @@ Game_Interpreter.prototype.pluginCommand = function ( command, args ){
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `params` | [Array](Array.html).<[Number](Number.html)> |  |
+| `params` | [Array](Array.md).<[Number](Number.md)> |  |
 
 <dl>
 </dl>
@@ -2091,7 +2091,7 @@ Game_Interpreter.prototype.pluginCommand = function ( command, args ){
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `params` | [Array](Array.html).<[Number](Number.html)> |  |
+| `params` | [Array](Array.md).<[Number](Number.md)> |  |
 
 <dl>
 </dl>
@@ -2119,7 +2119,7 @@ Game_Interpreter.prototype.pluginCommand = function ( command, args ){
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `waitMode` | [String](String.html) |  |
+| `waitMode` | [String](String.md) |  |
 
 <dl>
 </dl>
@@ -2199,7 +2199,7 @@ Game_Interpreter.prototype.pluginCommand = function ( command, args ){
                 </dd>
             </dl>
 
-#### videoFileExt () → {[String](String.html)}
+#### videoFileExt () → {[String](String.md)}
 
 <dl>
 </dl>
@@ -2221,7 +2221,7 @@ Game_Interpreter.prototype.pluginCommand = function ( command, args ){
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.html) |  |
+| `duration` | [Number](Number.md) |  |
 
 <dl>
 </dl>

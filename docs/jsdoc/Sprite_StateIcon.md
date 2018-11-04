@@ -10,19 +10,19 @@ The sprite for displaying state icons.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_iconWidth` | [Number](Number.html) | [static] |
-| `_iconHeight` | [Number](Number.html) | [static] |
-| `_battler` | [Game_Battler](Game_Battler.html) |  |
-| `_iconIndex` | [Number](Number.html) |  |
-| `_animationCount` | [Number](Number.html) |  |
-| `_animationIndex` | [Number](Number.html) |  |
+| `_iconWidth` | [Number](Number.md) | [static] |
+| `_iconHeight` | [Number](Number.md) | [static] |
+| `_battler` | [Game_Battler](Game_Battler.md) |  |
+| `_iconIndex` | [Number](Number.md) |  |
+| `_animationCount` | [Number](Number.md) |  |
+| `_animationIndex` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Sprite](Sprite.html)
+* [Sprite](Sprite.md)
 
 ### Methods
 
@@ -47,7 +47,7 @@ The sprite for displaying state icons.
                 </dd>
             </dl>
 
-#### animationWait () → {[Number](Number.html)}
+#### animationWait () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -85,7 +85,7 @@ The sprite for displaying state icons.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `battler` | [Game_Battler](Game_Battler.html) |  |
+| `battler` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
 </dl>

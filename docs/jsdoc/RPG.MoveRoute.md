@@ -1,6 +1,6 @@
 # Class: MoveRoute
 
-## [RPG](RPG.html).  MoveRoute ()
+## [RPG](RPG.md).  MoveRoute ()
 
 #### new MoveRoute ()
 
@@ -13,7 +13,7 @@ The JSON data structure of a movement route.
 | `repeat` | Boolean | The truth value of the [Repeat Action] option. |
 | `skippable` | Boolean | The truth value of the [Skip If Cannot Move] option. |
 | `wait` | Boolean | The truth value of the [Wait for Completion] option. |
-| `list` | [Array](Array.html).<[RPG.MoveCommand](RPG.MoveCommand.html)> | Program contents. |
+| `list` | [Array](Array.md).<[RPG.MoveCommand](RPG.MoveCommand.md)> | Program contents. |
 
 <dl>
 </dl>

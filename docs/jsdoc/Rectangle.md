@@ -10,19 +10,19 @@ The rectangle class.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) | The x coordinate for the upper-left corner |
-| `y` | [Number](Number.html) | The y coordinate for the upper-left corner |
-| `width` | [Number](Number.html) | The width of the rectangle |
-| `height` | [Number](Number.html) | The height of the rectangle |
+| `x` | [Number](Number.md) | The x coordinate for the upper-left corner |
+| `y` | [Number](Number.md) | The y coordinate for the upper-left corner |
+| `width` | [Number](Number.md) | The width of the rectangle |
+| `height` | [Number](Number.md) | The height of the rectangle |
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) | The x coordinate for the upper-left corner |
-| `y` | [Number](Number.html) | The y coordinate for the upper-left corner |
-| `width` | [Number](Number.html) | The width of the rectangle |
-| `height` | [Number](Number.html) | The height of the rectangle |
+| `x` | [Number](Number.md) | The x coordinate for the upper-left corner |
+| `y` | [Number](Number.md) | The y coordinate for the upper-left corner |
+| `width` | [Number](Number.md) | The width of the rectangle |
+| `height` | [Number](Number.md) | The height of the rectangle |
 
 <dl>
 </dl>

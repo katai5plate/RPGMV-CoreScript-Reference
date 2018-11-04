@@ -10,25 +10,25 @@ The scene class of the shop screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_goods` | [Array](Array.html).<[Array](Array.html).<*>> |  |
+| `_goods` | [Array](Array.md).<[Array](Array.md).<*>> |  |
 | `_purchaseOnly` | Boolean |  |
-| `_item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
-| `_goldWindow` | [Window_Gold](Window_Gold.html) |  |
-| `_commandWindow` | [Window_ShopCommand](Window_ShopCommand.html) |  |
-| `_dummyWindow` | [Window_Base](Window_Base.html) |  |
-| `_numberWindow` | [Window_ShopNumber](Window_ShopNumber.html) |  |
-| `_statusWindow` | [Window_ShopStatus](Window_ShopStatus.html) |  |
-| `_buyWindow` | [Window_ShopBuy](Window_ShopBuy.html) |  |
-| `_categoryWindow` | [Window_ItemCategory](Window_ItemCategory.html) |  |
-| `_sellWindow` | [Window_ShopSell](Window_ShopSell.html) |  |
-| `_helpWindow` | [Window_Help](Window_Help.html) |  |
+| `_item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
+| `_goldWindow` | [Window_Gold](Window_Gold.md) |  |
+| `_commandWindow` | [Window_ShopCommand](Window_ShopCommand.md) |  |
+| `_dummyWindow` | [Window_Base](Window_Base.md) |  |
+| `_numberWindow` | [Window_ShopNumber](Window_ShopNumber.md) |  |
+| `_statusWindow` | [Window_ShopStatus](Window_ShopStatus.md) |  |
+| `_buyWindow` | [Window_ShopBuy](Window_ShopBuy.md) |  |
+| `_categoryWindow` | [Window_ItemCategory](Window_ItemCategory.md) |  |
+| `_sellWindow` | [Window_ShopSell](Window_ShopSell.md) |  |
+| `_helpWindow` | [Window_Help](Window_Help.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Scene_MenuBase](Scene_MenuBase.html)
+* [Scene_MenuBase](Scene_MenuBase.md)
 
 ### Methods
 
@@ -44,7 +44,7 @@ The scene class of the shop screen.
 <dl>
 </dl>
 
-#### actor () → {[Game_Actor](Game_Actor.html)}
+#### actor () → {[Game_Actor](Game_Actor.md)}
 
 Returns the current game actor.
 <dl>
@@ -107,7 +107,7 @@ The scene class of the shop screen.
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.html) |  追加位置 |
+| `index` | [Number](Number.md) |  追加位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -165,7 +165,7 @@ The scene class of the shop screen.
                 </dd>
             </dl>
 
-#### buyingPrice () → {[Number](Number.html)}
+#### buyingPrice () → {[Number](Number.md)}
 
 Returns the buying price for the current item.
 <dl>
@@ -296,7 +296,7 @@ The scene class of the shop screen.
 
 #### createWindowLayer ()
 
- ウィンドウレイヤー[WindowLayer](WindowLayer.html) を生成。
+ ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -308,7 +308,7 @@ The scene class of the shop screen.
                 </dd>
             </dl>
 
-#### currencyUnit () → {[String](String.html)}
+#### currencyUnit () → {[String](String.md)}
 
 Returns the currency unit of the game within the shop scene.
 <dl>
@@ -343,7 +343,7 @@ The scene class of the shop screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `number` | [Number](Number.html) |  |
+| `number` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -354,7 +354,7 @@ The scene class of the shop screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `number` | [Number](Number.html) |  |
+| `number` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -378,7 +378,7 @@ The scene class of the shop screen.
                 </dd>
             </dl>
 
-#### fadeSpeed () → {[Number](Number.html)}
+#### fadeSpeed () → {[Number](Number.md)}
 
  フェード速度を返す。
 <dl>
@@ -484,7 +484,7 @@ The scene class of the shop screen.
                 </dd>
             </dl>
 
-#### maxBuy () → {[Number](Number.html)}
+#### maxBuy () → {[Number](Number.md)}
 
 Returns the maximum number bought.
 <dl>
@@ -499,7 +499,7 @@ The scene class of the shop screen.
                 </dd>
             </dl>
 
-#### maxSell () → {[Number](Number.html)}
+#### maxSell () → {[Number](Number.md)}
 
 Returns the maximum number sold.
 <dl>
@@ -514,7 +514,7 @@ The scene class of the shop screen.
                 </dd>
             </dl>
 
-#### money () → {[Number](Number.html)}
+#### money () → {[Number](Number.md)}
 
 Returns the player gold within the shop scene.
 <dl>
@@ -618,7 +618,7 @@ The scene class of the shop screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `goods` | [Array](Array.html).<[Array](Array.html).<*>> |  |
+| `goods` | [Array](Array.md).<[Array](Array.md).<*>> |  |
 | `purchaseOnly` | Boolean |  |
 
 <dl>
@@ -677,7 +677,7 @@ The scene class of the shop screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  取り除く位置 |
+| `index` | [Number](Number.md) |  取り除く位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -700,7 +700,7 @@ The scene class of the shop screen.
                 </dd>
             </dl>
 
-#### sellingPrice () → {[Number](Number.html)}
+#### sellingPrice () → {[Number](Number.md)}
 
 Returns the selling price for the current item.
 <dl>
@@ -721,7 +721,7 @@ The scene class of the shop screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `opacity` | [Number](Number.html) |  |
+| `opacity` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -734,7 +734,7 @@ The scene class of the shop screen.
                 </dd>
             </dl>
 
-#### slowFadeSpeed () → {[Number](Number.html)}
+#### slowFadeSpeed () → {[Number](Number.md)}
 
  遅いフェード速度を返す。
 <dl>
@@ -780,7 +780,7 @@ The scene class of the shop screen.
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードインにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードインにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -802,7 +802,7 @@ The scene class of the shop screen.
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードアウトにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードアウトにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>

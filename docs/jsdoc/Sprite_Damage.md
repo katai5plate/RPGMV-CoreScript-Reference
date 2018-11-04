@@ -10,17 +10,17 @@ The sprite for displaying a popup damage.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_duration` | [Number](Number.html) |  |
-| `_flashColor` | [Array](Array.html).<[Number](Number.html)> |  |
-| `_flashDuration` | [Number](Number.html) |  |
-| `_damageBitmap` | [Bitmap](Bitmap.html) |  |
+| `_duration` | [Number](Number.md) |  |
+| `_flashColor` | [Array](Array.md).<[Number](Number.md)> |  |
+| `_flashDuration` | [Number](Number.md) |  |
+| `_damageBitmap` | [Bitmap](Bitmap.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Sprite](Sprite.html)
+* [Sprite](Sprite.md)
 
 ### Methods
 
@@ -45,7 +45,7 @@ The sprite for displaying a popup damage.
                 </dd>
             </dl>
 
-#### createChildSprite () → {[Sprite](Sprite.html)}
+#### createChildSprite () → {[Sprite](Sprite.md)}
 
 Creates the child sprite of the damage sprite for displaying damage.
 <dl>
@@ -66,8 +66,8 @@ The sprite for displaying a popup damage.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `baseRow` | [Number](Number.html) |  |
-| `value` | [Number](Number.html) |  |
+| `baseRow` | [Number](Number.md) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -78,7 +78,7 @@ The sprite for displaying a popup damage.
 <dl>
 </dl>
 
-#### digitHeight () → {[Number](Number.html)}
+#### digitHeight () → {[Number](Number.md)}
 
 Returns the digit height of the sprite damage.
 <dl>
@@ -93,7 +93,7 @@ The sprite for displaying a popup damage.
                 </dd>
             </dl>
 
-#### digitWidth () → {[Number](Number.html)}
+#### digitWidth () → {[Number](Number.md)}
 
 Returns the digit width of the sprite damage.
 <dl>
@@ -135,7 +135,7 @@ The sprite for displaying a popup damage.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Actor](Game_Actor.html) |  |
+| `target` | [Game_Actor](Game_Actor.md) |  |
 
 <dl>
 </dl>
@@ -156,7 +156,7 @@ The sprite for displaying a popup damage.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `sprite` | [Sprite](Sprite.html) |  |
+| `sprite` | [Sprite](Sprite.md) |  |
 
 <dl>
 </dl>

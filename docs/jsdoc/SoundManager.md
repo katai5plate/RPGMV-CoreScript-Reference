@@ -16,7 +16,7 @@ The static class that plays sound effects defined in the database.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `n` | [Number](Number.html) |  |
+| `n` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -137,7 +137,7 @@ The static class that plays sound effects defined in the database.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `n` | [Number](Number.html) |  |
+| `n` | [Number](Number.md) |  |
 
 <dl>
 </dl>

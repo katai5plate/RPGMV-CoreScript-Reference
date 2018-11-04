@@ -10,36 +10,36 @@ The game object class for screen effect data, such as changes in color tone and 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_shake` | [Number](Number.html) |  |
-| `_shakePower` | [Number](Number.html) |  |
-| `_shakeSpeed` | [Number](Number.html) |  |
-| `_shakeDuration` | [Number](Number.html) |  |
-| `_shakeDirection` | [Number](Number.html) |  |
-| `_zoomX` | [Number](Number.html) |  _zoomX property of the game screen. |
-| `_zoomY` | [Number](Number.html) |  _zoomY property of the game screen. |
-| `_zoomScale` | [Number](Number.html) |  |
-| `_zoomScaleTarget` | [Number](Number.html) |  |
-| `_zoomDuration` | [Number](Number.html) |  |
-| `_weatherType` | [String](String.html) |  |
-| `_weatherPower` | [Number](Number.html) |  |
-| `_weatherPowerTarget` | [Number](Number.html) |  |
-| `_weatherDuration` | [Number](Number.html) |  |
-| `_brightness` | [Number](Number.html) | The _brightness property of the game screen; returned when calling the brightness method. |
-| `_fadeOutDuration` | [Number](Number.html) |  |
-| `_fadeInDuration` | [Number](Number.html) |  |
-| `_tone` | [Array](Array.html).<[Number](Number.html)> |  |
-| `_toneTarget` | [Array](Array.html).<[Number](Number.html)> |  |
-| `_toneDuration` | [Number](Number.html) |  |
-| `_flashColor` | [Array](Array.html).<[Number](Number.html)> |  |
-| `_flashDuration` | [Number](Number.html) |  |
-| `_pictures` | [Array](Array.html).<[Game_Picture](Game_Picture.html)> | The array of Game_Pictures that are attached to the game screen. |
+| `_shake` | [Number](Number.md) |  |
+| `_shakePower` | [Number](Number.md) |  |
+| `_shakeSpeed` | [Number](Number.md) |  |
+| `_shakeDuration` | [Number](Number.md) |  |
+| `_shakeDirection` | [Number](Number.md) |  |
+| `_zoomX` | [Number](Number.md) |  _zoomX property of the game screen. |
+| `_zoomY` | [Number](Number.md) |  _zoomY property of the game screen. |
+| `_zoomScale` | [Number](Number.md) |  |
+| `_zoomScaleTarget` | [Number](Number.md) |  |
+| `_zoomDuration` | [Number](Number.md) |  |
+| `_weatherType` | [String](String.md) |  |
+| `_weatherPower` | [Number](Number.md) |  |
+| `_weatherPowerTarget` | [Number](Number.md) |  |
+| `_weatherDuration` | [Number](Number.md) |  |
+| `_brightness` | [Number](Number.md) | The _brightness property of the game screen; returned when calling the brightness method. |
+| `_fadeOutDuration` | [Number](Number.md) |  |
+| `_fadeInDuration` | [Number](Number.md) |  |
+| `_tone` | [Array](Array.md).<[Number](Number.md)> |  |
+| `_toneTarget` | [Array](Array.md).<[Number](Number.md)> |  |
+| `_toneDuration` | [Number](Number.md) |  |
+| `_flashColor` | [Array](Array.md).<[Number](Number.md)> |  |
+| `_flashDuration` | [Number](Number.md) |  |
+| `_pictures` | [Array](Array.md).<[Game_Picture](Game_Picture.md)> | The array of Game_Pictures that are attached to the game screen. |
 
 <dl>
 </dl>
 
 ### Methods
 
-#### brightness () → {[Number](Number.html)}
+#### brightness () → {[Number](Number.md)}
 
 Returns the brightness of the game screen.
 <dl>
@@ -60,9 +60,9 @@ The game object class for screen effect data, such as changes in color tone and 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `type` | [String](String.html) |  |
-| `power` | [Number](Number.html) |  |
-| `duration` | [Number](Number.html) |  |
+| `type` | [String](String.md) |  |
+| `power` | [Number](Number.md) |  |
+| `duration` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -128,12 +128,12 @@ The game object class for screen effect data, such as changes in color tone and 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pictureId` | [Number](Number.html) |  |
+| `pictureId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### flashColor () → {[Array](Array.html).<[Number](Number.html)>}
+#### flashColor () → {[Array](Array.md).<[Number](Number.md)>}
 
 <dl>
 </dl>
@@ -153,7 +153,7 @@ The game object class for screen effect data, such as changes in color tone and 
 <dl>
 </dl>
 
-#### maxPictures () → {[Number](Number.html)}
+#### maxPictures () → {[Number](Number.md)}
 
 Returns the maximum number of pictures set on the game screen.
 <dl>
@@ -174,15 +174,15 @@ The game object class for screen effect data, such as changes in color tone and 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pictureId` | [Number](Number.html) |  |
-| `origin` | [Number](Number.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `scaleX` | [Number](Number.html) |  |
-| `scaleY` | [Number](Number.html) |  |
-| `opacity` | [Number](Number.html) |  |
-| `blendMode` | [Number](Number.html) |  |
-| `duration` | [Number](Number.html) |  |
+| `pictureId` | [Number](Number.md) |  |
+| `origin` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `scaleX` | [Number](Number.md) |  |
+| `scaleY` | [Number](Number.md) |  |
+| `opacity` | [Number](Number.md) |  |
+| `blendMode` | [Number](Number.md) |  |
+| `duration` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -193,7 +193,7 @@ The game object class for screen effect data, such as changes in color tone and 
 <dl>
 </dl>
 
-#### picture (pictureId) → {[Game_Picture](Game_Picture.html)}
+#### picture (pictureId) → {[Game_Picture](Game_Picture.md)}
 
 Returns the specified picture given the picture id.
 
@@ -201,7 +201,7 @@ The game object class for screen effect data, such as changes in color tone and 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pictureId` | [Number](Number.html) |  |
+| `pictureId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -215,7 +215,7 @@ The game object class for screen effect data, such as changes in color tone and 
                 </dd>
             </dl>
 
-#### realPictureId (pictureId) → {[Number](Number.html)}
+#### realPictureId (pictureId) → {[Number](Number.md)}
 
 Returns the real picture id, given the picture id.
 
@@ -223,7 +223,7 @@ The game object class for screen effect data, such as changes in color tone and 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pictureId` | [Number](Number.html) |  |
+| `pictureId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -243,8 +243,8 @@ The game object class for screen effect data, such as changes in color tone and 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pictureId` | [Number](Number.html) |  |
-| `speed` | [Number](Number.html) |  |
+| `pictureId` | [Number](Number.md) |  |
+| `speed` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -255,14 +255,14 @@ The game object class for screen effect data, such as changes in color tone and 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `scale` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `scale` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### shake () → {[Number](Number.html)}
+#### shake () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -282,15 +282,15 @@ The game object class for screen effect data, such as changes in color tone and 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pictureId` | [Number](Number.html) |  |
-| `name` | [String](String.html) |  |
-| `origin` | [Number](Number.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `scaleX` | [Number](Number.html) |  |
-| `scaleY` | [Number](Number.html) |  |
-| `opacity` | [Number](Number.html) |  |
-| `blendMode` | [Number](Number.html) |  |
+| `pictureId` | [Number](Number.md) |  |
+| `name` | [String](String.md) |  |
+| `origin` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `scaleX` | [Number](Number.md) |  |
+| `scaleY` | [Number](Number.md) |  |
+| `opacity` | [Number](Number.md) |  |
+| `blendMode` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -301,7 +301,7 @@ The game object class for screen effect data, such as changes in color tone and 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.html) |  |
+| `duration` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -312,7 +312,7 @@ The game object class for screen effect data, such as changes in color tone and 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.html) |  |
+| `duration` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -323,8 +323,8 @@ The game object class for screen effect data, such as changes in color tone and 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `color` | [Array](Array.html).<[Number](Number.html)> |  |
-| `duration` | [Number](Number.html) |  |
+| `color` | [Array](Array.md).<[Number](Number.md)> |  |
+| `duration` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -340,9 +340,9 @@ The game object class for screen effect data, such as changes in color tone and 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `power` | [Number](Number.html) |  |
-| `speed` | [Number](Number.html) |  |
-| `duration` | [Number](Number.html) |  |
+| `power` | [Number](Number.md) |  |
+| `speed` | [Number](Number.md) |  |
+| `duration` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -353,8 +353,8 @@ The game object class for screen effect data, such as changes in color tone and 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tone` | [Array](Array.html).<[Number](Number.html)> |  |
-| `duration` | [Number](Number.html) |  |
+| `tone` | [Array](Array.md).<[Number](Number.md)> |  |
+| `duration` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -365,10 +365,10 @@ The game object class for screen effect data, such as changes in color tone and 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `scale` | [Number](Number.html) |  |
-| `duration` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `scale` | [Number](Number.md) |  |
+| `duration` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -379,14 +379,14 @@ The game object class for screen effect data, such as changes in color tone and 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pictureId` | [Number](Number.html) |  |
-| `tone` | [Array](Array.html).<[Number](Number.html)> |  |
-| `duration` | [Number](Number.html) |  |
+| `pictureId` | [Number](Number.md) |  |
+| `tone` | [Array](Array.md).<[Number](Number.md)> |  |
+| `duration` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### tone () → {[Array](Array.html).<[Number](Number.html)>}
+#### tone () → {[Array](Array.md).<[Number](Number.md)>}
 
 <dl>
 </dl>
@@ -454,7 +454,7 @@ The game object class for screen effect data, such as changes in color tone and 
 <dl>
 </dl>
 
-#### weatherPower () → {[Number](Number.html)}
+#### weatherPower () → {[Number](Number.md)}
 
 Returns the weather power.
 <dl>
@@ -469,7 +469,7 @@ The game object class for screen effect data, such as changes in color tone and 
                 </dd>
             </dl>
 
-#### weatherType () → {[String](String.html)}
+#### weatherType () → {[String](String.md)}
 
 Returns the current weather type.
 <dl>
@@ -484,7 +484,7 @@ The game object class for screen effect data, such as changes in color tone and 
                 </dd>
             </dl>
 
-#### zoomScale () → {[Number](Number.html)}
+#### zoomScale () → {[Number](Number.md)}
 
 Returns the zoom scale of the screen.
 <dl>
@@ -499,7 +499,7 @@ The game object class for screen effect data, such as changes in color tone and 
                 </dd>
             </dl>
 
-#### zoomX () → {[Number](Number.html)}
+#### zoomX () → {[Number](Number.md)}
 
 Returns the zoom x coordinate of the screen.
 <dl>
@@ -514,7 +514,7 @@ The game object class for screen effect data, such as changes in color tone and 
                 </dd>
             </dl>
 
-#### zoomY () → {[Number](Number.html)}
+#### zoomY () → {[Number](Number.md)}
 
 Returns the zoom y coordiante of the screen.
 <dl>

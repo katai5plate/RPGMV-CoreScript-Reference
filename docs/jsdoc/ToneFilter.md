@@ -22,7 +22,7 @@ The color matrix filter for WebGL.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.html) | The hue value in the range (-360, 360) |
+| `value` | [Number](Number.md) | The hue value in the range (-360, 360) |
 
 <dl>
 </dl>
@@ -35,7 +35,7 @@ The color matrix filter for WebGL.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.html) | The saturation value in the range (-255, 255) |
+| `value` | [Number](Number.md) | The saturation value in the range (-255, 255) |
 
 <dl>
 </dl>
@@ -48,9 +48,9 @@ The color matrix filter for WebGL.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `r` | [Number](Number.html) | The red strength in the range (-255, 255) |
-| `g` | [Number](Number.html) | The green strength in the range (-255, 255) |
-| `b` | [Number](Number.html) | The blue strength in the range (-255, 255) |
+| `r` | [Number](Number.md) | The red strength in the range (-255, 255) |
+| `g` | [Number](Number.md) | The green strength in the range (-255, 255) |
+| `b` | [Number](Number.md) | The blue strength in the range (-255, 255) |
 
 <dl>
 </dl>

@@ -10,15 +10,15 @@ The point class.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) | The x coordinate |
-| `y` | [Number](Number.html) | The y coordinate |
+| `x` | [Number](Number.md) | The x coordinate |
+| `y` | [Number](Number.md) | The y coordinate |
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) | The x coordinate |
-| `y` | [Number](Number.html) | The y coordinate |
+| `x` | [Number](Number.md) | The x coordinate |
+| `y` | [Number](Number.md) | The y coordinate |
 
 <dl>
 </dl>

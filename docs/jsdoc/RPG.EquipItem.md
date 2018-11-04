@@ -1,26 +1,26 @@
 # Class: EquipItem
 
-## [RPG](RPG.html).  EquipItem ()
+## [RPG](RPG.md).  EquipItem ()
 
 #### new EquipItem ()
 
-A superclass of [RPG.Armor](RPG.Armor.html) and [RPG.Weapon](RPG.Weapon.html).
+A superclass of [RPG.Armor](RPG.Armor.md) and [RPG.Weapon](RPG.Weapon.md).
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `price` | [Number](Number.html) | The price of the weapon or armor. |
-| `etypeId` | [Number](Number.html) | The type of weapon or armor. 0: Weapon 1: Shield 2: Head 3: Body 4: Accessory |
-| `params` | [Array](Array.html).<[Number](Number.html)> | The amount of parameter change. An array of integers using the following IDs as subscripts: 0: Maximum hit points 1: Maximum magic points 2: Attack power 3: Defense power 4: Magic attack power 5: Magic defense power 6: Agility 7: Luck |
-| `traits` | [Array](Array.html).<[RPG.Trait](RPG.Trait.html)> | The array of Trait data. |
+| `price` | [Number](Number.md) | The price of the weapon or armor. |
+| `etypeId` | [Number](Number.md) | The type of weapon or armor. 0: Weapon 1: Shield 2: Head 3: Body 4: Accessory |
+| `params` | [Array](Array.md).<[Number](Number.md)> | The amount of parameter change. An array of integers using the following IDs as subscripts: 0: Maximum hit points 1: Maximum magic points 2: Attack power 3: Defense power 4: Magic attack power 5: Magic defense power 6: Agility 7: Luck |
+| `traits` | [Array](Array.md).<[RPG.Trait](RPG.Trait.md)> | The array of Trait data. |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [RPG.BaseItem](RPG.BaseItem.html)
+* [RPG.BaseItem](RPG.BaseItem.md)
 
  <br>
 
