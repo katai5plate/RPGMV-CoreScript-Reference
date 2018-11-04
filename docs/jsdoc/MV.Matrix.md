@@ -1,6 +1,6 @@
 # Class: Matrix
 
-## [MV](MV.html).  Matrix ()
+## [MV](MV.md).  Matrix ()
 
 #### new Matrix ()
 
@@ -8,8 +8,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `type` | [String](String.html) |  |
-| `value` | [Array](Array.html).<[Number](Number.html)> |  |
+| `type` | [String](String.md) |  |
+| `value` | [Array](Array.md).<[Number](Number.md)> |  |
 
 <dl>
 </dl>

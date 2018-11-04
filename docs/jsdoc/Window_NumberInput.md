@@ -10,23 +10,23 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `messageWindow` | [Window_Message](Window_Message.html) |  |
+| `messageWindow` | [Window_Message](Window_Message.md) |  |
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_messageWindow` | [Window_Message](Window_Message.html) |  |
-| `_number` | [Number](Number.html) |  |
-| `_maxDigits` | [Number](Number.html) |  |
-| `_buttons` | [Array](Array.html).<[Sprite_Button](Sprite_Button.html)> |  |
+| `_messageWindow` | [Window_Message](Window_Message.md) |  |
+| `_number` | [Number](Number.md) |  |
+| `_maxDigits` | [Number](Number.md) |  |
+| `_buttons` | [Array](Array.md).<[Sprite_Button](Sprite_Button.md)> |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Window_Selectable](Window_Selectable.html)
+* [Window_Selectable](Window_Selectable.md)
 
 ### Methods
 
@@ -43,7 +43,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### actorName (actorIndex) → {[String](String.html)}
+#### actorName (actorIndex) → {[String](String.md)}
 
 Returns the actor name given an index; the index starts from 1.
 
@@ -51,7 +51,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actorIndex` | [Number](Number.html) |  |
+| `actorIndex` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -113,7 +113,7 @@ The window used for the event command [Input Number].
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object | The child to add |
-| `index` | [Number](Number.html) | The index to place the child in |
+| `index` | [Number](Number.md) | The index to place the child in |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -167,7 +167,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### bottomRow () → {[Number](Number.html)}
+#### bottomRow () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -189,7 +189,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### buttonY () → {[Number](Number.html)}
+#### buttonY () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -203,7 +203,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### calcTextHeight (textState, all) → {[Number](Number.html)}
+#### calcTextHeight (textState, all) → {[Number](Number.md)}
 
 Calculates the text height of the textState (when using drawTextEx); if all is set to true, all lines of text are calculated, otherwise only a single line is processed.
 
@@ -211,7 +211,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 | `all` | Boolean |  |
 
 <dl>
@@ -253,7 +253,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `symbol` | [String](String.html) |  |
+| `symbol` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -293,7 +293,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### canvasToLocalX (x) → {[Number](Number.html)}
+#### canvasToLocalX (x) → {[Number](Number.md)}
 
 Returns the x coordinate of the mouse to a local window x coordinate.
 
@@ -301,7 +301,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -323,7 +323,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### canvasToLocalY (y) → {[Number](Number.html)}
+#### canvasToLocalY (y) → {[Number](Number.md)}
 
 Returns the y coordinate of the mouse to a local window y coordinate.
 
@@ -331,7 +331,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `y` | [Number](Number.html) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -393,7 +393,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `color` | [String](String.html) |  |
+| `color` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -412,7 +412,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -439,7 +439,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### contentsHeight () → {[Number](Number.html)}
+#### contentsHeight () → {[Number](Number.md)}
 
 Returns the inner content height of the window.
 <dl>
@@ -462,7 +462,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### contentsWidth () → {[Number](Number.html)}
+#### contentsWidth () → {[Number](Number.md)}
 
 Returns the inner content width of the window.
 <dl>
@@ -485,7 +485,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### convertEscapeCharacters (text) → {[String](String.html)}
+#### convertEscapeCharacters (text) → {[String](String.md)}
 
 Converts the escape characters and returns the text content after processing the characters.
 
@@ -493,7 +493,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.html) |  |
+| `text` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -535,7 +535,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### crisisColor () → {[String](String.html)}
+#### crisisColor () → {[String](String.md)}
 
 Returns the crisis color as a css color string.
 <dl>
@@ -722,7 +722,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### deathColor () → {[String](String.html)}
+#### deathColor () → {[String](String.md)}
 
 Returns the death color as a css color string.
 <dl>
@@ -759,7 +759,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### dimColor1 () → {[String](String.html)}
+#### dimColor1 () → {[String](String.md)}
 
 Color 1 of the dimmer sprite bitmap. for the gradient.
 <dl>
@@ -782,7 +782,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### dimColor2 () → {[String](String.html)}
+#### dimColor2 () → {[String](String.md)}
 
 Color 2 of the dimmer sprite bitmap for the gradient.
 <dl>
@@ -811,9 +811,9 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -834,10 +834,10 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -858,11 +858,11 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
-| `height` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
+| `height` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -883,10 +883,10 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -907,10 +907,10 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -931,9 +931,9 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -954,10 +954,10 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -978,10 +978,10 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1002,10 +1002,10 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1026,10 +1026,10 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1050,10 +1050,10 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1088,10 +1088,10 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `characterName` | [String](String.html) |  |
-| `characterIndex` | [Number](Number.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `characterName` | [String](String.md) |  |
+| `characterIndex` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1112,11 +1112,11 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.html) |  |
-| `unit` | [String](String.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `value` | [Number](Number.md) |  |
+| `unit` | [String](String.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1137,13 +1137,13 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `current` | [Number](Number.html) |  |
-| `max` | [Number](Number.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
-| `color1` | [String](String.html) |  |
-| `color2` | [String](String.html) |  |
+| `current` | [Number](Number.md) |  |
+| `max` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
+| `color1` | [String](String.md) |  |
+| `color2` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1162,12 +1162,12 @@ The window used for the event command [Input Number].
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `faceName` | [String](String.html) |  |  |
-| `faceIndex` | [Number](Number.html) |  |  |
-| `x` | [Number](Number.html) |  |  |
-| `y` | [Number](Number.html) |  |  |
-| `width` | [Number](Number.html) | <optional> |  |
-| `height` | [Number](Number.html) | <optional> |  |
+| `faceName` | [String](String.md) |  |  |
+| `faceIndex` | [Number](Number.md) |  |  |
+| `x` | [Number](Number.md) |  |  |
+| `y` | [Number](Number.md) |  |  |
+| `width` | [Number](Number.md) | <optional> |  |
+| `height` | [Number](Number.md) | <optional> |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1188,12 +1188,12 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
-| `rate` | [Number](Number.html) |  |
-| `color1` | [String](String.html) |  |
-| `color2` | [String](String.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
+| `rate` | [Number](Number.md) |  |
+| `color1` | [String](String.md) |  |
+| `color2` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1214,9 +1214,9 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `iconIndex` | [Number](Number.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `iconIndex` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1235,7 +1235,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -1256,10 +1256,10 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1281,10 +1281,10 @@ The window used for the event command [Input Number].
 | Name | Type | Description |
 | --- | --- | --- |
 | `text` | string |number |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `maxWidth` | [Number](Number.html) |  |
-| `align` | [String](String.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `maxWidth` | [Number](Number.md) |  |
+| `align` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1297,7 +1297,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### drawTextEx (text, x, y) → {[Number](Number.html)}
+#### drawTextEx (text, x, y) → {[Number](Number.md)}
 
 Draws text with text codes included; this will draw icons, increase text height, and more.
 
@@ -1305,9 +1305,9 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `text` | [String](String.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1342,7 +1342,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### fittingHeight (numLines) → {[Number](Number.html)}
+#### fittingHeight (numLines) → {[Number](Number.md)}
 
 Returns the fitting height given a number of lines based on the line height plus standard padding of the window. Default formula: numLines * lineHeight + standardPadding * 2
 
@@ -1350,7 +1350,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `numLines` | [Number](Number.html) |  |
+| `numLines` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1372,7 +1372,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### gaugeBackColor () → {[String](String.html)}
+#### gaugeBackColor () → {[String](String.md)}
 
 Returns the gauage back color as a css color string.
 <dl>
@@ -1442,14 +1442,14 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### hitTest (x, y) → {[Number](Number.html)}
+#### hitTest (x, y) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1471,7 +1471,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### hpColor (actor) → {[String](String.html)}
+#### hpColor (actor) → {[String](String.md)}
 
 Returns the hp color as a css string.
 
@@ -1479,7 +1479,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1501,7 +1501,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### hpGaugeColor1 () → {[String](String.html)}
+#### hpGaugeColor1 () → {[String](String.md)}
 
 Returns the hp gauge color 1 as a css color string.
 <dl>
@@ -1524,7 +1524,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### hpGaugeColor2 () → {[String](String.html)}
+#### hpGaugeColor2 () → {[String](String.md)}
 
 Returns the hp gauge color 2 as a css color string.
 <dl>
@@ -1547,7 +1547,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### index () → {[Number](Number.html)}
+#### index () → {[Number](Number.md)}
 
 Returns the current position of the _index property.
 <dl>
@@ -1578,7 +1578,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `messageWindow` | [Window_Message](Window_Message.html) |  |
+| `messageWindow` | [Window_Message](Window_Message.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -1675,8 +1675,8 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1771,7 +1771,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `symbol` | [String](String.html) |  |
+| `symbol` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1954,7 +1954,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### itemHeight () → {[Number](Number.html)}
+#### itemHeight () → {[Number](Number.md)}
 
 Returns the height of an item within the window; determines the height of a row.
 <dl>
@@ -1977,7 +1977,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### itemRect (index) → {[Rectangle](Rectangle.html)}
+#### itemRect (index) → {[Rectangle](Rectangle.md)}
 
 Creates a new rectangle based on itemWidth and itemHeight. The rectangle is mainly used for positioning items within the selectable window.
 
@@ -1985,7 +1985,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2007,7 +2007,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### itemRectForText (index) → {[Rectangle](Rectangle.html)}
+#### itemRectForText (index) → {[Rectangle](Rectangle.md)}
 
 Creates a new rectangle based on itemWidth and itemHeight The rectangle is used for positioning text within the selectable window.
 
@@ -2015,7 +2015,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2037,7 +2037,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### itemWidth () → {[Number](Number.html)}
+#### itemWidth () → {[Number](Number.md)}
 
 Returns the item width.
 <dl>
@@ -2060,7 +2060,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### lineHeight () → {[Number](Number.html)}
+#### lineHeight () → {[Number](Number.md)}
 
 Returns the standard line height of the current window; default is 36.
 <dl>
@@ -2125,7 +2125,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### maxCols () → {[Number](Number.html)}
+#### maxCols () → {[Number](Number.md)}
 
 <dl>
                 <dt>Overrides:</dt>
@@ -2147,7 +2147,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### maxItems () → {[Number](Number.html)}
+#### maxItems () → {[Number](Number.md)}
 
 <dl>
                 <dt>Overrides:</dt>
@@ -2169,7 +2169,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### maxPageItems () → {[Number](Number.html)}
+#### maxPageItems () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2191,7 +2191,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### maxPageRows () → {[Number](Number.html)}
+#### maxPageRows () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2213,7 +2213,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### maxRows () → {[Number](Number.html)}
+#### maxRows () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2235,7 +2235,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### maxTopRow () → {[Number](Number.html)}
+#### maxTopRow () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2265,10 +2265,10 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) | The x coordinate of the window |
-| `y` | [Number](Number.html) | The y coordinate of the window |
-| `width` | [Number](Number.html) | The width of the window |
-| `height` | [Number](Number.html) | The height of the window |
+| `x` | [Number](Number.md) | The x coordinate of the window |
+| `y` | [Number](Number.md) | The y coordinate of the window |
+| `width` | [Number](Number.md) | The width of the window |
+| `height` | [Number](Number.md) | The height of the window |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2281,7 +2281,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### mpColor (actor) → {[String](String.html)}
+#### mpColor (actor) → {[String](String.md)}
 
 Returns the mp color as a css color string.
 
@@ -2289,7 +2289,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2311,7 +2311,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### mpCostColor () → {[String](String.html)}
+#### mpCostColor () → {[String](String.md)}
 
 Returns the mp cost color as a css color string.
 <dl>
@@ -2334,7 +2334,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### mpGaugeColor1 () → {[String](String.html)}
+#### mpGaugeColor1 () → {[String](String.md)}
 
 Returns the mp gauge color 1 as a css color string.
 <dl>
@@ -2357,7 +2357,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### mpGaugeColor2 () → {[String](String.html)}
+#### mpGaugeColor2 () → {[String](String.md)}
 
 Returns the mp gauge color 2 as a css color string.
 <dl>
@@ -2380,7 +2380,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### normalColor () → {[String](String.html)}
+#### normalColor () → {[String](String.md)}
 
 Returns the normal color as a css color string.
 <dl>
@@ -2409,7 +2409,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2430,7 +2430,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2508,7 +2508,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `change` | [Number](Number.html) |  |
+| `change` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2521,7 +2521,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### partyMemberName (partyMemberIndex) → {[String](String.html)}
+#### partyMemberName (partyMemberIndex) → {[String](String.md)}
 
 Returns a party member name given an index; the index starts from 1.
 
@@ -2529,7 +2529,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `partyMemberIndex` | [Number](Number.html) |  |
+| `partyMemberIndex` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2551,7 +2551,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### pendingColor () → {[String](String.html)}
+#### pendingColor () → {[String](String.md)}
 
 Returns the pending color as a css color string.
 <dl>
@@ -2608,7 +2608,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### powerDownColor () → {[String](String.html)}
+#### powerDownColor () → {[String](String.md)}
 
 Returns the power down color as a css color string.
 <dl>
@@ -2631,7 +2631,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### powerUpColor () → {[String](String.html)}
+#### powerUpColor () → {[String](String.md)}
 
 Returns the power up color as a css color string.
 <dl>
@@ -2675,7 +2675,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2715,8 +2715,8 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `iconIndex` | [Number](Number.html) |  |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `iconIndex` | [Number](Number.md) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2737,8 +2737,8 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [String](String.html) |  |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `code` | [String](String.md) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2773,7 +2773,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2794,7 +2794,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2815,7 +2815,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2914,7 +2914,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2994,7 +2994,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) | The index to get the child from |
+| `index` | [Number](Number.md) | The index to get the child from |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3086,7 +3086,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### row () → {[Number](Number.html)}
+#### row () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3142,7 +3142,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3163,7 +3163,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `type` | [Number](Number.html) |  |
+| `type` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3182,7 +3182,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `row` | [Number](Number.html) |  |
+| `row` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3243,10 +3243,10 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) | The x coordinate of the cursor |
-| `y` | [Number](Number.html) | The y coordinate of the cursor |
-| `width` | [Number](Number.html) | The width of the cursor |
-| `height` | [Number](Number.html) | The height of the cursor |
+| `x` | [Number](Number.md) | The x coordinate of the cursor |
+| `y` | [Number](Number.md) | The y coordinate of the cursor |
+| `width` | [Number](Number.md) | The width of the cursor |
+| `height` | [Number](Number.md) | The height of the cursor |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3267,7 +3267,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `symbol` | [String](String.html) |  |
+| `symbol` | [String](String.md) |  |
 | `method` | * |  |
 
 <dl>
@@ -3327,9 +3327,9 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `r` | [Number](Number.html) | The red value in the range (-255, 255) |
-| `g` | [Number](Number.html) | The green value in the range (-255, 255) |
-| `b` | [Number](Number.html) | The blue value in the range (-255, 255) |
+| `r` | [Number](Number.md) | The red value in the range (-255, 255) |
+| `g` | [Number](Number.md) | The green value in the range (-255, 255) |
+| `b` | [Number](Number.md) | The blue value in the range (-255, 255) |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3350,7 +3350,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `row` | [Number](Number.html) |  |
+| `row` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3410,7 +3410,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### spacing () → {[Number](Number.html)}
+#### spacing () → {[Number](Number.md)}
 
 <dl>
                 <dt>Overrides:</dt>
@@ -3432,7 +3432,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### standardBackOpacity () → {[Number](Number.html)}
+#### standardBackOpacity () → {[Number](Number.md)}
 
 Returns the standard back opacity of the window; this is the opacity of the area behind the window's text content. Default is 192.
 <dl>
@@ -3455,7 +3455,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### standardFontFace () → {[String](String.html)}
+#### standardFontFace () → {[String](String.md)}
 
 Returns the standard font face of the game based on what language the game is in.
 <dl>
@@ -3478,7 +3478,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### standardFontSize () → {[Number](Number.html)}
+#### standardFontSize () → {[Number](Number.md)}
 
 Returns the standard font size of the text in window; default is 28.
 <dl>
@@ -3501,7 +3501,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### standardPadding () → {[Number](Number.html)}
+#### standardPadding () → {[Number](Number.md)}
 
 Returns the standard padding of the window; default is 18.
 <dl>
@@ -3529,7 +3529,7 @@ The window used for the event command [Input Number].
 <dl>
 </dl>
 
-#### systemColor () → {[String](String.html)}
+#### systemColor () → {[String](String.md)}
 
 Returns the system color as a css color string.
 <dl>
@@ -3560,7 +3560,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `n` | [Number](Number.html) |  |
+| `n` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3582,7 +3582,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### textPadding () → {[Number](Number.html)}
+#### textPadding () → {[Number](Number.md)}
 
 Returns the text padding of the window; default is 6.
 <dl>
@@ -3605,7 +3605,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### textWidth (text) → {[Number](Number.html)}
+#### textWidth (text) → {[Number](Number.md)}
 
 Calculates the width of a text string and returns a number.
 
@@ -3613,7 +3613,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.html) |  |
+| `text` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3635,7 +3635,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### topIndex () → {[Number](Number.html)}
+#### topIndex () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3657,7 +3657,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### topRow () → {[Number](Number.html)}
+#### topRow () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3679,7 +3679,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### tpColor (actor) → {[String](String.html)}
+#### tpColor (actor) → {[String](String.md)}
 
 Returns the tp color as a css color string.
 
@@ -3687,7 +3687,7 @@ The window used for the event command [Input Number].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3709,7 +3709,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### tpCostColor () → {[String](String.html)}
+#### tpCostColor () → {[String](String.md)}
 
 Returns the tp cost color as a css color string.
 <dl>
@@ -3732,7 +3732,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### tpGaugeColor1 () → {[String](String.html)}
+#### tpGaugeColor1 () → {[String](String.md)}
 
 Returns the tp gauge color 1 as a css color string.
 <dl>
@@ -3755,7 +3755,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### tpGaugeColor2 () → {[String](String.html)}
+#### tpGaugeColor2 () → {[String](String.md)}
 
 Returns tp gauge color 2 as a css color string.
 <dl>
@@ -3778,7 +3778,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### translucentOpacity () → {[Number](Number.html)}
+#### translucentOpacity () → {[Number](Number.md)}
 
 Returns the translucentOpacity for the window; The default is 160.
 <dl>
@@ -3841,7 +3841,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### updateBackOpacity () → {[Number](Number.html)}
+#### updateBackOpacity () → {[Number](Number.md)}
 
 Returns the inner content width of the window.
 <dl>
@@ -3969,7 +3969,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### windowHeight () → {[Number](Number.html)}
+#### windowHeight () → {[Number](Number.md)}
 
 Returns the window height.
 <dl>
@@ -3984,7 +3984,7 @@ The window used for the event command [Input Number].
                 </dd>
             </dl>
 
-#### windowWidth () → {[Number](Number.html)}
+#### windowWidth () → {[Number](Number.md)}
 
 Returns the window width.
 <dl>

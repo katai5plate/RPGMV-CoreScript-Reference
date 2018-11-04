@@ -10,7 +10,7 @@ Add some methods to standerd JavaScript object.
 
 ### Methods
 
-#### (static) randomInt (max) → {[Number](Number.html)}
+#### (static) randomInt (max) → {[Number](Number.md)}
 
 Generates a random integer in the range (0, max-1).
 
@@ -18,7 +18,7 @@ Add some methods to standerd JavaScript object.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `max` | [Number](Number.html) | The upper boundary (excluded) |
+| `max` | [Number](Number.md) | The upper boundary (excluded) |
 
 <dl>
 </dl>

@@ -10,10 +10,10 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_globalId` | [String](String.html) | [static]システムID 'RPGMV' |
-| `_lastAccessedId` | [Number](Number.html) | [static] 最後にセーブ・ロードを行ったファイルのID |
+| `_globalId` | [String](String.md) | [static]システムID 'RPGMV' |
+| `_lastAccessedId` | [Number](Number.md) | [static] 最後にセーブ・ロードを行ったファイルのID |
 | `_errorUrl` | * | [static] |
-| `_databaseFiles` | [Array](Array.html).<Object> | [static] |
+| `_databaseFiles` | [Array](Array.md).<Object> | [static] |
 
 <dl>
 </dl>
@@ -207,7 +207,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.html) |  |
+| `savefileId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -243,7 +243,7 @@
                 </dd>
             </dl>
 
-#### (static) lastAccessedSavefileId () → {[Number](Number.html)}
+#### (static) lastAccessedSavefileId () → {[Number](Number.md)}
 
  最後にセーブ・ロードを行ったファイルのIDを返す。
 <dl>
@@ -258,7 +258,7 @@
                 </dd>
             </dl>
 
-#### (static) latestSavefileId () → {[Number](Number.html)}
+#### (static) latestSavefileId () → {[Number](Number.md)}
 
  最新のセーブファイルID を返す。
 <dl>
@@ -293,8 +293,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.html) |  データ代入先の大域変数名 $dataXXX |
-| `src` | [String](String.html) | data/以下のファイル名 |
+| `name` | [String](String.md) |  データ代入先の大域変数名 $dataXXX |
+| `src` | [String](String.md) | data/以下のファイル名 |
 
 <dl>
 </dl>
@@ -307,7 +307,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.html) |  |
+| `savefileId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -320,7 +320,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.html) |  |
+| `savefileId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -335,7 +335,7 @@
                 </dd>
             </dl>
 
-#### (static) loadGlobalInfo () → {[Array](Array.html).<[MV.SaveFileInfo](MV.SaveFileInfo.html)>}
+#### (static) loadGlobalInfo () → {[Array](Array.md).<[MV.SaveFileInfo](MV.SaveFileInfo.md)>}
 
 GlobalInfo を読み込んで返す。
 <dl>
@@ -358,7 +358,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `mapId` | [Number](Number.html) | 1: 空のマップを作る |
+| `mapId` | [Number](Number.md) | 1: 空のマップを作る |
 
 <dl>
 </dl>
@@ -384,7 +384,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.html) |  |
+| `savefileId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -420,7 +420,7 @@
                 </dd>
             </dl>
 
-#### (static) makeSavefileInfo () → {[MV.SaveFileInfo](MV.SaveFileInfo.html)}
+#### (static) makeSavefileInfo () → {[MV.SaveFileInfo](MV.SaveFileInfo.md)}
 
  新規のセーブファイル情報を作って返す。
 <dl>
@@ -435,7 +435,7 @@
                 </dd>
             </dl>
 
-#### (static) maxSavefiles () → {[Number](Number.html)}
+#### (static) maxSavefiles () → {[Number](Number.md)}
 
  セーブ可能なファイルの最大数を返す。
 <dl>
@@ -471,7 +471,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.html) |  |
+| `savefileId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -494,7 +494,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.html) |  |
+| `savefileId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -517,7 +517,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `info` | [MV.SaveFileInfo](MV.SaveFileInfo.html) |  |
+| `info` | [MV.SaveFileInfo](MV.SaveFileInfo.md) |  |
 
 <dl>
 </dl>

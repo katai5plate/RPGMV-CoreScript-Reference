@@ -1,6 +1,6 @@
 # Class: TextState
 
-## [MV](MV.html).  TextState ()
+## [MV](MV.md).  TextState ()
 
 #### new TextState ()
 
@@ -8,10 +8,10 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `left` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `left` | [Number](Number.md) |  |
 
 <dl>
 </dl>

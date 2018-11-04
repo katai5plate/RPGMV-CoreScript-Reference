@@ -1,6 +1,6 @@
 # Class: BattlerAnimation
 
-## [MV](MV.html).  BattlerAnimation ()
+## [MV](MV.md).  BattlerAnimation ()
 
 #### new BattlerAnimation ()
 
@@ -8,9 +8,9 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `animationId` | [Number](Number.html) |  |
+| `animationId` | [Number](Number.md) |  |
 | `mirror` | Boolean |  |
-| `delay` | [Number](Number.html) |  |
+| `delay` | [Number](Number.md) |  |
 
 <dl>
 </dl>

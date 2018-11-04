@@ -10,26 +10,26 @@ The sprite for displaying a character.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `character` | [Game_Character](Game_Character.html) |  |
+| `character` | [Game_Character](Game_Character.md) |  |
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_character` | [Game_Character](Game_Character.html) | The Game_Character object assigned to the sprite. |
-| `_balloonDuration` | [Number](Number.html) |  |
-| `_tilesetId` | [Number](Number.html) |  |
-| `_upperBody` | [Sprite](Sprite.html) |  |
-| `_lowerBody` | [Sprite](Sprite.html) |  |
-| `_bushDepth` | [Number](Number.html) |  |
-| `_balloonSprite` | [Sprite_Balloon](Sprite_Balloon.html) | The current balloon sprite assigned to the sprite. |
+| `_character` | [Game_Character](Game_Character.md) | The Game_Character object assigned to the sprite. |
+| `_balloonDuration` | [Number](Number.md) |  |
+| `_tilesetId` | [Number](Number.md) |  |
+| `_upperBody` | [Sprite](Sprite.md) |  |
+| `_lowerBody` | [Sprite](Sprite.md) |  |
+| `_bushDepth` | [Number](Number.md) |  |
+| `_balloonSprite` | [Sprite_Balloon](Sprite_Balloon.md) | The current balloon sprite assigned to the sprite. |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Sprite_Base](Sprite_Base.html)
+* [Sprite_Base](Sprite_Base.md)
 
 ### Methods
 
@@ -54,7 +54,7 @@ The sprite for displaying a character.
                 </dd>
             </dl>
 
-#### characterBlockX () → {[Number](Number.html)}
+#### characterBlockX () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -68,7 +68,7 @@ The sprite for displaying a character.
                 </dd>
             </dl>
 
-#### characterBlockY () → {[Number](Number.html)}
+#### characterBlockY () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -82,7 +82,7 @@ The sprite for displaying a character.
                 </dd>
             </dl>
 
-#### characterPatternX () → {[Number](Number.html)}
+#### characterPatternX () → {[Number](Number.md)}
 
 Returns the character x pattern.
 <dl>
@@ -97,7 +97,7 @@ The sprite for displaying a character.
                 </dd>
             </dl>
 
-#### characterPatternY () → {[Number](Number.html)}
+#### characterPatternY () → {[Number](Number.md)}
 
 Returns the character y pattern.
 <dl>
@@ -145,7 +145,7 @@ The sprite for displaying a character.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `character` | [Game_Character](Game_Character.html) |  |
+| `character` | [Game_Character](Game_Character.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -231,7 +231,7 @@ The sprite for displaying a character.
                 </dd>
             </dl>
 
-#### patternHeight () → {[Number](Number.html)}
+#### patternHeight () → {[Number](Number.md)}
 
 Returns the pattern height.
 <dl>
@@ -246,7 +246,7 @@ The sprite for displaying a character.
                 </dd>
             </dl>
 
-#### patternWidth () → {[Number](Number.html)}
+#### patternWidth () → {[Number](Number.md)}
 
 Returns the pattern width.
 <dl>
@@ -269,7 +269,7 @@ The sprite for displaying a character.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `character` | [Game_Character](Game_Character.html) |  |
+| `character` | [Game_Character](Game_Character.md) |  |
 
 <dl>
 </dl>
@@ -318,9 +318,9 @@ The sprite for displaying a character.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `animation` | [RPG.Animation](RPG.Animation.html) |  |
+| `animation` | [RPG.Animation](RPG.Animation.md) |  |
 | `mirror` | Boolean |  |
-| `delay` | [Number](Number.html) |  |
+| `delay` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -339,13 +339,13 @@ The sprite for displaying a character.
 <dl>
 </dl>
 
-#### tilesetBitmap (tileId) → {[Bitmap](Bitmap.html)}
+#### tilesetBitmap (tileId) → {[Bitmap](Bitmap.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.html) |  |
+| `tileId` | [Number](Number.md) |  |
 
 <dl>
 </dl>

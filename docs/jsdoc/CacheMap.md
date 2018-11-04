@@ -10,7 +10,7 @@ Cache for images, audio, or any other kind of resource
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `manager` | [ImageManager](ImageManager.html) |  |
+| `manager` | [ImageManager](ImageManager.md) |  |
 
 <dl>
 </dl>
@@ -51,14 +51,14 @@ Cache for images, audio, or any other kind of resource
                 </dd>
             </dl>
 
-#### setItem (key, item) → {[CacheEntry](CacheEntry.html)}
+#### setItem (key, item) → {[CacheEntry](CacheEntry.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `key` | [String](String.html) |  |
-| `item` | [String](String.html) |  |
+| `key` | [String](String.md) |  |
+| `item` | [String](String.md) |  |
 
 <dl>
 </dl>
@@ -78,8 +78,8 @@ Cache for images, audio, or any other kind of resource
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `ticks` | [Number](Number.html) |  |
-| `delta` | [Number](Number.html) |  |
+| `ticks` | [Number](Number.md) |  |
+| `delta` | [Number](Number.md) |  |
 
 <dl>
 </dl>

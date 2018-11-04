@@ -10,23 +10,23 @@ The static class that carries out graphics processing.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `BLEND_ADD` | [Number](Number.html) | [static] The alias of PIXI.blendModes.ADD. |
-| `BLEND_NORMAL` | [Number](Number.html) | [static] The alias of PIXI.blendModes.NORMAL. |
-| `BLEND_MULTIPLY` | [Number](Number.html) | [static] The alias of PIXI.blendModes.MULTIPLY. |
-| `BLEND_SCREEN` | [Number](Number.html) | [static] The alias of PIXI.blendModes.SCREEN. |
-| `frameCount` | [Number](Number.html) | [static] The total frame count of the game screen. |
-| `width` | [Number](Number.html) | [static] The width of the game screen. |
-| `height` | [Number](Number.html) | [static] The height of the game screen. |
-| `boxWidth` | [Number](Number.html) | [static] The width of the window display area. |
-| `boxHeight` | [Number](Number.html) | [static] The height of the window display area. |
-| `scale` | [Number](Number.html) | [static] The zoom scale of the game screen. |
-| `_width` | [Number](Number.html) | [static] |
-| `_height` | [Number](Number.html) | [static] |
-| `_rendererType` | [String](String.html) | [static] |
-| `_boxWidth` | [Number](Number.html) | [static] |
-| `_boxHeight` | [Number](Number.html) | [static] |
-| `_scale` | [Number](Number.html) | [static] |
-| `_realScale` | [Number](Number.html) | [static] |
+| `BLEND_ADD` | [Number](Number.md) | [static] The alias of PIXI.blendModes.ADD. |
+| `BLEND_NORMAL` | [Number](Number.md) | [static] The alias of PIXI.blendModes.NORMAL. |
+| `BLEND_MULTIPLY` | [Number](Number.md) | [static] The alias of PIXI.blendModes.MULTIPLY. |
+| `BLEND_SCREEN` | [Number](Number.md) | [static] The alias of PIXI.blendModes.SCREEN. |
+| `frameCount` | [Number](Number.md) | [static] The total frame count of the game screen. |
+| `width` | [Number](Number.md) | [static] The width of the game screen. |
+| `height` | [Number](Number.md) | [static] The height of the game screen. |
+| `boxWidth` | [Number](Number.md) | [static] The width of the window display area. |
+| `boxHeight` | [Number](Number.md) | [static] The height of the window display area. |
+| `scale` | [Number](Number.md) | [static] The zoom scale of the game screen. |
+| `_width` | [Number](Number.md) | [static] |
+| `_height` | [Number](Number.md) | [static] |
+| `_rendererType` | [String](String.md) | [static] |
+| `_boxWidth` | [Number](Number.md) | [static] |
+| `_boxHeight` | [Number](Number.md) | [static] |
+| `_scale` | [Number](Number.md) | [static] |
+| `_realScale` | [Number](Number.md) | [static] |
 | `_errorPrinter` | Boolean | [static] |
 | `_canvas` | HTMLCanvasElement | [static] |
 | `_video` | HTMLVideoElement | [static] |
@@ -34,16 +34,16 @@ The static class that carries out graphics processing.
 | `_renderer` | PIXI.SystemRenderer | [static] |
 | `_fpsMeter` | FPSMeter | [static] |
 | `_modeBox` | HTMLDivElement | [static] |
-| `_skipCount` | [Number](Number.html) | [static] |
-| `_maxSkip` | [Number](Number.html) | [static] |
+| `_skipCount` | [Number](Number.md) | [static] |
+| `_maxSkip` | [Number](Number.md) | [static] |
 | `_rendered` | Boolean | [static] |
 | `_loadingImage` | HTMLImageElement | [static] |
-| `_loadingCount` | [Number](Number.html) | [static] |
+| `_loadingCount` | [Number](Number.md) | [static] |
 | `_fpsMeterToggled` | Boolean | [static] |
 | `_stretchEnabled` | Boolean | [static] |
 | `_canUseDifferenceBlend` | Boolean | [static] |
 | `_canUseSaturationBlend` | Boolean | [static] |
-| `_hiddenCanvas` | [Number](Number.html) | [static] |
+| `_hiddenCanvas` | [Number](Number.md) | [static] |
 
 <dl>
 </dl>
@@ -97,7 +97,7 @@ The static class that carries out graphics processing.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.html) |  |
+| `name` | [String](String.md) |  |
 
 <dl>
 </dl>
@@ -175,14 +175,14 @@ The static class that carries out graphics processing.
                 </dd>
             </dl>
 
-#### (static) _makeErrorHtml (name, message) → {[String](String.html)}
+#### (static) _makeErrorHtml (name, message) → {[String](String.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.html) |  |
-| `message` | [String](String.html) |  |
+| `name` | [String](String.md) |  |
+| `message` | [String](String.md) |  |
 
 <dl>
 </dl>
@@ -254,7 +254,7 @@ The static class that carries out graphics processing.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `src` | [String](String.html) |  |
+| `src` | [String](String.md) |  |
 
 <dl>
 </dl>
@@ -358,7 +358,7 @@ The static class that carries out graphics processing.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `type` | [String](String.html) | The video type to test support for |
+| `type` | [String](String.md) | The video type to test support for |
 
 <dl>
 </dl>
@@ -452,9 +452,9 @@ The static class that carries out graphics processing.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `width` | [Number](Number.html) | The width of the game screen |
-| `height` | [Number](Number.html) | The height of the game screen |
-| `type` | [String](String.html) | The type of the renderer. 'canvas', 'webgl', or 'auto'. |
+| `width` | [Number](Number.md) | The width of the game screen |
+| `height` | [Number](Number.md) | The height of the game screen |
+| `type` | [String](String.md) | The type of the renderer. 'canvas', 'webgl', or 'auto'. |
 
 <dl>
 </dl>
@@ -467,7 +467,7 @@ The static class that carries out graphics processing.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.html) | The face name of the font |
+| `name` | [String](String.md) | The face name of the font |
 
 <dl>
 </dl>
@@ -490,8 +490,8 @@ The static class that carries out graphics processing.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) | The x coordinate on the canvas area |
-| `y` | [Number](Number.html) | The y coordinate on the canvas area |
+| `x` | [Number](Number.md) | The x coordinate on the canvas area |
+| `y` | [Number](Number.md) | The y coordinate on the canvas area |
 
 <dl>
 </dl>
@@ -546,13 +546,13 @@ The static class that carries out graphics processing.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.html) | The face name of the font |
-| `url` | [String](String.html) | The url of the font file |
+| `name` | [String](String.md) | The face name of the font |
+| `url` | [String](String.md) | The url of the font file |
 
 <dl>
 </dl>
 
-#### (static) pageToCanvasX (x) → {[Number](Number.html)}
+#### (static) pageToCanvasX (x) → {[Number](Number.md)}
 
 Converts an x coordinate on the page to the corresponding x coordinate on the canvas area.
 
@@ -560,7 +560,7 @@ The static class that carries out graphics processing.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) | The x coordinate on the page to be converted |
+| `x` | [Number](Number.md) | The x coordinate on the page to be converted |
 
 <dl>
 </dl>
@@ -575,7 +575,7 @@ The static class that carries out graphics processing.
                 </dd>
             </dl>
 
-#### (static) pageToCanvasY (y) → {[Number](Number.html)}
+#### (static) pageToCanvasY (y) → {[Number](Number.md)}
 
 Converts a y coordinate on the page to the corresponding y coordinate on the canvas area.
 
@@ -583,7 +583,7 @@ The static class that carries out graphics processing.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `y` | [Number](Number.html) | The y coordinate on the page to be converted |
+| `y` | [Number](Number.md) | The y coordinate on the page to be converted |
 
 <dl>
 </dl>
@@ -606,7 +606,7 @@ The static class that carries out graphics processing.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `src` | [String](String.html) |  |
+| `src` | [String](String.md) |  |
 
 <dl>
 </dl>
@@ -619,8 +619,8 @@ The static class that carries out graphics processing.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.html) | The name of the error |
-| `message` | [String](String.html) | The message of the error |
+| `name` | [String](String.md) | The name of the error |
+| `message` | [String](String.md) | The message of the error |
 
 <dl>
 </dl>
@@ -633,7 +633,7 @@ The static class that carries out graphics processing.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `url` | [String](String.html) | The url of the resource failed to load |
+| `url` | [String](String.md) | The url of the resource failed to load |
 
 <dl>
 </dl>
@@ -646,7 +646,7 @@ The static class that carries out graphics processing.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stage` | [Stage](Stage.html) | The stage object to be rendered |
+| `stage` | [Stage](Stage.md) | The stage object to be rendered |
 
 <dl>
 </dl>
@@ -665,7 +665,7 @@ The static class that carries out graphics processing.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.html) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
 </dl>

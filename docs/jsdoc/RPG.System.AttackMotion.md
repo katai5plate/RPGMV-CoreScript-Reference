@@ -1,6 +1,6 @@
 # Class: AttackMotion
 
-## [RPG](RPG.html) [.System](RPG.System.html).  AttackMotion ()
+## [RPG](RPG.md) [.System](RPG.System.md).  AttackMotion ()
 
 #### new AttackMotion ()
 
@@ -10,8 +10,8 @@ The JSON data structure of an attack motion.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `type` | [Number](Number.html) | The type of the motion. |
-| `weaponImageId` | [Number](Number.html) | The ID of the weapon image. |
+| `type` | [Number](Number.md) | The type of the motion. |
+| `weaponImageId` | [Number](Number.md) | The ID of the weapon image. |
 
 <dl>
 </dl>

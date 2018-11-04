@@ -18,7 +18,7 @@ Add some methods to standerd JavaScript object.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `string` | [String](String.html) | The string to search for |
+| `string` | [String](String.md) | The string to search for |
 
 <dl>
 </dl>
@@ -33,7 +33,7 @@ Add some methods to standerd JavaScript object.
                 </dd>
             </dl>
 
-#### format () → {[String](String.html)}
+#### format () → {[String](String.md)}
 
 Replaces %1, %2 and so on in the string to the arguments.
 
@@ -56,7 +56,7 @@ Add some methods to standerd JavaScript object.
                 </dd>
             </dl>
 
-#### padZero (length) → {[String](String.html)}
+#### padZero (length) → {[String](String.md)}
 
 Makes a number string with leading zeros.
 
@@ -64,7 +64,7 @@ Add some methods to standerd JavaScript object.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `length` | [Number](Number.html) | The length of the output string |
+| `length` | [Number](Number.md) | The length of the output string |
 
 <dl>
 </dl>

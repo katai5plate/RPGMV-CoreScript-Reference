@@ -1,45 +1,45 @@
 # Class: Map
 
-## [RPG](RPG.html).  Map ()
+## [RPG](RPG.md).  Map ()
 
 #### new Map ()
 
- マップ用JSONのデータ構造。data/MapXXX.json( XXX は3桁の数値) 大域変数の、現在のマップのデータ [$dataMap](global.html#$dataMap) か Map管理オブジェクト [$gameMap](global.html#$gameMap) を介して扱う。描画は [Tilemap](Tilemap.html) か [ShaderTilemap](ShaderTilemap.html) で行われる。
+ マップ用JSONのデータ構造。data/MapXXX.json( XXX は3桁の数値) 大域変数の、現在のマップのデータ [$dataMap](global.html#$dataMap) か Map管理オブジェクト [$gameMap](global.html#$gameMap) を介して扱う。描画は [Tilemap](Tilemap.md) か [ShaderTilemap](ShaderTilemap.md) で行われる。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `displayName` | [String](String.html) | [表示名] |
-| `tilesetId` | [Number](Number.html) | [タイルセット]のID |
-| `width` | [Number](Number.html) |  マップの[幅] |
-| `height` | [Number](Number.html) |  マップの[高さ] |
-| `scrollType` | [Number](Number.html) | [スクロールタイプ] (0: ループしない, 1: 縦方向にループする, 2: 横方向にループする, 3: 縦横共にループする) |
+| `displayName` | [String](String.md) | [表示名] |
+| `tilesetId` | [Number](Number.md) | [タイルセット]のID |
+| `width` | [Number](Number.md) |  マップの[幅] |
+| `height` | [Number](Number.md) |  マップの[高さ] |
+| `scrollType` | [Number](Number.md) | [スクロールタイプ] (0: ループしない, 1: 縦方向にループする, 2: 横方向にループする, 3: 縦横共にループする) |
 | `specifyBattleback` | Boolean | [戦闘背景指定]するか |
-| `battleback1Name` | [String](String.html) |  レイヤー奥の戦闘背景画像1(地面)のファイル名 |
-| `battleback2Name` | [String](String.html) |  レイヤー手前の戦闘背景画像2(壁)のファイル名 |
+| `battleback1Name` | [String](String.md) |  レイヤー奥の戦闘背景画像1(地面)のファイル名 |
+| `battleback2Name` | [String](String.md) |  レイヤー手前の戦闘背景画像2(壁)のファイル名 |
 | `autoplayBgm` | Boolean | [BGM自動演奏]するか |
-| `bgm` | [RPG.AudioFile](RPG.AudioFile.html) | BGMの音声 |
+| `bgm` | [RPG.AudioFile](RPG.AudioFile.md) | BGMの音声 |
 | `autoplayBgs` | Boolean | [BGS自動演奏]するか |
-| `bgs` | [RPG.AudioFile](RPG.AudioFile.html) | BGSの音声 |
+| `bgs` | [RPG.AudioFile](RPG.AudioFile.md) | BGSの音声 |
 | `disableDashing` | Boolean | [ダッシュ禁止]か |
-| `encounterList` | [Array](Array.html).<[RPG.Map.Encounter](RPG.Map.Encounter.html)> | [エンカウント]の配列 |
-| `encounterStep` | [Number](Number.html) | [敵出現歩数] |
-| `parallaxName` | [String](String.html) | [遠景]の画像ファイル名 |
+| `encounterList` | [Array](Array.md).<[RPG.Map.Encounter](RPG.Map.Encounter.md)> | [エンカウント]の配列 |
+| `encounterStep` | [Number](Number.md) | [敵出現歩数] |
+| `parallaxName` | [String](String.md) | [遠景]の画像ファイル名 |
 | `parallaxLoopX` | Boolean | [遠景]が[横方向にループする]か |
 | `parallaxLoopY` | Boolean | [遠景]が[縦方向にループする]か |
-| `parallaxSx` | [Number](Number.html) | [遠景]が[横方向にループする]場合の[スクロール]量 |
-| `parallaxSy` | [Number](Number.html) | [遠景]が[縦方向にループする]場合の[スクロール]量 |
+| `parallaxSx` | [Number](Number.md) | [遠景]が[横方向にループする]場合の[スクロール]量 |
+| `parallaxSy` | [Number](Number.md) | [遠景]が[縦方向にループする]場合の[スクロール]量 |
 | `parallaxShow` | Boolean | [遠景]を[エディターに表示する]か |
-| `data` | [Array](Array.html).<[Number](Number.html)> |  タイルIDの配列によるマップデータ |
-| `events` | [Array](Array.html).<[RPG.Event](RPG.Event.html)> | [イベント]データの配列 |
+| `data` | [Array](Array.md).<[Number](Number.md)> |  タイルIDの配列によるマップデータ |
+| `events` | [Array](Array.md).<[RPG.Event](RPG.Event.md)> | [イベント]データの配列 |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [RPG.MetaData](RPG.MetaData.html)
+* [RPG.MetaData](RPG.MetaData.md)
 
 ### Classes
 

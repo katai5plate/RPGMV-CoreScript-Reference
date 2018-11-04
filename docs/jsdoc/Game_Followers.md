@@ -4,7 +4,7 @@
 
 #### new Game_Followers ()
 
- 隊列の並びなどを管理する。[Game_Follower](Game_Follower.html) を配列として定義したクラス。 [Game_Player#followers](Game_Player.html#followers) メソッドで得られる。
+ 隊列の並びなどを管理する。[Game_Follower](Game_Follower.md) を配列として定義したクラス。 [Game_Player#followers](Game_Player.html#followers) メソッドで得られる。
 
 ##### Properties:
 
@@ -12,7 +12,7 @@
 | --- | --- | --- |
 | `_visible` | Boolean |  |
 | `_gathering` | Boolean |  |
-| `_data` | [Array](Array.html).<[Game_Follower](Game_Follower.html)> |  |
+| `_data` | [Array](Array.md).<[Game_Follower](Game_Follower.md)> |  |
 
 <dl>
 </dl>
@@ -64,7 +64,7 @@
                 </dd>
             </dl>
 
-#### follower (index) → {[Game_Follower](Game_Follower.html)}
+#### follower (index) → {[Game_Follower](Game_Follower.md)}
 
  指定した番号の[隊列メンバー]を返す。
 
@@ -72,7 +72,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -126,8 +126,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  タイル数 |
-| `y` | [Number](Number.html) |  タイル数 |
+| `x` | [Number](Number.md) |  タイル数 |
+| `y` | [Number](Number.md) |  タイル数 |
 
 <dl>
 </dl>
@@ -196,9 +196,9 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  タイル数 |
-| `y` | [Number](Number.html) |  タイル数 |
-| `d` | [Number](Number.html) |  向き(テンキー対応) |
+| `x` | [Number](Number.md) |  タイル数 |
+| `y` | [Number](Number.md) |  タイル数 |
+| `d` | [Number](Number.md) |  向き(テンキー対応) |
 
 <dl>
 </dl>
@@ -215,7 +215,7 @@
 <dl>
 </dl>
 
-#### visibleFollowers () → {[Array](Array.html).<[Game_Follower](Game_Follower.html)>}
+#### visibleFollowers () → {[Array](Array.md).<[Game_Follower](Game_Follower.md)>}
 
  表示中の[隊列メンバー]の配列を返す。
 <dl>

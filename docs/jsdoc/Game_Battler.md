@@ -4,22 +4,22 @@
 
 #### new Game_Battler ()
 
-The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_Enemy.html). It contains methods for sprites
+The superdeclare class of [Game_Actor](Game_Actor.md) and [Game_Enemy](Game_Enemy.md). It contains methods for sprites
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_actions` | [Array](Array.html).<[Game_Action](Game_Action.html)> |  |
-| `_speed` | [Number](Number.html) |  |
-| `_result` | [Game_ActionResult](Game_ActionResult.html) |  |
-| `_actionState` | [String](String.html) |  |
-| `_lastTargetIndex` | [Number](Number.html) |  |
-| `_animations` | [Array](Array.html).<[MV.BattlerAnimation](MV.BattlerAnimation.html)> |  |
+| `_actions` | [Array](Array.md).<[Game_Action](Game_Action.md)> |  |
+| `_speed` | [Number](Number.md) |  |
+| `_result` | [Game_ActionResult](Game_ActionResult.md) |  |
+| `_actionState` | [String](String.md) |  |
+| `_lastTargetIndex` | [Number](Number.md) |  |
+| `_animations` | [Array](Array.md).<[MV.BattlerAnimation](MV.BattlerAnimation.md)> |  |
 | `_damagePopup` | Boolean |  |
-| `_effectType` | [String](String.html) |  |
-| `_motionType` | [String](String.html) |  |
-| `_weaponImageId` | [Number](Number.html) |  |
+| `_effectType` | [String](String.md) |  |
+| `_motionType` | [String](String.md) |  |
+| `_weaponImageId` | [Number](Number.md) |  |
 | `_motionRefresh` | Boolean |  |
 | `_selected` | Boolean |  |
 
@@ -28,17 +28,17 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 ### Extends
 
-* [Game_BattlerBase](Game_BattlerBase.html)
+* [Game_BattlerBase](Game_BattlerBase.md)
 
 ### Methods
 
-#### action (index) → {[Game_Action](Game_Action.html)}
+#### action (index) → {[Game_Action](Game_Action.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -52,7 +52,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### actionPlusSet () → {[Array](Array.html).<[Number](Number.html)>}
+#### actionPlusSet () → {[Array](Array.md).<[Number](Number.md)>}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -82,8 +82,8 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
-| `turns` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
+| `turns` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -96,13 +96,13 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
-| `turns` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
+| `turns` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### addedSkills () → {[Array](Array.html).<[Number](Number.html)>}
+#### addedSkills () → {[Array](Array.md).<[Number](Number.md)>}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -124,7 +124,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### addedSkillTypes () → {[Array](Array.html).<[Number](Number.html)>}
+#### addedSkillTypes () → {[Array](Array.md).<[Number](Number.md)>}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -154,7 +154,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -173,8 +173,8 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
-| `value` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -195,12 +195,12 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### allIcons () → {[Array](Array.html).<[Number](Number.html)>}
+#### allIcons () → {[Array](Array.md).<[Number](Number.md)>}
 
 Returns all of the icons attached to the battler.
 <dl>
@@ -223,7 +223,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### allTraits () → {[Array](Array.html).<[RPG.Trait](RPG.Trait.html)>}
+#### allTraits () → {[Array](Array.md).<[RPG.Trait](RPG.Trait.md)>}
 
 Returns all the traits of the battler.
 <dl>
@@ -260,7 +260,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### attackElements () → {[Array](Array.html).<[Number](Number.html)>}
+#### attackElements () → {[Array](Array.md).<[Number](Number.md)>}
 
 Returns the attack elements of the battler as a list of numbers.
 <dl>
@@ -283,7 +283,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### attackSkillId () → {[Number](Number.html)}
+#### attackSkillId () → {[Number](Number.md)}
 
 Returns the attack skill id in the database.
 <dl>
@@ -306,7 +306,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### attackSpeed () → {[Number](Number.html)}
+#### attackSpeed () → {[Number](Number.md)}
 
 Returns the attack speed of the battler.
 <dl>
@@ -329,7 +329,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### attackStates () → {[Array](Array.html).<[Number](Number.html)>}
+#### attackStates () → {[Array](Array.md).<[Number](Number.md)>}
 
 Returns the attack states of the battler as a list of numbers.
 <dl>
@@ -358,7 +358,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -371,7 +371,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### attackTimesAdd () → {[Number](Number.html)}
+#### attackTimesAdd () → {[Number](Number.md)}
 
 Returns the number of attacks available to the battler.
 <dl>
@@ -394,7 +394,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### buff (paramId) → {[Number](Number.html)}
+#### buff (paramId) → {[Number](Number.md)}
 
 Buffs the current parameter id.
 
@@ -402,7 +402,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -424,14 +424,14 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### buffIconIndex (buffLevel, paramId) → {[Number](Number.html)}
+#### buffIconIndex (buffLevel, paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `buffLevel` | [Number](Number.html) |  |
-| `paramId` | [Number](Number.html) |  |
+| `buffLevel` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -453,7 +453,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### buffIcons () → {[Array](Array.html).<[Number](Number.html)>}
+#### buffIcons () → {[Array](Array.md).<[Number](Number.md)>}
 
 Returns the array of buff icons attached to the battler; this is determined by the active buffs on the battler.
 <dl>
@@ -476,7 +476,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### buffLength () → {[Number](Number.html)}
+#### buffLength () → {[Number](Number.md)}
 
 Returns the length of the buff.
 <dl>
@@ -530,7 +530,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RPG.EquipItem.html) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -560,7 +560,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RPG.EquipItem.html) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -590,7 +590,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RPG.EquipItem.html) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -688,7 +688,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -718,7 +718,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableItem](RPG.UsableItem.html) |  |
+| `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -746,7 +746,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `damageRate` | [Number](Number.html) |  |
+| `damageRate` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -839,7 +839,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 <dl>
 </dl>
 
-#### collapseType () → {[Number](Number.html)}
+#### collapseType () → {[Number](Number.md)}
 
 Returns the collapse type of the battler.
 <dl>
@@ -862,7 +862,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### confusionLevel () → {[Number](Number.html)}
+#### confusionLevel () → {[Number](Number.md)}
 
 Returns the confusion level of the battler.
 <dl>
@@ -893,12 +893,12 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableItem](RPG.UsableItem.html) |  |
+| `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
 
 <dl>
 </dl>
 
-#### currentAction () → {[Game_Action](Game_Action.html)}
+#### currentAction () → {[Game_Action](Game_Action.md)}
 
 Returns the current action of the battler.
 <dl>
@@ -913,7 +913,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### deathStateId () → {[Number](Number.html)}
+#### deathStateId () → {[Number](Number.md)}
 
 Returns the death state id.
 <dl>
@@ -936,13 +936,13 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### debuffRate (paramId) → {[Number](Number.html)}
+#### debuffRate (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -970,7 +970,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1002,7 +1002,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### effectType () → {[String](String.html)}
+#### effectType () → {[String](String.md)}
 
 Returns the effect type of the battler.
 <dl>
@@ -1017,13 +1017,13 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### elementRate (elementId) → {[Number](Number.html)}
+#### elementRate (elementId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `elementId` | [Number](Number.html) |  |
+| `elementId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1051,7 +1051,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1072,7 +1072,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1097,8 +1097,8 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skillId` | [Number](Number.html) |  |
-| `targetIndex` | [Number](Number.html) |  |
+| `skillId` | [Number](Number.md) |  |
+| `targetIndex` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1111,7 +1111,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.html) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1124,7 +1124,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.html) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1137,7 +1137,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.html) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1150,12 +1150,12 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.html) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### guardSkillId () → {[Number](Number.html)}
+#### guardSkillId () → {[Number](Number.md)}
 
 Returns the guard skill id in the database.
 <dl>
@@ -1192,7 +1192,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### hpRate () → {[Number](Number.html)}
+#### hpRate () → {[Number](Number.md)}
 
 Returns the percentage of the battler's hp left as a float.
 <dl>
@@ -1221,7 +1221,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1394,7 +1394,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1422,7 +1422,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1450,7 +1450,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1575,7 +1575,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1686,7 +1686,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `atypeId` | [Number](Number.html) |  |
+| `atypeId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1714,7 +1714,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `etypeId` | [Number](Number.html) |  |
+| `etypeId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1742,7 +1742,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `etypeId` | [Number](Number.html) |  |
+| `etypeId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1770,7 +1770,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `wtypeId` | [Number](Number.html) |  |
+| `wtypeId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1874,7 +1874,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1902,7 +1902,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1961,7 +1961,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableItem](RPG.UsableItem.html) |  |
+| `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2049,7 +2049,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stypeId` | [Number](Number.html) |  |
+| `stypeId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2077,7 +2077,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stypeId` | [Number](Number.html) |  |
+| `stypeId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2107,7 +2107,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2137,7 +2137,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -2159,7 +2159,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2189,7 +2189,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2217,7 +2217,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2247,7 +2247,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -2333,7 +2333,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 <dl>
 </dl>
 
-#### makeActionTimes () → {[Number](Number.html)}
+#### makeActionTimes () → {[Number](Number.md)}
 
 Creates the number of times for an action.
 <dl>
@@ -2354,7 +2354,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 <dl>
 </dl>
 
-#### maxSlipDamage () → {[Number](Number.html)}
+#### maxSlipDamage () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -2368,7 +2368,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### maxTp () → {[Number](Number.html)}
+#### maxTp () → {[Number](Number.md)}
 
 Returns the maximum tp of the battler.
 <dl>
@@ -2399,7 +2399,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.Item](RPG.Item.html) |  |
+| `item` | [RPG.Item](RPG.Item.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2429,7 +2429,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2457,7 +2457,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableItem](RPG.UsableItem.html) |  |
+| `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2479,7 +2479,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### mostImportantStateText () → {[String](String.html)}
+#### mostImportantStateText () → {[String](String.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2501,7 +2501,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### motionType () → {[String](String.html)}
+#### motionType () → {[String](String.md)}
 
 Returns the motion type of the battler.
 <dl>
@@ -2516,7 +2516,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### mpRate () → {[Number](Number.html)}
+#### mpRate () → {[Number](Number.md)}
 
 Returns the percentage of the battler's mp left as a float.
 <dl>
@@ -2539,7 +2539,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### numActions () → {[Number](Number.html)}
+#### numActions () → {[Number](Number.md)}
 
 Returns the number of battler actions.
 <dl>
@@ -2575,7 +2575,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.html) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -2605,8 +2605,8 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
-| `turns` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
+| `turns` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2619,7 +2619,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### param (paramId) → {[Number](Number.html)}
+#### param (paramId) → {[Number](Number.md)}
 
 Returns a standard parameter, given a paramId; standard parameters include: HP, MP, Atk, M.Atk, Def, M.Def, Luck, Agility.
 
@@ -2627,7 +2627,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2649,7 +2649,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### paramBase (paramId) → {[Number](Number.html)}
+#### paramBase (paramId) → {[Number](Number.md)}
 
 Returns the base parameters of the battler; this is determined by their current level and the paramId given.
 
@@ -2657,7 +2657,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2679,13 +2679,13 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### paramBuffRate (paramId) → {[Number](Number.html)}
+#### paramBuffRate (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2707,13 +2707,13 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### paramMax (paramId) → {[Number](Number.html)}
+#### paramMax (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2735,13 +2735,13 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### paramMin (paramId) → {[Number](Number.html)}
+#### paramMin (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2763,13 +2763,13 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### paramPlus (paramId) → {[Number](Number.html)}
+#### paramPlus (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2791,13 +2791,13 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### paramRate (paramId) → {[Number](Number.html)}
+#### paramRate (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2825,7 +2825,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `abilityId` | [Number](Number.html) |  |
+| `abilityId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2855,7 +2855,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2876,7 +2876,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `action` | [Game_Action](Game_Action.html) |  |
+| `action` | [Game_Action](Game_Action.md) |  |
 
 <dl>
 </dl>
@@ -2895,7 +2895,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `action` | [Game_Action](Game_Action.html) |  |
+| `action` | [Game_Action](Game_Action.md) |  |
 
 <dl>
 </dl>
@@ -2956,7 +2956,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
+| `target` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
 </dl>
@@ -3030,7 +3030,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -3054,7 +3054,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -3065,7 +3065,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `timing` | [Number](Number.html) |  |
+| `timing` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -3081,7 +3081,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `effectType` | [String](String.html) |  |
+| `effectType` | [String](String.md) |  |
 
 <dl>
 </dl>
@@ -3094,7 +3094,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `motionType` | [String](String.html) |  |
+| `motionType` | [String](String.md) |  |
 
 <dl>
 </dl>
@@ -3112,7 +3112,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3125,7 +3125,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### restriction () → {[Number](Number.html)}
+#### restriction () → {[Number](Number.md)}
 
 Returns the number of the restriction.
 <dl>
@@ -3148,7 +3148,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### result () → {[Game_ActionResult](Game_ActionResult.html)}
+#### result () → {[Game_ActionResult](Game_ActionResult.md)}
 
 Returns the battler action result.
 <dl>
@@ -3190,8 +3190,8 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
-| `action` | [Game_Action](Game_Action.html) |  |
+| `index` | [Number](Number.md) |  |
+| `action` | [Game_Action](Game_Action.md) |  |
 
 <dl>
 </dl>
@@ -3202,7 +3202,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actionState` | [String](String.html) |  |
+| `actionState` | [String](String.md) |  |
 
 <dl>
 </dl>
@@ -3215,7 +3215,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `hp` | [Number](Number.html) |  |
+| `hp` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3234,7 +3234,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
+| `target` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
 </dl>
@@ -3247,7 +3247,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `mp` | [Number](Number.html) |  |
+| `mp` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3268,7 +3268,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tp` | [Number](Number.html) |  |
+| `tp` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3281,7 +3281,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### shiftAnimation () → {[MV.BattlerAnimation](MV.BattlerAnimation.html)}
+#### shiftAnimation () → {[MV.BattlerAnimation](MV.BattlerAnimation.md)}
 
 Shifts the battler animation.
 <dl>
@@ -3296,7 +3296,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### skillMpCost (skill) → {[Number](Number.html)}
+#### skillMpCost (skill) → {[Number](Number.md)}
 
 Returns the mp cost of the skill.
 
@@ -3304,7 +3304,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3326,7 +3326,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### skillTpCost (skill) → {[Number](Number.html)}
+#### skillTpCost (skill) → {[Number](Number.md)}
 
 Returns the tp cost of the skill.
 
@@ -3334,7 +3334,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3356,7 +3356,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### slotType () → {[Number](Number.html)}
+#### slotType () → {[Number](Number.md)}
 
 Returns the battler slot type of a trait.
 <dl>
@@ -3393,13 +3393,13 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### sparam (sparamId) → {[Number](Number.html)}
+#### sparam (sparamId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `sparamId` | [Number](Number.html) |  |
+| `sparamId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3427,7 +3427,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `flagId` | [Number](Number.html) |  |
+| `flagId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3449,7 +3449,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### speed () → {[Number](Number.html)}
+#### speed () → {[Number](Number.md)}
 
 Returns the speed of the battler.
 <dl>
@@ -3472,9 +3472,9 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `animationId` | [Number](Number.html) |  |
+| `animationId` | [Number](Number.md) |  |
 | `mirror` | Boolean |  |
-| `delay` | [Number](Number.html) |  |
+| `delay` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -3493,12 +3493,12 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `weaponImageId` | [Number](Number.html) |  |
+| `weaponImageId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### stateIcons () → {[Array](Array.html).<[Number](Number.html)>}
+#### stateIcons () → {[Array](Array.md).<[Number](Number.md)>}
 
 Returns the array of state icons attached to the battler; this is determined by the active states on the battler.
 <dl>
@@ -3521,7 +3521,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### stateMotionIndex () → {[Number](Number.html)}
+#### stateMotionIndex () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3543,7 +3543,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### stateOverlayIndex () → {[Number](Number.html)}
+#### stateOverlayIndex () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3565,13 +3565,13 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### stateRate (stateId) → {[Number](Number.html)}
+#### stateRate (stateId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3593,7 +3593,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### stateResistSet () → {[Array](Array.html).<[Number](Number.html)>}
+#### stateResistSet () → {[Array](Array.md).<[Number](Number.md)>}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3615,7 +3615,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### states () → {[Array](Array.html).<[RPG.State](RPG.State.html)>}
+#### states () → {[Array](Array.md).<[RPG.State](RPG.State.md)>}
 
 Returns the states applied to the battler.
 <dl>
@@ -3638,7 +3638,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### tpRate () → {[Number](Number.html)}
+#### tpRate () → {[Number](Number.md)}
 
 Returns the percentage of the battler's tp left as a float.
 <dl>
@@ -3661,7 +3661,7 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### traitObjects () → {[Array](Array.html).<*>}
+#### traitObjects () → {[Array](Array.md).<*>}
 
 Returns an array of the all objects having traits. States only here.
 <dl>
@@ -3684,13 +3684,13 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### traits (code) → {[Array](Array.html).<[RPG.Trait](RPG.Trait.html)>}
+#### traits (code) → {[Array](Array.md).<[RPG.Trait](RPG.Trait.md)>}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) |  |
+| `code` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3712,14 +3712,14 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### traitsPi (code, id) → {[Number](Number.html)}
+#### traitsPi (code, id) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) |  |
-| `id` | [Number](Number.html) |  |
+| `code` | [Number](Number.md) |  |
+| `id` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3741,13 +3741,13 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### traitsSet (code) → {[Array](Array.html).<[Number](Number.html)>}
+#### traitsSet (code) → {[Array](Array.md).<[Number](Number.md)>}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) |  |
+| `code` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3769,14 +3769,14 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### traitsSum (code, id) → {[Number](Number.html)}
+#### traitsSum (code, id) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) |  |
-| `id` | [Number](Number.html) |  |
+| `code` | [Number](Number.md) |  |
+| `id` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3798,13 +3798,13 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### traitsSumAll (code) → {[Number](Number.html)}
+#### traitsSumAll (code) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) |  |
+| `code` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3826,14 +3826,14 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### traitsWithId (code, id) → {[Array](Array.html).<[RPG.Trait](RPG.Trait.html)>}
+#### traitsWithId (code, id) → {[Array](Array.md).<[RPG.Trait](RPG.Trait.md)>}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) |  |
-| `id` | [Number](Number.html) |  |
+| `code` | [Number](Number.md) |  |
+| `id` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3890,12 +3890,12 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableItem](RPG.UsableItem.html) |  |
+| `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
 
 <dl>
 </dl>
 
-#### weaponImageId () → {[Number](Number.html)}
+#### weaponImageId () → {[Number](Number.md)}
 
 Returns the weapon image id.
 <dl>
@@ -3910,13 +3910,13 @@ The superdeclare class of [Game_Actor](Game_Actor.html) and [Game_Enemy](Game_En
                 </dd>
             </dl>
 
-#### xparam (xparamId) → {[Number](Number.html)}
+#### xparam (xparamId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `xparamId` | [Number](Number.html) |  |
+| `xparamId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>

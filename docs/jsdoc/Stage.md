@@ -4,13 +4,13 @@
 
 #### (abstract) new Stage ()
 
- 画面構成オブジェクトのツリーへの追加・削除を行う基礎オブジェクト。 [Scene_Base](Scene_Base.html) のスーパークラス。
+ 画面構成オブジェクトのツリーへの追加・削除を行う基礎オブジェクト。 [Scene_Base](Scene_Base.md) のスーパークラス。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `children` | [Array](Array.html) | [super][read-only] このオブジェクトに含まれる子オブジェクト |
+| `children` | [Array](Array.md) | [super][read-only] このオブジェクトに含まれる子オブジェクト |
 | `parent` | Object | [super][read-only] このオブジェクトを含む親オブジェクト |
 | `interactive` | Boolean |  操作可能か |
 
@@ -55,7 +55,7 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.html) |  追加位置 |
+| `index` | [Number](Number.md) |  追加位置 |
 
 <dl>
 </dl>
@@ -107,7 +107,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  取り除く位置 |
+| `index` | [Number](Number.md) |  取り除く位置 |
 
 <dl>
 </dl>

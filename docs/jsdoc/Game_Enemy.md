@@ -10,28 +10,28 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_enemyId` | [Number](Number.html) |  |
-| `_letter` | [String](String.html) |  |
+| `_enemyId` | [Number](Number.md) |  |
+| `_letter` | [String](String.md) |  |
 | `_plural` | Boolean |  |
-| `_screenX` | [Number](Number.html) |  |
-| `_screenY` | [Number](Number.html) |  |
+| `_screenX` | [Number](Number.md) |  |
+| `_screenY` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Game_Battler](Game_Battler.html)
+* [Game_Battler](Game_Battler.md)
 
 ### Methods
 
-#### action (index) → {[Game_Action](Game_Action.html)}
+#### action (index) → {[Game_Action](Game_Action.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -53,7 +53,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### actionPlusSet () → {[Array](Array.html).<[Number](Number.html)>}
+#### actionPlusSet () → {[Array](Array.md).<[Number](Number.md)>}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -83,8 +83,8 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
-| `turns` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
+| `turns` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -105,8 +105,8 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
-| `turns` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
+| `turns` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -119,7 +119,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### addedSkills () → {[Array](Array.html).<[Number](Number.html)>}
+#### addedSkills () → {[Array](Array.md).<[Number](Number.md)>}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -141,7 +141,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### addedSkillTypes () → {[Array](Array.html).<[Number](Number.html)>}
+#### addedSkillTypes () → {[Array](Array.md).<[Number](Number.md)>}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -171,7 +171,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -190,8 +190,8 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
-| `value` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -212,7 +212,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -225,7 +225,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### allIcons () → {[Array](Array.html).<[Number](Number.html)>}
+#### allIcons () → {[Array](Array.md).<[Number](Number.md)>}
 
 Returns all of the icons attached to the battler.
 <dl>
@@ -248,7 +248,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### allTraits () → {[Array](Array.html).<[RPG.Trait](RPG.Trait.html)>}
+#### allTraits () → {[Array](Array.md).<[RPG.Trait](RPG.Trait.md)>}
 
 Returns all the traits of the battler.
 <dl>
@@ -285,7 +285,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### attackElements () → {[Array](Array.html).<[Number](Number.html)>}
+#### attackElements () → {[Array](Array.md).<[Number](Number.md)>}
 
 Returns the attack elements of the battler as a list of numbers.
 <dl>
@@ -308,7 +308,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### attackSkillId () → {[Number](Number.html)}
+#### attackSkillId () → {[Number](Number.md)}
 
 Returns the attack skill id in the database.
 <dl>
@@ -331,7 +331,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### attackSpeed () → {[Number](Number.html)}
+#### attackSpeed () → {[Number](Number.md)}
 
 Returns the attack speed of the battler.
 <dl>
@@ -354,7 +354,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### attackStates () → {[Array](Array.html).<[Number](Number.html)>}
+#### attackStates () → {[Array](Array.md).<[Number](Number.md)>}
 
 Returns the attack states of the battler as a list of numbers.
 <dl>
@@ -383,7 +383,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -396,7 +396,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### attackTimesAdd () → {[Number](Number.html)}
+#### attackTimesAdd () → {[Number](Number.md)}
 
 Returns the number of attacks available to the battler.
 <dl>
@@ -419,7 +419,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### battlerHue () → {[Number](Number.html)}
+#### battlerHue () → {[Number](Number.md)}
 
 Returns the hue of the enemy.
 <dl>
@@ -434,7 +434,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### battlerName () → {[String](String.html)}
+#### battlerName () → {[String](String.md)}
 
 <dl>
 </dl>
@@ -448,7 +448,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### buff (paramId) → {[Number](Number.html)}
+#### buff (paramId) → {[Number](Number.md)}
 
 Buffs the current parameter id.
 
@@ -456,7 +456,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -478,14 +478,14 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### buffIconIndex (buffLevel, paramId) → {[Number](Number.html)}
+#### buffIconIndex (buffLevel, paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `buffLevel` | [Number](Number.html) |  |
-| `paramId` | [Number](Number.html) |  |
+| `buffLevel` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -507,7 +507,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### buffIcons () → {[Array](Array.html).<[Number](Number.html)>}
+#### buffIcons () → {[Array](Array.md).<[Number](Number.md)>}
 
 Returns the array of buff icons attached to the battler; this is determined by the active buffs on the battler.
 <dl>
@@ -530,7 +530,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### buffLength () → {[Number](Number.html)}
+#### buffLength () → {[Number](Number.md)}
 
 Returns the length of the buff.
 <dl>
@@ -584,7 +584,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RPG.EquipItem.html) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -614,7 +614,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RPG.EquipItem.html) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -644,7 +644,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RPG.EquipItem.html) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -742,7 +742,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -772,7 +772,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableItem](RPG.UsableItem.html) |  |
+| `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -800,7 +800,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `damageRate` | [Number](Number.html) |  |
+| `damageRate` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -965,7 +965,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### collapseType () → {[Number](Number.html)}
+#### collapseType () → {[Number](Number.md)}
 
 Returns the collapse type of the battler.
 <dl>
@@ -988,7 +988,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### confusionLevel () → {[Number](Number.html)}
+#### confusionLevel () → {[Number](Number.md)}
 
 Returns the confusion level of the battler.
 <dl>
@@ -1019,7 +1019,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableItem](RPG.UsableItem.html) |  |
+| `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1032,7 +1032,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### currentAction () → {[Game_Action](Game_Action.html)}
+#### currentAction () → {[Game_Action](Game_Action.md)}
 
 Returns the current action of the battler.
 <dl>
@@ -1055,7 +1055,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### deathStateId () → {[Number](Number.html)}
+#### deathStateId () → {[Number](Number.md)}
 
 Returns the death state id.
 <dl>
@@ -1078,13 +1078,13 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### debuffRate (paramId) → {[Number](Number.html)}
+#### debuffRate (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1112,7 +1112,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1152,7 +1152,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### dropItemRate () → {[Number](Number.html)}
+#### dropItemRate () → {[Number](Number.md)}
 
 Returns the item drop rate of the enemy.
 <dl>
@@ -1167,7 +1167,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### effectType () → {[String](String.html)}
+#### effectType () → {[String](String.md)}
 
 Returns the effect type of the battler.
 <dl>
@@ -1190,13 +1190,13 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### elementRate (elementId) → {[Number](Number.html)}
+#### elementRate (elementId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `elementId` | [Number](Number.html) |  |
+| `elementId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1218,7 +1218,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### enemy () → {[RPG.Enemy](RPG.Enemy.html)}
+#### enemy () → {[RPG.Enemy](RPG.Enemy.md)}
 
 Returns the enemy information from the database.
 <dl>
@@ -1233,7 +1233,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### enemyId () → {[Number](Number.html)}
+#### enemyId () → {[Number](Number.md)}
 
 Returns the enemy id.
 <dl>
@@ -1254,7 +1254,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1275,7 +1275,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1302,7 +1302,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### exp () → {[Number](Number.html)}
+#### exp () → {[Number](Number.md)}
 
 Returns the enemy's exp amount.
 <dl>
@@ -1323,8 +1323,8 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skillId` | [Number](Number.html) |  |
-| `targetIndex` | [Number](Number.html) |  |
+| `skillId` | [Number](Number.md) |  |
+| `targetIndex` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1337,7 +1337,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### friendsUnit () → {[Game_Troop](Game_Troop.html)}
+#### friendsUnit () → {[Game_Troop](Game_Troop.md)}
 
 Returns the other troops in the enemy team.
 <dl>
@@ -1360,7 +1360,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.html) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1381,7 +1381,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.html) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1402,7 +1402,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.html) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1423,7 +1423,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.html) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1436,7 +1436,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### gold () → {[Number](Number.html)}
+#### gold () → {[Number](Number.md)}
 
 Returns enemy's given gold.
 <dl>
@@ -1451,7 +1451,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### guardSkillId () → {[Number](Number.html)}
+#### guardSkillId () → {[Number](Number.md)}
 
 Returns the guard skill id in the database.
 <dl>
@@ -1488,7 +1488,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### hpRate () → {[Number](Number.html)}
+#### hpRate () → {[Number](Number.md)}
 
 Returns the percentage of the battler's hp left as a float.
 <dl>
@@ -1517,7 +1517,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1530,7 +1530,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### index () → {[Number](Number.html)}
+#### index () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -1552,9 +1552,9 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `enemyId` | [Number](Number.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `enemyId` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -1625,7 +1625,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.html) |  |
+| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.md) |  |
 
 <dl>
 </dl>
@@ -1773,7 +1773,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1801,7 +1801,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1829,7 +1829,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1970,7 +1970,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2088,7 +2088,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `atypeId` | [Number](Number.html) |  |
+| `atypeId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2116,7 +2116,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `etypeId` | [Number](Number.html) |  |
+| `etypeId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2144,7 +2144,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `etypeId` | [Number](Number.html) |  |
+| `etypeId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2172,7 +2172,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `wtypeId` | [Number](Number.html) |  |
+| `wtypeId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2306,7 +2306,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2334,7 +2334,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2409,7 +2409,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableItem](RPG.UsableItem.html) |  |
+| `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2505,7 +2505,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stypeId` | [Number](Number.html) |  |
+| `stypeId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2533,7 +2533,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stypeId` | [Number](Number.html) |  |
+| `stypeId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2563,7 +2563,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2608,7 +2608,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2638,7 +2638,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2668,7 +2668,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2696,7 +2696,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2726,7 +2726,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2838,13 +2838,13 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### itemObject (kind, dataId) → {[RPG.BaseItem](RPG.BaseItem.html)}
+#### itemObject (kind, dataId) → {[RPG.BaseItem](RPG.BaseItem.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `kind` | [Number](Number.html) | 1:item 2:weapon 3:armor |
+| `kind` | [Number](Number.md) | 1:item 2:weapon 3:armor |
 | `dataId` | Numver |  |
 
 <dl>
@@ -2872,7 +2872,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### makeActionTimes () → {[Number](Number.html)}
+#### makeActionTimes () → {[Number](Number.md)}
 
 Creates the number of times for an action.
 <dl>
@@ -2895,7 +2895,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### makeDropItems () → {[Array](Array.html).<[RPG.BaseItem](RPG.BaseItem.html)>}
+#### makeDropItems () → {[Array](Array.md).<[RPG.BaseItem](RPG.BaseItem.md)>}
 
 Creates the drop items for the enemy specified by the database.
 <dl>
@@ -2924,7 +2924,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### maxSlipDamage () → {[Number](Number.html)}
+#### maxSlipDamage () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2946,7 +2946,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### maxTp () → {[Number](Number.html)}
+#### maxTp () → {[Number](Number.md)}
 
 Returns the maximum tp of the battler.
 <dl>
@@ -2975,7 +2975,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.html) |  |
+| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.md) |  |
 
 <dl>
 </dl>
@@ -2995,8 +2995,8 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param1` | [Number](Number.html) |  |
-| `param2` | [Number](Number.html) |  |
+| `param1` | [Number](Number.md) |  |
+| `param2` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -3018,7 +3018,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.Item](RPG.Item.html) |  |
+| `item` | [RPG.Item](RPG.Item.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3046,8 +3046,8 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param1` | [Number](Number.html) |  |
-| `param2` | [Number](Number.html) |  |
+| `param1` | [Number](Number.md) |  |
+| `param2` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -3067,7 +3067,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param` | [Number](Number.html) |  |
+| `param` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -3089,7 +3089,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3117,7 +3117,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param` | [Number](Number.html) |  |
+| `param` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -3137,7 +3137,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param` | [Number](Number.html) |  |
+| `param` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -3157,8 +3157,8 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param1` | [Number](Number.html) |  |
-| `param2` | [Number](Number.html) |  |
+| `param1` | [Number](Number.md) |  |
+| `param2` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -3178,7 +3178,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableItem](RPG.UsableItem.html) |  |
+| `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3200,7 +3200,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### mostImportantStateText () → {[String](String.html)}
+#### mostImportantStateText () → {[String](String.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3222,7 +3222,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### motionType () → {[String](String.html)}
+#### motionType () → {[String](String.md)}
 
 Returns the motion type of the battler.
 <dl>
@@ -3245,7 +3245,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### mpRate () → {[Number](Number.html)}
+#### mpRate () → {[Number](Number.md)}
 
 Returns the percentage of the battler's mp left as a float.
 <dl>
@@ -3268,7 +3268,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### name () → {[String](String.html)}
+#### name () → {[String](String.md)}
 
 Returns the enemy name with letter.
 <dl>
@@ -3283,7 +3283,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### numActions () → {[Number](Number.html)}
+#### numActions () → {[Number](Number.md)}
 
 Returns the number of battler actions.
 <dl>
@@ -3351,7 +3351,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.html) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3391,7 +3391,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### opponentsUnit () → {[Game_Party](Game_Party.html)}
+#### opponentsUnit () → {[Game_Party](Game_Party.md)}
 
 Returns the game party.
 <dl>
@@ -3406,7 +3406,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### originalName () → {[String](String.html)}
+#### originalName () → {[String](String.md)}
 
 Returns the enemy original name.
 <dl>
@@ -3427,8 +3427,8 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
-| `turns` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
+| `turns` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3441,7 +3441,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### param (paramId) → {[Number](Number.html)}
+#### param (paramId) → {[Number](Number.md)}
 
 Returns a standard parameter, given a paramId; standard parameters include: HP, MP, Atk, M.Atk, Def, M.Def, Luck, Agility.
 
@@ -3449,7 +3449,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3471,13 +3471,13 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### paramBase (paramId) → {[Number](Number.html)}
+#### paramBase (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -3499,13 +3499,13 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### paramBuffRate (paramId) → {[Number](Number.html)}
+#### paramBuffRate (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3527,13 +3527,13 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### paramMax (paramId) → {[Number](Number.html)}
+#### paramMax (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3555,13 +3555,13 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### paramMin (paramId) → {[Number](Number.html)}
+#### paramMin (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3583,13 +3583,13 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### paramPlus (paramId) → {[Number](Number.html)}
+#### paramPlus (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3611,13 +3611,13 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### paramRate (paramId) → {[Number](Number.html)}
+#### paramRate (paramId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3645,7 +3645,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `abilityId` | [Number](Number.html) |  |
+| `abilityId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3675,7 +3675,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3694,7 +3694,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.html) |  |
+| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -3726,7 +3726,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.html) |  |
+| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -3857,7 +3857,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
+| `target` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3987,7 +3987,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4035,7 +4035,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4054,7 +4054,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `timing` | [Number](Number.html) |  |
+| `timing` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4086,7 +4086,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `effectType` | [String](String.html) |  |
+| `effectType` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4107,7 +4107,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `motionType` | [String](String.html) |  |
+| `motionType` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4141,7 +4141,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4154,7 +4154,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### restriction () → {[Number](Number.html)}
+#### restriction () → {[Number](Number.md)}
 
 Returns the number of the restriction.
 <dl>
@@ -4177,7 +4177,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### result () → {[Game_ActionResult](Game_ActionResult.html)}
+#### result () → {[Game_ActionResult](Game_ActionResult.md)}
 
 Returns the battler action result.
 <dl>
@@ -4214,7 +4214,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### screenX () → {[Number](Number.html)}
+#### screenX () → {[Number](Number.md)}
 
 Returns enemy screen X coordinate.
 <dl>
@@ -4229,7 +4229,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### screenY () → {[Number](Number.html)}
+#### screenY () → {[Number](Number.md)}
 
 Returns enemy screen Y position.
 <dl>
@@ -4257,14 +4257,14 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### selectAction (actionList, ratingZero) → {[RPG.Enemy.Action](RPG.Enemy.Action.html)}
+#### selectAction (actionList, ratingZero) → {[RPG.Enemy.Action](RPG.Enemy.Action.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actionList` | [Array](Array.html).<[RPG.Enemy.Action](RPG.Enemy.Action.html)> |  |
-| `ratingZero` | [Number](Number.html) |  |
+| `actionList` | [Array](Array.md).<[RPG.Enemy.Action](RPG.Enemy.Action.md)> |  |
+| `ratingZero` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -4284,7 +4284,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actionList` | [Array](Array.html).<[RPG.Enemy.Action](RPG.Enemy.Action.html)> |  |
+| `actionList` | [Array](Array.md).<[RPG.Enemy.Action](RPG.Enemy.Action.md)> |  |
 
 <dl>
 </dl>
@@ -4297,8 +4297,8 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
-| `action` | [Game_Action](Game_Action.html) |  |
+| `index` | [Number](Number.md) |  |
+| `action` | [Game_Action](Game_Action.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4317,7 +4317,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actionState` | [String](String.html) |  |
+| `actionState` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4338,7 +4338,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `hp` | [Number](Number.html) |  |
+| `hp` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4357,7 +4357,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
+| `target` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4376,7 +4376,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `letter` | [String](String.html) |  |
+| `letter` | [String](String.md) |  |
 
 <dl>
 </dl>
@@ -4389,7 +4389,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `mp` | [Number](Number.html) |  |
+| `mp` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4421,7 +4421,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tp` | [Number](Number.html) |  |
+| `tp` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4440,14 +4440,14 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `enemyId` | [Number](Number.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `enemyId` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### shiftAnimation () → {[MV.BattlerAnimation](MV.BattlerAnimation.html)}
+#### shiftAnimation () → {[MV.BattlerAnimation](MV.BattlerAnimation.md)}
 
 Shifts the battler animation.
 <dl>
@@ -4470,7 +4470,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### skillMpCost (skill) → {[Number](Number.html)}
+#### skillMpCost (skill) → {[Number](Number.md)}
 
 Returns the mp cost of the skill.
 
@@ -4478,7 +4478,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4500,7 +4500,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### skillTpCost (skill) → {[Number](Number.html)}
+#### skillTpCost (skill) → {[Number](Number.md)}
 
 Returns the tp cost of the skill.
 
@@ -4508,7 +4508,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4530,7 +4530,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### slotType () → {[Number](Number.html)}
+#### slotType () → {[Number](Number.md)}
 
 Returns the battler slot type of a trait.
 <dl>
@@ -4567,13 +4567,13 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### sparam (sparamId) → {[Number](Number.html)}
+#### sparam (sparamId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `sparamId` | [Number](Number.html) |  |
+| `sparamId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4601,7 +4601,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `flagId` | [Number](Number.html) |  |
+| `flagId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4623,7 +4623,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### speed () → {[Number](Number.html)}
+#### speed () → {[Number](Number.md)}
 
 Returns the speed of the battler.
 <dl>
@@ -4654,9 +4654,9 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `animationId` | [Number](Number.html) |  |
+| `animationId` | [Number](Number.md) |  |
 | `mirror` | Boolean |  |
-| `delay` | [Number](Number.html) |  |
+| `delay` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4691,7 +4691,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `weaponImageId` | [Number](Number.html) |  |
+| `weaponImageId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4704,7 +4704,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### stateIcons () → {[Array](Array.html).<[Number](Number.html)>}
+#### stateIcons () → {[Array](Array.md).<[Number](Number.md)>}
 
 Returns the array of state icons attached to the battler; this is determined by the active states on the battler.
 <dl>
@@ -4727,7 +4727,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### stateMotionIndex () → {[Number](Number.html)}
+#### stateMotionIndex () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4749,7 +4749,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### stateOverlayIndex () → {[Number](Number.html)}
+#### stateOverlayIndex () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4771,13 +4771,13 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### stateRate (stateId) → {[Number](Number.html)}
+#### stateRate (stateId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4799,7 +4799,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### stateResistSet () → {[Array](Array.html).<[Number](Number.html)>}
+#### stateResistSet () → {[Array](Array.md).<[Number](Number.md)>}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4821,7 +4821,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### states () → {[Array](Array.html).<[RPG.State](RPG.State.html)>}
+#### states () → {[Array](Array.md).<[RPG.State](RPG.State.md)>}
 
 Returns the states applied to the battler.
 <dl>
@@ -4844,7 +4844,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### tpRate () → {[Number](Number.html)}
+#### tpRate () → {[Number](Number.md)}
 
 Returns the percentage of the battler's tp left as a float.
 <dl>
@@ -4890,13 +4890,13 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### traits (code) → {[Array](Array.html).<[RPG.Trait](RPG.Trait.html)>}
+#### traits (code) → {[Array](Array.md).<[RPG.Trait](RPG.Trait.md)>}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) |  |
+| `code` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4918,14 +4918,14 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### traitsPi (code, id) → {[Number](Number.html)}
+#### traitsPi (code, id) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) |  |
-| `id` | [Number](Number.html) |  |
+| `code` | [Number](Number.md) |  |
+| `id` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4947,13 +4947,13 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### traitsSet (code) → {[Array](Array.html).<[Number](Number.html)>}
+#### traitsSet (code) → {[Array](Array.md).<[Number](Number.md)>}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) |  |
+| `code` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4975,14 +4975,14 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### traitsSum (code, id) → {[Number](Number.html)}
+#### traitsSum (code, id) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) |  |
-| `id` | [Number](Number.html) |  |
+| `code` | [Number](Number.md) |  |
+| `id` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5004,13 +5004,13 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### traitsSumAll (code) → {[Number](Number.html)}
+#### traitsSumAll (code) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) |  |
+| `code` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5032,14 +5032,14 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### traitsWithId (code, id) → {[Array](Array.html).<[RPG.Trait](RPG.Trait.html)>}
+#### traitsWithId (code, id) → {[Array](Array.md).<[RPG.Trait](RPG.Trait.md)>}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) |  |
-| `id` | [Number](Number.html) |  |
+| `code` | [Number](Number.md) |  |
+| `id` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5069,7 +5069,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `enemyId` | [Number](Number.html) |  |
+| `enemyId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -5109,7 +5109,7 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableItem](RPG.UsableItem.html) |  |
+| `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5122,7 +5122,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### weaponImageId () → {[Number](Number.html)}
+#### weaponImageId () → {[Number](Number.md)}
 
 Returns the weapon image id.
 <dl>
@@ -5145,13 +5145,13 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### xparam (xparamId) → {[Number](Number.html)}
+#### xparam (xparamId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `xparamId` | [Number](Number.html) |  |
+| `xparamId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>

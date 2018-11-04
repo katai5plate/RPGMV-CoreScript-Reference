@@ -10,7 +10,7 @@ The static class that handles JSON with object information.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `maxDepth` | [Number](Number.html) | [static] The maximum depth of objects(default:100) |
+| `maxDepth` | [Number](Number.md) | [static] The maximum depth of objects(default:100) |
 
 <dl>
 </dl>
@@ -24,7 +24,7 @@ The static class that handles JSON with object information.
 | Name | Type | Description |
 | --- | --- | --- |
 | `value` | Object |  |
-| `circular` | [Array](Array.html) |  |
+| `circular` | [Array](Array.md) |  |
 | `registry` | Object |  |
 
 <dl>
@@ -46,8 +46,8 @@ The static class that handles JSON with object information.
 | Name | Type | Description |
 | --- | --- | --- |
 | `value` | Object |  |
-| `circular` | [Array](Array.html) |  |
-| `depth` | [Number](Number.html) |  |
+| `circular` | [Array](Array.md) |  |
+| `depth` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -61,7 +61,7 @@ The static class that handles JSON with object information.
                 </dd>
             </dl>
 
-#### (static) _getConstructorName (value) → {[String](String.html)}
+#### (static) _getConstructorName (value) → {[String](String.md)}
 
 ##### Parameters:
 
@@ -133,7 +133,7 @@ The static class that handles JSON with object information.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `json` | [String](String.html) | The JSON string |
+| `json` | [String](String.md) | The JSON string |
 
 <dl>
 </dl>
@@ -148,7 +148,7 @@ The static class that handles JSON with object information.
                 </dd>
             </dl>
 
-#### (static) stringify (object) → {[String](String.html)}
+#### (static) stringify (object) → {[String](String.md)}
 
 Converts an object to a JSON string with object information.
 

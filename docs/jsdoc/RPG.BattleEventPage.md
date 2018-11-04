@@ -1,6 +1,6 @@
 # Class: BattleEventPage
 
-## [RPG](RPG.html).  BattleEventPage ()
+## [RPG](RPG.md).  BattleEventPage ()
 
 #### new BattleEventPage ()
 
@@ -10,9 +10,9 @@ The data class for the event page.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `conditions` | [RPG.BattleEventPage.Conditions](RPG.BattleEventPage.Conditions.html) | The event condition (RPG.EventPage.Condition). |
-| `list` | [Array](Array.html).<[RPG.EventCommand](RPG.EventCommand.html)> | Program contents. |
-| `span` | [Number](Number.html) | Span (0: battle, 1: turn, 2: moment). |
+| `conditions` | [RPG.BattleEventPage.Conditions](RPG.BattleEventPage.Conditions.md) | The event condition (RPG.EventPage.Condition). |
+| `list` | [Array](Array.md).<[RPG.EventCommand](RPG.EventCommand.md)> | Program contents. |
+| `span` | [Number](Number.md) | Span (0: battle, 1: turn, 2: moment). |
 
 <dl>
 </dl>

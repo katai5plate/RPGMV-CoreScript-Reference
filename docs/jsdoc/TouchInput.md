@@ -10,26 +10,26 @@ The static class that handles input data from the mouse and touchscreen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `keyRepeatWait` | [Number](Number.html) | [static] The wait time of the pseudo key repeat in frames. |
-| `keyRepeatInterval` | [Number](Number.html) | [static] The interval of the pseudo key repeat in frames. |
-| `wheelX` | [Number](Number.html) | [static][read-only] The horizontal scroll amount. |
-| `wheelY` | [Number](Number.html) | [static][read-only] The vertical scroll amount. |
-| `x` | [Number](Number.html) | [static][read-only] The x coordinate on the canvas area of the latest touch event. |
-| `y` | [Number](Number.html) | [static][read-only] The y coordinate on the canvas area of the latest touch event. |
-| `date` | [Number](Number.html) | [static][read-only] The time of the last input in milliseconds. |
+| `keyRepeatWait` | [Number](Number.md) | [static] The wait time of the pseudo key repeat in frames. |
+| `keyRepeatInterval` | [Number](Number.md) | [static] The interval of the pseudo key repeat in frames. |
+| `wheelX` | [Number](Number.md) | [static][read-only] The horizontal scroll amount. |
+| `wheelY` | [Number](Number.md) | [static][read-only] The vertical scroll amount. |
+| `x` | [Number](Number.md) | [static][read-only] The x coordinate on the canvas area of the latest touch event. |
+| `y` | [Number](Number.md) | [static][read-only] The y coordinate on the canvas area of the latest touch event. |
+| `date` | [Number](Number.md) | [static][read-only] The time of the last input in milliseconds. |
 | `_mousePressed` | Boolean | [static] |
 | `_screenPressed` | Boolean | [static] |
-| `_pressedTime` | [Number](Number.html) | [static] |
-| `_events` | [MV.TouchInputEvents](MV.TouchInputEvents.html) | [static] |
+| `_pressedTime` | [Number](Number.md) | [static] |
+| `_events` | [MV.TouchInputEvents](MV.TouchInputEvents.md) | [static] |
 | `_triggered` | Boolean | [static] |
 | `_cancelled` | Boolean | [static] |
 | `_moved` | Boolean | [static] |
 | `_released` | Boolean | [static] |
-| `_wheelX` | [Number](Number.html) | [static] |
-| `_wheelY` | [Number](Number.html) | [static] |
-| `_x` | [Number](Number.html) | [static] |
-| `_y` | [Number](Number.html) | [static] |
-| `_date` | [Number](Number.html) | [static] |
+| `_wheelX` | [Number](Number.md) | [static] |
+| `_wheelY` | [Number](Number.md) | [static] |
+| `_x` | [Number](Number.md) | [static] |
+| `_y` | [Number](Number.md) | [static] |
+| `_date` | [Number](Number.md) | [static] |
 
 <dl>
 </dl>
@@ -42,8 +42,8 @@ The static class that handles input data from the mouse and touchscreen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -109,8 +109,8 @@ The static class that handles input data from the mouse and touchscreen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -132,8 +132,8 @@ The static class that handles input data from the mouse and touchscreen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -199,8 +199,8 @@ The static class that handles input data from the mouse and touchscreen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
 </dl>

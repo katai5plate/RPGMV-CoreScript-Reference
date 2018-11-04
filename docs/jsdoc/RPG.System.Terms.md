@@ -1,6 +1,6 @@
 # Class: Terms
 
-## [RPG](RPG.html) [.System](RPG.System.html).  Terms ()
+## [RPG](RPG.md) [.System](RPG.System.md).  Terms ()
 
 #### new Terms ()
 
@@ -10,7 +10,7 @@ The JSON data structure of the terminology.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `basic` | [Array](Array.html).<[String](String.html)> | The basic status. A string array with the following subscripts:
+| `basic` | [Array](Array.md).<[String](String.md)> | The basic status. A string array with the following subscripts:
 
 | 0 | Level |
 | 1 | Level (short) |
@@ -22,7 +22,7 @@ The JSON data structure of the terminology.
 | 7 | TP (short) |
 | 8 | EXP |
 | 9 | EXP (short) |  |
-| `paramsParameters.` | [Array](Array.html).<[String](String.html)> | A string array with the following subscripts:
+| `paramsParameters.` | [Array](Array.md).<[String](String.md)> | A string array with the following subscripts:
 
 | 0 | Maximum hit points |
 | 1 | Maximum magic points |
@@ -34,7 +34,7 @@ The JSON data structure of the terminology.
 | 7 | Luck |
 | 8 | Hit |
 | 9 | Evasion |  |
-| `commands` | [Array](Array.html).<[String](String.html)> |
+| `commands` | [Array](Array.md).<[String](String.md)> |
 
 | 0 | Fight |
 | 1 | Escape |

@@ -1,6 +1,6 @@
 # Class: Vehicle
 
-## [RPG](RPG.html) [.System](RPG.System.html).  Vehicle ()
+## [RPG](RPG.md) [.System](RPG.System.md).  Vehicle ()
 
 #### new Vehicle ()
 
@@ -10,12 +10,12 @@ The JSON data structure of a vehicle.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `characterName` | [String](String.html) | The file name of the vehicle's walking graphic. |
-| `characterIndex` | [Number](Number.html) | The index of the vehicle's walking graphic (0..7). |
-| `bgm` | [RPG.AudioFile](RPG.AudioFile.html) | The vehicle's BGM. |
-| `startMapId` | [Number](Number.html) | The map ID of the vehicle's initial position. |
-| `startX` | [Number](Number.html) | The map's x-coordinate of the vehicle's initial position. |
-| `startY` | [Number](Number.html) | The map's y-coordinate of the vehicle's initial position. |
+| `characterName` | [String](String.md) | The file name of the vehicle's walking graphic. |
+| `characterIndex` | [Number](Number.md) | The index of the vehicle's walking graphic (0..7). |
+| `bgm` | [RPG.AudioFile](RPG.AudioFile.md) | The vehicle's BGM. |
+| `startMapId` | [Number](Number.md) | The map ID of the vehicle's initial position. |
+| `startX` | [Number](Number.md) | The map's x-coordinate of the vehicle's initial position. |
+| `startY` | [Number](Number.md) | The map's y-coordinate of the vehicle's initial position. |
 
 <dl>
 </dl>

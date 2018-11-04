@@ -17,7 +17,7 @@
 
 ### Extends
 
-* [Scene_Base](Scene_Base.html)
+* [Scene_Base](Scene_Base.md)
 
 ### Methods
 
@@ -67,7 +67,7 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.html) |  追加位置 |
+| `index` | [Number](Number.md) |  追加位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -175,7 +175,7 @@
 
 #### createWindowLayer ()
 
- ウィンドウレイヤー[WindowLayer](WindowLayer.html) を生成。
+ ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -215,7 +215,7 @@
                 </dd>
             </dl>
 
-#### fadeSpeed () → {[Number](Number.html)}
+#### fadeSpeed () → {[Number](Number.md)}
 
  フェード速度を返す。
 <dl>
@@ -395,7 +395,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  取り除く位置 |
+| `index` | [Number](Number.md) |  取り除く位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -418,7 +418,7 @@
                 </dd>
             </dl>
 
-#### slowFadeSpeed () → {[Number](Number.html)}
+#### slowFadeSpeed () → {[Number](Number.md)}
 
  遅いフェード速度を返す。
 <dl>
@@ -464,7 +464,7 @@
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードインにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードインにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -486,7 +486,7 @@
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードアウトにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードアウトにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>

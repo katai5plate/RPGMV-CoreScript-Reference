@@ -10,7 +10,7 @@ The scene class of the save screen.
 
 ### Extends
 
-* [Scene_File](Scene_File.html)
+* [Scene_File](Scene_File.md)
 
 ### Methods
 
@@ -27,7 +27,7 @@ The scene class of the save screen.
                 </dd>
             </dl>
 
-#### actor () → {[Game_Actor](Game_Actor.html)}
+#### actor () → {[Game_Actor](Game_Actor.md)}
 
 Returns the current game actor.
 <dl>
@@ -90,7 +90,7 @@ The scene class of the save screen.
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.html) |  追加位置 |
+| `index` | [Number](Number.md) |  追加位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -217,7 +217,7 @@ The scene class of the save screen.
 
 #### createWindowLayer ()
 
- ウィンドウレイヤー[WindowLayer](WindowLayer.html) を生成。
+ ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -257,7 +257,7 @@ The scene class of the save screen.
                 </dd>
             </dl>
 
-#### fadeSpeed () → {[Number](Number.html)}
+#### fadeSpeed () → {[Number](Number.md)}
 
  フェード速度を返す。
 <dl>
@@ -280,7 +280,7 @@ The scene class of the save screen.
                 </dd>
             </dl>
 
-#### firstSavefileIndex () → {[Number](Number.html)}
+#### firstSavefileIndex () → {[Number](Number.md)}
 
 Returns the index of the first save file within the save scene.
 <dl>
@@ -303,7 +303,7 @@ The scene class of the save screen.
                 </dd>
             </dl>
 
-#### helpWindowText () → {[String](String.html)}
+#### helpWindowText () → {[String](String.md)}
 
 <dl>
                 <dt>Overrides:</dt>
@@ -408,7 +408,7 @@ The scene class of the save screen.
                 </dd>
             </dl>
 
-#### mode () → {[String](String.html)}
+#### mode () → {[String](String.md)}
 
 Returns the mode of the save scene.
 <dl>
@@ -551,7 +551,7 @@ The scene class of the save screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  取り除く位置 |
+| `index` | [Number](Number.md) |  取り除く位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -594,7 +594,7 @@ The scene class of the save screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `opacity` | [Number](Number.html) |  |
+| `opacity` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -607,7 +607,7 @@ The scene class of the save screen.
                 </dd>
             </dl>
 
-#### slowFadeSpeed () → {[Number](Number.html)}
+#### slowFadeSpeed () → {[Number](Number.md)}
 
  遅いフェード速度を返す。
 <dl>
@@ -652,7 +652,7 @@ The scene class of the save screen.
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードインにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードインにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -674,7 +674,7 @@ The scene class of the save screen.
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードアウトにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードアウトにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>

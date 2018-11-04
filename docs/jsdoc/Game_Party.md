@@ -10,18 +10,18 @@ The game object class for the party. Information such as gold and items is inclu
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `ABILITY_ENCOUNTER_HALF` | [Number](Number.html) | [static] |
-| `ABILITY_ENCOUNTER_NONE` | [Number](Number.html) | [static] |
-| `ABILITY_CANCEL_SURPRISE` | [Number](Number.html) | [static] |
-| `ABILITY_RAISE_PREEMPTIVE` | [Number](Number.html) | [static] |
-| `ABILITY_GOLD_DOUBLE` | [Number](Number.html) | [static] |
-| `ABILITY_DROP_ITEM_DOUBLE` | [Number](Number.html) | [static] |
-| `_gold` | [Number](Number.html) |  |
-| `_steps` | [Number](Number.html) |  |
-| `_lastItem` | [Game_Item](Game_Item.html) |  |
-| `_menuActorId` | [Number](Number.html) |  |
-| `_targetActorId` | [Number](Number.html) |  |
-| `_actors` | [Array](Array.html).<[Game_Actor](Game_Actor.html)> |  |
+| `ABILITY_ENCOUNTER_HALF` | [Number](Number.md) | [static] |
+| `ABILITY_ENCOUNTER_NONE` | [Number](Number.md) | [static] |
+| `ABILITY_CANCEL_SURPRISE` | [Number](Number.md) | [static] |
+| `ABILITY_RAISE_PREEMPTIVE` | [Number](Number.md) | [static] |
+| `ABILITY_GOLD_DOUBLE` | [Number](Number.md) | [static] |
+| `ABILITY_DROP_ITEM_DOUBLE` | [Number](Number.md) | [static] |
+| `_gold` | [Number](Number.md) |  |
+| `_steps` | [Number](Number.md) |  |
+| `_lastItem` | [Game_Item](Game_Item.md) |  |
+| `_menuActorId` | [Number](Number.md) |  |
+| `_targetActorId` | [Number](Number.md) |  |
+| `_actors` | [Array](Array.md).<[Game_Actor](Game_Actor.md)> |  |
 | `_items` | Object | {[itemId: number]: number} |
 | `_weapons` | Object | {[itemId: number]: number} |
 | `_armors` | Object | {[itemId: number]: number} |
@@ -31,7 +31,7 @@ The game object class for the party. Information such as gold and items is inclu
 
 ### Extends
 
-* [Game_Unit](Game_Unit.html)
+* [Game_Unit](Game_Unit.md)
 
 ### Methods
 
@@ -43,12 +43,12 @@ The game object class for the party. Information such as gold and items is inclu
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actorId` | [Number](Number.html) |  |
+| `actorId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### agility () → {[Number](Number.html)}
+#### agility () → {[Number](Number.md)}
 
 Returns the agility of the unit.
 <dl>
@@ -71,7 +71,7 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### aliveMembers () → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
+#### aliveMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
 
 Returns the list of alive battlers.
 <dl>
@@ -94,7 +94,7 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### allItems () → {[Array](Array.html).<[RPG.BaseItem](RPG.BaseItem.html)>}
+#### allItems () → {[Array](Array.md).<[RPG.BaseItem](RPG.BaseItem.md)>}
 
 Returns all items within the party's posession. Items can be of equip item, or item type.
 <dl>
@@ -109,7 +109,7 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### allMembers () → {[Array](Array.html).<[Game_Actor](Game_Actor.html)>}
+#### allMembers () → {[Array](Array.md).<[Game_Actor](Game_Actor.md)>}
 
 <dl>
 </dl>
@@ -123,7 +123,7 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### armors () → {[Array](Array.html).<[RPG.Armor](RPG.Armor.html)>}
+#### armors () → {[Array](Array.md).<[RPG.Armor](RPG.Armor.md)>}
 
 Returns the party's armor.
 <dl>
@@ -138,7 +138,7 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### battleMembers () → {[Array](Array.html).<[Game_Actor](Game_Actor.html)>}
+#### battleMembers () → {[Array](Array.md).<[Game_Actor](Game_Actor.md)>}
 
 Returns the battle members in the party.
 <dl>
@@ -175,7 +175,7 @@ The game object class for the party. Information such as gold and items is inclu
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
 
 <dl>
 </dl>
@@ -189,7 +189,7 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### charactersForSavefile () → {[Array](Array.html).<[Array](Array.html).<*>>}
+#### charactersForSavefile () → {[Array](Array.md).<[Array](Array.md).<*>>}
 
 Returns the characters that go on the save life.
 <dl>
@@ -241,12 +241,12 @@ The game object class for the party. Information such as gold and items is inclu
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
 
 <dl>
 </dl>
 
-#### deadMembers () → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
+#### deadMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
 
 Returns the list of dead battlers.
 <dl>
@@ -275,13 +275,13 @@ The game object class for the party. Information such as gold and items is inclu
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RPG.EquipItem.html) |  |
-| `amount` | [Number](Number.html) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
+| `amount` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### equipItems () → {[Array](Array.html).<[RPG.EquipItem](RPG.EquipItem.html)>}
+#### equipItems () → {[Array](Array.md).<[RPG.EquipItem](RPG.EquipItem.md)>}
 
 Returns the party's equippable items.
 <dl>
@@ -310,7 +310,7 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### facesForSavefile () → {[Array](Array.html).<[Array](Array.html).<*>>}
+#### facesForSavefile () → {[Array](Array.md).<[Array](Array.md).<*>>}
 
 Returns the actor faces for the save file.
 <dl>
@@ -333,7 +333,7 @@ The game object class for the party. Information such as gold and items is inclu
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `amount` | [Number](Number.html) |  |
+| `amount` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -344,14 +344,14 @@ The game object class for the party. Information such as gold and items is inclu
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
-| `amount` | [Number](Number.html) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
+| `amount` | [Number](Number.md) |  |
 | `includeEquip` | Boolean |  |
 
 <dl>
 </dl>
 
-#### gold () → {[Number](Number.html)}
+#### gold () → {[Number](Number.md)}
 
 Returns party gold.
 <dl>
@@ -448,7 +448,7 @@ The game object class for the party. Information such as gold and items is inclu
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
 | `includeEquip` | Boolean |  |
 
 <dl>
@@ -469,7 +469,7 @@ The game object class for the party. Information such as gold and items is inclu
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
 
 <dl>
 </dl>
@@ -498,7 +498,7 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### highestLevel () → {[Number](Number.html)}
+#### highestLevel () → {[Number](Number.md)}
 
 Returns the highest level in the party.
 <dl>
@@ -591,7 +591,7 @@ The game object class for the party. Information such as gold and items is inclu
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RPG.EquipItem.html) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
 
 <dl>
 </dl>
@@ -619,13 +619,13 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### itemContainer (item) → {[Array](Array.html).<[RPG.BaseItem](RPG.BaseItem.html)>}
+#### itemContainer (item) → {[Array](Array.md).<[RPG.BaseItem](RPG.BaseItem.md)>}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
 
 <dl>
 </dl>
@@ -639,7 +639,7 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### items () → {[Array](Array.html).<[RPG.Item](RPG.Item.html)>}
+#### items () → {[Array](Array.md).<[RPG.Item](RPG.Item.md)>}
 
 <dl>
 </dl>
@@ -653,7 +653,7 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### lastItem () → {[RPG.BaseItem](RPG.BaseItem.html)}
+#### lastItem () → {[RPG.BaseItem](RPG.BaseItem.md)}
 
 Returns the last item selected by the game party.
 <dl>
@@ -668,7 +668,7 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### leader () → {[Game_Actor](Game_Actor.html)}
+#### leader () → {[Game_Actor](Game_Actor.md)}
 
 Returns the leader of the party.
 <dl>
@@ -691,7 +691,7 @@ The game object class for the party. Information such as gold and items is inclu
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `amount` | [Number](Number.html) |  |
+| `amount` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -702,8 +702,8 @@ The game object class for the party. Information such as gold and items is inclu
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
-| `amount` | [Number](Number.html) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
+| `amount` | [Number](Number.md) |  |
 | `includeEquip` | Boolean |  |
 
 <dl>
@@ -733,7 +733,7 @@ The game object class for the party. Information such as gold and items is inclu
 <dl>
 </dl>
 
-#### maxBattleMembers () → {[Number](Number.html)}
+#### maxBattleMembers () → {[Number](Number.md)}
 
 Returns the maximum battle members in the party.
 <dl>
@@ -748,7 +748,7 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### maxGold () → {[Number](Number.html)}
+#### maxGold () → {[Number](Number.md)}
 
 Returns maximum gold of the party.
 <dl>
@@ -763,7 +763,7 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### maxItems (item) → {[Number](Number.html)}
+#### maxItems (item) → {[Number](Number.md)}
 
 Returns the maximum number of items of the given item.
 
@@ -771,7 +771,7 @@ The game object class for the party. Information such as gold and items is inclu
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
 
 <dl>
 </dl>
@@ -785,7 +785,7 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### members () → {[Array](Array.html).<[Game_Actor](Game_Actor.html)>}
+#### members () → {[Array](Array.md).<[Game_Actor](Game_Actor.md)>}
 
 Returns all party members.
 <dl>
@@ -808,7 +808,7 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### menuActor () → {[Game_Actor](Game_Actor.html)}
+#### menuActor () → {[Game_Actor](Game_Actor.md)}
 
 Returns the actor that will be used in the current menu; this is for menu scenes that target one actor.
 <dl>
@@ -823,7 +823,7 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### movableMembers () → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
+#### movableMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
 
 Returns the list of movable members.
 <dl>
@@ -846,7 +846,7 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### name () → {[String](String.html)}
+#### name () → {[String](String.md)}
 
 <dl>
 </dl>
@@ -860,7 +860,7 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### numItems (item) → {[Number](Number.html)}
+#### numItems (item) → {[Number](Number.md)}
 
 Returns the number of items in the possession of the party of the given item.
 
@@ -868,7 +868,7 @@ The game object class for the party. Information such as gold and items is inclu
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
 
 <dl>
 </dl>
@@ -922,7 +922,7 @@ The game object class for the party. Information such as gold and items is inclu
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `abilityId` | [Number](Number.html) |  |
+| `abilityId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -948,7 +948,7 @@ The game object class for the party. Information such as gold and items is inclu
 <dl>
 </dl>
 
-#### randomDeadTarget () → {[Game_Battler](Game_Battler.html)}
+#### randomDeadTarget () → {[Game_Battler](Game_Battler.md)}
 
 Returns a random dead target from the game unit.
 <dl>
@@ -971,7 +971,7 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### randomTarget () → {[Game_Battler](Game_Battler.html)}
+#### randomTarget () → {[Game_Battler](Game_Battler.md)}
 
 Returns a random target from the game unit.
 <dl>
@@ -994,13 +994,13 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### ratePreemptive (troopAgi) → {[Number](Number.html)}
+#### ratePreemptive (troopAgi) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `troopAgi` | [Number](Number.html) |  |
+| `troopAgi` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1014,13 +1014,13 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### rateSurprise (troopAgi) → {[Number](Number.html)}
+#### rateSurprise (troopAgi) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `troopAgi` | [Number](Number.html) |  |
+| `troopAgi` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1042,7 +1042,7 @@ The game object class for the party. Information such as gold and items is inclu
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actorId` | [Number](Number.html) |  |
+| `actorId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1073,7 +1073,7 @@ The game object class for the party. Information such as gold and items is inclu
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `activeMember` | [Game_Battler](Game_Battler.html) |  |
+| `activeMember` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1092,7 +1092,7 @@ The game object class for the party. Information such as gold and items is inclu
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
 
 <dl>
 </dl>
@@ -1103,7 +1103,7 @@ The game object class for the party. Information such as gold and items is inclu
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
 
 <dl>
 </dl>
@@ -1114,7 +1114,7 @@ The game object class for the party. Information such as gold and items is inclu
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
 
 <dl>
 </dl>
@@ -1143,7 +1143,7 @@ The game object class for the party. Information such as gold and items is inclu
 <dl>
 </dl>
 
-#### size () → {[Number](Number.html)}
+#### size () → {[Number](Number.md)}
 
 Returns number of party member.
 <dl>
@@ -1158,13 +1158,13 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### smoothDeadTarget (index) → {[Game_Battler](Game_Battler.html)}
+#### smoothDeadTarget (index) → {[Game_Battler](Game_Battler.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1186,13 +1186,13 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### smoothTarget (index) → {[Game_Battler](Game_Battler.html)}
+#### smoothTarget (index) → {[Game_Battler](Game_Battler.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1214,7 +1214,7 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### steps () → {[Number](Number.html)}
+#### steps () → {[Number](Number.md)}
 
 Returns the number of steps the party has taken.
 <dl>
@@ -1229,7 +1229,7 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### substituteBattler () → {[Game_Battler](Game_Battler.html)}
+#### substituteBattler () → {[Game_Battler](Game_Battler.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1257,13 +1257,13 @@ The game object class for the party. Information such as gold and items is inclu
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index1` | [Number](Number.html) |  |
-| `index2` | [Number](Number.html) |  |
+| `index1` | [Number](Number.md) |  |
+| `index2` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### targetActor () → {[Game_Actor](Game_Actor.html)}
+#### targetActor () → {[Game_Actor](Game_Actor.md)}
 
 <dl>
 </dl>
@@ -1277,7 +1277,7 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### tgrSum () → {[Number](Number.html)}
+#### tgrSum () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1299,7 +1299,7 @@ The game object class for the party. Information such as gold and items is inclu
                 </dd>
             </dl>
 
-#### weapons () → {[Array](Array.html).<[RPG.Weapon](RPG.Weapon.html)>}
+#### weapons () → {[Array](Array.md).<[RPG.Weapon](RPG.Weapon.md)>}
 
 Returns the weapons of the party.
 <dl>

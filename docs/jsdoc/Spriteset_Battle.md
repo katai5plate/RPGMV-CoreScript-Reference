@@ -11,19 +11,19 @@ The set of sprites on the battle screen.
 | Name | Type | Description |
 | --- | --- | --- |
 | `_battlebackLocated` | Boolean |  |
-| `_backgroundSprite` | [Sprite](Sprite.html) |  |
-| `_battleField` | [Sprite](Sprite.html) |  |
-| `_back1Sprite` | [TilingSprite](TilingSprite.html) |  |
-| `_back2Sprite` | [TilingSprite](TilingSprite.html) |  |
-| `_enemySprites` | [Array](Array.html).<[Sprite_Enemy](Sprite_Enemy.html)> |  |
-| `_actorSprites` | [Array](Array.html).<[Sprite_Actor](Sprite_Actor.html)> |  |
+| `_backgroundSprite` | [Sprite](Sprite.md) |  |
+| `_battleField` | [Sprite](Sprite.md) |  |
+| `_back1Sprite` | [TilingSprite](TilingSprite.md) |  |
+| `_back2Sprite` | [TilingSprite](TilingSprite.md) |  |
+| `_enemySprites` | [Array](Array.md).<[Sprite_Enemy](Sprite_Enemy.md)> |  |
+| `_actorSprites` | [Array](Array.md).<[Sprite_Actor](Sprite_Actor.md)> |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Spriteset_Base](Spriteset_Base.html)
+* [Spriteset_Base](Spriteset_Base.md)
 
 ### Methods
 
@@ -48,13 +48,13 @@ The set of sprites on the battle screen.
                 </dd>
             </dl>
 
-#### autotileType (z) → {[Number](Number.html)}
+#### autotileType (z) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `z` | [Number](Number.html) |  |
+| `z` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -68,7 +68,7 @@ The set of sprites on the battle screen.
                 </dd>
             </dl>
 
-#### battleback1Bitmap () → {[Bitmap](Bitmap.html)}
+#### battleback1Bitmap () → {[Bitmap](Bitmap.md)}
 
 Returns battleb ack 2 of the battle spriteset.
 <dl>
@@ -84,7 +84,7 @@ The set of sprites on the battle screen.
                 </dd>
             </dl>
 
-#### battleback1Name () → {[String](String.html)}
+#### battleback1Name () → {[String](String.md)}
 
 <dl>
 </dl>
@@ -99,7 +99,7 @@ The set of sprites on the battle screen.
                 </dd>
             </dl>
 
-#### battleback2Bitmap () → {[Bitmap](Bitmap.html)}
+#### battleback2Bitmap () → {[Bitmap](Bitmap.md)}
 
 Returns battleback 2 of the battle spriteset.
 <dl>
@@ -115,7 +115,7 @@ The set of sprites on the battle screen.
                 </dd>
             </dl>
 
-#### battleback2Name () → {[String](String.html)}
+#### battleback2Name () → {[String](String.md)}
 
 <dl>
 </dl>
@@ -130,7 +130,7 @@ The set of sprites on the battle screen.
                 </dd>
             </dl>
 
-#### battlerSprites () → {[Array](Array.html).<[Sprite_Battler](Sprite_Battler.html)>}
+#### battlerSprites () → {[Array](Array.md).<[Sprite_Battler](Sprite_Battler.md)>}
 
 Returns all battler sprites on the battle spriteset.
 <dl>
@@ -145,14 +145,14 @@ The set of sprites on the battle screen.
                 </dd>
             </dl>
 
-#### compareEnemySprite (a, b) → {[Number](Number.html)}
+#### compareEnemySprite (a, b) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `a` | [Sprite_Enemy](Sprite_Enemy.html) |  |
-| `b` | [Sprite_Enemy](Sprite_Enemy.html) |  |
+| `a` | [Sprite_Enemy](Sprite_Enemy.md) |  |
+| `b` | [Sprite_Enemy](Sprite_Enemy.md) |  |
 
 <dl>
 </dl>
@@ -321,7 +321,7 @@ The set of sprites on the battle screen.
                 </dd>
             </dl>
 
-#### defaultBattleback1Name () → {[String](String.html)}
+#### defaultBattleback1Name () → {[String](String.md)}
 
 <dl>
 </dl>
@@ -336,7 +336,7 @@ The set of sprites on the battle screen.
                 </dd>
             </dl>
 
-#### defaultBattleback2Name () → {[String](String.html)}
+#### defaultBattleback2Name () → {[String](String.md)}
 
 <dl>
 </dl>
@@ -431,7 +431,7 @@ The set of sprites on the battle screen.
 <dl>
 </dl>
 
-#### normalBattleback1Name () → {[String](String.html)}
+#### normalBattleback1Name () → {[String](String.md)}
 
 <dl>
 </dl>
@@ -446,7 +446,7 @@ The set of sprites on the battle screen.
                 </dd>
             </dl>
 
-#### normalBattleback2Name () → {[String](String.html)}
+#### normalBattleback2Name () → {[String](String.md)}
 
 <dl>
 </dl>
@@ -461,7 +461,7 @@ The set of sprites on the battle screen.
                 </dd>
             </dl>
 
-#### overworldBattleback1Name () → {[String](String.html)}
+#### overworldBattleback1Name () → {[String](String.md)}
 
 Returns the battleback 1 name as a string.
 <dl>
@@ -477,7 +477,7 @@ The set of sprites on the battle screen.
                 </dd>
             </dl>
 
-#### overworldBattleback2Name () → {[String](String.html)}
+#### overworldBattleback2Name () → {[String](String.md)}
 
 Returns the battleback 2 name as a string.
 <dl>
@@ -493,7 +493,7 @@ The set of sprites on the battle screen.
                 </dd>
             </dl>
 
-#### shipBattleback1Name () → {[String](String.html)}
+#### shipBattleback1Name () → {[String](String.md)}
 
 <dl>
 </dl>
@@ -508,7 +508,7 @@ The set of sprites on the battle screen.
                 </dd>
             </dl>
 
-#### shipBattleback2Name () → {[String](String.html)}
+#### shipBattleback2Name () → {[String](String.md)}
 
 <dl>
 </dl>
@@ -523,7 +523,7 @@ The set of sprites on the battle screen.
                 </dd>
             </dl>
 
-#### terrainBattleback1Name (type) → {[String](String.html)}
+#### terrainBattleback1Name (type) → {[String](String.md)}
 
 Given the specified terrtain type, return the battleback 1 name.
 
@@ -531,7 +531,7 @@ The set of sprites on the battle screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `type` | [Number](Number.html) | Terrain type. |
+| `type` | [Number](Number.md) | Terrain type. |
 
 <dl>
 </dl>
@@ -546,7 +546,7 @@ The set of sprites on the battle screen.
                 </dd>
             </dl>
 
-#### terrainBattleback2Name (type) → {[String](String.html)}
+#### terrainBattleback2Name (type) → {[String](String.md)}
 
 Given the specified terrain type, return the battleback 2 name.
 
@@ -554,7 +554,7 @@ The set of sprites on the battle screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `type` | [Number](Number.html) | Terrain type. |
+| `type` | [Number](Number.md) | Terrain type. |
 
 <dl>
 </dl>

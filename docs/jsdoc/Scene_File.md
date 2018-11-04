@@ -4,20 +4,20 @@
 
 #### (abstract) new Scene_File ()
 
-The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html).
+The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_listWindow` | [Window_SavefileList](Window_SavefileList.html) |  |
+| `_listWindow` | [Window_SavefileList](Window_SavefileList.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Scene_MenuBase](Scene_MenuBase.html)
+* [Scene_MenuBase](Scene_MenuBase.md)
 
 ### Methods
 
@@ -26,7 +26,7 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 <dl>
 </dl>
 
-#### actor () → {[Game_Actor](Game_Actor.html)}
+#### actor () → {[Game_Actor](Game_Actor.md)}
 
 Returns the current game actor.
 <dl>
@@ -89,7 +89,7 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.html) |  追加位置 |
+| `index` | [Number](Number.md) |  追加位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -208,7 +208,7 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### createWindowLayer ()
 
- ウィンドウレイヤー[WindowLayer](WindowLayer.html) を生成。
+ ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -248,7 +248,7 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
                 </dd>
             </dl>
 
-#### fadeSpeed () → {[Number](Number.html)}
+#### fadeSpeed () → {[Number](Number.md)}
 
  フェード速度を返す。
 <dl>
@@ -271,7 +271,7 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
                 </dd>
             </dl>
 
-#### firstSavefileIndex () → {[Number](Number.html)}
+#### firstSavefileIndex () → {[Number](Number.md)}
 
 Returns the index of the first save file.
 <dl>
@@ -286,7 +286,7 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
                 </dd>
             </dl>
 
-#### helpWindowText () → {[String](String.html)}
+#### helpWindowText () → {[String](String.md)}
 
 <dl>
 </dl>
@@ -489,7 +489,7 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  取り除く位置 |
+| `index` | [Number](Number.md) |  取り除く位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -524,7 +524,7 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `opacity` | [Number](Number.html) |  |
+| `opacity` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -537,7 +537,7 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
                 </dd>
             </dl>
 
-#### slowFadeSpeed () → {[Number](Number.html)}
+#### slowFadeSpeed () → {[Number](Number.md)}
 
  遅いフェード速度を返す。
 <dl>
@@ -582,7 +582,7 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードインにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードインにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -604,7 +604,7 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードアウトにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードアウトにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>

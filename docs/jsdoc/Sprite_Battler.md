@@ -4,35 +4,35 @@
 
 #### new Sprite_Battler (battler opt)
 
-The superclass of [Sprite_Actor](Sprite_Actor.html) and [Sprite_Enemy](Sprite_Enemy.html).
+The superclass of [Sprite_Actor](Sprite_Actor.md) and [Sprite_Enemy](Sprite_Enemy.md).
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `battler` | [Game_Battler](Game_Battler.html) | <optional> |  |
+| `battler` | [Game_Battler](Game_Battler.md) | <optional> |  |
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_battler` | [Game_Battler](Game_Battler.html) |  |
-| `_damages` | [Array](Array.html).<[Sprite_Damage](Sprite_Damage.html)> |  |
-| `_homeX` | [Number](Number.html) |  |
-| `_homeY` | [Number](Number.html) |  |
-| `_offsetX` | [Number](Number.html) |  |
-| `_offsetY` | [Number](Number.html) |  |
-| `_targetOffsetX` | [Number](Number.html) |  |
-| `_targetOffsetY` | [Number](Number.html) |  |
-| `_movementDuration` | [Number](Number.html) |  |
-| `_selectionEffectCount` | [Number](Number.html) |  |
+| `_battler` | [Game_Battler](Game_Battler.md) |  |
+| `_damages` | [Array](Array.md).<[Sprite_Damage](Sprite_Damage.md)> |  |
+| `_homeX` | [Number](Number.md) |  |
+| `_homeY` | [Number](Number.md) |  |
+| `_offsetX` | [Number](Number.md) |  |
+| `_offsetY` | [Number](Number.md) |  |
+| `_targetOffsetX` | [Number](Number.md) |  |
+| `_targetOffsetY` | [Number](Number.md) |  |
+| `_movementDuration` | [Number](Number.md) |  |
+| `_selectionEffectCount` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Sprite_Base](Sprite_Base.html)
+* [Sprite_Base](Sprite_Base.md)
 
 ### Methods
 
@@ -57,7 +57,7 @@ The superclass of [Sprite_Actor](Sprite_Actor.html) and [Sprite_Enemy](Sprite_En
                 </dd>
             </dl>
 
-#### damageOffsetX () → {[Number](Number.html)}
+#### damageOffsetX () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -71,7 +71,7 @@ The superclass of [Sprite_Actor](Sprite_Actor.html) and [Sprite_Enemy](Sprite_En
                 </dd>
             </dl>
 
-#### damageOffsetY () → {[Number](Number.html)}
+#### damageOffsetY () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -200,7 +200,7 @@ The superclass of [Sprite_Actor](Sprite_Actor.html) and [Sprite_Enemy](Sprite_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `battler` | [Game_Battler](Game_Battler.html) |  |
+| `battler` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
 </dl>
@@ -213,8 +213,8 @@ The superclass of [Sprite_Actor](Sprite_Actor.html) and [Sprite_Enemy](Sprite_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -253,9 +253,9 @@ The superclass of [Sprite_Actor](Sprite_Actor.html) and [Sprite_Enemy](Sprite_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `animation` | [RPG.Animation](RPG.Animation.html) |  |
+| `animation` | [RPG.Animation](RPG.Animation.md) |  |
 | `mirror` | Boolean |  |
-| `delay` | [Number](Number.html) |  |
+| `delay` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -274,9 +274,9 @@ The superclass of [Sprite_Actor](Sprite_Actor.html) and [Sprite_Enemy](Sprite_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `duration` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `duration` | [Number](Number.md) |  |
 
 <dl>
 </dl>

@@ -1,6 +1,6 @@
 # Class: BattleLogMethod
 
-## [MV](MV.html).  BattleLogMethod ()
+## [MV](MV.md).  BattleLogMethod ()
 
 #### new BattleLogMethod ()
 
@@ -8,7 +8,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.html) |  |
+| `name` | [String](String.md) |  |
 | `params` | * |  |
 
 <dl>

@@ -10,7 +10,7 @@ The game object class for switches. Use as global variable [$gameSwitches](globa
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_data` | [Array](Array.html).<Boolean> |  |
+| `_data` | [Array](Array.md).<Boolean> |  |
 
 <dl>
 </dl>
@@ -39,8 +39,8 @@ The game object class for switches. Use as global variable [$gameSwitches](globa
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `switchId` | [Number](Number.html) |  |
-| `value` | [Number](Number.html) |  |
+| `switchId` | [Number](Number.md) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -51,7 +51,7 @@ The game object class for switches. Use as global variable [$gameSwitches](globa
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `switchId` | [Number](Number.html) |  |
+| `switchId` | [Number](Number.md) |  |
 
 <dl>
 </dl>

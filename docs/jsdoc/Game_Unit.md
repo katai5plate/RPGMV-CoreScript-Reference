@@ -4,7 +4,7 @@
 
 #### new Game_Unit ()
 
-The superclass of [Game_Party](Game_Party.html) and [Game_Troop](Game_Troop.html).
+The superclass of [Game_Party](Game_Party.md) and [Game_Troop](Game_Troop.md).
 
 ##### Properties:
 
@@ -17,7 +17,7 @@ The superclass of [Game_Party](Game_Party.html) and [Game_Troop](Game_Troop.html
 
 ### Methods
 
-#### agility () → {[Number](Number.html)}
+#### agility () → {[Number](Number.md)}
 
 Returns the agility of the unit.
 <dl>
@@ -32,7 +32,7 @@ The superclass of [Game_Party](Game_Party.html) and [Game_Troop](Game_Troop.html
                 </dd>
             </dl>
 
-#### aliveMembers () → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
+#### aliveMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
 
 Returns the list of alive battlers.
 <dl>
@@ -59,7 +59,7 @@ The superclass of [Game_Party](Game_Party.html) and [Game_Troop](Game_Troop.html
 <dl>
 </dl>
 
-#### deadMembers () → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
+#### deadMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
 
 Returns the list of dead battlers.
 <dl>
@@ -116,7 +116,7 @@ The superclass of [Game_Party](Game_Party.html) and [Game_Troop](Game_Troop.html
 <dl>
 </dl>
 
-#### members () → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
+#### members () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
 
 Returns the list of battlers.
 <dl>
@@ -131,7 +131,7 @@ The superclass of [Game_Party](Game_Party.html) and [Game_Troop](Game_Troop.html
                 </dd>
             </dl>
 
-#### movableMembers () → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
+#### movableMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
 
 Returns the list of movable members.
 <dl>
@@ -158,7 +158,7 @@ The superclass of [Game_Party](Game_Party.html) and [Game_Troop](Game_Troop.html
 <dl>
 </dl>
 
-#### randomDeadTarget () → {[Game_Battler](Game_Battler.html)}
+#### randomDeadTarget () → {[Game_Battler](Game_Battler.md)}
 
 Returns a random dead target from the game unit.
 <dl>
@@ -173,7 +173,7 @@ The superclass of [Game_Party](Game_Party.html) and [Game_Troop](Game_Troop.html
                 </dd>
             </dl>
 
-#### randomTarget () → {[Game_Battler](Game_Battler.html)}
+#### randomTarget () → {[Game_Battler](Game_Battler.md)}
 
 Returns a random target from the game unit.
 <dl>
@@ -196,18 +196,18 @@ The superclass of [Game_Party](Game_Party.html) and [Game_Troop](Game_Troop.html
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `activeMember` | [Game_Battler](Game_Battler.html) |  |
+| `activeMember` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
 </dl>
 
-#### smoothDeadTarget (index) → {[Game_Battler](Game_Battler.html)}
+#### smoothDeadTarget (index) → {[Game_Battler](Game_Battler.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -221,13 +221,13 @@ The superclass of [Game_Party](Game_Party.html) and [Game_Troop](Game_Troop.html
                 </dd>
             </dl>
 
-#### smoothTarget (index) → {[Game_Battler](Game_Battler.html)}
+#### smoothTarget (index) → {[Game_Battler](Game_Battler.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -241,7 +241,7 @@ The superclass of [Game_Party](Game_Party.html) and [Game_Troop](Game_Troop.html
                 </dd>
             </dl>
 
-#### substituteBattler () → {[Game_Battler](Game_Battler.html)}
+#### substituteBattler () → {[Game_Battler](Game_Battler.md)}
 
 <dl>
 </dl>
@@ -255,7 +255,7 @@ The superclass of [Game_Party](Game_Party.html) and [Game_Troop](Game_Troop.html
                 </dd>
             </dl>
 
-#### tgrSum () → {[Number](Number.html)}
+#### tgrSum () → {[Number](Number.md)}
 
 <dl>
 </dl>

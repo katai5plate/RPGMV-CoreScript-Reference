@@ -10,25 +10,25 @@ The scene class of the battle screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_spriteset` | [Spriteset_Battle](Spriteset_Battle.html) |  |
-| `_statusWindow` | [Window_BattleStatus](Window_BattleStatus.html) |  |
-| `_partyCommandWindow` | [Window_PartyCommand](Window_PartyCommand.html) |  |
-| `_actorCommandWindow` | [Window_ActorCommand](Window_ActorCommand.html) |  |
-| `_skillWindow` | [Window_BattleSkill](Window_BattleSkill.html) |  |
-| `_itemWindow` | [Window_BattleItem](Window_BattleItem.html) |  |
-| `_actorWindow` | [Window_BattleActor](Window_BattleActor.html) |  |
-| `_enemyWindow` | [Window_BattleEnemy](Window_BattleEnemy.html) |  |
-| `_logWindow` | [Window_BattleLog](Window_BattleLog.html) |  |
-| `_helpWindow` | [Window_Help](Window_Help.html) |  |
-| `_messageWindow` | [Window_Message](Window_Message.html) |  |
-| `_scrollTextWindow` | [Window_ScrollText](Window_ScrollText.html) |  |
+| `_spriteset` | [Spriteset_Battle](Spriteset_Battle.md) |  |
+| `_statusWindow` | [Window_BattleStatus](Window_BattleStatus.md) |  |
+| `_partyCommandWindow` | [Window_PartyCommand](Window_PartyCommand.md) |  |
+| `_actorCommandWindow` | [Window_ActorCommand](Window_ActorCommand.md) |  |
+| `_skillWindow` | [Window_BattleSkill](Window_BattleSkill.md) |  |
+| `_itemWindow` | [Window_BattleItem](Window_BattleItem.md) |  |
+| `_actorWindow` | [Window_BattleActor](Window_BattleActor.md) |  |
+| `_enemyWindow` | [Window_BattleEnemy](Window_BattleEnemy.md) |  |
+| `_logWindow` | [Window_BattleLog](Window_BattleLog.md) |  |
+| `_helpWindow` | [Window_Help](Window_Help.md) |  |
+| `_messageWindow` | [Window_Message](Window_Message.md) |  |
+| `_scrollTextWindow` | [Window_ScrollText](Window_ScrollText.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Scene_Base](Scene_Base.html)
+* [Scene_Base](Scene_Base.md)
 
 ### Methods
 
@@ -72,7 +72,7 @@ The scene class of the battle screen.
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.html) |  追加位置 |
+| `index` | [Number](Number.md) |  追加位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -296,7 +296,7 @@ The scene class of the battle screen.
 
 #### createWindowLayer ()
 
- ウィンドウレイヤー[WindowLayer](WindowLayer.html) を生成。
+ ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -341,7 +341,7 @@ The scene class of the battle screen.
                 </dd>
             </dl>
 
-#### fadeSpeed () → {[Number](Number.html)}
+#### fadeSpeed () → {[Number](Number.md)}
 
  フェード速度を返す。
 <dl>
@@ -581,7 +581,7 @@ The scene class of the battle screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  取り除く位置 |
+| `index` | [Number](Number.md) |  取り除く位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -626,7 +626,7 @@ The scene class of the battle screen.
 <dl>
 </dl>
 
-#### slowFadeSpeed () → {[Number](Number.html)}
+#### slowFadeSpeed () → {[Number](Number.md)}
 
  遅いフェード速度を返す。
 <dl>
@@ -676,7 +676,7 @@ The scene class of the battle screen.
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードインにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードインにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -698,7 +698,7 @@ The scene class of the battle screen.
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードアウトにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードアウトにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>

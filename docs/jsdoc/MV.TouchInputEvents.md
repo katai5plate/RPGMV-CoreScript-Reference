@@ -1,6 +1,6 @@
 # Class: TouchInputEvents
 
-## [MV](MV.html).  TouchInputEvents ()
+## [MV](MV.md).  TouchInputEvents ()
 
 #### new TouchInputEvents ()
 
@@ -12,8 +12,8 @@
 | `cancelled` | Boolean |  |
 | `moved` | Boolean |  |
 | `released` | Boolean |  |
-| `wheelX` | [Number](Number.html) |  |
-| `wheelY` | [Number](Number.html) |  |
+| `wheelX` | [Number](Number.md) |  |
+| `wheelY` | [Number](Number.md) |  |
 
 <dl>
 </dl>

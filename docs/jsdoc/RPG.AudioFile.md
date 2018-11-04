@@ -1,6 +1,6 @@
 # Class: AudioFile
 
-## [RPG](RPG.html).  AudioFile ()
+## [RPG](RPG.md).  AudioFile ()
 
 #### new AudioFile ()
 
@@ -10,10 +10,10 @@ The data class for audio file.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.html) | The sound file name. |
-| `pan` | [Number](Number.html) | The pan. |
-| `pitch` | [Number](Number.html) | The sound's pitch (50..150). The default value is 100. |
-| `volume` | [Number](Number.html) | The sound's volume (0..100). The default values are 100 for BGM and ME and 80 for BGS and SE. |
+| `name` | [String](String.md) | The sound file name. |
+| `pan` | [Number](Number.md) | The pan. |
+| `pitch` | [Number](Number.md) | The sound's pitch (50..150). The default value is 100. |
+| `volume` | [Number](Number.md) | The sound's volume (0..100). The default values are 100 for BGM and ME and 80 for BGS and SE. |
 
 <dl>
 </dl>

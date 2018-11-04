@@ -1,6 +1,6 @@
 # Class: Trait
 
-## [RPG](RPG.html).  Trait ()
+## [RPG](RPG.md).  Trait ()
 
 #### new Trait ()
 
@@ -10,12 +10,12 @@ The JSON data structure of a trait.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.html) | The trait code. |
-| `dataId` | [Number](Number.html) | The ID of the data (such as elements or states) according to the type of the trait. |
-| `value` | [Number](Number.html) | The value set according to the type of the trait. |
+| `code` | [Number](Number.md) | The trait code. |
+| `dataId` | [Number](Number.md) | The ID of the data (such as elements or states) according to the type of the trait. |
+| `value` | [Number](Number.md) | The value set according to the type of the trait. |
 | `expanded` | Boolean | The map tree expansion flag, which is used internally. |
-| `scrollX` | [Number](Number.html) | The x-axis scroll position, which is used internally. |
-| `scrollY` | [Number](Number.html) | The y-axis scroll position, which is used internally. |
+| `scrollX` | [Number](Number.md) | The x-axis scroll position, which is used internally. |
+| `scrollY` | [Number](Number.md) | The y-axis scroll position, which is used internally. |
 
 <dl>
 </dl>

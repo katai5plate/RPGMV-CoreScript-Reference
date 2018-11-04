@@ -11,9 +11,9 @@ The game object class for temporary data that is not included in save data. Use 
 | Name | Type | Description |
 | --- | --- | --- |
 | `_isPlaytest` | Boolean |  |
-| `_commonEventId` | [Number](Number.html) |  |
-| `_destinationX` | [Number](Number.html) |  |
-| `_destinationY` | [Number](Number.html) |  |
+| `_commonEventId` | [Number](Number.md) |  |
+| `_destinationX` | [Number](Number.md) |  |
+| `_destinationY` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -32,7 +32,7 @@ The game object class for temporary data that is not included in save data. Use 
 <dl>
 </dl>
 
-#### destinationX () → {[Number](Number.html)}
+#### destinationX () → {[Number](Number.md)}
 
 Returns the x coordinate of the destination.
 <dl>
@@ -47,7 +47,7 @@ The game object class for temporary data that is not included in save data. Use 
                 </dd>
             </dl>
 
-#### destinationY () → {[Number](Number.html)}
+#### destinationY () → {[Number](Number.md)}
 
 Returns the y coordinate of the destination.
 <dl>
@@ -121,7 +121,7 @@ The game object class for temporary data that is not included in save data. Use 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `commonEventId` | [Number](Number.html) |  |
+| `commonEventId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -149,8 +149,8 @@ The game object class for temporary data that is not included in save data. Use 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
 </dl>

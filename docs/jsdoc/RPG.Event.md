@@ -1,6 +1,6 @@
 # Class: Event
 
-## [RPG](RPG.html).  Event ()
+## [RPG](RPG.md).  Event ()
 
 #### new Event ()
 
@@ -10,18 +10,18 @@ The JSON data structure of a map event.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `id` | [Number](Number.html) | The event ID. |
-| `name` | [String](String.html) | The event name. |
-| `x` | [Number](Number.html) | The event's x-coordinate on the map. |
-| `y` | [Number](Number.html) | The event's y-coordinate on the map. |
-| `pages` | [Array](Array.html).<[RPG.EventPage](RPG.EventPage.html)> | The event pages. |
+| `id` | [Number](Number.md) | The event ID. |
+| `name` | [String](String.md) | The event name. |
+| `x` | [Number](Number.md) | The event's x-coordinate on the map. |
+| `y` | [Number](Number.md) | The event's y-coordinate on the map. |
+| `pages` | [Array](Array.md).<[RPG.EventPage](RPG.EventPage.md)> | The event pages. |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [RPG.MetaData](RPG.MetaData.html)
+* [RPG.MetaData](RPG.MetaData.md)
 
  <br>
 

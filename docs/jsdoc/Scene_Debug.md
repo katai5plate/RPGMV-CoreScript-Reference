@@ -10,11 +10,11 @@ The scene class of the debug screen.
 
 ### Extends
 
-* [Scene_MenuBase](Scene_MenuBase.html)
+* [Scene_MenuBase](Scene_MenuBase.md)
 
 ### Methods
 
-#### actor () → {[Game_Actor](Game_Actor.html)}
+#### actor () → {[Game_Actor](Game_Actor.md)}
 
 Returns the current game actor.
 <dl>
@@ -77,7 +77,7 @@ The scene class of the debug screen.
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.html) |  追加位置 |
+| `index` | [Number](Number.md) |  追加位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -210,7 +210,7 @@ The scene class of the debug screen.
 
 #### createWindowLayer ()
 
- ウィンドウレイヤー[WindowLayer](WindowLayer.html) を生成。
+ ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -250,7 +250,7 @@ The scene class of the debug screen.
                 </dd>
             </dl>
 
-#### fadeSpeed () → {[Number](Number.html)}
+#### fadeSpeed () → {[Number](Number.md)}
 
  フェード速度を返す。
 <dl>
@@ -273,7 +273,7 @@ The scene class of the debug screen.
                 </dd>
             </dl>
 
-#### helpText () → {[String](String.html)}
+#### helpText () → {[String](String.md)}
 
 Returns the help text within the debug scene.
 <dl>
@@ -480,7 +480,7 @@ The scene class of the debug screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  取り除く位置 |
+| `index` | [Number](Number.md) |  取り除く位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -509,7 +509,7 @@ The scene class of the debug screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `opacity` | [Number](Number.html) |  |
+| `opacity` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -522,7 +522,7 @@ The scene class of the debug screen.
                 </dd>
             </dl>
 
-#### slowFadeSpeed () → {[Number](Number.html)}
+#### slowFadeSpeed () → {[Number](Number.md)}
 
  遅いフェード速度を返す。
 <dl>
@@ -568,7 +568,7 @@ The scene class of the debug screen.
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードインにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードインにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -590,7 +590,7 @@ The scene class of the debug screen.
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードアウトにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードアウトにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>

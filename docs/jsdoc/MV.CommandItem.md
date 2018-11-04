@@ -1,6 +1,6 @@
 # Class: CommandItem
 
-## [MV](MV.html).  CommandItem ()
+## [MV](MV.md).  CommandItem ()
 
 #### new CommandItem ()
 
@@ -8,8 +8,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.html) |  |
-| `symbol` | [String](String.html) |  |
+| `name` | [String](String.md) |  |
+| `symbol` | [String](String.md) |  |
 | `enabled` | Boolean |  |
 | `ext` | * |  |
 

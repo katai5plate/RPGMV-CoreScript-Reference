@@ -4,29 +4,29 @@
 
 #### new Scene_Map ()
 
- マップ表示シーン。マップ表示スプライト [Spriteset_Map](Spriteset_Map.html) と 関連ウィンドウ[Window_MapName](Window_MapName.html) 、 [Window_ScrollText](Window_ScrollText.html) 、 [Window_Message](Window_Message.html) を持っている。
+ マップ表示シーン。マップ表示スプライト [Spriteset_Map](Spriteset_Map.md) と 関連ウィンドウ[Window_MapName](Window_MapName.md) 、 [Window_ScrollText](Window_ScrollText.md) 、 [Window_Message](Window_Message.md) を持っている。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `menuCalling` | Boolean |  |
-| `_waitCount` | [Number](Number.html) |  |
-| `_encounterEffectDuration` | [Number](Number.html) |  |
+| `_waitCount` | [Number](Number.md) |  |
+| `_encounterEffectDuration` | [Number](Number.md) |  |
 | `_mapLoaded` | Boolean |  |
-| `_touchCount` | [Number](Number.html) |  |
+| `_touchCount` | [Number](Number.md) |  |
 | `_transfer` | Boolean |  |
-| `_spriteset` | [Spriteset_Map](Spriteset_Map.html) |  |
-| `_mapNameWindow` | [Window_MapName](Window_MapName.html) |  |
-| `_scrollTextWindow` | [Window_ScrollText](Window_ScrollText.html) |  |
-| `_messageWindow` | [Window_Message](Window_Message.html) |  |
+| `_spriteset` | [Spriteset_Map](Spriteset_Map.md) |  |
+| `_mapNameWindow` | [Window_MapName](Window_MapName.md) |  |
+| `_scrollTextWindow` | [Window_ScrollText](Window_ScrollText.md) |  |
+| `_messageWindow` | [Window_Message](Window_Message.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Scene_Base](Scene_Base.html)
+* [Scene_Base](Scene_Base.md)
 
 ### Methods
 
@@ -70,7 +70,7 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.html) |  追加位置 |
+| `index` | [Number](Number.md) |  追加位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -208,13 +208,13 @@
 
 #### createSpriteset ()
 
- マップスプライト([Spriteset_Map](Spriteset_Map.html))を生成。
+ マップスプライト([Spriteset_Map](Spriteset_Map.md))を生成。
 <dl>
 </dl>
 
 #### createWindowLayer ()
 
- ウィンドウレイヤー[WindowLayer](WindowLayer.html) を生成。
+ ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -240,7 +240,7 @@
                 </dd>
             </dl>
 
-#### encounterEffectSpeed () → {[Number](Number.html)}
+#### encounterEffectSpeed () → {[Number](Number.md)}
 
  エンカウント効果のスピードを返す。
 <dl>
@@ -281,7 +281,7 @@
 <dl>
 </dl>
 
-#### fadeSpeed () → {[Number](Number.html)}
+#### fadeSpeed () → {[Number](Number.md)}
 
  フェード速度を返す。
 <dl>
@@ -578,7 +578,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  取り除く位置 |
+| `index` | [Number](Number.md) |  取り除く位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -601,7 +601,7 @@
                 </dd>
             </dl>
 
-#### slowFadeSpeed () → {[Number](Number.html)}
+#### slowFadeSpeed () → {[Number](Number.md)}
 
  遅いフェード速度を返す。
 <dl>
@@ -659,7 +659,7 @@
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードインにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードインにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -681,7 +681,7 @@
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードアウトにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードアウトにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -703,7 +703,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.html) |  |
+| `duration` | [Number](Number.md) |  |
 
 <dl>
 </dl>

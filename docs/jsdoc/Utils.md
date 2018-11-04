@@ -10,8 +10,8 @@ The static class that defines utility methods.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `RPGMAKER_NAME` | [String](String.html) | [static] The name of the RPG Maker. 'MV' in the current version. |
-| `RPGMAKER_VERSION` | [String](String.html) | [static] The version of the RPG Maker. |
+| `RPGMAKER_NAME` | [String](String.md) | [static] The name of the RPG Maker. 'MV' in the current version. |
+| `RPGMAKER_VERSION` | [String](String.md) | [static] The version of the RPG Maker. |
 
 <dl>
 </dl>
@@ -34,7 +34,7 @@ The static class that defines utility methods.
                 </dd>
             </dl>
 
-#### (static) generateRuntimeId () → {[Number](Number.html)}
+#### (static) generateRuntimeId () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -120,7 +120,7 @@ The static class that defines utility methods.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.html) | The option name |
+| `name` | [String](String.md) | The option name |
 
 <dl>
 </dl>
@@ -151,7 +151,7 @@ The static class that defines utility methods.
                 </dd>
             </dl>
 
-#### (static) rgbToCssColor (r, g, b) → {[String](String.html)}
+#### (static) rgbToCssColor (r, g, b) → {[String](String.md)}
 
 Makes a CSS color string from RGB values.
 
@@ -159,9 +159,9 @@ The static class that defines utility methods.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `r` | [Number](Number.html) | The red value in the range (0, 255) |
-| `g` | [Number](Number.html) | The green value in the range (0, 255) |
-| `b` | [Number](Number.html) | The blue value in the range (0, 255) |
+| `r` | [Number](Number.md) | The red value in the range (0, 255) |
+| `g` | [Number](Number.md) | The green value in the range (0, 255) |
+| `b` | [Number](Number.md) | The blue value in the range (0, 255) |
 
 <dl>
 </dl>

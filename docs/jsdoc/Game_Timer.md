@@ -10,7 +10,7 @@ The game object class for the timer. Use as global variable [$gameTimer](global.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_frames` | [Number](Number.html) |  |
+| `_frames` | [Number](Number.md) |  |
 | `_working` | Boolean |  |
 
 <dl>
@@ -45,7 +45,7 @@ The game object class for the timer. Use as global variable [$gameTimer](global.
 <dl>
 </dl>
 
-#### seconds () → {[Number](Number.html)}
+#### seconds () → {[Number](Number.md)}
 
 Returns the number of seconds on the timer.
 <dl>
@@ -68,7 +68,7 @@ The game object class for the timer. Use as global variable [$gameTimer](global.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `count` | [Number](Number.html) |  |
+| `count` | [Number](Number.md) |  |
 
 <dl>
 </dl>

@@ -1,6 +1,6 @@
 # Class: Conditions
 
-## [RPG](RPG.html) [.EventPage](RPG.EventPage.html).  Conditions ()
+## [RPG](RPG.md) [.EventPage](RPG.EventPage.md).  Conditions ()
 
 #### new Conditions ()
 
@@ -16,12 +16,12 @@ The JSON data structure of an event page.
 | `selfSwitchValid` | Boolean | The truth value indicating whether the [Self Switch] condition is valid. |
 | `itemValid` | Boolean | The truth value indicating whether the [Item] condition is valid. |
 | `actorValid` | Boolean | The truth value indicating whether the [Actor] condition is valid. |
-| `switch1Id` | [Number](Number.html) | The ID of that switch if the first [Switch] condition is valid. |
-| `variableId` | [Number](Number.html) | The ID of that variable if the [Variable] condition is valid. |
-| `variableValue` | [Number](Number.html) | The standard value of that variable (x and greater) if the [Variable] condition is valid. |
-| `selfSwitchCh` | [String](String.html) | The letter of that self switch ("A".."D") if the [Self Switch] condition is valid. |
-| `itemId` | [Number](Number.html) | The ID of that item if the [Item] condition is valid. |
-| `actorId` | [Number](Number.html) | The ID of that actor if the [Actor] condition is valid. |
+| `switch1Id` | [Number](Number.md) | The ID of that switch if the first [Switch] condition is valid. |
+| `variableId` | [Number](Number.md) | The ID of that variable if the [Variable] condition is valid. |
+| `variableValue` | [Number](Number.md) | The standard value of that variable (x and greater) if the [Variable] condition is valid. |
+| `selfSwitchCh` | [String](String.md) | The letter of that self switch ("A".."D") if the [Self Switch] condition is valid. |
+| `itemId` | [Number](Number.md) | The ID of that item if the [Item] condition is valid. |
+| `actorId` | [Number](Number.md) | The ID of that actor if the [Actor] condition is valid. |
 
 <dl>
 </dl>

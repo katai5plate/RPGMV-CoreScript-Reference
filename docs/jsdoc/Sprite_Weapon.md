@@ -10,16 +10,16 @@ The sprite for displaying a weapon image for attacking.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_weaponImageId` | [Number](Number.html) |  |
-| `_animationCount` | [Number](Number.html) |  |
-| `_pattern` | [Number](Number.html) |  |
+| `_weaponImageId` | [Number](Number.md) |  |
+| `_animationCount` | [Number](Number.md) |  |
+| `_pattern` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Sprite_Base](Sprite_Base.html)
+* [Sprite_Base](Sprite_Base.md)
 
 ### Methods
 
@@ -44,7 +44,7 @@ The sprite for displaying a weapon image for attacking.
                 </dd>
             </dl>
 
-#### animationWait () → {[Number](Number.html)}
+#### animationWait () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -142,7 +142,7 @@ The sprite for displaying a weapon image for attacking.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `weaponImageId` | [Number](Number.html) |  |
+| `weaponImageId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -169,9 +169,9 @@ The sprite for displaying a weapon image for attacking.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `animation` | [RPG.Animation](RPG.Animation.html) |  |
+| `animation` | [RPG.Animation](RPG.Animation.md) |  |
 | `mirror` | Boolean |  |
-| `delay` | [Number](Number.html) |  |
+| `delay` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>

@@ -4,26 +4,26 @@
 
 #### (abstract) new Scene_MenuBase ()
 
- メニュー型シーンの基礎クラス。 [Scene_File](Scene_File.html), [Scene_ItemBase](Scene_ItemBase.html) and [Scene_Debug](Scene_Debug.html), [Scene_Equip](Scene_Equip.html), [Scene_GameEnd](Scene_GameEnd.html), [Scene_Menu](Scene_Menu.html), [Scene_Name](Scene_Name.html), [Scene_Options](Scene_Options.html), [Scene_Shop](Scene_Shop.html), [Scene_Status](Scene_Status.html) のスーパークラス。
+ メニュー型シーンの基礎クラス。 [Scene_File](Scene_File.md), [Scene_ItemBase](Scene_ItemBase.md) and [Scene_Debug](Scene_Debug.md), [Scene_Equip](Scene_Equip.md), [Scene_GameEnd](Scene_GameEnd.md), [Scene_Menu](Scene_Menu.md), [Scene_Name](Scene_Name.md), [Scene_Options](Scene_Options.md), [Scene_Shop](Scene_Shop.md), [Scene_Status](Scene_Status.md) のスーパークラス。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_actor` | [Game_Actor](Game_Actor.html) |  選択されているアクター |
-| `_backgroundSprite` | [Sprite](Sprite.html) |  シーンの背景となるスプライト |
-| `_helpWindow` | [Window_Help](Window_Help.html) |  シーンに付加されるヘルプウィンドウ |
+| `_actor` | [Game_Actor](Game_Actor.md) |  選択されているアクター |
+| `_backgroundSprite` | [Sprite](Sprite.md) |  シーンの背景となるスプライト |
+| `_helpWindow` | [Window_Help](Window_Help.md) |  シーンに付加されるヘルプウィンドウ |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Scene_Base](Scene_Base.html)
+* [Scene_Base](Scene_Base.md)
 
 ### Methods
 
-#### actor () → {[Game_Actor](Game_Actor.html)}
+#### actor () → {[Game_Actor](Game_Actor.md)}
 
 Returns the current game actor.
 <dl>
@@ -78,7 +78,7 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.html) |  追加位置 |
+| `index` | [Number](Number.md) |  追加位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -186,7 +186,7 @@
 
 #### createWindowLayer ()
 
- ウィンドウレイヤー[WindowLayer](WindowLayer.html) を生成。
+ ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -226,7 +226,7 @@
                 </dd>
             </dl>
 
-#### fadeSpeed () → {[Number](Number.html)}
+#### fadeSpeed () → {[Number](Number.md)}
 
  フェード速度を返す。
 <dl>
@@ -402,7 +402,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  取り除く位置 |
+| `index` | [Number](Number.md) |  取り除く位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -431,12 +431,12 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `opacity` | [Number](Number.html) |  |
+| `opacity` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### slowFadeSpeed () → {[Number](Number.html)}
+#### slowFadeSpeed () → {[Number](Number.md)}
 
  遅いフェード速度を返す。
 <dl>
@@ -482,7 +482,7 @@
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードインにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードインにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -504,7 +504,7 @@
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードアウトにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードアウトにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>

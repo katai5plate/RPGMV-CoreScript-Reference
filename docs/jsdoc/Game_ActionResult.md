@@ -18,21 +18,21 @@ The game object declare class for a result of a battle action. For convinience, 
 | `critical` | Boolean |  |
 | `success` | Boolean |  |
 | `hpAffected` | Boolean |  |
-| `hpDamage` | [Number](Number.html) |  |
-| `mpDamage` | [Number](Number.html) |  |
-| `tpDamage` | [Number](Number.html) |  |
-| `addedStates` | [Array](Array.html).<[Number](Number.html)> |  |
-| `removedStates` | [Array](Array.html).<[Number](Number.html)> |  |
-| `addedBuffs` | [Array](Array.html).<[Number](Number.html)> |  |
-| `addedDebuffs` | [Array](Array.html).<[Number](Number.html)> |  |
-| `removedBuffs` | [Array](Array.html).<[Number](Number.html)> |  |
+| `hpDamage` | [Number](Number.md) |  |
+| `mpDamage` | [Number](Number.md) |  |
+| `tpDamage` | [Number](Number.md) |  |
+| `addedStates` | [Array](Array.md).<[Number](Number.md)> |  |
+| `removedStates` | [Array](Array.md).<[Number](Number.md)> |  |
+| `addedBuffs` | [Array](Array.md).<[Number](Number.md)> |  |
+| `addedDebuffs` | [Array](Array.md).<[Number](Number.md)> |  |
+| `removedBuffs` | [Array](Array.md).<[Number](Number.md)> |  |
 
 <dl>
 </dl>
 
 ### Methods
 
-#### addedStateObjects () → {[Array](Array.html).<[RPG.State](RPG.State.html)>}
+#### addedStateObjects () → {[Array](Array.md).<[RPG.State](RPG.State.md)>}
 
 Returns the added states from the action result.
 <dl>
@@ -67,7 +67,7 @@ The game object declare class for a result of a battle action. For convinience, 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -87,7 +87,7 @@ The game object declare class for a result of a battle action. For convinience, 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -107,7 +107,7 @@ The game object declare class for a result of a battle action. For convinience, 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -142,7 +142,7 @@ The game object declare class for a result of a battle action. For convinience, 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -153,7 +153,7 @@ The game object declare class for a result of a battle action. For convinience, 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -187,7 +187,7 @@ The game object declare class for a result of a battle action. For convinience, 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -198,7 +198,7 @@ The game object declare class for a result of a battle action. For convinience, 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -209,7 +209,7 @@ The game object declare class for a result of a battle action. For convinience, 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -220,7 +220,7 @@ The game object declare class for a result of a battle action. For convinience, 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -231,12 +231,12 @@ The game object declare class for a result of a battle action. For convinience, 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.html) |  |
+| `stateId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### removedStateObjects () → {[Array](Array.html).<[RPG.State](RPG.State.html)>}
+#### removedStateObjects () → {[Array](Array.md).<[RPG.State](RPG.State.md)>}
 
 Returns the removes states from the result.
 <dl>

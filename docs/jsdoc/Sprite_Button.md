@@ -11,8 +11,8 @@ The sprite for displaying a button.
 | Name | Type | Description |
 | --- | --- | --- |
 | `_touching` | Boolean |  |
-| `_coldFrame` | [Rectangle](Rectangle.html) |  |
-| `_hotFrame` | [Rectangle](Rectangle.html) |  |
+| `_coldFrame` | [Rectangle](Rectangle.md) |  |
+| `_hotFrame` | [Rectangle](Rectangle.md) |  |
 | `_clickHandler` | function |  |
 
 <dl>
@@ -20,7 +20,7 @@ The sprite for displaying a button.
 
 ### Extends
 
-* [Sprite](Sprite.html)
+* [Sprite](Sprite.md)
 
 ### Methods
 
@@ -66,7 +66,7 @@ The sprite for displaying a button.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -88,7 +88,7 @@ The sprite for displaying a button.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `y` | [Number](Number.html) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -165,10 +165,10 @@ The sprite for displaying a button.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
-| `height` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
+| `height` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -181,10 +181,10 @@ The sprite for displaying a button.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
-| `height` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
+| `height` | [Number](Number.md) |  |
 
 <dl>
 </dl>

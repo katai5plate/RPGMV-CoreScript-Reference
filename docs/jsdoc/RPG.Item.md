@@ -1,6 +1,6 @@
 # Class: Item
 
-## [RPG](RPG.html).  Item ()
+## [RPG](RPG.md).  Item ()
 
 #### new Item ()
 
@@ -10,8 +10,8 @@ The JSON data structure of an Item. Define to [$dataItems](global.html#$dataItem
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `itypeIdThe` | [Number](Number.html) | item type ID. 1: Regular item 2: Key item |
-| `price` | [Number](Number.html) | The item's price. |
+| `itypeIdThe` | [Number](Number.md) | item type ID. 1: Regular item 2: Key item |
+| `price` | [Number](Number.md) | The item's price. |
 | `consumable` | Boolean | The truth value indicating whether the item disappears when used. |
 
 <dl>
@@ -19,7 +19,7 @@ The JSON data structure of an Item. Define to [$dataItems](global.html#$dataItem
 
 ### Extends
 
-* [RPG.UsableItem](RPG.UsableItem.html)
+* [RPG.UsableItem](RPG.UsableItem.md)
 
  <br>
 

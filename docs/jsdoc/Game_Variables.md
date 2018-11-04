@@ -10,7 +10,7 @@ The game object class for variables. Use as global variable [$gameVariables](glo
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_data` | [Array](Array.html).<[Number](Number.html)> |  |
+| `_data` | [Array](Array.md).<[Number](Number.md)> |  |
 
 <dl>
 </dl>
@@ -39,19 +39,19 @@ The game object class for variables. Use as global variable [$gameVariables](glo
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `variableId` | [Number](Number.html) |  |
-| `value` | [Number](Number.html) |  |
+| `variableId` | [Number](Number.md) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### value (variableId) → {[Number](Number.html)}
+#### value (variableId) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `variableId` | [Number](Number.html) |  |
+| `variableId` | [Number](Number.md) |  |
 
 <dl>
 </dl>

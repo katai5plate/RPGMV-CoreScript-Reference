@@ -4,27 +4,27 @@
 
 #### new Spriteset_Map ()
 
- マップスプライト表示用オブジェクト。[Scene_Map](Scene_Map.html) オブジェクトで管理される。
+ マップスプライト表示用オブジェクト。[Scene_Map](Scene_Map.md) オブジェクトで管理される。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_parallax` | [TilingSprite](TilingSprite.html) | [遠景]スプライト |
-| `_tilemap` | [Tilemap](Tilemap.html) | [ShaderTilemap](ShaderTilemap.html) |  マップ画像本体 |
-| `_tileset` | [RPG.Tileset](RPG.Tileset.html) | [タイルセット] |
-| `_characterSprites` | [Array](Array.html).<[Sprite_Character](Sprite_Character.html)> | [アクター][イベント]のスプライト |
-| `_shadowSprite` | [Sprite](Sprite.html) |  影スプライト |
-| `_destinationSprite` | [Sprite_Destination](Sprite_Destination.html) |  タッチ位置スプライト |
-| `_weather` | [Weather](Weather.html) |  天候 |
-| `_parallaxName` | [String](String.html) | [遠景]画像ファイル名 |
+| `_parallax` | [TilingSprite](TilingSprite.md) | [遠景]スプライト |
+| `_tilemap` | [Tilemap](Tilemap.md) | [ShaderTilemap](ShaderTilemap.md) |  マップ画像本体 |
+| `_tileset` | [RPG.Tileset](RPG.Tileset.md) | [タイルセット] |
+| `_characterSprites` | [Array](Array.md).<[Sprite_Character](Sprite_Character.md)> | [アクター][イベント]のスプライト |
+| `_shadowSprite` | [Sprite](Sprite.md) |  影スプライト |
+| `_destinationSprite` | [Sprite_Destination](Sprite_Destination.md) |  タッチ位置スプライト |
+| `_weather` | [Weather](Weather.md) |  天候 |
+| `_parallaxName` | [String](String.md) | [遠景]画像ファイル名 |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Spriteset_Base](Spriteset_Base.html)
+* [Spriteset_Base](Spriteset_Base.md)
 
 ### Methods
 
@@ -79,13 +79,13 @@
 
 #### createCharacters ()
 
- キャラクタスプライト([Sprite_Character](Sprite_Character.html))の生成。
+ キャラクタスプライト([Sprite_Character](Sprite_Character.md))の生成。
 <dl>
 </dl>
 
 #### createDestination ()
 
- タッチ位置表示スプライト([Sprite_Destination](Sprite_Destination.html))の生成。
+ タッチ位置表示スプライト([Sprite_Destination](Sprite_Destination.md))の生成。
 <dl>
 </dl>
 
@@ -145,7 +145,7 @@
 
 #### createTilemap ()
 
- タイルマップ([Tilemap](Tilemap.html) か [ShaderTilemap](ShaderTilemap.html))を生成。
+ タイルマップ([Tilemap](Tilemap.md) か [ShaderTilemap](ShaderTilemap.md))を生成。
 <dl>
 </dl>
 
@@ -193,7 +193,7 @@
 
 #### createWeather ()
 
- 天候スプライト([Weather](Weather.html))の生成。
+ 天候スプライト([Weather](Weather.md))の生成。
 <dl>
 </dl>
 
@@ -233,7 +233,7 @@
 
 #### loadTileset ()
 
- タイルセット([RPG.Tileset](RPG.Tileset.html))の読み込み。
+ タイルセット([RPG.Tileset](RPG.Tileset.md))の読み込み。
 <dl>
 </dl>
 

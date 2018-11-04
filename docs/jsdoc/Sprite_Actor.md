@@ -10,7 +10,7 @@ The sprite for displaying an actor.
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `battler` | [Game_Battler](Game_Battler.html) | <optional> |  |
+| `battler` | [Game_Battler](Game_Battler.md) | <optional> |  |
 
 ##### Properties:
 
@@ -238,7 +238,7 @@ The sprite for displaying an actor.
 
 ### Extends
 
-* [Sprite_Battler](Sprite_Battler.html)
+* [Sprite_Battler](Sprite_Battler.md)
 
 ### Methods
 
@@ -287,7 +287,7 @@ The sprite for displaying an actor.
 <dl>
 </dl>
 
-#### damageOffsetX () → {[Number](Number.html)}
+#### damageOffsetX () → {[Number](Number.md)}
 
 <dl>
                 <dt>Overrides:</dt>
@@ -309,7 +309,7 @@ The sprite for displaying an actor.
                 </dd>
             </dl>
 
-#### damageOffsetY () → {[Number](Number.html)}
+#### damageOffsetY () → {[Number](Number.md)}
 
 <dl>
                 <dt>Overrides:</dt>
@@ -376,7 +376,7 @@ The sprite for displaying an actor.
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `battler` | [Game_Actor](Game_Actor.html) | <optional> |  |
+| `battler` | [Game_Actor](Game_Actor.md) | <optional> |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -471,7 +471,7 @@ The sprite for displaying an actor.
                 </dd>
             </dl>
 
-#### motionSpeed () → {[Number](Number.html)}
+#### motionSpeed () → {[Number](Number.md)}
 
 Returns the speed of the motion for the sprite actor.
 <dl>
@@ -523,7 +523,7 @@ The sprite for displaying an actor.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -536,7 +536,7 @@ The sprite for displaying an actor.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `battler` | [Game_Actor](Game_Actor.html) |  |
+| `battler` | [Game_Actor](Game_Actor.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -557,8 +557,8 @@ The sprite for displaying an actor.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -633,9 +633,9 @@ The sprite for displaying an actor.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `animation` | [RPG.Animation](RPG.Animation.html) |  |
+| `animation` | [RPG.Animation](RPG.Animation.md) |  |
 | `mirror` | Boolean |  |
-| `delay` | [Number](Number.html) |  |
+| `delay` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -662,7 +662,7 @@ The sprite for displaying an actor.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `motionType` | [String](String.html) |  |
+| `motionType` | [String](String.md) |  |
 
 <dl>
 </dl>
@@ -673,9 +673,9 @@ The sprite for displaying an actor.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `duration` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `duration` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>

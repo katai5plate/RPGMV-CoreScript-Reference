@@ -11,12 +11,12 @@ The layer which contains game windows.
 | Name | Type | Description |
 | --- | --- | --- |
 | `voidFilter` | PIXI.filters.VoidFilter | [static] |
-| `children` | [Array](Array.html) | [super][read-only] The array of children of the window. |
+| `children` | [Array](Array.md) | [super][read-only] The array of children of the window. |
 | `parent` | Object | [super][read-only] The object that contains the window. |
-| `x` | [Number](Number.html) | The x coordinate of the window layer. |
-| `y` | [Number](Number.html) | The y coordinate of the window layer. |
-| `width` | [Number](Number.html) | The width of the window layer in pixels. |
-| `height` | [Number](Number.html) | The height of the window layer in pixels. |
+| `x` | [Number](Number.md) | The x coordinate of the window layer. |
+| `y` | [Number](Number.md) | The y coordinate of the window layer. |
+| `width` | [Number](Number.md) | The width of the window layer in pixels. |
+| `height` | [Number](Number.md) | The height of the window layer in pixels. |
 
 <dl>
 </dl>
@@ -34,7 +34,7 @@ The layer which contains game windows.
 | Name | Type | Description |
 | --- | --- | --- |
 | `renderSession` | Object |  |
-| `window` | [Window](Window.html) |  |
+| `window` | [Window](Window.md) |  |
 
 <dl>
 </dl>
@@ -45,7 +45,7 @@ The layer which contains game windows.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `window` | [Window](Window.html) |  |
+| `window` | [Window](Window.md) |  |
 
 <dl>
 </dl>
@@ -104,7 +104,7 @@ The layer which contains game windows.
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object | The child to add |
-| `index` | [Number](Number.html) | The index to place the child in |
+| `index` | [Number](Number.md) | The index to place the child in |
 
 <dl>
 </dl>
@@ -133,10 +133,10 @@ The layer which contains game windows.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) | The x coordinate of the window layer |
-| `y` | [Number](Number.html) | The y coordinate of the window layer |
-| `width` | [Number](Number.html) | The width of the window layer |
-| `height` | [Number](Number.html) | The height of the window layer |
+| `x` | [Number](Number.md) | The x coordinate of the window layer |
+| `y` | [Number](Number.md) | The y coordinate of the window layer |
+| `width` | [Number](Number.md) | The width of the window layer |
+| `height` | [Number](Number.md) | The height of the window layer |
 
 <dl>
 </dl>
@@ -177,7 +177,7 @@ The layer which contains game windows.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) | The index to get the child from |
+| `index` | [Number](Number.md) | The index to get the child from |
 
 <dl>
 </dl>

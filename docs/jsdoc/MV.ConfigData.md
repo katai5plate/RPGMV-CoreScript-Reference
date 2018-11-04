@@ -1,6 +1,6 @@
 # Class: ConfigData
 
-## [MV](MV.html).  ConfigData ()
+## [MV](MV.md).  ConfigData ()
 
 #### new ConfigData ()
 
@@ -10,10 +10,10 @@
 | --- | --- | --- |
 | `alwaysDash` | Boolean |  |
 | `commandRemember` | Boolean |  |
-| `bgmVolume` | [Number](Number.html) |  |
-| `bgsVolume` | [Number](Number.html) |  |
-| `meVolume` | [Number](Number.html) |  |
-| `seVolume` | [Number](Number.html) |  |
+| `bgmVolume` | [Number](Number.md) |  |
+| `bgsVolume` | [Number](Number.md) |  |
+| `meVolume` | [Number](Number.md) |  |
+| `seVolume` | [Number](Number.md) |  |
 
 <dl>
 </dl>
