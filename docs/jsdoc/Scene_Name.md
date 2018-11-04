@@ -10,13 +10,14 @@ The scene class of the name input screen.
 
 ### Extends
 
-* [Scene_MenuBase](Scene_MenuBase.html)
+* [Scene_MenuBase](Scene_MenuBase.md)
 
 ### Methods
 
-#### actor () → {[Game_Actor](Game_Actor.html)}
+#### actor () → {[Game_Actor](Game_Actor.md)}
 
-Returns the current game actor.
+
+Returns the current game actor.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -39,7 +40,8 @@ The scene class of the name input screen.
 
 #### addChild (child) → {Object}
 
-[super] 子オブジェクトを追加。
+
+[super] 子オブジェクトを追加。
 
 ##### Parameters:
 
@@ -60,7 +62,8 @@ The scene class of the name input screen.
 
 ##### Returns:
 
- 追加されたオブジェクト
+
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -70,14 +73,15 @@ The scene class of the name input screen.
 
 #### addChildAt (child, index) → {Object}
 
-[super] 指定位置に子オブジェクトを追加。
+
+[super] 指定位置に子オブジェクトを追加。
 
 ##### Parameters:
-
+[Number](Number.md)
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.html) |  追加位置 |
+| `index` | [Number](Number.md) |  追加位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -92,7 +96,8 @@ The scene class of the name input screen.
 
 ##### Returns:
 
- 追加されたオブジェクト
+
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -102,7 +107,8 @@ The scene class of the name input screen.
 
 #### addWindow (Window)
 
- ウィンドウレイヤーにウィンドウを追加。
+
+ ウィンドウレイヤーにウィンドウを追加。
 
 ##### Parameters:
 
@@ -123,7 +129,8 @@ The scene class of the name input screen.
 
 #### attachReservation ()
 
- キューに予約を追加。
+
+ キューに予約を追加。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -137,7 +144,8 @@ The scene class of the name input screen.
 
 #### checkGameover ()
 
- ゲームオーバー状態か検査。
+
+ ゲームオーバー状態か検査。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -164,13 +172,15 @@ The scene class of the name input screen.
 
 #### createEditWindow ()
 
-Creates the edit window.
+
+Creates the edit window.
 <dl>
 </dl>
 
 #### createFadeSprite ()
 
- フェード用のスプライトを生成。
+
+ フェード用のスプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -184,7 +194,8 @@ The scene class of the name input screen.
 
 #### createHelpWindow ()
 
-Creates the help window.
+
+Creates the help window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -193,18 +204,20 @@ The scene class of the name input screen.
                             <a>Scene_MenuBase#createHelpWindow</a>
                         </li>
                     </ul>
-                </dd>
+[$1]($2.md)                </dd>
             </dl>
 
 #### createInputWindow ()
 
-Creates the input window.
+
+Creates the input window.
 <dl>
 </dl>
 
 #### createWindowLayer ()
 
- ウィンドウレイヤー[WindowLayer](WindowLayer.html) を生成。
+
+ ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -218,7 +231,8 @@ The scene class of the name input screen.
 
 #### detachReservation ()
 
- キューから予約を削除。
+
+ キューから予約を削除。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -230,9 +244,10 @@ The scene class of the name input screen.
                 </dd>
             </dl>
 
-#### fadeOutAll ()
+#### fadeOutAll ()[Number](Number.md)
 
- 全ての映像と音声を、遅い速度でフェードアウト。
+
+ 全ての映像と音声を、遅い速度でフェードアウト。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -244,9 +259,10 @@ The scene class of the name input screen.
                 </dd>
             </dl>
 
-#### fadeSpeed () → {[Number](Number.html)}
+#### fadeSpeed () → {[Number](Number.md)}
 
- フェード速度を返す。
+
+ フェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -269,7 +285,8 @@ The scene class of the name input screen.
 
 #### initialize ()
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -283,7 +300,8 @@ The scene class of the name input screen.
 
 #### isActive () → {Boolean}
 
- シーンがアクティブか。
+
+ シーンがアクティブか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -306,7 +324,8 @@ The scene class of the name input screen.
 
 #### isBusy () → {Boolean}
 
- フェード動作中か。
+
+ フェード動作中か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -329,7 +348,8 @@ The scene class of the name input screen.
 
 #### isReady () → {Boolean}
 
- シーンの準備ができているか。
+
+ シーンの準備ができているか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -352,7 +372,8 @@ The scene class of the name input screen.
 
 #### nextActor ()
 
-Moves to the next actor in the party.
+
+Moves to the next actor in the party.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -379,13 +400,15 @@ The scene class of the name input screen.
 
 #### onInputOk ()
 
-Handler for when ok is processed on the name input scene.
+
+Handler for when ok is processed on the name input scene.
 <dl>
 </dl>
 
-#### popScene ()
+#### popScene [Number](Number.md)
+[Number](Number.md)
 
- シーンを引き出す(pop)。
+ シーンを引き出す(pop)。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -399,21 +422,23 @@ The scene class of the name input screen.
 
 #### prepare (actorId, maxLength)
 
-Prepares the name input scene for giving the specified actor at actorId a name with a maximum number of characters given by maxLength.
+
+Prepares the name input scene for giving the specified actor at actorId a name with a maximum number of characters given by maxLength.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actorId` | [Number](Number.html) |  |
-| `maxLength` | [Number](Number.html) |  |
+| `actorId` | [Number](Number.md) |  |
+| `maxLength` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 #### previousActor ()
 
-Moves to the previous actor in the party.
+
+Moves to the previous actor in the party.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -427,7 +452,8 @@ The scene class of the name input screen.
 
 #### removeChild (child) → {Object}
 
-[super] 子オブジェクトを取り除く。
+
+[super] 子オブジェクトを取り除く。
 
 ##### Parameters:
 
@@ -438,7 +464,7 @@ The scene class of the name input screen.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                    <ul>
+            [Number](Number.md)
                         <li>
                             <a>Stage#removeChild</a>
                         </li>
@@ -448,7 +474,8 @@ The scene class of the name input screen.
 
 ##### Returns:
 
- 取り除かれたオブジェクト
+
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -458,14 +485,15 @@ The scene class of the name input screen.
 
 #### removeChildAt (index) → {Object}
 
-[super] 指定位置にある子オブジェクトを取り除く。
+
+[super] 指定位置にある子オブジェクトを取り除く。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  取り除く位置 |
-
+| `index` | [Number](Number.md) |  取り除く位置 |
+[Number](Number.md)
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -478,8 +506,9 @@ The scene class of the name input screen.
             </dl>
 
 ##### Returns:
+[Number](Number.md)
 
- 取り除かれたオブジェクト
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -493,7 +522,7 @@ The scene class of the name input screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `opacity` | [Number](Number.html) |  |
+| `opacity` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -506,9 +535,10 @@ The scene class of the name input screen.
                 </dd>
             </dl>
 
-#### slowFadeSpeed () → {[Number](Number.html)}
+#### slowFadeSpeed () → {[Number](Number.md)}
 
- 遅いフェード速度を返す。
+
+ 遅いフェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -521,8 +551,9 @@ The scene class of the name input screen.
             </dl>
 
 ##### Returns:
+[Number](Number.md)
 
-Return the fade speed
+Return the fade speed
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -542,16 +573,17 @@ The scene class of the name input screen.
                     </ul>
                 </dd>
             </dl>
-
+[Number](Number.md)
 #### startFadeIn (duration opt, white opt)
 
- フェードインの要求。
+
+ フェードインの要求。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードインにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードインにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -567,13 +599,14 @@ The scene class of the name input screen.
 
 #### startFadeOut (duration opt, white opt)
 
- フェードアウトの要求。
+
+ フェードアウトの要求。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードアウトにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードアウトにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -589,7 +622,8 @@ The scene class of the name input screen.
 
 #### stop ()
 
- シーンの停止。
+
+ シーンの停止。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -603,7 +637,8 @@ The scene class of the name input screen.
 
 #### terminate ()
 
- 遷移前のシーン中断。
+
+ 遷移前のシーン中断。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -617,7 +652,8 @@ The scene class of the name input screen.
 
 #### update ()
 
- フレーム毎のアップデート。
+
+ フレーム毎のアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -631,7 +667,8 @@ The scene class of the name input screen.
 
 #### updateActor ()
 
-Updates the current actor.
+
+Updates the current actor.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -645,7 +682,8 @@ The scene class of the name input screen.
 
 #### updateChildren ()
 
- 子オブジェクトのアップデート。
+
+ 子オブジェクトのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -659,7 +697,8 @@ The scene class of the name input screen.
 
 #### updateFade ()
 
- フェードのアップデート。
+
+ フェードのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -669,7 +708,9 @@ The scene class of the name input screen.
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            </dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

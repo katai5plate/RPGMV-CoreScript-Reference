@@ -10,7 +10,7 @@ The scene class of the save screen.
 
 ### Extends
 
-* [Scene_File](Scene_File.html)
+* [Scene_File](Scene_File.md)
 
 ### Methods
 
@@ -27,9 +27,10 @@ The scene class of the save screen.
                 </dd>
             </dl>
 
-#### actor () → {[Game_Actor](Game_Actor.html)}
+#### actor () → {[Game_Actor](Game_Actor.md)}
 
-Returns the current game actor.
+
+Returns the current game actor.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -52,7 +53,8 @@ The scene class of the save screen.
 
 #### addChild (child) → {Object}
 
-[super] 子オブジェクトを追加。
+
+[super] 子オブジェクトを追加。
 
 ##### Parameters:
 
@@ -73,7 +75,8 @@ The scene class of the save screen.
 
 ##### Returns:
 
- 追加されたオブジェクト
+
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -83,14 +86,15 @@ The scene class of the save screen.
 
 #### addChildAt (child, index) → {Object}
 
-[super] 指定位置に子オブジェクトを追加。
+
+[super] 指定位置に子オブジェクトを追加。
 
 ##### Parameters:
-
+[Number](Number.md)
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.html) |  追加位置 |
+| `index` | [Number](Number.md) |  追加位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -105,7 +109,8 @@ The scene class of the save screen.
 
 ##### Returns:
 
- 追加されたオブジェクト
+
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -115,7 +120,8 @@ The scene class of the save screen.
 
 #### addWindow (Window)
 
- ウィンドウレイヤーにウィンドウを追加。
+
+ ウィンドウレイヤーにウィンドウを追加。
 
 ##### Parameters:
 
@@ -136,7 +142,8 @@ The scene class of the save screen.
 
 #### attachReservation ()
 
- キューに予約を追加。
+
+ キューに予約を追加。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -150,7 +157,8 @@ The scene class of the save screen.
 
 #### checkGameover ()
 
- ゲームオーバー状態か検査。
+
+ ゲームオーバー状態か検査。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -177,7 +185,8 @@ The scene class of the save screen.
 
 #### createFadeSprite ()
 
- フェード用のスプライトを生成。
+
+ フェード用のスプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -208,7 +217,7 @@ The scene class of the save screen.
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
+[$1]($2.md)                        <li>
                             <a>Scene_File#createListWindow</a>
                         </li>
                     </ul>
@@ -217,7 +226,8 @@ The scene class of the save screen.
 
 #### createWindowLayer ()
 
- ウィンドウレイヤー[WindowLayer](WindowLayer.html) を生成。
+
+ ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -231,7 +241,8 @@ The scene class of the save screen.
 
 #### detachReservation ()
 
- キューから予約を削除。
+
+ キューから予約を削除。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -245,7 +256,8 @@ The scene class of the save screen.
 
 #### fadeOutAll ()
 
- 全ての映像と音声を、遅い速度でフェードアウト。
+
+ 全ての映像と音声を、遅い速度でフェードア[Number](Number.md)
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -257,9 +269,10 @@ The scene class of the save screen.
                 </dd>
             </dl>
 
-#### fadeSpeed () → {[Number](Number.html)}
+#### fadeSpeed () → {[Number](Number.md)}
 
- フェード速度を返す。
+
+ フェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -267,7 +280,7 @@ The scene class of the save screen.
                         <li>
                             <a>Scene_Base#fadeSpeed</a>
                         </li>
-                    </ul>
+                    </ul>[Number](Number.md)
                 </dd>
             </dl>
 
@@ -280,16 +293,17 @@ The scene class of the save screen.
                 </dd>
             </dl>
 
-#### firstSavefileIndex () → {[Number](Number.html)}
+#### firstSavefileIndex () → {[Number](Number.md)}
 
-Returns the index of the first save file within the save scene.
+
+Returns the index of the first save file within the save scene.
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
                     <ul>
                         <li>
                             <a>Scene_File#firstSavefileIndex</a>
-                        </li>
+                        </[String](String.md)
                     </ul>
                 </dd>
             </dl>
@@ -303,7 +317,7 @@ The scene class of the save screen.
                 </dd>
             </dl>
 
-#### helpWindowText () → {[String](String.html)}
+#### helpWindowText () → {[String](String.md)}
 
 <dl>
                 <dt>Overrides:</dt>
@@ -327,7 +341,8 @@ The scene class of the save screen.
 
 #### initialize ()
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -341,7 +356,8 @@ The scene class of the save screen.
 
 #### isActive () → {Boolean}
 
- シーンがアクティブか。
+
+ シーンがアクティブか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -364,7 +380,8 @@ The scene class of the save screen.
 
 #### isBusy () → {Boolean}
 
- フェード動作中か。
+
+ フェード動作中か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -387,10 +404,11 @@ The scene class of the save screen.
 
 #### isReady () → {Boolean}
 
- シーンの準備ができているか。
+
+ シーンの準備ができているか。
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>
+                [String](String.md)
                     <ul>
                         <li>
                             <a>Scene_Base#isReady</a>
@@ -408,9 +426,10 @@ The scene class of the save screen.
                 </dd>
             </dl>
 
-#### mode () → {[String](String.html)}
+#### mode () → {[String](String.md)}
 
-Returns the mode of the save scene.
+
+Returns the mode of the save scene.
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -433,7 +452,8 @@ The scene class of the save screen.
 
 #### nextActor ()
 
-Moves to the next actor in the party.
+
+Moves to the next actor in the party.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -460,13 +480,15 @@ The scene class of the save screen.
 
 #### onSaveFailure ()
 
-Handler for when save fails.
+
+Handler for when save fails.
 <dl>
 </dl>
 
 #### onSavefileOk ()
 
-Handler for when a save file is confirmed within the save scene.
+
+Handler for when a save file is confirmed within the save scene.
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -480,13 +502,15 @@ The scene class of the save screen.
 
 #### onSaveSuccess ()
 
-Handler for when save is a success.
+
+Handler for when save is a success.
 <dl>
 </dl>
 
 #### popScene ()
 
- シーンを引き出す(pop)。
+
+ シーンを引き出す(pop)。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -500,7 +524,8 @@ The scene class of the save screen.
 
 #### previousActor ()
 
-Moves to the previous actor in the party.
+
+Moves to the previous actor in the party.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -514,7 +539,8 @@ The scene class of the save screen.
 
 #### removeChild (child) → {Object}
 
-[super] 子オブジェクトを取り除く。
+
+[super] 子オブジェクトを取り除く。
 
 ##### Parameters:
 
@@ -525,7 +551,7 @@ The scene class of the save screen.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                    <ul>
+            [Number](Number.md)
                         <li>
                             <a>Stage#removeChild</a>
                         </li>
@@ -535,7 +561,8 @@ The scene class of the save screen.
 
 ##### Returns:
 
- 取り除かれたオブジェクト
+
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -545,13 +572,14 @@ The scene class of the save screen.
 
 #### removeChildAt (index) → {Object}
 
-[super] 指定位置にある子オブジェクトを取り除く。
+
+[super] 指定位置にある子オブジェクトを取り除く。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  取り除く位置 |
+| `index` | [Number](Number.md) |  取り除く位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -566,7 +594,8 @@ The scene class of the save screen.
 
 ##### Returns:
 
- 取り除かれたオブジェクト
+[Number](Number.md)
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -576,8 +605,9 @@ The scene class of the save screen.
 
 #### savefileId ()
 
-Returns the current savefileId.
-<dl>
+
+Returns the current savefileId.
+<dl>[Number](Number.md)
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -594,7 +624,7 @@ The scene class of the save screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `opacity` | [Number](Number.html) |  |
+| `opacity` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -607,9 +637,10 @@ The scene class of the save screen.
                 </dd>
             </dl>
 
-#### slowFadeSpeed () → {[Number](Number.html)}
+#### slowFadeSpeed () → {[Number](Number.md)}
 
- 遅いフェード速度を返す。
+
+ 遅いフェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -621,9 +652,10 @@ The scene class of the save screen.
                 </dd>
             </dl>
 
-##### Returns:
+##### Returns:[Number](Number.md)
 
-Return the fade speed
+
+Return the fade speed
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -642,17 +674,18 @@ The scene class of the save screen.
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            </d[Number](Number.md)
 
 #### startFadeIn (duration opt, white opt)
 
- フェードインの要求。
+
+ フェードインの要求。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードインにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードインにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -668,13 +701,14 @@ The scene class of the save screen.
 
 #### startFadeOut (duration opt, white opt)
 
- フェードアウトの要求。
+
+ フェードアウトの要求。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードアウトにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードアウトにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -690,7 +724,8 @@ The scene class of the save screen.
 
 #### stop ()
 
- シーンの停止。
+
+ シーンの停止。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -704,7 +739,8 @@ The scene class of the save screen.
 
 #### terminate ()
 
- 遷移前のシーン中断。
+
+ 遷移前のシーン中断。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -718,7 +754,8 @@ The scene class of the save screen.
 
 #### update ()
 
- フレーム毎のアップデート。
+
+ フレーム毎のアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -732,7 +769,8 @@ The scene class of the save screen.
 
 #### updateActor ()
 
-Updates the current actor.
+
+Updates the current actor.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -746,7 +784,8 @@ The scene class of the save screen.
 
 #### updateChildren ()
 
- 子オブジェクトのアップデート。
+
+ 子オブジェクトのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -760,7 +799,8 @@ The scene class of the save screen.
 
 #### updateFade ()
 
- フェードのアップデート。
+
+ フェードのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -770,7 +810,9 @@ The scene class of the save screen.
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            </dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

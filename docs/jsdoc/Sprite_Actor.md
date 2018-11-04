@@ -10,7 +10,7 @@ The sprite for displaying an actor.
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `battler` | [Game_Battler](Game_Battler.html) | <optional> |  |
+| `battler` | [Game_Battler](Game_Battler.md) | <optional> |  |
 
 ##### Properties:
 
@@ -238,13 +238,14 @@ The sprite for displaying an actor.
 
 ### Extends
 
-* [Sprite_Battler](Sprite_Battler.html)
+* [Sprite_Battler](Sprite_Battler.md)
 
 ### Methods
 
 #### _speedUpCustomBlendModes (renderer)
 
-checks if we need to speed up custom blendmodes
+
+checks if we need to speed up custom blendmodes
 
 ##### Parameters:
 
@@ -265,29 +266,33 @@ The sprite for displaying an actor.
 
 #### createMainSprite ()
 
-Creates the main sprite of the sprite actor.
+
+Creates the main sprite of the sprite actor.
 <dl>
 </dl>
 
 #### createShadowSprite ()
 
-Creates the shadow sprite of the sprite actor.
+
+Creates the shadow sprite of the sprite actor.
 <dl>
 </dl>
 
 #### createStateSprite ()
 
-Creates the state sprite of the sprite actor.
+
+Creates the state sprite of the sprite actor.
 <dl>
 </dl>
 
 #### createWeaponSprite ()
 
-Sets the weapon sprite of the sprite actor.
+[Number](Number.md)
+Sets the weapon sprite of the sprite actor.
 <dl>
 </dl>
 
-#### damageOffsetX () → {[Number](Number.html)}
+#### damageOffsetX () → {[Number](Number.md)}
 
 <dl>
                 <dt>Overrides:</dt>
@@ -304,12 +309,12 @@ The sprite for displaying an actor.
 
 <dl>
                 <dt> Type </dt>
-                <dd>
+                <dd>[Number](Number.md)
                     <span><a>Number</a></span>
                 </dd>
             </dl>
 
-#### damageOffsetY () → {[Number](Number.html)}
+#### damageOffsetY () → {[Number](Number.md)}
 
 <dl>
                 <dt>Overrides:</dt>
@@ -333,7 +338,8 @@ The sprite for displaying an actor.
 
 #### hide ()
 
-Hides the sprite.
+
+Hides the sprite.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -347,7 +353,8 @@ The sprite for displaying an actor.
 
 #### inHomePosition () → {Boolean}
 
-Returns true if the sprite battler is in the home position.
+
+Returns true if the sprite battler is in the home position.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -369,14 +376,15 @@ The sprite for displaying an actor.
             </dl>
 
 #### initialize (battler opt)
+[Game_Actor](Game_Actor.md)
 
- オブジェクト生成時の初期化。
+ オブジェクト生成時の初期化。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `battler` | [Game_Actor](Game_Actor.html) | <optional> |  |
+| `battler` | [Game_Actor](Game_Actor.md) | <optional> |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -404,7 +412,8 @@ The sprite for displaying an actor.
 
 #### isAnimationPlaying () → {boolean}
 
-Returns true if an animation is currently playing.
+
+Returns true if an animation is currently playing.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -427,7 +436,8 @@ The sprite for displaying an actor.
 
 #### isEffecting () → {Boolean}
 
-Returns false for sprite battler.
+
+Returns false for sprite battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -450,7 +460,8 @@ The sprite for displaying an actor.
 
 #### isMoving () → {boolean}
 
-Returns true if the sprite for the battler is moving.
+
+Returns true if the sprite for the battler is moving.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -460,7 +471,7 @@ The sprite for displaying an actor.
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            </dl>[Number](Number.md)
 
 ##### Returns:
 
@@ -471,9 +482,10 @@ The sprite for displaying an actor.
                 </dd>
             </dl>
 
-#### motionSpeed () → {[Number](Number.html)}
+#### motionSpeed () → {[Number](Number.md)}
 
-Returns the speed of the motion for the sprite actor.
+
+Returns the speed of the motion for the sprite actor.
 <dl>
 </dl>
 
@@ -488,7 +500,8 @@ The sprite for displaying an actor.
 
 #### moveToStartPosition ()
 
-Moves the sprite actor to the start position.
+
+Moves the sprite actor to the start position.
 <dl>
 </dl>
 
@@ -507,13 +520,15 @@ The sprite for displaying an actor.
 
 #### refreshMotion ()
 
-Refreshes the motion of the sprite actor.
+
+Refreshes the motion of the sprite actor.
 <dl>
-</dl>
+</dl>[Number](Number.md)
 
 #### retreat ()
 
-Has the sprite actor retreat.
+
+Has the sprite actor retreat.
 <dl>
 </dl>
 
@@ -521,28 +536,29 @@ The sprite for displaying an actor.
 
 ##### Parameters:
 
-| Name | Type | Description |
+| Name | Type [Game_Actor](Game_Actor.md)
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 #### setBattler (battler)
 
-Sets the battler of the sprite actor.
+
+Sets the battler of the sprite actor.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `battler` | [Game_Actor](Game_Actor.html) |  |
+| `battler` | [Game_Actor](Game_Actor.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
-                    <ul>
-                        <li>
+        [Number](Number.md)
+        [Number](Number.md)
                             <a>Sprite_Battler#setBattler</a>
                         </li>
                     </ul>
@@ -551,14 +567,15 @@ The sprite for displaying an actor.
 
 #### setHome (x, y)
 
-Sets the home position of the sprite battler to the given x and y coordinates.
+
+Sets the home position of the sprite battler to the given x and y coordinates.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -573,7 +590,8 @@ The sprite for displaying an actor.
 
 #### setupAnimation ()
 
-Sets up animation on the sprite battler.
+
+Sets up animation on the sprite battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -587,7 +605,8 @@ The sprite for displaying an actor.
 
 #### setupDamagePopup ()
 
-Sets up damage popup on the sprite battler.
+
+Sets up damage popup on the sprite battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -601,19 +620,22 @@ The sprite for displaying an actor.
 
 #### setupMotion ()
 
-Sets up motion on the sprite actor.
+
+Sets up motion on the sprite actor.
 <dl>
 </dl>
 
 #### setupWeaponAnimation ()
 
-Sets up weapon animation on the sprite actor.
+
+Sets up weapon animation on the sprite actor.
 <dl>
 </dl>
 
 #### show ()
+[RPG.Animation](RPG.Animation.md)
 
-Shows the sprite.
+Shows the sp[Number](Number.md)
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -627,19 +649,20 @@ The sprite for displaying an actor.
 
 #### startAnimation (animation, mirror, delay)
 
-Starts a new animation on the current sprite by assigning a new Sprite_Animation object to the sprite's parent.
+
+Starts a new animation on the current sprite by assigning a new Sprite_Animation object to the sprite's parent.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `animation` | [RPG.Animation](RPG.Animation.html) |  |
+| `animation` | [RPG.Animation](RPG.Animation.md) |  |
 | `mirror` | Boolean |  |
-| `delay` | [Number](Number.html) |  |
+| `delay` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>
+                <[String](String.md)
                     <ul>
                         <li>
                             <a>Sprite_Base#startAnimation</a>
@@ -650,19 +673,21 @@ The sprite for displaying an actor.
 
 #### startEntryMotion ()
 
-Starts the entry motion of the sprite actor.
-<dl>
+[Number](Number.md)
+Starts t[Number](Number.md)e sprite actor.
+<dl>[Number](Number.md)
 </dl>
 
 #### startMotion (motionType)
 
-Starts the motion given the specified motion type.
+
+Starts the motion given the specified motion type.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `motionType` | [String](String.html) |  |
+| `motionType` | [String](String.md) |  |
 
 <dl>
 </dl>
@@ -673,9 +698,9 @@ The sprite for displaying an actor.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `duration` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `duration` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -690,13 +715,15 @@ The sprite for displaying an actor.
 
 #### stepBack ()
 
-Has the sprite actor step back.
+
+Has the sprite actor step back.
 <dl>
 </dl>
 
 #### stepForward ()
 
-Has the sprite actor step forward.
+
+Has the sprite actor step forward.
 <dl>
 </dl>
 
@@ -715,7 +742,8 @@ The sprite for displaying an actor.
 
 #### updateAnimation ()
 
-Updates the sprite battler animation.
+
+Updates the sprite battler animation.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -729,7 +757,8 @@ The sprite for displaying an actor.
 
 #### updateAnimationSprites ()
 
-Updates the animation sprites, cloning them; if the sprite is playing, pushes the sprites into animation sprites, otherwise the sprite is removed.
+
+Updates the animation sprites, cloning them; if the sprite is playing, pushes the sprites into animation sprites, otherwise the sprite is removed.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -743,7 +772,8 @@ The sprite for displaying an actor.
 
 #### updateBitmap ()
 
-Updates the sprite actor's movement.
+
+Updates the sprite actor's movement.
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -757,7 +787,8 @@ The sprite for displaying an actor.
 
 #### updateDamagePopup ()
 
-Updates the damage pop up for the sprite battler.
+
+Updates the damage pop up for the sprite battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -797,7 +828,8 @@ The sprite for displaying an actor.
 
 #### updateMotion ()
 
-Updates the sprite actor's motion.
+
+Updates the sprite actor's motion.
 <dl>
 </dl>
 
@@ -821,7 +853,8 @@ The sprite for displaying an actor.
 
 #### updatePosition ()
 
-Updates the position of the sprite battler.
+
+Updates the position of the sprite battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -867,7 +900,9 @@ The sprite for displaying an actor.
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            </dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

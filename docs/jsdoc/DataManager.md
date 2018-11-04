@@ -10,10 +10,10 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_globalId` | [String](String.html) | [static]システムID 'RPGMV' |
-| `_lastAccessedId` | [Number](Number.html) | [static] 最後にセーブ・ロードを行ったファイルのID |
+| `_globalId` | [String](String.md) | [static]システムID 'RPGMV' |
+| `_lastAccessedId` | [Number](Number.md) | [static] 最後にセーブ・ロードを行ったファイルのID |
 | `_errorUrl` | * | [static] |
-| `_databaseFiles` | [Array](Array.html).<Object> | [static] |
+| `_databaseFiles` | [Array](Array.md).<Object> | [static] |
 
 <dl>
 </dl>
@@ -22,19 +22,22 @@
 
 #### (static) checkError ()
 
- エラーが記録されていれば、エラーを表示。
+
+ エラーが記録されていれば、エラーを表示。
 <dl>
 </dl>
 
 #### (static) createGameObjects ()
 
-$game から始まる大域変数に、対応したオブジェクトを生成し代入。
+
+$game から始まる大域変数に、対応したオブジェクトを生成し代入。
 <dl>
 </dl>
 
 #### (static) extractMetadata (data)
 
-data.noteに
+
+data.noteに
 
 ##### Parameters:
 
@@ -47,7 +50,8 @@
 
 #### (static) extractSaveContents (contents)
 
- 渡したオブジェクトから$gameで始まる大域変数に値を返す。
+
+ 渡したオブジェクトから$gameで始まる大域変数に値を返す。
 
 ##### Parameters:
 
@@ -60,7 +64,8 @@
 
 #### (static) isAnySavefileExists () → {Boolean}
 
- セーブファイルが(ひとつでも)存在するか。
+
+ セーブファイルが(ひとつでも)存在するか。
 <dl>
 </dl>
 
@@ -75,7 +80,8 @@
 
 #### (static) isArmor (item) → {Boolean}
 
- 指定した項目が[防具]に含まれるか。
+
+ 指定した項目が[防具]に含まれるか。
 
 ##### Parameters:
 
@@ -97,7 +103,8 @@
 
 #### (static) isBattleTest () → {Boolean}
 
-[戦闘テスト]モードか。
+
+[戦闘テスト]モードか。
 <dl>
 </dl>
 
@@ -112,7 +119,8 @@
 
 #### (static) isDatabaseLoaded () → {Boolean}
 
- データベースの読み込みが完了しているか。
+
+ データベースの読み込みが完了しているか。
 <dl>
 </dl>
 
@@ -127,7 +135,8 @@
 
 #### (static) isEventTest () → {Boolean}
 
-[イベントテスト]モードか。
+
+[イベントテスト]モードか。
 <dl>
 </dl>
 
@@ -142,7 +151,8 @@
 
 #### (static) isItem (item) → {Boolean}
 
- 指定した項目が[アイテム]に含まれるか。
+
+ 指定した項目が[アイテム]に含まれるか。
 
 ##### Parameters:
 
@@ -164,7 +174,8 @@
 
 #### (static) isMapLoaded () → {Boolean}
 
- マップの読み込みが完了しているか。
+
+ マップの読み込みが完了しているか。
 <dl>
 </dl>
 
@@ -179,7 +190,8 @@
 
 #### (static) isSkill (item) → {Boolean}
 
- 指定した項目が[スキル]に含まれるか。
+
+ 指定した項目が[スキル]に含まれるか。
 
 ##### Parameters:
 
@@ -195,19 +207,20 @@
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span>Boolean</span>
+                 [Number](Number.md)n>
                 </dd>
             </dl>
 
 #### (static) isThisGameFile (savefileId) → {Boolean}
 
- 指定した ID のセーブファイルが存在するか。
+
+ 指定した ID のセーブファイルが存在するか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.html) |  |
+| `savefileId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -223,13 +236,14 @@
 
 #### (static) isWeapon (item) → {Boolean}
 
- 指定した項目が[武器]に含まれるか。
+
+ 指定した項目が[武器]に含まれるか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | object |  |
+| `item` | object |  |[Number](Number.md)
 
 <dl>
 </dl>
@@ -243,9 +257,10 @@
                 </dd>
             </dl>
 
-#### (static) lastAccessedSavefileId () → {[Number](Number.html)}
+#### (static) lastAccessedSavefileId () → {[Number](Number.md)}
+[Number](Number.md)
 
- 最後にセーブ・ロードを行ったファイルのIDを返す。
+ 最後にセーブ・ロードを行ったファイルのIDを返す。
 <dl>
 </dl>
 
@@ -258,9 +273,10 @@
                 </dd>
             </dl>
 
-#### (static) latestSavefileId () → {[Number](Number.html)}
+#### (static) latestSavefileId () → {[Number](Number.md)}
 
- 最新のセーブファイルID を返す。
+
+ 最新のセーブファイルID を返す。
 <dl>
 </dl>
 
@@ -275,59 +291,65 @@
 
 #### (static) loadAllSavefileImages ()
 
- 全てのセーブファイルの画像を読み込む。
-<dl>
-</dl>
+
+ 全てのセーブファイルの画像を読み込む。
+<dl>[String](String.md)
+</dl>[String](String.md)
 
 #### (static) loadDatabase ()
 
- データベースファイル( $data から始まる大域変数に代入される JSON)を読み込む。 ただし $dataMap は別扱い。
+
+ データベースファイル( $data から始まる大域変数に代入される JSON)を読み込む。 ただし $dataMap は別扱い。
 <dl>
 </dl>
 
 #### (static) loadDataFile (name, src)
 
- 指定したデータを読み込む。読み込みが完了したら onLoad が呼ばれる。
 
+ 指定したデータを読み込む。読み込みが完了したら onLoad が呼ばれる。
+[Number](Number.md)
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.html) |  データ代入先の大域変数名 $dataXXX |
-| `src` | [String](String.html) | data/以下のファイル名 |
+| `name` | [String](String.md) |  データ代入先の大域変数名 $dataXXX |
+| `src` | [String](String.md) | data/以下のファイル名 |
 
 <dl>
 </dl>
 
 #### (static) loadGame (savefileId)
 
- 指定したセーブファイルID からデータを読み込む。
+[Number](Number.md)
+ 指定したセーブファイルID からデータを読み込む。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.html) |  |
+| `savefileId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 #### (static) loadGameWithoutRescue (savefileId) → {Boolean}
 
- 指定したセーブファイルID からリソース抜きの情報を読み込む。
+
+ 指定したセーブファイルID からリソース抜きの情報を読み込む。[Array](Array.md)[MV.SaveFileInfo](MV.SaveFileInfo.md)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.html) |  |
+| `savefileId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 ##### Returns:
 
- 読み込みに成功したか
+
+ 読み込みに成功したか
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -335,9 +357,10 @@
                 </dd>
             </dl>
 
-#### (static) loadGlobalInfo () → {[Array](Array.html).<[MV.SaveFileInfo](MV.SaveFileInfo.html)>}
+#### (static) loadGlobalInfo () → {[Array](Array.md).<[MV.SaveFileInfo](MV.SaveFileInfo.md)>}
+[Number](Number.md)
 
-GlobalInfo を読み込んで返す。
+GlobalInfo を読み込んで返す。
 <dl>
 </dl>
 
@@ -352,20 +375,22 @@
 
 #### (static) loadMapData (mapId)
 
- マップデータを読み込む。完了時は onLoad が呼ばれる。
+
+ マップデータを読み込む。完了時は onLoad が呼ばれる。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `mapId` | [Number](Number.html) | 1: 空のマップを作る |
+| `mapId` | [Number](Number.md) | 1: 空のマップを作る |
 
-<dl>
+<dl>[Number](Number.md)
 </dl>
 
 #### (static) loadSavefileImages (info)
 
- セーブファイルに必要な画像を読み込む。
+
+ セーブファイルに必要な画像を読み込む。
 
 ##### Parameters:
 
@@ -378,13 +403,14 @@
 
 #### (static) loadSavefileInfo (savefileId) → {Object}
 
- 指定したセーブファイルID の情報を読み込んで返す。
+
+ 指定したセーブファイルID の情報を読み込んで返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.html) |  |
+| `savefileId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -394,25 +420,28 @@
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span>Object</span>
+                    <span>Object</spa[MV.SaveFileInfo](MV.SaveFileInfo.md)
                 </dd>
             </dl>
 
 #### (static) makeEmptyMap ()
 
- 空のマップを作成。
+
+ 空のマップを作成。
 <dl>
 </dl>
 
 #### (static) makeSaveContents () → {Object}
 
- セーブ用のデータ作成。$gameで始まる大域変数をまとめたオブジェクトを返す。 ただし$gameTemp, $gameMessage, $gameTroop を含まない。
-<dl>
+
+ セーブ用のデータ作成。$gameで始まる大域変数をまとめたオブジェクトを返す。 ただし$gameTemp, $gameMessage, $gameTroop を含まない。
+<dl>[Number](Number.md)
 </dl>
 
 ##### Returns:
 
- 大域変数をまとめたオブジェクト
+
+ 大域変数をまとめたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -420,9 +449,10 @@
                 </dd>
             </dl>
 
-#### (static) makeSavefileInfo () → {[MV.SaveFileInfo](MV.SaveFileInfo.html)}
+#### (static) makeSavefileInfo () → {[MV.SaveFileInfo](MV.SaveFileInfo.md)}
 
- 新規のセーブファイル情報を作って返す。
+
+ 新規のセーブファイル情報を作って返す。
 <dl>
 </dl>
 
@@ -435,12 +465,13 @@
                 </dd>
             </dl>
 
-#### (static) maxSavefiles () → {[Number](Number.html)}
+#### (static) maxSavefiles () → {[Number](Number.md)}
 
- セーブ可能なファイルの最大数を返す。
+
+ セーブ可能なファイルの最大数を返す。
 <dl>
 </dl>
-
+[Number](Number.md)
 ##### Returns:
 
 <dl>
@@ -452,7 +483,8 @@
 
 #### (static) onLoad (object)
 
- データ読み込み完了時に呼ばれるハンドラ。
+
+ データ読み込み完了時に呼ばれるハンドラ。
 
 ##### Parameters:
 
@@ -462,46 +494,50 @@
 
 <dl>
 </dl>
-
+[Number](Number.md)
 #### (static) saveGame (savefileId) → {Boolean}
 
- ゲームデータをセーブファイルに保存。
+
+ ゲームデータをセーブファイルに保存。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.html) |  |
+| `savefileId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 ##### Returns:
 
- 保存に成功したか
+
+ 保存に成功したか
 <dl>
                 <dt> Type </dt>
                 <dd>
                     <span>Boolean</span>
-                </dd>
+           [MV.SaveFileInfo](MV.SaveFileInfo.md)
             </dl>
 
 #### (static) saveGameWithoutRescue (savefileId) → {Boolean}
 
- 指定したセーブファイルID にリソース抜きの情報を保存。
+
+ 指定したセーブファイルID にリソース抜きの情報を保存。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.html) |  |
+| `savefileId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 ##### Returns:
 
- 保存に成功したか
+
+ 保存に成功したか
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -511,40 +547,47 @@
 
 #### (static) saveGlobalInfo (info)
 
-GlobalInfo を保存。
+
+GlobalInfo を保存。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `info` | [MV.SaveFileInfo](MV.SaveFileInfo.html) |  |
+| `info` | [MV.SaveFileInfo](MV.SaveFileInfo.md) |  |
 
 <dl>
 </dl>
 
 #### (static) selectSavefileForNewGame ()
 
-[ニューゲーム]用のセーブファイルを選択。
+
+[ニューゲーム]用のセーブファイルを選択。
 <dl>
 </dl>
 
 #### (static) setupBattleTest ()
 
-[戦闘テスト] の準備。
+
+[戦闘テスト] の準備。
 <dl>
 </dl>
 
 #### (static) setupEventTest ()
 
-[イベントテスト]の準備。
+
+[イベントテスト]の準備。
 <dl>
 </dl>
 
 #### (static) setupNewGame ()
 
- 新規ゲームの準備。
+
+ 新規ゲームの準備。
 <dl>
-</dl>
+</dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

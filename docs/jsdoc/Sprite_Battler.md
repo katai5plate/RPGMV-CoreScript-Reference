@@ -4,41 +4,42 @@
 
 #### new Sprite_Battler (battler opt)
 
-The superclass of [Sprite_Actor](Sprite_Actor.html) and [Sprite_Enemy](Sprite_Enemy.html).
+The superclass of [Sprite_Actor](Sprite_Actor.md) and [Sprite_Enemy](Sprite_Enemy.md).
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `battler` | [Game_Battler](Game_Battler.html) | <optional> |  |
+| `battler` | [Game_Battler](Game_Battler.md) | <optional> |  |
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_battler` | [Game_Battler](Game_Battler.html) |  |
-| `_damages` | [Array](Array.html).<[Sprite_Damage](Sprite_Damage.html)> |  |
-| `_homeX` | [Number](Number.html) |  |
-| `_homeY` | [Number](Number.html) |  |
-| `_offsetX` | [Number](Number.html) |  |
-| `_offsetY` | [Number](Number.html) |  |
-| `_targetOffsetX` | [Number](Number.html) |  |
-| `_targetOffsetY` | [Number](Number.html) |  |
-| `_movementDuration` | [Number](Number.html) |  |
-| `_selectionEffectCount` | [Number](Number.html) |  |
+| `_battler` | [Game_Battler](Game_Battler.md) |  |
+| `_damages` | [Array](Array.md).<[Sprite_Damage](Sprite_Damage.md)> |  |
+| `_homeX` | [Number](Number.md) |  |
+| `_homeY` | [Number](Number.md) |  |
+| `_offsetX` | [Number](Number.md) |  |
+| `_offsetY` | [Number](Number.md) |  |
+| `_targetOffsetX` | [Number](Number.md) |  |
+| `_targetOffsetY` | [Number](Number.md) |  |
+| `_movementDuration` | [Number](Number.md) |  |
+| `_selectionEffectCount` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Sprite_Base](Sprite_Base.html)
+* [Sprite_Base](Sprite_Base.md)
 
 ### Methods
 
 #### _speedUpCustomBlendModes (renderer)
 
-checks if we need to speed up custom blendmodes
+
+checks if we need to speed up custom blendmodes
 
 ##### Parameters:
 
@@ -56,8 +57,8 @@ The superclass of [Sprite_Actor](Sprite_Actor.html) and [Sprite_Enemy](Sprite_En
                     </ul>
                 </dd>
             </dl>
-
-#### damageOffsetX () → {[Number](Number.html)}
+[Number](Number.md)
+#### damageOffsetX () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -70,8 +71,8 @@ The superclass of [Sprite_Actor](Sprite_Actor.html) and [Sprite_Enemy](Sprite_En
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-
-#### damageOffsetY () → {[Number](Number.html)}
+[Number](Number.md)
+#### damageOffsetY () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -87,7 +88,8 @@ The superclass of [Sprite_Actor](Sprite_Actor.html) and [Sprite_Enemy](Sprite_En
 
 #### hide ()
 
-Hides the sprite.
+
+Hides the sprite.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -101,7 +103,8 @@ The superclass of [Sprite_Actor](Sprite_Actor.html) and [Sprite_Enemy](Sprite_En
 
 #### inHomePosition () → {Boolean}
 
-Returns true if the sprite battler is in the home position.
+
+Returns true if the sprite battler is in the home position.
 <dl>
 </dl>
 
@@ -116,7 +119,8 @@ The superclass of [Sprite_Actor](Sprite_Actor.html) and [Sprite_Enemy](Sprite_En
 
 #### initialize ()
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -135,7 +139,8 @@ The superclass of [Sprite_Actor](Sprite_Actor.html) and [Sprite_Enemy](Sprite_En
 
 #### isAnimationPlaying () → {boolean}
 
-Returns true if an animation is currently playing.
+
+Returns true if an animation is currently playing.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -158,7 +163,8 @@ The superclass of [Sprite_Actor](Sprite_Actor.html) and [Sprite_Enemy](Sprite_En
 
 #### isEffecting () → {Boolean}
 
-Returns false for sprite battler.
+
+Returns false for sprite battler.
 <dl>
 </dl>
 
@@ -173,7 +179,8 @@ The superclass of [Sprite_Actor](Sprite_Actor.html) and [Sprite_Enemy](Sprite_En
 
 #### isMoving () → {boolean}
 
-Returns true if the sprite for the battler is moving.
+
+Returns true if the sprite for the battler is moving.
 <dl>
 </dl>
 
@@ -188,81 +195,88 @@ The superclass of [Sprite_Actor](Sprite_Actor.html) and [Sprite_Enemy](Sprite_En
 
 #### onMoveEnd ()
 
-Handler for when movement has ended.
+
+Handler for when movement has ended.
 <dl>
 </dl>
 
-#### setBattler (battler)
+#### setBattle[Game_Battler](Game_Battler.md)
 
-Sets the game battler of the sprite battler.
+
+Sets the game battler of the sprite battler.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `battler` | [Game_Battler](Game_Battler.html) |  |
+| `battler` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
 </dl>
+[Number](Number.md)
+#### set[Number](Number.md)
 
-#### setHome (x, y)
 
-Sets the home position of the sprite battler to the given x and y coordinates.
+Sets the home position of the sprite battler to the given x and y coordinates.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 #### setupAnimation ()
 
-Sets up animation on the sprite battler.
+
+Sets up animation on the sprite battler.
 <dl>
 </dl>
 
 #### setupDamagePopup ()
 
-Sets up damage popup on the sprite battler.
+
+Sets up damage popup on the sprite battler.
 <dl>
 </dl>
 
 #### show ()
 
-Shows the sprite.
+
+Shows the sprite.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
                             <a>Sprite_Base#show</a>
-                        </li>
+                [RPG.Animation](RPG.Animation.md)
                     </ul>
-                </dd>
+            [Number](Number.md)
             </dl>
 
 #### startAnimation (animation, mirror, delay)
 
-Starts a new animation on the current sprite by assigning a new Sprite_Animation object to the sprite's parent.
+
+Starts a new animation on the current sprite by assigning a new Sprite_Animation object to the sprite's parent.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `animation` | [RPG.Animation](RPG.Animation.html) |  |
+| `animation` | [RPG.Animation](RPG.Animation.md) |  |
 | `mirror` | Boolean |  |
-| `delay` | [Number](Number.html) |  |
+| `delay` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#startAnimation</a>
+        [Number](Number.md)
+        [Number](Number.md)
+               [Number](Number.md)e_Base#startAnimation</a>
                         </li>
                     </ul>
                 </dd>
@@ -274,9 +288,9 @@ The superclass of [Sprite_Actor](Sprite_Actor.html) and [Sprite_Enemy](Sprite_En
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `duration` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `duration` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -296,13 +310,15 @@ The superclass of [Sprite_Actor](Sprite_Actor.html) and [Sprite_Enemy](Sprite_En
 
 #### updateAnimation ()
 
-Updates the sprite battler animation.
+
+Updates the sprite battler animation.
 <dl>
 </dl>
 
 #### updateAnimationSprites ()
 
-Updates the animation sprites, cloning them; if the sprite is playing, pushes the sprites into animation sprites, otherwise the sprite is removed.
+
+Updates the animation sprites, cloning them; if the sprite is playing, pushes the sprites into animation sprites, otherwise the sprite is removed.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -316,37 +332,43 @@ The superclass of [Sprite_Actor](Sprite_Actor.html) and [Sprite_Enemy](Sprite_En
 
 #### updateBitmap ()
 
-Updates the bitmap of the sprite battler.
+
+Updates the bitmap of the sprite battler.
 <dl>
 </dl>
 
 #### updateDamagePopup ()
 
-Updates the damage pop up for the sprite battler.
+
+Updates the damage pop up for the sprite battler.
 <dl>
 </dl>
 
 #### updateFrame ()
 
-Updates the sprite battler's current frame.
+
+Updates the sprite battler's current frame.
 <dl>
 </dl>
 
 #### updateMain ()
 
-Updates the main loop of the sprite battler.
+
+Updates the main loop of the sprite battler.
 <dl>
 </dl>
 
 #### updateMove ()
 
-Updates movement on the sprite battler.
+
+Updates movement on the sprite battler.
 <dl>
 </dl>
 
 #### updatePosition ()
 
-Updates the position of the sprite battler.
+
+Updates the position of the sprite battler.
 <dl>
 </dl>
 
@@ -366,7 +388,9 @@ The superclass of [Sprite_Actor](Sprite_Actor.html) and [Sprite_Enemy](Sprite_En
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            </dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

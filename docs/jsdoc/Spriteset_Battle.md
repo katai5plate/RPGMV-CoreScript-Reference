@@ -11,25 +11,26 @@ The set of sprites on the battle screen.
 | Name | Type | Description |
 | --- | --- | --- |
 | `_battlebackLocated` | Boolean |  |
-| `_backgroundSprite` | [Sprite](Sprite.html) |  |
-| `_battleField` | [Sprite](Sprite.html) |  |
-| `_back1Sprite` | [TilingSprite](TilingSprite.html) |  |
-| `_back2Sprite` | [TilingSprite](TilingSprite.html) |  |
-| `_enemySprites` | [Array](Array.html).<[Sprite_Enemy](Sprite_Enemy.html)> |  |
-| `_actorSprites` | [Array](Array.html).<[Sprite_Actor](Sprite_Actor.html)> |  |
+| `_backgroundSprite` | [Sprite](Sprite.md) |  |
+| `_battleField` | [Sprite](Sprite.md) |  |
+| `_back1Sprite` | [TilingSprite](TilingSprite.md) |  |
+| `_back2Sprite` | [TilingSprite](TilingSprite.md) |  |
+| `_enemySprites` | [Array](Array.md).<[Sprite_Enemy](Sprite_Enemy.md)> |  |
+| `_actorSprites` | [Array](Array.md).<[Sprite_Actor](Sprite_Actor.md)> |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Spriteset_Base](Spriteset_Base.html)
+* [Spriteset_Base](Spriteset_Base.md)
 
 ### Methods
 
 #### _speedUpCustomBlendModes (renderer)
 
-checks if we need to speed up custom blendmodes
+
+checks if we need to speed up custom blendmodes
 
 ##### Parameters:
 
@@ -47,14 +48,14 @@ The set of sprites on the battle screen.
                     </ul>
                 </dd>
             </dl>
-
-#### autotileType (z) → {[Number](Number.html)}
+[Number](Number.md)
+#### autotileType (z) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `z` | [Number](Number.html) |  |
+| --- | [Number](Number.md)
+| `z` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -67,92 +68,99 @@ The set of sprites on the battle screen.
                     <span><a>Number</a></span>
                 </dd>
             </dl>
+[Bitmap](Bitmap.md)
+#### battleback1Bitmap () → {[Bitmap](Bitmap.md)}
 
-#### battleback1Bitmap () → {[Bitmap](Bitmap.html)}
 
-Returns battleb ack 2 of the battle spriteset.
+Returns battleb ack 2 of the battle spriteset.
 <dl>
 </dl>
 
 ##### Returns:
 
-Instance of the Bitmap class.
+
+Instance of the Bitmap class.
 <dl>
                 <dt> Type </dt>
+                <dd>
+                    <span><a>Bitmap</a></span>
+                </dd>[String](String.md)
+            </dl>
+
+#### battleback1Name () → {[String](String.md)}
+
+<dl>
+</dl>
+
+##### Returns:
+
+
+Name of battleback 1 bitmap.
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>[Bitmap](Bitmap.md)
+                </dd>
+            </dl>
+
+#### battleback2Bitmap () → {[Bitmap](Bitmap.md)}
+
+
+Returns battleback 2 of the battle spriteset.
+<dl>
+</dl>
+
+##### Returns:
+
+
+Instance of the Bitmap class.
+<dl>
+                <dt> Type <[String](String.md)
                 <dd>
                     <span><a>Bitmap</a></span>
                 </dd>
             </dl>
 
-#### battleback1Name () → {[String](String.html)}
+#### battleback2Name () → {[String](String.md)}
 
 <dl>
 </dl>
 
 ##### Returns:
 
-Name of battleback 1 bitmap.
-<dl>
+
+Name of battleback 2 bitmap.
+<dl>[Array](Array.md)[Sprite_Battler](Sprite_Battler.md)
                 <dt> Type </dt>
                 <dd>
                     <span><a>String</a></span>
                 </dd>
             </dl>
 
-#### battleback2Bitmap () → {[Bitmap](Bitmap.html)}
+#### battlerSprites () → {[Array](Array.md).<[Sprite_Battler](Sprite_Battler.md)>}
 
-Returns battleback 2 of the battle spriteset.
+
+Returns all battler sprites on the battle spriteset.
 <dl>
 </dl>
 
 ##### Returns:
-
-Instance of the Bitmap class.
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
-
-#### battleback2Name () → {[String](String.html)}
-
-<dl>
-</dl>
-
-##### Returns:
-
-Name of battleback 2 bitmap.
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
-
-#### battlerSprites () → {[Array](Array.html).<[Sprite_Battler](Sprite_Battler.html)>}
-
-Returns all battler sprites on the battle spriteset.
-<dl>
-</dl>
-
-##### Returns:
-
+[Number](Number.md)
 <dl>
                 <dt> Type </dt>
                 <dd>
                     <span><a>Array</a>.&lt;<a>Sprite_Battler</a>&gt;</span>
                 </dd>
-            </dl>
-
-#### compareEnemySprite (a, b) → {[Number](Number.html)}
+        [Sprite_Enemy](Sprite_Enemy.md)
+[Sprite_Enemy](Sprite_Enemy.md)
+#### compareEnemySprite (a, b) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `a` | [Sprite_Enemy](Sprite_Enemy.html) |  |
-| `b` | [Sprite_Enemy](Sprite_Enemy.html) |  |
+| `a` | [Sprite_Enemy](Sprite_Enemy.md) |  |
+| `b` | [Sprite_Enemy](Sprite_Enemy.md) |  |
 
 <dl>
 </dl>
@@ -168,19 +176,22 @@ The set of sprites on the battle screen.
 
 #### createActors ()
 
-Creates sprite actors for the battle spriteset.
+
+Creates sprite actors for the battle spriteset.
 <dl>
 </dl>
 
 #### createBackground ()
 
-Creates the background of the battle spriteset.
+
+Creates the background of the battle spriteset.
 <dl>
 </dl>
 
 #### createBaseSprite ()
 
- 基本スプライトを生成。
+
+ 基本スプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -194,19 +205,22 @@ The set of sprites on the battle screen.
 
 #### createBattleback ()
 
-Creates the battleback of the battle spriteset.
+
+Creates the battleback of the battle spriteset.
 <dl>
 </dl>
 
 #### createBattleField ()
 
-Creates the battlefield of the battle spriteset.
+
+Creates the battlefield of the battle spriteset.
 <dl>
 </dl>
 
 #### createCanvasToneChanger ()
 
-canvas 色調変更を生成。
+
+canvas 色調変更を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -220,7 +234,8 @@ The set of sprites on the battle screen.
 
 #### createEnemies ()
 
-Creates sprite enemies for the battle spriteset.
+
+Creates sprite enemies for the battle spriteset.
 <dl>
 </dl>
 
@@ -239,7 +254,8 @@ The set of sprites on the battle screen.
 
 #### createPictures ()
 
- 画像スプライトを生成。
+
+ 画像スプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -253,7 +269,8 @@ The set of sprites on the battle screen.
 
 #### createScreenSprites ()
 
- 画面スプライトを生成。
+
+ 画面スプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -267,7 +284,8 @@ The set of sprites on the battle screen.
 
 #### createTimer ()
 
- タイマースプライトを生成。
+
+ タイマースプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -281,7 +299,8 @@ The set of sprites on the battle screen.
 
 #### createToneChanger ()
 
- 色調補正スプライトを生成。
+
+ 色調補正スプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -295,13 +314,14 @@ The set of sprites on the battle screen.
 
 #### createUpperLayer ()
 
- 画像, タイマー, スクリーンスプライトを含む上レイヤを生成。
+
+ 画像, タイマー, スクリーンスプライトを含む上レイヤを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                            <a>Spriteset_Base#createUpperLayer</a>
+                            <a>Spr[String](String.md)erLayer</a>
                         </li>
                     </ul>
                 </dd>
@@ -309,26 +329,28 @@ The set of sprites on the battle screen.
 
 #### createWebGLToneChanger ()
 
-WebGL 色調変更を生成。
+
+WebGL 色調変更を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                            <a>Spriteset_Base#createWebGLToneChanger</a>
+                            <a>Spr[String](String.md)GLToneChanger</a>
                         </li>
                     </ul>
                 </dd>
             </dl>
 
-#### defaultBattleback1Name () → {[String](String.html)}
+#### defaultBattleback1Name () → {[String](String.md)}
 
 <dl>
 </dl>
 
 ##### Returns:
 
-Name of the default battleback 1 name.
+
+Name of the default battleback 1 name.
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -336,14 +358,15 @@ The set of sprites on the battle screen.
                 </dd>
             </dl>
 
-#### defaultBattleback2Name () → {[String](String.html)}
+#### defaultBattleback2Name () → {[String](String.md)}
 
 <dl>
 </dl>
 
 ##### Returns:
 
-Name of the default battleback 2 name.
+
+Name of the default battleback 2 name.
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -353,7 +376,8 @@ The set of sprites on the battle screen.
 
 #### initialize ()
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -367,7 +391,8 @@ The set of sprites on the battle screen.
 
 #### isAnimationPlaying () → {Boolean}
 
-Returns true if animation is playing on the battle spriteset.
+
+Returns true if animation is playing on the battle spriteset.
 <dl>
 </dl>
 
@@ -382,13 +407,15 @@ The set of sprites on the battle screen.
 
 #### isAnyoneMoving () → {Boolean}
 
-Returns true if any sprite actor or enemy is moving.
+
+Returns true if any sprite actor or enemy is moving.
 <dl>
 </dl>
 
 ##### Returns:
 
-Representing whether any battle participants are moving.
+
+Representing whether any battle participants are moving.
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -398,12 +425,13 @@ The set of sprites on the battle screen.
 
 #### isBusy () → {Boolean}
 
-Returns true if the battle spriteset is busy.
+
+Returns true if the battle spriteset is busy.
 <dl>
 </dl>
 
 ##### Returns:
-
+[String](String.md)
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -418,7 +446,7 @@ The set of sprites on the battle screen.
 
 ##### Returns:
 
-<dl>
+<dl>[String](String.md)
                 <dt> Type </dt>
                 <dd>
                     <span>Boolean</span>
@@ -427,18 +455,20 @@ The set of sprites on the battle screen.
 
 #### locateBattleback ()
 
-Locates the battleback and adjusts the coordinates of the battleback.
+
+Locates the battleback and adjusts the coordinates of the battleback.
 <dl>
 </dl>
 
-#### normalBattleback1Name () → {[String](String.html)}
-
+#### normalBattleback1Name () → {[String](String.md)}
+[String](String.md)
 <dl>
 </dl>
 
 ##### Returns:
 
-Name of the normal battleback 1 bitmap.
+
+Name of the normal battleback 1 bitmap.
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -446,14 +476,15 @@ The set of sprites on the battle screen.
                 </dd>
             </dl>
 
-#### normalBattleback2Name () → {[String](String.html)}
-
+#### normalBattleback2Name () → {[String](String.md)}
+[String](String.md)
 <dl>
 </dl>
 
 ##### Returns:
 
-Name of the normal battleback 2 bitmap.
+
+Name of the normal battleback 2 bitmap.
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -461,15 +492,51 @@ The set of sprites on the battle screen.
                 </dd>
             </dl>
 
-#### overworldBattleback1Name () → {[String](String.html)}
+#### overworldBattleback1Name () → {[String](String.md)}
+[String](String.md)
 
-Returns the battleback 1 name as a string.
+Returns the battleback 1 name as a string.
 <dl>
 </dl>
 
 ##### Returns:
 
-Name of overworld battleback 1 bitmap.
+
+Name of overworld battleback 1 bitmap.
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>String</a></span>
+                </dd>
+            </dl>[String](String.md)
+
+#### overworldBattleback2Name () → {[String](String.md)}
+
+
+Returns the battleback 2 name as a string.
+<dl>
+</dl>
+
+##### Returns:
+
+
+Name of overworld battleback 2 bitmap.
+<dl>
+                <dt> Type </dt>
+                <dd>[String](String.md)
+                    <span><a>String</a></span>
+                </dd>
+            </dl>
+
+#### shipBattleback1Name () → {[String](String.md)}
+
+<dl>
+</dl>[Number](Number.md)
+
+##### Returns:
+
+
+Name of the ship battleback 1 bitmap.
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -477,68 +544,40 @@ The set of sprites on the battle screen.
                 </dd>
             </dl>
 
-#### overworldBattleback2Name () → {[String](String.html)}
+#### shipBattleback2Name () → {[String](String.md)}
 
-Returns the battleback 2 name as a string.
-<dl>
+<dl>[String](String.md)
 </dl>
 
 ##### Returns:
 
-Name of overworld battleback 2 bitmap.
+
+Name of the ship battleback 2 bitmap.
 <dl>
-                <dt> Type </dt>
+           [Number](Number.md)
                 <dd>
                     <span><a>String</a></span>
                 </dd>
             </dl>
 
-#### shipBattleback1Name () → {[String](String.html)}
+#### terrainBattleback1Name (type) → {[String](String.md)}
 
-<dl>
-</dl>
 
-##### Returns:
-
-Name of the ship battleback 1 bitmap.
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
-
-#### shipBattleback2Name () → {[String](String.html)}
-
-<dl>
-</dl>
-
-##### Returns:
-
-Name of the ship battleback 2 bitmap.
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
-
-#### terrainBattleback1Name (type) → {[String](String.html)}
-
-Given the specified terrtain type, return the battleback 1 name.
+Given the specified terrtain type, return the battleback 1 name.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `type` | [Number](Number.html) | Terrain type. |
+| `type` | [Number](Number.md) | Terrain type. |
 
 <dl>
 </dl>
 
 ##### Returns:
 
-Name of the terrtain battleback 1 bitmap.
+
+Name of the terrtain battleback 1 bitmap.
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -546,22 +585,24 @@ The set of sprites on the battle screen.
                 </dd>
             </dl>
 
-#### terrainBattleback2Name (type) → {[String](String.html)}
+#### terrainBattleback2Name (type) → {[String](String.md)}
 
-Given the specified terrain type, return the battleback 2 name.
+
+Given the specified terrain type, return the battleback 2 name.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `type` | [Number](Number.html) | Terrain type. |
+| `type` | [Number](Number.md) | Terrain type. |
 
 <dl>
 </dl>
 
 ##### Returns:
 
-Name of the terrain battleback 2 bitmap.
+
+Name of the terrain battleback 2 bitmap.
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -584,19 +625,22 @@ The set of sprites on the battle screen.
 
 #### updateActors ()
 
-Updates the actor sprites on the battle spriteset.
+
+Updates the actor sprites on the battle spriteset.
 <dl>
 </dl>
 
 #### updateBattleback ()
 
-Updates the battleback of the battle spriteset.
+
+Updates the battleback of the battle spriteset.
 <dl>
 </dl>
 
 #### updateCanvasToneChanger ()
 
-canvas 色調変更をアップデート。
+
+canvas 色調変更をアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -610,7 +654,8 @@ The set of sprites on the battle screen.
 
 #### updatePosition ()
 
- 位置をアップデート。
+
+ 位置をアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -624,7 +669,8 @@ The set of sprites on the battle screen.
 
 #### updateScreenSprites ()
 
- 画面スプライトをアップデート。
+
+ 画面スプライトをアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -638,7 +684,8 @@ The set of sprites on the battle screen.
 
 #### updateToneChanger ()
 
- 色調変更をアップデート。
+
+ 色調変更をアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -652,7 +699,8 @@ The set of sprites on the battle screen.
 
 #### updateWebGLToneChanger ()
 
-WebGL 色調変更をアップデート。
+
+WebGL 色調変更をアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -662,7 +710,9 @@ The set of sprites on the battle screen.
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            </dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

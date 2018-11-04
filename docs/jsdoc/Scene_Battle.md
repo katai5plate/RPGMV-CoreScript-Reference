@@ -10,31 +10,32 @@ The scene class of the battle screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_spriteset` | [Spriteset_Battle](Spriteset_Battle.html) |  |
-| `_statusWindow` | [Window_BattleStatus](Window_BattleStatus.html) |  |
-| `_partyCommandWindow` | [Window_PartyCommand](Window_PartyCommand.html) |  |
-| `_actorCommandWindow` | [Window_ActorCommand](Window_ActorCommand.html) |  |
-| `_skillWindow` | [Window_BattleSkill](Window_BattleSkill.html) |  |
-| `_itemWindow` | [Window_BattleItem](Window_BattleItem.html) |  |
-| `_actorWindow` | [Window_BattleActor](Window_BattleActor.html) |  |
-| `_enemyWindow` | [Window_BattleEnemy](Window_BattleEnemy.html) |  |
-| `_logWindow` | [Window_BattleLog](Window_BattleLog.html) |  |
-| `_helpWindow` | [Window_Help](Window_Help.html) |  |
-| `_messageWindow` | [Window_Message](Window_Message.html) |  |
-| `_scrollTextWindow` | [Window_ScrollText](Window_ScrollText.html) |  |
+| `_spriteset` | [Spriteset_Battle](Spriteset_Battle.md) |  |
+| `_statusWindow` | [Window_BattleStatus](Window_BattleStatus.md) |  |
+| `_partyCommandWindow` | [Window_PartyCommand](Window_PartyCommand.md) |  |
+| `_actorCommandWindow` | [Window_ActorCommand](Window_ActorCommand.md) |  |
+| `_skillWindow` | [Window_BattleSkill](Window_BattleSkill.md) |  |
+| `_itemWindow` | [Window_BattleItem](Window_BattleItem.md) |  |
+| `_actorWindow` | [Window_BattleActor](Window_BattleActor.md) |  |
+| `_enemyWindow` | [Window_BattleEnemy](Window_BattleEnemy.md) |  |
+| `_logWindow` | [Window_BattleLog](Window_BattleLog.md) |  |
+| `_helpWindow` | [Window_Help](Window_Help.md) |  |
+| `_messageWindow` | [Window_Message](Window_Message.md) |  |
+| `_scrollTextWindow` | [Window_ScrollText](Window_ScrollText.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Scene_Base](Scene_Base.html)
+* [Scene_Base](Scene_Base.md)
 
 ### Methods
 
 #### addChild (child) → {Object}
 
-[super] 子オブジェクトを追加。
+
+[super] 子オブジェクトを追加。
 
 ##### Parameters:
 
@@ -55,7 +56,8 @@ The scene class of the battle screen.
 
 ##### Returns:
 
- 追加されたオブジェクト
+
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -65,14 +67,15 @@ The scene class of the battle screen.
 
 #### addChildAt (child, index) → {Object}
 
-[super] 指定位置に子オブジェクトを追加。
+
+[super] 指定位置に子オブジェクトを追加。
 
 ##### Parameters:
 
-| Name | Type | Description |
+| Name | Typ[Number](Number.md)
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.html) |  追加位置 |
+| `index` | [Number](Number.md) |  追加位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -87,7 +90,8 @@ The scene class of the battle screen.
 
 ##### Returns:
 
- 追加されたオブジェクト
+
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -97,7 +101,8 @@ The scene class of the battle screen.
 
 #### addWindow (Window)
 
- ウィンドウレイヤーにウィンドウを追加。
+
+ ウィンドウレイヤーにウィンドウを追加。
 
 ##### Parameters:
 
@@ -118,7 +123,8 @@ The scene class of the battle screen.
 
 #### attachReservation ()
 
- キューに予約を追加。
+
+ キューに予約を追加。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -137,7 +143,8 @@ The scene class of the battle screen.
 
 #### checkGameover ()
 
- ゲームオーバー状態か検査。
+
+ ゲームオーバー状態か検査。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -151,37 +158,43 @@ The scene class of the battle screen.
 
 #### commandAttack ()
 
-Handler for the attack command.
+
+Handler for the attack command.
 <dl>
 </dl>
 
 #### commandEscape ()
 
-Handler for the escape command on battle start.
+
+Handler for the escape command on battle start.
 <dl>
 </dl>
 
 #### commandFight ()
 
-Handler for the fight command on battle start..
+
+Handler for the fight command on battle start..
 <dl>
 </dl>
 
 #### commandGuard ()
 
-Handler for the guard command.
+
+Handler for the guard command.
 <dl>
 </dl>
 
 #### commandItem ()
 
-Handler for the item command.
+
+Handler for the item command.
 <dl>
 </dl>
 
 #### commandSkill ()
 
-Handler for the skill command.
+
+Handler for the skill command.
 <dl>
 </dl>
 
@@ -200,37 +213,43 @@ The scene class of the battle screen.
 
 #### createActorCommandWindow ()
 
-Creates the actor command window.
+
+Creates the actor command window.
 <dl>
 </dl>
 
 #### createActorWindow ()
 
-Creates the actor window.
+
+Creates the actor window.
 <dl>
 </dl>
 
 #### createAllWindows ()
 
-Creates all the windows within the battle scene.
+
+Creates all the windows within the battle scene.
 <dl>
 </dl>
 
 #### createDisplayObjects ()
 
-Creates all the display objects including: the spritesheet, window layer, windows, and more.
+
+Creates all the display objects including: the spritesheet, window layer, windows, and more.
 <dl>
 </dl>
 
 #### createEnemyWindow ()
 
-Creates the enemy window.
+
+Creates the enemy window.
 <dl>
 </dl>
 
 #### createFadeSprite ()
 
- フェード用のスプライトを生成。
+
+ フェード用のスプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -244,25 +263,29 @@ The scene class of the battle screen.
 
 #### createHelpWindow ()
 
-Creates the help window.
+
+Creates the help window.
 <dl>
 </dl>
 
 #### createItemWindow ()
 
-Creates the item window.
+
+Creates the item window.
 <dl>
 </dl>
 
 #### createLogWindow ()
 
-Creates the log window.
+
+Creates the log window.
 <dl>
 </dl>
 
 #### createMessageWindow ()
 
-Creates the message window on the battle scene.
+
+Creates the message window on the battle scene.
 <dl>
 </dl>
 
@@ -273,19 +296,22 @@ The scene class of the battle screen.
 
 #### createScrollTextWindow ()
 
-Creates the scroll text window.
+[$1]($2.md)
+Creates the scroll text window.
 <dl>
 </dl>
 
 #### createSkillWindow ()
 
-Creates the skill window.
+
+Creates the skill window.
 <dl>
 </dl>
 
 #### createSpriteset ()
 
-Creates the spriteset within the battle scene. This includes sprites for actors, enemies, etc.
+
+Creates the spriteset within the battle scene. This includes sprites for actors, enemies, etc.
 <dl>
 </dl>
 
@@ -296,7 +322,8 @@ The scene class of the battle screen.
 
 #### createWindowLayer ()
 
- ウィンドウレイヤー[WindowLayer](WindowLayer.html) を生成。
+
+ ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -310,10 +337,11 @@ The scene class of the battle screen.
 
 #### detachReservation ()
 
- キューから予約を削除。
+
+ キューから予約を削除。
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>
+                <dd>[Number](Number.md)
                     <ul>
                         <li>
                             <a>Scene_Base#detachReservation</a>
@@ -329,7 +357,8 @@ The scene class of the battle screen.
 
 #### fadeOutAll ()
 
- 全ての映像と音声を、遅い速度でフェードアウト。
+
+ 全ての映像と音声を、遅い速度でフェードアウト。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -341,9 +370,10 @@ The scene class of the battle screen.
                 </dd>
             </dl>
 
-#### fadeSpeed () → {[Number](Number.html)}
+#### fadeSpeed () → {[Number](Number.md)}
 
- フェード速度を返す。
+
+ フェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -366,7 +396,8 @@ The scene class of the battle screen.
 
 #### initialize ()
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -380,7 +411,8 @@ The scene class of the battle screen.
 
 #### isActive () → {Boolean}
 
- シーンがアクティブか。
+
+ シーンがアクティブか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -417,7 +449,8 @@ The scene class of the battle screen.
 
 #### isBusy () → {Boolean}
 
- フェード動作中か。
+
+ フェード動作中か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -440,7 +473,8 @@ The scene class of the battle screen.
 
 #### isReady () → {Boolean}
 
- シーンの準備ができているか。
+
+ シーンの準備ができているか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -463,7 +497,8 @@ The scene class of the battle screen.
 
 #### needsSlowFadeOut () → {Boolean}
 
-Returns true if the battle needs a slow fade out.
+
+Returns true if the battle needs a slow fade out.
 <dl>
 </dl>
 
@@ -493,7 +528,8 @@ The scene class of the battle screen.
 
 #### onEnemyOk ()
 
-Handler for when an enemy is selected.
+
+Handler for when an enemy is selected.
 <dl>
 </dl>
 
@@ -519,13 +555,15 @@ The scene class of the battle screen.
 
 #### onSkillOk ()
 
-Handler for when a skill is selected.
+
+Handler for when a skill is selected.
 <dl>
 </dl>
 
 #### popScene ()
 
- シーンを引き出す(pop)。
+
+ シーンを引き出す(pop)。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -543,8 +581,9 @@ The scene class of the battle screen.
 </dl>
 
 #### removeChild (child) → {Object}
+[Number](Number.md)
 
-[super] 子オブジェクトを取り除く。
+[super] 子オブジェクトを取り除く。
 
 ##### Parameters:
 
@@ -565,7 +604,8 @@ The scene class of the battle screen.
 
 ##### Returns:
 
- 取り除かれたオブジェクト
+
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -575,17 +615,18 @@ The scene class of the battle screen.
 
 #### removeChildAt (index) → {Object}
 
-[super] 指定位置にある子オブジェクトを取り除く。
+
+[super] 指定位置にある子オブジェクトを取り除く。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  取り除く位置 |
+| `index` | [Number](Number.md) |  取り除く位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>
+                <dd>[Number](Number.md)
                     <ul>
                         <li>
                             <a>Stage#removeChildAt</a>
@@ -596,7 +637,8 @@ The scene class of the battle screen.
 
 ##### Returns:
 
- 取り除かれたオブジェクト
+
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -616,22 +658,25 @@ The scene class of the battle screen.
 
 #### selectNextCommand ()
 
-Selects the next command in the battle scene.
+
+Selects the next command in the battle scene.
 <dl>
 </dl>
 
 #### selectPreviousCommand ()
 
-Selects the previous command in the battle scene.
+
+Selects the previous command in the battle scene.
 <dl>
 </dl>
 
-#### slowFadeSpeed () → {[Number](Number.html)}
+#### slowFadeSpeed () → {[Number](Number.md)}
 
- 遅いフェード速度を返す。
+
+ 遅いフェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>
+               [Number](Number.md)
                     <ul>
                         <li>
                             <a>Scene_Base#slowFadeSpeed</a>
@@ -642,7 +687,8 @@ The scene class of the battle screen.
 
 ##### Returns:
 
-Return the fade speed
+
+Return the fade speed
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -652,7 +698,7 @@ The scene class of the battle screen.
 
 #### start ()
 
-<dl>
+<dl>[Number](Number.md)
                 <dt>Overrides:</dt>
                 <dd>
                     <ul>
@@ -670,13 +716,14 @@ The scene class of the battle screen.
 
 #### startFadeIn (duration opt, white opt)
 
- フェードインの要求。
+
+ フェードインの要求。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードインにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードインにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -692,13 +739,14 @@ The scene class of the battle screen.
 
 #### startFadeOut (duration opt, white opt)
 
- フェードアウトの要求。
+
+ フェードアウトの要求。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードアウトにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードアウトにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -719,7 +767,8 @@ The scene class of the battle screen.
 
 #### stop ()
 
-Stops the battle scene.
+
+Stops the battle scene.
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -764,7 +813,8 @@ The scene class of the battle screen.
 
 #### updateChildren ()
 
- 子オブジェクトのアップデート。
+
+ 子オブジェクトのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -778,7 +828,8 @@ The scene class of the battle screen.
 
 #### updateFade ()
 
- フェードのアップデート。
+
+ フェードのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -792,15 +843,19 @@ The scene class of the battle screen.
 
 #### updateStatusWindow ()
 
-Updates the status window on the battle scene.
+
+Updates the status window on the battle scene.
 <dl>
 </dl>
 
 #### updateWindowPositions ()
 
-Updates the position of the battle scene windows.
+
+Updates the position of the battle scene windows.
 <dl>
-</dl>
+</dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

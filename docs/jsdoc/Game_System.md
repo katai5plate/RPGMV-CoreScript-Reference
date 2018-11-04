@@ -14,29 +14,30 @@
 | `_menuEnabled` | Boolean |  |
 | `_encounterEnabled` | Boolean |  |
 | `_formationEnabled` | Boolean |  |
-| `_battleCount` | [Number](Number.html) |  |
-| `_winCount` | [Number](Number.html) |  |
-| `_escapeCount` | [Number](Number.html) |  |
-| `_saveCount` | [Number](Number.html) |  |
-| `_versionId` | [Number](Number.html) |  |
-| `_framesOnSave` | [Number](Number.html) |  |
-| `_bgmOnSave` | [RPG.AudioFile](RPG.AudioFile.html) |  |
-| `_bgsOnSave` | [RPG.AudioFile](RPG.AudioFile.html) |  |
-| `_windowTone` | [Array](Array.html).<[Number](Number.html)> |  |
-| `_battleBgm` | [RPG.AudioFile](RPG.AudioFile.html) |  |
-| `_victoryMe` | [RPG.AudioFile](RPG.AudioFile.html) |  |
-| `_defeatMe` | [RPG.AudioFile](RPG.AudioFile.html) |  |
-| `_savedBgm` | [RPG.AudioFile](RPG.AudioFile.html) |  |
-| `_walkingBgm` | [RPG.AudioFile](RPG.AudioFile.html) |  |
+| `_battleCount` | [Number](Number.md) |  |
+| `_winCount` | [Number](Number.md) |  |
+| `_escapeCount` | [Number](Number.md) |  |
+| `_saveCount` | [Number](Number.md) |  |
+| `_versionId` | [Number](Number.md) |  |
+| `_framesOnSave` | [Number](Number.md) |  |
+| `_bgmOnSave` | [RPG.AudioFile](RPG.AudioFile.md) |  |
+| `_bgsOnSave` | [RPG.AudioFile](RPG.AudioFile.md) |  |
+| `_windowTone` | [Array](Array.md).<[Number](Number.md)> |  |
+| `_battleBgm` | [RPG.AudioFile](RPG.AudioFile.md) |  |
+| `_victoryMe` | [RPG.AudioFile](RPG.AudioFile.md) |  |
+| `_defeatMe` | [RPG.AudioFile](RPG.AudioFile.md) |  |
+| `_savedBgm` | [RPG.AudioFile](RPG.AudioFile.md) |  |
+| `_walkingBgm` | [RPG.AudioFile](RPG.AudioFile.md) |  |
 
 <dl>
 </dl>
 
 ### Methods
 
-#### battleBgm () → {[RPG.AudioFile](RPG.AudioFile.html)}
+#### battleBgm () → {[RPG.AudioFile](RPG.AudioFile.md)}
 
-Returns the current battle background music.
+
+Returns the current battle background music.
 <dl>
 </dl>
 
@@ -48,10 +49,11 @@
                     <span><a>RPG.AudioFile</a></span>
                 </dd>
             </dl>
+[Number](Number.md)
+#### battleCount () → {[Number](Number.md)}
 
-#### battleCount () → {[Number](Number.html)}
 
-Returns the number of battles the player has participated in.
+Returns the number of battles the player has participated in.
 <dl>
 </dl>
 
@@ -62,11 +64,12 @@
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
-            </dl>
+            </dl>[RPG.AudioFile](RPG.AudioFile.md)
 
-#### defeatMe () → {[RPG.AudioFile](RPG.AudioFile.html)}
+#### defeatMe () → {[RPG.AudioFile](RPG.AudioFile.md)}
 
-Returns the defeat musical effect.
+
+Returns the defeat musical effect.
 <dl>
 </dl>
 
@@ -81,25 +84,29 @@
 
 #### disableEncounter ()
 
-Returns true if the player can encounter enemies.
+
+Returns true if the player can encounter enemies.
 <dl>
 </dl>
 
 #### disableFormation ()
 
-Disables the use of the formation command in the menu.
+
+Disables the use of the formation command in the menu.
 <dl>
 </dl>
 
 #### disableMenu ()
 
-Disables the menu from being accessed.
+
+Disables the menu from being accessed.
 <dl>
 </dl>
 
 #### disableSave ()
 
-Disables the ability to save the game.
+
+Disables the ability to save the game.
 <dl>
 </dl>
 
@@ -110,25 +117,29 @@
 
 #### enableFormation ()
 
-Enables the use of the formation command in the menu.
+
+Enables the use of the formation command in the menu.
 <dl>
 </dl>
 
 #### enableMenu ()
 
-Enables the menu to be accessed.
-<dl>
+
+Enables the menu to be accessed.
+<dl>[Number](Number.md)
 </dl>
 
 #### enableSave ()
 
-Enables the ability to save the game.
+
+Enables the ability to save the game.
 <dl>
 </dl>
 
-#### escapeCount () → {[Number](Number.html)}
+#### escapeCount () → {[Number](Number.md)}
 
-Returns the number of battles the player has escaped from in battle.
+
+Returns the number of battles the player has escaped from in battle.
 <dl>
 </dl>
 
@@ -143,7 +154,8 @@
 
 #### initialize ()
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 <dl>
 </dl>
 
@@ -233,7 +245,8 @@
 
 #### isMenuEnabled () → {Boolean}
 
-Returns true if the menu is enabled.
+
+Returns true if the menu is enabled.
 <dl>
 </dl>
 
@@ -300,7 +313,7 @@
 
 #### onBattleStart ()
 
-<dl>
+<dl>[Number](Number.md)
 </dl>
 
 #### onBattleWin ()
@@ -313,9 +326,10 @@
 <dl>
 </dl>
 
-#### playtime () → {[Number](Number.html)}
+#### playtime () → {[Number](Number.md)}
 
-Returns the total play time.
+[String](String.md)
+Returns the total play time.
 <dl>
 </dl>
 
@@ -328,7 +342,7 @@
                 </dd>
             </dl>
 
-#### playtimeText () → {[String](String.html)}
+#### playtimeText () → {[String](String.md)}
 
 <dl>
 </dl>
@@ -344,25 +358,29 @@
 
 #### replayBgm ()
 
-Replays the saved background music.
-<dl>
+
+Replays the saved background music.
+<dl>[Number](Number.md)
 </dl>
 
 #### replayWalkingBgm ()
 
-Replays the saved walking background music.
+
+Replays the saved walking background music.
 <dl>
 </dl>
 
 #### saveBgm ()
 
-Saves background music to the game system object.
+
+Saves background music to the game system object.
 <dl>
 </dl>
 
-#### saveCount () → {[Number](Number.html)}
+#### saveCount () → {[Number](Number.md)}
 
-Returns the number of saves the player has made in game.
+
+Returns the number of saves the player has made in game.
 <dl>
 </dl>
 
@@ -377,74 +395,81 @@
 
 #### saveWalkingBgm ()
 
-Saves the walking background music.
+[RPG.AudioFile](RPG.AudioFile.md)
+Saves the walking background music.
 <dl>
 </dl>
 
 #### saveWalkingBgm2 ()
 
-Saves the second walking bgm from the map data.
+
+Saves the second walking bgm from the map data.
 <dl>
 </dl>
 
 #### setBattleBgm (value)
+[RPG.AudioFile](RPG.AudioFile.md)
 
-Sets the battle background music.
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `value` | [RPG.AudioFile](RPG.AudioFile.html) |  |
-
-<dl>
-</dl>
-
-#### setDefeatMe (value)
-
-Sets the defeat musical effect.
+Sets the battle background music.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [RPG.AudioFile](RPG.AudioFile.html) |  |
+| `value` | [RPG.AudioFile](RPG.AudioFile.md) |  |
 
 <dl>
 </dl>
 
+#### setDefe[RPG.AudioFile](RPG.AudioFile.md)
+
+
+Sets the defeat musical effect.
+
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `value` | [RPG.AudioFile](RPG.AudioFile.md) |  |
+
+<dl>
+</dl>
+[Array](Array.md)[Number](Number.md)
 #### setVictoryMe (value)
 
-Sets the victory musical effect.
 
+Sets the victory musical effect.
+[Number](Number.md)
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [RPG.AudioFile](RPG.AudioFile.html) |  |
+| `value` | [RPG.AudioFile](RPG.AudioFile.md) |  |
 
 <dl>
 </dl>
 
 #### setWindowTone (value)
 
-Sets the window tone, given an array of rgb. Example: [0, 255, 255].
 
-##### Parameters:
+Sets the window tone, given an array of rgb. Example: [0, 255, 255].
+
+##### Parameters:[RPG.AudioFile](RPG.AudioFile.md)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Array](Array.html).<[Number](Number.html)> |  |
+| `value` | [Array](Array.md).<[Number](Number.md)> |  |
 
 <dl>
 </dl>
 
-#### versionId () → {[Number](Number.html)}
+#### versionId () → {[Number](Number.md)}
 
-Returns the version id represented in the database.
+
+Returns the version id represented in the database.
 <dl>
 </dl>
-
+[Number](Number.md)
 ##### Returns:
 
 <dl>
@@ -454,11 +479,12 @@
                 </dd>
             </dl>
 
-#### victoryMe () → {[RPG.AudioFile](RPG.AudioFile.html)}
+#### victoryMe () → {[RPG.AudioFile](RPG.AudioFile.md)}
 
-Returns the victory musical effect.
+
+Returns the victory musical effect.
 <dl>
-</dl>
+</dl>[Array](Array.md)[Number](Number.md)
 
 ##### Returns:
 
@@ -469,9 +495,10 @@
                 </dd>
             </dl>
 
-#### winCount () → {[Number](Number.html)}
+#### winCount () → {[Number](Number.md)}
 
-Returns the number of the wins the player has gained in battle.
+
+Returns the number of the wins the player has gained in battle.
 <dl>
 </dl>
 
@@ -484,9 +511,10 @@
                 </dd>
             </dl>
 
-#### windowTone () → {[Array](Array.html).<[Number](Number.html)>}
+#### windowTone () → {[Array](Array.md).<[Number](Number.md)>}
 
-Returns the tone of the window in the database.
+
+Returns the tone of the window in the database.
 <dl>
 </dl>
 
@@ -497,7 +525,9 @@
                 <dd>
                     <span><a>Array</a>.&lt;<a>Number</a>&gt;</span>
                 </dd>
-            </dl>
+            </dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

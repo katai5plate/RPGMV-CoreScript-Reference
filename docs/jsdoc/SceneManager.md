@@ -10,21 +10,21 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_scene` | [Scene_Base](Scene_Base.html) | [static]現在のシーン |
-| `_nextScene` | [Scene_Base](Scene_Base.html) | [static]次のシーン |
-| `_stack` | [Array](Array.html).<function()> | [static]シーンなどの履歴 |
+| `_scene` | [Scene_Base](Scene_Base.md) | [static]現在のシーン |
+| `_nextScene` | [Scene_Base](Scene_Base.md) | [static]次のシーン |
+| `_stack` | [Array](Array.md).<function()> | [static]シーンなどの履歴 |
 | `_stopped` | Boolean | [static] |
 | `_sceneStarted` | Boolean | [static] |
 | `_exiting` | Boolean | [static] |
 | `_previousClass` | function | [static]前のシーンなど |
-| `_backgroundBitmap` | [Bitmap](Bitmap.html) | [static] |
-| `_screenWidth` | [Number](Number.html) | [static]画面の幅(ピクセル) |
-| `_screenHeight` | [Number](Number.html) | [static]画面の高さ(ピクセル) |
-| `_boxWidth` | [Number](Number.html) | [static]幅(ピクセル) |
-| `_boxHeight` | [Number](Number.html) | [static]高さ(ピクセル) |
-| `_deltaTime` | [Number](Number.html) | [static] |
-| `_currentTime` | [Number](Number.html) | [static] |
-| `_accumulator` | [Number](Number.html) | [static] |
+| `_backgroundBitmap` | [Bitmap](Bitmap.md) | [static] |
+| `_screenWidth` | [Number](Number.md) | [static]画面の幅(ピクセル) |
+| `_screenHeight` | [Number](Number.md) | [static]画面の高さ(ピクセル) |
+| `_boxWidth` | [Number](Number.md) | [static]幅(ピクセル) |
+| `_boxHeight` | [Number](Number.md) | [static]高さ(ピクセル) |
+| `_deltaTime` | [Number](Number.md) | [static] |
+| `_currentTime` | [Number](Number.md) | [static] |
+| `_accumulator` | [Number](Number.md) | [static] |
 
 <dl>
 </dl>
@@ -33,13 +33,15 @@
 
 #### (static) _getTimeInMsWithoutMobileSafari ()
 
-Gets the current time in ms without on iOS Safari.
+
+Gets the current time in ms without on iOS Safari.
 <dl>
 </dl>
+[Bitmap](Bitmap.md)
+#### (static) backgroundBitmap () → {[Bitmap](Bitmap.md)}
 
-#### (static) backgroundBitmap () → {[Bitmap](Bitmap.html)}
 
- 生成された背景用に(ぼかした)スナップショットを返す。
+ 生成された背景用に(ぼかした)スナップショットを返す。
 <dl>
 </dl>
 
@@ -54,7 +56,8 @@
 
 #### (static) catchException (e)
 
- 例外を受け取るハンドラ。
+
+ 例外を受け取るハンドラ。
 
 ##### Parameters:
 
@@ -67,43 +70,50 @@
 
 #### (static) changeScene ()
 
- シーンの切り替え。
+
+ シーンの切り替え。
 <dl>
 </dl>
 
 #### (static) checkFileAccess ()
 
- ファイル操作ができない環境ならエラーを発生させる。
+
+ ファイル操作ができない環境ならエラーを発生させる。
 <dl>
 </dl>
 
 #### (static) checkPluginErrors ()
 
- プラグインの検査。
+
+ プラグインの検査。
 <dl>
 </dl>
 
 #### (static) checkWebGL ()
 
-WebGL が使えない環境ならエラーを発生させる。
+
+WebGL が使えない環境ならエラーを発生させる。
 <dl>
 </dl>
 
 #### (static) clearStack ()
 
- 履歴を消去。
+
+ 履歴を消去。
 <dl>
 </dl>
 
 #### (static) exit ()
 
- シーン遷移を終了。
+
+ シーン遷移を終了。
 <dl>
 </dl>
 
 #### (static) goto (sceneClass)
 
- 指定したシーンに遷移。
+
+ 指定したシーンに遷移。
 
 ##### Parameters:
 
@@ -116,37 +126,43 @@
 
 #### (static) initAudio ()
 
- 音声の初期化。
+
+ 音声の初期化。
 <dl>
 </dl>
 
 #### (static) initGraphics ()
 
- 画像の初期化。
+
+ 画像の初期化。
 <dl>
 </dl>
 
 #### (static) initialize ()
 
- 初期化。
+
+ 初期化。
 <dl>
 </dl>
 
 #### (static) initInput ()
 
- 入力の初期化。
+
+ 入力の初期化。
 <dl>
 </dl>
 
 #### (static) initNwjs ()
 
-NW.js の初期化。
+
+NW.js の初期化。
 <dl>
 </dl>
 
 #### (static) isCurrentSceneBusy () → {Boolean}
 
- シーンの実行中か。
+
+ シーンの実行中か。
 <dl>
 </dl>
 
@@ -161,11 +177,12 @@
 
 #### (static) isCurrentSceneStarted () → {Boolean}
 
- 現在のシーンが開始されているか。
+
+ 現在のシーンが開始されているか。
 <dl>
 </dl>
 
-##### Returns:
+##### Returns:[Scene_Base](Scene_Base.md)
 
 <dl>
                 <dt> Type </dt>
@@ -176,17 +193,18 @@
 
 #### (static) isNextScene (sceneClass) → {Boolean}
 
- 指定したシーンが次のシーンか。
+
+ 指定したシーンが次のシーンか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `sceneClass` | [Scene_Base](Scene_Base.html) |  |
+| `sceneClass` | [Scene_Base](Scene_Base.md) |  |
 
 <dl>
 </dl>
-
+[Scene_Base](Scene_Base.md)
 ##### Returns:
 
 <dl>
@@ -198,13 +216,14 @@
 
 #### (static) isPreviousScene (sceneClass) → {Boolean}
 
- 指定したシーンが前のシーンか。
+
+ 指定したシーンが前のシーンか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `sceneClass` | [Scene_Base](Scene_Base.html) |  |
+| `sceneClass` | [Scene_Base](Scene_Base.md) |  |
 
 <dl>
 </dl>
@@ -220,7 +239,8 @@
 
 #### (static) isSceneChanging () → {Boolean}
 
- シーンの変更中か。
+
+ シーンの変更中か。
 <dl>
 </dl>
 
@@ -235,7 +255,8 @@
 
 #### (static) onError (e)
 
- エラーハンドラ。
+
+ エラーハンドラ。
 
 ##### Parameters:
 
@@ -248,7 +269,8 @@
 
 #### (static) onKeyDown (event)
 
- キー押下イベントハンドラ。ここではリロード(F5)とデバッグウィンドウ(F8)の制御を行なっている。
+
+ キー押下イベントハンドラ。ここではリロード(F5)とデバッグウィンドウ(F8)の制御を行なっている。
 
 ##### Parameters:
 
@@ -261,37 +283,43 @@
 
 #### (static) onSceneCreate ()
 
- シーンが生成された時に呼ばれるハンドラ。
+[String](String.md)
+ シーンが生成された時に呼ばれるハンドラ。
 <dl>
 </dl>
 
 #### (static) onSceneLoading ()
 
- シーンが読み込まれる時に呼ばれるハンドラ。
+
+ シーンが読み込まれる時に呼ばれるハンドラ。
 <dl>
 </dl>
 
 #### (static) onSceneStart ()
 
- シーンが開始された時に呼ばれるハンドラ。
+
+ シーンが開始された時に呼ばれるハンドラ。
 <dl>
 </dl>
 
 #### (static) pop ()
 
- 履歴からシーンを取り出して遷移。
+
+ 履歴からシーンを取り出して遷移。
 <dl>
 </dl>
 
-#### (static) preferableRendererType () → {[String](String.html)}
+#### (static) preferableRendererType () → {[String](String.md)}
 
- 環境に適したレンダ方式を返す。
-<dl>
+
+ 環境に適したレンダ方式を返す。
+<dl>[Scene_Base](Scene_Base.md)
 </dl>
 
 ##### Returns:
 
- レンダ方式(canvas, webgl, auto のいずれか)
+
+ レンダ方式(canvas, webgl, auto のいずれか)
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -301,63 +329,71 @@
 
 #### (static) prepareNextScene ()
 
- 次のシーンの準備。
+
+ 次のシーンの準備。
 <dl>
 </dl>
 
 #### (static) push (sceneClass)
 
- 指定したシーンに遷移し履歴を残す。
+
+ 指定したシーンに遷移し履歴を残す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `sceneClass` | [Scene_Base](Scene_Base.html) |  |
-
+| `sceneClass` | [Scene_Base](Scene_Base.md) |  |
+[Scene_Base](Scene_Base.md)
 <dl>
 </dl>
 
 #### (static) renderScene ()
 
- シーンの描画。
+
+ シーンの描画。
 <dl>
 </dl>
 
 #### (static) requestUpdate ()
 
- アップデートを要求。
+
+ アップデートを要求。
 <dl>
 </dl>
 
 #### (static) resume ()
 
- 停止状態から復帰。
+
+ 停止状態から復帰。
 <dl>
 </dl>
 
 #### (static) run (sceneClass)
+[Bitmap](Bitmap.md)
 
- 指定したシーンの実行。
+ 指定したシーンの実行。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `sceneClass` | [Scene_Base](Scene_Base.html) |  シーンオブジェクト |
+| `sceneClass` | [Scene_Base](Scene_Base.md) |  シーンオブジェクト |
 
 <dl>
 </dl>
 
 #### (static) setupErrorHandlers ()
 
- エラーハンドラを準備。
+
+ エラーハンドラを準備。
 <dl>
 </dl>
 
 #### (static) shouldUseCanvasRenderer () → {Boolean}
 
-canvas レンダ方式を使っているか。
+
+canvas レンダ方式を使っているか。
 <dl>
 </dl>
 
@@ -370,9 +406,10 @@
                 </dd>
             </dl>
 
-#### (static) snap () → {[Bitmap](Bitmap.html)}
+#### (static) snap () → {[Bitmap](Bitmap.md)}
 
- スナップショットを返す。
+
+ スナップショットを返す。
 <dl>
 </dl>
 
@@ -387,19 +424,22 @@
 
 #### (static) snapForBackground ()
 
- 背景用に(ぼかした)スナップショットを生成。
+
+ 背景用に(ぼかした)スナップショットを生成。
 <dl>
 </dl>
 
 #### (static) stop ()
 
- シーン遷移を停止。
+
+ シーン遷移を停止。
 <dl>
 </dl>
 
 #### (static) terminate ()
 
- 終了。
+
+ 終了。
 <dl>
 </dl>
 
@@ -427,33 +467,40 @@
 
 #### (static) update ()
 
- フレーム毎のアップデート。
+
+ フレーム毎のアップデート。
 <dl>
 </dl>
 
 #### (static) updateInputData ()
 
- 入力データのアップデート。
+
+ 入力データのアップデート。
 <dl>
 </dl>
 
 #### (static) updateMain ()
 
- 主要部分のアップデート。
+
+ 主要部分のアップデート。
 <dl>
 </dl>
 
 #### (static) updateManagers ()
 
- マネージャのアップデート。
+
+ マネージャのアップデート。
 <dl>
 </dl>
 
 #### (static) updateScene ()
 
- シーンのアップデート。
+
+ シーンのアップデート。
 <dl>
-</dl>
+</dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

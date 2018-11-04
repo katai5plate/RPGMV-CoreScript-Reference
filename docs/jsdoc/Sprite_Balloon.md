@@ -10,21 +10,22 @@ The sprite for displaying a balloon icon.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_balloonId` | [Number](Number.html) |  |
-| `_duration` | [Number](Number.html) |  |
+| `_balloonId` | [Number](Number.md) |  |
+| `_duration` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Sprite_Base](Sprite_Base.html)
+* [Sprite_Base](Sprite_Base.md)
 
 ### Methods
 
 #### _speedUpCustomBlendModes (renderer)
 
-checks if we need to speed up custom blendmodes
+
+checks if we need to speed up custom blendmodes
 
 ##### Parameters:
 
@@ -42,10 +43,11 @@ The sprite for displaying a balloon icon.
                     </ul>
                 </dd>
             </dl>
+[Number](Number.md)
+#### frameIndex () → {[Number](Number.md)}
 
-#### frameIndex () → {[Number](Number.html)}
 
-Returns the frame index of the balloon animation.
+Returns the frame index of the balloon animation.
 <dl>
 </dl>
 
@@ -60,7 +62,8 @@ The sprite for displaying a balloon icon.
 
 #### hide ()
 
-Hides the sprite.
+
+Hides the sprite.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -74,7 +77,8 @@ The sprite for displaying a balloon icon.
 
 #### initialize ()
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -93,7 +97,8 @@ The sprite for displaying a balloon icon.
 
 #### isAnimationPlaying () → {boolean}
 
-Returns true if an animation is currently playing.
+
+Returns true if an animation is currently playing.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -116,7 +121,8 @@ The sprite for displaying a balloon icon.
 
 #### isPlaying () → {Boolean}
 
-Returns true if the balloon animation is playing.
+
+Returns true if the balloon animation is playing.
 <dl>
 </dl>
 
@@ -134,34 +140,36 @@ The sprite for displaying a balloon icon.
 <dl>
 </dl>
 
-#### setup (balloonId)
+#### setup (ball[Number](Number.md)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `balloonId` | [Number](Number.html) |  |
+| `balloonId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 #### show ()
 
-Shows the sprite.
+
+Shows the sprite.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
+                 [Number](Number.md)
                             <a>Sprite_Base#show</a>
                         </li>
                     </ul>
                 </dd>
             </dl>
 
-#### speed () → {[Number](Number.html)}
+#### speed () → {[Number](Number.md)}
 
-Returns the speed of the balloon animation.
+
+Returns the speed of the balloon animation.
 <dl>
 </dl>
 
@@ -174,17 +182,18 @@ The sprite for displaying a balloon icon.
                 </dd>
             </dl>
 
-#### startAnimation (animation, mirror, delay)
+#### startAnimat[RPG.Animation](RPG.Animation.md)
 
-Starts a new animation on the current sprite by assigning a new Sprite_Animation object to the sprite's parent.
+[Number](Number.md)
+Starts a new animation on the current sprite by assigning a new Sprite_Animation object to the sprite's parent.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `animation` | [RPG.Animation](RPG.Animation.html) |  |
+| `animation` | [RPG.Animation](RPG.Animation.md) |  |
 | `mirror` | Boolean |  |
-| `delay` | [Number](Number.html) |  |
+| `delay` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -199,7 +208,8 @@ The sprite for displaying a balloon icon.
 
 #### update ()
 
-Updates the balloon sprite.
+
+Updates the balloon sprite.
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -213,7 +223,8 @@ The sprite for displaying a balloon icon.
 
 #### updateAnimationSprites ()
 
-Updates the animation sprites, cloning them; if the sprite is playing, pushes the sprites into animation sprites, otherwise the sprite is removed.
+
+Updates the animation sprites, cloning them; if the sprite is playing, pushes the sprites into animation sprites, otherwise the sprite is removed.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -227,13 +238,15 @@ The sprite for displaying a balloon icon.
 
 #### updateFrame ()
 
-Updates the balloon sprite frame.
+
+Updates the balloon sprite frame.
 <dl>
 </dl>
 
 #### updateVisibility ()
 
-Updadtes the visibility of the sprite based on the _hiding property.
+[Number](Number.md)
+Updadtes the visibility of the sprite based on the _hiding property.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -245,9 +258,10 @@ The sprite for displaying a balloon icon.
                 </dd>
             </dl>
 
-#### waitTime () → {[Number](Number.html)}
+#### waitTime () → {[Number](Number.md)}
 
-Returns the wait time.
+
+Returns the wait time.
 <dl>
 </dl>
 
@@ -258,7 +272,9 @@ The sprite for displaying a balloon icon.
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
-            </dl>
+            </dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

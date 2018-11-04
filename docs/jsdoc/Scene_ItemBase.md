@@ -4,33 +4,35 @@
 
 #### (abstract) new Scene_ItemBase ()
 
-The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.html).
+The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_actorWindow` | [Window_MenuActor](Window_MenuActor.html) |  |
-| `_itemWindow` | [Window_Selectable](Window_Selectable.html) |  |
+| `_actorWindow` | [Window_MenuActor](Window_MenuActor.md) |  |
+| `_itemWindow` | [Window_Selectable](Window_Selectable.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Scene_MenuBase](Scene_MenuBase.html)
+* [Scene_MenuBase](Scene_MenuBase.md)
 
 ### Methods
 
 #### activateItemWindow ()
 
-Activates the item window.
+
+Activates the item window.
 <dl>
 </dl>
+[Game_Actor](Game_Actor.md)
+#### actor () → {[Game_Actor](Game_Actor.md)}
 
-#### actor () → {[Game_Actor](Game_Actor.html)}
 
-Returns the current game actor.
+Returns the current game actor.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -53,7 +55,8 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### addChild (child) → {Object}
 
-[super] 子オブジェクトを追加。
+
+[super] 子オブジェクトを追加。
 
 ##### Parameters:
 
@@ -74,7 +77,8 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 ##### Returns:
 
- 追加されたオブジェクト
+
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -84,14 +88,15 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### addChildAt (child, index) → {Object}
 
-[super] 指定位置に子オブジェクトを追加。
 
-##### Parameters:
+[super] 指定位置に子オブジェクトを追加。
+
+##### Parame[Number](Number.md)
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.html) |  追加位置 |
+| `index` | [Number](Number.md) |  追加位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -106,7 +111,8 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 ##### Returns:
 
- 追加されたオブジェクト
+
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -116,7 +122,8 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### addWindow (Window)
 
- ウィンドウレイヤーにウィンドウを追加。
+
+ ウィンドウレイヤーにウィンドウを追加。
 
 ##### Parameters:
 
@@ -142,7 +149,8 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### attachReservation ()
 
- キューに予約を追加。
+
+ キューに予約を追加。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -156,7 +164,8 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### canUse () → {Boolean}
 
-Returns true if the user (game actor) can use the item.
+
+Returns true if the user (game actor) can use the item.
 <dl>
 </dl>
 
@@ -171,13 +180,15 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### checkCommonEvent ()
 
-Checks the common event set on the item.
+
+Checks the common event set on the item.
 <dl>
 </dl>
 
 #### checkGameover ()
 
- ゲームオーバー状態か検査。
+
+ ゲームオーバー状態か検査。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -204,13 +215,15 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### createActorWindow ()
 
-Creates the actor window within the base item scene.
+
+Creates the actor window within the base item scene.
 <dl>
 </dl>
 
 #### createFadeSprite ()
 
- フェード用のスプライトを生成。
+
+ フェード用のスプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -224,7 +237,8 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### createHelpWindow ()
 
-Creates the help window.
+
+[$1]($2.md)Creates the help window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -238,7 +252,8 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### createWindowLayer ()
 
- ウィンドウレイヤー[WindowLayer](WindowLayer.html) を生成。
+
+ ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -252,7 +267,8 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### detachReservation ()
 
- キューから予約を削除。
+
+ キューから予約を削除。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -267,11 +283,12 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 #### determineItem ()
 
 <dl>
-</dl>
+</dl>[Number](Number.md)
 
 #### fadeOutAll ()
 
- 全ての映像と音声を、遅い速度でフェードアウト。
+
+ 全ての映像と音声を、遅い速度でフェードアウト。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -283,9 +300,10 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
                 </dd>
             </dl>
 
-#### fadeSpeed () → {[Number](Number.html)}
+#### fadeSpeed () → {[Number](Number.md)}
 
- フェード速度を返す。
+
+ フェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -296,7 +314,7 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
                     </ul>
                 </dd>
             </dl>
-
+[Window_Base](Window_Base.md)
 ##### Returns:
 
 <dl>
@@ -308,20 +326,22 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### hideSubWindow (window)
 
-Hides the sub window.
+
+Hides the sub window.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `window` | [Window_Base](Window_Base.html) |  |
+| `window` | [Window_Base](Window_Base.md) |  |
 
 <dl>
 </dl>
 
 #### initialize ()
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -335,7 +355,8 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### isActive () → {Boolean}
 
- シーンがアクティブか。
+
+ シーンがアクティブか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -358,7 +379,8 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### isBusy () → {Boolean}
 
- フェード動作中か。
+
+ フェード動作中か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -381,7 +403,8 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### isCursorLeft () → {Boolean}
 
-Returns true if the cursor is left.
+
+Returns true if the cursor is left.
 <dl>
 </dl>
 
@@ -396,7 +419,8 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### isItemEffectsValid () → {Boolean}
 
-Returns true if the item effects are valid on the target(the user).
+
+Returns true if the item effects are valid on the target(the user).
 <dl>
 </dl>
 
@@ -411,7 +435,8 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### isReady () → {Boolean}
 
- シーンの準備ができているか。
+
+ シーンの準備ができているか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -422,7 +447,7 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
                     </ul>
                 </dd>
             </dl>
-
+[Game_Actor](Game_Actor.md)
 ##### Returns:
 
 <dl>
@@ -434,7 +459,8 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### item () → {*}
 
-Returns the item attached to the item window within the base item scene.
+
+Returns the item attached to the item window within the base item scene.
 <dl>
 </dl>
 
@@ -447,7 +473,7 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
                 </dd>
             </dl>
 
-#### itemTargetActors () → {[Game_Actor](Game_Actor.html)}
+#### itemTargetActors () → {[Game_Actor](Game_Actor.md)}
 
 <dl>
 </dl>
@@ -463,7 +489,8 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### nextActor ()
 
-Moves to the next actor in the party.
+
+Moves to the next actor in the party.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -500,7 +527,8 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### popScene ()
 
- シーンを引き出す(pop)。
+
+ シーンを引き出す(pop)。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -514,7 +542,8 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### previousActor ()
 
-Moves to the previous actor in the party.
+
+Moves to the previous actor in the party.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -528,14 +557,15 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### removeChild (child) → {Object}
 
-[super] 子オブジェクトを取り除く。
+
+[super] 子オブジェクトを取り除く。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  取り除くオブジェクト |
-
+[Number](Number.md)
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -549,7 +579,8 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 ##### Returns:
 
- 取り除かれたオブジェクト
+
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -559,13 +590,14 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### removeChildAt (index) → {Object}
 
-[super] 指定位置にある子オブジェクトを取り除く。
+
+[super] 指定位置にある子オブジェクトを取り除く。
 
 ##### Parameters:
-
+[Number](Number.md)
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  取り除く位置 |
+| `index` | [Number](Number.md) |  取り除く位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -580,21 +612,22 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 ##### Returns:
 
- 取り除かれたオブジェクト
+
+ 取り除かれたオブジェクト
 <dl>
-                <dt> Type </dt>
+             [Window_Base](Window_Base.md)
                 <dd>
                     <span>Object</span>
                 </dd>
             </dl>
-
+[Number](Number.md)
 #### setBackgroundOpacity (opacity)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `opacity` | [Number](Number.html) |  |
+| `opacity` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -609,20 +642,22 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### showSubWindow (window)
 
-Shows the sub window.
+
+Shows the sub window.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `window` | [Window_Base](Window_Base.html) |  |
+| `window` | [Window_Base](Window_Base.md) |  |
 
 <dl>
 </dl>
 
-#### slowFadeSpeed () → {[Number](Number.html)}
+#### slowFadeSpeed () → {[Number](Number.md)}
 
- 遅いフェード速度を返す。
+
+ 遅いフェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -631,12 +666,13 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
                             <a>Scene_Base#slowFadeSpeed</a>
                         </li>
                     </ul>
-                </dd>
+               [Number](Number.md)
             </dl>
 
 ##### Returns:
 
-Return the fade speed
+
+Return the fade speed
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -646,12 +682,13 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### start ()
 
- シーンの開始。
+
+ シーンの開始。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
+               [Number](Number.md)
                             <a>Scene_Base#start</a>
                         </li>
                     </ul>
@@ -660,13 +697,14 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### startFadeIn (duration opt, white opt)
 
- フェードインの要求。
+
+ フェードインの要求。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードインにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードインにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -682,13 +720,14 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### startFadeOut (duration opt, white opt)
 
- フェードアウトの要求。
+
+ フェードアウトの要求。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードアウトにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードアウトにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -704,7 +743,8 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### stop ()
 
- シーンの停止。
+
+ シーンの停止。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -718,7 +758,8 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### terminate ()
 
- 遷移前のシーン中断。
+
+ 遷移前のシーン中断。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -732,7 +773,8 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### update ()
 
- フレーム毎のアップデート。
+
+ フレーム毎のアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -746,10 +788,11 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### updateActor ()
 
-Updates the current actor.
+
+Updates the current actor.
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>
+                [Game_Actor](Game_Actor.md)
                     <ul>
                         <li>
                             <a>Scene_MenuBase#updateActor</a>
@@ -760,7 +803,8 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### updateChildren ()
 
- 子オブジェクトのアップデート。
+
+ 子オブジェクトのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -774,7 +818,8 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### updateFade ()
 
- フェードのアップデート。
+
+ フェードのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -788,13 +833,15 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
 
 #### useItem ()
 
-Uses the current item.
+
+Uses the current item.
 <dl>
 </dl>
 
-#### user () → {[Game_Actor](Game_Actor.html)}
+#### user () → {[Game_Actor](Game_Actor.md)}
 
-Returns the current game actor.
+
+Returns the current game actor.
 <dl>
 </dl>
 
@@ -805,7 +852,9 @@ The superclass of [Scene_Item](Scene_Item.html) and [Scene_Skill](Scene_Skill.ht
                 <dd>
                     <span><a>Game_Actor</a></span>
                 </dd>
-            </dl>
+            </dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

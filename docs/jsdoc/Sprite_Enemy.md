@@ -10,28 +10,29 @@ The sprite for displaying an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `battler` | [Game_Enemy](Game_Enemy.html) |  |
-| `_enemy` | [Game_Enemy](Game_Enemy.html) |  |
+| `battler` | [Game_Enemy](Game_Enemy.md) |  |
+| `_enemy` | [Game_Enemy](Game_Enemy.md) |  |
 | `_appeared` | Boolean |  |
-| `_battlerName` | [String](String.html) |  |
-| `_battlerHue` | [Number](Number.html) |  |
-| `_effectType` | [String](String.html) |  |
-| `_effectDuration` | [Number](Number.html) |  |
-| `_shake` | [Number](Number.html) |  |
-| `_stateIconSprite` | [Sprite_StateIcon](Sprite_StateIcon.html) |  |
+| `_battlerName` | [String](String.md) |  |
+| `_battlerHue` | [Number](Number.md) |  |
+| `_effectType` | [String](String.md) |  |
+| `_effectDuration` | [Number](Number.md) |  |
+| `_shake` | [Number](Number.md) |  |
+| `_stateIconSprite` | [Sprite_StateIcon](Sprite_StateIcon.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Sprite_Battler](Sprite_Battler.html)
+* [Sprite_Battler](Sprite_Battler.md)
 
 ### Methods
 
 #### _speedUpCustomBlendModes (renderer)
 
-checks if we need to speed up custom blendmodes
+
+checks if we need to speed up custom blendmodes
 
 ##### Parameters:
 
@@ -54,8 +55,8 @@ The sprite for displaying an enemy.
 
 <dl>
 </dl>
-
-#### damageOffsetX () → {[Number](Number.html)}
+[Number](Number.md)
+#### damageOffsetX () → {[Number](Number.md)}
 
 <dl>
                 <dt>Overrides:</dt>
@@ -76,8 +77,8 @@ The sprite for displaying an enemy.
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-
-#### damageOffsetY () → {[Number](Number.html)}
+[Number](Number.md)
+#### damageOffsetY () → {[Number](Number.md)}
 
 <dl>
                 <dt>Overrides:</dt>
@@ -101,7 +102,8 @@ The sprite for displaying an enemy.
 
 #### hide ()
 
-Hides the sprite.
+
+Hides the sprite.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -115,7 +117,8 @@ The sprite for displaying an enemy.
 
 #### inHomePosition () → {Boolean}
 
-Returns true if the sprite battler is in the home position.
+
+Returns true if the sprite battler is in the home position.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -138,13 +141,14 @@ The sprite for displaying an enemy.
 
 #### initialize (battler)
 
- オブジェクト生成時の初期化。
 
-##### Parameters:
+ オブジェクト生成時の初期化。
+
+##### Paramete[Game_Enemy](Game_Enemy.md)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `battler` | [Game_Enemy](Game_Enemy.html) |  |
+| `battler` | [Game_Enemy](Game_Enemy.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -177,7 +181,8 @@ The sprite for displaying an enemy.
 
 #### isAnimationPlaying () → {boolean}
 
-Returns true if an animation is currently playing.
+
+Returns true if an animation is currently playing.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -200,7 +205,8 @@ The sprite for displaying an enemy.
 
 #### isEffecting () → {Boolean}
 
-Returns true if the effect type on the sprite enemy is not null.
+
+Returns true if the effect type on the sprite enemy is not null.
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -223,7 +229,8 @@ The sprite for displaying an enemy.
 
 #### isMoving () → {boolean}
 
-Returns true if the sprite for the battler is moving.
+
+Returns true if the sprite for the battler is moving.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -243,22 +250,23 @@ The sprite for displaying an enemy.
                     <span>boolean</span>
                 </dd>
             </dl>
-
-#### loadBitmap (name, hue)
+[String](String.md)
+#### loadB[Number](Number.md)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.html) |  |
-| `hue` | [Number](Number.html) |  |
+| `name` | [String](String.md) |  |
+| `hue` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 #### onMoveEnd ()
 
-Handler for when movement has ended.
+
+Handler for when movement has ended.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -272,19 +280,21 @@ The sprite for displaying an enemy.
 
 #### revertToNormal ()
 
-Revers the sprite enemy to a normal state.
+
+Revers the sprite enemy to a normal state.
 <dl>
 </dl>
-
+[Game_Enemy](Game_Enemy.md)
 #### setBattler (battler)
 
-Sets the battler to an instance of game enemy.
+
+Sets the battler to an instance of game enemy.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `battler` | [Game_Enemy](Game_Enemy.html) | Instance of game enemy. |
+| `battler` | [Game_Enemy](Game_Enemy.md) | Instance of game enemy. |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -295,18 +305,19 @@ The sprite for displaying an enemy.
                         </li>
                     </ul>
                 </dd>
-            </dl>
-
+        [Number](Number.md)
+[Number](Number.md)
 #### setHome (x, y)
 
-Sets the home position of the sprite battler to the given x and y coordinates.
+
+Sets the home position of the sprite battler to the given x and y coordinates.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -321,7 +332,8 @@ The sprite for displaying an enemy.
 
 #### setupAnimation ()
 
-Sets up animation on the sprite battler.
+
+Sets up animation on the sprite battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -335,7 +347,8 @@ The sprite for displaying an enemy.
 
 #### setupDamagePopup ()
 
-Sets up damage popup on the sprite battler.
+
+Sets up damage popup on the sprite battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -354,29 +367,31 @@ The sprite for displaying an enemy.
 
 #### show ()
 
-Shows the sprite.
+
+Shows the sprite.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                            <a>Sprite_Base#show</a>
+                [RPG.Animation](RPG.Animation.md)
                         </li>
-                    </ul>
+            [Number](Number.md)
                 </dd>
             </dl>
 
 #### startAnimation (animation, mirror, delay)
 
-Starts a new animation on the current sprite by assigning a new Sprite_Animation object to the sprite's parent.
+
+Starts a new animation on the current sprite by assigning a new Sprite_Animation object to the sprite's parent.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `animation` | [RPG.Animation](RPG.Animation.html) |  |
+| `animation` | [RPG.Animation](RPG.Animation.md) |  |
 | `mirror` | Boolean |  |
-| `delay` | [Number](Number.html) |  |
+| `delay` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -391,48 +406,54 @@ The sprite for displaying an enemy.
 
 #### startAppear ()
 
-Starts the appearinig effect on the sprite enemy.
+
+Starts the appearinig effect on the sprite enemy.
 <dl>
 </dl>
 
 #### startBlink ()
 
-Starts the blink effect on the sprite enemy.
+
+Starts the blink effect on the sprite enemy.
 <dl>
 </dl>
 
 #### startBossCollapse ()
 
-Starts the boss collapse effect of the sprite enemy.
+
+Starts the boss collapse effect of the sprite enemy.
 <dl>
 </dl>
 
-#### startCollapse ()
+#### startCollaps[String](String.md)
 
-Starts the collapse effect of the sprite enemy.
+
+Starts the collapse effect of the sprite enemy.
 <dl>
 </dl>
 
 #### startDisappear ()
 
-Starts the disappearing effect on the sprite enemy.
+
+Starts the disappearing effect on the sprite enemy.
 <dl>
 </dl>
 
 #### startEffect (effectType)
 
 ##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `effectType` | [String](String.html) |  |
+[Number](Number.md)
+| Name |[Number](Number.md)
+| --- | --- | -[Number](Number.md)
+| `effectType` | [String](String.md) |  |
 
 <dl>
 </dl>
 
 #### startInstantCollapse ()
 
-Starts the instant collapse effect of the sprite enemy.
+
+Starts the instant collapse effect of the sprite enemy.
 <dl>
 </dl>
 
@@ -442,9 +463,9 @@ The sprite for displaying an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `duration` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `duration` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -459,7 +480,8 @@ The sprite for displaying an enemy.
 
 #### startWhiten ()
 
-Starts the whiten effect on the sprite enemy.
+
+Starts the whiten effect on the sprite enemy.
 <dl>
 </dl>
 
@@ -478,7 +500,8 @@ The sprite for displaying an enemy.
 
 #### updateAnimation ()
 
-Updates the sprite battler animation.
+
+Updates the sprite battler animation.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -492,7 +515,8 @@ The sprite for displaying an enemy.
 
 #### updateAnimationSprites ()
 
-Updates the animation sprites, cloning them; if the sprite is playing, pushes the sprites into animation sprites, otherwise the sprite is removed.
+
+Updates the animation sprites, cloning them; if the sprite is playing, pushes the sprites into animation sprites, otherwise the sprite is removed.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -506,7 +530,8 @@ The sprite for displaying an enemy.
 
 #### updateAppear ()
 
-Updates the appear effect on the sprite enemy.
+
+Updates the appear effect on the sprite enemy.
 <dl>
 </dl>
 
@@ -525,25 +550,29 @@ The sprite for displaying an enemy.
 
 #### updateBlink ()
 
-Updates the blink effect on the sprite enemy.
+
+Updates the blink effect on the sprite enemy.
 <dl>
 </dl>
 
 #### updateBossCollapse ()
 
-Updates the boss collapse effect.
+
+Updates the boss collapse effect.
 <dl>
 </dl>
 
 #### updateCollapse ()
 
-Updates the collapse effect.
+
+Updates the collapse effect.
 <dl>
 </dl>
 
 #### updateDamagePopup ()
 
-Updates the damage pop up for the sprite battler.
+
+Updates the damage pop up for the sprite battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -580,13 +609,15 @@ The sprite for displaying an enemy.
 
 #### updateInstantCollapse ()
 
-Updates the instant collapse effect.
+
+Updates the instant collapse effect.
 <dl>
 </dl>
 
 #### updateMain ()
 
-Updates the main loop of the sprite battler.
+
+Updates the main loop of the sprite battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -600,7 +631,8 @@ The sprite for displaying an enemy.
 
 #### updateMove ()
 
-Updates movement on the sprite battler.
+
+Updates movement on the sprite battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -640,7 +672,8 @@ The sprite for displaying an enemy.
 
 #### updateStateSprite ()
 
-Updates the state sprite on the sprite enemy.
+
+Updates the state sprite on the sprite enemy.
 <dl>
 </dl>
 
@@ -659,9 +692,12 @@ The sprite for displaying an enemy.
 
 #### updateWhiten ()
 
-Updates the whiten effect on the sprite enemy.
+
+Updates the whiten effect on the sprite enemy.
 <dl>
-</dl>
+</dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

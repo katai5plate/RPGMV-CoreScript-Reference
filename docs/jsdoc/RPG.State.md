@@ -1,6 +1,6 @@
 # Class: State
 
-## [RPG](RPG.html).  State ()
+## [RPG](RPG.md).  State ()
 
 #### new State ()
 
@@ -10,34 +10,34 @@ The JSON data structure of a state. Define to [$dataStates](global.html#$dataSta
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `id` | [Number](Number.html) | The ID. |
-| `name` | [String](String.html) | The name. |
-| `restriction` | [Number](Number.html) | Action restrictions. 0: None 1: Attack enemy 2: Attack enemy or ally 3: Attack ally 4: Cannot act |
-| `priority` | [Number](Number.html) | The state priority (0..100). |
+| `id` | [Number](Number.md) | The ID. |
+| `name` | [String](String.md) | The name. |
+| `restriction` | [Number](Number.md) | Action restrictions. 0: None 1: Attack enemy 2: Attack enemy or ally 3: Attack ally 4: Cannot act |
+| `priority` | [Number](Number.md) | The state priority (0..100). |
 | `removeAtBattleEnd` | Boolean | Removes state at end of battle (true/false). |
 | `removeByRestriction` | Boolean | Removes state by action restriction (true/false). |
-| `autoRemovalTiming` | [Number](Number.html) | The timing of automatic state removal. 0: None 1: At end of action 2: At end of turn |
-| `minTurns` | [Number](Number.html) | The minimum turns of the duration. |
-| `maxTurns` | [Number](Number.html) | The maximum turns of the duration. |
+| `autoRemovalTiming` | [Number](Number.md) | The timing of automatic state removal. 0: None 1: At end of action 2: At end of turn |
+| `minTurns` | [Number](Number.md) | The minimum turns of the duration. |
+| `maxTurns` | [Number](Number.md) | The maximum turns of the duration. |
 | `removeByDamage` | Boolean | Removes state by damage (true/false). |
-| `chanceByDamage` | [Number](Number.html) | Chance of state being removed by damage (%). |
+| `chanceByDamage` | [Number](Number.md) | Chance of state being removed by damage (%). |
 | `removeByWalking` | Boolean | Removes state by walking (true/false). |
-| `stepToRemove` | [Number](Number.html) | Number of steps until state is removed. |
-| `iconIndex` | [Number](Number.html) | The icon number. |
-| `message1` | [String](String.html) | The message when an actor fell in the state. |
-| `message2` | [String](String.html) | The message when an enemy fell in the state. |
-| `message3` | [String](String.html) | The message when the state remains. |
-| `message4` | [String](String.html) | The message when the state is removed. |
-| `motion` | [Number](Number.html) | The side-view motion. |
-| `overlay` | [Number](Number.html) | The side-view overlay. |
-| `traits` | [Array](Array.html).<[RPG.Trait](RPG.Trait.html)> | The array of Trait data. |
+| `stepToRemove` | [Number](Number.md) | Number of steps until state is removed. |
+| `iconIndex` | [Number](Number.md) | The icon number. |
+| `message1` | [String](String.md) | The message when an actor fell in the state. |
+| `message2` | [String](String.md) | The message when an enemy fell in the state. |
+| `message3` | [String](String.md) | The message when the state remains. |
+| `message4` | [String](String.md) | The message when the state is removed. |
+| `motion` | [Number](Number.md) | The side-view motion. |
+| `overlay` | [Number](Number.md) | The side-view overlay. |
+| `traits` | [Array](Array.md).<[RPG.Trait](RPG.Trait.md)> | The array of Trait data. |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [RPG.MetaData](RPG.MetaData.html)
+* [RPG.MetaData](RPG.MetaData.md)
 
  <br>
 

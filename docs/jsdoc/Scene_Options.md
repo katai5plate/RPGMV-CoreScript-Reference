@@ -10,20 +10,21 @@ The scene class of the options screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_optionsWindow` | [Window_Options](Window_Options.html) |  |
+| `_optionsWindow` | [Window_Options](Window_Options.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Scene_MenuBase](Scene_MenuBase.html)
+* [Scene_MenuBase](Scene_MenuBase.md)
 
 ### Methods
 
-#### actor () → {[Game_Actor](Game_Actor.html)}
+#### actor () → {[Game_Actor](Game_Actor.md)}
 
-Returns the current game actor.
+
+Returns the current game actor.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -46,7 +47,8 @@ The scene class of the options screen.
 
 #### addChild (child) → {Object}
 
-[super] 子オブジェクトを追加。
+
+[super] 子オブジェクトを追加。
 
 ##### Parameters:
 
@@ -67,7 +69,8 @@ The scene class of the options screen.
 
 ##### Returns:
 
- 追加されたオブジェクト
+
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -77,14 +80,15 @@ The scene class of the options screen.
 
 #### addChildAt (child, index) → {Object}
 
-[super] 指定位置に子オブジェクトを追加。
+
+[super] 指定位置に子オブジェクトを追加。
 
 ##### Parameters:
-
+[Number](Number.md)
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.html) |  追加位置 |
+| `index` | [Number](Number.md) |  追加位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -99,7 +103,8 @@ The scene class of the options screen.
 
 ##### Returns:
 
- 追加されたオブジェクト
+
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -109,7 +114,8 @@ The scene class of the options screen.
 
 #### addWindow (Window)
 
- ウィンドウレイヤーにウィンドウを追加。
+
+ ウィンドウレイヤーにウィンドウを追加。
 
 ##### Parameters:
 
@@ -130,7 +136,8 @@ The scene class of the options screen.
 
 #### attachReservation ()
 
- キューに予約を追加。
+
+ キューに予約を追加。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -144,7 +151,8 @@ The scene class of the options screen.
 
 #### checkGameover ()
 
- ゲームオーバー状態か検査。
+
+ ゲームオーバー状態か検査。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -171,7 +179,8 @@ The scene class of the options screen.
 
 #### createFadeSprite ()
 
- フェード用のスプライトを生成。
+
+ フェード用のスプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -185,7 +194,8 @@ The scene class of the options screen.
 
 #### createHelpWindow ()
 
-Creates the help window.
+
+Creates the help window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -194,7 +204,7 @@ The scene class of the options screen.
                             <a>Scene_MenuBase#createHelpWindow</a>
                         </li>
                     </ul>
-                </dd>
+[$1]($2.md)                </dd>
             </dl>
 
 #### createOptionsWindow ()
@@ -204,7 +214,8 @@ The scene class of the options screen.
 
 #### createWindowLayer ()
 
- ウィンドウレイヤー[WindowLayer](WindowLayer.html) を生成。
+
+ ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -218,7 +229,8 @@ The scene class of the options screen.
 
 #### detachReservation ()
 
- キューから予約を削除。
+
+ キューから予約を削除。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -232,7 +244,8 @@ The scene class of the options screen.
 
 #### fadeOutAll ()
 
- 全ての映像と音声を、遅い速度でフェードアウト。
+[Number](Number.md)
+ 全ての映像と音声を、遅い速度でフェードアウト。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -244,9 +257,10 @@ The scene class of the options screen.
                 </dd>
             </dl>
 
-#### fadeSpeed () → {[Number](Number.html)}
+#### fadeSpeed () → {[Number](Number.md)}
 
- フェード速度を返す。
+
+ フェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -269,7 +283,8 @@ The scene class of the options screen.
 
 #### initialize ()
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -283,7 +298,8 @@ The scene class of the options screen.
 
 #### isActive () → {Boolean}
 
- シーンがアクティブか。
+
+ シーンがアクティブか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -306,7 +322,8 @@ The scene class of the options screen.
 
 #### isBusy () → {Boolean}
 
- フェード動作中か。
+
+ フェード動作中か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -329,7 +346,8 @@ The scene class of the options screen.
 
 #### isReady () → {Boolean}
 
- シーンの準備ができているか。
+
+ シーンの準備ができているか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -352,7 +370,8 @@ The scene class of the options screen.
 
 #### nextActor ()
 
-Moves to the next actor in the party.
+
+Moves to the next actor in the party.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -379,7 +398,8 @@ The scene class of the options screen.
 
 #### popScene ()
 
- シーンを引き出す(pop)。
+
+ シーンを引き出す(pop)。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -393,7 +413,8 @@ The scene class of the options screen.
 
 #### previousActor ()
 
-Moves to the previous actor in the party.
+
+Moves to the previous actor in the party.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -407,7 +428,8 @@ The scene class of the options screen.
 
 #### removeChild (child) → {Object}
 
-[super] 子オブジェクトを取り除く。
+
+[super] 子オブジェクトを取り除く。
 
 ##### Parameters:
 
@@ -422,13 +444,14 @@ The scene class of the options screen.
                         <li>
                             <a>Stage#removeChild</a>
                         </li>
-                    </ul>
+            [Number](Number.md)
                 </dd>
             </dl>
 
 ##### Returns:
 
- 取り除かれたオブジェクト
+
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -438,18 +461,19 @@ The scene class of the options screen.
 
 #### removeChildAt (index) → {Object}
 
-[super] 指定位置にある子オブジェクトを取り除く。
+
+[super] 指定位置にある子オブジェクトを取り除く。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  取り除く位置 |
+| `index` | [Number](Number.md) |  取り除く位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                    <ul>
+              [Number](Number.md)
                         <li>
                             <a>Stage#removeChildAt</a>
                         </li>
@@ -459,9 +483,10 @@ The scene class of the options screen.
 
 ##### Returns:
 
- 取り除かれたオブジェクト
+
+ 取り除かれたオブジェクト
 <dl>
-                <dt> Type </dt>
+                <dt> Type[Number](Number.md)
                 <dd>
                     <span>Object</span>
                 </dd>
@@ -473,7 +498,7 @@ The scene class of the options screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `opacity` | [Number](Number.html) |  |
+| `opacity` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -486,9 +511,10 @@ The scene class of the options screen.
                 </dd>
             </dl>
 
-#### slowFadeSpeed () → {[Number](Number.html)}
+#### slowFadeSpeed () → {[Number](Number.md)}
 
- 遅いフェード速度を返す。
+
+ 遅いフェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -502,17 +528,19 @@ The scene class of the options screen.
 
 ##### Returns:
 
-Return the fade speed
+
+Return the fade speed
 <dl>
                 <dt> Type </dt>
-                <dd>
+               [Number](Number.md)
                     <span><a>Number</a></span>
                 </dd>
             </dl>
 
 #### start ()
 
- シーンの開始。
+
+ シーンの開始。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -526,13 +554,14 @@ The scene class of the options screen.
 
 #### startFadeIn (duration opt, white opt)
 
- フェードインの要求。
+[Number](Number.md)
+ フェードインの要求。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードインにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードインにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -548,13 +577,14 @@ The scene class of the options screen.
 
 #### startFadeOut (duration opt, white opt)
 
- フェードアウトの要求。
+
+ フェードアウトの要求。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードアウトにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードアウトにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -570,7 +600,8 @@ The scene class of the options screen.
 
 #### stop ()
 
- シーンの停止。
+
+ シーンの停止。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -597,7 +628,8 @@ The scene class of the options screen.
 
 #### update ()
 
- フレーム毎のアップデート。
+
+ フレーム毎のアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -611,7 +643,8 @@ The scene class of the options screen.
 
 #### updateActor ()
 
-Updates the current actor.
+
+Updates the current actor.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -625,7 +658,8 @@ The scene class of the options screen.
 
 #### updateChildren ()
 
- 子オブジェクトのアップデート。
+
+ 子オブジェクトのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -639,7 +673,8 @@ The scene class of the options screen.
 
 #### updateFade ()
 
- フェードのアップデート。
+
+ フェードのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -649,7 +684,9 @@ The scene class of the options screen.
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            </dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

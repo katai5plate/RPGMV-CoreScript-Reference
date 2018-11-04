@@ -4,20 +4,20 @@
 
 #### (abstract) new Scene_File ()
 
-The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html).
+The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_listWindow` | [Window_SavefileList](Window_SavefileList.html) |  |
+| `_listWindow` | [Window_SavefileList](Window_SavefileList.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Scene_MenuBase](Scene_MenuBase.html)
+* [Scene_MenuBase](Scene_MenuBase.md)
 
 ### Methods
 
@@ -26,9 +26,10 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 <dl>
 </dl>
 
-#### actor () → {[Game_Actor](Game_Actor.html)}
+#### actor () → {[Game_Actor](Game_Actor.md)}
 
-Returns the current game actor.
+
+Returns the current game actor.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -51,7 +52,8 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### addChild (child) → {Object}
 
-[super] 子オブジェクトを追加。
+
+[super] 子オブジェクトを追加。
 
 ##### Parameters:
 
@@ -72,7 +74,8 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 ##### Returns:
 
- 追加されたオブジェクト
+
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -82,14 +85,15 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### addChildAt (child, index) → {Object}
 
-[super] 指定位置に子オブジェクトを追加。
+
+[super] 指定位置に子オブジェクトを追加。
 
 ##### Parameters:
-
+[Number](Number.md)
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.html) |  追加位置 |
+| `index` | [Number](Number.md) |  追加位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -104,7 +108,8 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 ##### Returns:
 
- 追加されたオブジェクト
+
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -114,7 +119,8 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### addWindow (Window)
 
- ウィンドウレイヤーにウィンドウを追加。
+
+ ウィンドウレイヤーにウィンドウを追加。
 
 ##### Parameters:
 
@@ -135,7 +141,8 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### attachReservation ()
 
- キューに予約を追加。
+
+ キューに予約を追加。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -149,7 +156,8 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### checkGameover ()
 
- ゲームオーバー状態か検査。
+
+ ゲームオーバー状態か検査。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -176,7 +184,8 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### createFadeSprite ()
 
- フェード用のスプライトを生成。
+
+ フェード用のスプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -199,7 +208,7 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
                         </li>
                     </ul>
                 </dd>
-            </dl>
+[$1]($2.md)            </dl>
 
 #### createListWindow ()
 
@@ -208,7 +217,8 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### createWindowLayer ()
 
- ウィンドウレイヤー[WindowLayer](WindowLayer.html) を生成。
+
+ ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -222,7 +232,8 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### detachReservation ()
 
- キューから予約を削除。
+
+ キューから予約を削除。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -236,7 +247,8 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### fadeOutAll ()
 
- 全ての映像と音声を、遅い速度でフェードアウト。
+
+ 全ての映像と音声を、遅い速度でフェードア[Number](Number.md)
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -248,9 +260,10 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
                 </dd>
             </dl>
 
-#### fadeSpeed () → {[Number](Number.html)}
+#### fadeSpeed () → {[Number](Number.md)}
 
- フェード速度を返す。
+
+ フェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -258,7 +271,7 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
                         <li>
                             <a>Scene_Base#fadeSpeed</a>
                         </li>
-                    </ul>
+                    </ul>[Number](Number.md)
                 </dd>
             </dl>
 
@@ -271,9 +284,10 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
                 </dd>
             </dl>
 
-#### firstSavefileIndex () → {[Number](Number.html)}
+#### firstSavefileIndex () → {[Number](Number.md)}
 
-Returns the index of the first save file.
+[String](String.md)
+Returns the index of the first save file.
 <dl>
 </dl>
 
@@ -286,7 +300,7 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
                 </dd>
             </dl>
 
-#### helpWindowText () → {[String](String.html)}
+#### helpWindowText () → {[String](String.md)}
 
 <dl>
 </dl>
@@ -302,7 +316,8 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### initialize ()
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -316,7 +331,8 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### isActive () → {Boolean}
 
- シーンがアクティブか。
+
+ シーンがアクティブか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -339,7 +355,8 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### isBusy () → {Boolean}
 
- フェード動作中か。
+
+ フェード動作中か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -362,7 +379,8 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### isReady () → {Boolean}
 
- シーンの準備ができているか。
+
+ シーンの準備ができているか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -385,13 +403,15 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### mode ()
 
-The current mode of the scene; the modes are 'save' or 'load'.
+
+The current mode of the scene; the modes are 'save' or 'load'.
 <dl>
 </dl>
 
 #### nextActor ()
 
-Moves to the next actor in the party.
+
+Moves to the next actor in the party.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -418,13 +438,15 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### onSavefileOk ()
 
-Handler for when a save file is selected within the file scene.
+
+Handler for when a save file is selected within the file scene.
 <dl>
 </dl>
 
 #### popScene ()
 
- シーンを引き出す(pop)。
+
+ シーンを引き出す(pop)。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -438,7 +460,8 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### previousActor ()
 
-Moves to the previous actor in the party.
+
+Moves to the previous actor in the party.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -452,7 +475,8 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### removeChild (child) → {Object}
 
-[super] 子オブジェクトを取り除く。
+
+[super] 子オブジェクトを取り除く。
 
 ##### Parameters:
 
@@ -465,7 +489,7 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
                 <dd>
                     <ul>
                         <li>
-                            <a>Stage#removeChild</a>
+            [Number](Number.md)age#removeChild</a>
                         </li>
                     </ul>
                 </dd>
@@ -473,7 +497,8 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 ##### Returns:
 
- 取り除かれたオブジェクト
+
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -483,13 +508,14 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### removeChildAt (index) → {Object}
 
-[super] 指定位置にある子オブジェクトを取り除く。
+
+[super] 指定位置にある子オブジェクトを取り除く。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  取り除く位置 |
+| `index` | [Number](Number.md) |  取り除く位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -498,23 +524,25 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
                         <li>
                             <a>Stage#removeChildAt</a>
                         </li>
-                    </ul>
+              [Number](Number.md)
                 </dd>
             </dl>
 
 ##### Returns:
 
- 取り除かれたオブジェクト
+
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
                     <span>Object</span>
                 </dd>
-            </dl>
+            </dl>[Number](Number.md)
 
 #### savefileId ()
 
-Returns the current savefileId.
+
+Returns the current savefileId.
 <dl>
 </dl>
 
@@ -524,7 +552,7 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `opacity` | [Number](Number.html) |  |
+| `opacity` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -537,9 +565,10 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
                 </dd>
             </dl>
 
-#### slowFadeSpeed () → {[Number](Number.html)}
+#### slowFadeSpeed () → {[Number](Number.md)}
 
- 遅いフェード速度を返す。
+
+ 遅いフェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -553,7 +582,8 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 ##### Returns:
 
-Return the fade speed
+[Number](Number.md)
+Return the fade speed
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -574,15 +604,16 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
                 </dd>
             </dl>
 
-#### startFadeIn (duration opt, white opt)
+#### startFadeI[Number](Number.md)e opt)
 
- フェードインの要求。
+
+ フェードインの要求。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードインにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードインにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -598,13 +629,14 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### startFadeOut (duration opt, white opt)
 
- フェードアウトの要求。
+
+ フェードアウトの要求。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードアウトにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードアウトにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -620,7 +652,8 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### stop ()
 
- シーンの停止。
+
+ シーンの停止。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -634,7 +667,8 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### terminate ()
 
- 遷移前のシーン中断。
+
+ 遷移前のシーン中断。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -648,7 +682,8 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### update ()
 
- フレーム毎のアップデート。
+
+ フレーム毎のアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -662,7 +697,8 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### updateActor ()
 
-Updates the current actor.
+
+Updates the current actor.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -676,7 +712,8 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### updateChildren ()
 
- 子オブジェクトのアップデート。
+
+ 子オブジェクトのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -690,7 +727,8 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
 
 #### updateFade ()
 
- フェードのアップデート。
+
+ フェードのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -700,7 +738,9 @@ The superclass of [Scene_Save](Scene_Save.html) and [Scene_Load](Scene_Load.html
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            </dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

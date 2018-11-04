@@ -10,22 +10,22 @@ The game object class for the state of the message window that displays text or 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_texts` | [Array](Array.html).<[String](String.html)> |  |
-| `_choices` | [Array](Array.html).<[String](String.html)> |  |
-| `_faceName` | [String](String.html) |  |
-| `_faceIndex` | [Number](Number.html) |  |
-| `_background` | [Number](Number.html) |  |
-| `_positionType` | [Number](Number.html) |  |
-| `_choiceDefaultType` | [Number](Number.html) |  |
-| `_choiceCancelType` | [Number](Number.html) |  |
-| `_choiceBackground` | [Number](Number.html) |  |
-| `_choicePostionType` | [Number](Number.html) |  |
-| `_numInputVariableId` | [Number](Number.html) |  |
-| `_numInputMaxDigits` | [Number](Number.html) |  |
-| `_itemChoiceVariableId` | [Number](Number.html) |  |
-| `_itemChoiceItypeId` | [Number](Number.html) |  |
+| `_texts` | [Array](Array.md).<[String](String.md)> |  |
+| `_choices` | [Array](Array.md).<[String](String.md)> |  |
+| `_faceName` | [String](String.md) |  |
+| `_faceIndex` | [Number](Number.md) |  |
+| `_background` | [Number](Number.md) |  |
+| `_positionType` | [Number](Number.md) |  |
+| `_choiceDefaultType` | [Number](Number.md) |  |
+| `_choiceCancelType` | [Number](Number.md) |  |
+| `_choiceBackground` | [Number](Number.md) |  |
+| `_choicePostionType` | [Number](Number.md) |  |
+| `_numInputVariableId` | [Number](Number.md) |  |
+| `_numInputMaxDigits` | [Number](Number.md) |  |
+| `_itemChoiceVariableId` | [Number](Number.md) |  |
+| `_itemChoiceItypeId` | [Number](Number.md) |  |
 | `_scrollMode` | Boolean |  |
-| `_scrollSpeed` | [Number](Number.html) |  |
+| `_scrollSpeed` | [Number](Number.md) |  |
 | `_scrollNoFast` | Boolean |  |
 | `_choiceCallback` | function |  |
 
@@ -36,20 +36,22 @@ The game object class for the state of the message window that displays text or 
 
 #### add (text)
 
-Adds text to the game message object.
+
+Adds text to the game message object.
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `text` | [String](String.html) |  |
+| --- | ---[String](String.md)
+| `text` | [String](String.md) |  |
 
 <dl>
 </dl>
+[String](String.md)
+#### allText () → {[String](String.md)}
 
-#### allText () → {[String](String.html)}
 
-Returns all of the text contained within the message.
+Returns all of the text contained within the message.
 <dl>
 </dl>
 
@@ -60,11 +62,12 @@ The game object class for the state of the message window that displays text or 
                 <dd>
                     <span><a>String</a></span>
                 </dd>
-            </dl>
+            </dl>[Number](Number.md)
 
-#### background () → {[Number](Number.html)}
+#### background () → {[Number](Number.md)}
 
-Returns the background associated with the message; this is the background
+
+Returns the background associated with the message; this is the background
 <dl>
 </dl>
 
@@ -74,12 +77,13 @@ The game object class for the state of the message window that displays text or 
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
-                </dd>
+                </dd>[Number](Number.md)
             </dl>
 
-#### choiceBackground () → {[Number](Number.html)}
+#### choiceBackground () → {[Number](Number.md)}
 
-Returns the background type of the choice window.
+
+Returns the background type of the choice window.
 <dl>
 </dl>
 
@@ -98,13 +102,14 @@ The game object class for the state of the message window that displays text or 
 </dl>
 
 #### choiceDefaultType ()
-
+[Number](Number.md)
 <dl>
 </dl>
 
-#### choicePositionType () → {[Number](Number.html)}
+#### choicePositionType () → {[Number](Number.md)}
 
-Returns the position of the choice window.
+
+Returns the position of the choice window.
 <dl>
 </dl>
 
@@ -122,29 +127,31 @@ The game object class for the state of the message window that displays text or 
 <dl>
 </dl>
 
-#### clear ()
+#### clear ()[Number](Number.md)
 
 <dl>
 </dl>
 
-#### faceIndex () → {[Number](Number.html)}
+#### faceIndex () → {[Number](Number.md)}
 
-Returns the face index within the face image to display the correct face.
+
+Returns the face index within the face image to display the correct face.
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
+                <dt>[String](String.md)
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
             </dl>
 
-#### faceName () → {[String](String.html)}
+#### faceName () → {[String](String.md)}
 
-Returns the name of the face image used for the message.
+
+Returns the name of the face image used for the message.
 <dl>
 </dl>
 
@@ -159,7 +166,8 @@ The game object class for the state of the message window that displays text or 
 
 #### hasText () → {Boolean}
 
-Returns true if the game message object has text.
+
+Returns true if the game message object has text.
 <dl>
 </dl>
 
@@ -174,13 +182,15 @@ The game object class for the state of the message window that displays text or 
 
 #### initialize ()
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 <dl>
 </dl>
 
 #### isBusy () → {Boolean}
 
-Returns true if the game message object has text, choices, number input, or item choice.
+
+Returns true if the game message object has text, choices, number input, or item choice.
 <dl>
 </dl>
 
@@ -195,7 +205,8 @@ The game object class for the state of the message window that displays text or 
 
 #### isChoice () → {Boolean}
 
-Returns true if the game message object has a set of choices.
+
+Returns true if the game message object has a set of choices.
 <dl>
 </dl>
 
@@ -210,7 +221,8 @@ The game object class for the state of the message window that displays text or 
 
 #### isItemChoice () → {Boolean}
 
-Returns true if the game message object has an item choice attached.
+
+Returns true if the game message object has an item choice attached.
 <dl>
 </dl>
 
@@ -225,7 +237,8 @@ The game object class for the state of the message window that displays text or 
 
 #### isNumberInput () → {Boolean}
 
-Returns true if the game message object has a number input attached.
+
+Returns true if the game mess[Number](Number.md)er input attached.
 <dl>
 </dl>
 
@@ -238,9 +251,10 @@ The game object class for the state of the message window that displays text or 
                 </dd>
             </dl>
 
-#### itemChoiceItypeId () → {[Number](Number.html)}
+#### itemChoiceItypeId () → {[Number](Number.md)}
 
-Returns the item choice item type id.
+[Number](Number.md)
+Returns the item choice item type id.
 <dl>
 </dl>
 
@@ -253,13 +267,14 @@ The game object class for the state of the message window that displays text or 
                 </dd>
             </dl>
 
-#### itemChoiceVariableId () → {[Number](Number.html)}
+#### itemChoiceVariableId () → {[Number](Number.md)}
 
-Returns the item choice variable id.
+
+Returns the item choice variable id.
 <dl>
 </dl>
 
-##### Returns:
+##### Returns:[Number](Number.md)
 
 <dl>
                 <dt> Type </dt>
@@ -270,13 +285,15 @@ The game object class for the state of the message window that displays text or 
 
 #### newPage ()
 
-Creates a new page for the text within the message window.
+
+Creates a new page for the text within the message window.
 <dl>
 </dl>
+[Number](Number.md)
+#### numInputMaxDigits () → {[Number](Number.md)}
 
-#### numInputMaxDigits () → {[Number](Number.html)}
 
-Returns the number input maximum digits.
+Returns the number input maximum digits.
 <dl>
 </dl>
 
@@ -289,15 +306,16 @@ The game object class for the state of the message window that displays text or 
                 </dd>
             </dl>
 
-#### numInputVariableId () → {[Number](Number.html)}
+#### numInputVariableId () → {[Number](Number.md)}
 
-Returns the number input variable id.
-<dl>
+
+Returns the number input variable id.
+<dl>[Number](Number.md)
 </dl>
 
 ##### Returns:
 
-<dl>
+<dl>[Number](Number.md)
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
@@ -310,14 +328,15 @@ The game object class for the state of the message window that displays text or 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `n` | [Number](Number.html) |  |
+| `n` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### positionType () → {[Number](Number.html)}
+#### positionType () → {[Number](Number.md)}
 
-Returns the current position type of the message window.
+
+Returns the current position type of the message window.
 <dl>
 </dl>
 
@@ -332,7 +351,8 @@ The game object class for the state of the message window that displays text or 
 
 #### scrollMode () → {Boolean}
 
-Returns true if the scroll mode is set to true.
+
+Returns true if the scroll mode is set to true.
 <dl>
 </dl>
 
@@ -340,14 +360,15 @@ The game object class for the state of the message window that displays text or 
 
 <dl>
                 <dt> Type </dt>
-                <dd>
+                <dd>[Number](Number.md)
                     <span>Boolean</span>
                 </dd>
             </dl>
 
 #### scrollNoFast () → {Boolean}
 
-Returns true if the scroll is set to not being fast.
+
+Returns true if the scroll is set to not being fast.
 <dl>
 </dl>
 
@@ -360,9 +381,10 @@ The game object class for the state of the message window that displays text or 
                 </dd>
             </dl>
 
-#### scrollSpeed () → {[Number](Number.html)}
+#### scrollSpeed () → {[Number](Number.md)}
 
-Returns the scroll speed.
+[Number](Number.md)
+Returns the scroll speed.
 <dl>
 </dl>
 
@@ -372,18 +394,19 @@ The game object class for the state of the message window that displays text or 
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
-                </dd>
+                <[Number](Number.md)
             </dl>
 
 #### setBackground (background)
 
-Sets the background of the message window; options are 0 (fully opaque), 1 (transparent), 2 (invisible background). The default is 0.
+
+Sets the background of the message window; options are 0 (fully opaque), 1 (transparent), 2 (invisible background). The default is 0.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `background` | [Number](Number.html) |  |
+| `background` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -394,14 +417,15 @@ The game object class for the state of the message window that displays text or 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `background` | [Number](Number.html) |  |
+| `background` | [Number](Number.md) |  |
 
 <dl>
-</dl>
+</dl>[Number](Number.md)
 
 #### setChoiceCallback (callback)
 
-Sets a callback to be associated with a specific choice; a callback is a JavaScript function that will be run when the choice is selected.
+
+Sets a callback to be associated with a specific choice; a callback is a JavaScript function that will be run when the choice is selected.
 
 ##### Parameters:
 
@@ -409,33 +433,35 @@ The game object class for the state of the message window that displays text or 
 | --- | --- | --- |
 | `callback` | function |  |
 
-<dl>
-</dl>
-
+<dl>[Array](Array.md)[String](String.md)
+</dl>[Number](Number.md)
+[Number](Number.md)
 #### setChoicePositionType (positionType)
 
-Sets the position of the choice window associated with the message window.
+
+Sets the position of the choice window associated with the message window.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `positionType` | [Number](Number.html) |  |
-
-<dl>
+| `positionType` | [Number](Number.md) |  |
+[String](String.md)
+<dl>[Number](Number.md)
 </dl>
 
 #### setChoices (choices, defaultType, cancelType)
 
-Sets the choices within the choice window; sets the default and cancel choices for the window.
+
+Sets the choices within the choice window; sets the default and cancel choices for the window.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `choices` | [Array](Array.html).<[String](String.html)> |  |
-| `defaultType` | [Number](Number.html) |  |
-| `cancelType` | [Number](Number.html) |  |
+| `choices` | [Array](Array.md).<[String](String.md)> |  |
+| `defaultType` |[Number](Number.md)) |  |
+| `cancelType` [Number](Number.md)l) |  |
 
 <dl>
 </dl>
@@ -446,66 +472,72 @@ The game object class for the state of the message window that displays text or 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `faceName` | [String](String.html) |  |
-| `faceIndex` | [Number](Number.html) |  |
-
-<dl>
+| `faceName` | [String](String.md) |  |
+| `faceIndex` | [Number](Number.md) |  |
+[Number](Number.md)
+<dl>[Number](Number.md)
 </dl>
 
 #### setItemChoice (variableId, itemType)
 
-Sets the choice and associates it with a variable id; sets the itemtype id associated with the choice.
+
+Sets the choice and associates it with a variable id; sets the itemtype id associated with the choice.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `variableId` | [Number](Number.html) |  |
-| `itemType` | [Number](Number.html) |  |
+| `variableId` | [Number](Number.md) |  |
+| `itemType` | [Num[Number](Number.md)|
 
 <dl>
 </dl>
 
 #### setNumberInput (variableId, maxDigits)
 
-Sets the number input and associates it with a variable id; the max number of digits can also be set.
+
+Sets the number input and associates it with a variable id; the max number of digits can also be set.
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `variableId` | [Number](Number.html) |  |
-| `maxDigits` | [Number](Number.html) |  |
+| --- | --- [Number](Number.md)
+| `variableId` | [Number](Number.md) |  |
+| `maxDigits` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 #### setPositionType (positionType)
 
-Sets the position of the message window; default is 2.
+
+Sets the position of the message window; default is 2.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `positionType` | [Number](Number.html) |  |
+| `positionType` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 #### setScroll (speed, noFast)
 
-Sets the scroll speed of the message window; disable fast movement if noFast is set to true.
+
+Sets the scroll speed of the message window; disable fast movement if noFast is set to true.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `speed` | [Number](Number.html) |  |
+| `speed` | [Number](Number.md) |  |
 | `noFast` | Boolean |  |
 
 <dl>
-</dl>
+</dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

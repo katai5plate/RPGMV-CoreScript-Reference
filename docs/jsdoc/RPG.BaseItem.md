@@ -1,26 +1,26 @@
 # Class: BaseItem
 
-## [RPG](RPG.html).  BaseItem ()
+## [RPG](RPG.md).  BaseItem ()
 
 #### new BaseItem ()
 
-A superclass of actor, class, [RPG.UsableItem](RPG.UsableItem.html), weapon, armor, enemy, and state. Some items are unnecessary depending on the type of data, but they are included for convenience sake.
+A superclass of actor, class, [RPG.UsableItem](RPG.UsableItem.md), weapon, armor, enemy, and state. Some items are unnecessary depending on the type of data, but they are included for convenience sake.
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `id` | [Number](Number.html) | The item ID. |
-| `name` | [String](String.html) | The item name. |
-| `iconIndex` | [Number](Number.html) | The icon number. |
-| `description` | [String](String.html) | The description text. |
+| `id` | [Number](Number.md) | The item ID. |
+| `name` | [String](String.md) | The item name. |
+| `iconIndex` | [Number](Number.md) | The icon number. |
+| `description` | [String](String.md) | The description text. |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [RPG.MetaData](RPG.MetaData.html)
+* [RPG.MetaData](RPG.MetaData.md)
 
  <br>
 

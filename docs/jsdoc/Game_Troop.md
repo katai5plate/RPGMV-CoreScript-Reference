@@ -10,13 +10,13 @@ The game object declare class for a troop and the battle-related data. Use as gl
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `LETTER_TABLE_HALF` | [Array](Array.html).<[String](String.html)> | [static] |
-| `LETTER_TABLE_FULL` | [Array](Array.html).<[String](String.html)> | [static] |
-| `_interpreter` | [Game_Interpreter](Game_Interpreter.html) |  |
-| `_troopId` | [Number](Number.html) |  |
+| `LETTER_TABLE_HALF` | [Array](Array.md).<[String](String.md)> | [static] |
+| `LETTER_TABLE_FULL` | [Array](Array.md).<[String](String.md)> | [static] |
+| `_interpreter` | [Game_Interpreter](Game_Interpreter.md) |  |
+| `_troopId` | [Number](Number.md) |  |
 | `_eventFlags` | Object | {[page: number]: boolean} |
-| `_enemies` | [Array](Array.html).<[Game_Enemy](Game_Enemy.html)> |  |
-| `_turnCount` | [Number](Number.html) |  |
+| `_enemies` | [Array](Array.md).<[Game_Enemy](Game_Enemy.md)> |  |
+| `_turnCount` | [Number](Number.md) |  |
 | `_namesCount` | Object | {[name: string]: number} |
 
 <dl>
@@ -24,13 +24,14 @@ The game object declare class for a troop and the battle-related data. Use as gl
 
 ### Extends
 
-* [Game_Unit](Game_Unit.html)
+* [Game_Unit](Game_Unit.md)
 
 ### Methods
 
-#### agility () → {[Number](Number.html)}
+#### agility () → {[Number](Number.md)}
 
-Returns the agility of the unit.
+
+Returns the agility of the unit.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -50,10 +51,11 @@ The game object declare class for a troop and the battle-related data. Use as gl
                     <span><a>Number</a></span>
                 </dd>
             </dl>
+[Array](Array.md)[Game_Battler](Game_Battler.md)
+#### aliveMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
 
-#### aliveMembers () → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
 
-Returns the list of alive battlers.
+Returns the list of alive battlers.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -81,7 +83,8 @@ The game object declare class for a troop and the battle-related data. Use as gl
 
 #### clearActions ()
 
-Clears the unit's actions.
+
+Clears the unit's actions.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -95,7 +98,8 @@ The game object declare class for a troop and the battle-related data. Use as gl
 
 #### clearResults ()
 
-Clears the action results.
+
+Clears the action results.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -103,13 +107,14 @@ The game object declare class for a troop and the battle-related data. Use as gl
                         <li>
                             <a>Game_Unit#clearResults</a>
                         </li>
-                    </ul>
+                    </u[Array](Array.md)[Game_Battler](Game_Battler.md)
                 </dd>
             </dl>
 
-#### deadMembers () → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
+#### deadMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
 
-Returns the list of dead battlers.
+
+Returns the list of dead battlers.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -125,34 +130,52 @@ The game object declare class for a troop and the battle-related data. Use as gl
 
 <dl>
                 <dt> Type </dt>
-                <dd>
+                <dd>[Array](Array.md)[String](String.md)
                     <span><a>Array</a>.&lt;<a>Game_Battler</a>&gt;</span>
                 </dd>
             </dl>
 
-#### enemyNames () → {[Array](Array.html).<[String](String.html)>}
+#### enemyNames () → {[Array](Array.md).<[String](String.md)>}
 
-Returns the name of enemies within the troop.
+
+Returns the name of enemies within the troop.
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
+                <dt>[Number](Number.md)
                 <dd>
                     <span><a>Array</a>.&lt;<a>String</a>&gt;</span>
                 </dd>
             </dl>
 
-#### expTotal () → {[Number](Number.html)}
+#### expTotal () → {[Number](Number.md)}
 
-Returns the total exp of all members of the enemy troop.
+
+Returns the total exp of all members of the enemy troop.
 <dl>
 </dl>
 
 ##### Returns:
 
+<dl>[Number](Number.md)
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Number</a></span>
+                </dd>
+            </dl>
+
+#### goldRate () → {[Number](Number.md)}
+
+
+Returns the gold rate based on game party gold rate.
+<dl>
+</dl>
+
+##### Returns:
+[Number](Number.md)
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -160,24 +183,10 @@ The game object declare class for a troop and the battle-related data. Use as gl
                 </dd>
             </dl>
 
-#### goldRate () → {[Number](Number.html)}
+#### goldTotal () → {[Number](Number.md)}
 
-Returns the gold rate based on game party gold rate.
-<dl>
-</dl>
 
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### goldTotal () → {[Number](Number.html)}
-
-Return the total gold of all enemies.
+Return the total gold of all enemies.
 <dl>
 </dl>
 
@@ -192,7 +201,8 @@ The game object declare class for a troop and the battle-related data. Use as gl
 
 #### inBattle () → {Boolean}
 
-Returns true if unit is in battle.
+
+Returns true if unit is in battle.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -215,13 +225,15 @@ The game object declare class for a troop and the battle-related data. Use as gl
 
 #### increaseTurn ()
 
-Increases the turn number.
+
+Increases the turn number.
 <dl>
 </dl>
 
 #### initialize ()
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -235,7 +247,8 @@ The game object declare class for a troop and the battle-related data. Use as gl
 
 #### isAllDead () → {Boolean}
 
-Returns true if all members of the unit are dead.
+
+Returns true if all members of the unit are dead.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -258,7 +271,8 @@ The game object declare class for a troop and the battle-related data. Use as gl
 
 #### isEventRunning () → {Boolean}
 
-Returns true if event is running.
+[Array](Array.md)[String](String.md)
+Returns true if event is running.
 <dl>
 </dl>
 
@@ -271,9 +285,10 @@ The game object declare class for a troop and the battle-related data. Use as gl
                 </dd>
             </dl>
 
-#### letterTable () → {[Array](Array.html).<[String](String.html)>}
+#### letterTable () → {[Array](Array.md).<[String](String.md)>}
 
-Returns the letter table for enemy troops.
+
+Returns the letter table for enemy troops.
 <dl>
 </dl>
 
@@ -285,10 +300,11 @@ The game object declare class for a troop and the battle-related data. Use as gl
                     <span><a>Array</a>.&lt;<a>String</a>&gt;</span>
                 </dd>
             </dl>
-
+[Array](Array.md)[RPG.BaseItem](RPG.BaseItem.md)
 #### makeActions ()
 
-Creates the action's of the game unit.
+
+Creates the action's of the game unit.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -300,9 +316,10 @@ The game object declare class for a troop and the battle-related data. Use as gl
                 </dd>
             </dl>
 
-#### makeDropItems () → {[Array](Array.html).<[RPG.BaseItem](RPG.BaseItem.html)>}
+#### makeDropItems () → {[Array](Array.md).<[RPG.BaseItem](RPG.BaseItem.md)>}
 
-Creates the drop items for all members of the enemy troop, and returns the item information.
+
+Creates the drop items for all members of the enemy troop, and returns the item information.
 <dl>
 </dl>
 
@@ -310,24 +327,25 @@ The game object declare class for a troop and the battle-related data. Use as gl
 
 <dl>
                 <dt> Type </dt>
-                <dd>
+           [RPG.BattleEventPage](RPG.BattleEventPage.md)
                     <span><a>Array</a>.&lt;<a>RPG.BaseItem</a>&gt;</span>
                 </dd>
             </dl>
 
 #### makeUniqueNames ()
 
-Creates unique names for each enemy.
+
+Creates unique names for each enemy.
 <dl>
 </dl>
 
 #### meetsConditions (page) → {Boolean}
 
-##### Parameters:
+##### Parameters:[Array](Array.md)[Game_Enemy](Game_Enemy.md)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `page` | [RPG.BattleEventPage](RPG.BattleEventPage.html) |  |
+| `page` | [RPG.BattleEventPage](RPG.BattleEventPage.md) |  |
 
 <dl>
 </dl>
@@ -341,11 +359,12 @@ The game object declare class for a troop and the battle-related data. Use as gl
                 </dd>
             </dl>
 
-#### members () → {[Array](Array.html).<[Game_Enemy](Game_Enemy.html)>}
+#### members () → {[Array](Array.md).<[Game_Enemy](Game_Enemy.md)>}
 
-Returns all enemies in the battle.
+
+Returns all enemies in the battle.
 <dl>
-                <dt>Overrides:</dt>
+                <dt>Overri[Array](Array.md)[Game_Battler](Game_Battler.md)
                 <dd>
                     <ul>
                         <li>
@@ -364,9 +383,10 @@ The game object declare class for a troop and the battle-related data. Use as gl
                 </dd>
             </dl>
 
-#### movableMembers () → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
+#### movableMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
 
-Returns the list of movable members.
+
+Returns the list of movable members.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -389,12 +409,13 @@ The game object declare class for a troop and the battle-related data. Use as gl
 
 #### onBattleEnd ()
 
-Handler for when battle has ended.
+
+Handler for when battle has ended.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
+                        <li>[Game_Battler](Game_Battler.md)
                             <a>Game_Unit#onBattleEnd</a>
                         </li>
                     </ul>
@@ -403,7 +424,8 @@ The game object declare class for a troop and the battle-related data. Use as gl
 
 #### onBattleStart ()
 
-Handler for when battle is started.
+
+Handler for when battle is started.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -415,9 +437,10 @@ The game object declare class for a troop and the battle-related data. Use as gl
                 </dd>
             </dl>
 
-#### randomDeadTarget () → {[Game_Battler](Game_Battler.html)}
+#### randomDeadTarget () → {[Game_Battler](Game_Battler.md)}
+[Game_Battler](Game_Battler.md)
 
-Returns a random dead target from the game unit.
+Returns a random dead target from the game unit.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -438,14 +461,15 @@ The game object declare class for a troop and the battle-related data. Use as gl
                 </dd>
             </dl>
 
-#### randomTarget () → {[Game_Battler](Game_Battler.html)}
+#### randomTarget () → {[Game_Battler](Game_Battler.md)}
 
-Returns a random target from the game unit.
+
+Returns a random target from the game unit.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
+                   [Game_Battler](Game_Battler.md)
                             <a>Game_Unit#randomTarget</a>
                         </li>
                     </ul>
@@ -463,23 +487,24 @@ The game object declare class for a troop and the battle-related data. Use as gl
 
 #### select (activeMember)
 
-Selects a member of the unit given a battler.
+
+Selects a memb[Number](Number.md)a battler.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `activeMember` | [Game_Battler](Game_Battler.html) |  |
+| `activeMember` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>
+                <dd>[Game_Battler](Game_Battler.md)
                     <ul>
                         <li>
                             <a>Game_Unit#select</a>
                         </li>
                     </ul>
-                </dd>
+            [Number](Number.md)
             </dl>
 
 #### setup (troopId)
@@ -488,7 +513,7 @@ The game object declare class for a troop and the battle-related data. Use as gl
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `troopId` | [Number](Number.html) |  |
+| `troopId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -498,16 +523,16 @@ The game object declare class for a troop and the battle-related data. Use as gl
 <dl>
 </dl>
 
-#### smoothDeadTarget (index) → {[Game_Battler](Game_Battler.html)}
+#### smoothDeadTarget (index) → {[Game_Battler](Game_Battler.md)}
 
 ##### Parameters:
-
+[Game_Battler](Game_Battler.md)
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
+            [Number](Number.md)m:</dt>
                 <dd>
                     <ul>
                         <li>
@@ -526,13 +551,13 @@ The game object declare class for a troop and the battle-related data. Use as gl
                 </dd>
             </dl>
 
-#### smoothTarget (index) → {[Game_Battler](Game_Battler.html)}
+#### smoothTarget (index) → {[Game_Battler](Game_Battler.md)}
 
 ##### Parameters:
-
+[Game_Battler](Game_Battler.md)
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -551,10 +576,10 @@ The game object declare class for a troop and the battle-related data. Use as gl
                 <dt> Type </dt>
                 <dd>
                     <span><a>Game_Battler</a></span>
-                </dd>
+                </[Number](Number.md)
             </dl>
 
-#### substituteBattler () → {[Game_Battler](Game_Battler.html)}
+#### substituteBattler () → {[Game_Battler](Game_Battler.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -573,10 +598,10 @@ The game object declare class for a troop and the battle-related data. Use as gl
                 <dt> Type </dt>
                 <dd>
                     <span><a>Game_Battler</a></span>
-                </dd>
+                <[RPG.Troop](RPG.Troop.md)
             </dl>
 
-#### tgrSum () → {[Number](Number.html)}
+#### tgrSum () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -588,7 +613,7 @@ The game object declare class for a troop and the battle-related data. Use as gl
                     </ul>
                 </dd>
             </dl>
-
+[Number](Number.md)
 ##### Returns:
 
 <dl>
@@ -598,9 +623,10 @@ The game object declare class for a troop and the battle-related data. Use as gl
                 </dd>
             </dl>
 
-#### troop () → {[RPG.Troop](RPG.Troop.html)}
+#### troop () → {[RPG.Troop](RPG.Troop.md)}
 
-Returns troop information from the database.
+
+Returns troop information from the database.
 <dl>
 </dl>
 
@@ -613,9 +639,10 @@ The game object declare class for a troop and the battle-related data. Use as gl
                 </dd>
             </dl>
 
-#### turnCount () → {[Number](Number.html)}
+#### turnCount () → {[Number](Number.md)}
 
-Returns the turn count.
+
+Returns the turn count.
 <dl>
 </dl>
 
@@ -630,9 +657,12 @@ The game object declare class for a troop and the battle-related data. Use as gl
 
 #### updateInterpreter ()
 
-Updates the game interpreter.
+
+Updates the game interpreter.
 <dl>
-</dl>
+</dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

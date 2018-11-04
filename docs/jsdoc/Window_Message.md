@@ -10,30 +10,31 @@ The window for displaying text messages.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_background` | [Number](Number.html) |  |
-| `_positionType` | [Number](Number.html) |  |
-| `_waitCount` | [Number](Number.html) |  |
-| `_faceBitmap` | [MV.TextState](MV.TextState.html) |  |
+| `_background` | [Number](Number.md) |  |
+| `_positionType` | [Number](Number.md) |  |
+| `_waitCount` | [Number](Number.md) |  |
+| `_faceBitmap` | [MV.TextState](MV.TextState.md) |  |
 | `_pauseSkip` | Boolean |  |
 | `_showFast` | Boolean |  |
 | `_lineShowFast` | Boolean |  |
-| `_goldWindow` | [Window_Gold](Window_Gold.html) |  |
-| `_choiceWindow` | [Window_ChoiceList](Window_ChoiceList.html) |  |
-| `_numberWindow` | [Window_NumberInput](Window_NumberInput.html) |  |
-| `_itemWindow` | [Window_EventItem](Window_EventItem.html) |  |
+| `_goldWindow` | [Window_Gold](Window_Gold.md) |  |
+| `_choiceWindow` | [Window_ChoiceList](Window_ChoiceList.md) |  |
+| `_numberWindow` | [Window_NumberInput](Window_NumberInput.md) |  |
+| `_itemWindow` | [Window_EventItem](Window_EventItem.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Window_Base](Window_Base.html)
+* [Window_Base](Window_Base.md)
 
 ### Methods
 
 #### activate ()
 
-Activates the window, allowing it to be processed and to update.
+
+Activates the window, allowing it to be processed and to update.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -44,16 +45,17 @@ The window for displaying text messages.
                     </ul>
                 </dd>
             </dl>
+[String](String.md)
+#### actorName (actorIndex) → {[String](String.md)}
 
-#### actorName (actorIndex) → {[String](String.html)}
 
-Returns the actor name given an index; the index starts from 1.
+Returns the actor name given an index; the index starts from 1.
 
 ##### Parameters:
 
-| Name | Type | Description |
+| Name | Type | D[Number](Number.md)
 | --- | --- | --- |
-| `actorIndex` | [Number](Number.html) |  |
+| `actorIndex` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -77,7 +79,8 @@ The window for displaying text messages.
 
 #### addChild (child) → {Object}
 
-[super] Adds a child to the container.
+
+[super] Adds a child to the container.
 
 ##### Parameters:
 
@@ -98,7 +101,8 @@ The window for displaying text messages.
 
 ##### Returns:
 
-The child that was added
+
+The child that was added
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -108,14 +112,15 @@ The window for displaying text messages.
 
 #### addChildAt (child, index) → {Object}
 
-[super] Adds a child to the container at a specified index.
 
-##### Parameters:
+[super] Adds a child to the container at a specified index.
+
+##### Parame[Number](Number.md)
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object | The child to add |
-| `index` | [Number](Number.html) | The index to place the child in |
+| `index` | [Number](Number.md) | The index to place the child in |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -130,7 +135,8 @@ The window for displaying text messages.
 
 ##### Returns:
 
-The child that was added
+
+The child that was added
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -140,7 +146,8 @@ The window for displaying text messages.
 
 #### addChildToBack (child) → {Object}
 
-Adds a child between the background and contents.
+
+Adds a child between the background and contents.
 
 ##### Parameters:
 
@@ -161,7 +168,8 @@ The window for displaying text messages.
 
 ##### Returns:
 
-The child that was added
+
+The child that was added
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -171,11 +179,12 @@ The window for displaying text messages.
 
 #### areSettingsChanged () → {Boolean}
 
-Returns true if the message window settings have been changed.
+
+Returns true if the message window settings have been changed.
 <dl>
 </dl>
 
-##### Returns:
+##### Returns:[Number](Number.md)
 
 <dl>
                 <dt> Type </dt>
@@ -183,16 +192,17 @@ The window for displaying text messages.
                     <span>Boolean</span>
                 </dd>
             </dl>
+[MV.TextState](MV.TextState.md)
+#### calcTextHeight (textState, all) → {[Number](Number.md)}
 
-#### calcTextHeight (textState, all) → {[Number](Number.html)}
 
-Calculates the text height of the textState (when using drawTextEx); if all is set to true, all lines of text are calculated, otherwise only a single line is processed.
+Calculates the text height of the textState (when using drawTextEx); if all is set to true, all lines of text are calculated, otherwise only a single line is processed.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 | `all` | Boolean |  |
 
 <dl>
@@ -217,9 +227,10 @@ The window for displaying text messages.
 
 #### canStart () → {Boolean}
 
-Returns true if the message window can start.
+
+Returns true if the message window can start.
 <dl>
-</dl>
+</dl>[Number](Number.md)
 
 ##### Returns:
 
@@ -227,18 +238,19 @@ The window for displaying text messages.
                 <dt> Type </dt>
                 <dd>
                     <span>Boolean</span>
-                </dd>
+        [Number](Number.md)
             </dl>
 
-#### canvasToLocalX (x) → {[Number](Number.html)}
+#### canvasToLocalX (x) → {[Number](Number.md)}
 
-Returns the x coordinate of the mouse to a local window x coordinate.
+
+Returns the x coordinate of the mouse to a local window x coordinate.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -248,7 +260,7 @@ The window for displaying text messages.
                             <a>Window_Base#canvasToLocalX</a>
                         </li>
                     </ul>
-                </dd>
+                </dd>[Number](Number.md)
             </dl>
 
 ##### Returns:
@@ -256,19 +268,20 @@ The window for displaying text messages.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+        [Number](Number.md)Number</a></span>
                 </dd>
             </dl>
 
-#### canvasToLocalY (y) → {[Number](Number.html)}
+#### canvasToLocalY (y) → {[Number](Number.md)}
 
-Returns the y coordinate of the mouse to a local window y coordinate.
+
+Returns the y coordinate of the mouse to a local window y coordinate.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `y` | [Number](Number.html) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -292,7 +305,8 @@ The window for displaying text messages.
 
 #### changePaintOpacity (enabled)
 
-Changes the paintOpacity (the opacity of the text drawn to the window); if true the opacity is set to 255, otherwise the opacity is set to 160.
+
+Changes the paintOpacity (the opacity of the text drawn to the window); if true the opacity is set to 255, otherwise the opacity is set to 160.
 
 ##### Parameters:
 
@@ -305,7 +319,7 @@ The window for displaying text messages.
                 <dd>
                     <ul>
                         <li>
-                            <a>Window_Base#changePaintOpacity</a>
+            [String](String.md)ndow_Base#changePaintOpacity</a>
                         </li>
                     </ul>
                 </dd>
@@ -313,13 +327,14 @@ The window for displaying text messages.
 
 #### changeTextColor (color)
 
-Changes the text color property given a css color string.
+
+Changes the text color property given a css color string.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `color` | [String](String.html) |  |
+| `color` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -341,10 +356,11 @@ The window for displaying text messages.
 
 <dl>
 </dl>
-
+[Number](Number.md)
 #### close ()
 
-Closes the window.
+
+Closes the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -356,13 +372,14 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### contentsHeight () → {[Number](Number.html)}
+#### contentsHeight () → {[Number](Number.md)}
 
-Returns the inner content height of the window.
+
+Returns the inner content height of the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                    <ul>
+                    <ul>[Number](Number.md)
                         <li>
                             <a>Window_Base#contentsHeight</a>
                         </li>
@@ -379,12 +396,13 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### contentsWidth () → {[Number](Number.html)}
+#### contentsWidth () → {[Number](Number.md)}
 
-Returns the inner content width of the window.
+
+Returns the inner content width of the window.
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>
+                <dd>[String](String.md)
                     <ul>
                         <li>
                             <a>Window_Base#contentsWidth</a>
@@ -392,7 +410,7 @@ The window for displaying text messages.
                     </ul>
                 </dd>
             </dl>
-
+[String](String.md)
 ##### Returns:
 
 <dl>
@@ -402,15 +420,16 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### convertEscapeCharacters (text) → {[String](String.html)}
+#### convertEscapeCharacters (text) → {[String](String.md)}
 
-Converts the escape characters and returns the text content after processing the characters.
+
+Converts the escape characters and returns the text content after processing the characters.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.html) |  |
+| `text` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -433,8 +452,9 @@ The window for displaying text messages.
             </dl>
 
 #### createContents ()
+[String](String.md)
 
-Creates the contents of the window; this is the area of the window which text is drawn to.
+Creates the contents of the window; this is the area of the window which text is drawn to.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -448,13 +468,15 @@ The window for displaying text messages.
 
 #### createSubWindows ()
 
-Creates the sub windows for the message window.
+
+Creates the sub windows for the message window.
 <dl>
 </dl>
 
-#### crisisColor () → {[String](String.html)}
+#### crisisColor () → {[String](String.md)}
 
-Returns the crisis color as a css color string.
+
+Returns the crisis color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -467,7 +489,7 @@ The window for displaying text messages.
             </dl>
 
 ##### Returns:
-
+[String](String.md)
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -477,7 +499,8 @@ The window for displaying text messages.
 
 #### deactivate ()
 
-Deactives the window, preventing further processing.
+
+Deactives the window, preventing further processing.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -489,9 +512,10 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### deathColor () → {[String](String.html)}
+#### deathColor () → [String](String.md))}
 
-Returns the death color as a css color string.
+
+Returns the death color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -511,10 +535,11 @@ The window for displaying text messages.
                     <span><a>String</a></span>
                 </dd>
             </dl>
+[String](String.md)
+#### dimColor1 () → {[String](String.md)}
 
-#### dimColor1 () → {[String](String.html)}
 
-Color 1 of the dimmer sprite bitmap. for the gradient.
+Color 1 of the dimmer sprite bitmap. for the gradient.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -535,9 +560,10 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### dimColor2 () → {[String](String.html)}
+#### dimColor2 () → {[String](String.md)}
 
-Color 2 of the dimmer sprite bitmap for the gradient.
+
+Color 2 of the dimmer sprite bitmap for the gradient.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -553,14 +579,15 @@ The window for displaying text messages.
 
 <dl>
                 <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
+            [Game_Actor](Game_Actor.md)
+        [Number](Number.md)String</a></span>
+        [Number](Number.md)
             </dl>
 
 #### doesContinue () → {Boolean}
 
-Returns true if the message window still has text and settings have not changed.
+
+Returns true if the message window still has text and settings have not changed.
 <dl>
 </dl>
 
@@ -575,13 +602,13 @@ The window for displaying text messages.
 
 #### drawActorCharacter (actor, x, y)
 
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+##### Parame[Game_Actor](Game_Actor.md)
+[Number](Number.md)
+| Name |[Number](Number.md)
+| --- | --- [Number](Number.md)
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -596,16 +623,17 @@ The window for displaying text messages.
 
 #### drawActorClass (actor, x, y, width)
 
-Draws the actor class at the specified x and y coordinates within the given width.
 
-##### Parameters:
+Draws the actor class at the specified x and y coordinates within the given width.
 
-| Name | Type | Description |
-| --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+##### Parame[Game_Actor](Game_Actor.md)
+[Number](Number.md)
+| Name |[Number](Number.md)
+| --- | --- [Number](Number.md)
+| `actor` | [[Number](Number.md)r.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -620,17 +648,18 @@ The window for displaying text messages.
 
 #### drawActorFace (actor, x, y, width, height)
 
-Draws the actor face at the specified x and y coordinates within the given width.
 
-##### Parameters:
+Draws the actor face at the specified x and y coordinates within the given width.
 
-| Name | Type | Description |
-| --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
-| `height` | [Number](Number.html) |  |
+##### Parame[Game_Actor](Game_Actor.md)
+[Number](Number.md)
+| Name |[Number](Number.md)
+| --- | --- [Number](Number.md)
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
+| `height` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -645,16 +674,17 @@ The window for displaying text messages.
 
 #### drawActorHp (actor, x, y, width)
 
-Draws the actor hp at the specified x and y coordinates within the given width.
 
-##### Parameters:
-
+Draws the ac[Game_Actor](Game_Actor.md) y coordinates within the given width.
+[Number](Number.md)
+##### Pa[Number](Number.md)
+[Number](Number.md)
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -669,16 +699,17 @@ The window for displaying text messages.
 
 #### drawActorIcons (actor, x, y, width)
 
-Draws the actor icons at the specified x and y coordinates within the given width.
-
+[Game_Actor](Game_Actor.md)
+Draws th[Number](Number.md)specified x and y coordinates within the given width.
+[Number](Number.md)
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -691,17 +722,18 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### drawActorLevel (actor, x, y)
-
-Draws the actor level at the specified x and y coordinates.
+#### drawAct[Game_Actor](Game_Actor.md)
+[Number](Number.md)
+[Number](Number.md)
+Draws the ac[Number](Number.md)ified x and y coordinates.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -714,18 +746,19 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### drawActorMp (actor, x, y, width)
-
-Draws the actor mp at the specified x and y coordinates within the given width.
+#### drawAct[Game_Actor](Game_Actor.md)
+[Number](Number.md)
+[Number](Number.md)
+Draws the ac[Number](Number.md)ed x and y coordinates within the given width.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -737,19 +770,20 @@ The window for displaying text messages.
                     </ul>
                 </dd>
             </dl>
-
-#### drawActorName (actor, x, y, width)
-
-Draws the actor name at the specified x and y coordinates within the given width.
+[Game_Actor](Game_Actor.md)
+#### dra[Number](Number.md) y, width)
+[Number](Number.md)
+[Number](Number.md)
+Draws the actor name at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -760,20 +794,21 @@ The window for displaying text messages.
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            [Game_Actor](Game_Actor.md)
+[Number](Number.md)
+#### dra[Number](Number.md), x, y, width)
+[Number](Number.md)
 
-#### drawActorNickname (actor, x, y, width)
-
-Draws the actor nickname at the specified x and y coordinates within the given width.
+Draws the actor nickname at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -783,21 +818,22 @@ The window for displaying text messages.
                             <a>Window_Base#drawActorNickname</a>
                         </li>
                     </ul>
-                </dd>
-            </dl>
+            [Game_Actor](Game_Actor.md)
+        [Number](Number.md)
+[Number](Number.md)
+#### drawAct[Number](Number.md), x, y, width)
 
-#### drawActorSimpleStatus (actor, x, y, width)
 
-Draws a simple status for the game actor passed into the method at the specified x and y coordinates within the given width.
+Draws a simple status for the game actor passed into the method at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -806,22 +842,23 @@ The window for displaying text messages.
                         <li>
                             <a>Window_Base#drawActorSimpleStatus</a>
                         </li>
-                    </ul>
-                </dd>
-            </dl>
-
+                    [String](String.md)
+                </dd>[Number](Number.md)
+        [Number](Number.md)
+[Number](Number.md)
 #### drawActorTp (actor, x, y, width)
 
-Draws the actor tp at the specified x and y coordinates within the given width.
+
+Draws the actor tp at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -829,23 +866,24 @@ The window for displaying text messages.
                     <ul>
                         <li>
                             <a>Window_Base#drawActorTp</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
+            [Number](Number.md)
+           [String](String.md)
+        [Number](Number.md)
+        [Number](Number.md)
+[Number](Number.md)
 #### drawCharacter (characterName, characterIndex, x, y)
 
-Draws a character (map sprites) at the specified x and y coordinate. CharacterName refers to character spritesheet, and characterIndex refers to the characterIndex on the spritesheet.
+
+Draws a character (map sprites) at the specified x and y coordinate. CharacterName refers to character spritesheet, and characterIndex refers to the characterIndex on the spritesheet.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `characterName` | [String](String.html) |  |
-| `characterIndex` | [Number](Number.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `characterName` | [String](String.md) |  |
+| `characterIndex` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -853,61 +891,63 @@ The window for displaying text messages.
                     <ul>
                         <li>
                             <a>Window_Base#drawCharacter</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+              [Number](Number.md)
+          [Number](Number.md)
+        [Number](Number.md)
+        [Number](Number.md)
+[Number](Number.md)
+#### drawCurr[String](String.md)t, x, y, width)
+[String](String.md)
 
-#### drawCurrencyValue (value, unit, x, y, width)
-
-Draws the currency value given at the specified x and y coordinates within the width given. Useful if you want to write your own custom currency value.
+Draws the currency value given at the specified x and y coordinates within the width given. Useful if you want to write your own custom currency value.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.html) |  |
-| `unit` | [String](String.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `value` | [Number](Number.md) |  |
+| `unit` | [String](String.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                            <a>Window_Base#drawCurrencyValue</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
+               [String](String.md)w_Base#drawCurrencyValue</a>
+                [Number](Number.md)
+        [Number](Number.md)
+        [Number](Number.md)
+            [Number](Number.md)
+[Number](Number.md)
 #### drawCurrentAndMax (current, max, x, y, width, color1, color2)
 
-Draws the current and max number at the specified x and y coordinate within the given width. Color1 represents the current number and color2 represents the max number when the text is drawn.
+
+Draws the current and max number at the specified x and y coordinate within the given width. Color1 represents the current number and color2 represents the max number when the text is drawn.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `current` | [Number](Number.html) |  |
-| `max` | [Number](Number.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
-| `color1` | [String](String.html) |  |
-| `color2` | [String](String.html) |  |
+| `current` | [Number](Number.md) |  |
+| `max` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
+| `color1` | [String](String.md) |  |
+| `color2` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#drawCurrentAndMax</a>
-                        </li>
-                    </ul>
-                </dd>
+        [Number](Number.md)
+        [Number](Number.md)
+            [Number](Number.md)ndow_Base#drawCurrentAndMax</a>
+           [Number](Number.md)
+             [String](String.md)
+             [String](String.md)
             </dl>
 
 #### drawFace (faceName, faceIndex, x, y, width opt, height opt)
@@ -916,44 +956,45 @@ The window for displaying text messages.
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `faceName` | [String](String.html) |  |  |
-| `faceIndex` | [Number](Number.html) |  |  |
-| `x` | [Number](Number.html) |  |  |
-| `y` | [Number](Number.html) |  |  |
-| `width` | [Number](Number.html) | <optional> |  |
-| `height` | [Number](Number.html) | <optional> |  |
+| `faceName` | [String](String.md) |  |  |
+| `faceIndex` | [Number](Number.md) |  |  |
+| `x` | [Number](Number.md) |  |  |
+| `y` | [Number](Number.md) |  |  |
+| `width` | [Number](Number.md) | <optional> |  |
+| `height` | [Number](Number.md) | <optional> |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                            <a>Window_Base#drawFace</a>
-                        </li>
-                    </ul>
+                [Number](Number.md)_Base#drawFace</a>
+        [Number](Number.md)
+        [Number](Number.md)
                 </dd>
             </dl>
 
 #### drawGauge (x, y, width, rate, color1, color2)
 
-Draws a gauge at the specified x and y coordinates within the given width. Color1 and Color2 represent the gradient as css color strings of the gauge.
+
+Draws a gauge at the specified x and y coordinates within the given width. Color1 and Color2 represent the gradient as css color strings of the gauge.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
-| `rate` | [Number](Number.html) |  |
-| `color1` | [String](String.html) |  |
-| `color2` | [String](String.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
+| `rate` | [Number](Number.md) |  |
+| `color1` | [String](String.md) |  |
+| `color2` | [String](String.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
+           [RPG.BaseItem](RPG.BaseItem.md)
+        [Number](Number.md)
+        [Number](Number.md)
+            [Number](Number.md)
                             <a>Window_Base#drawGauge</a>
                         </li>
                     </ul>
@@ -962,15 +1003,16 @@ The window for displaying text messages.
 
 #### drawIcon (iconIndex, x, y)
 
-Draws an icon given the specified iconIndex at the specified x and y coordinates. The Width and Height of the icon is based on the _iconWidth and _iconHeight properties.
+
+Draws an icon given the specified iconIndex at the specified x and y coordinates. The Width and Height of the icon is based on the _iconWidth and _iconHeight properties.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `iconIndex` | [Number](Number.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `iconIndex` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -979,22 +1021,23 @@ The window for displaying text messages.
                         <li>
                             <a>Window_Base#drawIcon</a>
                         </li>
-                    </ul>
-                </dd>
-            </dl>
-
+        [Number](Number.md)
+        [Number](Number.md)
+            </d[Number](Number.md)
+[String](String.md)
 #### drawItemName (item, x, y, width)
 
-Draws the item name at the specified x and y coordinates within the given width.
+
+Draws the item name at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.html[Number](Number.md)
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1002,9 +1045,9 @@ The window for displaying text messages.
                     <ul>
                         <li>
                             <a>Window_Base#drawItemName</a>
-                        </li>
-                    </ul>
-                </dd>
+           [String](String.md)
+        [Number](Number.md)
+        [Number](Number.md)
             </dl>
 
 #### drawMessageFace ()
@@ -1014,18 +1057,19 @@ The window for displaying text messages.
 
 #### drawText (text, x, y, maxWidth, align)
 
-Given text or a number, draws the content to the window's contents layer at the specified x and y coordinate within the max width. The text content can also be aligned with the align property. The possible alignments are: "left", "center", "right".
+
+Given text or a number, draws the content to the window's contents layer at the specified x and y coordinate within the max width. The text content can also be aligned with the align property. The possible alignments are: "left", "center", "right".
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `text` | string |number |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `maxWidth` | [Number](Number.html) |  |
-| `align` | [String](String.html) |  |
-
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `maxWidth` | [Number](Number.md) |  |
+| `align` | [String](String.md) |  |
+[Number](Number.md)
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1033,28 +1077,29 @@ The window for displaying text messages.
                         <li>
                             <a>Window_Base#drawText</a>
                         </li>
-                    </ul>
+               [Number](Number.md)
                 </dd>
             </dl>
 
-#### drawTextEx (text, x, y) → {[Number](Number.html)}
+#### drawTextEx (text, x, y) → {[Number](Number.md)}
 
-Draws text with text codes included; this will draw icons, increase text height, and more.
+
+Draws text with text codes included; this will draw icons, increase text height, and more.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `text` | [String](String.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                            <a>Window_Base#drawTextEx</a>
+                          [String](String.md)TextEx</a>
                         </li>
                     </ul>
                 </dd>
@@ -1069,15 +1114,16 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### fittingHeight (numLines) → {[Number](Number.html)}
+#### fittingHeight (numLines) → {[Number](Number.md)}
 
-Returns the fitting height given a number of lines based on the line height plus standard padding of the window. Default formula: numLines * lineHeight + standardPadding * 2
+
+Returns the fitting height given a number of lines based on the line height plus standard padding of the window. Default formula: numLines * lineHeight + standardPadding * 2
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `numLines` | [Number](Number.html) |  |
+| `numLines` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1099,11 +1145,12 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### gaugeBackColor () → {[String](String.html)}
+#### gaugeBackColor () → {[String](String.md)}
 
-Returns the gauage back color as a css color string.
+
+Returns the gauage back color as a css color string.
 <dl>
-                <dt>Inherited From:</dt>
+                <dt>Inhe[String](String.md)
                 <dd>
                     <ul>
                         <li>
@@ -1111,7 +1158,7 @@ The window for displaying text messages.
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            [Game_Actor](Game_Actor.md)
 
 ##### Returns:
 
@@ -1124,7 +1171,8 @@ The window for displaying text messages.
 
 #### hide ()
 
-Hides the window, making it invisible; the window is not closed when hidden.
+
+Hides the window, making it invisible; the window is not closed when hidden.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1132,13 +1180,14 @@ The window for displaying text messages.
                         <li>
                             <a>Window_Base#hide</a>
                         </li>
-                    </ul>
+                    </ul>[String](String.md)
                 </dd>
             </dl>
 
 #### hideBackgroundDimmer ()
 
-Hides the background dimmer sprite.
+
+Hides the background dimmer sprite.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1150,15 +1199,16 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### hpColor (actor) → {[String](String.html)}
+#### hpColor (actor) → {[String](String.md)}
 
-Returns the hp color as a css string.
 
+Returns the hp color as a css string.
+[String](String.md)
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1180,9 +1230,10 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### hpGaugeColor1 () → {[String](String.html)}
+#### hpGaugeColor1 () → {[String](String.md)}
 
-Returns the hp gauge color 1 as a css color string.
+
+Returns the hp gauge color 1 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1203,9 +1254,10 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### hpGaugeColor2 () → {[String](String.html)}
+#### hpGaugeColor2 () → {[String](String.md)}
 
-Returns the hp gauge color 2 as a css color string.
+
+Returns the hp gauge color 2 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1228,7 +1280,8 @@ The window for displaying text messages.
 
 #### initialize ()
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -1247,11 +1300,12 @@ The window for displaying text messages.
 
 #### isAnySubWindowActive () → {Boolean}
 
-Returns true if any sub window is active.
+
+Returns true if any sub window is active.
 <dl>
 </dl>
 
-##### Returns:
+##### Returns:[MV.TextState](MV.TextState.md)
 
 <dl>
                 <dt> Type </dt>
@@ -1262,7 +1316,8 @@ The window for displaying text messages.
 
 #### isClosed ()
 
-Returns true if the window is completely closed (openness == 0).
+
+Returns true if the window is completely closed (openness == 0).
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1276,7 +1331,8 @@ The window for displaying text messages.
 
 #### isClosing () → {Boolean}
 
-Returns true if the window is currently closing.
+
+Returns true if the window is currently closing.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1299,13 +1355,14 @@ The window for displaying text messages.
 
 #### isEndOfText (textState) → {Boolean}
 
-Returns true if there is no text left to display in the message window.
+
+Returns true if there is no text left to display in the message window.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
 </dl>
@@ -1314,14 +1371,15 @@ The window for displaying text messages.
 
 <dl>
                 <dt> Type </dt>
-                <dd>
+                <dd>[Number](Number.md)
                     <span>Boolean</span>
                 </dd>
             </dl>
 
 #### isOpen ()
 
-Returns true if the window is completely open (openness == 255).
+
+Returns true if the window is completely open (openness == 255).
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1335,7 +1393,8 @@ The window for displaying text messages.
 
 #### isOpening () → {Boolean}
 
-Returns true if the window is currently opening.
+
+Returns true if the window is currently opening.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1358,7 +1417,8 @@ The window for displaying text messages.
 
 #### isTriggered () → {Boolean}
 
-Returns true if the ok or cancel inputs have been triggered multiple times.
+
+Returns true if the ok or cancel inputs have been triggered multiple times.
 <dl>
 </dl>
 
@@ -1371,9 +1431,10 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### lineHeight () → {[Number](Number.html)}
+#### lineHeight () → {[Number](Number.md)}
 
-Returns the standard line height of the current window; default is 36.
+
+Returns the standard line height of the current window; default is 36.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1388,10 +1449,10 @@ The window for displaying text messages.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
+        [Number](Number.md)t>
+        [Number](Number.md)
+            [Number](Number.md)er</a></span>
+             [Number](Number.md)
             </dl>
 
 #### loadMessageFace ()
@@ -1401,9 +1462,10 @@ The window for displaying text messages.
 
 #### loadWindowskin ()
 
-Loads the window skin from the img/system directory.
+
+Loads the window skin from the img/system directory.
 <dl>
-                <dt>Inherited From:</dt>
+                <dt>Inhe[String](String.md)
                 <dd>
                     <ul>
                         <li>
@@ -1411,11 +1473,12 @@ The window for displaying text messages.
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            [Game_Actor](Game_Actor.md)
 
 #### makeFontBigger ()
 
-Makes the font bigger by a value of 12.
+
+Makes the font bigger by a value of 12.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1429,9 +1492,10 @@ The window for displaying text messages.
 
 #### makeFontSmaller ()
 
-Makes the font smaller by a value of 12.
+
+Makes the font smaller by a value of 12.
 <dl>
-                <dt>Inherited From:</dt>
+                <dt>Inh[String](String.md)
                 <dd>
                     <ul>
                         <li>
@@ -1443,17 +1507,18 @@ The window for displaying text messages.
 
 #### move (x, y, width, height)
 
-Sets the x, y, width, and height all at once.
+
+Sets the x, y, width, and height all at once.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) | The x coordinate of the window |
-| `y` | [Number](Number.html) | The y coordinate of the window |
-| `width` | [Number](Number.html) | The width of the window |
-| `height` | [Number](Number.html) | The height of the window |
-
+| `x` | [Number](Number.md) | The x coordinate of the window |
+| `y` | [Number](Number.md) | The y coordinate of the window |
+| `width` | [Number](Number.md) | The width of the window |
+| `height` | [Number](Number.md) | The height of the window |
+[String](String.md)
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1465,17 +1530,18 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### mpColor (actor) → {[String](String.html)}
+#### mpColor (actor) → {[String](String.md)}
 
-Returns the mp color as a css color string.
+
+Returns the mp color as a css color string.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
 
-<dl>
+<dl>[String](String.md)
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -1495,9 +1561,10 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### mpCostColor () → {[String](String.html)}
+#### mpCostColor () → {[String](String.md)}
 
-Returns the mp cost color as a css color string.
+
+Returns the mp cost color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1505,7 +1572,7 @@ The window for displaying text messages.
                         <li>
                             <a>Window_Base#mpCostColor</a>
                         </li>
-                    </ul>
+                [MV.TextState](MV.TextState.md)
                 </dd>
             </dl>
 
@@ -1518,9 +1585,10 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### mpGaugeColor1 () → {[String](String.html)}
+#### mpGaugeColor1 () → {[String](String.md)}
+[Number](Number.md)
 
-Returns the mp gauge color 1 as a css color string.
+Returns the mp gauge color 1 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1538,12 +1606,13 @@ The window for displaying text messages.
                 <dt> Type </dt>
                 <dd>
                     <span><a>String</a></span>
-                </dd>
+                [MV.TextState](MV.TextState.md)
             </dl>
 
-#### mpGaugeColor2 () → {[String](String.html)}
+#### mpGaugeColor2 () → {[String](String.md)}
 
-Returns the mp gauge color 2 as a css color string.
+[String](String.md)
+Returns the mp gauge color 2 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1565,14 +1634,15 @@ The window for displaying text messages.
             </dl>
 
 #### needsNewPage (textState) → {Boolean}
+[Number](Number.md)
 
-Returns true if the text state needs a new page to display text.
+Returns true if the text state needs a new page to display text.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
 </dl>
@@ -1585,8 +1655,8 @@ The window for displaying text messages.
                     <span>Boolean</span>
                 </dd>
             </dl>
-
-#### newLineX () → {[Number](Number.html)}
+[MV.TextState](MV.TextState.md)
+#### newLineX () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -1606,14 +1676,15 @@ The window for displaying text messages.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
 </dl>
 
-#### normalColor () → {[String](String.html)}
+#### normalColor () → {[String](String.md)}
 
-Returns the normal color as a css color string.
+
+Returns the normal color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1634,9 +1705,10 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### numVisibleRows () → {[Number](Number.html)}
+#### numVisibleRows () → {[Number](Number.md)}
 
-Returns the number of visible rows within the message window.
+
+Returns the number of visible rows within the message window.
 <dl>
 </dl>
 
@@ -1654,8 +1726,8 @@ The window for displaying text messages.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| --- | --- |[Number](Number.md)
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1667,16 +1739,17 @@ The window for displaying text messages.
                     </ul>
                 </dd>
             </dl>
-
+[String](String.md)
 #### obtainEscapeParam (textState) → {number|string}
 
-Obtains the escape parameters from text codes in the text state when drawTextEx is used to draw text.
+
+Obtains the escape parameters from text codes in the text state when drawTextEx is used to draw text.
 
 ##### Parameters:
 
-| Name | Type | Description |
+| Name | Type | Descrip[Number](Number.md)
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1696,17 +1769,19 @@ The window for displaying text messages.
                 <dd>
                     <span>number</span> | <span>string</span>
                 </dd>
-            </dl>
+            </dl>[String](String.md)
 
 #### onEndOfText ()
 
-Handler for when there is no text left to display within the message window.
+
+Handler for when there is no text left to display within the message window.
 <dl>
 </dl>
 
 #### open ()
 
-Opens the window.
+
+Opens the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1717,16 +1792,17 @@ The window for displaying text messages.
                     </ul>
                 </dd>
             </dl>
-
+[String](String.md)
 #### paramchangeTextColor (change)
 
-Changes the text color based on the powerUpColor, powerDownColor and normal color. powerUpColor is any number greater than 0, powerDownColor is any color less than 0, otherwise normal color is returned.
+
+Changes the text color based on the powerUpColor, powerDownColor and normal color. powerUpColor is any number greater than 0, powerDownColor is any color less than 0, otherwise normal color is returned.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `change` | [Number](Number.html) |  |
+| `change` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1739,15 +1815,16 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### partyMemberName (partyMemberIndex) → {[String](String.html)}
+#### partyMemberName (pa[String](String.md)tring](String.md)}
 
-Returns a party member name given an index; the index starts from 1.
+
+Returns a party member name given an index; the index starts from 1.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `partyMemberIndex` | [Number](Number.html) |  |
+| `partyMemberIndex` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1769,9 +1846,10 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### pendingColor () → {[String](String.html)}
+#### pendingColo[MV.TextState](MV.TextState.md)
 
-Returns the pending color as a css color string.
+
+Returns the pending color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1789,12 +1867,13 @@ The window for displaying text messages.
                 <dt> Type </dt>
                 <dd>
                     <span><a>String</a></span>
-                </dd>
-            </dl>
+                [Number](Number.md)
+            </dl[MV.TextState](MV.TextState.md)
 
-#### powerDownColor () → {[String](String.html)}
+#### powerDownColor () → {[String](String.md)}
 
-Returns the power down color as a css color string.
+
+Returns the power down color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1808,16 +1887,17 @@ The window for displaying text messages.
 
 ##### Returns:
 
-<dl>
-                <dt> Type </dt>
+<dl>[String](String.md)
+                [MV.TextState](MV.TextState.md)
                 <dd>
                     <span><a>String</a></span>
                 </dd>
             </dl>
 
-#### powerUpColor () → {[String](String.html)}
+#### powerUpColor () → {[String](String.md)}
 
-Returns the power up color as a css color string.
+
+Returns the power up color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1827,7 +1907,7 @@ The window for displaying text messages.
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            </dl[MV.TextState](MV.TextState.md)
 
 ##### Returns:
 
@@ -1840,13 +1920,14 @@ The window for displaying text messages.
 
 #### processCharacter (textState)
 
-Process each character in the text when drawTextEx is used to draw text.
+
+Process each character in the text when drawTextEx is used to draw text.
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| --- | --- | --[MV.TextState](MV.TextState.md)
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1861,14 +1942,15 @@ The window for displaying text messages.
 
 #### processDrawIcon (iconIndex, textState)
 
-Processes drawing an icon when drawTextEx is used for drawing text.
+
+Processes drawing an icon when drawTextEx is used for drawing text.
 
 ##### Parameters:
 
-| Name | Type | Description |
+| Name | Type | [MV.TextState](MV.TextState.md)
 | --- | --- | --- |
-| `iconIndex` | [Number](Number.html) |  |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `iconIndex` | [Number](Number.md) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1887,8 +1969,8 @@ The window for displaying text messages.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [String](String.html) |  |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `code` | [String](String.md) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -1907,7 +1989,7 @@ The window for displaying text messages.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -1926,12 +2008,12 @@ The window for displaying text messages.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
-                    <ul>
+            [Number](Number.md)
                         <li>
                             <a>Window_Base#processNewPage</a>
                         </li>
@@ -1941,13 +2023,14 @@ The window for displaying text messages.
 
 #### processNormalCharacter (textState)
 
-Processes the normal characters in the text when drawTextEx is used to draw text. Normal characters are letters and numbers.
+
+Processes the normal characters in the text when drawTextEx is used to draw text. Normal characters are letters and numbers.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1962,7 +2045,8 @@ The window for displaying text messages.
 
 #### refreshDimmerBitmap ()
 
-Refreshes the bitmap attached to the dimmer sprite based on the window dimensions.
+
+Refreshes the bitmap attached to the dimmer sprite based on the window dimensions.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1976,7 +2060,8 @@ The window for displaying text messages.
 
 #### removeChild (child) → {Object}
 
-[super] Removes a child to the container.
+
+[super] Removes a child to the container.
 
 ##### Parameters:
 
@@ -1997,38 +2082,41 @@ The window for displaying text messages.
 
 ##### Returns:
 
-The child that was removed
+
+The child that was removed
 <dl>
                 <dt> Type </dt>
-                <dd>
+           [Number](Number.md)
                     <span>Object</span>
                 </dd>
             </dl>
 
 #### removeChildAt (index) → {Object}
 
-[super] Removes a child from the specified index position.
+
+[super] Removes a child from the specified index position.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) | The index to get the child from |
+| `index` | [Number](Number.md) | The index to get the child from |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                            <a>Window#removeChildAt</a>
-                        </li>
-                    </ul>
-                </dd>
+        [Number](Number.md)a>Window#removeChildAt</a>
+        [Number](Number.md)
+            [Number](Number.md)
+             [Number](Number.md)
             </dl>
 
 ##### Returns:
 
-The child that was removed
+
+The child that was removed
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -2038,13 +2126,14 @@ The window for displaying text messages.
 
 #### reserveFaceImages ()
 
-Reverses the face images of the game party members.
+
+Reverses the face images of the game party members.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#reserveFaceImages</a>
+        [Number](Number.md)
+        [Number](Number.md)
+        [Number](Number.md)a>Window_Base#reserveFaceImages</a>
                         </li>
                     </ul>
                 </dd>
@@ -2052,7 +2141,8 @@ The window for displaying text messages.
 
 #### resetFontSettings ()
 
-Resets the font settings of the window back to the default.
+
+Resets the font settings of the window back to the default.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2066,7 +2156,8 @@ The window for displaying text messages.
 
 #### resetTextColor ()
 
-Resets the text color of the window back to the default.
+
+Resets the text color of the window back to the default.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2080,13 +2171,14 @@ The window for displaying text messages.
 
 #### setBackgroundType (type)
 
-Sets the background type of the window. 0 is 255 window opacity (standard). 1 is the window with background dimmer. Any other number changes the opacity to 0.
 
-##### Parameters:
+Sets the background type of the window. 0 is 255 window opacity (standard). 1 is the window with background dimmer. Any other number changes the opacity to 0.
+
+##### Parameters:[Number](Number.md)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `type` | [Number](Number.html) |  |
+| `type` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2101,16 +2193,17 @@ The window for displaying text messages.
 
 #### setCursorRect (x, y, width, height)
 
-Sets the position of the command cursor.
+
+Sets the position of the command cursor.
 
 ##### Parameters:
-
+[String](String.md)
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) | The x coordinate of the cursor |
-| `y` | [Number](Number.html) | The y coordinate of the cursor |
-| `width` | [Number](Number.html) | The width of the cursor |
-| `height` | [Number](Number.html) | The height of the cursor |
+| `x` | [Number](Number.md) | The x coordinate of the cursor |
+| `y` | [Number](Number.md) | The y coordinate of the cursor |
+| `width` | [Number](Number.md) | The width of the cursor |
+| `height` | [Number](Number.md) | The height of the cursor |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2125,15 +2218,16 @@ The window for displaying text messages.
 
 #### setTone (r, g, b)
 
-Changes the color of the background.
 
+Changes the color of the background.
+[Number](Number.md)
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `r` | [Number](Number.html) | The red value in the range (-255, 255) |
-| `g` | [Number](Number.html) | The green value in the range (-255, 255) |
-| `b` | [Number](Number.html) | The blue value in the range (-255, 255) |
+| `r` | [Number](Number.md) | The red value in the range (-255, 255) |
+| `g` | [Number](Number.md) | The green value in the range (-255, 255) |
+| `b` | [Number](Number.md) | The blue value in the range (-255, 255) |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2148,7 +2242,8 @@ The window for displaying text messages.
 
 #### show ()
 
-Shows the window, making it visible.
+
+Shows the window, making it[Number](Number.md)
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2162,7 +2257,8 @@ The window for displaying text messages.
 
 #### showBackgroundDimmer ()
 
-Shows the background dimmer sprite.
+
+Shows the background dimmer sprite.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2174,9 +2270,10 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### standardBackOpacity () → {[Number](Number.html)}
+#### standardBackOpacity () → {[Number](Number.md)}
 
-Returns the standard back opacity of the window; this is the opacity of the area behind the window's text content. Default is 192.
+
+Returns the standard back opacity of the window; this is the opacity of the area behind the window's text content. Default is 192.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2197,17 +2294,18 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### standardFontFace () → {[String](String.html)}
+#### standardFontFace () → {[String](String.md)}
 
-Returns the standard font face of the game based on what language the game is in.
+
+Returns the standard font face of the game based on what language the game is in.
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>
+            [Number](Number.md)
                     <ul>
                         <li>
                             <a>Window_Base#standardFontFace</a>
                         </li>
-                    </ul>
+                    </[Array](Array.md)[Window_Base](Window_Base.md)
                 </dd>
             </dl>
 
@@ -2220,9 +2318,10 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### standardFontSize () → {[Number](Number.html)}
+#### standardFontSize () → {[Number](Number.md)}
 
-Returns the standard font size of the text in window; default is 28.
+[String](String.md)
+Returns the standard font size of the text in window; default is 28.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2243,9 +2342,10 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### standardPadding () → {[Number](Number.html)}
+#### standardPadding () → {[Number](Number.md)}
 
-Returns the standard padding of the window; default is 18.
+
+Returns the standard padding of the window; default is 18.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2257,7 +2357,7 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-##### Returns:
+##### Re[Number](Number.md)
 
 <dl>
                 <dt> Type </dt>
@@ -2279,35 +2379,39 @@ The window for displaying text messages.
                     <span>Boolean</span>
                 </dd>
             </dl>
-
+[Number](Number.md)
 #### startMessage ()
 
-Starts the displaying of the message within the message window.
+
+Starts the displaying of the message within the message window.
 <dl>
 </dl>
 
 #### startPause ()
 
-Starts a pause for the message window; this will only be lifted if the user presses a button.
+
+Starts a pause for the message window; this will only be lifted if the user presses a button.
 <dl>
 </dl>
 
 #### startWait (count)
 
-Starts a wait for the message window.
+
+Starts a wait for the message window.
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `count` | [Number](Number.html) |  |
+| --- | --- | --- |[Number](Number.md)
+| `count` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
-#### subWindows () → {[Array](Array.html).<[Window_Base](Window_Base.html)>}
+#### subWindows () → {[Array](Array.md).<[Window_Base](Window_Base.md)>}
 
-Returns the sub windows attached to the message window.
+[String](String.md)
+Returns the sub windows attached to the message window.
 <dl>
 </dl>
 
@@ -2320,14 +2424,15 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### systemColor () → {[String](String.html)}
+#### systemColor () → {[String](String.md)}
 
-Returns the system color as a css color string.
+
+Returns the system color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
+                        [String](String.md)
                             <a>Window_Base#systemColor</a>
                         </li>
                     </ul>
@@ -2335,7 +2440,7 @@ The window for displaying text messages.
             </dl>
 
 ##### Returns:
-
+[Game_Actor](Game_Actor.md)
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -2345,19 +2450,21 @@ The window for displaying text messages.
 
 #### terminateMessage ()
 
-Terminates the message and closes the gold and message window.
+
+Terminates the message and closes the gold and message window.
 <dl>
 </dl>
 
 #### textColor (n) → {*}
 
-Returns a text color given a numbered index as a css color string; this index maps directly to the img/system/window.png colors by default.
+
+Returns a text color given a numbered index as a css color string; this index maps directly to the img/system/window.png colors by default.
 
 ##### Parameters:
 
-| Name | Type | Description |
+| Name | Type | Descrip[String](String.md)
 | --- | --- | --- |
-| `n` | [Number](Number.html) |  |
+| `n` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2378,10 +2485,11 @@ The window for displaying text messages.
                     <span>*</span>
                 </dd>
             </dl>
+[String](String.md)
+#### textPadding () → {[Number](Number.md)}
 
-#### textPadding () → {[Number](Number.html)}
 
-Returns the text padding of the window; default is 6.
+Returns the text padding of the window; default is 6.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2400,17 +2508,18 @@ The window for displaying text messages.
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
-            </dl>
+            </dl>[String](String.md)
 
-#### textWidth (text) → {[Number](Number.html)}
+#### textWidth (text) → {[Number](Number.md)}
 
-Calculates the width of a text string and returns a number.
+
+Calculates the width of a text string and returns a number.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.html) |  |
+| `text` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2422,7 +2531,7 @@ The window for displaying text messages.
                     </ul>
                 </dd>
             </dl>
-
+[Number](Number.md)
 ##### Returns:
 
 <dl>
@@ -2432,15 +2541,16 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### tpColor (actor) → {[String](String.html)}
+#### tpColor (actor) → {[String](String.md)}
 
-Returns the tp color as a css color string.
+
+Returns the tp color as a css color string.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2462,9 +2572,10 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### tpCostColor () → {[String](String.html)}
+#### tpCostColor () → {[String](String.md)}
 
-Returns the tp cost color as a css color string.
+
+Returns the tp cost color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2476,7 +2587,7 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-##### Returns:
+##### Returns:[Number](Number.md)
 
 <dl>
                 <dt> Type </dt>
@@ -2485,9 +2596,10 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### tpGaugeColor1 () → {[String](String.html)}
+#### tpGaugeColor1 () → {[String](String.md)}
 
-Returns the tp gauge color 1 as a css color string.
+
+Returns the tp gauge color 1 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2508,9 +2620,10 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### tpGaugeColor2 () → {[String](String.html)}
+#### tpGaugeColor2 () → {[String](String.md)}
 
-Returns tp gauge color 2 as a css color string.
+
+Returns tp gauge color 2 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2531,9 +2644,10 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### translucentOpacity () → {[Number](Number.html)}
+#### translucentOpacity () → {[Number](Number.md)}
 
-Returns the translucentOpacity for the window; The default is 160.
+
+Returns the translucentOpacity for the window; The default is 160.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2569,13 +2683,15 @@ The window for displaying text messages.
 
 #### updateBackground ()
 
-Updates the background of the message window.
+
+Updates the background of the message window.
 <dl>
 </dl>
 
 #### updateBackgroundDimmer ()
 
-Updates the background dimmer sprite opacity based on the openness of the window.
+
+Updates the background dimmer sprite opacity based on the openness of the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2587,9 +2703,10 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### updateBackOpacity () → {[Number](Number.html)}
+#### updateBackOpacity () → {[Number](Number.md)}
 
-Returns the inner content width of the window.
+
+Returns the inner content width of the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2610,9 +2727,10 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### updateClose ()
+#### updateClose ()[Number](Number.md)
 
-Updates the openness of the window when the _closing property is set to true. Openness is decreased.
+
+Updates the openness of the window when the _closing property is set to true. Openness is decreased.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2624,9 +2742,10 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### updateInput () → {Boolean}
+#### updateInput () → {[Number](Number.md)
 
-Updates input when the message window is processing.
+
+Updates input when the message window is processing.
 <dl>
 </dl>
 
@@ -2646,7 +2765,8 @@ The window for displaying text messages.
 
 #### updateMessage () → {Boolean}
 
-Updates the message.
+
+Updates the message.
 <dl>
 </dl>
 
@@ -2661,7 +2781,8 @@ The window for displaying text messages.
 
 #### updateOpen ()
 
-Updates the openness of the window when the _opening property is set to true. Openness is increased.
+
+Updates the openness of the window when the _opening property is set to true. Openness is increased.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2675,7 +2796,8 @@ The window for displaying text messages.
 
 #### updatePadding ()
 
-Updates the window padding based on the standardPadding method.
+
+Updates the window padding based on the standardPadding method.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2689,7 +2811,8 @@ The window for displaying text messages.
 
 #### updatePlacement ()
 
-Updates the placement of the message window.
+
+Updates the placement of the message window.
 <dl>
 </dl>
 
@@ -2700,7 +2823,8 @@ The window for displaying text messages.
 
 #### updateTone ()
 
-Updates the tone of the window based on the game system window tone defined in the database.
+
+Updates the tone of the window based on the game system window tone defined in the database.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2714,7 +2838,8 @@ The window for displaying text messages.
 
 #### updateWait () → {Boolean}
 
-Updates the wait of the message window.
+
+Updates the wait of the message window.
 <dl>
 </dl>
 
@@ -2727,9 +2852,10 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### windowHeight () → {[Number](Number.html)}
+#### windowHeight () → {[Number](Number.md)}
 
-Returns the height of the window.
+
+Returns the height of the window.
 <dl>
 </dl>
 
@@ -2742,9 +2868,10 @@ The window for displaying text messages.
                 </dd>
             </dl>
 
-#### windowWidth () → {[Number](Number.html)}
+#### windowWidth () → {[Number](Number.md)}
 
-Returns the width of the window.
+
+Returns the width of the window.
 <dl>
 </dl>
 
@@ -2755,7 +2882,9 @@ The window for displaying text messages.
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
-            </dl>
+            </dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

@@ -4,38 +4,38 @@
 
 #### (abstract) new Window_Selectable (x, y, width, height, height)
 
-The window class with cursor movement and scroll functions. Super class of [Window_BattleEnemy](Window_BattleEnemy.html), [Window_BattleLog](Window_BattleLog.html), [Window_DebugEdit](Window_DebugEdit.html), [Window_DebugRange](Window_DebugRange.html), [Window_EquipSlot](Window_EquipSlot.html), [Window_NameInput](Window_NameInput.html), [Window_NumberInput](Window_NumberInput.html), [Window_SavefileList](Window_SavefileList.html), [Window_ShopBuy](Window_ShopBuy.html), [Window_ShopNumber](Window_ShopNumber.html), [Window_Status](Window_Status.html) and [Window_BattleStatus](Window_BattleStatus.html), [Window_MenuStatus](Window_MenuStatus.html), [Window_SkillList](Window_SkillList.html) and [Window_ItemList](Window_ItemList.html) and [Window_Command](Window_Command.html)
+The window class with cursor movement and scroll functions. Super class of [Window_BattleEnemy](Window_BattleEnemy.md), [Window_BattleLog](Window_BattleLog.md), [Window_DebugEdit](Window_DebugEdit.md), [Window_DebugRange](Window_DebugRange.md), [Window_EquipSlot](Window_EquipSlot.md), [Window_NameInput](Window_NameInput.md), [Window_NumberInput](Window_NumberInput.md), [Window_SavefileList](Window_SavefileList.md), [Window_ShopBuy](Window_ShopBuy.md), [Window_ShopNumber](Window_ShopNumber.md), [Window_Status](Window_Status.md) and [Window_BattleStatus](Window_BattleStatus.md), [Window_MenuStatus](Window_MenuStatus.md), [Window_SkillList](Window_SkillList.md) and [Window_ItemList](Window_ItemList.md) and [Window_Command](Window_Command.md)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
-| `height` | [Number](Number.html) |  |
-| `height` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
+| `height` | [Number](Number.md) |  |
+| `height` | [Number](Number.md) |  |
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_index` | [Number](Number.html) | this is used to select items from the list within the window. |
+| `_index` | [Number](Number.md) | this is used to select items from the list within the window. |
 | `_cursorFixed` | Boolean | The boolean property that determines if the cursor is fixed(locked to a position). |
 | `_cursorAll` | Boolean |  |
-| `_stayCount` | [Number](Number.html) |  |
+| `_stayCount` | [Number](Number.md) |  |
 | `_helpWindow` | * |  |
 | `_handlers` | Object |  |
 | `_touching` | Boolean |  |
-| `_scrollX` | [Number](Number.html) |  |
-| `_scrollY` | [Number](Number.html) |  |
+| `_scrollX` | [Number](Number.md) |  |
+| `_scrollY` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Window_Base](Window_Base.html)
+* [Window_Base](Window_Base.md)
 
 ### Methods
 
@@ -52,15 +52,16 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### actorName (actorIndex) → {[String](String.html)}
+#### actorName (actorIndex) → {[String](String.md)}
 
-Returns the actor name given an index; the index starts from 1.
+
+Returns the actor name given an index; the index starts from 1.
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `actorIndex` | [Number](Number.html) |  |
+| --- | --- | ---[Number](Number.md)
+| `actorIndex` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -84,7 +85,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### addChild (child) → {Object}
 
-[super] Adds a child to the container.
+
+[super] Adds a child to the container.
 
 ##### Parameters:
 
@@ -105,7 +107,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 ##### Returns:
 
-The child that was added
+
+The child that was added
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -115,14 +118,15 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### addChildAt (child, index) → {Object}
 
-[super] Adds a child to the container at a specified index.
+
+[super] Adds a child to the container at a specified index.
 
 ##### Parameters:
-
+[Number](Number.md)
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object | The child to add |
-| `index` | [Number](Number.html) | The index to place the child in |
+| `index` | [Number](Number.md) | The index to place the child in |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -137,7 +141,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 ##### Returns:
 
-The child that was added
+
+The child that was added
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -147,7 +152,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### addChildToBack (child) → {Object}
 
-Adds a child between the background and contents.
+
+Adds a child between the background and contents.
 
 ##### Parameters:
 
@@ -168,37 +174,39 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 ##### Returns:
 
-The child that was added
-<dl>
+
+The child that was added
+<dl>[Number](Number.md)
                 <dt> Type </dt>
                 <dd>
                     <span>Object</span>
                 </dd>
             </dl>
 
-#### bottomRow () → {[Number](Number.html)}
+#### bottomRow () → {[Number](Number.md)}
 
 <dl>
 </dl>
 
 ##### Returns:
 
-<dl>
+<dl>[Number](Number.md)
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
             </dl>
 
-#### calcTextHeight (textState, all) → {[Number](Number.html)}
+#### calcTextHeight (textState, all) → {[Number](Number.md)}
+[MV.TextState](MV.TextState.md)
 
-Calculates the text height of the textState (when using drawTextEx); if all is set to true, all lines of text are calculated, otherwise only a single line is processed.
+Calculates the text height of the textState (when using drawTextEx); if all is set to true, all lines of text are calculated, otherwise only a single line is processed.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 | `all` | Boolean |  |
 
 <dl>
@@ -224,7 +232,7 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 #### callCancelHandler ()
 
 <dl>
-</dl>
+</dl>[String](String.md)
 
 #### callHandler (symbol)
 
@@ -232,14 +240,15 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `symbol` | [String](String.html) |  |
+| `symbol` | [String](String.md) |  |
 
 <dl>
 </dl>
 
 #### callOkHandler ()
 
-Calls the ok handler and begins processing confirmation of selection.
+
+Calls the ok handler and be[Number](Number.md)rmation of selection.
 <dl>
 </dl>
 
@@ -247,16 +256,17 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 <dl>
 </dl>
+[Number](Number.md)
+#### canvasToLocalX (x) → {[Number](Number.md)}
 
-#### canvasToLocalX (x) → {[Number](Number.html)}
 
-Returns the x coordinate of the mouse to a local window x coordinate.
+Returns the x coordinate of the mouse to a local window x coordinate.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -268,7 +278,7 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                     </ul>
                 </dd>
             </dl>
-
+[Number](Number.md)
 ##### Returns:
 
 <dl>
@@ -276,17 +286,18 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
-            </dl>
+        [Number](Number.md)
 
-#### canvasToLocalY (y) → {[Number](Number.html)}
+#### canvasToLocalY (y) → {[Number](Number.md)}
 
-Returns the y coordinate of the mouse to a local window y coordinate.
+
+Returns the y coordinate of the mouse to a local window y coordinate.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `y` | [Number](Number.html) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -310,7 +321,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### changePaintOpacity (enabled)
 
-Changes the paintOpacity (the opacity of the text drawn to the window); if true the opacity is set to 255, otherwise the opacity is set to 160.
+
+Changes the paintOpacity (the opacity of the text drawn to the window); if true the opacity is set to 255, otherwise the opacity is set to 160.
 
 ##### Parameters:
 
@@ -325,25 +337,26 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                         <li>
                             <a>Window_Base#changePaintOpacity</a>
                         </li>
-                    </ul>
+            [String](String.md)
                 </dd>
             </dl>
 
 #### changeTextColor (color)
 
-Changes the text color property given a css color string.
+
+Changes the text color property given a css color string.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `color` | [String](String.html) |  |
+| `color` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
+            [Number](Number.md)
                             <a>Window_Base#changeTextColor</a>
                         </li>
                     </ul>
@@ -356,14 +369,15 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 #### close ()
+[Number](Number.md)
 
-Closes the window.
+Closes the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -375,15 +389,16 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### contentsHeight () → {[Number](Number.html)}
+#### contentsHeight () → {[Number](Number.md)}
 
-Returns the inner content height of the window.
+
+Returns the inner content height of the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                            <a>Window_Base#contentsHeight</a>
+                         [Number](Number.md)tentsHeight</a>
                         </li>
                     </ul>
                 </dd>
@@ -398,14 +413,15 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### contentsWidth () → {[Number](Number.html)}
+#### contentsWidth () → {[Number](Number.md)}
 
-Returns the inner content width of the window.
+
+Returns the inner content width of the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
+                        <li>[String](String.md)
                             <a>Window_Base#contentsWidth</a>
                         </li>
                     </ul>
@@ -413,7 +429,7 @@ The window class with cursor movement and scroll functions. Super class of [Wind
             </dl>
 
 ##### Returns:
-
+[String](String.md)
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -421,15 +437,16 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### convertEscapeCharacters (text) → {[String](String.html)}
+#### convertEscapeCharacters (text) → {[String](String.md)}
 
-Converts the escape characters and returns the text content after processing the characters.
+
+Converts the escape characters and returns the text content after processing the characters.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.html) |  |
+| `text` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -448,12 +465,13 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 <dt> Type </dt>
                 <dd>
                     <span><a>String</a></span>
-                </dd>
+                </dd>[String](String.md)
             </dl>
 
 #### createContents ()
 
-Creates the contents of the window; this is the area of the window which text is drawn to.
+
+Creates the contents of the window; this is the area of the window which text is drawn to.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -465,9 +483,10 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### crisisColor () → {[String](String.html)}
+#### crisisColor () → {[String](String.md)}
 
-Returns the crisis color as a css color string.
+
+Returns the crisis color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -504,7 +523,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### cursorDown (wrap)
 
-Moves the cursor down; if wrap is passed as true, then it will return to the top when at the end of the list.
+
+Moves the cursor down; if wrap is passed as true, then it will return to the top when at the end of the list.
 
 ##### Parameters:
 
@@ -517,7 +537,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### cursorFixed () → {Boolean}
 
-Returns true if the _cursorFixed property is true; this means the cursor is locked to a position.
+
+Returns true if the _cursorFixed property is true; this means the cursor is locked to a position.
 <dl>
 </dl>
 
@@ -564,9 +585,10 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### cursorUp (wrap)
 
-Moves the cursor up; if wrap is passed as true, then it will return to the bottom when at the top of the list.
 
-##### Parameters:
+Moves the cursor up; if wrap is passed as true, then it will return to the bottom when at the top of the list.
+
+##### Parameters:[String](String.md)
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -588,13 +610,14 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### deathColor () → {[String](String.html)}
+#### deathColor () → {[String](String.md)}
 
-Returns the death color as a css color string.
+
+Returns the death color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                    <ul>
+                    <[String](String.md)
                         <li>
                             <a>Window_Base#deathColor</a>
                         </li>
@@ -613,13 +636,15 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### deselect ()
 
-Deselects the currently selected index.
+
+Deselects the currently selected index.
 <dl>
 </dl>
+[String](String.md)
+#### dimColor1 () → {[String](String.md)}
 
-#### dimColor1 () → {[String](String.html)}
 
-Color 1 of the dimmer sprite bitmap. for the gradient.
+Color 1 of the dimmer sprite bitmap. for the gradient.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -640,12 +665,13 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### dimColor2 () → {[String](String.html)}
+#### dimColor2 () → {[String](String.md)}
 
-Color 2 of the dimmer sprite bitmap for the gradient.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
+
+Color 2 of the dimmer sprite bitmap for the gradient.
+<dl>[Game_Actor](Game_Actor.md)
+        [Number](Number.md) From:</dt>
+        [Number](Number.md)
                     <ul>
                         <li>
                             <a>Window_Base#dimColor2</a>
@@ -666,12 +692,12 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 #### drawActorCharacter (actor, x, y)
 
 ##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+[Game_Actor](Game_Actor.md)
+| Name |[Number](Number.md)
+| --- | [Number](Number.md)
+| `actor` | [Number](Number.md)or.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -686,16 +712,17 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawActorClass (actor, x, y, width)
 
-Draws the actor class at the specified x and y coordinates within the given width.
+
+Draws the actor class at the specified x and y coordinates within the given width.
 
 ##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+[Game_Actor](Game_Actor.md)
+| Name |[Number](Number.md)
+| --- | [Number](Number.md)
+| `actor` | [Number](Number.md)or.md) |  |
+| `x` | [Numb[Number](Number.md)
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -710,17 +737,18 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawActorFace (actor, x, y, width, height)
 
-Draws the actor face at the specified x and y coordinates within the given width.
+
+Draws the actor face at the specified x and y coordinates within the given width.
 
 ##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
-| `height` | [Number](Number.html) |  |
+[Game_Actor](Game_Actor.md)
+| Name |[Number](Number.md)
+| --- | [Number](Number.md)
+| `actor` | [Number](Number.md)or.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
+| `height` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -735,16 +763,17 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawActorHp (actor, x, y, width)
 
-Draws the actor hp at the specified x and y coordinates within the given width.
 
-##### Parameters:
-
-| Name | Type | Description |
+Draws the actor hp at the specified x and y coordinates within the given width.
+[Game_Actor](Game_Actor.md)
+##### Pa[Number](Number.md)
+[Number](Number.md)
+| Name | Typ[Number](Number.md)
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -759,16 +788,17 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawActorIcons (actor, x, y, width)
 
-Draws the actor icons at the specified x and y coordinates within the given width.
 
-##### Parameters:
+Draws the ac[Game_Actor](Game_Actor.md)and y coordinates within the given width.
+[Number](Number.md)
+##### Pa[Number](Number.md)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -782,16 +812,17 @@ The window class with cursor movement and scroll functions. Super class of [Wind
             </dl>
 
 #### drawActorLevel (actor, x, y)
-
-Draws the actor level at the specified x and y coordinates.
-
+[Game_Actor](Game_Actor.md)
+[Number](Number.md)
+Draws th[Number](Number.md)specified x and y coordinates.
+[Number](Number.md)
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -805,17 +836,18 @@ The window class with cursor movement and scroll functions. Super class of [Wind
             </dl>
 
 #### drawActorMp (actor, x, y, width)
-
-Draws the actor mp at the specified x and y coordinates within the given width.
-
+[Game_Actor](Game_Actor.md)
+[Number](Number.md)
+Draws th[Number](Number.md)cified x and y coordinates within the given width.
+[Number](Number.md)
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -828,18 +860,19 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### drawActorName (actor, x, y, width)
-
-Draws the actor name at the specified x and y coordinates within the given width.
+#### drawAct[Game_Actor](Game_Actor.md)
+[Number](Number.md)
+[Number](Number.md)
+Draws the ac[Number](Number.md)fied x and y coordinates within the given width.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -851,19 +884,20 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                     </ul>
                 </dd>
             </dl>
-
-#### drawActorNickname (actor, x, y, width)
-
-Draws the actor nickname at the specified x and y coordinates within the given width.
+[Game_Actor](Game_Actor.md)
+#### dra[Number](Number.md), x, y, width)
+[Number](Number.md)
+[Number](Number.md)
+Draws the actor nickname at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -874,20 +908,21 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            [Game_Actor](Game_Actor.md)
+[Number](Number.md)
+#### dra[Number](Number.md)ctor, x, y, width)
+[Number](Number.md)
 
-#### drawActorSimpleStatus (actor, x, y, width)
-
-Draws a simple status for the game actor passed into the method at the specified x and y coordinates within the given width.
+Draws a simple status for the game actor passed into the method at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -902,16 +937,17 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawActorTp (actor, x, y, width)
 
-Draws the actor tp at the specified x and y coordinates within the given width.
 
-##### Parameters:
-
+Draws the actor tp a[String](String.md) y coordinates within the given width.
+[Number](Number.md)
+##### Pa[Number](Number.md)
+[Number](Number.md)
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -926,22 +962,24 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawAllItems ()
 
-Draws all items within the window; this method cals drawItem multiple times.
-<dl>
-</dl>
-
+[Number](Number.md)
+Draws all i[String](String.md)w; this method cals drawItem multiple times.
+<dl>[Number](Number.md)
+</dl>[Number](Number.md)
+[Number](Number.md)
 #### drawCharacter (characterName, characterIndex, x, y)
 
-Draws a character (map sprites) at the specified x and y coordinate. CharacterName refers to character spritesheet, and characterIndex refers to the characterIndex on the spritesheet.
+
+Draws a character (map sprites) at the specified x and y coordinate. CharacterName refers to character spritesheet, and characterIndex refers to the characterIndex on the spritesheet.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `characterName` | [String](String.html) |  |
-| `characterIndex` | [Number](Number.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `characterName` | [String](String.md) |  |
+| `characterIndex` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -949,61 +987,63 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                     <ul>
                         <li>
                             <a>Window_Base#drawCharacter</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+              [Number](Number.md)
+          [Number](Number.md)
+        [Number](Number.md)
+        [Number](Number.md)
+[Number](Number.md)
+#### drawCurr[String](String.md)t, x, y, width)
+[String](String.md)
 
-#### drawCurrencyValue (value, unit, x, y, width)
-
-Draws the currency value given at the specified x and y coordinates within the width given. Useful if you want to write your own custom currency value.
+Draws the currency value given at the specified x and y coordinates within the width given. Useful if you want to write your own custom currency value.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.html) |  |
-| `unit` | [String](String.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `value` | [Number](Number.md) |  |
+| `unit` | [String](String.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                            <a>Window_Base#drawCurrencyValue</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
+               [String](String.md)w_Base#drawCurrencyValue</a>
+                [Number](Number.md)
+        [Number](Number.md)
+        [Number](Number.md)
+            [Number](Number.md)
+[Number](Number.md)
 #### drawCurrentAndMax (current, max, x, y, width, color1, color2)
 
-Draws the current and max number at the specified x and y coordinate within the given width. Color1 represents the current number and color2 represents the max number when the text is drawn.
+
+Draws the current and max number at the specified x and y coordinate within the given width. Color1 represents the current number and color2 represents the max number when the text is drawn.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `current` | [Number](Number.html) |  |
-| `max` | [Number](Number.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
-| `color1` | [String](String.html) |  |
-| `color2` | [String](String.html) |  |
+| `current` | [Number](Number.md) |  |
+| `max` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
+| `color1` | [String](String.md) |  |
+| `color2` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#drawCurrentAndMax</a>
-                        </li>
-                    </ul>
-                </dd>
+        [Number](Number.md)
+        [Number](Number.md)
+            [Number](Number.md)ndow_Base#drawCurrentAndMax</a>
+           [Number](Number.md)
+             [String](String.md)
+             [String](String.md)
             </dl>
 
 #### drawFace (faceName, faceIndex, x, y, width opt, height opt)
@@ -1012,39 +1052,40 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `faceName` | [String](String.html) |  |  |
-| `faceIndex` | [Number](Number.html) |  |  |
-| `x` | [Number](Number.html) |  |  |
-| `y` | [Number](Number.html) |  |  |
-| `width` | [Number](Number.html) | <optional> |  |
-| `height` | [Number](Number.html) | <optional> |  |
+| `faceName` | [String](String.md) |  |  |
+| `faceIndex` | [Number](Number.md) |  |  |
+| `x` | [Number](Number.md) |  |  |
+| `y` | [Number](Number.md) |  |  |
+| `width` | [Number](Number.md) | <optional> |  |
+| `height` | [Number](Number.md) | <optional> |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                            <a>Window_Base#drawFace</a>
-                        </li>
-                    </ul>
+                [Number](Number.md)_Base#drawFace</a>
+        [Number](Number.md)
+        [Number](Number.md)
                 </dd>
             </dl>
 
 #### drawGauge (x, y, width, rate, color1, color2)
 
-Draws a gauge at the specified x and y coordinates within the given width. Color1 and Color2 represent the gradient as css color strings of the gauge.
+
+Draws a gauge at the specified x and y coordinates within the given width. Color1 and Color2 represent the gradient as css color strings of the gauge.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
-| `rate` | [Number](Number.html) |  |
-| `color1` | [String](String.html) |  |
-| `color2` | [String](String.html) |  |
-
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
+| `rate` | [Number](Number.md) |  |
+| `color1` | [String](String.md) |  |
+| `color2` | [String](String.md) |  |
+[Number](Number.md)
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1057,16 +1098,17 @@ The window class with cursor movement and scroll functions. Super class of [Wind
             </dl>
 
 #### drawIcon (iconIndex, x, y)
-
-Draws an icon given the specified iconIndex at the specified x and y coordinates. The Width and Height of the icon is based on the _iconWidth and _iconHeight properties.
-
+[RPG.BaseItem](RPG.BaseItem.md)
+[Number](Number.md)
+Draws an[Number](Number.md)fied iconIndex at the specified x and y coordinates. The Width and Height of the icon is based on the _iconWidth and _iconHeight properties.
+[Number](Number.md)
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `iconIndex` | [Number](Number.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `iconIndex` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1081,32 +1123,33 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawItem (index)
 
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+##### Pa[Number](Number.md)
+[Number](Number.md)
+| Name | Type |[Number](Number.md)
+| --- | --- [String](String.md)
+| `index` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 #### drawItemName (item, x, y, width)
 
-Draws the item name at the specified x and y coordinates within the given width.
+
+Draws the item name at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
-| Name | Type | Description |
+| Name | Type | Description |[Number](Number.md)
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
+           [String](String.md)om:</dt>
+        [Number](Number.md)
+        [Number](Number.md)
                         <li>
                             <a>Window_Base#drawItemName</a>
                         </li>
@@ -1116,40 +1159,42 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawText (text, x, y, maxWidth, align)
 
-Given text or a number, draws the content to the window's contents layer at the specified x and y coordinate within the max width. The text content can also be aligned with the align property. The possible alignments are: "left", "center", "right".
+
+Given text or a number, draws the content to the window's contents layer at the specified x and y coordinate within the max width. The text content can also be aligned with the align property. The possible alignments are: "left", "center", "right".
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `text` | string |number |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `maxWidth` | [Number](Number.html) |  |
-| `align` | [String](String.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `maxWidth` | [Number](Number.md) |  |
+| `align` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
+                        <li>[Number](Number.md)
                             <a>Window_Base#drawText</a>
                         </li>
                     </ul>
                 </dd>
             </dl>
 
-#### drawTextEx (text, x, y) → {[Number](Number.html)}
+#### drawTextEx (text, x, y) → {[Number](Number.md)}
+[Number](Number.md)
 
-Draws text with text codes included; this will draw icons, increase text height, and more.
+Draws text with text codes included; this will draw icons, increase text height, and more.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `text` | [String](String.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1161,7 +1206,7 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                     </ul>
                 </dd>
             </dl>
-
+[String](String.md)
 ##### Returns:
 
 <dl>
@@ -1176,15 +1221,16 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 <dl>
 </dl>
 
-#### fittingHeight (numLines) → {[Number](Number.html)}
+#### fittingHeight (numLines) → {[Number](Number.md)}
 
-Returns the fitting height given a number of lines based on the line height plus standard padding of the window. Default formula: numLines * lineHeight + standardPadding * 2
+
+Returns the fitting height given a number of lines based on the line height plus standard padding of the window. Default formula: numLines * lineHeight + standardPadding * 2
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `numLines` | [Number](Number.html) |  |
+| `numLines` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1206,9 +1252,10 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### gaugeBackColor () → {[String](String.html)}
+#### gaugeBackColor () → {[String](String.md)}
 
-Returns the gauage back color as a css color string.
+
+Returns the gauage back color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1216,14 +1263,14 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                         <li>
                             <a>Window_Base#gaugeBackColor</a>
                         </li>
-                    </ul>
+                    </u[Number](Number.md)
                 </dd>
             </dl>
 
 ##### Returns:
 
-<dl>
-                <dt> Type </dt>
+<dl>[Number](Number.md)
+        [Number](Number.md)t>
                 <dd>
                     <span><a>String</a></span>
                 </dd>
@@ -1231,12 +1278,13 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### hide ()
 
-Hides the window, making it invisible; the window is not closed when hidden.
+
+Hides the window, making it invisible; the window is not closed when hidden.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
+                        [String](String.md)
                             <a>Window_Base#hide</a>
                         </li>
                     </ul>
@@ -1244,8 +1292,9 @@ The window class with cursor movement and scroll functions. Super class of [Wind
             </dl>
 
 #### hideBackgroundDimmer ()
+[Game_Actor](Game_Actor.md)
 
-Hides the background dimmer sprite.
+Hides the background dimmer sprite.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1259,18 +1308,19 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### hideHelpWindow ()
 
-Hides the attached help window.
+
+Hides the attached help window.
 <dl>
 </dl>
 
-#### hitTest (x, y) → {[Number](Number.html)}
-
+#### hitTest (x, y) → {[Number](Number.md)}
+[String](String.md)
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1284,15 +1334,16 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### hpColor (actor) → {[String](String.html)}
+#### hpColor (actor) → {[String](String.md)}
 
-Returns the hp color as a css string.
+
+Returns the hp color as a[String](String.md)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1309,14 +1360,15 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 <dl>
                 <dt> Type </dt>
-                <dd>
+                <[Number](Number.md)
                     <span><a>String</a></span>
                 </dd>
             </dl>
 
-#### hpGaugeColor1 () → {[String](String.html)}
+#### hpGaugeColor1 () → {[String](String.md)}
 
-Returns the hp gauge color 1 as a css color string.
+
+Returns the hp gauge color 1 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1331,15 +1383,16 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
+        [Number](Number.md)t>
+        [Number](Number.md)
+            [Number](Number.md)ng</a></span>
+             [Number](Number.md)
             </dl>
 
-#### hpGaugeColor2 () → {[String](String.html)}
+#### hpGaugeColor2 () → {[String](String.md)}
 
-Returns the hp gauge color 2 as a css color string.
+
+Returns the hp gauge color 2 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1360,9 +1413,10 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### index () → {[Number](Number.html)}
+#### index () → {[Number](Number.md)}
 
-Returns the current position of the _index property.
+
+Returns the current position of the _index property.
 <dl>
 </dl>
 
@@ -1377,16 +1431,17 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### initialize (x, y, width, height)
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
-| `height` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
+| `height` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -1415,8 +1470,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### isCancelTriggered () → {Boolean}
 
-<dl>
-</dl>
+<dl>[Number](Number.md)
+</dl>[Number](Number.md)
 
 ##### Returns:
 
@@ -1429,7 +1484,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### isClosed ()
 
-Returns true if the window is completely closed (openness == 0).
+
+Returns true if the window is completely closed (openness == 0).
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1443,7 +1499,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### isClosing () → {Boolean}
 
-Returns true if the window is currently closing.
+
+Returns true if the window is currently closing.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1470,14 +1527,14 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 ##### Returns:
-
+[String](String.md)
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -1515,7 +1572,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### isCursorVisible () → {Boolean}
 
-Determines if the cursor is visible within the window.
+
+Determines if the cursor is visible within the window.
 <dl>
 </dl>
 
@@ -1534,7 +1592,7 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `symbol` | [String](String.html) |  |
+| `symbol` | [String](String.md) |  |
 
 <dl>
 </dl>
@@ -1550,7 +1608,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### isHorizontal () → {Boolean}
 
-Returns true if the window is horizontal; means the window only has a single row.
+
+Returns true if the window is horizontal; means the window only has a single row.
 <dl>
 </dl>
 
@@ -1565,7 +1624,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### isOkEnabled () → {Boolean}
 
-Determines if ok is enabled as an option; this means whether you can confirm selection of an item within the window.
+
+Determines if ok is enabled as an option; this means whether you can confirm selection of an item within the window.
 <dl>
 </dl>
 
@@ -1594,7 +1654,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### isOpen ()
 
-Returns true if the window is completely open (openness == 255).
+
+Returns true if the window is completely open (openness == 255).
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1611,7 +1672,7 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 <dl>
 </dl>
 
-##### Returns:
+##### Returns:[Number](Number.md)
 
 <dl>
                 <dt> Type </dt>
@@ -1622,10 +1683,11 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### isOpening () → {Boolean}
 
-Returns true if the window is currently opening.
+
+Returns true if the window is currently opening.
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>
+                <dd>[Rectangle](Rectangle.md)
                     <ul>
                         <li>
                             <a>Window_Base#isOpening</a>
@@ -1633,7 +1695,7 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                     </ul>
                 </dd>
             </dl>
-
+[Number](Number.md)
 ##### Returns:
 
 <dl>
@@ -1647,7 +1709,7 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 <dl>
 </dl>
-
+[Rectangle](Rectangle.md)
 ##### Returns:
 
 <dl>
@@ -1655,11 +1717,12 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 <dd>
                     <span>Boolean</span>
                 </dd>
-            </dl>
+            [Number](Number.md)
 
 #### isTouchOkEnabled () → {Boolean}
 
-Determines if touch ok is enabled as an option; this means whether you can confirm the selection of an item within the window with touch input.
+
+Determines if touch ok is enabled as an option; this means whether you can confirm the selection of an item within the window with touch input.
 <dl>
 </dl>
 
@@ -1668,13 +1731,14 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span>Boolean</span>
+                    <[Number](Number.md)
                 </dd>
             </dl>
 
-#### itemHeight () → {[Number](Number.html)}
+#### itemHeight () → {[Number](Number.md)}
 
-Returns the height of an item within the window; determines the height of a row.
+
+Returns the height of an item within the window; determines the height of a row.
 <dl>
 </dl>
 
@@ -1682,20 +1746,21 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 <dl>
                 <dt> Type </dt>
-                <dd>
+                <dd>[Number](Number.md)
                     <span><a>Number</a></span>
                 </dd>
             </dl>
 
-#### itemRect (index) → {[Rectangle](Rectangle.html)}
+#### itemRect (index) → {[Rectangle](Rectangle.md)}
 
-Creates a new rectangle based on itemWidth and itemHeight. The rectangle is mainly used for positioning items within the selectable window.
+
+Creates a new rectangle based on itemWidth and itemHeight. The rectangle is mainly used for positioning items within the selectable window.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1709,15 +1774,16 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### itemRectForText (index) → {[Rectangle](Rectangle.html)}
+#### itemRectForText (index) → {[Rectangle](Rectangle.md)}
 
-Creates a new rectangle based on itemWidth and itemHeight The rectangle is used for positioning text within the selectable window.
+
+Creates a new rectangle based on itemWidth and itemHeight The rectangle is used for positioning text within the selectable window.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1731,9 +1797,10 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### itemWidth () → {[Number](Number.html)}
+#### itemWidth () → {[Number](Number.md)}
 
-Returns the width of an item within the window; determines the width of a column.
+
+Returns the width of an item within the window; determines the width of a column.
 <dl>
 </dl>
 
@@ -1744,11 +1811,12 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
-            </dl>
+            </dl>[Number](Number.md)
 
-#### lineHeight () → {[Number](Number.html)}
+#### lineHeight () → {[Number](Number.md)}
 
-Returns the standard line height of the current window; default is 36.
+
+Returns the standard line height of the current window; default is 36.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1758,7 +1826,7 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            </dl>[Number](Number.md)
 
 ##### Returns:
 
@@ -1771,8 +1839,9 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### loadWindowskin ()
 
-Loads the window skin from the img/system directory.
-<dl>
+
+Loads the window skin from the img/system directory.
+<dl>[Number](Number.md)
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -1785,7 +1854,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### makeFontBigger ()
 
-Makes the font bigger by a value of 12.
+
+Makes the font bigger b[Number](Number.md)
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1799,7 +1869,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### makeFontSmaller ()
 
-Makes the font smaller by a value of 12.
+[Number](Number.md)
+Makes the font smaller by a value of 12.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1811,9 +1882,10 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### maxCols () → {[Number](Number.html)}
+#### maxCols () → {[Number](Number.md)}
+[Number](Number.md)
 
-Returns the maximum number of columns for the window.
+Returns the maximum number of columns for the window.
 <dl>
 </dl>
 
@@ -1826,9 +1898,38 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### maxItems () → {[Number](Number.html)}
+#### maxItems () → {[Number](Number.md)}
 
-Returns the maximum number of items within the window; useful to overwrite when creating a new window. This method is used to calculate the number of rows and more.
+
+Returns the maximum number of items within the window; useful to overwrite when creating a new window. This method is used to calculate the number of rows and more.
+<dl>
+</dl>
+
+##### Re[Number](Number.md)
+[Number](Number.md)
+<dl>[Number](Number.md)
+             [Number](Number.md)
+                <dd>
+                    <span><a>Number</a></span>
+                </dd>
+            </dl>
+
+#### maxPageItems () → {[Number](Number.md)}
+
+<dl>
+</dl>
+
+##### Returns:
+
+<dl>[String](String.md)
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Number</a></span>
+                </dd>
+            </dl>
+
+#### maxPageRows () → {[Number](Number.md)}
+[Game_Actor](Game_Actor.md)
 <dl>
 </dl>
 
@@ -1841,7 +1942,7 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### maxPageItems () → {[Number](Number.html)}
+#### maxRows () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -1850,40 +1951,12 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 <dl>
                 <dt> Type </dt>
-                <dd>
+                <dd>[String](String.md)
                     <span><a>Number</a></span>
                 </dd>
             </dl>
 
-#### maxPageRows () → {[Number](Number.html)}
-
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### maxRows () → {[Number](Number.html)}
-
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### maxTopRow () → {[Number](Number.html)}
+#### maxTopRow () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -1899,16 +1972,17 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### move (x, y, width, height)
 
-Sets the x, y, width, and height all at once.
 
+Sets the x, y, width, and height all at once.
+[String](String.md)
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) | The x coordinate of the window |
-| `y` | [Number](Number.html) | The y coordinate of the window |
-| `width` | [Number](Number.html) | The width of the window |
-| `height` | [Number](Number.html) | The height of the window |
+| `x` | [Number](Number.md) | The x coordinate of the window |
+| `y` | [Number](Number.md) | The y coordinate of the window |
+| `width` | [Number](Number.md) | The width of the window |
+| `height` | [Number](Number.md) | The height of the window |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1921,15 +1995,16 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### mpColor (actor) → {[String](String.html)}
+#### mpColor (actor) → {[String](String.md)}
 
-Returns the mp color as a css color string.
+[String](String.md)
+Returns the mp color as a css color string.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1945,15 +2020,16 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
+                <dt> Ty[String](String.md)
                 <dd>
                     <span><a>String</a></span>
                 </dd>
             </dl>
 
-#### mpCostColor () → {[String](String.html)}
+#### mpCostColor () → {[String](String.md)}
 
-Returns the mp cost color as a css color string.
+
+Returns the mp cost color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1973,10 +2049,11 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                     <span><a>String</a></span>
                 </dd>
             </dl>
+[MV.TextState](MV.TextState.md)
+#### mpGaugeColor1 () → {[String](String.md)}
 
-#### mpGaugeColor1 () → {[String](String.html)}
 
-Returns the mp gauge color 1 as a css color string.
+Returns the mp gauge color 1 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1993,13 +2070,14 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                [MV.TextState](MV.TextState.md)
                 </dd>
             </dl>
 
-#### mpGaugeColor2 () → {[String](String.html)}
+#### mpGaugeColor2 () → {[String](String.md)}
 
-Returns the mp gauge color 2 as a css color string.
+
+Returns the mp gauge color 2 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2020,9 +2098,10 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### normalColor () → {[String](String.html)}
+#### normalColor () → {[String](String.md)}
 
-Returns the normal color as a css color string.
+
+Returns the normal color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2046,10 +2125,10 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 #### obtainEscapeCode (textState)
 
 ##### Parameters:
-
+[Number](Number.md)
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2059,18 +2138,19 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                             <a>Window_Base#obtainEscapeCode</a>
                         </li>
                     </ul>
-                </dd>
+                </dd>[String](String.md)
             </dl>
 
 #### obtainEscapeParam (textState) → {number|string}
 
-Obtains the escape parameters from text codes in the text state when drawTextEx is used to draw text.
 
-##### Parameters:
+Obtains the escape parameters from text codes in the text state when drawTextEx is used to draw text.
+
+##### Parameters:[Number](Number.md)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2088,7 +2168,7 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span>number</span> | <span>string</span>
+                    <spa[String](String.md)an>string</span>
                 </dd>
             </dl>
 
@@ -2105,7 +2185,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### open ()
 
-Opens the window.
+
+Opens the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2119,13 +2200,14 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### paramchangeTextColor (change)
 
-Changes the text color based on the powerUpColor, powerDownColor and normal color. powerUpColor is any number greater than 0, powerDownColor is any color less than 0, otherwise normal color is returned.
 
-##### Parameters:
+Changes the text color based on the powerUpColor, powerDownColor and normal color. powerUpColor is any number greater than 0, powerDownColor is any color less than 0, otherwise normal color is returned.
+
+##### Parameters:[String](String.md)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `change` | [Number](Number.html) |  |
+| `change` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2138,15 +2220,16 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### partyMemberName (partyMemberIndex) → {[String](String.html)}
+#### partyMemberName (partyMemberIndex) → {[String](String.md)}
 
-Returns a party member name given an index; the index starts from 1.
+
+Returns a party member name given an index; the index starts from 1.
 
 ##### Parameters:
-
+[String](String.md)
 | Name | Type | Description |
 | --- | --- | --- |
-| `partyMemberIndex` | [Number](Number.html) |  |
+| `partyMemberIndex` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2168,9 +2251,10 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### pendingColor () → {[String](String.html)}
+#### pendingColor () → {[String](String.md)}
 
-Returns the pending color as a css color string.
+
+Returns the pending color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2178,7 +2262,7 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                         <li>
                             <a>Window_Base#pendingColor</a>
                         </li>
-                    </ul>
+                [MV.TextState](MV.TextState.md)
                 </dd>
             </dl>
 
@@ -2193,19 +2277,22 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### playBuzzerSound ()
 
-Plays the buzzer sound effect when input is incorrect.
+
+Plays the buzzer sound effect when input is incorrect.
 <dl>
 </dl>
 
 #### playOkSound ()
 
-Plays a sound effect when okay is processed.
+
+Plays a sound effect when okay is processed.
 <dl>
 </dl>
 
-#### powerDownColor () → {[String](String.html)}
+#### powerDownCo[Number](Number.md)ring.md)}
+[MV.TextState](MV.TextState.md)
 
-Returns the power down color as a css color string.
+Returns the power down color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2224,11 +2311,12 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 <dd>
                     <span><a>String</a></span>
                 </dd>
-            </dl>
+           [String](String.md)
+[MV.TextState](MV.TextState.md)
+#### powerUpColor () → {[String](String.md)}
 
-#### powerUpColor () → {[String](String.html)}
 
-Returns the power up color as a css color string.
+Returns the power up color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2251,18 +2339,19 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### processCancel ()
 
-<dl>
+<dl>[MV.TextState](MV.TextState.md)
 </dl>
 
 #### processCharacter (textState)
 
-Process each character in the text when drawTextEx is used to draw text.
+
+Process each character in the text when drawTextEx is used to draw text.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2271,26 +2360,28 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                         <li>
                             <a>Window_Base#processCharacter</a>
                         </li>
-                    </ul>
+                [MV.TextState](MV.TextState.md)
                 </dd>
             </dl>
 
 #### processCursorMove ()
 
-Handles the processing of cursor movement.
+
+Handles the processing of cursor movement.
 <dl>
 </dl>
 
 #### processDrawIcon (iconIndex, textState)
 
-Processes drawing an icon when drawTextEx is used for drawing text.
+
+Processes drawing an icon when drawTextEx is used for drawing text.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `iconIndex` | [Number](Number.html) |  |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `iconIndex` | [Number](Number.md) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2305,14 +2396,15 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### processEscapeCharacter (code, textState)
 
-Processes escape characters when drawTextEx is used for drawing text.
+
+Processes escape characters when drawTextEx is used for drawing text.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [String](String.html) |  |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `code` | [String](String.md) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2327,19 +2419,21 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### processHandling ()
 
-Handles the process of attached handlers.
+
+Handles the process of attached handlers.
 <dl>
 </dl>
 
 #### processNewLine (textState)
 
-Processes new line when drawTextEx is used to draw text.
+
+Processes new line when drawTextEx is used to draw text.
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| --- | --- [Number](Number.md)
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2354,13 +2448,14 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### processNewPage (textState)
 
-Processes new page when drawTexttEx is used to draw text.
+
+Processes new page when drawTexttEx is used to draw text.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2375,13 +2470,14 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### processNormalCharacter (textState)
 
-Processes the normal characters in the text when drawTextEx is used to draw text. Normal characters are letters and numbers.
+
+Processes the normal characters in the text when drawTextEx is used to draw text. Normal characters are letters and numbers.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2400,7 +2496,7 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 </dl>
 
 #### processPagedown ()
-
+[Number](Number.md)
 <dl>
 </dl>
 
@@ -2411,13 +2507,15 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### processTouch ()
 
-Handles the processing of touch input.
+
+Handles the processing of touch input.
 <dl>
 </dl>
 
 #### processWheel ()
 
-Handles the processing of the scroll wheel within the window.
+
+Handles the processing of the scroll wheel within the window.
 <dl>
 </dl>
 
@@ -2432,20 +2530,22 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 #### refresh ()
 
-Refreshes the window contents.
+
+Refreshes the window contents.
 <dl>
 </dl>
 
 #### refreshDimmerBitmap ()
 
-Refreshes the bitmap attached to the dimmer sprite based on the window dimensions.
+
+Refreshes the bitmap attached to the dimmer sprite based on the window dimensions.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2459,7 +2559,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### removeChild (child) → {Object}
 
-[super] Removes a child to the container.
+
+[super] Removes a child to the container.
 
 ##### Parameters:
 
@@ -2471,7 +2572,7 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
+               [Number](Number.md)
                             <a>Window#removeChild</a>
                         </li>
                     </ul>
@@ -2480,7 +2581,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 ##### Returns:
 
-The child that was removed
+
+The child that was removed
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -2490,18 +2592,19 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### removeChildAt (index) → {Object}
 
-[super] Removes a child from the specified index position.
+
+[super] Removes a child from the specified index position.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) | The index to get the child from |
+| `index` | [Number](Number.md) | The index to get the child from |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                    <ul>
+            [Number](Number.md)
                         <li>
                             <a>Window#removeChildAt</a>
                         </li>
@@ -2511,9 +2614,10 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 ##### Returns:
 
-The child that was removed
+
+The child that was removed
 <dl>
-                <dt> Type </dt>
+           [Number](Number.md)
                 <dd>
                     <span>Object</span>
                 </dd>
@@ -2521,16 +2625,18 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### reselect ()
 
-Reselects the index based on the window's _index property.
+
+Reselects the index based on the window's _index property.
 <dl>
 </dl>
 
 #### reserveFaceImages ()
 
-Reverses the face images of the game party members.
+
+Reverses the face images of the game party members.
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>
+          [Number](Number.md)
                     <ul>
                         <li>
                             <a>Window_Base#reserveFaceImages</a>
@@ -2541,7 +2647,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### resetFontSettings ()
 
-Resets the font settings of the window back to the default.
+
+Resets the font settings of the window back to the default.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2560,19 +2667,20 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### resetTextColor ()
 
-Resets the text color of the window back to the default.
+
+Resets the text color of the window back to the default.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
-                            <a>Window_Base#resetTextColor</a>
-                        </li>
-                    </ul>
+        [Number](Number.md)
+        [Number](Number.md)a>Window_Base#resetTextColor</a>
+            [Number](Number.md)
+             [Number](Number.md)
                 </dd>
             </dl>
 
-#### row () → {[Number](Number.html)}
+#### row () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -2589,7 +2697,7 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 #### scrollDown ()
 
 <dl>
-</dl>
+</dl>[String](String.md)
 
 #### scrollUp ()
 
@@ -2598,34 +2706,36 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### select (index)
 
-Selects the current index within the window given a number.
+
+Selects the current index within the window given a number.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 #### setBackgroundType (type)
 
-Sets the background type of the window. 0 is 255 window opacity (standard). 1 is the window with background dimmer. Any other number changes the opacity to 0.
+
+Sets the background type of the window. 0 is 255 window opacity (standard). 1 is the window with background dimmer. Any other number changes the opacity to 0.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `type` | [Number](Number.html) |  |
+| `type` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
-                            <a>Window_Base#setBackgroundType</a>
-                        </li>
+        [Number](Number.md)
+        [Number](Number.md)a>Window_Base#setBackgroundType</a>
+        [Number](Number.md)
                     </ul>
                 </dd>
             </dl>
@@ -2636,7 +2746,7 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `row` | [Number](Number.html) |  |
+| `row` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -2646,7 +2756,7 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
+| --- | --[Number](Number.md)
 | `cursorAll` | Boolean |  |
 
 <dl>
@@ -2654,7 +2764,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### setCursorFixed (cursorFixed)
 
-Sets the _cursorFixed property of the window.
+
+Sets the _cursorFixed property of the window.
 
 ##### Parameters:
 
@@ -2667,23 +2778,24 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### setCursorRect (x, y, width, height)
 
-Sets the position of the command cursor.
+
+Sets the position of the command cursor.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) | The x coordinate of the cursor |
-| `y` | [Number](Number.html) | The y coordinate of the cursor |
-| `width` | [Number](Number.html) | The width of the cursor |
-| `height` | [Number](Number.html) | The height of the cursor |
+| `x` | [Number](Number.md) | The x coordinate of the cursor |
+| `y` | [Number](Number.md) | The y coordinate of the cursor |
+| `width` | [Number](Number.md) | The width of the cursor |
+| `height` | [Number](Number.md) | The height of the cursor |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                            <a>Window#setCursorRect</a>
+                   [Number](Number.md)tCursorRect</a>
                         </li>
                     </ul>
                 </dd>
@@ -2691,13 +2803,14 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### setHandler (symbol, method)
 
-Creates a new handler with the symbol as the handler name and a method (JS function) bound to it.
+
+Creates a new handler with the symbol as the handler name and a method (JS function) bound to it.
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `symbol` | [String](String.html) |  |
+| --- | --- | --- |[Number](Number.md)
+| `symbol` | [String](String.md) |  |
 | `method` | * |  |
 
 <dl>
@@ -2719,7 +2832,7 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
+| --- | --- | --- |[String](String.md)
 | `item` | * |  |
 
 <dl>
@@ -2727,21 +2840,22 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### setTone (r, g, b)
 
-Changes the color of the background.
+
+Changes the color of the background.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `r` | [Number](Number.html) | The red value in the range (-255, 255) |
-| `g` | [Number](Number.html) | The green value in the range (-255, 255) |
-| `b` | [Number](Number.html) | The blue value in the range (-255, 255) |
+| `r` | [Number](Number.md) | The red value in the range (-255, 255) |
+| `g` | [Number](Number.md) | The green value in the range (-255, 255) |
+| `b` | [Number](Number.md) | The blue value in the range (-255, 255) |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
+                        <li>[Number](Number.md)
                             <a>Window#setTone</a>
                         </li>
                     </ul>
@@ -2750,20 +2864,22 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### setTopRow (row)
 
-Sets the current top row of the given a number. The top row will then be moved to an index of the window.
+
+Sets the current top row of the given a number. The top row will then be moved to an index of the window.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `row` | [Number](Number.html) |  |
+| `row` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 #### show ()
 
-Shows the window, making it visible.
+[Number](Number.md)
+Shows the window, making it visible.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2777,25 +2893,27 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### showBackgroundDimmer ()
 
-Shows the background dimmer sprite.
+
+Shows the background dimmer sprite.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
                             <a>Window_Base#showBackgroundDimmer</a>
-                        </li>
+                       [String](String.md)
                     </ul>
                 </dd>
             </dl>
 
 #### showHelpWindow ()
 
-Shows the attached help window.
+
+Shows the attached help window.
 <dl>
 </dl>
 
-#### spacing () → {[Number](Number.html)}
+#### spacing () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -2809,11 +2927,12 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### standardBackOpacity () → {[Number](Number.html)}
+#### standardBackOpacity () → {[Number](Number.md)}
 
-Returns the standard back opacity of the window; this is the opacity of the area behind the window's text content. Default is 192.
+
+Returns the standard back opacity of the window; this is the opacity of the area behind the window's text content. Default is 192.
 <dl>
-                <dt>Inherited From:</dt>
+        [Number](Number.md) From:</dt>
                 <dd>
                     <ul>
                         <li>
@@ -2832,9 +2951,10 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### standardFontFace () → {[String](String.html)}
+#### standardFontFace () → {[String](String.md)}
 
-Returns the standard font face of the game based on what language the game is in.
+
+Returns the standard fo[Number](Number.md)ased on what language the game is in.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2855,16 +2975,17 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### standardFontSize () → {[Number](Number.html)}
+#### standardFontSize () → {[Number](Number.md)}
 
-Returns the standard font size of the text in window; default is 28.
+[Number](Number.md)
+Returns the standard font size of the text in window; default is 28.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
                             <a>Window_Base#standardFontSize</a>
-                        </li>
+           [String](String.md)
                     </ul>
                 </dd>
             </dl>
@@ -2878,14 +2999,15 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### standardPadding () → {[Number](Number.html)}
+#### standardPadding () → {[Number](Number.md)}
 
-Returns the standard padding of the window; default is 18.
+
+Returns the standard padding of the window; default is 18.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
+                    [Number](Number.md)
                             <a>Window_Base#standardPadding</a>
                         </li>
                     </ul>
@@ -2899,11 +3021,12 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
-            </dl>
+            </dl>[Number](Number.md)
 
-#### systemColor () → {[String](String.html)}
+#### systemColor () → {[String](String.md)}
 
-Returns the system color as a css color string.
+
+Returns the system color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2912,7 +3035,7 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                             <a>Window_Base#systemColor</a>
                         </li>
                     </ul>
-                </dd>
+                </dd>[String](String.md)
             </dl>
 
 ##### Returns:
@@ -2920,19 +3043,20 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+            [Game_Actor](Game_Actor.md)span>
                 </dd>
             </dl>
 
 #### textColor (n) → {*}
 
-Returns a text color given a numbered index as a css color string; this index maps directly to the img/system/window.png colors by default.
+
+Returns a text color given a numbered index as a css color string; this index maps directly to the img/system/window.png colors by default.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `n` | [Number](Number.html) |  |
+| `n` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2941,7 +3065,7 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                         <li>
                             <a>Window_Base#textColor</a>
                         </li>
-                    </ul>
+                    </u[String](String.md)
                 </dd>
             </dl>
 
@@ -2954,16 +3078,17 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### textPadding () → {[Number](Number.html)}
+#### textPadding () → {[Number](Number.md)}
 
-Returns the text padding of the window; default is 6.
+
+Returns the text padding of the window; default is 6.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
                             <a>Window_Base#textPadding</a>
-                        </li>
+                        <[String](String.md)
                     </ul>
                 </dd>
             </dl>
@@ -2977,15 +3102,16 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### textWidth (text) → {[Number](Number.html)}
+#### textWidth (text) → {[Number](Number.md)}
 
-Calculates the width of a text string and returns a number.
+
+Calculates the width of a text string and returns a number.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.html) |  |
+| `text` | [String](Strin[String](String.md)
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3007,7 +3133,21 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### topIndex () → {[Number](Number.html)}
+#### topIndex () → {[Number](Number.md)}
+[Number](Number.md)
+<dl>
+</dl>
+
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Number</a></span>
+                </dd>
+            </dl>
+
+#### topRow () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -3021,29 +3161,16 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### topRow () → {[Number](Number.html)}
+#### tpColor (actor) → {[String](String.md)}
 
-<dl>
-</dl>
 
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### tpColor (actor) → {[String](String.html)}
-
-Returns the tp color as a css color string.
+Returns the tp color as a css color string.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3062,12 +3189,13 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 <dt> Type </dt>
                 <dd>
                     <span><a>String</a></span>
-                </dd>
+                </dd>[Number](Number.md)
             </dl>
 
-#### tpCostColor () → {[String](String.html)}
+#### tpCostColor () → {[String](String.md)}
 
-Returns the tp cost color as a css color string.
+
+Returns the tp cost color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3088,9 +3216,10 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### tpGaugeColor1 () → {[String](String.html)}
+#### tpGaugeColor1 () → {[String](String.md)}
 
-Returns the tp gauge color 1 as a css color string.
+
+Returns the tp gauge color 1 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3111,9 +3240,10 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### tpGaugeColor2 () → {[String](String.html)}
+#### tpGaugeColor2 () → {[String](String.md)}
 
-Returns tp gauge color 2 as a css color string.
+
+Returns tp gauge color 2 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3134,9 +3264,10 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### translucentOpacity () → {[Number](Number.html)}
+#### translucentOpacity () → {[Number](Number.md)}
 
-Returns the translucentOpacity for the window; The default is 160.
+
+Returns the translucentOpacity for the window; The default is 160.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3177,7 +3308,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### updateBackgroundDimmer ()
 
-Updates the background dimmer sprite opacity based on the openness of the window.
+
+Updates the background dimmer sprite opacity based on the openness of the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3189,9 +3321,10 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                 </dd>
             </dl>
 
-#### updateBackOpacity () → {[Number](Number.html)}
+#### updateBackOpacity () → {[Number](Number.md)}
 
-Returns the inner content width of the window.
+
+Returns the inner content width of the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3214,7 +3347,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### updateClose ()
 
-Updates the openness of the window when the _closing property is set to true. Openness is decreased.
+
+Updates the openness of the window when the _closing property is set to true. Openness is decreased.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3243,7 +3377,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### updateOpen ()
 
-Updates the openness of the window when the _opening property is set to true. Openness is increased.
+
+Updates the openness of the window when the _opening property is set to true. Openness is increased.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3257,7 +3392,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### updatePadding ()
 
-Updates the window padding based on the standardPadding method.
+
+Updates the window padding based on the standardPadding method.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3271,7 +3407,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### updateTone ()
 
-Updates the tone of the window based on the game system window tone defined in the database.
+
+Updates the tone of the window based on the game system window tone defined in the database.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3281,7 +3418,9 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            </dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

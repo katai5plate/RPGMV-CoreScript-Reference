@@ -10,28 +10,28 @@ Game_Action The game object class representing a battle action.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `EFFECT_RECOVER_HP` | [Number](Number.html) | [static] |
-| `EFFECT_RECOVER_MP` | [Number](Number.html) | [static] |
-| `EFFECT_GAIN_TP` | [Number](Number.html) | [static] |
-| `EFFECT_ADD_STATE` | [Number](Number.html) | [static] |
-| `EFFECT_REMOVE_STATE` | [Number](Number.html) | [static] |
-| `EFFECT_ADD_BUFF` | [Number](Number.html) | [static] |
-| `EFFECT_ADD_DEBUFF` | [Number](Number.html) | [static] |
-| `EFFECT_REMOVE_BUFF` | [Number](Number.html) | [static] |
-| `EFFECT_REMOVE_DEBUFF` | [Number](Number.html) | [static] |
-| `EFFECT_SPECIAL` | [Number](Number.html) | [static] |
-| `EFFECT_GROW` | [Number](Number.html) | [static] |
-| `EFFECT_LEARN_SKILL` | [Number](Number.html) | [static] |
-| `EFFECT_COMMON_EVENT` | [Number](Number.html) | [static] |
-| `SPECIAL_EFFECT_ESCAPE` | [Number](Number.html) | [static] |
-| `HITTYPE_CERTAIN` | [Number](Number.html) | [static] |
-| `HITTYPE_PHYSICAL` | [Number](Number.html) | [static] |
-| `HITTYPE_MAGICAL` | [Number](Number.html) | [static] |
-| `_subjectActorId` | [Number](Number.html) |  |
-| `_subjectEnemyIndex` | [Number](Number.html) |  |
-| `_targetIndex` | [Number](Number.html) |  |
+| `EFFECT_RECOVER_HP` | [Number](Number.md) | [static] |
+| `EFFECT_RECOVER_MP` | [Number](Number.md) | [static] |
+| `EFFECT_GAIN_TP` | [Number](Number.md) | [static] |
+| `EFFECT_ADD_STATE` | [Number](Number.md) | [static] |
+| `EFFECT_REMOVE_STATE` | [Number](Number.md) | [static] |
+| `EFFECT_ADD_BUFF` | [Number](Number.md) | [static] |
+| `EFFECT_ADD_DEBUFF` | [Number](Number.md) | [static] |
+| `EFFECT_REMOVE_BUFF` | [Number](Number.md) | [static] |
+| `EFFECT_REMOVE_DEBUFF` | [Number](Number.md) | [static] |
+| `EFFECT_SPECIAL` | [Number](Number.md) | [static] |
+| `EFFECT_GROW` | [Number](Number.md) | [static] |
+| `EFFECT_LEARN_SKILL` | [Number](Number.md) | [static] |
+| `EFFECT_COMMON_EVENT` | [Number](Number.md) | [static] |
+| `SPECIAL_EFFECT_ESCAPE` | [Number](Number.md) | [static] |
+| `HITTYPE_CERTAIN` | [Number](Number.md) | [static] |
+| `HITTYPE_PHYSICAL` | [Number](Number.md) | [static] |
+| `HITTYPE_MAGICAL` | [Number](Number.md) | [static] |
+| `_subjectActorId` | [Number](Number.md) |  |
+| `_subjectEnemyIndex` | [Number](Number.md) |  |
+| `_targetIndex` | [Number](Number.md) |  |
 | `_forcing` | Boolean |  |
-| `_item` | [Game_Item](Game_Item.html) |  |
+| `_item` | [Game_Item](Game_Item.md) |  |
 
 <dl>
 </dl>
@@ -40,13 +40,14 @@ Game_Action The game object class representing a battle action.
 
 #### (static) initialize (subject, forcing)
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `subject` | [Game_Battler](Game_Battler.html) |  |
+| --- | --- | [Game_Battler](Game_Battler.md)
+| `subject` | [Game_Battler](Game_Battler.md) |  |
 | `forcing` | Boolean |  |
 
 <dl>
@@ -57,19 +58,19 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
 </dl>
-
-#### applyCritical (damage) → {[Number](Number.html)}
+[Number](Number.md)
+#### applyCritical (damage) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `damage` | [Number](Number.html) |  |
+| --- | --- |[Number](Number.md)
+| `damage` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -87,15 +88,15 @@ Game_Action The game object class representing a battle action.
 
 <dl>
 </dl>
-
-#### applyGuard (damage, target) → {[Number](Number.html)}
+[Number](Number.md)
+#### applyGuard (damage, target) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `damage` | [Number](Number.html) |  |
-| `target` | [Game_Battler](Game_Battler.html) |  |
+| --- | --- |[Number](Number.md)
+| `damage` | [Game_Battler](Game_Battler.md)
+| `target` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
 </dl>
@@ -114,9 +115,9 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
-| `effect` | [RPG.Effect](RPG.Effect.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [RPG.Effect](RPG.Effect.md)tml) |  |
+| `effect` | [RPG.Effect](RPG.Effect.md) |  |
 
 <dl>
 </dl>
@@ -126,20 +127,20 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
 </dl>
-
-#### applyVariance (damage, variance) → {[Number](Number.html)}
+[Number](Number.md)
+#### applyVariance (damage, variance) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `damage` | [Number](Number.html) |  |
-| `variance` | [Number](Number.html) |  |
+| --- | --- |[Number](Number.md)
+| `damage` | [N[Number](Number.md)  |
+| `variance` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -152,14 +153,14 @@ Game_Action The game object class representing a battle action.
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-
-#### calcElementRate (target) → {[Number](Number.html)}
+[Number](Number.md)
+#### calcElementRate (target) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
 </dl>
@@ -178,8 +179,8 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `list` | [Array](Array.html).<[Number](Number.html)> |  |
+| --- | ---[Array](Array.md)[Number](Number.md)
+| `list` | [Array](Array.md).<[Number](Number.md)> |  |
 
 <dl>
 </dl>
@@ -198,8 +199,8 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `list` | [Array](Array.html).<[Number](Number.html)> |  |
+| --- | ---[Array](Array.md)[Number](Number.md)
+| `list` | [Array](Array.md).<[Number](Number.md)> |  |
 
 <dl>
 </dl>
@@ -217,8 +218,8 @@ Game_Action The game object class representing a battle action.
 
 <dl>
 </dl>
-
-#### confusionTarget () → {[Game_Battler](Game_Battler.html)}
+[Game_Battler](Game_Battler.md)
+#### confusionTarget () → {[Game_Battler](Game_Battler.md)}
 
 <dl>
 </dl>
@@ -236,15 +237,15 @@ Game_Action The game object class representing a battle action.
 
 <dl>
 </dl>
-
-#### elementsMaxRate (target, elements) → {[Number](Number.html)}
+[Number](Number.md)
+#### elementsMaxRate (target, elements) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
-| `elements` | [Array](Array.html).<[Number](Number.html)> |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [G[Array](Array.md)at[Number](Number.md)
+| `elements` | [Array](Array.md).<[Number](Number.md)> |  |
 
 <dl>
 </dl>
@@ -257,14 +258,14 @@ Game_Action The game object class representing a battle action.
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-
-#### evalDamageFormula (target) → {[Number](Number.html)}
+[Number](Number.md)
+#### evalDamageFormula (target) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
 </dl>
@@ -277,8 +278,8 @@ Game_Action The game object class representing a battle action.
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-
-#### evaluate () → {[Number](Number.html)}
+[Number](Number.md)
+#### evaluate () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -291,14 +292,14 @@ Game_Action The game object class representing a battle action.
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-
-#### evaluateWithTarget (target) → {[Number](Number.html)}
+[Number](Number.md)
+#### evaluateWithTarget (target) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
 </dl>
@@ -317,9 +318,9 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
-| `value` | [Number](Number.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` |[Number](Number.md)Battler.md) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -329,9 +330,9 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
-| `value` | [Number](Number.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` |[Number](Number.md)Battler.md) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -341,14 +342,14 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
-| `value` | [Number](Number.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` |[Number](Number.md)Battler.md) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
 </dl>
-
-#### friendsUnit () → {[Game_Unit](Game_Unit.html)}
+[Game_Unit](Game_Unit.md)
+#### friendsUnit () → {[Game_Unit](Game_Unit.md)}
 
 <dl>
 </dl>
@@ -367,8 +368,8 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `value` | [Number](Number.html) |  |
+| --- | --- [Number](Number.md)
+| `value` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -378,8 +379,8 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `value` | [Number](Number.html) |  |
+| --- | --- [Number](Number.md)
+| `value` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -389,8 +390,8 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
 </dl>
@@ -725,8 +726,8 @@ Game_Action The game object class representing a battle action.
                     <span>Boolean</span>
                 </dd>
             </dl>
-
-#### item () → {[RPG.UsableItem](RPG.UsableItem.html)}
+[RPG.UsableItem](RPG.UsableItem.md)
+#### item () → {[RPG.UsableItem](RPG.UsableItem.md)}
 
 <dl>
 </dl>
@@ -739,14 +740,14 @@ Game_Action The game object class representing a battle action.
                     <span><a>RPG.UsableItem</a></span>
                 </dd>
             </dl>
-
-#### itemCnt (target) → {[Number](Number.html)}
+[Number](Number.md)
+#### itemCnt (target) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
 </dl>
@@ -759,14 +760,14 @@ Game_Action The game object class representing a battle action.
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-
-#### itemCri (target) → {[Number](Number.html)}
+[Number](Number.md)
+#### itemCri (target) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
 </dl>
@@ -785,9 +786,9 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
-| `effect` | [RPG.Effect](RPG.Effect.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [RPG.Effect](RPG.Effect.md)tml) |  |
+| `effect` | [RPG.Effect](RPG.Effect.md) |  |
 
 <dl>
 </dl>
@@ -797,9 +798,9 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
-| `effect` | [RPG.Effect](RPG.Effect.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [RPG.Effect](RPG.Effect.md)tml) |  |
+| `effect` | [RPG.Effect](RPG.Effect.md) |  |
 
 <dl>
 </dl>
@@ -809,9 +810,9 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
-| `effect` | [RPG.Effect](RPG.Effect.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [RPG.Effect](RPG.Effect.md)tml) |  |
+| `effect` | [RPG.Effect](RPG.Effect.md) |  |
 
 <dl>
 </dl>
@@ -821,9 +822,9 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
-| `effect` | [RPG.Effect](RPG.Effect.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [RPG.Effect](RPG.Effect.md)tml) |  |
+| `effect` | [RPG.Effect](RPG.Effect.md) |  |
 
 <dl>
 </dl>
@@ -833,9 +834,9 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
-| `effect` | [RPG.Effect](RPG.Effect.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [RPG.Effect](RPG.Effect.md)tml) |  |
+| `effect` | [RPG.Effect](RPG.Effect.md) |  |
 
 <dl>
 </dl>
@@ -845,9 +846,9 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
-| `effect` | [RPG.Effect](RPG.Effect.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [RPG.Effect](RPG.Effect.md)tml) |  |
+| `effect` | [RPG.Effect](RPG.Effect.md) |  |
 
 <dl>
 </dl>
@@ -857,9 +858,9 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
-| `effect` | [RPG.Effect](RPG.Effect.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [RPG.Effect](RPG.Effect.md)tml) |  |
+| `effect` | [RPG.Effect](RPG.Effect.md) |  |
 
 <dl>
 </dl>
@@ -869,9 +870,9 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
-| `effect` | [RPG.Effect](RPG.Effect.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [RPG.Effect](RPG.Effect.md)tml) |  |
+| `effect` | [RPG.Effect](RPG.Effect.md) |  |
 
 <dl>
 </dl>
@@ -881,9 +882,9 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
-| `effect` | [RPG.Effect](RPG.Effect.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [RPG.Effect](RPG.Effect.md)tml) |  |
+| `effect` | [RPG.Effect](RPG.Effect.md) |  |
 
 <dl>
 </dl>
@@ -893,9 +894,9 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
-| `effect` | [RPG.Effect](RPG.Effect.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [RPG.Effect](RPG.Effect.md)tml) |  |
+| `effect` | [RPG.Effect](RPG.Effect.md) |  |
 
 <dl>
 </dl>
@@ -905,9 +906,9 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
-| `effect` | [RPG.Effect](RPG.Effect.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [RPG.Effect](RPG.Effect.md)tml) |  |
+| `effect` | [RPG.Effect](RPG.Effect.md) |  |
 
 <dl>
 </dl>
@@ -917,9 +918,9 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
-| `effect` | [RPG.Effect](RPG.Effect.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [RPG.Effect](RPG.Effect.md)tml) |  |
+| `effect` | [RPG.Effect](RPG.Effect.md) |  |
 
 <dl>
 </dl>
@@ -929,9 +930,9 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
-| `effect` | [RPG.Effect](RPG.Effect.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [RPG.Effect](RPG.Effect.md)tml) |  |
+| `effect` | [RPG.Effect](RPG.Effect.md) |  |
 
 <dl>
 </dl>
@@ -941,9 +942,9 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
-| `effect` | [RPG.Effect](RPG.Effect.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [RPG.Effect](RPG.Effect.md)tml) |  |
+| `effect` | [RPG.Effect](RPG.Effect.md) |  |
 
 <dl>
 </dl>
@@ -953,20 +954,20 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
-| `effect` | [RPG.Effect](RPG.Effect.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [RPG.Effect](RPG.Effect.md)tml) |  |
+| `effect` | [RPG.Effect](RPG.Effect.md) |  |
 
 <dl>
 </dl>
-
-#### itemEva (target) → {[Number](Number.html)}
+[Number](Number.md)
+#### itemEva (target) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
 </dl>
@@ -979,14 +980,14 @@ Game_Action The game object class representing a battle action.
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-
-#### itemHit (target) → {[Number](Number.html)}
+[Number](Number.md)
+#### itemHit (target) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
 </dl>
@@ -999,14 +1000,14 @@ Game_Action The game object class representing a battle action.
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-
-#### itemMrf (target) → {[Number](Number.html)}
+[Number](Number.md)
+#### itemMrf (target) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
 </dl>
@@ -1019,8 +1020,8 @@ Game_Action The game object class representing a battle action.
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-
-#### itemTargetCandidates () → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
+[Array](Array.md)[Game_Battler](Game_Battler.md)
+#### itemTargetCandidates () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
 
 <dl>
 </dl>
@@ -1033,14 +1034,14 @@ Game_Action The game object class representing a battle action.
                     <span><a>Array</a>.&lt;<a>Game_Battler</a>&gt;</span>
                 </dd>
             </dl>
-
-#### lukEffectRate (target) → {[Number](Number.html)}
+[Number](Number.md)
+#### lukEffectRate (target) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
 </dl>
@@ -1053,14 +1054,14 @@ Game_Action The game object class representing a battle action.
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-
-#### makeDamageValue (target, critical) → {[Number](Number.html)}
+[Number](Number.md)
+#### makeDamageValue (target, critical) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [Game_Battler](Game_Battler.md) |  |
 | `critical` | Boolean |  |
 
 <dl>
@@ -1080,13 +1081,13 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
 </dl>
-
-#### makeTargets () → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
+[Array](Array.md)[Game_Battler](Game_Battler.md)
+#### makeTargets () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
 
 <dl>
 </dl>
@@ -1113,22 +1114,8 @@ Game_Action The game object class representing a battle action.
                     <span>Boolean</span>
                 </dd>
             </dl>
-
-#### numRepeats () → {[Number](Number.html)}
-
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### numTargets () → {[Number](Number.html)}
+[Number](Number.md)
+#### numRepeats () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -1141,8 +1128,22 @@ Game_Action The game object class representing a battle action.
                     <span><a>Number</a></span>
                 </dd>
             </dl>
+[Number](Number.md)
+#### numTargets () → {[Number](Number.md)}
 
-#### opponentsUnit () → {[Game_Unit](Game_Unit.html)}
+<dl>
+</dl>
+
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Number</a></span>
+                </dd>
+            </dl>
+[Game_Unit](Game_Unit.md)
+#### opponentsUnit () → {[Game_Unit](Game_Unit.md)}
 
 <dl>
 </dl>
@@ -1160,14 +1161,14 @@ Game_Action The game object class representing a battle action.
 
 <dl>
 </dl>
-
-#### repeatTargets (targets) → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
+[Array](Array.md)[Game_Battler](Game_Battler.md)
+#### repeatTargets (targets) → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `targets` | [Array](Array.html).<[Game_Battler](Game_Battler.html)> |  |
+| --- | --- | [Array](Array.md)[Game_Battler](Game_Battler.md)
+| `targets` | [Array](Array.md).<[Game_Battler](Game_Battler.md)> |  |
 
 <dl>
 </dl>
@@ -1196,8 +1197,8 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.html) |  |
+| --- | --- |[RPG.Enemy.Action](RPG.Enemy.Action.md)
+| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.md) |  |
 
 <dl>
 </dl>
@@ -1212,8 +1213,8 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `itemId` | [Number](Number.html) |  |
+| --- | --- |[Number](Number.md)
+| `itemId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1223,8 +1224,8 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `object` | [RPG.UsableItem](RPG.UsableItem.html) |  |
+| --- | --- |[RPG.UsableItem](RPG.UsableItem.md)
+| `object` | [RPG.UsableItem](RPG.UsableItem.md) |  |
 
 <dl>
 </dl>
@@ -1234,8 +1235,8 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `skillId` | [Number](Number.html) |  |
+| --- | --- | [Number](Number.md)
+| `skillId` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -1245,8 +1246,8 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `subject` | [Game_Battler](Game_Battler.html) |  |
+| --- | --- | [Game_Battler](Game_Battler.md)
+| `subject` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
 </dl>
@@ -1256,13 +1257,13 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `targetIndex` | [Number](Number.html) |  |
+| --- | --- | --- [Number](Number.md)
+| `targetIndex` | [Number](Number.md) |  |
 
 <dl>
 </dl>
-
-#### speed () → {[Number](Number.html)}
+[Number](Number.md)
+#### speed () → {[Number](Number.md)}
 
 <dl>
 </dl>
@@ -1275,8 +1276,8 @@ Game_Action The game object class representing a battle action.
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-
-#### subject () → {[Game_Battler](Game_Battler.html)}
+[Game_Battler](Game_Battler.md)
+#### subject () → {[Game_Battler](Game_Battler.md)}
 
 <dl>
 </dl>
@@ -1289,8 +1290,8 @@ Game_Action The game object class representing a battle action.
                     <span><a>Game_Battler</a></span>
                 </dd>
             </dl>
-
-#### targetsForFriends () → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
+[Array](Array.md)[Game_Battler](Game_Battler.md)
+#### targetsForFriends () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
 
 <dl>
 </dl>
@@ -1303,8 +1304,8 @@ Game_Action The game object class representing a battle action.
                     <span><a>Array</a>.&lt;<a>Game_Battler</a>&gt;</span>
                 </dd>
             </dl>
-
-#### targetsForOpponents () → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
+[Array](Array.md)[Game_Battler](Game_Battler.md)
+#### targetsForOpponents () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
 
 <dl>
 </dl>
@@ -1323,8 +1324,8 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [Game_Battler](Game_Battler.md) |  |
 
 <dl>
 </dl>
@@ -1343,9 +1344,9 @@ Game_Action The game object class representing a battle action.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.html) |  |
-| `effect` | [RPG.Effect](RPG.Effect.html) |  |
+| --- | --- |[Game_Battler](Game_Battler.md)
+| `target` | [RPG.Effect](RPG.Effect.md)tml) |  |
+| `effect` | [RPG.Effect](RPG.Effect.md) |  |
 
 <dl>
 </dl>
@@ -1357,7 +1358,9 @@ Game_Action The game object class representing a battle action.
                 <dd>
                     <span>Boolean</span>
                 </dd>
-            </dl>
+            </dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

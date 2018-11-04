@@ -10,17 +10,17 @@ The window for selecting an item to sell on the shop screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
-| `height` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
+| `height` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Window_ItemList](Window_ItemList.html)
+* [Window_ItemList](Window_ItemList.md)
 
 ### Methods
 
@@ -37,14 +37,15 @@ The window for selecting an item to sell on the shop screen.
                 </dd>
             </dl>
 
-#### actorName (actorIndex) → {[String](String.html)}
+#### actorName (actorIndex) → {[String](String.md)}
 
-Returns the actor name given an index; the index starts from 1.
+
+Returns the actor name given an index; the index starts from 1.
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
+| --- | --- | ---[Number](Number.md)
 | `actorIndex` | [Number](Number.html) |  |
 
 <dl>
@@ -69,7 +70,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### addChild (child) → {Object}
 
-[super] Adds a child to the container.
+
+[super] Adds a child to the container.
 
 ##### Parameters:
 
@@ -90,7 +92,8 @@ The window for selecting an item to sell on the shop screen.
 
 ##### Returns:
 
-The child that was added
+
+The child that was added
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -100,10 +103,11 @@ The window for selecting an item to sell on the shop screen.
 
 #### addChildAt (child, index) → {Object}
 
-[super] Adds a child to the container at a specified index.
+
+[super] Adds a child to the container at a specified index.
 
 ##### Parameters:
-
+[Number](Number.md)
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object | The child to add |
@@ -122,7 +126,8 @@ The window for selecting an item to sell on the shop screen.
 
 ##### Returns:
 
-The child that was added
+
+The child that was added
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -132,7 +137,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### addChildToBack (child) → {Object}
 
-Adds a child between the background and contents.
+
+Adds a child between the background and contents.
 
 ##### Parameters:
 
@@ -153,8 +159,9 @@ The window for selecting an item to sell on the shop screen.
 
 ##### Returns:
 
-The child that was added
-<dl>
+
+The child that was added
+<dl>[Number](Number.md)
                 <dt> Type </dt>
                 <dd>
                     <span>Object</span>
@@ -176,7 +183,7 @@ The window for selecting an item to sell on the shop screen.
 
 ##### Returns:
 
-<dl>
+<dl>[Number](Number.md)
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
@@ -184,8 +191,9 @@ The window for selecting an item to sell on the shop screen.
             </dl>
 
 #### calcTextHeight (textState, all) → {[Number](Number.html)}
+[MV.TextState](MV.TextState.md)
 
-Calculates the text height of the textState (when using drawTextEx); if all is set to true, all lines of text are calculated, otherwise only a single line is processed.
+Calculates the text height of the textState (when using drawTextEx); if all is set to true, all lines of text are calculated, otherwise only a single line is processed.
 
 ##### Parameters:
 
@@ -225,7 +233,7 @@ The window for selecting an item to sell on the shop screen.
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            <[String](String.md)
 
 #### callHandler (symbol)
 
@@ -248,7 +256,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### callOkHandler ()
 
-Calls the ok handler and begins processing confirmation of selection.
+
+Calls the ok handler and begins processing confirmation of selection.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -264,7 +273,7 @@ The window for selecting an item to sell on the shop screen.
 
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>
+                <dd>[Number](Number.md)
                     <ul>
                         <li>
                             <a>Window_Selectable#callUpdateHelp</a>
@@ -272,10 +281,11 @@ The window for selecting an item to sell on the shop screen.
                     </ul>
                 </dd>
             </dl>
-
+[Number](Number.md)
 #### canvasToLocalX (x) → {[Number](Number.html)}
 
-Returns the x coordinate of the mouse to a local window x coordinate.
+
+Returns the x coordinate of the mouse to a local window x coordinate.
 
 ##### Parameters:
 
@@ -293,7 +303,7 @@ The window for selecting an item to sell on the shop screen.
                     </ul>
                 </dd>
             </dl>
-
+[Number](Number.md)
 ##### Returns:
 
 <dl>
@@ -301,11 +311,12 @@ The window for selecting an item to sell on the shop screen.
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
-            </dl>
+        [Number](Number.md)
 
 #### canvasToLocalY (y) → {[Number](Number.html)}
 
-Returns the y coordinate of the mouse to a local window y coordinate.
+
+Returns the y coordinate of the mouse to a local window y coordinate.
 
 ##### Parameters:
 
@@ -335,7 +346,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### changePaintOpacity (enabled)
 
-Changes the paintOpacity (the opacity of the text drawn to the window); if true the opacity is set to 255, otherwise the opacity is set to 160.
+
+Changes the paintOpacity (the opacity of the text drawn to the window); if true the opacity is set to 255, otherwise the opacity is set to 160.
 
 ##### Parameters:
 
@@ -350,13 +362,14 @@ The window for selecting an item to sell on the shop screen.
                         <li>
                             <a>Window_Base#changePaintOpacity</a>
                         </li>
-                    </ul>
+            [String](String.md)
                 </dd>
             </dl>
 
 #### changeTextColor (color)
 
-Changes the text color property given a css color string.
+
+Changes the text color property given a css color string.
 
 ##### Parameters:
 
@@ -368,7 +381,7 @@ The window for selecting an item to sell on the shop screen.
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
+            [Number](Number.md)
                             <a>Window_Base#changeTextColor</a>
                         </li>
                     </ul>
@@ -395,8 +408,9 @@ The window for selecting an item to sell on the shop screen.
             </dl>
 
 #### close ()
+[Number](Number.md)
 
-Closes the window.
+Closes the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -410,13 +424,14 @@ The window for selecting an item to sell on the shop screen.
 
 #### contentsHeight () → {[Number](Number.html)}
 
-Returns the inner content height of the window.
+
+Returns the inner content height of the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                            <a>Window_Base#contentsHeight</a>
+                         [Number](Number.md)tentsHeight</a>
                         </li>
                     </ul>
                 </dd>
@@ -433,12 +448,13 @@ The window for selecting an item to sell on the shop screen.
 
 #### contentsWidth () → {[Number](Number.html)}
 
-Returns the inner content width of the window.
+
+Returns the inner content width of the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
+                        <li>[String](String.md)
                             <a>Window_Base#contentsWidth</a>
                         </li>
                     </ul>
@@ -446,7 +462,7 @@ The window for selecting an item to sell on the shop screen.
             </dl>
 
 ##### Returns:
-
+[String](String.md)
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -456,7 +472,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### convertEscapeCharacters (text) → {[String](String.html)}
 
-Converts the escape characters and returns the text content after processing the characters.
+
+Converts the escape characters and returns the text content after processing the characters.
 
 ##### Parameters:
 
@@ -481,12 +498,13 @@ The window for selecting an item to sell on the shop screen.
                 <dt> Type </dt>
                 <dd>
                     <span><a>String</a></span>
-                </dd>
+                </dd>[String](String.md)
             </dl>
 
 #### createContents ()
 
-Creates the contents of the window; this is the area of the window which text is drawn to.
+
+Creates the contents of the window; this is the area of the window which text is drawn to.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -500,7 +518,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### crisisColor () → {[String](String.html)}
 
-Returns the crisis color as a css color string.
+
+Returns the crisis color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -545,7 +564,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### cursorDown (wrap)
 
-Moves the cursor down; if wrap is passed as true, then it will return to the top when at the end of the list.
+
+Moves the cursor down; if wrap is passed as true, then it will return to the top when at the end of the list.
 
 ##### Parameters:
 
@@ -566,7 +586,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### cursorFixed () → {Boolean}
 
-Returns true if the _cursorFixed property is true; this means the cursor is locked to a position.
+
+Returns true if the _cursorFixed property is true; this means the cursor is locked to a position.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -653,7 +674,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### cursorUp (wrap)
 
-Moves the cursor up; if wrap is passed as true, then it will return to the bottom when at the top of the list.
+
+Moves the cursor up; if wrap is passed as true, then it will return to the bottom when at the top of the list.
 
 ##### Parameters:
 
@@ -663,7 +685,7 @@ The window for selecting an item to sell on the shop screen.
 
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>
+                <dd>[String](String.md)
                     <ul>
                         <li>
                             <a>Window_Selectable#cursorUp</a>
@@ -687,7 +709,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### deathColor () → {[String](String.html)}
 
-Returns the death color as a css color string.
+
+Returns the death color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -699,7 +722,7 @@ The window for selecting an item to sell on the shop screen.
                 </dd>
             </dl>
 
-##### Returns:
+##### Returns:[String](String.md)
 
 <dl>
                 <dt> Type </dt>
@@ -710,7 +733,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### deselect ()
 
-Deselects the currently selected index.
+
+Deselects the currently selected index.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -721,10 +745,11 @@ The window for selecting an item to sell on the shop screen.
                     </ul>
                 </dd>
             </dl>
-
+[String](String.md)
 #### dimColor1 () → {[String](String.html)}
 
-Color 1 of the dimmer sprite bitmap. for the gradient.
+
+Color 1 of the dimmer sprite bitmap. for the gradient.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -747,10 +772,11 @@ The window for selecting an item to sell on the shop screen.
 
 #### dimColor2 () → {[String](String.html)}
 
-Color 2 of the dimmer sprite bitmap for the gradient.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
+
+Color 2 of the dimmer sprite bitmap for the gradient.
+<dl>[Game_Actor](Game_Actor.md)
+        [Number](Number.md) From:</dt>
+        [Number](Number.md)
                     <ul>
                         <li>
                             <a>Window_Base#dimColor2</a>
@@ -771,10 +797,10 @@ The window for selecting an item to sell on the shop screen.
 #### drawActorCharacter (actor, x, y)
 
 ##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
+[Game_Actor](Game_Actor.md)
+| Name |[Number](Number.md)
+| --- | [Number](Number.md)
+| `actor` | [Number](Number.md)or.html) |  |
 | `x` | [Number](Number.html) |  |
 | `y` | [Number](Number.html) |  |
 
@@ -791,14 +817,15 @@ The window for selecting an item to sell on the shop screen.
 
 #### drawActorClass (actor, x, y, width)
 
-Draws the actor class at the specified x and y coordinates within the given width.
+
+Draws the actor class at the specified x and y coordinates within the given width.
 
 ##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
+[Game_Actor](Game_Actor.md)
+| Name |[Number](Number.md)
+| --- | [Number](Number.md)
+| `actor` | [Number](Number.md)or.html) |  |
+| `x` | [Numb[Number](Number.md)
 | `y` | [Number](Number.html) |  |
 | `width` | [Number](Number.html) |  |
 
@@ -815,13 +842,14 @@ The window for selecting an item to sell on the shop screen.
 
 #### drawActorFace (actor, x, y, width, height)
 
-Draws the actor face at the specified x and y coordinates within the given width.
+
+Draws the actor face at the specified x and y coordinates within the given width.
 
 ##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
+[Game_Actor](Game_Actor.md)
+| Name |[Number](Number.md)
+| --- | [Number](Number.md)
+| `actor` | [Number](Number.md)or.html) |  |
 | `x` | [Number](Number.html) |  |
 | `y` | [Number](Number.html) |  |
 | `width` | [Number](Number.html) |  |
@@ -840,11 +868,12 @@ The window for selecting an item to sell on the shop screen.
 
 #### drawActorHp (actor, x, y, width)
 
-Draws the actor hp at the specified x and y coordinates within the given width.
 
-##### Parameters:
-
-| Name | Type | Description |
+Draws the actor hp at the specified x and y coordinates within the given width.
+[Game_Actor](Game_Actor.md)
+##### Pa[Number](Number.md)
+[Number](Number.md)
+| Name | Typ[Number](Number.md)
 | --- | --- | --- |
 | `actor` | [Game_Actor](Game_Actor.html) |  |
 | `x` | [Number](Number.html) |  |
@@ -864,9 +893,10 @@ The window for selecting an item to sell on the shop screen.
 
 #### drawActorIcons (actor, x, y, width)
 
-Draws the actor icons at the specified x and y coordinates within the given width.
 
-##### Parameters:
+Draws the ac[Game_Actor](Game_Actor.md)and y coordinates within the given width.
+[Number](Number.md)
+##### Pa[Number](Number.md)
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -887,9 +917,10 @@ The window for selecting an item to sell on the shop screen.
             </dl>
 
 #### drawActorLevel (actor, x, y)
-
-Draws the actor level at the specified x and y coordinates.
-
+[Game_Actor](Game_Actor.md)
+[Number](Number.md)
+Draws th[Number](Number.md)specified x and y coordinates.
+[Number](Number.md)
 ##### Parameters:
 
 | Name | Type | Description |
@@ -910,9 +941,10 @@ The window for selecting an item to sell on the shop screen.
             </dl>
 
 #### drawActorMp (actor, x, y, width)
-
-Draws the actor mp at the specified x and y coordinates within the given width.
-
+[Game_Actor](Game_Actor.md)
+[Number](Number.md)
+Draws th[Number](Number.md)cified x and y coordinates within the given width.
+[Number](Number.md)
 ##### Parameters:
 
 | Name | Type | Description |
@@ -933,9 +965,10 @@ The window for selecting an item to sell on the shop screen.
                 </dd>
             </dl>
 
-#### drawActorName (actor, x, y, width)
-
-Draws the actor name at the specified x and y coordinates within the given width.
+#### drawAct[Game_Actor](Game_Actor.md)
+[Number](Number.md)
+[Number](Number.md)
+Draws the ac[Number](Number.md)fied x and y coordinates within the given width.
 
 ##### Parameters:
 
@@ -956,10 +989,11 @@ The window for selecting an item to sell on the shop screen.
                     </ul>
                 </dd>
             </dl>
-
-#### drawActorNickname (actor, x, y, width)
-
-Draws the actor nickname at the specified x and y coordinates within the given width.
+[Game_Actor](Game_Actor.md)
+#### dra[Number](Number.md), x, y, width)
+[Number](Number.md)
+[Number](Number.md)
+Draws the actor nickname at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
@@ -979,11 +1013,12 @@ The window for selecting an item to sell on the shop screen.
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            [Game_Actor](Game_Actor.md)
+[Number](Number.md)
+#### dra[Number](Number.md)ctor, x, y, width)
+[Number](Number.md)
 
-#### drawActorSimpleStatus (actor, x, y, width)
-
-Draws a simple status for the game actor passed into the method at the specified x and y coordinates within the given width.
+Draws a simple status for the game actor passed into the method at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
@@ -1007,7 +1042,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### drawActorTp (actor, x, y, width)
 
-Draws the actor tp at the specified x and y coordinates within the given width.
+
+Draws the actor tp at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
@@ -1015,10 +1051,10 @@ The window for selecting an item to sell on the shop screen.
 | --- | --- | --- |
 | `actor` | [Game_Actor](Game_Actor.html) |  |
 | `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
-
-<dl>
+| `y` | [Number](Num[String](String.md)
+| `width` | [Number]([Number](Number.md)
+[Number](Number.md)
+<dl>[Number](Number.md)
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -1031,21 +1067,23 @@ The window for selecting an item to sell on the shop screen.
 
 #### drawAllItems ()
 
-Draws all items within the window; this method cals drawItem multiple times.
+
+Draws all items within the window; this method cals drawItem multiple times.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
                             <a>Window_Selectable#drawAllItems</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
+            [Number](Number.md)
+           [String](String.md)
+        [Number](Number.md)
+        [Number](Number.md)
+[Number](Number.md)
 #### drawCharacter (characterName, characterIndex, x, y)
 
-Draws a character (map sprites) at the specified x and y coordinate. CharacterName refers to character spritesheet, and characterIndex refers to the characterIndex on the spritesheet.
+
+Draws a character (map sprites) at the specified x and y coordinate. CharacterName refers to character spritesheet, and characterIndex refers to the characterIndex on the spritesheet.
 
 ##### Parameters:
 
@@ -1062,14 +1100,15 @@ The window for selecting an item to sell on the shop screen.
                     <ul>
                         <li>
                             <a>Window_Base#drawCharacter</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+              [Number](Number.md)
+          [Number](Number.md)
+        [Number](Number.md)
+        [Number](Number.md)
+[Number](Number.md)
+#### drawCurr[String](String.md)t, x, y, width)
+[String](String.md)
 
-#### drawCurrencyValue (value, unit, x, y, width)
-
-Draws the currency value given at the specified x and y coordinates within the width given. Useful if you want to write your own custom currency value.
+Draws the currency value given at the specified x and y coordinates within the width given. Useful if you want to write your own custom currency value.
 
 ##### Parameters:
 
@@ -1086,15 +1125,16 @@ The window for selecting an item to sell on the shop screen.
                 <dd>
                     <ul>
                         <li>
-                            <a>Window_Base#drawCurrencyValue</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
+               [String](String.md)w_Base#drawCurrencyValue</a>
+                [Number](Number.md)
+        [Number](Number.md)
+        [Number](Number.md)
+            [Number](Number.md)
+[Number](Number.md)
 #### drawCurrentAndMax (current, max, x, y, width, color1, color2)
 
-Draws the current and max number at the specified x and y coordinate within the given width. Color1 represents the current number and color2 represents the max number when the text is drawn.
+
+Draws the current and max number at the specified x and y coordinate within the given width. Color1 represents the current number and color2 represents the max number when the text is drawn.
 
 ##### Parameters:
 
@@ -1111,12 +1151,12 @@ The window for selecting an item to sell on the shop screen.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#drawCurrentAndMax</a>
-                        </li>
-                    </ul>
-                </dd>
+        [Number](Number.md)
+        [Number](Number.md)
+            [Number](Number.md)ndow_Base#drawCurrentAndMax</a>
+           [Number](Number.md)
+             [String](String.md)
+             [String](String.md)
             </dl>
 
 #### drawFace (faceName, faceIndex, x, y, width opt, height opt)
@@ -1137,15 +1177,16 @@ The window for selecting an item to sell on the shop screen.
                 <dd>
                     <ul>
                         <li>
-                            <a>Window_Base#drawFace</a>
-                        </li>
-                    </ul>
+                [Number](Number.md)_Base#drawFace</a>
+        [Number](Number.md)
+        [Number](Number.md)
                 </dd>
             </dl>
 
 #### drawGauge (x, y, width, rate, color1, color2)
 
-Draws a gauge at the specified x and y coordinates within the given width. Color1 and Color2 represent the gradient as css color strings of the gauge.
+
+Draws a gauge at the specified x and y coordinates within the given width. Color1 and Color2 represent the gradient as css color strings of the gauge.
 
 ##### Parameters:
 
@@ -1157,7 +1198,7 @@ The window for selecting an item to sell on the shop screen.
 | `rate` | [Number](Number.html) |  |
 | `color1` | [String](String.html) |  |
 | `color2` | [String](String.html) |  |
-
+[Number](Number.md)
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1171,16 +1212,17 @@ The window for selecting an item to sell on the shop screen.
 
 #### drawIcon (iconIndex, x, y)
 
-Draws an icon given the specified iconIndex at the specified x and y coordinates. The Width and Height of the icon is based on the _iconWidth and _iconHeight properties.
+
+Draws an icon given the specified iconIndex at the specified x and y coordinates. The Width and Height of the icon is based on the _iconWidth and _iconHeight properties.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `iconIndex` | [Number](Number.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-
+| `iconInde[RPG.BaseItem](RPG.BaseItem.md)
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+[Number](Number.md)
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1199,10 +1241,10 @@ The window for selecting an item to sell on the shop screen.
 | Name | Type | Description |
 | --- | --- | --- |
 | `index` | [Number](Number.html) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
+[RPG.BaseItem](RPG.BaseItem.md)
+<dl>[Number](Number.md)
+        [Number](Number.md) From:</dt>
+            [Number](Number.md)
                     <ul>
                         <li>
                             <a>Window_ItemList#drawItem</a>
@@ -1213,7 +1255,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### drawItemName (item, x, y, width)
 
-Draws the item name at the specified x and y coordinates within the given width.
+
+Draws the item name at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
@@ -1223,10 +1266,10 @@ The window for selecting an item to sell on the shop screen.
 | `x` | [Number](Number.html) |  |
 | `y` | [Number](Number.html) |  |
 | `width` | [Number](Number.html) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
+[Number](Number.md)
+<dl>[Number](Number.md)
+               [Number](Number.md)/dt>
+            [String](String.md)
                     <ul>
                         <li>
                             <a>Window_Base#drawItemName</a>
@@ -1239,7 +1282,7 @@ The window for selecting an item to sell on the shop screen.
 
 ##### Parameters:
 
-| Name | Type | Description |
+| Name | Type | Description |[Number](Number.md)
 | --- | --- | --- |
 | `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
 | `x` | [Number](Number.html) |  |
@@ -1247,9 +1290,9 @@ The window for selecting an item to sell on the shop screen.
 | `width` | [Number](Number.html) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
+           [String](String.md)om:</dt>
+        [Number](Number.md)
+        [Number](Number.md)
                         <li>
                             <a>Window_ItemList#drawItemNumber</a>
                         </li>
@@ -1259,7 +1302,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### drawText (text, x, y, maxWidth, align)
 
-Given text or a number, draws the content to the window's contents layer at the specified x and y coordinate within the max width. The text content can also be aligned with the align property. The possible alignments are: "left", "center", "right".
+
+Given text or a number, draws the content to the window's contents layer at the specified x and y coordinate within the max width. The text content can also be aligned with the align property. The possible alignments are: "left", "center", "right".
 
 ##### Parameters:
 
@@ -1283,14 +1327,15 @@ The window for selecting an item to sell on the shop screen.
             </dl>
 
 #### drawTextEx (text, x, y) → {[Number](Number.html)}
+[Number](Number.md)
 
-Draws text with text codes included; this will draw icons, increase text height, and more.
+Draws text with text codes included; this will draw icons, increase text height, and more.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.html) |  |
+| `text` | [Str[Number](Number.md)|
 | `x` | [Number](Number.html) |  |
 | `y` | [Number](Number.html) |  |
 
@@ -1312,7 +1357,7 @@ The window for selecting an item to sell on the shop screen.
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
-            </dl>
+            </dl>[String](String.md)
 
 #### ensureCursorVisible ()
 
@@ -1329,7 +1374,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### fittingHeight (numLines) → {[Number](Number.html)}
 
-Returns the fitting height given a number of lines based on the line height plus standard padding of the window. Default formula: numLines * lineHeight + standardPadding * 2
+
+Returns the fitting height given a number of lines based on the line height plus standard padding of the window. Default formula: numLines * lineHeight + standardPadding * 2
 
 ##### Parameters:
 
@@ -1359,7 +1405,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### gaugeBackColor () → {[String](String.html)}
 
-Returns the gauage back color as a css color string.
+
+Returns the gauage back color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1375,14 +1422,15 @@ The window for selecting an item to sell on the shop screen.
 
 <dl>
                 <dt> Type </dt>
-                <dd>
+                <dd>[Number](Number.md)
                     <span><a>String</a></span>
                 </dd>
             </dl>
 
 #### hide ()
-
-Hides the window, making it invisible; the window is not closed when hidden.
+[Number](Number.md)
+[Number](Number.md)
+Hides the window, making it invisible; the window is not closed when hidden.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1396,13 +1444,14 @@ The window for selecting an item to sell on the shop screen.
 
 #### hideBackgroundDimmer ()
 
-Hides the background dimmer sprite.
+
+Hides the background dimmer sprite.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                            <a>Window_Base#hideBackgroundDimmer</a>
+                        [String](String.md)deBackgroundDimmer</a>
                         </li>
                     </ul>
                 </dd>
@@ -1410,7 +1459,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### hideHelpWindow ()
 
-Hides the attached help window.
+[Game_Actor](Game_Actor.md)
+Hides the attached help window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1431,7 +1481,7 @@ The window for selecting an item to sell on the shop screen.
 | `x` | [Number](Number.html) |  |
 | `y` | [Number](Number.html) |  |
 
-<dl>
+<dl>[String](String.md)
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -1453,7 +1503,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### hpColor (actor) → {[String](String.html)}
 
-Returns the hp color as a css string.
+
+Returns the hp color as a[String](String.md)
 
 ##### Parameters:
 
@@ -1483,7 +1534,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### hpGaugeColor1 () → {[String](String.html)}
 
-Returns the hp gauge color 1 as a css color string.
+
+Returns the[RPG.BaseItem](RPG.BaseItem.md)string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1505,8 +1557,9 @@ The window for selecting an item to sell on the shop screen.
             </dl>
 
 #### hpGaugeColor2 () → {[String](String.html)}
+[Number](Number.md)
 
-Returns the hp gauge color 2 as a css color string.
+Returns the hp gauge color 2 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1529,15 +1582,16 @@ The window for selecting an item to sell on the shop screen.
 
 #### includes (item) → {Boolean}
 
-Returns true if the given item is included.
+
+Returns true if the given item is included.
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
-
-<dl>
+| --- | [Number](Number.md)
+| `item`[Number](Number.md).BaseItem.html) |  |
+[Number](Number.md)
+<dl>[Number](Number.md)
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -1559,7 +1613,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### index () → {[Number](Number.html)}
 
-Returns the current position of the _index property.
+
+Returns the current position of the _index property.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1582,7 +1637,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### initialize (x, y, width, height)
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 
 ##### Parameters:
 
@@ -1635,8 +1691,8 @@ The window for selecting an item to sell on the shop screen.
                         <li>
                             <a>Window_Selectable#isCancelTriggered</a>
                         </li>
-                    </ul>
-                </dd>
+        [Number](Number.md)
+        [Number](Number.md)
             </dl>
 
 ##### Returns:
@@ -1650,7 +1706,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### isClosed ()
 
-Returns true if the window is completely closed (openness == 0).
+
+Returns true if the window is completely closed (openness == 0).
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1664,7 +1721,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### isClosing () → {Boolean}
 
-Returns true if the window is currently closing.
+
+Returns true if the window is currently closing.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1731,7 +1789,7 @@ The window for selecting an item to sell on the shop screen.
 
 <dl>
                 <dt> Type </dt>
-                <dd>
+           [RPG.BaseItem](RPG.BaseItem.md)
                     <span>Boolean</span>
                 </dd>
             </dl>
@@ -1751,7 +1809,7 @@ The window for selecting an item to sell on the shop screen.
 
 ##### Returns:
 
-<dl>
+<dl>[String](String.md)
                 <dt> Type </dt>
                 <dd>
                     <span>Boolean</span>
@@ -1760,7 +1818,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### isCursorVisible () → {Boolean}
 
-Determines if the cursor is visible within the window.
+
+Determines if the cursor is visible within the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1783,7 +1842,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### isEnabled (item) → {Boolean}
 
-Determines if the item is sellable, otherwise, greyed out.
+
+Determines if the item is sellable, otherwise, greyed out.
 
 ##### Parameters:
 
@@ -1833,7 +1893,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### isHorizontal () → {Boolean}
 
-Returns true if the window is horizontal; means the window only has a single row.
+
+Returns true if the window is horizontal; means the window only has a single row.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1856,7 +1917,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### isOkEnabled () → {Boolean}
 
-Determines if ok is enabled as an option; this means whether you can confirm selection of an item within the window.
+
+Determines if ok is enabled as an option; this means whether you can confirm selection of an item within the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1901,7 +1963,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### isOpen ()
 
-Returns true if the window is completely open (openness == 255).
+
+Returns true if the window is completely open (openness == 255).
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1937,9 +2000,10 @@ The window for selecting an item to sell on the shop screen.
 
 #### isOpening () → {Boolean}
 
-Returns true if the window is currently opening.
+
+Returns true if the window is currently opening.
 <dl>
-                <dt>Inherited From:</dt>
+                [RPG.BaseItem](RPG.BaseItem.md)
                 <dd>
                     <ul>
                         <li>
@@ -1962,7 +2026,7 @@ The window for selecting an item to sell on the shop screen.
 
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>
+                <dd>[Number](Number.md)
                     <ul>
                         <li>
                             <a>Window_Selectable#isTouchedInsideFrame</a>
@@ -1982,9 +2046,10 @@ The window for selecting an item to sell on the shop screen.
 
 #### isTouchOkEnabled () → {Boolean}
 
-Determines if touch ok is enabled as an option; this means whether you can confirm the selection of an item within the window with touch input.
+
+Determines if touch ok is enabled as an option; this means whether you can confirm the selection of an item within the window with touch input.
 <dl>
-                <dt>Inherited From:</dt>
+                <dt>Inher[Rectangle](Rectangle.md)
                 <dd>
                     <ul>
                         <li>
@@ -1992,7 +2057,7 @@ The window for selecting an item to sell on the shop screen.
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            [Number](Number.md)
 
 ##### Returns:
 
@@ -2005,7 +2070,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### item () → {[RPG.BaseItem](RPG.BaseItem.html)}
 
-Returns the current item.
+
+Returns the current item.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2013,7 +2079,7 @@ The window for selecting an item to sell on the shop screen.
                         <li>
                             <a>Window_ItemList#item</a>
                         </li>
-                    </ul>
+                    </ul>[Rectangle](Rectangle.md)
                 </dd>
             </dl>
 
@@ -2021,14 +2087,15 @@ The window for selecting an item to sell on the shop screen.
 
 <dl>
                 <dt> Type </dt>
-                <dd>
+            [Number](Number.md)
                     <span><a>RPG.BaseItem</a></span>
                 </dd>
             </dl>
 
 #### itemHeight () → {[Number](Number.html)}
 
-Returns the height of an item within the window; determines the height of a row.
+
+Returns the height of an item within the window; determines the height of a row.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2042,7 +2109,7 @@ The window for selecting an item to sell on the shop screen.
 
 ##### Returns:
 
-<dl>
+<dl>[Number](Number.md)
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
@@ -2051,7 +2118,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### itemRect (index) → {[Rectangle](Rectangle.html)}
 
-Creates a new rectangle based on itemWidth and itemHeight. The rectangle is mainly used for positioning items within the selectable window.
+
+Creates a new rectangle based on itemWidth and itemHeight. The rectangle is mainly used for positioning items within the selectable window.
 
 ##### Parameters:
 
@@ -2064,7 +2132,7 @@ The window for selecting an item to sell on the shop screen.
                 <dd>
                     <ul>
                         <li>
-                            <a>Window_Selectable#itemRect</a>
+                      [Number](Number.md)table#itemRect</a>
                         </li>
                     </ul>
                 </dd>
@@ -2081,7 +2149,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### itemRectForText (index) → {[Rectangle](Rectangle.html)}
 
-Creates a new rectangle based on itemWidth and itemHeight The rectangle is used for positioning text within the selectable window.
+
+Creates a new rectangle based on itemWidth and itemHeight The rectangle is used for positioning text within the selectable window.
 
 ##### Parameters:
 
@@ -2111,7 +2180,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### itemWidth () → {[Number](Number.html)}
 
-Returns the width of an item within the window; determines the width of a column.
+
+Returns the width of an item within the window; determines the width of a column.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2134,7 +2204,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### lineHeight () → {[Number](Number.html)}
 
-Returns the standard line height of the current window; default is 36.
+
+Returns the[RPG.BaseItem](RPG.BaseItem.md)ent window; default is 36.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2156,8 +2227,9 @@ The window for selecting an item to sell on the shop screen.
             </dl>
 
 #### loadWindowskin ()
+[Number](Number.md)
 
-Loads the window skin from the img/system directory.
+Loads the window skin from the img/system directory.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2171,12 +2243,13 @@ The window for selecting an item to sell on the shop screen.
 
 #### makeFontBigger ()
 
-Makes the font bigger by a value of 12.
+
+Makes the font bigger by a value of 12.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
+                    [Number](Number.md)
                             <a>Window_Base#makeFontBigger</a>
                         </li>
                     </ul>
@@ -2185,7 +2258,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### makeFontSmaller ()
 
-Makes the font smaller by a value of 12.
+
+Makes the font smaller by a value of 12.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2197,9 +2271,10 @@ The window for selecting an item to sell on the shop screen.
                 </dd>
             </dl>
 
-#### makeItemList (item) → {Boolean}
+#### makeItemList (item)[Number](Number.md)
 
-Returns true if the given item is enabled.
+
+Returns true if the given item is enabled.
 
 ##### Parameters:
 
@@ -2218,7 +2293,7 @@ The window for selecting an item to sell on the shop screen.
                 </dd>
             </dl>
 
-##### Returns:
+##### Returns:[Number](Number.md)
 
 <dl>
                 <dt> Type </dt>
@@ -2240,7 +2315,7 @@ The window for selecting an item to sell on the shop screen.
                 </dd>
             </dl>
 
-##### Returns:
+##### Returns:[Number](Number.md)
 
 <dl>
                 <dt> Type </dt>
@@ -2262,7 +2337,7 @@ The window for selecting an item to sell on the shop screen.
                 </dd>
             </dl>
 
-##### Returns:
+##### Returns:[Number](Number.md)
 
 <dl>
                 <dt> Type </dt>
@@ -2292,10 +2367,10 @@ The window for selecting an item to sell on the shop screen.
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-
-#### maxPageRows () → {[Number](Number.html)}
-
-<dl>
+[Number](Number.md)
+#### max[Number](Number.md)r](Number.html)}
+[Number](Number.md)
+<dl>[Number](Number.md)
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -2308,7 +2383,7 @@ The window for selecting an item to sell on the shop screen.
 
 ##### Returns:
 
-<dl>
+<dl>[String](String.md)
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
@@ -2316,7 +2391,7 @@ The window for selecting an item to sell on the shop screen.
             </dl>
 
 #### maxRows () → {[Number](Number.html)}
-
+[Game_Actor](Game_Actor.md)
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2338,7 +2413,7 @@ The window for selecting an item to sell on the shop screen.
             </dl>
 
 #### maxTopRow () → {[Number](Number.html)}
-
+[String](String.md)
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2361,7 +2436,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### move (x, y, width, height)
 
-Sets the x, y, width, and height all at once.
+[String](String.md)
+Sets the x, y, width, and height all at once.
 
 ##### Parameters:
 
@@ -2383,9 +2459,10 @@ The window for selecting an item to sell on the shop screen.
                 </dd>
             </dl>
 
-#### mpColor (actor) → {[String](String.html)}
+#### mpColor (actor) → {[[String](String.md)
 
-Returns the mp color as a css color string.
+
+Returns the mp color as a css color string.
 
 ##### Parameters:
 
@@ -2415,7 +2492,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### mpCostColor () → {[String](String.html)}
 
-Returns the mp cost color as a css color string.
+
+Returns the mp cost color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2426,7 +2504,7 @@ The window for selecting an item to sell on the shop screen.
                     </ul>
                 </dd>
             </dl>
-
+[String](String.md)
 ##### Returns:
 
 <dl>
@@ -2438,7 +2516,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### mpGaugeColor1 () → {[String](String.html)}
 
-Returns the mp gauge color 1 as a css color string.
+
+Returns the mp gauge color 1 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2448,7 +2527,7 @@ The window for selecting an item to sell on the shop screen.
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            </dl>[Number](Number.md)
 
 ##### Returns:
 
@@ -2461,7 +2540,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### mpGaugeColor2 () → {[String](String.html)}
 
-Returns the mp gauge color 2 as a css color string.
+
+Returns the mp gauge color 2 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2476,7 +2556,7 @@ The window for selecting an item to sell on the shop screen.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
+                [MV.TextState](MV.TextState.md)
                 <dd>
                     <span><a>String</a></span>
                 </dd>
@@ -2497,7 +2577,7 @@ The window for selecting an item to sell on the shop screen.
 
 ##### Returns:
 
-<dl>
+<dl>[MV.TextState](MV.TextState.md)
                 <dt> Type </dt>
                 <dd>
                     <span>Boolean</span>
@@ -2506,7 +2586,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### normalColor () → {[String](String.html)}
 
-Returns the normal color as a css color string.
+
+Returns the normal color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2529,7 +2610,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### numberWidth () → {[Number](Number.html)}
 
-Returns the width of the numbers.
+
+Returns the width of the numbers.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2558,7 +2640,7 @@ The window for selecting an item to sell on the shop screen.
 | --- | --- | --- |
 | `textState` | [MV.TextState](MV.TextState.html) |  |
 
-<dl>
+<dl>[Number](Number.md)
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -2571,14 +2653,15 @@ The window for selecting an item to sell on the shop screen.
 
 #### obtainEscapeParam (textState) → {number|string}
 
-Obtains the escape parameters from text codes in the text state when drawTextEx is used to draw text.
+[String](String.md)
+Obtains the escape parameters from text codes in the text state when drawTextEx is used to draw text.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `textState` | [MV.TextState](MV.TextState.html) |  |
-
+[Number](Number.md)
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2600,7 +2683,7 @@ The window for selecting an item to sell on the shop screen.
             </dl>
 
 #### onTouch (triggered)
-
+[String](String.md)
 ##### Parameters:
 
 | Name | Type | Description |
@@ -2620,7 +2703,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### open ()
 
-Opens the window.
+
+Opens the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2634,7 +2718,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### paramchangeTextColor (change)
 
-Changes the text color based on the powerUpColor, powerDownColor and normal color. powerUpColor is any number greater than 0, powerDownColor is any color less than 0, otherwise normal color is returned.
+
+Changes the text color based on the powerUpColor, powerDownColor and normal color. powerUpColor is any number greater than 0, powerDownColor is any color less than 0, otherwise normal color is returned.
 
 ##### Parameters:
 
@@ -2649,13 +2734,14 @@ The window for selecting an item to sell on the shop screen.
                         <li>
                             <a>Window_Base#paramchangeTextColor</a>
                         </li>
-                    </ul>
+                    </ul>[String](String.md)
                 </dd>
             </dl>
 
 #### partyMemberName (partyMemberIndex) → {[String](String.html)}
 
-Returns a party member name given an index; the index starts from 1.
+
+Returns a party member name given an index; the index starts from 1.
 
 ##### Parameters:
 
@@ -2671,7 +2757,7 @@ The window for selecting an item to sell on the shop screen.
                             <a>Window_Base#partyMemberName</a>
                         </li>
                     </ul>
-                </dd>
+                </dd>[String](String.md)
             </dl>
 
 ##### Returns:
@@ -2685,7 +2771,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### pendingColor () → {[String](String.html)}
 
-Returns the pending color as a css color string.
+
+Returns the pending color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2708,12 +2795,13 @@ The window for selecting an item to sell on the shop screen.
 
 #### playBuzzerSound ()
 
-Plays the buzzer sound effect when input is incorrect.
+
+Plays the buzzer sound effect when input is incorrect.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
+                [MV.TextState](MV.TextState.md)
                             <a>Window_Selectable#playBuzzerSound</a>
                         </li>
                     </ul>
@@ -2722,7 +2810,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### playOkSound ()
 
-Plays a sound effect when okay is processed.
+
+Plays a sound effect when okay is processed.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2736,7 +2825,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### powerDownColor () → {[String](String.html)}
 
-Returns the power down color as a css color string.
+
+Returns the power down color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2746,8 +2836,8 @@ The window for selecting an item to sell on the shop screen.
                         </li>
                     </ul>
                 </dd>
-            </dl>
-
+            </dl[Number](Number.md)
+[MV.TextState](MV.TextState.md)
 ##### Returns:
 
 <dl>
@@ -2759,7 +2849,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### powerUpColor () → {[String](String.html)}
 
-Returns the power up color as a css color string.
+
+Returns the power up color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2767,8 +2858,8 @@ The window for selecting an item to sell on the shop screen.
                         <li>
                             <a>Window_Base#powerUpColor</a>
                         </li>
-                    </ul>
-                </dd>
+           [String](String.md)
+                [MV.TextState](MV.TextState.md)
             </dl>
 
 ##### Returns:
@@ -2795,14 +2886,15 @@ The window for selecting an item to sell on the shop screen.
 
 #### processCharacter (textState)
 
-Process each character in the text when drawTextEx is used to draw text.
+
+Process each character in the text when drawTextEx is used to draw text.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `textState` | [MV.TextState](MV.TextState.html) |  |
-
+[MV.TextState](MV.TextState.md)
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2816,13 +2908,14 @@ The window for selecting an item to sell on the shop screen.
 
 #### processCursorMove ()
 
-Handles the processing of cursor movement.
+
+Handles the processing of cursor movement.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                            <a>Window_Selectable#processCursorMove</a>
+                [MV.TextState](MV.TextState.md)processCursorMove</a>
                         </li>
                     </ul>
                 </dd>
@@ -2830,7 +2923,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### processDrawIcon (iconIndex, textState)
 
-Processes drawing an icon when drawTextEx is used for drawing text.
+
+Processes drawing an icon when drawTextEx is used for drawing text.
 
 ##### Parameters:
 
@@ -2842,7 +2936,7 @@ The window for selecting an item to sell on the shop screen.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                    <ul>
+                [MV.TextState](MV.TextState.md)
                         <li>
                             <a>Window_Base#processDrawIcon</a>
                         </li>
@@ -2852,7 +2946,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### processEscapeCharacter (code, textState)
 
-Processes escape characters when drawTextEx is used for drawing text.
+
+Processes escape characters when drawTextEx is used for drawing text.
 
 ##### Parameters:
 
@@ -2874,7 +2969,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### processHandling ()
 
-Handles the process of attached handlers.
+
+Handles the process of attached handlers.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2888,7 +2984,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### processNewLine (textState)
 
-Processes new line when drawTextEx is used to draw text.
+
+Processes new line when drawTextEx is used to draw text.
 
 ##### Parameters:
 
@@ -2909,7 +3006,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### processNewPage (textState)
 
-Processes new page when drawTexttEx is used to draw text.
+
+Processes new page when drawTexttEx is used to draw text.
 
 ##### Parameters:
 
@@ -2930,13 +3028,14 @@ The window for selecting an item to sell on the shop screen.
 
 #### processNormalCharacter (textState)
 
-Processes the normal characters in the text when drawTextEx is used to draw text. Normal characters are letters and numbers.
+
+Processes the normal characters in the text when drawTextEx is used to draw text. Normal characters are letters and numbers.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState[Number](Number.md).TextState.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2990,7 +3089,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### processTouch ()
 
-Handles the processing of touch input.
+
+Handles the processing of touch input.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3004,7 +3104,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### processWheel ()
 
-Handles the processing of the scroll wheel within the window.
+
+Handles the processing of the scroll wheel within the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3013,7 +3114,7 @@ The window for selecting an item to sell on the shop screen.
                             <a>Window_Selectable#processWheel</a>
                         </li>
                     </ul>
-                </dd>
+            [Number](Number.md)
             </dl>
 
 #### redrawCurrentItem ()
@@ -3063,7 +3164,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### refreshDimmerBitmap ()
 
-Refreshes the bitmap attached to the dimmer sprite based on the window dimensions.
+
+Refreshes the bitmap attached to the dimmer sprite based on the window dimensions.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3077,7 +3179,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### removeChild (child) → {Object}
 
-[super] Removes a child to the container.
+
+[super] Removes a child to the container.
 
 ##### Parameters:
 
@@ -3098,17 +3201,19 @@ The window for selecting an item to sell on the shop screen.
 
 ##### Returns:
 
-The child that was removed
+
+The child that was removed
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span>Object</span>
+               [Number](Number.md)an>
                 </dd>
             </dl>
 
 #### removeChildAt (index) → {Object}
 
-[super] Removes a child from the specified index position.
+
+[super] Removes a child from the specified index position.
 
 ##### Parameters:
 
@@ -3129,7 +3234,8 @@ The window for selecting an item to sell on the shop screen.
 
 ##### Returns:
 
-The child that was removed
+
+The child that was removed
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -3139,7 +3245,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### reselect ()
 
-Reselects the index based on the window's _index property.
+
+Reselects the index based on the window's _index property.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3153,8 +3260,9 @@ The window for selecting an item to sell on the shop screen.
 
 #### reserveFaceImages ()
 
-Reverses the face images of the game party members.
-<dl>
+
+Reverses the face images of the game party members.
+<dl>[Number](Number.md)
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -3167,7 +3275,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### resetFontSettings ()
 
-Resets the font settings of the window back to the default.
+
+Resets the font settings of the window back to the default.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3187,14 +3296,15 @@ The window for selecting an item to sell on the shop screen.
                     <ul>
                         <li>
                             <a>Window_Selectable#resetScroll</a>
-                        </li>
+           [Number](Number.md)
                     </ul>
                 </dd>
             </dl>
 
 #### resetTextColor ()
 
-Resets the text color of the window back to the default.
+
+Resets the text color of the window back to the default.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3205,7 +3315,7 @@ The window for selecting an item to sell on the shop screen.
                     </ul>
                 </dd>
             </dl>
-
+[Number](Number.md)
 #### row () → {[Number](Number.html)}
 
 <dl>
@@ -3224,7 +3334,7 @@ The window for selecting an item to sell on the shop screen.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+               [String](String.md)/a></span>
                 </dd>
             </dl>
 
@@ -3256,7 +3366,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### select (index)
 
-Selects the current index within the window given a number.
+
+Selects the current index within the window given a number.
 
 ##### Parameters:
 
@@ -3284,13 +3395,14 @@ The window for selecting an item to sell on the shop screen.
                         <li>
                             <a>Window_ItemList#selectLast</a>
                         </li>
-                    </ul>
-                </dd>
-            </dl>
-
+        [Number](Number.md)
+        [Number](Number.md)
+            [Number](Number.md)
+[Number](Number.md)
 #### setBackgroundType (type)
 
-Sets the background type of the window. 0 is 255 window opacity (standard). 1 is the window with background dimmer. Any other number changes the opacity to 0.
+
+Sets the background type of the window. 0 is 255 window opacity (standard). 1 is the window with background dimmer. Any other number changes the opacity to 0.
 
 ##### Parameters:
 
@@ -3307,7 +3419,7 @@ The window for selecting an item to sell on the shop screen.
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            <[String](String.md)
 
 #### setBottomRow (row)
 
@@ -3367,8 +3479,9 @@ The window for selecting an item to sell on the shop screen.
             </dl>
 
 #### setCursorFixed (cursorFixed)
-
-Sets the _cursorFixed property of the window.
+[Number](Number.md)
+[Number](Number.md)
+Sets the[Number](Number.md)y of the window.
 
 ##### Parameters:
 
@@ -3389,7 +3502,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### setCursorRect (x, y, width, height)
 
-Sets the position of the command cursor.
+[Number](Number.md)
+Sets the position of the command cursor.
 
 ##### Parameters:
 
@@ -3413,7 +3527,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### setHandler (symbol, method)
 
-Creates a new handler with the symbol as the handler name and a method (JS function) bound to it.
+
+Creates a new handler with the symbol as the handler name and a method (JS function) bound to it.
 
 ##### Parameters:
 
@@ -3442,7 +3557,7 @@ The window for selecting an item to sell on the shop screen.
 | `helpWindow` |  |  |
 
 <dl>
-                <dt>Inherited From:</dt>
+                <dt[Number](Number.md)
                 <dd>
                     <ul>
                         <li>
@@ -3464,7 +3579,7 @@ The window for selecting an item to sell on the shop screen.
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
+                        <li>[Number](Number.md)
                             <a>Window_Selectable#setHelpWindowItem</a>
                         </li>
                     </ul>
@@ -3473,7 +3588,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### setTone (r, g, b)
 
-Changes the color of the background.
+
+Changes the color of the background.
 
 ##### Parameters:
 
@@ -3486,7 +3602,7 @@ The window for selecting an item to sell on the shop screen.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                    <ul>
+                    <ul>[String](String.md)
                         <li>
                             <a>Window#setTone</a>
                         </li>
@@ -3496,7 +3612,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### setTopRow (row)
 
-Sets the current top row of the given a number. The top row will then be moved to an index of the window.
+
+Sets the current top row of the given a number. The top row will then be moved to an index of the window.
 
 ##### Parameters:
 
@@ -3508,7 +3625,7 @@ The window for selecting an item to sell on the shop screen.
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
+                        <li>[Number](Number.md)
                             <a>Window_Selectable#setTopRow</a>
                         </li>
                     </ul>
@@ -3517,7 +3634,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### show ()
 
-Shows the window, making it visible.
+
+Shows the window, making it visible.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3530,8 +3648,9 @@ The window for selecting an item to sell on the shop screen.
             </dl>
 
 #### showBackgroundDimmer ()
+[Number](Number.md)
 
-Shows the background dimmer sprite.
+Shows the background dimmer sprite.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3545,13 +3664,14 @@ The window for selecting an item to sell on the shop screen.
 
 #### showHelpWindow ()
 
-Shows the attached help window.
+
+Shows the attached help window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                            <a>Window_Selectable#showHelpWindow</a>
+                       [String](String.md)able#showHelpWindow</a>
                         </li>
                     </ul>
                 </dd>
@@ -3581,7 +3701,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### standardBackOpacity () → {[Number](Number.html)}
 
-Returns the standard back opacity of the window; this is the opacity of the area behind the window's text content. Default is 192.
+
+Returns [Number](Number.md)city of the window; this is the opacity of the area behind the window's text content. Default is 192.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3603,8 +3724,9 @@ The window for selecting an item to sell on the shop screen.
             </dl>
 
 #### standardFontFace () → {[String](String.html)}
+[Number](Number.md)
 
-Returns the standard font face of the game based on what language the game is in.
+Returns the standard font face of the game based on what language the game is in.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3625,14 +3747,15 @@ The window for selecting an item to sell on the shop screen.
                 </dd>
             </dl>
 
-#### standardFontSize () → {[Number](Number.html)}
+#### standardFontSize () [Number](Number.md)ml)}
 
-Returns the standard font size of the text in window; default is 28.
+
+Returns the standard font size of the text in window; default is 28.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
+           [String](String.md)
                             <a>Window_Base#standardFontSize</a>
                         </li>
                     </ul>
@@ -3650,10 +3773,11 @@ The window for selecting an item to sell on the shop screen.
 
 #### standardPadding () → {[Number](Number.html)}
 
-Returns the standard padding of the window; default is 18.
+
+Returns the standard padding of the window; default is 18.
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>
+                <dd>[Number](Number.md)
                     <ul>
                         <li>
                             <a>Window_Base#standardPadding</a>
@@ -3673,8 +3797,9 @@ The window for selecting an item to sell on the shop screen.
 
 #### systemColor () → {[String](String.html)}
 
-Returns the system color as a css color string.
-<dl>
+
+Returns the system color as a css color string.
+<dl>[Number](Number.md)
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -3696,14 +3821,15 @@ The window for selecting an item to sell on the shop screen.
 
 #### textColor (n) → {*}
 
-Returns a text color given a numbered index as a css color string; this index maps directly to the img/system/window.png colors by default.
+[String](String.md)
+Returns a text color given a numbered index as a css color string; this index maps directly to the img/system/window.png colors by default.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `n` | [Number](Number.html) |  |
-
+[Game_Actor](Game_Actor.md)
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3725,8 +3851,9 @@ The window for selecting an item to sell on the shop screen.
             </dl>
 
 #### textPadding () → {[Number](Number.html)}
+[String](String.md)
 
-Returns the text padding of the window; default is 6.
+Returns the text padding of the window; default is 6.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3747,9 +3874,10 @@ The window for selecting an item to sell on the shop screen.
                 </dd>
             </dl>
 
-#### textWidth (text) → {[Number](Number.html)}
+#### textWidth (text) → {[String](String.md)}
 
-Calculates the width of a text string and returns a number.
+
+Calculates the width of a text string and returns a number.
 
 ##### Parameters:
 
@@ -3769,7 +3897,7 @@ The window for selecting an item to sell on the shop screen.
             </dl>
 
 ##### Returns:
-
+[String](String.md)
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -3792,7 +3920,7 @@ The window for selecting an item to sell on the shop screen.
 
 ##### Returns:
 
-<dl>
+<dl>[Number](Number.md)
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
@@ -3823,7 +3951,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### tpColor (actor) → {[String](String.html)}
 
-Returns the tp color as a css color string.
+
+Returns the tp color as a css color string.
 
 ##### Parameters:
 
@@ -3853,7 +3982,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### tpCostColor () → {[String](String.html)}
 
-Returns the tp cost color as a css color string.
+
+Returns the tp cost color as [Number](Number.md)
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3876,7 +4006,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### tpGaugeColor1 () → {[String](String.html)}
 
-Returns the tp gauge color 1 as a css color string.
+
+Returns the tp gauge color 1 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3899,7 +4030,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### tpGaugeColor2 () → {[String](String.html)}
 
-Returns tp gauge color 2 as a css color string.
+
+Returns tp gauge color 2 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3922,7 +4054,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### translucentOpacity () → {[Number](Number.html)}
 
-Returns the translucentOpacity for the window; The default is 160.
+
+Returns the translucentOpacity for the window; The default is 160.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3971,7 +4104,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### updateBackgroundDimmer ()
 
-Updates the background dimmer sprite opacity based on the openness of the window.
+
+Updates the background dimmer sprite opacity based on the openness of the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3985,7 +4119,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### updateBackOpacity () → {[Number](Number.html)}
 
-Returns the inner content width of the window.
+
+Returns the inner content width of the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4008,7 +4143,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### updateClose ()
 
-Updates the openness of the window when the _closing property is set to true. Openness is decreased.
+
+Updates the openness of the window when the _closing property is set to true. Openness is decreased.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4061,7 +4197,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### updateOpen ()
 
-Updates the openness of the window when the _opening property is set to true. Openness is increased.
+
+Updates the openness of the window when the _opening property is set to true. Openness is increased.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4075,7 +4212,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### updatePadding ()
 
-Updates the window padding based on the standardPadding method.
+
+Updates the window padding based on the standardPadding method.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4089,7 +4227,8 @@ The window for selecting an item to sell on the shop screen.
 
 #### updateTone ()
 
-Updates the tone of the window based on the game system window tone defined in the database.
+
+Updates the tone of the window based on the game system window tone defined in the database.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4099,7 +4238,9 @@ The window for selecting an item to sell on the shop screen.
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            </dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

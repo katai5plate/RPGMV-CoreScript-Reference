@@ -10,20 +10,21 @@ The scene class of the game over screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_backSprite` | [Sprite](Sprite.html) |  |
+| `_backSprite` | [Sprite](Sprite.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Scene_Base](Scene_Base.html)
+* [Scene_Base](Scene_Base.md)
 
 ### Methods
 
 #### addChild (child) → {Object}
 
-[super] 子オブジェクトを追加。
+
+[super] 子オブジェクトを追加。
 
 ##### Parameters:
 
@@ -44,7 +45,8 @@ The scene class of the game over screen.
 
 ##### Returns:
 
- 追加されたオブジェクト
+
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -54,14 +56,15 @@ The scene class of the game over screen.
 
 #### addChildAt (child, index) → {Object}
 
-[super] 指定位置に子オブジェクトを追加。
+
+[super] 指定位置に子オブジェクトを追加。
 
 ##### Parameters:
 
-| Name | Type | Description |
+| Name | Typ[Number](Number.md)
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.html) |  追加位置 |
+| `index` | [Number](Number.md) |  追加位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -76,7 +79,8 @@ The scene class of the game over screen.
 
 ##### Returns:
 
- 追加されたオブジェクト
+
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -86,7 +90,8 @@ The scene class of the game over screen.
 
 #### addWindow (Window)
 
- ウィンドウレイヤーにウィンドウを追加。
+
+ ウィンドウレイヤーにウィンドウを追加。
 
 ##### Parameters:
 
@@ -107,7 +112,8 @@ The scene class of the game over screen.
 
 #### attachReservation ()
 
- キューに予約を追加。
+
+ キューに予約を追加。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -121,7 +127,8 @@ The scene class of the game over screen.
 
 #### checkGameover ()
 
- ゲームオーバー状態か検査。
+
+ ゲームオーバー状態か検査。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -148,18 +155,20 @@ The scene class of the game over screen.
 
 #### createBackground ()
 
-Creates the background of the game over scene.
+
+Creates the background of the game over scene.
 <dl>
 </dl>
 
 #### createFadeSprite ()
 
- フェード用のスプライトを生成。
+
+ フェード用のスプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
+[$1]($2.md)                        <li>
                             <a>Scene_Base#createFadeSprite</a>
                         </li>
                     </ul>
@@ -168,7 +177,8 @@ The scene class of the game over screen.
 
 #### createWindowLayer ()
 
- ウィンドウレイヤー[WindowLayer](WindowLayer.html) を生成。
+
+ ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -182,7 +192,8 @@ The scene class of the game over screen.
 
 #### detachReservation ()
 
- キューから予約を削除。
+
+ キューから予約を削除。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -196,7 +207,8 @@ The scene class of the game over screen.
 
 #### fadeOutAll ()
 
- 全ての映像と音声を、遅い速度でフェードアウト。
+
+ 全ての映像と音声を、遅い速度でフェードア[Number](Number.md)
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -208,9 +220,10 @@ The scene class of the game over screen.
                 </dd>
             </dl>
 
-#### fadeSpeed () → {[Number](Number.html)}
+#### fadeSpeed () → {[Number](Number.md)}
 
- フェード速度を返す。
+
+ フェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -233,13 +246,15 @@ The scene class of the game over screen.
 
 #### gotoTitle ()
 
-Returns to the title scene (Scene_Title).
+
+Returns to the title scene (Scene_Title).
 <dl>
 </dl>
 
 #### initialize ()
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -253,7 +268,8 @@ The scene class of the game over screen.
 
 #### isActive () → {Boolean}
 
- シーンがアクティブか。
+
+ シーンがアクティブか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -276,7 +292,8 @@ The scene class of the game over screen.
 
 #### isBusy () → {Boolean}
 
- フェード動作中か。
+
+ フェード動作中か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -299,7 +316,8 @@ The scene class of the game over screen.
 
 #### isReady () → {Boolean}
 
- シーンの準備ができているか。
+
+ シーンの準備ができているか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -327,13 +345,15 @@ The scene class of the game over screen.
 
 #### playGameoverMusic ()
 
-Plays the game over music within the game over scene.
+
+Plays the game over music within the game over scene.
 <dl>
 </dl>
 
 #### popScene ()
 
- シーンを引き出す(pop)。
+
+ シーンを引き出す(pop)。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -347,7 +367,8 @@ The scene class of the game over screen.
 
 #### removeChild (child) → {Object}
 
-[super] 子オブジェクトを取り除く。
+
+[super] 子オブジェクトを取り除く。
 
 ##### Parameters:
 
@@ -363,12 +384,13 @@ The scene class of the game over screen.
                             <a>Stage#removeChild</a>
                         </li>
                     </ul>
-                </dd>
+            [Number](Number.md)
             </dl>
 
 ##### Returns:
 
- 取り除かれたオブジェクト
+
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -378,13 +400,14 @@ The scene class of the game over screen.
 
 #### removeChildAt (index) → {Object}
 
-[super] 指定位置にある子オブジェクトを取り除く。
+
+[super] 指定位置にある子オブジェクトを取り除く。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  取り除く位置 |
+| `index` | [Number](Numb[Number](Number.md)
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -399,7 +422,8 @@ The scene class of the game over screen.
 
 ##### Returns:
 
- 取り除かれたオブジェクト
+
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -407,9 +431,10 @@ The scene class of the game over screen.
                 </dd>
             </dl>
 
-#### slowFadeSpeed () → {[Number](Number.html)}
+#### slowFadeSpeed () → {[Number](Number.md)}
 
- 遅いフェード速度を返す。
+
+ 遅いフェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -423,10 +448,11 @@ The scene class of the game over screen.
 
 ##### Returns:
 
-Return the fade speed
+
+Return the fade speed
 <dl>
                 <dt> Type </dt>
-                <dd>
+               [Number](Number.md)
                     <span><a>Number</a></span>
                 </dd>
             </dl>
@@ -446,13 +472,14 @@ The scene class of the game over screen.
 
 #### startFadeIn (duration opt, white opt)
 
- フェードインの要求。
 
+ フェードインの要求。
+[Number](Number.md)
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードインにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードインにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -468,13 +495,14 @@ The scene class of the game over screen.
 
 #### startFadeOut (duration opt, white opt)
 
- フェードアウトの要求。
+
+ フェードアウトの要求。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードアウトにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードアウトにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -529,7 +557,8 @@ The scene class of the game over screen.
 
 #### updateChildren ()
 
- 子オブジェクトのアップデート。
+
+ 子オブジェクトのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -543,7 +572,8 @@ The scene class of the game over screen.
 
 #### updateFade ()
 
- フェードのアップデート。
+
+ フェードのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -553,7 +583,9 @@ The scene class of the game over screen.
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            </dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

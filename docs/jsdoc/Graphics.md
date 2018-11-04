@@ -10,23 +10,23 @@ The static class that carries out graphics processing.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `BLEND_ADD` | [Number](Number.html) | [static] The alias of PIXI.blendModes.ADD. |
-| `BLEND_NORMAL` | [Number](Number.html) | [static] The alias of PIXI.blendModes.NORMAL. |
-| `BLEND_MULTIPLY` | [Number](Number.html) | [static] The alias of PIXI.blendModes.MULTIPLY. |
-| `BLEND_SCREEN` | [Number](Number.html) | [static] The alias of PIXI.blendModes.SCREEN. |
-| `frameCount` | [Number](Number.html) | [static] The total frame count of the game screen. |
-| `width` | [Number](Number.html) | [static] The width of the game screen. |
-| `height` | [Number](Number.html) | [static] The height of the game screen. |
-| `boxWidth` | [Number](Number.html) | [static] The width of the window display area. |
-| `boxHeight` | [Number](Number.html) | [static] The height of the window display area. |
-| `scale` | [Number](Number.html) | [static] The zoom scale of the game screen. |
-| `_width` | [Number](Number.html) | [static] |
-| `_height` | [Number](Number.html) | [static] |
-| `_rendererType` | [String](String.html) | [static] |
-| `_boxWidth` | [Number](Number.html) | [static] |
-| `_boxHeight` | [Number](Number.html) | [static] |
-| `_scale` | [Number](Number.html) | [static] |
-| `_realScale` | [Number](Number.html) | [static] |
+| `BLEND_ADD` | [Number](Number.md) | [static] The alias of PIXI.blendModes.ADD. |
+| `BLEND_NORMAL` | [Number](Number.md) | [static] The alias of PIXI.blendModes.NORMAL. |
+| `BLEND_MULTIPLY` | [Number](Number.md) | [static] The alias of PIXI.blendModes.MULTIPLY. |
+| `BLEND_SCREEN` | [Number](Number.md) | [static] The alias of PIXI.blendModes.SCREEN. |
+| `frameCount` | [Number](Number.md) | [static] The total frame count of the game screen. |
+| `width` | [Number](Number.md) | [static] The width of the game screen. |
+| `height` | [Number](Number.md) | [static] The height of the game screen. |
+| `boxWidth` | [Number](Number.md) | [static] The width of the window display area. |
+| `boxHeight` | [Number](Number.md) | [static] The height of the window display area. |
+| `scale` | [Number](Number.md) | [static] The zoom scale of the game screen. |
+| `_width` | [Number](Number.md) | [static] |
+| `_height` | [Number](Number.md) | [static] |
+| `_rendererType` | [String](String.md) | [static] |
+| `_boxWidth` | [Number](Number.md) | [static] |
+| `_boxHeight` | [Number](Number.md) | [static] |
+| `_scale` | [Number](Number.md) | [static] |
+| `_realScale` | [Number](Number.md) | [static] |
 | `_errorPrinter` | Boolean | [static] |
 | `_canvas` | HTMLCanvasElement | [static] |
 | `_video` | HTMLVideoElement | [static] |
@@ -34,16 +34,16 @@ The static class that carries out graphics processing.
 | `_renderer` | PIXI.SystemRenderer | [static] |
 | `_fpsMeter` | FPSMeter | [static] |
 | `_modeBox` | HTMLDivElement | [static] |
-| `_skipCount` | [Number](Number.html) | [static] |
-| `_maxSkip` | [Number](Number.html) | [static] |
+| `_skipCount` | [Number](Number.md) | [static] |
+| `_maxSkip` | [Number](Number.md) | [static] |
 | `_rendered` | Boolean | [static] |
 | `_loadingImage` | HTMLImageElement | [static] |
-| `_loadingCount` | [Number](Number.html) | [static] |
+| `_loadingCount` | [Number](Number.md) | [static] |
 | `_fpsMeterToggled` | Boolean | [static] |
 | `_stretchEnabled` | Boolean | [static] |
 | `_canUseDifferenceBlend` | Boolean | [static] |
 | `_canUseSaturationBlend` | Boolean | [static] |
-| `_hiddenCanvas` | [Number](Number.html) | [static] |
+| `_hiddenCanvas` | [Number](Number.md) | [static] |
 
 <dl>
 </dl>
@@ -97,7 +97,7 @@ The static class that carries out graphics processing.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.html) |  |
+| `name` | [String](String.md) |  |
 
 <dl>
 </dl>
@@ -175,14 +175,14 @@ The static class that carries out graphics processing.
                 </dd>
             </dl>
 
-#### (static) _makeErrorHtml (name, message) → {[String](String.html)}
+#### (static) _makeErrorHtml (name, message) → {[String](String.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.html) |  |
-| `message` | [String](String.html) |  |
+| `name` | [String](String.md) |  |
+| `message` | [String](String.md) |  |
 
 <dl>
 </dl>
@@ -254,7 +254,7 @@ The static class that carries out graphics processing.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `src` | [String](String.html) |  |
+| `src` | [String](String.md) |  |
 
 <dl>
 </dl>
@@ -346,26 +346,29 @@ The static class that carries out graphics processing.
 
 #### (static) callGC ()
 
-Calls pixi.js garbage collector
+
+Calls pixi.js garbage collector
 <dl>
 </dl>
 
 #### (static) canPlayVideoType (type) → {Boolean}
 
-Checks whether the browser can play the specified video type.
+
+Checks whether the browser can play the specified video type.
 
 ##### Parameters:
 
-| Name | Type | Description |
+| Name | Ty[String](String.md)
 | --- | --- | --- |
-| `type` | [String](String.html) | The video type to test support for |
+| `type` | [String](String.md) | The video type to test support for |
 
 <dl>
 </dl>
 
 ##### Returns:
 
-True if the browser can play the specified video type
+
+True if the browser can play the specified video type
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -380,13 +383,15 @@ The static class that carries out graphics processing.
 
 #### (static) canUseDifferenceBlend () → {Boolean}
 
-Checks whether the canvas blend mode 'difference' is supported.
+
+Checks whether the canvas blend mode 'difference' is supported.
 <dl>
 </dl>
 
 ##### Returns:
 
-True if the canvas blend mode 'difference' is supported
+
+True if the canvas blend mode 'difference' is supported
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -396,13 +401,15 @@ The static class that carries out graphics processing.
 
 #### (static) canUseSaturationBlend () → {Boolean}
 
-Checks whether the canvas blend mode 'saturation' is supported.
+
+Checks whether the canvas blend mode 'saturation' is supported.
 <dl>
 </dl>
 
 ##### Returns:
 
-True if the canvas blend mode 'saturation' is supported
+
+True if the canvas blend mode 'saturation' is supported
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -412,25 +419,29 @@ The static class that carries out graphics processing.
 
 #### (static) endLoading ()
 
-Erases the "Now Loading" image.
+
+Erases the "Now Loading" image.
 <dl>
 </dl>
 
 #### (static) eraseLoadingError ()
 
-Erases the loading error text.
+
+Erases the loading error text.
 <dl>
 </dl>
 
 #### (static) hasWebGL () → {Boolean}
 
-Checks whether the current browser supports WebGL.
+
+Checks whether the current browser supports WebGL.
 <dl>
 </dl>
 
 ##### Returns:
 
-True if the current browser supports WebGL.
+
+True if the current browser supports WebGL.
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -440,43 +451,47 @@ The static class that carries out graphics processing.
 
 #### (static) hideFps ()
 
-Hides the FPSMeter element.
-<dl>
-</dl>
+
+Hides the FP[Number](Number.md)
+<dl>[Number](Number.md)
+</dl>[String](String.md)
 
 #### (static) initialize (width, height, type)
 
-Initializes the graphics system.
+
+Initializes the graphics system.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `width` | [Number](Number.html) | The width of the game screen |
-| `height` | [Number](Number.html) | The height of the game screen |
-| `type` | [String](String.html) | The type of the renderer. 'canvas', 'webgl', or 'auto'. |
+| `width` | [Number](Number.md) | The width of the game screen |
+| `height` | [Number](Number.md) | The height of the game screen |
+| `type` | [String](String.md) | The type of the renderer. 'canvas', 'webgl', or 'auto'. |
 
 <dl>
 </dl>
 
 #### (static) isFontLoaded (name) → {Boolean}
 
-Checks whether the font file is loaded.
+
+Checks whether the font file is loaded.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.html) | The face name of the font |
+| `name` | [String](String.md) | The face name of the font |
 
 <dl>
 </dl>
 
 ##### Returns:
 
-True if the font file is loaded
-<dl>
-                <dt> Type </dt>
+
+True if the font file is loaded
+<dl>[Number](Number.md)
+        [Number](Number.md)t>
                 <dd>
                     <span>Boolean</span>
                 </dd>
@@ -484,21 +499,23 @@ The static class that carries out graphics processing.
 
 #### (static) isInsideCanvas (x, y) → {Boolean}
 
-Checks whether the specified point is inside the game canvas area.
+
+Checks whether the specified point is inside the game canvas area.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) | The x coordinate on the canvas area |
-| `y` | [Number](Number.html) | The y coordinate on the canvas area |
+| `x` | [Number](Number.md) | The x coordinate on the canvas area |
+| `y` | [Number](Number.md) | The y coordinate on the canvas area |
 
 <dl>
 </dl>
 
 ##### Returns:
 
-True if the specified point is inside the game canvas area
+
+True if the specified point is inside the game canvas area
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -508,13 +525,15 @@ The static class that carries out graphics processing.
 
 #### (static) isVideoPlaying () → {Boolean}
 
-Checks whether the video is playing.
+
+Checks whether the video is playing.
 <dl>
 </dl>
 
 ##### Returns:
 
-True if the video is playing
+
+True if the video is playing
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -524,14 +543,16 @@ The static class that carries out graphics processing.
 
 #### (static) isWebGL () → {Boolean}
 
-Checks whether the renderer type is WebGL.
-<dl>
-</dl>
 
+Checks whether the renderer type is WebGL.
+<dl>
+</dl>[String](String.md)
+[String](String.md)
 ##### Returns:
 
-True if the renderer type is WebGL
-<dl>
+
+True if the renderer type is WebGL
+<dl>[Number](Number.md)
                 <dt> Type </dt>
                 <dd>
                     <span>Boolean</span>
@@ -539,35 +560,38 @@ The static class that carries out graphics processing.
             </dl>
 
 #### (static) loadFont (name, url)
+[Number](Number.md)
 
-Loads a font file.
+Loads a font file.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.html) | The face name of the font |
-| `url` | [String](String.html) | The url of the font file |
+| `name` | [String](String.md) | The face name of the font |
+| `url` | [String](String.md) | The url of the font file |
 
 <dl>
 </dl>
 
-#### (static) pageToCanvasX (x) → {[Number](Number.html)}
+#### (static) pageToCanvasX (x) → {[Number](Number.md)}
+[Number](Number.md)
 
-Converts an x coordinate on the page to the corresponding x coordinate on the canvas area.
+Converts an x coordinate on the page to the corresponding x coordinate on the canvas area.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) | The x coordinate on the page to be converted |
+| `x` | [Number](Number.md) | The x coordinate on the page to be converted |
 
 <dl>
 </dl>
 
 ##### Returns:
 
-The x coordinate on the canvas area
+
+The x coordinate on the canvas area
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -575,130 +599,145 @@ The static class that carries out graphics processing.
                 </dd>
             </dl>
 
-#### (static) pageToCanvasY (y) → {[Number](Number.html)}
+#### (static) pageToCanvasY (y) → {[Number](Number.md)}
 
-Converts a y coordinate on the page to the corresponding y coordinate on the canvas area.
+
+Converts a y coordinate on the page to the corresponding y coordinate on the canvas area.
 
 ##### Parameters:
 
-| Name | Type | Description |
+| Name | T[String](String.md)
 | --- | --- | --- |
-| `y` | [Number](Number.html) | The y coordinate on the page to be converted |
+| `y` | [Number](Number.md) | The y coordinate on the page to be converted |
 
 <dl>
 </dl>
 
 ##### Returns:
 
-The y coordinate on the canvas area
+
+The y coordinate on the canvas area
 <dl>
                 <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
+           [String](String.md)
+              [String](String.md)</a></span>
                 </dd>
             </dl>
 
 #### (static) playVideo (src)
 
-Starts playback of a video.
+
+Starts playback of a video.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `src` | [String](String.html) |  |
+| `src` | [String](String.md) |  |
 
 <dl>
 </dl>
 
 #### (static) printError (name, message)
 
-Displays the error text to the screen.
+
+Displays the error text to the screen.
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `name` | [String](String.html) | The name of the error |
-| `message` | [String](String.html) | The message of the error |
+| --- | --- [Stage](Stage.md)
+| `name` | [String](String.md) | The name of the error |
+| `message` | [String](String.md) | The message of the error |
 
 <dl>
 </dl>
 
 #### (static) printLoadingError (url)
 
-Displays the loading error text to the screen.
+
+Displays the loading error text to the screen.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `url` | [String](String.html) | The url of the resource failed to load |
+| `url` | [String](String.md) | The url of the resource failed to load |
 
 <dl>
-</dl>
+</dl>[Number](Number.md)
 
 #### (static) render (stage)
 
-Renders the stage to the game screen.
+
+Renders the stage to the game screen.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stage` | [Stage](Stage.html) | The stage object to be rendered |
+| `stage` | [Stage](Stage.md) | The stage object to be rendered |
 
 <dl>
 </dl>
 
 #### (static) setLoadingImage ()
 
-Sets the source of the "Now Loading" image.
+
+Sets the source of the "Now Loading" image.
 <dl>
 </dl>
 
 #### (static) setVideoVolume (value)
 
-Sets volume of a video.
+
+Sets volume of a video.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.html) |  |
+| `value` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 #### (static) showFps ()
 
-Shows the FPSMeter element.
+
+Shows the FPSMeter element.
 <dl>
 </dl>
 
 #### (static) startLoading ()
 
-Initializes the counter for displaying the "Now Loading" image.
+
+Initializes the counter for displaying the "Now Loading" image.
 <dl>
 </dl>
 
 #### (static) tickEnd ()
 
-Marks the end of each frame for FPSMeter.
+
+Marks the end of each frame for FPSMeter.
 <dl>
 </dl>
 
 #### (static) tickStart ()
 
-Marks the beginning of each frame for FPSMeter.
+
+Marks the beginning of each frame for FPSMeter.
 <dl>
 </dl>
 
 #### (static) updateLoading ()
 
-Increments the loading counter and displays the "Now Loading" image if necessary.
+
+Increments the loading counter and displays the "Now Loading" image if necessary.
 <dl>
-</dl>
+</dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

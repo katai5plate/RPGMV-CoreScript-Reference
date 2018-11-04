@@ -12,21 +12,21 @@ The sprite for displaying an animation.
 | --- | --- | --- |
 | `_checker1` | Object | [static]{key: RPG.Animation} |
 | `_checker2` | Object | [static]{key: RPG.Animation} |
-| `z` | [Number](Number.html) |  |
-| `_target` | [Sprite_Base](Sprite_Base.html) |  |
-| `_animation` | [RPG.Animation](RPG.Animation.html) |  |
+| `z` | [Number](Number.md) |  |
+| `_target` | [Sprite_Base](Sprite_Base.md) |  |
+| `_animation` | [RPG.Animation](RPG.Animation.md) |  |
 | `_mirror` | Boolean |  |
-| `_delay` | [Number](Number.html) |  |
-| `_rate` | [Number](Number.html) |  |
-| `_duration` | [Number](Number.html) |  |
-| `_flashColor` | [Array](Array.html).<[Number](Number.html)> |  |
-| `_flashDuration` | [Number](Number.html) |  |
-| `_screenFlashDuration` | [Number](Number.html) |  |
-| `_hidingDuration` | [Number](Number.html) |  |
-| `_bitmap1` | [Bitmap](Bitmap.html) |  |
-| `_bitmap2` | [Bitmap](Bitmap.html) |  |
-| `_cellSprites` | [Array](Array.html).<[Sprite](Sprite.html)> |  |
-| `_screenFlashSprite` | [ScreenSprite](ScreenSprite.html) |  |
+| `_delay` | [Number](Number.md) |  |
+| `_rate` | [Number](Number.md) |  |
+| `_duration` | [Number](Number.md) |  |
+| `_flashColor` | [Array](Array.md).<[Number](Number.md)> |  |
+| `_flashDuration` | [Number](Number.md) |  |
+| `_screenFlashDuration` | [Number](Number.md) |  |
+| `_hidingDuration` | [Number](Number.md) |  |
+| `_bitmap1` | [Bitmap](Bitmap.md) |  |
+| `_bitmap2` | [Bitmap](Bitmap.md) |  |
+| `_cellSprites` | [Array](Array.md).<[Sprite](Sprite.md)> |  |
+| `_screenFlashSprite` | [ScreenSprite](ScreenSprite.md) |  |
 | `_duplicated` | Boolean |  |
 | `_reduceArtifacts` | Boolean |  |
 
@@ -35,13 +35,14 @@ The sprite for displaying an animation.
 
 ### Extends
 
-* [Sprite](Sprite.html)
+* [Sprite](Sprite.md)
 
 ### Methods
 
 #### _speedUpCustomBlendModes (renderer)
 
-checks if we need to speed up custom blendmodes
+
+checks if we need to speed up custom blendmodes
 
 ##### Parameters:
 
@@ -59,10 +60,11 @@ The sprite for displaying an animation.
                     </ul>
                 </dd>
             </dl>
+[Number](Number.md)
+#### absoluteX () → {[Number](Number.md)}
 
-#### absoluteX () → {[Number](Number.html)}
 
-Returns the absolute x position of the sprite animation.
+Returns the absolute x position of the sprite animation.
 <dl>
 </dl>
 
@@ -73,11 +75,12 @@ The sprite for displaying an animation.
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
-            </dl>
+            </dl>[Number](Number.md)
 
-#### absoluteY () → {[Number](Number.html)}
+#### absoluteY () → {[Number](Number.md)}
 
-Returns the absolute y position of the sprite aniamtion.
+
+Returns the absolute y position of the sprite aniamtion.
 <dl>
 </dl>
 
@@ -92,25 +95,29 @@ The sprite for displaying an animation.
 
 #### createCellSprites ()
 
-Create the cell sprites of the sprite animation.
+
+Create the cell sprites of the sprite animation.
 <dl>
 </dl>
 
 #### createScreenFlashSprite ()
 
-Create the screen flash sprite of the sprite animation.
+
+Create the screen flash sprite of the sprite animation.
 <dl>
 </dl>
 
 #### createSprites ()
+[Number](Number.md)
 
-Create the sprites of the sprite animation.
+Create the sprites of the sprite animation.
 <dl>
 </dl>
 
-#### currentFrameIndex () → {[Number](Number.html)}
+#### currentFrameIndex () → {[Number](Number.md)}
 
-Returns the current frame index of the sprite aniamtion.
+
+Returns the current frame index of the sprite aniamtion.
 <dl>
 </dl>
 
@@ -125,7 +132,8 @@ The sprite for displaying an animation.
 
 #### initialize ()
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 <dl>
 </dl>
 
@@ -136,7 +144,8 @@ The sprite for displaying an animation.
 
 #### isPlaying () → {Boolean}
 
-Returns true if the sprite animation is playing.
+
+Returns true if the sprite animation is playing.
 <dl>
 </dl>
 
@@ -151,7 +160,8 @@ The sprite for displaying an animation.
 
 #### isReady () → {Boolean}
 
-Returns true if the sprite animation is ready.
+
+Returns true if the sprite animation is ready.
 <dl>
 </dl>
 
@@ -166,7 +176,8 @@ The sprite for displaying an animation.
 
 #### loadBitmaps ()
 
-Loads the bitmaps of the sprite animation.
+[RPG.Animation.Timing](RPG.Animation.Timing.md)
+Loads the bitmaps of the sprite animation.
 <dl>
 </dl>
 
@@ -176,15 +187,16 @@ The sprite for displaying an animation.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `timing` | [RPG.Animation.Timing](RPG.Animation.Timing.html) |  |
+| `timing` | [RPG.Animation.Timing](RPG.Animation.Timing.md) |  |
 
 <dl>
 </dl>
 
 #### remove ()
-
-Removes the sprite animation.
-<dl>
+[Sprite_Base](Sprite_Base.md)
+[RPG.Animation](RPG.Animation.md)
+Removes the sprite animation.
+<dl>[Number](Number.md)
 </dl>
 
 #### setup (target, animation, mirror, delay)
@@ -193,10 +205,10 @@ The sprite for displaying an animation.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Sprite_Base](Sprite_Base.html) |  |
-| `animation` | [RPG.Animation](RPG.Animation.html) |  |
+| `target` | [Sprite_Base](Sprite_Base.md) |  |
+| `animation` | [RPG.Animation](RPG.Animation.md) |  |
 | `mirror` | Boolean |  |
-| `delay` | [Number](Number.html) |  |
+| `delay` | [Number](Number.md) |  |
 
 <dl>
 </dl>
@@ -205,8 +217,8 @@ The sprite for displaying an animation.
 
 <dl>
 </dl>
-
-#### setupRate ()
+[Array](Array.md)[Number](Number.md)
+#### setupRate [Number](Number.md)
 
 <dl>
 </dl>
@@ -217,21 +229,22 @@ The sprite for displaying an animation.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `color` | [Array](Array.html).<[Number](Number.html)> |  |
-| `duration` | [Number](Number.html) |  |
-
+| `color` | [Array](Array.md).<[Number](Number.md)> |  |
+| `duration` | [Number](Number.md) |  |
+[Number](Number.md)
 <dl>
 </dl>
 
 #### startHiding (duration)
 
-Starts hiding the sprite animation.
+
+Starts hiding the sprite animation.
 
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
-| `duration` | [Number](Number.html) | The duration of the hide. |
+| Name | Typ[Array](Array.md)[Number](Number.md)
+| --- | --- | -[Number](Number.md)
+| `duration` | [Number](Number.md) | The duration of the hide. |
 
 <dl>
 </dl>
@@ -242,11 +255,11 @@ The sprite for displaying an animation.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `color` | [Array](Array.html).<[Number](Number.html)> |  |
-| `duration` | [Number](Number.html) |  |
+| `color` | [Array](Array.md).<[Number](Number.md)> |  |
+| `duration` | [Number](Number.md) |  |
 
 <dl>
-</dl>
+</dl>[Array](Array.md)[Array](Array.md)[Number](Number.md)
 
 #### update ()
 
@@ -257,9 +270,9 @@ The sprite for displaying an animation.
 
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
-| `frame` | [Array](Array.html).<[Array](Array.html).<[Number](Number.html)>> |  |
+| Name | Type[Sprite](Sprite.md)
+| --- | ---[Array](Array.md)[Number](Number.md)
+| `frame` | [Array](Array.md).<[Array](Array.md).<[Number](Number.md)>> |  |
 
 <dl>
 </dl>
@@ -270,46 +283,53 @@ The sprite for displaying an animation.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `sprite` | [Sprite](Sprite.html) |  |
-| `cell` | [Array](Array.html).<[Number](Number.html)> |  |
+| `sprite` | [Sprite](Sprite.md) |  |
+| `cell` | [Array](Array.md).<[Number](Number.md)> |  |
 
 <dl>
 </dl>
 
 #### updateFlash ()
 
-Updates the flash animation of the sprite animation.
+
+Updates the flash animation of the sprite animation.
 <dl>
 </dl>
 
 #### updateFrame ()
 
-Updates the frame of the sprite aniamtion.
+
+Updates the frame of the sprite aniamtion.
 <dl>
 </dl>
 
 #### updateHiding ()
 
-Updates the hiding of the sprite animation.
+
+Updates the hiding of the sprite animation.
 <dl>
 </dl>
 
 #### updateMain ()
 
-Updates the main loop of the sprite animation.
+
+Updates the main loop of the sprite animation.
 <dl>
 </dl>
 
 #### updatePosition ()
 
-Updates the position of the sprite animation.
+
+Updates the position of the sprite animation.
 <dl>
 </dl>
 
 #### updateScreenFlash ()
 
 <dl>
-</dl>
+</dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

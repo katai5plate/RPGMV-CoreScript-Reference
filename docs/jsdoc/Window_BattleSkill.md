@@ -10,17 +10,17 @@ The window for selecting a skill to use on the battle screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
-| `height` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
+| `height` | [Number](Number.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Window_SkillList](Window_SkillList.html)
+* [Window_SkillList](Window_SkillList.md)
 
 ### Methods
 
@@ -37,15 +37,16 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### actorName (actorIndex) → {[String](String.html)}
+#### actorName (actorIndex) → {[String](String.md)}
 
-Returns the actor name given an index; the index starts from 1.
+
+Returns the actor name given an index; the index starts from 1.
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `actorIndex` | [Number](Number.html) |  |
+| --- | --- | ---[Number](Number.md)
+| `actorIndex` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -69,7 +70,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### addChild (child) → {Object}
 
-[super] Adds a child to the container.
+
+[super] Adds a child to the container.
 
 ##### Parameters:
 
@@ -90,7 +92,8 @@ The window for selecting a skill to use on the battle screen.
 
 ##### Returns:
 
-The child that was added
+
+The child that was added
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -100,14 +103,15 @@ The window for selecting a skill to use on the battle screen.
 
 #### addChildAt (child, index) → {Object}
 
-[super] Adds a child to the container at a specified index.
+
+[super] Adds a child to the container at a specified index.
 
 ##### Parameters:
-
+[Number](Number.md)
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object | The child to add |
-| `index` | [Number](Number.html) | The index to place the child in |
+| `index` | [Number](Number.md) | The index to place the child in |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -122,7 +126,8 @@ The window for selecting a skill to use on the battle screen.
 
 ##### Returns:
 
-The child that was added
+
+The child that was added
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -132,7 +137,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### addChildToBack (child) → {Object}
 
-Adds a child between the background and contents.
+
+Adds a child between the background and contents.
 
 ##### Parameters:
 
@@ -153,15 +159,16 @@ The window for selecting a skill to use on the battle screen.
 
 ##### Returns:
 
-The child that was added
-<dl>
+
+The child that was added
+<dl>[Number](Number.md)
                 <dt> Type </dt>
                 <dd>
                     <span>Object</span>
                 </dd>
             </dl>
 
-#### bottomRow () → {[Number](Number.html)}
+#### bottomRow () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -176,22 +183,23 @@ The window for selecting a skill to use on the battle screen.
 
 ##### Returns:
 
-<dl>
+<dl>[Number](Number.md)
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
             </dl>
 
-#### calcTextHeight (textState, all) → {[Number](Number.html)}
+#### calcTextHeight (textState, all) → {[Number](Number.md)}
+[MV.TextState](MV.TextState.md)
 
-Calculates the text height of the textState (when using drawTextEx); if all is set to true, all lines of text are calculated, otherwise only a single line is processed.
+Calculates the text height of the textState (when using drawTextEx); if all is set to true, all lines of text are calculated, otherwise only a single line is processed.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 | `all` | Boolean |  |
 
 <dl>
@@ -225,7 +233,7 @@ The window for selecting a skill to use on the battle screen.
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            <[String](String.md)
 
 #### callHandler (symbol)
 
@@ -233,7 +241,7 @@ The window for selecting a skill to use on the battle screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `symbol` | [String](String.html) |  |
+| `symbol` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -248,7 +256,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### callOkHandler ()
 
-Calls the ok handler and begins processing confirmation of selection.
+
+Calls the ok handler and begins processing confirmation of selection.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -264,7 +273,7 @@ The window for selecting a skill to use on the battle screen.
 
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>
+                <dd>[Number](Number.md)
                     <ul>
                         <li>
                             <a>Window_Selectable#callUpdateHelp</a>
@@ -272,16 +281,17 @@ The window for selecting a skill to use on the battle screen.
                     </ul>
                 </dd>
             </dl>
+[Number](Number.md)
+#### canvasToLocalX (x) → {[Number](Number.md)}
 
-#### canvasToLocalX (x) → {[Number](Number.html)}
 
-Returns the x coordinate of the mouse to a local window x coordinate.
+Returns the x coordinate of the mouse to a local window x coordinate.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -293,7 +303,7 @@ The window for selecting a skill to use on the battle screen.
                     </ul>
                 </dd>
             </dl>
-
+[Number](Number.md)
 ##### Returns:
 
 <dl>
@@ -301,17 +311,18 @@ The window for selecting a skill to use on the battle screen.
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
-            </dl>
+        [Number](Number.md)
 
-#### canvasToLocalY (y) → {[Number](Number.html)}
+#### canvasToLocalY (y) → {[Number](Number.md)}
 
-Returns the y coordinate of the mouse to a local window y coordinate.
+
+Returns the y coordinate of the mouse to a local window y coordinate.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `y` | [Number](Number.html) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -335,7 +346,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### changePaintOpacity (enabled)
 
-Changes the paintOpacity (the opacity of the text drawn to the window); if true the opacity is set to 255, otherwise the opacity is set to 160.
+
+Changes the paintOpacity (the opacity of the text drawn to the window); if true the opacity is set to 255, otherwise the opacity is set to 160.
 
 ##### Parameters:
 
@@ -350,25 +362,26 @@ The window for selecting a skill to use on the battle screen.
                         <li>
                             <a>Window_Base#changePaintOpacity</a>
                         </li>
-                    </ul>
+            [String](String.md)
                 </dd>
             </dl>
 
 #### changeTextColor (color)
 
-Changes the text color property given a css color string.
+
+Changes the text color property given a css color string.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `color` | [String](String.html) |  |
+| `color` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
+            [Number](Number.md)
                             <a>Window_Base#changeTextColor</a>
                         </li>
                     </ul>
@@ -381,7 +394,7 @@ The window for selecting a skill to use on the battle screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -395,8 +408,9 @@ The window for selecting a skill to use on the battle screen.
             </dl>
 
 #### close ()
+[Number](Number.md)
 
-Closes the window.
+Closes the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -408,15 +422,16 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### contentsHeight () → {[Number](Number.html)}
+#### contentsHeight () → {[Number](Number.md)}
 
-Returns the inner content height of the window.
+
+Returns the inner content height of the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                            <a>Window_Base#contentsHeight</a>
+                         [Number](Number.md)tentsHeight</a>
                         </li>
                     </ul>
                 </dd>
@@ -431,14 +446,15 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### contentsWidth () → {[Number](Number.html)}
+#### contentsWidth () → {[Number](Number.md)}
 
-Returns the inner content width of the window.
+
+Returns the inner content width of the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
+                        <li>[String](String.md)
                             <a>Window_Base#contentsWidth</a>
                         </li>
                     </ul>
@@ -446,7 +462,7 @@ The window for selecting a skill to use on the battle screen.
             </dl>
 
 ##### Returns:
-
+[String](String.md)
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -454,20 +470,21 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### convertEscapeCharacters (text) → {[String](String.html)}
+#### convertEscapeCharacters (text) → {[String](String.md)}
 
-Converts the escape characters and returns the text content after processing the characters.
+
+Converts the escape characters and returns the text content after processing the characters.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.html) |  |
+| `text` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                    <ul>
+                    <[Number](Number.md)
                         <li>
                             <a>Window_Base#convertEscapeCharacters</a>
                         </li>
@@ -484,7 +501,7 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### costWidth () → {[Number](Number.html)}
+#### costWidth () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -503,12 +520,13 @@ The window for selecting a skill to use on the battle screen.
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
-                </dd>
+                </dd>[String](String.md)
             </dl>
 
 #### createContents ()
 
-Creates the contents of the window; this is the area of the window which text is drawn to.
+
+Creates the contents of the window; this is the area of the window which text is drawn to.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -520,9 +538,10 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### crisisColor () → {[String](String.html)}
+#### crisisColor () → {[String](String.md)}
 
-Returns the crisis color as a css color string.
+
+Returns the crisis color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -567,7 +586,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### cursorDown (wrap)
 
-Moves the cursor down; if wrap is passed as true, then it will return to the top when at the end of the list.
+
+Moves the cursor down; if wrap is passed as true, then it will return to the top when at the end of the list.
 
 ##### Parameters:
 
@@ -588,7 +608,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### cursorFixed () → {Boolean}
 
-Returns true if the _cursorFixed property is true; this means the cursor is locked to a position.
+
+Returns true if the _cursorFixed property is true; this means the cursor is locked to a position.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -675,7 +696,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### cursorUp (wrap)
 
-Moves the cursor up; if wrap is passed as true, then it will return to the bottom when at the top of the list.
+
+Moves the cursor up; if wrap is passed as true, then it will return to the bottom when at the top of the list.
 
 ##### Parameters:
 
@@ -685,7 +707,7 @@ The window for selecting a skill to use on the battle screen.
 
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>
+                <dd>[String](String.md)
                     <ul>
                         <li>
                             <a>Window_Selectable#cursorUp</a>
@@ -707,9 +729,10 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### deathColor () → {[String](String.html)}
+#### deathColor () → {[String](String.md)}
 
-Returns the death color as a css color string.
+
+Returns the death color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -721,7 +744,7 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-##### Returns:
+##### Returns:[String](String.md)
 
 <dl>
                 <dt> Type </dt>
@@ -732,7 +755,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### deselect ()
 
-Deselects the currently selected index.
+
+Deselects the currently selected index.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -743,10 +767,11 @@ The window for selecting a skill to use on the battle screen.
                     </ul>
                 </dd>
             </dl>
+[String](String.md)
+#### dimColor1 () → {[String](String.md)}
 
-#### dimColor1 () → {[String](String.html)}
 
-Color 1 of the dimmer sprite bitmap. for the gradient.
+Color 1 of the dimmer sprite bitmap. for the gradient.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -767,12 +792,13 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### dimColor2 () → {[String](String.html)}
+#### dimColor2 () → {[String](String.md)}
 
-Color 2 of the dimmer sprite bitmap for the gradient.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
+
+Color 2 of the dimmer sprite bitmap for the gradient.
+<dl>[Game_Actor](Game_Actor.md)
+        [Number](Number.md) From:</dt>
+        [Number](Number.md)
                     <ul>
                         <li>
                             <a>Window_Base#dimColor2</a>
@@ -793,12 +819,12 @@ The window for selecting a skill to use on the battle screen.
 #### drawActorCharacter (actor, x, y)
 
 ##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+[Game_Actor](Game_Actor.md)
+| Name |[Number](Number.md)
+| --- | [Number](Number.md)
+| `actor` | [Number](Number.md)or.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -813,16 +839,17 @@ The window for selecting a skill to use on the battle screen.
 
 #### drawActorClass (actor, x, y, width)
 
-Draws the actor class at the specified x and y coordinates within the given width.
+
+Draws the actor class at the specified x and y coordinates within the given width.
 
 ##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+[Game_Actor](Game_Actor.md)
+| Name |[Number](Number.md)
+| --- | [Number](Number.md)
+| `actor` | [Number](Number.md)or.md) |  |
+| `x` | [Numb[Number](Number.md)
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -837,17 +864,18 @@ The window for selecting a skill to use on the battle screen.
 
 #### drawActorFace (actor, x, y, width, height)
 
-Draws the actor face at the specified x and y coordinates within the given width.
+
+Draws the actor face at the specified x and y coordinates within the given width.
 
 ##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
-| `height` | [Number](Number.html) |  |
+[Game_Actor](Game_Actor.md)
+| Name |[Number](Number.md)
+| --- | [Number](Number.md)
+| `actor` | [Number](Number.md)or.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
+| `height` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -862,16 +890,17 @@ The window for selecting a skill to use on the battle screen.
 
 #### drawActorHp (actor, x, y, width)
 
-Draws the actor hp at the specified x and y coordinates within the given width.
 
-##### Parameters:
-
-| Name | Type | Description |
+Draws the actor hp at the specified x and y coordinates within the given width.
+[Game_Actor](Game_Actor.md)
+##### Pa[Number](Number.md)
+[Number](Number.md)
+| Name | Typ[Number](Number.md)
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -886,16 +915,17 @@ The window for selecting a skill to use on the battle screen.
 
 #### drawActorIcons (actor, x, y, width)
 
-Draws the actor icons at the specified x and y coordinates within the given width.
 
-##### Parameters:
+Draws the ac[Game_Actor](Game_Actor.md)and y coordinates within the given width.
+[Number](Number.md)
+##### Pa[Number](Number.md)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -909,16 +939,17 @@ The window for selecting a skill to use on the battle screen.
             </dl>
 
 #### drawActorLevel (actor, x, y)
-
-Draws the actor level at the specified x and y coordinates.
-
+[Game_Actor](Game_Actor.md)
+[Number](Number.md)
+Draws th[Number](Number.md)specified x and y coordinates.
+[Number](Number.md)
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -932,17 +963,18 @@ The window for selecting a skill to use on the battle screen.
             </dl>
 
 #### drawActorMp (actor, x, y, width)
-
-Draws the actor mp at the specified x and y coordinates within the given width.
-
+[Game_Actor](Game_Actor.md)
+[Number](Number.md)
+Draws th[Number](Number.md)cified x and y coordinates within the given width.
+[Number](Number.md)
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -955,18 +987,19 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### drawActorName (actor, x, y, width)
-
-Draws the actor name at the specified x and y coordinates within the given width.
+#### drawAct[Game_Actor](Game_Actor.md)
+[Number](Number.md)
+[Number](Number.md)
+Draws the ac[Number](Number.md)fied x and y coordinates within the given width.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -978,19 +1011,20 @@ The window for selecting a skill to use on the battle screen.
                     </ul>
                 </dd>
             </dl>
-
-#### drawActorNickname (actor, x, y, width)
-
-Draws the actor nickname at the specified x and y coordinates within the given width.
+[Game_Actor](Game_Actor.md)
+#### dra[Number](Number.md), x, y, width)
+[Number](Number.md)
+[Number](Number.md)
+Draws the actor nickname at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1001,20 +1035,21 @@ The window for selecting a skill to use on the battle screen.
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            [Game_Actor](Game_Actor.md)
+[Number](Number.md)
+#### dra[Number](Number.md)ctor, x, y, width)
+[Number](Number.md)
 
-#### drawActorSimpleStatus (actor, x, y, width)
-
-Draws a simple status for the game actor passed into the method at the specified x and y coordinates within the given width.
+Draws a simple status for the game actor passed into the method at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1029,18 +1064,19 @@ The window for selecting a skill to use on the battle screen.
 
 #### drawActorTp (actor, x, y, width)
 
-Draws the actor tp at the specified x and y coordinates within the given width.
+
+Draws the actor tp at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
-
-<dl>
+| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Num[String](String.md)
+| `width` | [Number]([Number](Number.md)
+[Number](Number.md)
+<dl>[Number](Number.md)
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -1053,30 +1089,32 @@ The window for selecting a skill to use on the battle screen.
 
 #### drawAllItems ()
 
-Draws all items within the window; this method cals drawItem multiple times.
+
+Draws all items within the window; this method cals drawItem multiple times.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
                             <a>Window_Selectable#drawAllItems</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
+            [Number](Number.md)
+           [String](String.md)
+        [Number](Number.md)
+        [Number](Number.md)
+[Number](Number.md)
 #### drawCharacter (characterName, characterIndex, x, y)
 
-Draws a character (map sprites) at the specified x and y coordinate. CharacterName refers to character spritesheet, and characterIndex refers to the characterIndex on the spritesheet.
+
+Draws a character (map sprites) at the specified x and y coordinate. CharacterName refers to character spritesheet, and characterIndex refers to the characterIndex on the spritesheet.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `characterName` | [String](String.html) |  |
-| `characterIndex` | [Number](Number.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `characterName` | [String](String.md) |  |
+| `characterIndex` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1084,61 +1122,63 @@ The window for selecting a skill to use on the battle screen.
                     <ul>
                         <li>
                             <a>Window_Base#drawCharacter</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+              [Number](Number.md)
+          [Number](Number.md)
+        [Number](Number.md)
+        [Number](Number.md)
+[Number](Number.md)
+#### drawCurr[String](String.md)t, x, y, width)
+[String](String.md)
 
-#### drawCurrencyValue (value, unit, x, y, width)
-
-Draws the currency value given at the specified x and y coordinates within the width given. Useful if you want to write your own custom currency value.
+Draws the currency value given at the specified x and y coordinates within the width given. Useful if you want to write your own custom currency value.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.html) |  |
-| `unit` | [String](String.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `value` | [Number](Number.md) |  |
+| `unit` | [String](String.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                            <a>Window_Base#drawCurrencyValue</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
+               [String](String.md)w_Base#drawCurrencyValue</a>
+                [Number](Number.md)
+        [Number](Number.md)
+        [Number](Number.md)
+            [Number](Number.md)
+[Number](Number.md)
 #### drawCurrentAndMax (current, max, x, y, width, color1, color2)
 
-Draws the current and max number at the specified x and y coordinate within the given width. Color1 represents the current number and color2 represents the max number when the text is drawn.
+
+Draws the current and max number at the specified x and y coordinate within the given width. Color1 represents the current number and color2 represents the max number when the text is drawn.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `current` | [Number](Number.html) |  |
-| `max` | [Number](Number.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
-| `color1` | [String](String.html) |  |
-| `color2` | [String](String.html) |  |
+| `current` | [Number](Number.md) |  |
+| `max` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
+| `color1` | [String](String.md) |  |
+| `color2` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#drawCurrentAndMax</a>
-                        </li>
-                    </ul>
-                </dd>
+        [Number](Number.md)
+        [Number](Number.md)
+            [Number](Number.md)ndow_Base#drawCurrentAndMax</a>
+           [Number](Number.md)
+             [String](String.md)
+             [String](String.md)
             </dl>
 
 #### drawFace (faceName, faceIndex, x, y, width opt, height opt)
@@ -1147,39 +1187,40 @@ The window for selecting a skill to use on the battle screen.
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `faceName` | [String](String.html) |  |  |
-| `faceIndex` | [Number](Number.html) |  |  |
-| `x` | [Number](Number.html) |  |  |
-| `y` | [Number](Number.html) |  |  |
-| `width` | [Number](Number.html) | <optional> |  |
-| `height` | [Number](Number.html) | <optional> |  |
+| `faceName` | [String](String.md) |  |  |
+| `faceIndex` | [Number](Number.md) |  |  |
+| `x` | [Number](Number.md) |  |  |
+| `y` | [Number](Number.md) |  |  |
+| `width` | [Number](Number.md) | <optional> |  |
+| `height` | [Number](Number.md) | <optional> |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                            <a>Window_Base#drawFace</a>
-                        </li>
-                    </ul>
+                [Number](Number.md)_Base#drawFace</a>
+        [Number](Number.md)
+        [Number](Number.md)
                 </dd>
             </dl>
 
 #### drawGauge (x, y, width, rate, color1, color2)
 
-Draws a gauge at the specified x and y coordinates within the given width. Color1 and Color2 represent the gradient as css color strings of the gauge.
+
+Draws a gauge at the specified x and y coordinates within the given width. Color1 and Color2 represent the gradient as css color strings of the gauge.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
-| `rate` | [Number](Number.html) |  |
-| `color1` | [String](String.html) |  |
-| `color2` | [String](String.html) |  |
-
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
+| `rate` | [Number](Number.md) |  |
+| `color1` | [String](String.md) |  |
+| `color2` | [String](String.md) |  |
+[Number](Number.md)
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1193,16 +1234,17 @@ The window for selecting a skill to use on the battle screen.
 
 #### drawIcon (iconIndex, x, y)
 
-Draws an icon given the specified iconIndex at the specified x and y coordinates. The Width and Height of the icon is based on the _iconWidth and _iconHeight properties.
+
+Draws an icon given the specified iconIndex at the specified x and y coordinates. The Width and Height of the icon is based on the _iconWidth and _iconHeight properties.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `iconIndex` | [Number](Number.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-
+| `iconInde[RPG.BaseItem](RPG.BaseItem.md)
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+[Number](Number.md)
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1220,11 +1262,11 @@ The window for selecting a skill to use on the battle screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
+| `index` | [Number](Number.md) |  |
+[RPG.Skill](RPG.Skill.md)
+<dl>[Number](Number.md)
+        [Number](Number.md) From:</dt>
+            [Number](Number.md)
                     <ul>
                         <li>
                             <a>Window_SkillList#drawItem</a>
@@ -1235,20 +1277,21 @@ The window for selecting a skill to use on the battle screen.
 
 #### drawItemName (item, x, y, width)
 
-Draws the item name at the specified x and y coordinates within the given width.
+
+Draws the item name at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
+[Number](Number.md)
+<dl>[Number](Number.md)
+               [Number](Number.md)/dt>
+            [String](String.md)
                     <ul>
                         <li>
                             <a>Window_Base#drawItemName</a>
@@ -1261,17 +1304,17 @@ The window for selecting a skill to use on the battle screen.
 
 ##### Parameters:
 
-| Name | Type | Description |
+| Name | Type | Description |[Number](Number.md)
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
+           [String](String.md)om:</dt>
+        [Number](Number.md)
+        [Number](Number.md)
                         <li>
                             <a>Window_SkillList#drawSkillCost</a>
                         </li>
@@ -1281,17 +1324,18 @@ The window for selecting a skill to use on the battle screen.
 
 #### drawText (text, x, y, maxWidth, align)
 
-Given text or a number, draws the content to the window's contents layer at the specified x and y coordinate within the max width. The text content can also be aligned with the align property. The possible alignments are: "left", "center", "right".
+
+Given text or a number, draws the content to the window's contents layer at the specified x and y coordinate within the max width. The text content can also be aligned with the align property. The possible alignments are: "left", "center", "right".
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `text` | string |number |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `maxWidth` | [Number](Number.html) |  |
-| `align` | [String](String.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `maxWidth` | [Number](Number.md) |  |
+| `align` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1304,17 +1348,18 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### drawTextEx (text, x, y) → {[Number](Number.html)}
+#### drawTextEx (text, x, y) → {[Number](Number.md)}
+[Number](Number.md)
 
-Draws text with text codes included; this will draw icons, increase text height, and more.
+Draws text with text codes included; this will draw icons, increase text height, and more.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.html) |  |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `text` | [Str[Number](Number.md)|
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1334,7 +1379,7 @@ The window for selecting a skill to use on the battle screen.
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
-            </dl>
+            </dl>[String](String.md)
 
 #### ensureCursorVisible ()
 
@@ -1349,15 +1394,16 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### fittingHeight (numLines) → {[Number](Number.html)}
+#### fittingHeight (numLines) → {[Number](Number.md)}
 
-Returns the fitting height given a number of lines based on the line height plus standard padding of the window. Default formula: numLines * lineHeight + standardPadding * 2
+
+Returns the fitting height given a number of lines based on the line height plus standard padding of the window. Default formula: numLines * lineHeight + standardPadding * 2
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `numLines` | [Number](Number.html) |  |
+| `numLines` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1379,9 +1425,10 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### gaugeBackColor () → {[String](String.html)}
+#### gaugeBackColor () → {[String](String.md)}
 
-Returns the gauage back color as a css color string.
+
+Returns the gauage back color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1396,14 +1443,14 @@ The window for selecting a skill to use on the battle screen.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
+                <dt> Ty[Number](Number.md)
                 <dd>
                     <span><a>String</a></span>
                 </dd>
             </dl>
 
-#### hide ()
-
+#### hid[Number](Number.md)
+[Number](Number.md)
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -1417,21 +1464,23 @@ The window for selecting a skill to use on the battle screen.
 
 #### hideBackgroundDimmer ()
 
-Hides the background dimmer sprite.
+
+Hides the background dimmer sprite.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
                             <a>Window_Base#hideBackgroundDimmer</a>
-                        </li>
+                        [String](String.md)
                     </ul>
                 </dd>
             </dl>
 
 #### hideHelpWindow ()
 
-Hides the attached help window.
+
+Hides the at[Game_Actor](Game_Actor.md)
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1443,17 +1492,17 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### hitTest (x, y) → {[Number](Number.html)}
+#### hitTest (x, y) → {[Number](Number.md)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
+                <dt>Inher[String](String.md)
                 <dd>
                     <ul>
                         <li>
@@ -1472,15 +1521,16 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### hpColor (actor) → {[String](String.html)}
+#### hpColor (actor) → {[String](String.md)}
 
-Returns the hp color as a css string.
 
+Returns the hp color as a css string.
+[String](String.md)
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1502,10 +1552,11 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### hpGaugeColor1 () → {[String](String.html)}
+#### hpGaugeColor1 () → {[String](String.md)}
 
-Returns the hp gauge color 1 as a css color string.
-<dl>
+
+Returns the hp gauge color 1 as a css color string.
+<dl>[RPG.Skill](RPG.Skill.md)
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -1525,9 +1576,10 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### hpGaugeColor2 () → {[String](String.html)}
+#### hpGaugeColor2 () → {[String](String.md)}
 
-Returns the hp gauge color 2 as a css color string.
+[Number](Number.md)
+Returns the hp gauge color 2 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1550,16 +1602,17 @@ The window for selecting a skill to use on the battle screen.
 
 #### includes (item) → {Boolean}
 
-Returns true if the given skill is included.
+
+Returns true if the given skill is included.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.Skill](RPG.Skill.html) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
+| `item`[Number](Number.md)ill.md) |  |
+[Number](Number.md)
+<dl>[Number](Number.md)
+             [Number](Number.md):</dt>
                 <dd>
                     <ul>
                         <li>
@@ -1578,9 +1631,10 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### index () → {[Number](Number.html)}
+#### index () → {[Number](Number.md)}
 
-Returns the current position of the _index property.
+
+Returns the current position of the _index property.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1603,16 +1657,17 @@ The window for selecting a skill to use on the battle screen.
 
 #### initialize (x, y, width, height)
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
-| `width` | [Number](Number.html) |  |
-| `height` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) |  |
+| `height` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -1657,8 +1712,8 @@ The window for selecting a skill to use on the battle screen.
                             <a>Window_Selectable#isCancelTriggered</a>
                         </li>
                     </ul>
-                </dd>
-            </dl>
+        [Number](Number.md)
+        [Number](Number.md)
 
 ##### Returns:
 
@@ -1671,7 +1726,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### isClosed ()
 
-Returns true if the window is completely closed (openness == 0).
+
+Returns true if the window is completely closed (openness == 0).
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1685,7 +1741,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### isClosing () → {Boolean}
 
-Returns true if the window is currently closing.
+
+Returns true if the window is currently closing.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1712,8 +1769,8 @@ The window for selecting a skill to use on the battle screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) |  |
-| `y` | [Number](Number.html) |  |
+| `x` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1753,7 +1810,7 @@ The window for selecting a skill to use on the battle screen.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span>Boolean</span>
+           [RPG.Skill](RPG.Skill.md)n>
                 </dd>
             </dl>
 
@@ -1781,7 +1838,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### isCursorVisible () → {Boolean}
 
-Determines if the cursor is visible within the window.
+[String](String.md)
+Determines if the cursor is visible within the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1804,13 +1862,14 @@ The window for selecting a skill to use on the battle screen.
 
 #### isEnabled (item) → {Boolean}
 
-Returns true if the given skill is enabled.
+
+Returns true if the given skill is enabled.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.Skill](RPG.Skill.html) |  |
+| `item` | [RPG.Skill](RPG.Skill.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1838,7 +1897,7 @@ The window for selecting a skill to use on the battle screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `symbol` | [String](String.html) |  |
+| `symbol` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1862,7 +1921,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### isHorizontal () → {Boolean}
 
-Returns true if the window is horizontal; means the window only has a single row.
+
+Returns true if the window is horizontal; means the window only has a single row.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1885,7 +1945,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### isOkEnabled () → {Boolean}
 
-Determines if ok is enabled as an option; this means whether you can confirm selection of an item within the window.
+
+Determines if ok is enabled as an option; this means whether you can confirm selection of an item within the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1930,7 +1991,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### isOpen ()
 
-Returns true if the window is completely open (openness == 255).
+
+Returns true if the window is completely open (openness == 255).
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1966,10 +2028,11 @@ The window for selecting a skill to use on the battle screen.
 
 #### isOpening () → {Boolean}
 
-Returns true if the window is currently opening.
+
+Returns true if the window is currently opening.
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>
+                [RPG.Skill](RPG.Skill.md)
                     <ul>
                         <li>
                             <a>Window_Base#isOpening</a>
@@ -1992,7 +2055,7 @@ The window for selecting a skill to use on the battle screen.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                    <ul>
+                    <u[Number](Number.md)
                         <li>
                             <a>Window_Selectable#isTouchedInsideFrame</a>
                         </li>
@@ -2011,10 +2074,11 @@ The window for selecting a skill to use on the battle screen.
 
 #### isTouchOkEnabled () → {Boolean}
 
-Determines if touch ok is enabled as an option; this means whether you can confirm the selection of an item within the window with touch input.
+
+Determines if touch ok is enabled as an option; this means whether you can confirm the selection of an item within the window with touch input.
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>
+                <dd>[Rectangle](Rectangle.md)
                     <ul>
                         <li>
                             <a>Window_Selectable#isTouchOkEnabled</a>
@@ -2022,7 +2086,7 @@ The window for selecting a skill to use on the battle screen.
                     </ul>
                 </dd>
             </dl>
-
+[Number](Number.md)
 ##### Returns:
 
 <dl>
@@ -2032,9 +2096,10 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### item () → {[RPG.Skill](RPG.Skill.html)}
+#### item () → {[RPG.Skill](RPG.Skill.md)}
 
-Returns the current skill from the databse.
+
+Returns the current skill from the databse.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2043,7 +2108,7 @@ The window for selecting a skill to use on the battle screen.
                             <a>Window_SkillList#item</a>
                         </li>
                     </ul>
-                </dd>
+                </dd>[Rectangle](Rectangle.md)
             </dl>
 
 ##### Returns:
@@ -2051,13 +2116,14 @@ The window for selecting a skill to use on the battle screen.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>RPG.Skill</a></span>
+            [Number](Number.md)Skill</a></span>
                 </dd>
             </dl>
 
-#### itemHeight () → {[Number](Number.html)}
+#### itemHeight () → {[Number](Number.md)}
 
-Returns the height of an item within the window; determines the height of a row.
+
+Returns the height of an item within the window; determines the height of a row.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2072,21 +2138,22 @@ The window for selecting a skill to use on the battle screen.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
+                <dt> [Number](Number.md)
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
             </dl>
 
-#### itemRect (index) → {[Rectangle](Rectangle.html)}
+#### itemRect (index) → {[Rectangle](Rectangle.md)}
 
-Creates a new rectangle based on itemWidth and itemHeight. The rectangle is mainly used for positioning items within the selectable window.
+
+Creates a new rectangle based on itemWidth and itemHeight. The rectangle is mainly used for positioning items within the selectable window.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2094,7 +2161,7 @@ The window for selecting a skill to use on the battle screen.
                     <ul>
                         <li>
                             <a>Window_Selectable#itemRect</a>
-                        </li>
+                      [Number](Number.md)
                     </ul>
                 </dd>
             </dl>
@@ -2108,15 +2175,16 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### itemRectForText (index) → {[Rectangle](Rectangle.html)}
+#### itemRectForText (index) → {[Rectangle](Rectangle.md)}
 
-Creates a new rectangle based on itemWidth and itemHeight The rectangle is used for positioning text within the selectable window.
+
+Creates a new rectangle based on itemWidth and itemHeight The rectangle is used for positioning text within the selectable window.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2138,9 +2206,10 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### itemWidth () → {[Number](Number.html)}
+#### itemWidth () → {[Number](Number.md)}
 
-Returns the width of an item within the window; determines the width of a column.
+
+Returns the width of an item within the window; determines the width of a column.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2161,16 +2230,17 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### lineHeight () → {[Number](Number.html)}
+#### lineHeight () → {[Number](Number.md)}
 
-Returns the standard line height of the current window; default is 36.
+
+Returns the standard line height of the current window; default is 36.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
                             <a>Window_Base#lineHeight</a>
-                        </li>
+                   [Number](Number.md)
                     </ul>
                 </dd>
             </dl>
@@ -2186,12 +2256,13 @@ The window for selecting a skill to use on the battle screen.
 
 #### loadWindowskin ()
 
-Loads the window skin from the img/system directory.
+
+Loads the window skin from the img/system directory.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
+                    [Number](Number.md)
                             <a>Window_Base#loadWindowskin</a>
                         </li>
                     </ul>
@@ -2200,7 +2271,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### makeFontBigger ()
 
-Makes the font bigger by a value of 12.
+
+Makes the font bigger by a value of 12.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2212,9 +2284,10 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### makeFontSmaller ()
+#### makeFontSmaller ()[Number](Number.md)
 
-Makes the font smaller by a value of 12.
+
+Makes the font smaller by a value of 12.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2228,11 +2301,12 @@ The window for selecting a skill to use on the battle screen.
 
 #### makeItemList ()
 
-Creates the item list.
+
+Creates the item list.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                    <ul>
+                    <ul[Number](Number.md)
                         <li>
                             <a>Window_SkillList#makeItemList</a>
                         </li>
@@ -2240,7 +2314,7 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### maxCols () → {[Number](Number.html)}
+#### maxCols () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2254,7 +2328,7 @@ The window for selecting a skill to use on the battle screen.
             </dl>
 
 ##### Returns:
-
+[Number](Number.md)
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -2262,7 +2336,7 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### maxItems () → {[Number](Number.html)}
+#### maxItems () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2276,7 +2350,7 @@ The window for selecting a skill to use on the battle screen.
             </dl>
 
 ##### Returns:
-
+[Number](Number.md)
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -2284,7 +2358,7 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### maxPageItems () → {[Number](Number.html)}
+#### maxPageItems () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2306,10 +2380,10 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### maxPageRows () → {[Number](Number.html)}
-
-<dl>
-                <dt>Inherited From:</dt>
+#### max[Number](Number.md)r](Number.md)}
+[Number](Number.md)
+<dl>[Number](Number.md)
+             [Number](Number.md):</dt>
                 <dd>
                     <ul>
                         <li>
@@ -2322,15 +2396,15 @@ The window for selecting a skill to use on the battle screen.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
+                <dt> Typ[String](String.md)
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
             </dl>
 
-#### maxRows () → {[Number](Number.html)}
+#### maxRows () → {[Number](Number.md)}
 
-<dl>
+<dl>[Game_Actor](Game_Actor.md)
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -2350,9 +2424,9 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### maxTopRow () → {[Number](Number.html)}
+#### maxTopRow () → {[Number](Number.md)}
 
-<dl>
+<dl>[String](String.md)
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -2374,16 +2448,17 @@ The window for selecting a skill to use on the battle screen.
 
 #### move (x, y, width, height)
 
-Sets the x, y, width, and height all at once.
+
+Sets the x, y, width, and[String](String.md)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) | The x coordinate of the window |
-| `y` | [Number](Number.html) | The y coordinate of the window |
-| `width` | [Number](Number.html) | The width of the window |
-| `height` | [Number](Number.html) | The height of the window |
+| `x` | [Number](Number.md) | The x coordinate of the window |
+| `y` | [Number](Number.md) | The y coordinate of the window |
+| `width` | [Number](Number.md) | The width of the window |
+| `height` | [Number](Number.md) | The height of the window |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2396,15 +2471,16 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### mpColor (actor) → {[String](String.html)}
+#### mpColor (actor) → {[String](String.md)}
+[String](String.md)
 
-Returns the mp color as a css color string.
+Returns the mp color as a css color string.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2419,16 +2495,17 @@ The window for selecting a skill to use on the battle screen.
 
 ##### Returns:
 
-<dl>
+<dl>[String](String.md)
                 <dt> Type </dt>
                 <dd>
                     <span><a>String</a></span>
                 </dd>
             </dl>
 
-#### mpCostColor () → {[String](String.html)}
+#### mpCostColor () → {[String](String.md)}
 
-Returns the mp cost color as a css color string.
+
+Returns the mp cost color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2447,11 +2524,12 @@ The window for selecting a skill to use on the battle screen.
                 <dd>
                     <span><a>String</a></span>
                 </dd>
-            </dl>
+            </dl[MV.TextState](MV.TextState.md)
 
-#### mpGaugeColor1 () → {[String](String.html)}
+#### mpGaugeColor1 () → {[String](String.md)}
 
-Returns the mp gauge color 1 as a css color string.
+
+Returns the mp gauge color 1 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2467,14 +2545,15 @@ The window for selecting a skill to use on the battle screen.
 
 <dl>
                 <dt> Type </dt>
-                <dd>
+                [MV.TextState](MV.TextState.md)
                     <span><a>String</a></span>
                 </dd>
             </dl>
 
-#### mpGaugeColor2 () → {[String](String.html)}
+#### mpGaugeColor2 () → {[String](String.md)}
 
-Returns the mp gauge color 2 as a css color string.
+
+Returns the mp gauge color 2 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2495,9 +2574,10 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### normalColor () → {[String](String.html)}
+#### normalColor () → {[String](String.md)}
 
-Returns the normal color as a css color string.
+
+Returns the normal color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2524,11 +2604,11 @@ The window for selecting a skill to use on the battle screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>
+             [Number](Number.md)
                     <ul>
                         <li>
                             <a>Window_Base#obtainEscapeCode</a>
@@ -2539,16 +2619,17 @@ The window for selecting a skill to use on the battle screen.
 
 #### obtainEscapeParam (textState) → {number|string}
 
-Obtains the escape parameters from text codes in the text state when drawTextEx is used to draw text.
 
+Obtains the escape parameters from text codes in the text state when drawTextEx is used to draw text.
+[String](String.md)
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
+                <dt>Inh[Number](Number.md)
                 <dd>
                     <ul>
                         <li>
@@ -2570,7 +2651,7 @@ The window for selecting a skill to use on the battle screen.
 #### onTouch (triggered)
 
 ##### Parameters:
-
+[String](String.md)
 | Name | Type | Description |
 | --- | --- | --- |
 | `triggered` | Boolean |  |
@@ -2588,7 +2669,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### open ()
 
-Opens the window.
+
+Opens the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2602,13 +2684,14 @@ The window for selecting a skill to use on the battle screen.
 
 #### paramchangeTextColor (change)
 
-Changes the text color based on the powerUpColor, powerDownColor and normal color. powerUpColor is any number greater than 0, powerDownColor is any color less than 0, otherwise normal color is returned.
+
+Changes the text color based on the powerUpColor, powerDownColor and normal color. powerUpColor is any number greater than 0, powerDownColor is any color less than 0, otherwise normal color is returned.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `change` | [Number](Number.html) |  |
+| `change` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2619,17 +2702,18 @@ The window for selecting a skill to use on the battle screen.
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            </dl>[String](String.md)
 
-#### partyMemberName (partyMemberIndex) → {[String](String.html)}
+#### partyMemberName (partyMemberIndex) → {[String](String.md)}
 
-Returns a party member name given an index; the index starts from 1.
+
+Returns a party member name given an index; the index starts from 1.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `partyMemberIndex` | [Number](Number.html) |  |
+| `partyMemberIndex` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2641,7 +2725,7 @@ The window for selecting a skill to use on the battle screen.
                     </ul>
                 </dd>
             </dl>
-
+[String](String.md)
 ##### Returns:
 
 <dl>
@@ -2651,9 +2735,10 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### pendingColor () → {[String](String.html)}
+#### pendingColor () → {[String](String.md)}
 
-Returns the pending color as a css color string.
+
+Returns the pending color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2676,21 +2761,23 @@ The window for selecting a skill to use on the battle screen.
 
 #### playBuzzerSound ()
 
-Plays the buzzer sound effect when input is incorrect.
+
+Plays the buzzer sound effect when input is incorrect.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
                             <a>Window_Selectable#playBuzzerSound</a>
-                        </li>
+                [MV.TextState](MV.TextState.md)
                     </ul>
                 </dd>
             </dl>
 
 #### playOkSound ()
 
-Plays a sound effect when okay is processed.
+
+Plays a sound effect when okay is processed.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2702,9 +2789,10 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### powerDownColor () → {[String](String.html)}
+#### powerDownColor () → {[String](String.md)}
 
-Returns the power down color as a css color string.
+
+Returns the power down color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2716,8 +2804,8 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-##### Returns:
-
+##### Returns:[Number](Number.md)
+[MV.TextState](MV.TextState.md)
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -2725,9 +2813,10 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### powerUpColor () → {[String](String.html)}
+#### powerUpColor () → {[String](String.md)}
 
-Returns the power up color as a css color string.
+
+Returns the power up color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2737,8 +2826,8 @@ The window for selecting a skill to use on the battle screen.
                         </li>
                     </ul>
                 </dd>
-            </dl>
-
+           [String](String.md)
+[MV.TextState](MV.TextState.md)
 ##### Returns:
 
 <dl>
@@ -2763,16 +2852,17 @@ The window for selecting a skill to use on the battle screen.
 
 #### processCharacter (textState)
 
-Process each character in the text when drawTextEx is used to draw text.
+
+Process each character in the text when drawTextEx is used to draw text.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
+                [MV.TextState](MV.TextState.md)
                 <dd>
                     <ul>
                         <li>
@@ -2784,7 +2874,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### processCursorMove ()
 
-Handles the processing of cursor movement.
+
+Handles the processing of cursor movement.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2792,27 +2883,28 @@ The window for selecting a skill to use on the battle screen.
                         <li>
                             <a>Window_Selectable#processCursorMove</a>
                         </li>
-                    </ul>
+                [MV.TextState](MV.TextState.md)
                 </dd>
             </dl>
 
 #### processDrawIcon (iconIndex, textState)
 
-Processes drawing an icon when drawTextEx is used for drawing text.
+
+Processes drawing an icon when drawTextEx is used for drawing text.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `iconIndex` | [Number](Number.html) |  |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `iconIndex` | [Number](Number.md) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                            <a>Window_Base#processDrawIcon</a>
+                [MV.TextState](MV.TextState.md)sDrawIcon</a>
                         </li>
                     </ul>
                 </dd>
@@ -2820,14 +2912,15 @@ The window for selecting a skill to use on the battle screen.
 
 #### processEscapeCharacter (code, textState)
 
-Processes escape characters when drawTextEx is used for drawing text.
+
+Processes escape characters when drawTextEx is used for drawing text.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [String](String.html) |  |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `code` | [String](String.md) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2842,7 +2935,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### processHandling ()
 
-Handles the process of attached handlers.
+
+Handles the process of attached handlers.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2856,13 +2950,14 @@ The window for selecting a skill to use on the battle screen.
 
 #### processNewLine (textState)
 
-Processes new line when drawTextEx is used to draw text.
+
+Processes new line when drawTextEx is used to draw text.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2877,13 +2972,14 @@ The window for selecting a skill to use on the battle screen.
 
 #### processNewPage (textState)
 
-Processes new page when drawTexttEx is used to draw text.
+
+Processes new page when drawTexttEx is used to draw text.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2898,15 +2994,16 @@ The window for selecting a skill to use on the battle screen.
 
 #### processNormalCharacter (textState)
 
-Processes the normal characters in the text when drawTextEx is used to draw text. Normal characters are letters and numbers.
+
+Processes the normal characters in the text when drawTextEx is used to draw text. Normal characters are letters and numbers.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.html) |  |
+| `textState` | [MV.TextState](MV.TextState.md) |  |
 
-<dl>
+<dl>[Number](Number.md)
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -2958,7 +3055,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### processTouch ()
 
-Handles the processing of touch input.
+
+Handles the processing of touch input.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2972,7 +3070,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### processWheel ()
 
-Handles the processing of the scroll wheel within the window.
+
+Handles the processing of the scroll wheel within the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2983,7 +3082,7 @@ The window for selecting a skill to use on the battle screen.
                     </ul>
                 </dd>
             </dl>
-
+[Number](Number.md)
 #### redrawCurrentItem ()
 
 <dl>
@@ -3003,7 +3102,7 @@ The window for selecting a skill to use on the battle screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3031,7 +3130,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### refreshDimmerBitmap ()
 
-Refreshes the bitmap attached to the dimmer sprite based on the window dimensions.
+
+Refreshes the bitmap attached to the dimmer sprite based on the window dimensions.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3045,7 +3145,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### removeChild (child) → {Object}
 
-[super] Removes a child to the container.
+
+[super] Removes a child to the container.
 
 ##### Parameters:
 
@@ -3066,23 +3167,25 @@ The window for selecting a skill to use on the battle screen.
 
 ##### Returns:
 
-The child that was removed
+
+The child that was removed
 <dl>
                 <dt> Type </dt>
                 <dd>
                     <span>Object</span>
                 </dd>
-            </dl>
+            </d[Number](Number.md)
 
 #### removeChildAt (index) → {Object}
 
-[super] Removes a child from the specified index position.
+
+[super] Removes a child from the specified index position.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) | The index to get the child from |
+| `index` | [Number](Number.md) | The index to get the child from |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3097,7 +3200,8 @@ The window for selecting a skill to use on the battle screen.
 
 ##### Returns:
 
-The child that was removed
+
+The child that was removed
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -3107,7 +3211,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### reselect ()
 
-Reselects the index based on the window's _index property.
+
+Reselects the index based on the window's _index property.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3121,10 +3226,11 @@ The window for selecting a skill to use on the battle screen.
 
 #### reserveFaceImages ()
 
-Reverses the face images of the game party members.
+
+Reverses the face images of the game party members.
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>
+            [Number](Number.md)
                     <ul>
                         <li>
                             <a>Window_Base#reserveFaceImages</a>
@@ -3135,7 +3241,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### resetFontSettings ()
 
-Resets the font settings of the window back to the default.
+
+Resets the font settings of the window back to the default.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3157,12 +3264,13 @@ The window for selecting a skill to use on the battle screen.
                             <a>Window_Selectable#resetScroll</a>
                         </li>
                     </ul>
-                </dd>
+            [Game_Actor](Game_Actor.md)
             </dl>
 
 #### resetTextColor ()
 
-Resets the text color of the window back to the default.
+
+Resets the text color of the window back to the default.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3174,10 +3282,10 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### row () → {[Number](Number.html)}
+#### row () → {[Number](Number.md)}
 
 <dl>
-                <dt>Inherited From:</dt>
+           [Number](Number.md)om:</dt>
                 <dd>
                     <ul>
                         <li>
@@ -3196,7 +3304,7 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### scrollDown ()
+#### scrol[Number](Number.md)
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3224,13 +3332,14 @@ The window for selecting a skill to use on the battle screen.
 
 #### select (index)
 
-Selects the current index within the window given a number.
+
+Selects the current index within the window given a number.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  |
+| `index` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3256,15 +3365,16 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### setActor (actor)
-
-Sets the current actor of the skill list window.
+#### set[Number](Number.md)
+[Number](Number.md)
+[Number](Number.md)
+Sets the curr[Number](Number.md)l list window.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3279,13 +3389,14 @@ The window for selecting a skill to use on the battle screen.
 
 #### setBackgroundType (type)
 
-Sets the background type of the window. 0 is 255 window opacity (standard). 1 is the window with background dimmer. Any other number changes the opacity to 0.
+[String](String.md)
+Sets the background type of the window. 0 is 255 window opacity (standard). 1 is the window with background dimmer. Any other number changes the opacity to 0.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `type` | [Number](Number.html) |  |
+| `type` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3304,7 +3415,7 @@ The window for selecting a skill to use on the battle screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `row` | [Number](Number.html) |  |
+| `row` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3338,7 +3449,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### setCursorFixed (cursorFixed)
 
-Sets the _cursorFixed property of the window.
+[Number](Number.md)
+Sets the _cursorFixed property of the window.
 
 ##### Parameters:
 
@@ -3358,17 +3470,18 @@ The window for selecting a skill to use on the battle screen.
             </dl>
 
 #### setCursorRect (x, y, width, height)
-
-Sets the position of the command cursor.
+[Number](Number.md)
+[Number](Number.md)
+Sets the[Number](Number.md)and cursor.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.html) | The x coordinate of the cursor |
-| `y` | [Number](Number.html) | The y coordinate of the cursor |
-| `width` | [Number](Number.html) | The width of the cursor |
-| `height` | [Number](Number.html) | The height of the cursor |
+| `x` | [Number](Number.md) | The x coordinate of the cursor |
+| `y` | [Number](Number.md) | The y coordinate of the cursor |
+| `width` | [Number](Number.md) | The width of the cursor |
+| `height` | [Number](Number.md) | The height of the cursor |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3380,16 +3493,17 @@ The window for selecting a skill to use on the battle screen.
                     </ul>
                 </dd>
             </dl>
-
+[Number](Number.md)
 #### setHandler (symbol, method)
 
-Creates a new handler with the symbol as the handler name and a method (JS function) bound to it.
+
+Creates a new handler with the symbol as the handler name and a method (JS function) bound to it.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `symbol` | [String](String.html) |  |
+| `symbol` | [String](String.md) |  |
 | `method` | * |  |
 
 <dl>
@@ -3433,7 +3547,7 @@ The window for selecting a skill to use on the battle screen.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                    <ul>
+                   [Number](Number.md)
                         <li>
                             <a>Window_Selectable#setHelpWindowItem</a>
                         </li>
@@ -3443,18 +3557,19 @@ The window for selecting a skill to use on the battle screen.
 
 #### setStypeId (stypeId)
 
-Sets the skill type id of the skill list window.
+
+Sets the skill type id of the skill list window.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stypeId` | [Number](Number.html) |  |
+| `stypeId` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                    <ul>
+                    <ul>[Number](Number.md)
                         <li>
                             <a>Window_SkillList#setStypeId</a>
                         </li>
@@ -3464,19 +3579,20 @@ The window for selecting a skill to use on the battle screen.
 
 #### setTone (r, g, b)
 
-Changes the color of the background.
+
+Changes the color of the background.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `r` | [Number](Number.html) | The red value in the range (-255, 255) |
-| `g` | [Number](Number.html) | The green value in the range (-255, 255) |
-| `b` | [Number](Number.html) | The blue value in the range (-255, 255) |
+| `r` | [Number](Number.md) | The red value in the range (-255, 255) |
+| `g` | [Number](Number.md) | The green value in the range (-255, 255) |
+| `b` | [Number](Number.md) | The blue value in the range (-255, 255) |
 
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>
+                <dd>[String](String.md)
                     <ul>
                         <li>
                             <a>Window#setTone</a>
@@ -3487,18 +3603,19 @@ The window for selecting a skill to use on the battle screen.
 
 #### setTopRow (row)
 
-Sets the current top row of the given a number. The top row will then be moved to an index of the window.
+
+Sets the current top row of the given a number. The top row will then be moved to an index of the window.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `row` | [Number](Number.html) |  |
+| `row` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                    <ul>
+                    <ul>[Number](Number.md)
                         <li>
                             <a>Window_Selectable#setTopRow</a>
                         </li>
@@ -3521,7 +3638,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### showBackgroundDimmer ()
 
-Shows the background dimmer sprite.
+[Number](Number.md)
+Shows the background dimmer sprite.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3535,19 +3653,20 @@ The window for selecting a skill to use on the battle screen.
 
 #### showHelpWindow ()
 
-Shows the attached help window.
+
+Shows the attached help window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
                             <a>Window_Selectable#showHelpWindow</a>
-                        </li>
+                       [String](String.md)
                     </ul>
                 </dd>
             </dl>
 
-#### spacing () → {[Number](Number.html)}
+#### spacing () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3569,10 +3688,11 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### standardBackOpacity () → {[Number](Number.html)}
+#### standardBackOpacity () → {[Number](Number.md)}
 
-Returns the standard back opacity of the window; this is the opacity of the area behind the window's text content. Default is 192.
-<dl>
+
+Returns the standard back opacity of the window; this is the opacity of the area behind the window's text content. Default is 192.
+<dl>[Number](Number.md)
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -3592,9 +3712,10 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### standardFontFace () → {[String](String.html)}
+#### standardFontFace () → {[String](String.md)}
 
-Returns the standard font face of the game based on what language the game is in.
+[Number](Number.md)
+Returns the standard font face of the game based on what language the game is in.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3615,15 +3736,16 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### standardFontSize () → {[Number](Number.html)}
+#### standardFontSize () → {[Number](Number.md)}
+[Number](Number.md)
 
-Returns the standard font size of the text in window; default is 28.
+Returns the standard font size of the text in window; default is 28.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                            <a>Window_Base#standardFontSize</a>
+           [String](String.md)indow_Base#standardFontSize</a>
                         </li>
                     </ul>
                 </dd>
@@ -3638,13 +3760,14 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### standardPadding () → {[Number](Number.html)}
+#### standardPadding () → {[Number](Number.md)}
 
-Returns the standard padding of the window; default is 18.
+
+Returns the standard padding of the window; default is 18.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                    <ul>
+                    [Number](Number.md)
                         <li>
                             <a>Window_Base#standardPadding</a>
                         </li>
@@ -3661,11 +3784,12 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### systemColor () → {[String](String.html)}
+#### systemColor () → {[String](String.md)}
 
-Returns the system color as a css color string.
+
+Returns the system color as a css color string.
 <dl>
-                <dt>Inherited From:</dt>
+                <d[Number](Number.md)>
                 <dd>
                     <ul>
                         <li>
@@ -3686,15 +3810,16 @@ The window for selecting a skill to use on the battle screen.
 
 #### textColor (n) → {*}
 
-Returns a text color given a numbered index as a css color string; this index maps directly to the img/system/window.png colors by default.
+
+Returns a text color giv[String](String.md)s a css color string; this index maps directly to the img/system/window.png colors by default.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `n` | [Number](Number.html) |  |
+| `n` | [Number](Number.md) |  |
 
-<dl>
+<dl>[Game_Actor](Game_Actor.md)
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -3714,9 +3839,10 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### textPadding () → {[Number](Number.html)}
+#### textPadding () → {[Number](Number.md)}
 
-Returns the text padding of the window; default is 6.
+[String](String.md)
+Returns the text padding of the window; default is 6.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3737,15 +3863,16 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### textWidth (text) → {[Number](Number.html)}
+#### textWidth (text) → {[Number](Number.md)}
+[String](String.md)
 
-Calculates the width of a text string and returns a number.
+Calculates the width of a text string and returns a number.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.html) |  |
+| `text` | [String](String.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3760,14 +3887,14 @@ The window for selecting a skill to use on the battle screen.
 
 ##### Returns:
 
-<dl>
+<dl>[String](String.md)
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
             </dl>
 
-#### topIndex () → {[Number](Number.html)}
+#### topIndex () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3783,13 +3910,13 @@ The window for selecting a skill to use on the battle screen.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
+                <dt> Type </dt[Number](Number.md)
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
             </dl>
 
-#### topRow () → {[Number](Number.html)}
+#### topRow () → {[Number](Number.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3811,15 +3938,16 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### tpColor (actor) → {[String](String.html)}
+#### tpColor (actor) → {[String](String.md)}
 
-Returns the tp color as a css color string.
+
+Returns the tp color as a css color string.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `actor` | [Game_Actor](Game_Actor.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3841,10 +3969,11 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### tpCostColor () → {[String](String.html)}
+#### tpCostColor () → {[String](String.md)}
 
-Returns the tp cost color as a css color string.
-<dl>
+
+Returns the tp cost color as a css color string.
+<dl>[Number](Number.md)
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -3864,9 +3993,10 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### tpGaugeColor1 () → {[String](String.html)}
+#### tpGaugeColor1 () → {[String](String.md)}
 
-Returns the tp gauge color 1 as a css color string.
+
+Returns the tp gauge color 1 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3887,9 +4017,10 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### tpGaugeColor2 () → {[String](String.html)}
+#### tpGaugeColor2 () → {[String](String.md)}
 
-Returns tp gauge color 2 as a css color string.
+
+Returns tp gauge color 2 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3910,9 +4041,10 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### translucentOpacity () → {[Number](Number.html)}
+#### translucentOpacity () → {[Number](Number.md)}
 
-Returns the translucentOpacity for the window; The default is 160.
+
+Returns the translucentOpacity for the window; The default is 160.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3961,7 +4093,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### updateBackgroundDimmer ()
 
-Updates the background dimmer sprite opacity based on the openness of the window.
+
+Updates the background dimmer sprite opacity based on the openness of the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3973,9 +4106,10 @@ The window for selecting a skill to use on the battle screen.
                 </dd>
             </dl>
 
-#### updateBackOpacity () → {[Number](Number.html)}
+#### updateBackOpacity () → {[Number](Number.md)}
 
-Returns the inner content width of the window.
+
+Returns the inner content width of the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3998,7 +4132,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### updateClose ()
 
-Updates the openness of the window when the _closing property is set to true. Openness is decreased.
+
+Updates the openness of the window when the _closing property is set to true. Openness is decreased.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4051,7 +4186,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### updateOpen ()
 
-Updates the openness of the window when the _opening property is set to true. Openness is increased.
+
+Updates the openness of the window when the _opening property is set to true. Openness is increased.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4065,7 +4201,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### updatePadding ()
 
-Updates the window padding based on the standardPadding method.
+
+Updates the window padding based on the standardPadding method.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4079,7 +4216,8 @@ The window for selecting a skill to use on the battle screen.
 
 #### updateTone ()
 
-Updates the tone of the window based on the game system window tone defined in the database.
+
+Updates the tone of the window based on the game system window tone defined in the database.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4089,7 +4227,9 @@ The window for selecting a skill to use on the battle screen.
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            </dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

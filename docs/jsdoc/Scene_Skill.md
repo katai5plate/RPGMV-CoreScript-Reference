@@ -10,20 +10,21 @@ The scene class of the skill screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_skillTypeWindow` | [Window_SkillType](Window_SkillType.html) |  |
+| `_skillTypeWindow` | [Window_SkillType](Window_SkillType.md) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Scene_ItemBase](Scene_ItemBase.html)
+* [Scene_ItemBase](Scene_ItemBase.md)
 
 ### Methods
 
 #### activateItemWindow ()
 
-Activates the item window.
+
+Activates the item window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -34,10 +35,11 @@ The scene class of the skill screen.
                     </ul>
                 </dd>
             </dl>
+[Game_Actor](Game_Actor.md)
+#### actor () → {[Game_Actor](Game_Actor.md)}
 
-#### actor () → {[Game_Actor](Game_Actor.html)}
 
-Returns the current game actor.
+Returns the current game actor.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -60,7 +62,8 @@ The scene class of the skill screen.
 
 #### addChild (child) → {Object}
 
-[super] 子オブジェクトを追加。
+
+[super] 子オブジェクトを追加。
 
 ##### Parameters:
 
@@ -81,7 +84,8 @@ The scene class of the skill screen.
 
 ##### Returns:
 
- 追加されたオブジェクト
+
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -91,14 +95,15 @@ The scene class of the skill screen.
 
 #### addChildAt (child, index) → {Object}
 
-[super] 指定位置に子オブジェクトを追加。
 
-##### Parameters:
+[super] 指定位置に子オブジェクトを追加。
+
+##### Parame[Number](Number.md)
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.html) |  追加位置 |
+| `index` | [Number](Number.md) |  追加位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -113,7 +118,8 @@ The scene class of the skill screen.
 
 ##### Returns:
 
- 追加されたオブジェクト
+
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -123,7 +129,8 @@ The scene class of the skill screen.
 
 #### addWindow (Window)
 
- ウィンドウレイヤーにウィンドウを追加。
+
+ ウィンドウレイヤーにウィンドウを追加。
 
 ##### Parameters:
 
@@ -157,7 +164,8 @@ The scene class of the skill screen.
 
 #### attachReservation ()
 
- キューに予約を追加。
+
+ キューに予約を追加。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -171,7 +179,8 @@ The scene class of the skill screen.
 
 #### canUse () → {Boolean}
 
-Returns true if the user (game actor) can use the item.
+
+Returns true if the user (game actor) can use the item.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -194,7 +203,8 @@ The scene class of the skill screen.
 
 #### checkCommonEvent ()
 
-Checks the common event set on the item.
+
+Checks the common event set on the item.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -208,7 +218,8 @@ The scene class of the skill screen.
 
 #### checkGameover ()
 
- ゲームオーバー状態か検査。
+
+ ゲームオーバー状態か検査。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -222,7 +233,8 @@ The scene class of the skill screen.
 
 #### commandSkill ()
 
-Handler for when a skill is selected/confirmed within the skill scene.
+
+Handler for when a skill is selected/confirmed within the skill scene.
 <dl>
 </dl>
 
@@ -241,7 +253,8 @@ The scene class of the skill screen.
 
 #### createActorWindow ()
 
-Creates the actor window within the base item scene.
+
+Creates the actor window within the base item scene.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -255,7 +268,8 @@ The scene class of the skill screen.
 
 #### createFadeSprite ()
 
- フェード用のスプライトを生成。
+
+ フェード用のスプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -269,7 +283,8 @@ The scene class of the skill screen.
 
 #### createHelpWindow ()
 
-Creates the help window.
+
+Creates the help window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -283,25 +298,29 @@ The scene class of the skill screen.
 
 #### createItemWindow ()
 
-Creates the item window within the skill scene.
+
+Creates the item window within the skill scene.
 <dl>
-</dl>
+[$1]($2.md)</dl>
 
 #### createSkillTypeWindow ()
 
-Creates the window for skill types within the skill scene.
+
+Creates the window for skill types within the skill scene.
 <dl>
 </dl>
 
 #### createStatusWindow ()
 
-Creates the status window within the skill scene.
+
+Creates the status window within the skill scene.
 <dl>
 </dl>
 
 #### createWindowLayer ()
 
- ウィンドウレイヤー[WindowLayer](WindowLayer.html) を生成。
+
+ ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -315,7 +334,8 @@ The scene class of the skill screen.
 
 #### detachReservation ()
 
- キューから予約を削除。
+
+ キューから予約を削除。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -334,7 +354,7 @@ The scene class of the skill screen.
                 <dd>
                     <ul>
                         <li>
-                            <a>Scene_ItemBase#determineItem</a>
+                     [Number](Number.md)ase#determineItem</a>
                         </li>
                     </ul>
                 </dd>
@@ -342,7 +362,8 @@ The scene class of the skill screen.
 
 #### fadeOutAll ()
 
- 全ての映像と音声を、遅い速度でフェードアウト。
+
+ 全ての映像と音声を、遅い速度でフェードアウト。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -354,16 +375,17 @@ The scene class of the skill screen.
                 </dd>
             </dl>
 
-#### fadeSpeed () → {[Number](Number.html)}
+#### fadeSpeed () → {[Number](Number.md)}
 
- フェード速度を返す。
+
+ フェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
                             <a>Scene_Base#fadeSpeed</a>
-                        </li>
+             [Window_Base](Window_Base.md)
                     </ul>
                 </dd>
             </dl>
@@ -379,13 +401,14 @@ The scene class of the skill screen.
 
 #### hideSubWindow (window)
 
-Hides the sub window.
+
+Hides the sub window.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `window` | [Window_Base](Window_Base.html) |  |
+| `window` | [Window_Base](Window_Base.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -400,7 +423,8 @@ The scene class of the skill screen.
 
 #### initialize ()
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -414,7 +438,8 @@ The scene class of the skill screen.
 
 #### isActive () → {Boolean}
 
- シーンがアクティブか。
+
+ シーンがアクティブか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -437,7 +462,8 @@ The scene class of the skill screen.
 
 #### isBusy () → {Boolean}
 
- フェード動作中か。
+
+ フェード動作中か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -460,7 +486,8 @@ The scene class of the skill screen.
 
 #### isCursorLeft () → {Boolean}
 
-Returns true if the cursor is left.
+
+Returns true if the cursor is left.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -483,7 +510,8 @@ The scene class of the skill screen.
 
 #### isItemEffectsValid () → {Boolean}
 
-Returns true if the item effects are valid on the target(the user).
+
+Returns true if the item effects are valid on the target(the user).
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -506,7 +534,8 @@ The scene class of the skill screen.
 
 #### isReady () → {Boolean}
 
- シーンの準備ができているか。
+
+ シーンの準備ができているか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -521,7 +550,7 @@ The scene class of the skill screen.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
+                <dt> Type </[Game_Actor](Game_Actor.md)
                 <dd>
                     <span>Boolean</span>
                 </dd>
@@ -529,7 +558,8 @@ The scene class of the skill screen.
 
 #### item () → {*}
 
-Returns the item attached to the item window within the base item scene.
+
+Returns the item attached to the item window within the base item scene.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -550,7 +580,7 @@ The scene class of the skill screen.
                 </dd>
             </dl>
 
-#### itemTargetActors () → {[Game_Actor](Game_Actor.html)}
+#### itemTargetActors () → {[Game_Actor](Game_Actor.md)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -574,7 +604,8 @@ The scene class of the skill screen.
 
 #### nextActor ()
 
-Moves to the next actor in the party.
+
+Moves to the next actor in the party.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -601,7 +632,8 @@ The scene class of the skill screen.
 
 #### onActorChange ()
 
-Handler for when an an actor is changed within the skill scene.
+
+Handler for when an an actor is changed within the skill scene.
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -638,13 +670,15 @@ The scene class of the skill screen.
 
 #### playSeForItem ()
 
-Plays a sound effect on item confirmation withiin the skill scene.
+
+Plays a sound effect on item confirmation withiin the skill scene.
 <dl>
 </dl>
 
 #### popScene ()
 
- シーンを引き出す(pop)。
+
+ シーンを引き出す(pop)。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -658,7 +692,8 @@ The scene class of the skill screen.
 
 #### previousActor ()
 
-Moves to the previous actor in the party.
+
+Moves to the previous actor in the party.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -677,8 +712,9 @@ The scene class of the skill screen.
 
 #### removeChild (child) → {Object}
 
-[super] 子オブジェクトを取り除く。
 
+[super] 子オブジェクトを取り除く。
+[Number](Number.md)
 ##### Parameters:
 
 | Name | Type | Description |
@@ -698,7 +734,8 @@ The scene class of the skill screen.
 
 ##### Returns:
 
- 取り除かれたオブジェクト
+
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -706,15 +743,16 @@ The scene class of the skill screen.
                 </dd>
             </dl>
 
-#### removeChildAt (index) → {Object}
+#### removeChi[Number](Number.md)t}
 
-[super] 指定位置にある子オブジェクトを取り除く。
+
+[super] 指定位置にある子オブジェクトを取り除く。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.html) |  取り除く位置 |
+| `index` | [Number](Number.md) |  取り除く位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -726,10 +764,11 @@ The scene class of the skill screen.
                     </ul>
                 </dd>
             </dl>
-
+[Window_Base](Window_Base.md)
 ##### Returns:
 
- 取り除かれたオブジェクト
+
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -738,12 +777,12 @@ The scene class of the skill screen.
             </dl>
 
 #### setBackgroundOpacity (opacity)
-
+[Number](Number.md)
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `opacity` | [Number](Number.html) |  |
+| `opacity` | [Number](Number.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -758,13 +797,14 @@ The scene class of the skill screen.
 
 #### showSubWindow (window)
 
-Shows the sub window.
+
+Shows the sub window.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `window` | [Window_Base](Window_Base.html) |  |
+| `window` | [Window_Base](Window_Base.md) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -777,11 +817,12 @@ The scene class of the skill screen.
                 </dd>
             </dl>
 
-#### slowFadeSpeed () → {[Number](Number.html)}
+#### slowFadeSpeed () → {[Number](Number.md)}
 
- 遅いフェード速度を返す。
+
+ 遅いフェード速度を返す。
 <dl>
-                <dt>Inherited From:</dt>
+               [Number](Number.md)/dt>
                 <dd>
                     <ul>
                         <li>
@@ -793,7 +834,8 @@ The scene class of the skill screen.
 
 ##### Returns:
 
-Return the fade speed
+
+Return the fade speed
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -802,7 +844,7 @@ The scene class of the skill screen.
             </dl>
 
 #### start ()
-
+[Number](Number.md)
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -816,13 +858,14 @@ The scene class of the skill screen.
 
 #### startFadeIn (duration opt, white opt)
 
- フェードインの要求。
+
+ フェードインの要求。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードインにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードインにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -838,13 +881,14 @@ The scene class of the skill screen.
 
 #### startFadeOut (duration opt, white opt)
 
- フェードアウトの要求。
+
+ フェードアウトの要求。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.html) | <optional> | 30 |  フェードアウトにかける時間 |
+| `duration` | [Number](Number.md) | <optional> | 30 |  フェードアウトにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -860,7 +904,8 @@ The scene class of the skill screen.
 
 #### stop ()
 
- シーンの停止。
+
+ シーンの停止。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -874,7 +919,8 @@ The scene class of the skill screen.
 
 #### terminate ()
 
- 遷移前のシーン中断。
+
+ 遷移前のシーン中断。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -888,7 +934,8 @@ The scene class of the skill screen.
 
 #### update ()
 
- フレーム毎のアップデート。
+
+ フレーム毎のアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -902,12 +949,13 @@ The scene class of the skill screen.
 
 #### updateActor ()
 
-Updates the current actor.
+
+Updates the current actor.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>
+                [Game_Actor](Game_Actor.md)
                             <a>Scene_MenuBase#updateActor</a>
                         </li>
                     </ul>
@@ -916,7 +964,8 @@ The scene class of the skill screen.
 
 #### updateChildren ()
 
- 子オブジェクトのアップデート。
+
+ 子オブジェクトのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -930,7 +979,8 @@ The scene class of the skill screen.
 
 #### updateFade ()
 
- フェードのアップデート。
+
+ フェードのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -955,7 +1005,7 @@ The scene class of the skill screen.
                 </dd>
             </dl>
 
-#### user () → {[Game_Actor](Game_Actor.html)}
+#### user () → {[Game_Actor](Game_Actor.md)}
 
 <dl>
                 <dt>Overrides:</dt>
@@ -975,7 +1025,9 @@ The scene class of the skill screen.
                 <dd>
                     <span><a>Game_Actor</a></span>
                 </dd>
-            </dl>
+            </dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
