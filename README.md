@@ -45,5 +45,5 @@ npm install gulp-cli -g
 gulp -v
 ```
 ### 手順
-1. `./_src`フォルダを作り、そこにjsファイルを置く
+1. `./src`フォルダを作り、そこにjsファイルを置く
 2. `yarn build`
