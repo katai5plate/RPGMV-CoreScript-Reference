@@ -10,28 +10,28 @@ The game object declare class for an enemy.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_enemyId` | [Number](Number.md) |  |
-| `_letter` | [String](String.md) |  |
+| `_enemyId` | [Number](Number.html) |  |
+| `_letter` | [String](String.html) |  |
 | `_plural` | Boolean |  |
-| `_screenX` | [Number](Number.md) |  |
-| `_screenY` | [Number](Number.md) |  |
+| `_screenX` | [Number](Number.html) |  |
+| `_screenY` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Game_Battler](Game_Battler.md)
+* [Game_Battler](Game_Battler.html)
 
 ### Methods
 
-#### action (index) → {[Game_Action](Game_Action.md)}
+#### action (index) → {[Game_Action](Game_Action.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
+| `index` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -53,7 +53,7 @@ The game object declare class for an enemy.
                 </dd>
             </dl>
 
-#### actionPlusSet () → {[Array](Array.md).<[Number](Number.md)>}
+#### actionPlusSet () → {[Array](Array.html).<[Number](Number.html)>}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -77,15 +77,14 @@ The game object declare class for an enemy.
 
 #### addBuff (paramId, turns)
 
-
-Adds a buff to the battler for the specified number of turns on the selected parameter.
+Adds a buff to the battler for the specified number of turns on the selected parameter.
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | [Number](Number.md)
-| `paramId` [Number](Number.md)l) |  |
-| `turns` | [Number](Number.md) |  |
+| --- | --- | --- |
+| `paramId` | [Number](Number.html) |  |
+| `turns` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -100,15 +99,14 @@ Adds a buff to the battler for the specified number of turns on the selected par
 
 #### addDebuff (paramId, turns)
 
-
-Adds a debuff to the battler for the specified number of turns on the selected parameter.
+Adds a debuff to the battler for the specified number of turns on the selected parameter.
 
 ##### Parameters:
 
-| Name | Type [Number](Number.md)
-| --- | --- [Number](Number.md)
-| `paramId` | [Number](Number.md) |  |
-| `turns` | [Number](Number.md) |  |
+| Name | Type | Description |
+| --- | --- | --- |
+| `paramId` | [Number](Number.html) |  |
+| `turns` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -119,9 +117,9 @@ Adds a debuff to the battler for the specified number of turns on the selected p
                         </li>
                     </ul>
                 </dd>
-            </dl>[Array](Array.md)[Number](Number.md)
+            </dl>
 
-#### addedSkills () → {[Array](Array.md).<[Number](Number.md)>}
+#### addedSkills () → {[Array](Array.html).<[Number](Number.html)>}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -141,9 +139,9 @@ Adds a debuff to the battler for the specified number of turns on the selected p
                 <dd>
                     <span><a>Array</a>.&lt;<a>Number</a>&gt;</span>
                 </dd>
-            </dl>[Array](Array.md)[Number](Number.md)
+            </dl>
 
-#### addedSkillTypes () → {[Array](Array.md).<[Number](Number.md)>}
+#### addedSkillTypes () → {[Array](Array.html).<[Number](Number.html)>}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -167,14 +165,13 @@ Adds a debuff to the battler for the specified number of turns on the selected p
 
 #### addNewState (stateId)
 
-
-Adds a new state given a state id to the battler.
+Adds a new state given a state id to the battler.
 
 ##### Parameters:
-[Number](Number.md)
+
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
+| `stateId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -190,11 +187,11 @@ Adds a new state given a state id to the battler.
 #### addParam (paramId, value)
 
 ##### Parameters:
-[Number](Number.md)
-| Name | Typ[Number](Number.md)
+
+| Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
-| `value` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
+| `value` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -209,14 +206,13 @@ Adds a new state given a state id to the battler.
 
 #### addState (stateId)
 
+Adds a state to the battler given the specified state id.
 
-Adds a state to the battler given the specified state id.
-
-##### Paramete[Number](Number.md)
+##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
+| `stateId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -225,14 +221,13 @@ Adds a state to the battler given the specified state id.
                         <li>
                             <a>Game_Battler#addState</a>
                         </li>
-                    [Array](Array.md)[Number](Number.md)
+                    </ul>
                 </dd>
             </dl>
 
-#### allIcons () → {[Array](Array.md).<[Number](Number.md)>}
+#### allIcons () → {[Array](Array.html).<[Number](Number.html)>}
 
-
-Returns all of the icons attached to the battler.
+Returns all of the icons attached to the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -248,15 +243,14 @@ Returns all of the icons attached to the battler.
 
 <dl>
                 <dt> Type </dt>
-                <dd>[Array](Array.md)[RPG.Trait](RPG.Trait.md)
+                <dd>
                     <span><a>Array</a>.&lt;<a>Number</a>&gt;</span>
                 </dd>
             </dl>
 
-#### allTraits () → {[Array](Array.md).<[RPG.Trait](RPG.Trait.md)>}
+#### allTraits () → {[Array](Array.html).<[RPG.Trait](RPG.Trait.html)>}
 
-
-Returns all the traits of the battler.
+Returns all the traits of the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -279,23 +273,21 @@ Returns all the traits of the battler.
 
 #### appear ()
 
-
-Shows the game battler.
+Shows the game battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <l[Array](Array.md)[Number](Number.md)
+                        <li>
                             <a>Game_BattlerBase#appear</a>
                         </li>
                     </ul>
                 </dd>
             </dl>
 
-#### attackElements () → {[Array](Array.md).<[Number](Number.md)>}
+#### attackElements () → {[Array](Array.html).<[Number](Number.html)>}
 
-
-Returns the attack elements of the battler as a list of numbers.
+Returns the attack elements of the battler as a list of numbers.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -308,7 +300,7 @@ Returns the attack elements of the battler as a list of numbers.
             </dl>
 
 ##### Returns:
-[Number](Number.md)
+
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -316,10 +308,9 @@ Returns the attack elements of the battler as a list of numbers.
                 </dd>
             </dl>
 
-#### attackSkillId () → {[Number](Number.md)}
+#### attackSkillId () → {[Number](Number.html)}
 
-
-Returns the attack skill id in the database.
+Returns the attack skill id in the database.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -331,7 +322,7 @@ Returns the attack skill id in the database.
                 </dd>
             </dl>
 
-##### Returns:[Number](Number.md)
+##### Returns:
 
 <dl>
                 <dt> Type </dt>
@@ -340,10 +331,9 @@ Returns the attack skill id in the database.
                 </dd>
             </dl>
 
-#### attackSpeed () → {[Number](Number.md)}
+#### attackSpeed () → {[Number](Number.html)}
 
-
-Returns the attack speed of the battler.
+Returns the attack speed of the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -354,7 +344,7 @@ Returns the attack speed of the battler.
                     </ul>
                 </dd>
             </dl>
-[Array](Array.md)[Number](Number.md)
+
 ##### Returns:
 
 <dl>
@@ -364,10 +354,9 @@ Returns the attack speed of the battler.
                 </dd>
             </dl>
 
-#### attackStates () → {[Array](Array.md).<[Number](Number.md)>}
+#### attackStates () → {[Array](Array.html).<[Number](Number.html)>}
 
-
-Returns the attack states of the battler as a list of numbers.
+Returns the attack states of the battler as a list of numbers.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -383,7 +372,7 @@ Returns the attack states of the battler as a list of numbers.
 
 <dl>
                 <dt> Type </dt>
-              [Number](Number.md)
+                <dd>
                     <span><a>Array</a>.&lt;<a>Number</a>&gt;</span>
                 </dd>
             </dl>
@@ -394,9 +383,9 @@ Returns the attack states of the battler as a list of numbers.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
+| `stateId` | [Number](Number.html) |  |
 
-<dl>[Number](Number.md)
+<dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -407,10 +396,9 @@ Returns the attack states of the battler as a list of numbers.
                 </dd>
             </dl>
 
-#### attackTimesAdd () → {[Number](Number.md)}
+#### attackTimesAdd () → {[Number](Number.html)}
 
-
-Returns the number of attacks available to the battler.
+Returns the number of attacks available to the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -419,7 +407,7 @@ Returns the number of attacks available to the battler.
                             <a>Game_BattlerBase#attackTimesAdd</a>
                         </li>
                     </ul>
-                </dd>[Number](Number.md)
+                </dd>
             </dl>
 
 ##### Returns:
@@ -431,10 +419,9 @@ Returns the number of attacks available to the battler.
                 </dd>
             </dl>
 
-#### battlerHue () → {[Number](Number.md)}
+#### battlerHue () → {[Number](Number.html)}
 
-
-Returns the hue of the [String](String.md)
+Returns the hue of the enemy.
 <dl>
 </dl>
 
@@ -447,8 +434,8 @@ Returns the hue of the [String](String.md)
                 </dd>
             </dl>
 
-#### battlerName () → {[String](String.md)}
-[Number](Number.md)
+#### battlerName () → {[String](String.html)}
+
 <dl>
 </dl>
 
@@ -456,21 +443,20 @@ Returns the hue of the [String](String.md)
 
 <dl>
                 <dt> Type </dt>
-              [Number](Number.md)
+                <dd>
                     <span><a>String</a></span>
                 </dd>
             </dl>
 
-#### buff (paramId) → {[Number](Number.md)}
+#### buff (paramId) → {[Number](Number.html)}
 
-
-Buffs the current parameter id.
+Buffs the current parameter id.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -478,28 +464,28 @@ Buffs the current parameter id.
                     <ul>
                         <li>
                             <a>Game_BattlerBase#buff</a>
-                        </li>[Number](Number.md)
+                        </li>
                     </ul>
                 </dd>
             </dl>
 
 ##### Returns:
-[Number](Number.md)
-<dl>[Number](Number.md)
+
+<dl>
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
             </dl>
 
-#### buffIconIndex (buffLevel, paramId) → {[Number](Number.md)}
+#### buffIconIndex (buffLevel, paramId) → {[Number](Number.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `buffLevel` | [Number](Number.md) |  |
-| `paramId` | [Number](Number.md) |  |
+| `buffLevel` | [Number](Number.html) |  |
+| `paramId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -507,7 +493,7 @@ Buffs the current parameter id.
                     <ul>
                         <li>
                             <a>Game_BattlerBase#buffIconIndex</a>
-                     [Array](Array.md)[Number](Number.md)
+                        </li>
                     </ul>
                 </dd>
             </dl>
@@ -521,16 +507,15 @@ Buffs the current parameter id.
                 </dd>
             </dl>
 
-#### buffIcons () → {[Array](Array.md).<[Number](Number.md)>}
+#### buffIcons () → {[Array](Array.html).<[Number](Number.html)>}
 
-
-Returns the array of buff icons attached to the battler; this is determined by the active buffs on the battler.
+Returns the array of buff icons attached to the battler; this is determined by the active buffs on the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                      [Number](Number.md)Base#buffIcons</a>
+                            <a>Game_BattlerBase#buffIcons</a>
                         </li>
                     </ul>
                 </dd>
@@ -545,10 +530,9 @@ Returns the array of buff icons attached to the battler; this is determined by t
                 </dd>
             </dl>
 
-#### buffLength () → {[Number](Number.md)}
+#### buffLength () → {[Number](Number.html)}
 
-
-Returns the length of the buff.
+Returns the length of the buff.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -571,8 +555,7 @@ Returns the length of the buff.
 
 #### canAttack () → {Boolean}
 
-
-Returns true if the battler can attack.
+Returns true if the battler can attack.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -584,7 +567,7 @@ Returns true if the battler can attack.
                 </dd>
             </dl>
 
-##### Retur[RPG.EquipItem](RPG.EquipItem.md)
+##### Returns:
 
 <dl>
                 <dt> Type </dt>
@@ -595,14 +578,13 @@ Returns true if the battler can attack.
 
 #### canEquip (item) → {Boolean}
 
-
-Returns true if the battler can equip the item.
+Returns true if the battler can equip the item.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -614,7 +596,7 @@ Returns true if the battler can equip the item.
                     </ul>
                 </dd>
             </dl>
-[RPG.EquipItem](RPG.EquipItem.md)
+
 ##### Returns:
 
 <dl>
@@ -626,14 +608,13 @@ Returns true if the battler can equip the item.
 
 #### canEquipArmor (item) → {Boolean}
 
-
-Returns true if the battler can equip armor.
+Returns true if the battler can equip armor.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -644,7 +625,7 @@ Returns true if the battler can equip armor.
                         </li>
                     </ul>
                 </dd>
-           [RPG.EquipItem](RPG.EquipItem.md)
+            </dl>
 
 ##### Returns:
 
@@ -657,14 +638,13 @@ Returns true if the battler can equip armor.
 
 #### canEquipWeapon (item) → {Boolean}
 
-
-Returns true if the battler can equip a weapon.
+Returns true if the battler can equip a weapon.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -688,8 +668,7 @@ Returns true if the battler can equip a weapon.
 
 #### canGuard () → {Boolean}
 
-
-Returns true if the battler can guard.
+Returns true if the battler can guard.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -712,8 +691,7 @@ Returns true if the battler can guard.
 
 #### canInput () → {Boolean}
 
-
-Returns true if the battler can input actions.
+Returns true if the battler can input actions.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -742,7 +720,7 @@ Returns true if the battler can input actions.
                     <ul>
                         <li>
                             <a>Game_BattlerBase#canMove</a>
-            [RPG.Skill](RPG.Skill.md)
+                        </li>
                     </ul>
                 </dd>
             </dl>
@@ -758,21 +736,20 @@ Returns true if the battler can input actions.
 
 #### canPaySkillCost (skill) → {Boolean}
 
-
-Returns true if the battler can pay the cost of the specified skill.
+Returns true if the battler can pay the cost of the specified skill.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.md) |  |
+| `skill` | [RPG.Skill](RPG.Skill.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-           [RPG.UsableItem](RPG.UsableItem.md)canPaySkillCost</a>
+                            <a>Game_BattlerBase#canPaySkillCost</a>
                         </li>
                     </ul>
                 </dd>
@@ -789,18 +766,17 @@ Returns true if the battler can pay the cost of the specified skill.
 
 #### canUse (item) → {Boolean}
 
-
-Returns true if the battler can use the item.
+Returns true if the battler can use the item.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
+| `item` | [RPG.UsableItem](RPG.UsableItem.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
-                <[Number](Number.md)
+                <dd>
                     <ul>
                         <li>
                             <a>Game_BattlerBase#canUse</a>
@@ -824,7 +800,7 @@ Returns true if the battler can use the item.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `damageRate` | [Number](Number.md) |  |
+| `damageRate` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -839,8 +815,7 @@ Returns true if the battler can use the item.
 
 #### clearActions ()
 
-
-Clears the battler actions.
+Clears the battler actions.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -854,8 +829,7 @@ Clears the battler actions.
 
 #### clearAnimations ()
 
-
-Clears animations from the battler.
+Clears animations from the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -869,8 +843,7 @@ Clears animations from the battler.
 
 #### clearBuffs ()
 
-
-Clears buffs from the battler.
+Clears buffs from the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -884,8 +857,7 @@ Clears buffs from the battler.
 
 #### clearDamagePopup ()
 
-
-Clear damage pop up from the battler.
+Clear damage pop up from the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -899,8 +871,7 @@ Clear damage pop up from the battler.
 
 #### clearEffect ()
 
-
-Clears effect from the battler.
+Clears effect from the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -914,8 +885,7 @@ Clears effect from the battler.
 
 #### clearMotion ()
 
-
-Clears motion from the battler.
+Clears motion from the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -942,8 +912,7 @@ Clears motion from the battler.
 
 #### clearResult ()
 
-
-Clears the battler action result.
+Clears the battler action result.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -965,13 +934,12 @@ Clears the battler action result.
                             <a>Game_BattlerBase#clearStates</a>
                         </li>
                     </ul>
-                </dd>[Number](Number.md)
+                </dd>
             </dl>
 
 #### clearTp ()
 
-
-Clears the battler's tp.
+Clears the battler's tp.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -985,10 +953,9 @@ Clears the battler's tp.
 
 #### clearWeaponAnimation ()
 
-
-Clear weapon animation from the battler.
+Clear weapon animation from the battler.
 <dl>
-                <dt>Inheri[Number](Number.md)
+                <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
@@ -998,10 +965,9 @@ Clear weapon animation from the battler.
                 </dd>
             </dl>
 
-#### collapseType () → {[Number](Number.md)}
+#### collapseType () → {[Number](Number.html)}
 
-
-Returns the collapse type of the battler.
+Returns the collapse type of the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1019,20 +985,19 @@ Returns the collapse type of the battler.
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
-           [RPG.UsableItem](RPG.UsableItem.md)
+                </dd>
             </dl>
 
-#### confusionLevel () → {[Number](Number.md)}
+#### confusionLevel () → {[Number](Number.html)}
 
-
-Returns the confusion level of the battler.
+Returns the confusion level of the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
                             <a>Game_BattlerBase#confusionLevel</a>
-                        <[Game_Action](Game_Action.md)
+                        </li>
                     </ul>
                 </dd>
             </dl>
@@ -1048,14 +1013,13 @@ Returns the confusion level of the battler.
 
 #### consumeItem (item)
 
-
-Has the battler consume the given item.
+Has the battler consume the given item.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableIt[Number](Number.md)ml) |  |
+| `item` | [RPG.UsableItem](RPG.UsableItem.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1068,23 +1032,22 @@ Has the battler consume the given item.
                 </dd>
             </dl>
 
-#### currentAction () → {[Game_Action](Game_Action.md)}
+#### currentAction () → {[Game_Action](Game_Action.html)}
 
-
-Returns the current action of the battler.
+Returns the current action of the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
                             <a>Game_Battler#currentAction</a>
-                        </li>[Number](Number.md)
+                        </li>
                     </ul>
                 </dd>
             </dl>
 
 ##### Returns:
-[Number](Number.md)
+
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -1092,10 +1055,9 @@ Returns the current action of the battler.
                 </dd>
             </dl>
 
-#### deathStateId () → {[Number](Number.md)}
+#### deathStateId () → {[Number](Number.html)}
 
-
-Returns the death state id.
+Returns the death state id.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1112,17 +1074,17 @@ Returns the death state id.
 <dl>
                 <dt> Type </dt>
                 <dd>
-              [Number](Number.md)</a></span>
+                    <span><a>Number</a></span>
                 </dd>
             </dl>
 
-#### debuffRate (paramId) → {[Number](Number.md)}
+#### debuffRate (paramId) → {[Number](Number.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1150,9 +1112,9 @@ Returns the death state id.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
 
-<dl>[Number](Number.md)
+<dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -1167,7 +1129,7 @@ Returns the death state id.
 
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>[String](String.md)
+                <dd>
                     <ul>
                         <li>
                             <a>Game_Battler#deselect</a>
@@ -1178,8 +1140,7 @@ Returns the death state id.
 
 #### die ()
 
-
-Kills the battler.
+Kills the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1190,13 +1151,12 @@ Kills the battler.
                     </ul>
                 </dd>
             </dl>
-[Number](Number.md)
-#### dropItemRate () → {[Number](Number.md)}
 
+#### dropItemRate () → {[Number](Number.html)}
 
-Returns the item drop rate of the enemy.
+Returns the item drop rate of the enemy.
 <dl>
-</dl>[Number](Number.md)
+</dl>
 
 ##### Returns:
 
@@ -1207,10 +1167,9 @@ Returns the item drop rate of the enemy.
                 </dd>
             </dl>
 
-#### effectType () → {[String](String.md)}
+#### effectType () → {[String](String.html)}
 
-
-Returns the effect type of the battler.
+Returns the effect type of the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1218,7 +1177,7 @@ Returns the effect type of the battler.
                         <li>
                             <a>Game_Battler#effectType</a>
                         </li>
-                 [RPG.Enemy](RPG.Enemy.md)
+                    </ul>
                 </dd>
             </dl>
 
@@ -1231,13 +1190,13 @@ Returns the effect type of the battler.
                 </dd>
             </dl>
 
-#### elementRate (elementId) → {[Number](Number.md)}
+#### elementRate (elementId) → {[Number](Number.html)}
 
-##### Parameters:[Number](Number.md)
+##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `elementId` | [Number](Number.md) |  |
+| `elementId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1254,15 +1213,14 @@ Returns the effect type of the battler.
 
 <dl>
                 <dt> Type </dt>
-              [Number](Number.md)
+                <dd>
                     <span><a>Number</a></span>
                 </dd>
             </dl>
 
-#### enemy () → {[RPG.Enemy](RPG.Enemy.md)}
+#### enemy () → {[RPG.Enemy](RPG.Enemy.html)}
 
-
-Returns the enemy information from the database.
+Returns the enemy information from the database.
 <dl>
 </dl>
 
@@ -1275,10 +1233,9 @@ Returns the enemy information from the database.
                 </dd>
             </dl>
 
-#### enemyId ([Number](Number.md)html)}
+#### enemyId () → {[Number](Number.html)}
 
-
-Returns the enemy id.
+Returns the enemy id.
 <dl>
 </dl>
 
@@ -1297,12 +1254,12 @@ Returns the enemy id.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-               [Number](Number.md)
+                    <ul>
                         <li>
                             <a>Game_BattlerBase#eraseBuff</a>
                         </li>
@@ -1312,19 +1269,18 @@ Returns the enemy id.
 
 #### eraseState (stateId)
 
-
-Erases the current state from the game battler given the stateId in the editor database.
+Erases the current state from the game battler given the stateId in the editor database.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
+| `stateId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
-              [Number](Number.md)
-                  [Number](Number.md)
+                <dd>
+                    <ul>
                         <li>
                             <a>Game_BattlerBase#eraseState</a>
                         </li>
@@ -1334,10 +1290,9 @@ Erases the current state from the game battler given the stateId in the editor d
 
 #### escape ()
 
-
-Has the battler escape from battle; plays a sound on escaping.
+Has the battler escape from battle; plays a sound on escaping.
 <dl>
-                <dt>Inh[Game_Troop](Game_Troop.md)
+                <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
@@ -1347,10 +1302,9 @@ Has the battler escape from battle; plays a sound on escaping.
                 </dd>
             </dl>
 
-#### exp () → {[Number](Number.md)}
+#### exp () → {[Number](Number.html)}
 
-
-Returns the enemy's exp amount.
+Returns the enemy's exp amount.
 <dl>
 </dl>
 
@@ -1360,7 +1314,7 @@ Returns the enemy's exp amount.
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
-            [Number](Number.md)
+                </dd>
             </dl>
 
 #### forceAction (skillId, targetIndex)
@@ -1369,8 +1323,8 @@ Returns the enemy's exp amount.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skillId` | [Number](Number.md) |  |
-| `targetIndex` | [Number](Number.md) |  |
+| `skillId` | [Number](Number.html) |  |
+| `targetIndex` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1381,12 +1335,11 @@ Returns the enemy's exp amount.
                         </li>
                     </ul>
                 </dd>
-            [Number](Number.md)
+            </dl>
 
-#### friendsUnit () → {[Game_Troop](Game_Troop.md)}
+#### friendsUnit () → {[Game_Troop](Game_Troop.html)}
 
-
-Returns the other troops in the enemy team.
+Returns the other troops in the enemy team.
 <dl>
 </dl>
 
@@ -1401,14 +1354,13 @@ Returns the other troops in the enemy team.
 
 #### gainHp (value)
 
-
-Adds the spe[Number](Number.md)o the battler.
+Adds the specified amount of hp to the battler.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.md) |  |
+| `value` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1423,20 +1375,19 @@ Adds the spe[Number](Number.md)o the battler.
 
 #### gainMp (value)
 
-[Number](Number.md)
-Adds the specified amount of mp to the battler.
+Adds the specified amount of mp to the battler.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.md) |  |
+| `value` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                [Number](Number.md)
+                        <li>
                             <a>Game_Battler#gainMp</a>
                         </li>
                     </ul>
@@ -1445,14 +1396,13 @@ Adds the specified amount of mp to the battler.
 
 #### gainSilentTp (value)
 
-
-Adds a specified amount of tp to the battler silently.
+Adds a specified amount of tp to the battler silently.
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |[Number](Number.md)
-| `value` | [Number](Number.md) |  |
+| --- | --- | --- |
+| `value` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1467,14 +1417,13 @@ Adds a specified amount of tp to the battler silently.
 
 #### gainTp (value)
 
-
-Adds the specified amount of tp to the battler.
+Adds the specified amount of tp to the battler.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.md) |  |
+| `value` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1487,10 +1436,9 @@ Adds the specified amount of tp to the battler.
                 </dd>
             </dl>
 
-#### gold () → {[Number](Number.md)}
-[Number](Number.md)
+#### gold () → {[Number](Number.html)}
 
-Returns enemy's given gold.
+Returns enemy's given gold.
 <dl>
 </dl>
 
@@ -1503,10 +1451,9 @@ Returns enemy's given gold.
                 </dd>
             </dl>
 
-#### guardSkillId () → {[Number](Number.md)}
+#### guardSkillId () → {[Number](Number.html)}
 
-
-Returns the guard skill id in the database.
+Returns the guard skill id in the database.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1517,7 +1464,7 @@ Returns the guard skill id in the database.
                     </ul>
                 </dd>
             </dl>
-[Number](Number.md)
+
 ##### Returns:
 
 <dl>
@@ -1529,8 +1476,7 @@ Returns the guard skill id in the database.
 
 #### hide ()
 
-
-Hides the game ba[Number](Number.md)
+Hides the game battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1542,19 +1488,18 @@ Hides the game ba[Number](Number.md)
                 </dd>
             </dl>
 
-#### hpRate () → {[Number](Number.md)}
+#### hpRate () → {[Number](Number.html)}
 
-
-Returns the percentage of the battler's hp left as a float.
+Returns the percentage of the battler's hp left as a float.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
                             <a>Game_BattlerBase#hpRate</a>
-              [Number](Number.md)
-        [Number](Number.md)
-        [Number](Number.md)
+                        </li>
+                    </ul>
+                </dd>
             </dl>
 
 ##### Returns:
@@ -1572,7 +1517,7 @@ Returns the percentage of the battler's hp left as a float.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1585,7 +1530,7 @@ Returns the percentage of the battler's hp left as a float.
                 </dd>
             </dl>
 
-#### index () → {[Number](Number.md)}
+#### index () → {[Number](Number.html)}
 
 <dl>
 </dl>
@@ -1601,16 +1546,15 @@ Returns the percentage of the battler's hp left as a float.
 
 #### initialize (enemyId, x, y)
 
-
- オブジェクト生成時の初期化。
+ オブジェクト生成時の初期化。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `enemyId` | [Number](Number.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+| `enemyId` | [Number](Number.html) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -1625,7 +1569,7 @@ Returns the percentage of the battler's hp left as a float.
 
 #### initMembers ()
 
-<dl>[RPG.Enemy.Action](RPG.Enemy.Action.md)
+<dl>
                 <dt>Overrides:</dt>
                 <dd>
                     <ul>
@@ -1638,8 +1582,7 @@ Returns the percentage of the battler's hp left as a float.
 
 #### initTp ()
 
-
-Initializes the battler's tp; tp is random.
+Initializes the battler's tp; tp is random.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1653,8 +1596,7 @@ Initializes the battler's tp; tp is random.
 
 #### isActing () → {Boolean}
 
-
-Returns true if the battler is performing an action in battle.
+Returns true if the battler is performing an action in battle.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1677,14 +1619,13 @@ Returns true if the battler is performing an action in battle.
 
 #### isActionValid (action) → {Boolean}
 
-
-Returns true if the enemy action is valid.
+Returns true if the enemy action is valid.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.md) |  |
+| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.html) |  |
 
 <dl>
 </dl>
@@ -1700,8 +1641,7 @@ Returns true if the enemy action is valid.
 
 #### isActor () → {Boolean}
 
-
-Returns true if the battler is an actor.
+Returns true if the battler is an actor.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1724,8 +1664,7 @@ Returns true if the battler is an actor.
 
 #### isAlive () → {Boolean}
 
-
-Returns true if the battler is alive.
+Returns true if the battler is alive.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1770,10 +1709,9 @@ Returns true if the battler is alive.
 
 #### isAppeared () → {Boolean}
 
-
-Returns true if the game battler is not hidden.
+Returns true if the game battler is not hidden.
 <dl>
-              [Number](Number.md)</dt>
+                <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
@@ -1794,14 +1732,13 @@ Returns true if the game battler is not hidden.
 
 #### isAutoBattle () → {Boolean}
 
-
-Returns true if the battler is set to battle automatically.
+Returns true if the battler is set to battle automatically.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-              [Number](Number.md)_BattlerBase#isAutoBattle</a>
+                            <a>Game_BattlerBase#isAutoBattle</a>
                         </li>
                     </ul>
                 </dd>
@@ -1829,14 +1766,14 @@ Returns true if the battler is set to battle automatically.
                     <span>Boolean</span>
                 </dd>
             </dl>
-[Number](Number.md)
+
 #### isBuffAffected (paramId) → {Boolean}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1864,7 +1801,7 @@ Returns true if the battler is set to battle automatically.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1892,7 +1829,7 @@ Returns true if the battler is set to battle automatically.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1916,8 +1853,7 @@ Returns true if the battler is set to battle automatically.
 
 #### isChanting () → {Boolean}
 
-
-Returns true if the battler is chanting in combat.
+Returns true if the battler is chanting in combat.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1940,8 +1876,7 @@ Returns true if the battler is chanting in combat.
 
 #### isConfused () → {Boolean}
 
-
-Returns true if the battler is confused.
+Returns true if the battler is confused.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1970,7 +1905,7 @@ Returns true if the battler is confused.
                     <ul>
                         <li>
                             <a>Game_Battler#isDamagePopupRequested</a>
-              [Number](Number.md)
+                        </li>
                     </ul>
                 </dd>
             </dl>
@@ -1986,8 +1921,7 @@ Returns true if the battler is confused.
 
 #### isDead () → {Boolean}
 
-
-Returns true if the battler is dead.
+Returns true if the battler is dead.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2036,7 +1970,7 @@ Returns true if the battler is dead.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2060,8 +1994,7 @@ Returns true if the battler is dead.
 
 #### isDualWield () → {Boolean}
 
-
-Returns true if the battler dual wields.
+Returns true if the battler dual wields.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2084,11 +2017,10 @@ Returns true if the battler dual wields.
 
 #### isDying () → {Boolean}
 
-
-Returns true if the battler is dying.
+Returns true if the battler is dying.
 <dl>
                 <dt>Inherited From:</dt>
-              [Number](Number.md)
+                <dd>
                     <ul>
                         <li>
                             <a>Game_BattlerBase#isDying</a>
@@ -2116,7 +2048,7 @@ Returns true if the battler is dying.
                             <a>Game_Battler#isEffectRequested</a>
                         </li>
                     </ul>
-              [Number](Number.md)
+                </dd>
             </dl>
 
 ##### Returns:
@@ -2144,7 +2076,7 @@ Returns true if the battler is dying.
 ##### Returns:
 
 <dl>
-              [Number](Number.md)
+                <dt> Type </dt>
                 <dd>
                     <span>Boolean</span>
                 </dd>
@@ -2156,7 +2088,7 @@ Returns true if the battler is dying.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `atypeId` | [Number](Number.md) |  |
+| `atypeId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2172,7 +2104,7 @@ Returns true if the battler is dying.
 ##### Returns:
 
 <dl>
-              [Number](Number.md)
+                <dt> Type </dt>
                 <dd>
                     <span>Boolean</span>
                 </dd>
@@ -2184,7 +2116,7 @@ Returns true if the battler is dying.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `etypeId` | [Number](Number.md) |  |
+| `etypeId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2212,7 +2144,7 @@ Returns true if the battler is dying.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `etypeId` | [Number](Number.md) |  |
+| `etypeId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2240,7 +2172,7 @@ Returns true if the battler is dying.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `wtypeId` | [Number](Number.md) |  |
+| `wtypeId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2264,8 +2196,7 @@ Returns true if the battler is dying.
 
 #### isGuard () → {Boolean}
 
-
-Returns true if the battler is guarding.
+Returns true if the battler is guarding.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2288,8 +2219,7 @@ Returns true if the battler is guarding.
 
 #### isGuardWaiting () → {Boolean}
 
-
-Returns true if the battler is waiting to guard.
+Returns true if the battler is waiting to guard.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2306,14 +2236,13 @@ Returns true if the battler is waiting to guard.
 <dl>
                 <dt> Type </dt>
                 <dd>
-              [Number](Number.md)span>
+                    <span>Boolean</span>
                 </dd>
             </dl>
 
 #### isHidden () → {Boolean}
 
-
-Returns true if the game battler is hidden.
+Returns true if the game battler is hidden.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2334,10 +2263,9 @@ Returns true if the game battler is hidden.
                 </dd>
             </dl>
 
-#### isInputti[Number](Number.md)
+#### isInputting () → {Boolean}
 
-
-Returns true if the battler is inputting commands in battle.
+Returns true if the battler is inputting commands in battle.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2378,7 +2306,7 @@ Returns true if the battler is inputting commands in battle.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2406,10 +2334,10 @@ Returns true if the battler is inputting commands in battle.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
 
 <dl>
-           [RPG.UsableItem](RPG.UsableItem.md)
+                <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
@@ -2452,8 +2380,7 @@ Returns true if the battler is inputting commands in battle.
 
 #### isMotionRequested () → {Boolean}
 
-
-Returns true if a motion is requested.
+Returns true if a motion is requested.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2476,14 +2403,13 @@ Returns true if a motion is requested.
 
 #### isOccasionOk (item) → {Boolean}
 
-
-Returns true if the item occasion is okay.
+Returns true if the item occasion is okay.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
+| `item` | [RPG.UsableItem](RPG.UsableItem.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2505,10 +2431,9 @@ Returns true if the item occasion is okay.
                 </dd>
             </dl>
 
-#### isPreserv[Number](Number.md)
+#### isPreserveTp () → {Boolean}
 
-
-Returns true if tp is preserved between battles.
+Returns true if tp is preserved between battles.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2531,9 +2456,8 @@ Returns true if tp is preserved between battles.
 
 #### isRestricted () → {Boolean}
 
-
-Returns true if the game battler is restricted.
-<dl>[Number](Number.md)
+Returns true if the game battler is restricted.
+<dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -2563,7 +2487,7 @@ Returns true if the game battler is restricted.
                             <a>Game_Battler#isSelected</a>
                         </li>
                     </ul>
-            [RPG.Skill](RPG.Skill.md)
+                </dd>
             </dl>
 
 ##### Returns:
@@ -2581,7 +2505,7 @@ Returns true if the game battler is restricted.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stypeId` | [Number](Number.md) |  |
+| `stypeId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2608,8 +2532,8 @@ Returns true if the game battler is restricted.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | [Number](Number.md)
-| `stypeId` | [Number](Number.md) |  |
+| --- | --- | --- |
+| `stypeId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2633,14 +2557,13 @@ Returns true if the game battler is restricted.
 
 #### isSkillWtypeOk (skill) → {Boolean}
 
-
-Returns true if the skill is a weapon type oriented skill.
+Returns true if the skill is a weapon type oriented skill.
 
 ##### Parameters:
 
-| Name | Type [Number](Number.md)
+| Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.md) |  |
+| `skill` | [RPG.Skill](RPG.Skill.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2664,11 +2587,10 @@ Returns true if the skill is a weapon type oriented skill.
 
 #### isSpriteVisible () → {Boolean}
 
-
-Returns true if the enemy sprite is visible.
+Returns true if the enemy sprite is visible.
 <dl>
 </dl>
-[Number](Number.md)
+
 ##### Returns:
 
 <dl>
@@ -2680,14 +2602,13 @@ Returns true if the enemy sprite is visible.
 
 #### isStateAddable (stateId) → {Boolean}
 
-
-Returns true if the specified state given the state id is addable.
+Returns true if the specified state given the state id is addable.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
+| `stateId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2696,7 +2617,7 @@ Returns true if the specified state given the state id is addable.
                         <li>
                             <a>Game_Battler#isStateAddable</a>
                         </li>
-              [Number](Number.md)
+                    </ul>
                 </dd>
             </dl>
 
@@ -2711,14 +2632,13 @@ Returns true if the specified state given the state id is addable.
 
 #### isStateAffected (stateId) → {Boolean}
 
-
-Returns true if the battler is affected by the specified state given the state id.
+Returns true if the battler is affected by the specified state given the state id.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
+| `stateId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2726,7 +2646,7 @@ Returns true if the battler is affected by the specified state given the state i
                     <ul>
                         <li>
                             <a>Game_BattlerBase#isStateAffected</a>
-              [Number](Number.md)
+                        </li>
                     </ul>
                 </dd>
             </dl>
@@ -2742,14 +2662,13 @@ Returns true if the battler is affected by the specified state given the state i
 
 #### isStateExpired (stateId) → {Boolean}
 
-
-Returns true if the state, given the state id is expired.
+Returns true if the state, given the state id is expired.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
+| `stateId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2777,7 +2696,7 @@ Returns true if the state, given the state id is expired.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
+| `stateId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2801,14 +2720,13 @@ Returns true if the state, given the state id is expired.
 
 #### isStateRestrict (stateId) → {Boolean}
 
-
-Returns true if the specified state given the state id restricts.
+Returns true if the specified state given the state id restricts.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
+| `stateId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2838,13 +2756,13 @@ Returns true if the specified state given the state id restricts.
                     <ul>
                         <li>
                             <a>Game_BattlerBase#isSubstitute</a>
-                        </li>[RPG.BaseItem](RPG.BaseItem.md)
+                        </li>
                     </ul>
                 </dd>
             </dl>
 
 ##### Returns:
-[Number](Number.md)
+
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -2872,12 +2790,11 @@ Returns true if the specified state given the state id restricts.
                 <dd>
                     <span>Boolean</span>
                 </dd>
-            </dl>[Number](Number.md)
+            </dl>
 
 #### isWaiting () → {Boolean}
 
-
-Returns true if the battler is waiting in battle.
+Returns true if the battler is waiting in battle.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2895,13 +2812,12 @@ Returns true if the battler is waiting in battle.
                 <dt> Type </dt>
                 <dd>
                     <span>Boolean</span>
-                </dd>[Array](Array.md)[RPG.BaseItem](RPG.BaseItem.md)
+                </dd>
             </dl>
 
 #### isWeaponAnimationRequested () → {Boolean}
 
-
-Returns true if a weapon animation is requested.
+Returns true if a weapon animation is requested.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2922,13 +2838,13 @@ Returns true if a weapon animation is requested.
                 </dd>
             </dl>
 
-#### itemObject (kind, dataId) → {[RPG.BaseItem](RPG.BaseItem.md)}
+#### itemObject (kind, dataId) → {[RPG.BaseItem](RPG.BaseItem.html)}
 
-##### Parameters:[Number](Number.md)
+##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `kind` | [Number](Number.md) | 1:item 2:weapon 3:armor |
+| `kind` | [Number](Number.html) | 1:item 2:weapon 3:armor |
 | `dataId` | Numver |  |
 
 <dl>
@@ -2946,7 +2862,7 @@ Returns true if a weapon animation is requested.
 #### makeActions ()
 
 <dl>
-                <[Number](Number.md)
+                <dt>Overrides:</dt>
                 <dd>
                     <ul>
                         <li>
@@ -2956,10 +2872,9 @@ Returns true if a weapon animation is requested.
                 </dd>
             </dl>
 
-#### makeActionTimes () → {[Number](Number.md)}
+#### makeActionTimes () → {[Number](Number.html)}
 
-
-Creates the number of times for an action.
+Creates the number of times for an action.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2975,15 +2890,14 @@ Creates the number of times for an action.
 
 <dl>
                 <dt> Type </dt>
-             [RPG.Enemy.Action](RPG.Enemy.Action.md)
+                <dd>
                     <span><a>Number</a></span>
                 </dd>
             </dl>
 
-#### makeDropItems () → {[Array](Array.md).<[RPG.BaseItem](RPG.BaseItem.md)>}
+#### makeDropItems () → {[Array](Array.html).<[RPG.BaseItem](RPG.BaseItem.html)>}
 
-
-Creates the drop items for the enemy specified by the database.
+Creates the drop items for the enemy specified by the database.
 <dl>
 </dl>
 
@@ -2995,11 +2909,10 @@ Creates the drop items for the enemy specified by the database.
                     <span><a>Array</a>.&lt;<a>RPG.BaseItem</a>&gt;</span>
                 </dd>
             </dl>
-[Number](Number.md)
-#### makeSpee[Number](Number.md)
 
+#### makeSpeed ()
 
-Calculates the speed of the battler.
+Calculates the speed of the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3011,14 +2924,14 @@ Calculates the speed of the battler.
                 </dd>
             </dl>
 
-#### maxSlipDamage () → {[Number](Number.md)}
+#### maxSlipDamage () → {[Number](Number.html)}
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-           [RPG.Item](RPG.Item.md)Battler#maxSlipDamage</a>
+                            <a>Game_Battler#maxSlipDamage</a>
                         </li>
                     </ul>
                 </dd>
@@ -3033,10 +2946,9 @@ Calculates the speed of the battler.
                 </dd>
             </dl>
 
-#### maxTp () → {[Number](Number.md)}
+#### maxTp () → {[Number](Number.html)}
 
-
-Returns the maximum tp of the battler.
+Returns the maximum tp of the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3046,8 +2958,8 @@ Returns the maximum tp of the battler.
                         </li>
                     </ul>
                 </dd>
-            <[Number](Number.md)
-[Number](Number.md)
+            </dl>
+
 ##### Returns:
 
 <dl>
@@ -3063,11 +2975,11 @@ Returns the maximum tp of the battler.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.md) |  |
+| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.html) |  |
 
 <dl>
 </dl>
-[Number](Number.md)
+
 ##### Returns:
 
 <dl>
@@ -3083,13 +2995,13 @@ Returns the maximum tp of the battler.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param1` | [Number](Number.md) |  |
-| `param2` | [Number](Number.md) |  |
+| `param1` | [Number](Number.html) |  |
+| `param2` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
-##### Return[RPG.Skill](RPG.Skill.md)
+##### Returns:
 
 <dl>
                 <dt> Type </dt>
@@ -3100,14 +3012,13 @@ Returns the maximum tp of the battler.
 
 #### meetsItemConditions (item) → {Boolean}
 
-
-Returns true if the battler meets the item conditions.
+Returns true if the battler meets the item conditions.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.Item](RPG.Item.md) |  |
+| `item` | [RPG.Item](RPG.Item.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3117,7 +3028,7 @@ Returns true if the battler meets the item conditions.
                             <a>Game_BattlerBase#meetsItemConditions</a>
                         </li>
                     </ul>
-            [Number](Number.md)
+                </dd>
             </dl>
 
 ##### Returns:
@@ -3135,9 +3046,9 @@ Returns true if the battler meets the item conditions.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param1` | [Number](Number.md) |  |
-| `param2` | [Number](Number.md) |  |
-[Number](Number.md)
+| `param1` | [Number](Number.html) |  |
+| `param2` | [Number](Number.html) |  |
+
 <dl>
 </dl>
 
@@ -3156,9 +3067,9 @@ Returns true if the battler meets the item conditions.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param` | [Number](Number.md) |  |
-[Number](Number.md)
-<dl>[Number](Number.md)
+| `param` | [Number](Number.html) |  |
+
+<dl>
 </dl>
 
 ##### Returns:
@@ -3172,14 +3083,13 @@ Returns true if the battler meets the item conditions.
 
 #### meetsSkillConditions (skill) → {Boolean}
 
-
-Returns true if the battler meets the skill conditions.
+Returns true if the battler meets the skill conditions.
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | ---[RPG.UsableItem](RPG.UsableItem.md)
-| `skill` | [RPG.Skill](RPG.Skill.md) |  |
+| --- | --- | --- |
+| `skill` | [RPG.Skill](RPG.Skill.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3200,14 +3110,14 @@ Returns true if the battler meets the skill conditions.
                     <span>Boolean</span>
                 </dd>
             </dl>
-[String](String.md)
+
 #### meetsStateCondition (param) → {Boolean}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param` | [Number](Number.md) |  |
+| `param` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -3222,12 +3132,12 @@ Returns true if the battler meets the skill conditions.
             </dl>
 
 #### meetsSwitchCondition (param) → {Boolean}
-[String](String.md)
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param` | [Number](Number.md) |  |
+| `param` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -3245,10 +3155,10 @@ Returns true if the battler meets the skill conditions.
 
 ##### Parameters:
 
-| Name | Type | De[Number](Number.md)
+| Name | Type | Description |
 | --- | --- | --- |
-| `param1` | [Number](Number.md) |  |
-| `param2` | [Number](Number.md) |  |
+| `param1` | [Number](Number.html) |  |
+| `param2` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -3268,7 +3178,7 @@ Returns true if the battler meets the skill conditions.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.[String](String.md)eItem.md) |  |
+| `item` | [RPG.UsableItem](RPG.UsableItem.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3283,14 +3193,14 @@ Returns true if the battler meets the skill conditions.
 
 ##### Returns:
 
-<dl>[Number](Number.md)
+<dl>
                 <dt> Type </dt>
                 <dd>
                     <span>Boolean</span>
                 </dd>
             </dl>
 
-#### mostImportantStateText () → {[String](String.md)}
+#### mostImportantStateText () → {[String](String.html)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3312,10 +3222,9 @@ Returns true if the battler meets the skill conditions.
                 </dd>
             </dl>
 
-#### motionType () → {[String](String.md)}
+#### motionType () → {[String](String.html)}
 
-
-Returns the motion type of the battler.
+Returns the motion type of the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3336,10 +3245,9 @@ Returns the motion type of the battler.
                 </dd>
             </dl>
 
-#### mpRate () → {[Number](Number.md)}
+#### mpRate () → {[Number](Number.html)}
 
-
-Returns the percentage of the battler's mp left as a float.
+Returns the percentage of the battler's mp left as a float.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3351,7 +3259,7 @@ Returns the percentage of the battler's mp left as a float.
                 </dd>
             </dl>
 
-##### Return[Number](Number.md)
+##### Returns:
 
 <dl>
                 <dt> Type </dt>
@@ -3360,10 +3268,9 @@ Returns the percentage of the battler's mp left as a float.
                 </dd>
             </dl>
 
-#### name () → {[String](String.md)}
+#### name () → {[String](String.html)}
 
-
-Returns the enemy name with letter.
+Returns the enemy name with letter.
 <dl>
 </dl>
 
@@ -3376,10 +3283,9 @@ Returns the enemy name with letter.
                 </dd>
             </dl>
 
-#### numActions () → {[Number](Number.md)}
+#### numActions () → {[Number](Number.html)}
 
-
-Returns the number of battler actions.
+Returns the number of battler actions.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3391,7 +3297,7 @@ Returns the number of battler actions.
                 </dd>
             </dl>
 
-##### Returns:[Game_Party](Game_Party.md)
+##### Returns:
 
 <dl>
                 <dt> Type </dt>
@@ -3406,7 +3312,7 @@ Returns the number of battler actions.
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        [String](String.md)
+                        <li>
                             <a>Game_Battler#onAllActionsEnd</a>
                         </li>
                     </ul>
@@ -3427,8 +3333,8 @@ Returns the number of battler actions.
             </dl>
 
 #### onBattleStart ()
-[Number](Number.md)
-<dl>[Number](Number.md)
+
+<dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -3441,15 +3347,15 @@ Returns the number of battler actions.
 
 #### onDamage (value)
 
-##### Parameters:[Number](Number.md)
+##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.md) |  |
+| `value` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
-              [Number](Number.md)
+                <dd>
                     <ul>
                         <li>
                             <a>Game_Battler#onDamage</a>
@@ -3460,8 +3366,7 @@ Returns the number of battler actions.
 
 #### onRestrict ()
 
-
-Handler for when theb attler is restricted.
+Handler for when theb attler is restricted.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3471,13 +3376,13 @@ Handler for when theb attler is restricted.
                         </li>
                     </ul>
                 </dd>
-            </dl>[Number](Number.md)
+            </dl>
 
 #### onTurnEnd ()
 
 <dl>
                 <dt>Inherited From:</dt>
-              [Number](Number.md)
+                <dd>
                     <ul>
                         <li>
                             <a>Game_Battler#onTurnEnd</a>
@@ -3486,10 +3391,9 @@ Handler for when theb attler is restricted.
                 </dd>
             </dl>
 
-#### opponentsUnit () → {[Game_Party](Game_Party.md)}
+#### opponentsUnit () → {[Game_Party](Game_Party.html)}
 
-
-Returns the game party.
+Returns the game party.
 <dl>
 </dl>
 
@@ -3499,13 +3403,12 @@ Returns the game party.
                 <dt> Type </dt>
                 <dd>
                     <span><a>Game_Party</a></span>
-                </dd>[Number](Number.md)
+                </dd>
             </dl>
 
-#### originalName () → {[String](String.md)}
+#### originalName () → {[String](String.html)}
 
-
-Returns the en[Number](Number.md)
+Returns the enemy original name.
 <dl>
 </dl>
 
@@ -3524,30 +3427,29 @@ Returns the en[Number](Number.md)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
-| `turns` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
+| `turns` | [Number](Number.html) |  |
 
-<dl>[Number](Number.md)
+<dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
                             <a>Game_BattlerBase#overwriteBuffTurns</a>
-              [Number](Number.md)
+                        </li>
                     </ul>
                 </dd>
             </dl>
 
-#### param (paramId) → {[Number](Number.md)}
+#### param (paramId) → {[Number](Number.html)}
 
-
-Returns a standard parameter, given a paramId; standard parameters include: HP, MP, Atk, M.Atk, Def, M.Def, Luck, Agility.
+Returns a standard parameter, given a paramId; standard parameters include: HP, MP, Atk, M.Atk, Def, M.Def, Luck, Agility.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3555,13 +3457,13 @@ Returns a standard parameter, given a paramId; standard parameters include: HP, 
                     <ul>
                         <li>
                             <a>Game_BattlerBase#param</a>
-                        </l[Number](Number.md)
+                        </li>
                     </ul>
                 </dd>
             </dl>
 
 ##### Returns:
-[Number](Number.md)
+
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -3569,13 +3471,13 @@ Returns a standard parameter, given a paramId; standard parameters include: HP, 
                 </dd>
             </dl>
 
-#### paramBase (paramId) → {[Number](Number.md)}
+#### paramBase (paramId) → {[Number](Number.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -3583,13 +3485,13 @@ Returns a standard parameter, given a paramId; standard parameters include: HP, 
                     <ul>
                         <li>
                             <a>Game_Battler#paramBase</a>
-                        </li[Number](Number.md)
+                        </li>
                     </ul>
                 </dd>
             </dl>
 
 ##### Returns:
-[Number](Number.md)
+
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -3597,13 +3499,13 @@ Returns a standard parameter, given a paramId; standard parameters include: HP, 
                 </dd>
             </dl>
 
-#### paramBuffRate (paramId) → {[Number](Number.md)}
+#### paramBuffRate (paramId) → {[Number](Number.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3611,13 +3513,13 @@ Returns a standard parameter, given a paramId; standard parameters include: HP, 
                     <ul>
                         <li>
                             <a>Game_BattlerBase#paramBuffRate</a>
-                        </li[Number](Number.md)
+                        </li>
                     </ul>
                 </dd>
             </dl>
 
 ##### Returns:
-[Number](Number.md)
+
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -3625,13 +3527,13 @@ Returns a standard parameter, given a paramId; standard parameters include: HP, 
                 </dd>
             </dl>
 
-#### paramMax (paramId) → {[Number](Number.md)}
+#### paramMax (paramId) → {[Number](Number.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3645,7 +3547,7 @@ Returns a standard parameter, given a paramId; standard parameters include: HP, 
             </dl>
 
 ##### Returns:
-[Number](Number.md)
+
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -3653,13 +3555,13 @@ Returns a standard parameter, given a paramId; standard parameters include: HP, 
                 </dd>
             </dl>
 
-#### paramMin (paramId) → {[Number](Number.md)}
+#### paramMin (paramId) → {[Number](Number.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3675,26 +3577,26 @@ Returns a standard parameter, given a paramId; standard parameters include: HP, 
 ##### Returns:
 
 <dl>
-            [RPG.Skill](RPG.Skill.md)
+                <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
             </dl>
 
-#### paramPlus (paramId) → {[Number](Number.md)}
+#### paramPlus (paramId) → {[Number](Number.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-             [RPG.Enemy.Action](RPG.Enemy.Action.md)lus</a>
+                            <a>Game_BattlerBase#paramPlus</a>
                         </li>
                     </ul>
                 </dd>
@@ -3709,13 +3611,13 @@ Returns a standard parameter, given a paramId; standard parameters include: HP, 
                 </dd>
             </dl>
 
-#### paramRate (paramId) → {[Number](Number.md)}
+#### paramRate (paramId) → {[Number](Number.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3726,7 +3628,7 @@ Returns a standard parameter, given a paramId; standard parameters include: HP, 
                         </li>
                     </ul>
                 </dd>
-            <[RPG.Enemy.Action](RPG.Enemy.Action.md)
+            </dl>
 
 ##### Returns:
 
@@ -3743,7 +3645,7 @@ Returns a standard parameter, given a paramId; standard parameters include: HP, 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `abilityId` | [Number](Number.md) |  |
+| `abilityId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3767,14 +3669,13 @@ Returns a standard parameter, given a paramId; standard parameters include: HP, 
 
 #### paySkillCost (skill)
 
-
-Pays the cost of the skill when activating the skill.
+Pays the cost of the skill when activating the skill.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.md) |  |
+| `skill` | [RPG.Skill](RPG.Skill.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3793,7 +3694,7 @@ Pays the cost of the skill when activating the skill.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.md) |  |
+| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.html) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -3825,7 +3726,7 @@ Pays the cost of the skill when activating the skill.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.md) |  |
+| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.html) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -3853,11 +3754,10 @@ Pays the cost of the skill when activating the skill.
 
 #### performCounter ()
 
-
-Perform counter motion.
+Perform counter motion.
 <dl>
                 <dt>Inherited From:</dt>
-             [Game_Battler](Game_Battler.md)
+                <dd>
                     <ul>
                         <li>
                             <a>Game_Battler#performCounter</a>
@@ -3881,8 +3781,7 @@ Perform counter motion.
 
 #### performEvasion ()
 
-
-Perform evasion motion.
+Perform evasion motion.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3896,8 +3795,7 @@ Perform evasion motion.
 
 #### performMagicEvasion ()
 
-
-Perform magic evasion motion.
+Perform magic evasion motion.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3911,8 +3809,7 @@ Perform magic evasion motion.
 
 #### performMiss ()
 
-
-Perform miss motion.
+Perform miss motion.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3926,8 +3823,7 @@ Perform miss motion.
 
 #### performRecovery ()
 
-
-Perform recovery motion.
+Perform recovery motion.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3941,8 +3837,7 @@ Perform recovery motion.
 
 #### performReflection ()
 
-
-Performs the reflect motion.
+Performs the reflect motion.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3956,14 +3851,13 @@ Performs the reflect motion.
 
 #### performSubstitute (target)
 
-
-Perform substitute motion with the specified game battler.
+Perform substitute motion with the specified game battler.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3978,8 +3872,7 @@ Perform substitute motion with the specified game battler.
 
 #### recoverAll ()
 
-
-Recovers the battler from all states and restores the battler to maximum hp and mp.
+Recovers the battler from all states and restores the battler to maximum hp and mp.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3987,14 +3880,13 @@ Recovers the battler from all states and restores the battler to maximum hp and 
                         <li>
                             <a>Game_BattlerBase#recoverAll</a>
                         </li>
-              [Number](Number.md)
+                    </ul>
                 </dd>
             </dl>
 
 #### refresh ()
 
-
-Refreshes the battler.
+Refreshes the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4008,8 +3900,7 @@ Refreshes the battler.
 
 #### regenerateAll ()
 
-
-Handler for when battle has started.
+Handler for when battle has started.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4023,8 +3914,7 @@ Handler for when battle has started.
 
 #### regenerateHp ()
 
-
-Has the battler regenerate hp based on their hp regen.
+Has the battler regenerate hp based on their hp regen.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4035,11 +3925,10 @@ Has the battler regenerate hp based on their hp regen.
                     </ul>
                 </dd>
             </dl>
-[Number](Number.md)
+
 #### regenerateMp ()
 
-
-Has the battler regenerate mp based on their mp regen.
+Has the battler regenerate mp based on their mp regen.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4053,8 +3942,7 @@ Has the battler regenerate mp based on their mp regen.
 
 #### regenerateTp ()
 
-
-Has the battl[Number](Number.md)d on their tp regen.
+Has the battler regenerate tp based on their tp regen.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4068,8 +3956,7 @@ Has the battl[Number](Number.md)d on their tp regen.
 
 #### removeAllBuffs ()
 
-
-Removes all buffs from the battler.
+Removes all buffs from the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4086,7 +3973,7 @@ Removes all buffs from the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                 [String](String.md)
+                    <ul>
                         <li>
                             <a>Game_Battler#removeBattleStates</a>
                         </li>
@@ -4100,14 +3987,14 @@ Removes all buffs from the battler.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                 [String](String.md)ttler#removeBuff</a>
+                            <a>Game_Battler#removeBuff</a>
                         </li>
                     </ul>
                 </dd>
@@ -4128,8 +4015,7 @@ Removes all buffs from the battler.
 
 #### removeCurrentAction ()
 
-
-Removes the current battler action.
+Removes the current battler action.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4141,20 +4027,19 @@ Removes the current battler action.
                 </dd>
             </dl>
 
-#### removeSta[Number](Number.md)
+#### removeState (stateId)
 
-
-Removes the specified state given the state id.
+Removes the specified state given the state id.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
+| `stateId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>[Number](Number.md)
+                <dd>
                     <ul>
                         <li>
                             <a>Game_Battler#removeState</a>
@@ -4169,7 +4054,7 @@ Removes the specified state given the state id.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `timing` | [Number](Number.md) |  |
+| `timing` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4177,7 +4062,7 @@ Removes the specified state given the state id.
                     <ul>
                         <li>
                             <a>Game_Battler#removeStatesAuto</a>
-                  [Game_ActionResult](Game_ActionResult.md)
+                        </li>
                     </ul>
                 </dd>
             </dl>
@@ -4201,7 +4086,7 @@ Removes the specified state given the state id.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `effectType` | [String](String.md) |  |
+| `effectType` | [String](String.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4214,22 +4099,21 @@ Removes the specified state given the state id.
                 </dd>
             </dl>
 
-#### requestMotion [Number](Number.md)
+#### requestMotion (motionType)
 
-
-Request the specified motion on the game battler.
+Request the specified motion on the game battler.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `motionType` | [String](String.md) |  |
+| `motionType` | [String](String.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                   [Number](Number.md)
+                        <li>
                             <a>Game_Battler#requestMotion</a>
                         </li>
                     </ul>
@@ -4251,30 +4135,28 @@ Request the specified motion on the game battler.
 
 #### resetStateCounts (stateId)
 
-
-Resets the state count of the specified state, given the state id.
+Resets the state count of the specified state, given the state id.
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |[RPG.Enemy.Action](RPG.Enemy.Action.md)
-| `stateId` | [Number](Number.md) |  |
+| --- | --- | --- |
+| `stateId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                 [Array](Array.md)[RPG.Enemy.Action](RPG.Enemy.Action.md)
-                 [Number](Number.md)
+                    <ul>
+                        <li>
                             <a>Game_BattlerBase#resetStateCounts</a>
                         </li>
                     </ul>
                 </dd>
             </dl>
 
-#### restriction () → {[Number](Number.md)}
+#### restriction () → {[Number](Number.html)}
 
-
-Returns the number of the restriction.
+Returns the number of the restriction.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4284,7 +4166,7 @@ Returns the number of the restriction.
                         </li>
                     </ul>
                 </dd>
-            </dl>[Array](Array.md)[RPG.Enemy.Action](RPG.Enemy.Action.md)
+            </dl>
 
 ##### Returns:
 
@@ -4295,10 +4177,9 @@ Returns the number of the restriction.
                 </dd>
             </dl>
 
-#### result () → {[Game_ActionResult](Game_ActionResult.md)}
+#### result () → {[Game_ActionResult](Game_ActionResult.html)}
 
-[Number](Number.md)
-Returns the b[Game_Action](Game_Action.md)
+Returns the battler action result.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4317,12 +4198,11 @@ Returns the b[Game_Action](Game_Action.md)
                 <dd>
                     <span><a>Game_ActionResult</a></span>
                 </dd>
-            </dl>[String](String.md)
+            </dl>
 
 #### revive ()
 
-
-Revives the battler.
+Revives the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4334,11 +4214,10 @@ Revives the battler.
                 </dd>
             </dl>
 
-#### screenX () → {[Number](Number.md)}
+#### screenX () → {[Number](Number.html)}
 
-
-Returns enemy screen X coordinate.
-<dl>[Number](Number.md)
+Returns enemy screen X coordinate.
+<dl>
 </dl>
 
 ##### Returns:
@@ -4350,14 +4229,13 @@ Returns enemy screen X coordinate.
                 </dd>
             </dl>
 
-#### screenY () → {[Number](Number.md)}
+#### screenY () → {[Number](Number.html)}
 
-
-Returns enemy screen Y position.
+Returns enemy screen Y position.
 <dl>
 </dl>
 
-##### Returns[Game_Battler](Game_Battler.md)
+##### Returns:
 
 <dl>
                 <dt> Type </dt>
@@ -4376,20 +4254,20 @@ Returns enemy screen Y position.
                             <a>Game_Battler#select</a>
                         </li>
                     </ul>
-             [String](String.md)
+                </dd>
             </dl>
 
-#### selectAction (actionList, ratingZero) → {[RPG.Enemy.Action](RPG.Enemy.Action.md)}
+#### selectAction (actionList, ratingZero) → {[RPG.Enemy.Action](RPG.Enemy.Action.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actionList` | [Array](Array.md).<[RPG.Enemy.Action](RPG.Enemy.Action.md)> |  |
-| `ratingZero` | [Number](Number.md) |  |
+| `actionList` | [Array](Array.html).<[RPG.Enemy.Action](RPG.Enemy.Action.html)> |  |
+| `ratingZero` | [Number](Number.html) |  |
 
 <dl>
-</dl>[Number](Number.md)
+</dl>
 
 ##### Returns:
 
@@ -4406,22 +4284,21 @@ Returns enemy screen Y position.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actionList` | [Array](Array.md).<[RPG.Enemy.Action](RPG.Enemy.Action.md)> |  |
+| `actionList` | [Array](Array.html).<[RPG.Enemy.Action](RPG.Enemy.Action.html)> |  |
 
 <dl>
 </dl>
 
 #### setAction (index, action)
 
-
-Sets the action at the specified index for the battler.
+Sets the action at the specified index for the battler.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
-| `action[Number](Number.md)e_Action.md) |  |
+| `index` | [Number](Number.html) |  |
+| `action` | [Game_Action](Game_Action.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4440,14 +4317,14 @@ Sets the action at the specified index for the battler.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actionState[Number](Number.md)tml) |  |
-[Number](Number.md)
-<dl>[Number](Number.md)
+| `actionState` | [String](String.html) |  |
+
+<dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                          [MV.BattlerAnimation](MV.BattlerAnimation.md)
+                            <a>Game_Battler#setActionState</a>
                         </li>
                     </ul>
                 </dd>
@@ -4455,14 +4332,13 @@ Sets the action at the specified index for the battler.
 
 #### setHp (hp)
 
-
-Sets the battler hp.
+Sets the battler hp.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `hp` | [Number](Number.md) |  |
+| `hp` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4470,7 +4346,7 @@ Sets the battler hp.
                     <ul>
                         <li>
                             <a>Game_BattlerBase#setHp</a>
-                        </li[Number](Number.md)
+                        </li>
                     </ul>
                 </dd>
             </dl>
@@ -4478,10 +4354,10 @@ Sets the battler hp.
 #### setLastTarget (target)
 
 ##### Parameters:
-[RPG.Skill](RPG.Skill.md)
+
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4500,21 +4376,20 @@ Sets the battler hp.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `letter` | [String](String[Number](Number.md)
+| `letter` | [String](String.html) |  |
 
 <dl>
 </dl>
 
 #### setMp (mp)
 
-
-Sets the bat[RPG.Skill](RPG.Skill.md)
+Sets the battler mp.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `mp` | [Number](Number.md) |  |
+| `mp` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4530,7 +4405,7 @@ Sets the bat[RPG.Skill](RPG.Skill.md)
 #### setPlural (plural)
 
 ##### Parameters:
-[Number](Number.md)
+
 | Name | Type | Description |
 | --- | --- | --- |
 | `plural` | Boolean |  |
@@ -4540,14 +4415,13 @@ Sets the bat[RPG.Skill](RPG.Skill.md)
 
 #### setTp (tp)
 
-
-Sets the battler tp.
+Sets the battler tp.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tp` | [Number](Number.md) |  |
+| `tp` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4566,17 +4440,16 @@ Sets the battler tp.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `enemyId` | [Number](Number.md) |  |
-| `x` | [Number](Number.ht[Number](Number.md)
-| `y` | [Number](Number.md) |  |
+| `enemyId` | [Number](Number.html) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
-#### shiftAnima[Number](Number.md)rAnimation](MV.BattlerAnimation.md)}
+#### shiftAnimation () → {[MV.BattlerAnimation](MV.BattlerAnimation.html)}
 
-
-Shifts the battler animation.
+Shifts the battler animation.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4597,16 +4470,15 @@ Shifts the battler animation.
                 </dd>
             </dl>
 
-#### skillMpCost (skill) → {[Number](Number.md)}
+#### skillMpCost (skill) → {[Number](Number.html)}
 
+Returns the mp cost of the skill.
 
-Returns the mp cost of the skill.
-[Number](Number.md)
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.md) |  |
+| `skill` | [RPG.Skill](RPG.Skill.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4623,21 +4495,20 @@ Returns the mp cost of the skill.
 
 <dl>
                 <dt> Type </dt>
-                <[Number](Number.md)
+                <dd>
                     <span><a>Number</a></span>
                 </dd>
             </dl>
 
-#### skillTpCost (skill) → {[Number](Number.md)}
+#### skillTpCost (skill) → {[Number](Number.html)}
 
-
-Returns the tp cost of the skill.
+Returns the tp cost of the skill.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.md) |  |
+| `skill` | [RPG.Skill](RPG.Skill.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4654,15 +4525,14 @@ Returns the tp cost of the skill.
 
 <dl>
                 <dt> Type </dt>
-                <d[Number](Number.md)
+                <dd>
                     <span><a>Number</a></span>
-            [Number](Number.md)
+                </dd>
             </dl>
 
-#### slotType () → {[Number](Number.md)}
+#### slotType () → {[Number](Number.html)}
 
-
-Returns the battler slot type of a trait.
+Returns the battler slot type of a trait.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4685,26 +4555,25 @@ Returns the battler slot type of a trait.
 
 #### sortStates ()
 
-
-Sorts the states attached to the battler.
+Sorts the states attached to the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                    [Number](Number.md)
+                        <li>
                             <a>Game_BattlerBase#sortStates</a>
                         </li>
                     </ul>
                 </dd>
             </dl>
 
-#### sparam (sparamId) → {[Number](Number.md)}
+#### sparam (sparamId) → {[Number](Number.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `sparamId` | [Number[Array](Array.md)[Number](Number.md)
+| `sparamId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4727,12 +4596,12 @@ Sorts the states attached to the battler.
             </dl>
 
 #### specialFlag (flagId) → {Boolean}
-[Number](Number.md)
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `flagId` | [Number](Number.md) |  |
+| `flagId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4749,15 +4618,14 @@ Sorts the states attached to the battler.
 
 <dl>
                 <dt> Type </dt>
-                <dd>[Number](Number.md)
+                <dd>
                     <span>Boolean</span>
                 </dd>
             </dl>
 
-#### speed () → {[Number](Number.md)}
+#### speed () → {[Number](Number.html)}
 
-
-Returns the speed of the battler.
+Returns the speed of the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4771,25 +4639,24 @@ Returns the speed of the battler.
 
 ##### Returns:
 
-<dl>[Number](Number.md)
+<dl>
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-[Number](Number.md)
+
 #### startAnimation (animationId, mirror, delay)
 
-
-Starts the specified animation, given the animation id on the battler.
+Starts the specified animation, given the animation id on the battler.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `animationId` | [Number](Number.md) |  |
+| `animationId` | [Number](Number.html) |  |
 | `mirror` | Boolean |  |
-| `delay` | [Number](Number.md) |  |
+| `delay` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4799,13 +4666,12 @@ Starts the specified animation, given the animation id on the battler.
                             <a>Game_Battler#startAnimation</a>
                         </li>
                     </ul>
-                </dd>[Array](Array.md)[Number](Number.md)
+                </dd>
             </dl>
 
 #### startDamagePopup ()
 
-
-Starts a damage pop up on the battler.
+Starts a damage pop up on the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4819,14 +4685,13 @@ Starts a damage pop up on the battler.
 
 #### startWeaponAnimation (weaponImageId)
 
+Starts the weapon animation on te battler given a weapon id.
 
-Starts the weapon animation on te battler given a weapon id.
-[Array](Array.md)[RPG.State](RPG.State.md)
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `weaponImageId` | [Number](Number.md) |  |
+| `weaponImageId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4839,12 +4704,11 @@ Starts the weapon animation on te battler given a weapon id.
                 </dd>
             </dl>
 
-#### stateIcons () → {[Array](Array.md).<[Number](Number.md)>}
+#### stateIcons () → {[Array](Array.html).<[Number](Number.html)>}
 
-
-Returns the array of state icons attached to the battler; this is determined by the active states on the battler.
+Returns the array of state icons attached to the battler; this is determined by the active states on the battler.
 <dl>
-                <d[Number](Number.md)>
+                <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
@@ -4863,7 +4727,7 @@ Returns the array of state icons attached to the battler; this is determined by 
                 </dd>
             </dl>
 
-#### stateMotionIndex () → {[Number](Number.md)}
+#### stateMotionIndex () → {[Number](Number.html)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4885,18 +4749,18 @@ Returns the array of state icons attached to the battler; this is determined by 
                 </dd>
             </dl>
 
-#### stateOverlayIndex () → {[Number](Number.md)}
+#### stateOverlayIndex () → {[Number](Number.html)}
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                    <u[Array](Array.md)[RPG.Trait](RPG.Trait.md)
+                    <ul>
                         <li>
                             <a>Game_BattlerBase#stateOverlayIndex</a>
                         </li>
                     </ul>
                 </dd>
-           [Number](Number.md)
+            </dl>
 
 ##### Returns:
 
@@ -4907,25 +4771,25 @@ Returns the array of state icons attached to the battler; this is determined by 
                 </dd>
             </dl>
 
-#### stateRate (stateId) → {[Number](Number.md)}
+#### stateRate (stateId) → {[Number](Number.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
+| `stateId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                    <ul>[Number](Number.md)
+                    <ul>
                         <li>
                             <a>Game_BattlerBase#stateRate</a>
                         </li>
                     </ul>
                 </dd>
-           [Number](Number.md)
-[Number](Number.md)
+            </dl>
+
 ##### Returns:
 
 <dl>
@@ -4935,7 +4799,7 @@ Returns the array of state icons attached to the battler; this is determined by 
                 </dd>
             </dl>
 
-#### stateResistSet () → {[Array](Array.md).<[Number](Number.md)>}
+#### stateResistSet () → {[Array](Array.html).<[Number](Number.html)>}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -4947,20 +4811,19 @@ Returns the array of state icons attached to the battler; this is determined by 
                     </ul>
                 </dd>
             </dl>
-[Array](Array.md)[Number](Number.md)
+
 ##### Returns:
 
 <dl>
                 <dt> Type </dt>
                 <dd>
-           [Number](Number.md)ay</a>.&lt;<a>Number</a>&gt;</span>
+                    <span><a>Array</a>.&lt;<a>Number</a>&gt;</span>
                 </dd>
             </dl>
 
-#### states () → {[Array](Array.md).<[RPG.State](RPG.State.md)>}
+#### states () → {[Array](Array.html).<[RPG.State](RPG.State.html)>}
 
-
-Returns the states applied to the battler.
+Returns the states applied to the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4975,16 +4838,15 @@ Returns the states applied to the battler.
 ##### Returns:
 
 <dl>
-                <dt> Type </d[Number](Number.md)
+                <dt> Type </dt>
                 <dd>
                     <span><a>Array</a>.&lt;<a>RPG.State</a>&gt;</span>
                 </dd>
             </dl>
 
-#### tpRate[Number](Number.md)r.md)}
-[Number](Number.md)
+#### tpRate () → {[Number](Number.html)}
 
-Returns the percentage of the battler's tp left as a float.
+Returns the percentage of the battler's tp left as a float.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -5004,13 +4866,13 @@ Returns the percentage of the battler's tp left as a float.
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-[Number](Number.md)
+
 #### traitObjects () → {*}
 
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
-           [Number](Number.md)
+                    <ul>
                         <li>
                             <a>Game_Battler#traitObjects</a>
                         </li>
@@ -5020,8 +4882,7 @@ Returns the percentage of the battler's tp left as a float.
 
 ##### Returns:
 
-
-RPG.Trait ?
+RPG.Trait ?
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -5029,17 +4890,17 @@ RPG.Trait ?
                 </dd>
             </dl>
 
-#### traits (code) → {[Array](Array.md).<[RPG.Trait](RPG.Trait.md)>}
+#### traits (code) → {[Array](Array.html).<[RPG.Trait](RPG.Trait.html)>}
 
 ##### Parameters:
-[Array](Array.md)[RPG.Trait](RPG.Trait.md)
+
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.md) |  |
+| `code` | [Number](Number.html) |  |
 
 <dl>
-           [Number](Number.md)om:</dt>
-         [Number](Number.md)
+                <dt>Inherited From:</dt>
+                <dd>
                     <ul>
                         <li>
                             <a>Game_BattlerBase#traits</a>
@@ -5057,19 +4918,19 @@ RPG.Trait ?
                 </dd>
             </dl>
 
-#### traitsPi (code, id) → {[Number](Number.md)}
+#### traitsPi (code, id) → {[Number](Number.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.md) |  |
-| `id` | [Number](Number.md) |  |
+| `code` | [Number](Number.html) |  |
+| `id` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-              [Number](Number.md)
+                    <ul>
                         <li>
                             <a>Game_BattlerBase#traitsPi</a>
                         </li>
@@ -5086,13 +4947,13 @@ RPG.Trait ?
                 </dd>
             </dl>
 
-#### traitsSet (code) → {[Array](Array.md).<[Number](Number.md)>}
+#### traitsSet (code) → {[Array](Array.html).<[Number](Number.html)>}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.md) |  |
+| `code` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5109,20 +4970,20 @@ RPG.Trait ?
 
 <dl>
                 <dt> Type </dt>
-           [RPG.UsableItem](RPG.UsableItem.md)
+                <dd>
                     <span><a>Array</a>.&lt;<a>Number</a>&gt;</span>
                 </dd>
             </dl>
 
-#### traitsSum (code, id) → {[Number](Number.md)}
+#### traitsSum (code, id) → {[Number](Number.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.md) |  |
-| `id` | [Number](Number.md) |  |
-[Number](Number.md)
+| `code` | [Number](Number.html) |  |
+| `id` | [Number](Number.html) |  |
+
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -5143,15 +5004,15 @@ RPG.Trait ?
                 </dd>
             </dl>
 
-#### traitsSumAll (code) → {[Number](Number.md)}
+#### traitsSumAll (code) → {[Number](Number.html)}
 
-##### Parameters:[Number](Number.md)
+##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.md) |  |
+| `code` | [Number](Number.html) |  |
 
-<dl>[Number](Number.md)
+<dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -5171,14 +5032,14 @@ RPG.Trait ?
                 </dd>
             </dl>
 
-#### traitsWithId (code, id) → {[Array](Array.md).<[RPG.Trait](RPG.Trait.md)>}
+#### traitsWithId (code, id) → {[Array](Array.html).<[RPG.Trait](RPG.Trait.html)>}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.md) |  |
-| `id` | [Number](Number.md) |  |
+| `code` | [Number](Number.html) |  |
+| `id` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5202,22 +5063,20 @@ RPG.Trait ?
 
 #### transform (enemyId)
 
-
-Transform the enemy into another enemy based on id.
+Transform the enemy into another enemy based on id.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `enemyId` | [Number](Number.md) |  |
+| `enemyId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
 #### updateBuffTurns ()
 
-
-Updates the buff turns on battler.
+Updates the buff turns on battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -5244,14 +5103,13 @@ Updates the buff turns on battler.
 
 #### useItem (item)
 
-
-Has theb attler use the given item.
+Has theb attler use the given item.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
+| `item` | [RPG.UsableItem](RPG.UsableItem.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5264,10 +5122,9 @@ Has theb attler use the given item.
                 </dd>
             </dl>
 
-#### weaponImageId () → {[Number](Number.md)}
+#### weaponImageId () → {[Number](Number.html)}
 
-
-Returns the weapon image id.
+Returns the weapon image id.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -5288,13 +5145,13 @@ Returns the weapon image id.
                 </dd>
             </dl>
 
-#### xparam (xparamId) → {[Number](Number.md)}
+#### xparam (xparamId) → {[Number](Number.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `xparamId` | [Number](Number.md) |  |
+| `xparamId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -5314,9 +5171,7 @@ Returns the weapon image id.
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
-            </dl>
-
-
+            </dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

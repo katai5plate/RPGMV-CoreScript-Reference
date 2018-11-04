@@ -4,34 +4,33 @@
 
 #### new Spriteset_Map ()
 
- マップスプライト表示用オブジェクト。[Scene_Map](Scene_Map.md) オブジェクトで管理される。
+ マップスプライト表示用オブジェクト。[Scene_Map](Scene_Map.html) オブジェクトで管理される。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_parallax` | [TilingSprite](TilingSprite.md) | [遠景]スプライト |
-| `_tilemap` | [Tilemap](Tilemap.md) | [ShaderTilemap](ShaderTilemap.md) |  マップ画像本体 |
-| `_tileset` | [RPG.Tileset](RPG.Tileset.md) | [タイルセット] |
-| `_characterSprites` | [Array](Array.md).<[Sprite_Character](Sprite_Character.md)> | [アクター][イベント]のスプライト |
-| `_shadowSprite` | [Sprite](Sprite.md) |  影スプライト |
-| `_destinationSprite` | [Sprite_Destination](Sprite_Destination.md) |  タッチ位置スプライト |
-| `_weather` | [Weather](Weather.md) |  天候 |
-| `_parallaxName` | [String](String.md) | [遠景]画像ファイル名 |
+| `_parallax` | [TilingSprite](TilingSprite.html) | [遠景]スプライト |
+| `_tilemap` | [Tilemap](Tilemap.html) | [ShaderTilemap](ShaderTilemap.html) |  マップ画像本体 |
+| `_tileset` | [RPG.Tileset](RPG.Tileset.html) | [タイルセット] |
+| `_characterSprites` | [Array](Array.html).<[Sprite_Character](Sprite_Character.html)> | [アクター][イベント]のスプライト |
+| `_shadowSprite` | [Sprite](Sprite.html) |  影スプライト |
+| `_destinationSprite` | [Sprite_Destination](Sprite_Destination.html) |  タッチ位置スプライト |
+| `_weather` | [Weather](Weather.html) |  天候 |
+| `_parallaxName` | [String](String.html) | [遠景]画像ファイル名 |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Spriteset_Base](Spriteset_Base.md)
+* [Spriteset_Base](Spriteset_Base.html)
 
 ### Methods
 
 #### _speedUpCustomBlendModes (renderer)
 
-
-checks if we need to speed up custom blendmodes
+checks if we need to speed up custom blendmodes
 
 ##### Parameters:
 
@@ -52,8 +51,7 @@ checks if we need to speed up custom blendmodes
 
 #### createBaseSprite ()
 
-
- 基本スプライトを生成。
+ 基本スプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -67,8 +65,7 @@ checks if we need to speed up custom blendmodes
 
 #### createCanvasToneChanger ()
 
-
-canvas 色調変更を生成。
+canvas 色調変更を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -79,25 +76,22 @@ canvas 色調変更を生成。
                     </ul>
                 </dd>
             </dl>
-[$1]($2.md)
+
 #### createCharacters ()
 
-
- キャラクタスプライト([Sprite_Character](Sprite_Character.md))の生成。
+ キャラクタスプライト([Sprite_Character](Sprite_Character.html))の生成。
 <dl>
-[$1]($2.md)</dl>
+</dl>
 
 #### createDestination ()
 
-
- タッチ位置表示スプライト([Sprite_Destination](Sprite_Destination.md))の生成。
+ タッチ位置表示スプライト([Sprite_Destination](Sprite_Destination.html))の生成。
 <dl>
 </dl>
 
 #### createLowerLayer ()
 
-
- 基本スプライトに加え、[遠景]、[タイルマップ]、キャラクタ、影、タッチ位置表示、天候を含む下レイヤを生成。
+ 基本スプライトに加え、[遠景]、[タイルマップ]、キャラクタ、影、タッチ位置表示、天候を含む下レイヤを生成。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -111,15 +105,13 @@ canvas 色調変更を生成。
 
 #### createParallax ()
 
-
-[遠景]スプライトを生成。
+[遠景]スプライトを生成。
 <dl>
 </dl>
 
 #### createPictures ()
 
-
- 画像スプライトを生成。
+ 画像スプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -133,8 +125,7 @@ canvas 色調変更を生成。
 
 #### createScreenSprites ()
 
-
- 画面スプライトを生成。
+ 画面スプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -145,25 +136,22 @@ canvas 色調変更を生成。
                     </ul>
                 </dd>
             </dl>
-[$1]($2.md)
+
 #### createShadow ()
 
-
- 影スプライトの生成。
+ 影スプライトの生成。
 <dl>
 </dl>
 
 #### createTilemap ()
 
-
- タイルマップ([Tilemap](Tilemap.md) か [ShaderTilemap](ShaderTilemap.md))を生成。
+ タイルマップ([Tilemap](Tilemap.html) か [ShaderTilemap](ShaderTilemap.html))を生成。
 <dl>
 </dl>
 
 #### createTimer ()
 
-
- タイマースプライトを生成。
+ タイマースプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -177,8 +165,7 @@ canvas 色調変更を生成。
 
 #### createToneChanger ()
 
-
- 色調補正スプライトを生成。
+ 色調補正スプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -192,8 +179,7 @@ canvas 色調変更を生成。
 
 #### createUpperLayer ()
 
-
-[$1]($2.md) 画像, タイマー, スクリーンスプライトを含む上レイヤを生成。
+ 画像, タイマー, スクリーンスプライトを含む上レイヤを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -207,15 +193,13 @@ canvas 色調変更を生成。
 
 #### createWeather ()
 
-
- 天候スプライト([Weather](Weather.md))の生成。
+ 天候スプライト([Weather](Weather.html))の生成。
 <dl>
 </dl>
 
 #### createWebGLToneChanger ()
 
-
-WebGL 色調変更を生成。
+WebGL 色調変更を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -229,15 +213,13 @@ WebGL 色調変更を生成。
 
 #### hideCharacters ()
 
-
- キャラクタスプライトを隠す。
+ キャラクタスプライトを隠す。
 <dl>
 </dl>
-[$1]($2.md)
+
 #### initialize ()
 
-
- オブジェクト生成時の初期化。
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -251,15 +233,13 @@ WebGL 色調変更を生成。
 
 #### loadTileset ()
 
-
- タイルセット([RPG.Tileset](RPG.Tileset.md))の読み込み。
+ タイルセット([RPG.Tileset](RPG.Tileset.html))の読み込み。
 <dl>
 </dl>
 
 #### update ()
 
-
- フレーム毎のアップデート。
+ フレーム毎のアップデート。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -273,8 +253,7 @@ WebGL 色調変更を生成。
 
 #### updateCanvasToneChanger ()
 
-
-canvas 色調変更をアップデート。
+canvas 色調変更をアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -288,15 +267,13 @@ canvas 色調変更をアップデート。
 
 #### updateParallax ()
 
-
-[遠景]のアップデート。
+[遠景]のアップデート。
 <dl>
 </dl>
 
 #### updatePosition ()
 
-
- 位置をアップデート。
+ 位置をアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -310,8 +287,7 @@ canvas 色調変更をアップデート。
 
 #### updateScreenSprites ()
 
-
- 画面スプライトをアップデート。
+ 画面スプライトをアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -325,29 +301,25 @@ canvas 色調変更をアップデート。
 
 #### updateShadow ()
 
-
- 影のアップデート。
+ 影のアップデート。
 <dl>
 </dl>
 
 #### updateTilemap ()
 
-
- タイルマップのアップデート。
+ タイルマップのアップデート。
 <dl>
 </dl>
 
 #### updateTileset ()
 
-
- タイルセットのアップデート。
+ タイルセットのアップデート。
 <dl>
 </dl>
 
 #### updateToneChanger ()
 
-
- 色調変更をアップデート。
+ 色調変更をアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -361,15 +333,13 @@ canvas 色調変更をアップデート。
 
 #### updateWeather ()
 
-
- 天候のアップデート。
+ 天候のアップデート。
 <dl>
 </dl>
 
 #### updateWebGLToneChanger ()
 
-
-WebGL 色調変更をアップデート。
+WebGL 色調変更をアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -379,9 +349,7 @@ WebGL 色調変更をアップデート。
                         </li>
                     </ul>
                 </dd>
-            </dl>
-
-
+            </dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

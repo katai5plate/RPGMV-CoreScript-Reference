@@ -1,6 +1,6 @@
 # Class: Learning
 
-## [RPG](RPG.md) [.Class](RPG.Class.md).  Learning ()
+## [RPG](RPG.html) [.Class](RPG.Class.html).  Learning ()
 
 #### new Learning ()
 
@@ -10,15 +10,15 @@ The data class for a class's [Skills to Learn].
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `level` | [Number](Number.md) | The level. |
-| `skillId` | [Number](Number.md) | The ID of the skill to learn. |
+| `level` | [Number](Number.html) | The level. |
+| `skillId` | [Number](Number.html) | The ID of the skill to learn. |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [RPG.MetaData](RPG.MetaData.md)
+* [RPG.MetaData](RPG.MetaData.html)
 
  <br>
 

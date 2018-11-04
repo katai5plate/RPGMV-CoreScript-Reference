@@ -10,27 +10,27 @@ The static class that manages battle progress.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_phase` | [String](String.md) | [static] |
+| `_phase` | [String](String.html) | [static] |
 | `_canEscape` | Boolean | [static] [static] |
 | `_canLose` | Boolean | [static] |
 | `_battleTest` | Boolean | [static] |
 | `_eventCallback` | function | [static] |
 | `_preemptive` | Boolean | [static] |
 | `_surprise` | Boolean | [static] |
-| `_actorIndex` | [Number](Number.md) | [static] |
-| `_actionForcedBattler` | [Game_Battler](Game_Battler.md) | [static] |
-| `_mapBgm` | [MV.AudioParameters](MV.AudioParameters.md) | [static] |
-| `_mapBgs` | [MV.AudioParameters](MV.AudioParameters.md) | [static] |
-| `_actionBattlers` | [Array](Array.md).<[Game_Battler](Game_Battler.md)> | [static] |
-| `_subject` | [Game_Battler](Game_Battler.md) | [static] |
-| `_action` | [Game_Action](Game_Action.md) | [static] |
-| `_targets` | [Array](Array.md).<[Game_Battler](Game_Battler.md)> | [static] |
-| `_logWindow` | [Window_BattleLog](Window_BattleLog.md) | [static] |
-| `_statusWindow` | [Window_BattleStatus](Window_BattleStatus.md) | [static] |
-| `_spriteset` | [Spriteset_Battle](Spriteset_Battle.md) | [static] |
-| `_escapeRatio` | [Number](Number.md) | [static] |
+| `_actorIndex` | [Number](Number.html) | [static] |
+| `_actionForcedBattler` | [Game_Battler](Game_Battler.html) | [static] |
+| `_mapBgm` | [MV.AudioParameters](MV.AudioParameters.html) | [static] |
+| `_mapBgs` | [MV.AudioParameters](MV.AudioParameters.html) | [static] |
+| `_actionBattlers` | [Array](Array.html).<[Game_Battler](Game_Battler.html)> | [static] |
+| `_subject` | [Game_Battler](Game_Battler.html) | [static] |
+| `_action` | [Game_Action](Game_Action.html) | [static] |
+| `_targets` | [Array](Array.html).<[Game_Battler](Game_Battler.html)> | [static] |
+| `_logWindow` | [Window_BattleLog](Window_BattleLog.html) | [static] |
+| `_statusWindow` | [Window_BattleStatus](Window_BattleStatus.html) | [static] |
+| `_spriteset` | [Spriteset_Battle](Spriteset_Battle.html) | [static] |
+| `_escapeRatio` | [Number](Number.html) | [static] |
 | `_escaped` | Boolean | [static] |
-| `_rewards` | [MV.BattleRewards](MV.BattleRewards.md) | [static] |
+| `_rewards` | [MV.BattleRewards](MV.BattleRewards.html) | [static] |
 
 <dl>
 </dl>
@@ -42,7 +42,7 @@ The static class that manages battle progress.
 <dl>
 </dl>
 
-#### (static) actor () → {[Game_Actor](Game_Actor.md)}
+#### (static) actor () → {[Game_Actor](Game_Actor.html)}
 
 <dl>
 </dl>
@@ -56,7 +56,7 @@ The static class that manages battle progress.
                 </dd>
             </dl>
 
-#### (static) allBattleMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
+#### (static) allBattleMembers () → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
 
 <dl>
 </dl>
@@ -70,13 +70,13 @@ The static class that manages battle progress.
                 </dd>
             </dl>
 
-#### (static) applySubstitute (target) → {[Game_Battler](Game_Battler.md)}
+#### (static) applySubstitute (target) → {[Game_Battler](Game_Battler.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.html) |  |
 
 <dl>
 </dl>
@@ -124,8 +124,8 @@ The static class that manages battle progress.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `newActorIndex` | [Number](Number.md) |  |
-| `lastActorActionState` | [String](String.md) |  |
+| `newActorIndex` | [Number](Number.html) |  |
+| `lastActorActionState` | [String](String.html) |  |
 
 <dl>
 </dl>
@@ -164,7 +164,7 @@ The static class that manages battle progress.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.html) |  |
 
 <dl>
 </dl>
@@ -239,7 +239,7 @@ The static class that manages battle progress.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `result` | [Number](Number.md) |  |
+| `result` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -255,7 +255,7 @@ The static class that manages battle progress.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `battler` | [Game_Battler](Game_Battler.md) |  |
+| `battler` | [Game_Battler](Game_Battler.html) |  |
 
 <dl>
 </dl>
@@ -280,7 +280,7 @@ The static class that manages battle progress.
 <dl>
 </dl>
 
-#### (static) getNextSubject () → {[Game_Battler](Game_Battler.md)}
+#### (static) getNextSubject () → {[Game_Battler](Game_Battler.html)}
 
 <dl>
 </dl>
@@ -306,17 +306,16 @@ The static class that manages battle progress.
 
 ##### Returns:
 
-
-Game_Action
+Game_Action
 
 #### (static) invokeAction (subject, target)
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | [Game_Battler](Game_Battler.md)
-| `subject` |[Game_Battler](Game_Battler.md)) |  |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| --- | --- | --- |
+| `subject` | [Game_Battler](Game_Battler.html) |  |
+| `target` | [Game_Battler](Game_Battler.html) |  |
 
 <dl>
 </dl>
@@ -326,9 +325,9 @@ Game_Action
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | [Game_Battler](Game_Battler.md)
-| `subject` |[Game_Battler](Game_Battler.md)) |  |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| --- | --- | --- |
+| `subject` | [Game_Battler](Game_Battler.html) |  |
+| `target` | [Game_Battler](Game_Battler.html) |  |
 
 <dl>
 </dl>
@@ -338,9 +337,9 @@ Game_Action
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | [Game_Battler](Game_Battler.md)
-| `subject` |[Game_Battler](Game_Battler.md)) |  |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| --- | --- | --- |
+| `subject` | [Game_Battler](Game_Battler.html) |  |
+| `target` | [Game_Battler](Game_Battler.html) |  |
 
 <dl>
 </dl>
@@ -350,9 +349,9 @@ Game_Action
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | [Game_Battler](Game_Battler.md)
-| `subject` |[Game_Battler](Game_Battler.md)) |  |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| --- | --- | --- |
+| `subject` | [Game_Battler](Game_Battler.html) |  |
+| `target` | [Game_Battler](Game_Battler.html) |  |
 
 <dl>
 </dl>
@@ -570,8 +569,8 @@ Game_Action
 
 <dl>
 </dl>
-[Number](Number.md)
-#### (static) rateSurprise () → {[Number](Number.md)}
+
+#### (static) rateSurprise () → {[Number](Number.html)}
 
 <dl>
 </dl>
@@ -637,8 +636,8 @@ Game_Action
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --[Window_BattleLog](Window_BattleLog.md)
-| `logWindow` | [Window_BattleLog](Window_BattleLog.md) |  |
+| --- | --- | --- |
+| `logWindow` | [Window_BattleLog](Window_BattleLog.html) |  |
 
 <dl>
 </dl>
@@ -648,8 +647,8 @@ Game_Action
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --[Spriteset_Battle](Spriteset_Battle.md)
-| `spriteset` | [Spriteset_Battle](Spriteset_Battle.md) |  |
+| --- | --- | --- |
+| `spriteset` | [Spriteset_Battle](Spriteset_Battle.html) |  |
 
 <dl>
 </dl>
@@ -659,8 +658,8 @@ Game_Action
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |[Window_BattleStatus](Window_BattleStatus.md)
-| `statusWindow` | [Window_BattleStatus](Window_BattleStatus.md) |  |
+| --- | --- | --- |
+| `statusWindow` | [Window_BattleStatus](Window_BattleStatus.html) |  |
 
 <dl>
 </dl>
@@ -670,8 +669,8 @@ Game_Action
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | [Number](Number.md)
-| `troopId` | [Number](Number.md) |  |
+| --- | --- | --- |
+| `troopId` | [Number](Number.html) |  |
 | `canEscape` | Boolean |  |
 | `canLose` | Boolean |  |
 
@@ -749,9 +748,7 @@ Game_Action
 #### (static) updateTurnEnd ()
 
 <dl>
-</dl>
-
-
+</dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

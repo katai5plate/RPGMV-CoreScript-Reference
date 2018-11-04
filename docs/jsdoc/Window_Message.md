@@ -10,31 +10,30 @@ The window for displaying text messages.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_background` | [Number](Number.md) |  |
-| `_positionType` | [Number](Number.md) |  |
-| `_waitCount` | [Number](Number.md) |  |
-| `_faceBitmap` | [MV.TextState](MV.TextState.md) |  |
+| `_background` | [Number](Number.html) |  |
+| `_positionType` | [Number](Number.html) |  |
+| `_waitCount` | [Number](Number.html) |  |
+| `_faceBitmap` | [MV.TextState](MV.TextState.html) |  |
 | `_pauseSkip` | Boolean |  |
 | `_showFast` | Boolean |  |
 | `_lineShowFast` | Boolean |  |
-| `_goldWindow` | [Window_Gold](Window_Gold.md) |  |
-| `_choiceWindow` | [Window_ChoiceList](Window_ChoiceList.md) |  |
-| `_numberWindow` | [Window_NumberInput](Window_NumberInput.md) |  |
-| `_itemWindow` | [Window_EventItem](Window_EventItem.md) |  |
+| `_goldWindow` | [Window_Gold](Window_Gold.html) |  |
+| `_choiceWindow` | [Window_ChoiceList](Window_ChoiceList.html) |  |
+| `_numberWindow` | [Window_NumberInput](Window_NumberInput.html) |  |
+| `_itemWindow` | [Window_EventItem](Window_EventItem.html) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Window_Base](Window_Base.md)
+* [Window_Base](Window_Base.html)
 
 ### Methods
 
 #### activate ()
 
-
-Activates the window, allowing it to be processed and to update.
+Activates the window, allowing it to be processed and to update.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -45,17 +44,16 @@ Activates the window, allowing it to be processed and to update.
                     </ul>
                 </dd>
             </dl>
-[String](String.md)
-#### actorName (actorIndex) → {[String](String.md)}
 
+#### actorName (actorIndex) → {[String](String.html)}
 
-Returns the actor name given an index; the index starts from 1.
+Returns the actor name given an index; the index starts from 1.
 
 ##### Parameters:
 
-| Name | Type | D[Number](Number.md)
+| Name | Type | Description |
 | --- | --- | --- |
-| `actorIndex` | [Number](Number.md) |  |
+| `actorIndex` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -79,8 +77,7 @@ Returns the actor name given an index; the index starts from 1.
 
 #### addChild (child) → {Object}
 
-
-[super] Adds a child to the container.
+[super] Adds a child to the container.
 
 ##### Parameters:
 
@@ -101,8 +98,7 @@ Returns the actor name given an index; the index starts from 1.
 
 ##### Returns:
 
-
-The child that was added
+The child that was added
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -112,15 +108,14 @@ The child that was added
 
 #### addChildAt (child, index) → {Object}
 
+[super] Adds a child to the container at a specified index.
 
-[super] Adds a child to the container at a specified index.
-
-##### Parame[Number](Number.md)
+##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object | The child to add |
-| `index` | [Number](Number.md) | The index to place the child in |
+| `index` | [Number](Number.html) | The index to place the child in |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -135,8 +130,7 @@ The child that was added
 
 ##### Returns:
 
-
-The child that was added
+The child that was added
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -146,8 +140,7 @@ The child that was added
 
 #### addChildToBack (child) → {Object}
 
-
-Adds a child between the background and contents.
+Adds a child between the background and contents.
 
 ##### Parameters:
 
@@ -168,8 +161,7 @@ Adds a child between the background and contents.
 
 ##### Returns:
 
-
-The child that was added
+The child that was added
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -179,12 +171,11 @@ The child that was added
 
 #### areSettingsChanged () → {Boolean}
 
-
-Returns true if the message window settings have been changed.
+Returns true if the message window settings have been changed.
 <dl>
 </dl>
 
-##### Returns:[Number](Number.md)
+##### Returns:
 
 <dl>
                 <dt> Type </dt>
@@ -192,17 +183,16 @@ Returns true if the message window settings have been changed.
                     <span>Boolean</span>
                 </dd>
             </dl>
-[MV.TextState](MV.TextState.md)
-#### calcTextHeight (textState, all) → {[Number](Number.md)}
 
+#### calcTextHeight (textState, all) → {[Number](Number.html)}
 
-Calculates the text height of the textState (when using drawTextEx); if all is set to true, all lines of text are calculated, otherwise only a single line is processed.
+Calculates the text height of the textState (when using drawTextEx); if all is set to true, all lines of text are calculated, otherwise only a single line is processed.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.md) |  |
+| `textState` | [MV.TextState](MV.TextState.html) |  |
 | `all` | Boolean |  |
 
 <dl>
@@ -227,10 +217,9 @@ Calculates the text height of the textState (when using drawTextEx); if all is s
 
 #### canStart () → {Boolean}
 
-
-Returns true if the message window can start.
+Returns true if the message window can start.
 <dl>
-</dl>[Number](Number.md)
+</dl>
 
 ##### Returns:
 
@@ -238,19 +227,18 @@ Returns true if the message window can start.
                 <dt> Type </dt>
                 <dd>
                     <span>Boolean</span>
-        [Number](Number.md)
+                </dd>
             </dl>
 
-#### canvasToLocalX (x) → {[Number](Number.md)}
+#### canvasToLocalX (x) → {[Number](Number.html)}
 
-
-Returns the x coordinate of the mouse to a local window x coordinate.
+Returns the x coordinate of the mouse to a local window x coordinate.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
+| `x` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -260,7 +248,7 @@ Returns the x coordinate of the mouse to a local window x coordinate.
                             <a>Window_Base#canvasToLocalX</a>
                         </li>
                     </ul>
-                </dd>[Number](Number.md)
+                </dd>
             </dl>
 
 ##### Returns:
@@ -268,20 +256,19 @@ Returns the x coordinate of the mouse to a local window x coordinate.
 <dl>
                 <dt> Type </dt>
                 <dd>
-        [Number](Number.md)Number</a></span>
+                    <span><a>Number</a></span>
                 </dd>
             </dl>
 
-#### canvasToLocalY (y) → {[Number](Number.md)}
+#### canvasToLocalY (y) → {[Number](Number.html)}
 
-
-Returns the y coordinate of the mouse to a local window y coordinate.
+Returns the y coordinate of the mouse to a local window y coordinate.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `y` | [Number](Number.md) |  |
+| `y` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -305,8 +292,7 @@ Returns the y coordinate of the mouse to a local window y coordinate.
 
 #### changePaintOpacity (enabled)
 
-
-Changes the paintOpacity (the opacity of the text drawn to the window); if true the opacity is set to 255, otherwise the opacity is set to 160.
+Changes the paintOpacity (the opacity of the text drawn to the window); if true the opacity is set to 255, otherwise the opacity is set to 160.
 
 ##### Parameters:
 
@@ -319,7 +305,7 @@ Changes the paintOpacity (the opacity of the text drawn to the window); if true 
                 <dd>
                     <ul>
                         <li>
-            [String](String.md)ndow_Base#changePaintOpacity</a>
+                            <a>Window_Base#changePaintOpacity</a>
                         </li>
                     </ul>
                 </dd>
@@ -327,14 +313,13 @@ Changes the paintOpacity (the opacity of the text drawn to the window); if true 
 
 #### changeTextColor (color)
 
-
-Changes the text color property given a css color string.
+Changes the text color property given a css color string.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `color` | [String](String.md) |  |
+| `color` | [String](String.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -356,11 +341,10 @@ Changes the text color property given a css color string.
 
 <dl>
 </dl>
-[Number](Number.md)
+
 #### close ()
 
-
-Closes the window.
+Closes the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -372,14 +356,13 @@ Closes the window.
                 </dd>
             </dl>
 
-#### contentsHeight () → {[Number](Number.md)}
+#### contentsHeight () → {[Number](Number.html)}
 
-
-Returns the inner content height of the window.
+Returns the inner content height of the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                    <ul>[Number](Number.md)
+                    <ul>
                         <li>
                             <a>Window_Base#contentsHeight</a>
                         </li>
@@ -396,13 +379,12 @@ Returns the inner content height of the window.
                 </dd>
             </dl>
 
-#### contentsWidth () → {[Number](Number.md)}
+#### contentsWidth () → {[Number](Number.html)}
 
-
-Returns the inner content width of the window.
+Returns the inner content width of the window.
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>[String](String.md)
+                <dd>
                     <ul>
                         <li>
                             <a>Window_Base#contentsWidth</a>
@@ -410,7 +392,7 @@ Returns the inner content width of the window.
                     </ul>
                 </dd>
             </dl>
-[String](String.md)
+
 ##### Returns:
 
 <dl>
@@ -420,16 +402,15 @@ Returns the inner content width of the window.
                 </dd>
             </dl>
 
-#### convertEscapeCharacters (text) → {[String](String.md)}
+#### convertEscapeCharacters (text) → {[String](String.html)}
 
-
-Converts the escape characters and returns the text content after processing the characters.
+Converts the escape characters and returns the text content after processing the characters.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.md) |  |
+| `text` | [String](String.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -452,9 +433,8 @@ Converts the escape characters and returns the text content after processing the
             </dl>
 
 #### createContents ()
-[String](String.md)
 
-Creates the contents of the window; this is the area of the window which text is drawn to.
+Creates the contents of the window; this is the area of the window which text is drawn to.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -468,15 +448,13 @@ Creates the contents of the window; this is the area of the window which text is
 
 #### createSubWindows ()
 
-
-Creates the sub windows for the message window.
+Creates the sub windows for the message window.
 <dl>
 </dl>
 
-#### crisisColor () → {[String](String.md)}
+#### crisisColor () → {[String](String.html)}
 
-
-Returns the crisis color as a css color string.
+Returns the crisis color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -489,7 +467,7 @@ Returns the crisis color as a css color string.
             </dl>
 
 ##### Returns:
-[String](String.md)
+
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -499,8 +477,7 @@ Returns the crisis color as a css color string.
 
 #### deactivate ()
 
-
-Deactives the window, preventing further processing.
+Deactives the window, preventing further processing.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -512,10 +489,9 @@ Deactives the window, preventing further processing.
                 </dd>
             </dl>
 
-#### deathColor () → [String](String.md))}
+#### deathColor () → {[String](String.html)}
 
-
-Returns the death color as a css color string.
+Returns the death color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -535,11 +511,10 @@ Returns the death color as a css color string.
                     <span><a>String</a></span>
                 </dd>
             </dl>
-[String](String.md)
-#### dimColor1 () → {[String](String.md)}
 
+#### dimColor1 () → {[String](String.html)}
 
-Color 1 of the dimmer sprite bitmap. for the gradient.
+Color 1 of the dimmer sprite bitmap. for the gradient.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -560,10 +535,9 @@ Color 1 of the dimmer sprite bitmap. for the gradient.
                 </dd>
             </dl>
 
-#### dimColor2 () → {[String](String.md)}
+#### dimColor2 () → {[String](String.html)}
 
-
-Color 2 of the dimmer sprite bitmap for the gradient.
+Color 2 of the dimmer sprite bitmap for the gradient.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -579,15 +553,14 @@ Color 2 of the dimmer sprite bitmap for the gradient.
 
 <dl>
                 <dt> Type </dt>
-            [Game_Actor](Game_Actor.md)
-        [Number](Number.md)String</a></span>
-        [Number](Number.md)
+                <dd>
+                    <span><a>String</a></span>
+                </dd>
             </dl>
 
 #### doesContinue () → {Boolean}
 
-
-Returns true if the message window still has text and settings have not changed.
+Returns true if the message window still has text and settings have not changed.
 <dl>
 </dl>
 
@@ -602,13 +575,13 @@ Returns true if the message window still has text and settings have not changed.
 
 #### drawActorCharacter (actor, x, y)
 
-##### Parame[Game_Actor](Game_Actor.md)
-[Number](Number.md)
-| Name |[Number](Number.md)
-| --- | --- [Number](Number.md)
-| `actor` | [Game_Actor](Game_Actor.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -623,17 +596,16 @@ Returns true if the message window still has text and settings have not changed.
 
 #### drawActorClass (actor, x, y, width)
 
+Draws the actor class at the specified x and y coordinates within the given width.
 
-Draws the actor class at the specified x and y coordinates within the given width.
+##### Parameters:
 
-##### Parame[Game_Actor](Game_Actor.md)
-[Number](Number.md)
-| Name |[Number](Number.md)
-| --- | --- [Number](Number.md)
-| `actor` | [[Number](Number.md)r.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
+| Name | Type | Description |
+| --- | --- | --- |
+| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
+| `width` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -648,18 +620,17 @@ Draws the actor class at the specified x and y coordinates within the given widt
 
 #### drawActorFace (actor, x, y, width, height)
 
+Draws the actor face at the specified x and y coordinates within the given width.
 
-Draws the actor face at the specified x and y coordinates within the given width.
+##### Parameters:
 
-##### Parame[Game_Actor](Game_Actor.md)
-[Number](Number.md)
-| Name |[Number](Number.md)
-| --- | --- [Number](Number.md)
-| `actor` | [Game_Actor](Game_Actor.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
-| `height` | [Number](Number.md) |  |
+| Name | Type | Description |
+| --- | --- | --- |
+| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
+| `width` | [Number](Number.html) |  |
+| `height` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -674,17 +645,16 @@ Draws the actor face at the specified x and y coordinates within the given width
 
 #### drawActorHp (actor, x, y, width)
 
+Draws the actor hp at the specified x and y coordinates within the given width.
 
-Draws the ac[Game_Actor](Game_Actor.md) y coordinates within the given width.
-[Number](Number.md)
-##### Pa[Number](Number.md)
-[Number](Number.md)
+##### Parameters:
+
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
+| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
+| `width` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -699,17 +669,16 @@ Draws the ac[Game_Actor](Game_Actor.md) y coordinates within the given width.
 
 #### drawActorIcons (actor, x, y, width)
 
-[Game_Actor](Game_Actor.md)
-Draws th[Number](Number.md)specified x and y coordinates within the given width.
-[Number](Number.md)
+Draws the actor icons at the specified x and y coordinates within the given width.
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
+| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
+| `width` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -722,18 +691,17 @@ Draws th[Number](Number.md)specified x and y coordinates within the given width.
                 </dd>
             </dl>
 
-#### drawAct[Game_Actor](Game_Actor.md)
-[Number](Number.md)
-[Number](Number.md)
-Draws the ac[Number](Number.md)ified x and y coordinates.
+#### drawActorLevel (actor, x, y)
+
+Draws the actor level at the specified x and y coordinates.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -746,19 +714,18 @@ Draws the ac[Number](Number.md)ified x and y coordinates.
                 </dd>
             </dl>
 
-#### drawAct[Game_Actor](Game_Actor.md)
-[Number](Number.md)
-[Number](Number.md)
-Draws the ac[Number](Number.md)ed x and y coordinates within the given width.
+#### drawActorMp (actor, x, y, width)
+
+Draws the actor mp at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
+| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
+| `width` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -770,20 +737,19 @@ Draws the ac[Number](Number.md)ed x and y coordinates within the given width.
                     </ul>
                 </dd>
             </dl>
-[Game_Actor](Game_Actor.md)
-#### dra[Number](Number.md) y, width)
-[Number](Number.md)
-[Number](Number.md)
-Draws the actor name at the specified x and y coordinates within the given width.
+
+#### drawActorName (actor, x, y, width)
+
+Draws the actor name at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
+| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
+| `width` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -794,21 +760,20 @@ Draws the actor name at the specified x and y coordinates within the given width
                         </li>
                     </ul>
                 </dd>
-            [Game_Actor](Game_Actor.md)
-[Number](Number.md)
-#### dra[Number](Number.md), x, y, width)
-[Number](Number.md)
+            </dl>
 
-Draws the actor nickname at the specified x and y coordinates within the given width.
+#### drawActorNickname (actor, x, y, width)
+
+Draws the actor nickname at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
+| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
+| `width` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -818,22 +783,21 @@ Draws the actor nickname at the specified x and y coordinates within the given w
                             <a>Window_Base#drawActorNickname</a>
                         </li>
                     </ul>
-            [Game_Actor](Game_Actor.md)
-        [Number](Number.md)
-[Number](Number.md)
-#### drawAct[Number](Number.md), x, y, width)
+                </dd>
+            </dl>
 
+#### drawActorSimpleStatus (actor, x, y, width)
 
-Draws a simple status for the game actor passed into the method at the specified x and y coordinates within the given width.
+Draws a simple status for the game actor passed into the method at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
+| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
+| `width` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -842,23 +806,22 @@ Draws a simple status for the game actor passed into the method at the specified
                         <li>
                             <a>Window_Base#drawActorSimpleStatus</a>
                         </li>
-                    [String](String.md)
-                </dd>[Number](Number.md)
-        [Number](Number.md)
-[Number](Number.md)
+                    </ul>
+                </dd>
+            </dl>
+
 #### drawActorTp (actor, x, y, width)
 
-
-Draws the actor tp at the specified x and y coordinates within the given width.
+Draws the actor tp at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
+| `actor` | [Game_Actor](Game_Actor.html) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
+| `width` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -866,24 +829,23 @@ Draws the actor tp at the specified x and y coordinates within the given width.
                     <ul>
                         <li>
                             <a>Window_Base#drawActorTp</a>
-            [Number](Number.md)
-           [String](String.md)
-        [Number](Number.md)
-        [Number](Number.md)
-[Number](Number.md)
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+
 #### drawCharacter (characterName, characterIndex, x, y)
 
-
-Draws a character (map sprites) at the specified x and y coordinate. CharacterName refers to character spritesheet, and characterIndex refers to the characterIndex on the spritesheet.
+Draws a character (map sprites) at the specified x and y coordinate. CharacterName refers to character spritesheet, and characterIndex refers to the characterIndex on the spritesheet.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `characterName` | [String](String.md) |  |
-| `characterIndex` | [Number](Number.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+| `characterName` | [String](String.html) |  |
+| `characterIndex` | [Number](Number.html) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -891,63 +853,61 @@ Draws a character (map sprites) at the specified x and y coordinate. CharacterNa
                     <ul>
                         <li>
                             <a>Window_Base#drawCharacter</a>
-              [Number](Number.md)
-          [Number](Number.md)
-        [Number](Number.md)
-        [Number](Number.md)
-[Number](Number.md)
-#### drawCurr[String](String.md)t, x, y, width)
-[String](String.md)
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
 
-Draws the currency value given at the specified x and y coordinates within the width given. Useful if you want to write your own custom currency value.
+#### drawCurrencyValue (value, unit, x, y, width)
+
+Draws the currency value given at the specified x and y coordinates within the width given. Useful if you want to write your own custom currency value.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.md) |  |
-| `unit` | [String](String.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
+| `value` | [Number](Number.html) |  |
+| `unit` | [String](String.html) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
+| `width` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-               [String](String.md)w_Base#drawCurrencyValue</a>
-                [Number](Number.md)
-        [Number](Number.md)
-        [Number](Number.md)
-            [Number](Number.md)
-[Number](Number.md)
+                            <a>Window_Base#drawCurrencyValue</a>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+
 #### drawCurrentAndMax (current, max, x, y, width, color1, color2)
 
-
-Draws the current and max number at the specified x and y coordinate within the given width. Color1 represents the current number and color2 represents the max number when the text is drawn.
+Draws the current and max number at the specified x and y coordinate within the given width. Color1 represents the current number and color2 represents the max number when the text is drawn.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `current` | [Number](Number.md) |  |
-| `max` | [Number](Number.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
-| `color1` | [String](String.md) |  |
-| `color2` | [String](String.md) |  |
+| `current` | [Number](Number.html) |  |
+| `max` | [Number](Number.html) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
+| `width` | [Number](Number.html) |  |
+| `color1` | [String](String.html) |  |
+| `color2` | [String](String.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-        [Number](Number.md)
-        [Number](Number.md)
-            [Number](Number.md)ndow_Base#drawCurrentAndMax</a>
-           [Number](Number.md)
-             [String](String.md)
-             [String](String.md)
+                    <ul>
+                        <li>
+                            <a>Window_Base#drawCurrentAndMax</a>
+                        </li>
+                    </ul>
+                </dd>
             </dl>
 
 #### drawFace (faceName, faceIndex, x, y, width opt, height opt)
@@ -956,45 +916,44 @@ Draws the current and max number at the specified x and y coordinate within the 
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `faceName` | [String](String.md) |  |  |
-| `faceIndex` | [Number](Number.md) |  |  |
-| `x` | [Number](Number.md) |  |  |
-| `y` | [Number](Number.md) |  |  |
-| `width` | [Number](Number.md) | <optional> |  |
-| `height` | [Number](Number.md) | <optional> |  |
+| `faceName` | [String](String.html) |  |  |
+| `faceIndex` | [Number](Number.html) |  |  |
+| `x` | [Number](Number.html) |  |  |
+| `y` | [Number](Number.html) |  |  |
+| `width` | [Number](Number.html) | <optional> |  |
+| `height` | [Number](Number.html) | <optional> |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                [Number](Number.md)_Base#drawFace</a>
-        [Number](Number.md)
-        [Number](Number.md)
+                            <a>Window_Base#drawFace</a>
+                        </li>
+                    </ul>
                 </dd>
             </dl>
 
 #### drawGauge (x, y, width, rate, color1, color2)
 
-
-Draws a gauge at the specified x and y coordinates within the given width. Color1 and Color2 represent the gradient as css color strings of the gauge.
+Draws a gauge at the specified x and y coordinates within the given width. Color1 and Color2 represent the gradient as css color strings of the gauge.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
-| `rate` | [Number](Number.md) |  |
-| `color1` | [String](String.md) |  |
-| `color2` | [String](String.md) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
+| `width` | [Number](Number.html) |  |
+| `rate` | [Number](Number.html) |  |
+| `color1` | [String](String.html) |  |
+| `color2` | [String](String.html) |  |
 
 <dl>
-           [RPG.BaseItem](RPG.BaseItem.md)
-        [Number](Number.md)
-        [Number](Number.md)
-            [Number](Number.md)
+                <dt>Inherited From:</dt>
+                <dd>
+                    <ul>
+                        <li>
                             <a>Window_Base#drawGauge</a>
                         </li>
                     </ul>
@@ -1003,16 +962,15 @@ Draws a gauge at the specified x and y coordinates within the given width. Color
 
 #### drawIcon (iconIndex, x, y)
 
-
-Draws an icon given the specified iconIndex at the specified x and y coordinates. The Width and Height of the icon is based on the _iconWidth and _iconHeight properties.
+Draws an icon given the specified iconIndex at the specified x and y coordinates. The Width and Height of the icon is based on the _iconWidth and _iconHeight properties.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `iconIndex` | [Number](Number.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+| `iconIndex` | [Number](Number.html) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1021,23 +979,22 @@ Draws an icon given the specified iconIndex at the specified x and y coordinates
                         <li>
                             <a>Window_Base#drawIcon</a>
                         </li>
-        [Number](Number.md)
-        [Number](Number.md)
-            </d[Number](Number.md)
-[String](String.md)
+                    </ul>
+                </dd>
+            </dl>
+
 #### drawItemName (item, x, y, width)
 
-
-Draws the item name at the specified x and y coordinates within the given width.
+Draws the item name at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.html[Number](Number.md)
+| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
+| `width` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1045,9 +1002,9 @@ Draws the item name at the specified x and y coordinates within the given width.
                     <ul>
                         <li>
                             <a>Window_Base#drawItemName</a>
-           [String](String.md)
-        [Number](Number.md)
-        [Number](Number.md)
+                        </li>
+                    </ul>
+                </dd>
             </dl>
 
 #### drawMessageFace ()
@@ -1057,19 +1014,18 @@ Draws the item name at the specified x and y coordinates within the given width.
 
 #### drawText (text, x, y, maxWidth, align)
 
-
-Given text or a number, draws the content to the window's contents layer at the specified x and y coordinate within the max width. The text content can also be aligned with the align property. The possible alignments are: "left", "center", "right".
+Given text or a number, draws the content to the window's contents layer at the specified x and y coordinate within the max width. The text content can also be aligned with the align property. The possible alignments are: "left", "center", "right".
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `text` | string |number |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `maxWidth` | [Number](Number.md) |  |
-| `align` | [String](String.md) |  |
-[Number](Number.md)
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
+| `maxWidth` | [Number](Number.html) |  |
+| `align` | [String](String.html) |  |
+
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1077,29 +1033,28 @@ Given text or a number, draws the content to the window's contents layer at the 
                         <li>
                             <a>Window_Base#drawText</a>
                         </li>
-               [Number](Number.md)
+                    </ul>
                 </dd>
             </dl>
 
-#### drawTextEx (text, x, y) → {[Number](Number.md)}
+#### drawTextEx (text, x, y) → {[Number](Number.html)}
 
-
-Draws text with text codes included; this will draw icons, increase text height, and more.
+Draws text with text codes included; this will draw icons, increase text height, and more.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+| `text` | [String](String.html) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                          [String](String.md)TextEx</a>
+                            <a>Window_Base#drawTextEx</a>
                         </li>
                     </ul>
                 </dd>
@@ -1114,16 +1069,15 @@ Draws text with text codes included; this will draw icons, increase text height,
                 </dd>
             </dl>
 
-#### fittingHeight (numLines) → {[Number](Number.md)}
+#### fittingHeight (numLines) → {[Number](Number.html)}
 
-
-Returns the fitting height given a number of lines based on the line height plus standard padding of the window. Default formula: numLines * lineHeight + standardPadding * 2
+Returns the fitting height given a number of lines based on the line height plus standard padding of the window. Default formula: numLines * lineHeight + standardPadding * 2
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `numLines` | [Number](Number.md) |  |
+| `numLines` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1145,12 +1099,11 @@ Returns the fitting height given a number of lines based on the line height plus
                 </dd>
             </dl>
 
-#### gaugeBackColor () → {[String](String.md)}
+#### gaugeBackColor () → {[String](String.html)}
 
-
-Returns the gauage back color as a css color string.
+Returns the gauage back color as a css color string.
 <dl>
-                <dt>Inhe[String](String.md)
+                <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
@@ -1158,7 +1111,7 @@ Returns the gauage back color as a css color string.
                         </li>
                     </ul>
                 </dd>
-            [Game_Actor](Game_Actor.md)
+            </dl>
 
 ##### Returns:
 
@@ -1171,8 +1124,7 @@ Returns the gauage back color as a css color string.
 
 #### hide ()
 
-
-Hides the window, making it invisible; the window is not closed when hidden.
+Hides the window, making it invisible; the window is not closed when hidden.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1180,14 +1132,13 @@ Hides the window, making it invisible; the window is not closed when hidden.
                         <li>
                             <a>Window_Base#hide</a>
                         </li>
-                    </ul>[String](String.md)
+                    </ul>
                 </dd>
             </dl>
 
 #### hideBackgroundDimmer ()
 
-
-Hides the background dimmer sprite.
+Hides the background dimmer sprite.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1199,16 +1150,15 @@ Hides the background dimmer sprite.
                 </dd>
             </dl>
 
-#### hpColor (actor) → {[String](String.md)}
+#### hpColor (actor) → {[String](String.html)}
 
+Returns the hp color as a css string.
 
-Returns the hp color as a css string.
-[String](String.md)
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `actor` | [Game_Actor](Game_Actor.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1230,10 +1180,9 @@ Returns the hp color as a css string.
                 </dd>
             </dl>
 
-#### hpGaugeColor1 () → {[String](String.md)}
+#### hpGaugeColor1 () → {[String](String.html)}
 
-
-Returns the hp gauge color 1 as a css color string.
+Returns the hp gauge color 1 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1254,10 +1203,9 @@ Returns the hp gauge color 1 as a css color string.
                 </dd>
             </dl>
 
-#### hpGaugeColor2 () → {[String](String.md)}
+#### hpGaugeColor2 () → {[String](String.html)}
 
-
-Returns the hp gauge color 2 as a css color string.
+Returns the hp gauge color 2 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1280,8 +1228,7 @@ Returns the hp gauge color 2 as a css color string.
 
 #### initialize ()
 
-
- オブジェクト生成時の初期化。
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -1300,12 +1247,11 @@ Returns the hp gauge color 2 as a css color string.
 
 #### isAnySubWindowActive () → {Boolean}
 
-
-Returns true if any sub window is active.
+Returns true if any sub window is active.
 <dl>
 </dl>
 
-##### Returns:[MV.TextState](MV.TextState.md)
+##### Returns:
 
 <dl>
                 <dt> Type </dt>
@@ -1316,8 +1262,7 @@ Returns true if any sub window is active.
 
 #### isClosed ()
 
-
-Returns true if the window is completely closed (openness == 0).
+Returns true if the window is completely closed (openness == 0).
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1331,8 +1276,7 @@ Returns true if the window is completely closed (openness == 0).
 
 #### isClosing () → {Boolean}
 
-
-Returns true if the window is currently closing.
+Returns true if the window is currently closing.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1355,14 +1299,13 @@ Returns true if the window is currently closing.
 
 #### isEndOfText (textState) → {Boolean}
 
-
-Returns true if there is no text left to display in the message window.
+Returns true if there is no text left to display in the message window.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.md) |  |
+| `textState` | [MV.TextState](MV.TextState.html) |  |
 
 <dl>
 </dl>
@@ -1371,15 +1314,14 @@ Returns true if there is no text left to display in the message window.
 
 <dl>
                 <dt> Type </dt>
-                <dd>[Number](Number.md)
+                <dd>
                     <span>Boolean</span>
                 </dd>
             </dl>
 
 #### isOpen ()
 
-
-Returns true if the window is completely open (openness == 255).
+Returns true if the window is completely open (openness == 255).
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1393,8 +1335,7 @@ Returns true if the window is completely open (openness == 255).
 
 #### isOpening () → {Boolean}
 
-
-Returns true if the window is currently opening.
+Returns true if the window is currently opening.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1417,8 +1358,7 @@ Returns true if the window is currently opening.
 
 #### isTriggered () → {Boolean}
 
-
-Returns true if the ok or cancel inputs have been triggered multiple times.
+Returns true if the ok or cancel inputs have been triggered multiple times.
 <dl>
 </dl>
 
@@ -1431,10 +1371,9 @@ Returns true if the ok or cancel inputs have been triggered multiple times.
                 </dd>
             </dl>
 
-#### lineHeight () → {[Number](Number.md)}
+#### lineHeight () → {[Number](Number.html)}
 
-
-Returns the standard line height of the current window; default is 36.
+Returns the standard line height of the current window; default is 36.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1449,10 +1388,10 @@ Returns the standard line height of the current window; default is 36.
 ##### Returns:
 
 <dl>
-        [Number](Number.md)t>
-        [Number](Number.md)
-            [Number](Number.md)er</a></span>
-             [Number](Number.md)
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Number</a></span>
+                </dd>
             </dl>
 
 #### loadMessageFace ()
@@ -1462,10 +1401,9 @@ Returns the standard line height of the current window; default is 36.
 
 #### loadWindowskin ()
 
-
-Loads the window skin from the img/system directory.
+Loads the window skin from the img/system directory.
 <dl>
-                <dt>Inhe[String](String.md)
+                <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
@@ -1473,12 +1411,11 @@ Loads the window skin from the img/system directory.
                         </li>
                     </ul>
                 </dd>
-            [Game_Actor](Game_Actor.md)
+            </dl>
 
 #### makeFontBigger ()
 
-
-Makes the font bigger by a value of 12.
+Makes the font bigger by a value of 12.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1492,10 +1429,9 @@ Makes the font bigger by a value of 12.
 
 #### makeFontSmaller ()
 
-
-Makes the font smaller by a value of 12.
+Makes the font smaller by a value of 12.
 <dl>
-                <dt>Inh[String](String.md)
+                <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
@@ -1507,18 +1443,17 @@ Makes the font smaller by a value of 12.
 
 #### move (x, y, width, height)
 
-
-Sets the x, y, width, and height all at once.
+Sets the x, y, width, and height all at once.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) | The x coordinate of the window |
-| `y` | [Number](Number.md) | The y coordinate of the window |
-| `width` | [Number](Number.md) | The width of the window |
-| `height` | [Number](Number.md) | The height of the window |
-[String](String.md)
+| `x` | [Number](Number.html) | The x coordinate of the window |
+| `y` | [Number](Number.html) | The y coordinate of the window |
+| `width` | [Number](Number.html) | The width of the window |
+| `height` | [Number](Number.html) | The height of the window |
+
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1530,18 +1465,17 @@ Sets the x, y, width, and height all at once.
                 </dd>
             </dl>
 
-#### mpColor (actor) → {[String](String.md)}
+#### mpColor (actor) → {[String](String.html)}
 
-
-Returns the mp color as a css color string.
+Returns the mp color as a css color string.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `actor` | [Game_Actor](Game_Actor.html) |  |
 
-<dl>[String](String.md)
+<dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -1561,10 +1495,9 @@ Returns the mp color as a css color string.
                 </dd>
             </dl>
 
-#### mpCostColor () → {[String](String.md)}
+#### mpCostColor () → {[String](String.html)}
 
-
-Returns the mp cost color as a css color string.
+Returns the mp cost color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1572,7 +1505,7 @@ Returns the mp cost color as a css color string.
                         <li>
                             <a>Window_Base#mpCostColor</a>
                         </li>
-                [MV.TextState](MV.TextState.md)
+                    </ul>
                 </dd>
             </dl>
 
@@ -1585,10 +1518,9 @@ Returns the mp cost color as a css color string.
                 </dd>
             </dl>
 
-#### mpGaugeColor1 () → {[String](String.md)}
-[Number](Number.md)
+#### mpGaugeColor1 () → {[String](String.html)}
 
-Returns the mp gauge color 1 as a css color string.
+Returns the mp gauge color 1 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1606,13 +1538,12 @@ Returns the mp gauge color 1 as a css color string.
                 <dt> Type </dt>
                 <dd>
                     <span><a>String</a></span>
-                [MV.TextState](MV.TextState.md)
+                </dd>
             </dl>
 
-#### mpGaugeColor2 () → {[String](String.md)}
+#### mpGaugeColor2 () → {[String](String.html)}
 
-[String](String.md)
-Returns the mp gauge color 2 as a css color string.
+Returns the mp gauge color 2 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1634,15 +1565,14 @@ Returns the mp gauge color 2 as a css color string.
             </dl>
 
 #### needsNewPage (textState) → {Boolean}
-[Number](Number.md)
 
-Returns true if the text state needs a new page to display text.
+Returns true if the text state needs a new page to display text.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.md) |  |
+| `textState` | [MV.TextState](MV.TextState.html) |  |
 
 <dl>
 </dl>
@@ -1655,8 +1585,8 @@ Returns true if the text state needs a new page to display text.
                     <span>Boolean</span>
                 </dd>
             </dl>
-[MV.TextState](MV.TextState.md)
-#### newLineX () → {[Number](Number.md)}
+
+#### newLineX () → {[Number](Number.html)}
 
 <dl>
 </dl>
@@ -1676,15 +1606,14 @@ Returns true if the text state needs a new page to display text.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.md) |  |
+| `textState` | [MV.TextState](MV.TextState.html) |  |
 
 <dl>
 </dl>
 
-#### normalColor () → {[String](String.md)}
+#### normalColor () → {[String](String.html)}
 
-
-Returns the normal color as a css color string.
+Returns the normal color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1705,10 +1634,9 @@ Returns the normal color as a css color string.
                 </dd>
             </dl>
 
-#### numVisibleRows () → {[Number](Number.md)}
+#### numVisibleRows () → {[Number](Number.html)}
 
-
-Returns the number of visible rows within the message window.
+Returns the number of visible rows within the message window.
 <dl>
 </dl>
 
@@ -1726,8 +1654,8 @@ Returns the number of visible rows within the message window.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- |[Number](Number.md)
-| `textState` | [MV.TextState](MV.TextState.md) |  |
+| --- | --- | --- |
+| `textState` | [MV.TextState](MV.TextState.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1739,17 +1667,16 @@ Returns the number of visible rows within the message window.
                     </ul>
                 </dd>
             </dl>
-[String](String.md)
+
 #### obtainEscapeParam (textState) → {number|string}
 
-
-Obtains the escape parameters from text codes in the text state when drawTextEx is used to draw text.
+Obtains the escape parameters from text codes in the text state when drawTextEx is used to draw text.
 
 ##### Parameters:
 
-| Name | Type | Descrip[Number](Number.md)
+| Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.md) |  |
+| `textState` | [MV.TextState](MV.TextState.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1769,19 +1696,17 @@ Obtains the escape parameters from text codes in the text state when drawTextEx 
                 <dd>
                     <span>number</span> | <span>string</span>
                 </dd>
-            </dl>[String](String.md)
+            </dl>
 
 #### onEndOfText ()
 
-
-Handler for when there is no text left to display within the message window.
+Handler for when there is no text left to display within the message window.
 <dl>
 </dl>
 
 #### open ()
 
-
-Opens the window.
+Opens the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1792,17 +1717,16 @@ Opens the window.
                     </ul>
                 </dd>
             </dl>
-[String](String.md)
+
 #### paramchangeTextColor (change)
 
-
-Changes the text color based on the powerUpColor, powerDownColor and normal color. powerUpColor is any number greater than 0, powerDownColor is any color less than 0, otherwise normal color is returned.
+Changes the text color based on the powerUpColor, powerDownColor and normal color. powerUpColor is any number greater than 0, powerDownColor is any color less than 0, otherwise normal color is returned.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `change` | [Number](Number.md) |  |
+| `change` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1815,16 +1739,15 @@ Changes the text color based on the powerUpColor, powerDownColor and normal colo
                 </dd>
             </dl>
 
-#### partyMemberName (pa[String](String.md)tring](String.md)}
+#### partyMemberName (partyMemberIndex) → {[String](String.html)}
 
-
-Returns a party member name given an index; the index starts from 1.
+Returns a party member name given an index; the index starts from 1.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `partyMemberIndex` | [Number](Number.md) |  |
+| `partyMemberIndex` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1846,10 +1769,9 @@ Returns a party member name given an index; the index starts from 1.
                 </dd>
             </dl>
 
-#### pendingColo[MV.TextState](MV.TextState.md)
+#### pendingColor () → {[String](String.html)}
 
-
-Returns the pending color as a css color string.
+Returns the pending color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1867,13 +1789,12 @@ Returns the pending color as a css color string.
                 <dt> Type </dt>
                 <dd>
                     <span><a>String</a></span>
-                [Number](Number.md)
-            </dl[MV.TextState](MV.TextState.md)
+                </dd>
+            </dl>
 
-#### powerDownColor () → {[String](String.md)}
+#### powerDownColor () → {[String](String.html)}
 
-
-Returns the power down color as a css color string.
+Returns the power down color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1887,17 +1808,16 @@ Returns the power down color as a css color string.
 
 ##### Returns:
 
-<dl>[String](String.md)
-                [MV.TextState](MV.TextState.md)
+<dl>
+                <dt> Type </dt>
                 <dd>
                     <span><a>String</a></span>
                 </dd>
             </dl>
 
-#### powerUpColor () → {[String](String.md)}
+#### powerUpColor () → {[String](String.html)}
 
-
-Returns the power up color as a css color string.
+Returns the power up color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1907,7 +1827,7 @@ Returns the power up color as a css color string.
                         </li>
                     </ul>
                 </dd>
-            </dl[MV.TextState](MV.TextState.md)
+            </dl>
 
 ##### Returns:
 
@@ -1920,14 +1840,13 @@ Returns the power up color as a css color string.
 
 #### processCharacter (textState)
 
-
-Process each character in the text when drawTextEx is used to draw text.
+Process each character in the text when drawTextEx is used to draw text.
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --[MV.TextState](MV.TextState.md)
-| `textState` | [MV.TextState](MV.TextState.md) |  |
+| --- | --- | --- |
+| `textState` | [MV.TextState](MV.TextState.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1942,15 +1861,14 @@ Process each character in the text when drawTextEx is used to draw text.
 
 #### processDrawIcon (iconIndex, textState)
 
-
-Processes drawing an icon when drawTextEx is used for drawing text.
+Processes drawing an icon when drawTextEx is used for drawing text.
 
 ##### Parameters:
 
-| Name | Type | [MV.TextState](MV.TextState.md)
+| Name | Type | Description |
 | --- | --- | --- |
-| `iconIndex` | [Number](Number.md) |  |
-| `textState` | [MV.TextState](MV.TextState.md) |  |
+| `iconIndex` | [Number](Number.html) |  |
+| `textState` | [MV.TextState](MV.TextState.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1969,8 +1887,8 @@ Processes drawing an icon when drawTextEx is used for drawing text.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [String](String.md) |  |
-| `textState` | [MV.TextState](MV.TextState.md) |  |
+| `code` | [String](String.html) |  |
+| `textState` | [MV.TextState](MV.TextState.html) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -1989,7 +1907,7 @@ Processes drawing an icon when drawTextEx is used for drawing text.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.md) |  |
+| `textState` | [MV.TextState](MV.TextState.html) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -2008,12 +1926,12 @@ Processes drawing an icon when drawTextEx is used for drawing text.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.md) |  |
+| `textState` | [MV.TextState](MV.TextState.html) |  |
 
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
-            [Number](Number.md)
+                    <ul>
                         <li>
                             <a>Window_Base#processNewPage</a>
                         </li>
@@ -2023,14 +1941,13 @@ Processes drawing an icon when drawTextEx is used for drawing text.
 
 #### processNormalCharacter (textState)
 
-
-Processes the normal characters in the text when drawTextEx is used to draw text. Normal characters are letters and numbers.
+Processes the normal characters in the text when drawTextEx is used to draw text. Normal characters are letters and numbers.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.md) |  |
+| `textState` | [MV.TextState](MV.TextState.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2045,8 +1962,7 @@ Processes the normal characters in the text when drawTextEx is used to draw text
 
 #### refreshDimmerBitmap ()
 
-
-Refreshes the bitmap attached to the dimmer sprite based on the window dimensions.
+Refreshes the bitmap attached to the dimmer sprite based on the window dimensions.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2060,8 +1976,7 @@ Refreshes the bitmap attached to the dimmer sprite based on the window dimension
 
 #### removeChild (child) → {Object}
 
-
-[super] Removes a child to the container.
+[super] Removes a child to the container.
 
 ##### Parameters:
 
@@ -2082,41 +1997,38 @@ Refreshes the bitmap attached to the dimmer sprite based on the window dimension
 
 ##### Returns:
 
-
-The child that was removed
+The child that was removed
 <dl>
                 <dt> Type </dt>
-           [Number](Number.md)
+                <dd>
                     <span>Object</span>
                 </dd>
             </dl>
 
 #### removeChildAt (index) → {Object}
 
-
-[super] Removes a child from the specified index position.
+[super] Removes a child from the specified index position.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) | The index to get the child from |
+| `index` | [Number](Number.html) | The index to get the child from |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-        [Number](Number.md)a>Window#removeChildAt</a>
-        [Number](Number.md)
-            [Number](Number.md)
-             [Number](Number.md)
+                            <a>Window#removeChildAt</a>
+                        </li>
+                    </ul>
+                </dd>
             </dl>
 
 ##### Returns:
 
-
-The child that was removed
+The child that was removed
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -2126,14 +2038,13 @@ The child that was removed
 
 #### reserveFaceImages ()
 
-
-Reverses the face images of the game party members.
+Reverses the face images of the game party members.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-        [Number](Number.md)
-        [Number](Number.md)
-        [Number](Number.md)a>Window_Base#reserveFaceImages</a>
+                    <ul>
+                        <li>
+                            <a>Window_Base#reserveFaceImages</a>
                         </li>
                     </ul>
                 </dd>
@@ -2141,8 +2052,7 @@ Reverses the face images of the game party members.
 
 #### resetFontSettings ()
 
-
-Resets the font settings of the window back to the default.
+Resets the font settings of the window back to the default.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2156,8 +2066,7 @@ Resets the font settings of the window back to the default.
 
 #### resetTextColor ()
 
-
-Resets the text color of the window back to the default.
+Resets the text color of the window back to the default.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2171,14 +2080,13 @@ Resets the text color of the window back to the default.
 
 #### setBackgroundType (type)
 
+Sets the background type of the window. 0 is 255 window opacity (standard). 1 is the window with background dimmer. Any other number changes the opacity to 0.
 
-Sets the background type of the window. 0 is 255 window opacity (standard). 1 is the window with background dimmer. Any other number changes the opacity to 0.
-
-##### Parameters:[Number](Number.md)
+##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `type` | [Number](Number.md) |  |
+| `type` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2193,17 +2101,16 @@ Sets the background type of the window. 0 is 255 window opacity (standard). 1 is
 
 #### setCursorRect (x, y, width, height)
 
-
-Sets the position of the command cursor.
+Sets the position of the command cursor.
 
 ##### Parameters:
-[String](String.md)
+
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) | The x coordinate of the cursor |
-| `y` | [Number](Number.md) | The y coordinate of the cursor |
-| `width` | [Number](Number.md) | The width of the cursor |
-| `height` | [Number](Number.md) | The height of the cursor |
+| `x` | [Number](Number.html) | The x coordinate of the cursor |
+| `y` | [Number](Number.html) | The y coordinate of the cursor |
+| `width` | [Number](Number.html) | The width of the cursor |
+| `height` | [Number](Number.html) | The height of the cursor |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2218,16 +2125,15 @@ Sets the position of the command cursor.
 
 #### setTone (r, g, b)
 
+Changes the color of the background.
 
-Changes the color of the background.
-[Number](Number.md)
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `r` | [Number](Number.md) | The red value in the range (-255, 255) |
-| `g` | [Number](Number.md) | The green value in the range (-255, 255) |
-| `b` | [Number](Number.md) | The blue value in the range (-255, 255) |
+| `r` | [Number](Number.html) | The red value in the range (-255, 255) |
+| `g` | [Number](Number.html) | The green value in the range (-255, 255) |
+| `b` | [Number](Number.html) | The blue value in the range (-255, 255) |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2242,8 +2148,7 @@ Changes the color of the background.
 
 #### show ()
 
-
-Shows the window, making it[Number](Number.md)
+Shows the window, making it visible.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2257,8 +2162,7 @@ Shows the window, making it[Number](Number.md)
 
 #### showBackgroundDimmer ()
 
-
-Shows the background dimmer sprite.
+Shows the background dimmer sprite.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2270,10 +2174,9 @@ Shows the background dimmer sprite.
                 </dd>
             </dl>
 
-#### standardBackOpacity () → {[Number](Number.md)}
+#### standardBackOpacity () → {[Number](Number.html)}
 
-
-Returns the standard back opacity of the window; this is the opacity of the area behind the window's text content. Default is 192.
+Returns the standard back opacity of the window; this is the opacity of the area behind the window's text content. Default is 192.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2294,18 +2197,17 @@ Returns the standard back opacity of the window; this is the opacity of the area
                 </dd>
             </dl>
 
-#### standardFontFace () → {[String](String.md)}
+#### standardFontFace () → {[String](String.html)}
 
-
-Returns the standard font face of the game based on what language the game is in.
+Returns the standard font face of the game based on what language the game is in.
 <dl>
                 <dt>Inherited From:</dt>
-            [Number](Number.md)
+                <dd>
                     <ul>
                         <li>
                             <a>Window_Base#standardFontFace</a>
                         </li>
-                    </[Array](Array.md)[Window_Base](Window_Base.md)
+                    </ul>
                 </dd>
             </dl>
 
@@ -2318,10 +2220,9 @@ Returns the standard font face of the game based on what language the game is in
                 </dd>
             </dl>
 
-#### standardFontSize () → {[Number](Number.md)}
+#### standardFontSize () → {[Number](Number.html)}
 
-[String](String.md)
-Returns the standard font size of the text in window; default is 28.
+Returns the standard font size of the text in window; default is 28.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2342,10 +2243,9 @@ Returns the standard font size of the text in window; default is 28.
                 </dd>
             </dl>
 
-#### standardPadding () → {[Number](Number.md)}
+#### standardPadding () → {[Number](Number.html)}
 
-
-Returns the standard padding of the window; default is 18.
+Returns the standard padding of the window; default is 18.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2357,7 +2257,7 @@ Returns the standard padding of the window; default is 18.
                 </dd>
             </dl>
 
-##### Re[Number](Number.md)
+##### Returns:
 
 <dl>
                 <dt> Type </dt>
@@ -2379,39 +2279,35 @@ Returns the standard padding of the window; default is 18.
                     <span>Boolean</span>
                 </dd>
             </dl>
-[Number](Number.md)
+
 #### startMessage ()
 
-
-Starts the displaying of the message within the message window.
+Starts the displaying of the message within the message window.
 <dl>
 </dl>
 
 #### startPause ()
 
-
-Starts a pause for the message window; this will only be lifted if the user presses a button.
+Starts a pause for the message window; this will only be lifted if the user presses a button.
 <dl>
 </dl>
 
 #### startWait (count)
 
-
-Starts a wait for the message window.
+Starts a wait for the message window.
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |[Number](Number.md)
-| `count` | [Number](Number.md) |  |
+| --- | --- | --- |
+| `count` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
-#### subWindows () → {[Array](Array.md).<[Window_Base](Window_Base.md)>}
+#### subWindows () → {[Array](Array.html).<[Window_Base](Window_Base.html)>}
 
-[String](String.md)
-Returns the sub windows attached to the message window.
+Returns the sub windows attached to the message window.
 <dl>
 </dl>
 
@@ -2424,15 +2320,14 @@ Returns the sub windows attached to the message window.
                 </dd>
             </dl>
 
-#### systemColor () → {[String](String.md)}
+#### systemColor () → {[String](String.html)}
 
-
-Returns the system color as a css color string.
+Returns the system color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        [String](String.md)
+                        <li>
                             <a>Window_Base#systemColor</a>
                         </li>
                     </ul>
@@ -2440,7 +2335,7 @@ Returns the system color as a css color string.
             </dl>
 
 ##### Returns:
-[Game_Actor](Game_Actor.md)
+
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -2450,21 +2345,19 @@ Returns the system color as a css color string.
 
 #### terminateMessage ()
 
-
-Terminates the message and closes the gold and message window.
+Terminates the message and closes the gold and message window.
 <dl>
 </dl>
 
 #### textColor (n) → {*}
 
-
-Returns a text color given a numbered index as a css color string; this index maps directly to the img/system/window.png colors by default.
+Returns a text color given a numbered index as a css color string; this index maps directly to the img/system/window.png colors by default.
 
 ##### Parameters:
 
-| Name | Type | Descrip[String](String.md)
+| Name | Type | Description |
 | --- | --- | --- |
-| `n` | [Number](Number.md) |  |
+| `n` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2485,11 +2378,10 @@ Returns a text color given a numbered index as a css color string; this index ma
                     <span>*</span>
                 </dd>
             </dl>
-[String](String.md)
-#### textPadding () → {[Number](Number.md)}
 
+#### textPadding () → {[Number](Number.html)}
 
-Returns the text padding of the window; default is 6.
+Returns the text padding of the window; default is 6.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2508,18 +2400,17 @@ Returns the text padding of the window; default is 6.
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
-            </dl>[String](String.md)
+            </dl>
 
-#### textWidth (text) → {[Number](Number.md)}
+#### textWidth (text) → {[Number](Number.html)}
 
-
-Calculates the width of a text string and returns a number.
+Calculates the width of a text string and returns a number.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.md) |  |
+| `text` | [String](String.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2531,7 +2422,7 @@ Calculates the width of a text string and returns a number.
                     </ul>
                 </dd>
             </dl>
-[Number](Number.md)
+
 ##### Returns:
 
 <dl>
@@ -2541,16 +2432,15 @@ Calculates the width of a text string and returns a number.
                 </dd>
             </dl>
 
-#### tpColor (actor) → {[String](String.md)}
+#### tpColor (actor) → {[String](String.html)}
 
-
-Returns the tp color as a css color string.
+Returns the tp color as a css color string.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `actor` | [Game_Actor](Game_Actor.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2572,10 +2462,9 @@ Returns the tp color as a css color string.
                 </dd>
             </dl>
 
-#### tpCostColor () → {[String](String.md)}
+#### tpCostColor () → {[String](String.html)}
 
-
-Returns the tp cost color as a css color string.
+Returns the tp cost color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2587,7 +2476,7 @@ Returns the tp cost color as a css color string.
                 </dd>
             </dl>
 
-##### Returns:[Number](Number.md)
+##### Returns:
 
 <dl>
                 <dt> Type </dt>
@@ -2596,10 +2485,9 @@ Returns the tp cost color as a css color string.
                 </dd>
             </dl>
 
-#### tpGaugeColor1 () → {[String](String.md)}
+#### tpGaugeColor1 () → {[String](String.html)}
 
-
-Returns the tp gauge color 1 as a css color string.
+Returns the tp gauge color 1 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2620,10 +2508,9 @@ Returns the tp gauge color 1 as a css color string.
                 </dd>
             </dl>
 
-#### tpGaugeColor2 () → {[String](String.md)}
+#### tpGaugeColor2 () → {[String](String.html)}
 
-
-Returns tp gauge color 2 as a css color string.
+Returns tp gauge color 2 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2644,10 +2531,9 @@ Returns tp gauge color 2 as a css color string.
                 </dd>
             </dl>
 
-#### translucentOpacity () → {[Number](Number.md)}
+#### translucentOpacity () → {[Number](Number.html)}
 
-
-Returns the translucentOpacity for the window; The default is 160.
+Returns the translucentOpacity for the window; The default is 160.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2683,15 +2569,13 @@ Returns the translucentOpacity for the window; The default is 160.
 
 #### updateBackground ()
 
-
-Updates the background of the message window.
+Updates the background of the message window.
 <dl>
 </dl>
 
 #### updateBackgroundDimmer ()
 
-
-Updates the background dimmer sprite opacity based on the openness of the window.
+Updates the background dimmer sprite opacity based on the openness of the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2703,10 +2587,9 @@ Updates the background dimmer sprite opacity based on the openness of the window
                 </dd>
             </dl>
 
-#### updateBackOpacity () → {[Number](Number.md)}
+#### updateBackOpacity () → {[Number](Number.html)}
 
-
-Returns the inner content width of the window.
+Returns the inner content width of the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2727,10 +2610,9 @@ Returns the inner content width of the window.
                 </dd>
             </dl>
 
-#### updateClose ()[Number](Number.md)
+#### updateClose ()
 
-
-Updates the openness of the window when the _closing property is set to true. Openness is decreased.
+Updates the openness of the window when the _closing property is set to true. Openness is decreased.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2742,10 +2624,9 @@ Updates the openness of the window when the _closing property is set to true. Op
                 </dd>
             </dl>
 
-#### updateInput () → {[Number](Number.md)
+#### updateInput () → {Boolean}
 
-
-Updates input when the message window is processing.
+Updates input when the message window is processing.
 <dl>
 </dl>
 
@@ -2765,8 +2646,7 @@ Updates input when the message window is processing.
 
 #### updateMessage () → {Boolean}
 
-
-Updates the message.
+Updates the message.
 <dl>
 </dl>
 
@@ -2781,8 +2661,7 @@ Updates the message.
 
 #### updateOpen ()
 
-
-Updates the openness of the window when the _opening property is set to true. Openness is increased.
+Updates the openness of the window when the _opening property is set to true. Openness is increased.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2796,8 +2675,7 @@ Updates the openness of the window when the _opening property is set to true. Op
 
 #### updatePadding ()
 
-
-Updates the window padding based on the standardPadding method.
+Updates the window padding based on the standardPadding method.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2811,8 +2689,7 @@ Updates the window padding based on the standardPadding method.
 
 #### updatePlacement ()
 
-
-Updates the placement of the message window.
+Updates the placement of the message window.
 <dl>
 </dl>
 
@@ -2823,8 +2700,7 @@ Updates the placement of the message window.
 
 #### updateTone ()
 
-
-Updates the tone of the window based on the game system window tone defined in the database.
+Updates the tone of the window based on the game system window tone defined in the database.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2838,8 +2714,7 @@ Updates the tone of the window based on the game system window tone defined in t
 
 #### updateWait () → {Boolean}
 
-
-Updates the wait of the message window.
+Updates the wait of the message window.
 <dl>
 </dl>
 
@@ -2852,10 +2727,9 @@ Updates the wait of the message window.
                 </dd>
             </dl>
 
-#### windowHeight () → {[Number](Number.md)}
+#### windowHeight () → {[Number](Number.html)}
 
-
-Returns the height of the window.
+Returns the height of the window.
 <dl>
 </dl>
 
@@ -2868,10 +2742,9 @@ Returns the height of the window.
                 </dd>
             </dl>
 
-#### windowWidth () → {[Number](Number.md)}
+#### windowWidth () → {[Number](Number.html)}
 
-
-Returns the width of the window.
+Returns the width of the window.
 <dl>
 </dl>
 
@@ -2882,9 +2755,7 @@ Returns the width of the window.
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
-            </dl>
-
-
+            </dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

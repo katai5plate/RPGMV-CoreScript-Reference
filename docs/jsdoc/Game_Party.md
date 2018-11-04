@@ -10,18 +10,18 @@ The game object class for the party. Information such as gold and items is inclu
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `ABILITY_ENCOUNTER_HALF` | [Number](Number.md) | [static] |
-| `ABILITY_ENCOUNTER_NONE` | [Number](Number.md) | [static] |
-| `ABILITY_CANCEL_SURPRISE` | [Number](Number.md) | [static] |
-| `ABILITY_RAISE_PREEMPTIVE` | [Number](Number.md) | [static] |
-| `ABILITY_GOLD_DOUBLE` | [Number](Number.md) | [static] |
-| `ABILITY_DROP_ITEM_DOUBLE` | [Number](Number.md) | [static] |
-| `_gold` | [Number](Number.md) |  |
-| `_steps` | [Number](Number.md) |  |
-| `_lastItem` | [Game_Item](Game_Item.md) |  |
-| `_menuActorId` | [Number](Number.md) |  |
-| `_targetActorId` | [Number](Number.md) |  |
-| `_actors` | [Array](Array.md).<[Game_Actor](Game_Actor.md)> |  |
+| `ABILITY_ENCOUNTER_HALF` | [Number](Number.html) | [static] |
+| `ABILITY_ENCOUNTER_NONE` | [Number](Number.html) | [static] |
+| `ABILITY_CANCEL_SURPRISE` | [Number](Number.html) | [static] |
+| `ABILITY_RAISE_PREEMPTIVE` | [Number](Number.html) | [static] |
+| `ABILITY_GOLD_DOUBLE` | [Number](Number.html) | [static] |
+| `ABILITY_DROP_ITEM_DOUBLE` | [Number](Number.html) | [static] |
+| `_gold` | [Number](Number.html) |  |
+| `_steps` | [Number](Number.html) |  |
+| `_lastItem` | [Game_Item](Game_Item.html) |  |
+| `_menuActorId` | [Number](Number.html) |  |
+| `_targetActorId` | [Number](Number.html) |  |
+| `_actors` | [Array](Array.html).<[Game_Actor](Game_Actor.html)> |  |
 | `_items` | Object | {[itemId: number]: number} |
 | `_weapons` | Object | {[itemId: number]: number} |
 | `_armors` | Object | {[itemId: number]: number} |
@@ -31,28 +31,26 @@ The game object class for the party. Information such as gold and items is inclu
 
 ### Extends
 
-* [Game_Unit](Game_Unit.md)
+* [Game_Unit](Game_Unit.html)
 
 ### Methods
 
 #### addActor (actorId)
 
-
-Adds an actor to the party given the actor id.
+Adds an actor to the party given the actor id.
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | [Number](Number.md)
-| `actorId` | [Number](Number.md) |  |
+| --- | --- | --- |
+| `actorId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
-[Number](Number.md)
-#### agility () → {[Number](Number.md)}
 
+#### agility () → {[Number](Number.html)}
 
-Returns the agility of the unit.
+Returns the agility of the unit.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -71,12 +69,11 @@ Returns the agility of the unit.
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
-            </dl>[Array](Array.md)[Game_Battler](Game_Battler.md)
+            </dl>
 
-#### aliveMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
+#### aliveMembers () → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
 
-
-Returns the list of alive battlers.
+Returns the list of alive battlers.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -94,13 +91,12 @@ Returns the list of alive battlers.
                 <dt> Type </dt>
                 <dd>
                     <span><a>Array</a>.&lt;<a>Game_Battler</a>&gt;</span>
-                </dd[Array](Array.md)[RPG.BaseItem](RPG.BaseItem.md)
+                </dd>
             </dl>
 
-#### allItems () → {[Array](Array.md).<[RPG.BaseItem](RPG.BaseItem.md)>}
+#### allItems () → {[Array](Array.html).<[RPG.BaseItem](RPG.BaseItem.html)>}
 
-
-Returns all items within the party's posession. Items can be of equip item, or item type.
+Returns all items within the party's posession. Items can be of equip item, or item type.
 <dl>
 </dl>
 
@@ -109,11 +105,11 @@ Returns all items within the party's posession. Items can be of equip item, or i
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <s[Array](Array.md)t;[Game_Actor](Game_Actor.md)>
+                    <span><a>Array</a>.&lt;<a>RPG.BaseItem</a>&gt;</span>
                 </dd>
             </dl>
 
-#### allMembers () → {[Array](Array.md).<[Game_Actor](Game_Actor.md)>}
+#### allMembers () → {[Array](Array.html).<[Game_Actor](Game_Actor.html)>}
 
 <dl>
 </dl>
@@ -123,14 +119,13 @@ Returns all items within the party's posession. Items can be of equip item, or i
 <dl>
                 <dt> Type </dt>
                 <dd>
-                  [Array](Array.md)>.[RPG.Armor](RPG.Armor.md)span>
+                    <span><a>Array</a>.&lt;<a>Game_Actor</a>&gt;</span>
                 </dd>
             </dl>
 
-#### armors () → {[Array](Array.md).<[RPG.Armor](RPG.Armor.md)>}
+#### armors () → {[Array](Array.html).<[RPG.Armor](RPG.Armor.html)>}
 
-
-Returns the party's armor.
+Returns the party's armor.
 <dl>
 </dl>
 
@@ -138,15 +133,14 @@ Returns the party's armor.
 
 <dl>
                 <dt> Type </dt>
-                <dd>[Array](Array.md)[Game_Actor](Game_Actor.md)
+                <dd>
                     <span><a>Array</a>.&lt;<a>RPG.Armor</a>&gt;</span>
                 </dd>
             </dl>
 
-#### battleMembers () → {[Array](Array.md).<[Game_Actor](Game_Actor.md)>}
+#### battleMembers () → {[Array](Array.html).<[Game_Actor](Game_Actor.html)>}
 
-
-Returns the battle members in the party.
+Returns the battle members in the party.
 <dl>
 </dl>
 
@@ -175,38 +169,35 @@ Returns the battle members in the party.
 
 #### canUse (item) → {Boolean}
 
-[RPG.BaseItem](RPG.BaseItem.md)
-Returns true if the party can use the item.
+Returns true if the party can use the item.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
 
 <dl>
 </dl>
 
 ##### Returns:
 
-<dl>[Array](Array.md)[Array](Array.md)
+<dl>
                 <dt> Type </dt>
                 <dd>
                     <span>Boolean</span>
                 </dd>
             </dl>
 
-#### charactersForSavefile () → {[Array](Array.md).<[Array](Array.md).<*>>}
+#### charactersForSavefile () → {[Array](Array.html).<[Array](Array.html).<*>>}
 
-
-Returns the characters that go on the save life.
+Returns the characters that go on the save life.
 <dl>
 </dl>
 
 ##### Returns:
 
-
-Array of [{String}name, {Number}index]
+Array of [{String}name, {Number}index]
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -216,8 +207,7 @@ Array of [{String}name, {Number}index]
 
 #### clearActions ()
 
-
-Clears the unit's actions.
+Clears the unit's actions.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -231,8 +221,7 @@ Clears the unit's actions.
 
 #### clearResults ()
 
-
-Clears the action results.
+Clears the action results.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -241,27 +230,25 @@ Clears the action results.
                             <a>Game_Unit#clearResults</a>
                         </li>
                     </ul>
-           [RPG.BaseItem](RPG.BaseItem.md)
+                </dd>
             </dl>
 
 #### consumeItem (item)
 
-[Array](Array.md)[Game_Battler](Game_Battler.md)
-Has the party consume the given item.
+Has the party consume the given item.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
 
 <dl>
 </dl>
 
-#### deadMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
+#### deadMembers () → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
 
-
-Returns the list of dead battlers.
+Returns the list of dead battlers.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -275,29 +262,28 @@ Returns the list of dead battlers.
 
 ##### Returns:
 
-<dl>[RPG.EquipItem](RPG.EquipItem.md)
-             [Number](Number.md)
+<dl>
+                <dt> Type </dt>
                 <dd>
                     <span><a>Array</a>.&lt;<a>Game_Battler</a>&gt;</span>
                 </dd>
             </dl>
-[Array](Array.md)[RPG.EquipItem](RPG.EquipItem.md)
+
 #### discardMembersEquip (item, amount)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
-| `amount` | [Number](Number.md) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.html) |  |
+| `amount` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
-#### equipItems () → {[Array](Array.md).<[RPG.EquipItem](RPG.EquipItem.md)>}
+#### equipItems () → {[Array](Array.html).<[RPG.EquipItem](RPG.EquipItem.html)>}
 
-
-Returns the party's equippable items.
+Returns the party's equippable items.
 <dl>
 </dl>
 
@@ -310,7 +296,7 @@ Returns the party's equippable items.
                 </dd>
             </dl>
 
-#### exists () → {Boolean}[Array](Array.md)[Array](Array.md)
+#### exists () → {Boolean}
 
 <dl>
 </dl>
@@ -324,16 +310,15 @@ Returns the party's equippable items.
                 </dd>
             </dl>
 
-#### facesForSavefile () → {[Array](Array.md).<[Array](Array.md).<*>>}
+#### facesForSavefile () → {[Array](Array.html).<[Array](Array.html).<*>>}
 
-
-Returns the actor faces for the save file.
+Returns the actor faces for the save file.
 <dl>
 </dl>
 
 ##### Returns:
 
-<dl>[Number](Number.md)
+<dl>
                 <dt> Type </dt>
                 <dd>
                     <span><a>Array</a>.&lt;<a>Array</a>.&lt;*&gt;&gt;</span>
@@ -342,16 +327,15 @@ Returns the actor faces for the save file.
 
 #### gainGold (amount)
 
+Increases the party gold given a specified amount.
 
-Increases the party gold given a specified amount.
-[RPG.BaseItem](RPG.BaseItem.md)
-##### Paramet[Number](Number.md)
+##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `amount` | [Number](Number.md) |  |
+| `amount` | [Number](Number.html) |  |
 
-<dl>[Number](Number.md)
+<dl>
 </dl>
 
 #### gainItem (item, amount, includeEquip)
@@ -360,17 +344,16 @@ Increases the party gold given a specified amount.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
-| `amount` | [Number](Number.md) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
+| `amount` | [Number](Number.html) |  |
 | `includeEquip` | Boolean |  |
 
 <dl>
 </dl>
 
-#### gold () → {[Number](Number.md)}
+#### gold () → {[Number](Number.html)}
 
-
-Returns party gold.
+Returns party gold.
 <dl>
 </dl>
 
@@ -399,8 +382,7 @@ Returns party gold.
 
 #### hasDropItemDouble () → {Boolean}
 
-
-Returns true if the party has double drop item in effect.
+Returns true if the party has double drop item in effect.
 <dl>
 </dl>
 
@@ -415,8 +397,7 @@ Returns true if the party has double drop item in effect.
 
 #### hasEncounterHalf () → {Boolean}
 
-
-Returns true if the encounter rate is set to half.
+Returns true if the encounter rate is set to half.
 <dl>
 </dl>
 
@@ -431,8 +412,7 @@ Returns true if the encounter rate is set to half.
 
 #### hasEncounterNone () → {Boolean}
 
-
-Returns true if the encounter rate is set to none.
+Returns true if the encounter rate is set to none.
 <dl>
 </dl>
 
@@ -447,8 +427,7 @@ Returns true if the encounter rate is set to none.
 
 #### hasGoldDouble () → {Boolean}
 
-
-Returns tru[RPG.BaseItem](RPG.BaseItem.md) effect.
+Returns true if the party has double gold in effect.
 <dl>
 </dl>
 
@@ -463,14 +442,13 @@ Returns tru[RPG.BaseItem](RPG.BaseItem.md) effect.
 
 #### hasItem (item, includeEquip) → {Boolean}
 
-
-Returns true if the party has the given item; if includeEquip is set to true, this will also check party equipment.
+Returns true if the party has the given item; if includeEquip is set to true, this will also check party equipment.
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | ---[RPG.BaseItem](RPG.BaseItem.md)
-| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
+| --- | --- | --- |
+| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
 | `includeEquip` | Boolean |  |
 
 <dl>
@@ -491,24 +469,8 @@ Returns true if the party has the given item; if includeEquip is set to true, th
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>[Number](Number.md)
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### hasRaisePreemptive () → {Boolean}
-
-
-Returns true if the party has an increased chance of preemptive strike.
 <dl>
 </dl>
 
@@ -521,10 +483,24 @@ Returns true if the party has an increased chance of preemptive strike.
                 </dd>
             </dl>
 
-#### highestLevel () → {[Number](Number.md)}
+#### hasRaisePreemptive () → {Boolean}
 
+Returns true if the party has an increased chance of preemptive strike.
+<dl>
+</dl>
 
-Returns the highest level in the party.
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span>Boolean</span>
+                </dd>
+            </dl>
+
+#### highestLevel () → {[Number](Number.html)}
+
+Returns the highest level in the party.
 <dl>
 </dl>
 
@@ -539,8 +515,7 @@ Returns the highest level in the party.
 
 #### inBattle () → {Boolean}
 
-
-Returns true if unit is in battle.
+Returns true if unit is in battle.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -563,8 +538,7 @@ Returns true if unit is in battle.
 
 #### increaseSteps ()
 
-
-Increases the number of steps the party has taken.
+Increases the number of steps the party has taken.
 <dl>
 </dl>
 
@@ -575,8 +549,7 @@ Increases the number of steps the party has taken.
 
 #### initialize ()
 
-
- オブジェクト生成時の初期化。
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -591,7 +564,7 @@ Increases the number of steps the party has taken.
 #### isAllDead () → {Boolean}
 
 <dl>
-           [RPG.EquipItem](RPG.EquipItem.md)
+                <dt>Overrides:</dt>
                 <dd>
                     <ul>
                         <li>
@@ -612,20 +585,19 @@ Increases the number of steps the party has taken.
 
 #### isAnyMemberEquipped (item) → {Boolean}
 
-
-Returns true if any party member has the specified equip item.
+Returns true if any party member has the specified equip item.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RP[Array](Array.md)  [RPG.BaseItem](RPG.BaseItem.md)
+| `item` | [RPG.EquipItem](RPG.EquipItem.html) |  |
 
 <dl>
 </dl>
 
 ##### Returns:
-[RPG.BaseItem](RPG.BaseItem.md)
+
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -639,7 +611,7 @@ Returns true if any party member has the specified equip item.
 </dl>
 
 ##### Returns:
-[Array](Array.md)[RPG.Item](RPG.Item.md)
+
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -647,13 +619,13 @@ Returns true if any party member has the specified equip item.
                 </dd>
             </dl>
 
-#### itemContainer (item) → {[Array](Array.md).<[RPG.BaseItem](RPG.BaseItem.md)>}
+#### itemContainer (item) → {[Array](Array.html).<[RPG.BaseItem](RPG.BaseItem.html)>}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.Base[RPG.BaseItem](RPG.BaseItem.md)
+| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
 
 <dl>
 </dl>
@@ -667,8 +639,8 @@ Returns true if any party member has the specified equip item.
                 </dd>
             </dl>
 
-#### items () → {[Array](Array.md).<[RPG.Item](RPG.Item.md)>}
-[Game_Actor](Game_Actor.md)
+#### items () → {[Array](Array.html).<[RPG.Item](RPG.Item.html)>}
+
 <dl>
 </dl>
 
@@ -681,29 +653,27 @@ Returns true if any party member has the specified equip item.
                 </dd>
             </dl>
 
-#### lastItem () → {[RPG.BaseItem](RPG.BaseItem.md)}
+#### lastItem () → {[RPG.BaseItem](RPG.BaseItem.html)}
 
-
-Returns the last item selected by the game party.
+Returns the last item selected by the game party.
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-             [Number](Number.md)
+                <dt> Type </dt>
                 <dd>
                     <span><a>RPG.BaseItem</a></span>
                 </dd>
             </dl>
 
-#### leader () → {[Game_Actor](Game_Actor.md)}
+#### leader () → {[Game_Actor](Game_Actor.html)}
 
-
-Returns the leader of the party.
+Returns the leader of the party.
 <dl>
-</dl>[RPG.BaseItem](RPG.BaseItem.md)
-[Number](Number.md)
+</dl>
+
 ##### Returns:
 
 <dl>
@@ -715,14 +685,13 @@ Returns the leader of the party.
 
 #### loseGold (amount)
 
-
-Decreases the party gold given a specified amount.
+Decreases the party gold given a specified amount.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `amount` | [Number](Number.md) |  |
+| `amount` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -733,8 +702,8 @@ Decreases the party gold given a specified amount.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RP[Number](Number.md)
-| `amount` | [Number](Number.md) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
+| `amount` | [Number](Number.html) |  |
 | `includeEquip` | Boolean |  |
 
 <dl>
@@ -742,13 +711,12 @@ Decreases the party gold given a specified amount.
 
 #### makeActions ()
 
-
-Creates the action's of the game unit.
+Creates the action's of the game unit.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                   [Number](Number.md)
+                        <li>
                             <a>Game_Unit#makeActions</a>
                         </li>
                     </ul>
@@ -763,29 +731,12 @@ Creates the action's of the game unit.
 #### makeMenuActorPrevious ()
 
 <dl>
-</dl>[Number](Number.md)
-
-#### maxBattleMembers () → {[Number](Number.md)}
-
-
-Returns the maximum battle members in the party.
-<dl>
 </dl>
-[RPG.BaseItem](RPG.BaseItem.md)
-##### Returns:
 
+#### maxBattleMembers () → {[Number](Number.html)}
+
+Returns the maximum battle members in the party.
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### maxGold () → {[Number](Number.md)}
-
-
-Returns maximum gold of the party.
-<dl>[Array](Array.md)[Game_Actor](Game_Actor.md)
 </dl>
 
 ##### Returns:
@@ -797,18 +748,32 @@ Returns maximum gold of the party.
                 </dd>
             </dl>
 
-#### maxItems (item) → {[Number](Number.md)}
+#### maxGold () → {[Number](Number.html)}
 
+Returns maximum gold of the party.
+<dl>
+</dl>
 
-Returns the maximum number of items of the given item.
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Number</a></span>
+                </dd>
+            </dl>
+
+#### maxItems (item) → {[Number](Number.html)}
+
+Returns the maximum number of items of the given item.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
 
-<dl>[Game_Actor](Game_Actor.md)
+<dl>
 </dl>
 
 ##### Returns:
@@ -820,10 +785,9 @@ Returns the maximum number of items of the given item.
                 </dd>
             </dl>
 
-#### members () → {[Array](Array.md).<[Game_Actor](Game_Actor.md)>}
+#### members () → {[Array](Array.html).<[Game_Actor](Game_Actor.html)>}
 
-
-Returns all party members.[Array](Array.md)[Game_Battler](Game_Battler.md)
+Returns all party members.
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -844,10 +808,9 @@ Returns all party members.[Array](Array.md)[Game_Battler](Game_Battler.md)
                 </dd>
             </dl>
 
-#### menuActor () → {[Game_Actor](Game_Actor.md)}
+#### menuActor () → {[Game_Actor](Game_Actor.html)}
 
-[String](String.md)
-Returns the actor that will be used in the current menu; this is for menu scenes that target one actor.
+Returns the actor that will be used in the current menu; this is for menu scenes that target one actor.
 <dl>
 </dl>
 
@@ -860,15 +823,14 @@ Returns the actor that will be used in the current menu; this is for menu scenes
                 </dd>
             </dl>
 
-#### movableMembers () →[Number](Number.md).<[Game_Battler](Game_Battler.md)>}
+#### movableMembers () → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
 
-
-Returns the list of movable members.
+Returns the list of movable members.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-           [RPG.BaseItem](RPG.BaseItem.md)
+                        <li>
                             <a>Game_Unit#movableMembers</a>
                         </li>
                     </ul>
@@ -884,7 +846,7 @@ Returns the list of movable members.
                 </dd>
             </dl>
 
-#### name () → {[String](String.md)}
+#### name () → {[String](String.html)}
 
 <dl>
 </dl>
@@ -898,16 +860,15 @@ Returns the list of movable members.
                 </dd>
             </dl>
 
-#### numItems (item) → {[Number](Number.md)}
+#### numItems (item) → {[Number](Number.html)}
 
-
-Returns the number of items in the possession of the party of the given item.
+Returns the number of items in the possession of the party of the given item.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
 
 <dl>
 </dl>
@@ -922,9 +883,8 @@ Returns the number of items in the possession of the party of the given item.
             </dl>
 
 #### onBattleEnd ()
-[Number](Number.md)
 
-Handler for when battle has ended.
+Handler for when battle has ended.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -938,8 +898,7 @@ Handler for when battle has ended.
 
 #### onBattleStart ()
 
-
-Handler for when battle is started.
+Handler for when battle is started.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -948,13 +907,12 @@ Handler for when battle is started.
                             <a>Game_Unit#onBattleStart</a>
                         </li>
                     </ul>
-                </dd>[Game_Battler](Game_Battler.md)
+                </dd>
             </dl>
 
 #### onPlayerWalk ()
 
-
-Handler for when the player walks.
+Handler for when the player walks.
 <dl>
 </dl>
 
@@ -964,14 +922,14 @@ Handler for when the player walks.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `abilityId` | [Number](Number.md) |  |
+| `abilityId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
 ##### Returns:
 
-<dl>[Game_Battler](Game_Battler.md)
+<dl>
                 <dt> Type </dt>
                 <dd>
                     <span>Boolean</span>
@@ -980,27 +938,24 @@ Handler for when the player walks.
 
 #### performEscape ()
 
-
-Performs escape motion for the entire party.
+Performs escape motion for the entire party.
 <dl>
 </dl>
 
 #### performVictory ()
 
-
-Performs victory motion for the entire party.
+Performs victory motion for the entire party.
 <dl>
 </dl>
 
-#### randomDeadTarget () → {[Game_Battler](Game_Battler.md)}
+#### randomDeadTarget () → {[Game_Battler](Game_Battler.html)}
 
-[Number](Number.md)
-Returns a random dead target from the game unit.
+Returns a random dead target from the game unit.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-               [Number](Number.md)
+                        <li>
                             <a>Game_Unit#randomDeadTarget</a>
                         </li>
                     </ul>
@@ -1014,13 +969,12 @@ Returns a random dead target from the game unit.
                 <dd>
                     <span><a>Game_Battler</a></span>
                 </dd>
-            </dl>[Number](Number.md)
+            </dl>
 
-#### randomTarget () → {[Game_Battler](Game_Battler.md)}
+#### randomTarget () → {[Game_Battler](Game_Battler.html)}
 
-
-Returns a random target from the game unit.
-<dl>[Number](Number.md)
+Returns a random target from the game unit.
+<dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -1040,13 +994,13 @@ Returns a random target from the game unit.
                 </dd>
             </dl>
 
-#### ratePreemptive (troopAgi) → {[Number](Number.md)}
+#### ratePreemptive (troopAgi) → {[Number](Number.html)}
 
-##### Paramete[Number](Number.md)
+##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `troopAgi` | [Number](Number.md) |  |
+| `troopAgi` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -1060,20 +1014,20 @@ Returns a random target from the game unit.
                 </dd>
             </dl>
 
-#### rateSurprise (troopAgi) → {[Number](Number.md)}
+#### rateSurprise (troopAgi) → {[Number](Number.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `troopAgi` | [Number](Number.md) |  |
+| `troopAgi` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
 ##### Returns:
 
-<dl>[Game_Battler](Game_Battler.md)
+<dl>
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
@@ -1082,49 +1036,44 @@ Returns a random target from the game unit.
 
 #### removeActor (actorId)
 
-
-Removes an actor from the party given the actor id.
+Removes an actor from the party given the actor id.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actorId` | [Number](Number.md) |  |
+| `actorId` | [Number](Number.html) |  |
 
 <dl>
-</dl>[RPG.BaseItem](RPG.BaseItem.md)
+</dl>
 
 #### removeBattleStates ()
 
-
-Remove battle states from all actors in the party.
+Remove battle states from all actors in the party.
 <dl>
 </dl>
 
 #### requestMotionRefresh ()
 
-[Game_Actor](Game_Actor.md)
-Refreshes the motion on all actors in the party.
+Refreshes the motion on all actors in the party.
 <dl>
 </dl>
 
 #### reviveBattleMembers ()
 
-
-Revive the battle members of the party.
+Revive the battle members of the party.
 <dl>
 </dl>
-[Game_Actor](Game_Actor.md)
+
 #### select (activeMember)
 
-
-Selects a member of the unit given a battler.
+Selects a member of the unit given a battler.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `activeMember` | [Game_Battler](Game_Battler.md) |  |
+| `activeMember` | [Game_Battler](Game_Battler.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1143,7 +1092,7 @@ Selects a member of the unit given a battler.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.[Number](Number.md)m.md) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
 
 <dl>
 </dl>
@@ -1154,54 +1103,49 @@ Selects a member of the unit given a battler.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `actor` | [Game_Actor](Game_Actor.html) |  |
 
 <dl>
 </dl>
-[Game_Battler](Game_Battler.md)
+
 #### setTargetActor (actor)
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- [Number](Number.md)
-| `actor` | [Game_Actor](Game_Actor.md) |  |
+| --- | --- | --- |
+| `actor` | [Game_Actor](Game_Actor.html) |  |
 
 <dl>
 </dl>
 
 #### setupBattleTest ()
 
-
-Sets up a test battle with the party.
+Sets up a test battle with the party.
 <dl>
 </dl>
 
 #### setupBattleTestItems ()
 
-
-Sets up the battle test items.
+Sets up the battle test items.
 <dl>
 </dl>
 
 #### setupBattleTestMembers ()
 
-[Game_Battler](Game_Battler.md)
-Sets up the battle test members.
+Sets up the battle test members.
 <dl>
 </dl>
 
 #### setupStartingMembers ()
-[Number](Number.md)
 
-Sets up the starting party members.
+Sets up the starting party members.
 <dl>
 </dl>
 
-#### size () → {[Number](Number.md)}
+#### size () → {[Number](Number.html)}
 
-
-Returns number of party member.
+Returns number of party member.
 <dl>
 </dl>
 
@@ -1214,13 +1158,13 @@ Returns number of party member.
                 </dd>
             </dl>
 
-#### smoothDeadTa[Number](Number.md)_Battler](Game_Battler.md)}
+#### smoothDeadTarget (index) → {[Game_Battler](Game_Battler.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
+| `index` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1229,7 +1173,7 @@ Returns number of party member.
                         <li>
                             <a>Game_Unit#smoothDeadTarget</a>
                         </li>
-                    </ul>[Game_Battler](Game_Battler.md)
+                    </ul>
                 </dd>
             </dl>
 
@@ -1242,13 +1186,13 @@ Returns number of party member.
                 </dd>
             </dl>
 
-#### smoothTarget (index) → {[Game_Battler](Game_Battler.md)}
+#### smoothTarget (index) → {[Game_Battler](Game_Battler.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
+| `index` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1257,27 +1201,26 @@ Returns number of party member.
                         <li>
                             <a>Game_Unit#smoothTarget</a>
                         </li>
-             [Number](Number.md)
-             [Number](Number.md)
+                    </ul>
+                </dd>
             </dl>
 
 ##### Returns:
 
-<dl>[Game_Actor](Game_Actor.md)
+<dl>
                 <dt> Type </dt>
                 <dd>
                     <span><a>Game_Battler</a></span>
                 </dd>
             </dl>
 
-#### steps () → {[Number](Number.md)}
+#### steps () → {[Number](Number.html)}
 
-
-Returns the number of steps the party has taken.
+Returns the number of steps the party has taken.
 <dl>
 </dl>
 
-##### Returns:[Number](Number.md)
+##### Returns:
 
 <dl>
                 <dt> Type </dt>
@@ -1286,7 +1229,7 @@ Returns the number of steps the party has taken.
                 </dd>
             </dl>
 
-#### substituteBattler () → {[Game_Battler](Game_Battler.md)}
+#### substituteBattler () → {[Game_Battler](Game_Battler.html)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1299,7 +1242,7 @@ Returns the number of steps the party has taken.
                 </dd>
             </dl>
 
-##### Returns:[Array](Array.md)[RPG.Weapon](RPG.Weapon.md)
+##### Returns:
 
 <dl>
                 <dt> Type </dt>
@@ -1314,13 +1257,13 @@ Returns the number of steps the party has taken.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index1` | [Number](Number.md) |  |
-| `index2` | [Number](Number.md) |  |
+| `index1` | [Number](Number.html) |  |
+| `index2` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
-#### targetActor () → {[Game_Actor](Game_Actor.md)}
+#### targetActor () → {[Game_Actor](Game_Actor.html)}
 
 <dl>
 </dl>
@@ -1334,7 +1277,7 @@ Returns the number of steps the party has taken.
                 </dd>
             </dl>
 
-#### tgrSum () → {[Number](Number.md)}
+#### tgrSum () → {[Number](Number.html)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1356,10 +1299,9 @@ Returns the number of steps the party has taken.
                 </dd>
             </dl>
 
-#### weapons () → {[Array](Array.md).<[RPG.Weapon](RPG.Weapon.md)>}
+#### weapons () → {[Array](Array.html).<[RPG.Weapon](RPG.Weapon.html)>}
 
-
-Returns the weapons of the party.
+Returns the weapons of the party.
 <dl>
 </dl>
 
@@ -1370,9 +1312,7 @@ Returns the weapons of the party.
                 <dd>
                     <span><a>Array</a>.&lt;<a>RPG.Weapon</a>&gt;</span>
                 </dd>
-            </dl>
-
-
+            </dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

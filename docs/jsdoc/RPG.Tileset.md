@@ -1,6 +1,6 @@
 # Class: Tileset
 
-## [RPG](RPG.md).  Tileset ()
+## [RPG](RPG.html).  Tileset ()
 
 #### new Tileset ()
 
@@ -10,11 +10,11 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `id` | [Number](Number.md) |  タイルセットのID |
-| `name` | [String](String.md) | [名前] |
-| `mode` | [Number](Number.md) | [モード] (0: フィールドタイプ, 1: エリアタイプ, 2: VX 互換タイプ) |
-| `tilesetNames` | [Array](Array.md).<[String](String.md)> |  タイルセットに使われる画像ファイル名の配列 (順に 0: TileA1, 1: TileA2, 2: TileA3, 3: TileA4, 4: TileA5, 5: TileB, 6: TileC, 7: TileD, 8: TileE に対応) |
-| `flags` | [Array](Array.md).<[Number](Number.md)> |  タイルの性質を記録したビットフラグの配列
+| `id` | [Number](Number.html) |  タイルセットのID |
+| `name` | [String](String.html) | [名前] |
+| `mode` | [Number](Number.html) | [モード] (0: フィールドタイプ, 1: エリアタイプ, 2: VX 互換タイプ) |
+| `tilesetNames` | [Array](Array.html).<[String](String.html)> |  タイルセットに使われる画像ファイル名の配列 (順に 0: TileA1, 1: TileA2, 2: TileA3, 3: TileA4, 4: TileA5, 5: TileB, 6: TileC, 7: TileD, 8: TileE に対応) |
+| `flags` | [Array](Array.html).<[Number](Number.html)> |  タイルの性質を記録したビットフラグの配列
 
 | 0x0001 |  下通行不可 |
 | 0x0002 |  左通行不可 |
@@ -35,7 +35,7 @@
 
 ### Extends
 
-* [RPG.MetaData](RPG.MetaData.md)
+* [RPG.MetaData](RPG.MetaData.html)
 
  <br>
 

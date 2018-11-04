@@ -10,11 +10,11 @@ The static class that loads images, creates bitmap objects and retains them.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `cache` | [CacheMap](CacheMap.md) | [static] |
-| `cache` | [CacheMap](CacheMap.md) | [static] |
-| `_imageCache` | [ImageCache](ImageCache.md) | [static] |
-| `_requestQueue` | [RequestQueue](RequestQueue.md) | [static] |
-| `_systemReservationId` | [Number](Number.md) | [static] |
+| `cache` | [CacheMap](CacheMap.html) | [static] |
+| `cache` | [CacheMap](CacheMap.html) | [static] |
+| `_imageCache` | [ImageCache](ImageCache.html) | [static] |
+| `_requestQueue` | [RequestQueue](RequestQueue.html) | [static] |
+| `_systemReservationId` | [Number](Number.html) | [static] |
 
 <dl>
 </dl>
@@ -23,8 +23,7 @@ The static class that loads images, creates bitmap objects and retains them.
 
 #### (static) clear ()
 
-
-Clears the image cache in RPGMakerMV.
+Clears the image cache in RPGMakerMV.
 <dl>
 </dl>
 
@@ -35,14 +34,13 @@ Clears the image cache in RPGMakerMV.
 
 #### (static) isBigCharacter (filename) → {Boolean}
 
-
-Returns true if the given filename is a large character. Must contain a '$' in the file name to be a large character.
+Returns true if the given filename is a large character. Must contain a '$' in the file name to be a large character.
 
 ##### Parameters:
 
-| Name | Type |[String](String.md)
+| Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
+| `filename` | [String](String.html) |  |
 
 <dl>
 </dl>
@@ -58,14 +56,13 @@ Returns true if the given filename is a large character. Must contain a '$' in t
 
 #### (static) isObjectCharacter (filename) → {Boolean}
 
-
-Returns true if the given filename is an object character. Must contain a '!' in the file name to be an object character.
+Returns true if the given filename is an object character. Must contain a '!' in the file name to be an object character.
 
 ##### Parameters:
-[String](String.md)
+
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
+| `filename` | [String](String.html) |  |
 
 <dl>
 </dl>
@@ -81,8 +78,7 @@ Returns true if the given filename is an object character. Must contain a '!' in
 
 #### (static) isReady () → {Boolean}
 
-
-Returns true if the image cache is ready.
+Returns true if the image cache is ready.
 <dl>
 </dl>
 
@@ -97,11 +93,11 @@ Returns true if the image cache is ready.
 
 #### (static) isZeroParallax (filename) → {Boolean}
 
-##### Parameter[String](String.md)
+##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
+| `filename` | [String](String.html) |  |
 
 <dl>
 </dl>
@@ -111,101 +107,97 @@ Returns true if the image cache is ready.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span>Boolean</span>[Bitmap](Bitmap.md)
+                    <span>Boolean</span>
                 </dd>
             </dl>
 
-#### (static) loadAnimation (filename, hue opt) → {[Bitmap](Bitmap.md)}
+#### (static) loadAnimation (filename, hue opt) → {[Bitmap](Bitmap.html)}
 
-
-Loads a Bitmap object from the 'img/animations/' folder and returns it.
-[String](String.md)
-##### Para[Number](Number.md)
-
-| Name | Type | Attributes | Description |
-| --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |
-
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>[Bitmap](Bitmap.md)
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
-
-#### (static) loadBattleback1 (filename, hue opt) → {[Bitmap](Bitmap.md)}
-
-
-Loads a Bitmap [String](String.md)battlebacks1/' folder and returns it.
-[Number](Number.md)
-##### Parameters:
-
-| Name | Type | Attributes | Description |
-| --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |
-
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>[Bitmap](Bitmap.md)
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
-
-#### (static) loadBattleback2 (filename, hue opt) → {[Bitmap](Bitmap.md)}
-
-[String](String.md)
-Loads a Bi[Number](Number.md)'img/battlebacks2/' folder and returns it.
+Loads a Bitmap object from the 'img/animations/' folder and returns it.
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |
+| `filename` | [String](String.html) |  |  |
+| `hue` | [Number](Number.html) | <optional> |  |
 
 <dl>
 </dl>
 
 ##### Returns:
 
-<dl>[Bitmap](Bitmap.md)
+<dl>
                 <dt> Type </dt>
                 <dd>
                     <span><a>Bitmap</a></span>
                 </dd>
             </dl>
 
-#### (static) loadBitmap (folder, filename, hue, smooth) → {[Bitmap](Bitmap.md)}
-[String](String.md)
-[String](String.md)
-Loads a Bi[Number](Number.md)folder and returns it.
+#### (static) loadBattleback1 (filename, hue opt) → {[Bitmap](Bitmap.html)}
+
+Loads a Bitmap object from the 'img/battlebacks1/' folder and returns it.
+
+##### Parameters:
+
+| Name | Type | Attributes | Description |
+| --- | --- | --- | --- |
+| `filename` | [String](String.html) |  |  |
+| `hue` | [Number](Number.html) | <optional> |  |
+
+<dl>
+</dl>
+
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Bitmap</a></span>
+                </dd>
+            </dl>
+
+#### (static) loadBattleback2 (filename, hue opt) → {[Bitmap](Bitmap.html)}
+
+Loads a Bitmap object from the 'img/battlebacks2/' folder and returns it.
+
+##### Parameters:
+
+| Name | Type | Attributes | Description |
+| --- | --- | --- | --- |
+| `filename` | [String](String.html) |  |  |
+| `hue` | [Number](Number.html) | <optional> |  |
+
+<dl>
+</dl>
+
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Bitmap</a></span>
+                </dd>
+            </dl>
+
+#### (static) loadBitmap (folder, filename, hue, smooth) → {[Bitmap](Bitmap.html)}
+
+Loads a Bitmap object from any folder and returns it.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `folder` | [String](String.md) |  |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `folder` | [String](String.html) |  |
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
 | `smooth` | Boolean |  |
 
 <dl>
 </dl>
 
 ##### Returns:
-[Bitmap](Bitmap.md)
+
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -213,22 +205,21 @@ Loads a Bi[Number](Number.md)folder and returns it.
                 </dd>
             </dl>
 
-#### (static) l[String](String.md)e, hue opt) → {[Bitmap](Bitmap.md)}
-[Number](Number.md)
+#### (static) loadCharacter (filename, hue opt) → {[Bitmap](Bitmap.html)}
 
-Loads a Bitmap object from the 'img/characters/' folder and returns it.
+Loads a Bitmap object from the 'img/characters/' folder and returns it.
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |
+| `filename` | [String](String.html) |  |  |
+| `hue` | [Number](Number.html) | <optional> |  |
 
 <dl>
 </dl>
 
-##### Returns:[Bitmap](Bitmap.md)
+##### Returns:
 
 <dl>
                 <dt> Type </dt>
@@ -236,22 +227,21 @@ Loads a Bitmap object from the 'img/characters/' folder and returns it.
                     <span><a>Bitmap</a></span>
                 </dd>
             </dl>
-[String](String.md)
-#### (stat[Number](Number.md)path, hue) → {[Bitmap](Bitmap.md)}
 
+#### (static) loadEmptyBitmap (path, hue) → {[Bitmap](Bitmap.html)}
 
-Loads an empty Bitmap object and returns it.
+Loads an empty Bitmap object and returns it.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `path` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `path` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
 
 <dl>
 </dl>
-[Bitmap](Bitmap.md)
+
 ##### Returns:
 
 <dl>
@@ -259,45 +249,20 @@ Loads an empty Bitmap object and returns it.
                 <dd>
                     <span><a>Bitmap</a></span>
                 </dd>
-            </d[String](String.md)
-[Number](Number.md)
-#### (static) loadEnemy (filename, hue opt) → {[Bitmap](Bitmap.md)}
+            </dl>
 
+#### (static) loadEnemy (filename, hue opt) → {[Bitmap](Bitmap.html)}
 
-Loads a Bitmap object from the 'img/enemies/' folder and returns it.
-
-##### Parameters:
-
-| Name | Type | Attributes | Description |
-| --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |
-
-<dl>
-</dl>[Bitmap](Bitmap.md)
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-               [String](String.md)
-          [Number](Number.md)
-
-#### (static) loadFace (filename, hue opt) → {[Bitmap](Bitmap.md)}
-
-
-Loads a Bitmap object from the 'img/faces/' folder and returns it.
+Loads a Bitmap object from the 'img/enemies/' folder and returns it.
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |
+| `filename` | [String](String.html) |  |  |
+| `hue` | [Number](Number.html) | <optional> |  |
 
-<dl>[Bitmap](Bitmap.md)
+<dl>
 </dl>
 
 ##### Returns:
@@ -305,192 +270,46 @@ Loads a Bitmap object from the 'img/faces/' folder and returns it.
 <dl>
                 <dt> Type </dt>
                 <dd>
-           [String](String.md)map</a></span>
-          [Number](Number.md)
+                    <span><a>Bitmap</a></span>
+                </dd>
             </dl>
 
-#### (static) loadNormalBitmap (path, hue) → {[Bitmap](Bitmap.md)}
+#### (static) loadFace (filename, hue opt) → {[Bitmap](Bitmap.html)}
 
+Loads a Bitmap object from the 'img/faces/' folder and returns it.
 
-Loads a Bitmap object given a path and returns it.
+##### Parameters:
+
+| Name | Type | Attributes | Description |
+| --- | --- | --- | --- |
+| `filename` | [String](String.html) |  |  |
+| `hue` | [Number](Number.html) | <optional> |  |
+
+<dl>
+</dl>
+
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Bitmap</a></span>
+                </dd>
+            </dl>
+
+#### (static) loadNormalBitmap (path, hue) → {[Bitmap](Bitmap.html)}
+
+Loads a Bitmap object given a path and returns it.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `path` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
-[Bitmap](Bitmap.md)
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-               [String](String.md)
-          [Number](Number.md)tmap</a></span>
-                </dd>
-            </dl>
-
-#### (static) loadParallax (filename, hue opt) → {[Bitmap](Bitmap.md)}
-
-
-Loads a Bitmap object from the 'img/parallaxes/' folder and returns it.
-
-##### Parameters:
-
-| Name | Type | Attributes | Description |
-| --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |[Bitmap](Bitmap.md)
+| `path` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
 
 <dl>
 </dl>
-
-##### Returns:
-
-<dl>
-               [String](String.md)
-          [Number](Number.md)
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
-
-#### (static) loadPicture (filename, hue opt) → {[Bitmap](Bitmap.md)}
-
-
-Loads a Bitmap object from the 'img/pictures/' folder and returns it.
-
-##### Parameters:
-
-| Name | Type | Attributes | Description |
-| --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |[Bitmap](Bitmap.md)
-| `hue` | [Number](Number.md) | <optional> |  |
-
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>[String](String.md)
-          [Number](Number.md)
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
-
-#### (static) loadSvActor (filename, hue opt) → {[Bitmap](Bitmap.md)}
-
-
-Loads a Bitmap object from the 'img/sv_actors/' folder and returns it.
-
-##### Parameters:
-
-| Name | Type | Attributes | Description |
-| --- | --- | --- | --- |[Bitmap](Bitmap.md)
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |
-
-<dl>
-</dl>
-
-##### Returns:
-[String](String.md)
-<dl>[Number](Number.md)
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
-
-#### (static) loadSvEnemy (filename, hue opt) → {[Bitmap](Bitmap.md)}
-
-
-Loads a Bitmap object from the 'img/sv_enemies/' folder and returns it.
-
-##### Parameters:
-
-| Name | Type | Attributes | Description |[Bitmap](Bitmap.md)
-| --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |
-
-<dl>
-</dl>
-
-##### Returns:[String](String.md)
-[Number](Number.md)
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
-
-#### (static) loadSystem (filename, hue opt) → {[Bitmap](Bitmap.md)}
-
-
-Loads a Bitmap object from 'img/system/' folder and returns it.
-
-##### Parameters:
-[Bitmap](Bitmap.md)
-| Name | Type | Attributes | Description |
-| --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |
-
-<dl>
-</dl>
-[String](String.md)
-##### Retu[Number](Number.md)
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
-
-#### (static) loadTileset (filename, hue opt) → {[Bitmap](Bitmap.md)}
-
-
-Loads a Bitmap object from the 'img/tilesets/' folder and returns it.
-
-##### Parameters:[Bitmap](Bitmap.md)
-
-| Name | Type | Attributes | Description |
-| --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |
-
-<dl>
-</dl>[String](String.md)
-[Number](Number.md)
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
-
-#### (static) loadTitle1 (filename, hue opt) → {[Bitmap](Bitmap.md)}
-
-
-Loads a Bitmap object from the 'img/titles1/' folder and returns it.
-[Bitmap](Bitmap.md)
-##### Parameters:
-
-| Name | Type | Attributes | Description |
-| --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |
-
-<dl>[String](String.md)
-</dl>[Number](Number.md)
 
 ##### Returns:
 
@@ -501,28 +320,188 @@ Loads a Bitmap object from the 'img/titles1/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) loadTitle2 (filename, hue opt) → {[Bitmap](Bitmap.md)}
+#### (static) loadParallax (filename, hue opt) → {[Bitmap](Bitmap.html)}
 
-
-Loads a Bitmap object from the 'img/titles2/' folder and returns it.
+Loads a Bitmap object from the 'img/parallaxes/' folder and returns it.
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `filename` | [Stri[Number](Number.md)  |
-| `hue` | [Number](Number.md) | <optional> |  |
+| `filename` | [String](String.html) |  |  |
+| `hue` | [Number](Number.html) | <optional> |  |
 
 <dl>
 </dl>
-[Bitmap](Bitmap.md)
+
 ##### Returns:
 
 <dl>
                 <dt> Type </dt>
                 <dd>
-               [String](String.md)/a></span>
-          [Number](Number.md)
+                    <span><a>Bitmap</a></span>
+                </dd>
+            </dl>
+
+#### (static) loadPicture (filename, hue opt) → {[Bitmap](Bitmap.html)}
+
+Loads a Bitmap object from the 'img/pictures/' folder and returns it.
+
+##### Parameters:
+
+| Name | Type | Attributes | Description |
+| --- | --- | --- | --- |
+| `filename` | [String](String.html) |  |  |
+| `hue` | [Number](Number.html) | <optional> |  |
+
+<dl>
+</dl>
+
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Bitmap</a></span>
+                </dd>
+            </dl>
+
+#### (static) loadSvActor (filename, hue opt) → {[Bitmap](Bitmap.html)}
+
+Loads a Bitmap object from the 'img/sv_actors/' folder and returns it.
+
+##### Parameters:
+
+| Name | Type | Attributes | Description |
+| --- | --- | --- | --- |
+| `filename` | [String](String.html) |  |  |
+| `hue` | [Number](Number.html) | <optional> |  |
+
+<dl>
+</dl>
+
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Bitmap</a></span>
+                </dd>
+            </dl>
+
+#### (static) loadSvEnemy (filename, hue opt) → {[Bitmap](Bitmap.html)}
+
+Loads a Bitmap object from the 'img/sv_enemies/' folder and returns it.
+
+##### Parameters:
+
+| Name | Type | Attributes | Description |
+| --- | --- | --- | --- |
+| `filename` | [String](String.html) |  |  |
+| `hue` | [Number](Number.html) | <optional> |  |
+
+<dl>
+</dl>
+
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Bitmap</a></span>
+                </dd>
+            </dl>
+
+#### (static) loadSystem (filename, hue opt) → {[Bitmap](Bitmap.html)}
+
+Loads a Bitmap object from 'img/system/' folder and returns it.
+
+##### Parameters:
+
+| Name | Type | Attributes | Description |
+| --- | --- | --- | --- |
+| `filename` | [String](String.html) |  |  |
+| `hue` | [Number](Number.html) | <optional> |  |
+
+<dl>
+</dl>
+
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Bitmap</a></span>
+                </dd>
+            </dl>
+
+#### (static) loadTileset (filename, hue opt) → {[Bitmap](Bitmap.html)}
+
+Loads a Bitmap object from the 'img/tilesets/' folder and returns it.
+
+##### Parameters:
+
+| Name | Type | Attributes | Description |
+| --- | --- | --- | --- |
+| `filename` | [String](String.html) |  |  |
+| `hue` | [Number](Number.html) | <optional> |  |
+
+<dl>
+</dl>
+
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Bitmap</a></span>
+                </dd>
+            </dl>
+
+#### (static) loadTitle1 (filename, hue opt) → {[Bitmap](Bitmap.html)}
+
+Loads a Bitmap object from the 'img/titles1/' folder and returns it.
+
+##### Parameters:
+
+| Name | Type | Attributes | Description |
+| --- | --- | --- | --- |
+| `filename` | [String](String.html) |  |  |
+| `hue` | [Number](Number.html) | <optional> |  |
+
+<dl>
+</dl>
+
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Bitmap</a></span>
+                </dd>
+            </dl>
+
+#### (static) loadTitle2 (filename, hue opt) → {[Bitmap](Bitmap.html)}
+
+Loads a Bitmap object from the 'img/titles2/' folder and returns it.
+
+##### Parameters:
+
+| Name | Type | Attributes | Description |
+| --- | --- | --- | --- |
+| `filename` | [String](String.html) |  |  |
+| `hue` | [Number](Number.html) | <optional> |  |
+
+<dl>
+</dl>
+
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Bitmap</a></span>
+                </dd>
             </dl>
 
 #### (static) releaseReservation (reservationId)
@@ -531,40 +510,19 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `reservationId` | [Number](Number.md) |  |
+| `reservationId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
-#### (static) requestAnimation (filename, hue) → {[B[Bitmap](Bitmap.md)
+#### (static) requestAnimation (filename, hue) → {[Bitmap](Bitmap.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
-
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
-
-#### (static) requestBattleback1 (filename, hue) → {[Bitmap](Bitmap.md)}
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -578,37 +536,14 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) requestBattleback2 (filename, hue) → {[Bitmap](Bi[Bitmap](Bitmap.md)
+#### (static) requestBattleback1 (filename, hue) → {[Bitmap](Bitmap.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` [String](String.md)l) |  |
-| `hue` | [Numb[String](String.md)
-[Number](Number.md)
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
-
-#### (static) requestBitmap (folder, filename, hue, smooth) → {[Bitmap](Bitmap.md)}
-
-##### Parameters:[Bitmap](Bitmap.md)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `folder` | [String](String.md) |  |
-| `filename` | [String](String.md) |  |
-| `hue` | [Numb[String](String.md)
-| `smooth`[Number](Number.md)
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -622,14 +557,14 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) requestCharacter (filename, hue)[Bitmap](Bitmap.md)tml)}
+#### (static) requestBattleback2 (filename, hue) → {[Bitmap](Bitmap.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -643,14 +578,16 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) requestEnemy (filename, hue) → [Bitmap](Bitmap.md))}
+#### (static) requestBitmap (folder, filename, hue, smooth) → {[Bitmap](Bitmap.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `folder` | [String](String.html) |  |
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
+| `smooth` | Boolean |  |
 
 <dl>
 </dl>
@@ -664,14 +601,14 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) requestFace (filename, hue) → {[Bit[Bitmap](Bitmap.md)
+#### (static) requestCharacter (filename, hue) → {[Bitmap](Bitmap.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename[String](String.md)tml) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -685,14 +622,14 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) requestNormalBitmap (path, hue) → {[Bitmap](Bitmap.md)}
+#### (static) requestEnemy (filename, hue) → {[Bitmap](Bitmap.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `path` | [Str[String](String.md)|
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -706,14 +643,14 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) requestParallax (filename, hue) → [Bitmap](Bitmap.md))}
+#### (static) requestFace (filename, hue) → {[Bitmap](Bitmap.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -727,14 +664,14 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) requestPicture (filename, hue) → {[Bitmap](Bitmap.md)}
+#### (static) requestNormalBitmap (path, hue) → {[Bitmap](Bitmap.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `path` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -748,14 +685,14 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) requestSvActor (filename, hue) → {[Bitmap](Bitmap.md)}
+#### (static) requestParallax (filename, hue) → {[Bitmap](Bitmap.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -769,14 +706,14 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) requestSvEnemy (filename, hue) → [Bitmap](Bitmap.md))}
+#### (static) requestPicture (filename, hue) → {[Bitmap](Bitmap.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -790,14 +727,14 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) requestSystem (filename, hue) → {[[Bitmap](Bitmap.md)
+#### (static) requestSvActor (filename, hue) → {[Bitmap](Bitmap.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -811,14 +748,14 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) requestTileset (filename, hue) → [Bitmap](Bitmap.md))}
+#### (static) requestSvEnemy (filename, hue) → {[Bitmap](Bitmap.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -832,14 +769,14 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) requestTitle1 (filename, hue) → {[Bitmap](Bitmap.md)}
+#### (static) requestSystem (filename, hue) → {[Bitmap](Bitmap.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -853,15 +790,15 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) requestTitle2 (filename, hue) → {[Bitmap](Bitmap.ht[Bitmap](Bitmap.md)
+#### (static) requestTileset (filename, hue) → {[Bitmap](Bitmap.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
-[Number](Number.md)
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
+
 <dl>
 </dl>
 
@@ -874,16 +811,15 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) reserveAnimation (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
-[Bitmap](Bitmap.md)
+#### (static) requestTitle1 (filename, hue) → {[Bitmap](Bitmap.html)}
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Numb[String](String.md)
-| `reserva[Number](Number.md)mber.md) |  |
-[Number](Number.md)
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
+
 <dl>
 </dl>
 
@@ -896,16 +832,15 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) reserveBattleback1 (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
-[Bitmap](Bitmap.md)
+#### (static) requestTitle2 (filename, hue) → {[Bitmap](Bitmap.html)}
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Numb[String](String.md)
-| `reserva[Number](Number.md)mber.md) |  |
-[Number](Number.md)
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
+
 <dl>
 </dl>
 
@@ -918,40 +853,16 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) reserveBattleback2 (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
-[Bitmap](Bitmap.md)
+#### (static) reserveAnimation (filename, hue, reservationId) → {[Bitmap](Bitmap.html)}
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Nu[String](String.md) |
-| `reservationI[String](String.md)html) |  |
-[Number](Number.md)
-<dl>
-</dl>[Number](Number.md)
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
+| `reservationId` | [Number](Number.html) |  |
 
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
-
-#### (static) reserveBitmap (folder, filename, hue, smooth, reservationId) → {[Bitmap](Bitmap.md)}
-
-##### Parameters:
-[Bitmap](Bitmap.md)
-| Name | Type | Description |
-| --- | --- | --- |
-| `folder` | [String](String.md) |  |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
-| `smooth` | Bo[String](String.md)
-| `reserva[Number](Number.md)mber.md) |  |
-[Number](Number.md)
 <dl>
 </dl>
 
@@ -964,16 +875,16 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) reserveCharacter (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
-[Bitmap](Bitmap.md)
+#### (static) reserveBattleback1 (filename, hue, reservationId) → {[Bitmap](Bitmap.html)}
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Numb[String](String.md)
-| `reserva[Number](Number.md)mber.md) |  |
-[Number](Number.md)
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
+| `reservationId` | [Number](Number.html) |  |
+
 <dl>
 </dl>
 
@@ -986,16 +897,16 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) reserveEnemy (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
-[Bitmap](Bitmap.md)
+#### (static) reserveBattleback2 (filename, hue, reservationId) → {[Bitmap](Bitmap.html)}
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Numb[String](String.md)
-| `reserva[Number](Number.md)mber.md) |  |
-[Number](Number.md)
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
+| `reservationId` | [Number](Number.html) |  |
+
 <dl>
 </dl>
 
@@ -1008,16 +919,18 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) reserveFace (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
-[Bitmap](Bitmap.md)
+#### (static) reserveBitmap (folder, filename, hue, smooth, reservationId) → {[Bitmap](Bitmap.html)}
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [[String](String.md)|  |
-| `reserva[Number](Number.md)mber.md) |  |
-[Number](Number.md)
+| `folder` | [String](String.html) |  |
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
+| `smooth` | Boolean |  |
+| `reservationId` | [Number](Number.html) |  |
+
 <dl>
 </dl>
 
@@ -1030,16 +943,16 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) reserveNormalBitmap (path, hue, reservationId) → {[Bitmap](Bitmap.md)}
-[Bitmap](Bitmap.md)
+#### (static) reserveCharacter (filename, hue, reservationId) → {[Bitmap](Bitmap.html)}
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `path` | [String](String.md) |  |
-| `hue` | [Numb[String](String.md)
-| `reserva[Number](Number.md)mber.md) |  |
-[Number](Number.md)
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
+| `reservationId` | [Number](Number.html) |  |
+
 <dl>
 </dl>
 
@@ -1052,16 +965,16 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) reserveParallax (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
-[Bitmap](Bitmap.md)
+#### (static) reserveEnemy (filename, hue, reservationId) → {[Bitmap](Bitmap.html)}
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Numb[String](String.md)
-| `reserva[Number](Number.md)mber.md) |  |
-[Number](Number.md)
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
+| `reservationId` | [Number](Number.html) |  |
+
 <dl>
 </dl>
 
@@ -1074,16 +987,16 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) reservePicture (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
-[Bitmap](Bitmap.md)
+#### (static) reserveFace (filename, hue, reservationId) → {[Bitmap](Bitmap.html)}
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Numb[String](String.md)
-| `reserva[Number](Number.md)mber.md) |  |
-[Number](Number.md)
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
+| `reservationId` | [Number](Number.html) |  |
+
 <dl>
 </dl>
 
@@ -1096,16 +1009,16 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) reserveSvActor (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
-[Bitmap](Bitmap.md)
+#### (static) reserveNormalBitmap (path, hue, reservationId) → {[Bitmap](Bitmap.html)}
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Numb[String](String.md)
-| `reserva[Number](Number.md)mber.md) |  |
-[Number](Number.md)
+| `path` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
+| `reservationId` | [Number](Number.html) |  |
+
 <dl>
 </dl>
 
@@ -1118,16 +1031,16 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) reserveSvEnemy (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
-[Bitmap](Bitmap.md)
+#### (static) reserveParallax (filename, hue, reservationId) → {[Bitmap](Bitmap.html)}
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Numb[String](String.md)
-| `reserva[Number](Number.md)mber.md) |  |
-[Number](Number.md)
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
+| `reservationId` | [Number](Number.html) |  |
+
 <dl>
 </dl>
 
@@ -1140,16 +1053,16 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) reserveSystem (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
-[Bitmap](Bitmap.md)
+#### (static) reservePicture (filename, hue, reservationId) → {[Bitmap](Bitmap.html)}
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Numb[String](String.md)
-| `reserva[Number](Number.md)mber.md) |  |
-[Number](Number.md)
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
+| `reservationId` | [Number](Number.html) |  |
+
 <dl>
 </dl>
 
@@ -1162,16 +1075,16 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) reserveTileset (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
-[Bitmap](Bitmap.md)
+#### (static) reserveSvActor (filename, hue, reservationId) → {[Bitmap](Bitmap.html)}
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Numb[String](String.md)
-| `reserva[Number](Number.md)mber.md) |  |
-[Number](Number.md)
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
+| `reservationId` | [Number](Number.html) |  |
+
 <dl>
 </dl>
 
@@ -1184,16 +1097,16 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) reserveTitle1 (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
-[Bitmap](Bitmap.md)
+#### (static) reserveSvEnemy (filename, hue, reservationId) → {[Bitmap](Bitmap.html)}
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Numb[String](String.md)
-| `reserva[Number](Number.md)mber.md) |  |
-[Number](Number.md)
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
+| `reservationId` | [Number](Number.html) |  |
+
 <dl>
 </dl>
 
@@ -1206,15 +1119,81 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
                 </dd>
             </dl>
 
-#### (static) reserveTitle2 (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
+#### (static) reserveSystem (filename, hue, reservationId) → {[Bitmap](Bitmap.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](N[Number](Number.md)
-| `reservationId` | [Number](Number.md) |  |
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
+| `reservationId` | [Number](Number.html) |  |
+
+<dl>
+</dl>
+
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Bitmap</a></span>
+                </dd>
+            </dl>
+
+#### (static) reserveTileset (filename, hue, reservationId) → {[Bitmap](Bitmap.html)}
+
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
+| `reservationId` | [Number](Number.html) |  |
+
+<dl>
+</dl>
+
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Bitmap</a></span>
+                </dd>
+            </dl>
+
+#### (static) reserveTitle1 (filename, hue, reservationId) → {[Bitmap](Bitmap.html)}
+
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
+| `reservationId` | [Number](Number.html) |  |
+
+<dl>
+</dl>
+
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Bitmap</a></span>
+                </dd>
+            </dl>
+
+#### (static) reserveTitle2 (filename, hue, reservationId) → {[Bitmap](Bitmap.html)}
+
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `filename` | [String](String.html) |  |
+| `hue` | [Number](Number.html) |  |
+| `reservationId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -1234,7 +1213,7 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `reservationId` | [Number](Number.md) |  |
+| `reservationId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -1242,9 +1221,7 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 #### (static) update ()
 
 <dl>
-</dl>
-
-
+</dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

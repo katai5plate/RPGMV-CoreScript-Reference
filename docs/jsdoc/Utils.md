@@ -10,8 +10,8 @@ The static class that defines utility methods.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `RPGMAKER_NAME` | [String](String.md) | [static] The name of the RPG Maker. 'MV' in the current version. |
-| `RPGMAKER_VERSION` | [String](String.md) | [static] The version of the RPG Maker. |
+| `RPGMAKER_NAME` | [String](String.html) | [static] The name of the RPG Maker. 'MV' in the current version. |
+| `RPGMAKER_VERSION` | [String](String.html) | [static] The version of the RPG Maker. |
 
 <dl>
 </dl>
@@ -20,23 +20,21 @@ The static class that defines utility methods.
 
 #### (static) canReadGameFiles () → {Boolean}
 
-
-Checks whether the browser can read files in the game folder.
+Checks whether the browser can read files in the game folder.
 <dl>
 </dl>
 
 ##### Returns:
 
-
-True if the browser can read files in the game folder
+True if the browser can read files in the game folder
 <dl>
                 <dt> Type </dt>
                 <dd>
                     <span>Boolean</span>
                 </dd>
-            </dl>[Number](Number.md)
+            </dl>
 
-#### (static) generateRuntimeId () → {[Number](Number.md)}
+#### (static) generateRuntimeId () → {[Number](Number.html)}
 
 <dl>
 </dl>
@@ -52,15 +50,13 @@ True if the browser can read files in the game folder
 
 #### (static) isAndroidChrome () → {Boolean}
 
-
-Checks whether the browser is Android Chrome.
+Checks whether the browser is Android Chrome.
 <dl>
 </dl>
 
 ##### Returns:
 
-
-True if the browser is Android Chrome
+True if the browser is Android Chrome
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -70,15 +66,13 @@ True if the browser is Android Chrome
 
 #### (static) isMobileDevice () → {Boolean}
 
-
-Checks whether the platform is a mobile device.
+Checks whether the platform is a mobile device.
 <dl>
 </dl>
 
 ##### Returns:
 
-
-True if the platform is a mobile device
+True if the platform is a mobile device
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -88,15 +82,13 @@ True if the platform is a mobile device
 
 #### (static) isMobileSafari () → {Boolean}
 
-
-Checks whether the browser is Mobile Safari.
+Checks whether the browser is Mobile Safari.
 <dl>
 </dl>
 
 ##### Returns:
 
-
-True if the browser is Mobile Safari
+True if the browser is Mobile Safari
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -106,40 +98,36 @@ True if the browser is Mobile Safari
 
 #### (static) isNwjs () → {Boolean}
 
-
-Checks whether the platform is NW.js.
+Checks whether the platform is NW.js.
 <dl>
 </dl>
 
 ##### Returns:
 
-
-True if the platform is NW.js
+True if the platform is NW.js
 <dl>
                 <dt> Type </dt>
                 <dd>
                     <span>Boolean</span>
                 </dd>
-           [String](String.md)
+            </dl>
 
 #### (static) isOptionValid (name) → {Boolean}
 
-
-Checks whether the option is in the query string.
+Checks whether the option is in the query string.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.md) | The option name |
+| `name` | [String](String.html) | The option name |
 
 <dl>
 </dl>
 
 ##### Returns:
 
-
-True if the option is in the query string
+True if the option is in the query string
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -149,50 +137,44 @@ True if the option is in the query string
 
 #### (static) isSupportPassiveEvent () → {Boolean}
 
-
-Test this browser support passive event feature
-<dl>[String](String.md)
+Test this browser support passive event feature
+<dl>
 </dl>
 
 ##### Returns:
 
-
-this browser support passive event or not
+this browser support passive event or not
 <dl>
-        [Number](Number.md)t>
-        [Number](Number.md)
-        [Number](Number.md)lean</span>
+                <dt> Type </dt>
+                <dd>
+                    <span>Boolean</span>
                 </dd>
             </dl>
 
-#### (static) rgbToCssColor (r, g, b) → {[String](String.md)}
+#### (static) rgbToCssColor (r, g, b) → {[String](String.html)}
 
-
-Makes a CSS color string from RGB values.
+Makes a CSS color string from RGB values.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `r` | [Number](Number.md) | The red value in the range (0, 255) |
-| `g` | [Number](Number.md) | The green value in the range (0, 255) |
-| `b` | [Number](Number.md) | The blue value in the range (0, 255) |
+| `r` | [Number](Number.html) | The red value in the range (0, 255) |
+| `g` | [Number](Number.html) | The green value in the range (0, 255) |
+| `b` | [Number](Number.html) | The blue value in the range (0, 255) |
 
 <dl>
 </dl>
 
 ##### Returns:
 
-
-CSS color string
+CSS color string
 <dl>
                 <dt> Type </dt>
                 <dd>
                     <span><a>String</a></span>
                 </dd>
-            </dl>
-
-
+            </dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

@@ -10,46 +10,43 @@ The scene class of the shop screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_goods` | [Array](Array.md).<[Array](Array.md).<*>> |  |
+| `_goods` | [Array](Array.html).<[Array](Array.html).<*>> |  |
 | `_purchaseOnly` | Boolean |  |
-| `_item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
-| `_goldWindow` | [Window_Gold](Window_Gold.md) |  |
-| `_commandWindow` | [Window_ShopCommand](Window_ShopCommand.md) |  |
-| `_dummyWindow` | [Window_Base](Window_Base.md) |  |
-| `_numberWindow` | [Window_ShopNumber](Window_ShopNumber.md) |  |
-| `_statusWindow` | [Window_ShopStatus](Window_ShopStatus.md) |  |
-| `_buyWindow` | [Window_ShopBuy](Window_ShopBuy.md) |  |
-| `_categoryWindow` | [Window_ItemCategory](Window_ItemCategory.md) |  |
-| `_sellWindow` | [Window_ShopSell](Window_ShopSell.md) |  |
-| `_helpWindow` | [Window_Help](Window_Help.md) |  |
+| `_item` | [RPG.BaseItem](RPG.BaseItem.html) |  |
+| `_goldWindow` | [Window_Gold](Window_Gold.html) |  |
+| `_commandWindow` | [Window_ShopCommand](Window_ShopCommand.html) |  |
+| `_dummyWindow` | [Window_Base](Window_Base.html) |  |
+| `_numberWindow` | [Window_ShopNumber](Window_ShopNumber.html) |  |
+| `_statusWindow` | [Window_ShopStatus](Window_ShopStatus.html) |  |
+| `_buyWindow` | [Window_ShopBuy](Window_ShopBuy.html) |  |
+| `_categoryWindow` | [Window_ItemCategory](Window_ItemCategory.html) |  |
+| `_sellWindow` | [Window_ShopSell](Window_ShopSell.html) |  |
+| `_helpWindow` | [Window_Help](Window_Help.html) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Scene_MenuBase](Scene_MenuBase.md)
+* [Scene_MenuBase](Scene_MenuBase.html)
 
 ### Methods
 
 #### activateBuyWindow ()
 
-
-Activates the buy window within the shop scene.
+Activates the buy window within the shop scene.
 <dl>
 </dl>
 
 #### activateSellWindow ()
 
-
-Activates the sell window within the shop scene.
+Activates the sell window within the shop scene.
 <dl>
-</dl>[Game_Actor](Game_Actor.md)
+</dl>
 
-#### actor () → {[Game_Actor](Game_Actor.md)}
+#### actor () → {[Game_Actor](Game_Actor.html)}
 
-
-Returns the current game actor.
+Returns the current game actor.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -72,8 +69,7 @@ Returns the current game actor.
 
 #### addChild (child) → {Object}
 
-
-[super] 子オブジェクトを追加。
+[super] 子オブジェクトを追加。
 
 ##### Parameters:
 
@@ -94,8 +90,7 @@ Returns the current game actor.
 
 ##### Returns:
 
-
- 追加されたオブジェクト
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -105,15 +100,14 @@ Returns the current game actor.
 
 #### addChildAt (child, index) → {Object}
 
+[super] 指定位置に子オブジェクトを追加。
 
-[super] 指定位置に子オブジェクトを追加。
-[Number](Number.md)
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.md) |  追加位置 |
+| `index` | [Number](Number.html) |  追加位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -128,8 +122,7 @@ Returns the current game actor.
 
 ##### Returns:
 
-
- 追加されたオブジェクト
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -139,8 +132,7 @@ Returns the current game actor.
 
 #### addWindow (Window)
 
-
- ウィンドウレイヤーにウィンドウを追加。
+ ウィンドウレイヤーにウィンドウを追加。
 
 ##### Parameters:
 
@@ -161,11 +153,10 @@ Returns the current game actor.
 
 #### attachReservation ()
 
-
- キューに予約を追加。
+ キューに予約を追加。
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>[Number](Number.md)
+                <dd>
                     <ul>
                         <li>
                             <a>Scene_Base#attachReservation</a>
@@ -174,10 +165,9 @@ Returns the current game actor.
                 </dd>
             </dl>
 
-#### buyingPrice () → {[Number](Number.md)}
+#### buyingPrice () → {[Number](Number.html)}
 
-
-Returns the buying price for the current item.
+Returns the buying price for the current item.
 <dl>
 </dl>
 
@@ -192,8 +182,7 @@ Returns the buying price for the current item.
 
 #### checkGameover ()
 
-
- ゲームオーバー状態か検査。
+ ゲームオーバー状態か検査。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -207,15 +196,13 @@ Returns the buying price for the current item.
 
 #### commandBuy ()
 
-
-Handler for pressing buy within the shop scene.
+Handler for pressing buy within the shop scene.
 <dl>
 </dl>
 
 #### commandSell ()
 
-
-Handler for pressing sell within the shop scene.
+Handler for pressing sell within the shop scene.
 <dl>
 </dl>
 
@@ -234,22 +221,19 @@ Handler for pressing sell within the shop scene.
 
 #### createBuyWindow ()
 
-
-Creates the buy window.
+Creates the buy window.
 <dl>
 </dl>
 
 #### createCategoryWindow ()
 
-
-Creates the category window.
+Creates the category window.
 <dl>
 </dl>
 
 #### createCommandWindow ()
 
-
-Creates the command window for buying or selling.
+Creates the command window for buying or selling.
 <dl>
 </dl>
 
@@ -260,8 +244,7 @@ Creates the command window for buying or selling.
 
 #### createFadeSprite ()
 
-
- フェード用のスプライトを生成。
+ フェード用のスプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -275,15 +258,13 @@ Creates the command window for buying or selling.
 
 #### createGoldWindow ()
 
-
-Creates the gold window on the shop scene.
+Creates the gold window on the shop scene.
 <dl>
 </dl>
 
 #### createHelpWindow ()
 
-
-Creates the help window.
+Creates the help window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -296,30 +277,26 @@ Creates the help window.
             </dl>
 
 #### createNumberWindow ()
-[$1]($2.md)
 
-Creates the number input window on the shop scene.
+Creates the number input window on the shop scene.
 <dl>
 </dl>
 
 #### createSellWindow ()
 
-
-Creates the sell window.
+Creates the sell window.
 <dl>
 </dl>
-[String](String.md)
+
 #### createStatusWindow ()
 
-
-Creates the status window.
+Creates the status window.
 <dl>
 </dl>
 
 #### createWindowLayer ()
 
-
- ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
+ ウィンドウレイヤー[WindowLayer](WindowLayer.html) を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -331,10 +308,9 @@ Creates the status window.
                 </dd>
             </dl>
 
-#### currencyUnit () → {[String](String.md)}
+#### currencyUnit () → {[String](String.html)}
 
-
-Returns the currency unit of the game within the shop scene.
+Returns the currency unit of the game within the shop scene.
 <dl>
 </dl>
 
@@ -343,18 +319,17 @@ Returns the currency unit of the game within the shop scene.
 <dl>
                 <dt> Type </dt>
                 <dd>
-             [Number](Number.md)g</a></span>
+                    <span><a>String</a></span>
                 </dd>
             </dl>
 
 #### detachReservation ()
 
-
- キューから予約を削除。
+ キューから予約を削除。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-             [Number](Number.md)
+                    <ul>
                         <li>
                             <a>Scene_Base#detachReservation</a>
                         </li>
@@ -368,7 +343,7 @@ Returns the currency unit of the game within the shop scene.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `number` | [Number](Number.md) |  |
+| `number` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -378,8 +353,8 @@ Returns the currency unit of the game within the shop scene.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |[Number](Number.md)
-| `number` | [Number](Number.md) |  |
+| --- | --- | --- |
+| `number` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -391,8 +366,7 @@ Returns the currency unit of the game within the shop scene.
 
 #### fadeOutAll ()
 
-
- 全ての映像と音声を、遅い速度でフェードアウト。
+ 全ての映像と音声を、遅い速度でフェードアウト。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -404,10 +378,9 @@ Returns the currency unit of the game within the shop scene.
                 </dd>
             </dl>
 
-#### fadeSpeed () → {[Number](Number.md)}
+#### fadeSpeed () → {[Number](Number.html)}
 
-
- フェード速度を返す。
+ フェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -430,8 +403,7 @@ Returns the currency unit of the game within the shop scene.
 
 #### initialize ()
 
-
- オブジェクト生成時の初期化。
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -445,8 +417,7 @@ Returns the currency unit of the game within the shop scene.
 
 #### isActive () → {Boolean}
 
-
- シーンがアクティブか。
+ シーンがアクティブか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -469,8 +440,7 @@ Returns the currency unit of the game within the shop scene.
 
 #### isBusy () → {Boolean}
 
-
- フェード動作中か。
+ フェード動作中か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -484,7 +454,7 @@ Returns the currency unit of the game within the shop scene.
 
 ##### Returns:
 
-<dl>[Number](Number.md)
+<dl>
                 <dt> Type </dt>
                 <dd>
                     <span>Boolean</span>
@@ -493,13 +463,12 @@ Returns the currency unit of the game within the shop scene.
 
 #### isReady () → {Boolean}
 
-
- シーンの準備ができているか。
+ シーンの準備ができているか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                   [Number](Number.md)
+                        <li>
                             <a>Scene_Base#isReady</a>
                         </li>
                     </ul>
@@ -514,11 +483,10 @@ Returns the currency unit of the game within the shop scene.
                     <span>Boolean</span>
                 </dd>
             </dl>
-[Number](Number.md)
-#### maxBuy () → {[Number](Number.md)}
 
+#### maxBuy () → {[Number](Number.html)}
 
-Returns the maximum number bought.
+Returns the maximum number bought.
 <dl>
 </dl>
 
@@ -531,10 +499,9 @@ Returns the maximum number bought.
                 </dd>
             </dl>
 
-#### maxSell () → {[Number](Number.md)}
+#### maxSell () → {[Number](Number.html)}
 
-
-Returns the maximum number sold.
+Returns the maximum number sold.
 <dl>
 </dl>
 
@@ -547,10 +514,9 @@ Returns the maximum number sold.
                 </dd>
             </dl>
 
-#### money () → {[Number](Number.md)}
+#### money () → {[Number](Number.html)}
 
-
-Returns the player gold within the shop scene.
+Returns the player gold within the shop scene.
 <dl>
 </dl>
 
@@ -565,8 +531,7 @@ Returns the player gold within the shop scene.
 
 #### nextActor ()
 
-
-Moves to the next actor in the party.
+Moves to the next actor in the party.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -593,15 +558,13 @@ Moves to the next actor in the party.
 
 #### onBuyCancel ()
 
-
-Handler for when buying is cancelled.
+Handler for when buying is cancelled.
 <dl>
 </dl>
 
 #### onBuyOk ()
 
-
-Handler for when buying is confirmed.
+Handler for when buying is confirmed.
 <dl>
 </dl>
 
@@ -618,7 +581,7 @@ Handler for when buying is confirmed.
 #### onNumberCancel ()
 
 <dl>
-</dl>[Array](Array.md)[Array](Array.md)
+</dl>
 
 #### onNumberOk ()
 
@@ -637,8 +600,7 @@ Handler for when buying is confirmed.
 
 #### popScene ()
 
-
- シーンを引き出す(pop)。
+ シーンを引き出す(pop)。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -656,7 +618,7 @@ Handler for when buying is confirmed.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `goods` | [Array](Array.md).<[Array](Array.md).<*>> |  |
+| `goods` | [Array](Array.html).<[Array](Array.html).<*>> |  |
 | `purchaseOnly` | Boolean |  |
 
 <dl>
@@ -664,8 +626,7 @@ Handler for when buying is confirmed.
 
 #### previousActor ()
 
-
-Moves to the previous actor in the party.
+Moves to the previous actor in the party.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -677,10 +638,9 @@ Moves to the previous actor in the party.
                 </dd>
             </dl>
 
-#### removeC[Number](Number.md)t}
+#### removeChild (child) → {Object}
 
-
-[super] 子オブジェクトを取り除く。
+[super] 子オブジェクトを取り除く。
 
 ##### Parameters:
 
@@ -700,9 +660,8 @@ Moves to the previous actor in the party.
             </dl>
 
 ##### Returns:
-[Number](Number.md)
 
- 取り除かれたオブジェクト
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -712,16 +671,15 @@ Moves to the previous actor in the party.
 
 #### removeChildAt (index) → {Object}
 
-
-[super] 指定位置にある子オブジェクトを取り除く。
+[super] 指定位置にある子オブジェクトを取り除く。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  取り除く位置 |
+| `index` | [Number](Number.html) |  取り除く位置 |
 
-<dl>[Number](Number.md)
+<dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -734,8 +692,7 @@ Moves to the previous actor in the party.
 
 ##### Returns:
 
-[Number](Number.md)
- 取り除かれたオブジェクト
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -743,10 +700,9 @@ Moves to the previous actor in the party.
                 </dd>
             </dl>
 
-#### sellingPrice () → {[Number](Number.md)}
+#### sellingPrice () → {[Number](Number.html)}
 
-
-Returns the selling price for the current item.
+Returns the selling price for the current item.
 <dl>
 </dl>
 
@@ -765,7 +721,7 @@ Returns the selling price for the current item.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `opacity` | [Number](Number.md) |  |
+| `opacity` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -778,10 +734,9 @@ Returns the selling price for the current item.
                 </dd>
             </dl>
 
-#### slowFadeSpeed () → {[Number](Number.md)}
+#### slowFadeSpeed () → {[Number](Number.html)}
 
-[Number](Number.md)
- 遅いフェード速度を返す。
+ 遅いフェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -795,19 +750,17 @@ Returns the selling price for the current item.
 
 ##### Returns:
 
-
-Return the fade speed
+Return the fade speed
 <dl>
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
-            </d[Number](Number.md)
+            </dl>
 
 #### start ()
 
-
- シーンの開始。
+ シーンの開始。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -821,14 +774,13 @@ Return the fade speed
 
 #### startFadeIn (duration opt, white opt)
 
-
- フェードインの要求。
+ フェードインの要求。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.md) | <optional> | 30 |  フェードインにかける時間 |
+| `duration` | [Number](Number.html) | <optional> | 30 |  フェードインにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -844,14 +796,13 @@ Return the fade speed
 
 #### startFadeOut (duration opt, white opt)
 
-
- フェードアウトの要求。
+ フェードアウトの要求。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.md) | <optional> | 30 |  フェードアウトにかける時間 |
+| `duration` | [Number](Number.html) | <optional> | 30 |  フェードアウトにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -867,8 +818,7 @@ Return the fade speed
 
 #### stop ()
 
-
- シーンの停止。
+ シーンの停止。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -882,8 +832,7 @@ Return the fade speed
 
 #### terminate ()
 
-
- 遷移前のシーン中断。
+ 遷移前のシーン中断。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -897,8 +846,7 @@ Return the fade speed
 
 #### update ()
 
-
- フレーム毎のアップデート。
+ フレーム毎のアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -912,8 +860,7 @@ Return the fade speed
 
 #### updateActor ()
 
-
-Updates the current actor.
+Updates the current actor.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -927,8 +874,7 @@ Updates the current actor.
 
 #### updateChildren ()
 
-
- 子オブジェクトのアップデート。
+ 子オブジェクトのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -942,8 +888,7 @@ Updates the current actor.
 
 #### updateFade ()
 
-
- フェードのアップデート。
+ フェードのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -953,9 +898,7 @@ Updates the current actor.
                         </li>
                     </ul>
                 </dd>
-            </dl>
-
-
+            </dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

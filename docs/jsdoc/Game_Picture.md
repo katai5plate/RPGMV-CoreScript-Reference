@@ -10,35 +10,34 @@ The game object class for a picture.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_name` | [String](String.md) |  |
-| `_origin` | [Number](Number.md) |  |
-| `_x` | [Number](Number.md) |  |
-| `_y` | [Number](Number.md) |  |
-| `_scaleX` | [Number](Number.md) |  |
-| `_scaleY` | [Number](Number.md) |  |
-| `_opacity` | [Number](Number.md) |  |
-| `_blendMode` | [Number](Number.md) |  |
-| `_targetX` | [Number](Number.md) |  |
-| `_targetY` | [Number](Number.md) |  |
-| `_targetScaleX` | [Number](Number.md) |  |
-| `_targetScaleY` | [Number](Number.md) |  |
-| `_targetOpacity` | [Number](Number.md) |  |
-| `_duration` | [Number](Number.md) |  |
-| `_tone` | [Array](Array.md).<[Number](Number.md)> |  |
-| `_toneTarget` | [Array](Array.md).<[Number](Number.md)> |  |
-| `_toneDuration` | [Number](Number.md) |  |
-| `_angle` | [Number](Number.md) |  |
-| `_rotationSpeed` | [Number](Number.md) |  |
+| `_name` | [String](String.html) |  |
+| `_origin` | [Number](Number.html) |  |
+| `_x` | [Number](Number.html) |  |
+| `_y` | [Number](Number.html) |  |
+| `_scaleX` | [Number](Number.html) |  |
+| `_scaleY` | [Number](Number.html) |  |
+| `_opacity` | [Number](Number.html) |  |
+| `_blendMode` | [Number](Number.html) |  |
+| `_targetX` | [Number](Number.html) |  |
+| `_targetY` | [Number](Number.html) |  |
+| `_targetScaleX` | [Number](Number.html) |  |
+| `_targetScaleY` | [Number](Number.html) |  |
+| `_targetOpacity` | [Number](Number.html) |  |
+| `_duration` | [Number](Number.html) |  |
+| `_tone` | [Array](Array.html).<[Number](Number.html)> |  |
+| `_toneTarget` | [Array](Array.html).<[Number](Number.html)> |  |
+| `_toneDuration` | [Number](Number.html) |  |
+| `_angle` | [Number](Number.html) |  |
+| `_rotationSpeed` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
 ### Methods
 
-#### angle () → {[Number](Number.md)}
+#### angle () → {[Number](Number.html)}
 
-
-Returns the angle of the game picture.
+Returns the angle of the game picture.
 <dl>
 </dl>
 
@@ -50,11 +49,10 @@ Returns the angle of the game picture.
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-[Number](Number.md)
-#### blendMode () → {[Number](Number.md)}
 
+#### blendMode () → {[Number](Number.html)}
 
-Returns the blend mode of the game picture.
+Returns the blend mode of the game picture.
 <dl>
 </dl>
 
@@ -69,8 +67,7 @@ Returns the blend mode of the game picture.
 
 #### erase ()
 
-
-Erases the game picture.
+Erases the game picture.
 <dl>
 </dl>
 
@@ -81,8 +78,7 @@ Erases the game picture.
 
 #### initialize ()
 
-
- オブジェクト生成時の初期化。
+ オブジェクト生成時の初期化。
 <dl>
 </dl>
 
@@ -103,26 +99,25 @@ Erases the game picture.
 
 #### move (origin, x, y, scaleX, scaleY, opacity, blendMode, duration)
 
-##### Paramet[Number](Number.md)
-[Number](Number.md)
-| Name |[Number](Number.md)
-| --- | --- |[Number](Number.md)
-| `origin` | [Number](Number.md) |  |
-| `x` | [Numbe[Number](Number.md)
-| `y` | [Number][Number](Number.md)
-| `scaleX` | [N[Number](Number.md)  |
-| `scaleY` | [Number](Number.md) |  |
-| `opacity` | [Number](Number.md) |  |
-| `blendMode` | [Number](Number.md) |  |
-| `duration` | [Number](Number.md) |  |
-[String](String.md)
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `origin` | [Number](Number.html) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
+| `scaleX` | [Number](Number.html) |  |
+| `scaleY` | [Number](Number.html) |  |
+| `opacity` | [Number](Number.html) |  |
+| `blendMode` | [Number](Number.html) |  |
+| `duration` | [Number](Number.html) |  |
+
 <dl>
 </dl>
 
-#### name () → {[String](String.md)}
+#### name () → {[String](String.html)}
 
-
-Returns the name of the game picture.
+Returns the name of the game picture.
 <dl>
 </dl>
 
@@ -130,31 +125,14 @@ Returns the name of the game picture.
 
 <dl>
                 <dt> Type </dt>
-                <dd[Number](Number.md)
+                <dd>
                     <span><a>String</a></span>
                 </dd>
             </dl>
 
-#### opacity () → {[Number](Number.md)}
+#### opacity () → {[Number](Number.html)}
 
-
-Returns the opacity of the game picture.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <d[Number](Number.md)
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### origin () → {[Number](Number.md)}
-
-
-Returns the origin of the game picture.
+Returns the opacity of the game picture.
 <dl>
 </dl>
 
@@ -166,27 +144,41 @@ Returns the origin of the game picture.
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-[Number](Number.md)
+
+#### origin () → {[Number](Number.html)}
+
+Returns the origin of the game picture.
+<dl>
+</dl>
+
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Number</a></span>
+                </dd>
+            </dl>
+
 #### rotate (speed)
 
 ##### Parameters:
 
-| Name | Type | De[Number](Number.md)
+| Name | Type | Description |
 | --- | --- | --- |
-| `speed` | [Number](Number.md) |  |
+| `speed` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
-#### scaleX () → {[Number](Number.md)}
+#### scaleX () → {[Number](Number.html)}
 
-
-Returns x scale of the game picture.
+Returns x scale of the game picture.
 <dl>
 </dl>
 
 ##### Returns:
-[Number](Number.md)
+
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -194,10 +186,9 @@ Returns x scale of the game picture.
                 </dd>
             </dl>
 
-#### scaleY () → {[Number](Number.md)}
+#### scaleY () → {[Number](Number.html)}
 
-
-Returns the y scale of the game picture.
+Returns the y scale of the game picture.
 <dl>
 </dl>
 
@@ -207,43 +198,42 @@ Returns the y scale of the game picture.
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
-           [String](String.md)
-            <[Number](Number.md)
-[Number](Number.md)
-#### sho[Number](Number.md), scaleX, scaleY, opacity, blendMode)
-[Number](Number.md)
-##### Paramet[Number](Number.md)
-[Number](Number.md)
-| Name | Type | [Number](Number.md)
-| --- | --- | --- |
-| `name` | [String](String.md) |  |
-| `origin` | [Number](Number.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `scaleX` | [Number](Number.md) |  |
-| `scaleY` | [Number](Number.md) |  |
-| `opacity` | [Number](Number.md) |  |
-| `blendMode` | [Number](Number.md) |  |
+                </dd>
+            </dl>
 
-<dl>[Array](Array.md)[Number](Number.md)
-</dl>[Number](Number.md)
-
-#### tint (tone, duration)
+#### show (name, origin, x, y, scaleX, scaleY, opacity, blendMode)
 
 ##### Parameters:
-[Array](Array.md)[Number](Number.md)
+
 | Name | Type | Description |
 | --- | --- | --- |
-| `tone` | [Array](Array.md).<[Number](Number.md)> |  |
-| `duration` | [Number](Number.md) |  |
+| `name` | [String](String.html) |  |
+| `origin` | [Number](Number.html) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
+| `scaleX` | [Number](Number.html) |  |
+| `scaleY` | [Number](Number.html) |  |
+| `opacity` | [Number](Number.html) |  |
+| `blendMode` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
-#### tone () → {[Array](Array.md).<[Number](Number.md)>}
+#### tint (tone, duration)
 
+##### Parameters:
 
-Returns the tone of the game picture.
+| Name | Type | Description |
+| --- | --- | --- |
+| `tone` | [Array](Array.html).<[Number](Number.html)> |  |
+| `duration` | [Number](Number.html) |  |
+
+<dl>
+</dl>
+
+#### tone () → {[Array](Array.html).<[Number](Number.html)>}
+
+Returns the tone of the game picture.
 <dl>
 </dl>
 
@@ -258,52 +248,31 @@ Returns the tone of the game picture.
 
 #### update ()
 
-
-Updates the game picture.
+Updates the game picture.
 <dl>
 </dl>
 
 #### updateMove ()
 
-
-Updates the movement of the game picture.
+Updates the movement of the game picture.
 <dl>
 </dl>
 
-#### updateRo[Number](Number.md)
+#### updateRotation ()
 
-
-Updates the rotation of the game picture.
+Updates the rotation of the game picture.
 <dl>
 </dl>
 
 #### updateTone ()
 
-
-Updates the tone of the game picture.
+Updates the tone of the game picture.
 <dl>
 </dl>
 
-#### x () → {[Number](Number.md)}
-[Number](Number.md)
+#### x () → {[Number](Number.html)}
 
-Returns the picture x coordinate.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### y () → {[Number](Number.md)}
-
-
-Returns the picture y coordinate.
+Returns the picture x coordinate.
 <dl>
 </dl>
 
@@ -316,7 +285,20 @@ Returns the picture y coordinate.
                 </dd>
             </dl>
 
+#### y () → {[Number](Number.html)}
 
+Returns the picture y coordinate.
+<dl>
+</dl>
+
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Number</a></span>
+                </dd>
+            </dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

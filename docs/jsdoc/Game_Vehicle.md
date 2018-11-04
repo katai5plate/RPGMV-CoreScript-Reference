@@ -4,24 +4,24 @@
 
 #### new Game_Vehicle ()
 
-[乗り物]を定義したクラス。 大体の機能は [Game_Player](Game_Player.md) クラスから使える。
+[乗り物]を定義したクラス。 大体の機能は [Game_Player](Game_Player.html) クラスから使える。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_type` | [String](String.md) |  |
-| `_mapId` | [Number](Number.md) |  |
-| `_altitude` | [Number](Number.md) |  |
+| `_type` | [String](String.html) |  |
+| `_mapId` | [Number](Number.html) |  |
+| `_altitude` | [Number](Number.html) |  |
 | `_driving` | Boolean |  |
-| `_bgm` | [RPG.AudioFile](RPG.AudioFile.md) |  |
+| `_bgm` | [RPG.AudioFile](RPG.AudioFile.html) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Game_Character](Game_Character.md)
+* [Game_Character](Game_Character.html)
 
 ### Methods
 
@@ -44,10 +44,9 @@
                 </dd>
             </dl>
 
-#### animationId () → {[Number](Number.md)}
+#### animationId () → {[Number](Number.html)}
 
-
- アニメーションIDを返す。
+ アニメーションIDを返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -67,11 +66,10 @@
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-[Number](Number.md)
-#### animationWait () → {[Number](Number.md)}
 
+#### animationWait () → {[Number](Number.html)}
 
- アニメーションの待ち時間を返す。
+ アニメーションの待ち時間を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -85,19 +83,17 @@
 
 ##### Returns:
 
-
- フレーム
+ フレーム
 <dl>
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
-                </dd>[Number](Number.md)
+                </dd>
             </dl>
 
-#### balloonId () → {[Number](Number.md)}
+#### balloonId () → {[Number](Number.html)}
 
-
- フキダシアイコンIDを返す。
+ フキダシアイコンIDを返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -114,14 +110,13 @@
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <[Number](Number.md)pan>
+                    <span><a>Number</a></span>
                 </dd>
             </dl>
 
-#### blendMode () → {[Number](Number.md)}
+#### blendMode () → {[Number](Number.html)}
 
-
-[合成方法]を返す。
+[合成方法]を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -135,19 +130,17 @@
 
 ##### Returns:
 
-
-0: 通常, 1: 加算, 2: 乗算, 3: スクリーン
+0: 通常, 1: 加算, 2: 乗算, 3: スクリーン
 <dl>
-                <dt> [Number](Number.md)
+                <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
             </dl>
 
-#### bushDepth () → {[Number](Number.md)}
+#### bushDepth () → {[Number](Number.html)}
 
-
-[茂み]の深さを返す。
+[茂み]の深さを返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -161,8 +154,7 @@
 
 ##### Returns:
 
-
- ピクセル
+ ピクセル
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -172,8 +164,7 @@
 
 #### canMove () → {Boolean}
 
-
-[乗り物]を操作可能か。
+[乗り物]を操作可能か。
 <dl>
 </dl>
 
@@ -185,19 +176,18 @@
                     <span>Boolean</span>
                 </dd>
             </dl>
-[Number](Number.md)
-#### can[Number](Number.md)lean}
-[Number](Number.md)
 
- 指定位置から指定向きへの通行が可能か。
+#### canPass (x, y, d) → {Boolean}
+
+ 指定位置から指定向きへの通行が可能か。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-| `d` | [Number](Number.md) |  向き(テンキー対応) |
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
+| `d` | [Number](Number.html) |  向き(テンキー対応) |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -217,21 +207,20 @@
                 <dd>
                     <span>Boolean</span>
                 </dd>
-        [Number](Number.md)
-[Number](Number.md)
-#### canPas[Number](Number.md)rz, vert) → {Boolean}
-[Number](Number.md)
+            </dl>
 
- 指定位置から斜め指定向きへの通行が可能か。
+#### canPassDiagonally (x, y, horz, vert) → {Boolean}
+
+ 指定位置から斜め指定向きへの通行が可能か。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-| `horz` | [Number](Number.md) |  横方向(テンキー対応) |
-| `vert` | [Number](Number.md) |  縦方向(テンキー対応) |
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
+| `horz` | [Number](Number.html) |  横方向(テンキー対応) |
+| `vert` | [Number](Number.html) |  縦方向(テンキー対応) |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -242,7 +231,7 @@
                         </li>
                     </ul>
                 </dd>
-            </dl>[Number](Number.md)
+            </dl>
 
 ##### Returns:
 
@@ -253,10 +242,9 @@
                 </dd>
             </dl>
 
-#### characterIndex () → {[Number](Number.md)}
+#### characterIndex () → {[Number](Number.html)}
 
-
- キャラクタ画像の番号を返す。
+ キャラクタ画像の番号を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -265,7 +253,7 @@
                             <a>Game_CharacterBase#characterIndex</a>
                         </li>
                     </ul>
-                </dd>[String](String.md)
+                </dd>
             </dl>
 
 ##### Returns:
@@ -277,10 +265,9 @@
                 </dd>
             </dl>
 
-#### characterName () → {[String](String.md)}
+#### characterName () → {[String](String.html)}
 
-
- キャラクタ画像のファイル名を返す。
+ キャラクタ画像のファイル名を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -296,22 +283,21 @@
 
 <dl>
                 <dt> Type </dt>
-        [Number](Number.md)
-        [Number](Number.md)String</a></span>
+                <dd>
+                    <span><a>String</a></span>
                 </dd>
             </dl>
 
 #### checkEventTriggerTouch (x, y) → {Boolean}
 
-
- 指定位置にあるイベントトリガを起動。
+ 指定位置にあるイベントトリガを起動。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -327,7 +313,7 @@
 ##### Returns:
 
 <dl>
-        [Number](Number.md)t>
+                <dt> Type </dt>
                 <dd>
                     <span>Boolean</span>
                 </dd>
@@ -335,20 +321,19 @@
 
 #### checkEventTriggerTouchFront (d)
 
-
- 指定方向にあるイベントトリガを起動。
+ 指定方向にあるイベントトリガを起動。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `d` | [Number](Number.md) |  向き(テンキー対応) |
+| `d` | [Number](Number.html) |  向き(テンキー対応) |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                [Number](Number.md)
+                        <li>
                             <a>Game_CharacterBase#checkEventTriggerTouchFront</a>
                         </li>
                     </ul>
@@ -357,14 +342,13 @@
 
 #### checkStop (threshold) → {Boolean}
 
-
- 停止状態が閾値を超えたか。
+ 停止状態が閾値を超えたか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `threshold` | [Number](Number.md) |  停止カウントの閾値(フレーム) |
+| `threshold` | [Number](Number.html) |  停止カウントの閾値(フレーム) |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -378,7 +362,7 @@
             </dl>
 
 ##### Returns:
-[Game_Player](Game_Player.md)
+
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -388,18 +372,17 @@
 
 #### copyPosition (character)
 
+ 指定キャラクタの位置を自身の位置にコピー。
 
- 指定キャラクタの位置を自身の位置にコピー。
-
-##### Parameters:[Number](Number.md)
+##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `character` | [Game_Player](Game_Player.md) |  |
+| `character` | [Game_Player](Game_Player.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
-        [Number](Number.md)
+                <dd>
                     <ul>
                         <li>
                             <a>Game_CharacterBase#copyPosition</a>
@@ -408,21 +391,20 @@
                 </dd>
             </dl>
 
-#### deltaXFrom (x) → {[Number](Number.md)}
+#### deltaXFrom (x) → {[Number](Number.html)}
 
-
- 指定した x座標と自身の x座標の差分を返す。
+ 指定した x座標と自身の x座標の差分を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
+| `x` | [Number](Number.html) |  タイル数 |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                    <ul[Number](Number.md)
+                    <ul>
                         <li>
                             <a>Game_Character#deltaXFrom</a>
                         </li>
@@ -430,10 +412,9 @@
                 </dd>
             </dl>
 
-##### Re[Number](Number.md)
+##### Returns:
 
-
- タイル数
+ タイル数
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -441,19 +422,18 @@
                 </dd>
             </dl>
 
-#### deltaYFrom (y) → {[Number](Number.md)}
+#### deltaYFrom (y) → {[Number](Number.html)}
 
-
- 指定した y座標と自身の y座標の差分を返す。
+ 指定した y座標と自身の y座標の差分を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `y` | [Number](Number.md) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
 
 <dl>
-                <dt>I[Number](Number.md)
+                <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
@@ -465,8 +445,7 @@
 
 ##### Returns:
 
-
- タイル数
+ タイル数
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -474,10 +453,9 @@
                 </dd>
             </dl>
 
-#### direction () → {[Number](Number.md)}
+#### direction () → {[Number](Number.html)}
 
-
- 向きを返す。[Number](Number.md)
+ 向きを返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -491,8 +469,7 @@
 
 ##### Returns:
 
-
- 向き(テンキー対応)
+ 向き(テンキー対応)
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -500,10 +477,9 @@
                 </dd>
             </dl>
 
-#### distancePerFrame () → {[Number](Number.md)}
+#### distancePerFrame () → {[Number](Number.html)}
 
-
- フレーム毎の移動距離を返す。
+ フレーム毎の移動距離を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -526,9 +502,8 @@
 
 #### endAnimation ()
 
-
-[アニメーション]表示を終了。
-<dl>[Number](Number.md)
+[アニメーション]表示を終了。
+<dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -536,13 +511,12 @@
                             <a>Game_CharacterBase#endAnimation</a>
                         </li>
                     </ul>
-            [Number](Number.md)
-            [Number](Number.md)
+                </dd>
+            </dl>
 
 #### endBalloon ()
 
-
-[フキダシアイコン]表示を終了。
+[フキダシアイコン]表示を終了。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -554,21 +528,20 @@
                 </dd>
             </dl>
 
-#### findDirectionTo (goalX, goalY) → {[Number](Number.md)}
+#### findDirectionTo (goalX, goalY) → {[Number](Number.html)}
 
-
- 指定座標へたどり着くための向きを返す。
+ 指定座標へたどり着くための向きを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `goalX` | [Number](Number.md) |  タイル数 |
-| `goalY` | [Number](Number.md) |  タイル数 |
+| `goalX` | [Number](Number.html) |  タイル数 |
+| `goalY` | [Number](Number.html) |  タイル数 |
 
 <dl>
                 <dt>Inherited From:</dt>
-                [RPG.MoveRoute](RPG.MoveRoute.md)
+                <dd>
                     <ul>
                         <li>
                             <a>Game_Character#findDirectionTo</a>
@@ -579,8 +552,7 @@
 
 ##### Returns:
 
-
- 向き(テンキー対応)
+ 向き(テンキー対応)
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -590,14 +562,13 @@
 
 #### forceMoveRoute (moveRoute)
 
-
-[移動ルート]を強制。
+[移動ルート]を強制。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `moveRoute` | [RPG.MoveRoute](RPG.MoveRoute.md) |  |
+| `moveRoute` | [RPG.MoveRoute](RPG.MoveRoute.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -612,22 +583,19 @@
 
 #### getOff ()
 
-
-[乗り物]から降りる。
+[乗り物]から降りる。
 <dl>
 </dl>
 
 #### getOn ()
 
-
-[乗り物]へ乗る。
+[乗り物]へ乗る。
 <dl>
 </dl>
 
 #### hasStepAnime () → {Boolean}
 
-
-[足踏みアニメ]するか。
+[足踏みアニメ]するか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -650,8 +618,7 @@
 
 #### hasWalkAnime () → {Boolean}
 
-
-[歩行アニメ]するか。
+[歩行アニメ]するか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -661,7 +628,7 @@
                         </li>
                     </ul>
                 </dd>
-           [String](String.md)
+            </dl>
 
 ##### Returns:
 
@@ -674,8 +641,7 @@
 
 #### increaseSteps ()
 
-
- 歩き出す(歩数を増やす)。
+ 歩き出す(歩数を増やす)。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -689,14 +655,13 @@
 
 #### initialize (type)
 
-
- オブジェクト生成時の初期化。
+ オブジェクト生成時の初期化。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `type` | [String](String.md) |  |
+| `type` | [String](String.html) |  |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -711,8 +676,7 @@
 
 #### initMembers ()
 
-
- メンバ変数の初期化。
+ メンバ変数の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -726,15 +690,13 @@
 
 #### initMoveSpeed ()
 
-
- 移動速度の初期化。
+ 移動速度の初期化。
 <dl>
 </dl>
 
 #### isAirship () → {Boolean}
 
-
-[飛行船]か。
+[飛行船]か。
 <dl>
 </dl>
 
@@ -749,8 +711,7 @@
 
 #### isAnimationPlaying () → {Boolean}
 
-
-[アニメーション]表示中か。
+[アニメーション]表示中か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -773,13 +734,12 @@
 
 #### isBalloonPlaying () → {Boolean}
 
-
-[フキダシアイコン]表示中か。
+[フキダシアイコン]表示中か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-        [Number](Number.md)
-        [Number](Number.md)
+                    <ul>
+                        <li>
                             <a>Game_CharacterBase#isBalloonPlaying</a>
                         </li>
                     </ul>
@@ -797,8 +757,7 @@
 
 #### isBoat () → {Boolean}
 
-
-[小型船]か。
+[小型船]か。
 <dl>
 </dl>
 
@@ -809,19 +768,18 @@
                 <dd>
                     <span>Boolean</span>
                 </dd>
-        [Number](Number.md)
-[Number](Number.md)
+            </dl>
+
 #### isCollidedWithCharacters (x, y) → {Boolean}
 
-
- 指定位置がキャラによって塞がれているか。
+ 指定位置がキャラによって塞がれているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -840,20 +798,19 @@
                 <dt> Type </dt>
                 <dd>
                     <span>Boolean</span>
-        [Number](Number.md)
-        [Number](Number.md)
+                </dd>
+            </dl>
 
 #### isCollidedWithEvents (x, y) → {Boolean}
 
-
- 指定位置が[イベント]によって塞がれているか。
+ 指定位置が[イベント]によって塞がれているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -877,15 +834,14 @@
 
 #### isCollidedWithVehicles (x, y) → {Boolean}
 
-
- 指定位置が[乗り物]によって塞がれているか。
+ 指定位置が[乗り物]によって塞がれているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -909,8 +865,7 @@
 
 #### isDashing () → {Boolean}
 
-
- 現在ダッシュ中か。
+ 現在ダッシュ中か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -933,8 +888,7 @@
 
 #### isDebugThrough () → {Boolean}
 
-
- デバッグ用のすり抜け移動中か。
+ デバッグ用のすり抜け移動中か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -957,8 +911,7 @@
 
 #### isDirectionFixed () → {Boolean}
 
-
-[向き固定]か。
+[向き固定]か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -978,11 +931,10 @@
                     <span>Boolean</span>
                 </dd>
             </dl>
-[Number](Number.md)
-#### isH[Number](Number.md)
-[Number](Number.md)
 
- 最高高度か。
+#### isHighest () → {Boolean}
+
+ 最高高度か。
 <dl>
 </dl>
 
@@ -997,8 +949,7 @@
 
 #### isJumping () → {Boolean}
 
-
- ジャンプ中か。
+ ジャンプ中か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1017,20 +968,19 @@
                 <dd>
                     <span>Boolean</span>
                 </dd>
-        [Number](Number.md)
-[Number](Number.md)
-#### isL[Number](Number.md)olean}
+            </dl>
 
+#### isLandOk (x, y, d) → {Boolean}
 
- 指定位置と向きで着陸可能か。
+ 指定位置と向きで着陸可能か。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-| `d` | [Number](Number.md) |  向き(テンキー対応) |
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
+| `d` | [Number](Number.html) |  向き(テンキー対応) |
 
 <dl>
 </dl>
@@ -1046,11 +996,10 @@
 
 #### isLowest () → {Boolean}
 
-
- 着陸しているか(最低高度か)。
+ 着陸しているか(最低高度か)。
 <dl>
-</dl>[Number](Number.md)
-[Number](Number.md)
+</dl>
+
 ##### Returns:
 
 <dl>
@@ -1062,16 +1011,15 @@
 
 #### isMapPassable (x, y, d) → {Boolean}
 
-
- 指定位置から指定向きへのマップ通行が可能か。 キャラ・[イベント]による障害を考慮しない。
+ 指定位置から指定向きへのマップ通行が可能か。 キャラ・[イベント]による障害を考慮しない。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-| `d` | [Number](Number.md) |  向き(テンキー対応) |
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
+| `d` | [Number](Number.html) |  向き(テンキー対応) |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -1095,15 +1043,14 @@
 
 #### isMovementSucceeded (x opt, y opt) → {Boolean}
 
-
- 移動可能か。
+ 移動可能か。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `x` | [Number](Number.md) | <optional> |  |
-| `y` | [Number](Number.md) | <optional> |  |
+| `x` | [Number](Number.html) | <optional> |  |
+| `y` | [Number](Number.html) | <optional> |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1127,8 +1074,7 @@
 
 #### isMoveRouteForcing () → {Boolean}
 
-
-[移動ルート]が強制されているか。
+[移動ルート]が強制されているか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1151,8 +1097,7 @@
 
 #### isMoving () → {Boolean}
 
-
- 移動中(タイル毎の座標ではない)か。
+ 移動中(タイル毎の座標ではない)か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1175,8 +1120,7 @@
 
 #### isNearTheScreen () → {Boolean}
 
-
- 画面端に近いか。あるいは、スクロールを止める位置か。
+ 画面端に近いか。あるいは、スクロールを止める位置か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1190,8 +1134,7 @@
 
 ##### Returns:
 
-
-}
+}
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -1201,8 +1144,7 @@
 
 #### isNormalPriority () → {Boolean}
 
-
-[プライオリティ]が[通常キャラと同じ]か。
+[プライオリティ]が[通常キャラと同じ]か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1225,8 +1167,7 @@
 
 #### isObjectCharacter () → {Boolean}
 
-
- キャラクタ用(characters フォルダ以下)の画像か。
+ キャラクタ用(characters フォルダ以下)の画像か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1249,8 +1190,7 @@
 
 #### isOnBush () → {Boolean}
 
-
-[茂み]に乗っているか。
+[茂み]に乗っているか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1273,8 +1213,7 @@
 
 #### isOnLadder () → {Boolean}
 
-
-[梯子]に乗っているか。
+[梯子]に乗っているか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1297,8 +1236,7 @@
 
 #### isOriginalPattern () → {Boolean}
 
-
- オリジナルのパターンか。
+ オリジナルのパターンか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1321,8 +1259,7 @@
 
 #### isShip () → {Boolean}
 
-
-[大型船]か。
+[大型船]か。
 <dl>
 </dl>
 
@@ -1337,8 +1274,7 @@
 
 #### isStopping () → {Boolean}
 
-
- 止まっている(タイル毎の座標にいる)か。
+ 止まっている(タイル毎の座標にいる)か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1361,8 +1297,7 @@
 
 #### isTakeoffOk () → {Boolean}
 
-
- 離陸可能か。
+ 離陸可能か。
 <dl>
 </dl>
 
@@ -1377,8 +1312,7 @@
 
 #### isThrough () → {Boolean}
 
-
-[すり抜け]状態か。
+[すり抜け]状態か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1387,8 +1321,8 @@
                             <a>Game_CharacterBase#isThrough</a>
                         </li>
                     </ul>
-            [Number](Number.md)
-            [Number](Number.md)
+                </dd>
+            </dl>
 
 ##### Returns:
 
@@ -1401,8 +1335,7 @@
 
 #### isTile () → {Boolean}
 
-[Number](Number.md)
- タイル用(tilesets フォルダ以下)の画像か。
+ タイル用(tilesets フォルダ以下)の画像か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1425,8 +1358,7 @@
 
 #### isTransparent () → {Boolean}
 
-
-[透明]状態か。
+[透明]状態か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1439,8 +1371,8 @@
             </dl>
 
 ##### Returns:
-[Number](Number.md)
-<dl>[Number](Number.md)
+
+<dl>
                 <dt> Type </dt>
                 <dd>
                     <span>Boolean</span>
@@ -1449,15 +1381,14 @@
 
 #### jump (xPlus, yPlus)
 
-
-[ジャンプ]。
+[ジャンプ]。
 
 ##### Parameters:
-[Number](Number.md)
+
 | Name | Type | Description |
 | --- | --- | --- |
-| `xPlus` | [Number](Number.md) | x方向の移動(タイル数) |
-| `yPlus` | [Number](Number.md) | y方向の移動(タイル数) |
+| `xPlus` | [Number](Number.html) | x方向の移動(タイル数) |
+| `yPlus` | [Number](Number.html) | y方向の移動(タイル数) |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1469,11 +1400,10 @@
                     </ul>
                 </dd>
             </dl>
-[Number](Number.md)
-#### jumpHeight () → {[Number](Number.md)}
 
+#### jumpHeight () → {[Number](Number.html)}
 
- 現在のジャンプの高さを返す。
+ 現在のジャンプの高さを返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1487,8 +1417,7 @@
 
 ##### Returns:
 
-
- ピクセル
+ ピクセル
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -1498,23 +1427,21 @@
 
 #### loadSystemSettings ()
 
-
-[システム]設定を読んで設定。
+[システム]設定を読んで設定。
 <dl>
 </dl>
 
 #### locate (x, y)
 
-
- 現在のマップ内での[イベントの位置設定]。 [Game_CharacterBase#setPosition](Game_CharacterBase.html#setPosition) と異なり、姿勢などを初期化。
+ 現在のマップ内での[イベントの位置設定]。 [Game_CharacterBase#setPosition](Game_CharacterBase.html#setPosition) と異なり、姿勢などを初期化。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-[Game_Character](Game_Character.md)
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
+
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1526,17 +1453,15 @@
                 </dd>
             </dl>
 
-#### maxAltitude () → {[Number](Number.md)}
+#### maxAltitude () → {[Number](Number.html)}
 
-
- 最高高度を返す。
+ 最高高度を返す。
 <dl>
 </dl>
 
 ##### Returns:
 
-
- ピクセル
+ ピクセル
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -1544,10 +1469,9 @@
                 </dd>
             </dl>
 
-#### maxPattern () → {[Number](Number.md)}
+#### maxPattern () → {[Number](Number.html)}
 
-
- 最大パターン数を返す。
+ 最大パターン数を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1563,15 +1487,14 @@
 
 <dl>
                 <dt> Type </dt>
-           [Number](Number.md)
-           [Number](Number.md)ber</a></span>
+                <dd>
+                    <span><a>Number</a></span>
                 </dd>
             </dl>
 
 #### memorizeMoveRoute ()
 
-
-[移動ルート]を記録。
+[移動ルート]を記録。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1585,14 +1508,13 @@
 
 #### moveAwayFromCharacter (character)
 
-
- 指定キャラクタから遠ざかる。
+ 指定キャラクタから遠ざかる。
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |[Number](Number.md)
-| `character` | [Game_Character](Game_Character.md) |  |
+| --- | --- | --- |
+| `character` | [Game_Character](Game_Character.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1607,8 +1529,7 @@
 
 #### moveAwayFromPlayer ()
 
-
-[プレイヤーから遠ざかる]。
+[プレイヤーから遠ざかる]。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1622,14 +1543,13 @@
 
 #### moveBackward ()
 
-
-[一歩後退]。
+[一歩後退]。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                     [Number](Number.md)ter#moveBackward</a>
+                            <a>Game_Character#moveBackward</a>
                         </li>
                     </ul>
                 </dd>
@@ -1637,15 +1557,14 @@
 
 #### moveDiagonally (horz, vert)
 
-
- 指定の方向に斜めに進む。 テンキーの対応に従って9で右上に進めそうだが、水平と垂直を別に指定する。
+ 指定の方向に斜めに進む。 テンキーの対応に従って9で右上に進めそうだが、水平と垂直を別に指定する。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `horz` | [Number](Number.md) |  水平向き(4: 左, 6:右) |
-| `vert` | [Number](Number.md) |  垂直向き(2: 下, 8: 上) |
+| `horz` | [Number](Number.html) |  水平向き(4: 左, 6:右) |
+| `vert` | [Number](Number.html) |  垂直向き(2: 下, 8: 上) |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1660,8 +1579,7 @@
 
 #### moveForward ()
 
-
-[一歩前進]。[Number](Number.md)
+[一歩前進]。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1673,16 +1591,15 @@
                 </dd>
             </dl>
 
-#### moveFrequency () → {[Number](Number.md)}
+#### moveFrequency () → {[Number](Number.html)}
 
-
- 移動[頻度]を返す。
+ 移動[頻度]を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
-                [Game_Character](Game_Character.md)eFrequency</a>
+                            <a>Game_CharacterBase#moveFrequency</a>
                         </li>
                     </ul>
                 </dd>
@@ -1690,8 +1607,7 @@
 
 ##### Returns:
 
-
-1: 最低, 2: 低, 3: 通常, 4: 高, 5: 最高
+1: 最低, 2: 低, 3: 通常, 4: 高, 5: 最高
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -1701,23 +1617,21 @@
 
 #### moveRandom ()
 
-
-[ランダムに移動][タイプ:ランダム]。
+[ランダムに移動][タイプ:ランダム]。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
                             <a>Game_Character#moveRandom</a>
-                   [Number](Number.md)
+                        </li>
                     </ul>
                 </dd>
             </dl>
 
-#### moveSpeed () → {[Number](Number.md)}
+#### moveSpeed () → {[Number](Number.html)}
 
-
- 移動[速度]を返す。
+ 移動[速度]を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1731,9 +1645,8 @@
 
 ##### Returns:
 
-
-1: 1/8倍速, 2: 1/4倍速, 3: 1/2倍速, 4: 通常速, 5: 2倍速, 6: 4倍速
-<dl>[Number](Number.md)
+1: 1/8倍速, 2: 1/4倍速, 3: 1/2倍速, 4: 通常速, 5: 2倍速, 6: 4倍速
+<dl>
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
@@ -1742,14 +1655,13 @@
 
 #### moveStraight (d)
 
-
- 指定の向きへ[一歩前進]。
+ 指定の向きへ[一歩前進]。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `d` | [Number](Number.md) |  向き(テンキー対応) |
+| `d` | [Number](Number.html) |  向き(テンキー対応) |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1764,14 +1676,13 @@
 
 #### moveTowardCharacter (character)
 
-
- 指定キャラクタに近づく。[タイプ:近づく]。
+ 指定キャラクタに近づく。[タイプ:近づく]。
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | [Number](Number.md)
-| `chara[Number](Number.md)er](Game_Character.md) |  |
+| --- | --- | --- |
+| `character` | [Game_Character](Game_Character.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -1786,8 +1697,7 @@
 
 #### moveTowardPlayer ()
 
-
-[プレイヤーに近づく]。
+[プレイヤーに近づく]。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1799,10 +1709,9 @@
                 </dd>
             </dl>
 
-#### opacity () → {[Number](Number.md)}
+#### opacity () → {[Number](Number.html)}
 
-[Number](Number.md)
-[不透明度]を返[Number](Number.md)
+[不透明度]を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1816,8 +1725,7 @@
 
 ##### Returns:
 
-
-0〜255
+0〜255
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -1825,14 +1733,13 @@
                 </dd>
             </dl>
 
-#### pattern () → {[Number](Number.md)}
+#### pattern () → {[Number](Number.html)}
 
-
- 歩行パターンの番号を返す。
+ 歩行パターンの番号を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-              [RPG.MoveCommand](RPG.MoveCommand.md)
+                    <ul>
                         <li>
                             <a>Game_CharacterBase#pattern</a>
                         </li>
@@ -1851,22 +1758,20 @@
 
 #### playBgm ()
 
-
-[乗り物]用のBGMを再生。
+[乗り物]用のBGMを再生。
 <dl>
 </dl>
 
 #### pos (x, y) → {Boolean}
 
-
- 指定位置にいるか。[Number](Number.md)
+ 指定位置にいるか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
 
 <dl>
                 <dt>Overrides:</dt>
@@ -1890,19 +1795,18 @@
 
 #### posNt (x, y) → {Boolean}
 
-
- 指定位置にいて、通行不可か。たぶん Nt = No Through。
+ 指定位置にいて、通行不可か。たぶん Nt = No Through。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>[Number](Number.md)
+                <dd>
                     <ul>
                         <li>
                             <a>Game_CharacterBase#posNt</a>
@@ -1922,18 +1826,17 @@
 
 #### processMoveCommand (command)
 
-
-[移動コマンド]を実行。
+[移動コマンド]を実行。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `command` | [RPG.MoveCommand](RPG.MoveCommand.md) |  |
+| `command` | [RPG.MoveCommand](RPG.MoveCommand.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
-                <d[Number](Number.md)
+                <dd>
                     <ul>
                         <li>
                             <a>Game_Character#processMoveCommand</a>
@@ -1944,8 +1847,7 @@
 
 #### processRouteEnd ()
 
-
-[移動ルート]の終了。
+[移動ルート]の終了。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1954,13 +1856,12 @@
                             <a>Game_Character#processRouteEnd</a>
                         </li>
                     </ul>
-                [Number](Number.md)
+                </dd>
             </dl>
 
-#### realMoveSpeed () → {[Number](Number.md)}
+#### realMoveSpeed () → {[Number](Number.html)}
 
-
-(ダッシュ状態も考慮して)現在の移動速度を返す。
+(ダッシュ状態も考慮して)現在の移動速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1983,15 +1884,13 @@
 
 #### refresh ()
 
-
-[乗り物]の更新。
+[乗り物]の更新。
 <dl>
 </dl>
 
 #### refreshBushDepth ()
 
-
-[茂み]の深さを更新。
+[茂み]の深さを更新。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2003,10 +1902,9 @@
                 </dd>
             </dl>
 
-#### regionId () → {[Number](Number.md)}
+#### regionId () → {[Number](Number.html)}
 
-
- 乗っているリージョンIDを返す。
+ 乗っているリージョンIDを返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2015,7 +1913,7 @@
                             <a>Game_CharacterBase#regionId</a>
                         </li>
                     </ul>
-                </dd>[Number](Number.md)
+                </dd>
             </dl>
 
 ##### Returns:
@@ -2023,20 +1921,19 @@
 <dl>
                 <dt> Type </dt>
                 <dd>
-        [Number](Number.md)Number</a></span>
+                    <span><a>Number</a></span>
                 </dd>
             </dl>
 
 #### requestAnimation (animationId)
 
-
- アニメーションIDの設定。
+ アニメーションIDの設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `animationId` | [Number](Number.md) |  |
+| `animationId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2046,19 +1943,18 @@
                             <a>Game_CharacterBase#requestAnimation</a>
                         </li>
                     </ul>
-                </d[Number](Number.md)
+                </dd>
             </dl>
 
 #### requestBalloon (balloonId)
 
-
- フキダシアイコンIDを設定。
+ フキダシアイコンIDを設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `balloonId` | [Number](Number.md) |  |
+| `balloonId` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2070,18 +1966,16 @@
                     </ul>
                 </dd>
             </dl>
-[Number](Number.md)
+
 #### resetDirection ()
 
-
-[乗り物]の向きを(左向きに)リセット。
+[乗り物]の向きを(左向きに)リセット。
 <dl>
 </dl>
 
 #### resetPattern ()
 
-
- オリジナルのパターンにリセット。
+ オリジナルのパターンにリセット。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2094,9 +1988,8 @@
             </dl>
 
 #### resetStopCount ()
-[Number](Number.md)
 
- 停止カウンタをリセット。
+ 停止カウンタをリセット。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2110,29 +2003,27 @@
 
 #### restoreMoveRoute ()
 
-
- 記録した[移動ルート]に戻す。
+ 記録した[移動ルート]に戻す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
                             <a>Game_Character#restoreMoveRoute</a>
-                     [Number](Number.md)
+                        </li>
                     </ul>
                 </dd>
             </dl>
 
-#### reverseDir (d) → {[Number](Number.md)}
+#### reverseDir (d) → {[Number](Number.html)}
 
-
- 指定向きの逆向きを返す。
+ 指定向きの逆向きを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `d` | [Number](Number.md) |  向き(テンキー対応) |
+| `d` | [Number](Number.html) |  向き(テンキー対応) |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2146,9 +2037,8 @@
             </dl>
 
 ##### Returns:
-[Number](Number.md)
 
- 向き(テンキー対応)
+ 向き(テンキー対応)
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -2156,10 +2046,9 @@
                 </dd>
             </dl>
 
-#### screenX () → {[Number](Number.md)}
+#### screenX () → {[Number](Number.html)}
 
-
- 画面上の x座標を返す。
+ 画面上の x座標を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2173,8 +2062,7 @@
 
 ##### Returns:
 
-
- ピクセル[Number](Number.md)
+ ピクセル
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -2182,10 +2070,9 @@
                 </dd>
             </dl>
 
-#### screenY () → {[Number](Number.md)}
+#### screenY () → {[Number](Number.html)}
 
-
- 画面上の y座標を返す。
+ 画面上の y座標を返す。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -2199,34 +2086,31 @@
 
 ##### Returns:
 
-
- ピクセル
+ ピクセル
 <dl>
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
-          [RPG.AudioFile](RPG.AudioFile.md)
+                </dd>
             </dl>
 
-#### screenZ () → {[Number](Number.md)}
+#### screenZ () → {[Number](Number.html)}
 
-
- 重なり位置を返す。
+ 重なり位置を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
                             <a>Game_CharacterBase#screenZ</a>
-                [Number](Number.md)
+                        </li>
                     </ul>
                 </dd>
             </dl>
 
 ##### Returns:
 
-
-1: 通常キャラの下, 3:通常キャラと同じ , 5: 通常キャラの上
+1: 通常キャラの下, 3:通常キャラと同じ , 5: 通常キャラの上
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -2234,12 +2118,12 @@
                 </dd>
             </dl>
 
-#### scrolledX () → {[Number](Number.md)}
+#### scrolledX () → {[Number](Number.html)}
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-        [Number](Number.md)
+                    <ul>
                         <li>
                             <a>Game_CharacterBase#scrolledX</a>
                         </li>
@@ -2262,7 +2146,7 @@
                 </dd>
             </dl>
 
-#### scrolledY () → {[Number](Number.md)}
+#### scrolledY () → {[Number](Number.html)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2281,8 +2165,8 @@
                 </dd>
             </dl>
 
-##### Returns:[String](String.md)
-[Number](Number.md)
+##### Returns:
+
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -2290,10 +2174,9 @@
                 </dd>
             </dl>
 
-#### searchLimit () → {[Number](Number.md)}
+#### searchLimit () → {[Number](Number.html)}
 
-
- ルート検索の上限数を返す。
+ ルート検索の上限数を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2303,9 +2186,9 @@
                         </li>
                     </ul>
                 </dd>
-            [Number](Number.md)
-[Number](Number.md)
-##### Re[Number](Number.md)
+            </dl>
+
+##### Returns:
 
 <dl>
                 <dt> Type </dt>
@@ -2316,28 +2199,26 @@
 
 #### setBgm (bgm)
 
+[乗り物]用のBGMの設定。
 
-[乗り物]用のBGMの設定。
-[Number](Number.md)
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `bgm` | [RPG.AudioFile](RPG.AudioFile.md) |  |
+| `bgm` | [RPG.AudioFile](RPG.AudioFile.html) |  |
 
 <dl>
 </dl>
 
 #### setBlendMode (blendMode)
 
-
-[合成方法]の設定。
+[合成方法]の設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `blendMode` | [Number](Number.md) | 0: 通常, 1: 加算, 2: 乗算, 3: スクリーン |
+| `blendMode` | [Number](Number.html) | 0: 通常, 1: 加算, 2: 乗算, 3: スクリーン |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2352,15 +2233,14 @@
 
 #### setDirection (d)
 
-
- 向きの設定。
+ 向きの設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `d` | [Number](Number.md) |  向き(テンキー対応) |
-[RPG.MoveRoute](RPG.MoveRoute.md)
+| `d` | [Number](Number.html) |  向き(テンキー対応) |
+
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2374,14 +2254,13 @@
 
 #### setDirectionFix (directionFix)
 
-
-[向き固定]の設定。
+[向き固定]の設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `directionFix`[Number](Number.md)
+| `directionFix` | Boolean |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2396,15 +2275,14 @@
 
 #### setImage (characterName, characterIndex)
 
-
- キャラクタ画像の設定(タイル画像と同時には設定できない)。
+ キャラクタ画像の設定(タイル画像と同時には設定できない)。
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | [Number](Number.md)
-| `characterName` | [String](String.md) |  ファイル名 |
-| `characterIndex` | [Number](Number.md) |  番号 |
+| --- | --- | --- |
+| `characterName` | [String](String.html) |  ファイル名 |
+| `characterIndex` | [Number](Number.html) |  番号 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2419,33 +2297,31 @@
 
 #### setLocation (mapId, x, y)
 
-
- 指定マップ・位置に移動。
+ 指定マップ・位置に移動。
 
 ##### Parameters:
-[Number](Number.md)
+
 | Name | Type | Description |
 | --- | --- | --- |
-| `mapId` | [Number](Number.md) |  |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
+| `mapId` | [Number](Number.html) |  |
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
 
 <dl>
 </dl>
 
 #### setMoveFrequency (moveFrequency)
 
-
- 移動[頻度]の設定。
+ 移動[頻度]の設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `moveFrequency` | [Number](Number.md) | 1: 最低, 2: 低, 3: 通常, 4: 高, 5: 最高 |
+| `moveFrequency` | [Number](Number.html) | 1: 最低, 2: 低, 3: 通常, 4: 高, 5: 最高 |
 
-<dl>[Number](Number.md)
-        [Number](Number.md) From:</dt>
+<dl>
+                <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
@@ -2457,8 +2333,7 @@
 
 #### setMovementSuccess (success)
 
-
- 移動可能かの設定。
+ 移動可能かの設定。
 
 ##### Parameters:
 
@@ -2466,7 +2341,7 @@
 | --- | --- | --- |
 | `success` | Boolean |  |
 
-<dl>[Number](Number.md)
+<dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
@@ -2479,14 +2354,13 @@
 
 #### setMoveRoute (moveRoute)
 
-
-[移動ルート]の設定。
+[移動ルート]の設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `moveRoute` | [RPG.MoveRoute](RPG.MoveRoute.md) |  |
+| `moveRoute` | [RPG.MoveRoute](RPG.MoveRoute.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2501,14 +2375,13 @@
 
 #### setMoveSpeed (moveSpeed)
 
-
- 移動[速度]の設定。
+ 移動[速度]の設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `moveSpeed` | [Number](Number.md) | 1: 1/8倍速, 2: 1/4倍速, 3: 1/2倍速, 4: 通常速, 5: 2倍速, 6: 4倍速 |
+| `moveSpeed` | [Number](Number.html) | 1: 1/8倍速, 2: 1/4倍速, 3: 1/2倍速, 4: 通常速, 5: 2倍速, 6: 4倍速 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2523,14 +2396,13 @@
 
 #### setOpacity (opacity)
 
-
-[不透明度]の設定。
+[不透明度]の設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- |[Number](Number.md)
-| `opacity` | [Number](Number.md) | 0〜255 |
+| --- | --- | --- |
+| `opacity` | [Number](Number.html) | 0〜255 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2545,14 +2417,13 @@
 
 #### setPattern (pattern)
 
-
- 指定番号のパターンを設定。
+ 指定番号のパターンを設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pattern` | [Number](Number.md) |  |
+| `pattern` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2567,15 +2438,14 @@
 
 #### setPosition (x, y)
 
-
- 現在のマップ内での[イベントの位置設定]
+ 現在のマップ内での[イベントの位置設定]
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2584,23 +2454,22 @@
                         <li>
                             <a>Game_CharacterBase#setPosition</a>
                         </li>
-                    </ul>[Number](Number.md)
+                    </ul>
                 </dd>
             </dl>
 
 #### setPriorityType (priorityType)
 
-
-[プライオリティ]の設定。
+[プライオリティ]の設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `priorityType` | [Number](Number.md) | 0: 通常キャラの下, 1:通常キャラと同じ , 2: 通常キャラの上 |
+| `priorityType` | [Number](Number.html) | 0: 通常キャラの下, 1:通常キャラと同じ , 2: 通常キャラの上 |
 
 <dl>
-                <dt[Number](Number.md)
+                <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
@@ -2612,11 +2481,10 @@
 
 #### setStepAnime (stepAnime)
 
-
-[足踏みアニメ]するかの設定。
+[足踏みアニメ]するかの設定。
 
 ##### Parameters:
-[Number](Number.md)[Number](Number.md)
+
 | Name | Type | Description |
 | --- | --- | --- |
 | `stepAnime` | Boolean |  |
@@ -2634,12 +2502,11 @@
 
 #### setThrough (through)
 
-
-[すり抜け]状態の設定。
+[すり抜け]状態の設定。
 
 ##### Parameters:
 
-| Name | Type | De[Number](Number.md)
+| Name | Type | Description |
 | --- | --- | --- |
 | `through` | Boolean |  |
 
@@ -2656,14 +2523,13 @@
 
 #### setTileImage (tileId)
 
-
- タイル画像の設定(キャラクタ画像と同時には設定できない)。
+ タイル画像の設定(キャラクタ画像と同時には設定できない)。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.md) |  タイルID |
+| `tileId` | [Number](Number.html) |  タイルID |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2678,8 +2544,7 @@
 
 #### setTransparent (transparent)
 
-
-[透明]状態の設定。
+[透明]状態の設定。
 
 ##### Parameters:
 
@@ -2700,8 +2565,7 @@
 
 #### setWalkAnime (walkAnime)
 
-
-[歩行アニメ]するかの設定。
+[歩行アニメ]するかの設定。
 
 ##### Parameters:
 
@@ -2713,53 +2577,48 @@
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                [Game_Character](Game_Character.md)
+                        <li>
                             <a>Game_CharacterBase#setWalkAnime</a>
                         </li>
                     </ul>
                 </dd>
             </dl>
 
-#### shadowOpacity () → {[Number](Number.md)}
+#### shadowOpacity () → {[Number](Number.html)}
 
-
- 影の不透明度を返す。
+ 影の不透明度を返す。
 <dl>
 </dl>
 
 ##### Returns:
 
-
-0〜255
-<dl>
-                <dt> T[Number](Number.md)
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### shadowX () → {[Number](Number.md)}
-
-
- 画面上の影の x座標を返す。
-<dl>
-</dl>
-
-##### Returns:
-
-
- ピクセル
+0〜255
 <dl>
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-[Number](Number.md)
-#### shadowY () → {[Number](Number.md)|[Number](Number.md)}
 
+#### shadowX () → {[Number](Number.html)}
 
- 画面上の影の y座標を返す。
+ 画面上の影の x座標を返す。
+<dl>
+</dl>
+
+##### Returns:
+
+ ピクセル
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Number</a></span>
+                </dd>
+            </dl>
+
+#### shadowY () → {[Number](Number.html)|[Number](Number.html)}
+
+ 画面上の影の y座標を返す。
 <dl>
 </dl>
 
@@ -2780,10 +2639,9 @@
                         </dd>
                     </dl>
 
-#### shiftY () → {[Number](Number.md)}
+#### shiftY () → {[Number](Number.html)}
 
-
- 縦方向へのシフト量を返す。
+ 縦方向へのシフト量を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2797,10 +2655,9 @@
 
 ##### Returns:
 
-
- ピクセル
+ ピクセル
 <dl>
-                [Game_Character](Game_Character.md)
+                <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
@@ -2808,8 +2665,7 @@
 
 #### startAnimation ()
 
-
-[アニメーション]表示開始。
+[アニメーション]表示開始。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2823,8 +2679,7 @@
 
 #### startBalloon ()
 
-
-[フキダシアイコン]表示開始。
+[フキダシアイコン]表示開始。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2838,8 +2693,7 @@
 
 #### straighten ()
 
-
- キャラを(歩き・足踏みの途中でない)直立状態に。
+ キャラを(歩き・足踏みの途中でない)直立状態に。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2853,14 +2707,13 @@
 
 #### swap (character)
 
-
- 指定したキャラクタと場所を入れ替わる。
+ 指定したキャラクタと場所を入れ替わる。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `character` | [Game_Character](Game_Character.md) |  |
+| `character` | [Game_Character](Game_Character.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2875,15 +2728,13 @@
 
 #### syncWithPlayer ()
 
-
- プレイヤー位置に揃える。
+ プレイヤー位置に揃える。
 <dl>
 </dl>
 
-#### terrainTag () → {[Number](Number.md)}
+#### terrainTag () → {[Number](Number.html)}
 
-
- 乗っている[地形タグ]を返す。
+ 乗っている[地形タグ]を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2891,7 +2742,7 @@
                         <li>
                             <a>Game_CharacterBase#terrainTag</a>
                         </li>
-                [Game_Character](Game_Character.md)
+                    </ul>
                 </dd>
             </dl>
 
@@ -2904,10 +2755,9 @@
                 </dd>
             </dl>
 
-#### tileId () → {[Number](Number.md)}
+#### tileId () → {[Number](Number.html)}
 
-
- タイルIDを返す。
+ タイルIDを返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2930,8 +2780,7 @@
 
 #### turn180 ()
 
-
-[180度回転]。
+[180度回転]。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2945,14 +2794,13 @@
 
 #### turnAwayFromCharacter (character)
 
-
- 指定キャラクタの逆を向く。
+ 指定キャラクタの逆を向く。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `character` | [Game_Character](Game_Character.md) |  |
+| `character` | [Game_Character](Game_Character.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -2967,8 +2815,7 @@
 
 #### turnAwayFromPlayer ()
 
-
-[プレイヤーの逆を向く]。
+[プレイヤーの逆を向く]。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2982,8 +2829,7 @@
 
 #### turnLeft90 ()
 
-
-[左に90度回転]。
+[左に90度回転]。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2997,8 +2843,7 @@
 
 #### turnRandom ()
 
-
-[ランダムに方向転換]。
+[ランダムに方向転換]。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3012,8 +2857,7 @@
 
 #### turnRight90 ()
 
-
-[右に90度回転]。
+[右に90度回転]。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3027,8 +2871,7 @@
 
 #### turnRightOrLeft90 ()
 
-
-[右か左に90度回転]。
+[右か左に90度回転]。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3042,14 +2885,13 @@
 
 #### turnTowardCharacter (character)
 
-[RPG.System.Vehicle](RPG.System.Vehicle.md)
- 指定キャラクタの方を向く。
+ 指定キャラクタの方を向く。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `character` | [Game_Character](Game_Character.md) |  |
+| `character` | [Game_Character](Game_Character.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -3064,8 +2906,7 @@
 
 #### turnTowardPlayer ()
 
-
-[プレイヤーの方を向く]。
+[プレイヤーの方を向く]。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3079,8 +2920,7 @@
 
 #### update ()
 
-
-[乗り物]をアップデート。
+[乗り物]をアップデート。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -3094,22 +2934,19 @@
 
 #### updateAirship ()
 
-
-[飛行船]をアップデート。
+[飛行船]をアップデート。
 <dl>
 </dl>
 
 #### updateAirshipAltitude ()
 
-
-[飛行船]の高度をアップデート。
+[飛行船]の高度をアップデート。
 <dl>
 </dl>
 
 #### updateAnimation ()
 
-
- アニメーションをアップデート。
+ アニメーションをアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3123,8 +2960,7 @@
 
 #### updateAnimationCount ()
 
-
- アニメーションのカウンタをアップデート。
+ アニメーションのカウンタをアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3138,8 +2974,7 @@
 
 #### updateJump ()
 
-
- ジャンプ状態をアップデート。
+ ジャンプ状態をアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3153,8 +2988,7 @@
 
 #### updateMove ()
 
-
- 移動状態をアップデート。
+ 移動状態をアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3168,8 +3002,7 @@
 
 #### updatePattern ()
 
-
- パターンをアップデート。
+ パターンをアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3183,8 +3016,7 @@
 
 #### updateRoutineMove ()
 
-
-[移動ルート]をアップデート。
+[移動ルート]をアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3198,8 +3030,7 @@
 
 #### updateStop ()
 
-
- 停止状態をアップデート。
+ 停止状態をアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3211,10 +3042,9 @@
                 </dd>
             </dl>
 
-#### vehicle () → {[RPG.System.Vehicle](RPG.System.Vehicle.md)}
+#### vehicle () → {[RPG.System.Vehicle](RPG.System.Vehicle.html)}
 
-
- 現在の[乗り物]情報オブジェクトを返す。
+ 現在の[乗り物]情報オブジェクトを返す。
 <dl>
 </dl>
 
@@ -3225,9 +3055,7 @@
                 <dd>
                     <span><a>RPG.System.Vehicle</a></span>
                 </dd>
-            </dl>
-
-
+            </dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

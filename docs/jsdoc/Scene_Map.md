@@ -4,36 +4,35 @@
 
 #### new Scene_Map ()
 
- マップ表示シーン。マップ表示スプライト [Spriteset_Map](Spriteset_Map.md) と 関連ウィンドウ[Window_MapName](Window_MapName.md) 、 [Window_ScrollText](Window_ScrollText.md) 、 [Window_Message](Window_Message.md) を持っている。
+ マップ表示シーン。マップ表示スプライト [Spriteset_Map](Spriteset_Map.html) と 関連ウィンドウ[Window_MapName](Window_MapName.html) 、 [Window_ScrollText](Window_ScrollText.html) 、 [Window_Message](Window_Message.html) を持っている。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `menuCalling` | Boolean |  |
-| `_waitCount` | [Number](Number.md) |  |
-| `_encounterEffectDuration` | [Number](Number.md) |  |
+| `_waitCount` | [Number](Number.html) |  |
+| `_encounterEffectDuration` | [Number](Number.html) |  |
 | `_mapLoaded` | Boolean |  |
-| `_touchCount` | [Number](Number.md) |  |
+| `_touchCount` | [Number](Number.html) |  |
 | `_transfer` | Boolean |  |
-| `_spriteset` | [Spriteset_Map](Spriteset_Map.md) |  |
-| `_mapNameWindow` | [Window_MapName](Window_MapName.md) |  |
-| `_scrollTextWindow` | [Window_ScrollText](Window_ScrollText.md) |  |
-| `_messageWindow` | [Window_Message](Window_Message.md) |  |
+| `_spriteset` | [Spriteset_Map](Spriteset_Map.html) |  |
+| `_mapNameWindow` | [Window_MapName](Window_MapName.html) |  |
+| `_scrollTextWindow` | [Window_ScrollText](Window_ScrollText.html) |  |
+| `_messageWindow` | [Window_Message](Window_Message.html) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Scene_Base](Scene_Base.md)
+* [Scene_Base](Scene_Base.html)
 
 ### Methods
 
 #### addChild (child) → {Object}
 
-
-[super] 子オブジェクトを追加。
+[super] 子オブジェクトを追加。
 
 ##### Parameters:
 
@@ -54,8 +53,7 @@
 
 ##### Returns:
 
-
- 追加されたオブジェクト
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -65,15 +63,14 @@
 
 #### addChildAt (child, index) → {Object}
 
-
-[super] 指定位置に子オブジェクトを追加。
+[super] 指定位置に子オブジェクトを追加。
 
 ##### Parameters:
 
-| Name | Typ[Number](Number.md)
+| Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.md) |  追加位置 |
+| `index` | [Number](Number.html) |  追加位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -88,8 +85,7 @@
 
 ##### Returns:
 
-
- 追加されたオブジェクト
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -99,8 +95,7 @@
 
 #### addWindow (Window)
 
-
- ウィンドウレイヤーにウィンドウを追加。
+ ウィンドウレイヤーにウィンドウを追加。
 
 ##### Parameters:
 
@@ -121,8 +116,7 @@
 
 #### attachReservation ()
 
-
- キューに予約を追加。
+ キューに予約を追加。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -136,15 +130,13 @@
 
 #### callMenu ()
 
-
- メニューの呼び出し。
+ メニューの呼び出し。
 <dl>
 </dl>
 
 #### checkGameover ()
 
-
- ゲームオーバー状態か検査。
+ ゲームオーバー状態か検査。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -158,8 +150,7 @@
 
 #### create ()
 
-
- シーンの生成。
+ シーンの生成。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -173,22 +164,19 @@
 
 #### createAllWindows ()
 
-
- ウィンドウを生成。
+ ウィンドウを生成。
 <dl>
 </dl>
 
 #### createDisplayObjects ()
 
-
- シーンに必要な全表示オブジェクトを生成。
+ シーンに必要な全表示オブジェクトを生成。
 <dl>
 </dl>
 
 #### createFadeSprite ()
 
-
- フェード用のスプライトを生成。
+ フェード用のスプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -202,36 +190,31 @@
 
 #### createMapNameWindow ()
 
-
- マップ名表示ウィンドウ生成。
+ マップ名表示ウィンドウ生成。
 <dl>
 </dl>
 
 #### createMessageWindow ()
-[$1]($2.md)
 
- メッセージウィンドウ生成。
+ メッセージウィンドウ生成。
 <dl>
 </dl>
 
-[$1]($2.md)#### createScrollTextWindow ()
+#### createScrollTextWindow ()
 
-
- スクロールテキストウィンドウの生成。
+ スクロールテキストウィンドウの生成。
 <dl>
 </dl>
 
 #### createSpriteset ()
 
-
- マップスプライト([Spriteset_Map](Spriteset_Map.md))を生成。
+ マップスプライト([Spriteset_Map](Spriteset_Map.html))を生成。
 <dl>
 </dl>
 
 #### createWindowLayer ()
 
-
- ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
+ ウィンドウレイヤー[WindowLayer](WindowLayer.html) を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -240,13 +223,12 @@
                             <a>Scene_Base#createWindowLayer</a>
                         </li>
                     </ul>
-                </dd>[Number](Number.md)
+                </dd>
             </dl>
 
 #### detachReservation ()
 
-
- キューから予約を削除。
+ キューから予約を削除。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -258,10 +240,9 @@
                 </dd>
             </dl>
 
-#### encounterEffectSpeed () → {[Number](Number.md)}
+#### encounterEffectSpeed () → {[Number](Number.html)}
 
-
- エンカウント効果のスピードを返す。
+ エンカウント効果のスピードを返す。
 <dl>
 </dl>
 
@@ -276,15 +257,13 @@
 
 #### fadeInForTransfer ()
 
-
- 遷移時のフェードイン。
+ 遷移時のフェードイン。
 <dl>
 </dl>
 
-#### fadeOutAll ()[Number](Number.md)
+#### fadeOutAll ()
 
-
- 全ての映像と音声を、遅い速度でフェードアウト。
+ 全ての映像と音声を、遅い速度でフェードアウト。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -298,15 +277,13 @@
 
 #### fadeOutForTransfer ()
 
-
- 遷移時のフェードアウト。
+ 遷移時のフェードアウト。
 <dl>
 </dl>
 
-#### fadeSpeed () → {[Number](Number.md)}
+#### fadeSpeed () → {[Number](Number.html)}
 
-
- フェード速度を返す。
+ フェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -329,8 +306,7 @@
 
 #### initialize ()
 
-
- オブジェクト生成時の初期化。
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -344,8 +320,7 @@
 
 #### isActive () → {Boolean}
 
-
- シーンがアクティブか。
+ シーンがアクティブか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -368,8 +343,7 @@
 
 #### isBusy () → {Boolean}
 
-
- シーン動作中か。
+ シーン動作中か。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -392,8 +366,7 @@
 
 #### isDebugCalled () → {Boolean}
 
-
- デバッグウィンドウが呼ばれているか。
+ デバッグウィンドウが呼ばれているか。
 <dl>
 </dl>
 
@@ -408,8 +381,7 @@
 
 #### isFastForward () → {Boolean}
 
-
- 早送りモードか。
+ 早送りモードか。
 <dl>
 </dl>
 
@@ -424,8 +396,7 @@
 
 #### isMapTouchOk () → {Boolean}
 
-
- タッチ移動が可能か。
+ タッチ移動が可能か。
 <dl>
 </dl>
 
@@ -440,8 +411,7 @@
 
 #### isMenuCalled () → {Boolean}
 
-
- メニューが呼ばれているか。
+ メニューが呼ばれているか。
 <dl>
 </dl>
 
@@ -456,8 +426,7 @@
 
 #### isMenuEnabled () → {Boolean}
 
-
- メニュー使用可か。
+ メニュー使用可か。
 <dl>
 </dl>
 
@@ -472,8 +441,7 @@
 
 #### isReady () → {Boolean}
 
-
- データのロードなどの準備完了か。
+ データのロードなどの準備完了か。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -496,8 +464,7 @@
 
 #### isSceneChangeOk () → {Boolean}
 
-
- シーンの変更可能か。
+ シーンの変更可能か。
 <dl>
 </dl>
 
@@ -512,15 +479,13 @@
 
 #### launchBattle ()
 
-
- 戦闘シーンの開始。
+ 戦闘シーンの開始。
 <dl>
 </dl>
 
 #### needsFadeIn () → {Boolean}
 
-
- フェードインするか。
+ フェードインするか。
 <dl>
 </dl>
 
@@ -535,8 +500,7 @@
 
 #### needsSlowFadeOut () → {Boolean}
 
-
- フェードアウトするか。
+ フェードアウトするか。
 <dl>
 </dl>
 
@@ -551,15 +515,13 @@
 
 #### onMapLoaded ()
 
-
- シーンの読み込みが完了した時に呼ばれるハンドラ。
+ シーンの読み込みが完了した時に呼ばれるハンドラ。
 <dl>
 </dl>
 
 #### popScene ()
 
-
- シーンを引き出す(pop)。
+ シーンを引き出す(pop)。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -573,15 +535,13 @@
 
 #### processMapTouch ()
 
-
- タッチをキャラクタの移動に変換。
+ タッチをキャラクタの移動に変換。
 <dl>
 </dl>
 
-#### removeC[Number](Number.md)t}
+#### removeChild (child) → {Object}
 
-
-[super] 子オブジェクトを取り除く。
+[super] 子オブジェクトを取り除く。
 
 ##### Parameters:
 
@@ -601,9 +561,8 @@
             </dl>
 
 ##### Returns:
-[Number](Number.md)
 
- 取り除かれたオブジェクト
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -613,14 +572,13 @@
 
 #### removeChildAt (index) → {Object}
 
-
-[super] 指定位置にある子オブジェクトを取り除く。
+[super] 指定位置にある子オブジェクトを取り除く。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  取り除く位置 |
+| `index` | [Number](Number.html) |  取り除く位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -635,8 +593,7 @@
 
 ##### Returns:
 
-
- 取り除かれたオブジェクト
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -644,10 +601,9 @@
                 </dd>
             </dl>
 
-#### slowFadeSpeed () → {[Number](Number.md)}
+#### slowFadeSpeed () → {[Number](Number.html)}
 
-
- 遅いフェード速度を返す。
+ 遅いフェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -659,10 +615,9 @@
                 </dd>
             </dl>
 
-##### Returns:[Number](Number.md)
+##### Returns:
 
-
-Return the fade speed
+Return the fade speed
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -672,16 +627,14 @@ Return the fade speed
 
 #### snapForBattleBackground ()
 
-
- 戦闘背景が指定されていない場合の、マップのスナップショット表示。
+ 戦闘背景が指定されていない場合の、マップのスナップショット表示。
 <dl>
 </dl>
 
 #### start ()
 
-
- シーンの開始。
-<dl>[Number](Number.md)
+ シーンの開始。
+<dl>
                 <dt>Overrides:</dt>
                 <dd>
                     <ul>
@@ -694,21 +647,19 @@ Return the fade speed
 
 #### startEncounterEffect ()
 
-
- エンカウント時の効果の表示開始。
+ エンカウント時の効果の表示開始。
 <dl>
 </dl>
 
 #### startFadeIn (duration opt, white opt)
 
+ フェードインの要求。
 
- フェードインの要求。
-[Number](Number.md)
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.md) | <optional> | 30 |  フェードインにかける時間 |
+| `duration` | [Number](Number.html) | <optional> | 30 |  フェードインにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -724,14 +675,13 @@ Return the fade speed
 
 #### startFadeOut (duration opt, white opt)
 
-
- フェードアウトの要求。
+ フェードアウトの要求。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.md) | <optional> | 30 |  フェードアウトにかける時間 |
+| `duration` | [Number](Number.html) | <optional> | 30 |  フェードアウトにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -747,22 +697,20 @@ Return the fade speed
 
 #### startFlashForEncounter (duration)
 
-
- エンカウント時のフラッシュ開始。
+ エンカウント時のフラッシュ開始。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.md) |  |
+| `duration` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
 #### stop ()
 
-
- シーンを停止し次のシーンの準備をする。
+ シーンを停止し次のシーンの準備をする。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -776,15 +724,13 @@ Return the fade speed
 
 #### stopAudioOnBattleStart ()
 
-
- 戦闘開始前の音声の停止。
+ 戦闘開始前の音声の停止。
 <dl>
 </dl>
 
 #### terminate ()
 
-
- シーンの中断。
+ シーンの中断。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -798,8 +744,7 @@ Return the fade speed
 
 #### update ()
 
-
- フレーム毎のアップデート。
+ フレーム毎のアップデート。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -813,22 +758,19 @@ Return the fade speed
 
 #### updateCallDebug ()
 
-
- デバッグウィンドウを呼ぶアップデート。
+ デバッグウィンドウを呼ぶアップデート。
 <dl>
 </dl>
 
 #### updateCallMenu ()
 
-
- メニュー呼び出しのアップデート。
+ メニュー呼び出しのアップデート。
 <dl>
 </dl>
 
 #### updateChildren ()
 
-
- 子オブジェクトのアップデート。
+ 子オブジェクトのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -842,29 +784,25 @@ Return the fade speed
 
 #### updateDestination ()
 
-
- タッチ位置表示をアップデート。
+ タッチ位置表示をアップデート。
 <dl>
 </dl>
 
 #### updateEncounter ()
 
-
- エンカウントをアップデート。
+ エンカウントをアップデート。
 <dl>
 </dl>
 
 #### updateEncounterEffect ()
 
-
- エンカウント時の効果のアップデート。
+ エンカウント時の効果のアップデート。
 <dl>
 </dl>
 
 #### updateFade ()
 
-
- フェードのアップデート。
+ フェードのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -878,36 +816,31 @@ Return the fade speed
 
 #### updateMain ()
 
-
-[$gameMap](global.html#$gameMap), [$gamePlayer](global.html#$gamePlayer), [$gameTimer](global.html#$gameTimer), [$gameScreen](global.html#$gameScreen) をアップデート。
+[$gameMap](global.html#$gameMap), [$gamePlayer](global.html#$gamePlayer), [$gameTimer](global.html#$gameTimer), [$gameScreen](global.html#$gameScreen) をアップデート。
 <dl>
 </dl>
 
 #### updateMainMultiply ()
 
-
- メインをアップデート。早送りモードだと2度アップデート。
+ メインをアップデート。早送りモードだと2度アップデート。
 <dl>
 </dl>
 
 #### updateScene ()
 
-
- シーンのアップデート。
+ シーンのアップデート。
 <dl>
 </dl>
 
 #### updateTransferPlayer ()
 
-
- プレイヤーのマップ移動のアップデート。
+ プレイヤーのマップ移動のアップデート。
 <dl>
 </dl>
 
 #### updateWaitCount () → {Boolean}
 
-
- 待ちカウントをアップデート。
+ 待ちカウントをアップデート。
 <dl>
 </dl>
 
@@ -918,9 +851,7 @@ Return the fade speed
                 <dd>
                     <span>Boolean</span>
                 </dd>
-            </dl>
-
-
+            </dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

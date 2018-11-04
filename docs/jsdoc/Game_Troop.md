@@ -10,13 +10,13 @@ The game object declare class for a troop and the battle-related data. Use as gl
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `LETTER_TABLE_HALF` | [Array](Array.md).<[String](String.md)> | [static] |
-| `LETTER_TABLE_FULL` | [Array](Array.md).<[String](String.md)> | [static] |
-| `_interpreter` | [Game_Interpreter](Game_Interpreter.md) |  |
-| `_troopId` | [Number](Number.md) |  |
+| `LETTER_TABLE_HALF` | [Array](Array.html).<[String](String.html)> | [static] |
+| `LETTER_TABLE_FULL` | [Array](Array.html).<[String](String.html)> | [static] |
+| `_interpreter` | [Game_Interpreter](Game_Interpreter.html) |  |
+| `_troopId` | [Number](Number.html) |  |
 | `_eventFlags` | Object | {[page: number]: boolean} |
-| `_enemies` | [Array](Array.md).<[Game_Enemy](Game_Enemy.md)> |  |
-| `_turnCount` | [Number](Number.md) |  |
+| `_enemies` | [Array](Array.html).<[Game_Enemy](Game_Enemy.html)> |  |
+| `_turnCount` | [Number](Number.html) |  |
 | `_namesCount` | Object | {[name: string]: number} |
 
 <dl>
@@ -24,14 +24,13 @@ The game object declare class for a troop and the battle-related data. Use as gl
 
 ### Extends
 
-* [Game_Unit](Game_Unit.md)
+* [Game_Unit](Game_Unit.html)
 
 ### Methods
 
-#### agility () → {[Number](Number.md)}
+#### agility () → {[Number](Number.html)}
 
-
-Returns the agility of the unit.
+Returns the agility of the unit.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -51,11 +50,10 @@ Returns the agility of the unit.
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-[Array](Array.md)[Game_Battler](Game_Battler.md)
-#### aliveMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
 
+#### aliveMembers () → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
 
-Returns the list of alive battlers.
+Returns the list of alive battlers.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -83,8 +81,7 @@ Returns the list of alive battlers.
 
 #### clearActions ()
 
-
-Clears the unit's actions.
+Clears the unit's actions.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -98,8 +95,7 @@ Clears the unit's actions.
 
 #### clearResults ()
 
-
-Clears the action results.
+Clears the action results.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -107,14 +103,13 @@ Clears the action results.
                         <li>
                             <a>Game_Unit#clearResults</a>
                         </li>
-                    </u[Array](Array.md)[Game_Battler](Game_Battler.md)
+                    </ul>
                 </dd>
             </dl>
 
-#### deadMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
+#### deadMembers () → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
 
-
-Returns the list of dead battlers.
+Returns the list of dead battlers.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -130,52 +125,34 @@ Returns the list of dead battlers.
 
 <dl>
                 <dt> Type </dt>
-                <dd>[Array](Array.md)[String](String.md)
+                <dd>
                     <span><a>Array</a>.&lt;<a>Game_Battler</a>&gt;</span>
                 </dd>
             </dl>
 
-#### enemyNames () → {[Array](Array.md).<[String](String.md)>}
+#### enemyNames () → {[Array](Array.html).<[String](String.html)>}
 
-
-Returns the name of enemies within the troop.
+Returns the name of enemies within the troop.
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt>[Number](Number.md)
+                <dt> Type </dt>
                 <dd>
                     <span><a>Array</a>.&lt;<a>String</a>&gt;</span>
                 </dd>
             </dl>
 
-#### expTotal () → {[Number](Number.md)}
+#### expTotal () → {[Number](Number.html)}
 
-
-Returns the total exp of all members of the enemy troop.
+Returns the total exp of all members of the enemy troop.
 <dl>
 </dl>
 
 ##### Returns:
 
-<dl>[Number](Number.md)
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### goldRate () → {[Number](Number.md)}
-
-
-Returns the gold rate based on game party gold rate.
-<dl>
-</dl>
-
-##### Returns:
-[Number](Number.md)
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -183,10 +160,24 @@ Returns the gold rate based on game party gold rate.
                 </dd>
             </dl>
 
-#### goldTotal () → {[Number](Number.md)}
+#### goldRate () → {[Number](Number.html)}
 
+Returns the gold rate based on game party gold rate.
+<dl>
+</dl>
 
-Return the total gold of all enemies.
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Number</a></span>
+                </dd>
+            </dl>
+
+#### goldTotal () → {[Number](Number.html)}
+
+Return the total gold of all enemies.
 <dl>
 </dl>
 
@@ -201,8 +192,7 @@ Return the total gold of all enemies.
 
 #### inBattle () → {Boolean}
 
-
-Returns true if unit is in battle.
+Returns true if unit is in battle.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -225,15 +215,13 @@ Returns true if unit is in battle.
 
 #### increaseTurn ()
 
-
-Increases the turn number.
+Increases the turn number.
 <dl>
 </dl>
 
 #### initialize ()
 
-
- オブジェクト生成時の初期化。
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -247,8 +235,7 @@ Increases the turn number.
 
 #### isAllDead () → {Boolean}
 
-
-Returns true if all members of the unit are dead.
+Returns true if all members of the unit are dead.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -271,8 +258,7 @@ Returns true if all members of the unit are dead.
 
 #### isEventRunning () → {Boolean}
 
-[Array](Array.md)[String](String.md)
-Returns true if event is running.
+Returns true if event is running.
 <dl>
 </dl>
 
@@ -285,10 +271,9 @@ Returns true if event is running.
                 </dd>
             </dl>
 
-#### letterTable () → {[Array](Array.md).<[String](String.md)>}
+#### letterTable () → {[Array](Array.html).<[String](String.html)>}
 
-
-Returns the letter table for enemy troops.
+Returns the letter table for enemy troops.
 <dl>
 </dl>
 
@@ -300,11 +285,10 @@ Returns the letter table for enemy troops.
                     <span><a>Array</a>.&lt;<a>String</a>&gt;</span>
                 </dd>
             </dl>
-[Array](Array.md)[RPG.BaseItem](RPG.BaseItem.md)
+
 #### makeActions ()
 
-
-Creates the action's of the game unit.
+Creates the action's of the game unit.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -316,10 +300,9 @@ Creates the action's of the game unit.
                 </dd>
             </dl>
 
-#### makeDropItems () → {[Array](Array.md).<[RPG.BaseItem](RPG.BaseItem.md)>}
+#### makeDropItems () → {[Array](Array.html).<[RPG.BaseItem](RPG.BaseItem.html)>}
 
-
-Creates the drop items for all members of the enemy troop, and returns the item information.
+Creates the drop items for all members of the enemy troop, and returns the item information.
 <dl>
 </dl>
 
@@ -327,25 +310,24 @@ Creates the drop items for all members of the enemy troop, and returns the item 
 
 <dl>
                 <dt> Type </dt>
-           [RPG.BattleEventPage](RPG.BattleEventPage.md)
+                <dd>
                     <span><a>Array</a>.&lt;<a>RPG.BaseItem</a>&gt;</span>
                 </dd>
             </dl>
 
 #### makeUniqueNames ()
 
-
-Creates unique names for each enemy.
+Creates unique names for each enemy.
 <dl>
 </dl>
 
 #### meetsConditions (page) → {Boolean}
 
-##### Parameters:[Array](Array.md)[Game_Enemy](Game_Enemy.md)
+##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `page` | [RPG.BattleEventPage](RPG.BattleEventPage.md) |  |
+| `page` | [RPG.BattleEventPage](RPG.BattleEventPage.html) |  |
 
 <dl>
 </dl>
@@ -359,12 +341,11 @@ Creates unique names for each enemy.
                 </dd>
             </dl>
 
-#### members () → {[Array](Array.md).<[Game_Enemy](Game_Enemy.md)>}
+#### members () → {[Array](Array.html).<[Game_Enemy](Game_Enemy.html)>}
 
-
-Returns all enemies in the battle.
+Returns all enemies in the battle.
 <dl>
-                <dt>Overri[Array](Array.md)[Game_Battler](Game_Battler.md)
+                <dt>Overrides:</dt>
                 <dd>
                     <ul>
                         <li>
@@ -383,10 +364,9 @@ Returns all enemies in the battle.
                 </dd>
             </dl>
 
-#### movableMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
+#### movableMembers () → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
 
-
-Returns the list of movable members.
+Returns the list of movable members.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -409,13 +389,12 @@ Returns the list of movable members.
 
 #### onBattleEnd ()
 
-
-Handler for when battle has ended.
+Handler for when battle has ended.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                        <li>[Game_Battler](Game_Battler.md)
+                        <li>
                             <a>Game_Unit#onBattleEnd</a>
                         </li>
                     </ul>
@@ -424,8 +403,7 @@ Handler for when battle has ended.
 
 #### onBattleStart ()
 
-
-Handler for when battle is started.
+Handler for when battle is started.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -437,10 +415,9 @@ Handler for when battle is started.
                 </dd>
             </dl>
 
-#### randomDeadTarget () → {[Game_Battler](Game_Battler.md)}
-[Game_Battler](Game_Battler.md)
+#### randomDeadTarget () → {[Game_Battler](Game_Battler.html)}
 
-Returns a random dead target from the game unit.
+Returns a random dead target from the game unit.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -461,15 +438,14 @@ Returns a random dead target from the game unit.
                 </dd>
             </dl>
 
-#### randomTarget () → {[Game_Battler](Game_Battler.md)}
+#### randomTarget () → {[Game_Battler](Game_Battler.html)}
 
-
-Returns a random target from the game unit.
+Returns a random target from the game unit.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-                   [Game_Battler](Game_Battler.md)
+                        <li>
                             <a>Game_Unit#randomTarget</a>
                         </li>
                     </ul>
@@ -487,24 +463,23 @@ Returns a random target from the game unit.
 
 #### select (activeMember)
 
-
-Selects a memb[Number](Number.md)a battler.
+Selects a member of the unit given a battler.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `activeMember` | [Game_Battler](Game_Battler.md) |  |
+| `activeMember` | [Game_Battler](Game_Battler.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
-                <dd>[Game_Battler](Game_Battler.md)
+                <dd>
                     <ul>
                         <li>
                             <a>Game_Unit#select</a>
                         </li>
                     </ul>
-            [Number](Number.md)
+                </dd>
             </dl>
 
 #### setup (troopId)
@@ -513,7 +488,7 @@ Selects a memb[Number](Number.md)a battler.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `troopId` | [Number](Number.md) |  |
+| `troopId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -523,16 +498,16 @@ Selects a memb[Number](Number.md)a battler.
 <dl>
 </dl>
 
-#### smoothDeadTarget (index) → {[Game_Battler](Game_Battler.md)}
+#### smoothDeadTarget (index) → {[Game_Battler](Game_Battler.html)}
 
 ##### Parameters:
-[Game_Battler](Game_Battler.md)
+
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
+| `index` | [Number](Number.html) |  |
 
 <dl>
-            [Number](Number.md)m:</dt>
+                <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
@@ -551,13 +526,13 @@ Selects a memb[Number](Number.md)a battler.
                 </dd>
             </dl>
 
-#### smoothTarget (index) → {[Game_Battler](Game_Battler.md)}
+#### smoothTarget (index) → {[Game_Battler](Game_Battler.html)}
 
 ##### Parameters:
-[Game_Battler](Game_Battler.md)
+
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
+| `index` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -576,10 +551,10 @@ Selects a memb[Number](Number.md)a battler.
                 <dt> Type </dt>
                 <dd>
                     <span><a>Game_Battler</a></span>
-                </[Number](Number.md)
+                </dd>
             </dl>
 
-#### substituteBattler () → {[Game_Battler](Game_Battler.md)}
+#### substituteBattler () → {[Game_Battler](Game_Battler.html)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -598,10 +573,10 @@ Selects a memb[Number](Number.md)a battler.
                 <dt> Type </dt>
                 <dd>
                     <span><a>Game_Battler</a></span>
-                <[RPG.Troop](RPG.Troop.md)
+                </dd>
             </dl>
 
-#### tgrSum () → {[Number](Number.md)}
+#### tgrSum () → {[Number](Number.html)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -613,7 +588,7 @@ Selects a memb[Number](Number.md)a battler.
                     </ul>
                 </dd>
             </dl>
-[Number](Number.md)
+
 ##### Returns:
 
 <dl>
@@ -623,10 +598,9 @@ Selects a memb[Number](Number.md)a battler.
                 </dd>
             </dl>
 
-#### troop () → {[RPG.Troop](RPG.Troop.md)}
+#### troop () → {[RPG.Troop](RPG.Troop.html)}
 
-
-Returns troop information from the database.
+Returns troop information from the database.
 <dl>
 </dl>
 
@@ -639,10 +613,9 @@ Returns troop information from the database.
                 </dd>
             </dl>
 
-#### turnCount () → {[Number](Number.md)}
+#### turnCount () → {[Number](Number.html)}
 
-
-Returns the turn count.
+Returns the turn count.
 <dl>
 </dl>
 
@@ -657,12 +630,9 @@ Returns the turn count.
 
 #### updateInterpreter ()
 
-
-Updates the game interpreter.
+Updates the game interpreter.
 <dl>
-</dl>
-
-
+</dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

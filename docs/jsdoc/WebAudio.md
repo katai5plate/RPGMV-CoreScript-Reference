@@ -10,16 +10,16 @@ The audio object of Web Audio API.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `url` | [String](String.md) | The url of the audio file |
+| `url` | [String](String.html) | The url of the audio file |
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `url` | [String](String.md) | [read-only] The url of the audio file. |
-| `volume` | [Number](Number.md) | The volume of the audio. |
-| `pitch` | [Number](Number.md) | The pitch of the audio. |
-| `pan` | [Number](Number.md) | The pan of the audio. |
+| `url` | [String](String.html) | [read-only] The url of the audio file. |
+| `volume` | [Number](Number.html) | The volume of the audio. |
+| `pitch` | [Number](Number.html) | The pitch of the audio. |
+| `pan` | [Number](Number.html) | The pan of the audio. |
 | `_context` | AudioContext |  |
 | `_masterGainNode` | GainNode |  |
 | `_initialized` | Boolean |  |
@@ -73,7 +73,7 @@ The audio object of Web Audio API.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.md) |  |
+| `duration` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -84,7 +84,7 @@ The audio object of Web Audio API.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.md) |  |
+| `duration` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -95,7 +95,7 @@ The audio object of Web Audio API.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `url` | [String](String.md) |  |
+| `url` | [String](String.html) |  |
 
 <dl>
 </dl>
@@ -143,7 +143,7 @@ The audio object of Web Audio API.
 | Name | Type | Description |
 | --- | --- | --- |
 | `array` | Uint8Array |  |
-| `index` | [Number](Number.md) |  |
+| `index` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -155,7 +155,7 @@ The audio object of Web Audio API.
 | Name | Type | Description |
 | --- | --- | --- |
 | `array` | Uint8Array |  |
-| `index` | [Number](Number.md) |  |
+| `index` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -167,7 +167,7 @@ The audio object of Web Audio API.
 | Name | Type | Description |
 | --- | --- | --- |
 | `array` | Uint8Array |  |
-| `index` | [Number](Number.md) |  |
+| `index` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -190,8 +190,8 @@ The audio object of Web Audio API.
 | Name | Type | Description |
 | --- | --- | --- |
 | `array` | Uint8Array |  |
-| `index` | [Number](Number.md) |  |
-| `size` | [Number](Number.md) |  |
+| `index` | [Number](Number.html) |  |
+| `size` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -245,7 +245,7 @@ The audio object of Web Audio API.
 | Name | Type | Description |
 | --- | --- | --- |
 | `loop` | Boolean |  |
-| `offset` | [Number](Number.md) |  |
+| `offset` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -257,15 +257,13 @@ The audio object of Web Audio API.
 
 #### (static) canPlayM4a () → {Boolean}
 
-
-Checks whether the browser can play m4a files.
+Checks whether the browser can play m4a files.
 <dl>
 </dl>
 
 ##### Returns:
 
-
-True if the browser can play m4a files
+True if the browser can play m4a files
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -275,15 +273,13 @@ True if the browser can play m4a files
 
 #### (static) canPlayOgg () → {Boolean}
 
-
-Checks whether the browser can play ogg files.
+Checks whether the browser can play ogg files.
 <dl>
 </dl>
 
 ##### Returns:
 
-
-True if the browser can play ogg files
+True if the browser can play ogg files
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -293,8 +289,7 @@ True if the browser can play ogg files
 
 #### (static) initialize (noAudio) → {Boolean}
 
-
-Initializes the audio system.
+Initializes the audio system.
 
 ##### Parameters:
 
@@ -307,8 +302,7 @@ Initializes the audio system.
 
 ##### Returns:
 
-
-True if the audio system is available
+True if the audio system is available
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -318,22 +312,20 @@ True if the audio system is available
 
 #### (static) setMasterVolume (value)
 
-[Number](Number.md)
-Sets the master volume of the all audio.
+Sets the master volume of the all audio.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.md) | Master volume (min: 0, max: 1) |
+| `value` | [Number](Number.html) | Master volume (min: 0, max: 1) |
 
 <dl>
 </dl>
 
 #### addLoadListener (listner)
 
-
-Add a callback function that will be called when the audio data is loaded.
+Add a callback function that will be called when the audio data is loaded.
 
 ##### Parameters:
 
@@ -346,8 +338,7 @@ Add a callback function that will be called when the audio data is loaded.
 
 #### addStopListener (listner)
 
-
-Add a callback function that will be called when the playback is stopped.
+Add a callback function that will be called when the playback is stopped.
 
 ##### Parameters:
 
@@ -360,57 +351,51 @@ Add a callback function that will be called when the playback is stopped.
 
 #### clear ()
 
-
-Clears the audio data.
+Clears the audio data.
 <dl>
-</dl>[Number](Number.md)
+</dl>
 
 #### fadeIn (duration)
 
-
-Performs the audio fade-in.
+Performs the audio fade-in.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.md) | Fade-in time in seconds |
+| `duration` | [Number](Number.html) | Fade-in time in seconds |
 
-<dl>[Number](Number.md)
+<dl>
 </dl>
 
 #### fadeOut (duration)
 
-
-Performs the audio fade-out.
+Performs the audio fade-out.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.md) | Fade-out time in seconds |
+| `duration` | [Number](Number.html) | Fade-out time in seconds |
 
 <dl>
 </dl>
 
 #### initialize ()
 
-
- オブジェクト生成時の初期化。
+ オブジェクト生成時の初期化。
 <dl>
 </dl>
 
 #### isError () → {Boolean}
 
-
-Checks whether a loading error has occurred.
+Checks whether a loading error has occurred.
 <dl>
 </dl>
 
 ##### Returns:
 
-
-True if a loading error has occurred
+True if a loading error has occurred
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -420,15 +405,13 @@ True if a loading error has occurred
 
 #### isPlaying () → {Boolean}
 
-
-Checks whether the audio is playing.
+Checks whether the audio is playing.
 <dl>
 </dl>
 
 ##### Returns:
 
-
-True if the audio is playing
+True if the audio is playing
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -438,15 +421,13 @@ True if the audio is playing
 
 #### isReady () → {Boolean}
 
-
-Checks whether the audio data is ready to play.
+Checks whether the audio data is ready to play.
 <dl>
 </dl>
 
 ##### Returns:
-[Number](Number.md)
 
-True if the audio data is ready to play
+True if the audio data is ready to play
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -456,34 +437,29 @@ True if the audio data is ready to play
 
 #### play (loop, offset)
 
-
-Plays the audio.
+Plays the audio.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `loop` | Boolean | Whether the audio data play in a loop |
-| `offset` | [Number](Number.md) | The start position to play in seconds |
+| `offset` | [Number](Number.html) | The start position to play in seconds |
 
 <dl>
 </dl>
 
 #### seek ()
 
-
-Gets the seek position of the audio.
+Gets the seek position of the audio.
 <dl>
 </dl>
 
 #### stop ()
 
-
-Stops the audio.
+Stops the audio.
 <dl>
-</dl>
-
-
+</dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

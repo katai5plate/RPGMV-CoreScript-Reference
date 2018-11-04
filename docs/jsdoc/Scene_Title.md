@@ -10,24 +10,23 @@ The scene class of the title screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_commandWindow` | [Window_TitleCommand](Window_TitleCommand.md) |  |
-| `_backSprite1` | [Sprite](Sprite.md) |  |
-| `_backSprite2` | [Sprite](Sprite.md) |  |
-| `_gameTitleSprite` | [Sprite](Sprite.md) |  |
+| `_commandWindow` | [Window_TitleCommand](Window_TitleCommand.html) |  |
+| `_backSprite1` | [Sprite](Sprite.html) |  |
+| `_backSprite2` | [Sprite](Sprite.html) |  |
+| `_gameTitleSprite` | [Sprite](Sprite.html) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Scene_Base](Scene_Base.md)
+* [Scene_Base](Scene_Base.html)
 
 ### Methods
 
 #### addChild (child) → {Object}
 
-
-[super] 子オブジェクトを追加。
+[super] 子オブジェクトを追加。
 
 ##### Parameters:
 
@@ -48,8 +47,7 @@ The scene class of the title screen.
 
 ##### Returns:
 
-
- 追加されたオブジェクト
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -59,15 +57,14 @@ The scene class of the title screen.
 
 #### addChildAt (child, index) → {Object}
 
-
-[super] 指定位置に子オブジェクトを追加。
+[super] 指定位置に子オブジェクトを追加。
 
 ##### Parameters:
 
-| Name | Typ[Number](Number.md)
+| Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.md) |  追加位置 |
+| `index` | [Number](Number.html) |  追加位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -82,8 +79,7 @@ The scene class of the title screen.
 
 ##### Returns:
 
-
- 追加されたオブジェクト
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -93,8 +89,7 @@ The scene class of the title screen.
 
 #### addWindow (Window)
 
-
- ウィンドウレイヤーにウィンドウを追加。
+ ウィンドウレイヤーにウィンドウを追加。
 
 ##### Parameters:
 
@@ -115,8 +110,7 @@ The scene class of the title screen.
 
 #### attachReservation ()
 
-
- キューに予約を追加。
+ キューに予約を追加。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -128,21 +122,20 @@ The scene class of the title screen.
                 </dd>
             </dl>
 
-#### centerSp[Sprite](Sprite.md)
+#### centerSprite (sprite)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `sprite` | [Sprite](Sprite.md) |  |
+| `sprite` | [Sprite](Sprite.html) |  |
 
 <dl>
 </dl>
 
 #### checkGameover ()
 
-
- ゲームオーバー状態か検査。
+ ゲームオーバー状態か検査。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -156,22 +149,19 @@ The scene class of the title screen.
 
 #### commandContinue ()
 
-
-Handler for the continue command.
+Handler for the continue command.
 <dl>
 </dl>
 
 #### commandNewGame ()
 
-
-Handler for the new game command.
+Handler for the new game command.
 <dl>
 </dl>
 
 #### commandOptions ()
 
-
-Handler for the options command.
+Handler for the options command.
 <dl>
 </dl>
 
@@ -190,44 +180,39 @@ Handler for the options command.
 
 #### createBackground ()
 
-
-Creates the title scene background.
+Creates the title scene background.
 <dl>
 </dl>
 
 #### createCommandWindow ()
 
-
-Creates the command window on the title scene.
+Creates the command window on the title scene.
 <dl>
 </dl>
 
 #### createFadeSprite ()
 
-
- フェード用のスプライトを生成。
+ フェード用のスプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
                             <a>Scene_Base#createFadeSprite</a>
-[$1]($2.md)                        </li>
+                        </li>
                     </ul>
                 </dd>
             </dl>
 
 #### createForeground ()
 
-
-Creates the title screen foreground.
+Creates the title screen foreground.
 <dl>
 </dl>
 
 #### createWindowLayer ()
 
-
- ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
+ ウィンドウレイヤー[WindowLayer](WindowLayer.html) を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -241,8 +226,7 @@ Creates the title screen foreground.
 
 #### detachReservation ()
 
-
- キューから予約を削除。
+ キューから予約を削除。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -256,15 +240,13 @@ Creates the title screen foreground.
 
 #### drawGameTitle ()
 
-
-Draws the game title.
-<dl>[Number](Number.md)
+Draws the game title.
+<dl>
 </dl>
 
 #### fadeOutAll ()
 
-
- 全ての映像と音声を、遅い速度でフェードアウト。
+ 全ての映像と音声を、遅い速度でフェードアウト。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -276,10 +258,9 @@ Draws the game title.
                 </dd>
             </dl>
 
-#### fadeSpeed () → {[Number](Number.md)}
+#### fadeSpeed () → {[Number](Number.html)}
 
-
- フェード速度を返す。
+ フェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -302,8 +283,7 @@ Draws the game title.
 
 #### initialize ()
 
-
- オブジェクト生成時の初期化。
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -317,8 +297,7 @@ Draws the game title.
 
 #### isActive () → {Boolean}
 
-
- シーンがアクティブか。
+ シーンがアクティブか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -363,8 +342,7 @@ Draws the game title.
 
 #### isReady () → {Boolean}
 
-
- シーンの準備ができているか。
+ シーンの準備ができているか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -387,15 +365,13 @@ Draws the game title.
 
 #### playTitleMusic ()
 
-
-Plays the title screen music upon enter the title scene.
+Plays the title screen music upon enter the title scene.
 <dl>
 </dl>
 
 #### popScene ()
 
-
- シーンを引き出す(pop)。
+ シーンを引き出す(pop)。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -409,8 +385,7 @@ Plays the title screen music upon enter the title scene.
 
 #### removeChild (child) → {Object}
 
-
-[super] 子オブジェクトを取り除く。
+[super] 子オブジェクトを取り除く。
 
 ##### Parameters:
 
@@ -422,7 +397,7 @@ Plays the title screen music upon enter the title scene.
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-            [Number](Number.md)
+                        <li>
                             <a>Stage#removeChild</a>
                         </li>
                     </ul>
@@ -431,8 +406,7 @@ Plays the title screen music upon enter the title scene.
 
 ##### Returns:
 
-
- 取り除かれたオブジェクト
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -442,14 +416,13 @@ Plays the title screen music upon enter the title scene.
 
 #### removeChildAt (index) → {Object}
 
+[super] 指定位置にある子オブジェクトを取り除く。
 
-[super] 指定位置にある子オブジェクトを取り除く。
-
-##### Parameters:[Number](Number.md)
+##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  取り除く位置 |
+| `index` | [Number](Number.html) |  取り除く位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -464,8 +437,7 @@ Plays the title screen music upon enter the title scene.
 
 ##### Returns:
 
-
- 取り除かれたオブジェクト
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -473,10 +445,9 @@ Plays the title screen music upon enter the title scene.
                 </dd>
             </dl>
 
-#### slowFadeSpeed () → {[Number](Number.md)}
+#### slowFadeSpeed () → {[Number](Number.html)}
 
-
- 遅いフェード速度を返す。
+ 遅いフェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -490,8 +461,7 @@ Plays the title screen music upon enter the title scene.
 
 ##### Returns:
 
-[Number](Number.md)
-Return the fade speed
+Return the fade speed
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -512,16 +482,15 @@ Return the fade speed
                 </dd>
             </dl>
 
-#### startFadeI[Number](Number.md)e opt)
+#### startFadeIn (duration opt, white opt)
 
-
- フェードインの要求。
+ フェードインの要求。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.md) | <optional> | 30 |  フェードインにかける時間 |
+| `duration` | [Number](Number.html) | <optional> | 30 |  フェードインにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -537,14 +506,13 @@ Return the fade speed
 
 #### startFadeOut (duration opt, white opt)
 
-
- フェードアウトの要求。
+ フェードアウトの要求。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.md) | <optional> | 30 |  フェードアウトにかける時間 |
+| `duration` | [Number](Number.html) | <optional> | 30 |  フェードアウトにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -560,8 +528,7 @@ Return the fade speed
 
 #### stop ()
 
-
- シーンの停止。
+ シーンの停止。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -601,8 +568,7 @@ Return the fade speed
 
 #### updateChildren ()
 
-
- 子オブジェクトのアップデート。
+ 子オブジェクトのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -616,8 +582,7 @@ Return the fade speed
 
 #### updateFade ()
 
-
- フェードのアップデート。
+ フェードのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -627,9 +592,7 @@ Return the fade speed
                         </li>
                     </ul>
                 </dd>
-            </dl>
-
-
+            </dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

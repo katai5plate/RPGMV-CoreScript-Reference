@@ -18,24 +18,23 @@ The game object declare class for a result of a battle action. For convinience, 
 | `critical` | Boolean |  |
 | `success` | Boolean |  |
 | `hpAffected` | Boolean |  |
-| `hpDamage` | [Number](Number.md) |  |
-| `mpDamage` | [Number](Number.md) |  |
-| `tpDamage` | [Number](Number.md) |  |
-| `addedStates` | [Array](Array.md).<[Number](Number.md)> |  |
-| `removedStates` | [Array](Array.md).<[Number](Number.md)> |  |
-| `addedBuffs` | [Array](Array.md).<[Number](Number.md)> |  |
-| `addedDebuffs` | [Array](Array.md).<[Number](Number.md)> |  |
-| `removedBuffs` | [Array](Array.md).<[Number](Number.md)> |  |
+| `hpDamage` | [Number](Number.html) |  |
+| `mpDamage` | [Number](Number.html) |  |
+| `tpDamage` | [Number](Number.html) |  |
+| `addedStates` | [Array](Array.html).<[Number](Number.html)> |  |
+| `removedStates` | [Array](Array.html).<[Number](Number.html)> |  |
+| `addedBuffs` | [Array](Array.html).<[Number](Number.html)> |  |
+| `addedDebuffs` | [Array](Array.html).<[Number](Number.html)> |  |
+| `removedBuffs` | [Array](Array.html).<[Number](Number.html)> |  |
 
 <dl>
 </dl>
 
 ### Methods
 
-#### addedStateObjects () → {[Array](Array.md).<[RPG.State](RPG.State.md)>}
+#### addedStateObjects () → {[Array](Array.html).<[RPG.State](RPG.State.html)>}
 
-
-Returns the added states from the action result.
+Returns the added states from the action result.
 <dl>
 </dl>
 
@@ -50,28 +49,25 @@ Returns the added states from the action result.
 
 #### clear ()
 
-
-Clears the game action result.
+Clears the game action result.
 <dl>
 </dl>
 
 #### initialize ()
 
-
- オブジェクト生成時の初期化。
+ オブジェクト生成時の初期化。
 <dl>
 </dl>
 
 #### isBuffAdded (paramId) → {Boolean}
 
+Returns true if the a buff is added to the specified param from the action result.
 
-Returns true if the a buff is added to the specified param from the action result.
-
-##### Paramete[Number](Number.md)
+##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -87,11 +83,11 @@ Returns true if the a buff is added to the specified param from the action resul
 
 #### isBuffRemoved (paramId) → {Boolean}
 
-##### Paramete[Number](Number.md)
+##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -107,11 +103,11 @@ Returns true if the a buff is added to the specified param from the action resul
 
 #### isDebuffAdded (paramId) → {Boolean}
 
-##### Paramete[Number](Number.md)
+##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -127,8 +123,7 @@ Returns true if the a buff is added to the specified param from the action resul
 
 #### isHit () → {Boolean}
 
-
-Returns true if the action result is a hit.
+Returns true if the action result is a hit.
 <dl>
 </dl>
 
@@ -142,23 +137,23 @@ Returns true if the action result is a hit.
             </dl>
 
 #### isStateAdded (stateId)
-[Number](Number.md)
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
+| `stateId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
 #### isStateRemoved (stateId) → {Boolean}
-[Number](Number.md)
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
+| `stateId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -187,64 +182,63 @@ Returns true if the action result is a hit.
             </dl>
 
 #### pushAddedBuff (paramId)
-[Number](Number.md)
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
 #### pushAddedDebuff (paramId)
-[Number](Number.md)
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
 #### pushAddedState (stateId)
-[Number](Number.md)
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
+| `stateId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
 #### pushRemovedBuff (paramId)
-[Number](Number.md)
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
 #### pushRemovedState (stateId)
-[Number](Number.md)
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.h[Array](Array.md)[RPG.State](RPG.State.md)
+| `stateId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
-#### removedStateObjects () → {[Array](Array.md).<[RPG.State](RPG.State.md)>}
+#### removedStateObjects () → {[Array](Array.html).<[RPG.State](RPG.State.html)>}
 
-
-Returns the removes states from the result.
+Returns the removes states from the result.
 <dl>
 </dl>
 
@@ -255,9 +249,7 @@ Returns the removes states from the result.
                 <dd>
                     <span><a>Array</a>.&lt;<a>RPG.State</a>&gt;</span>
                 </dd>
-            </dl>
-
-
+            </dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

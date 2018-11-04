@@ -16,7 +16,7 @@ The static class that manages storage for saving game data.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
+| `savefileId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -27,7 +27,7 @@ The static class that manages storage for saving game data.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
+| `savefileId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -47,7 +47,7 @@ The static class that manages storage for saving game data.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
+| `savefileId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -67,7 +67,7 @@ The static class that manages storage for saving game data.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
+| `savefileId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -95,13 +95,13 @@ The static class that manages storage for saving game data.
                 </dd>
             </dl>
 
-#### (static) load (savefileId) → {[String](String.md)}
+#### (static) load (savefileId) → {[String](String.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
+| `savefileId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -115,13 +115,13 @@ The static class that manages storage for saving game data.
                 </dd>
             </dl>
 
-#### (static) loadFromLocalBackupFile (savefileId) → {[String](String.md)}
+#### (static) loadFromLocalBackupFile (savefileId) → {[String](String.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
+| `savefileId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -135,13 +135,13 @@ The static class that manages storage for saving game data.
                 </dd>
             </dl>
 
-#### (static) loadFromLocalFile (savefileId) → {[String](String.md)}
+#### (static) loadFromLocalFile (savefileId) → {[String](String.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
+| `savefileId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -155,13 +155,13 @@ The static class that manages storage for saving game data.
                 </dd>
             </dl>
 
-#### (static) loadFromWebStorage (savefileId) → {[String](String.md)}
+#### (static) loadFromWebStorage (savefileId) → {[String](String.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
+| `savefileId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -175,13 +175,13 @@ The static class that manages storage for saving game data.
                 </dd>
             </dl>
 
-#### (static) loadFromWebStorageBackup (savefileId) → {[String](String.md)}
+#### (static) loadFromWebStorageBackup (savefileId) → {[String](String.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
+| `savefileId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -201,7 +201,7 @@ The static class that manages storage for saving game data.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
+| `savefileId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -215,7 +215,7 @@ The static class that manages storage for saving game data.
                 </dd>
             </dl>
 
-#### (static) localFileDirectoryPath () → {[String](String.md)}
+#### (static) localFileDirectoryPath () → {[String](String.html)}
 
 <dl>
 </dl>
@@ -235,7 +235,7 @@ The static class that manages storage for saving game data.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
+| `savefileId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -249,13 +249,13 @@ The static class that manages storage for saving game data.
                 </dd>
             </dl>
 
-#### (static) localFilePath (savefileId) → {[String](String.md)}
+#### (static) localFilePath (savefileId) → {[String](String.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
+| `savefileId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -275,7 +275,7 @@ The static class that manages storage for saving game data.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
+| `savefileId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -286,7 +286,7 @@ The static class that manages storage for saving game data.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
+| `savefileId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -297,7 +297,7 @@ The static class that manages storage for saving game data.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
+| `savefileId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -308,7 +308,7 @@ The static class that manages storage for saving game data.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
+| `savefileId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -319,8 +319,8 @@ The static class that manages storage for saving game data.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
-| `json` | [String](String.md) |  |
+| `savefileId` | [Number](Number.html) |  |
+| `json` | [String](String.html) |  |
 
 <dl>
 </dl>
@@ -331,8 +331,8 @@ The static class that manages storage for saving game data.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
-| `json` | [String](String.md) |  |
+| `savefileId` | [Number](Number.html) |  |
+| `json` | [String](String.html) |  |
 
 <dl>
 </dl>
@@ -343,8 +343,8 @@ The static class that manages storage for saving game data.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
-| `json` | [String](String.md) |  |
+| `savefileId` | [Number](Number.html) |  |
+| `json` | [String](String.html) |  |
 
 <dl>
 </dl>
@@ -355,7 +355,7 @@ The static class that manages storage for saving game data.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
+| `savefileId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -375,7 +375,7 @@ The static class that manages storage for saving game data.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
+| `savefileId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -389,13 +389,13 @@ The static class that manages storage for saving game data.
                 </dd>
             </dl>
 
-#### (static) webStorageKey (savefileId) → {[String](String.md)}
+#### (static) webStorageKey (savefileId) → {[String](String.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
+| `savefileId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -407,9 +407,7 @@ The static class that manages storage for saving game data.
                 <dd>
                     <span><a>String</a></span>
                 </dd>
-            </dl>
-
-
+            </dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

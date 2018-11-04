@@ -10,26 +10,26 @@ The static class that handles input data from the mouse and touchscreen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `keyRepeatWait` | [Number](Number.md) | [static] The wait time of the pseudo key repeat in frames. |
-| `keyRepeatInterval` | [Number](Number.md) | [static] The interval of the pseudo key repeat in frames. |
-| `wheelX` | [Number](Number.md) | [static][read-only] The horizontal scroll amount. |
-| `wheelY` | [Number](Number.md) | [static][read-only] The vertical scroll amount. |
-| `x` | [Number](Number.md) | [static][read-only] The x coordinate on the canvas area of the latest touch event. |
-| `y` | [Number](Number.md) | [static][read-only] The y coordinate on the canvas area of the latest touch event. |
-| `date` | [Number](Number.md) | [static][read-only] The time of the last input in milliseconds. |
+| `keyRepeatWait` | [Number](Number.html) | [static] The wait time of the pseudo key repeat in frames. |
+| `keyRepeatInterval` | [Number](Number.html) | [static] The interval of the pseudo key repeat in frames. |
+| `wheelX` | [Number](Number.html) | [static][read-only] The horizontal scroll amount. |
+| `wheelY` | [Number](Number.html) | [static][read-only] The vertical scroll amount. |
+| `x` | [Number](Number.html) | [static][read-only] The x coordinate on the canvas area of the latest touch event. |
+| `y` | [Number](Number.html) | [static][read-only] The y coordinate on the canvas area of the latest touch event. |
+| `date` | [Number](Number.html) | [static][read-only] The time of the last input in milliseconds. |
 | `_mousePressed` | Boolean | [static] |
 | `_screenPressed` | Boolean | [static] |
-| `_pressedTime` | [Number](Number.md) | [static] |
-| `_events` | [MV.TouchInputEvents](MV.TouchInputEvents.md) | [static] |
+| `_pressedTime` | [Number](Number.html) | [static] |
+| `_events` | [MV.TouchInputEvents](MV.TouchInputEvents.html) | [static] |
 | `_triggered` | Boolean | [static] |
 | `_cancelled` | Boolean | [static] |
 | `_moved` | Boolean | [static] |
 | `_released` | Boolean | [static] |
-| `_wheelX` | [Number](Number.md) | [static] |
-| `_wheelY` | [Number](Number.md) | [static] |
-| `_x` | [Number](Number.md) | [static] |
-| `_y` | [Number](Number.md) | [static] |
-| `_date` | [Number](Number.md) | [static] |
+| `_wheelX` | [Number](Number.html) | [static] |
+| `_wheelY` | [Number](Number.html) | [static] |
+| `_x` | [Number](Number.html) | [static] |
+| `_y` | [Number](Number.html) | [static] |
+| `_date` | [Number](Number.html) | [static] |
 
 <dl>
 </dl>
@@ -42,8 +42,8 @@ The static class that handles input data from the mouse and touchscreen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -109,8 +109,8 @@ The static class that handles input data from the mouse and touchscreen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -132,8 +132,8 @@ The static class that handles input data from the mouse and touchscreen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -199,8 +199,8 @@ The static class that handles input data from the mouse and touchscreen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -223,29 +223,25 @@ The static class that handles input data from the mouse and touchscreen.
 
 #### (static) clear ()
 
-
-Clears all the touch data.
+Clears all the touch data.
 <dl>
 </dl>
 
 #### (static) initialize ()
 
-
-Initializes the touch system.
+Initializes the touch system.
 <dl>
 </dl>
 
 #### (static) isCancelled () → {Boolean}
 
-
-Checks whether the right mouse button is just pressed.
+Checks whether the right mouse button is just pressed.
 <dl>
 </dl>
 
 ##### Returns:
 
-
-True if the right mouse button is just pressed
+True if the right mouse button is just pressed
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -255,15 +251,13 @@ True if the right mouse button is just pressed
 
 #### (static) isLongPressed () → {Boolean}
 
-
-Checks whether the left mouse button or touchscreen is kept depressed.
+Checks whether the left mouse button or touchscreen is kept depressed.
 <dl>
 </dl>
 
 ##### Returns:
 
-
-True if the left mouse button or touchscreen is long-pressed
+True if the left mouse button or touchscreen is long-pressed
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -273,15 +267,13 @@ True if the left mouse button or touchscreen is long-pressed
 
 #### (static) isMoved () → {Boolean}
 
-
-Checks whether the mouse or a finger on the touchscreen is moved.
+Checks whether the mouse or a finger on the touchscreen is moved.
 <dl>
 </dl>
 
 ##### Returns:
 
-
-True if the mouse or a finger on the touchscreen is moved
+True if the mouse or a finger on the touchscreen is moved
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -291,15 +283,13 @@ True if the mouse or a finger on the touchscreen is moved
 
 #### (static) isPressed () → {Boolean}
 
-
-Checks whether the mouse button or touchscreen is currently pressed down.
+Checks whether the mouse button or touchscreen is currently pressed down.
 <dl>
 </dl>
 
 ##### Returns:
 
-
-True if the mouse button or touchscreen is pressed
+True if the mouse button or touchscreen is pressed
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -309,15 +299,13 @@ True if the mouse button or touchscreen is pressed
 
 #### (static) isReleased () → {Boolean}
 
-
-Checks whether the left mouse button or touchscreen is released.
+Checks whether the left mouse button or touchscreen is released.
 <dl>
 </dl>
 
 ##### Returns:
 
-
-True if the mouse button or touchscreen is released
+True if the mouse button or touchscreen is released
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -327,15 +315,13 @@ True if the mouse button or touchscreen is released
 
 #### (static) isRepeated () → {Boolean}
 
-
-Checks whether the left mouse button or touchscreen is just pressed or a pseudo key repeat occurred.
+Checks whether the left mouse button or touchscreen is just pressed or a pseudo key repeat occurred.
 <dl>
 </dl>
 
 ##### Returns:
 
-
-True if the mouse button or touchscreen is repeated
+True if the mouse button or touchscreen is repeated
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -345,15 +331,13 @@ True if the mouse button or touchscreen is repeated
 
 #### (static) isTriggered () → {Boolean}
 
-
-Checks whether the left mouse button or touchscreen is just pressed.
+Checks whether the left mouse button or touchscreen is just pressed.
 <dl>
 </dl>
 
 ##### Returns:
 
-
-True if the mouse button or touchscreen is triggered
+True if the mouse button or touchscreen is triggered
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -363,12 +347,9 @@ True if the mouse button or touchscreen is triggered
 
 #### (static) update ()
 
-
-Updates the touch data.
+Updates the touch data.
 <dl>
-</dl>
-
-
+</dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

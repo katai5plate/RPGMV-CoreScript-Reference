@@ -17,21 +17,19 @@
 
 ### Extends
 
-* [Scene_Base](Scene_Base.md)
+* [Scene_Base](Scene_Base.html)
 
 ### Methods
 
 #### (static) loadSystemImages ()
 
-
- 各種アイコンなどのシステムに必要なデータを読み込む。
+ 各種アイコンなどのシステムに必要なデータを読み込む。
 <dl>
 </dl>
 
 #### addChild (child) → {Object}
 
-
-[super] 子オブジェクトを追加。
+[super] 子オブジェクトを追加。
 
 ##### Parameters:
 
@@ -52,8 +50,7 @@
 
 ##### Returns:
 
-
- 追加されたオブジェクト
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -63,15 +60,14 @@
 
 #### addChildAt (child, index) → {Object}
 
-
-[super] 指定位置に子オブジェクトを追加。
+[super] 指定位置に子オブジェクトを追加。
 
 ##### Parameters:
-[Number](Number.md)
+
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.md) |  追加位置 |
+| `index` | [Number](Number.html) |  追加位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -86,8 +82,7 @@
 
 ##### Returns:
 
-
- 追加されたオブジェクト
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -97,8 +92,7 @@
 
 #### addWindow (Window)
 
-
- ウィンドウレイヤーにウィンドウを追加。
+ ウィンドウレイヤーにウィンドウを追加。
 
 ##### Parameters:
 
@@ -119,8 +113,7 @@
 
 #### attachReservation ()
 
-
- キューに予約を追加。
+ キューに予約を追加。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -134,8 +127,7 @@
 
 #### checkGameover ()
 
-
- ゲームオーバー状態か検査。
+ ゲームオーバー状態か検査。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -149,15 +141,13 @@
 
 #### checkPlayerLocation ()
 
-
- プレイヤーの場所が設定されているか検査し、設定されていないならエラーを出力。
+ プレイヤーの場所が設定されているか検査し、設定されていないならエラーを出力。
 <dl>
 </dl>
 
 #### create ()
 
-
- データを読み込んで、シーンを生成。
+ データを読み込んで、シーンを生成。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -171,11 +161,10 @@
 
 #### createFadeSprite ()
 
-
- フェード用のスプライトを生成。
+ フェード用のスプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
-[$1]($2.md)                <dd>
+                <dd>
                     <ul>
                         <li>
                             <a>Scene_Base#createFadeSprite</a>
@@ -186,8 +175,7 @@
 
 #### createWindowLayer ()
 
-
- ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
+ ウィンドウレイヤー[WindowLayer](WindowLayer.html) を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -201,8 +189,7 @@
 
 #### detachReservation ()
 
-
- キューから予約を削除。
+ キューから予約を削除。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -215,9 +202,8 @@
             </dl>
 
 #### fadeOutAll ()
-[Number](Number.md)
 
- 全ての映像と音声を、遅い速度でフェードアウト。
+ 全ての映像と音声を、遅い速度でフェードアウト。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -229,10 +215,9 @@
                 </dd>
             </dl>
 
-#### fadeSpeed () → {[Number](Number.md)}
+#### fadeSpeed () → {[Number](Number.html)}
 
-
- フェード速度を返す。
+ フェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -255,8 +240,7 @@
 
 #### initialize ()
 
-
- オブジェクト生成時の初期化。
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -270,8 +254,7 @@
 
 #### isActive () → {Boolean}
 
-
- シーンがアクティブか。
+ シーンがアクティブか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -294,8 +277,7 @@
 
 #### isBusy () → {Boolean}
 
-
- フェード動作中か。
+ フェード動作中か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -318,8 +300,7 @@
 
 #### isGameFontLoaded () → {Boolean}
 
-
- フォントが読み込まれているか。
+ フォントが読み込まれているか。
 <dl>
 </dl>
 
@@ -334,8 +315,7 @@
 
 #### isReady () → {Boolean}
 
-
- 準備ができているか。
+ 準備ができているか。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -358,15 +338,13 @@
 
 #### loadSystemWindowImage ()
 
-
- ウィンドウに必要な画像を読み込む。
+ ウィンドウに必要な画像を読み込む。
 <dl>
 </dl>
 
 #### popScene ()
 
-
- シーンを引き出す(pop)。
+ シーンを引き出す(pop)。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -380,8 +358,7 @@
 
 #### removeChild (child) → {Object}
 
-
-[super] 子オブジェクトを取り除く。
+[super] 子オブジェクトを取り除く。
 
 ##### Parameters:
 
@@ -395,15 +372,14 @@
                     <ul>
                         <li>
                             <a>Stage#removeChild</a>
-            [Number](Number.md)
+                        </li>
                     </ul>
                 </dd>
             </dl>
 
 ##### Returns:
 
-
- 取り除かれたオブジェクト
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -413,14 +389,13 @@
 
 #### removeChildAt (index) → {Object}
 
-
-[super] 指定位置にある子オブジェクトを取り除く。
+[super] 指定位置にある子オブジェクトを取り除く。
 
 ##### Parameters:
 
-| Name | Type | Descripti[Number](Number.md)
+| Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  取り除く位置 |
+| `index` | [Number](Number.html) |  取り除く位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -435,8 +410,7 @@
 
 ##### Returns:
 
-
- 取り除かれたオブジェクト
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -444,10 +418,9 @@
                 </dd>
             </dl>
 
-#### slowFadeSpeed () → {[Number](Number.md)}
+#### slowFadeSpeed () → {[Number](Number.html)}
 
-
- 遅いフェード速度を返す。
+ 遅いフェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -461,10 +434,9 @@
 
 ##### Returns:
 
-
-Return the fade speed
+Return the fade speed
 <dl>
-               [Number](Number.md)
+                <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
@@ -472,8 +444,7 @@ Return the fade speed
 
 #### start ()
 
-
- シーンの開始。
+ シーンの開始。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -486,15 +457,14 @@ Return the fade speed
             </dl>
 
 #### startFadeIn (duration opt, white opt)
-[Number](Number.md)
 
- フェードインの要求。
+ フェードインの要求。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.md) | <optional> | 30 |  フェードインにかける時間 |
+| `duration` | [Number](Number.html) | <optional> | 30 |  フェードインにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -510,14 +480,13 @@ Return the fade speed
 
 #### startFadeOut (duration opt, white opt)
 
-
- フェードアウトの要求。
+ フェードアウトの要求。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.md) | <optional> | 30 |  フェードアウトにかける時間 |
+| `duration` | [Number](Number.html) | <optional> | 30 |  フェードアウトにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -533,8 +502,7 @@ Return the fade speed
 
 #### stop ()
 
-
- シーンの停止。
+ シーンの停止。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -548,8 +516,7 @@ Return the fade speed
 
 #### terminate ()
 
-
- 遷移前のシーン中断。
+ 遷移前のシーン中断。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -563,8 +530,7 @@ Return the fade speed
 
 #### update ()
 
-
- フレーム毎のアップデート。
+ フレーム毎のアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -578,8 +544,7 @@ Return the fade speed
 
 #### updateChildren ()
 
-
- 子オブジェクトのアップデート。
+ 子オブジェクトのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -593,15 +558,13 @@ Return the fade speed
 
 #### updateDocumentTitle ()
 
-
- ゲームのタイトルをアップデート。
+ ゲームのタイトルをアップデート。
 <dl>
 </dl>
 
 #### updateFade ()
 
-
- フェードのアップデート。
+ フェードのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -611,9 +574,7 @@ Return the fade speed
                         </li>
                     </ul>
                 </dd>
-            </dl>
-
-
+            </dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

@@ -4,42 +4,41 @@
 
 #### new Sprite_Battler (battler opt)
 
-The superclass of [Sprite_Actor](Sprite_Actor.md) and [Sprite_Enemy](Sprite_Enemy.md).
+The superclass of [Sprite_Actor](Sprite_Actor.html) and [Sprite_Enemy](Sprite_Enemy.html).
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `battler` | [Game_Battler](Game_Battler.md) | <optional> |  |
+| `battler` | [Game_Battler](Game_Battler.html) | <optional> |  |
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_battler` | [Game_Battler](Game_Battler.md) |  |
-| `_damages` | [Array](Array.md).<[Sprite_Damage](Sprite_Damage.md)> |  |
-| `_homeX` | [Number](Number.md) |  |
-| `_homeY` | [Number](Number.md) |  |
-| `_offsetX` | [Number](Number.md) |  |
-| `_offsetY` | [Number](Number.md) |  |
-| `_targetOffsetX` | [Number](Number.md) |  |
-| `_targetOffsetY` | [Number](Number.md) |  |
-| `_movementDuration` | [Number](Number.md) |  |
-| `_selectionEffectCount` | [Number](Number.md) |  |
+| `_battler` | [Game_Battler](Game_Battler.html) |  |
+| `_damages` | [Array](Array.html).<[Sprite_Damage](Sprite_Damage.html)> |  |
+| `_homeX` | [Number](Number.html) |  |
+| `_homeY` | [Number](Number.html) |  |
+| `_offsetX` | [Number](Number.html) |  |
+| `_offsetY` | [Number](Number.html) |  |
+| `_targetOffsetX` | [Number](Number.html) |  |
+| `_targetOffsetY` | [Number](Number.html) |  |
+| `_movementDuration` | [Number](Number.html) |  |
+| `_selectionEffectCount` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Sprite_Base](Sprite_Base.md)
+* [Sprite_Base](Sprite_Base.html)
 
 ### Methods
 
 #### _speedUpCustomBlendModes (renderer)
 
-
-checks if we need to speed up custom blendmodes
+checks if we need to speed up custom blendmodes
 
 ##### Parameters:
 
@@ -57,8 +56,8 @@ checks if we need to speed up custom blendmodes
                     </ul>
                 </dd>
             </dl>
-[Number](Number.md)
-#### damageOffsetX () → {[Number](Number.md)}
+
+#### damageOffsetX () → {[Number](Number.html)}
 
 <dl>
 </dl>
@@ -71,8 +70,8 @@ checks if we need to speed up custom blendmodes
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-[Number](Number.md)
-#### damageOffsetY () → {[Number](Number.md)}
+
+#### damageOffsetY () → {[Number](Number.html)}
 
 <dl>
 </dl>
@@ -88,8 +87,7 @@ checks if we need to speed up custom blendmodes
 
 #### hide ()
 
-
-Hides the sprite.
+Hides the sprite.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -103,8 +101,7 @@ Hides the sprite.
 
 #### inHomePosition () → {Boolean}
 
-
-Returns true if the sprite battler is in the home position.
+Returns true if the sprite battler is in the home position.
 <dl>
 </dl>
 
@@ -119,8 +116,7 @@ Returns true if the sprite battler is in the home position.
 
 #### initialize ()
 
-
- オブジェクト生成時の初期化。
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -139,8 +135,7 @@ Returns true if the sprite battler is in the home position.
 
 #### isAnimationPlaying () → {boolean}
 
-
-Returns true if an animation is currently playing.
+Returns true if an animation is currently playing.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -163,8 +158,7 @@ Returns true if an animation is currently playing.
 
 #### isEffecting () → {Boolean}
 
-
-Returns false for sprite battler.
+Returns false for sprite battler.
 <dl>
 </dl>
 
@@ -179,8 +173,7 @@ Returns false for sprite battler.
 
 #### isMoving () → {boolean}
 
-
-Returns true if the sprite for the battler is moving.
+Returns true if the sprite for the battler is moving.
 <dl>
 </dl>
 
@@ -195,88 +188,81 @@ Returns true if the sprite for the battler is moving.
 
 #### onMoveEnd ()
 
-
-Handler for when movement has ended.
+Handler for when movement has ended.
 <dl>
 </dl>
 
-#### setBattle[Game_Battler](Game_Battler.md)
+#### setBattler (battler)
 
-
-Sets the game battler of the sprite battler.
+Sets the game battler of the sprite battler.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `battler` | [Game_Battler](Game_Battler.md) |  |
+| `battler` | [Game_Battler](Game_Battler.html) |  |
 
 <dl>
 </dl>
-[Number](Number.md)
-#### set[Number](Number.md)
 
+#### setHome (x, y)
 
-Sets the home position of the sprite battler to the given x and y coordinates.
+Sets the home position of the sprite battler to the given x and y coordinates.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
 #### setupAnimation ()
 
-
-Sets up animation on the sprite battler.
+Sets up animation on the sprite battler.
 <dl>
 </dl>
 
 #### setupDamagePopup ()
 
-
-Sets up damage popup on the sprite battler.
+Sets up damage popup on the sprite battler.
 <dl>
 </dl>
 
 #### show ()
 
-
-Shows the sprite.
+Shows the sprite.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
                         <li>
                             <a>Sprite_Base#show</a>
-                [RPG.Animation](RPG.Animation.md)
+                        </li>
                     </ul>
-            [Number](Number.md)
+                </dd>
             </dl>
 
 #### startAnimation (animation, mirror, delay)
 
-
-Starts a new animation on the current sprite by assigning a new Sprite_Animation object to the sprite's parent.
+Starts a new animation on the current sprite by assigning a new Sprite_Animation object to the sprite's parent.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `animation` | [RPG.Animation](RPG.Animation.md) |  |
+| `animation` | [RPG.Animation](RPG.Animation.html) |  |
 | `mirror` | Boolean |  |
-| `delay` | [Number](Number.md) |  |
+| `delay` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-        [Number](Number.md)
-        [Number](Number.md)
-               [Number](Number.md)e_Base#startAnimation</a>
+                    <ul>
+                        <li>
+                            <a>Sprite_Base#startAnimation</a>
                         </li>
                     </ul>
                 </dd>
@@ -288,9 +274,9 @@ Starts a new animation on the current sprite by assigning a new Sprite_Animation
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `duration` | [Number](Number.md) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
+| `duration` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -310,15 +296,13 @@ Starts a new animation on the current sprite by assigning a new Sprite_Animation
 
 #### updateAnimation ()
 
-
-Updates the sprite battler animation.
+Updates the sprite battler animation.
 <dl>
 </dl>
 
 #### updateAnimationSprites ()
 
-
-Updates the animation sprites, cloning them; if the sprite is playing, pushes the sprites into animation sprites, otherwise the sprite is removed.
+Updates the animation sprites, cloning them; if the sprite is playing, pushes the sprites into animation sprites, otherwise the sprite is removed.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -332,43 +316,37 @@ Updates the animation sprites, cloning them; if the sprite is playing, pushes th
 
 #### updateBitmap ()
 
-
-Updates the bitmap of the sprite battler.
+Updates the bitmap of the sprite battler.
 <dl>
 </dl>
 
 #### updateDamagePopup ()
 
-
-Updates the damage pop up for the sprite battler.
+Updates the damage pop up for the sprite battler.
 <dl>
 </dl>
 
 #### updateFrame ()
 
-
-Updates the sprite battler's current frame.
+Updates the sprite battler's current frame.
 <dl>
 </dl>
 
 #### updateMain ()
 
-
-Updates the main loop of the sprite battler.
+Updates the main loop of the sprite battler.
 <dl>
 </dl>
 
 #### updateMove ()
 
-
-Updates movement on the sprite battler.
+Updates movement on the sprite battler.
 <dl>
 </dl>
 
 #### updatePosition ()
 
-
-Updates the position of the sprite battler.
+Updates the position of the sprite battler.
 <dl>
 </dl>
 
@@ -388,9 +366,7 @@ Updates the position of the sprite battler.
                         </li>
                     </ul>
                 </dd>
-            </dl>
-
-
+            </dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

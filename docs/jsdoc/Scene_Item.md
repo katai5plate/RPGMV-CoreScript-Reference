@@ -10,21 +10,20 @@ The scene class of the item screen.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_categoryWindow` | [Window_ItemCategory](Window_ItemCategory.md) |  |
+| `_categoryWindow` | [Window_ItemCategory](Window_ItemCategory.html) |  |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [Scene_ItemBase](Scene_ItemBase.md)
+* [Scene_ItemBase](Scene_ItemBase.html)
 
 ### Methods
 
 #### activateItemWindow ()
 
-
-Activates the item window.
+Activates the item window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -35,11 +34,10 @@ Activates the item window.
                     </ul>
                 </dd>
             </dl>
-[Game_Actor](Game_Actor.md)
-#### actor () → {[Game_Actor](Game_Actor.md)}
 
+#### actor () → {[Game_Actor](Game_Actor.html)}
 
-Returns the current game actor.
+Returns the current game actor.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -62,8 +60,7 @@ Returns the current game actor.
 
 #### addChild (child) → {Object}
 
-
-[super] 子オブジェクトを追加。
+[super] 子オブジェクトを追加。
 
 ##### Parameters:
 
@@ -84,8 +81,7 @@ Returns the current game actor.
 
 ##### Returns:
 
-
- 追加されたオブジェクト
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -95,15 +91,14 @@ Returns the current game actor.
 
 #### addChildAt (child, index) → {Object}
 
+[super] 指定位置に子オブジェクトを追加。
 
-[super] 指定位置に子オブジェクトを追加。
-
-##### Parame[Number](Number.md)
+##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.md) |  追加位置 |
+| `index` | [Number](Number.html) |  追加位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -118,8 +113,7 @@ Returns the current game actor.
 
 ##### Returns:
 
-
- 追加されたオブジェクト
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -129,8 +123,7 @@ Returns the current game actor.
 
 #### addWindow (Window)
 
-
- ウィンドウレイヤーにウィンドウを追加。
+ ウィンドウレイヤーにウィンドウを追加。
 
 ##### Parameters:
 
@@ -164,8 +157,7 @@ Returns the current game actor.
 
 #### attachReservation ()
 
-
- キューに予約を追加。
+ キューに予約を追加。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -179,8 +171,7 @@ Returns the current game actor.
 
 #### canUse () → {Boolean}
 
-
-Returns true if the user (game actor) can use the item.
+Returns true if the user (game actor) can use the item.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -203,8 +194,7 @@ Returns true if the user (game actor) can use the item.
 
 #### checkCommonEvent ()
 
-
-Checks the common event set on the item.
+Checks the common event set on the item.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -218,8 +208,7 @@ Checks the common event set on the item.
 
 #### checkGameover ()
 
-
- ゲームオーバー状態か検査。
+ ゲームオーバー状態か検査。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -246,8 +235,7 @@ Checks the common event set on the item.
 
 #### createActorWindow ()
 
-
-Creates the actor window within the base item scene.
+Creates the actor window within the base item scene.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -261,15 +249,13 @@ Creates the actor window within the base item scene.
 
 #### createCategoryWindow ()
 
-
-Creates the category window on the item scene.
+Creates the category window on the item scene.
 <dl>
 </dl>
 
 #### createFadeSprite ()
 
-
- フェード用のスプライトを生成。
+ フェード用のスプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -283,13 +269,12 @@ Creates the category window on the item scene.
 
 #### createHelpWindow ()
 
-
-Creates the help window.
+Creates the help window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
                     <ul>
-[$1]($2.md)                        <li>
+                        <li>
                             <a>Scene_MenuBase#createHelpWindow</a>
                         </li>
                     </ul>
@@ -298,15 +283,13 @@ Creates the help window.
 
 #### createItemWindow ()
 
-
-Creates the item window on the item scene.
+Creates the item window on the item scene.
 <dl>
 </dl>
 
 #### createWindowLayer ()
 
-
- ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
+ ウィンドウレイヤー[WindowLayer](WindowLayer.html) を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -320,8 +303,7 @@ Creates the item window on the item scene.
 
 #### detachReservation ()
 
-
- キューから予約を削除。
+ キューから予約を削除。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -342,14 +324,13 @@ Creates the item window on the item scene.
                         <li>
                             <a>Scene_ItemBase#determineItem</a>
                         </li>
-                    <[Number](Number.md)
+                    </ul>
                 </dd>
             </dl>
 
 #### fadeOutAll ()
 
-
- 全ての映像と音声を、遅い速度でフェードアウト。
+ 全ての映像と音声を、遅い速度でフェードアウト。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -361,10 +342,9 @@ Creates the item window on the item scene.
                 </dd>
             </dl>
 
-#### fadeSpeed () → {[Number](Number.md)}
+#### fadeSpeed () → {[Number](Number.html)}
 
-
- フェード速度を返す。
+ フェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -373,7 +353,7 @@ Creates the item window on the item scene.
                             <a>Scene_Base#fadeSpeed</a>
                         </li>
                     </ul>
-             [Window_Base](Window_Base.md)
+                </dd>
             </dl>
 
 ##### Returns:
@@ -387,14 +367,13 @@ Creates the item window on the item scene.
 
 #### hideSubWindow (window)
 
-
-Hides the sub window.
+Hides the sub window.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `window` | [Window_Base](Window_Base.md) |  |
+| `window` | [Window_Base](Window_Base.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -409,8 +388,7 @@ Hides the sub window.
 
 #### initialize ()
 
-
- オブジェクト生成時の初期化。
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -424,8 +402,7 @@ Hides the sub window.
 
 #### isActive () → {Boolean}
 
-
- シーンがアクティブか。
+ シーンがアクティブか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -448,8 +425,7 @@ Hides the sub window.
 
 #### isBusy () → {Boolean}
 
-
- フェード動作中か。
+ フェード動作中か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -472,8 +448,7 @@ Hides the sub window.
 
 #### isCursorLeft () → {Boolean}
 
-
-Returns true if the cursor is left.
+Returns true if the cursor is left.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -496,8 +471,7 @@ Returns true if the cursor is left.
 
 #### isItemEffectsValid () → {Boolean}
 
-
-Returns true if the item effects are valid on the target(the user).
+Returns true if the item effects are valid on the target(the user).
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -520,8 +494,7 @@ Returns true if the item effects are valid on the target(the user).
 
 #### isReady () → {Boolean}
 
-
- シーンの準備ができているか。
+ シーンの準備ができているか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -538,14 +511,13 @@ Returns true if the item effects are valid on the target(the user).
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span>Bo[Game_Actor](Game_Actor.md)
+                    <span>Boolean</span>
                 </dd>
             </dl>
 
 #### item () → {*}
 
-
-Returns the item attached to the item window within the base item scene.
+Returns the item attached to the item window within the base item scene.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -566,7 +538,7 @@ Returns the item attached to the item window within the base item scene.
                 </dd>
             </dl>
 
-#### itemTargetActors () → {[Game_Actor](Game_Actor.md)}
+#### itemTargetActors () → {[Game_Actor](Game_Actor.html)}
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -590,8 +562,7 @@ Returns the item attached to the item window within the base item scene.
 
 #### nextActor ()
 
-
-Moves to the next actor in the party.
+Moves to the next actor in the party.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -644,36 +615,31 @@ Moves to the next actor in the party.
 
 #### onCategoryOk ()
 
-
-Handler for when a cataegory is selected on the item scene.
+Handler for when a cataegory is selected on the item scene.
 <dl>
 </dl>
 
 #### onItemCancel ()
 
-
-Handler for when an item selection is canceled on the item scene.
+Handler for when an item selection is canceled on the item scene.
 <dl>
 </dl>
 
 #### onItemOk ()
 
-
-Handler for when an item is selected on the item scene.
+Handler for when an item is selected on the item scene.
 <dl>
 </dl>
 
 #### playSeForItem ()
 
-
-Plays a sound effect when the item is confirmed.
+Plays a sound effect when the item is confirmed.
 <dl>
 </dl>
 
 #### popScene ()
 
-
- シーンを引き出す(pop)。
+ シーンを引き出す(pop)。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -687,8 +653,7 @@ Plays a sound effect when the item is confirmed.
 
 #### previousActor ()
 
-
-Moves to the previous actor in the party.
+Moves to the previous actor in the party.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -702,9 +667,8 @@ Moves to the previous actor in the party.
 
 #### removeChild (child) → {Object}
 
+[super] 子オブジェクトを取り除く。
 
-[super] 子オブジェクトを取り除く。
-[Number](Number.md)
 ##### Parameters:
 
 | Name | Type | Description |
@@ -724,8 +688,7 @@ Moves to the previous actor in the party.
 
 ##### Returns:
 
-
- 取り除かれたオブジェクト
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -733,16 +696,15 @@ Moves to the previous actor in the party.
                 </dd>
             </dl>
 
-#### removeChi[Number](Number.md)t}
+#### removeChildAt (index) → {Object}
 
-
-[super] 指定位置にある子オブジェクトを取り除く。
+[super] 指定位置にある子オブジェクトを取り除く。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  取り除く位置 |
+| `index` | [Number](Number.html) |  取り除く位置 |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -754,11 +716,10 @@ Moves to the previous actor in the party.
                     </ul>
                 </dd>
             </dl>
-[Window_Base](Window_Base.md)
+
 ##### Returns:
 
-
- 取り除かれたオブジェクト
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -767,12 +728,12 @@ Moves to the previous actor in the party.
             </dl>
 
 #### setBackgroundOpacity (opacity)
-[Number](Number.md)
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `opacity` | [Number](Number.md) |  |
+| `opacity` | [Number](Number.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -787,14 +748,13 @@ Moves to the previous actor in the party.
 
 #### showSubWindow (window)
 
-
-Shows the sub window.
+Shows the sub window.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `window` | [Window_Base](Window_Base.md) |  |
+| `window` | [Window_Base](Window_Base.html) |  |
 
 <dl>
                 <dt>Inherited From:</dt>
@@ -807,13 +767,12 @@ Shows the sub window.
                 </dd>
             </dl>
 
-#### slowFadeSpeed () → {[Number](Number.md)}
+#### slowFadeSpeed () → {[Number](Number.html)}
 
-
- 遅いフェード速度を返す。
+ 遅いフェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
-               [Number](Number.md)
+                <dd>
                     <ul>
                         <li>
                             <a>Scene_Base#slowFadeSpeed</a>
@@ -824,8 +783,7 @@ Shows the sub window.
 
 ##### Returns:
 
-
-Return the fade speed
+Return the fade speed
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -835,8 +793,7 @@ Return the fade speed
 
 #### start ()
 
-[Number](Number.md)
- シーンの開始。
+ シーンの開始。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -850,14 +807,13 @@ Return the fade speed
 
 #### startFadeIn (duration opt, white opt)
 
-
- フェードインの要求。
+ フェードインの要求。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.md) | <optional> | 30 |  フェードインにかける時間 |
+| `duration` | [Number](Number.html) | <optional> | 30 |  フェードインにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -873,14 +829,13 @@ Return the fade speed
 
 #### startFadeOut (duration opt, white opt)
 
-
- フェードアウトの要求。
+ フェードアウトの要求。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.md) | <optional> | 30 |  フェードアウトにかける時間 |
+| `duration` | [Number](Number.html) | <optional> | 30 |  フェードアウトにかける時間 |
 | `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
 
 <dl>
@@ -896,8 +851,7 @@ Return the fade speed
 
 #### stop ()
 
-
- シーンの停止。
+ シーンの停止。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -911,8 +865,7 @@ Return the fade speed
 
 #### terminate ()
 
-
- 遷移前のシーン中断。
+ 遷移前のシーン中断。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -926,8 +879,7 @@ Return the fade speed
 
 #### update ()
 
-
- フレーム毎のアップデート。
+ フレーム毎のアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -941,12 +893,11 @@ Return the fade speed
 
 #### updateActor ()
 
-
-Updates the current actor.
+Updates the current actor.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
-                [Game_Actor](Game_Actor.md)
+                    <ul>
                         <li>
                             <a>Scene_MenuBase#updateActor</a>
                         </li>
@@ -956,8 +907,7 @@ Updates the current actor.
 
 #### updateChildren ()
 
-
- 子オブジェクトのアップデート。
+ 子オブジェクトのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -971,8 +921,7 @@ Updates the current actor.
 
 #### updateFade ()
 
-
- フェードのアップデート。
+ フェードのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -997,7 +946,7 @@ Updates the current actor.
                 </dd>
             </dl>
 
-#### user () → {[Game_Actor](Game_Actor.md)}
+#### user () → {[Game_Actor](Game_Actor.html)}
 
 <dl>
                 <dt>Overrides:</dt>
@@ -1017,9 +966,7 @@ Updates the current actor.
                 <dd>
                     <span><a>Game_Actor</a></span>
                 </dd>
-            </dl>
-
-
+            </dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

@@ -10,28 +10,28 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_interpreter` | [Game_Interpreter](Game_Interpreter.md) | RPGツクールMVのコマンドインタプリタ |
-| `_mapId` | [Number](Number.md) | [マップ]のID |
-| `_tilesetId` | [Number](Number.md) | [タイルセット]のID |
-| `_events` | [Array](Array.md).<[Game_Event](Game_Event.md)> |  |
-| `_commonEvents` | [Array](Array.md).<[Game_CommonEvent](Game_CommonEvent.md)> |  |
-| `_vehicles` | [Array](Array.md).<[Game_Vehicle](Game_Vehicle.md)> |  |
-| `_displayX` | [Number](Number.md) |  マップ表示のX座標[Game_Map#displayX](Game_Map.html#displayX) |
-| `_displayY` | [Number](Number.md) |  マップ表示のY座標[Game_Map#displayY](Game_Map.html#displayY) |
+| `_interpreter` | [Game_Interpreter](Game_Interpreter.html) | RPGツクールMVのコマンドインタプリタ |
+| `_mapId` | [Number](Number.html) | [マップ]のID |
+| `_tilesetId` | [Number](Number.html) | [タイルセット]のID |
+| `_events` | [Array](Array.html).<[Game_Event](Game_Event.html)> |  |
+| `_commonEvents` | [Array](Array.html).<[Game_CommonEvent](Game_CommonEvent.html)> |  |
+| `_vehicles` | [Array](Array.html).<[Game_Vehicle](Game_Vehicle.html)> |  |
+| `_displayX` | [Number](Number.html) |  マップ表示のX座標[Game_Map#displayX](Game_Map.html#displayX) |
+| `_displayY` | [Number](Number.html) |  マップ表示のY座標[Game_Map#displayY](Game_Map.html#displayY) |
 | `_nameDisplay` | Boolean |  表示名 |
-| `_scrollDirection` | [Number](Number.md) |  スクロール方向 |
-| `_scrollRest` | [Number](Number.md) |  |
-| `_scrollSpeed` | [Number](Number.md) |  スクロール速度 |
-| `_parallaxName` | [String](String.md) | [遠景]のファイル名[Game_Map#parallaxName](Game_Map.html#parallaxName) |
+| `_scrollDirection` | [Number](Number.html) |  スクロール方向 |
+| `_scrollRest` | [Number](Number.html) |  |
+| `_scrollSpeed` | [Number](Number.html) |  スクロール速度 |
+| `_parallaxName` | [String](String.html) | [遠景]のファイル名[Game_Map#parallaxName](Game_Map.html#parallaxName) |
 | `_parallaxZero` | Boolean |  |
 | `_parallaxLoopX` | Boolean | [横方向にループする] |
 | `_parallaxLoopY` | Boolean | [縦方向にループする] |
-| `_parallaxSx` | [Number](Number.md) | x [スクロール]量 ピクセル |
-| `_parallaxSy` | [Number](Number.md) | y [スクロール]量 ピクセル |
-| `_parallaxX` | [Number](Number.md) |  |
-| `_parallaxY` | [Number](Number.md) |  |
-| `_battleback1Name` | [String](String.md) |  レイヤー奥の戦闘背景画像1(地面)のファイル名[Game_Map#battleback1Name](Game_Map.html#battleback1Name) |
-| `_battleback2Name` | [String](String.md) |  レイヤー手前の戦闘背景画像2(壁)のファイル名[Game_Map#battleback2Name](Game_Map.html#battleback2Name) |
+| `_parallaxSx` | [Number](Number.html) | x [スクロール]量 ピクセル |
+| `_parallaxSy` | [Number](Number.html) | y [スクロール]量 ピクセル |
+| `_parallaxX` | [Number](Number.html) |  |
+| `_parallaxY` | [Number](Number.html) |  |
+| `_battleback1Name` | [String](String.html) |  レイヤー奥の戦闘背景画像1(地面)のファイル名[Game_Map#battleback1Name](Game_Map.html#battleback1Name) |
+| `_battleback2Name` | [String](String.html) |  レイヤー手前の戦闘背景画像2(壁)のファイル名[Game_Map#battleback2Name](Game_Map.html#battleback2Name) |
 | `_needsRefresh` | Boolean |  |
 
 <dl>
@@ -39,13 +39,13 @@
 
 ### Methods
 
-#### adjustX (x) → {[Number](Number.md)}
+#### adjustX (x) → {[Number](Number.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
+| `x` | [Number](Number.html) |  タイル数 |
 
 <dl>
                 <dt>To Do:</dt>
@@ -58,22 +58,21 @@
 
 ##### Returns:
 
-
- タイル数
+ タイル数
 <dl>
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-[Number](Number.md)
-#### adjustY (y) → {[Number](Number.md)}
+
+#### adjustY (y) → {[Number](Number.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | [Number](Number.md)
-| `y` | [Number](Number.md) |  タイル数 |
+| --- | --- | --- |
+| `y` | [Number](Number.html) |  タイル数 |
 
 <dl>
                 <dt>To Do:</dt>
@@ -86,19 +85,17 @@
 
 ##### Returns:
 
-
- タイル数
+ タイル数
 <dl>
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
-            </dl>[Game_Vehicle](Game_Vehicle.md)
+            </dl>
 
-#### airship () → {[Game_Vehicle](Game_Vehicle.md)}
+#### airship () → {[Game_Vehicle](Game_Vehicle.html)}
 
-
-[飛行船]を返す。
+[飛行船]を返す。
 <dl>
 </dl>
 
@@ -108,20 +105,19 @@
                 <dt> Type </dt>
                 <dd>
                     <span><a>Game_Vehicle</a></span>
-                </dd>[Array](Array.md)[Number](Number.md)
+                </dd>
             </dl>
 
-#### allTiles (x, y) → {[Array](Array.md).<[Number](Number.md)>}
+#### allTiles (x, y) → {[Array](Array.html).<[Number](Number.html)>}
 
+ 指定位置に重なった[イベント]も含めた全タイルIDの配列を返す。
 
- 指定位置に重なった[イベント]も含めた全タイルIDの配列を返す。
+##### Parameters:
 
-##### Pa[Number](Number.md)
-[Number](Number.md)
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -137,62 +133,42 @@
 
 #### autoplay ()
 
-[Number](Number.md)
-[BGM自動演奏][BGS自動演奏]を開始。
+[BGM自動演奏][BGS自動演奏]を開始。
 <dl>
 </dl>
 
-#### autotileType (x, y, z) → {[Number](Number.md)}
+#### autotileType (x, y, z) → {[Number](Number.html)}
 
+ 指定位置のオートタイルのタイプを返す。
 
- 指定位置のオー[Number](Number.md)
-[Number](Number.md)
-##### Pa[Number](Number.md)
+##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-| `z` | [Number](Number.md) |  重なり(0〜3) |
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
+| `z` | [Number](Number.html) |  重なり(0〜3) |
 
 <dl>
 </dl>
 
 ##### Returns:
 
-
- オートタイルでない場合は-1
-<dl>[String](String.md)
+ オートタイルでない場合は-1
+<dl>
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
             </dl>
 
-#### battleback1Name () → {[String](String.md)}
+#### battleback1Name () → {[String](String.html)}
 
-
- レイヤー奥の戦闘背景画像1(地面)のファイル名を返す。
+ レイヤー奥の戦闘背景画像1(地面)のファイル名を返す。
 <dl>
 </dl>
 
 ##### Returns:
-[String](String.md)
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
-
-#### battleback2Name () → {[String](String.md)}
-
-
- レイヤー手前の戦闘背景画像2(壁)のファイル名を返す。
-<dl>
-</dl>
-
-##### Returns:[Game_Vehicle](Game_Vehicle.md)
 
 <dl>
                 <dt> Type </dt>
@@ -201,13 +177,27 @@
                 </dd>
             </dl>
 
-#### boat () → {[Game_Vehicle](Game_Vehicle.md)}
+#### battleback2Name () → {[String](String.html)}
 
-
-[小型船]を返す。
+ レイヤー手前の戦闘背景画像2(壁)のファイル名を返す。
 <dl>
 </dl>
-[Number](Number.md)
+
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>String</a></span>
+                </dd>
+            </dl>
+
+#### boat () → {[Game_Vehicle](Game_Vehicle.html)}
+
+[小型船]を返す。
+<dl>
+</dl>
+
 ##### Returns:
 
 <dl>
@@ -215,43 +205,40 @@
                 <dd>
                     <span><a>Game_Vehicle</a></span>
                 </dd>
-        [Number](Number.md)
+            </dl>
 
-#### canvasToMapX (x) → {[Number](Number.md)}
+#### canvasToMapX (x) → {[Number](Number.html)}
 
-
-canvasのx座標をタイル数に変換。
+canvasのx座標をタイル数に変換。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) | x座標 ピクセル |
+| `x` | [Number](Number.html) | x座標 ピクセル |
 
 <dl>
 </dl>
-[Number](Number.md)
+
 ##### Returns:
 
-
-x座標 タイル数
+x座標 タイル数
 <dl>
                 <dt> Type </dt>
                 <dd>
-        [Number](Number.md)Number</a></span>
+                    <span><a>Number</a></span>
                 </dd>
             </dl>
 
-#### canvasToMapY (y) → {[Number](Number.md)}
+#### canvasToMapY (y) → {[Number](Number.html)}
 
-
-canvasのy座標をタイル数に変換。
+canvasのy座標をタイル数に変換。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `y` | [Number](Number.md) |  |
+| `y` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -260,77 +247,73 @@ canvasのy座標をタイル数に変換。
 
 <dl>
                 <dt> Type </dt>
-                <dd>[String](String.md)
-                    <s[String](String.md)an>
+                <dd>
+                    <span><a>Number</a></span>
                 </dd>
             </dl>
 
 #### changeBattleback (battleback1Name, battleback2Name)
 
-
-[戦闘背景の変更]を行う。
+[戦闘背景の変更]を行う。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `battleba[String](String.md)tring.md) |  |
-| `battleback2Name` | [String](String.md) |  |
+| `battleback1Name` | [String](String.html) |  |
+| `battleback2Name` | [String](String.html) |  |
 
-<dl>[Number](Number.md)
-</dl>[Number](Number.md)
+<dl>
+</dl>
 
 #### changeParallax (name, loopX, loopY, sx, sy)
 
-
-[遠景の変更]を行う。
+[遠景の変更]を行う。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.md) | [画像]ファイル名 |
+| `name` | [String](String.html) | [画像]ファイル名 |
 | `loopX` | Boolean | [横方向にループする] |
-| `loopY` | Bool[Number](Number.md)
-| `sx` | [Number](Number.md) | x [スクロール]量 ピクセル |
-| `sy` | [Number](Number.md) | y [スクロール]量 ピクセル |
+| `loopY` | Boolean | [縦方向にループする] |
+| `sx` | [Number](Number.html) | x [スクロール]量 ピクセル |
+| `sy` | [Number](Number.html) | y [スクロール]量 ピクセル |
 
 <dl>
 </dl>
 
 #### changeTileset (tilesetId)
 
-
-[タイルセットの変更]を行う。
+[タイルセットの変更]を行う。
 
 ##### Parameters:
-[Number](Number.md)
-| Name |[Number](Number.md)
-| --- | --[Number](Number.md)[RPG.Tileset](RPG.Tileset.md)
-| `tilesetId` | [Number](Number.md) |  |
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `tilesetId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
 #### checkLayeredTilesFlags (x, y, bit) → {Boolean}
 
-
- 指定位置のタイルのうち指定フラグが立っているものがあるか。
+ 指定位置のタイルのうち指定フラグが立っているものがあるか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-| `bit` | [Number](Number.md) | [RPG.Tileset](RPG.Tileset.md) の flagsチェック用ビット |
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
+| `bit` | [Number](Number.html) | [RPG.Tileset](RPG.Tileset.html) の flagsチェック用ビット |
 
 <dl>
 </dl>
 
-##### Re[Number](Number.md)
-[Number](Number.md)
-<dl>[Number](Number.md)[RPG.Tileset](RPG.Tileset.md)
+##### Returns:
+
+<dl>
                 <dt> Type </dt>
                 <dd>
                     <span>Boolean</span>
@@ -339,24 +322,22 @@ canvasのy座標をタイル数に変換。
 
 #### checkPassage (x, y, bit) → {Boolean}
 
-
- 指定位置の指定フラグビットが通行可か。
+ 指定位置の指定フラグビットが通行可か。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-| `bit` | [Number](Number.md) | [RPG.Tileset](RPG.Tileset.md) の flagsチェック用ビット |
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
+| `bit` | [Number](Number.html) | [RPG.Tileset](RPG.Tileset.html) の flagsチェック用ビット |
 
 <dl>
-</dl>[Array](Array.md)[Number](Number.md)
+</dl>
 
 ##### Returns:
 
-
-[☆]でない最初のタイルのうち、指定したビットが立っていれば false
+[☆]でない最初のタイルのうち、指定したビットが立っていれば false
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -366,16 +347,14 @@ canvasのy座標をタイル数に変換。
 
 #### createVehicles ()
 
-[Number](Number.md)
- マップ上に[乗り物]( boat, ship, airship )を生成。
+ マップ上に[乗り物]( boat, ship, airship )を生成。
 <dl>
 </dl>
 
-#### data () → {[Array](Array.md).<[Number](Number.md)>}
+#### data () → {[Array](Array.html).<[Number](Number.html)>}
 
-
- マップデータの配[Number](Number.md)
-<dl>[Number](Number.md)
+ マップデータの配列を返す。
+<dl>
 </dl>
 
 ##### Returns:
@@ -387,25 +366,23 @@ canvasのy座標をタイル数に変換。
                 </dd>
             </dl>
 
-#### deltaX (x1, x2) → {[Number](Number.md)}
+#### deltaX (x1, x2) → {[Number](Number.html)}
 
-
-x座標2点間のタイル距離を(ループも考慮して)返[Number](Number.md)
+x座標2点間のタイル距離を(ループも考慮して)返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x1` | [Number](Number.md) |  タイル数 |
-| `x2` | [Number](Number.md) |  タイル数 |
-[Number](Number.md)
-<dl>[Number](Number.md)
+| `x1` | [Number](Number.html) |  タイル数 |
+| `x2` | [Number](Number.html) |  タイル数 |
+
+<dl>
 </dl>
 
 ##### Returns:
 
-
- タイル数
+ タイル数
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -413,45 +390,41 @@ x座標2点間のタイル距離を(ループも考慮して)返[Number](Number.
                 </dd>
             </dl>
 
-#### deltaY (y1, y2) → {[Number](Number.md)}
+#### deltaY (y1, y2) → {[Number](Number.html)}
 
-
-y座標2点間のタイル距離を(ループも考慮して)返す。
+y座標2点間のタイル距離を(ループも考慮して)返す。
 
 ##### Parameters:
 
-| Name | Type | Descrip[String](String.md)
+| Name | Type | Description |
 | --- | --- | --- |
-| `y1` | [Number](Number.md) |  タイル数 |
-| `y2` | [Number](Number.md) |  タイル数 |
+| `y1` | [Number](Number.html) |  タイル数 |
+| `y2` | [Number](Number.html) |  タイル数 |
 
 <dl>
 </dl>
 
 ##### Returns:
 
-
- タイル数
+ タイル数
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    [Number](Number.md)span>
+                    <span><a>Number</a></span>
                 </dd>
             </dl>
 
 #### disableNameDisplay ()
 
-
- マップ[表示名]を非表示に設定。
+ マップ[表示名]を非表示に設定。
 <dl>
 </dl>
 
-#### displayName () → {[String](String.md)}
+#### displayName () → {[String](String.html)}
 
-
- マップ[表示名]を返す。
+ マップ[表示名]を返す。
 <dl>
-</dl>[Number](Number.md)
+</dl>
 
 ##### Returns:
 
@@ -462,35 +435,15 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
                 </dd>
             </dl>
 
-#### displayX () → {[Number](Number.md)}
+#### displayX () → {[Number](Number.html)}
 
-
- マップ表示のX座標を返す。
-<dl>
-</dl>[Number](Number.md)
-
-##### Returns:
-
-
- タイル数
-<dl>[Number](Number.md)
-         [Number](Number.md)>
-         [Number](Number.md)
-         [Number](Number.md)umber</a></span>
-                </dd>
-            </dl>
-
-#### displayY () → {[Number](Number.md)}
-
-
- マップ表示のY座標を返す。
+ マップ表示のX座標を返す。
 <dl>
 </dl>
 
 ##### Returns:
 
-
- タイル数
+ タイル数
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -498,19 +451,35 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
                 </dd>
             </dl>
 
-#### distance (x[Number](Number.md)mber](Number.md)}
-[Number](Number.md)
+#### displayY () → {[Number](Number.html)}
+
+ マップ表示のY座標を返す。
+<dl>
+</dl>
+
+##### Returns:
+
+ タイル数
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Number</a></span>
+                </dd>
+            </dl>
+
+#### distance (x1, x2, y1, y2) → {[Number](Number.html)}
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x1` | [Number](Number.md) |  |
-| `x2` | [Number](Number.md) |  |
-| `y1` | [Number](Number.md) |  |
-| `y2` | [Number](Number.md) |  |
+| `x1` | [Number](Number.html) |  |
+| `x2` | [Number](Number.html) |  |
+| `y1` | [Number](Number.html) |  |
+| `y2` | [Number](Number.html) |  |
 
 <dl>
-</dl>[Array](Array.md)[RPG.Map.Encounter](RPG.Map.Encounter.md)
+</dl>
 
 ##### Returns:
 
@@ -523,46 +492,42 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
 
 #### doScroll (direction, distance)
 
+ スクロール。
 
- スクロール。
-[Number](Number.md)
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `direction` | [Number](Number.md) |  |
-| `distance` | [Number](Number.md) |  |
+| `direction` | [Number](Number.html) |  |
+| `distance` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
 #### enableNameDisplay ()
 
-
- マップ[表示名]を表示に設定。
+ マップ[表示名]を表示に設定。
 <dl>
 </dl>
 
-#### encounterList () → {[Array](Array.md).<[RPG.Map.Encounter](RPG.Map.Encounter.md)>}
+#### encounterList () → {[Array](Array.html).<[RPG.Map.Encounter](RPG.Map.Encounter.html)>}
 
-
-[エンカウント]の配列を返す。
+[エンカウント]の配列を返す。
 <dl>
-</dl>[Number](Number.md)
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Typ[Game_Event](Game_Event.md)
+                <dt> Type </dt>
                 <dd>
                     <span><a>Array</a>.&lt;<a>RPG.Map.Encounter</a>&gt;</span>
                 </dd>
             </dl>
 
-#### encounterStep () → {[Number](Number.md)}
+#### encounterStep () → {[Number](Number.html)}
 
-[Number](Number.md)
-[敵出現歩数]を返す。
+[敵出現歩数]を返す。
 <dl>
 </dl>
 
@@ -575,31 +540,29 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
                 </dd>
             </dl>
 
-#### eraseEvent (eventId)[Number](Number.md)
+#### eraseEvent (eventId)
 
-
- イベントIDに対応する[イベント]を削除。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | [Number](Number.md)
-| `event[Number](Number.md).md) |  |
-
-<dl>
-</dl>
-
-#### event (eventId) → {[Game_Event](Game_Event.md)}
-
-
- イベントIDに対応する[イベント]を返す。
+ イベントIDに対応する[イベント]を削除。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `eventId` | [Number](Number.md) |  |
-[Array](Array.md)[Game_Event](Game_Event.md)
+| `eventId` | [Number](Number.html) |  |
+
+<dl>
+</dl>
+
+#### event (eventId) → {[Game_Event](Game_Event.html)}
+
+ イベントIDに対応する[イベント]を返す。
+
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `eventId` | [Number](Number.html) |  |
+
 <dl>
 </dl>
 
@@ -612,60 +575,33 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
                 </dd>
             </dl>
 
-#### eventIdXy (x, y) → {[Number](Number.md)}
+#### eventIdXy (x, y) → {[Number](Number.html)}
 
-[Array](Array.md)[Game_Event](Game_Event.md)
- 指定位置にある[イベント]のイベントIDを返す。
+ 指定位置にある[イベント]のイベントIDを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-[Number](Number.md)
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
+
 <dl>
 </dl>
 
 ##### Returns:
 
-
- イベントがない場合は0、複数ある場合は最初のイベントID
+ イベントがない場合は0、複数ある場合は最初のイベントID
 <dl>
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-[Array](Array.md)[Game_Event](Game_Event.md)
-#### events () → {[Array](Array.md).<[Game_Event](Game_Event.md)>}
 
+#### events () → {[Array](Array.html).<[Game_Event](Game_Event.html)>}
 
- 現在のマップ上に存在する全[イベント]の配列を返す。
-<dl>
-</dl>
-
-##### Re[Number](Number.md)
-[Number](Number.md)
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Game_Event</a>&gt;</span>
-                </dd>
-            </dl>
-
-#### eventsXy (x, y) → {[Array](Array.md).<[Game_Event](Game_Event.md)>}
-
-
- 指定位置にある[イベント]を配列で返す。
-
-##### Parameters:
-[Number](Number.md)
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-
+ 現在のマップ上に存在する全[イベント]の配列を返す。
 <dl>
 </dl>
 
@@ -678,20 +614,19 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
                 </dd>
             </dl>
 
-#### eventsXyNt (x, y) → {[Array](Array.md).<[Game_Event](Game_Event.md)>}
+#### eventsXy (x, y) → {[Array](Array.html).<[Game_Event](Game_Event.html)>}
 
-
- 指定位置にある、通行不可の[イベント]を配列で返す。たぶん Nt = No Through。
+ 指定位置にある[イベント]を配列で返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
 
-<dl>[Number](Number.md)
-</dl>[Number](Number.md)
+<dl>
+</dl>
 
 ##### Returns:
 
@@ -702,17 +637,38 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
                 </dd>
             </dl>
 
-#### height () → {[Number](Number.md)}
+#### eventsXyNt (x, y) → {[Array](Array.html).<[Game_Event](Game_Event.html)>}
 
+ 指定位置にある、通行不可の[イベント]を配列で返す。たぶん Nt = No Through。
 
- マップの[高さ]を返す。
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
+
 <dl>
 </dl>
 
 ##### Returns:
 
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Array</a>.&lt;<a>Game_Event</a>&gt;</span>
+                </dd>
+            </dl>
 
- タイル数
+#### height () → {[Number](Number.html)}
+
+ マップの[高さ]を返す。
+<dl>
+</dl>
+
+##### Returns:
+
+ タイル数
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -722,22 +678,20 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
 
 #### initialize ()
 
-
- オブジェクト生成時の初期化。
+ オブジェクト生成時の初期化。
 <dl>
 </dl>
 
 #### isAirshipLandOk (x, y) → {Boolean}
-[Number](Number.md)
-[Number](Number.md)
-[飛行船]で指定位置に着地できるか。
+
+[飛行船]で指定位置に着地できるか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
 
 <dl>
 </dl>
@@ -751,10 +705,9 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
                 </dd>
             </dl>
 
-#### isA[Number](Number.md){Boolean}
-[Number](Number.md)
+#### isAnyEventStarting () → {Boolean}
 
- なんらかの[イベント]が実行されたか。
+ なんらかの[イベント]が実行されたか。
 <dl>
 </dl>
 
@@ -769,15 +722,14 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
 
 #### isBoatPassable (x, y) → {Boolean}
 
-
-[小型船]で指定位置が通れるか。
+[小型船]で指定位置が通れるか。
 
 ##### Parameters:
 
-| Name |[Number](Number.md)
-| --- | [Number](Number.md)
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
+| Name | Type | Description |
+| --- | --- | --- |
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
 
 <dl>
 </dl>
@@ -793,15 +745,14 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
 
 #### isBush (x, y) → {Boolean}
 
-
- 指定位置のタイルに[茂み]属性を持つものがあるか。
+ 指定位置のタイルに[茂み]属性を持つものがあるか。
 
 ##### Parameters:
-[Number](Number.md)
-| Name |[Number](Number.md)
+
+| Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
 
 <dl>
 </dl>
@@ -817,15 +768,14 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
 
 #### isCounter (x, y) → {Boolean}
 
-
- 指定位置のタイルに[カウンター]属性を持つものがあるか。
+ 指定位置のタイルに[カウンター]属性を持つものがあるか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
 
 <dl>
 </dl>
@@ -841,17 +791,16 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
 
 #### isDamageFloor (x, y) → {Boolean}
 
-
- 指定位置のタイルに[ダメージ床]属性を持つものがあるか。
+ 指定位置のタイルに[ダメージ床]属性を持つものがあるか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-[Number](Number.md)
-<dl>[Number](Number.md)
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
+
+<dl>
 </dl>
 
 ##### Returns:
@@ -865,8 +814,7 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
 
 #### isDashDisabled () → {Boolean}
 
-
-[ダッシュ禁止]か。
+[ダッシュ禁止]か。
 <dl>
 </dl>
 
@@ -881,8 +829,7 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
 
 #### isEventRunning () → {Boolean}
 
-
- イベント実行中か。
+ イベント実行中か。
 <dl>
 </dl>
 
@@ -897,15 +844,14 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
 
 #### isLadder (x, y) → {Boolean}
 
-
- 指定位置のタイルに[梯](はしご)属性を持つものがあるか。
+ 指定位置のタイルに[梯](はしご)属性を持つものがあるか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
 
 <dl>
 </dl>
@@ -921,8 +867,7 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
 
 #### isLoopHorizontal () → {Boolean}
 
-
-[横方向にループする]か。
+[横方向にループする]か。
 <dl>
 </dl>
 
@@ -933,12 +878,11 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
                 <dd>
                     <span>Boolean</span>
                 </dd>
-        [Number](Number.md)
-[Number](Number.md)
-#### isL[Number](Number.md)lean}
+            </dl>
 
+#### isLoopVertical () → {Boolean}
 
-[縦方向にループする]か。
+[縦方向にループする]か。
 <dl>
 </dl>
 
@@ -953,8 +897,7 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
 
 #### isNameDisplayEnabled () → {Boolean}
 
-
- マップ[表示名]が表示されるか。
+ マップ[表示名]が表示されるか。
 <dl>
 </dl>
 
@@ -969,11 +912,10 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
 
 #### isOverworld () → {Boolean}
 
-
-[タイルセット]の[モード]が[フィールドタイプ]か。
+[タイルセット]の[モード]が[フィールドタイプ]か。
 <dl>
-</dl>[Number](Number.md)
-[Number](Number.md)
+</dl>
+
 ##### Returns:
 
 <dl>
@@ -985,18 +927,17 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
 
 #### isPassable (x, y, d) → {Boolean}
 
-
- 指定位置から指定方向に進めるか。
+ 指定位置から指定方向に進めるか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-| `d` | [Number](Number.md) |  方向(テンキー対応) |
-[Number](Number.md)
-<dl>[Number](Number.md)
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
+| `d` | [Number](Number.html) |  方向(テンキー対応) |
+
+<dl>
 </dl>
 
 ##### Returns:
@@ -1010,31 +951,29 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
 
 #### isScrolling () → {Boolean}
 
-[Array](Array.md)[Number](Number.md)
- スクロール中か。
+ スクロール中か。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-        [Number](Number.md)t>
-        [Number](Number.md)
+                <dt> Type </dt>
+                <dd>
                     <span>Boolean</span>
                 </dd>
             </dl>
 
 #### isShipPassable (x, y) → {Boolean}
 
-
-[大型船]で指定位置が通れるか。
+[大型船]で指定位置が通れるか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number]([Number](Number.md)|
-| `y` | [Number](Number.md) |  タイル数 |
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
 
 <dl>
 </dl>
@@ -1048,22 +987,21 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
                 </dd>
             </dl>
 
-#### isValid (x, y) → {B[String](String.md)
+#### isValid (x, y) → {Boolean}
 
-
- 指定位置がマップ範囲に含まれているか。
+ 指定位置がマップ範囲に含まれているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
 
 <dl>
 </dl>
 
-##### Returns:[Number](Number.md)
+##### Returns:
 
 <dl>
                 <dt> Type </dt>
@@ -1072,18 +1010,17 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
                 </dd>
             </dl>
 
-#### layeredTiles (x, y) → {[Array](Array.md).<[Number](Number.md)>}
+#### layeredTiles (x, y) → {[Array](Array.html).<[Number](Number.html)>}
 
-
- 指定位置に重なったタイルIDの配列を返す。
+ 指定位置に重なったタイルIDの配列を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-[Number](Number.md)
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
+
 <dl>
 </dl>
 
@@ -1096,14 +1033,13 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
                 </dd>
             </dl>
 
-#### mapId () → {[Number](Number.md)}
+#### mapId () → {[Number](Number.html)}
 
-
- マップIDを返す。
+ マップIDを返す。
 <dl>
 </dl>
 
-##### Returns:[Array](Array.md)[RPG.CommonEvent](RPG.CommonEvent.md)
+##### Returns:
 
 <dl>
                 <dt> Type </dt>
@@ -1112,10 +1048,9 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
                 </dd>
             </dl>
 
-#### parallaxName () → {[String](String.md)}
+#### parallaxName () → {[String](String.html)}
 
-
-[遠景]画像のファイル名を返す。
+[遠景]画像のファイル名を返す。
 <dl>
 </dl>
 
@@ -1128,7 +1063,7 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
                 </dd>
             </dl>
 
-#### parallaxOx () → {[Number](Number.md)}
+#### parallaxOx () → {[Number](Number.html)}
 
 <dl>
                 <dt>To Do:</dt>
@@ -1142,16 +1077,16 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
 ##### Returns:
 
 <dl>
-                <dt> Typ[Number](Number.md)
+                <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
             </dl>
 
-#### parallaxOy () → {[Number](Number.md)}
+#### parallaxOy () → {[Number](Number.html)}
 
-<dl>[Number](Number.md)
-        [Number](Number.md)t>
+<dl>
+                <dt>To Do:</dt>
                 <dd>
                     <ul>
                         <li>&#x3053;&#x306E;&#x7528;&#x8A9E;&#x306E;&#x610F;&#x5473;&#x304C;&#x5206;&#x304B;&#x3063;&#x305F;&#x3089;&#x6559;&#x3048;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;</li>
@@ -1168,17 +1103,16 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
                 </dd>
             </dl>
 
-#### parallelCommonEvents () → {[Array](Array.md).<[RPG.CommonEvent](RPG.CommonEvent.md)>}
+#### parallelCommonEvents () → {[Array](Array.html).<[RPG.CommonEvent](RPG.CommonEvent.html)>}
 
-
-[並列処理]の[コモンイベント]の配列を返す。
+[並列処理]の[コモンイベント]の配列を返す。
 <dl>
-</dl>[Number](Number.md)
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt[Number](Number.md)
+                <dt> Type </dt>
                 <dd>
                     <span><a>Array</a>.&lt;<a>RPG.CommonEvent</a>&gt;</span>
                 </dd>
@@ -1186,46 +1120,41 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
 
 #### refereshVehicles ()
 
-[Number](Number.md)
-[乗り物]を再描画。
+[乗り物]を再描画。
 <dl>
 </dl>
 
 #### refresh ()
 
-
-[イベント]の更新。
+[イベント]の更新。
 <dl>
 </dl>
 
 #### refreshIfNeeded ()
 
-
-[Game_Map#requestRefresh](Game_Map.[Number](Number.md)で予約されていたら再描画。
+[Game_Map#requestRefresh](Game_Map.html#requestRefresh) で予約されていたら再描画。
 <dl>
 </dl>
 
 #### refreshTileEvents ()
 
+ タイルが設定されている[イベント]を更新。
+<dl>
+</dl>
 
- タイルが設定されている[イベント]を更新。
-<dl>[Number](Number.md)
-</dl>[Number](Number.md)
+#### regionId (x, y) → {[Number](Number.html)}
 
-#### regionId (x, y) → {[Number](Number.md)}
-
-
- 指定位置のタイルのリージョンIDを返す。
+ 指定位置のタイルのリージョンIDを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
 
 <dl>
-</dl>[Number](Number.md)
+</dl>
 
 ##### Returns:
 
@@ -1233,92 +1162,38 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
-        [Number](Number.md)
+                </dd>
             </dl>
 
 #### requestRefresh (mapId)
 
-
- マップの再描画を予約。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `mapId` | [Number](Number.md) |  |
-
-<dl>
-</dl>[Number](Number.md)
-
-#### roundX (x) → {[Number](Number.md)}
-
-
- ループ回数を考慮しない x座標に変換。
-
-##### Parameters:
-[Number](Number.md)
-| Name |[Number](Number.md)
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-
-<dl>
-</dl>
-
-##### Returns:
-
-
- タイル数
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>[Number](Number.md)
-            </dl>
-
-#### roundXWithDirection (x, d) → {[Number](Number.md)}
-
-
- 指定向きに移動した(ループ回数を考慮しない) x座標を返す。
+ マップの再描画を予約。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `d` | [Number](Number.md) |  向き(テンキー対応) |
+| `mapId` | [Number](Number.html) |  |
 
 <dl>
-</dl>[Number](Number.md)
+</dl>
 
-##### Returns:
+#### roundX (x) → {[Number](Number.html)}
 
-
- タイル数
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### roundY (y) → {[Number](Number.md)}
-
-
- ループ回数を考慮しない y座標に変換。[Number](Number.md)
+ ループ回数を考慮しない x座標に変換。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `y` | [Number](Number.md) |  タイル数 |
+| `x` | [Number](Number.html) |  タイル数 |
 
 <dl>
 </dl>
 
 ##### Returns:
 
-
- タイル数
+ タイル数
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -1326,25 +1201,23 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
                 </dd>
             </dl>
 
-#### roundYWithDirection (y, d) → {[Number](Number.md)}
-[Number](Number.md)
+#### roundXWithDirection (x, d) → {[Number](Number.html)}
 
- 指定向きに移動した(ループ回数を考慮しない) y座標を返す。
+ 指定向きに移動した(ループ回数を考慮しない) x座標を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `y` | [Number](Number.md) |  タイル数 |
-| `d` | [Number](Number.md) |  向き(テンキー対応) |
+| `x` | [Number](Number.html) |  タイル数 |
+| `d` | [Number](Number.html) |  向き(テンキー対応) |
 
 <dl>
 </dl>
-[Number](Number.md)
+
 ##### Returns:
 
-
- タイル数
+ タイル数
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -1352,35 +1225,22 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
                 </dd>
             </dl>
 
-#### screenTileX () → {[Number](Number.md)}
-[Number](Number.md)
+#### roundY (y) → {[Number](Number.html)}
 
- 画面の幅を返す。
+ ループ回数を考慮しない y座標に変換。
+
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `y` | [Number](Number.html) |  タイル数 |
+
 <dl>
 </dl>
 
 ##### Returns:
 
-
- タイル数(小数点以下有り)
-<dl>
-                <dt> Type </dt>
-                <dd>
-               [Number](Number.md)/a></span>
-                </dd>
-            </dl>
-
-#### screenTileY () → {[Number](Number.md)}
-
-
- 画面の高さを返す。
-<dl>
-</dl>
-
-##### Returns:
-
-[Number](Number.md)
- タイル数(小数[Number](Number.md)
+ タイル数
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -1388,12 +1248,67 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
                 </dd>
             </dl>
 
-#### scrollDistance () → {[Number](Number.md)}
+#### roundYWithDirection (y, d) → {[Number](Number.html)}
 
+ 指定向きに移動した(ループ回数を考慮しない) y座標を返す。
 
- スクロール距離を返す。
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `y` | [Number](Number.html) |  タイル数 |
+| `d` | [Number](Number.html) |  向き(テンキー対応) |
+
 <dl>
-</dl>[Number](Number.md)
+</dl>
+
+##### Returns:
+
+ タイル数
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Number</a></span>
+                </dd>
+            </dl>
+
+#### screenTileX () → {[Number](Number.html)}
+
+ 画面の幅を返す。
+<dl>
+</dl>
+
+##### Returns:
+
+ タイル数(小数点以下有り)
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Number</a></span>
+                </dd>
+            </dl>
+
+#### screenTileY () → {[Number](Number.html)}
+
+ 画面の高さを返す。
+<dl>
+</dl>
+
+##### Returns:
+
+ タイル数(小数点以下有り)
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Number</a></span>
+                </dd>
+            </dl>
+
+#### scrollDistance () → {[Number](Number.html)}
+
+ スクロール距離を返す。
+<dl>
+</dl>
 
 ##### Returns:
 
@@ -1406,93 +1321,86 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
 
 #### scrollDown (distance)
 
-
- 指定数だけ下にスクロール。
+ 指定数だけ下にスクロール。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `distance` | [Number](Number.md) |  タイル数 |
+| `distance` | [Number](Number.html) |  タイル数 |
 
 <dl>
 </dl>
 
 #### scrollLeft (distance)
 
-
- 指定数だけ左にスクロール。
+ 指定数だけ左にスクロール。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `distance` | [Number](Number.md) |  |
+| `distance` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
 #### scrollRight (distance)
 
-
- 指定数だけ右にスクロール。
+ 指定数だけ右にスクロール。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `distance` | [Number](Number.md) |  |
+| `distance` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
 #### scrollUp (distance)
 
-
- 指定数だけ上にスクロール。
+ 指定数だけ上にスクロール。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `distance` | [Number](Number.md) |  |
+| `distance` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
 #### setDisplayPos (x, y)
 
-
- 指定位置(画面左上基準)にマップ表示。 マップ端でスクロールが止まるか、ループする処理も行う。
+ 指定位置(画面左上基準)にマップ表示。 マップ端でスクロールが止まるか、ループする処理も行う。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
 
 <dl>
 </dl>
 
 #### setup (mapId)
 
-
- マップ移動などで新たなマップを表示する場合の初期化。
+ マップ移動などで新たなマップを表示する場合の初期化。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `mapId` | [Number](Number.md) |  マップID |
+| `mapId` | [Number](Number.html) |  マップID |
 
 <dl>
 </dl>
 
 #### setupAutorunCommonEvent () → {Boolean}
 
-
-Sets up an auto run common event.
+Sets up an auto run common event.
 <dl>
                 <dt>To Do:</dt>
                 <dd>
@@ -1503,7 +1411,7 @@ Sets up an auto run common event.
             </dl>
 
 ##### Returns:
-[Game_Vehicle](Game_Vehicle.md)
+
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -1513,36 +1421,32 @@ Sets up an auto run common event.
 
 #### setupBattleback ()
 
-
- 戦闘背景の初期化。
+ 戦闘背景の初期化。
 <dl>
 </dl>
 
 #### setupEvents ()
 
-
-[イベント]の初期化。
+[イベント]の初期化。
 <dl>
 </dl>
 
 #### setupParallax ()
-[Number](Number.md)
-[Number](Number.md)
-[遠景]の初期化。[Number](Number.md)
+
+[遠景]の初期化。
 <dl>
 </dl>
 
 #### setupScroll ()
-[Number](Number.md)
 
- スクロールの初期化。
+ スクロールの初期化。
 <dl>
 </dl>
 
 #### setupStartingEvent () → {Boolean}
 
-<dl>[Number](Number.md)
-        [Number](Number.md)t>
+<dl>
+                <dt>To Do:</dt>
                 <dd>
                     <ul>
                         <li>&#x3053;&#x306E;&#x7528;&#x8A9E;&#x306E;&#x610F;&#x5473;&#x304C;&#x5206;&#x304B;&#x3063;&#x305F;&#x3089;&#x6559;&#x3048;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;</li>
@@ -1556,7 +1460,7 @@ Sets up an auto run common event.
                 <dt> Type </dt>
                 <dd>
                     <span>Boolean</span>
-                </dd>[Array](Array.md)[Game_Event](Game_Event.md)
+                </dd>
             </dl>
 
 #### setupStartingMapEvent () → {Boolean}
@@ -1564,8 +1468,8 @@ Sets up an auto run common event.
 <dl>
                 <dt>To Do:</dt>
                 <dd>
-        [Number](Number.md)
-        [Number](Number.md)#x3053;&#x306E;&#x7528;&#x8A9E;&#x306E;&#x610F;&#x5473;&#x304C;&#x5206;&#x304B;&#x3063;&#x305F;&#x3089;&#x6559;&#x3048;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;</li>
+                    <ul>
+                        <li>&#x3053;&#x306E;&#x7528;&#x8A9E;&#x306E;&#x610F;&#x5473;&#x304C;&#x5206;&#x304B;&#x3063;&#x305F;&#x3089;&#x6559;&#x3048;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;</li>
                     </ul>
                 </dd>
             </dl>
@@ -1579,7 +1483,7 @@ Sets up an auto run common event.
                 </dd>
             </dl>
 
-#### setupTestEvent ()[Number](Number.md)
+#### setupTestEvent () → {Boolean}
 
 <dl>
                 <dt>To Do:</dt>
@@ -1595,17 +1499,16 @@ Sets up an auto run common event.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span[Number](Number.md)
+                    <span>Boolean</span>
                 </dd>
             </dl>
 
-#### ship () → {[Game_Vehicle](Game_Vehicle.md)}
+#### ship () → {[Game_Vehicle](Game_Vehicle.html)}
 
+[大型船]を返す。
+<dl>
+</dl>
 
-[大型船]を返す。
-<dl>[Number](Number.md)
-</dl>[Number](Number.md)
-[Number](Number.md)
 ##### Returns:
 
 <dl>
@@ -1617,32 +1520,30 @@ Sets up an auto run common event.
 
 #### startScroll (direction, distance, speed)
 
+ スクロール開始。
 
- スクロール開始。
-[RPG.Tileset](RPG.Tileset.md)
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `direction` | [Number](Number.md) |  |
-| `distance` | [Number](Number.md) |  |
-| `speed` | [Number](Number.md) |  |
+| `direction` | [Number](Number.html) |  |
+| `distance` | [Number](Number.html) |  |
+| `speed` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
-#### terrainTag (x, y) → {[Number](Number.md)}
+#### terrainTag (x, y) → {[Number](Number.html)}
 
-
- 指定位置のタイルのうち最初の[地形タグ]を返す[Array](Array.md)[Number](Number.md)
+ 指定位置のタイルのうち最初の[地形タグ]を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-[$1]($2.md)
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
+
 <dl>
 </dl>
 
@@ -1650,22 +1551,21 @@ Sets up an auto run common event.
 
 <dl>
                 <dt> Type </dt>
-                <dd>[Number](Number.md)
+                <dd>
                     <span><a>Number</a></span>
                 </dd>
             </dl>
 
-#### tileEventsXy (x, y) → {[Array](Array.md).<[Game_Event](Game_Event.md)>}
+#### tileEventsXy (x, y) → {[Array](Array.html).<[Game_Event](Game_Event.html)>}
 
-
- 指定位置にある、画像にタイルセットを選択した[イベント]を配列で返す。
+ 指定位置にある、画像にタイルセットを選択した[イベント]を配列で返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Numb[Number](Number.md)
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -1679,17 +1579,15 @@ Sets up an auto run common event.
                 </dd>
             </dl>
 
-#### tileHeight () → {[Number](Number.md)}
+#### tileHeight () → {[Number](Number.html)}
 
-
- タイルの高さを返す。
+ タイルの高さを返す。
 <dl>
 </dl>
 
 ##### Returns:
 
-
- ピクセル(デフォルト : [Number](Number.md)
+ ピクセル(デフォルト : 48)
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -1697,18 +1595,17 @@ Sets up an auto run common event.
                 </dd>
             </dl>
 
-#### tileId (x, y, z) → {[Number](Number.md)}
+#### tileId (x, y, z) → {[Number](Number.html)}
 
-
- 指定位置のタイルIDを返す。
+ 指定位置のタイルIDを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-| `z` | [Number](Number.md) |  重なり(0 〜 3) |
+| `x` | [Number](Number.html) |  タイル数 |
+| `y` | [Number](Number.html) |  タイル数 |
+| `z` | [Number](Number.html) |  重なり(0 〜 3) |
 
 <dl>
 </dl>
@@ -1722,10 +1619,9 @@ Sets up an auto run common event.
                 </dd>
             </dl>
 
-#### tileset () → {[RPG.Tileset](RPG.Tileset.md)}
+#### tileset () → {[RPG.Tileset](RPG.Tileset.html)}
 
-
-[タイルセット]を返す。
+[タイルセット]を返す。
 <dl>
 </dl>
 
@@ -1737,18 +1633,16 @@ Sets up an auto run common event.
                     <span><a>RPG.Tileset</a></span>
                 </dd>
             </dl>
-[Game_Vehicle](Game_Vehicle.md)
-#### tilesetFlags () → {[Array](Array.md).<[Number](Number.md)>}
 
+#### tilesetFlags () → {[Array](Array.html).<[Number](Number.html)>}
 
-[タイルセット]に設定された[通行]などの地形フラグを返す。
+[タイルセット]に設定された[通行]などの地形フラグを返す。
 <dl>
 </dl>
 
-##### Retur[Number](Number.md)[String](String.md)
+##### Returns:
 
-
- 詳細は[RPG.Tileset](RPG.Tileset.md) を参照
+ 詳細は[RPG.Tileset](RPG.Tileset.html) を参照
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -1756,10 +1650,9 @@ Sets up an auto run common event.
                 </dd>
             </dl>
 
-#### tilesetId () → {[Number](Number.md)}
+#### tilesetId () → {[Number](Number.html)}
 
-
- タイルセットIDを返す。[Array](Array.md)[Game_Vehicle](Game_Vehicle.md)
+ タイルセットIDを返す。
 <dl>
 </dl>
 
@@ -1772,17 +1665,15 @@ Sets up an auto run common event.
                 </dd>
             </dl>
 
-#### tileWidth () → {[Number](Number.md)}
+#### tileWidth () → {[Number](Number.html)}
 
-[Number](Number.md)
- タイルの幅を返す。
+ タイルの幅を返す。
 <dl>
 </dl>
 
 ##### Returns:
 
-
- ピクセル(デフォルト : 48)
+ ピクセル(デフォルト : 48)
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -1790,79 +1681,71 @@ Sets up an auto run common event.
                 </dd>
             </dl>
 
-#### unlockEvent (eventId)[Number](Number.md)
+#### unlockEvent (eventId)
 
-
- 指定IDの[イベント]をアンロック。 決定ボタンでイベントをプレイヤーの方に向かせた状態の解除。
+ 指定IDの[イベント]をアンロック。 決定ボタンでイベントをプレイヤーの方に向かせた状態の解除。
 
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | [Number](Number.md)
-| `event[Number](Number.md).md) |  |
+| --- | --- | --- |
+| `eventId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
 #### update (sceneActive)
 
-
- マップをアップデート。
+ マップをアップデート。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `sceneActive` | Boolean |  |
-[Number](Number.md)
+
 <dl>
 </dl>
 
 #### updateEvents ()
 
-
- 現在のマップにある全[イベント]をアップデート。
-<dl>[Number](Number.md)
-</dl>[Number](Number.md)
+ 現在のマップにある全[イベント]をアップデート。
+<dl>
+</dl>
 
 #### updateInterpreter ()
 
-
- インタプリタをアップデート。
+ インタプリタをアップデート。
 <dl>
 </dl>
 
 #### updateParallax ()
 
-
-[遠景]をアップデート。
+[遠景]をアップデート。
 <dl>
 </dl>
 
 #### updateScroll ()
 
-
- スクロールをアップデート。
+ スクロールをアップデート。
 <dl>
 </dl>
 
 #### updateVehicles ()
 
-
- 現在のマップにある全乗り物をアップデート。
+ 現在のマップにある全乗り物をアップデート。
 <dl>
 </dl>
 
-#### vehicle (type) → {[Game_Vehicle](Game_Vehicle.md)}
+#### vehicle (type) → {[Game_Vehicle](Game_Vehicle.html)}
 
-
- 数値( 0:小型船, 1:大型船, 2:飛行船 )か文字列( 'boat', 'ship', 'airship' )による指定で[乗り物]を返す。
+ 数値( 0:小型船, 1:大型船, 2:飛行船 )か文字列( 'boat', 'ship', 'airship' )による指定で[乗り物]を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `type` | [Number](Number.md) | [String](String.md) |  |
+| `type` | [Number](Number.html) | [String](String.html) |  |
 
 <dl>
 </dl>
@@ -1876,10 +1759,9 @@ Sets up an auto run common event.
                 </dd>
             </dl>
 
-#### vehicles () → {[Array](Array.md).<[Game_Vehicle](Game_Vehicle.md)>}
+#### vehicles () → {[Array](Array.html).<[Game_Vehicle](Game_Vehicle.html)>}
 
-
- 生成されている[乗り物]の配列を返す。
+ 生成されている[乗り物]の配列を返す。
 <dl>
 </dl>
 
@@ -1892,17 +1774,15 @@ Sets up an auto run common event.
                 </dd>
             </dl>
 
-#### width () → {[Number](Number.md)}
+#### width () → {[Number](Number.html)}
 
-
- マップの[幅]を返す。
+ マップの[幅]を返す。
 <dl>
 </dl>
 
 ##### Returns:
 
-
- タイル数
+ タイル数
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -1910,25 +1790,23 @@ Sets up an auto run common event.
                 </dd>
             </dl>
 
-#### xWithDirection (x, d) → {[Number](Number.md)}
+#### xWithDirection (x, d) → {[Number](Number.html)}
 
-
- 指定向きに移動した x座標を返す。
+ 指定向きに移動した x座標を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `d` | [Number](Number.md) |  向き(テンキー対応) |
+| `x` | [Number](Number.html) |  タイル数 |
+| `d` | [Number](Number.html) |  向き(テンキー対応) |
 
 <dl>
 </dl>
 
 ##### Returns:
 
-
- タイル数
+ タイル数
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -1936,33 +1814,29 @@ Sets up an auto run common event.
                 </dd>
             </dl>
 
-#### yWithDirection (y, d) → {[Number](Number.md)}
+#### yWithDirection (y, d) → {[Number](Number.html)}
 
-
- 指定向きに移動した y座標を返す。
+ 指定向きに移動した y座標を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `y` | [Number](Number.md) |  タイル数 |
-| `d` | [Number](Number.md) |  向き(テンキー対応) |
+| `y` | [Number](Number.html) |  タイル数 |
+| `d` | [Number](Number.html) |  向き(テンキー対応) |
 
 <dl>
 </dl>
 
 ##### Returns:
 
-
- タイル数
+ タイル数
 <dl>
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
-            </dl>
-
-
+            </dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

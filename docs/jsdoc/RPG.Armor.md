@@ -1,6 +1,6 @@
 # Class: Armor
 
-## [RPG](RPG.md).  Armor ()
+## [RPG](RPG.html).  Armor ()
 
 #### new Armor ()
 
@@ -10,14 +10,14 @@ The data class for armor. Define to [$dataArmors](global.html#$dataArmors) as Ar
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `atypeId` | [Number](Number.md) | The armor type ID. |
+| `atypeId` | [Number](Number.html) | The armor type ID. |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [RPG.EquipItem](RPG.EquipItem.md)
+* [RPG.EquipItem](RPG.EquipItem.html)
 
  <br>
 

@@ -1,6 +1,6 @@
 # Class: Timing
 
-## [RPG](RPG.md) [.Animation](RPG.Animation.md).  Timing ()
+## [RPG](RPG.html) [.Animation](RPG.Animation.html).  Timing ()
 
 #### new Timing ()
 
@@ -10,18 +10,18 @@ The data class for the timing of an animation's SE and flash effects. Define to 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `frame` | [Number](Number.md) | The frame number. 1 less than the number displayed in RPG Maker. |
-| `se` | [RPG.AudioFile](RPG.AudioFile.md) | The sound effect or SE |
-| `flashScope` | [Number](Number.md) | The flash area (0: none, 1: target, 2: screen; 3: hide target). |
-| `flashColor` | [Array](Array.md).<[Number](Number.md)> | The color of the flash (Color). |
-| `flashDuration` | [Number](Number.md) | The duration of the flash. |
+| `frame` | [Number](Number.html) | The frame number. 1 less than the number displayed in RPG Maker. |
+| `se` | [RPG.AudioFile](RPG.AudioFile.html) | The sound effect or SE |
+| `flashScope` | [Number](Number.html) | The flash area (0: none, 1: target, 2: screen; 3: hide target). |
+| `flashColor` | [Array](Array.html).<[Number](Number.html)> | The color of the flash (Color). |
+| `flashDuration` | [Number](Number.html) | The duration of the flash. |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [RPG.MetaData](RPG.MetaData.md)
+* [RPG.MetaData](RPG.MetaData.html)
 
  <br>
 

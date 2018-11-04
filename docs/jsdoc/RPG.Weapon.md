@@ -1,6 +1,6 @@
 # Class: Weapon
 
-## [RPG](RPG.md).  Weapon ()
+## [RPG](RPG.html).  Weapon ()
 
 #### new Weapon ()
 
@@ -10,15 +10,15 @@ The JSON data structure of a weapon. Define to [$dataWeapons](global.html#$dataW
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `wtypeId` | [Number](Number.md) | The weapon type ID. |
-| `animationId` | [Number](Number.md) | The animation ID when using the weapon. |
+| `wtypeId` | [Number](Number.html) | The weapon type ID. |
+| `animationId` | [Number](Number.html) | The animation ID when using the weapon. |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [RPG.EquipItem](RPG.EquipItem.md)
+* [RPG.EquipItem](RPG.EquipItem.html)
 
  <br>
 

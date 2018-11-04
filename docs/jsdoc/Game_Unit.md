@@ -4,7 +4,7 @@
 
 #### new Game_Unit ()
 
-The superclass of [Game_Party](Game_Party.md) and [Game_Troop](Game_Troop.md).
+The superclass of [Game_Party](Game_Party.html) and [Game_Troop](Game_Troop.html).
 
 ##### Properties:
 
@@ -17,10 +17,9 @@ The superclass of [Game_Party](Game_Party.md) and [Game_Troop](Game_Troop.md).
 
 ### Methods
 
-#### agility () → {[Number](Number.md)}
+#### agility () → {[Number](Number.html)}
 
-
-Returns the agility of the unit.
+Returns the agility of the unit.
 <dl>
 </dl>
 
@@ -32,11 +31,10 @@ Returns the agility of the unit.
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-[Array](Array.md)[Game_Battler](Game_Battler.md)
-#### aliveMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
 
+#### aliveMembers () → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
 
-Returns the list of alive battlers.
+Returns the list of alive battlers.
 <dl>
 </dl>
 
@@ -51,22 +49,19 @@ Returns the list of alive battlers.
 
 #### clearActions ()
 
-
-Clears the unit's actions.
+Clears the unit's actions.
 <dl>
 </dl>
 
 #### clearResults ()
 
-
-Clears the action resul[Array](Array.md)[Game_Battler](Game_Battler.md)
+Clears the action results.
 <dl>
 </dl>
 
-#### deadMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
+#### deadMembers () → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
 
-
-Returns the list of dead battlers.
+Returns the list of dead battlers.
 <dl>
 </dl>
 
@@ -81,8 +76,7 @@ Returns the list of dead battlers.
 
 #### inBattle () → {Boolean}
 
-
-Returns true if unit is in battle.
+Returns true if unit is in battle.
 <dl>
 </dl>
 
@@ -97,15 +91,13 @@ Returns true if unit is in battle.
 
 #### initialize ()
 
-
- オブジェクト生成時の初期化。
+ オブジェクト生成時の初期化。
 <dl>
 </dl>
 
 #### isAllDead () → {Boolean}
 
-
-Returns true if all members of the unit are dead.
+Returns true if all members of the unit are dead.
 <dl>
 </dl>
 
@@ -116,22 +108,20 @@ Returns true if all members of the unit are dead.
                 <dd>
                     <span>Boolean</span>
                 </dd>
-            </dl>[Array](Array.md)[Game_Battler](Game_Battler.md)
+            </dl>
 
 #### makeActions ()
 
-
-Creates the action's of the game unit.
+Creates the action's of the game unit.
 <dl>
 </dl>
 
-#### members () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
+#### members () → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
 
-
-Returns the list of battlers.
+Returns the list of battlers.
 <dl>
 </dl>
-[Array](Array.md)[Game_Battler](Game_Battler.md)
+
 ##### Returns:
 
 <dl>
@@ -141,10 +131,9 @@ Returns the list of battlers.
                 </dd>
             </dl>
 
-#### movableMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
+#### movableMembers () → {[Array](Array.html).<[Game_Battler](Game_Battler.html)>}
 
-
-Returns the list of movable members.
+Returns the list of movable members.
 <dl>
 </dl>
 
@@ -158,23 +147,20 @@ Returns the list of movable members.
             </dl>
 
 #### onBattleEnd ()
-[Game_Battler](Game_Battler.md)
 
-Handler for when battle has ended.
+Handler for when battle has ended.
 <dl>
 </dl>
 
 #### onBattleStart ()
 
-
-Handler for when battle is started.
+Handler for when battle is started.
 <dl>
 </dl>
 
-#### randomDeadTarget () → {[Game_Battler](Game_Battler.md)}
+#### randomDeadTarget () → {[Game_Battler](Game_Battler.html)}
 
-[Game_Battler](Game_Battler.md)
-Returns a random dead target from the game unit.
+Returns a random dead target from the game unit.
 <dl>
 </dl>
 
@@ -187,77 +173,41 @@ Returns a random dead target from the game unit.
                 </dd>
             </dl>
 
-#### randomTarget () → {[Game_Battler](Game_Battler.md)}
+#### randomTarget () → {[Game_Battler](Game_Battler.html)}
 
-
-Returns a random target from the game unit.
+Returns a random target from the game unit.
 <dl>
 </dl>
 
 ##### Returns:
 
-<dl>[Game_Battler](Game_Battler.md)
+<dl>
                 <dt> Type </dt>
                 <dd>
                     <span><a>Game_Battler</a></span>
                 </dd>
-            </dl>[Game_Battler](Game_Battler.md)
+            </dl>
 
 #### select (activeMember)
 
+Selects a member of the unit given a battler.
 
-Selects a member of the unit given a battler.
-[Number](Number.md)
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `activeMember` | [Game_Battler](Game_Battler.md) |  |
+| `activeMember` | [Game_Battler](Game_Battler.html) |  |
 
 <dl>
 </dl>
 
-#### smoothDeadTarget (index) → {[Game_Battler](Game_Battler.md)}
+#### smoothDeadTarget (index) → {[Game_Battler](Game_Battler.html)}
 
 ##### Parameters:
 
-| Name | Type | Description |[Game_Battler](Game_Battler.md)
+| Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
-
-<dl>
-</dl>
-[Number](Number.md)
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Game_Battler</a></span>
-                </dd>
-            </dl>
-
-#### smoothTarget (index) → {[Game_Battler](Game_Battler.md)}
-
-##### Parameters:
-
-| Name | Type | Description |[Game_Battler](Game_Battler.md)
-| --- | --- | --- |
-| `index` | [Number](Number.md) |  |
-
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Game_Battler</a></span>
-                </dd>
-            </dl>[Number](Number.md)
-
-#### substituteBattler () → {[Game_Battler](Game_Battler.md)}
+| `index` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -271,7 +221,41 @@ Selects a member of the unit given a battler.
                 </dd>
             </dl>
 
-#### tgrSum () → {[Number](Number.md)}
+#### smoothTarget (index) → {[Game_Battler](Game_Battler.html)}
+
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `index` | [Number](Number.html) |  |
+
+<dl>
+</dl>
+
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Game_Battler</a></span>
+                </dd>
+            </dl>
+
+#### substituteBattler () → {[Game_Battler](Game_Battler.html)}
+
+<dl>
+</dl>
+
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Game_Battler</a></span>
+                </dd>
+            </dl>
+
+#### tgrSum () → {[Number](Number.html)}
 
 <dl>
 </dl>
@@ -283,9 +267,7 @@ Selects a member of the unit given a battler.
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
-            </dl>
-
-
+            </dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

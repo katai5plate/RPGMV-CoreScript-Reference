@@ -1,6 +1,6 @@
 # Class: Skill
 
-## [RPG](RPG.md).  Skill ()
+## [RPG](RPG.html).  Skill ()
 
 #### new Skill ()
 
@@ -10,20 +10,20 @@ The JSON data structure of a skill. Define to [$dataSkills](global.html#$dataSki
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stypeId` | [Number](Number.md) | Skill type ID. |
-| `mpCost` | [Number](Number.md) | Number of MP consumed. |
-| `tpCost` | [Number](Number.md) | Number of TP consumed |
-| `message1` | [String](String.md) | The use message. |
-| `message2` | [String](String.md) | The use message. |
-| `requiredWtypeId1` | [Number](Number.md) | Weapon type required. |
-| `requiredWtypeId2` | [Number](Number.md) | Weapon type required. |
+| `stypeId` | [Number](Number.html) | Skill type ID. |
+| `mpCost` | [Number](Number.html) | Number of MP consumed. |
+| `tpCost` | [Number](Number.html) | Number of TP consumed |
+| `message1` | [String](String.html) | The use message. |
+| `message2` | [String](String.html) | The use message. |
+| `requiredWtypeId1` | [Number](Number.html) | Weapon type required. |
+| `requiredWtypeId2` | [Number](Number.html) | Weapon type required. |
 
 <dl>
 </dl>
 
 ### Extends
 
-* [RPG.UsableItem](RPG.UsableItem.md)
+* [RPG.UsableItem](RPG.UsableItem.html)
 
  <br>
 

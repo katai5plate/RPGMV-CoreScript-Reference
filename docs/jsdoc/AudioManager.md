@@ -10,31 +10,31 @@ The static class that handles BGM, BGS, ME and SE.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `masterVolume` | [Number](Number.md) | [static] |
-| `bgmVolume` | [Number](Number.md) | [static] |
-| `bgsVolume` | [Number](Number.md) | [static] |
-| `meVolume` | [Number](Number.md) | [static] |
-| `seVolume` | [Number](Number.md) | [static] |
-| `_bgmVolume` | [Number](Number.md) | [static] |
-| `_bgsVolume` | [Number](Number.md) | [static] |
-| `_meVolume` | [Number](Number.md) | [static] |
-| `_seVolume` | [Number](Number.md) | [static] |
-| `_currentBgm` | [MV.AudioParameters](MV.AudioParameters.md) | [static] |
-| `_currentBgs` | [MV.AudioParameters](MV.AudioParameters.md) | [static] |
-| `_bgmBuffer` | Html5AudioStatic | [WebAudio](WebAudio.md) | [static] |
-| `_bgsBuffer` | Html5AudioStatic | [WebAudio](WebAudio.md) | [static] |
-| `_meBuffer` | Html5AudioStatic | [WebAudio](WebAudio.md) | [static] |
-| `_seBuffers` | [Array](Array.md).<(Html5AudioStatic| [WebAudio](WebAudio.md))> | [static] |
-| `_replayFadeTime` | [Array](Array.md).<(Html5AudioStatic| [WebAudio](WebAudio.md))> | [static] |
-| `_path` | [String](String.md) | [static] |
-| `_blobUrl` | [String](String.md) | [static] |
+| `masterVolume` | [Number](Number.html) | [static] |
+| `bgmVolume` | [Number](Number.html) | [static] |
+| `bgsVolume` | [Number](Number.html) | [static] |
+| `meVolume` | [Number](Number.html) | [static] |
+| `seVolume` | [Number](Number.html) | [static] |
+| `_bgmVolume` | [Number](Number.html) | [static] |
+| `_bgsVolume` | [Number](Number.html) | [static] |
+| `_meVolume` | [Number](Number.html) | [static] |
+| `_seVolume` | [Number](Number.html) | [static] |
+| `_currentBgm` | [MV.AudioParameters](MV.AudioParameters.html) | [static] |
+| `_currentBgs` | [MV.AudioParameters](MV.AudioParameters.html) | [static] |
+| `_bgmBuffer` | Html5AudioStatic | [WebAudio](WebAudio.html) | [static] |
+| `_bgsBuffer` | Html5AudioStatic | [WebAudio](WebAudio.html) | [static] |
+| `_meBuffer` | Html5AudioStatic | [WebAudio](WebAudio.html) | [static] |
+| `_seBuffers` | [Array](Array.html).<(Html5AudioStatic| [WebAudio](WebAudio.html))> | [static] |
+| `_replayFadeTime` | [Array](Array.html).<(Html5AudioStatic| [WebAudio](WebAudio.html))> | [static] |
+| `_path` | [String](String.html) | [static] |
+| `_blobUrl` | [String](String.html) | [static] |
 
 <dl>
 </dl>
 
 ### Methods
 
-#### (static) audioFileExt () → {[String](String.md)}
+#### (static) audioFileExt () → {[String](String.html)}
 
 <dl>
 </dl>
@@ -59,12 +59,12 @@ The static class that handles BGM, BGS, ME and SE.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `webAudio` | Html5AudioStatic | [WebAudio](WebAudio.md) |  |
+| `webAudio` | Html5AudioStatic | [WebAudio](WebAudio.html) |  |
 
 <dl>
 </dl>
 
-#### (static) createBuffer () → {Html5AudioStatic|[WebAudio](WebAudio.md)}
+#### (static) createBuffer () → {Html5AudioStatic|[WebAudio](WebAudio.html)}
 
 <dl>
 </dl>
@@ -84,9 +84,9 @@ The static class that handles BGM, BGS, ME and SE.
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `url` | [String](String.md) |  |  |
-| `bgm` | [MV.AudioParameters](MV.AudioParameters.md) |  |  |
-| `pos` | [Number](Number.md) | <optional> |  |
+| `url` | [String](String.html) |  |  |
+| `bgm` | [MV.AudioParameters](MV.AudioParameters.html) |  |  |
+| `pos` | [Number](Number.html) | <optional> |  |
 
 <dl>
 </dl>
@@ -97,7 +97,7 @@ The static class that handles BGM, BGS, ME and SE.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.md) |  |
+| `duration` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -108,7 +108,7 @@ The static class that handles BGM, BGS, ME and SE.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.md) |  |
+| `duration` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -119,7 +119,7 @@ The static class that handles BGM, BGS, ME and SE.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.md) |  |
+| `duration` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -130,7 +130,7 @@ The static class that handles BGM, BGS, ME and SE.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.md) |  |
+| `duration` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -141,7 +141,7 @@ The static class that handles BGM, BGS, ME and SE.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.md) |  |
+| `duration` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -152,7 +152,7 @@ The static class that handles BGM, BGS, ME and SE.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `bgm` | [MV.AudioParameters](MV.AudioParameters.md) |  |
+| `bgm` | [MV.AudioParameters](MV.AudioParameters.html) |  |
 
 <dl>
 </dl>
@@ -172,7 +172,7 @@ The static class that handles BGM, BGS, ME and SE.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `bgs` | [MV.AudioParameters](MV.AudioParameters.md) |  |
+| `bgs` | [MV.AudioParameters](MV.AudioParameters.html) |  |
 
 <dl>
 </dl>
@@ -192,7 +192,7 @@ The static class that handles BGM, BGS, ME and SE.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `se` | [MV.AudioParameters](MV.AudioParameters.md) |  |
+| `se` | [MV.AudioParameters](MV.AudioParameters.html) |  |
 
 <dl>
 </dl>
@@ -212,12 +212,12 @@ The static class that handles BGM, BGS, ME and SE.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `se` | [MV.AudioParameters](MV.AudioParameters.md) |  |
+| `se` | [MV.AudioParameters](MV.AudioParameters.html) |  |
 
 <dl>
 </dl>
 
-#### (static) makeEmptyAudioObject () → {[MV.AudioParameters](MV.AudioParameters.md)}
+#### (static) makeEmptyAudioObject () → {[MV.AudioParameters](MV.AudioParameters.html)}
 
 <dl>
 </dl>
@@ -237,8 +237,8 @@ The static class that handles BGM, BGS, ME and SE.
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `bgm` | [MV.AudioParameters](MV.AudioParameters.md) |  |  |
-| `pos` | [Number](Number.md) | <optional> |  |
+| `bgm` | [MV.AudioParameters](MV.AudioParameters.html) |  |  |
+| `pos` | [Number](Number.html) | <optional> |  |
 
 <dl>
 </dl>
@@ -249,8 +249,8 @@ The static class that handles BGM, BGS, ME and SE.
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `bgs` | [MV.AudioParameters](MV.AudioParameters.md) |  |  |
-| `pos` | [Number](Number.md) | <optional> |  |
+| `bgs` | [MV.AudioParameters](MV.AudioParameters.html) |  |  |
+| `pos` | [Number](Number.html) | <optional> |  |
 
 <dl>
 </dl>
@@ -261,8 +261,8 @@ The static class that handles BGM, BGS, ME and SE.
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `bgm` | [MV.AudioParameters](MV.AudioParameters.md) |  |  |
-| `pos` | [Number](Number.md) | <optional> |  |
+| `bgm` | [MV.AudioParameters](MV.AudioParameters.html) |  |  |
+| `pos` | [Number](Number.html) | <optional> |  |
 
 <dl>
 </dl>
@@ -273,7 +273,7 @@ The static class that handles BGM, BGS, ME and SE.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `me` | [MV.AudioParameters](MV.AudioParameters.md) |  |
+| `me` | [MV.AudioParameters](MV.AudioParameters.html) |  |
 
 <dl>
 </dl>
@@ -284,7 +284,7 @@ The static class that handles BGM, BGS, ME and SE.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `se` | [MV.AudioParameters](MV.AudioParameters.md) |  |
+| `se` | [MV.AudioParameters](MV.AudioParameters.html) |  |
 
 <dl>
 </dl>
@@ -295,7 +295,7 @@ The static class that handles BGM, BGS, ME and SE.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `se` | [MV.AudioParameters](MV.AudioParameters.md) |  |
+| `se` | [MV.AudioParameters](MV.AudioParameters.html) |  |
 
 <dl>
 </dl>
@@ -306,7 +306,7 @@ The static class that handles BGM, BGS, ME and SE.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `bgm` | [MV.AudioParameters](MV.AudioParameters.md) |  |
+| `bgm` | [MV.AudioParameters](MV.AudioParameters.html) |  |
 
 <dl>
 </dl>
@@ -317,12 +317,12 @@ The static class that handles BGM, BGS, ME and SE.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `bgs` | [MV.AudioParameters](MV.AudioParameters.md) |  |
+| `bgs` | [MV.AudioParameters](MV.AudioParameters.html) |  |
 
 <dl>
 </dl>
 
-#### (static) saveBgm () → {[MV.AudioParameters](MV.AudioParameters.md)}
+#### (static) saveBgm () → {[MV.AudioParameters](MV.AudioParameters.html)}
 
 <dl>
 </dl>
@@ -336,7 +336,7 @@ The static class that handles BGM, BGS, ME and SE.
                 </dd>
             </dl>
 
-#### (static) saveBgs () → {[MV.AudioParameters](MV.AudioParameters.md)}
+#### (static) saveBgs () → {[MV.AudioParameters](MV.AudioParameters.html)}
 
 <dl>
 </dl>
@@ -352,8 +352,7 @@ The static class that handles BGM, BGS, ME and SE.
 
 #### (static) shouldUseHtml5Audio () → {Boolean}
 
-
-The only case where we wanted html5audio was android/ no encrypt Atsuma-ru asked to force webaudio there too, so just return false for ALL
+The only case where we wanted html5audio was android/ no encrypt Atsuma-ru asked to force webaudio there too, so just return false for ALL
 <dl>
 </dl>
 
@@ -396,8 +395,8 @@ The only case where we wanted html5audio was android/ no encrypt Atsuma-ru asked
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --[MV.AudioParameters](MV.AudioParameters.md)
-| `bgm` | [MV.AudioParameters](MV.AudioParameters.md) |  |
+| --- | --- | --- |
+| `bgm` | [MV.AudioParameters](MV.AudioParameters.html) |  |
 
 <dl>
 </dl>
@@ -407,8 +406,8 @@ The only case where we wanted html5audio was android/ no encrypt Atsuma-ru asked
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --[MV.AudioParameters](MV.AudioParameters.md)
-| `bgs` | [MV.AudioParameters](MV.AudioParameters.md) |  |
+| --- | --- | --- |
+| `bgs` | [MV.AudioParameters](MV.AudioParameters.html) |  |
 
 <dl>
 </dl>
@@ -418,10 +417,10 @@ The only case where we wanted html5audio was android/ no encrypt Atsuma-ru asked
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- |[MV.AudioParameters](MV.AudioParameters.md)
-| `buffer` | [MV.Au[Number](Number.md)ioParameters.md) |  |
-| `configVol[MV.AudioParameters](MV.AudioParameters.md)
-| `audio` | [MV.AudioParameters](MV.AudioParameters.md) |  |
+| --- | --- | --- |
+| `buffer` | [MV.AudioParameters](MV.AudioParameters.html) |  |
+| `configVolume` | [Number](Number.html) |  |
+| `audio` | [MV.AudioParameters](MV.AudioParameters.html) |  |
 
 <dl>
 </dl>
@@ -431,9 +430,9 @@ The only case where we wanted html5audio was android/ no encrypt Atsuma-ru asked
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --[MV.AudioParameters](MV.AudioParameters.md)
-| `bgm` | [Number](Number.md)MV.AudioParameters.md) |  |
-| `pos` | [Number](Number.md) |  |
+| --- | --- | --- |
+| `bgm` | [MV.AudioParameters](MV.AudioParameters.html) |  |
+| `pos` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -443,9 +442,9 @@ The only case where we wanted html5audio was android/ no encrypt Atsuma-ru asked
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --[MV.AudioParameters](MV.AudioParameters.md)
-| `bgs` | [Number](Number.md)MV.AudioParameters.md) |  |
-| `pos` | [Number](Number.md) |  |
+| --- | --- | --- |
+| `bgs` | [MV.AudioParameters](MV.AudioParameters.html) |  |
+| `pos` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -455,8 +454,8 @@ The only case where we wanted html5audio was android/ no encrypt Atsuma-ru asked
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | -[MV.AudioParameters](MV.AudioParameters.md)
-| `me` | [MV.AudioParameters](MV.AudioParameters.md) |  |
+| --- | --- | --- |
+| `me` | [MV.AudioParameters](MV.AudioParameters.html) |  |
 
 <dl>
 </dl>
@@ -466,14 +465,12 @@ The only case where we wanted html5audio was android/ no encrypt Atsuma-ru asked
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- |[MV.AudioParameters](MV.AudioParameters.md)
-| `buffer[MV.AudioParameters](MV.AudioParameters.md)tml) |  |
-| `se` | [MV.AudioParameters](MV.AudioParameters.md) |  |
+| --- | --- | --- |
+| `buffer` | [MV.AudioParameters](MV.AudioParameters.html) |  |
+| `se` | [MV.AudioParameters](MV.AudioParameters.html) |  |
 
 <dl>
-</dl>
-
-
+</dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

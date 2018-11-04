@@ -10,39 +10,38 @@ The game object class for screen effect data, such as changes in color tone and 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_shake` | [Number](Number.md) |  |
-| `_shakePower` | [Number](Number.md) |  |
-| `_shakeSpeed` | [Number](Number.md) |  |
-| `_shakeDuration` | [Number](Number.md) |  |
-| `_shakeDirection` | [Number](Number.md) |  |
-| `_zoomX` | [Number](Number.md) |  _zoomX property of the game screen. |
-| `_zoomY` | [Number](Number.md) |  _zoomY property of the game screen. |
-| `_zoomScale` | [Number](Number.md) |  |
-| `_zoomScaleTarget` | [Number](Number.md) |  |
-| `_zoomDuration` | [Number](Number.md) |  |
-| `_weatherType` | [String](String.md) |  |
-| `_weatherPower` | [Number](Number.md) |  |
-| `_weatherPowerTarget` | [Number](Number.md) |  |
-| `_weatherDuration` | [Number](Number.md) |  |
-| `_brightness` | [Number](Number.md) | The _brightness property of the game screen; returned when calling the brightness method. |
-| `_fadeOutDuration` | [Number](Number.md) |  |
-| `_fadeInDuration` | [Number](Number.md) |  |
-| `_tone` | [Array](Array.md).<[Number](Number.md)> |  |
-| `_toneTarget` | [Array](Array.md).<[Number](Number.md)> |  |
-| `_toneDuration` | [Number](Number.md) |  |
-| `_flashColor` | [Array](Array.md).<[Number](Number.md)> |  |
-| `_flashDuration` | [Number](Number.md) |  |
-| `_pictures` | [Array](Array.md).<[Game_Picture](Game_Picture.md)> | The array of Game_Pictures that are attached to the game screen. |
+| `_shake` | [Number](Number.html) |  |
+| `_shakePower` | [Number](Number.html) |  |
+| `_shakeSpeed` | [Number](Number.html) |  |
+| `_shakeDuration` | [Number](Number.html) |  |
+| `_shakeDirection` | [Number](Number.html) |  |
+| `_zoomX` | [Number](Number.html) |  _zoomX property of the game screen. |
+| `_zoomY` | [Number](Number.html) |  _zoomY property of the game screen. |
+| `_zoomScale` | [Number](Number.html) |  |
+| `_zoomScaleTarget` | [Number](Number.html) |  |
+| `_zoomDuration` | [Number](Number.html) |  |
+| `_weatherType` | [String](String.html) |  |
+| `_weatherPower` | [Number](Number.html) |  |
+| `_weatherPowerTarget` | [Number](Number.html) |  |
+| `_weatherDuration` | [Number](Number.html) |  |
+| `_brightness` | [Number](Number.html) | The _brightness property of the game screen; returned when calling the brightness method. |
+| `_fadeOutDuration` | [Number](Number.html) |  |
+| `_fadeInDuration` | [Number](Number.html) |  |
+| `_tone` | [Array](Array.html).<[Number](Number.html)> |  |
+| `_toneTarget` | [Array](Array.html).<[Number](Number.html)> |  |
+| `_toneDuration` | [Number](Number.html) |  |
+| `_flashColor` | [Array](Array.html).<[Number](Number.html)> |  |
+| `_flashDuration` | [Number](Number.html) |  |
+| `_pictures` | [Array](Array.html).<[Game_Picture](Game_Picture.html)> | The array of Game_Pictures that are attached to the game screen. |
 
 <dl>
 </dl>
 
 ### Methods
 
-#### brightness () → {[Number](Number.md)}
+#### brightness () → {[Number](Number.html)}
 
-
-Returns the brightness of the game screen.
+Returns the brightness of the game screen.
 <dl>
 </dl>
 
@@ -60,10 +59,10 @@ Returns the brightness of the game screen.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | ---[String](String.md)
-| `type` | [[Number](Number.md)|  |
-| `power` | [Nu[Number](Number.md) |
-| `duration` | [Number](Number.md) |  |
+| --- | --- | --- |
+| `type` | [String](String.html) |  |
+| `power` | [Number](Number.html) |  |
+| `duration` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -75,75 +74,66 @@ Returns the brightness of the game screen.
 
 #### clearFade ()
 
-
-Clears the screen fade.
+Clears the screen fade.
 <dl>
 </dl>
 
 #### clearFlash ()
 
-
-Clears the screen flash.
+Clears the screen flash.
 <dl>
 </dl>
 
 #### clearPictures ()
 
-
-Clears the pictures set on the game screen.
+Clears the pictures set on the game screen.
 <dl>
 </dl>
 
 #### clearShake ()
 
-
-Clears the screen shake.
+Clears the screen shake.
 <dl>
 </dl>
 
 #### clearTone ()
 
-
-Clears the screen tone.
+Clears the screen tone.
 <dl>
 </dl>
 
 #### clearWeather ()
 
-
-Clears the screen weather.
+Clears the screen weather.
 <dl>
 </dl>
 
 #### clearZoom ()
 
-
-Clears the screen zoom.
+Clears the screen zoom.
 <dl>
 </dl>
 
 #### eraseBattlePictures ()
 
-
-Erases the battle pictures.
+Erases the battle pictures.
 <dl>
 </dl>
-[Number](Number.md)
+
 #### erasePicture (pictureId)
 
+Erases a picture from the screen given the respected picture id.
 
-Erases a picture from the screen given the respected picture id.
-[Array](Array.md)[Number](Number.md)
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pictureId` | [Number](Number.md) |  |
+| `pictureId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
-#### flashColor () → {[Array](Array.md).<[Number](Number.md)>}
+#### flashColor () → {[Array](Array.html).<[Number](Number.html)>}
 
 <dl>
 </dl>
@@ -153,69 +143,65 @@ Erases a picture from the screen given the respected picture id.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <sp[Number](Number.md)a>Number</a>&gt;</span>
+                    <span><a>Array</a>.&lt;<a>Number</a>&gt;</span>
                 </dd>
             </dl>
 
 #### initialize ()
 
-
- オブジェクト生成時の初期化。
+ オブジェクト生成時の初期化。
 <dl>
 </dl>
 
-#### maxPictures () → {[Number](Number.md)}
+#### maxPictures () → {[Number](Number.html)}
 
-
-Returns the maximum number of pictures set on the game screen.
+Returns the maximum number of pictures set on the game screen.
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                [Number](Number.md)
-             [Number](Number.md)
-        [Number](Number.md)Number</a></span>
-        [Number](Number.md)
-            <[Number](Number.md)
-[Number](Number.md)
-#### movePictu[Number](Number.md), x, y, scaleX, scaleY, opacity, blendMode, duration)
-[Number](Number.md)
-##### Parameter[Number](Number.md)
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Number</a></span>
+                </dd>
+            </dl>
+
+#### movePicture (pictureId, origin, x, y, scaleX, scaleY, opacity, blendMode, duration)
+
+##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pictureId` | [Number](Number.md) |  |
-| `origin` | [Number](Number.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `scaleX` | [Number](Number.md) |  |
-| `scaleY` | [Number](Number.md) |  |
-| `opacity` | [Number](Number.md) |  |
-| `blendMode` | [Number](Num[Game_Picture](Game_Picture.md)
-| `duration` | [Number](Number.md) |  |
+| `pictureId` | [Number](Number.html) |  |
+| `origin` | [Number](Number.html) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
+| `scaleX` | [Number](Number.html) |  |
+| `scaleY` | [Number](Number.html) |  |
+| `opacity` | [Number](Number.html) |  |
+| `blendMode` | [Number](Number.html) |  |
+| `duration` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
 #### onBattleStart ()
 
-[Number](Number.md)
-Handler for when the battle starts in game; prepares the screen for the battle scene.
+Handler for when the battle starts in game; prepares the screen for the battle scene.
 <dl>
 </dl>
 
-#### picture (pictureId) → {[Game_Picture](Game_Picture.md)}
+#### picture (pictureId) → {[Game_Picture](Game_Picture.html)}
 
-
-Returns the specified picture given the picture id.
+Returns the specified picture given the picture id.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pictureId` | [Number](Number.ht[Number](Number.md)
+| `pictureId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -223,28 +209,27 @@ Returns the specified picture given the picture id.
 ##### Returns:
 
 <dl>
-                [Number](Number.md)
+                <dt> Type </dt>
                 <dd>
                     <span><a>Game_Picture</a></span>
                 </dd>
             </dl>
 
-#### realPictureId (pictureId) → {[Number](Number.md)}
+#### realPictureId (pictureId) → {[Number](Number.html)}
 
-
-Returns the real picture id, given the picture id.
+Returns the real picture id, given the picture id.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pictureId` | [Number](Number.md) |  |
+| `pictureId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
-##### Returns:[Number](Number.md)
-[Number](Number.md)
+##### Returns:
+
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -255,14 +240,14 @@ Returns the real picture id, given the picture id.
 #### rotatePicture (pictureId, speed)
 
 ##### Parameters:
-[Number](Number.md)
-| Name |[Number](Number.md)
-| --- | --- [Number](Number.md)
-| `pictureId` | [Number](Number.md) |  |
-| `speed` | [Number](Number.md) |  |
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `pictureId` | [Number](Number.html) |  |
+| `speed` | [Number](Number.html) |  |
 
 <dl>
-</dl>[Number](Number.md)
+</dl>
 
 #### setZoom (x, y, scale)
 
@@ -270,64 +255,64 @@ Returns the real picture id, given the picture id.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `scale` | [Number](Number.md) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
+| `scale` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
-#### shake () → {[Number](Number.md)}
+#### shake () → {[Number](Number.html)}
 
 <dl>
 </dl>
 
-##### Returns:[Number](Number.md)
-[String](String.md)
-<dl>[Number](Number.md)
-        [Number](Number.md)t>
-        [Number](Number.md)
-             [Number](Number.md)r</a></span>
-             [Number](Number.md)
-            </[Number](Number.md)
-[Number](Number.md)
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Number</a></span>
+                </dd>
+            </dl>
+
 #### showPicture (pictureId, name, origin, x, y, scaleX, scaleY, opacity, blendMode)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pictureId` | [Number](Number.md) |  |
-| `name` | [String](String.md) |  |
-| `origin` | [Number](Number.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number[Number](Number.md)
-| `scaleX` | [Number](Number.md) |  |
-| `scaleY` | [Number](Number.md) |  |
-| `opacity` | [Number](Number.md) |  |
-| `blendMode` | [Number](Number.md) |  |
+| `pictureId` | [Number](Number.html) |  |
+| `name` | [String](String.html) |  |
+| `origin` | [Number](Number.html) |  |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
+| `scaleX` | [Number](Number.html) |  |
+| `scaleY` | [Number](Number.html) |  |
+| `opacity` | [Number](Number.html) |  |
+| `blendMode` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
 #### startFadeIn (duration)
 
-##### Parameter[Number](Number.md)
+##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.md) |  |
+| `duration` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
 #### startFadeOut (duration)
 
-##### Parame[Array](Array.md)[Number](Number.md)
-[Number](Number.md)
+##### Parameters:
+
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.md) |  |
+| `duration` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -338,11 +323,11 @@ Returns the real picture id, given the picture id.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `color` | [Array](Array.md).<[Number](Number.md)> |  |
-| `duration` | [Number](Number.md) |  |
-[Number](Number.md)
-<dl>[Number](Number.md)
-</dl>[Number](Number.md)
+| `color` | [Array](Array.html).<[Number](Number.html)> |  |
+| `duration` | [Number](Number.html) |  |
+
+<dl>
+</dl>
 
 #### startFlashForDamage ()
 
@@ -353,11 +338,11 @@ Returns the real picture id, given the picture id.
 
 ##### Parameters:
 
-| Name | Ty[Array](Array.md)[Number](Number.md)
-| --- | --- | -[Number](Number.md)
-| `power` | [Number](Number.md) |  |
-| `speed` | [Number](Number.md) |  |
-| `duration` | [Number](Number.md) |  |
+| Name | Type | Description |
+| --- | --- | --- |
+| `power` | [Number](Number.html) |  |
+| `speed` | [Number](Number.html) |  |
+| `duration` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -365,11 +350,11 @@ Returns the real picture id, given the picture id.
 #### startTint (tone, duration)
 
 ##### Parameters:
-[Number](Number.md)
-| Name |[Number](Number.md)
-| --- | --- [Number](Number.md)
-| `tone` | [Arr[Number](Number.md)ber](Number.md)> |  |
-| `duration` | [Number](Number.md) |  |
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `tone` | [Array](Array.html).<[Number](Number.html)> |  |
+| `duration` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -379,14 +364,14 @@ Returns the real picture id, given the picture id.
 ##### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --[Number](Number.md)
-| `x` | [Nu[Array](Array.md)| [Number](Number.md)
-| `y` | [Number[Number](Number.md)
-| `scale` | [Number](Number.md) |  |
-| `duration` | [Number](Number.md) |  |
+| --- | --- | --- |
+| `x` | [Number](Number.html) |  |
+| `y` | [Number](Number.html) |  |
+| `scale` | [Number](Number.html) |  |
+| `duration` | [Number](Number.html) |  |
 
 <dl>
-</dl>[Array](Array.md)[Number](Number.md)
+</dl>
 
 #### tintPicture (pictureId, tone, duration)
 
@@ -394,14 +379,14 @@ Returns the real picture id, given the picture id.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pictureId` | [Number](Number.md) |  |
-| `tone` | [Array](Array.md).<[Number](Number.md)> |  |
-| `duration` | [Number](Number.md) |  |
+| `pictureId` | [Number](Number.html) |  |
+| `tone` | [Array](Array.html).<[Number](Number.html)> |  |
+| `duration` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
-#### tone () → {[Array](Array.md).<[Number](Number.md)>}
+#### tone () → {[Array](Array.html).<[Number](Number.html)>}
 
 <dl>
 </dl>
@@ -417,74 +402,64 @@ Returns the real picture id, given the picture id.
 
 #### update ()
 
-
-Updates the game screen.
+Updates the game screen.
 <dl>
 </dl>
 
 #### updateFadeIn ()
 
-
-Updates the screen fade in.
+Updates the screen fade in.
 <dl>
 </dl>
 
 #### updateFadeOut ()
 
-
-Updates the screen fade out.
+Updates the screen fade out.
 <dl>
 </dl>
 
 #### updateFlash ()
 
-
-Update the screen flash.
+Update the screen flash.
 <dl>
 </dl>
 
 #### updatePictures ()
 
-
-Update the screen pictures.
+Update the screen pictures.
 <dl>
 </dl>
 
 #### updateShake ()
 
-
-Update the screen shake.
-<dl>[Number](Number.md)
+Update the screen shake.
+<dl>
 </dl>
 
 #### updateTone ()
 
-
-Updates the screen tone.
+Updates the screen tone.
 <dl>
 </dl>
 
 #### updateWeather ()
 
-
-Update the screen weather.
+Update the screen weather.
 <dl>
-</dl>[String](String.md)
+</dl>
 
 #### updateZoom ()
 
-
-Update the screen zoom.
+Update the screen zoom.
 <dl>
 </dl>
 
-#### weatherPower () → {[Number](Number.md)}
+#### weatherPower () → {[Number](Number.html)}
 
-
-Returns the weather power.
+Returns the weather power.
 <dl>
 </dl>
-[Number](Number.md)
+
 ##### Returns:
 
 <dl>
@@ -494,12 +469,11 @@ Returns the weather power.
                 </dd>
             </dl>
 
-#### weatherType () → {[String](String.md)}
+#### weatherType () → {[String](String.html)}
 
-
-Returns the current weather type.
+Returns the current weather type.
 <dl>
-</dl>[Number](Number.md)
+</dl>
 
 ##### Returns:
 
@@ -510,26 +484,9 @@ Returns the current weather type.
                 </dd>
             </dl>
 
-#### zoomScale () → {[Number](Number.md)}
+#### zoomScale () → {[Number](Number.html)}
 
-
-Returns the zoom scale of the screen.
-<dl>[Number](Number.md)
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### zoomX () → {[Number](Number.md)}
-
-
-Returns the zoom x coordinate of the screen.
+Returns the zoom scale of the screen.
 <dl>
 </dl>
 
@@ -542,10 +499,9 @@ Returns the zoom x coordinate of the screen.
                 </dd>
             </dl>
 
-#### zoomY () → {[Number](Number.md)}
+#### zoomX () → {[Number](Number.html)}
 
-
-Returns the zoom y coordiante of the screen.
+Returns the zoom x coordinate of the screen.
 <dl>
 </dl>
 
@@ -558,7 +514,20 @@ Returns the zoom y coordiante of the screen.
                 </dd>
             </dl>
 
+#### zoomY () → {[Number](Number.html)}
 
+Returns the zoom y coordiante of the screen.
+<dl>
+</dl>
+
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Number</a></span>
+                </dd>
+            </dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

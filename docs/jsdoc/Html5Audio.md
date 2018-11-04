@@ -10,18 +10,18 @@ The static class that handles HTML5 Audio.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `url` | [String](String.md) | [read-only] The url of the audio file. |
-| `volume` | [Number](Number.md) | The volume of the audio. |
+| `url` | [String](String.html) | [read-only] The url of the audio file. |
+| `volume` | [Number](Number.html) | The volume of the audio. |
 | `_initialized` | Boolean |  |
 | `_unlocked` | Boolean |  |
 | `_audioElement` | HTMLAudioElement |  |
-| `_gainTweenInterval` | [Number](Number.md) |  |
-| `_tweenGain` | [Number](Number.md) |  |
-| `_tweenTargetGain` | [Number](Number.md) |  |
-| `_tweenGainStep` | [Number](Number.md) |  |
+| `_gainTweenInterval` | [Number](Number.html) |  |
+| `_tweenGain` | [Number](Number.html) |  |
+| `_tweenTargetGain` | [Number](Number.html) |  |
+| `_tweenGainStep` | [Number](Number.html) |  |
 | `_staticSePath` | Boolean |  |
-| `_volume` | [Number](Number.md) |  |
-| `_loadListeners` | [Array](Array.md).<function()> |  |
+| `_volume` | [Number](Number.html) |  |
+| `_loadListeners` | [Array](Array.html).<function()> |  |
 | `_hasError` | Boolean |  |
 | `_autoPlay` | Boolean |  |
 | `_isLoading` | Boolean |  |
@@ -38,7 +38,7 @@ The static class that handles HTML5 Audio.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `volume` | [Number](Number.md) |  |
+| `volume` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -49,7 +49,7 @@ The static class that handles HTML5 Audio.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `url` | [String](String.md) |  |
+| `url` | [String](String.html) |  |
 
 <dl>
 </dl>
@@ -111,15 +111,14 @@ The static class that handles HTML5 Audio.
 | Name | Type | Description |
 | --- | --- | --- |
 | `loop` | Boolean |  |
-| `offset` | [Number](Number.md) |  |
+| `offset` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
 #### (static) addLoadListener (listner)
 
-
-Add a callback function that will be called when the audio data is loaded.
+Add a callback function that will be called when the audio data is loaded.
 
 ##### Parameters:
 
@@ -132,50 +131,45 @@ Add a callback function that will be called when the audio data is loaded.
 
 #### (static) clear ()
 
-
-Clears the audio data.
+Clears the audio data.
 <dl>
 </dl>
 
 #### (static) fadeIn (duration)
 
-
-Performs the audio fade-in.
+Performs the audio fade-in.
 
 ##### Parameters:
-[Number](Number.md)
+
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.md) | Fade-in time in seconds |
+| `duration` | [Number](Number.html) | Fade-in time in seconds |
 
 <dl>
 </dl>
 
 #### (static) fadeOut (duration)
 
+Performs the audio fade-out.
 
-Performs the audio fade-out.
-
-##### Parameter[Number](Number.md)
+##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.md) | Fade-out time in seconds |
+| `duration` | [Number](Number.html) | Fade-out time in seconds |
 
 <dl>
 </dl>
 
 #### (static) initialize () → {Boolean}
 
-
-Initializes the audio system.
+Initializes the audio system.
 <dl>
 </dl>
 
 ##### Returns:
 
-
-True if the audio system is available
+True if the audio system is available
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -185,15 +179,13 @@ True if the audio system is available
 
 #### (static) isError () → {Boolean}
 
-
-Checks whether a loading error has occurred.
+Checks whether a loading error has occurred.
 <dl>
 </dl>
 
 ##### Returns:
 
-
-True if a loading error has occurred
+True if a loading error has occurred
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -203,15 +195,13 @@ True if a loading error has occurred
 
 #### (static) isPlaying () → {Boolean}
 
-
-Checks whether the audio is playing.
+Checks whether the audio is playing.
 <dl>
 </dl>
 
 ##### Returns:
 
-
-True if the audio is playing
+True if the audio is playing
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -221,80 +211,71 @@ True if the audio is playing
 
 #### (static) isReady () → {Boolean}
 
-
-Checks whether the audio data is ready to play.
+Checks whether the audio data is ready to play.
 <dl>
 </dl>
 
 ##### Returns:
 
-
-True if the audio data is ready to play
+True if the audio data is ready to play
 <dl>
                 <dt> Type </dt>
                 <dd>
                     <span>Boolean</span>
-             [Number](Number.md)
+                </dd>
             </dl>
 
 #### (static) play (loop, offset)
 
-
-Plays the audio.
+Plays the audio.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `loop` | Boolean | Whether the audio data play in a loop |
-| `offset` | [Number](Number.md) | The start position to play in seconds |
+| `offset` | [Number](Number.html) | The start position to play in seconds |
 
 <dl>
 </dl>
 
 #### (static) seek ()
-[String](String.md)
 
-Gets the seek position of the audio.
+Gets the seek position of the audio.
 <dl>
 </dl>
 
 #### (static) setStaticSe (url)
 
-
-Set the URL of static se.
+Set the URL of static se.
 
 ##### Parameters:
 
-| Name | T[String](String.md)
+| Name | Type | Description |
 | --- | --- | --- |
-| `url` | [String](String.md) |  |
+| `url` | [String](String.html) |  |
 
 <dl>
 </dl>
 
 #### (static) setup (url)
 
-
-Sets up the Html5 Audio.
+Sets up the Html5 Audio.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `url` | [String](String.md) | The url of the audio file |
+| `url` | [String](String.html) | The url of the audio file |
 
 <dl>
 </dl>
 
 #### (static) stop ()
 
-
-Stops the audio.
+Stops the audio.
 <dl>
-</dl>
-
-
+</dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

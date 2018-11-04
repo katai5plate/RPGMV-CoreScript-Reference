@@ -10,27 +10,27 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `depth` | [Number](Number.md) |  |
+| `depth` | [Number](Number.html) |  |
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_depth` | [Number](Number.md) |  |
+| `_depth` | [Number](Number.html) |  |
 | `_branch` | Object |  |
-| `_params` | [Array](Array.md).<*> |  |
-| `_indent` | [Number](Number.md) |  |
-| `_frameCount` | [Number](Number.md) |  |
-| `_freezeChecker` | [Number](Number.md) |  |
-| `_mapId` | [Number](Number.md) |  |
-| `_eventId` | [Number](Number.md) |  |
-| `_list` | [Array](Array.md).<[RPG.EventCommand](RPG.EventCommand.md)> |  |
-| `_index` | [Number](Number.md) |  |
-| `_waitCount` | [Number](Number.md) |  |
-| `_waitMode` | [String](String.md) |  |
-| `_comments` | [String](String.md) |  |
-| `_character` | [Game_Event](Game_Event.md) |  |
-| `_childInterpreter` | [Game_Interpreter](Game_Interpreter.md) |  |
+| `_params` | [Array](Array.html).<*> |  |
+| `_indent` | [Number](Number.html) |  |
+| `_frameCount` | [Number](Number.html) |  |
+| `_freezeChecker` | [Number](Number.html) |  |
+| `_mapId` | [Number](Number.html) |  |
+| `_eventId` | [Number](Number.html) |  |
+| `_list` | [Array](Array.html).<[RPG.EventCommand](RPG.EventCommand.html)> |  |
+| `_index` | [Number](Number.html) |  |
+| `_waitCount` | [Number](Number.html) |  |
+| `_waitMode` | [String](String.html) |  |
+| `_comments` | [String](String.html) |  |
+| `_character` | [Game_Event](Game_Event.html) |  |
+| `_childInterpreter` | [Game_Interpreter](Game_Interpreter.html) |  |
 
 <dl>
 </dl>
@@ -43,8 +43,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `list` | [Array](Array.md).<[RPG.EventCommand](RPG.EventCommand.md)> |  |
-| `commonList` | [Array](Array.md).<*> |  |
+| `list` | [Array](Array.html).<[RPG.EventCommand](RPG.EventCommand.html)> |  |
+| `commonList` | [Array](Array.html).<*> |  |
 
 <dl>
 </dl>
@@ -55,20 +55,20 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Number](Number.md) |  |
-| `value` | [Number](Number.md) |  |
-| `allowDeath` | [Number](Number.md) |  |
+| `target` | [Number](Number.html) |  |
+| `value` | [Number](Number.html) |  |
+| `allowDeath` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
-#### character (param) → {[Game_Character](Game_Character.md)}
+#### character (param) → {[Game_Character](Game_Character.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param` | [Number](Number.md) |  |
+| `param` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -84,8 +84,7 @@
 
 #### checkFreeze () → {Boolean}
 
-
-Checks if the interpreter has frozen.
+Checks if the interpreter has frozen.
 <dl>
 </dl>
 
@@ -105,15 +104,13 @@ Checks if the interpreter has frozen.
 
 #### clear ()
 
-
-Clears the interpreter.
+Clears the interpreter.
 <dl>
 </dl>
 
 #### command101 () → {Boolean}
 
-
-Show Text
+Show Text
 <dl>
 </dl>
 
@@ -128,8 +125,7 @@ Show Text
 
 #### command102 () → {Boolean}
 
-
-Show Choices
+Show Choices
 <dl>
 </dl>
 
@@ -144,8 +140,7 @@ Show Choices
 
 #### command103 () → {Boolean}
 
-
-Input Number
+Input Number
 <dl>
 </dl>
 
@@ -160,8 +155,7 @@ Input Number
 
 #### command104 () → {Boolean}
 
-
-Select Item
+Select Item
 <dl>
 </dl>
 
@@ -176,8 +170,7 @@ Select Item
 
 #### command105 () → {Boolean}
 
-
-Show Scrolling Text
+Show Scrolling Text
 <dl>
 </dl>
 
@@ -192,8 +185,7 @@ Show Scrolling Text
 
 #### command108 () → {Boolean}
 
-
-Comment
+Comment
 <dl>
 </dl>
 
@@ -208,8 +200,7 @@ Comment
 
 #### command111 () → {Boolean}
 
-
-Conditional Branch
+Conditional Branch
 <dl>
 </dl>
 
@@ -224,8 +215,7 @@ Conditional Branch
 
 #### command112 () → {Boolean}
 
-
-Loop
+Loop
 <dl>
 </dl>
 
@@ -240,8 +230,7 @@ Loop
 
 #### command113 () → {Boolean}
 
-
-Break Loop
+Break Loop
 <dl>
 </dl>
 
@@ -256,8 +245,7 @@ Break Loop
 
 #### command115 () → {Boolean}
 
-
-Exit Event Processing
+Exit Event Processing
 <dl>
 </dl>
 
@@ -272,8 +260,7 @@ Exit Event Processing
 
 #### command117 () → {Boolean}
 
-
-Common Event
+Common Event
 <dl>
 </dl>
 
@@ -288,8 +275,7 @@ Common Event
 
 #### command118 () → {Boolean}
 
-
-Label
+Label
 <dl>
 </dl>
 
@@ -304,8 +290,7 @@ Label
 
 #### command119 () → {Boolean}
 
-
-Jump to Label
+Jump to Label
 <dl>
 </dl>
 
@@ -320,8 +305,7 @@ Jump to Label
 
 #### command121 () → {Boolean}
 
-
-Control Switches
+Control Switches
 <dl>
 </dl>
 
@@ -336,8 +320,7 @@ Control Switches
 
 #### command122 () → {Boolean}
 
-
-Control Variables
+Control Variables
 <dl>
 </dl>
 
@@ -352,8 +335,7 @@ Control Variables
 
 #### command123 () → {Boolean}
 
-
-Control Self Switch
+Control Self Switch
 <dl>
 </dl>
 
@@ -368,8 +350,7 @@ Control Self Switch
 
 #### command124 () → {Boolean}
 
-
-Control Timer
+Control Timer
 <dl>
 </dl>
 
@@ -384,8 +365,7 @@ Control Timer
 
 #### command125 () → {Boolean}
 
-
-Change Gold
+Change Gold
 <dl>
 </dl>
 
@@ -400,8 +380,7 @@ Change Gold
 
 #### command126 () → {Boolean}
 
-
-Change Items
+Change Items
 <dl>
 </dl>
 
@@ -416,8 +395,7 @@ Change Items
 
 #### command127 () → {Boolean}
 
-
-Change Weapons
+Change Weapons
 <dl>
 </dl>
 
@@ -432,8 +410,7 @@ Change Weapons
 
 #### command128 () → {Boolean}
 
-
-Change Armors
+Change Armors
 <dl>
 </dl>
 
@@ -448,8 +425,7 @@ Change Armors
 
 #### command129 () → {Boolean}
 
-
-Change Party Member
+Change Party Member
 <dl>
 </dl>
 
@@ -464,8 +440,7 @@ Change Party Member
 
 #### command132 () → {Boolean}
 
-
-Change Battle BGM
+Change Battle BGM
 <dl>
 </dl>
 
@@ -480,8 +455,7 @@ Change Battle BGM
 
 #### command133 () → {Boolean}
 
-
-Change Victory ME
+Change Victory ME
 <dl>
 </dl>
 
@@ -496,8 +470,7 @@ Change Victory ME
 
 #### command134 () → {Boolean}
 
-
-Change Save Access
+Change Save Access
 <dl>
 </dl>
 
@@ -512,8 +485,7 @@ Change Save Access
 
 #### command135 () → {Boolean}
 
-
-Change Menu Access
+Change Menu Access
 <dl>
 </dl>
 
@@ -528,8 +500,7 @@ Change Menu Access
 
 #### command136 () → {Boolean}
 
-
-Change Encounter Disable
+Change Encounter Disable
 <dl>
 </dl>
 
@@ -544,8 +515,7 @@ Change Encounter Disable
 
 #### command137 () → {Boolean}
 
-
-Change Formation Access
+Change Formation Access
 <dl>
 </dl>
 
@@ -560,8 +530,7 @@ Change Formation Access
 
 #### command138 () → {Boolean}
 
-
-Change Window Color
+Change Window Color
 <dl>
 </dl>
 
@@ -576,8 +545,7 @@ Change Window Color
 
 #### command139 () → {Boolean}
 
-
-Change Defeat ME
+Change Defeat ME
 <dl>
 </dl>
 
@@ -592,8 +560,7 @@ Change Defeat ME
 
 #### command140 () → {Boolean}
 
-
-Change Vehicle BGM
+Change Vehicle BGM
 <dl>
 </dl>
 
@@ -608,8 +575,7 @@ Change Vehicle BGM
 
 #### command201 () → {Boolean}
 
-
-Transfer Player
+Transfer Player
 <dl>
 </dl>
 
@@ -624,8 +590,7 @@ Transfer Player
 
 #### command202 () → {Boolean}
 
-
-Set Vehicle Location
+Set Vehicle Location
 <dl>
 </dl>
 
@@ -640,8 +605,7 @@ Set Vehicle Location
 
 #### command203 () → {Boolean}
 
-
-Set Event Location
+Set Event Location
 <dl>
 </dl>
 
@@ -656,8 +620,7 @@ Set Event Location
 
 #### command204 () → {Boolean}
 
-
-Set Scroll Map
+Set Scroll Map
 <dl>
 </dl>
 
@@ -672,8 +635,7 @@ Set Scroll Map
 
 #### command205 () → {Boolean}
 
-
-Set Movement Route
+Set Movement Route
 <dl>
 </dl>
 
@@ -688,8 +650,7 @@ Set Movement Route
 
 #### command206 () → {Boolean}
 
-
-Getting On and Off Vehicles
+Getting On and Off Vehicles
 <dl>
 </dl>
 
@@ -704,8 +665,7 @@ Getting On and Off Vehicles
 
 #### command211 () → {Boolean}
 
-
-Change Transparency
+Change Transparency
 <dl>
 </dl>
 
@@ -720,8 +680,7 @@ Change Transparency
 
 #### command212 () → {Boolean}
 
-
-Show Animation
+Show Animation
 <dl>
 </dl>
 
@@ -736,8 +695,7 @@ Show Animation
 
 #### command213 () → {Boolean}
 
-
-Show Balloon Icon
+Show Balloon Icon
 <dl>
 </dl>
 
@@ -752,8 +710,7 @@ Show Balloon Icon
 
 #### command214 () → {Boolean}
 
-
-Erase Event
+Erase Event
 <dl>
 </dl>
 
@@ -768,8 +725,7 @@ Erase Event
 
 #### command216 () → {Boolean}
 
-
-Change Player Followers
+Change Player Followers
 <dl>
 </dl>
 
@@ -784,8 +740,7 @@ Change Player Followers
 
 #### command217 () → {Boolean}
 
-
-Gather Followers
+Gather Followers
 <dl>
 </dl>
 
@@ -800,8 +755,7 @@ Gather Followers
 
 #### command221 () → {Boolean}
 
-
-Fadeout Screen
+Fadeout Screen
 <dl>
 </dl>
 
@@ -816,8 +770,7 @@ Fadeout Screen
 
 #### command222 () → {Boolean}
 
-
-Fadein Screen
+Fadein Screen
 <dl>
 </dl>
 
@@ -832,8 +785,7 @@ Fadein Screen
 
 #### command223 () → {Boolean}
 
-
-Tint Screen
+Tint Screen
 <dl>
 </dl>
 
@@ -848,8 +800,7 @@ Tint Screen
 
 #### command224 () → {Boolean}
 
-
-Flash Screen
+Flash Screen
 <dl>
 </dl>
 
@@ -864,8 +815,7 @@ Flash Screen
 
 #### command225 () → {Boolean}
 
-
-Shake Screen
+Shake Screen
 <dl>
 </dl>
 
@@ -880,8 +830,7 @@ Shake Screen
 
 #### command230 () → {Boolean}
 
-
-Wait
+Wait
 <dl>
 </dl>
 
@@ -896,8 +845,7 @@ Wait
 
 #### command231 () → {Boolean}
 
-
-Show Picture
+Show Picture
 <dl>
 </dl>
 
@@ -912,8 +860,7 @@ Show Picture
 
 #### command232 () → {Boolean}
 
-
-Move Picture
+Move Picture
 <dl>
 </dl>
 
@@ -928,8 +875,7 @@ Move Picture
 
 #### command233 () → {Boolean}
 
-
-Rotate Picture
+Rotate Picture
 <dl>
 </dl>
 
@@ -944,8 +890,7 @@ Rotate Picture
 
 #### command234 () → {Boolean}
 
-
-Tint Picture
+Tint Picture
 <dl>
 </dl>
 
@@ -960,8 +905,7 @@ Tint Picture
 
 #### command235 () → {Boolean}
 
-
-Erase Picture
+Erase Picture
 <dl>
 </dl>
 
@@ -976,8 +920,7 @@ Erase Picture
 
 #### command236 () → {Boolean}
 
-
-Set Weather Effect
+Set Weather Effect
 <dl>
 </dl>
 
@@ -992,8 +935,7 @@ Set Weather Effect
 
 #### command241 () → {Boolean}
 
-
-Play BGM
+Play BGM
 <dl>
 </dl>
 
@@ -1008,8 +950,7 @@ Play BGM
 
 #### command242 () → {Boolean}
 
-
-Fadeout BGM
+Fadeout BGM
 <dl>
 </dl>
 
@@ -1024,8 +965,7 @@ Fadeout BGM
 
 #### command243 () → {Boolean}
 
-
-Save BGM
+Save BGM
 <dl>
 </dl>
 
@@ -1040,8 +980,7 @@ Save BGM
 
 #### command244 () → {Boolean}
 
-
-Resume BGM
+Resume BGM
 <dl>
 </dl>
 
@@ -1056,8 +995,7 @@ Resume BGM
 
 #### command245 () → {Boolean}
 
-
-Play BGS
+Play BGS
 <dl>
 </dl>
 
@@ -1072,8 +1010,7 @@ Play BGS
 
 #### command246 () → {Boolean}
 
-
-Fadeout BGS
+Fadeout BGS
 <dl>
 </dl>
 
@@ -1088,8 +1025,7 @@ Fadeout BGS
 
 #### command249 () → {Boolean}
 
-
-Play ME
+Play ME
 <dl>
 </dl>
 
@@ -1104,8 +1040,7 @@ Play ME
 
 #### command250 () → {Boolean}
 
-
-Play SE
+Play SE
 <dl>
 </dl>
 
@@ -1120,8 +1055,7 @@ Play SE
 
 #### command251 () → {Boolean}
 
-
-Stop SE
+Stop SE
 <dl>
 </dl>
 
@@ -1136,8 +1070,7 @@ Stop SE
 
 #### command261 () → {Boolean}
 
-
-Play Movie
+Play Movie
 <dl>
 </dl>
 
@@ -1152,8 +1085,7 @@ Play Movie
 
 #### command281 () → {Boolean}
 
-
-Change Map Name Display
+Change Map Name Display
 <dl>
 </dl>
 
@@ -1168,8 +1100,7 @@ Change Map Name Display
 
 #### command282 () → {Boolean}
 
-
-Change Tileset
+Change Tileset
 <dl>
 </dl>
 
@@ -1184,8 +1115,7 @@ Change Tileset
 
 #### command283 () → {Boolean}
 
-
-Change Battle Back
+Change Battle Back
 <dl>
 </dl>
 
@@ -1200,8 +1130,7 @@ Change Battle Back
 
 #### command284 () → {Boolean}
 
-
-Change Parallax
+Change Parallax
 <dl>
 </dl>
 
@@ -1216,8 +1145,7 @@ Change Parallax
 
 #### command285 () → {Boolean}
 
-
-Get Location Info
+Get Location Info
 <dl>
 </dl>
 
@@ -1232,8 +1160,7 @@ Get Location Info
 
 #### command301 () → {Boolean}
 
-
-Battle Processing
+Battle Processing
 <dl>
 </dl>
 
@@ -1248,8 +1175,7 @@ Battle Processing
 
 #### command302 () → {Boolean}
 
-
-Shop Processing
+Shop Processing
 <dl>
 </dl>
 
@@ -1264,8 +1190,7 @@ Shop Processing
 
 #### command303 () → {Boolean}
 
-
-Name Input Processing
+Name Input Processing
 <dl>
 </dl>
 
@@ -1280,8 +1205,7 @@ Name Input Processing
 
 #### command311 () → {Boolean}
 
-
-Change HP
+Change HP
 <dl>
 </dl>
 
@@ -1296,8 +1220,7 @@ Change HP
 
 #### command312 () → {Boolean}
 
-
-Change MP
+Change MP
 <dl>
 </dl>
 
@@ -1312,8 +1235,7 @@ Change MP
 
 #### command313 () → {Boolean}
 
-
-Change State
+Change State
 <dl>
 </dl>
 
@@ -1328,8 +1250,7 @@ Change State
 
 #### command314 () → {Boolean}
 
-
-Recover All
+Recover All
 <dl>
 </dl>
 
@@ -1344,8 +1265,7 @@ Recover All
 
 #### command315 () → {Boolean}
 
-
-Change EXP
+Change EXP
 <dl>
 </dl>
 
@@ -1360,8 +1280,7 @@ Change EXP
 
 #### command316 () → {Boolean}
 
-
-Change Level
+Change Level
 <dl>
 </dl>
 
@@ -1376,8 +1295,7 @@ Change Level
 
 #### command317 () → {Boolean}
 
-
-Change Parameter
+Change Parameter
 <dl>
 </dl>
 
@@ -1392,8 +1310,7 @@ Change Parameter
 
 #### command318 () → {Boolean}
 
-
-Change Skill
+Change Skill
 <dl>
 </dl>
 
@@ -1408,8 +1325,7 @@ Change Skill
 
 #### command319 () → {Boolean}
 
-
-Change Equipment
+Change Equipment
 <dl>
 </dl>
 
@@ -1424,8 +1340,7 @@ Change Equipment
 
 #### command320 () → {Boolean}
 
-
-Change Name
+Change Name
 <dl>
 </dl>
 
@@ -1440,8 +1355,7 @@ Change Name
 
 #### command321 () → {Boolean}
 
-
-Change Class
+Change Class
 <dl>
 </dl>
 
@@ -1456,8 +1370,7 @@ Change Class
 
 #### command322 () → {Boolean}
 
-
-Change Actor Images
+Change Actor Images
 <dl>
 </dl>
 
@@ -1472,8 +1385,7 @@ Change Actor Images
 
 #### command323 () → {Boolean}
 
-
-Change Vehicle Image
+Change Vehicle Image
 <dl>
 </dl>
 
@@ -1488,8 +1400,7 @@ Change Vehicle Image
 
 #### command324 () → {Boolean}
 
-
-Change Nickname
+Change Nickname
 <dl>
 </dl>
 
@@ -1504,8 +1415,7 @@ Change Nickname
 
 #### command325 () → {Boolean}
 
-
-Change Profile
+Change Profile
 <dl>
 </dl>
 
@@ -1520,8 +1430,7 @@ Change Profile
 
 #### command326 () → {Boolean}
 
-
-Change TP
+Change TP
 <dl>
 </dl>
 
@@ -1536,8 +1445,7 @@ Change TP
 
 #### command331 () → {Boolean}
 
-
-Change Enemy HP
+Change Enemy HP
 <dl>
 </dl>
 
@@ -1552,8 +1460,7 @@ Change Enemy HP
 
 #### command332 () → {Boolean}
 
-
-Change Enemy MP
+Change Enemy MP
 <dl>
 </dl>
 
@@ -1568,8 +1475,7 @@ Change Enemy MP
 
 #### command333 () → {Boolean}
 
-
-Change Enemy State
+Change Enemy State
 <dl>
 </dl>
 
@@ -1584,8 +1490,7 @@ Change Enemy State
 
 #### command334 () → {Boolean}
 
-
-Enemy Recover All
+Enemy Recover All
 <dl>
 </dl>
 
@@ -1600,8 +1505,7 @@ Enemy Recover All
 
 #### command335 () → {Boolean}
 
-
-Enemy Appear
+Enemy Appear
 <dl>
 </dl>
 
@@ -1616,8 +1520,7 @@ Enemy Appear
 
 #### command336 () → {Boolean}
 
-
-Enemy Transform
+Enemy Transform
 <dl>
 </dl>
 
@@ -1632,8 +1535,7 @@ Enemy Transform
 
 #### command337 () → {Boolean}
 
-
-Show Battle Animation
+Show Battle Animation
 <dl>
 </dl>
 
@@ -1648,8 +1550,7 @@ Show Battle Animation
 
 #### command339 () → {Boolean}
 
-
-Force Action
+Force Action
 <dl>
 </dl>
 
@@ -1664,8 +1565,7 @@ Force Action
 
 #### command340 () → {Boolean}
 
-
-Abort Battle
+Abort Battle
 <dl>
 </dl>
 
@@ -1680,8 +1580,7 @@ Abort Battle
 
 #### command342 () → {Boolean}
 
-
-Change Enemy TP
+Change Enemy TP
 <dl>
 </dl>
 
@@ -1696,8 +1595,7 @@ Change Enemy TP
 
 #### command351 () → {Boolean}
 
-
-Open Menu Screen
+Open Menu Screen
 <dl>
 </dl>
 
@@ -1712,8 +1610,7 @@ Open Menu Screen
 
 #### command352 () → {Boolean}
 
-
-Open Save Screen
+Open Save Screen
 <dl>
 </dl>
 
@@ -1728,8 +1625,7 @@ Open Save Screen
 
 #### command353 () → {Boolean}
 
-
-Game Over
+Game Over
 <dl>
 </dl>
 
@@ -1744,8 +1640,7 @@ Game Over
 
 #### command354 () → {Boolean}
 
-
-Return to Title Screen
+Return to Title Screen
 <dl>
 </dl>
 
@@ -1760,8 +1655,7 @@ Return to Title Screen
 
 #### command355 () → {Boolean}
 
-
-Script
+Script
 <dl>
 </dl>
 
@@ -1776,8 +1670,7 @@ Script
 
 #### command356 () → {Boolean}
 
-
-Plugin Command
+Plugin Command
 <dl>
 </dl>
 
@@ -1788,12 +1681,11 @@ Plugin Command
                 <dd>
                     <span>Boolean</span>
                 </dd>
-            </dl>[RPG.EventCommand](RPG.EventCommand.md)
+            </dl>
 
 #### command402 () → {Boolean}
 
-
-When [**]
+When [**]
 <dl>
 </dl>
 
@@ -1803,13 +1695,12 @@ When [**]
                 <dt> Type </dt>
                 <dd>
                     <span>Boolean</span>
-                </d[Number](Number.md)
+                </dd>
             </dl>
 
 #### command403 () → {Boolean}
 
-
-When Cancel
+When Cancel
 <dl>
 </dl>
 
@@ -1824,8 +1715,7 @@ When Cancel
 
 #### command411 () → {Boolean}
 
-
-Else
+Else
 <dl>
 </dl>
 
@@ -1833,31 +1723,29 @@ Else
 
 <dl>
                 <dt> Type </dt>
-                <dd>[Number](Number.md)
+                <dd>
                     <span>Boolean</span>
                 </dd>
             </dl>
 
 #### command413 () → {Boolean}
 
-
-Repeat Above
+Repeat Above
 <dl>
 </dl>
 
 ##### Returns:
 
-<dl>[Number](Number.md)
+<dl>
                 <dt> Type </dt>
                 <dd>
                     <span>Boolean</span>
                 </dd>
             </dl>
-[Number](Number.md)
-#### command6[Number](Number.md)
-[Number](Number.md)
 
-If Win
+#### command601 () → {Boolean}
+
+If Win
 <dl>
 </dl>
 
@@ -1872,8 +1760,7 @@ If Win
 
 #### command602 () → {Boolean}
 
-
-If Escape
+If Escape
 <dl>
 </dl>
 
@@ -1888,28 +1775,26 @@ If Escape
 
 #### command603 () → {Boolean}
 
-
-If Lose
+If Lose
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-             [Number](Number.md)
-             [Number](Number.md)
+                <dt> Type </dt>
+                <dd>
                     <span>Boolean</span>
                 </dd>
             </dl>
 
-#### currentCommand () → {[RPG.EventCommand](RPG.EventCommand.md)}
+#### currentCommand () → {[RPG.EventCommand](RPG.EventCommand.html)}
 
-
-Returns the current event command.
+Returns the current event command.
 <dl>
 </dl>
 
-##### Return[Number](Number.md)
+##### Returns:
 
 <dl>
                 <dt> Type </dt>
@@ -1918,10 +1803,9 @@ Returns the current event command.
                 </dd>
             </dl>
 
-#### eventId () → {[Number](Number.md)}
+#### eventId () → {[Number](Number.html)}
 
-
-Returns the [Number](Number.md)
+Returns the currrent eventId.
 <dl>
 </dl>
 
@@ -1933,70 +1817,10 @@ Returns the [Number](Number.md)
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-[Number](Number.md)
-#### executeC[Number](Number.md)
 
+#### executeCommand () → {Boolean}
 
-Executes the event command; returns true or false based on execution.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-            [Number](Number.md)</span>
-                </dd>
-            </dl>
-
-#### fadeSpeed () → {[Number](Number.md)}
-
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-            [Number](Number.md)
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-[Number](Number.md)
-#### gameDataOperand (type, param1, param2) → {[Number](Number.md)}
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `type` | [Number](Number.md) |  |
-| `param1` | [Number](Number.md) |  |
-| `param2` | [Number](Number.md) |  |
-
-<dl>
-</dl>
-
-##### Returns:
-[Number](Number.md)
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl[Number](Number.md)
-[Number](Number.md)
-#### initializ[Number](Number.md)
-
-
- オブジェクト生成時の初期化。
-<dl>
-</dl>
-
-#### isRunning () → {Boolean}
-
-
-Returns true if the interpreter is running.
+Executes the event command; returns true or false based on execution.
 <dl>
 </dl>
 
@@ -2006,29 +1830,86 @@ Returns true if the interpreter is running.
                 <dt> Type </dt>
                 <dd>
                     <span>Boolean</span>
-                <[Number](Number.md)
-            </dl>[Number](Number.md)
-[Number](Number.md)
+                </dd>
+            </dl>
+
+#### fadeSpeed () → {[Number](Number.html)}
+
+<dl>
+</dl>
+
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Number</a></span>
+                </dd>
+            </dl>
+
+#### gameDataOperand (type, param1, param2) → {[Number](Number.html)}
+
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `type` | [Number](Number.html) |  |
+| `param1` | [Number](Number.html) |  |
+| `param2` | [Number](Number.html) |  |
+
+<dl>
+</dl>
+
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span><a>Number</a></span>
+                </dd>
+            </dl>
+
+#### initialize ()
+
+ オブジェクト生成時の初期化。
+<dl>
+</dl>
+
+#### isRunning () → {Boolean}
+
+Returns true if the interpreter is running.
+<dl>
+</dl>
+
+##### Returns:
+
+<dl>
+                <dt> Type </dt>
+                <dd>
+                    <span>Boolean</span>
+                </dd>
+            </dl>
+
 #### iterateActorEx (param1, param2, callback)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param1` | [Number](Number.md) |  |
-| `param2` | [Number](Number.md) |  |
+| `param1` | [Number](Number.html) |  |
+| `param2` | [Number](Number.html) |  |
 | `callback` | function |  |
 
 <dl>
 </dl>
-[String](String.md)
-#### iterat[Array](Array.md)llback)
+
+#### iterateActorId (param, callback)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param` | [Number](Number.md) |  |
+| `param` | [Number](Number.html) |  |
 | `callback` | function |  |
 
 <dl>
@@ -2040,36 +1921,36 @@ Returns true if the interpreter is running.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param` | [Number](Number.md) |  |
+| `param` | [Number](Number.html) |  |
 | `callback` | function |  |
 
 <dl>
 </dl>
-[Array](Array.md)[RPG.EventCommand](RPG.EventCommand.md)
-#### iterateBa[Number](Number.md), callback)
+
+#### iterateBattler (param1, param2, callback)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param1` | [Number](Number.md) |  |
-| `param2` | [Number](Number.md) |  |
+| `param1` | [Number](Number.html) |  |
+| `param2` | [Number](Number.html) |  |
 | `callback` | function |  |
 
 <dl>
-</dl>[Array](Array.md)[RPG.EventCommand](RPG.EventCommand.md)
-[Number](Number.md)
+</dl>
+
 #### iterateEnemyIndex (param, callback)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param` | [Number](Number.md) |  |
+| `param` | [Number](Number.html) |  |
 | `callback` | function |  |
 
 <dl>
-</dl>[Array](Array.md)
+</dl>
 
 #### jumpTo (index)
 
@@ -2077,36 +1958,35 @@ Returns true if the interpreter is running.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
+| `index` | [Number](Number.html) |  |
 
 <dl>
-</dl>[Array](Array.md)[Number](Number.md)
+</dl>
 
-#### nextEventCode () → {[Number](Number.md)}
+#### nextEventCode () → {[Number](Number.html)}
 
-
-Returns the next event code.
+Returns the next event code.
 <dl>
 </dl>
 
 ##### Returns:
 
-<dl>[Array](Array.md)[Number](Number.md)
+<dl>
                 <dt> Type </dt>
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
             </dl>
 
-#### operateValue (operation, operandType, operand) → {[Number](Number.md)}
+#### operateValue (operation, operandType, operand) → {[Number](Number.html)}
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `operation` | [Number](Number.md) |  |
-| `operandType` | [Number](Number.md) |  |
-| `operand` | [Number](Number.md) |  |
+| `operation` | [Number](Number.html) |  |
+| `operandType` | [Number](Number.html) |  |
+| `operand` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -2119,31 +1999,30 @@ Returns the next event code.
                     <span><a>Number</a></span>
                 </dd>
             </dl>
-[String](String.md)
+
 #### operateVariable (variableId, operationType, value)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `variableId` | [Number](Number.md) |  |
-| `operationType` | [Number](Number.md) |  |
-| `value` | [Number](Number.md) |  |
+| `variableId` | [Number](Number.html) |  |
+| `operationType` | [Number](Number.html) |  |
+| `value` | [Number](Number.html) |  |
 
 <dl>
 </dl>
 
 #### pluginCommand (command, args)
 
-
- プラグインコマンドを受け取るメソッド。 このメソッドにプラグイン毎の処理を追加。 次のような書き方が定番。
+ プラグインコマンドを受け取るメソッド。 このメソッドにプラグイン毎の処理を追加。 次のような書き方が定番。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `command` | [String](String.md) |  コマンド名 |
-| `args` | [Array](Array.md).<string> |  引数の配列 |
+| `command` | [String](String.html) |  コマンド名 |
+| `args` | [Array](Array.html).<string> |  引数の配列 |
 
 <dl>
 </dl>
@@ -2160,15 +2039,14 @@ Game_Interpreter.prototype.pluginCommand = function ( command, args ){
 
 #### setup (list, eventId)
 
-
-Sets up the interpreter with the list of event commands, and the given event Id.
+Sets up the interpreter with the list of event commands, and the given event Id.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `list` | [Array](Array.md).<[RPG.EventCommand](RPG.EventCommand.md)> |  |
-| `eventId` | [Number](Number.md) |  |
+| `list` | [Array](Array.html).<[RPG.EventCommand](RPG.EventCommand.html)> |  |
+| `eventId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -2179,8 +2057,8 @@ Sets up the interpreter with the list of event commands, and the given event Id.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `list` | [Array](Array.md).<[RPG.EventCommand](RPG.EventCommand.md)> |  |
-| `eventId` | [Number](Number.md) |  |
+| `list` | [Array](Array.html).<[RPG.EventCommand](RPG.EventCommand.html)> |  |
+| `eventId` | [Number](Number.html) |  |
 
 <dl>
 </dl>
@@ -2191,7 +2069,7 @@ Sets up the interpreter with the list of event commands, and the given event Id.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `params` | [Array](Array.md).<*> |  |
+| `params` | [Array](Array.html).<*> |  |
 
 <dl>
 </dl>
@@ -2199,10 +2077,10 @@ Sets up the interpreter with the list of event commands, and the given event Id.
 #### setupItemChoice (params)
 
 ##### Parameters:
-[String](String.md)
+
 | Name | Type | Description |
 | --- | --- | --- |
-| `params` | [Array](Array.md).<[Number](Number.md)> |  |
+| `params` | [Array](Array.html).<[Number](Number.html)> |  |
 
 <dl>
 </dl>
@@ -2213,15 +2091,14 @@ Sets up the interpreter with the list of event commands, and the given event Id.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `params` | [Array](Array.md).<[Number](Number.md)> |  |
+| `params` | [Array](Array.html).<[Number](Number.html)> |  |
 
 <dl>
 </dl>
 
 #### setupReservedCommonEvent () → {Boolean}
 
-
-Returns true if[Number](Number.md)current map.
+Returns true if the event is on the current map.
 <dl>
 </dl>
 
@@ -2236,29 +2113,26 @@ Returns true if[Number](Number.md)current map.
 
 #### setWaitMode (waitMode)
 
-
-Sets the wait mode of the interpreter.
+Sets the wait mode of the interpreter.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `waitMode` | [String](String.md) |  |
+| `waitMode` | [String](String.html) |  |
 
 <dl>
 </dl>
 
 #### skipBranch ()
 
-
-Skips a conditional branch on the interpreter.
+Skips a conditional branch on the interpreter.
 <dl>
 </dl>
 
 #### terminate ()
 
-
-Terminates the game interpreter.
+Terminates the game interpreter.
 <dl>
 </dl>
 
@@ -2269,8 +2143,7 @@ Terminates the game interpreter.
 
 #### updateChild () → {Boolean}
 
-
-Updates the child game interpreter.
+Updates the child game interpreter.
 <dl>
 </dl>
 
@@ -2285,8 +2158,7 @@ Updates the child game interpreter.
 
 #### updateWait () → {Boolean}
 
-
-Updates the wait of the game interpreter.
+Updates the wait of the game interpreter.
 <dl>
 </dl>
 
@@ -2327,7 +2199,7 @@ Updates the wait of the game interpreter.
                 </dd>
             </dl>
 
-#### videoFileExt () → {[String](String.md)}
+#### videoFileExt () → {[String](String.html)}
 
 <dl>
 </dl>
@@ -2343,19 +2215,16 @@ Updates the wait of the game interpreter.
 
 #### wait (duration)
 
-
-sets a specified wait duration for the interpreter.
+sets a specified wait duration for the interpreter.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.md) |  |
+| `duration` | [Number](Number.html) |  |
 
 <dl>
-</dl>
-
-
+</dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
