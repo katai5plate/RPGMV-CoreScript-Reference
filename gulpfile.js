@@ -20,5 +20,5 @@ gulp.task("convert", () => {
     .pipe(rename({
       extname: ".md"
     }))
-    .pipe(gulp.dest("./docs/"));
+    .pipe(gulp.dest("./docs/jsdoc/"));
 });

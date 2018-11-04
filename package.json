@@ -14,7 +14,7 @@
   },
   "scripts": {
     "jsdoc": "rd /s/q _jsdoc & jsdoc -c ./jsdoc.conf.json -d ./_jsdoc/",
-    "2md": "rd /s/q docs & gulp normal && gulp convert",
+    "2md": "rd /s/q \"docs/jsdoc\" & gulp normal && gulp convert",
     "build": "yarn jsdoc && yarn 2md"
   }
 }
