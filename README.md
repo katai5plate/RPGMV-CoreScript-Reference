@@ -13,6 +13,15 @@
 - 編集後・マージ後は必ず[コミットログ](https://github.com/katai5plate/RPGMV-CoreScript-Reference/commits/master)を確認してください。:heavy_check_mark:のときは成功、:full_moon:は検証中、:x:のときは失敗です。失敗を直さないとずっと自動更新が止まり続ける可能性があります。
 - 絶対に`git reset --hard`しないでください。
 
+## 編集する上で望ましいこと
+### 基本
+- ジャイアントコミット（大きな変更を一気に行う）を避ける
+- 相談事や不具合報告はすべて[Issues](https://github.com/katai5plate/RPGMV-CoreScript-Reference/issues)にスレ立てする
+- 編集後、必ずコミットログと反映後のリファレンスページを確認して、問題がないことを確認する
+### 上級
+- 大きな変更や一括変更を行う場合、ローカルに落として作業してブランチを分けてからプルリクを投げる。
+- ブランチ名は`feature/YYYYMMDD-this-is-branch-name`に従う
+
 ### 編集手順
 #### 通常の変更
 0. GitHubアカウントを作る
