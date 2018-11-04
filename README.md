@@ -7,6 +7,12 @@
 - 相談が必要な内容の変更はブランチを分けて行い、切りのよいところでPullRequestを提出
     - PullRequest が問題なければ、 masterブランチにマージを行う
 
+## 編集上の注意
+- GitHub-Pages上のリファレンスページに対応するようにリンクの連携を行ってください。
+- GitHub-Pagesでの反映には数分～数十分時間がかかることがあります。
+- 編集後・マージ後は必ず[コミットログ](https://github.com/katai5plate/RPGMV-CoreScript-Reference/commits/master)を確認してください。:heavy_check_mark:のときは成功、:full_moon:は検証中、:x:のときは失敗です。失敗を直さないとずっと自動更新が止まり続ける可能性があります。
+- 絶対に`git reset --hard`しないでください。
+
 ### 編集手順
 #### 通常の変更
 0. GitHubアカウントを作る
