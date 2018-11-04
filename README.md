@@ -1,6 +1,12 @@
-# RPGMV-CoreScript-Reference
+# [リファレンスページ はこちら](https://katai5plate.github.io/RPGMV-CoreScript-Reference/)
 
-# [リファレンスページ](https://katai5plate.github.io/RPGMV-CoreScript-Reference/)
+# このプロジェクトについて
+- [rpgtkoolmv/corescript](https://github.com/rpgtkoolmv/corescript) で開発されている、[RPGツクールMV](http://www.rpgmakerweb.com/products/programs/rpg-maker-mv)のコアスクリプトのリファレンスを作るプロジェクトです。
+- コアスクリプトをJSDocによりドキュメント生成したものをMarkdownに変換したドキュメントを元に編集を行っていきます。
+
+# 編集について
+## コントリビューターを募集中
+- このプロジェクトは始まったばかりです！ぜひ皆さんもご協力お願いします。
 
 ## 編集の基本方針
 - [`docs/jsdoc/`](https://github.com/katai5plate/RPGMV-CoreScript-Reference/tree/master/docs/jsdoc) を直接書き換える。
