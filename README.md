@@ -1,14 +1,14 @@
 # RPGMV-CoreScript-Reference
 
 ## 編集の基本方針
-- [`docs/jsdoc/`](tree/master/docs/jsdocs) を直接書き換える。
+- [`docs/jsdoc/`](https://github.com/katai5plate/RPGMV-CoreScript-Reference/tree/master/docs/jsdoc) を直接書き換える。
 - 相談が必要な内容の変更はブランチを分けて行い、切りのよいところでPullRequestを提出
     - PullRequest が問題なければ、 masterブランチにマージを行う
 
 ### 編集手順
 #### 通常の変更
 0. GitHubアカウントを作る
-1. [`docs/jsdoc/`](tree/master/docs/jsdocs) から編集するファイルを選ぶ
+1. [`docs/jsdoc/`](https://github.com/katai5plate/RPGMV-CoreScript-Reference/tree/master/docs/jsdoc) から編集するファイルを選ぶ
 2. 右上にある鉛筆マークをクリック
 3. エディタが開くので、編集作業を行う
 4. 編集が終わったら一番下にある`Commit changes`を入力する
@@ -19,7 +19,7 @@
 
 #### 相談が必要な内容の場合
 0. GitHubアカウントを作る
-1. [`docs/jsdoc/`](tree/master/docs/jsdocs) から編集するファイルを選ぶ
+1. [`docs/jsdoc/`](https://github.com/katai5plate/RPGMV-CoreScript-Reference/tree/master/docs/jsdoc) から編集するファイルを選ぶ
 2. 右上にある鉛筆マークをクリック
 3. エディタが開くので、編集作業を行う
 4. 編集が終わったら一番下にある`Commit changes`を入力する
