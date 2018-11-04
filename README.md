@@ -22,7 +22,7 @@
 - 大きな変更や一括変更を行う場合、ローカルに落として作業してブランチを分けてからプルリクを投げる。
 - ブランチ名は`feature/YYYYMMDD-this-is-branch-name`に従う
 
-### 編集手順
+## 編集手順
 #### 通常の変更
 0. GitHubアカウントを作る
 1. [`docs/jsdoc/`](https://github.com/katai5plate/RPGMV-CoreScript-Reference/tree/master/docs/jsdoc) から編集するファイルを選ぶ
@@ -34,7 +34,7 @@
 - チェックボックスは`Commit directly to the master branch`を選ぶ
 6. `Commit changes`を押して決定
 
-#### 相談が必要な内容の場合
+### 相談が必要な内容の場合
 0. GitHubアカウントを作る
 1. [`docs/jsdoc/`](https://github.com/katai5plate/RPGMV-CoreScript-Reference/tree/master/docs/jsdoc) から編集するファイルを選ぶ
 2. 右上にある鉛筆マークをクリック
@@ -50,7 +50,7 @@
 8. `Create pull request`をクリック
 9. 管理者がマージするのを待つ
 
-#### (上級者向け)ファイルを一括で編集を行う場合
+### (上級者向け)ファイルを一括で編集を行う場合
 0. GitHubアカウントを作り、[Gitをインストール](https://git-scm.com/)
 1. コマンドプロンプトで `git clone https://github.com/katai5plate/RPGMV-CoreScript-Reference.git`
 2. コマンドプロンプトのカレントディレクトリにファイルがダウンロードされるので、そこで直接ファイルを編集する
