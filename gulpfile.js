@@ -26,7 +26,7 @@ gulp.task("convert", () => {
 
 gulp.task("replace", () => {
   gulp
-    .src("./docs/jsdoc/**/*.html")
+    .src("./docs/jsdoc/**/*.md")
     .pipe(replace(/\[(.*?)\]\((.*?)\.html\)/g,"[$1]($2.md)"))
     .pipe(gulp.dest("./docs/jsdoc/"));
 });
