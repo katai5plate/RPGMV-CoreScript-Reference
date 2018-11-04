@@ -41,7 +41,7 @@
 4. 編集を開始し、一段落終わったらちょくちょくコミット作業を行う
 - `RPGMV-CoreScript-Reference`ディレクトリをカレントディレクトリにして、コマンドプロンプトから`git add -A`を入力。すると変更がターゲティングされる。
 - つぎに`git commit -m "コミット内容"`を入力。`コミット内容`にここまでの変更内容を簡単に書く。
-5. 作業中のブランチでの編集を終わらせたら`RPGMV-CoreScript-Reference`ディレクトリをカレントディレクトリにしたコマンドプロンプトから`git push origin ブランチ名`を入力。ブランチ名は`3.`で入力したものと同じ
+5. 作業中のブランチでの編集を終わらせたら、コミット作業を終えて、`RPGMV-CoreScript-Reference`ディレクトリをカレントディレクトリにしたコマンドプロンプトから`git push origin ブランチ名`を入力。ブランチ名は`3.`で入力したものと同じ。例：`git push origin feature/20181104-update-XXXX-pages`
 6. 成功したら[ここにアクセス](https://github.com/katai5plate/RPGMV-CoreScript-Reference/compare)
 7. `base:master`になっていることを確認し、`compare:`から自分のブランチを選ぶ。
 8. プルリクエスト登録画面が開くので、タイトルの入力欄に相談内容のタイトル、大きな入力欄に相談内容の詳細を入力
