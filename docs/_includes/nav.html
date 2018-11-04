@@ -1,1 +1,1 @@
-{% for post in site.pages %}{% if post.title != "" %}<p><li><a href="{{post.url}}">{{post.title}}</a></li></p>{% endif %}{% endfor %}
+{% for post in site.pages %}{% if post.title != "" %}<p><li><a href="{{site.url}}/{{site.github.repository_name}}{{post.url}}">{{post.title}}</a></li></p>{% endif %}{% endfor %}
