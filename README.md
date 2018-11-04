@@ -27,15 +27,30 @@
 - 上から２つ目の入力欄は`編集内容を詳しく説明し`入力する（省略可）
 - チェックボックスは`Create a new branch for this commit and start a pull request.`を選ぶ
 5. `Will be created as`の横にある入力欄はデフォルトのままでOK
-- できれば、`feature/update-XXXX`のようにわかりやすいネーミングにするとより良い
+- できれば、`feature/20181104-update-XXXX`のようにわかりやすいネーミングにするとより良い
 6. `Propose file change`を押して決定
 7. プルリクエスト登録画面が開くので、タイトルの入力欄に相談内容のタイトル、大きな入力欄に相談内容の詳細を入力
 8. `Create pull request`をクリック
 9. 管理者がマージするのを待つ
 
-<details><summary>JSDoc作成を行う場合</summary><p></p>
+#### (上級者向け)ファイルを一括で編集を行う場合
+0. GitHubアカウントを作り、[Gitをインストール](https://git-scm.com/)
+1. コマンドプロンプトで `git clone https://github.com/katai5plate/RPGMV-CoreScript-Reference.git`
+2. コマンドプロンプトのカレントディレクトリにファイルがダウンロードされるので、そこで直接ファイルを編集する
+3. 編集を行う内容でブランチを作成する。`RPGMV-CoreScript-Reference`ディレクトリをカレントディレクトリにして、コマンドプロンプトから`git checkout -b "feature/YYYYMMDD-ブランチ名"`を入力。`YYYYMMDD`は2018/11/04なら20181104というように書く。`ブランチ名`は英数とハイフン区切りで編集内容を短く書く。例：`feature/20181104-update-XXXX-pages`
+4. 編集を開始し、一段落終わったらちょくちょくコミット作業を行う
+- `RPGMV-CoreScript-Reference`ディレクトリをカレントディレクトリにして、コマンドプロンプトから`git add -A`を入力。すると変更がターゲティングされる。
+- つぎに`git commit -m "コミット内容"`を入力。`コミット内容`にここまでの変更内容を簡単に書く。
+5. 作業中のブランチでの編集を終わらせたら`RPGMV-CoreScript-Reference`ディレクトリをカレントディレクトリにしたコマンドプロンプトから`git push origin ブランチ名`を入力。ブランチ名は`3.`で入力したものと同じ
+6. 成功したら[ここにアクセス](https://github.com/katai5plate/RPGMV-CoreScript-Reference/compare)
+7. `base:master`になっていることを確認し、`compare:`から自分のブランチを選ぶ。
+8. プルリクエスト登録画面が開くので、タイトルの入力欄に相談内容のタイトル、大きな入力欄に相談内容の詳細を入力
+9. `Create pull request`をクリック
+10. 管理者がマージするのを待つ
 
 ## JSDoc作成を行う場合
+<details><summary>開く</summary><p></p>
+
 - コアスクリプトの大幅変更などにより、内容の大量変更が必要になった際に行う。
 
 ### 必要環境
