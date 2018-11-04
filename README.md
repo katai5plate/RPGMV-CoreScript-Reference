@@ -1,5 +1,7 @@
 # RPGMV-CoreScript-Reference
 
+# [リファレンスページ](https://katai5plate.github.io/RPGMV-CoreScript-Reference/)
+
 ## 編集の基本方針
 - [`docs/jsdoc/`](https://github.com/katai5plate/RPGMV-CoreScript-Reference/tree/master/docs/jsdoc) を直接書き換える。
 - 相談が必要な内容の変更はブランチを分けて行い、切りのよいところでPullRequestを提出
