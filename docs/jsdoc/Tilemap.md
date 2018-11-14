@@ -6,6 +6,8 @@
 
 2Dベースのタイルマップを表示するためのコンテナクラス。 重ね合わせの階層( z )は以下のようになっている。
 
+| 階層 | 内容 |
+| --- | --- |
 | 0 |  低層タイル |
 | 1 |  低層キャラクタ |
 | 2 |  通常タイル(未使用) |
@@ -60,7 +62,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) _compareChildOrder (a, b)
 
-Tilemap#_sortChildrenソート条件のコールバック関数。
+
+Tilemap#_sortChildrenソート条件のコールバック関数。
 
 ##### Parameters:
 
@@ -74,13 +77,15 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) _createLayers ()
 
- 低層×4 + 高層×4 レイヤー(z: 0 〜 7)のを生成。
+
+ 低層×4 + 高層×4 レイヤー(z: 0 〜 7)のを生成。
 <dl>
 </dl>
 
 #### (static) _drawAutotile (bitmap, tileId, dx, dy)
 
- 渡されたBitmapにオートタイル画像を書き込む。
+
+ 渡されたBitmapにオートタイル画像を書き込む。
 
 ##### Parameters:
 
@@ -96,7 +101,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) _drawNormalTile (bitmap, tileId, dx, dy)
 
- 渡されたBitmapに(オートタイルでない通常の)タイル画像を書き込む。
+
+ 渡されたBitmapに(オートタイルでない通常の)タイル画像を書き込む。
 
 ##### Parameters:
 
@@ -112,7 +118,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) _drawShadow (bitmap, shadowBits, dx, dy)
 
- 渡されたBitmapに影ペンの影を描画。
+
+ 渡されたBitmapに影ペンの影を描画。
 
 ##### Parameters:
 
@@ -128,7 +135,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) _drawTableEdge (bitmap, tileId, dx, dy)
 
- 渡されたBitmapにテーブル端の画像を書き込む。
+
+ 渡されたBitmapにテーブル端の画像を書き込む。
 
 ##### Parameters:
 
@@ -144,7 +152,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) _drawTile (bitmap, tileId, dx, dy)
 
- 渡されたBitmapにタイル画像を書き込む。
+
+ 渡されたBitmapにタイル画像を書き込む。
 
 ##### Parameters:
 
@@ -160,7 +169,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) _isHigherTile (tileId) → {Boolean}
 
- 高層のタイルか。
+
+ 高層のタイルか。
 
 ##### Parameters:
 
@@ -209,7 +219,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) _isTableTile (tileId) → {Boolean}
 
- テーブルタイルか。
+
+ テーブルタイルか。
 
 ##### Parameters:
 
@@ -231,7 +242,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) _paintAllTiles (startX, startY)
 
- 全タイルを描画。
+
+ 全タイルを描画。
 
 ##### Parameters:
 
@@ -245,7 +257,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) _paintTiles (startX, startY, x, y)
 
- 指定位置のタイルを描画。
+
+ 指定位置のタイルを描画。
 
 ##### Parameters:
 
@@ -261,7 +274,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) _readLastTiles (i, x, y) → {[Array](Array.md)}
 
- 指定位置の最新タイル配列を返す。
+
+ 指定位置の最新タイル配列を返す。
 
 ##### Parameters:
 
@@ -285,7 +299,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) _readMapData (x, y, z) → {[Number](Number.md)}
 
- 指定位置のマップIDを返す。
+
+ 指定位置のマップIDを返す。
 
 ##### Parameters:
 
@@ -309,13 +324,15 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) _sortChildren ()
 
- 子オブジェクトのソート。
+
+ 子オブジェクトのソート。
 <dl>
 </dl>
 
 #### (static) _updateLayerPositions (startX, startY)
 
- レイヤー位置をアップデート。
+
+ レイヤー位置をアップデート。
 
 ##### Parameters:
 
@@ -329,7 +346,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) _writeLastTiles (i, x, y, tiles)
 
- 指定位置に最新のタイル情報を書き込む。
+
+ 指定位置に最新のタイル情報を書き込む。
 
 ##### Parameters:
 
@@ -345,7 +363,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) getAutotileKind (tileId) → {[Number](Number.md)}
 
- オートタイルの種類を返す。
+
+ オートタイルの種類を返す。
 
 ##### Parameters:
 
@@ -367,7 +386,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) getAutotileShape (tileId) → {[Number](Number.md)}
 
- オートタイルの形を返す。
+
+ オートタイルの形を返す。
 
 ##### Parameters:
 
@@ -389,7 +409,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) isAutotile (tileId) → {Boolean}
 
- オートタイルか。
+
+ オートタイルか。
 
 ##### Parameters:
 
@@ -411,7 +432,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) isFloorTypeAutotile (tileId) → {Boolean}
 
- 地表面のオートタイルか。
+
+ 地表面のオートタイルか。
 
 ##### Parameters:
 
@@ -433,7 +455,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) isGroundTile (tileId) → {Boolean}
 
- 地表のタイルか。
+
+ 地表のタイルか。
 
 ##### Parameters:
 
@@ -455,7 +478,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) isRoofTile (tileId) → {Boolean}
 
- 屋根タイルか。
+
+ 屋根タイルか。
 
 ##### Parameters:
 
@@ -477,7 +501,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) isSameKindTile (tileID1, tileID2) → {Boolean}
 
- 指定したタイルが同じ種類か。
+
+ 指定したタイルが同じ種類か。
 
 ##### Parameters:
 
@@ -500,7 +525,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) isShadowingTile (tileId) → {Boolean}
 
- 設置した時に影が自動でつけられるタイルか。
+
+ 設置した時に影が自動でつけられるタイルか。
 
 ##### Parameters:
 
@@ -522,7 +548,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) isTileA1 (tileId) → {Boolean}
 
-A1のタイルか。
+
+A1のタイルか。
 
 ##### Parameters:
 
@@ -544,7 +571,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) isTileA2 (tileId) → {Boolean}
 
-A2のタイルか。
+
+A2のタイルか。
 
 ##### Parameters:
 
@@ -566,7 +594,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) isTileA3 (tileId) → {Boolean}
 
-A3のタイルか。
+
+A3のタイルか。
 
 ##### Parameters:
 
@@ -588,7 +617,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) isTileA4 (tileId) → {Boolean}
 
-A4のタイルか。
+
+A4のタイルか。
 
 ##### Parameters:
 
@@ -610,7 +640,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) isTileA5 (tileId) → {Boolean}
 
-A5のタイルか。
+
+A5のタイルか。
 
 ##### Parameters:
 
@@ -632,7 +663,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) isVisibleTile (tileId) → {Boolean}
 
- 表示されるタイル番号か。
+
+ 表示されるタイル番号か。
 
 ##### Parameters:
 
@@ -654,7 +686,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) isWallSideTile (tileId) → {Boolean}
 
- 壁面タイルか。
+
+ 壁面タイルか。
 
 ##### Parameters:
 
@@ -676,7 +709,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) isWallTile (tileId) → {Boolean}
 
- 壁タイルか。
+
+ 壁タイルか。
 
 ##### Parameters:
 
@@ -698,7 +732,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) isWallTopTile (tileId) → {Boolean}
 
- 壁上面タイルか。
+
+ 壁上面タイルか。
 
 ##### Parameters:
 
@@ -720,7 +755,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) isWallTypeAutotile (tileId) → {Boolean}
 
- 壁タイプのオートタイルか。
+
+ 壁タイプのオートタイルか。
 
 ##### Parameters:
 
@@ -742,7 +778,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) isWaterfallTile (tileId) → {Boolean}
 
- 滝のタイルか。
+
+ 滝のタイルか。
 
 ##### Parameters:
 
@@ -764,7 +801,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) isWaterfallTypeAutotile (tileId) → {Boolean}
 
- 滝タイプのオートタイルか。
+
+ 滝タイプのオートタイルか。
 
 ##### Parameters:
 
@@ -786,7 +824,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) isWaterTile (tileId) → {Boolean}
 
- 水面のタイルか。
+
+ 水面のタイルか。
 
 ##### Parameters:
 
@@ -808,7 +847,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### (static) makeAutotileId (kind, shape) → {[Number](Number.md)}
 
- オートタイルのIDを生成。
+
+ オートタイルのIDを生成。
 
 ##### Parameters:
 
@@ -822,7 +862,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 ##### Returns:
 
- タイルID
+
+ タイルID
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -832,7 +873,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### addChild (child) → {Object}
 
-[super] コンテナに子オブジェクトを追加。
+
+[super] コンテナに子オブジェクトを追加。
 
 ##### Parameters:
 
@@ -845,7 +887,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 ##### Returns:
 
- 追加されたオブジェクト
+
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -855,7 +898,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### addChildAt (child, index) → {Object}
 
-[super] コンテナの指定位置に子オブジェクトを追加。
+
+[super] コンテナの指定位置に子オブジェクトを追加。
 
 ##### Parameters:
 
@@ -869,7 +913,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 ##### Returns:
 
- 追加されたオブジェクト
+
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -879,13 +924,15 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### initialize ()
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 <dl>
 </dl>
 
 #### isReady () → {Boolean}
 
- 描画準備ができているか。
+
+ 描画準備ができているか。
 <dl>
 </dl>
 
@@ -900,19 +947,22 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### refresh ()
 
- タイルマップを更新。
+
+ タイルマップを更新。
 <dl>
 </dl>
 
 #### refreshTileset ()
 
- タイルセットを更新。
+
+ タイルセットを更新。
 <dl>
 </dl>
 
 #### removeChild (child) → {Object}
 
-[super] コンテナから子オブジェクトを取り除く
+
+[super] コンテナから子オブジェクトを取り除く
 
 ##### Parameters:
 
@@ -925,7 +975,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 ##### Returns:
 
- 取り除かれたオブジェクト
+
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -935,7 +986,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### removeChildAt (index) → {Object}
 
-[super] コンテナの指定位置から子オブジェクトを取り除く
+
+[super] コンテナの指定位置から子オブジェクトを取り除く
 
 ##### Parameters:
 
@@ -948,7 +1000,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 ##### Returns:
 
- 取り除かれたオブジェクト
+
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -958,7 +1011,8 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### setData (width, height, data)
 
- タイルマップのデータを設定。
+
+ タイルマップのデータを設定。
 
 ##### Parameters:
 
@@ -973,15 +1027,19 @@ PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http:/
 
 #### update ()
 
- フレーム毎のタイルマップのアップデート。
+
+ フレーム毎のタイルマップのアップデート。
 <dl>
 </dl>
 
 #### updateTransform ()
 
- 変形をアップデート。
+
+ 変形をアップデート。
 <dl>
-</dl>
+</dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
