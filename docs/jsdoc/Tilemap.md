@@ -857,7 +857,7 @@ A5のタイルか。
 | Name | Type | Description |
 | --- | --- | --- |
 | `kind` | [Number](Number.md) |  種類 |
-| `shape` | [Number](Number.md) |  形 |
+| `shape` | [Number](Number.md) |  0 〜 47 のオートタイルの形を表す番号 |
 
 <dl>
 </dl>
