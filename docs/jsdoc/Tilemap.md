@@ -25,11 +25,11 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `TILE_ID_A1` | [Number](Number.md) | [static] A1タイルの開始番号 |
-| `TILE_ID_A2` | [Number](Number.md) | [static] A2タイルの開始番号 |
-| `TILE_ID_A3` | [Number](Number.md) | [static] A3タイルの開始番号 |
-| `TILE_ID_A4` | [Number](Number.md) | [static] A4タイルの開始番号 |
-| `TILE_ID_A5` | [Number](Number.md) | [static] A5タイルの開始番号 |
+| `TILE_ID_A1` | [Number](Number.md) | [static] A1(アニメーション)タイルの開始番号 |
+| `TILE_ID_A2` | [Number](Number.md) | [static] A2(地面)タイルの開始番号 |
+| `TILE_ID_A3` | [Number](Number.md) | [static] A3(建物)タイルの開始番号 |
+| `TILE_ID_A4` | [Number](Number.md) | [static] A4(壁)タイルの開始番号 |
+| `TILE_ID_A5` | [Number](Number.md) | [static] A5(通常)タイルの開始番号 |
 | `TILE_ID_B` | [Number](Number.md) | [static] Bタイルの開始番号 |
 | `TILE_ID_C` | [Number](Number.md) | [static] Cタイルの開始番号 |
 | `TILE_ID_D` | [Number](Number.md) | [static] Dタイルの開始番号 |
