@@ -164,7 +164,7 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `r` | [Number](Number.md) | 赤 (-255 〜 255) |
-| `g` | [Number](Number.md) | 緑 (-255　〜 255) |
+| `g` | [Number](Number.md) | 緑 (-255 〜 255) |
 | `b` | [Number](Number.md) | 青 (-255 〜 255) |
 
 <dl>
@@ -279,68 +279,63 @@ updates texture is bitmap was dirty
 | `y` | [Number](Number.md) | 上y座標(ピクセル) |
 | `maxWidth` | [Number](Number.md) | 最大許容幅(ピクセル) |
 | `lineHeight` | [Number](Number.md) | 行高さ(ピクセル) |
-| `align` | [String](String.md) | 文字揃え(left\|center\|right) |
+| `align` | [String](String.md) | 文字揃え(left, center, right) |
 
 <dl>
 </dl>
 
 #### fillAll (color)
 
-
-Fills the entire bitmap.
+指定色で全体を塗りつぶす。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `color` | [String](String.md) | The color of the rectangle in CSS format |
+| `color` | [String](String.md) | 色(CSS形式) |
 
 <dl>
 </dl>
 
 #### fillRect (x, y, width, height, color)
 
-
-Fills the specified rectangle.
+指定色で矩形範囲を塗りつぶす。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) | The x coordinate for the upper-left corner |
-| `y` | [Number](Number.md) | The y coordinate for the upper-left corner |
-| `width` | [Number](Number.md) | The width of the rectangle to fill |
-| `height` | [Number](Number.md) | The height of the rectangle to fill |
-| `color` | [String](String.md) | The color of the rectangle in CSS format |
+| `x` | [Number](Number.md) | 左x座標(ピクセル) |
+| `y` | [Number](Number.md) | 上y座標(ピクセル) |
+| `width` | [Number](Number.md) | 矩形幅(ピクセル) |
+| `height` | [Number](Number.md) | 矩形高さ(ピクセル) |
+| `color` | [String](String.md) | 色(CSS形式) |
 
 <dl>
 </dl>
 
 #### getAlphaPixel (x, y) → {[String](String.md)}
 
-
-Returns alpha pixel value at the specified point.
+指定位置の不透明度を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) | The x coordinate of the pixel in the bitmap |
-| `y` | [Number](Number.md) | The y coordinate of the pixel in the bitmap |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
 
 <dl>
 </dl>
 
 ##### Returns:
 
-
-The alpha value
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a>String</a></span>
+    </dd>
+</dl>
 
 #### getPixel (x, y) → {[String](String.md)}
 
