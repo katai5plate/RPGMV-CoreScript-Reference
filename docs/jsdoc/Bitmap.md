@@ -185,8 +185,8 @@
 | `sh` | [Number](Number.md) |  |  | 転送元の画像高さ(ピクセル) |
 | `dx` | [Number](Number.md) |  |  | 転送先x座標(ピクセル) |
 | `dy` | [Number](Number.md) |  |  | 転送先y座標(ピクセル) |
-| `dw` | [Number](Number.md) | <optional> | sw | 転送先の画像幅(ピクセル) |
-| `dh` | [Number](Number.md) | <optional> | sh | 転送先の画像高さ(ピクセル) |
+| `dw` | [Number](Number.md) | \<optional> | sw | 転送先の画像幅(ピクセル) |
+| `dh` | [Number](Number.md) | \<optional> | sh | 転送先の画像高さ(ピクセル) |
 
 <dl>
 </dl>
@@ -206,8 +206,8 @@
 | `sh` | [Number](Number.md) |  |  | 転送元の画像高さ(ピクセル) |
 | `dx` | [Number](Number.md) |  |  | 転送先x座標(ピクセル) |
 | `dy` | [Number](Number.md) |  |  | 転送先y座標(ピクセル) |
-| `dw` | [Number](Number.md) | <optional> | sw | 転送先の画像幅(ピクセル) |
-| `dh` | [Number](Number.md) | <optional> | sh | 転送先の画像高さ(ピクセル) |
+| `dw` | [Number](Number.md) | \<optional> | sw | 転送先の画像幅(ピクセル) |
+| `dh` | [Number](Number.md) | \<optional> | sh | 転送先の画像高さ(ピクセル) |
 
 <dl>
 </dl>
