@@ -62,7 +62,7 @@
 
 #### (static) _compareChildOrder (a, b)
 
-[_sortChildren](Tilemap#_sortChildren)用ソート条件のコールバック関数。
+[_sortChildren](Tilemap.md#_sortChildren)用ソート条件のコールバック関数。
 
 ##### Parameters:
 
