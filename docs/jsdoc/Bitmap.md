@@ -4,7 +4,7 @@
 
 #### new Bitmap (width, height)
 
-The basic object that represents an image. Bitmap states(Bitmap._loadingState): none: Empty Bitmap pending: Url requested, but pending to load until startRequest called purged: Url request completed and purged. requesting: Requesting supplied URI now. requestCompleted: Request completed decrypting: requesting encrypted data from supplied URI or decrypting it. decryptCompleted: Decrypt completed loaded: loaded. isReady() === true, so It's usable. error: error occurred
+画像を表す基本オブジェクト。
 
 ##### Parameters:
 
@@ -33,6 +33,7 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 | `rect` | [Rectangle](Rectangle.md) | [read-only] The rectangle of the bitmap. |
 | `smooth` | Boolean | Whether the smooth scaling is applied. |
 | `paintOpacity` | [Number](Number.md) | The opacity of the drawing object in the range (0, 255). |
+| `_loadingState` | [String](String.md) | [static] none: Empty Bitmap<br/>pending: Url requested, but pending to load until startRequest called<br/>purged: Url request completed and purged.<br/>requesting: Requesting supplied URI now.<br/>requestCompleted: Request completed<br/>decrypting: requesting encrypted data from supplied URI or decrypting it.<br/>decryptCompleted: Decrypt completed<br/>loaded: loaded. isReady() === true, so It's usable.<br/>error: error occurred |
 
 <dl>
 </dl>
