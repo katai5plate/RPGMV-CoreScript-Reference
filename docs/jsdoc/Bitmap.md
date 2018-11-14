@@ -33,7 +33,7 @@
 | `rect` | [Rectangle](Rectangle.md) | [read-only] 画像の矩形範囲 |
 | `smooth` | Boolean | スムーススケーリングを適用するか |
 | `paintOpacity` | [Number](Number.md) | 不透明度(0 〜 255) |
-| `_loadingState` | [String](String.md) | [static]読み込みの状態<br/>none: Empty Bitmap<br/>pending: Url requested, but pending to load until startRequest called<br/>purged: Url request completed and purged.<br/>requesting: Requesting supplied URI now.<br/>requestCompleted: Request completed<br/>decrypting: requesting encrypted data from supplied URI or decrypting it.<br/>decryptCompleted: Decrypt completed<br/>loaded: loaded. isReady() === true, so It's usable.<br/>error: error occurred |
+| `_loadingState` | [String](String.md) | 読み込みの状態<br/>none: Empty Bitmap<br/>pending: Url requested, but pending to load until startRequest called<br/>purged: Url request completed and purged.<br/>requesting: Requesting supplied URI now.<br/>requestCompleted: Request completed<br/>decrypting: requesting encrypted data from supplied URI or decrypting it.<br/>decryptCompleted: Decrypt completed<br/>loaded: loaded. isReady() === true, so It's usable.<br/>error: error occurred |
 
 <dl>
 </dl>
