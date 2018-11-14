@@ -21,8 +21,8 @@
 | `fontFace` | [String](String.md) | フォント名 |
 | `fontSize` | [Number](Number.md) | フォントサイズ(ピクセル) |
 | `fontItalic` | Boolean | イタリックか |
-| `textColor` | [String](String.md) | 文字色(CSSフォーマット) |
-| `outlineColor` | [String](String.md) | アウトラインの色(CSSフォーマット) |
+| `textColor` | [String](String.md) | 文字色(CSS形式) |
+| `outlineColor` | [String](String.md) | アウトラインの色(CSS形式) |
 | `outlineWidth` | [Number](Number.md) | アウトラインの文字幅 |
 | `url` | [String](String.md) | [read-only] 画像ファイルのurl |
 | `baseTexture` | PIXI.BaseTexture | [read-only] The base texture that holds the image. |
@@ -227,24 +227,21 @@ updates texture is bitmap was dirty
 
 #### clear ()
 
-
-Clears the entire bitmap.
+画像を削除。
 <dl>
 </dl>
 
 #### clearRect (x, y, width, height)
-
-
-Clears the specified rectangle.
+指定した矩形範囲を削除。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) | The x coordinate for the upper-left corner |
-| `y` | [Number](Number.md) | The y coordinate for the upper-left corner |
-| `width` | [Number](Number.md) | The width of the rectangle to clear |
-| `height` | [Number](Number.md) | The height of the rectangle to clear |
+| `x` | [Number](Number.md) | 矩形左x座標(ピクセル) |
+| `y` | [Number](Number.md) | 矩形上y座標(ピクセル) |
+| `width` | [Number](Number.md) | 矩形幅(ピクセル) |
+| `height` | [Number](Number.md) | 矩形高さ(ピクセル) |
 
 <dl>
 </dl>
@@ -255,37 +252,34 @@ Clears the specified rectangle.
 </dl>
 
 #### drawCircle (x, y, radius, color)
-
-
-Draw a bitmap in the shape of a circle
+円を描く。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) | The x coordinate based on the circle center |
-| `y` | [Number](Number.md) | The y coordinate based on the circle center |
-| `radius` | [Number](Number.md) | The radius of the circle |
-| `color` | [String](String.md) | The color of the circle in CSS format |
+| `x` | [Number](Number.md) | 中心x座標(ピクセル) |
+| `y` | [Number](Number.md) | 中心y座標(ピクセル) |
+| `radius` | [Number](Number.md) | 半径(ピクセル) |
+| `color` | [String](String.md) | 色(CSS形式) |
 
 <dl>
 </dl>
 
 #### drawText (text, x, y, maxWidth, lineHeight, align)
 
-
-Draws the outline text to the bitmap.
+文字を描く。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.md) | The text that will be drawn |
-| `x` | [Number](Number.md) | The x coordinate for the left of the text |
-| `y` | [Number](Number.md) | The y coordinate for the top of the text |
-| `maxWidth` | [Number](Number.md) | The maximum allowed width of the text |
-| `lineHeight` | [Number](Number.md) | The height of the text line |
-| `align` | [String](String.md) | The alignment of the text |
+| `text` | [String](String.md) | 描く文字 |
+| `x` | [Number](Number.md) | 左x座標(ピクセル) |
+| `y` | [Number](Number.md) | 上y座標(ピクセル) |
+| `maxWidth` | [Number](Number.md) | 最大許容幅(ピクセル) |
+| `lineHeight` | [Number](Number.md) | 行高さ(ピクセル) |
+| `align` | [String](String.md) | 文字揃え(left\|center\|right) |
 
 <dl>
 </dl>
