@@ -19,7 +19,7 @@
 | 8 |  アニメーション |
 | 9 |  タッチ位置表示 |
 
-PIXI.Container ([http://pixijs.download/release/docs/PIXI.Container.html](http://pixijs.download/release/docs/PIXI.Container.md)) の子クラス。 [ShaderTilemap](ShaderTilemap.md) のスーパークラス。
+[PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html) の子クラス。 [ShaderTilemap](ShaderTilemap.md) のスーパークラス。
 
 ##### Properties:
 
