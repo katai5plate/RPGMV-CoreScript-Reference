@@ -10,8 +10,8 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `width` | [Number](Number.md) | The width of the bitmap |
-| `height` | [Number](Number.md) | The height of the bitmap |
+| `width` | [Number](Number.md) | 画像の幅(ピクセル) |
+| `height` | [Number](Number.md) | 画像の高さ(ピクセル) |
 
 ##### Properties:
 
@@ -99,7 +99,8 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 
 #### (static) load (url) → {[Bitmap](Bitmap.md)}
 
-Loads a image file and returns a new bitmap object.
+
+Loads a image file and returns a new bitmap object.
 
 ##### Parameters:
 
@@ -121,7 +122,8 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 
 #### (static) snap (stage) → {[Bitmap](Bitmap.md)}
 
-Takes a snapshot of the game screen and returns a new bitmap object.
+
+Takes a snapshot of the game screen and returns a new bitmap object.
 
 ##### Parameters:
 
@@ -143,7 +145,8 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 
 #### addLoadListener (listner)
 
-Add a callback function that will be called when the bitmap is loaded.
+
+Add a callback function that will be called when the bitmap is loaded.
 
 ##### Parameters:
 
@@ -156,7 +159,8 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 
 #### adjustTone (r, g, b)
 
-Changes the color tone of the entire bitmap.
+
+Changes the color tone of the entire bitmap.
 
 ##### Parameters:
 
@@ -171,7 +175,8 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 
 #### blt (source, sx, sy, sw, sh, dx, dy, dw opt, dh opt)
 
-Performs a block transfer.
+
+Performs a block transfer.
 
 ##### Parameters:
 
@@ -192,7 +197,8 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 
 #### bltImage (source, sx, sy, sw, sh, dx, dy, dw opt, dh opt)
 
-Performs a block transfer, using assumption that original image was not modified (no hue)
+
+Performs a block transfer, using assumption that original image was not modified (no hue)
 
 ##### Parameters:
 
@@ -213,25 +219,29 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 
 #### blur ()
 
-Applies a blur effect to the bitmap.
+
+Applies a blur effect to the bitmap.
 <dl>
 </dl>
 
 #### checkDirty ()
 
-updates texture is bitmap was dirty
+
+updates texture is bitmap was dirty
 <dl>
 </dl>
 
 #### clear ()
 
-Clears the entire bitmap.
+
+Clears the entire bitmap.
 <dl>
 </dl>
 
 #### clearRect (x, y, width, height)
 
-Clears the specified rectangle.
+
+Clears the specified rectangle.
 
 ##### Parameters:
 
@@ -252,7 +262,8 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 
 #### drawCircle (x, y, radius, color)
 
-Draw a bitmap in the shape of a circle
+
+Draw a bitmap in the shape of a circle
 
 ##### Parameters:
 
@@ -268,7 +279,8 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 
 #### drawText (text, x, y, maxWidth, lineHeight, align)
 
-Draws the outline text to the bitmap.
+
+Draws the outline text to the bitmap.
 
 ##### Parameters:
 
@@ -286,7 +298,8 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 
 #### fillAll (color)
 
-Fills the entire bitmap.
+
+Fills the entire bitmap.
 
 ##### Parameters:
 
@@ -299,7 +312,8 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 
 #### fillRect (x, y, width, height, color)
 
-Fills the specified rectangle.
+
+Fills the specified rectangle.
 
 ##### Parameters:
 
@@ -316,7 +330,8 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 
 #### getAlphaPixel (x, y) → {[String](String.md)}
 
-Returns alpha pixel value at the specified point.
+
+Returns alpha pixel value at the specified point.
 
 ##### Parameters:
 
@@ -330,7 +345,8 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 
 ##### Returns:
 
-The alpha value
+
+The alpha value
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -340,7 +356,8 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 
 #### getPixel (x, y) → {[String](String.md)}
 
-Returns pixel color at the specified point.
+
+Returns pixel color at the specified point.
 
 ##### Parameters:
 
@@ -354,7 +371,8 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 
 ##### Returns:
 
-The pixel color (hex format)
+
+The pixel color (hex format)
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -364,7 +382,8 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 
 #### gradientFillRect (x, y, width, height, color1, color2, vertical)
 
-Draws the rectangle with a gradation.
+
+Draws the rectangle with a gradation.
 
 ##### Parameters:
 
@@ -383,7 +402,8 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 
 #### initialize (width, height)
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 
 ##### Parameters:
 
@@ -397,13 +417,15 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 
 #### isError () → {Boolean}
 
-Checks whether a loading error has occurred.
+
+Checks whether a loading error has occurred.
 <dl>
 </dl>
 
 ##### Returns:
 
-True if a loading error has occurred
+
+True if a loading error has occurred
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -413,13 +435,15 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 
 #### isReady () → {Boolean}
 
-Checks whether the bitmap is ready to render.
+
+Checks whether the bitmap is ready to render.
 <dl>
 </dl>
 
 ##### Returns:
 
-True if the bitmap is ready to render
+
+True if the bitmap is ready to render
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -457,7 +481,8 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 
 #### measureTextWidth (text) → {[Number](Number.md)}
 
-Returns the width of the specified text.
+
+Returns the width of the specified text.
 
 ##### Parameters:
 
@@ -470,7 +495,8 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 
 ##### Returns:
 
-The width of the text in pixels
+
+The width of the text in pixels
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -500,7 +526,8 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 
 #### resize (width, height)
 
-Resizes the bitmap.
+
+Resizes the bitmap.
 
 ##### Parameters:
 
@@ -514,7 +541,8 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 
 #### rotateHue (offset)
 
-Rotates the hue of the entire bitmap.
+
+Rotates the hue of the entire bitmap.
 
 ##### Parameters:
 
@@ -532,9 +560,12 @@ The basic object that represents an image. Bitmap states(Bitmap._loadingState): 
 
 #### touch ()
 
-touch the resource
+
+touch the resource
 <dl>
-</dl>
+</dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
