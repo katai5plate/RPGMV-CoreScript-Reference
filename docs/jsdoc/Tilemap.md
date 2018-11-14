@@ -400,12 +400,14 @@ Tilemap#_sortChildrenソート条件のコールバック関数。
 
 ##### Returns:
 
+0 〜 47 のオートタイルの形を表す番号。
+
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a>Number</a></span>
+    </dd>
+</dl>
 
 #### (static) isAutotile (tileId) → {Boolean}
 
