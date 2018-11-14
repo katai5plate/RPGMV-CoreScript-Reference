@@ -100,14 +100,13 @@
 
 #### (static) load (url) → {[Bitmap](Bitmap.md)}
 
-
-Loads a image file and returns a new bitmap object.
+画像ファイルを読み込んで、Bitmapオブジェクトを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `url` | [String](String.md) | The image url of the texture |
+| `url` | [String](String.md) | 画像ファイルのURL |
 
 <dl>
 </dl>
@@ -115,22 +114,21 @@ Loads a image file and returns a new bitmap object.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a>Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) snap (stage) → {[Bitmap](Bitmap.md)}
 
-
-Takes a snapshot of the game screen and returns a new bitmap object.
+指定したStageのゲーム画面のスナップショットを持ったBitmapオブジェクトを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stage` | [Stage](Stage.md) | The stage object |
+| `stage` | [Stage](Stage.md) | Stageオブジェクト |
 
 <dl>
 </dl>
@@ -138,95 +136,90 @@ Takes a snapshot of the game screen and returns a new bitmap object.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a>Bitmap</a></span>
+    </dd>
+</dl>
 
 #### addLoadListener (listner)
 
-
-Add a callback function that will be called when the bitmap is loaded.
+画像がロードされたときに呼ばれるリスナ関数を追加。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `listner` | function | The callback function |
+| `listner` | Function | コールバック関数 |
 
 <dl>
 </dl>
 
 #### adjustTone (r, g, b)
 
-
-Changes the color tone of the entire bitmap.
+指定したRPGに画像のトーンを変更。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `r` | [Number](Number.md) | The red strength in the range (-255, 255) |
-| `g` | [Number](Number.md) | The green strength in the range (-255, 255) |
-| `b` | [Number](Number.md) | The blue strength in the range (-255, 255) |
+| `r` | [Number](Number.md) | 赤 (-255 〜 255) |
+| `g` | [Number](Number.md) | 緑 (-255　〜 255) |
+| `b` | [Number](Number.md) | 青 (-255 〜 255) |
 
 <dl>
 </dl>
 
 #### blt (source, sx, sy, sw, sh, dx, dy, dw opt, dh opt)
 
-
-Performs a block transfer.
+指定先画像から画像ブロックを転送。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `source` | [Bitmap](Bitmap.md) |  |  | The bitmap to draw |
-| `sx` | [Number](Number.md) |  |  | The x coordinate in the source |
-| `sy` | [Number](Number.md) |  |  | The y coordinate in the source |
-| `sw` | [Number](Number.md) |  |  | The width of the source image |
-| `sh` | [Number](Number.md) |  |  | The height of the source image |
-| `dx` | [Number](Number.md) |  |  | The x coordinate in the destination |
-| `dy` | [Number](Number.md) |  |  | The y coordinate in the destination |
-| `dw` | [Number](Number.md) | <optional> | sw | The width to draw the image in the destination |
-| `dh` | [Number](Number.md) | <optional> | sh | The height to draw the image in the destination |
+| `source` | [Bitmap](Bitmap.md) |  |  | 転送元の画像 |
+| `sx` | [Number](Number.md) |  |  | 転送元x座標(ピクセル) |
+| `sy` | [Number](Number.md) |  |  | 転送元y座標(ピクセル) |
+| `sw` | [Number](Number.md) |  |  | 転送元の画像幅(ピクセル) |
+| `sh` | [Number](Number.md) |  |  | 転送元の画像高さ(ピクセル) |
+| `dx` | [Number](Number.md) |  |  | 転送先x座標(ピクセル) |
+| `dy` | [Number](Number.md) |  |  | 転送先y座標(ピクセル) |
+| `dw` | [Number](Number.md) | <optional> | sw | 転送先の画像幅(ピクセル) |
+| `dh` | [Number](Number.md) | <optional> | sh | 転送先の画像高さ(ピクセル) |
 
 <dl>
 </dl>
 
 #### bltImage (source, sx, sy, sw, sh, dx, dy, dw opt, dh opt)
 
-
-Performs a block transfer, using assumption that original image was not modified (no hue)
+指定先画像から画像ブロックを転送。ただし、canvasには描画しない。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `source` | [Bitmap](Bitmap.md) |  |  | The bitmap to draw |
-| `sx` | [Number](Number.md) |  |  | The x coordinate in the source |
-| `sy` | [Number](Number.md) |  |  | The y coordinate in the source |
-| `sw` | [Number](Number.md) |  |  | The width of the source image |
-| `sh` | [Number](Number.md) |  |  | The height of the source image |
-| `dx` | [Number](Number.md) |  |  | The x coordinate in the destination |
-| `dy` | [Number](Number.md) |  |  | The y coordinate in the destination |
-| `dw` | [Number](Number.md) | <optional> | sw | The width to draw the image in the destination |
-| `dh` | [Number](Number.md) | <optional> | sh | The height to draw the image in the destination |
+| `source` | [Bitmap](Bitmap.md) |  |  | 転送元の画像 |
+| `sx` | [Number](Number.md) |  |  | 転送元x座標(ピクセル) |
+| `sy` | [Number](Number.md) |  |  | 転送元y座標(ピクセル) |
+| `sw` | [Number](Number.md) |  |  | 転送元の画像幅(ピクセル) |
+| `sh` | [Number](Number.md) |  |  | 転送元の画像高さ(ピクセル) |
+| `dx` | [Number](Number.md) |  |  | 転送先x座標(ピクセル) |
+| `dy` | [Number](Number.md) |  |  | 転送先y座標(ピクセル) |
+| `dw` | [Number](Number.md) | <optional> | sw | 転送先の画像幅(ピクセル) |
+| `dh` | [Number](Number.md) | <optional> | sh | 転送先の画像高さ(ピクセル) |
 
 <dl>
 </dl>
 
 #### blur ()
 
+ぼかしエフェクトを適用。
 
-Applies a blur effect to the bitmap.
 <dl>
 </dl>
 
 #### checkDirty ()
-
 
 updates texture is bitmap was dirty
 <dl>
