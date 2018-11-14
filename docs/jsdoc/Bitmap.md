@@ -18,22 +18,22 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `cacheEntry` | [CacheEntry](CacheEntry.md) | Cache entry, for images. In all cases _url is the same as cacheEntry.key |
-| `fontFaceThe` | [String](String.md) | face name of the font. |
-| `fontSize` | [Number](Number.md) | The size of the font in pixels. |
-| `fontItalic` | Boolean | Whether the font is italic. |
-| `textColor` | [String](String.md) | The color of the text in CSS format. |
-| `outlineColor` | [String](String.md) | The color of the outline of the text in CSS format. |
-| `outlineWidth` | [Number](Number.md) | The width of the outline of the text. |
-| `url` | [String](String.md) | [read-only] The url of the image file. |
+| `fontFace` | [String](String.md) | フォント名 |
+| `fontSize` | [Number](Number.md) | フォントサイズ(ピクセル) |
+| `fontItalic` | Boolean | イタリックか |
+| `textColor` | [String](String.md) | 文字色(CSSフォーマット) |
+| `outlineColor` | [String](String.md) | アウトラインの色(CSSフォーマット) |
+| `outlineWidth` | [Number](Number.md) | アウトラインの文字幅 |
+| `url` | [String](String.md) | [read-only] 画像ファイルのurl |
 | `baseTexture` | PIXI.BaseTexture | [read-only] The base texture that holds the image. |
-| `canvas` | HTMLCanvasElement | [read-only] The bitmap canvas. |
-| `context` | CanvasRenderingContext2D | [read-only] The 2d context of the bitmap canvas. |
-| `width` | [Number](Number.md) | [read-only] The width of the bitmap. |
-| `height` | [Number](Number.md) | [read-only] The height of the bitmap. |
-| `rect` | [Rectangle](Rectangle.md) | [read-only] The rectangle of the bitmap. |
-| `smooth` | Boolean | Whether the smooth scaling is applied. |
-| `paintOpacity` | [Number](Number.md) | The opacity of the drawing object in the range (0, 255). |
-| `_loadingState` | [String](String.md) | [static] none: Empty Bitmap<br/>pending: Url requested, but pending to load until startRequest called<br/>purged: Url request completed and purged.<br/>requesting: Requesting supplied URI now.<br/>requestCompleted: Request completed<br/>decrypting: requesting encrypted data from supplied URI or decrypting it.<br/>decryptCompleted: Decrypt completed<br/>loaded: loaded. isReady() === true, so It's usable.<br/>error: error occurred |
+| `canvas` | HTMLCanvasElement | [read-only] 画像を描画するcanvas |
+| `context` | CanvasRenderingContext2D | [read-only] 2Dレンダリングコンテクスト |
+| `width` | [Number](Number.md) | [read-only] 画像の幅(ピクセル) |
+| `height` | [Number](Number.md) | [read-only] 画像の高さ(ピクセル) |
+| `rect` | [Rectangle](Rectangle.md) | [read-only] 画像の矩形範囲 |
+| `smooth` | Boolean | スムーススケーリングを適用するか |
+| `paintOpacity` | [Number](Number.md) | 不透明度(0 〜 255) |
+| `_loadingState` | [String](String.md) | [static]読み込みの状態<br/>none: Empty Bitmap<br/>pending: Url requested, but pending to load until startRequest called<br/>purged: Url request completed and purged.<br/>requesting: Requesting supplied URI now.<br/>requestCompleted: Request completed<br/>decrypting: requesting encrypted data from supplied URI or decrypting it.<br/>decryptCompleted: Decrypt completed<br/>loaded: loaded. isReady() === true, so It's usable.<br/>error: error occurred |
 
 <dl>
 </dl>
