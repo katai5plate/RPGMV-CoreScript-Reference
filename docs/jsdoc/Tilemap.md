@@ -550,7 +550,7 @@
 #### (static) isTileA1 (tileId) → {Boolean}
 
 
-A1のタイルか。
+A1(アニメーション)のタイルか。
 
 ##### Parameters:
 
@@ -573,7 +573,7 @@ A1のタイルか。
 #### (static) isTileA2 (tileId) → {Boolean}
 
 
-A2のタイルか。
+A2(地面)のタイルか。
 
 ##### Parameters:
 
@@ -596,7 +596,7 @@ A2のタイルか。
 #### (static) isTileA3 (tileId) → {Boolean}
 
 
-A3のタイルか。
+A3(建物)のタイルか。
 
 ##### Parameters:
 
@@ -619,7 +619,7 @@ A3のタイルか。
 #### (static) isTileA4 (tileId) → {Boolean}
 
 
-A4のタイルか。
+A4(壁)のタイルか。
 
 ##### Parameters:
 
@@ -642,7 +642,7 @@ A4のタイルか。
 #### (static) isTileA5 (tileId) → {Boolean}
 
 
-A5のタイルか。
+A5(通常)のタイルか。
 
 ##### Parameters:
 
