@@ -62,8 +62,7 @@
 
 #### (static) _compareChildOrder (a, b)
 
-
-Tilemap#_sortChildrenソート条件のコールバック関数。
+[_sortChildren](Tilemap#_sortChildren)用ソート条件のコールバック関数。
 
 ##### Parameters:
 
@@ -78,7 +77,7 @@ Tilemap#_sortChildrenソート条件のコールバック関数。
 #### (static) _createLayers ()
 
 
- 低層×4 + 高層×4 レイヤー(z: 0 〜 7)のを生成。
+ 低層×4 + 高層×4 レイヤー(z: 0 〜 7)を生成。
 <dl>
 </dl>
 
