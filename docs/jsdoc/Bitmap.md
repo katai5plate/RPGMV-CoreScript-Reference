@@ -330,6 +330,8 @@ updates texture is bitmap was dirty
 
 ##### Returns:
 
+不透明度(16進数)
+
 <dl>
     <dt> Type </dt>
     <dd>
@@ -339,46 +341,44 @@ updates texture is bitmap was dirty
 
 #### getPixel (x, y) → {[String](String.md)}
 
-
-Returns pixel color at the specified point.
+指定位置のピクセルの色を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) | The x coordinate of the pixel in the bitmap |
-| `y` | [Number](Number.md) | The y coordinate of the pixel in the bitmap |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
 
 <dl>
 </dl>
 
 ##### Returns:
 
+16進数による色
 
-The pixel color (hex format)
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a>String</a></span>
+    </dd>
+</dl>
 
 #### gradientFillRect (x, y, width, height, color1, color2, vertical)
 
-
-Draws the rectangle with a gradation.
+グラデーションで矩形を描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) | The x coordinate for the upper-left corner |
-| `y` | [Number](Number.md) | The y coordinate for the upper-left corner |
-| `width` | [Number](Number.md) | The width of the rectangle to fill |
-| `height` | [Number](Number.md) | The height of the rectangle to fill |
-| `color1` | [String](String.md) | The gradient starting color |
-| `color2` | [String](String.md) | The gradient ending color |
-| `vertical` | Boolean | Wether the gradient should be draw as vertical or not |
+| `x` | [Number](Number.md) | 左x座標(ピクセル) |
+| `y` | [Number](Number.md) | 上y座標(ピクセル) |
+| `width` | [Number](Number.md) | 矩形幅(ピクセル) |
+| `height` | [Number](Number.md) | 矩形高さ(ピクセル) |
+| `color1` | [String](String.md) | 開始色(16進数) |
+| `color2` | [String](String.md) | 終了色(16進数) |
+| `vertical` | Boolean | 縦にグラデーションをかけるか |
 
 <dl>
 </dl>
