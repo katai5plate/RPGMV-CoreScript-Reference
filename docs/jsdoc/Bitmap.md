@@ -355,7 +355,7 @@ updates texture is bitmap was dirty
 
 ##### Returns:
 
-16進数による色
+色(16進数)
 
 <dl>
     <dt> Type </dt>
@@ -385,54 +385,49 @@ updates texture is bitmap was dirty
 
 #### initialize (width, height)
 
-
  オブジェクト生成時の初期化。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `width` | [Number](Number.md) |  |
-| `height` | [Number](Number.md) |  |
+| `width` | [Number](Number.md) | 幅(ピクセル) |
+| `height` | [Number](Number.md) | 高さ(ピクセル) |
 
 <dl>
 </dl>
 
 #### isError () → {Boolean}
 
+読み込み中にエラーが発生したか。
 
-Checks whether a loading error has occurred.
 <dl>
 </dl>
 
 ##### Returns:
 
-
-True if a loading error has occurred
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### isReady () → {Boolean}
 
+画像の描画準備ができているか。
 
-Checks whether the bitmap is ready to render.
 <dl>
 </dl>
 
 ##### Returns:
 
-
-True if the bitmap is ready to render
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### isRequestOnly () → {Boolean}
 
@@ -442,11 +437,11 @@ True if the bitmap is ready to render
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### isRequestReady () → {Boolean}
 
@@ -456,36 +451,34 @@ True if the bitmap is ready to render
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### measureTextWidth (text) → {[Number](Number.md)}
 
-
-Returns the width of the specified text.
+指定文字列の幅を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.md) | The text to be measured |
+| `text` | [String](String.md) | 幅を測定する文字列 |
 
 <dl>
 </dl>
 
 ##### Returns:
 
-
-The width of the text in pixels
+文字列の幅(ピクセル)
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a>Number</a></span>
+    </dd>
+</dl>
 
 #### request (url) → {[Bitmap](Bitmap.md)}
 
@@ -501,37 +494,33 @@ The width of the text in pixels
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a>Bitmap</a></span>
+    </dd>
+</dl>
 
 #### resize (width, height)
-
-
-Resizes the bitmap.
+指定の大きさに画像をリサイズ。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `width` | [Number](Number.md) | The new width of the bitmap |
-| `height` | [Number](Number.md) | The new height of the bitmap |
+| `width` | [Number](Number.md) | 幅(ピクセル) |
+| `height` | [Number](Number.md) | 高さ(ピクセル) |
 
 <dl>
 </dl>
 
 #### rotateHue (offset)
-
-
-Rotates the hue of the entire bitmap.
+指定した量だけ色相を変更。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `offset` | [Number](Number.md) | The hue offset in 360 degrees |
+| `offset` | [Number](Number.md) | 色相の変更量(360度) |
 
 <dl>
 </dl>
@@ -542,9 +531,8 @@ Rotates the hue of the entire bitmap.
 </dl>
 
 #### touch ()
+画像がタッチ・クリックされた時に呼ばれるハンドラ。
 
-
-touch the resource
 <dl>
 </dl>
 
