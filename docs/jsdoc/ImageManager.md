@@ -1,9 +1,5 @@
 # Class: ImageManager
 
-## ImageManager ()
-
-#### new ImageManager ()
-
 The static class that loads images, creates bitmap objects and retains them.
 
 ##### Properties:
@@ -23,7 +19,8 @@ The static class that loads images, creates bitmap objects and retains them.
 
 #### (static) clear ()
 
-Clears the image cache in RPGMakerMV.
+
+Clears the image cache in RPGMakerMV.
 <dl>
 </dl>
 
@@ -34,7 +31,8 @@ The static class that loads images, creates bitmap objects and retains them.
 
 #### (static) isBigCharacter (filename) → {Boolean}
 
-Returns true if the given filename is a large character. Must contain a '$' in the file name to be a large character.
+
+Returns true if the given filename is a large character. Must contain a '$' in the file name to be a large character.
 
 ##### Parameters:
 
@@ -56,7 +54,8 @@ The static class that loads images, creates bitmap objects and retains them.
 
 #### (static) isObjectCharacter (filename) → {Boolean}
 
-Returns true if the given filename is an object character. Must contain a '!' in the file name to be an object character.
+
+Returns true if the given filename is an object character. Must contain a '!' in the file name to be an object character.
 
 ##### Parameters:
 
@@ -78,7 +77,8 @@ The static class that loads images, creates bitmap objects and retains them.
 
 #### (static) isReady () → {Boolean}
 
-Returns true if the image cache is ready.
+
+Returns true if the image cache is ready.
 <dl>
 </dl>
 
@@ -113,7 +113,8 @@ The static class that loads images, creates bitmap objects and retains them.
 
 #### (static) loadAnimation (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-Loads a Bitmap object from the 'img/animations/' folder and returns it.
+
+Loads a Bitmap object from the 'img/animations/' folder and returns it.
 
 ##### Parameters:
 
@@ -136,7 +137,8 @@ The static class that loads images, creates bitmap objects and retains them.
 
 #### (static) loadBattleback1 (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-Loads a Bitmap object from the 'img/battlebacks1/' folder and returns it.
+
+Loads a Bitmap object from the 'img/battlebacks1/' folder and returns it.
 
 ##### Parameters:
 
@@ -159,7 +161,8 @@ The static class that loads images, creates bitmap objects and retains them.
 
 #### (static) loadBattleback2 (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-Loads a Bitmap object from the 'img/battlebacks2/' folder and returns it.
+
+Loads a Bitmap object from the 'img/battlebacks2/' folder and returns it.
 
 ##### Parameters:
 
@@ -182,7 +185,8 @@ The static class that loads images, creates bitmap objects and retains them.
 
 #### (static) loadBitmap (folder, filename, hue, smooth) → {[Bitmap](Bitmap.md)}
 
-Loads a Bitmap object from any folder and returns it.
+
+Loads a Bitmap object from any folder and returns it.
 
 ##### Parameters:
 
@@ -207,7 +211,8 @@ The static class that loads images, creates bitmap objects and retains them.
 
 #### (static) loadCharacter (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-Loads a Bitmap object from the 'img/characters/' folder and returns it.
+
+Loads a Bitmap object from the 'img/characters/' folder and returns it.
 
 ##### Parameters:
 
@@ -230,7 +235,8 @@ The static class that loads images, creates bitmap objects and retains them.
 
 #### (static) loadEmptyBitmap (path, hue) → {[Bitmap](Bitmap.md)}
 
-Loads an empty Bitmap object and returns it.
+
+Loads an empty Bitmap object and returns it.
 
 ##### Parameters:
 
@@ -253,7 +259,8 @@ The static class that loads images, creates bitmap objects and retains them.
 
 #### (static) loadEnemy (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-Loads a Bitmap object from the 'img/enemies/' folder and returns it.
+
+Loads a Bitmap object from the 'img/enemies/' folder and returns it.
 
 ##### Parameters:
 
@@ -276,7 +283,8 @@ The static class that loads images, creates bitmap objects and retains them.
 
 #### (static) loadFace (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-Loads a Bitmap object from the 'img/faces/' folder and returns it.
+
+Loads a Bitmap object from the 'img/faces/' folder and returns it.
 
 ##### Parameters:
 
@@ -299,7 +307,8 @@ The static class that loads images, creates bitmap objects and retains them.
 
 #### (static) loadNormalBitmap (path, hue) → {[Bitmap](Bitmap.md)}
 
-Loads a Bitmap object given a path and returns it.
+
+Loads a Bitmap object given a path and returns it.
 
 ##### Parameters:
 
@@ -322,7 +331,8 @@ The static class that loads images, creates bitmap objects and retains them.
 
 #### (static) loadParallax (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-Loads a Bitmap object from the 'img/parallaxes/' folder and returns it.
+
+Loads a Bitmap object from the 'img/parallaxes/' folder and returns it.
 
 ##### Parameters:
 
@@ -345,7 +355,8 @@ The static class that loads images, creates bitmap objects and retains them.
 
 #### (static) loadPicture (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-Loads a Bitmap object from the 'img/pictures/' folder and returns it.
+
+Loads a Bitmap object from the 'img/pictures/' folder and returns it.
 
 ##### Parameters:
 
@@ -368,7 +379,8 @@ The static class that loads images, creates bitmap objects and retains them.
 
 #### (static) loadSvActor (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-Loads a Bitmap object from the 'img/sv_actors/' folder and returns it.
+
+Loads a Bitmap object from the 'img/sv_actors/' folder and returns it.
 
 ##### Parameters:
 
@@ -391,7 +403,8 @@ The static class that loads images, creates bitmap objects and retains them.
 
 #### (static) loadSvEnemy (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-Loads a Bitmap object from the 'img/sv_enemies/' folder and returns it.
+
+Loads a Bitmap object from the 'img/sv_enemies/' folder and returns it.
 
 ##### Parameters:
 
@@ -414,7 +427,8 @@ The static class that loads images, creates bitmap objects and retains them.
 
 #### (static) loadSystem (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-Loads a Bitmap object from 'img/system/' folder and returns it.
+
+Loads a Bitmap object from 'img/system/' folder and returns it.
 
 ##### Parameters:
 
@@ -437,7 +451,8 @@ The static class that loads images, creates bitmap objects and retains them.
 
 #### (static) loadTileset (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-Loads a Bitmap object from the 'img/tilesets/' folder and returns it.
+
+Loads a Bitmap object from the 'img/tilesets/' folder and returns it.
 
 ##### Parameters:
 
@@ -460,7 +475,8 @@ The static class that loads images, creates bitmap objects and retains them.
 
 #### (static) loadTitle1 (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-Loads a Bitmap object from the 'img/titles1/' folder and returns it.
+
+Loads a Bitmap object from the 'img/titles1/' folder and returns it.
 
 ##### Parameters:
 
@@ -483,7 +499,8 @@ The static class that loads images, creates bitmap objects and retains them.
 
 #### (static) loadTitle2 (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-Loads a Bitmap object from the 'img/titles2/' folder and returns it.
+
+Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 ##### Parameters:
 
@@ -1221,7 +1238,9 @@ The static class that loads images, creates bitmap objects and retains them.
 #### (static) update ()
 
 <dl>
-</dl>
+</dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
