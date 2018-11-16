@@ -27,7 +27,7 @@
 | `url` | [String](String.md) | [read-only] 画像ファイルのurl |
 | `baseTexture` | PIXI.BaseTexture | [read-only] The base texture that holds the image. |
 | `canvas` | [HTMLCanvasElement](https://developer.mozilla.org/ja/docs/Web/API/HTMLCanvasElement) | [read-only] 画像を描画するcanvas |
-| `context` | CanvasRenderingContext2D | [read-only] 2Dレンダリングコンテクスト |
+| `context` | [CanvasRenderingContext2D](https://developer.mozilla.org/ja/docs/Web/API/CanvasRenderingContext2D) | [read-only] 2Dレンダリングコンテクスト |
 | `width` | [Number](Number.md) | [read-only] 画像の幅(ピクセル) |
 | `height` | [Number](Number.md) | [read-only] 画像の高さ(ピクセル) |
 | `rect` | [Rectangle](Rectangle.md) | [read-only] 画像の矩形範囲 |
