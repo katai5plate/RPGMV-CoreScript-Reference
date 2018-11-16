@@ -4,7 +4,7 @@
 
 #### new Bitmap (width, height)
 
-画像を表す基本オブジェクト。
+画像を表す基本オブジェクト。概ね [HTMLCanvasElement](https://developer.mozilla.org/ja/docs/Web/API/HTMLCanvasElement)のラッパーオブジェクト。
 
 ##### Parameters:
 
@@ -26,7 +26,7 @@
 | `outlineWidth` | [Number](Number.md) | アウトラインの文字幅 |
 | `url` | [String](String.md) | [read-only] 画像ファイルのurl |
 | `baseTexture` | PIXI.BaseTexture | [read-only] The base texture that holds the image. |
-| `canvas` | HTMLCanvasElement | [read-only] 画像を描画するcanvas |
+| `canvas` | [HTMLCanvasElement](https://developer.mozilla.org/ja/docs/Web/API/HTMLCanvasElement) | [read-only] 画像を描画するcanvas |
 | `context` | CanvasRenderingContext2D | [read-only] 2Dレンダリングコンテクスト |
 | `width` | [Number](Number.md) | [read-only] 画像の幅(ピクセル) |
 | `height` | [Number](Number.md) | [read-only] 画像の高さ(ピクセル) |
