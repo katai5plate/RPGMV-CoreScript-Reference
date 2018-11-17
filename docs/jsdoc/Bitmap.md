@@ -157,7 +157,7 @@
 
 #### adjustTone (r, g, b)
 
-指定したRPGに画像のトーンを変更。
+指定したRGBに画像の色調を変更。
 
 ##### Parameters:
 
