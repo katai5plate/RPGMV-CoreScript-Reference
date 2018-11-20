@@ -4,7 +4,10 @@
 
 #### new Tilemap ()
 
-2Dベースのタイルマップを表示するためのコンテナクラス。 重ね合わせの階層( z )は以下のようになっている。
+描画モードが Canvas Mode の場合に使われる、2Dベースのタイルマップを表示するためのコンテナクラス。 <br />
+描画モードはF2キーを押して確かめられる。なお、Canvas Mode は古いブラウザなどの一部環境でしか使われない。
+
+重ね合わせの階層( z )は以下のようになっている。
 
 | 階層 | 内容 |
 | --- | --- |
@@ -19,7 +22,7 @@
 | 8 |  アニメーション |
 | 9 |  タッチ位置表示 |
 
-[PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html) の子クラス。 [ShaderTilemap](ShaderTilemap.md) のスーパークラス。
+ [ShaderTilemap](ShaderTilemap.md) のスーパークラス。
 
 ##### Properties:
 
@@ -56,7 +59,7 @@
 
 ### Extends
 
-* PIXI.Container
+* [PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html)
 
 ### Methods
 
