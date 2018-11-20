@@ -45,7 +45,7 @@ checks if we need to speed up custom blendmodes
     <dd>
         <ul>
             <li>
-                <a href="Sprite.md#_speedUpCustomBlendModes">Sprite._speedUpCustomBlendModes</a>
+                <a href="Sprite.md#_speedupcustomblendmodes-renderer">Sprite._speedUpCustomBlendModes</a>
             </li>
         </ul>
     </dd>
