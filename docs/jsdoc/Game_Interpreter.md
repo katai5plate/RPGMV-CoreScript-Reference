@@ -4,7 +4,7 @@
 
 #### new Game_Interpreter (depth)
 
-イベントコマンドを実行するクラス。 プラグインコマンドを処理する[#pluginCommand](#plugincommand-command-args)などを含む。
+イベントコマンドを実行するクラス。 プラグインコマンドを処理する[pluginCommand](#plugincommand-command-args)などを含む。
 
 イベントコマンドの[スクリプト]を実行する際は、このオブジェクトのインスタンスが this になるので、少々乱暴だが拡張コマンドをメソッドとして追加すると便利。
 
