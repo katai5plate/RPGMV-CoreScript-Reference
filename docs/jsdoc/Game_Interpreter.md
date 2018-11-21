@@ -2145,7 +2145,7 @@ Returns the next event code.
 | Name | Type | Description |
 | --- | --- | --- |
 | `command` | [String](String.md) |  コマンド名 |
-| `args` | [Array](Array.md).<string> |  引数の配列 |
+| `args` | [Array](Array.md).<[String](String.md)> |  引数の配列 |
 
 <dl>
 </dl>
