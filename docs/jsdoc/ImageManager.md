@@ -1,12 +1,11 @@
 # Class: ImageManager
 
-The static class that loads images, creates bitmap objects and retains them.
+画像ファイルの読み込み、[Bitmap](Bitmap.md)オブジェクトの生成、およびそれらの保持・管理を行う静的オブジェクト。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `cache` | [CacheMap](CacheMap.md) | [static] |
 | `cache` | [CacheMap](CacheMap.md) | [static] |
 | `_imageCache` | [ImageCache](ImageCache.md) | [static] |
 | `_requestQueue` | [RequestQueue](RequestQueue.md) | [static] |
@@ -19,8 +18,8 @@ The static class that loads images, creates bitmap objects and retains them.
 
 #### (static) clear ()
 
+RPGツクールMVの画像キャッシュをクリア。
 
-Clears the image cache in RPGMakerMV.
 <dl>
 </dl>
 
@@ -30,15 +29,13 @@ Clears the image cache in RPGMakerMV.
 </dl>
 
 #### (static) isBigCharacter (filename) → {Boolean}
-
-
-Returns true if the given filename is a large character. Must contain a '$' in the file name to be a large character.
+指定したファイル名に'$'がついているか。'$'がついている場合は3×4のひとキャラ分の画像とみなすのであって、実際大きい(big)かどうかはわからない。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
+| `filename` | [String](String.md) | ファイル名 |
 
 <dl>
 </dl>
@@ -46,22 +43,20 @@ Returns true if the given filename is a large character. Must contain a '$' in t
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isObjectCharacter (filename) → {Boolean}
-
-
-Returns true if the given filename is an object character. Must contain a '!' in the file name to be an object character.
+指定したファイル名に'!'がついているか。'!'がついている場合は表示際に上にずらさない画像とみなすのであって、実際が物体(object)の画像かどうかはわからない。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
+| `filename` | [String](String.md) | ファイル名 |
 
 <dl>
 </dl>
@@ -69,35 +64,36 @@ Returns true if the given filename is an object character. Must contain a '!' in
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isReady () → {Boolean}
 
+画像のキャッシュが完了しているか。
 
-Returns true if the image cache is ready.
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isZeroParallax (filename) → {Boolean}
+指定したファイル名に'!'がついているか。'!'がついている場合はずらさない遠景画像とみなす。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
+| `filename` | [String](String.md) | ファイル名 |
 
 <dl>
 </dl>
@@ -105,23 +101,21 @@ Returns true if the image cache is ready.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) loadAnimation (filename, hue opt) → {[Bitmap](Bitmap.md)}
-
-
-Loads a Bitmap object from the 'img/animations/' folder and returns it.
+指定したファイル名の画像を'img/animations/'フォルダから読み込み、指定した色相にずらしスムージングをかけて返す。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |
+| `filename` | [String](String.md) |  | ファイル名 |
+| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
 
 <dl>
 </dl>
@@ -129,11 +123,11 @@ Loads a Bitmap object from the 'img/animations/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) loadBattleback1 (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
