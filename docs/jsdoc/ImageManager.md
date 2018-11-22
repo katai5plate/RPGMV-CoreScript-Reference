@@ -1,6 +1,6 @@
 # Class: ImageManager
 
-画像ファイルの読み込み、[Bitmap](Bitmap.md)オブジェクトの生成、およびそれらの保持・管理を行う静的オブジェクト。
+画像ファイルの読み込み、[Bitmap](Bitmap.md)オブジェクトの生成、およびそれらの保持(キャッシュ)・管理を行う静的オブジェクト。
 
 ##### Properties:
 
@@ -18,7 +18,7 @@
 
 #### (static) clear ()
 
-RPGツクールMVの画像キャッシュをクリア。
+RPGツクールMVの画像キャッシュをクリア。ブラウザなどが持っているキャッシュがクリアされるわけではない。
 
 <dl>
 </dl>
@@ -114,7 +114,7 @@ RPGツクールMVの画像キャッシュをクリア。
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `filename` | [String](String.md) |  | ファイル名 |
+| `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
 | `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
 
 <dl>
@@ -131,15 +131,14 @@ RPGツクールMVの画像キャッシュをクリア。
 
 #### (static) loadBattleback1 (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-
-Loads a Bitmap object from the 'img/battlebacks1/' folder and returns it.
+指定したファイル名の画像を'img/battlebacks1/'フォルダから読み込み、指定した色相にずらしスムージングをかけて返す。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |
+| `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
 
 <dl>
 </dl>
@@ -147,23 +146,22 @@ Loads a Bitmap object from the 'img/battlebacks1/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) loadBattleback2 (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-
-Loads a Bitmap object from the 'img/battlebacks2/' folder and returns it.
+指定したファイル名の画像を'img/battlebacks2/'フォルダから読み込み、指定した色相にずらしスムージングをかけて返す。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |
+| `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
 
 <dl>
 </dl>
@@ -171,25 +169,24 @@ Loads a Bitmap object from the 'img/battlebacks2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) loadBitmap (folder, filename, hue, smooth) → {[Bitmap](Bitmap.md)}
 
-
-Loads a Bitmap object from any folder and returns it.
+指定したフォルダ・ファイル名の画像をプロジェクトフォルダ以下から読み込み、指定した色相にずらし、指定したスムージングの状態で返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `folder` | [String](String.md) |  |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
-| `smooth` | Boolean |  |
+| `folder` | [String](String.md) | フォルダ名('img/faces/'のように指定する) |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
+| `smooth` | Boolean | スムージングを行うか |
 
 <dl>
 </dl>
@@ -197,23 +194,23 @@ Loads a Bitmap object from any folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
+
 
 #### (static) loadCharacter (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-
-Loads a Bitmap object from the 'img/characters/' folder and returns it.
+指定したファイル名の画像を'img/characters/'フォルダから読み込み、指定した色相にずらして返す。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |
+| `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
 
 <dl>
 </dl>
@@ -221,23 +218,15 @@ Loads a Bitmap object from the 'img/characters/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
-#### (static) loadEmptyBitmap (path, hue) → {[Bitmap](Bitmap.md)}
+#### (static) loadEmptyBitmap () → {[Bitmap](Bitmap.md)}
 
-
-Loads an empty Bitmap object and returns it.
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `path` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+カラの画像を返す。loadとあるが、特にどこからか読み込むわけではない。
 
 <dl>
 </dl>
@@ -245,23 +234,22 @@ Loads an empty Bitmap object and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) loadEnemy (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-
-Loads a Bitmap object from the 'img/enemies/' folder and returns it.
+指定したファイル名の画像を'img/enemies/'フォルダから読み込み、指定した色相にずらしスムージングをかけて返す。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |
+| `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
 
 <dl>
 </dl>
@@ -269,23 +257,23 @@ Loads a Bitmap object from the 'img/enemies/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>>
 
 #### (static) loadFace (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-
-Loads a Bitmap object from the 'img/faces/' folder and returns it.
+指定したファイル名の画像を'img/faces/'フォルダから読み込み、指定した色相にずらしスムージングをかけて返す。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |
+| `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
+
 
 <dl>
 </dl>
@@ -293,23 +281,22 @@ Loads a Bitmap object from the 'img/faces/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) loadNormalBitmap (path, hue) → {[Bitmap](Bitmap.md)}
 
-
-Loads a Bitmap object given a path and returns it.
+指定したパスの画像をプロジェクトフォルダ以下から読み込み、指定した色相にずらして返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `path` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `path` | [String](String.md) | パス文字列('img/system/Balloon.png'のように記述) |
+| `hue` | [Number](Number.md) | 色相(360度) |
 
 <dl>
 </dl>
@@ -317,23 +304,23 @@ Loads a Bitmap object given a path and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) loadParallax (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-
-Loads a Bitmap object from the 'img/parallaxes/' folder and returns it.
+指定したファイル名の画像を'img/parallaxes/'フォルダから読み込み、指定した色相にずらしスムージングをかけて返す。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |
+| `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
+
 
 <dl>
 </dl>
@@ -341,23 +328,22 @@ Loads a Bitmap object from the 'img/parallaxes/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) loadPicture (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-
-Loads a Bitmap object from the 'img/pictures/' folder and returns it.
+指定したファイル名の画像を'img/pictures/'フォルダから読み込み、指定した色相にずらしスムージングをかけて返す。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |
+| `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
 
 <dl>
 </dl>
@@ -365,23 +351,22 @@ Loads a Bitmap object from the 'img/pictures/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) loadSvActor (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-
-Loads a Bitmap object from the 'img/sv_actors/' folder and returns it.
+指定したファイル名の画像を'img/sv_actors/'フォルダから読み込み、指定した色相にずらして返す。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |
+| `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
 
 <dl>
 </dl>
@@ -389,23 +374,22 @@ Loads a Bitmap object from the 'img/sv_actors/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) loadSvEnemy (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-
-Loads a Bitmap object from the 'img/sv_enemies/' folder and returns it.
+指定したファイル名の画像を'img/sv_enemies/'フォルダから読み込み、指定した色相にずらしスムージングをかけて返す。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |
+| `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
 
 <dl>
 </dl>
@@ -413,23 +397,22 @@ Loads a Bitmap object from the 'img/sv_enemies/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) loadSystem (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-
-Loads a Bitmap object from 'img/system/' folder and returns it.
+指定したファイル名の画像を'img/system/'フォルダから読み込み、指定した色相にずらして返す。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |
+| `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
 
 <dl>
 </dl>
@@ -437,23 +420,22 @@ Loads a Bitmap object from 'img/system/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) loadTileset (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-
-Loads a Bitmap object from the 'img/tilesets/' folder and returns it.
+指定したファイル名の画像を'img/tilesets/'フォルダから読み込み、指定した色相にずらして返す。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |
+| `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
 
 <dl>
 </dl>
@@ -461,23 +443,22 @@ Loads a Bitmap object from the 'img/tilesets/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) loadTitle1 (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-
-Loads a Bitmap object from the 'img/titles1/' folder and returns it.
+指定したファイル名の画像を'img/titles1/'フォルダから読み込み、指定した色相にずらしスムージングをかけて返す。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |
+| `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
 
 <dl>
 </dl>
@@ -485,11 +466,11 @@ Loads a Bitmap object from the 'img/titles1/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) loadTitle2 (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
@@ -509,11 +490,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) releaseReservation (reservationId)
 
@@ -541,11 +522,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) requestBattleback1 (filename, hue) → {[Bitmap](Bitmap.md)}
 
@@ -562,11 +543,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) requestBattleback2 (filename, hue) → {[Bitmap](Bitmap.md)}
 
@@ -583,11 +564,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) requestBitmap (folder, filename, hue, smooth) → {[Bitmap](Bitmap.md)}
 
@@ -606,11 +587,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) requestCharacter (filename, hue) → {[Bitmap](Bitmap.md)}
 
@@ -627,11 +608,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) requestEnemy (filename, hue) → {[Bitmap](Bitmap.md)}
 
@@ -648,11 +629,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) requestFace (filename, hue) → {[Bitmap](Bitmap.md)}
 
@@ -669,11 +650,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) requestNormalBitmap (path, hue) → {[Bitmap](Bitmap.md)}
 
@@ -690,11 +671,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) requestParallax (filename, hue) → {[Bitmap](Bitmap.md)}
 
@@ -711,11 +692,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) requestPicture (filename, hue) → {[Bitmap](Bitmap.md)}
 
@@ -732,11 +713,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) requestSvActor (filename, hue) → {[Bitmap](Bitmap.md)}
 
@@ -753,11 +734,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) requestSvEnemy (filename, hue) → {[Bitmap](Bitmap.md)}
 
@@ -774,11 +755,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) requestSystem (filename, hue) → {[Bitmap](Bitmap.md)}
 
@@ -795,11 +776,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) requestTileset (filename, hue) → {[Bitmap](Bitmap.md)}
 
@@ -816,11 +797,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) requestTitle1 (filename, hue) → {[Bitmap](Bitmap.md)}
 
@@ -837,11 +818,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) requestTitle2 (filename, hue) → {[Bitmap](Bitmap.md)}
 
@@ -858,11 +839,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) reserveAnimation (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
 
@@ -880,11 +861,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) reserveBattleback1 (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
 
@@ -902,11 +883,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) reserveBattleback2 (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
 
@@ -924,11 +905,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) reserveBitmap (folder, filename, hue, smooth, reservationId) → {[Bitmap](Bitmap.md)}
 
@@ -948,11 +929,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) reserveCharacter (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
 
@@ -970,11 +951,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) reserveEnemy (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
 
@@ -992,11 +973,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) reserveFace (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
 
@@ -1014,11 +995,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) reserveNormalBitmap (path, hue, reservationId) → {[Bitmap](Bitmap.md)}
 
@@ -1036,11 +1017,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) reserveParallax (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
 
@@ -1058,11 +1039,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) reservePicture (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
 
@@ -1080,11 +1061,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) reserveSvActor (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
 
@@ -1102,11 +1083,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) reserveSvEnemy (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
 
@@ -1124,11 +1105,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) reserveSystem (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
 
@@ -1146,11 +1127,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) reserveTileset (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
 
@@ -1168,11 +1149,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) reserveTitle1 (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
 
@@ -1190,11 +1171,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) reserveTitle2 (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
 
@@ -1212,11 +1193,11 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Bitmap.md">Bitmap</a></span>
+    </dd>
+</dl>
 
 #### (static) setDefaultReservationId (reservationId)
 
