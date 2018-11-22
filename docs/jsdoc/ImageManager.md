@@ -18,7 +18,8 @@
 
 #### (static) clear ()
 
-RPGツクールMVの画像キャッシュをクリア。ブラウザなどが持っているキャッシュがクリアされるわけではない。
+RPGツクールMVの画像キャッシュをクリア。<br />
+ブラウザなどが持っているキャッシュがクリアされるわけではない。
 
 <dl>
 </dl>
@@ -29,7 +30,8 @@ RPGツクールMVの画像キャッシュをクリア。ブラウザなどが持
 </dl>
 
 #### (static) isBigCharacter (filename) → {Boolean}
-指定したファイル名に'$'がついているか。'$'がついている場合は3×4のひとキャラ分の画像とみなすのであって、実際大きい(big)かどうかはわからない。
+指定したファイル名に'$'がついているか。<br />
+'$'がついている場合は3×4のひとキャラ分の画像とみなすのであって、実際大きい(big)かどうかはわからない。
 
 ##### Parameters:
 
@@ -50,7 +52,8 @@ RPGツクールMVの画像キャッシュをクリア。ブラウザなどが持
 </dl>
 
 #### (static) isObjectCharacter (filename) → {Boolean}
-指定したファイル名に'!'がついているか。'!'がついている場合は表示際に上にずらさない画像とみなすのであって、実際が物体(object)の画像かどうかはわからない。
+指定したファイル名に'!'がついているか。<br />
+'!'がついている場合は表示際に上にずらさない画像とみなすのであって、実際が物体(object)の画像かどうかはわからない。
 
 ##### Parameters:
 
@@ -87,7 +90,8 @@ RPGツクールMVの画像キャッシュをクリア。ブラウザなどが持
 </dl>
 
 #### (static) isZeroParallax (filename) → {Boolean}
-指定したファイル名に'!'がついているか。'!'がついている場合はずらさない遠景画像とみなす。
+指定したファイル名に'!'がついているか。<br />
+'!'がついている場合はずらさない遠景画像とみなす。
 
 ##### Parameters:
 
@@ -474,15 +478,14 @@ RPGツクールMVの画像キャッシュをクリア。ブラウザなどが持
 
 #### (static) loadTitle2 (filename, hue opt) → {[Bitmap](Bitmap.md)}
 
-
-Loads a Bitmap object from the 'img/titles2/' folder and returns it.
+指定したファイル名の画像を'img/titles2/'フォルダから読み込み、指定した色相にずらしスムージングをかけて返す。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `filename` | [String](String.md) |  |  |
-| `hue` | [Number](Number.md) | <optional> |  |
+| `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
 
 <dl>
 </dl>
@@ -497,6 +500,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 </dl>
 
 #### (static) releaseReservation (reservationId)
+
+指定IDの予約を開放。
 
 ##### Parameters:
 
@@ -513,8 +518,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 
 <dl>
 </dl>
@@ -534,8 +539,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 
 <dl>
 </dl>
@@ -555,8 +560,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 
 <dl>
 </dl>
@@ -576,10 +581,10 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `folder` | [String](String.md) |  |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
-| `smooth` | Boolean |  |
+| `folder` | [String](String.md) | フォルダ名('img/faces/'のように指定する) |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
+| `smooth` | Boolean | スムージングを行うか |
 
 <dl>
 </dl>
@@ -599,8 +604,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 
 <dl>
 </dl>
@@ -620,8 +625,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 
 <dl>
 </dl>
@@ -641,8 +646,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 
 <dl>
 </dl>
@@ -662,8 +667,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `path` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `path` | [String](String.md) | パス文字列('img/system/Balloon.png'のように記述) |
+| `hue` | [Number](Number.md) | 色相(360度) |
 
 <dl>
 </dl>
@@ -683,8 +688,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 
 <dl>
 </dl>
@@ -704,8 +709,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 
 <dl>
 </dl>
@@ -725,8 +730,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 
 <dl>
 </dl>
@@ -746,8 +751,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 
 <dl>
 </dl>
@@ -767,8 +772,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 
 <dl>
 </dl>
@@ -788,8 +793,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 
 <dl>
 </dl>
@@ -809,8 +814,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 
 <dl>
 </dl>
@@ -830,8 +835,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 
 <dl>
 </dl>
@@ -851,8 +856,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 | `reservationId` | [Number](Number.md) |  |
 
 <dl>
@@ -873,8 +878,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 | `reservationId` | [Number](Number.md) |  |
 
 <dl>
@@ -895,8 +900,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 | `reservationId` | [Number](Number.md) |  |
 
 <dl>
@@ -917,10 +922,10 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `folder` | [String](String.md) |  |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
-| `smooth` | Boolean |  |
+| `folder` | [String](String.md) | フォルダ名('img/faces/'のように指定する) |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
+| `smooth` | Boolean | スムージングを行うか |
 | `reservationId` | [Number](Number.md) |  |
 
 <dl>
@@ -941,8 +946,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 | `reservationId` | [Number](Number.md) |  |
 
 <dl>
@@ -963,8 +968,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 | `reservationId` | [Number](Number.md) |  |
 
 <dl>
@@ -985,8 +990,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 | `reservationId` | [Number](Number.md) |  |
 
 <dl>
@@ -1007,8 +1012,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `path` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `path` | [String](String.md) | パス文字列('img/system/Balloon.png'のように記述)  |
+| `hue` | [Number](Number.md) | 色相(360度) |
 | `reservationId` | [Number](Number.md) |  |
 
 <dl>
@@ -1029,8 +1034,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 | `reservationId` | [Number](Number.md) |  |
 
 <dl>
@@ -1051,8 +1056,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 | `reservationId` | [Number](Number.md) |  |
 
 <dl>
@@ -1073,8 +1078,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 | `reservationId` | [Number](Number.md) |  |
 
 <dl>
@@ -1095,8 +1100,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 | `reservationId` | [Number](Number.md) |  |
 
 <dl>
@@ -1117,8 +1122,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 | `reservationId` | [Number](Number.md) |  |
 
 <dl>
@@ -1139,8 +1144,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 | `reservationId` | [Number](Number.md) |  |
 
 <dl>
@@ -1161,8 +1166,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 | `reservationId` | [Number](Number.md) |  |
 
 <dl>
@@ -1183,8 +1188,8 @@ Loads a Bitmap object from the 'img/titles2/' folder and returns it.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `filename` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | 色相(360度) |
 | `reservationId` | [Number](Number.md) |  |
 
 <dl>
