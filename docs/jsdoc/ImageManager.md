@@ -507,7 +507,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `reservationId` | [Number](Number.md) |  |
+| `reservationId` | [Number](Number.md) | キャッシュID |
 
 <dl>
 </dl>
@@ -851,6 +851,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 </dl>
 
 #### (static) reserveAnimation (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
+指定したファイル名の画像を'img/animations/'フォルダから読み込み、指定したキャッシュIDに登録し、返す。
 
 ##### Parameters:
 
@@ -858,7 +859,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | --- | --- | --- |
 | `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
 | `hue` | [Number](Number.md) | 色相(360度) |
-| `reservationId` | [Number](Number.md) |  |
+| `reservationId` | [Number](Number.md) | キャッシュID |
 
 <dl>
 </dl>
@@ -873,6 +874,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 </dl>
 
 #### (static) reserveBattleback1 (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
+指定したファイル名の画像を'img/battlebacks1/'フォルダから読み込み、指定したキャッシュIDに登録し、返す。
 
 ##### Parameters:
 
@@ -880,7 +882,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | --- | --- | --- |
 | `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
 | `hue` | [Number](Number.md) | 色相(360度) |
-| `reservationId` | [Number](Number.md) |  |
+| `reservationId` | [Number](Number.md) | キャッシュID |
 
 <dl>
 </dl>
@@ -895,6 +897,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 </dl>
 
 #### (static) reserveBattleback2 (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
+指定したファイル名の画像を'img/battlebacks2/'フォルダから読み込み、指定したキャッシュIDに登録し、返す。
 
 ##### Parameters:
 
@@ -902,7 +905,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | --- | --- | --- |
 | `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
 | `hue` | [Number](Number.md) | 色相(360度) |
-| `reservationId` | [Number](Number.md) |  |
+| `reservationId` | [Number](Number.md) | キャッシュID |
 
 <dl>
 </dl>
@@ -917,6 +920,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 </dl>
 
 #### (static) reserveBitmap (folder, filename, hue, smooth, reservationId) → {[Bitmap](Bitmap.md)}
+指定したフォルダ・ファイル名の画像をプロジェクトフォルダ以下から読み込み、指定した色相にずらし、指定したスムージングの状態で、指定したキャッシュIDに登録し、返す。
 
 ##### Parameters:
 
@@ -926,7 +930,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
 | `hue` | [Number](Number.md) | 色相(360度) |
 | `smooth` | Boolean | スムージングを行うか |
-| `reservationId` | [Number](Number.md) |  |
+| `reservationId` | [Number](Number.md) | キャッシュID |
 
 <dl>
 </dl>
@@ -941,6 +945,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 </dl>
 
 #### (static) reserveCharacter (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
+指定したファイル名の画像を'img/characters/'フォルダから読み込み、指定したキャッシュIDに登録し、返す。
 
 ##### Parameters:
 
@@ -948,7 +953,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | --- | --- | --- |
 | `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
 | `hue` | [Number](Number.md) | 色相(360度) |
-| `reservationId` | [Number](Number.md) |  |
+| `reservationId` | [Number](Number.md) | キャッシュID |
 
 <dl>
 </dl>
@@ -963,6 +968,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 </dl>
 
 #### (static) reserveEnemy (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
+指定したファイル名の画像を'img/enemies/'フォルダから読み込み、指定したキャッシュIDに登録し、返す。
 
 ##### Parameters:
 
@@ -970,7 +976,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | --- | --- | --- |
 | `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
 | `hue` | [Number](Number.md) | 色相(360度) |
-| `reservationId` | [Number](Number.md) |  |
+| `reservationId` | [Number](Number.md) | キャッシュID |
 
 <dl>
 </dl>
@@ -985,6 +991,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 </dl>
 
 #### (static) reserveFace (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
+指定したファイル名の画像を'img/faces/'フォルダから読み込み、指定したキャッシュIDに登録し、返す。
 
 ##### Parameters:
 
@@ -992,7 +999,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | --- | --- | --- |
 | `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
 | `hue` | [Number](Number.md) | 色相(360度) |
-| `reservationId` | [Number](Number.md) |  |
+| `reservationId` | [Number](Number.md) | キャッシュID |
 
 <dl>
 </dl>
@@ -1007,6 +1014,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 </dl>
 
 #### (static) reserveNormalBitmap (path, hue, reservationId) → {[Bitmap](Bitmap.md)}
+指定したパスの画像をプロジェクトフォルダ以下から読み込み、指定した色相にずらして、指定したキャッシュIDに登録し、返す。
 
 ##### Parameters:
 
@@ -1014,7 +1022,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | --- | --- | --- |
 | `path` | [String](String.md) | パス文字列('img/system/Balloon.png'のように記述)  |
 | `hue` | [Number](Number.md) | 色相(360度) |
-| `reservationId` | [Number](Number.md) |  |
+| `reservationId` | [Number](Number.md) | キャッシュID |
 
 <dl>
 </dl>
@@ -1029,6 +1037,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 </dl>
 
 #### (static) reserveParallax (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
+指定したファイル名の画像を'img/parallaxes/'フォルダから読み込み、指定したキャッシュIDに登録し、返す。
 
 ##### Parameters:
 
@@ -1036,7 +1045,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | --- | --- | --- |
 | `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
 | `hue` | [Number](Number.md) | 色相(360度) |
-| `reservationId` | [Number](Number.md) |  |
+| `reservationId` | [Number](Number.md) | キャッシュID |
 
 <dl>
 </dl>
@@ -1051,6 +1060,8 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 </dl>
 
 #### (static) reservePicture (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
+指定したファイル名の画像を'img/pictures/'フォルダから読み込み、指定したキャッシュIDに登録し、返す。
+
 
 ##### Parameters:
 
@@ -1058,7 +1069,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | --- | --- | --- |
 | `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
 | `hue` | [Number](Number.md) | 色相(360度) |
-| `reservationId` | [Number](Number.md) |  |
+| `reservationId` | [Number](Number.md) | キャッシュID |
 
 <dl>
 </dl>
@@ -1073,6 +1084,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 </dl>
 
 #### (static) reserveSvActor (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
+指定したファイル名の画像を'img/sv_actors/'フォルダから読み込み、指定したキャッシュIDに登録し、返す。
 
 ##### Parameters:
 
@@ -1080,7 +1092,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | --- | --- | --- |
 | `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
 | `hue` | [Number](Number.md) | 色相(360度) |
-| `reservationId` | [Number](Number.md) |  |
+| `reservationId` | [Number](Number.md) | キャッシュID |
 
 <dl>
 </dl>
@@ -1095,6 +1107,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 </dl>
 
 #### (static) reserveSvEnemy (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
+指定したファイル名の画像を'img/sv_enemies/'フォルダから読み込み、指定したキャッシュIDに登録し、返す。
 
 ##### Parameters:
 
@@ -1102,7 +1115,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | --- | --- | --- |
 | `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
 | `hue` | [Number](Number.md) | 色相(360度) |
-| `reservationId` | [Number](Number.md) |  |
+| `reservationId` | [Number](Number.md) | キャッシュID |
 
 <dl>
 </dl>
@@ -1117,6 +1130,8 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 </dl>
 
 #### (static) reserveSystem (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
+指定したファイル名の画像を'img/system/'フォルダから読み込み、指定したキャッシュIDに登録し、返す。
+
 
 ##### Parameters:
 
@@ -1124,7 +1139,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | --- | --- | --- |
 | `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
 | `hue` | [Number](Number.md) | 色相(360度) |
-| `reservationId` | [Number](Number.md) |  |
+| `reservationId` | [Number](Number.md) | キャッシュID |
 
 <dl>
 </dl>
@@ -1139,6 +1154,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 </dl>
 
 #### (static) reserveTileset (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
+指定したファイル名の画像を'img/tilesets/'フォルダから読み込み、指定したキャッシュIDに登録し、返す。
 
 ##### Parameters:
 
@@ -1146,7 +1162,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | --- | --- | --- |
 | `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
 | `hue` | [Number](Number.md) | 色相(360度) |
-| `reservationId` | [Number](Number.md) |  |
+| `reservationId` | [Number](Number.md) | キャッシュID |
 
 <dl>
 </dl>
@@ -1161,6 +1177,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 </dl>
 
 #### (static) reserveTitle1 (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
+指定したファイル名の画像を'img/titles1/'フォルダから読み込み、指定したキャッシュIDに登録し、返す。
 
 ##### Parameters:
 
@@ -1168,7 +1185,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | --- | --- | --- |
 | `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
 | `hue` | [Number](Number.md) | 色相(360度) |
-| `reservationId` | [Number](Number.md) |  |
+| `reservationId` | [Number](Number.md) | キャッシュID |
 
 <dl>
 </dl>
@@ -1183,6 +1200,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 </dl>
 
 #### (static) reserveTitle2 (filename, hue, reservationId) → {[Bitmap](Bitmap.md)}
+指定したファイル名の画像を'img/titles2/'フォルダから読み込み、指定したキャッシュIDに登録し、返す。
 
 ##### Parameters:
 
@@ -1190,7 +1208,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | --- | --- | --- |
 | `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
 | `hue` | [Number](Number.md) | 色相(360度) |
-| `reservationId` | [Number](Number.md) |  |
+| `reservationId` | [Number](Number.md) | キャッシュID |
 
 <dl>
 </dl>
@@ -1205,12 +1223,13 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 </dl>
 
 #### (static) setDefaultReservationId (reservationId)
+デフォルトのキャッシュIDを設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `reservationId` | [Number](Number.md) |  |
+| `reservationId` | [Number](Number.md) | キャッシュID |
 
 <dl>
 </dl>
