@@ -1,20 +1,20 @@
 # Class: Window_Selectable
 
-## (abstract) Window_Selectable (x, y, width, height, height)
+## (abstract) Window_Selectable (x, y, width, height)
 
-#### (abstract) new Window_Selectable (x, y, width, height, height)
+#### (abstract) new Window_Selectable (x, y, width, height)
 
-The window class with cursor movement and scroll functions. Super class of [Window_BattleEnemy](Window_BattleEnemy.md), [Window_BattleLog](Window_BattleLog.md), [Window_DebugEdit](Window_DebugEdit.md), [Window_DebugRange](Window_DebugRange.md), [Window_EquipSlot](Window_EquipSlot.md), [Window_NameInput](Window_NameInput.md), [Window_NumberInput](Window_NumberInput.md), [Window_SavefileList](Window_SavefileList.md), [Window_ShopBuy](Window_ShopBuy.md), [Window_ShopNumber](Window_ShopNumber.md), [Window_Status](Window_Status.md) and [Window_BattleStatus](Window_BattleStatus.md), [Window_MenuStatus](Window_MenuStatus.md), [Window_SkillList](Window_SkillList.md) and [Window_ItemList](Window_ItemList.md) and [Window_Command](Window_Command.md)
+コマンドカーソルの移動やスクロールを行うウィンドウオブジェクト。<br />
+[Window_BattleEnemy](Window_BattleEnemy.md), [Window_BattleLog](Window_BattleLog.md), [Window_DebugEdit](Window_DebugEdit.md), [Window_DebugRange](Window_DebugRange.md), [Window_EquipSlot](Window_EquipSlot.md), [Window_NameInput](Window_NameInput.md), [Window_NumberInput](Window_NumberInput.md), [Window_SavefileList](Window_SavefileList.md), [Window_ShopBuy](Window_ShopBuy.md), [Window_ShopNumber](Window_ShopNumber.md), [Window_Status](Window_Status.md) および [Window_BattleStatus](Window_BattleStatus.md), [Window_MenuStatus](Window_MenuStatus.md), [Window_SkillList](Window_SkillList.md) および [Window_ItemList](Window_ItemList.md) および [Window_Command](Window_Command.md) のスーパークラス。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
-| `height` | [Number](Number.md) |  |
-| `height` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) | ウィンドウ x座標(ピクセル) |
+| `y` | [Number](Number.md) | ウィンドウ y座標(ピクセル) |
+| `width` | [Number](Number.md) | ウィンドウ幅(ピクセル) |
+| `height` | [Number](Number.md) | ウィンドウ高さ(ピクセル) |
 
 ##### Properties:
 
@@ -54,7 +54,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### actorName (actorIndex) → {[String](String.md)}
 
-Returns the actor name given an index; the index starts from 1.
+
+Returns the actor name given an index; the index starts from 1.
 
 ##### Parameters:
 
@@ -84,7 +85,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### addChild (child) → {Object}
 
-[super] Adds a child to the container.
+
+[super] Adds a child to the container.
 
 ##### Parameters:
 
@@ -105,7 +107,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 ##### Returns:
 
-The child that was added
+
+The child that was added
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -115,7 +118,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### addChildAt (child, index) → {Object}
 
-[super] Adds a child to the container at a specified index.
+
+[super] Adds a child to the container at a specified index.
 
 ##### Parameters:
 
@@ -137,7 +141,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 ##### Returns:
 
-The child that was added
+
+The child that was added
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -147,7 +152,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### addChildToBack (child) → {Object}
 
-Adds a child between the background and contents.
+
+Adds a child between the background and contents.
 
 ##### Parameters:
 
@@ -168,7 +174,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 ##### Returns:
 
-The child that was added
+
+The child that was added
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -192,7 +199,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### calcTextHeight (textState, all) → {[Number](Number.md)}
 
-Calculates the text height of the textState (when using drawTextEx); if all is set to true, all lines of text are calculated, otherwise only a single line is processed.
+
+Calculates the text height of the textState (when using drawTextEx); if all is set to true, all lines of text are calculated, otherwise only a single line is processed.
 
 ##### Parameters:
 
@@ -239,7 +247,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### callOkHandler ()
 
-Calls the ok handler and begins processing confirmation of selection.
+
+Calls the ok handler and begins processing confirmation of selection.
 <dl>
 </dl>
 
@@ -250,7 +259,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### canvasToLocalX (x) → {[Number](Number.md)}
 
-Returns the x coordinate of the mouse to a local window x coordinate.
+
+Returns the x coordinate of the mouse to a local window x coordinate.
 
 ##### Parameters:
 
@@ -280,7 +290,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### canvasToLocalY (y) → {[Number](Number.md)}
 
-Returns the y coordinate of the mouse to a local window y coordinate.
+
+Returns the y coordinate of the mouse to a local window y coordinate.
 
 ##### Parameters:
 
@@ -310,7 +321,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### changePaintOpacity (enabled)
 
-Changes the paintOpacity (the opacity of the text drawn to the window); if true the opacity is set to 255, otherwise the opacity is set to 160.
+
+Changes the paintOpacity (the opacity of the text drawn to the window); if true the opacity is set to 255, otherwise the opacity is set to 160.
 
 ##### Parameters:
 
@@ -331,7 +343,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### changeTextColor (color)
 
-Changes the text color property given a css color string.
+
+Changes the text color property given a css color string.
 
 ##### Parameters:
 
@@ -363,7 +376,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### close ()
 
-Closes the window.
+
+Closes the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -377,7 +391,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### contentsHeight () → {[Number](Number.md)}
 
-Returns the inner content height of the window.
+
+Returns the inner content height of the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -400,7 +415,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### contentsWidth () → {[Number](Number.md)}
 
-Returns the inner content width of the window.
+
+Returns the inner content width of the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -423,7 +439,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### convertEscapeCharacters (text) → {[String](String.md)}
 
-Converts the escape characters and returns the text content after processing the characters.
+
+Converts the escape characters and returns the text content after processing the characters.
 
 ##### Parameters:
 
@@ -453,7 +470,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### createContents ()
 
-Creates the contents of the window; this is the area of the window which text is drawn to.
+
+Creates the contents of the window; this is the area of the window which text is drawn to.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -467,7 +485,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### crisisColor () → {[String](String.md)}
 
-Returns the crisis color as a css color string.
+
+Returns the crisis color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -504,7 +523,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### cursorDown (wrap)
 
-Moves the cursor down; if wrap is passed as true, then it will return to the top when at the end of the list.
+
+Moves the cursor down; if wrap is passed as true, then it will return to the top when at the end of the list.
 
 ##### Parameters:
 
@@ -517,7 +537,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### cursorFixed () → {Boolean}
 
-Returns true if the _cursorFixed property is true; this means the cursor is locked to a position.
+
+Returns true if the _cursorFixed property is true; this means the cursor is locked to a position.
 <dl>
 </dl>
 
@@ -564,7 +585,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### cursorUp (wrap)
 
-Moves the cursor up; if wrap is passed as true, then it will return to the bottom when at the top of the list.
+
+Moves the cursor up; if wrap is passed as true, then it will return to the bottom when at the top of the list.
 
 ##### Parameters:
 
@@ -590,7 +612,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### deathColor () → {[String](String.md)}
 
-Returns the death color as a css color string.
+
+Returns the death color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -613,13 +636,15 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### deselect ()
 
-Deselects the currently selected index.
+
+Deselects the currently selected index.
 <dl>
 </dl>
 
 #### dimColor1 () → {[String](String.md)}
 
-Color 1 of the dimmer sprite bitmap. for the gradient.
+
+Color 1 of the dimmer sprite bitmap. for the gradient.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -642,7 +667,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### dimColor2 () → {[String](String.md)}
 
-Color 2 of the dimmer sprite bitmap for the gradient.
+
+Color 2 of the dimmer sprite bitmap for the gradient.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -686,7 +712,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawActorClass (actor, x, y, width)
 
-Draws the actor class at the specified x and y coordinates within the given width.
+
+Draws the actor class at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
@@ -710,7 +737,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawActorFace (actor, x, y, width, height)
 
-Draws the actor face at the specified x and y coordinates within the given width.
+
+Draws the actor face at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
@@ -735,7 +763,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawActorHp (actor, x, y, width)
 
-Draws the actor hp at the specified x and y coordinates within the given width.
+
+Draws the actor hp at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
@@ -759,7 +788,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawActorIcons (actor, x, y, width)
 
-Draws the actor icons at the specified x and y coordinates within the given width.
+
+Draws the actor icons at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
@@ -783,7 +813,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawActorLevel (actor, x, y)
 
-Draws the actor level at the specified x and y coordinates.
+
+Draws the actor level at the specified x and y coordinates.
 
 ##### Parameters:
 
@@ -806,7 +837,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawActorMp (actor, x, y, width)
 
-Draws the actor mp at the specified x and y coordinates within the given width.
+
+Draws the actor mp at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
@@ -830,7 +862,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawActorName (actor, x, y, width)
 
-Draws the actor name at the specified x and y coordinates within the given width.
+
+Draws the actor name at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
@@ -854,7 +887,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawActorNickname (actor, x, y, width)
 
-Draws the actor nickname at the specified x and y coordinates within the given width.
+
+Draws the actor nickname at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
@@ -878,7 +912,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawActorSimpleStatus (actor, x, y, width)
 
-Draws a simple status for the game actor passed into the method at the specified x and y coordinates within the given width.
+
+Draws a simple status for the game actor passed into the method at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
@@ -902,7 +937,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawActorTp (actor, x, y, width)
 
-Draws the actor tp at the specified x and y coordinates within the given width.
+
+Draws the actor tp at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
@@ -926,13 +962,15 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawAllItems ()
 
-Draws all items within the window; this method cals drawItem multiple times.
+
+Draws all items within the window; this method cals drawItem multiple times.
 <dl>
 </dl>
 
 #### drawCharacter (characterName, characterIndex, x, y)
 
-Draws a character (map sprites) at the specified x and y coordinate. CharacterName refers to character spritesheet, and characterIndex refers to the characterIndex on the spritesheet.
+
+Draws a character (map sprites) at the specified x and y coordinate. CharacterName refers to character spritesheet, and characterIndex refers to the characterIndex on the spritesheet.
 
 ##### Parameters:
 
@@ -956,7 +994,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawCurrencyValue (value, unit, x, y, width)
 
-Draws the currency value given at the specified x and y coordinates within the width given. Useful if you want to write your own custom currency value.
+
+Draws the currency value given at the specified x and y coordinates within the width given. Useful if you want to write your own custom currency value.
 
 ##### Parameters:
 
@@ -981,7 +1020,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawCurrentAndMax (current, max, x, y, width, color1, color2)
 
-Draws the current and max number at the specified x and y coordinate within the given width. Color1 represents the current number and color2 represents the max number when the text is drawn.
+
+Draws the current and max number at the specified x and y coordinate within the given width. Color1 represents the current number and color2 represents the max number when the text is drawn.
 
 ##### Parameters:
 
@@ -1032,7 +1072,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawGauge (x, y, width, rate, color1, color2)
 
-Draws a gauge at the specified x and y coordinates within the given width. Color1 and Color2 represent the gradient as css color strings of the gauge.
+
+Draws a gauge at the specified x and y coordinates within the given width. Color1 and Color2 represent the gradient as css color strings of the gauge.
 
 ##### Parameters:
 
@@ -1058,7 +1099,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawIcon (iconIndex, x, y)
 
-Draws an icon given the specified iconIndex at the specified x and y coordinates. The Width and Height of the icon is based on the _iconWidth and _iconHeight properties.
+
+Draws an icon given the specified iconIndex at the specified x and y coordinates. The Width and Height of the icon is based on the _iconWidth and _iconHeight properties.
 
 ##### Parameters:
 
@@ -1092,7 +1134,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawItemName (item, x, y, width)
 
-Draws the item name at the specified x and y coordinates within the given width.
+
+Draws the item name at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
@@ -1116,7 +1159,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawText (text, x, y, maxWidth, align)
 
-Given text or a number, draws the content to the window's contents layer at the specified x and y coordinate within the max width. The text content can also be aligned with the align property. The possible alignments are: "left", "center", "right".
+
+Given text or a number, draws the content to the window's contents layer at the specified x and y coordinate within the max width. The text content can also be aligned with the align property. The possible alignments are: "left", "center", "right".
 
 ##### Parameters:
 
@@ -1141,7 +1185,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### drawTextEx (text, x, y) → {[Number](Number.md)}
 
-Draws text with text codes included; this will draw icons, increase text height, and more.
+
+Draws text with text codes included; this will draw icons, increase text height, and more.
 
 ##### Parameters:
 
@@ -1178,7 +1223,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### fittingHeight (numLines) → {[Number](Number.md)}
 
-Returns the fitting height given a number of lines based on the line height plus standard padding of the window. Default formula: numLines * lineHeight + standardPadding * 2
+
+Returns the fitting height given a number of lines based on the line height plus standard padding of the window. Default formula: numLines * lineHeight + standardPadding * 2
 
 ##### Parameters:
 
@@ -1208,7 +1254,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### gaugeBackColor () → {[String](String.md)}
 
-Returns the gauage back color as a css color string.
+
+Returns the gauage back color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1231,7 +1278,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### hide ()
 
-Hides the window, making it invisible; the window is not closed when hidden.
+
+Hides the window, making it invisible; the window is not closed when hidden.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1245,7 +1293,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### hideBackgroundDimmer ()
 
-Hides the background dimmer sprite.
+
+Hides the background dimmer sprite.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1259,7 +1308,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### hideHelpWindow ()
 
-Hides the attached help window.
+
+Hides the attached help window.
 <dl>
 </dl>
 
@@ -1286,7 +1336,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### hpColor (actor) → {[String](String.md)}
 
-Returns the hp color as a css string.
+
+Returns the hp color as a css string.
 
 ##### Parameters:
 
@@ -1316,7 +1367,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### hpGaugeColor1 () → {[String](String.md)}
 
-Returns the hp gauge color 1 as a css color string.
+
+Returns the hp gauge color 1 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1339,7 +1391,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### hpGaugeColor2 () → {[String](String.md)}
 
-Returns the hp gauge color 2 as a css color string.
+
+Returns the hp gauge color 2 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1362,7 +1415,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### index () → {[Number](Number.md)}
 
-Returns the current position of the _index property.
+
+Returns the current position of the _index property.
 <dl>
 </dl>
 
@@ -1377,7 +1431,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### initialize (x, y, width, height)
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 
 ##### Parameters:
 
@@ -1429,7 +1484,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### isClosed ()
 
-Returns true if the window is completely closed (openness == 0).
+
+Returns true if the window is completely closed (openness == 0).
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1443,7 +1499,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### isClosing () → {Boolean}
 
-Returns true if the window is currently closing.
+
+Returns true if the window is currently closing.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1515,7 +1572,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### isCursorVisible () → {Boolean}
 
-Determines if the cursor is visible within the window.
+
+Determines if the cursor is visible within the window.
 <dl>
 </dl>
 
@@ -1550,7 +1608,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### isHorizontal () → {Boolean}
 
-Returns true if the window is horizontal; means the window only has a single row.
+
+Returns true if the window is horizontal; means the window only has a single row.
 <dl>
 </dl>
 
@@ -1565,7 +1624,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### isOkEnabled () → {Boolean}
 
-Determines if ok is enabled as an option; this means whether you can confirm selection of an item within the window.
+
+Determines if ok is enabled as an option; this means whether you can confirm selection of an item within the window.
 <dl>
 </dl>
 
@@ -1594,7 +1654,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### isOpen ()
 
-Returns true if the window is completely open (openness == 255).
+
+Returns true if the window is completely open (openness == 255).
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1622,7 +1683,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### isOpening () → {Boolean}
 
-Returns true if the window is currently opening.
+
+Returns true if the window is currently opening.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1659,7 +1721,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### isTouchOkEnabled () → {Boolean}
 
-Determines if touch ok is enabled as an option; this means whether you can confirm the selection of an item within the window with touch input.
+
+Determines if touch ok is enabled as an option; this means whether you can confirm the selection of an item within the window with touch input.
 <dl>
 </dl>
 
@@ -1674,7 +1737,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### itemHeight () → {[Number](Number.md)}
 
-Returns the height of an item within the window; determines the height of a row.
+
+Returns the height of an item within the window; determines the height of a row.
 <dl>
 </dl>
 
@@ -1689,7 +1753,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### itemRect (index) → {[Rectangle](Rectangle.md)}
 
-Creates a new rectangle based on itemWidth and itemHeight. The rectangle is mainly used for positioning items within the selectable window.
+
+Creates a new rectangle based on itemWidth and itemHeight. The rectangle is mainly used for positioning items within the selectable window.
 
 ##### Parameters:
 
@@ -1711,7 +1776,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### itemRectForText (index) → {[Rectangle](Rectangle.md)}
 
-Creates a new rectangle based on itemWidth and itemHeight The rectangle is used for positioning text within the selectable window.
+
+Creates a new rectangle based on itemWidth and itemHeight The rectangle is used for positioning text within the selectable window.
 
 ##### Parameters:
 
@@ -1733,7 +1799,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### itemWidth () → {[Number](Number.md)}
 
-Returns the width of an item within the window; determines the width of a column.
+
+Returns the width of an item within the window; determines the width of a column.
 <dl>
 </dl>
 
@@ -1748,7 +1815,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### lineHeight () → {[Number](Number.md)}
 
-Returns the standard line height of the current window; default is 36.
+
+Returns the standard line height of the current window; default is 36.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1771,7 +1839,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### loadWindowskin ()
 
-Loads the window skin from the img/system directory.
+
+Loads the window skin from the img/system directory.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1785,7 +1854,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### makeFontBigger ()
 
-Makes the font bigger by a value of 12.
+
+Makes the font bigger by a value of 12.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1799,7 +1869,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### makeFontSmaller ()
 
-Makes the font smaller by a value of 12.
+
+Makes the font smaller by a value of 12.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1813,7 +1884,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### maxCols () → {[Number](Number.md)}
 
-Returns the maximum number of columns for the window.
+
+Returns the maximum number of columns for the window.
 <dl>
 </dl>
 
@@ -1828,7 +1900,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### maxItems () → {[Number](Number.md)}
 
-Returns the maximum number of items within the window; useful to overwrite when creating a new window. This method is used to calculate the number of rows and more.
+
+Returns the maximum number of items within the window; useful to overwrite when creating a new window. This method is used to calculate the number of rows and more.
 <dl>
 </dl>
 
@@ -1899,7 +1972,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### move (x, y, width, height)
 
-Sets the x, y, width, and height all at once.
+
+Sets the x, y, width, and height all at once.
 
 ##### Parameters:
 
@@ -1923,7 +1997,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### mpColor (actor) → {[String](String.md)}
 
-Returns the mp color as a css color string.
+
+Returns the mp color as a css color string.
 
 ##### Parameters:
 
@@ -1953,7 +2028,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### mpCostColor () → {[String](String.md)}
 
-Returns the mp cost color as a css color string.
+
+Returns the mp cost color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1976,7 +2052,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### mpGaugeColor1 () → {[String](String.md)}
 
-Returns the mp gauge color 1 as a css color string.
+
+Returns the mp gauge color 1 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1999,7 +2076,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### mpGaugeColor2 () → {[String](String.md)}
 
-Returns the mp gauge color 2 as a css color string.
+
+Returns the mp gauge color 2 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2022,7 +2100,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### normalColor () → {[String](String.md)}
 
-Returns the normal color as a css color string.
+
+Returns the normal color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2064,7 +2143,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### obtainEscapeParam (textState) → {number|string}
 
-Obtains the escape parameters from text codes in the text state when drawTextEx is used to draw text.
+
+Obtains the escape parameters from text codes in the text state when drawTextEx is used to draw text.
 
 ##### Parameters:
 
@@ -2105,7 +2185,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### open ()
 
-Opens the window.
+
+Opens the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2119,7 +2200,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### paramchangeTextColor (change)
 
-Changes the text color based on the powerUpColor, powerDownColor and normal color. powerUpColor is any number greater than 0, powerDownColor is any color less than 0, otherwise normal color is returned.
+
+Changes the text color based on the powerUpColor, powerDownColor and normal color. powerUpColor is any number greater than 0, powerDownColor is any color less than 0, otherwise normal color is returned.
 
 ##### Parameters:
 
@@ -2140,7 +2222,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### partyMemberName (partyMemberIndex) → {[String](String.md)}
 
-Returns a party member name given an index; the index starts from 1.
+
+Returns a party member name given an index; the index starts from 1.
 
 ##### Parameters:
 
@@ -2170,7 +2253,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### pendingColor () → {[String](String.md)}
 
-Returns the pending color as a css color string.
+
+Returns the pending color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2193,19 +2277,22 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### playBuzzerSound ()
 
-Plays the buzzer sound effect when input is incorrect.
+
+Plays the buzzer sound effect when input is incorrect.
 <dl>
 </dl>
 
 #### playOkSound ()
 
-Plays a sound effect when okay is processed.
+
+Plays a sound effect when okay is processed.
 <dl>
 </dl>
 
 #### powerDownColor () → {[String](String.md)}
 
-Returns the power down color as a css color string.
+
+Returns the power down color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2228,7 +2315,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### powerUpColor () → {[String](String.md)}
 
-Returns the power up color as a css color string.
+
+Returns the power up color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2256,7 +2344,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### processCharacter (textState)
 
-Process each character in the text when drawTextEx is used to draw text.
+
+Process each character in the text when drawTextEx is used to draw text.
 
 ##### Parameters:
 
@@ -2277,13 +2366,15 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### processCursorMove ()
 
-Handles the processing of cursor movement.
+
+Handles the processing of cursor movement.
 <dl>
 </dl>
 
 #### processDrawIcon (iconIndex, textState)
 
-Processes drawing an icon when drawTextEx is used for drawing text.
+
+Processes drawing an icon when drawTextEx is used for drawing text.
 
 ##### Parameters:
 
@@ -2305,7 +2396,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### processEscapeCharacter (code, textState)
 
-Processes escape characters when drawTextEx is used for drawing text.
+
+Processes escape characters when drawTextEx is used for drawing text.
 
 ##### Parameters:
 
@@ -2327,13 +2419,15 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### processHandling ()
 
-Handles the process of attached handlers.
+
+Handles the process of attached handlers.
 <dl>
 </dl>
 
 #### processNewLine (textState)
 
-Processes new line when drawTextEx is used to draw text.
+
+Processes new line when drawTextEx is used to draw text.
 
 ##### Parameters:
 
@@ -2354,7 +2448,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### processNewPage (textState)
 
-Processes new page when drawTexttEx is used to draw text.
+
+Processes new page when drawTexttEx is used to draw text.
 
 ##### Parameters:
 
@@ -2375,7 +2470,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### processNormalCharacter (textState)
 
-Processes the normal characters in the text when drawTextEx is used to draw text. Normal characters are letters and numbers.
+
+Processes the normal characters in the text when drawTextEx is used to draw text. Normal characters are letters and numbers.
 
 ##### Parameters:
 
@@ -2411,13 +2507,15 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### processTouch ()
 
-Handles the processing of touch input.
+
+Handles the processing of touch input.
 <dl>
 </dl>
 
 #### processWheel ()
 
-Handles the processing of the scroll wheel within the window.
+
+Handles the processing of the scroll wheel within the window.
 <dl>
 </dl>
 
@@ -2439,13 +2537,15 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### refresh ()
 
-Refreshes the window contents.
+
+Refreshes the window contents.
 <dl>
 </dl>
 
 #### refreshDimmerBitmap ()
 
-Refreshes the bitmap attached to the dimmer sprite based on the window dimensions.
+
+Refreshes the bitmap attached to the dimmer sprite based on the window dimensions.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2459,7 +2559,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### removeChild (child) → {Object}
 
-[super] Removes a child to the container.
+
+[super] Removes a child to the container.
 
 ##### Parameters:
 
@@ -2480,7 +2581,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 ##### Returns:
 
-The child that was removed
+
+The child that was removed
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -2490,7 +2592,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### removeChildAt (index) → {Object}
 
-[super] Removes a child from the specified index position.
+
+[super] Removes a child from the specified index position.
 
 ##### Parameters:
 
@@ -2511,7 +2614,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 ##### Returns:
 
-The child that was removed
+
+The child that was removed
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -2521,13 +2625,15 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### reselect ()
 
-Reselects the index based on the window's _index property.
+
+Reselects the index based on the window's _index property.
 <dl>
 </dl>
 
 #### reserveFaceImages ()
 
-Reverses the face images of the game party members.
+
+Reverses the face images of the game party members.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2541,7 +2647,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### resetFontSettings ()
 
-Resets the font settings of the window back to the default.
+
+Resets the font settings of the window back to the default.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2560,7 +2667,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### resetTextColor ()
 
-Resets the text color of the window back to the default.
+
+Resets the text color of the window back to the default.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2598,7 +2706,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### select (index)
 
-Selects the current index within the window given a number.
+
+Selects the current index within the window given a number.
 
 ##### Parameters:
 
@@ -2611,7 +2720,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### setBackgroundType (type)
 
-Sets the background type of the window. 0 is 255 window opacity (standard). 1 is the window with background dimmer. Any other number changes the opacity to 0.
+
+Sets the background type of the window. 0 is 255 window opacity (standard). 1 is the window with background dimmer. Any other number changes the opacity to 0.
 
 ##### Parameters:
 
@@ -2654,7 +2764,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### setCursorFixed (cursorFixed)
 
-Sets the _cursorFixed property of the window.
+
+Sets the _cursorFixed property of the window.
 
 ##### Parameters:
 
@@ -2667,7 +2778,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### setCursorRect (x, y, width, height)
 
-Sets the position of the command cursor.
+
+Sets the position of the command cursor.
 
 ##### Parameters:
 
@@ -2691,7 +2803,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### setHandler (symbol, method)
 
-Creates a new handler with the symbol as the handler name and a method (JS function) bound to it.
+
+Creates a new handler with the symbol as the handler name and a method (JS function) bound to it.
 
 ##### Parameters:
 
@@ -2727,7 +2840,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### setTone (r, g, b)
 
-Changes the color of the background.
+
+Changes the color of the background.
 
 ##### Parameters:
 
@@ -2750,7 +2864,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### setTopRow (row)
 
-Sets the current top row of the given a number. The top row will then be moved to an index of the window.
+
+Sets the current top row of the given a number. The top row will then be moved to an index of the window.
 
 ##### Parameters:
 
@@ -2763,7 +2878,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### show ()
 
-Shows the window, making it visible.
+
+Shows the window, making it visible.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2777,7 +2893,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### showBackgroundDimmer ()
 
-Shows the background dimmer sprite.
+
+Shows the background dimmer sprite.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2791,7 +2908,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### showHelpWindow ()
 
-Shows the attached help window.
+
+Shows the attached help window.
 <dl>
 </dl>
 
@@ -2811,7 +2929,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### standardBackOpacity () → {[Number](Number.md)}
 
-Returns the standard back opacity of the window; this is the opacity of the area behind the window's text content. Default is 192.
+
+Returns the standard back opacity of the window; this is the opacity of the area behind the window's text content. Default is 192.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2834,7 +2953,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### standardFontFace () → {[String](String.md)}
 
-Returns the standard font face of the game based on what language the game is in.
+
+Returns the standard font face of the game based on what language the game is in.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2857,7 +2977,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### standardFontSize () → {[Number](Number.md)}
 
-Returns the standard font size of the text in window; default is 28.
+
+Returns the standard font size of the text in window; default is 28.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2880,7 +3001,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### standardPadding () → {[Number](Number.md)}
 
-Returns the standard padding of the window; default is 18.
+
+Returns the standard padding of the window; default is 18.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2903,7 +3025,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### systemColor () → {[String](String.md)}
 
-Returns the system color as a css color string.
+
+Returns the system color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2926,7 +3049,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### textColor (n) → {*}
 
-Returns a text color given a numbered index as a css color string; this index maps directly to the img/system/window.png colors by default.
+
+Returns a text color given a numbered index as a css color string; this index maps directly to the img/system/window.png colors by default.
 
 ##### Parameters:
 
@@ -2956,7 +3080,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### textPadding () → {[Number](Number.md)}
 
-Returns the text padding of the window; default is 6.
+
+Returns the text padding of the window; default is 6.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2979,7 +3104,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### textWidth (text) → {[Number](Number.md)}
 
-Calculates the width of a text string and returns a number.
+
+Calculates the width of a text string and returns a number.
 
 ##### Parameters:
 
@@ -3037,7 +3163,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### tpColor (actor) → {[String](String.md)}
 
-Returns the tp color as a css color string.
+
+Returns the tp color as a css color string.
 
 ##### Parameters:
 
@@ -3067,7 +3194,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### tpCostColor () → {[String](String.md)}
 
-Returns the tp cost color as a css color string.
+
+Returns the tp cost color as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3090,7 +3218,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### tpGaugeColor1 () → {[String](String.md)}
 
-Returns the tp gauge color 1 as a css color string.
+
+Returns the tp gauge color 1 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3113,7 +3242,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### tpGaugeColor2 () → {[String](String.md)}
 
-Returns tp gauge color 2 as a css color string.
+
+Returns tp gauge color 2 as a css color string.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3136,7 +3266,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### translucentOpacity () → {[Number](Number.md)}
 
-Returns the translucentOpacity for the window; The default is 160.
+
+Returns the translucentOpacity for the window; The default is 160.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3177,7 +3308,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### updateBackgroundDimmer ()
 
-Updates the background dimmer sprite opacity based on the openness of the window.
+
+Updates the background dimmer sprite opacity based on the openness of the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3191,7 +3323,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### updateBackOpacity () → {[Number](Number.md)}
 
-Returns the inner content width of the window.
+
+Returns the inner content width of the window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3214,7 +3347,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### updateClose ()
 
-Updates the openness of the window when the _closing property is set to true. Openness is decreased.
+
+Updates the openness of the window when the _closing property is set to true. Openness is decreased.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3243,7 +3377,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### updateOpen ()
 
-Updates the openness of the window when the _opening property is set to true. Openness is increased.
+
+Updates the openness of the window when the _opening property is set to true. Openness is increased.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3257,7 +3392,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### updatePadding ()
 
-Updates the window padding based on the standardPadding method.
+
+Updates the window padding based on the standardPadding method.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3271,7 +3407,8 @@ The window class with cursor movement and scroll functions. Super class of [Wind
 
 #### updateTone ()
 
-Updates the tone of the window based on the game system window tone defined in the database.
+
+Updates the tone of the window based on the game system window tone defined in the database.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3281,7 +3418,9 @@ The window class with cursor movement and scroll functions. Super class of [Wind
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            </dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
