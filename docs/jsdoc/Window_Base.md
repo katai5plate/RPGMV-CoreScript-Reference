@@ -150,16 +150,14 @@
 </dl>
 
 #### calcTextHeight (textState, all) → {[Number](Number.md)}
-
-
-Calculates the text height of the textState (when using drawTextEx); if all is set to true, all lines of text are calculated, otherwise only a single line is processed.
+指定したテキストの表示時の高さ(ピクセル)を計算して返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.md) |  |
-| `all` | Boolean |  |
+| `textState` | [MV.TextState](MV.TextState.md) | 計算するテキストの情報 |
+| `all` | Boolean | 複数行を加算するか |
 
 <dl>
 </dl>
@@ -167,22 +165,21 @@ Calculates the text height of the textState (when using drawTextEx); if all is s
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### canvasToLocalX (x) → {[Number](Number.md)}
 
-
-Returns the x coordinate of the mouse to a local window x coordinate.
+指定したCanvas の x座標を、ゲーム画面のローカルx座標に変換して返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) | Canvas の x座標 |
 
 <dl>
 </dl>
@@ -190,22 +187,21 @@ Returns the x coordinate of the mouse to a local window x coordinate.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### canvasToLocalY (y) → {[Number](Number.md)}
 
-
-Returns the y coordinate of the mouse to a local window y coordinate.
+指定したCanvas の y座標を、ゲーム画面のローカルy座標に変換して返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `y` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) | Canvas の y座標 |
 
 <dl>
 </dl>
@@ -213,11 +209,11 @@ Returns the y coordinate of the mouse to a local window y coordinate.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### changePaintOpacity (enabled)
 
