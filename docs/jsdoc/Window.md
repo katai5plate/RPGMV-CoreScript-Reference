@@ -235,100 +235,91 @@
 </dl>
 
 #### move (x, y, width, height)
-
-Sets the x, y, width, and height all at once.
+指定した位置と大きさにウィンドウを変更。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) | The x coordinate of the window |
-| `y` | [Number](Number.md) | The y coordinate of the window |
-| `width` | [Number](Number.md) | The width of the window |
-| `height` | [Number](Number.md) | The height of the window |
+| `x` | [Number](Number.md) | ウィンドウ x座標(ピクセル) |
+| `y` | [Number](Number.md) | ウィンドウ y座標(ピクセル) |
+| `width` | [Number](Number.md) | ウィンドウ幅(ピクセル) |
+| `height` | [Number](Number.md) | ウィンドウ高さ(ピクセル) |
 
 <dl>
 </dl>
 
 #### removeChild (child) → {Object}
 
-
-[super] Removes a child to the container.
+[super] 指定したオブジェクトをコンテナから取り除いて、返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `child` | Object | The child to remove |
+| `child` | [PIXI.DisplayObject](http://pixijs.download/release/docs/PIXI.DisplayObject.html) | 取り除くオブジェクト |
 
 <dl>
 </dl>
 
 ##### Returns:
 
-
-The child that was removed
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Object</span>
+    </dd>
+</dl>
 
 #### removeChildAt (index) → {Object}
 
 
-[super] Removes a child from the specified index position.
+[super] 指定位置のオブジェクトをコンテナから取り除いて、返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) | The index to get the child from |
+| `index` | [Number](Number.md) | 取り除くオブジェクトの位置 |
 
 <dl>
 </dl>
 
 ##### Returns:
 
-
-The child that was removed
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Object</span>
+    </dd>
+</dl>
 
 #### setCursorRect (x, y, width, height)
-
-
-Sets the position of the command cursor.
+コマンド用カーソルの位置と大きさを設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) | The x coordinate of the cursor |
-| `y` | [Number](Number.md) | The y coordinate of the cursor |
-| `width` | [Number](Number.md) | The width of the cursor |
-| `height` | [Number](Number.md) | The height of the cursor |
+| `x` | [Number](Number.md) | カーソル x座標(ピクセル) |
+| `y` | [Number](Number.md) | カーソル y座標(ピクセル) |
+| `width` | [Number](Number.md) | カーソル幅(ピクセル) |
+| `height` | [Number](Number.md) | カーソル高さ(ピクセル) |
 
 <dl>
 </dl>
 
 #### setTone (r, g, b)
 
-
-Changes the color of the background.
+背景の色調を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `r` | [Number](Number.md) | The red value in the range (-255, 255) |
-| `g` | [Number](Number.md) | The green value in the range (-255, 255) |
-| `b` | [Number](Number.md) | The blue value in the range (-255, 255) |
+| `r` | [Number](Number.md) | 赤(-255 〜 255) |
+| `g` | [Number](Number.md) | 緑(-255 〜 255) |
+| `b` | [Number](Number.md) | 青(-255 〜 255) |
 
 <dl>
 </dl>
