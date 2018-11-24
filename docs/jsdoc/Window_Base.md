@@ -4,7 +4,6 @@
 
 #### (abstract) new Window_Base (x, y, width, height, _iconWidth, _iconHeight, _faceWidth, _faceHeight, _opening, _closing)
 
-メッセージやステータスなどを描くためのメソッドを多く持つ、ウィンドウオブジェクト。<br />
 [Window_EquipStatus](Window_EquipStatus.md), [Window_Gold](Window_Gold.md), [Window_Help](Window_Help.md), [Window_MapName](Window_MapName.md), [Window_Message](Window_Message.md), [Window_NameEdit](Window_NameEdit.md), [Window_ScrollText](Window_ScrollText.md), [Window_ShopStatus](Window_ShopStatus.md), [Window_SkillStatus](Window_SkillStatus.md) および [Window_Selectable](Window_Selectable.md) のスーパークラス。
 
 ##### Parameters:
@@ -19,8 +18,8 @@
 | `_iconHeight` | [Number](Number.md) | 基本のアイコン高さ default : 32 |
 | `_faceWidth` | [Number](Number.md) | 基本の顔画像の幅 default : 144 |
 | `_faceHeight` | [Number](Number.md) | 基本の顔画像の高さ default : 144 |
-| `_opening` | Boolean | The opening property; determines if the window is opening. |
-| `_closing` | Boolean | The closing property; determines if the window is closing. |
+| `_opening` | Boolean | ウィンドウが開いている途中か |
+| `_closing` | Boolean | ウィンドウが閉じている途中か |
 
 <dl>
 </dl>
@@ -531,15 +530,15 @@
 </dl>
 
 #### drawCharacter (characterName, characterIndex, x, y)
-指定した'img/character/'フォルダのファイル名とキャラクタ番号で、指定位置にキャラクタを描画。<br />
-キャラクタ番号は左上から始まり右へ進み、2段目に移る。$付きの場合は0のみ。表示されるのは下向きの2番目のパターン。
+指定した'img/characters/'フォルダのファイル名とキャラクタ番号で、指定位置にキャラクタを描画。<br />
+キャラクタ番号は左上から始まり右へ進み、2段目に移る。$付きの場合は0のみ。表示されるのは下向き中央のパターン。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `characterName` | [String](String.md) |  ファイル名(拡張子.pngを除く） |
-| `characterIndex` | [Number](Number.md) | 番号(0 〜 7)  |
+| `characterName` | [String](String.md) |  ファイル名(拡張子.pngを除く) |
+| `characterIndex` | [Number](Number.md) | キャラクタ番号(0 〜 7)  |
 | `x` | [Number](Number.md) | x座標(ピクセル) |
 | `y` | [Number](Number.md) | y座標(ピクセル) |
 
@@ -547,74 +546,70 @@
 </dl>
 
 #### drawCurrencyValue (value, unit, x, y, width)
-
-
-Draws the currency value given at the specified x and y coordinates within the width given. Useful if you want to write your own custom currency value.
+所持金を通貨単位付きで指定位置に描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.md) |  |
-| `unit` | [String](String.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
+| `value` | [Number](Number.md) | 所持金 |
+| `unit` | [String](String.md) | 通貨単位 |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `width` | [Number](Number.md) | 描画領域の幅(ピクセル) |
 
 <dl>
 </dl>
 
 #### drawCurrentAndMax (current, max, x, y, width, color1, color2)
-
-
-Draws the current and max number at the specified x and y coordinate within the given width. Color1 represents the current number and color2 represents the max number when the text is drawn.
+現在値と最大値の組み合わせを指定位置に描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `current` | [Number](Number.md) |  |
-| `max` | [Number](Number.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
-| `color1` | [String](String.md) |  |
-| `color2` | [String](String.md) |  |
+| `current` | [Number](Number.md) | 現在値 |
+| `max` | [Number](Number.md) | 最大値 |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `width` | [Number](Number.md) | 描画領域の幅(ピクセル) |
+| `color1` | [String](String.md) | 現在値色(CSS形式) |
+| `color2` | [String](String.md) | 最大値色(CSS形式) |
 
 <dl>
 </dl>
 
 #### drawFace (faceName, faceIndex, x, y, width opt, height opt)
+指定した'img/faces/'フォルダのファイル名とキャラクタ番号で、指定位置に顔画像を描画。<br />
+キャラクタ番号は左上から始まり右へ進み、2段目に移る。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `faceName` | [String](String.md) |  |  |
-| `faceIndex` | [Number](Number.md) |  |  |
-| `x` | [Number](Number.md) |  |  |
-| `y` | [Number](Number.md) |  |  |
-| `width` | [Number](Number.md) | <optional> |  |
-| `height` | [Number](Number.md) | <optional> |  |
+| `faceName` | [String](String.md) |  | ファイル名(拡張子.pngを除く) |
+| `faceIndex` | [Number](Number.md) |  | キャラクタ番号(0 〜 7) |
+| `x` | [Number](Number.md) |  | x座標(ピクセル) |
+| `y` | [Number](Number.md) |  | y座標(ピクセル) |
+| `width` | [Number](Number.md) | \<optional> | 幅(ピクセル) |
+| `height` | [Number](Number.md) | \<optional> | 高さ(ピクセル) |
 
 <dl>
 </dl>
 
 #### drawGauge (x, y, width, rate, color1, color2)
-
-
-Draws a gauge at the specified x and y coordinates within the given width. Color1 and Color2 represent the gradient as css color strings of the gauge.
+指定位置にゲージを描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
-| `rate` | [Number](Number.md) |  |
-| `color1` | [String](String.md) |  |
-| `color2` | [String](String.md) |  |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `width` | [Number](Number.md) | 幅(ピクセル) |
+| `rate` | [Number](Number.md) | 比率(0 〜 1) |
+| `color1` | [String](String.md) | ゲージ色1(CSS形式) |
+| `color2` | [String](String.md) | ゲージ色2(CSS形式) |
 
 <dl>
 </dl>
