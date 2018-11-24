@@ -132,103 +132,109 @@
 
 #### addChild (child) → {Object}
 
-
-[super] Adds a child to the container.
+[super] コンテナに子オブジェクトを追加し、追加されたオブジェクトを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `child` | Object | The child to add |
+| `child` | [PIXI.DisplayObject](http://pixijs.download/release/docs/PIXI.DisplayObject.html) | 追加するオブジェクト |
 
 <dl>
 </dl>
 
 ##### Returns:
 
-
-The child that was added
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Object</span>
+    </dd>
+</dl>
 
 #### addChildAt (child, index) → {Object}
-
-
-[super] Adds a child to the container at a specified index.
+[super] コンテナの指定位置に子オブジェクトを追加し、追加されたオブジェクトを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `child` | Object | The child to add |
-| `index` | [Number](Number.md) | The index to place the child in |
+| `child` | [PIXI.DisplayObject](http://pixijs.download/release/docs/PIXI.DisplayObject.html)  | 追加するオブジェクト |
+| `index` | [Number](Number.md) | 追加位置 |
 
 <dl>
 </dl>
 
 ##### Returns:
 
-
-The child that was added
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Object</span>
+    </dd>
+</dl>
 
 #### addChildToBack (child) → {Object}
 
-
-Adds a child between the background and contents.
+背景とコンテンツの間に子オブジェクトを追加し、追加されたオブジェクトを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `child` | Object | The child to add |
+| `child` | [PIXI.DisplayObject](http://pixijs.download/release/docs/PIXI.DisplayObject.html)  | 追加するオブジェクト |
 
 <dl>
 </dl>
 
 ##### Returns:
 
-
-The child that was added
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Object</span>
+    </dd>
+</dl>
 
 #### initialize ()
-
 
  オブジェクト生成時の初期化。
 <dl>
 </dl>
 
-#### isClosed ()
+#### isClosed () → {Boolean}
 
-
-Returns true if the window is completely closed (openness == 0).
+ウィンドウが完全に閉じているか。<br />
+つまり、openness === 0 であるか。
 <dl>
 </dl>
 
-#### isOpen ()
+##### Returns:
 
-
-Returns true if the window is completely open (openness == 255).
 <dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
+
+#### isOpen () → {Boolean}
+
+ウィンドウが完全に開いているか。<br />
+つまり、openness === 255 であるか。
+<dl>
+</dl>
+
+##### Returns:
+
+<dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
 </dl>
 
 #### move (x, y, width, height)
-
 
 Sets the x, y, width, and height all at once.
 
@@ -329,8 +335,7 @@ Changes the color of the background.
 
 #### update ()
 
-
-Updates the window for each frame.
+フレーム毎のアップデート。
 <dl>
 </dl>
 
