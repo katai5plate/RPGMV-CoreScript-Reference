@@ -67,7 +67,7 @@
     <dd>
         <ul>
             <li>
-                <a href="Window_Base#actorname-actorindex--string">Window_Base#actorName</a>
+                <a href="Window_Base.html#actorname-actorindex--string">Window_Base#actorName</a>
             </li>
         </ul>
     </dd>
