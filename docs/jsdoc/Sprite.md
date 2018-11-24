@@ -41,7 +41,7 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 
 ### Extends
 
-* [PIXI.Sprite](http://pixijs.download/release/docs/PIXI.Sprite.md)
+* [PIXI.Sprite](http://pixijs.download/release/docs/PIXI.Sprite.html)
 
 ### Methods
 
