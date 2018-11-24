@@ -441,119 +441,106 @@
 </dl>
 
 #### drawActorLevel (actor, x, y)
-
-
-Draws the actor level at the specified x and y coordinates.
+指定した[アクター]の[レベル]を指定位置に描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+| `actor` | [Game_Actor](Game_Actor.md) | 対象の[アクター] |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
 
 <dl>
 </dl>
 
 #### drawActorMp (actor, x, y, width)
-
-
-Draws the actor mp at the specified x and y coordinates within the given width.
+指定した[アクター]の[MP]を指定位置に描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
+| `actor` | [Game_Actor](Game_Actor.md) | 対象の[アクター] |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `width` | [Number](Number.md) | 描画領域の幅(ピクセル) |
 
 <dl>
 </dl>
 
 #### drawActorName (actor, x, y, width)
-
-
-Draws the actor name at the specified x and y coordinates within the given width.
+指定した[アクター]の[名前]を指定位置に描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
+| `actor` | [Game_Actor](Game_Actor.md) | 対象の[アクター] |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `width` | [Number](Number.md) | 描画領域の幅(ピクセル) |
 
 <dl>
 </dl>
 
 #### drawActorNickname (actor, x, y, width)
-
-
-Draws the actor nickname at the specified x and y coordinates within the given width.
+指定した[アクター]の[二つ名]を指定位置に描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
+| `actor` | [Game_Actor](Game_Actor.md) | 対象の[アクター] |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `width` | [Number](Number.md) | 描画領域の幅(ピクセル) |
 
 <dl>
 </dl>
 
 #### drawActorSimpleStatus (actor, x, y, width)
-
-
-Draws a simple status for the game actor passed into the method at the specified x and y coordinates within the given width.
+指定した[アクター]の簡易ステータスを指定位置に描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
+| `actor` | [Game_Actor](Game_Actor.md) | 対象の[アクター] |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `width` | [Number](Number.md) | 描画領域の幅(ピクセル) |
 
 <dl>
 </dl>
 
 #### drawActorTp (actor, x, y, width)
-
-
-Draws the actor tp at the specified x and y coordinates within the given width.
+指定した[アクター]の[TP]を指定位置に描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
+| `actor` | [Game_Actor](Game_Actor.md) | 対象の[アクター] |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `width` | [Number](Number.md) | 描画領域の幅(ピクセル) |
 
 <dl>
 </dl>
 
 #### drawCharacter (characterName, characterIndex, x, y)
-
-
-Draws a character (map sprites) at the specified x and y coordinate. CharacterName refers to character spritesheet, and characterIndex refers to the characterIndex on the spritesheet.
+指定した'img/character/'フォルダのファイル名とキャラクタ番号で、指定位置にキャラクタを描画。<br />
+キャラクタ番号は左上から始まり右へ進み、2段目に移る。$付きの場合は0のみ。表示されるのは下向きの2番目のパターン。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `characterName` | [String](String.md) |  |
-| `characterIndex` | [Number](Number.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+| `characterName` | [String](String.md) |  ファイル名(拡張子.pngを除く） |
+| `characterIndex` | [Number](Number.md) | 番号(0 〜 7)  |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
 
 <dl>
 </dl>
