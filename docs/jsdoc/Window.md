@@ -11,7 +11,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `children` | [Array](Array.md) | [super][read-only] 子オブジェクト |
+| `children` | [Array](Array.md).<*> | [super][read-only] 子オブジェクト |
 | `parent` | [PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html) | [super][read-only] 親オブジェクト |
 | `active` | Boolean | ウィンドウがアクティブか |
 | `openness` | [Number](Number.md) | 開放度 (0 〜 255) |
@@ -41,7 +41,7 @@
 | `_padding` | [Number](Number.md) |  |
 | `_margin` | [Number](Number.md) |  |
 | `_colorTone` | [Array](Array.md).<[Number](Number.md)> |  |
-| `_windowSpriteContainer` | PIXI.Container |  |
+| `_windowSpriteContainer` | [PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html) |  |
 | `_windowBackSprite` | [Sprite](Sprite.md) |  |
 | `_windowCursorSprite` | [Sprite](Sprite.md) |  |
 | `_windowFrameSprite` | [Sprite](Sprite.md) |  |
