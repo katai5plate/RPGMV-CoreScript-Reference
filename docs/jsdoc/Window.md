@@ -4,24 +4,25 @@
 
 #### new Window ()
 
-The window in the game.
+ゲーム内で使われるウィンドウ。<br />
+ブラウザやその他アプリケーションのウィンドウではない。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `children` | [Array](Array.md) | [super][read-only] The array of children of the window. |
-| `parent` | Object | [super][read-only] The object that contains the window. |
-| `active` | Boolean | The active state for the window. |
-| `openness` | [Number](Number.md) | The openness of the window (0 to 255). |
-| `contents` | [Bitmap](Bitmap.md) |  |
-| `windowskin` | [Bitmap](Bitmap.md) | The image used as a window skin. |
-| `visible` | Boolean | The visibility of the window. |
-| `pause` | Boolean | The visibility of the pause sign. |
-| `downArrowVisible` | Boolean | The visibility of the down scroll arrow. |
-| `upArrowVisible` | Boolean | The visibility of the up scroll arrow. |
-| `opacity` | [Number](Number.md) | The opacity of the window without contents (0 to 255). |
-| `backOpacity` | [Number](Number.md) | The opacity of the window contents (0 to 255). |
+| `children` | [Array](Array.md) | [super][read-only] 子オブジェクト |
+| `parent` | [PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html) | [super][read-only] 親オブジェクト |
+| `active` | Boolean | ウィンドウがアクティブか |
+| `openness` | [Number](Number.md) | 開放度 (0 〜 255) |
+| `contents` | [Bitmap](Bitmap.md) | コンテンツ |
+| `windowskin` | [Bitmap](Bitmap.md) | ウィンドウのスキンに使う画像 |
+| `visible` | Boolean | ウィンドウが表示中か |
+| `pause` | Boolean | ポーズサインが表示中か |
+| `downArrowVisible` | Boolean | 下向きスクロールアローが表示中か|
+| `upArrowVisible` | Boolean | 上むきスクロールアローが表示中か |
+| `opacity` | [Number](Number.md) | コンテンツの不透明度(0 〜 255) |
+| `backOpacity` | [Number](Number.md) | 背景の不透明度(0 〜 255) |
 | `contentsOpacity` | [Number](Number.md) | The opacity of the window contents (0 to 255). |
 | `origin` | [Point](Point.md) | The origin point of the window for scrolling. |
 | `x` | [Number](Number.md) | The x coordinate of the window. |
