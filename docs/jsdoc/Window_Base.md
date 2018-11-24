@@ -302,7 +302,7 @@
 </dl>
 
 #### crisisColor () → {[String](String.md)}
-危険色をCSS形式で返す。
+危険色(CSS形式)を返す。
 <dl>
 </dl>
 
@@ -321,7 +321,7 @@
 </dl>
 
 #### deathColor () → {[String](String.md)}
-死亡色をCSS形式で返す。
+死亡色(CSS形式)を返す。
 <dl>
 </dl>
 
@@ -335,7 +335,7 @@
 </dl>
 
 #### dimColor1 () → {[String](String.md)}
-明るいグラデーション1の色をCSS形式で返す。
+明るいグラデーション1の色(CSS形式)を返す。
 <dl>
 </dl>
 
@@ -349,7 +349,7 @@
 </dl>
 
 #### dimColor2 () → {[String](String.md)}
-明るいグラデーション2の色をCSS形式で返す。
+明るいグラデーション2の色(CSS形式)を返す。
 
 <dl>
 </dl>
@@ -708,7 +708,7 @@
 </dl>
 
 #### gaugeBackColor () → {[String](String.md)}
-ゲージの背景色をCSS形式で返す。
+ゲージの背景色(CSS形式)を返す。
 
 <dl>
 </dl>
@@ -735,7 +735,7 @@
 </dl>
 
 #### hpColor (actor) → {[String](String.md)}
-指定した[アクター]の[HP]の色をCSS形式で返す。
+指定した[アクター]の[HP]の色(CSS形式)を返す。
 
 ##### Parameters:
 
@@ -756,7 +756,7 @@
 </dl>
 
 #### hpGaugeColor1 () → {[String](String.md)}
-[HP]ゲージの色1をCSS形式で返す。
+[HP]ゲージの色1(CSS形式)を返す。
 
 <dl>
 </dl>
@@ -771,7 +771,7 @@
 </dl>
 
 #### hpGaugeColor2 () → {[String](String.md)}
-[HP]ゲージの色2をCSS形式で返す。
+[HP]ゲージの色2(CSS形式)を返す。
 
 <dl>
 </dl>
@@ -919,7 +919,7 @@
 </dl>
 
 #### mpColor (actor) → {[String](String.md)}
-指定した[アクター]の[MP]の色をCSS形式で返す。
+指定した[アクター]の[MP]の色(CSS形式)を返す。
 
 
 ##### Parameters:
@@ -941,7 +941,7 @@
 </dl>
 
 #### mpCostColor () → {[String](String.md)}
-[消費MP]の色をCSS形式で返す。
+[消費MP]の色(CSS形式)を返す。
 
 <dl>
 </dl>
@@ -956,7 +956,7 @@
 </dl>
 
 #### mpGaugeColor1 () → {[String](String.md)}
-[MP]ゲージの色1をCSS形式で返す。
+[MP]ゲージの色1(CSS形式)を返す。
 
 <dl>
 </dl>
@@ -971,7 +971,7 @@
 </dl>
 
 #### mpGaugeColor2 () → {[String](String.md)}
-[MP]ゲージの色2をCSS形式で返す。
+[MP]ゲージの色2(CSS形式)を返す。
 <dl>
 </dl>
 
@@ -985,7 +985,7 @@
 </dl>
 
 #### normalColor () → {[String](String.md)}
-通常色をCSS形式で返す。
+通常色(CSS形式)を返す。
 
 <dl>
 </dl>
@@ -1010,7 +1010,7 @@
 <dl>
 </dl>
 
-#### obtainEscapeParam (textState) → {number|string}
+#### obtainEscapeParam (textState) → {Number|String}
 
 
 Obtains the escape parameters from text codes in the text state when drawTextEx is used to draw text.
@@ -1027,43 +1027,47 @@ Obtains the escape parameters from text codes in the text state when drawTextEx 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>number</span> | <span>string</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span> | 
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### open ()
-
-
-Opens the window.
+ウィンドウを開く。
 <dl>
 </dl>
 
-#### paramchangeTextColor (change)
+#### paramchangeTextColor (change) → {String}
 
-
-Changes the text color based on the powerUpColor, powerDownColor and normal color. powerUpColor is any number greater than 0, powerDownColor is any color less than 0, otherwise normal color is returned.
+指定した数値に対応する色(CSS形式)を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `change` | [Number](Number.md) |  |
+| `change` | [Number](Number.md) | 負の値: powerDownColor, 0:normalColor, 正の値:powerUpColor |
 
 <dl>
+</dl>
+
+##### Returns:
+<dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
 </dl>
 
 #### partyMemberName (partyMemberIndex) → {[String](String.md)}
-
-
-Returns a party member name given an index; the index starts from 1.
+指定したパーティーメンバー番号に対応した名前を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `partyMemberIndex` | [Number](Number.md) |  |
+| `partyMemberIndex` | [Number](Number.md) | パーティーメンバー番号(1から開始される) |
 
 <dl>
 </dl>
@@ -1071,59 +1075,54 @@ Returns a party member name given an index; the index starts from 1.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### pendingColor () → {[String](String.md)}
-
-
-Returns the pending color as a css color string.
+未決定色(CSS形式)を返す。
 <dl>
 </dl>
 
 ##### Returns:
-
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### powerDownColor () → {[String](String.md)}
+パワーダウン色(CSS形式)を返す。
 
-
-Returns the power down color as a css color string.
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### powerUpColor () → {[String](String.md)}
+パワーアップ色(CSS形式)を返す。
 
-
-Returns the power up color as a css color string.
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### processCharacter (textState)
 
@@ -1219,70 +1218,62 @@ Refreshes the bitmap attached to the dimmer sprite based on the window dimension
 </dl>
 
 #### removeChild (child) → {Object}
-
-
-[super] Removes a child to the container.
+[super] 指定したオブジェクトをコンテナから取り除いて、返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `child` | Object | The child to remove |
+| `child` | [PIXI.DisplayObject](http://pixijs.download/release/docs/PIXI.DisplayObject.html) | 取り除くオブジェクト |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window#removeChild</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a href="Window.html#removechild-child--object">Window#removeChild</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
-
-The child that was removed
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Object</span>
+    </dd>
+</dl>
 
 #### removeChildAt (index) → {Object}
-
-
-[super] Removes a child from the specified index position.
+[super] 指定位置のオブジェクトをコンテナから取り除いて、返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) | The index to get the child from |
+| `index` | [Number](Number.md) | 取り除くオブジェクトの位置 |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window#removeChildAt</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a href="Window.html#removechildat-index--object">Window#removeChildAt</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
-
-The child that was removed
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Object</span>
+    </dd>
+</dl>
 
 #### reserveFaceImages ()
 
@@ -1320,83 +1311,75 @@ Sets the background type of the window. 0 is 255 window opacity (standard). 1 is
 </dl>
 
 #### setCursorRect (x, y, width, height)
-
-
-Sets the position of the command cursor.
+[super]コマンド用カーソルの位置と大きさを設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) | The x coordinate of the cursor |
-| `y` | [Number](Number.md) | The y coordinate of the cursor |
-| `width` | [Number](Number.md) | The width of the cursor |
-| `height` | [Number](Number.md) | The height of the cursor |
+| `x` | [Number](Number.md) | カーソル x座標(ピクセル) |
+| `y` | [Number](Number.md) | カーソル y座標(ピクセル) |
+| `width` | [Number](Number.md) | カーソル幅(ピクセル) |
+| `height` | [Number](Number.md) | カーソル高さ(ピクセル) |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window#setCursorRect</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a herf="Window.html#setcursorrect-x-y-width-height">Window#setCursorRect</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### setTone (r, g, b)
-
-
-Changes the color of the background.
+[super]背景の色調を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `r` | [Number](Number.md) | The red value in the range (-255, 255) |
-| `g` | [Number](Number.md) | The green value in the range (-255, 255) |
-| `b` | [Number](Number.md) | The blue value in the range (-255, 255) |
+| `r` | [Number](Number.md) | 赤(-255 〜 255) |
+| `g` | [Number](Number.md) | 緑(-255 〜 255) |
+| `b` | [Number](Number.md) | 青(-255 〜 255) |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window#setTone</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a href="Window.html#settone-r-g-b">Window#setTone</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### show ()
-
-
-Shows the window, making it visible.
+ウィンドウを表示。
 <dl>
 </dl>
 
 #### showBackgroundDimmer ()
+背景の薄暗い部分を表示。
 
-
-Shows the background dimmer sprite.
 <dl>
 </dl>
 
 #### standardBackOpacity () → {[Number](Number.md)}
+標準の背景の不透明度を返す。default:192
 
-
-Returns the standard back opacity of the window; this is the opacity of the area behind the window's text content. Default is 192.
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### standardFontFace () → {[String](String.md)}
 
@@ -1408,11 +1391,11 @@ Returns the standard font face of the game based on what language the game is in
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### standardFontSize () → {[Number](Number.md)}
 
@@ -1424,11 +1407,11 @@ Returns the standard font size of the text in window; default is 28.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### standardPadding () → {[Number](Number.md)}
 
@@ -1440,11 +1423,11 @@ Returns the standard padding of the window; default is 18.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### systemColor () → {[String](String.md)}
 
@@ -1456,11 +1439,11 @@ Returns the system color as a css color string.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### textColor (n) → {*}
 
@@ -1479,11 +1462,11 @@ Returns a text color given a numbered index as a css color string; this index ma
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>*</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>*</span>
+    </dd>
+</dl>
 
 #### textPadding () → {[Number](Number.md)}
 
@@ -1495,11 +1478,11 @@ Returns the text padding of the window; default is 6.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### textWidth (text) → {[Number](Number.md)}
 
@@ -1518,11 +1501,11 @@ Calculates the width of a text string and returns a number.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### tpColor (actor) → {[String](String.md)}
 
@@ -1541,11 +1524,11 @@ Returns the tp color as a css color string.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### tpCostColor () → {[String](String.md)}
 
@@ -1557,11 +1540,11 @@ Returns the tp cost color as a css color string.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### tpGaugeColor1 () → {[String](String.md)}
 
@@ -1573,11 +1556,11 @@ Returns the tp gauge color 1 as a css color string.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### tpGaugeColor2 () → {[String](String.md)}
 
@@ -1589,11 +1572,11 @@ Returns tp gauge color 2 as a css color string.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### translucentOpacity () → {[Number](Number.md)}
 
@@ -1605,26 +1588,25 @@ Returns the translucentOpacity for the window; The default is 160.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### update ()
+[super]フレーム毎のアップデート。
 
-
-The update method of the window; this is run every frame to do logic processing for the window.
 <dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window#update</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Overrides:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a href="Window.html#update-">Window#update</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### updateBackgroundDimmer ()
 
