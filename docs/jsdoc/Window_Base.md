@@ -686,15 +686,14 @@
 </dl>
 
 #### fittingHeight (numLines) → {[Number](Number.md)}
-
-
-Returns the fitting height given a number of lines based on the line height plus standard padding of the window. Default formula: numLines * lineHeight + standardPadding * 2
+指定された行数に必要な高さを返す。<br />
+高さ = 行数 * 行の高さ + パディング幅 * 2。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `numLines` | [Number](Number.md) |  |
+| `numLines` | [Number](Number.md) | 行数 |
 
 <dl>
 </dl>
@@ -702,52 +701,47 @@ Returns the fitting height given a number of lines based on the line height plus
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### gaugeBackColor () → {[String](String.md)}
+ゲージの背景色をCSS形式で返す。
 
-
-Returns the gauage back color as a css color string.
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### hide ()
+ウィンドウを非表示(閉じるわけではない)。
 
-
-Hides the window, making it invisible; the window is not closed when hidden.
 <dl>
 </dl>
 
 #### hideBackgroundDimmer ()
+背景の薄暗い部分を非表示。
 
-
-Hides the background dimmer sprite.
 <dl>
 </dl>
 
 #### hpColor (actor) → {[String](String.md)}
-
-
-Returns the hp color as a css string.
+指定した[アクター]の[HP]の色をCSS形式で返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `actor` | [Game_Actor](Game_Actor.md) | 対象の[アクター] |
 
 <dl>
 </dl>
@@ -755,203 +749,184 @@ Returns the hp color as a css string.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### hpGaugeColor1 () → {[String](String.md)}
+[HP]ゲージの色1をCSS形式で返す。
 
-
-Returns the hp gauge color 1 as a css color string.
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### hpGaugeColor2 () → {[String](String.md)}
+[HP]ゲージの色2をCSS形式で返す。
 
-
-Returns the hp gauge color 2 as a css color string.
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### initialize (x, y, width, height)
-
-
- オブジェクト生成時の初期化。
+[supre]オブジェクト生成時の初期化。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
-| `height` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `width` | [Number](Number.md) | 描画領域の幅(ピクセル) |
+| `height` | [Number](Number.md) | 描画領域の高さ(ピクセル) |
 
 <dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window#initialize</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Overrides:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a href="Window.html#initialize-">Window#initialize</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### isClosed ()
+[supre]ウィンドウが完全に閉じているか。<br />
+つまり、openness === 0 であるか。
 
-
-Returns true if the window is completely closed (openness == 0).
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window#isClosed</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a href="Window.html#isclosed---boolean">Window#isClosed</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### isClosing () → {Boolean}
+ウィンドウが閉じている途中か。
 
-
-Returns true if the window is currently closing.
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### isOpen ()
-
-
-Returns true if the window is completely open (openness == 255).
+[super]ウィンドウが完全に開いているか。<br />
+つまり、openness === 255 であるか。
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window#isOpen</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a href="Window.html#isopen---boolean">Window#isOpen</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### isOpening () → {Boolean}
-
-
-Returns true if the window is currently opening.
+ウィンドウが開いている途中か。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### lineHeight () → {[Number](Number.md)}
-
-
-Returns the standard line height of the current window; default is 36.
+行の高さ(ピクセル)を返す。default: 36
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### loadWindowskin ()
-
-
-Loads the window skin from the img/system directory.
+'img/system/Window.png'から、ウィンドウのスキンを読み込む。
 <dl>
 </dl>
 
 #### makeFontBigger ()
-
-
-Makes the font bigger by a value of 12.
+フォントサイズを12大きくする。
 <dl>
 </dl>
 
 #### makeFontSmaller ()
-
-
-Makes the font smaller by a value of 12.
+フォントサイズを12小さくする。
 <dl>
 </dl>
 
 #### move (x, y, width, height)
-
-
-Sets the x, y, width, and height all at once.
+[super]指定した位置と大きさにウィンドウを変更。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) | The x coordinate of the window |
-| `y` | [Number](Number.md) | The y coordinate of the window |
-| `width` | [Number](Number.md) | The width of the window |
-| `height` | [Number](Number.md) | The height of the window |
+| `x` | [Number](Number.md) | ウィンドウ x座標(ピクセル) |
+| `y` | [Number](Number.md) | ウィンドウ y座標(ピクセル) |
+| `width` | [Number](Number.md) | ウィンドウ幅(ピクセル) |
+| `height` | [Number](Number.md) | ウィンドウ高さ(ピクセル) |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window#move</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a herf="Window.html#move-x-y-width-height">Window#move</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### mpColor (actor) → {[String](String.md)}
+指定した[アクター]の[MP]の色をCSS形式で返す。
 
-
-Returns the mp color as a css color string.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `actor` | [Game_Actor](Game_Actor.md) | 対象の[アクター] |
 
 <dl>
 </dl>
@@ -959,75 +934,70 @@ Returns the mp color as a css color string.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### mpCostColor () → {[String](String.md)}
+[消費MP]の色をCSS形式で返す。
 
-
-Returns the mp cost color as a css color string.
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### mpGaugeColor1 () → {[String](String.md)}
+[MP]ゲージの色1をCSS形式で返す。
 
-
-Returns the mp gauge color 1 as a css color string.
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### mpGaugeColor2 () → {[String](String.md)}
-
-
-Returns the mp gauge color 2 as a css color string.
+[MP]ゲージの色2をCSS形式で返す。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### normalColor () → {[String](String.md)}
+通常色をCSS形式で返す。
 
-
-Returns the normal color as a css color string.
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### obtainEscapeCode (textState)
 
@@ -1424,7 +1394,7 @@ Returns the standard back opacity of the window; this is the opacity of the area
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -1456,7 +1426,7 @@ Returns the standard font size of the text in window; default is 28.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -1472,7 +1442,7 @@ Returns the standard padding of the window; default is 18.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -1527,7 +1497,7 @@ Returns the text padding of the window; default is 6.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -1550,7 +1520,7 @@ Calculates the width of a text string and returns a number.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -1637,7 +1607,7 @@ Returns the translucentOpacity for the window; The default is 160.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -1675,7 +1645,7 @@ Returns the inner content width of the window.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
