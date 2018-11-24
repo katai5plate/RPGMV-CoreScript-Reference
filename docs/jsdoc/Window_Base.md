@@ -4,6 +4,7 @@
 
 #### (abstract) new Window_Base (x, y, width, height, _iconWidth, _iconHeight, _faceWidth, _faceHeight, _opening, _closing)
 
+メッセージやステータスなどを描くためのメソッドを多く持つ、ウィンドウオブジェクト。<br />
 [Window_EquipStatus](Window_EquipStatus.md), [Window_Gold](Window_Gold.md), [Window_Help](Window_Help.md), [Window_MapName](Window_MapName.md), [Window_Message](Window_Message.md), [Window_NameEdit](Window_NameEdit.md), [Window_ScrollText](Window_ScrollText.md), [Window_ShopStatus](Window_ShopStatus.md), [Window_SkillStatus](Window_SkillStatus.md) および [Window_Selectable](Window_Selectable.md) のスーパークラス。
 
 ##### Parameters:
@@ -615,68 +616,62 @@
 </dl>
 
 #### drawIcon (iconIndex, x, y)
-
-
-Draws an icon given the specified iconIndex at the specified x and y coordinates. The Width and Height of the icon is based on the _iconWidth and _iconHeight properties.
+指定した番号のアイコンを指定位置に描画。<br />
+'img/system/IconSet.png'のファイルを16×20に分割した画像。
+アイコン番号は左上から始まり右へ進み、端まで到達したら下へ進む。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `iconIndex` | [Number](Number.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+| `iconIndex` | [Number](Number.md) | アイコン番号(0 〜 319) |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
 
 <dl>
 </dl>
 
 #### drawItemName (item, x, y, width)
-
-
-Draws the item name at the specified x and y coordinates within the given width.
+指定した[アイテム]の[名前]を指定位置に描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) | 対象の[アイテム] |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `width` | [Number](Number.md) | 描画領域の幅(ピクセル) |
 
 <dl>
 </dl>
 
 #### drawText (text, x, y, maxWidth, align)
-
-
-Given text or a number, draws the content to the window's contents layer at the specified x and y coordinate within the max width. The text content can also be aligned with the align property. The possible alignments are: "left", "center", "right".
+指定した文字列を指定位置に描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | string |number |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `maxWidth` | [Number](Number.md) |  |
-| `align` | [String](String.md) |  |
+| `text` | string |number | 表示する文字列 |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `maxWidth` | [Number](Number.md) | 最大許容幅(ピクセル) |
+| `align` | [String](String.md) | 文字揃え(left, center, right) |
 
 <dl>
 </dl>
 
 #### drawTextEx (text, x, y) → {[Number](Number.md)}
-
-
-Draws text with text codes included; this will draw icons, increase text height, and more.
+指定したエスケープ文字入の文字列を指定位置に描画し、x座標の差分を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+| `text` | [String](String.md) | 表示する文字列 |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
 
 <dl>
 </dl>
@@ -684,11 +679,11 @@ Draws text with text codes included; this will draw icons, increase text height,
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### fittingHeight (numLines) → {[Number](Number.md)}
 
