@@ -260,6 +260,14 @@
 | `child` | [PIXI.DisplayObject](http://pixijs.download/release/docs/PIXI.DisplayObject.html) | 取り除くオブジェクト |
 
 <dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a href="http://pixijs.download/release/docs/PIXI.Container.html#removeChild">PIXI.Container#removeChild</a>
+            </li>
+        </ul>
+    </dd>
 </dl>
 
 ##### Returns:
@@ -272,8 +280,6 @@
 </dl>
 
 #### removeChildAt (index) → {Object}
-
-
 [super] 指定位置のオブジェクトをコンテナから取り除いて、返す。
 
 ##### Parameters:
@@ -282,7 +288,16 @@
 | --- | --- | --- |
 | `index` | [Number](Number.md) | 取り除くオブジェクトの位置 |
 
+
 <dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a href="http://pixijs.download/release/docs/PIXI.Container.html#removeChildAt">PIXI.Container#removeChildAt</a>
+            </li>
+        </ul>
+    </dd>
 </dl>
 
 ##### Returns:
@@ -310,7 +325,6 @@
 </dl>
 
 #### setTone (r, g, b)
-
 背景の色調を設定。
 
 ##### Parameters:
