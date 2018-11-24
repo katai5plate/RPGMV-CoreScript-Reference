@@ -32,21 +32,20 @@
 
 #### activate ()
 
-
-Activates the window, allowing it to be processed and to update.
+ウィンドウをアクティブにする。
 <dl>
 </dl>
 
 #### actorName (actorIndex) → {[String](String.md)}
 
+指定された番号の[アクター]の名前を返す。
 
-Returns the actor name given an index; the index starts from 1.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actorIndex` | [Number](Number.md) |  |
+| `actorIndex` | [Number](Number.md) | アクターの番号(1から始まる) |
 
 <dl>
 </dl>
@@ -54,111 +53,101 @@ Returns the actor name given an index; the index starts from 1.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### addChild (child) → {Object}
 
 
-[super] Adds a child to the container.
+[super]  コンテナに子オブジェクトを追加し、追加されたオブジェクトを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `child` | Object | The child to add |
+| `child` | [PIXI.DisplayObject](http://pixijs.download/release/docs/PIXI.DisplayObject.html) | 追加するオブジェクト |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window#addChild</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+        <dt>Inherited From:</dt>
+        <dd>
+            <ul>
+                <li>
+                    <a href="Window.html#addchild-child--object">Window#addChild</a>
+                </li>
+            </ul>
+        </dd>
+    </dl>
 
 ##### Returns:
 
-
-The child that was added
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Object</span>
+    </dd>
+</dl>
 
 #### addChildAt (child, index) → {Object}
-
-
-[super] Adds a child to the container at a specified index.
+[super] コンテナの指定位置に子オブジェクトを追加し、追加されたオブジェクトを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `child` | Object | The child to add |
-| `index` | [Number](Number.md) | The index to place the child in |
+| `child` | [PIXI.DisplayObject](http://pixijs.download/release/docs/PIXI.DisplayObject.html)  | 追加するオブジェクト |
+| `index` | [Number](Number.md) | 追加位置 |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window#addChildAt</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a href="Window.html#addchildat-child-index--object">Window#addChildAt</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
-
-The child that was added
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Object</span>
+    </dd>
+</dl>
 
 #### addChildToBack (child) → {Object}
-
-
-Adds a child between the background and contents.
+[super] 背景とコンテンツの間に子オブジェクトを追加し、追加されたオブジェクトを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `child` | Object | The child to add |
+| `child` | [PIXI.DisplayObject](http://pixijs.download/release/docs/PIXI.DisplayObject.html)  | 追加するオブジェクト |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window#addChildToBack</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a href="Window.html#addchildtoback-child--object">Window#addChildToBack</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
-
-The child that was added
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Object</span>
+    </dd>
+</dl>
 
 #### calcTextHeight (textState, all) → {[Number](Number.md)}
 
