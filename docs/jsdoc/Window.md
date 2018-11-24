@@ -23,14 +23,14 @@
 | `upArrowVisible` | Boolean | 上むきスクロールアローが表示中か |
 | `opacity` | [Number](Number.md) | コンテンツの不透明度(0 〜 255) |
 | `backOpacity` | [Number](Number.md) | 背景の不透明度(0 〜 255) |
-| `contentsOpacity` | [Number](Number.md) | The opacity of the window contents (0 to 255). |
-| `origin` | [Point](Point.md) | The origin point of the window for scrolling. |
-| `x` | [Number](Number.md) | The x coordinate of the window. |
-| `y` | [Number](Number.md) | The y coordinate of the window. |
-| `width` | [Number](Number.md) | The width of the sprite without the scale. |
-| `height` | [Number](Number.md) | The height of the window in pixels. |
-| `margin` | [Number](Number.md) | The size of the margin for the window background. |
-| `padding` | [Number](Number.md) | The size of the padding between the frame and contents. |
+| `contentsOpacity` | [Number](Number.md) | コンテンツの不透明度(0 〜 255) |
+| `origin` | [Point](Point.md) | スクロールの際のウィンドウの原点 |
+| `x` | [Number](Number.md) | ウィンドウ x座標(ピクセル) |
+| `y` | [Number](Number.md) | ウィンドウ y座標(ピクセル) |
+| `width` | [Number](Number.md) | 拡大縮小前のウィンドウ幅(ピクセル) |
+| `height` | [Number](Number.md) | 拡大縮小前のウィンドウ高さ(ピクセル) |
+| `margin` | [Number](Number.md) | 背景マージン幅(ピクセル) |
+| `padding` | [Number](Number.md) | 枠とコンテンツの間のパディング幅(ピクセル) |
 | `_isWindow` | Boolean |  |
 | `_windowskin` | [Bitmap](Bitmap.md) |  |
 | `_width` | [Number](Number.md) |  |
