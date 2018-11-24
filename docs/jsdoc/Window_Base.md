@@ -216,82 +216,72 @@
 </dl>
 
 #### changePaintOpacity (enabled)
-
-
-Changes the paintOpacity (the opacity of the text drawn to the window); if true the opacity is set to 255, otherwise the opacity is set to 160.
+背景を不透明にするか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `enabled` | Boolean |  |
+| `enabled` | Boolean | true: 不透明(255), false: 半透明(160) |
 
 <dl>
 </dl>
 
 #### changeTextColor (color)
-
-
-Changes the text color property given a css color string.
+文字の色を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `color` | [String](String.md) |  |
+| `color` | [String](String.md) | 色(CSS形式) |
 
 <dl>
 </dl>
 
 #### close ()
-
-
-Closes the window.
+ウィンドウを閉じる。
 <dl>
 </dl>
 
 #### contentsHeight () → {[Number](Number.md)}
-
-
-Returns the inner content height of the window.
+ウィンドウに含まれるコンテンツの高さを返す。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### contentsWidth () → {[Number](Number.md)}
+ウィンドウに含まれるコンテンツの幅を返す。
 
-
-Returns the inner content width of the window.
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### convertEscapeCharacters (text) → {[String](String.md)}
+エスケープ文字を変換して返す。<br />
 
-
-Converts the escape characters and returns the text content after processing the characters.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.md) |  |
+| `text` | [String](String.md) | 変換元の文字列 |
 
 <dl>
 </dl>
@@ -299,168 +289,153 @@ Converts the escape characters and returns the text content after processing the
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### createContents ()
-
-
-Creates the contents of the window; this is the area of the window which text is drawn to.
+テキストなどを表示するコンテンツ領域を生成。
 <dl>
 </dl>
 
 #### crisisColor () → {[String](String.md)}
-
-
-Returns the crisis color as a css color string.
+危険色をCSS形式で返す。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### deactivate ()
-
-
-Deactives the window, preventing further processing.
+非アクティブにする。
 <dl>
 </dl>
 
 #### deathColor () → {[String](String.md)}
-
-
-Returns the death color as a css color string.
+死亡色をCSS形式で返す。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### dimColor1 () → {[String](String.md)}
-
-
-Color 1 of the dimmer sprite bitmap. for the gradient.
+明るいグラデーション1の色をCSS形式で返す。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### dimColor2 () → {[String](String.md)}
+明るいグラデーション2の色をCSS形式で返す。
 
-
-Color 2 of the dimmer sprite bitmap for the gradient.
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### drawActorCharacter (actor, x, y)
+指定した[アクター]のキャラクタを指定位置に描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+| `actor` | [Game_Actor](Game_Actor.md) | 対象の[アクター] |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
 
 <dl>
 </dl>
 
 #### drawActorClass (actor, x, y, width)
-
-
-Draws the actor class at the specified x and y coordinates within the given width.
+指定した[アクター]の[クラス]を指定位置に描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
+| `actor` | [Game_Actor](Game_Actor.md) | 対象の[アクター] |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `width` | [Number](Number.md) | 描画領域の幅(ピクセル) |
 
 <dl>
 </dl>
 
 #### drawActorFace (actor, x, y, width, height)
-
-
-Draws the actor face at the specified x and y coordinates within the given width.
+指定した[アクター]の顔画像を指定位置に描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
-| `height` | [Number](Number.md) |  |
+| `actor` | [Game_Actor](Game_Actor.md) | 対象の[アクター] |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `width` | [Number](Number.md) | 描画領域の幅(ピクセル) |
+| `height` | [Number](Number.md) | 描画領域の高さ(ピクセル) |
 
 <dl>
 </dl>
 
 #### drawActorHp (actor, x, y, width)
 
-
-Draws the actor hp at the specified x and y coordinates within the given width.
+指定した[アクター]の[HP]を指定位置に描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
+| `actor` | [Game_Actor](Game_Actor.md) | 対象の[アクター] |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `width` | [Number](Number.md) | 描画領域の幅(ピクセル) |
 
 <dl>
 </dl>
 
 #### drawActorIcons (actor, x, y, width)
 
+指定した[アクター]のアイコンを指定位置に描画。
 
-Draws the actor icons at the specified x and y coordinates within the given width.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
+| `actor` | [Game_Actor](Game_Actor.md) | 対象の[アクター] |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `width` | [Number](Number.md) | 描画領域の幅(ピクセル) |
 
 <dl>
 </dl>
@@ -767,7 +742,7 @@ Returns the gauage back color as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -804,7 +779,7 @@ Returns the hp color as a css string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -820,7 +795,7 @@ Returns the hp gauge color 1 as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -836,7 +811,7 @@ Returns the hp gauge color 2 as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -1008,7 +983,7 @@ Returns the mp color as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -1024,7 +999,7 @@ Returns the mp cost color as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -1040,7 +1015,7 @@ Returns the mp gauge color 1 as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -1056,7 +1031,7 @@ Returns the mp gauge color 2 as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -1072,7 +1047,7 @@ Returns the normal color as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -1150,7 +1125,7 @@ Returns a party member name given an index; the index starts from 1.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -1166,7 +1141,7 @@ Returns the pending color as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -1182,7 +1157,7 @@ Returns the power down color as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -1198,7 +1173,7 @@ Returns the power up color as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -1487,7 +1462,7 @@ Returns the standard font face of the game based on what language the game is in
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -1535,7 +1510,7 @@ Returns the system color as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -1620,7 +1595,7 @@ Returns the tp color as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -1636,7 +1611,7 @@ Returns the tp cost color as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -1652,7 +1627,7 @@ Returns the tp gauge color 1 as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -1668,7 +1643,7 @@ Returns tp gauge color 2 as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
