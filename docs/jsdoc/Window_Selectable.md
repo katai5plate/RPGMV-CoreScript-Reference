@@ -170,7 +170,7 @@
 </dl>
 
 #### bottomRow () → {[Number](Number.md)}
-下の行を返す。
+行数を返す。
 <dl>
 </dl>
 
@@ -184,196 +184,183 @@
 </dl>
 
 #### calcTextHeight (textState, all) → {[Number](Number.md)}
-
-
-Calculates the text height of the textState (when using drawTextEx); if all is set to true, all lines of text are calculated, otherwise only a single line is processed.
+[super] 指定したテキストの表示時の高さ(ピクセル)を計算して返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.md) |  |
-| `all` | Boolean |  |
+| `textState` | [MV.TextState](MV.TextState.md) | 計算するテキストの情報 |
+| `all` | Boolean | 複数行を加算するか |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#calcTextHeight</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a href="Window_Base#calctextheight-textstate-all--number">Window_Base#calcTextHeight</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### callCancelHandler ()
-
+キャンセルのハンドラを呼ぶ。
 <dl>
 </dl>
 
 #### callHandler (symbol)
+指定したハンドラを呼ぶ。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
-| `symbol` | [String](String.md) |  |
+| `symbol` | [String](String.md) | ハンドラ名 |
 
 <dl>
 </dl>
 
 #### callOkHandler ()
-
-
-Calls the ok handler and begins processing confirmation of selection.
+OKのハンドラを呼ぶ。
 <dl>
 </dl>
 
 #### callUpdateHelp ()
-
+ヘルプのアップデートを呼ぶ。
 <dl>
 </dl>
 
 #### canvasToLocalX (x) → {[Number](Number.md)}
-
-
-Returns the x coordinate of the mouse to a local window x coordinate.
+[super] 指定したCanvas の x座標を、ゲーム画面のローカルx座標に変換して返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) | Canvas の x座標 |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#canvasToLocalX</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a href="Window_Base#canvastolocalx-x--number">Window_Base#canvasToLocalX</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### canvasToLocalY (y) → {[Number](Number.md)}
-
-
-Returns the y coordinate of the mouse to a local window y coordinate.
+[super] 指定したCanvas の y座標を、ゲーム画面のローカルy座標に変換して返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `y` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) | Canvas の y座標 |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#canvasToLocalY</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a href="Window_Base#canvastolocaly-y--number">Window_Base#canvasToLocalY</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### changePaintOpacity (enabled)
-
-
-Changes the paintOpacity (the opacity of the text drawn to the window); if true the opacity is set to 255, otherwise the opacity is set to 160.
+[super] 背景を不透明にするか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `enabled` | Boolean |  |
+| `enabled` | Boolean | true: 不透明(255), false: 半透明(160) |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#changePaintOpacity</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a href="Window_Base#changepaintopacity-enabled">Window_Base#changePaintOpacity</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### changeTextColor (color)
-
-
-Changes the text color property given a css color string.
+[super] 文字の色を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `color` | [String](String.md) |  |
+| `color` | [String](String.md) | 色(CSS形式) |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#changeTextColor</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a href="Window_Base#changetextcolor-color">Window_Base#changeTextColor</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### clearItem (index)
+指定した番号の項目を削除。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
+| `index` | [Number](Number.md) | 項目番号 |
 
 <dl>
 </dl>
 
 #### close ()
-
-
-Closes the window.
+[super] ウィンドウを閉じる。
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#close</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a href="Window_Base#close-">Window_Base#close</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### contentsHeight () → {[Number](Number.md)}
 
@@ -395,7 +382,7 @@ Returns the inner content height of the window.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -419,7 +406,7 @@ Returns the inner content width of the window.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -1198,7 +1185,7 @@ Draws text with text codes included; this will draw icons, increase text height,
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -1234,7 +1221,7 @@ Returns the fitting height given a number of lines based on the line height plus
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -1316,7 +1303,7 @@ Hides the attached help window.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -1411,7 +1398,7 @@ Returns the current position of the _index property.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -1733,7 +1720,7 @@ Returns the height of an item within the window; determines the height of a row.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -1795,7 +1782,7 @@ Returns the width of an item within the window; determines the width of a column
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -1819,7 +1806,7 @@ Returns the standard line height of the current window; default is 36.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -1880,7 +1867,7 @@ Returns the maximum number of columns for the window.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -1896,7 +1883,7 @@ Returns the maximum number of items within the window; useful to overwrite when 
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -1910,7 +1897,7 @@ Returns the maximum number of items within the window; useful to overwrite when 
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -1924,7 +1911,7 @@ Returns the maximum number of items within the window; useful to overwrite when 
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -1938,7 +1925,7 @@ Returns the maximum number of items within the window; useful to overwrite when 
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -1952,7 +1939,7 @@ Returns the maximum number of items within the window; useful to overwrite when 
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -2676,7 +2663,7 @@ Resets the text color of the window back to the default.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -2909,7 +2896,7 @@ Shows the attached help window.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -2933,7 +2920,7 @@ Returns the standard back opacity of the window; this is the opacity of the area
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -2981,7 +2968,7 @@ Returns the standard font size of the text in window; default is 28.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -3005,7 +2992,7 @@ Returns the standard padding of the window; default is 18.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -3084,7 +3071,7 @@ Returns the text padding of the window; default is 6.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -3115,7 +3102,7 @@ Calculates the width of a text string and returns a number.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -3129,7 +3116,7 @@ Calculates the width of a text string and returns a number.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -3143,7 +3130,7 @@ Calculates the width of a text string and returns a number.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -3270,7 +3257,7 @@ Returns the translucentOpacity for the window; The default is 160.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
@@ -3327,7 +3314,7 @@ Returns the inner content width of the window.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>Number</a></span>
+                    <span><a href="Number.html">Number</a></span>
                 </dd>
             </dl>
 
