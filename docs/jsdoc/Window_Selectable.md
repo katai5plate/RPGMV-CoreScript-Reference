@@ -592,16 +592,14 @@ Returns the death color as a css color string.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### deselect ()
-
-
-Deselects the currently selected index.
+全項目を非選択。
 <dl>
 </dl>
 
@@ -610,39 +608,39 @@ Deselects the currently selected index.
 
 Color 1 of the dimmer sprite bitmap. for the gradient.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#dimColor1</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#dimColor1</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### dimColor2 () → {[String](String.md)}
 
 
 Color 2 of the dimmer sprite bitmap for the gradient.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#dimColor2</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#dimColor2</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
@@ -664,15 +662,15 @@ Color 2 of the dimmer sprite bitmap for the gradient.
 | `y` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#drawActorCharacter</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#drawActorCharacter</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### drawActorClass (actor, x, y, width)
 
@@ -689,15 +687,15 @@ Draws the actor class at the specified x and y coordinates within the given widt
 | `width` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#drawActorClass</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#drawActorClass</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### drawActorFace (actor, x, y, width, height)
 
@@ -715,15 +713,15 @@ Draws the actor face at the specified x and y coordinates within the given width
 | `height` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#drawActorFace</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#drawActorFace</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### drawActorHp (actor, x, y, width)
 
@@ -740,15 +738,15 @@ Draws the actor hp at the specified x and y coordinates within the given width.
 | `width` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#drawActorHp</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#drawActorHp</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### drawActorIcons (actor, x, y, width)
 
@@ -765,15 +763,15 @@ Draws the actor icons at the specified x and y coordinates within the given widt
 | `width` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#drawActorIcons</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#drawActorIcons</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### drawActorLevel (actor, x, y)
 
@@ -789,15 +787,15 @@ Draws the actor level at the specified x and y coordinates.
 | `y` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#drawActorLevel</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#drawActorLevel</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### drawActorMp (actor, x, y, width)
 
@@ -814,15 +812,15 @@ Draws the actor mp at the specified x and y coordinates within the given width.
 | `width` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#drawActorMp</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#drawActorMp</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### drawActorName (actor, x, y, width)
 
@@ -839,15 +837,15 @@ Draws the actor name at the specified x and y coordinates within the given width
 | `width` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#drawActorName</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#drawActorName</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### drawActorNickname (actor, x, y, width)
 
@@ -864,15 +862,15 @@ Draws the actor nickname at the specified x and y coordinates within the given w
 | `width` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#drawActorNickname</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#drawActorNickname</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### drawActorSimpleStatus (actor, x, y, width)
 
@@ -889,15 +887,15 @@ Draws a simple status for the game actor passed into the method at the specified
 | `width` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#drawActorSimpleStatus</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#drawActorSimpleStatus</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### drawActorTp (actor, x, y, width)
 
@@ -914,20 +912,18 @@ Draws the actor tp at the specified x and y coordinates within the given width.
 | `width` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#drawActorTp</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#drawActorTp</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### drawAllItems ()
-
-
-Draws all items within the window; this method cals drawItem multiple times.
+全[アイテム]を描画。
 <dl>
 </dl>
 
@@ -946,15 +942,15 @@ Draws a character (map sprites) at the specified x and y coordinate. CharacterNa
 | `y` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#drawCharacter</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#drawCharacter</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### drawCurrencyValue (value, unit, x, y, width)
 
@@ -972,15 +968,15 @@ Draws the currency value given at the specified x and y coordinates within the w
 | `width` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#drawCurrencyValue</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#drawCurrencyValue</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### drawCurrentAndMax (current, max, x, y, width, color1, color2)
 
@@ -1000,15 +996,15 @@ Draws the current and max number at the specified x and y coordinate within the 
 | `color2` | [String](String.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#drawCurrentAndMax</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#drawCurrentAndMax</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### drawFace (faceName, faceIndex, x, y, width opt, height opt)
 
@@ -1024,15 +1020,15 @@ Draws the current and max number at the specified x and y coordinate within the 
 | `height` | [Number](Number.md) | <optional> |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#drawFace</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#drawFace</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### drawGauge (x, y, width, rate, color1, color2)
 
@@ -1051,15 +1047,15 @@ Draws a gauge at the specified x and y coordinates within the given width. Color
 | `color2` | [String](String.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#drawGauge</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#drawGauge</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### drawIcon (iconIndex, x, y)
 
@@ -1075,23 +1071,24 @@ Draws an icon given the specified iconIndex at the specified x and y coordinates
 | `y` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#drawIcon</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#drawIcon</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### drawItem (index)
+指定番号の[アイテム]を描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
+| `index` | [Number](Number.md) | アイテム番号 |
 
 <dl>
 </dl>
@@ -1111,15 +1108,15 @@ Draws the item name at the specified x and y coordinates within the given width.
 | `width` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#drawItemName</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#drawItemName</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### drawText (text, x, y, maxWidth, align)
 
@@ -1137,15 +1134,15 @@ Given text or a number, draws the content to the window's contents layer at the 
 | `align` | [String](String.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#drawText</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#drawText</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### drawTextEx (text, x, y) → {[Number](Number.md)}
 
@@ -1161,27 +1158,27 @@ Draws text with text codes included; this will draw icons, increase text height,
 | `y` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#drawTextEx</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#drawTextEx</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### ensureCursorVisible ()
-
+選択カーソルを表示。
 <dl>
 </dl>
 
@@ -1197,94 +1194,93 @@ Returns the fitting height given a number of lines based on the line height plus
 | `numLines` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#fittingHeight</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#fittingHeight</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### gaugeBackColor () → {[String](String.md)}
 
 
 Returns the gauage back color as a css color string.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#gaugeBackColor</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#gaugeBackColor</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### hide ()
 
 
 Hides the window, making it invisible; the window is not closed when hidden.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#hide</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#hide</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### hideBackgroundDimmer ()
 
 
 Hides the background dimmer sprite.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#hideBackgroundDimmer</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#hideBackgroundDimmer</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### hideHelpWindow ()
-
-
-Hides the attached help window.
+ヘルプウィンドウを非表示。
 <dl>
 </dl>
 
 #### hitTest (x, y) → {[Number](Number.md)}
+指定座標が項目の範囲に含まれるか上から判定を行い、最初に適合した項目番号を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
 
 <dl>
 </dl>
@@ -1292,11 +1288,11 @@ Hides the attached help window.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### hpColor (actor) → {[String](String.md)}
 
@@ -1310,91 +1306,88 @@ Returns the hp color as a css string.
 | `actor` | [Game_Actor](Game_Actor.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#hpColor</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#hpColor</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### hpGaugeColor1 () → {[String](String.md)}
 
 
 Returns the hp gauge color 1 as a css color string.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#hpGaugeColor1</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#hpGaugeColor1</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### hpGaugeColor2 () → {[String](String.md)}
 
 
 Returns the hp gauge color 2 as a css color string.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#hpGaugeColor2</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#hpGaugeColor2</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### index () → {[Number](Number.md)}
-
-
-Returns the current position of the _index property.
+選択中の項目の番号を返す。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### initialize (x, y, width, height)
-
 
  オブジェクト生成時の初期化。
 
@@ -1408,91 +1401,92 @@ Returns the current position of the _index property.
 | `height` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#initialize</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Overrides:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#initialize</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### isCancelEnabled () → {Boolean}
-
+キャンセルが可能か。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### isCancelTriggered () → {Boolean}
-
+キャンセルが起動されたか。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### isClosed ()
 
 
 Returns true if the window is completely closed (openness == 0).
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window#isClosed</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window#isClosed</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### isClosing () → {Boolean}
 
 
 Returns true if the window is currently closing.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#isClosing</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#isClosing</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### isContentsArea (x, y) → {Boolean}
+指定座標がコンテンツの範囲内か。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
 
 <dl>
 </dl>
@@ -1500,11 +1494,11 @@ Returns true if the window is currently closing.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### isCurrentItemEnabled () → {Boolean}
 
