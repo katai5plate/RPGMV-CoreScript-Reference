@@ -335,7 +335,7 @@
 </dl>
 
 #### dimColor1 () → {[String](String.md)}
-明るいグラデーション1の色(CSS形式)を返す。
+Dimmer背景の色1(CSS形式)を返す。
 <dl>
 </dl>
 
@@ -349,7 +349,7 @@
 </dl>
 
 #### dimColor2 () → {[String](String.md)}
-明るいグラデーション2の色(CSS形式)を返す。
+Dimmer背景の色2(CSS形式)を返す。
 
 <dl>
 </dl>
@@ -653,7 +653,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | string |number | 表示する文字列 |
+| `text` |  [String](String.md) \| [Number](Number.md) | 表示する文字列 |
 | `x` | [Number](Number.md) | x座標(ピクセル) |
 | `y` | [Number](Number.md) | y座標(ピクセル) |
 | `maxWidth` | [Number](Number.md) | 最大許容幅(ピクセル) |
@@ -729,7 +729,7 @@
 </dl>
 
 #### hideBackgroundDimmer ()
-背景の薄暗い部分を非表示。
+Dimmer背景を非表示。
 
 <dl>
 </dl>
@@ -1217,7 +1217,7 @@ indexは取り出した文字の数だけ進む。<br />
 </dl>
 
 #### refreshDimmerBitmap ()
-薄暗い背景を再描画。
+Dimmer背景を再描画。
 <dl>
 </dl>
 
@@ -1358,7 +1358,7 @@ indexは取り出した文字の数だけ進む。<br />
 </dl>
 
 #### showBackgroundDimmer ()
-背景の薄暗い部分を表示。
+Dimmer背景を表示。
 
 <dl>
 </dl>
@@ -1585,53 +1585,33 @@ indexは取り出した文字の数だけ進む。<br />
 </dl>
 
 #### updateBackgroundDimmer ()
+Dimmer背景のアップデート。
 
-
-Updates the background dimmer sprite opacity based on the openness of the window.
 <dl>
 </dl>
 
-#### updateBackOpacity () → {[Number](Number.md)}
-
-
-Returns the inner content width of the window.
+#### updateBackOpacity ()
+背景の不透明度をアップデート。
 <dl>
 </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
 
 #### updateClose ()
-
-
-Updates the openness of the window when the _closing property is set to true. Openness is decreased.
+ウィンドウを閉じている状態をアップデート。
 <dl>
 </dl>
 
 #### updateOpen ()
-
-
-Updates the openness of the window when the _opening property is set to true. Openness is increased.
+ウィンドウを開いている状態をアップデート。
 <dl>
 </dl>
 
 #### updatePadding ()
-
-
-Updates the window padding based on the standardPadding method.
+パディング幅をアップデート。
 <dl>
 </dl>
 
 #### updateTone ()
-
-
-Updates the tone of the window based on the game system window tone defined in the database.
+色調をアップデート。
 <dl>
 </dl>
 
