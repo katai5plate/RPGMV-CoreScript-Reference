@@ -2,7 +2,7 @@
 
 画像ファイルの読み込み、[Bitmap](Bitmap.md)オブジェクトの生成、およびそれらの保持(キャッシュ)・管理を行う静的オブジェクト。<br />
 基本としてはloadXxxxを使って画像を読み込むが、遅延を避けるためにrequestXxxxを使って画像の先読みを行うこともできる。<br />
-また、reserveXxxxは[releaseReservation](ImageManager.md#reasereservation-reservationid)によって解放するまでデータがキャッシュに保持されるので、頻出するデータを読み込んでおくのに向いている。
+また、reserveXxxxは[releaseReservation](ImageManager.md#static-releasereservation-reservationid)によって解放するまでデータがキャッシュに保持されるので、頻出するデータを読み込んでおくのに向いている。
 
 ##### Properties:
 
