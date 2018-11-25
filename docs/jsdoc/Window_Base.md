@@ -1000,26 +1000,36 @@
 </dl>
 
 #### obtainEscapeCode (textState)
+textStateのindex以降に含まれる制御文字本体を大文字で返す。<br />
+indexは取り出した文字の数だけ進む。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.md) |  |
+| `textState` | [MV.TextState](MV.TextState.md) | 処理する状態つき文字列 |
 
 <dl>
 </dl>
 
+##### Returns:
+<dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
+
 #### obtainEscapeParam (textState) → {Number|String}
-
-
-Obtains the escape parameters from text codes in the text state when drawTextEx is used to draw text.
+textStateのindex以降に含まれる制御文字の添字を返す。<br />
+indexは取り出した文字の数だけ進む。<br />
+添字がある場合は数値が返り、ない場合は空文字が返る。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.md) |  |
+| `textState` | [MV.TextState](MV.TextState.md) | 処理する状態つき文字列 |
 
 <dl>
 </dl>
@@ -1041,7 +1051,8 @@ Obtains the escape parameters from text codes in the text state when drawTextEx 
 
 #### paramchangeTextColor (change) → {String}
 
-指定した数値に対応する色(CSS形式)を返す。
+指定した数値に対応する色(CSS形式)を返す。<br />
+装備を変える際の能力差分の表示などに使う。
 
 ##### Parameters:
 
@@ -1125,95 +1136,88 @@ Obtains the escape parameters from text codes in the text state when drawTextEx 
 </dl>
 
 #### processCharacter (textState)
-
-
-Process each character in the text when drawTextEx is used to draw text.
+改行・改ページ・エスケープ文字などを含む文字を処理する。<br />
+処理した文字列の分だけindexは進む。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.md) |  |
+| `textState` | [MV.TextState](MV.TextState.md) | 処理する状態つき文字列 |
 
 <dl>
 </dl>
 
 #### processDrawIcon (iconIndex, textState)
-
-
-Processes drawing an icon when drawTextEx is used for drawing text.
+アイコン表示を処理。<br />
+制御文字'\I[n]'の対応。<br />
+処理した文字列の分だけindexは進む。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `iconIndex` | [Number](Number.md) |  |
-| `textState` | [MV.TextState](MV.TextState.md) |  |
+| `iconIndex` | [Number](Number.md) | アイコン番号(0 〜 319) |
+| `textState` | [MV.TextState](MV.TextState.md) | 処理する状態つき文字列 |
 
 <dl>
 </dl>
 
 #### processEscapeCharacter (code, textState)
-
-
-Processes escape characters when drawTextEx is used for drawing text.
+制御文字の処理。<br />
+処理した文字列の分だけindexは進む。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [String](String.md) |  |
-| `textState` | [MV.TextState](MV.TextState.md) |  |
+| `code` | [String](String.md) | 制御文字(C I \{ \}) |
+| `textState` | [MV.TextState](MV.TextState.md) | 処理する状態つき文字列 |
 
 <dl>
 </dl>
 
 #### processNewLine (textState)
-
-
-Processes new line when drawTextEx is used to draw text.
+改行の処理。<br />
+処理した文字列の分だけindexは進む。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.md) |  |
+| `textState` | [MV.TextState](MV.TextState.md) | 処理する状態つき文字列 |
 
 <dl>
 </dl>
 
 #### processNewPage (textState)
-
-
-Processes new page when drawTexttEx is used to draw text.
+改ページの処理。<br />
+処理した文字列の分だけindexは進む。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.md) |  |
+| `textState` | [MV.TextState](MV.TextState.md) | 処理する状態つき文字列 |
 
 <dl>
 </dl>
 
 #### processNormalCharacter (textState)
-
-
-Processes the normal characters in the text when drawTextEx is used to draw text. Normal characters are letters and numbers.
+通常文字の処理。<br />
+処理した文字列の分だけindexは進む。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.md) |  |
+| `textState` | [MV.TextState](MV.TextState.md) | 処理する状態つき文字列 |
 
 <dl>
 </dl>
 
 #### refreshDimmerBitmap ()
-
-
-Refreshes the bitmap attached to the dimmer sprite based on the window dimensions.
+薄暗い背景を再描画。
 <dl>
 </dl>
 
@@ -1276,36 +1280,29 @@ Refreshes the bitmap attached to the dimmer sprite based on the window dimension
 </dl>
 
 #### reserveFaceImages ()
+全パーティーメンバーの顔画像をキャッシュする。
 
-
-Reverses the face images of the game party members.
 <dl>
 </dl>
 
 #### resetFontSettings ()
-
-
-Resets the font settings of the window back to the default.
+フォント設定を規定値に戻す。
 <dl>
 </dl>
 
 #### resetTextColor ()
-
-
-Resets the text color of the window back to the default.
+文字色を規定値に戻す。
 <dl>
 </dl>
 
 #### setBackgroundType (type)
-
-
-Sets the background type of the window. 0 is 255 window opacity (standard). 1 is the window with background dimmer. Any other number changes the opacity to 0.
+背景の種類を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `type` | [Number](Number.md) |  |
+| `type` | [Number](Number.md) | 0:不透明度255 (標準), 1:薄暗く表示, その他:不透明度0 |
 
 <dl>
 </dl>
@@ -1382,9 +1379,7 @@ Sets the background type of the window. 0 is 255 window opacity (standard). 1 is
 </dl>
 
 #### standardFontFace () → {[String](String.md)}
-
-
-Returns the standard font face of the game based on what language the game is in.
+標準のフォント名を返す。
 <dl>
 </dl>
 
@@ -1398,9 +1393,7 @@ Returns the standard font face of the game based on what language the game is in
 </dl>
 
 #### standardFontSize () → {[Number](Number.md)}
-
-
-Returns the standard font size of the text in window; default is 28.
+標準のフォントサイズを返す。default:28
 <dl>
 </dl>
 
@@ -1414,9 +1407,7 @@ Returns the standard font size of the text in window; default is 28.
 </dl>
 
 #### standardPadding () → {[Number](Number.md)}
-
-
-Returns the standard padding of the window; default is 18.
+標準のパディング幅を返す。default:18
 <dl>
 </dl>
 
@@ -1430,9 +1421,7 @@ Returns the standard padding of the window; default is 18.
 </dl>
 
 #### systemColor () → {[String](String.md)}
-
-
-Returns the system color as a css color string.
+システム色(CSS形式)を返す。
 <dl>
 </dl>
 
@@ -1445,16 +1434,15 @@ Returns the system color as a css color string.
     </dd>
 </dl>
 
-#### textColor (n) → {*}
-
-
-Returns a text color given a numbered index as a css color string; this index maps directly to the img/system/window.png colors by default.
+#### textColor (n) → {[String](String.md)}
+指定した番号に対応する色(CSS形式)を返す。<br />
+'img/system/window.png' の色で設定される。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `n` | [Number](Number.md) |  |
+| `n` | [Number](Number.md) | カラー番号(0 〜 31) |
 
 <dl>
 </dl>
@@ -1464,14 +1452,12 @@ Returns a text color given a numbered index as a css color string; this index ma
 <dl>
     <dt> Type </dt>
     <dd>
-        <span>*</span>
+        <span><a href="String.html">String</a></span>
     </dd>
 </dl>
 
 #### textPadding () → {[Number](Number.md)}
-
-
-Returns the text padding of the window; default is 6.
+パディング幅を返す。default:6
 <dl>
 </dl>
 
@@ -1485,15 +1471,13 @@ Returns the text padding of the window; default is 6.
 </dl>
 
 #### textWidth (text) → {[Number](Number.md)}
-
-
-Calculates the width of a text string and returns a number.
+指定文字列の幅を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.md) |  |
+| `text` | [String](String.md) | 測定する文字列 |
 
 <dl>
 </dl>
@@ -1508,15 +1492,13 @@ Calculates the width of a text string and returns a number.
 </dl>
 
 #### tpColor (actor) → {[String](String.md)}
-
-
-Returns the tp color as a css color string.
+指定した[アクター]の[TP]の色(CSS形式)を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `actor` | [Game_Actor](Game_Actor.md) | 対象の[アクター] |
 
 <dl>
 </dl>
@@ -1531,9 +1513,8 @@ Returns the tp color as a css color string.
 </dl>
 
 #### tpCostColor () → {[String](String.md)}
+[消費TP]の色(CSS形式)を返す。
 
-
-Returns the tp cost color as a css color string.
 <dl>
 </dl>
 
@@ -1547,9 +1528,8 @@ Returns the tp cost color as a css color string.
 </dl>
 
 #### tpGaugeColor1 () → {[String](String.md)}
+[TP]ゲージの色1(CSS形式)を返す。
 
-
-Returns the tp gauge color 1 as a css color string.
 <dl>
 </dl>
 
@@ -1563,9 +1543,7 @@ Returns the tp gauge color 1 as a css color string.
 </dl>
 
 #### tpGaugeColor2 () → {[String](String.md)}
-
-
-Returns tp gauge color 2 as a css color string.
+[TP]ゲージの色2(CSS形式)を返す。
 <dl>
 </dl>
 
@@ -1579,9 +1557,7 @@ Returns tp gauge color 2 as a css color string.
 </dl>
 
 #### translucentOpacity () → {[Number](Number.md)}
-
-
-Returns the translucentOpacity for the window; The default is 160.
+ウィンドウ背景の不透明度を返す。default:160
 <dl>
 </dl>
 
