@@ -2272,7 +2272,7 @@ Returns the power up color as a css color string.
 </dl>
 
 #### processCancel ()
-
+キャンセルを処理。
 <dl>
 </dl>
 
@@ -2299,9 +2299,7 @@ Process each character in the text when drawTextEx is used to draw text.
 </dl>
 
 #### processCursorMove ()
-
-
-Handles the processing of cursor movement.
+カーソルの移動を処理。
 <dl>
 </dl>
 
@@ -2352,14 +2350,11 @@ Processes escape characters when drawTextEx is used for drawing text.
 </dl>
 
 #### processHandling ()
-
-
-Handles the process of attached handlers.
+追加されたハンドラの処理。
 <dl>
 </dl>
 
 #### processNewLine (textState)
-
 
 Processes new line when drawTextEx is used to draw text.
 
@@ -2370,15 +2365,15 @@ Processes new line when drawTextEx is used to draw text.
 | `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#processNewLine</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#processNewLine</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### processNewPage (textState)
 
@@ -2392,15 +2387,15 @@ Processes new page when drawTexttEx is used to draw text.
 | `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#processNewPage</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#processNewPage</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### processNormalCharacter (textState)
 
@@ -2414,86 +2409,77 @@ Processes the normal characters in the text when drawTextEx is used to draw text
 | `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#processNormalCharacter</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#processNormalCharacter</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### processOk ()
-
+OKの処理。
 <dl>
 </dl>
 
 #### processPagedown ()
-
+ページダウンの処理。
 <dl>
 </dl>
 
 #### processPageup ()
-
+ページアップの処理。
 <dl>
 </dl>
 
 #### processTouch ()
-
-
-Handles the processing of touch input.
+タッチ入力の処理。
 <dl>
 </dl>
 
 #### processWheel ()
-
-
-Handles the processing of the scroll wheel within the window.
+ホイール入力の処理。
 <dl>
 </dl>
 
 #### redrawCurrentItem ()
-
+現在の項目の再描画。
 <dl>
 </dl>
 
 #### redrawItem (index)
+指定した番号の項目の再描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
+| `index` | [Number](Number.md) | 項目番号 |
 
 <dl>
 </dl>
 
 #### refresh ()
-
-
-Refreshes the window contents.
+コンテンツの再描画。
 <dl>
 </dl>
 
 #### refreshDimmerBitmap ()
-
-
 Refreshes the bitmap attached to the dimmer sprite based on the window dimensions.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#refreshDimmerBitmap</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#refreshDimmerBitmap</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### removeChild (child) → {Object}
-
-
 [super] Removes a child to the container.
 
 ##### Parameters:
@@ -2503,30 +2489,25 @@ Refreshes the bitmap attached to the dimmer sprite based on the window dimension
 | `child` | Object | The child to remove |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window#removeChild</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window#removeChild</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
-
-
-The child that was removed
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
+        <dt> Type </dt>
+        <dd>
+            <span>Object</span>
+        </dd>
+    </dl>
 
 #### removeChildAt (index) → {Object}
-
-
 [super] Removes a child from the specified index position.
 
 ##### Parameters:
@@ -2536,20 +2517,18 @@ The child that was removed
 | `index` | [Number](Number.md) | The index to get the child from |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window#removeChildAt</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window#removeChildAt</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
-
-The child that was removed
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -2558,44 +2537,40 @@ The child that was removed
             </dl>
 
 #### reselect ()
-
-
-Reselects the index based on the window's _index property.
+項目の再選択。
 <dl>
 </dl>
 
 #### reserveFaceImages ()
-
-
 Reverses the face images of the game party members.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#reserveFaceImages</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#reserveFaceImages</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### resetFontSettings ()
 
 
 Resets the font settings of the window back to the default.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#resetFontSettings</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#resetFontSettings</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### resetScroll ()
-
+スクロールを初期化。
 <dl>
 </dl>
 
@@ -2604,57 +2579,53 @@ Resets the font settings of the window back to the default.
 
 Resets the text color of the window back to the default.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#resetTextColor</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#resetTextColor</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### row () → {[Number](Number.md)}
-
+現在の行(ロー)数を返す。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### scrollDown ()
-
+下にスクロール。
 <dl>
 </dl>
 
 #### scrollUp ()
-
+上にスクロール。
 <dl>
 </dl>
 
 #### select (index)
-
-
-Selects the current index within the window given a number.
+指定した番号の項目を選択。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
+| `index` | [Number](Number.md) | 項目番号 |
 
 <dl>
 </dl>
 
 #### setBackgroundType (type)
-
-
 Sets the background type of the window. 0 is 255 window opacity (standard). 1 is the window with background dimmer. Any other number changes the opacity to 0.
 
 ##### Parameters:
@@ -2664,40 +2635,41 @@ Sets the background type of the window. 0 is 255 window opacity (standard). 1 is
 | `type` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#setBackgroundType</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#setBackgroundType</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### setBottomRow (row)
+下の行(ロー)を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `row` | [Number](Number.md) |  |
+| `row` | [Number](Number.md) | 行番号 |
 
 <dl>
 </dl>
 
 #### setCursorAll (cursorAll)
-
+全項目選択の状態を設定。
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `cursorAll` | Boolean |  |
+| `cursorAll` | Boolean | 全選択か |
 
 <dl>
 </dl>
 
 #### setCursorFixed (cursorFixed)
-
+カーソルの固定状態を設定。
 
 Sets the _cursorFixed property of the window.
 
@@ -2705,7 +2677,7 @@ Sets the _cursorFixed property of the window.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `cursorFixed` | Boolean |  |
+| `cursorFixed` | Boolean | カーソル固定か |
 
 <dl>
 </dl>
@@ -2725,49 +2697,48 @@ Sets the position of the command cursor.
 | `height` | [Number](Number.md) | The height of the cursor |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window#setCursorRect</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window#setCursorRect</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### setHandler (symbol, method)
-
-
-Creates a new handler with the symbol as the handler name and a method (JS function) bound to it.
+ハンドラを設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `symbol` | [String](String.md) |  |
-| `method` | * |  |
+| `symbol` | [String](String.md) | ハンドラ名 |
+| `method` | Function | ハンドラ関数 |
 
 <dl>
 </dl>
 
 #### setHelpWindow (helpWindow)
-
+ヘルプウィンドウを設定。
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `helpWindow` |  |  |
+| `helpWindow` | [Window_Help](Window_Help.html) | ヘルプウィンドウ |
 
 <dl>
 </dl>
 
 #### setHelpWindowItem (item)
+ヘルプウィンドウの項目を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | * |  |
+| `item` | * | 設定する項目 |
 
 <dl>
 </dl>
@@ -2786,26 +2757,24 @@ Changes the color of the background.
 | `b` | [Number](Number.md) | The blue value in the range (-255, 255) |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window#setTone</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window#setTone</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### setTopRow (row)
-
-
-Sets the current top row of the given a number. The top row will then be moved to an index of the window.
+上の行(ロー)を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `row` | [Number](Number.md) |  |
+| `row` | [Number](Number.md) | 行番号 |
 
 <dl>
 </dl>
@@ -2815,171 +2784,169 @@ Sets the current top row of the given a number. The top row will then be moved t
 
 Shows the window, making it visible.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#show</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#show</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### showBackgroundDimmer ()
 
 
 Shows the background dimmer sprite.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#showBackgroundDimmer</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#showBackgroundDimmer</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### showHelpWindow ()
-
-
-Shows the attached help window.
+ヘルプウィンドウを表示。
 <dl>
 </dl>
 
 #### spacing () → {[Number](Number.md)}
-
+空白の量(ピクセル)を返す。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### standardBackOpacity () → {[Number](Number.md)}
 
 
 Returns the standard back opacity of the window; this is the opacity of the area behind the window's text content. Default is 192.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#standardBackOpacity</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#standardBackOpacity</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### standardFontFace () → {[String](String.md)}
 
 
 Returns the standard font face of the game based on what language the game is in.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#standardFontFace</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#standardFontFace</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### standardFontSize () → {[Number](Number.md)}
 
 
 Returns the standard font size of the text in window; default is 28.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#standardFontSize</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#standardFontSize</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### standardPadding () → {[Number](Number.md)}
 
 
 Returns the standard padding of the window; default is 18.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#standardPadding</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#standardPadding</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### systemColor () → {[String](String.md)}
 
 
 Returns the system color as a css color string.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#systemColor</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#systemColor</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### textColor (n) → {*}
 
@@ -2993,48 +2960,48 @@ Returns a text color given a numbered index as a css color string; this index ma
 | `n` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#textColor</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#textColor</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>*</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>*</span>
+    </dd>
+</dl>
 
 #### textPadding () → {[Number](Number.md)}
 
 
 Returns the text padding of the window; default is 6.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#textPadding</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#textPadding</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### textWidth (text) → {[Number](Number.md)}
 
@@ -3048,52 +3015,52 @@ Calculates the width of a text string and returns a number.
 | `text` | [String](String.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#textWidth</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#textWidth</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### topIndex () → {[Number](Number.md)}
-
+上の番号を返す。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### topRow () → {[Number](Number.md)}
-
+上の行(ロー)の番号を返す。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### tpColor (actor) → {[String](String.md)}
 
@@ -3107,136 +3074,136 @@ Returns the tp color as a css color string.
 | `actor` | [Game_Actor](Game_Actor.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#tpColor</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#tpColor</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### tpCostColor () → {[String](String.md)}
 
 
 Returns the tp cost color as a css color string.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#tpCostColor</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#tpCostColor</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### tpGaugeColor1 () → {[String](String.md)}
 
 
 Returns the tp gauge color 1 as a css color string.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#tpGaugeColor1</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#tpGaugeColor1</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### tpGaugeColor2 () → {[String](String.md)}
 
 
 Returns tp gauge color 2 as a css color string.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#tpGaugeColor2</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#tpGaugeColor2</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### translucentOpacity () → {[Number](Number.md)}
 
 
 Returns the translucentOpacity for the window; The default is 160.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#translucentOpacity</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#translucentOpacity</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### update ()
 
 <dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#update</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Overrides:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#update</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### updateArrows ()
-
+スクロールアローをアップデート。
 <dl>
 </dl>
 
@@ -3245,67 +3212,67 @@ Returns the translucentOpacity for the window; The default is 160.
 
 Updates the background dimmer sprite opacity based on the openness of the window.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#updateBackgroundDimmer</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#updateBackgroundDimmer</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### updateBackOpacity () → {[Number](Number.md)}
 
 
 Returns the inner content width of the window.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#updateBackOpacity</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#updateBackOpacity</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### updateClose ()
 
 
 Updates the openness of the window when the _closing property is set to true. Openness is decreased.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#updateClose</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#updateClose</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### updateCursor ()
-
+カーソルをアップデート。
 <dl>
 </dl>
 
 #### updateHelp ()
-
+ヘルプウィンドウをアップデート。
 <dl>
 </dl>
 
 #### updateInputData ()
-
+入力データをアップデート。
 <dl>
 </dl>
 
@@ -3314,45 +3281,45 @@ Updates the openness of the window when the _closing property is set to true. Op
 
 Updates the openness of the window when the _opening property is set to true. Openness is increased.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#updateOpen</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#updateOpen</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### updatePadding ()
 
 
 Updates the window padding based on the standardPadding method.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#updatePadding</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#updatePadding</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### updateTone ()
 
 
 Updates the tone of the window based on the game system window tone defined in the database.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#updateTone</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#updateTone</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 
  <br>
