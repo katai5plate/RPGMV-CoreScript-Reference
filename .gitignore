@@ -60,6 +60,9 @@ typings/
 # next.js build output
 .next
 
+# mac local directory info
+.DS_Store
+
 # オリジナル
 _jsdoc
 src
