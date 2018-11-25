@@ -363,81 +363,76 @@ OKのハンドラを呼ぶ。
 </dl>
 
 #### contentsHeight () → {[Number](Number.md)}
-
-
-Returns the inner content height of the window.
+[super] ウィンドウに含まれるコンテンツの高さを返す。
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#contentsHeight</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a href="Window_Base#contentsheight---number">Window_Base#contentsHeight</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### contentsWidth () → {[Number](Number.md)}
+[super] ウィンドウに含まれるコンテンツの幅を返す。
 
-
-Returns the inner content width of the window.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#contentsWidth</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a href="Window_Base#contentswidth---number">Window_Base#contentsWidth</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### convertEscapeCharacters (text) → {[String](String.md)}
-
-
-Converts the escape characters and returns the text content after processing the characters.
+[super] エスケープ文字を変換して返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.md) |  |
+| `text` | [String](String.md) | 変換元の文字列 |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#convertEscapeCharacters</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a href="Window_Base.html#convertescapecharacters-text--string">Window_Base#convertEscapeCharacters</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -474,136 +469,132 @@ Returns the crisis color as a css color string.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### cursorAll () → {Boolean}
-
+項目を全選択しているか。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### cursorDown (wrap)
-
-
-Moves the cursor down; if wrap is passed as true, then it will return to the top when at the end of the list.
+カーソルを下に移動。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `wrap` | Boolean |  |
+| `wrap` | Boolean | リストの前後をつなぐか |
 
 <dl>
 </dl>
 
 #### cursorFixed () → {Boolean}
-
-
-Returns true if the _cursorFixed property is true; this means the cursor is locked to a position.
+カーソルが固定されているか。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### cursorLeft (wrap)
+カーソルを左に移動。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `wrap` | Boolean |  |
+| `wrap` | Boolean | リストの前後をつなぐか |
 
 <dl>
 </dl>
 
 #### cursorPagedown ()
-
+カーソルを次ページに移動。
 <dl>
 </dl>
 
 #### cursorPageup ()
-
+カーソルを前ページに移動。
 <dl>
 </dl>
 
 #### cursorRight (wrap)
+カーソルを右に移動。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `wrap` | Boolean |  |
+| `wrap` | Boolean | リストの前後をつなぐか |
 
 <dl>
 </dl>
 
 #### cursorUp (wrap)
-
-
-Moves the cursor up; if wrap is passed as true, then it will return to the bottom when at the top of the list.
+カーソルを上に移動。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `wrap` | Boolean |  |
+| `wrap` | Boolean | リストの前後をつなぐか |
 
 <dl>
 </dl>
 
 #### deactivate ()
-
+非アクティブにする。
 <dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#deactivate</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Overrides:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a href="Window_Base.html#deactivate-">Window_Base#deactivate</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### deathColor () → {[String](String.md)}
 
 
 Returns the death color as a css color string.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#deathColor</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#deathColor</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -634,7 +625,7 @@ Color 1 of the dimmer sprite bitmap. for the gradient.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -658,7 +649,7 @@ Color 2 of the dimmer sprite bitmap for the gradient.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -1245,7 +1236,7 @@ Returns the gauage back color as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -1334,7 +1325,7 @@ Returns the hp color as a css string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -1358,7 +1349,7 @@ Returns the hp gauge color 1 as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -1382,7 +1373,7 @@ Returns the hp gauge color 2 as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -1995,7 +1986,7 @@ Returns the mp color as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -2019,7 +2010,7 @@ Returns the mp cost color as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -2043,7 +2034,7 @@ Returns the mp gauge color 1 as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -2067,7 +2058,7 @@ Returns the mp gauge color 2 as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -2091,7 +2082,7 @@ Returns the normal color as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -2220,7 +2211,7 @@ Returns a party member name given an index; the index starts from 1.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -2244,7 +2235,7 @@ Returns the pending color as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -2282,7 +2273,7 @@ Returns the power down color as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -2306,7 +2297,7 @@ Returns the power up color as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -2944,7 +2935,7 @@ Returns the standard font face of the game based on what language the game is in
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -3016,7 +3007,7 @@ Returns the system color as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -3161,7 +3152,7 @@ Returns the tp color as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -3185,7 +3176,7 @@ Returns the tp cost color as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -3209,7 +3200,7 @@ Returns the tp gauge color 1 as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
@@ -3233,7 +3224,7 @@ Returns tp gauge color 2 as a css color string.
 <dl>
                 <dt> Type </dt>
                 <dd>
-                    <span><a>String</a></span>
+                    <span><a href="String.html">String</a></span>
                 </dd>
             </dl>
 
