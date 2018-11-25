@@ -3035,7 +3035,7 @@ Calculates the width of a text string and returns a number.
 </dl>
 
 #### topIndex () → {[Number](Number.md)}
-上の番号を返す。
+スクロールリストの上にある項目の番号を返す。
 <dl>
 </dl>
 
