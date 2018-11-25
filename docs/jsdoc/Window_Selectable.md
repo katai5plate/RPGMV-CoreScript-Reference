@@ -1501,56 +1501,54 @@ Returns true if the window is currently closing.
 </dl>
 
 #### isCurrentItemEnabled () → {Boolean}
-
+選択中の項目が利用可能か。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### isCursorMovable () → {Boolean}
-
+カーソルが動かせるか。
 <dl>
 </dl>
 
 ##### Returns:
-
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### isCursorVisible () → {Boolean}
-
-
-Determines if the cursor is visible within the window.
+カーソルが表示中か。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### isHandled (symbol) → {Boolean}
+指定されたハンドラが利用可能か。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `symbol` | [String](String.md) |  |
+| `symbol` | [String](String.md) | ハンドラ名 |
 
 <dl>
 </dl>
@@ -1558,167 +1556,157 @@ Determines if the cursor is visible within the window.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### isHorizontal () → {Boolean}
-
-
-Returns true if the window is horizontal; means the window only has a single row.
+縦一列のコマンド並びか。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### isOkEnabled () → {Boolean}
-
-
-Determines if ok is enabled as an option; this means whether you can confirm selection of an item within the window.
+OKが可能か。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### isOkTriggered () → {Boolean}
-
+OKが起動されたか。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### isOpen ()
 
 
 Returns true if the window is completely open (openness == 255).
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window#isOpen</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window#isOpen</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### isOpenAndActive () → {Boolean}
-
+ウィンドウが開いてアクティブか。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### isOpening () → {Boolean}
 
 
 Returns true if the window is currently opening.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#isOpening</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#isOpening</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### isTouchedInsideFrame () → {Boolean}
-
+枠の内側をタッチされたか。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### isTouchOkEnabled () → {Boolean}
-
-
-Determines if touch ok is enabled as an option; this means whether you can confirm the selection of an item within the window with touch input.
+タッチ入力によるOKが可能か。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### itemHeight () → {[Number](Number.md)}
-
-
-Returns the height of an item within the window; determines the height of a row.
+項目の高さ(ピクセル)を返す。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### itemRect (index) → {[Rectangle](Rectangle.md)}
-
-
-Creates a new rectangle based on itemWidth and itemHeight. The rectangle is mainly used for positioning items within the selectable window.
+指定された項目の矩形範囲を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
+| `index` | [Number](Number.md) | 項目番号 |
 
 <dl>
 </dl>
@@ -1726,22 +1714,20 @@ Creates a new rectangle based on itemWidth and itemHeight. The rectangle is main
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Rectangle</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Rectangle.html">Rectangle</a></span>
+    </dd>
+</dl>
 
 #### itemRectForText (index) → {[Rectangle](Rectangle.md)}
-
-
-Creates a new rectangle based on itemWidth and itemHeight The rectangle is used for positioning text within the selectable window.
+指定された項目の文字列用の矩形範囲を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
+| `index` | [Number](Number.md) | 項目番号 |
 
 <dl>
 </dl>
@@ -1749,144 +1735,136 @@ Creates a new rectangle based on itemWidth and itemHeight The rectangle is used 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Rectangle</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Rectangle.html">Rectangle</a></span>
+    </dd>
+</dl>
 
 #### itemWidth () → {[Number](Number.md)}
-
-
-Returns the width of an item within the window; determines the width of a column.
+項目の幅(ピクセル)を返す。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### lineHeight () → {[Number](Number.md)}
-
-
-Returns the standard line height of the current window; default is 36.
+行の高さ(ピクセル)を返す。default: 36
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#lineHeight</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a href="Window_Base.html#lineheight---number">Window_Base#lineHeight</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
-
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### loadWindowskin ()
 
 
 Loads the window skin from the img/system directory.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#loadWindowskin</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#loadWindowskin</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### makeFontBigger ()
 
 
 Makes the font bigger by a value of 12.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#makeFontBigger</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#makeFontBigger</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### makeFontSmaller ()
 
 
 Makes the font smaller by a value of 12.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#makeFontSmaller</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#makeFontSmaller</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### maxCols () → {[Number](Number.md)}
-
-
-Returns the maximum number of columns for the window.
+ウィンドウが持つ最大列(カラム)数を返す。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### maxItems () → {[Number](Number.md)}
-
-
-Returns the maximum number of items within the window; useful to overwrite when creating a new window. This method is used to calculate the number of rows and more.
+ウィンドウが持つ最大項目数を返す。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### maxPageItems () → {[Number](Number.md)}
-
+ページが持つ最大項目数を返す。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### maxPageRows () → {[Number](Number.md)}
+ページが持つ最大行(ロー)数を返す。
 
 <dl>
 </dl>
@@ -1894,13 +1872,14 @@ Returns the maximum number of items within the window; useful to overwrite when 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### maxRows () → {[Number](Number.md)}
+ウィンドウが持つ最大行(ロー)数を返す。
 
 <dl>
 </dl>
@@ -1908,25 +1887,25 @@ Returns the maximum number of items within the window; useful to overwrite when 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### maxTopRow () → {[Number](Number.md)}
-
+最後の最上部の行(ロー)数を返す。
 <dl>
 </dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="Number.html">Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### move (x, y, width, height)
 
@@ -1943,15 +1922,15 @@ Sets the x, y, width, and height all at once.
 | `height` | [Number](Number.md) | The height of the window |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window#move</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window#move</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### mpColor (actor) → {[String](String.md)}
 
@@ -1965,120 +1944,120 @@ Returns the mp color as a css color string.
 | `actor` | [Game_Actor](Game_Actor.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#mpColor</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#mpColor</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### mpCostColor () → {[String](String.md)}
 
 
 Returns the mp cost color as a css color string.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#mpCostColor</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#mpCostColor</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### mpGaugeColor1 () → {[String](String.md)}
 
 
 Returns the mp gauge color 1 as a css color string.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#mpGaugeColor1</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#mpGaugeColor1</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### mpGaugeColor2 () → {[String](String.md)}
 
 
 Returns the mp gauge color 2 as a css color string.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#mpGaugeColor2</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#mpGaugeColor2</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### normalColor () → {[String](String.md)}
 
 
 Returns the normal color as a css color string.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#normalColor</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#normalColor</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### obtainEscapeCode (textState)
 
@@ -2089,15 +2068,15 @@ Returns the normal color as a css color string.
 | `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#obtainEscapeCode</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#obtainEscapeCode</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### obtainEscapeParam (textState) → {number|string}
 
@@ -2111,26 +2090,27 @@ Obtains the escape parameters from text codes in the text state when drawTextEx 
 | `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#obtainEscapeParam</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#obtainEscapeParam</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>number</span> | <span>string</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>number</span> | <span>string</span>
+    </dd>
+</dl>
 
 #### onTouch (triggered)
+タッチの処理。
 
 ##### Parameters:
 
@@ -2146,15 +2126,15 @@ Obtains the escape parameters from text codes in the text state when drawTextEx 
 
 Opens the window.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#open</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#open</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### paramchangeTextColor (change)
 
@@ -2168,15 +2148,15 @@ Changes the text color based on the powerUpColor, powerDownColor and normal colo
 | `change` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#paramchangeTextColor</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#paramchangeTextColor</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### partyMemberName (partyMemberIndex) → {[String](String.md)}
 
@@ -2190,60 +2170,56 @@ Returns a party member name given an index; the index starts from 1.
 | `partyMemberIndex` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#partyMemberName</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#partyMemberName</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### pendingColor () → {[String](String.md)}
 
 
 Returns the pending color as a css color string.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#pendingColor</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#pendingColor</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### playBuzzerSound ()
-
-
-Plays the buzzer sound effect when input is incorrect.
+入力が不正だった場合の音を再生。
 <dl>
 </dl>
 
 #### playOkSound ()
-
-
-Plays a sound effect when okay is processed.
+入力が受領された場合の音を再生。
 <dl>
 </dl>
 
@@ -2252,48 +2228,48 @@ Plays a sound effect when okay is processed.
 
 Returns the power down color as a css color string.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#powerDownColor</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#powerDownColor</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### powerUpColor () → {[String](String.md)}
 
 
 Returns the power up color as a css color string.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#powerUpColor</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#powerUpColor</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a href="String.html">String</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="String.html">String</a></span>
+    </dd>
+</dl>
 
 #### processCancel ()
 
@@ -2312,15 +2288,15 @@ Process each character in the text when drawTextEx is used to draw text.
 | `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#processCharacter</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#processCharacter</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### processCursorMove ()
 
@@ -2342,15 +2318,15 @@ Processes drawing an icon when drawTextEx is used for drawing text.
 | `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#processDrawIcon</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#processDrawIcon</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### processEscapeCharacter (code, textState)
 
@@ -2365,15 +2341,15 @@ Processes escape characters when drawTextEx is used for drawing text.
 | `textState` | [MV.TextState](MV.TextState.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Window_Base#processEscapeCharacter</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Window_Base#processEscapeCharacter</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### processHandling ()
 
