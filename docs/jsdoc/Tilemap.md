@@ -44,7 +44,7 @@
 | `parent` | Object | [read-only][super] 親オブジェクト(タイルマップを保持している[Spriteset_Map](Spriteset_Map.md)) |
 | `children` | [Array](Array.md).<[Sprite](Sprite.md)> | [read-only][super] 子オブジェクト(PIXI.tilemap.ZLayer、[Sprite](Sprite.md) 、[Sprite_Character](Sprite_Character.md) 、[Sprite_Destination](Sprite_Destination.md) を含む配列) |
 | `animationCount` | [Number](Number.md) |  オートタイルアニメーションのカウント |
-| `bitmaps` | [Array](Array.md) |  タイルセットで使われている画像の配列 |
+| `bitmaps` | [Array](Array.md).<[Bitmap](Bitmap.md)> |  タイルセットで使われている画像の配列 |
 | `origin` | [Point](Point.md) |  スクロールに対する基準点 |
 | `flags` | [Array](Array.md).<[Number](Number.md)> |  フラグ(詳細は[RPG.Tileset](RPG.Tileset.md)) |
 | `tileHeight` | [Number](Number.md) |  タイル高さ(ピクセル) |
