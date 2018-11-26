@@ -4,7 +4,7 @@
 
 #### new Tileset ()
 
- タイルセット用JSON(data/Tilesets.json)のデータ構造。 大域変数 [$dataTilesets](global.md#$datatilesets-arrayrpgtileset) に配列として定義されている。 通常は大域変数 [$gameMap](global.md#$gamemap-game_map) に定義してあるマップ管理オブジェクトを介して扱う。
+ タイルセット用JSON(data/Tilesets.json)のデータ構造。 大域変数 [$dataTilesets](global.md#datatilesets-arrayrpgtileset) に配列として定義されている。 通常は大域変数 [$gameMap](global.md#gamemap-game_map) に定義してあるマップ管理オブジェクトを介して扱う。
 
 ##### Properties:
 
