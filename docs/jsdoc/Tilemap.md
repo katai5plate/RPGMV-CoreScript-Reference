@@ -47,12 +47,14 @@
 | `bitmaps` | [Array](Array.md).<[Bitmap](Bitmap.md)> |  タイルセットで使われている画像の配列 |
 | `origin` | [Point](Point.md) |  スクロールに対する基準点 |
 | `flags` | [Array](Array.md).<[Number](Number.md)> |  フラグ(詳細は[RPG.Tileset](RPG.Tileset.md)) |
-| `tileHeight` | [Number](Number.md) |  タイル高さ(ピクセル) |
-| `tileWidth` | [Number](Number.md) |  タイル幅(ピクセル) |
-| `height` | [Number](Number.md) |  画面高さ(ピクセル) |
-| `width` | [Number](Number.md) |  画面幅(ピクセル) |
-| `horizontalWrap` | Boolean |  横方向にループするか |
-| `verticalWrap` | Boolean |  縦方向にループするか |
+| `tileHeight` | [Number](Number.md) | タイル高さ(ピクセル) |
+| `tileWidth` | [Number](Number.md) | タイル幅(ピクセル) |
+| `height` | [Number](Number.md) | 画面高さ(ピクセル) |
+| `width` | [Number](Number.md) | 画面幅(ピクセル) |
+| `horizontalWrap` | Boolean | 横方向にループするか |
+| `verticalWrap` | Boolean | 縦方向にループするか |
+| `lowerZLayer` | PIXI.tilemap.ZLayer | 低層レイヤー |
+| `upperZLayer` | PIXI.tilemap.ZLayer | 高層レイヤー |
 
 <dl>
 </dl>
