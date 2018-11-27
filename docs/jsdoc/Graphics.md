@@ -1,10 +1,6 @@
 # Class: Graphics
 
-## Graphics ()
-
-#### new Graphics ()
-
-The static class that carries out graphics processing.
+画像の処理を行うための静的クラス。
 
 ##### Properties:
 
@@ -346,13 +342,15 @@ The static class that carries out graphics processing.
 
 #### (static) callGC ()
 
-Calls pixi.js garbage collector
+
+Calls pixi.js garbage collector
 <dl>
 </dl>
 
 #### (static) canPlayVideoType (type) → {Boolean}
 
-Checks whether the browser can play the specified video type.
+
+Checks whether the browser can play the specified video type.
 
 ##### Parameters:
 
@@ -365,7 +363,8 @@ The static class that carries out graphics processing.
 
 ##### Returns:
 
-True if the browser can play the specified video type
+
+True if the browser can play the specified video type
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -380,13 +379,15 @@ The static class that carries out graphics processing.
 
 #### (static) canUseDifferenceBlend () → {Boolean}
 
-Checks whether the canvas blend mode 'difference' is supported.
+
+Checks whether the canvas blend mode 'difference' is supported.
 <dl>
 </dl>
 
 ##### Returns:
 
-True if the canvas blend mode 'difference' is supported
+
+True if the canvas blend mode 'difference' is supported
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -396,13 +397,15 @@ The static class that carries out graphics processing.
 
 #### (static) canUseSaturationBlend () → {Boolean}
 
-Checks whether the canvas blend mode 'saturation' is supported.
+
+Checks whether the canvas blend mode 'saturation' is supported.
 <dl>
 </dl>
 
 ##### Returns:
 
-True if the canvas blend mode 'saturation' is supported
+
+True if the canvas blend mode 'saturation' is supported
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -412,25 +415,29 @@ The static class that carries out graphics processing.
 
 #### (static) endLoading ()
 
-Erases the "Now Loading" image.
+
+Erases the "Now Loading" image.
 <dl>
 </dl>
 
 #### (static) eraseLoadingError ()
 
-Erases the loading error text.
+
+Erases the loading error text.
 <dl>
 </dl>
 
 #### (static) hasWebGL () → {Boolean}
 
-Checks whether the current browser supports WebGL.
+
+Checks whether the current browser supports WebGL.
 <dl>
 </dl>
 
 ##### Returns:
 
-True if the current browser supports WebGL.
+
+True if the current browser supports WebGL.
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -440,13 +447,15 @@ The static class that carries out graphics processing.
 
 #### (static) hideFps ()
 
-Hides the FPSMeter element.
+
+Hides the FPSMeter element.
 <dl>
 </dl>
 
 #### (static) initialize (width, height, type)
 
-Initializes the graphics system.
+
+Initializes the graphics system.
 
 ##### Parameters:
 
@@ -461,7 +470,8 @@ The static class that carries out graphics processing.
 
 #### (static) isFontLoaded (name) → {Boolean}
 
-Checks whether the font file is loaded.
+
+Checks whether the font file is loaded.
 
 ##### Parameters:
 
@@ -474,7 +484,8 @@ The static class that carries out graphics processing.
 
 ##### Returns:
 
-True if the font file is loaded
+
+True if the font file is loaded
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -484,7 +495,8 @@ The static class that carries out graphics processing.
 
 #### (static) isInsideCanvas (x, y) → {Boolean}
 
-Checks whether the specified point is inside the game canvas area.
+
+Checks whether the specified point is inside the game canvas area.
 
 ##### Parameters:
 
@@ -498,7 +510,8 @@ The static class that carries out graphics processing.
 
 ##### Returns:
 
-True if the specified point is inside the game canvas area
+
+True if the specified point is inside the game canvas area
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -508,13 +521,15 @@ The static class that carries out graphics processing.
 
 #### (static) isVideoPlaying () → {Boolean}
 
-Checks whether the video is playing.
+
+Checks whether the video is playing.
 <dl>
 </dl>
 
 ##### Returns:
 
-True if the video is playing
+
+True if the video is playing
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -524,13 +539,15 @@ The static class that carries out graphics processing.
 
 #### (static) isWebGL () → {Boolean}
 
-Checks whether the renderer type is WebGL.
+
+Checks whether the renderer type is WebGL.
 <dl>
 </dl>
 
 ##### Returns:
 
-True if the renderer type is WebGL
+
+True if the renderer type is WebGL
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -540,7 +557,8 @@ The static class that carries out graphics processing.
 
 #### (static) loadFont (name, url)
 
-Loads a font file.
+
+Loads a font file.
 
 ##### Parameters:
 
@@ -554,7 +572,8 @@ The static class that carries out graphics processing.
 
 #### (static) pageToCanvasX (x) → {[Number](Number.md)}
 
-Converts an x coordinate on the page to the corresponding x coordinate on the canvas area.
+
+Converts an x coordinate on the page to the corresponding x coordinate on the canvas area.
 
 ##### Parameters:
 
@@ -567,7 +586,8 @@ The static class that carries out graphics processing.
 
 ##### Returns:
 
-The x coordinate on the canvas area
+
+The x coordinate on the canvas area
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -577,7 +597,8 @@ The static class that carries out graphics processing.
 
 #### (static) pageToCanvasY (y) → {[Number](Number.md)}
 
-Converts a y coordinate on the page to the corresponding y coordinate on the canvas area.
+
+Converts a y coordinate on the page to the corresponding y coordinate on the canvas area.
 
 ##### Parameters:
 
@@ -590,7 +611,8 @@ The static class that carries out graphics processing.
 
 ##### Returns:
 
-The y coordinate on the canvas area
+
+The y coordinate on the canvas area
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -600,7 +622,8 @@ The static class that carries out graphics processing.
 
 #### (static) playVideo (src)
 
-Starts playback of a video.
+
+Starts playback of a video.
 
 ##### Parameters:
 
@@ -613,7 +636,8 @@ The static class that carries out graphics processing.
 
 #### (static) printError (name, message)
 
-Displays the error text to the screen.
+
+Displays the error text to the screen.
 
 ##### Parameters:
 
@@ -627,7 +651,8 @@ The static class that carries out graphics processing.
 
 #### (static) printLoadingError (url)
 
-Displays the loading error text to the screen.
+
+Displays the loading error text to the screen.
 
 ##### Parameters:
 
@@ -640,7 +665,8 @@ The static class that carries out graphics processing.
 
 #### (static) render (stage)
 
-Renders the stage to the game screen.
+
+Renders the stage to the game screen.
 
 ##### Parameters:
 
@@ -653,13 +679,15 @@ The static class that carries out graphics processing.
 
 #### (static) setLoadingImage ()
 
-Sets the source of the "Now Loading" image.
+
+Sets the source of the "Now Loading" image.
 <dl>
 </dl>
 
 #### (static) setVideoVolume (value)
 
-Sets volume of a video.
+
+Sets volume of a video.
 
 ##### Parameters:
 
@@ -672,33 +700,40 @@ The static class that carries out graphics processing.
 
 #### (static) showFps ()
 
-Shows the FPSMeter element.
+
+Shows the FPSMeter element.
 <dl>
 </dl>
 
 #### (static) startLoading ()
 
-Initializes the counter for displaying the "Now Loading" image.
+
+Initializes the counter for displaying the "Now Loading" image.
 <dl>
 </dl>
 
 #### (static) tickEnd ()
 
-Marks the end of each frame for FPSMeter.
+
+Marks the end of each frame for FPSMeter.
 <dl>
 </dl>
 
 #### (static) tickStart ()
 
-Marks the beginning of each frame for FPSMeter.
+
+Marks the beginning of each frame for FPSMeter.
 <dl>
 </dl>
 
 #### (static) updateLoading ()
 
-Increments the loading counter and displays the "Now Loading" image if necessary.
+
+Increments the loading counter and displays the "Now Loading" image if necessary.
 <dl>
-</dl>
+</dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
