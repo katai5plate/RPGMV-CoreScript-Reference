@@ -13,25 +13,25 @@
 | `_interpreter` | [Game_Interpreter](Game_Interpreter.md) | RPGツクールMVのコマンドインタプリタ |
 | `_mapId` | [Number](Number.md) | [マップ]のID |
 | `_tilesetId` | [Number](Number.md) | [タイルセット]のID |
-| `_events` | [Array](Array.md).<[Game_Event](Game_Event.md)> |  |
-| `_commonEvents` | [Array](Array.md).<[Game_CommonEvent](Game_CommonEvent.md)> |  |
-| `_vehicles` | [Array](Array.md).<[Game_Vehicle](Game_Vehicle.md)> |  |
-| `_displayX` | [Number](Number.md) |  マップ表示のX座標 [displayX](Game_Map.md#displayx---number) |
-| `_displayY` | [Number](Number.md) |  マップ表示のY座標 [displayY](Game_Map.md#displayy---number) |
-| `_nameDisplay` | Boolean |  表示名 |
-| `_scrollDirection` | [Number](Number.md) |  スクロール方向 |
+| `_events` | [Array](Array.md).<[Game_Event](Game_Event.md)> | [イベント]の配列 |
+| `_commonEvents` | [Array](Array.md).<[Game_CommonEvent](Game_CommonEvent.md)> | [コモンイベント]の配列 |
+| `_vehicles` | [Array](Array.md).<[Game_Vehicle](Game_Vehicle.md)> | [乗り物]の配列 |
+| `_displayX` | [Number](Number.md) | マップ表示のX座標 [displayX](Game_Map.md#displayx---number) |
+| `_displayY` | [Number](Number.md) | マップ表示のY座標 [displayY](Game_Map.md#displayy---number) |
+| `_nameDisplay` | Boolean | マップの表示名を表示するか |
+| `_scrollDirection` | [Number](Number.md) | スクロール方向 |
 | `_scrollRest` | [Number](Number.md) |  |
 | `_scrollSpeed` | [Number](Number.md) |  スクロール速度 |
 | `_parallaxName` | [String](String.md) | [遠景]のファイル名 [parallaxName](Game_Map.md#parallaxname---string) |
-| `_parallaxZero` | Boolean |  |
+| `_parallaxZero` | Boolean | 視差を0にするか |
 | `_parallaxLoopX` | Boolean | [横方向にループする] |
 | `_parallaxLoopY` | Boolean | [縦方向にループする] |
-| `_parallaxSx` | [Number](Number.md) | x [スクロール]量 ピクセル |
-| `_parallaxSy` | [Number](Number.md) | y [スクロール]量 ピクセル |
-| `_parallaxX` | [Number](Number.md) |  |
-| `_parallaxY` | [Number](Number.md) |  |
-| `_battleback1Name` | [String](String.md) |  レイヤー奥の戦闘背景画像1(地面)のファイル名 [battleback1Name](Game_Map.md#battleback1name---string) |
-| `_battleback2Name` | [String](String.md) |  レイヤー手前の戦闘背景画像2(壁)のファイル名 [battleback2Name](Game_Map.md#battleback2name---string) |
+| `_parallaxSx` | [Number](Number.md) | 遠景 x[スクロール]量(ピクセル) |
+| `_parallaxSy` | [Number](Number.md) | 遠景 y[スクロール]量(ピクセル) |
+| `_parallaxX` | [Number](Number.md) | 遠景 x位置(ピクセル) |
+| `_parallaxY` | [Number](Number.md) | 遠景 y位置(ピクセル) |
+| `_battleback1Name` | [String](String.md) | レイヤー奥の戦闘背景画像1(地面)のファイル名 [battleback1Name](Game_Map.md#battleback1name---string) |
+| `_battleback2Name` | [String](String.md) | レイヤー手前の戦闘背景画像2(壁)のファイル名 [battleback2Name](Game_Map.md#battleback2name---string) |
 | `_needsRefresh` | Boolean |  |
 
 <dl>
@@ -51,7 +51,7 @@
                 <dt>To Do:</dt>
                 <dd>
                     <ul>
-                        <li>&#x3053;&#x306E;&#x7528;&#x8A9E;&#x306E;&#x610F;&#x5473;&#x304C;&#x5206;&#x304B;&#x3063;&#x305F;&#x3089;&#x6559;&#x3048;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;</li>
+                        <li>この用語の意味が分かったら教えてください</li>
                     </ul>
                 </dd>
             </dl>
@@ -79,7 +79,7 @@
                 <dt>To Do:</dt>
                 <dd>
                     <ul>
-                        <li>&#x3053;&#x306E;&#x7528;&#x8A9E;&#x306E;&#x610F;&#x5473;&#x304C;&#x5206;&#x304B;&#x3063;&#x305F;&#x3089;&#x6559;&#x3048;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;</li>
+                        <li>この用語の意味が分かったら教えてください</li>
                     </ul>
                 </dd>
             </dl>
