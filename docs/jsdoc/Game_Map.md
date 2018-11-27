@@ -16,13 +16,13 @@
 | `_events` | [Array](Array.md).<[Game_Event](Game_Event.md)> |  |
 | `_commonEvents` | [Array](Array.md).<[Game_CommonEvent](Game_CommonEvent.md)> |  |
 | `_vehicles` | [Array](Array.md).<[Game_Vehicle](Game_Vehicle.md)> |  |
-| `_displayX` | [Number](Number.md) |  マップ表示のX座標[displayX](Game_Map.md#displayx---number) |
-| `_displayY` | [Number](Number.md) |  マップ表示のY座標[displayY](Game_Map.md#displayy---number) |
+| `_displayX` | [Number](Number.md) |  マップ表示のX座標 [displayX](Game_Map.md#displayx---number) |
+| `_displayY` | [Number](Number.md) |  マップ表示のY座標 [displayY](Game_Map.md#displayy---number) |
 | `_nameDisplay` | Boolean |  表示名 |
 | `_scrollDirection` | [Number](Number.md) |  スクロール方向 |
 | `_scrollRest` | [Number](Number.md) |  |
 | `_scrollSpeed` | [Number](Number.md) |  スクロール速度 |
-| `_parallaxName` | [String](String.md) | [遠景]のファイル名[Game_Map#parallaxName](Game_Map.html#parallaxName) |
+| `_parallaxName` | [String](String.md) | [遠景]のファイル名 [parallaxName](Game_Map.md#parallaxname---string) |
 | `_parallaxZero` | Boolean |  |
 | `_parallaxLoopX` | Boolean | [横方向にループする] |
 | `_parallaxLoopY` | Boolean | [縦方向にループする] |
@@ -30,8 +30,8 @@
 | `_parallaxSy` | [Number](Number.md) | y [スクロール]量 ピクセル |
 | `_parallaxX` | [Number](Number.md) |  |
 | `_parallaxY` | [Number](Number.md) |  |
-| `_battleback1Name` | [String](String.md) |  レイヤー奥の戦闘背景画像1(地面)のファイル名[Game_Map#battleback1Name](Game_Map.html#battleback1Name) |
-| `_battleback2Name` | [String](String.md) |  レイヤー手前の戦闘背景画像2(壁)のファイル名[Game_Map#battleback2Name](Game_Map.html#battleback2Name) |
+| `_battleback1Name` | [String](String.md) |  レイヤー奥の戦闘背景画像1(地面)のファイル名 [battleback1Name](Game_Map.md#battleback1name---string) |
+| `_battleback2Name` | [String](String.md) |  レイヤー手前の戦闘背景画像2(壁)のファイル名 [battleback2Name](Game_Map.md#battleback2name---string) |
 | `_needsRefresh` | Boolean |  |
 
 <dl>
