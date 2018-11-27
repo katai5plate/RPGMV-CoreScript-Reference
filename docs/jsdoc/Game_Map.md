@@ -16,8 +16,8 @@
 | `_events` | [Array](Array.md).<[Game_Event](Game_Event.md)> |  |
 | `_commonEvents` | [Array](Array.md).<[Game_CommonEvent](Game_CommonEvent.md)> |  |
 | `_vehicles` | [Array](Array.md).<[Game_Vehicle](Game_Vehicle.md)> |  |
-| `_displayX` | [Number](Number.md) |  マップ表示のX座標[Game_Map#displayX](Game_Map.html#displayX) |
-| `_displayY` | [Number](Number.md) |  マップ表示のY座標[Game_Map#displayY](Game_Map.html#displayY) |
+| `_displayX` | [Number](Number.md) |  マップ表示のX座標[displayX](Game_Map.md#displayx---number) |
+| `_displayY` | [Number](Number.md) |  マップ表示のY座標[displayY](Game_Map.md#displayy---number) |
 | `_nameDisplay` | Boolean |  表示名 |
 | `_scrollDirection` | [Number](Number.md) |  スクロール方向 |
 | `_scrollRest` | [Number](Number.md) |  |
