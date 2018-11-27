@@ -9,7 +9,7 @@
 | `_globalId` | [String](String.md) | [static]システムID 'RPGMV' |
 | `_lastAccessedId` | [Number](Number.md) | [static] 最後にセーブ・ロードを行ったファイルのID |
 | `_errorUrl` | * | [static] |
-| `_databaseFiles` | [Array](Array.md).<Object> | [static] |
+| `_databaseFiles` | [Array](Array.md).\<Object> | [static] |
 
 <dl>
 </dl>
