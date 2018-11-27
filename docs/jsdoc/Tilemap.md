@@ -42,7 +42,7 @@
 | `WALL_AUTOTILE_TABLE` | [Array](Array.md).<[Array](Array.md).<[Array](Array.md).<[Number](Number.md)>>> | [static] 壁オートタイル組み立てテーブル |
 | `WATERFALL_AUTOTILE_TABLE` | [Array](Array.md).<[Array](Array.md).<[Array](Array.md).<[Number](Number.md)>>> | [static] 滝オートタイル組み立てテーブル |
 | `parent` | Object | [read-only][super] 親オブジェクト(タイルマップを保持している[Spriteset_Map](Spriteset_Map.md)) |
-| `children` | [Array](Array.md).<[Sprite](Sprite.md)> | [read-only][super] 子オブジェクト(PIXI.tilemap.ZLayer、[Sprite](Sprite.md) 、[Sprite_Character](Sprite_Character.md) 、[Sprite_Destination](Sprite_Destination.md) を含む配列) |
+| `children` | [Array](Array.md).<[Sprite](Sprite.md)> | [read-only][super] 子オブジェクト([Sprite](Sprite.md) 、[Sprite_Character](Sprite_Character.md) 、[Sprite_Destination](Sprite_Destination.md) を含む配列) |
 | `animationCount` | [Number](Number.md) |  オートタイルアニメーションのカウント |
 | `bitmaps` | [Array](Array.md).<[Bitmap](Bitmap.md)> |  タイルセットで使われている画像の配列 |
 | `origin` | [Point](Point.md) |  スクロールに対する基準点 |
@@ -53,11 +53,6 @@
 | `width` | [Number](Number.md) | 画面幅(ピクセル) |
 | `horizontalWrap` | Boolean | 横方向にループするか |
 | `verticalWrap` | Boolean | 縦方向にループするか |
-| `lowerZLayer` | PIXI.tilemap.ZLayer | 低層レイヤー |
-| `upperZLayer` | PIXI.tilemap.ZLayer | 高層レイヤー |
-
-<dl>
-</dl>
 
 ### Extends
 
