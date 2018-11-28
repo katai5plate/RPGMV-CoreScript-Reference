@@ -28,16 +28,16 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `TILE_ID_A1` | [Number](Number.md) | [static] A1(アニメーション)タイルの開始番号 |
-| `TILE_ID_A2` | [Number](Number.md) | [static] A2(地面)タイルの開始番号 |
-| `TILE_ID_A3` | [Number](Number.md) | [static] A3(建物)タイルの開始番号 |
-| `TILE_ID_A4` | [Number](Number.md) | [static] A4(壁)タイルの開始番号 |
-| `TILE_ID_A5` | [Number](Number.md) | [static] A5(通常)タイルの開始番号 |
-| `TILE_ID_B` | [Number](Number.md) | [static] Bタイルの開始番号 |
-| `TILE_ID_C` | [Number](Number.md) | [static] Cタイルの開始番号 |
-| `TILE_ID_D` | [Number](Number.md) | [static] Dタイルの開始番号 |
-| `TILE_ID_E` | [Number](Number.md) | [static] Eタイルの開始番号 |
-| `TILE_ID_MAX` | [Number](Number.md) | [static] タイルの終端番号 |
+| `TILE_ID_A1` | [Number](Number.md) | [static] A1(アニメーション)タイルの開始番号(2048) |
+| `TILE_ID_A2` | [Number](Number.md) | [static] A2(地面)タイルの開始番号(2816) |
+| `TILE_ID_A3` | [Number](Number.md) | [static] A3(建物)タイルの開始番号(4352) |
+| `TILE_ID_A4` | [Number](Number.md) | [static] A4(壁)タイルの開始番号(5888) |
+| `TILE_ID_A5` | [Number](Number.md) | [static] A5(通常)タイルの開始番号(1536) |
+| `TILE_ID_B` | [Number](Number.md) | [static] Bタイルの開始番号(0) |
+| `TILE_ID_C` | [Number](Number.md) | [static] Cタイルの開始番号(256) |
+| `TILE_ID_D` | [Number](Number.md) | [static] Dタイルの開始番号(512) |
+| `TILE_ID_E` | [Number](Number.md) | [static] Eタイルの開始番号(768) |
+| `TILE_ID_MAX` | [Number](Number.md) | [static] タイルの終端番号(8192) |
 | `FLOOR_AUTOTILE_TABLE` | [Array](Array.md).<[Array](Array.md).<[Array](Array.md).<[Number](Number.md)>>> | [static] 床オートタイル組み立てテーブル |
 | `WALL_AUTOTILE_TABLE` | [Array](Array.md).<[Array](Array.md).<[Array](Array.md).<[Number](Number.md)>>> | [static] 壁オートタイル組み立てテーブル |
 | `WATERFALL_AUTOTILE_TABLE` | [Array](Array.md).<[Array](Array.md).<[Array](Array.md).<[Number](Number.md)>>> | [static] 滝オートタイル組み立てテーブル |
