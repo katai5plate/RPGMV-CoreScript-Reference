@@ -4,8 +4,9 @@
 
 #### new Tilemap ()
 
-描画モードが Canvas Mode の場合に使われる、2Dベースのタイルマップを表示するためのコンテナクラス。 <br />
-描画モードはF2キーを押して確かめられる。なお、Canvas Mode は古いブラウザなどの一部環境でしか使われない。
+[RPG.Tileset](RPG.Tileset.md)と[RPG.Map](RPG.Map.md)に従い、2Dベースのタイルマップを表示するためのコンテナクラス。 <br />
+描画モードが Canvas Mode の場合に使われる、描画モードはF2キーを押して確かめられる。なお、Canvas Mode は古いブラウザなどの一部環境でしか使われない。
+
 
 重ね合わせの階層( z )は以下のようになっている。
 
@@ -61,7 +62,6 @@
 ### Methods
 
 #### (static) _compareChildOrder (a, b)
-
 [_sortChildren](#static-_sortchildren-)用ソート条件のコールバック関数。
 
 ##### Parameters:
@@ -75,15 +75,11 @@
 </dl>
 
 #### (static) _createLayers ()
-
-
  低層×4 + 高層×4 レイヤー(z: 0 〜 7)を生成。
 <dl>
 </dl>
 
 #### (static) _drawAutotile (bitmap, tileId, dx, dy)
-
-
  渡されたBitmapにオートタイル画像を書き込む。
 
 ##### Parameters:
@@ -91,7 +87,7 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `bitmap` | [Bitmap](Bitmap.md) |  |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 | `dx` | [Number](Number.md) |  |
 | `dy` | [Number](Number.md) |  |
 
@@ -99,8 +95,6 @@
 </dl>
 
 #### (static) _drawNormalTile (bitmap, tileId, dx, dy)
-
-
  渡されたBitmapに(オートタイルでない通常の)タイル画像を書き込む。
 
 ##### Parameters:
@@ -108,7 +102,7 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `bitmap` | [Bitmap](Bitmap.md) |  |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 | `dx` | [Number](Number.md) |  |
 | `dy` | [Number](Number.md) |  |
 
@@ -116,8 +110,6 @@
 </dl>
 
 #### (static) _drawShadow (bitmap, shadowBits, dx, dy)
-
-
  渡されたBitmapに影ペンの影を描画。
 
 ##### Parameters:
@@ -133,8 +125,6 @@
 </dl>
 
 #### (static) _drawTableEdge (bitmap, tileId, dx, dy)
-
-
  渡されたBitmapにテーブル端の画像を書き込む。
 
 ##### Parameters:
@@ -142,7 +132,7 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `bitmap` | [Bitmap](Bitmap.md) |  |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 | `dx` | [Number](Number.md) |  |
 | `dy` | [Number](Number.md) |  |
 
@@ -150,8 +140,6 @@
 </dl>
 
 #### (static) _drawTile (bitmap, tileId, dx, dy)
-
-
  渡されたBitmapにタイル画像を書き込む。
 
 ##### Parameters:
@@ -159,7 +147,7 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `bitmap` | [Bitmap](Bitmap.md) |  |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 | `dx` | [Number](Number.md) |  |
 | `dy` | [Number](Number.md) |  |
 
@@ -167,15 +155,13 @@
 </dl>
 
 #### (static) _isHigherTile (tileId) → {Boolean}
-
-
- 高層のタイルか。
+ 高層[☆]のタイルか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 
 <dl>
 </dl>
@@ -202,7 +188,7 @@
                 <dt>To Do:</dt>
                 <dd>
                     <ul>
-                        <li>&#x3053;&#x306E;&#x7528;&#x8A9E;&#x306E;&#x610F;&#x5473;&#x304C;&#x5206;&#x304B;&#x3063;&#x305F;&#x3089;&#x6559;&#x3048;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;</li>
+                        <li>この用語の意味が分かったら教えてください</li>
                     </ul>
                 </dd>
             </dl>
@@ -210,22 +196,20 @@
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) _isTableTile (tileId) → {Boolean}
-
-
  テーブルタイルか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 
 <dl>
 </dl>
@@ -233,15 +217,13 @@
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) _paintAllTiles (startX, startY)
-
-
  全タイルを描画。
 
 ##### Parameters:
@@ -255,8 +237,6 @@
 </dl>
 
 #### (static) _paintTiles (startX, startY, x, y)
-
-
  指定位置のタイルを描画。
 
 ##### Parameters:
@@ -265,15 +245,13 @@
 | --- | --- | --- |
 | `startX` | [Number](Number.md) |  |
 | `startY` | [Number](Number.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) | x座標(タイル数) |
+| `y` | [Number](Number.md) | y座標(タイル数) |
 
 <dl>
 </dl>
 
-#### (static) _readLastTiles (i, x, y) → {[Array](Array.md)}
-
-
+#### (static) _readLastTiles (i, x, y) → {[Array](Array.md).\<[Number](Number.md)>}
  指定位置の最新タイル配列を返す。
 
 ##### Parameters:
@@ -290,16 +268,14 @@
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Array.html">Array</a>.&lt;<a href="Number.html">Number</a>&gt;</span>
+    </dd>
+</dl>
 
 #### (static) _readMapData (x, y, z) → {[Number](Number.md)}
-
-
- 指定位置のマップIDを返す。
+ 指定位置のタイルIDを返す。
 
 ##### Parameters:
 
@@ -315,22 +291,18 @@
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### (static) _sortChildren ()
-
-
  子オブジェクトのソート。
 <dl>
 </dl>
 
 #### (static) _updateLayerPositions (startX, startY)
-
-
  レイヤー位置をアップデート。
 
 ##### Parameters:
@@ -344,8 +316,6 @@
 </dl>
 
 #### (static) _writeLastTiles (i, x, y, tiles)
-
-
  指定位置に最新のタイル情報を書き込む。
 
 ##### Parameters:
@@ -355,69 +325,68 @@
 | `i` | [Number](Number.md) |  レイヤー階層(0: 低層, 1: 高層) |
 | `x` | [Number](Number.md) | x座標(タイル数) |
 | `y` | [Number](Number.md) | y座標(タイル数) |
-| `tiles` | [Array](Array.md) |  |
+| `tiles` | [Array](Array.md).\<[Number](Number.md)> | タイルIDの配列 |
 
 <dl>
 </dl>
 
 #### (static) getAutotileKind (tileId) → {[Number](Number.md)}
-
-
  オートタイルの種類を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 
 <dl>
 </dl>
 
 ##### Returns:
-
+| Set | Description |
+| --- | --- |
+| A1 | 海:0、深海:1、浅瀬障害:2,3、水面:4,6,8,10,12,14、滝:5,7,9,11,13,15 |
+| A2 | 16 〜 47 |
+| A3 | 48 〜 79 |
+| A4 | 80 〜 127 |
+ 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### (static) getAutotileShape (tileId) → {[Number](Number.md)}
-
-
  オートタイルの形を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 
 <dl>
 </dl>
 
 ##### Returns:
-
-0 〜 47 のオートタイルの形を表す番号。
+地面・床:0〜47、屋根・壁:0〜15、滝:0〜3 の値
 
 <dl>
     <dt> Type </dt>
     <dd>
-        <span><a>Number</a></span>
+        <span><a href="Number.html">Number</a></span>
     </dd>
 </dl>
 
 #### (static) isAutotile (tileId) → {Boolean}
-
-
  オートタイルか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 
 <dl>
 </dl>
@@ -425,22 +394,20 @@
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isFloorTypeAutotile (tileId) → {Boolean}
-
-
  地表面のオートタイルか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 
 <dl>
 </dl>
@@ -448,22 +415,20 @@
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isGroundTile (tileId) → {Boolean}
-
-
  地表のタイルか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 
 <dl>
 </dl>
@@ -471,22 +436,20 @@
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isRoofTile (tileId) → {Boolean}
-
-
  屋根タイルか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 
 <dl>
 </dl>
@@ -494,23 +457,21 @@
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isSameKindTile (tileID1, tileID2) → {Boolean}
-
-
  指定したタイルが同じ種類か。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileID1` | [Number](Number.md) |  |
-| `tileID2` | [Number](Number.md) |  |
+| `tileID1` | [Number](Number.md) | タイルID |
+| `tileID2` | [Number](Number.md) | タイルID |
 
 <dl>
 </dl>
@@ -518,22 +479,20 @@
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isShadowingTile (tileId) → {Boolean}
-
-
  設置した時に影が自動でつけられるタイルか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 
 <dl>
 </dl>
@@ -541,22 +500,20 @@
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isTileA1 (tileId) → {Boolean}
-
-
 A1(アニメーション)のタイルか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 
 <dl>
 </dl>
@@ -564,22 +521,20 @@ A1(アニメーション)のタイルか。
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isTileA2 (tileId) → {Boolean}
-
-
 A2(地面)のタイルか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 
 <dl>
 </dl>
@@ -587,22 +542,20 @@ A2(地面)のタイルか。
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isTileA3 (tileId) → {Boolean}
-
-
 A3(建物)のタイルか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 
 <dl>
 </dl>
@@ -610,22 +563,20 @@ A3(建物)のタイルか。
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isTileA4 (tileId) → {Boolean}
-
-
 A4(壁)のタイルか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 
 <dl>
 </dl>
@@ -633,22 +584,20 @@ A4(壁)のタイルか。
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isTileA5 (tileId) → {Boolean}
-
-
 A5(通常)のタイルか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 
 <dl>
 </dl>
@@ -656,22 +605,20 @@ A5(通常)のタイルか。
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isVisibleTile (tileId) → {Boolean}
-
-
  表示されるタイル番号か。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 
 <dl>
 </dl>
@@ -679,22 +626,20 @@ A5(通常)のタイルか。
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isWallSideTile (tileId) → {Boolean}
-
-
  壁面タイルか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 
 <dl>
 </dl>
@@ -702,22 +647,20 @@ A5(通常)のタイルか。
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isWallTile (tileId) → {Boolean}
-
-
  壁タイルか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 
 <dl>
 </dl>
@@ -725,22 +668,20 @@ A5(通常)のタイルか。
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isWallTopTile (tileId) → {Boolean}
-
-
  壁上面タイルか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 
 <dl>
 </dl>
@@ -748,22 +689,20 @@ A5(通常)のタイルか。
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isWallTypeAutotile (tileId) → {Boolean}
-
-
  壁タイプのオートタイルか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 
 <dl>
 </dl>
@@ -771,22 +710,20 @@ A5(通常)のタイルか。
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isWaterfallTile (tileId) → {Boolean}
-
-
  滝のタイルか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 
 <dl>
 </dl>
@@ -794,22 +731,20 @@ A5(通常)のタイルか。
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isWaterfallTypeAutotile (tileId) → {Boolean}
-
-
  滝タイプのオートタイルか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 
 <dl>
 </dl>
@@ -817,22 +752,20 @@ A5(通常)のタイルか。
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isWaterTile (tileId) → {Boolean}
-
-
  水面のタイルか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.md) |  |
+| `tileId` | [Number](Number.md) | タイルID |
 
 <dl>
 </dl>
@@ -840,11 +773,11 @@ A5(通常)のタイルか。
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) makeAutotileId (kind, shape) → {[Number](Number.md)}
 
@@ -852,7 +785,6 @@ A5(通常)のタイルか。
  オートタイルのIDを生成。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `kind` | [Number](Number.md) |  種類 |
@@ -862,19 +794,15 @@ A5(通常)のタイルか。
 </dl>
 
 ##### Returns:
-
-
  タイルID
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### addChild (child) → {Object}
-
-
 [super] コンテナに子オブジェクトを追加。
 
 ##### Parameters:
@@ -887,19 +815,15 @@ A5(通常)のタイルか。
 </dl>
 
 ##### Returns:
-
-
  追加されたオブジェクト
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Object</span>
+    </dd>
+</dl>
 
 #### addChildAt (child, index) → {Object}
-
-
 [super] コンテナの指定位置に子オブジェクトを追加。
 
 ##### Parameters:
@@ -913,26 +837,20 @@ A5(通常)のタイルか。
 </dl>
 
 ##### Returns:
-
-
  追加されたオブジェクト
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Object</span>
+    </dd>
+</dl>
 
 #### initialize ()
-
-
  オブジェクト生成時の初期化。
 <dl>
 </dl>
 
 #### isReady () → {Boolean}
-
-
  描画準備ができているか。
 <dl>
 </dl>
@@ -940,29 +858,23 @@ A5(通常)のタイルか。
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### refresh ()
-
-
  タイルマップを更新。
 <dl>
 </dl>
 
 #### refreshTileset ()
-
-
  タイルセットを更新。
 <dl>
 </dl>
 
 #### removeChild (child) → {Object}
-
-
 [super] コンテナから子オブジェクトを取り除く
 
 ##### Parameters:
@@ -975,19 +887,15 @@ A5(通常)のタイルか。
 </dl>
 
 ##### Returns:
-
-
  取り除かれたオブジェクト
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Object</span>
+    </dd>
+</dl>
 
 #### removeChildAt (index) → {Object}
-
-
 [super] コンテナの指定位置から子オブジェクトを取り除く
 
 ##### Parameters:
@@ -1000,19 +908,15 @@ A5(通常)のタイルか。
 </dl>
 
 ##### Returns:
-
-
  取り除かれたオブジェクト
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Object</span>
+    </dd>
+</dl>
 
 #### setData (width, height, data)
-
-
  タイルマップのデータを設定。
 
 ##### Parameters:
@@ -1027,16 +931,12 @@ A5(通常)のタイルか。
 </dl>
 
 #### update ()
-
-
  フレーム毎のタイルマップのアップデート。
 <dl>
 </dl>
 
 #### updateTransform ()
-
-
- 変形をアップデート。
+ 描画・変形のアップデート。
 <dl>
 </dl>
 
