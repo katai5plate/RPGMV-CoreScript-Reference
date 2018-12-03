@@ -183,7 +183,8 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 
 #### (static) loadBitmap (folder, filename, hue, smooth) → {[Bitmap](Bitmap.md)}
 
-指定したフォルダ・ファイル名の画像をプロジェクトフォルダ以下から読み込み、指定した色相にずらし、指定したスムージングの状態で返す。
+指定したフォルダ・ファイル名の画像をプロジェクトフォルダ以下から読み込み、指定した色相にずらし、指定したスムージングの状態で返す。<br />
+色相の変更が必要ない場合 loadBitmap( folder, filename, null, true )　のように、色相に null を渡せば良い。
 
 ##### Parameters:
 
