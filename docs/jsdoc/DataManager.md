@@ -7,9 +7,9 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `_globalId` | [String](String.md) | [static]システムID 'RPGMV' |
-| `_lastAccessedId` | [Number](Number.md) | [static] 最後にセーブ・ロードを行ったファイルのID |
+| `_lastAccessedId` | [Number](Number.md) | [static]最後にセーブ・ロードを行ったファイルのID |
 | `_errorUrl` | * | [static] |
-| `_databaseFiles` | [Array](Array.md).\<Object> | [static] |
+| `_databaseFiles` | [Array](Array.md).\<Object> | [static]読み込むデータファイル情報(Object例:{ name: '$dataXxx', src: 'Xxx.json'}) |
 
 <dl>
 </dl>
@@ -32,14 +32,14 @@ $game から始まる大域変数に、対応したオブジェクトを生成�
 
 #### (static) extractMetadata (data)
 
-
-data.noteに
+data.noteに書いてあるデータを分解しメタデータ化。<br />
+仮引数にdata.metaプロパティを追加するので、渡したdata自体が書き換えられ、返り値はない。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `data` | Object | JSONデータ |
+| `data` | Object | JSONデータ({note:''}が含まれている) |
 
 <dl>
 </dl>
@@ -68,11 +68,11 @@ data.noteに
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isArmor (item) → {Boolean}
 
@@ -91,11 +91,11 @@ data.noteに
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isBattleTest () → {Boolean}
 
@@ -107,11 +107,11 @@ data.noteに
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isDatabaseLoaded () → {Boolean}
 
@@ -139,11 +139,11 @@ data.noteに
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isItem (item) → {Boolean}
 
@@ -162,11 +162,11 @@ data.noteに
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isMapLoaded () → {Boolean}
 
@@ -178,11 +178,11 @@ data.noteに
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isSkill (item) → {Boolean}
 
@@ -201,11 +201,11 @@ data.noteに
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isThisGameFile (savefileId) → {Boolean}
 
@@ -224,11 +224,11 @@ data.noteに
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) isWeapon (item) → {Boolean}
 
@@ -247,11 +247,11 @@ data.noteに
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) lastAccessedSavefileId () → {[Number](Number.md)}
 
@@ -263,11 +263,11 @@ data.noteに
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a>Number</a></span>
+    </dd>
+</dl>
 
 #### (static) latestSavefileId () → {[Number](Number.md)}
 
@@ -279,11 +279,11 @@ data.noteに
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a>Number</a></span>
+    </dd>
+</dl>
 
 #### (static) loadAllSavefileImages ()
 
