@@ -32,14 +32,14 @@ $game から始まる大域変数に、対応したオブジェクトを生成�
 
 #### (static) extractMetadata (data)
 
-data.noteに書いてあるデータを分解しメタデータ化。<br />
-仮引数にdata.metaプロパティを追加するので、渡したdata自体が書き換えられ、返り値はない。
+data.noteに書いてあるデータを分解しdata.metaに設定。<br />
+渡したdata自体が書き換えられるので、返り値はない。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `data` | Object | JSONデータ({note:''}が含まれている) |
+| `data` | Object | [RPG.MetaData](RPG.MetaData.md) |
 
 <dl>
 </dl>
