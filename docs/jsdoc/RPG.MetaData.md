@@ -3,7 +3,9 @@
 ## namespace [RPG](RPG.md)
 
  多くのデータに含まれる[メモ]のデータ。<br />
- [RPG.Actor](RPG.Actor.md), [RPG.Animation](RPG.Animation.md), [RPG.Animation.Timing](RPG.Animation.Timing.md), [RPG.Class](RPG.Class.md), [RPG.Class.Learning](RPG.Class.Learning.md), [RPG.Enemy](RPG.Enemy.md), [RPG.Event](RPG.Event.md), [RPG.BaseItem](RPG.BaseItem.md), [RPG.Map](RPG.Map.md), [RPG.State](RPG.State.md), [RPG.Tileset](RPG.Tileset.md) のスーパークラス。
+ [RPG.Actor](RPG.Actor.md), [RPG.Animation](RPG.Animation.md), [RPG.Animation.Timing](RPG.Animation.Timing.md), [RPG.Class](RPG.Class.md), [RPG.Class.Learning](RPG.Class.Learning.md), [RPG.Enemy](RPG.Enemy.md), [RPG.Event](RPG.Event.md), [RPG.BaseItem](RPG.BaseItem.md), [RPG.Map](RPG.Map.md), [RPG.State](RPG.State.md), [RPG.Tileset](RPG.Tileset.md) のスーパークラス。<br />
+ note から meta への変換は[DataManager.extractMetadata](DataManager.md#static-extractmetadata-data)メソッドで行われる。<br />
+ meta プロパティに記録されたデータは、主にプラグイン用のパラメータとして使う。
 
 ##### Properties:
 
