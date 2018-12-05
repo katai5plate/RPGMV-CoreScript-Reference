@@ -7,7 +7,6 @@
 [RPG.Tileset](RPG.Tileset.md)と[RPG.Map](RPG.Map.md)に従い、2Dベースのタイルマップを表示するためのコンテナクラス。 <br />
 描画モードが Canvas Mode の場合に使われる、描画モードはF2キーを押して確かめられる。なお、Canvas Mode は古いブラウザなどの一部環境でしか使われない。
 
-
 重ね合わせの階層( z )は以下のようになっている。
 
 | 階層 | 内容 |
@@ -62,6 +61,7 @@
 ### Methods
 
 #### (static) _compareChildOrder (a, b)
+
 [_sortChildren](#static-_sortchildren-)用ソート条件のコールバック関数。
 
 ##### Parameters:
@@ -71,15 +71,13 @@
 | `a` | Object |  |
 | `b` | Object |  |
 
-<dl>
-</dl>
-
 #### (static) _createLayers ()
- 低層×4 + 高層×4 レイヤー(z: 0 〜 7)を生成。
-<dl>
-</dl>
 
+
+ 低層×4 + 高層×4 レイヤー(z: 0 〜 7)を生成。
 #### (static) _drawAutotile (bitmap, tileId, dx, dy)
+
+
  渡されたBitmapにオートタイル画像を書き込む。
 
 ##### Parameters:
@@ -91,10 +89,9 @@
 | `dx` | [Number](Number.md) |  |
 | `dy` | [Number](Number.md) |  |
 
-<dl>
-</dl>
-
 #### (static) _drawNormalTile (bitmap, tileId, dx, dy)
+
+
  渡されたBitmapに(オートタイルでない通常の)タイル画像を書き込む。
 
 ##### Parameters:
@@ -105,9 +102,6 @@
 | `tileId` | [Number](Number.md) | タイルID |
 | `dx` | [Number](Number.md) |  |
 | `dy` | [Number](Number.md) |  |
-
-<dl>
-</dl>
 
 #### (static) _drawShadow (bitmap, shadowBits, dx, dy)
  渡されたBitmapに影ペンの影を描画。
@@ -121,10 +115,9 @@
 | `dx` | [Number](Number.md) |  始点からのx差分(ピクセル) |
 | `dy` | [Number](Number.md) |  始点からのy差分(ピクセル) |
 
-<dl>
-</dl>
-
 #### (static) _drawTableEdge (bitmap, tileId, dx, dy)
+
+
  渡されたBitmapにテーブル端の画像を書き込む。
 
 ##### Parameters:
@@ -136,10 +129,9 @@
 | `dx` | [Number](Number.md) |  |
 | `dy` | [Number](Number.md) |  |
 
-<dl>
-</dl>
-
 #### (static) _drawTile (bitmap, tileId, dx, dy)
+
+
  渡されたBitmapにタイル画像を書き込む。
 
 ##### Parameters:
@@ -151,9 +143,6 @@
 | `dx` | [Number](Number.md) |  |
 | `dy` | [Number](Number.md) |  |
 
-<dl>
-</dl>
-
 #### (static) _isHigherTile (tileId) → {Boolean}
  高層[☆]のタイルか。
 
@@ -163,17 +152,14 @@
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-<dl>
-</dl>
-
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### (static) _isOverpassPosition (mx, my) → {Boolean}
 
@@ -185,13 +171,13 @@
 | `my` | [Number](Number.md) |  |
 
 <dl>
-                <dt>To Do:</dt>
-                <dd>
-                    <ul>
-                        <li>この用語の意味が分かったら教えてください</li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>To Do:</dt>
+    <dd>
+        <ul>
+            <li>この用語の意味が分かったら教えてください</li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
@@ -211,9 +197,6 @@
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-<dl>
-</dl>
-
 ##### Returns:
 
 <dl>
@@ -224,6 +207,8 @@
 </dl>
 
 #### (static) _paintAllTiles (startX, startY)
+
+
  全タイルを描画。
 
 ##### Parameters:
@@ -233,10 +218,9 @@
 | `startX` | [Number](Number.md) |  |
 | `startY` | [Number](Number.md) |  |
 
-<dl>
-</dl>
-
 #### (static) _paintTiles (startX, startY, x, y)
+
+
  指定位置のタイルを描画。
 
 ##### Parameters:
@@ -248,9 +232,6 @@
 | `x` | [Number](Number.md) | x座標(タイル数) |
 | `y` | [Number](Number.md) | y座標(タイル数) |
 
-<dl>
-</dl>
-
 #### (static) _readLastTiles (i, x, y) → {[Array](Array.md).\<[Number](Number.md)>}
  指定位置の最新タイル配列を返す。
 
@@ -261,9 +242,6 @@
 | `i` | [Number](Number.md) |  レイヤー階層(0: 低層, 1: 高層) |
 | `x` | [Number](Number.md) | x座標(タイル数) |
 | `y` | [Number](Number.md) | y座標(タイル数) |
-
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -285,9 +263,6 @@
 | `y` | [Number](Number.md) | y位置(タイル数) |
 | `z` | [Number](Number.md) |  重なり(0 〜 3) |
 
-<dl>
-</dl>
-
 ##### Returns:
 
 <dl>
@@ -299,9 +274,6 @@
 
 #### (static) _sortChildren ()
  子オブジェクトのソート。
-<dl>
-</dl>
-
 #### (static) _updateLayerPositions (startX, startY)
  レイヤー位置をアップデート。
 
@@ -311,9 +283,6 @@
 | --- | --- | --- |
 | `startX` | [Number](Number.md) |  |
 | `startY` | [Number](Number.md) |  |
-
-<dl>
-</dl>
 
 #### (static) _writeLastTiles (i, x, y, tiles)
  指定位置に最新のタイル情報を書き込む。
@@ -327,9 +296,6 @@
 | `y` | [Number](Number.md) | y座標(タイル数) |
 | `tiles` | [Array](Array.md).\<[Number](Number.md)> | タイルIDの配列 |
 
-<dl>
-</dl>
-
 #### (static) getAutotileKind (tileId) → {[Number](Number.md)}
  オートタイルの種類を返す。
 
@@ -339,9 +305,6 @@
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-<dl>
-</dl>
-
 ##### Returns:
 | Set | Description |
 | --- | --- |
@@ -349,7 +312,7 @@
 | A2 | 16 〜 47 |
 | A3 | 48 〜 79 |
 | A4 | 80 〜 127 |
- 
+
 <dl>
     <dt> Type </dt>
     <dd>
@@ -365,9 +328,6 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
-
-<dl>
-</dl>
 
 ##### Returns:
 地面・床:0〜47、屋根・壁:0〜15、滝:0〜3 の値
@@ -388,9 +348,6 @@
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-<dl>
-</dl>
-
 ##### Returns:
 
 <dl>
@@ -408,9 +365,6 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
-
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -430,9 +384,6 @@
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-<dl>
-</dl>
-
 ##### Returns:
 
 <dl>
@@ -450,9 +401,6 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
-
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -473,9 +421,6 @@
 | `tileID1` | [Number](Number.md) | タイルID |
 | `tileID2` | [Number](Number.md) | タイルID |
 
-<dl>
-</dl>
-
 ##### Returns:
 
 <dl>
@@ -493,9 +438,6 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
-
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -515,9 +457,6 @@ A1(アニメーション)のタイルか。
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-<dl>
-</dl>
-
 ##### Returns:
 
 <dl>
@@ -535,9 +474,6 @@ A2(地面)のタイルか。
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
-
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -557,9 +493,6 @@ A3(建物)のタイルか。
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-<dl>
-</dl>
-
 ##### Returns:
 
 <dl>
@@ -577,9 +510,6 @@ A4(壁)のタイルか。
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
-
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -599,9 +529,6 @@ A5(通常)のタイルか。
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-<dl>
-</dl>
-
 ##### Returns:
 
 <dl>
@@ -619,9 +546,6 @@ A5(通常)のタイルか。
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
-
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -641,9 +565,6 @@ A5(通常)のタイルか。
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-<dl>
-</dl>
-
 ##### Returns:
 
 <dl>
@@ -661,9 +582,6 @@ A5(通常)のタイルか。
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
-
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -683,9 +601,6 @@ A5(通常)のタイルか。
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-<dl>
-</dl>
-
 ##### Returns:
 
 <dl>
@@ -703,9 +618,6 @@ A5(通常)のタイルか。
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
-
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -725,9 +637,6 @@ A5(通常)のタイルか。
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-<dl>
-</dl>
-
 ##### Returns:
 
 <dl>
@@ -745,9 +654,6 @@ A5(通常)のタイルか。
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
-
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -767,9 +673,6 @@ A5(通常)のタイルか。
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-<dl>
-</dl>
-
 ##### Returns:
 
 <dl>
@@ -780,21 +683,16 @@ A5(通常)のタイルか。
 </dl>
 
 #### (static) makeAutotileId (kind, shape) → {[Number](Number.md)}
-
-
- オートタイルのIDを生成。
+ オートタイルのIDを生成して返す。
 
 ##### Parameters:
+
 | Name | Type | Description |
 | --- | --- | --- |
 | `kind` | [Number](Number.md) |  種類 |
 | `shape` | [Number](Number.md) |  0 〜 47 のオートタイルの形を表す番号 |
 
-<dl>
-</dl>
-
 ##### Returns:
- タイルID
 <dl>
     <dt> Type </dt>
     <dd>
@@ -803,6 +701,8 @@ A5(通常)のタイルか。
 </dl>
 
 #### addChild (child) → {Object}
+
+
 [super] コンテナに子オブジェクトを追加。
 
 ##### Parameters:
@@ -811,10 +711,9 @@ A5(通常)のタイルか。
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
 
-<dl>
-</dl>
-
 ##### Returns:
+
+
  追加されたオブジェクト
 <dl>
     <dt> Type </dt>
@@ -833,10 +732,9 @@ A5(通常)のタイルか。
 | `child` | Object |  追加するオブジェクト |
 | `index` | [Number](Number.md) |  追加位置 |
 
-<dl>
-</dl>
-
 ##### Returns:
+
+
  追加されたオブジェクト
 <dl>
     <dt> Type </dt>
@@ -847,14 +745,8 @@ A5(通常)のタイルか。
 
 #### initialize ()
  オブジェクト生成時の初期化。
-<dl>
-</dl>
-
 #### isReady () → {Boolean}
  描画準備ができているか。
-<dl>
-</dl>
-
 ##### Returns:
 
 <dl>
@@ -866,14 +758,9 @@ A5(通常)のタイルか。
 
 #### refresh ()
  タイルマップを更新。
-<dl>
-</dl>
 
 #### refreshTileset ()
  タイルセットを更新。
-<dl>
-</dl>
-
 #### removeChild (child) → {Object}
 [super] コンテナから子オブジェクトを取り除く
 
@@ -882,9 +769,6 @@ A5(通常)のタイルか。
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  取り除くオブジェクト |
-
-<dl>
-</dl>
 
 ##### Returns:
  取り除かれたオブジェクト
@@ -903,9 +787,6 @@ A5(通常)のタイルか。
 | Name | Type | Description |
 | --- | --- | --- |
 | `index` | [Number](Number.md) |  取り除くオブジェクトの位置 |
-
-<dl>
-</dl>
 
 ##### Returns:
  取り除かれたオブジェクト
@@ -927,19 +808,10 @@ A5(通常)のタイルか。
 | `height` | [Number](Number.md) |  マップの高さ(タイル数) |
 | `data` | [Array](Array.md) |  一次元配列によるマップのデータ |
 
-<dl>
-</dl>
-
 #### update ()
  フレーム毎のタイルマップのアップデート。
-<dl>
-</dl>
-
 #### updateTransform ()
  描画・変形のアップデート。
-<dl>
-</dl>
-
 
  <br>
 
