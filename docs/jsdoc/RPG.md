@@ -47,7 +47,7 @@
     <dd></dd>
     <dt><a>MapInfo</a></dt>
     <dd></dd>
-    <dt><a href="MetaData.html">MetaData</a></dt>
+    <dt><a href="RPG.MetaData.html">MetaData</a></dt>
     <dd></dd>
     <dt><a>MoveCommand</a></dt>
     <dd></dd>

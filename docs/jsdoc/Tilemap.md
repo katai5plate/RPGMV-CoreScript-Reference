@@ -256,14 +256,13 @@
  指定位置のタイルIDを返す。<br />
 ただし z が 4 の場合、返り値は [_drawShadow](#static-_drawshadow-bitmap-shadowbits-dx-dy) の引数 shadowBits にあたる。
 
-
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `x` | [Number](Number.md) | x位置(タイル数) |
 | `y` | [Number](Number.md) | y位置(タイル数) |
-| `z` | [Number](Number.md) |  重なり:0 〜 3 , 影タイル: 4 |
+| `z` | [Number](Number.md) |  0:Aタイル, 1:A2タイル右, 2〜3:B〜Eタイル, 4:影ペン |
 
 ##### Returns:
 
