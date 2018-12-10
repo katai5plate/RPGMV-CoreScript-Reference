@@ -82,8 +82,6 @@
 </dl>
 
 #### animationId () → {[Number](Number.md)}
-
-
  アニメーションIDを返す。
 <dl>
     <dt>Inherited From:</dt>
