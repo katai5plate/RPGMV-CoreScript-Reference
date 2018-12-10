@@ -111,7 +111,7 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `bitmap` | [Bitmap](Bitmap.md) |  画像 |
-| `shadowBits` | [Number](Number.md) |  タイルを4分割したうちで描く位置を指定するビット |
+| `shadowBits` | [Number](Number.md) |  タイルを4分割したうちで描く位置を指定するビット（下位から左上/右上/左下/右下） |
 | `dx` | [Number](Number.md) |  始点からのx差分(ピクセル) |
 | `dy` | [Number](Number.md) |  始点からのy差分(ピクセル) |
 
@@ -262,7 +262,7 @@
 | --- | --- | --- |
 | `x` | [Number](Number.md) | x位置(タイル数) |
 | `y` | [Number](Number.md) | y位置(タイル数) |
-| `z` | [Number](Number.md) |  0:Aタイル, 1:A2タイル右, 2〜3:B〜Eタイル, 4:影ペン |
+| `z` | [Number](Number.md) |  0:Aタイル, 1:A2タイル右, 2〜3:B〜Eタイル, 4:影ペン, 5:リージョン |
 
 ##### Returns:
 
