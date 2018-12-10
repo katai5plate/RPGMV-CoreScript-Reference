@@ -4,28 +4,29 @@
 
 #### new Sprite_Character (character)
 
-The sprite for displaying a character.
+[イベント][アクター][フォロワー][乗り物]といった、キャラクタを表示するスプライト。<br />
+[Spriteset_Map.createCharacters](Spriteset_Map.md#createcharacters-)で生成される。<br />
+重なりの優先度 zプロパティは [Tilemap.\_comparechildorder](Tilemap.md#static-_comparechildorder-a-b) で使われる。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `character` | [Game_Character](Game_Character.md) |  |
+| `character` | [Game_Character](Game_Character.md) | キャラクタデータ |
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_character` | [Game_Character](Game_Character.md) | The Game_Character object assigned to the sprite. |
+| `_character` | [Game_Character](Game_Character.md) | キャラクタデータ |
 | `_balloonDuration` | [Number](Number.md) |  |
 | `_tilesetId` | [Number](Number.md) |  |
 | `_upperBody` | [Sprite](Sprite.md) |  |
 | `_lowerBody` | [Sprite](Sprite.md) |  |
 | `_bushDepth` | [Number](Number.md) |  |
-| `_balloonSprite` | [Sprite_Balloon](Sprite_Balloon.md) | The current balloon sprite assigned to the sprite. |
+| `_balloonSprite` | [Sprite_Balloon](Sprite_Balloon.md) | 付随するフキダシスプライト |
+| `z` | [Number](Number.md) | 重なりの優先度(通常 : 3) |
 
-<dl>
-</dl>
 
 ### Extends
 
@@ -34,8 +35,7 @@ The sprite for displaying a character.
 ### Methods
 
 #### _speedUpCustomBlendModes (renderer)
-
-checks if we need to speed up custom blendmodes
+checks if we need to speed up custom blendmodes
 
 ##### Parameters:
 
@@ -44,102 +44,92 @@ The sprite for displaying a character.
 | `renderer` |  |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite#_speedUpCustomBlendModes</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Sprite#_speedUpCustomBlendModes</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### characterBlockX () → {[Number](Number.md)}
 
-<dl>
-</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### characterBlockY () → {[Number](Number.md)}
 
-<dl>
-</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### characterPatternX () → {[Number](Number.md)}
 
-Returns the character x pattern.
-<dl>
-</dl>
+
+Returns the character x pattern.
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### characterPatternY () → {[Number](Number.md)}
 
-Returns the character y pattern.
-<dl>
-</dl>
+
+Returns the character y pattern.
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### createHalfBodySprites ()
 
-<dl>
-</dl>
 
 #### endBalloon ()
 
-Ends the balloon sprite, removing it from the Game_Character object sprite.
-<dl>
-</dl>
+
+Ends the balloon sprite, removing it from the Game_Character object sprite.
 
 #### hide ()
+スプライトを非表示。
 
-Hides the sprite.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#hide</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Sprite_Base#hide</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### initialize (character)
-
- オブジェクト生成時の初期化。
+ オブジェクト生成時の初期化。
 
 ##### Parameters:
 
@@ -148,122 +138,117 @@ The sprite for displaying a character.
 | `character` | [Game_Character](Game_Character.md) |  |
 
 <dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#initialize</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Overrides:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Sprite_Base#initialize</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### initMembers ()
 
-<dl>
-</dl>
 
 #### isAnimationPlaying () → {boolean}
 
-Returns true if an animation is currently playing.
+
+Returns true if an animation is currently playing.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#isAnimationPlaying</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Sprite_Base#isAnimationPlaying</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### isBalloonPlaying () → {boolean}
 
-Returns true if a balloon animation is playing on the character.
-<dl>
-</dl>
+
+Returns true if a balloon animation is playing on the character.
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### isImageChanged () → {Boolean}
 
-Returns true if the sprite character image has changed.
-<dl>
-</dl>
+
+Returns true if the sprite character image has changed.
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### isTile () → {boolean}
 
-Returns true if the Game_Character object tileId is greater than 0.
-<dl>
-</dl>
+
+Returns true if the Game_Character object tileId is greater than 0.
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### patternHeight () → {[Number](Number.md)}
 
-Returns the pattern height.
-<dl>
-</dl>
+
+Returns the pattern height.
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### patternWidth () → {[Number](Number.md)}
 
-Returns the pattern width.
-<dl>
-</dl>
+
+Returns the pattern width.
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Number.html">Number</a></span>
+    </dd>
+</dl>
 
 #### setCharacter (character)
 
-Sets the current Game_Character object attached to the sprite.
+
+Sets the current Game_Character object attached to the sprite.
 
 ##### Parameters:
 
@@ -271,48 +256,42 @@ The sprite for displaying a character.
 | --- | --- | --- |
 | `character` | [Game_Character](Game_Character.md) |  |
 
-<dl>
-</dl>
 
 #### setCharacterBitmap ()
 
-Sets the sprite character bitmap.
-<dl>
-</dl>
+
+Sets the sprite character bitmap.
 
 #### setTileBitmap ()
 
-<dl>
-</dl>
 
 #### setupAnimation ()
 
-<dl>
-</dl>
 
 #### setupBalloon ()
 
-Sets up the Game_Character object balloon sprite, and calls the startBalloon method.
-<dl>
-</dl>
+
+Sets up the Game_Character object balloon sprite, and calls the startBalloon method.
 
 #### show ()
 
-Shows the sprite.
+
+Shows the sprite.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#show</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Sprite_Base#show</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### startAnimation (animation, mirror, delay)
 
-Starts a new animation on the current sprite by assigning a new Sprite_Animation object to the sprite's parent.
+
+Starts a new animation on the current sprite by assigning a new Sprite_Animation object to the sprite's parent.
 
 ##### Parameters:
 
@@ -323,21 +302,20 @@ The sprite for displaying a character.
 | `delay` | [Number](Number.md) |  |
 
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#startAnimation</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Sprite_Base#startAnimation</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### startBalloon ()
 
-Starts the balloon sprite on the Game_Character object.
-<dl>
-</dl>
+
+Starts the balloon sprite on the Game_Character object.
 
 #### tilesetBitmap (tileId) → {[Bitmap](Bitmap.md)}
 
@@ -347,108 +325,97 @@ The sprite for displaying a character.
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Bitmap</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a>Bitmap</a></span>
+    </dd>
+</dl>
 
 #### update ()
 
 <dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#update</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Overrides:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Sprite_Base#update</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### updateAnimation ()
 
-<dl>
-</dl>
 
 #### updateAnimationSprites ()
 
-Updates the animation sprites, cloning them; if the sprite is playing, pushes the sprites into animation sprites, otherwise the sprite is removed.
+
+Updates the animation sprites, cloning them; if the sprite is playing, pushes the sprites into animation sprites, otherwise the sprite is removed.
 <dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#updateAnimationSprites</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Inherited From:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Sprite_Base#updateAnimationSprites</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
 
 #### updateBalloon ()
 
-Processes the balloon sprite, calls the endBaloon method if the balloon sprite is done playing.
-<dl>
-</dl>
+
+Processes the balloon sprite, calls the endBaloon method if the balloon sprite is done playing.
 
 #### updateBitmap ()
 
-Updates the bitmap of the sprite character.
-<dl>
-</dl>
+
+Updates the bitmap of the sprite character.
 
 #### updateCharacterFrame ()
 
-Updates the sprite character -- character frame.
-<dl>
-</dl>
+
+Updates the sprite character -- character frame.
 
 #### updateFrame ()
 
-Updates the sprite character frame.
-<dl>
-</dl>
+
+Updates the sprite character frame.
 
 #### updateHalfBodySprites ()
 
-<dl>
-</dl>
 
 #### updateOther ()
 
-<dl>
-</dl>
 
 #### updatePosition ()
 
-Updates the position of the sprite character.
-<dl>
-</dl>
+
+Updates the position of the sprite character.
 
 #### updateTileFrame ()
 
-Updates the sprite character tile frame.
-<dl>
-</dl>
+
+Updates the sprite character tile frame.
 
 #### updateVisibility ()
 
 <dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#updateVisibility</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+    <dt>Overrides:</dt>
+    <dd>
+        <ul>
+            <li>
+                <a>Sprite_Base#updateVisibility</a>
+            </li>
+        </ul>
+    </dd>
+</dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
