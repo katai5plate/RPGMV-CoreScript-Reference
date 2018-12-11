@@ -7,9 +7,9 @@
 [RPG.Tileset](RPG.Tileset.md)と[RPG.Map](RPG.Map.md)に従い、2Dベースのタイルマップを表示するためのコンテナクラス。 <br />
 描画モードが Canvas Mode の場合に使われる、描画モードはF2キーを押して確かめられる。なお、Canvas Mode は古いブラウザなどの一部環境でしか使われない。
 
-重ね合わせの階層( z )は以下のようになっている。
+[\_comparechildorder](#static-_comparechildorder-a-b) コールバック関数の中で使われる、重なりの優先度( z )は以下のようになっている。
 
-| 階層 | 内容 |
+| z | 内容 |
 | --- | --- |
 | 0 |  低層タイル |
 | 1 |  低層キャラクタ |
@@ -42,11 +42,11 @@
 | `WALL_AUTOTILE_TABLE` | [Array](Array.md).<[Array](Array.md).<[Array](Array.md).<[Number](Number.md)>>> | [static] 壁オートタイル組み立てテーブル |
 | `WATERFALL_AUTOTILE_TABLE` | [Array](Array.md).<[Array](Array.md).<[Array](Array.md).<[Number](Number.md)>>> | [static] 滝オートタイル組み立てテーブル |
 | `parent` | Object | [read-only][super] 親オブジェクト(タイルマップを保持している[Spriteset_Map](Spriteset_Map.md)) |
-| `children` | [Array](Array.md).<[Sprite](Sprite.md)> | [read-only][super] 子オブジェクト([Sprite](Sprite.md) 、[Sprite_Character](Sprite_Character.md) 、[Sprite_Destination](Sprite_Destination.md) を含む配列) |
+| `children` | [Array](Array.md).\<[Sprite](Sprite.md)> | [read-only][super] 子オブジェクト([Sprite](Sprite.md) 、[Sprite_Character](Sprite_Character.md) 、[Sprite_Destination](Sprite_Destination.md) を含む配列) |
 | `animationCount` | [Number](Number.md) |  オートタイルアニメーションのカウント |
 | `bitmaps` | [Array](Array.md).<[Bitmap](Bitmap.md)> |  タイルセットで使われている画像の配列 |
 | `origin` | [Point](Point.md) |  スクロールに対する基準点 |
-| `flags` | [Array](Array.md).<[Number](Number.md)> |  フラグ(詳細は[RPG.Tileset](RPG.Tileset.md)) |
+| `flags` | [Array](Array.md).<[Number](Number.md)> |  フラグ(See:[RPG.Tileset](RPG.Tileset.md)) |
 | `tileHeight` | [Number](Number.md) | タイル高さ(ピクセル) |
 | `tileWidth` | [Number](Number.md) | タイル幅(ピクセル) |
 | `height` | [Number](Number.md) | 画面高さ(ピクセル) |
@@ -62,14 +62,16 @@
 
 #### (static) _compareChildOrder (a, b)
 
-[_sortChildren](#static-_sortchildren-)用ソート条件のコールバック関数。
+[\_sortChildren](#static-_sortchildren-)用ソート条件のコールバック関数。<br />
+childrenプロパティに含まれる子オブジェクトが、a, b に渡される。<br />
+順番は渡されたオブジェクトの z, y, spriteIdプロパティによって評価される。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `a` | Object |  |
-| `b` | Object |  |
+| `a` | Object | z, y, spriteIdプロパティを持つオブジェクト |
+| `b` | Object | z, y, spriteIdプロパティを持つオブジェクト |
 
 #### (static) _createLayers ()
 
