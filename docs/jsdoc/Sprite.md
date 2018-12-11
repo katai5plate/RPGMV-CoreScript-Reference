@@ -28,6 +28,7 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | `visible` | Boolean |  表示中か |
 | `x` | [Number](Number.md) | x座標 |
 | `y` | [Number](Number.md) | y座標 |
+| `z` | [Number](Number.md) | 重なりの優先度(See :  [Tilemap.\_comparechildorder](Tilemap.md#static-_comparechildorder-a-b)) |
 | `point` | [Point](Point.md) |  基点 ( (0, 0) 〜 (1, 1) ) |
 | `scale` | [Point](Point.md) |  拡大量 |
 | `rotation` | [Number](Number.md) |  回転角(ラジアン) |
