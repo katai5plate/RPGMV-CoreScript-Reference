@@ -5,6 +5,7 @@
 #### new Tilemap ()
 
 [RPG.Tileset](RPG.Tileset.md)と[RPG.Map](RPG.Map.md)に従い、2Dベースのタイルマップを表示するためのコンテナクラス。 <br />
+静的メソッドを多く持つユーティリティクラスでもある。<br />
 描画モードが Canvas Mode の場合に使われる、描画モードはF2キーを押して確かめられる。なお、Canvas Mode は古いブラウザなどの一部環境でしか使われない。
 
 [\_comparechildorder](#static-_comparechildorder-a-b) コールバック関数の中で使われる、重なりの優先度( z )は以下のようになっている。
