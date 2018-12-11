@@ -19,7 +19,7 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | --- | --- | --- |
 | `_counter` | [Number](Number.md) | [static] スプライトの(生成順)番号 |
 | `voidFilter` | [PIXI.filters.VoidFilter](http://pixijs.download/dev/docs/PIXI.filters.VoidFilter.html) | [static] |
-| `spriteId` | [Number](Number.md) |  |
+| `spriteId` | [Number](Number.md) | スプライトID |
 | `opaque` | Boolean |  不[透明状態]か |
 | `bitmap` | [Bitmap](Bitmap.md) |  スプライトに設定する画像 |
 | `width` | [Number](Number.md) |  拡大縮小前の画像の幅 |
