@@ -6,23 +6,7 @@
 
 [RPG.Tileset](RPG.Tileset.md)と[RPG.Map](RPG.Map.md)に従い、2Dベースのタイルマップを表示するためのコンテナクラス。 <br />
 静的メソッドを多く持つユーティリティクラスでもある。<br />
-描画モードが Canvas Mode の場合に使われる、描画モードはF2キーを押して確かめられる。なお、Canvas Mode は古いブラウザなどの一部環境でしか使われない。
-
-[\_comparechildorder](#static-_comparechildorder-a-b) コールバック関数の中で使われる、重なりの優先度( z )は以下のようになっている。
-
-| z | 内容 |
-| --- | --- |
-| 0 |  低層タイル |
-| 1 |  低層キャラクタ |
-| 2 |  通常タイル(未使用) |
-| 3 |  通常キャラクタ |
-| 4 |  高層タイル |
-| 5 |  高層キャラクタ |
-| 6 |  飛行船の影 |
-| 7 |  吹き出し |
-| 8 |  アニメーション |
-| 9 |  タッチ位置表示 |
-
+描画モードが Canvas Mode の場合に使われる、描画モードはF2キーを押して確かめられる。なお、Canvas Mode は古いブラウザなどの一部環境でしか使われない。<br />
  [ShaderTilemap](ShaderTilemap.md) のスーパークラス。
 
 ##### Properties:
@@ -66,6 +50,20 @@
 [\_sortChildren](#static-_sortchildren-)用ソート条件のコールバック関数。<br />
 childrenプロパティに含まれる子オブジェクトが、a, b に渡される。<br />
 順番は渡されたオブジェクトの z, y, spriteIdプロパティによって評価される。
+
+| z | Object | 内容 |
+| --- | --- | --- |
+| 0 | [Sprite](Sprite.md) | 低層タイル |
+| 1 | [Sprite_Character](Sprite_Character.md) | 低層キャラクタ |
+| 2 | | 通常タイル(未使用) |
+| 3 | [Sprite_Character](Sprite_Character.md) | 通常キャラクタ |
+| 4 | [Sprite](Sprite.md) | 高層タイル |
+| 5 | [Sprite_Character](Sprite_Character.md) | 高層キャラクタ |
+| 6 | [Sprite](Sprite.md) | 飛行船の影 |
+| 7 | [Sprite_Balloon](Sprite_Balloon.md) | 吹き出し |
+| 8 | [Sprite_Animation](Sprite_Animation.md) | アニメーション |
+| 9 | [Sprite_Destination](Sprite_Destination.md) | タッチ位置表示 |
+
 
 ##### Parameters:
 
