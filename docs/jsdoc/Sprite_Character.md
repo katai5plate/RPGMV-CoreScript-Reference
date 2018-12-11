@@ -5,8 +5,7 @@
 #### new Sprite_Character (character)
 
 [イベント][アクター][フォロワー][乗り物]といった、キャラクタを表示するスプライト。<br />
-[Spriteset_Map.createCharacters](Spriteset_Map.md#createcharacters-)で生成される。<br />
-重なりの優先度 zプロパティは [Tilemap.\_comparechildorder](Tilemap.md#static-_comparechildorder-a-b) で使われる。
+[Spriteset_Map.createCharacters](Spriteset_Map.md#createcharacters-)で生成される。
 
 ##### Parameters:
 
@@ -25,7 +24,6 @@
 | `_lowerBody` | [Sprite](Sprite.md) |  |
 | `_bushDepth` | [Number](Number.md) |  |
 | `_balloonSprite` | [Sprite_Balloon](Sprite_Balloon.md) | 付随するフキダシスプライト |
-| `z` | [Number](Number.md) | 重なりの優先度(通常 : 3) |
 
 
 ### Extends
