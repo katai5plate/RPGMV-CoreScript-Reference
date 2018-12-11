@@ -808,7 +808,7 @@ A5(通常)のタイルか。
 | --- | --- | --- |
 | `width` | [Number](Number.md) |  マップの幅(タイル数) |
 | `height` | [Number](Number.md) |  マップの高さ(タイル数) |
-| `data` | [Array](Array.md) |  一次元配列によるマップのデータ |
+| `data` | [Array](Array.md) | 一次元配列によるマップのデータ(See: [Game_Map.data](Game_Map.md#data---arraynumber)) |
 
 #### update ()
  フレーム毎のタイルマップのアップデート。
