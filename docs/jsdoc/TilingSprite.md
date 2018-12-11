@@ -32,7 +32,7 @@ The sprite object for a tiling image.
 
 ### Extends
 
-* [PIXI.extras.PictureTilingSprite](https://pixijs.download/v4.7.2/docs/PIXI.extras.TilingSpriteRenderer.html)
+* PIXI.extras.PictureTilingSprite
 
 ### Methods
 
