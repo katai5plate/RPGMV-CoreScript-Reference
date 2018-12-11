@@ -29,16 +29,15 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | `x` | [Number](Number.md) | x座標 |
 | `y` | [Number](Number.md) | y座標 |
 | `z` | [Number](Number.md) | 重なりの優先度(See :  [Tilemap.\_comparechildorder](Tilemap.md#static-_comparechildorder-a-b)) |
-| `point` | [Point](Point.md) |  基点 ( (0, 0) 〜 (1, 1) ) |
-| `scale` | [Point](Point.md) |  拡大量 |
+| `anchor` | [Point](Point.md) | 座標の基点 (ex: 左上{0, 0} / 右下{1, 1} ) |
+| `point` | [Point](Point.md) | 位置(x, y を同時に指定) |
+| `scale` | [Point](Point.md) | 拡大量(ex: 等倍 {1, 1} / 横2倍 {2, 1}) |
 | `rotation` | [Number](Number.md) |  回転角(ラジアン) |
 | `blendMode` | [Number](Number.md) | [合成方法](0: 通常, 1: 加算, 2: 乗算, 3: スクリーン) |
 | `filters` | [Array](Array.md).<[PIXI.Filter](http://pixijs.download/dev/docs/PIXI.Filter.html)> |  フィルタの配列 |
 | `children` | [Array](Array.md).<[PIXI.DisplayObject](http://pixijs.download/dev/docs/PIXI.DisplayObject.html)> | [read-only] 子表示オブジェクトの配列 |
 | `parent` | [PIXI.Container](http://pixijs.download/dev/docs/PIXI.Container.html) | [read-only] 親コンテナオブジェクト |
 
-<dl>
-</dl>
 
 ### Extends
 
