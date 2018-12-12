@@ -20,21 +20,21 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | `_counter` | [Number](Number.md) | [static] スプライトの(生成順)番号 |
 | `voidFilter` | [PIXI.filters.VoidFilter](http://pixijs.download/dev/docs/PIXI.filters.VoidFilter.html) | [static] |
 | `spriteId` | [Number](Number.md) | スプライトID |
-| `opaque` | Boolean |  不[透明状態]か |
-| `bitmap` | [Bitmap](Bitmap.md) |  スプライトに設定する画像 |
-| `width` | [Number](Number.md) |  拡大縮小前の画像の幅 |
-| `height` | [Number](Number.md) |  拡大縮小前の画像の高さ |
-| `opacity` | [Number](Number.md) |  不透明度 (0 〜 255) |
+| `opaque` | Boolean | 不[透明状態]か |
+| `bitmap` | [Bitmap](Bitmap.md) | スプライトに設定する画像 |
+| `width` | [Number](Number.md) | 拡大縮小前の画像の幅(ピクセル) |
+| `height` | [Number](Number.md) | 拡大縮小前の画像の高さ(ピクセル) |
+| `opacity` | [Number](Number.md) | 不透明度 (0 〜 255) |
 | `visible` | Boolean |  表示中か |
-| `x` | [Number](Number.md) | x座標 |
-| `y` | [Number](Number.md) | y座標 |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
 | `z` | [Number](Number.md) | 重なりの優先度(See :  [Tilemap.\_comparechildorder](Tilemap.md#static-_comparechildorder-a-b)) |
 | `anchor` | [Point](Point.md) | 座標の基点 (ex: 左上{0, 0} / 右下{1, 1} ) |
 | `point` | [Point](Point.md) | 位置(x, y を同時に指定) |
 | `scale` | [Point](Point.md) | 拡大量(ex: 等倍 {1, 1} / 横2倍 {2, 1}) |
-| `rotation` | [Number](Number.md) |  回転角(ラジアン) |
+| `rotation` | [Number](Number.md) | 回転角(ラジアン) |
 | `blendMode` | [Number](Number.md) | [合成方法](0: 通常, 1: 加算, 2: 乗算, 3: スクリーン) |
-| `filters` | [Array](Array.md).<[PIXI.Filter](http://pixijs.download/dev/docs/PIXI.Filter.html)> |  フィルタの配列 |
+| `filters` | [Array](Array.md).<[PIXI.Filter](http://pixijs.download/dev/docs/PIXI.Filter.html)> | フィルタの配列 |
 | `children` | [Array](Array.md).<[PIXI.DisplayObject](http://pixijs.download/dev/docs/PIXI.DisplayObject.html)> | [read-only] 子表示オブジェクトの配列 |
 | `parent` | [PIXI.Container](http://pixijs.download/dev/docs/PIXI.Container.html) | [read-only] 親コンテナオブジェクト |
 
@@ -54,8 +54,6 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | `w` | [Number](Number.md) |  |
 | `h` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### (static) _executeTint (x, y, w, h)
 
@@ -68,8 +66,6 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | `w` | [Number](Number.md) |  |
 | `h` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### (static) _isInBitmapRect (x, y, w, h) → {Boolean}
 
@@ -82,8 +78,6 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | `w` | [Number](Number.md) |  |
 | `h` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -96,8 +90,6 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 
 #### (static) _needsTint () → {Boolean}
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -110,13 +102,9 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 
 #### (static) _onBitmapLoad ()
 
-<dl>
-</dl>
 
 #### (static) _refresh ()
 
-<dl>
-</dl>
 
 #### (static) _renderCanvas (renderer)
 
@@ -126,8 +114,6 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | --- | --- | --- |
 | `renderer` | Object |  |
 
-<dl>
-</dl>
 
 #### (static) _renderWebGL (renderer)
 
@@ -137,15 +123,11 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | --- | --- | --- |
 | `renderer` | Object |  |
 
-<dl>
-</dl>
 
 #### (static) getBlendColor () → {[Array](Array.md)}
 
 
  合成される色(r, g, b)と不透明度(a)を返す。
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -162,8 +144,6 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 
 
  補正される色調(r, g, b)とグレー(gray)を返す。
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -187,8 +167,6 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | --- | --- | --- |
 | `bitmap` | [Bitmap](Bitmap.md) |  |
 
-<dl>
-</dl>
 
 #### (static) move (x, y)
 
@@ -202,8 +180,6 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | `x` | [Number](Number.md) | x座標 |
 | `y` | [Number](Number.md) | y座標 |
 
-<dl>
-</dl>
 
 #### (static) setBlendColor (color)
 
@@ -216,8 +192,6 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | --- | --- | --- |
 | `color` | [Array](Array.md) | [r, g, b, a] の配列 |
 
-<dl>
-</dl>
 
 #### (static) setColorTone (tone)
 
@@ -230,32 +204,22 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | --- | --- | --- |
 | `tone` | [Array](Array.md) | [r, g, b, gray] の配列 |
 
-<dl>
-</dl>
 
 #### (static) setFrame (x, y, width, height)
-
-
- 表示される矩形を設定。
+ 保持している画像(bitmap)の表示領域を指定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  枠のx座標 |
-| `y` | [Number](Number.md) |  枠のy座標 |
-| `width` | [Number](Number.md) |  枠の幅 |
-| `height` | [Number](Number.md) |  枠の高さ |
+| `x` | [Number](Number.md) |  矩形枠のx座標(ピクセル) |
+| `y` | [Number](Number.md) |  矩形枠のy座標(ピクセル) |
+| `width` | [Number](Number.md) |  矩形枠の幅(ピクセル) |
+| `height` | [Number](Number.md) |  矩形枠の高さ(ピクセル) |
 
-<dl>
-</dl>
 
 #### (static) update ()
-
-
  フレーム毎のアップデート。
-<dl>
-</dl>
 
 #### _speedUpCustomBlendModes (renderer)
 
@@ -268,8 +232,6 @@ checks if we need to speed up custom blendmodes
 | --- | --- | --- |
 | `renderer` |  |  |
 
-<dl>
-</dl>
 
 
  <br>
