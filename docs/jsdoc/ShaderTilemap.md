@@ -19,6 +19,7 @@
 #### _drawAutotile (layers, tileId, dx, dy)
 
 ##### Parameters:
+
 | Name | Type | Description |
 | --- | --- | --- |
 | `layers` | [Array](Array.md) |  |
@@ -29,6 +30,7 @@
 ####  _drawNormalTile (layers, tileId, dx, dy)
 
 ##### Parameters:
+
 | Name | Type | Description |
 | --- | --- | --- |
 | `layers` | [Array](Array.md) |  |
@@ -39,6 +41,7 @@
 #### _drawShadow (shadowBits, dx, dy)
 
 ##### Parameters:
+
 | Name | Type | Description |
 | --- | --- | --- |
 | `shadowBits` | [Number](Number.md) |  |
@@ -48,6 +51,7 @@
 #### _drawTableEdge (layers, tileId, dx, dy)
 
 ##### Parameters:
+
 | Name | Type | Description |
 | --- | --- | --- |
 | `layers` | [Array](Array.md) |  |
@@ -58,6 +62,7 @@
 #### _drawTile (layers, tileId, dx, dy)
 
 ##### Parameters:
+
 | Name | Type | Description |
 | --- | --- | --- |
 | `layers` | [Array](Array.md) |  |
@@ -69,6 +74,7 @@
 Uploads animation state in renderer
 
 ##### Parameters:
+
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -86,6 +92,7 @@ pixi renderer
 #### _paintAllTiles (startX, startY)
 
 ##### Parameters:
+
 | Name | Type | Description |
 | --- | --- | --- |
 | `startX` | [Number](Number.md) |  |
@@ -95,6 +102,7 @@ pixi renderer
  指定位置のタイルを描画。
 
 ##### Parameters:
+
 | Name | Type | Description |
 | --- | --- | --- |
 | `startX` | [Number](Number.md) |  始点のx座標 |
@@ -105,6 +113,7 @@ pixi renderer
 #### _updateLayerPositions (startX, startY)
 
 ##### Parameters:
+
 | Name | Type | Description |
 | --- | --- | --- |
 | `startX` | [Number](Number.md) |  |
@@ -114,6 +123,7 @@ pixi renderer
 canvas によって描画する。
 
 ##### Parameters:
+
 | Name | Type | Description |
 | --- | --- | --- |
 | `renderer` | PIXI.CanvasRenderer | pixi renderer |
@@ -122,6 +132,7 @@ canvas によって描画する。
 WebGL によって描画する。
 
 ##### Parameters:
+
 | Name | Type | Description |
 | --- | --- | --- |
 | `renderer` | PIXI.WebGLRenderer | pixi renderer |
@@ -133,6 +144,7 @@ WebGL によって描画する。
 [super] コンテナに子オブジェクトを追加。
 
 ##### Parameters:
+
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
@@ -161,6 +173,7 @@ WebGL によって描画する。
 [super] コンテナの指定位置に子オブジェクトを追加。
 
 ##### Parameters:
+
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
@@ -250,6 +263,7 @@ WebGL によって描画する。
 [super] コンテナから子オブジェクトを取り除く
 
 ##### Parameters:
+
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  取り除くオブジェクト |
@@ -278,6 +292,7 @@ WebGL によって描画する。
 [super] コンテナの指定位置から子オブジェクトを取り除く
 
 ##### Parameters:
+
 | Name | Type | Description |
 | --- | --- | --- |
 | `index` | [Number](Number.md) |  取り除くオブジェクトの位置 |
@@ -306,6 +321,7 @@ WebGL によって描画する。
  タイルマップのデータを設定。
 
 ##### Parameters:
+
 | Name | Type | Description |
 | --- | --- | --- |
 | `width` | [Number](Number.md) |  マップの幅(タイル数) |
