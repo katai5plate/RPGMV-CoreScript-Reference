@@ -29,7 +29,7 @@
 | `parent` | Object | [read-only][super] 親オブジェクト(タイルマップを保持している[Spriteset_Map](Spriteset_Map.md)) |
 | `children` | [Array](Array.md).\<[Sprite](Sprite.md)> | [read-only][super] 子オブジェクト([Sprite](Sprite.md) 、[Sprite_Character](Sprite_Character.md) 、[Sprite_Destination](Sprite_Destination.md) を含む配列) |
 | `animationCount` | [Number](Number.md) |  オートタイルアニメーションのカウント |
-| `bitmaps` | [Array](Array.md).<[Bitmap](Bitmap.md)> |  タイルセットで使われている画像の配列 |
+| `bitmaps` | [Array](Array.md).<[Bitmap](Bitmap.md)> | タイルセット画像の配列(0〜9)<br />(0:A1, 1:A2, 2:A3, 3:A4, 4:A5, 5:B, 6:C, 7:D, 8:E) |
 | `origin` | [Point](Point.md) |  スクロールに対する基準点 |
 | `flags` | [Array](Array.md).<[Number](Number.md)> |  フラグ(See:[RPG.Tileset](RPG.Tileset.md)) |
 | `tileHeight` | [Number](Number.md) | タイル高さ(default:48 ピクセル) |
@@ -46,7 +46,6 @@
 ### Methods
 
 #### (static) _compareChildOrder (a, b)
-
 [\_sortChildren](#static-_sortchildren-)用ソート条件のコールバック関数。<br />
 childrenプロパティに含まれる子オブジェクトが、a, b に渡される。<br />
 順番は渡されたオブジェクトの z, y, spriteIdプロパティによって評価される。
@@ -66,91 +65,78 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `a` | Object | z, y, spriteIdプロパティを持つオブジェクト |
 | `b` | Object | z, y, spriteIdプロパティを持つオブジェクト |
 
 #### (static) _createLayers ()
-
-
  低層×4 + 高層×4 レイヤー(z: 0 〜 7)を生成。
+
 #### (static) _drawAutotile (bitmap, tileId, dx, dy)
-
-
  渡されたBitmapにオートタイル画像を書き込む。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
-| `bitmap` | [Bitmap](Bitmap.md) |  |
+| `bitmap` | [Bitmap](Bitmap.md) | 書き込み対象画像 |
 | `tileId` | [Number](Number.md) | タイルID |
-| `dx` | [Number](Number.md) |  |
-| `dy` | [Number](Number.md) |  |
+| `dx` | [Number](Number.md) | 書き込む x位置(ピクセル) |
+| `dy` | [Number](Number.md) | 書き込む y位置(ピクセル) |
 
 #### (static) _drawNormalTile (bitmap, tileId, dx, dy)
-
-
  渡されたBitmapに(オートタイルでない通常の)タイル画像を書き込む。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
-| `bitmap` | [Bitmap](Bitmap.md) |  |
+| `bitmap` | [Bitmap](Bitmap.md) | 書き込み対象画像 |
 | `tileId` | [Number](Number.md) | タイルID |
-| `dx` | [Number](Number.md) |  |
-| `dy` | [Number](Number.md) |  |
+| `dx` | [Number](Number.md) | 書き込む x位置(ピクセル) |
+| `dy` | [Number](Number.md) | 書き込む y位置(ピクセル) |
 
 #### (static) _drawShadow (bitmap, shadowBits, dx, dy)
  渡されたBitmapに影ペンの影を描画。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
-| `bitmap` | [Bitmap](Bitmap.md) |  画像 |
+| `bitmap` | [Bitmap](Bitmap.md) | 書き込み対象画像 |
 | `shadowBits` | [Number](Number.md) |  タイルを4分割したうちで描く位置を指定するビット（下位から左上/右上/左下/右下） |
-| `dx` | [Number](Number.md) |  始点からのx差分(ピクセル) |
-| `dy` | [Number](Number.md) |  始点からのy差分(ピクセル) |
+| `dx` | [Number](Number.md) | 書き込む x位置(ピクセル) |
+| `dy` | [Number](Number.md) | 書き込む y位置(ピクセル) |
 
 #### (static) _drawTableEdge (bitmap, tileId, dx, dy)
  渡されたBitmapにテーブル端の画像を書き込む。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
-| `bitmap` | [Bitmap](Bitmap.md) |  |
+| `bitmap` | [Bitmap](Bitmap.md) | 書き込み対象画像 |
 | `tileId` | [Number](Number.md) | タイルID |
-| `dx` | [Number](Number.md) |  |
-| `dy` | [Number](Number.md) |  |
+| `dx` | [Number](Number.md) | 書き込む x位置(ピクセル) |
+| `dy` | [Number](Number.md) | 書き込む y位置(ピクセル) |
 
 #### (static) _drawTile (bitmap, tileId, dx, dy)
  渡されたBitmapにタイル画像を書き込む。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
-| `bitmap` | [Bitmap](Bitmap.md) |  |
+| `bitmap` | [Bitmap](Bitmap.md) | 書き込み対象画像 |
 | `tileId` | [Number](Number.md) | タイルID |
-| `dx` | [Number](Number.md) |  |
-| `dy` | [Number](Number.md) |  |
+| `dx` | [Number](Number.md) | 書き込む x位置(ピクセル) |
+| `dy` | [Number](Number.md) | 書き込む y位置(ピクセル) |
 
 #### (static) _isHigherTile (tileId) → {Boolean}
  高層[☆]のタイルか。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
 ##### Returns:
-
 <dl>
     <dt> Type </dt>
     <dd>
@@ -159,25 +145,17 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 </dl>
 
 #### (static) _isOverpassPosition (mx, my) → {Boolean}
+立体交差か。
+標準では何の動作もしない空メソッドでプラグインによって機能を追加する。OverpassTile.js プラグインで使われている。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
-| `mx` | [Number](Number.md) |  |
-| `my` | [Number](Number.md) |  |
+| `mx` | [Number](Number.md) | マップ x座標(タイル数) |
+| `my` | [Number](Number.md) | マップ y座標(タイル数) |
 
-<dl>
-    <dt>To Do:</dt>
-    <dd>
-        <ul>
-            <li>この用語の意味が分かったら教えてください</li>
-        </ul>
-    </dd>
-</dl>
 
 ##### Returns:
-
 <dl>
     <dt> Type </dt>
     <dd>
@@ -195,7 +173,6 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 | `tileId` | [Number](Number.md) | タイルID |
 
 ##### Returns:
-
 <dl>
     <dt> Type </dt>
     <dd>
@@ -207,7 +184,6 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
  全タイルを描画。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `startX` | [Number](Number.md) |  |
@@ -217,7 +193,6 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
  指定位置のタイルを描画。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `startX` | [Number](Number.md) |  |
@@ -229,7 +204,6 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
  指定位置の最新タイル配列を返す。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `i` | [Number](Number.md) |  レイヤー階層(0: 低層, 1: 高層) |
@@ -237,7 +211,6 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 | `y` | [Number](Number.md) | y座標(タイル数) |
 
 ##### Returns:
-
 <dl>
     <dt> Type </dt>
     <dd>
@@ -250,7 +223,6 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 ただし z が 4 の場合、返り値は [_drawShadow](#static-_drawshadow-bitmap-shadowbits-dx-dy) の引数 shadowBits にあたる。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `x` | [Number](Number.md) | x位置(タイル数) |
@@ -258,7 +230,6 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 | `z` | [Number](Number.md) |  0:Aタイル, 1:A2タイル右, 2〜3:B〜Eタイル, 4:影ペン, 5:リージョン |
 
 ##### Returns:
-
 <dl>
     <dt> Type </dt>
     <dd>
@@ -283,7 +254,6 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
  指定位置に最新のタイル情報を書き込む。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `i` | [Number](Number.md) |  レイヤー階層(0: 低層, 1: 高層) |
@@ -295,7 +265,6 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
  オートタイルの種類を返す。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
@@ -319,7 +288,6 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
  オートタイルの形を返す。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
@@ -338,13 +306,11 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
  オートタイルか。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
 ##### Returns:
-
 <dl>
     <dt> Type </dt>
     <dd>
@@ -356,13 +322,11 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
  地表面のオートタイルか。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
 ##### Returns:
-
 <dl>
     <dt> Type </dt>
     <dd>
@@ -374,13 +338,11 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
  地表のタイルか。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
 ##### Returns:
-
 <dl>
     <dt> Type </dt>
     <dd>
@@ -392,13 +354,11 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
  屋根タイルか。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
 ##### Returns:
-
 <dl>
     <dt> Type </dt>
     <dd>
@@ -410,14 +370,12 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
  指定したタイルが同じ種類か。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileID1` | [Number](Number.md) | タイルID |
 | `tileID2` | [Number](Number.md) | タイルID |
 
 ##### Returns:
-
 <dl>
     <dt> Type </dt>
     <dd>
@@ -429,13 +387,11 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
  設置した時に影が自動でつけられるタイルか。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
 ##### Returns:
-
 <dl>
     <dt> Type </dt>
     <dd>
@@ -447,13 +403,11 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 A1(アニメーション)のタイルか。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
 ##### Returns:
-
 <dl>
     <dt> Type </dt>
     <dd>
@@ -465,13 +419,11 @@ A1(アニメーション)のタイルか。
 A2(地面)のタイルか。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
 ##### Returns:
-
 <dl>
     <dt> Type </dt>
     <dd>
@@ -483,13 +435,11 @@ A2(地面)のタイルか。
 A3(建物)のタイルか。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
 ##### Returns:
-
 <dl>
     <dt> Type </dt>
     <dd>
@@ -501,13 +451,11 @@ A3(建物)のタイルか。
 A4(壁)のタイルか。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
 ##### Returns:
-
 <dl>
     <dt> Type </dt>
     <dd>
@@ -519,13 +467,11 @@ A4(壁)のタイルか。
 A5(通常)のタイルか。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
 ##### Returns:
-
 <dl>
     <dt> Type </dt>
     <dd>
@@ -537,13 +483,11 @@ A5(通常)のタイルか。
  表示されるタイル番号か。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
 ##### Returns:
-
 <dl>
     <dt> Type </dt>
     <dd>
@@ -555,13 +499,11 @@ A5(通常)のタイルか。
  壁面タイルか。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
 ##### Returns:
-
 <dl>
     <dt> Type </dt>
     <dd>
@@ -573,13 +515,11 @@ A5(通常)のタイルか。
  壁タイルか。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
 ##### Returns:
-
 <dl>
     <dt> Type </dt>
     <dd>
@@ -591,13 +531,11 @@ A5(通常)のタイルか。
  壁上面タイルか。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
 ##### Returns:
-
 <dl>
     <dt> Type </dt>
     <dd>
@@ -609,13 +547,11 @@ A5(通常)のタイルか。
  壁タイプのオートタイルか。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
 ##### Returns:
-
 <dl>
     <dt> Type </dt>
     <dd>
@@ -627,13 +563,11 @@ A5(通常)のタイルか。
  滝のタイルか。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
 ##### Returns:
-
 <dl>
     <dt> Type </dt>
     <dd>
@@ -645,13 +579,11 @@ A5(通常)のタイルか。
  滝タイプのオートタイルか。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
 ##### Returns:
-
 <dl>
     <dt> Type </dt>
     <dd>
@@ -663,13 +595,11 @@ A5(通常)のタイルか。
  水面のタイルか。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
 ##### Returns:
-
 <dl>
     <dt> Type </dt>
     <dd>
@@ -681,7 +611,6 @@ A5(通常)のタイルか。
  オートタイルのIDを生成して返す。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `kind` | [Number](Number.md) |  種類 |
@@ -699,7 +628,6 @@ A5(通常)のタイルか。
 [super] コンテナに子オブジェクトを追加。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
@@ -717,7 +645,6 @@ A5(通常)のタイルか。
 [super] コンテナの指定位置に子オブジェクトを追加。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
@@ -737,8 +664,8 @@ A5(通常)のタイルか。
 
 #### isReady () → {Boolean}
  描画準備ができているか。
+ 
 ##### Returns:
-
 <dl>
     <dt> Type </dt>
     <dd>
@@ -756,7 +683,6 @@ A5(通常)のタイルか。
 [super] コンテナから子オブジェクトを取り除く
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `child` | Object |  取り除くオブジェクト |
@@ -774,7 +700,6 @@ A5(通常)のタイルか。
 [super] コンテナの指定位置から子オブジェクトを取り除く
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `index` | [Number](Number.md) |  取り除くオブジェクトの位置 |
@@ -792,7 +717,6 @@ A5(通常)のタイルか。
  タイルマップのデータを設定。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
 | `width` | [Number](Number.md) |  マップの幅(タイル数) |
