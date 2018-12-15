@@ -45,7 +45,7 @@
 
 ### Methods
 
-#### (static) _compareChildOrder (a, b)
+#### _compareChildOrder (a, b)
 [\_sortChildren](#static-_sortchildren-)用ソート条件のコールバック関数。<br />
 childrenプロパティに含まれる子オブジェクトが、a, b に渡される。<br />
 順番は渡されたオブジェクトの z, y, spriteIdプロパティによって評価される。
@@ -70,10 +70,10 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 | `a` | Object | z, y, spriteIdプロパティを持つオブジェクト |
 | `b` | Object | z, y, spriteIdプロパティを持つオブジェクト |
 
-#### (static) _createLayers ()
+#### _createLayers ()
  低層×4 + 高層×4 レイヤー(z: 0 〜 7)を生成。
 
-#### (static) _drawAutotile (bitmap, tileId, dx, dy)
+#### _drawAutotile (bitmap, tileId, dx, dy)
  渡されたBitmapにオートタイル画像を書き込む。
 
 ##### Parameters:
@@ -81,10 +81,10 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 | --- | --- | --- |
 | `bitmap` | [Bitmap](Bitmap.md) | 書き込み対象画像 |
 | `tileId` | [Number](Number.md) | タイルID |
-| `dx` | [Number](Number.md) | 書き込む x位置(ピクセル) |
-| `dy` | [Number](Number.md) | 書き込む y位置(ピクセル) |
+| `dx` | [Number](Number.md) | 書き込む x座標(ピクセル) |
+| `dy` | [Number](Number.md) | 書き込む y座標(ピクセル) |
 
-#### (static) _drawNormalTile (bitmap, tileId, dx, dy)
+#### _drawNormalTile (bitmap, tileId, dx, dy)
  渡されたBitmapに(オートタイルでない通常の)タイル画像を書き込む。
 
 ##### Parameters:
@@ -92,10 +92,10 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 | --- | --- | --- |
 | `bitmap` | [Bitmap](Bitmap.md) | 書き込み対象画像 |
 | `tileId` | [Number](Number.md) | タイルID |
-| `dx` | [Number](Number.md) | 書き込む x位置(ピクセル) |
-| `dy` | [Number](Number.md) | 書き込む y位置(ピクセル) |
+| `dx` | [Number](Number.md) | 書き込む x座標(ピクセル) |
+| `dy` | [Number](Number.md) | 書き込む y座標(ピクセル) |
 
-#### (static) _drawShadow (bitmap, shadowBits, dx, dy)
+#### _drawShadow (bitmap, shadowBits, dx, dy)
  渡されたBitmapに影ペンの影を描画。
 
 ##### Parameters:
@@ -103,10 +103,10 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 | --- | --- | --- |
 | `bitmap` | [Bitmap](Bitmap.md) | 書き込み対象画像 |
 | `shadowBits` | [Number](Number.md) |  タイルを4分割したうちで描く位置を指定するビット（下位から左上/右上/左下/右下） |
-| `dx` | [Number](Number.md) | 書き込む x位置(ピクセル) |
-| `dy` | [Number](Number.md) | 書き込む y位置(ピクセル) |
+| `dx` | [Number](Number.md) | 書き込む x座標(ピクセル) |
+| `dy` | [Number](Number.md) | 書き込む y座標(ピクセル) |
 
-#### (static) _drawTableEdge (bitmap, tileId, dx, dy)
+#### _drawTableEdge (bitmap, tileId, dx, dy)
  渡されたBitmapにテーブル端の画像を書き込む。
 
 ##### Parameters:
@@ -114,10 +114,10 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 | --- | --- | --- |
 | `bitmap` | [Bitmap](Bitmap.md) | 書き込み対象画像 |
 | `tileId` | [Number](Number.md) | タイルID |
-| `dx` | [Number](Number.md) | 書き込む x位置(ピクセル) |
-| `dy` | [Number](Number.md) | 書き込む y位置(ピクセル) |
+| `dx` | [Number](Number.md) | 書き込む x座標(ピクセル) |
+| `dy` | [Number](Number.md) | 書き込む y座標(ピクセル) |
 
-#### (static) _drawTile (bitmap, tileId, dx, dy)
+#### _drawTile (bitmap, tileId, dx, dy)
  渡されたBitmapにタイル画像を書き込む。
 
 ##### Parameters:
@@ -125,10 +125,10 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 | --- | --- | --- |
 | `bitmap` | [Bitmap](Bitmap.md) | 書き込み対象画像 |
 | `tileId` | [Number](Number.md) | タイルID |
-| `dx` | [Number](Number.md) | 書き込む x位置(ピクセル) |
-| `dy` | [Number](Number.md) | 書き込む y位置(ピクセル) |
+| `dx` | [Number](Number.md) | 書き込む x座標(ピクセル) |
+| `dy` | [Number](Number.md) | 書き込む y座標(ピクセル) |
 
-#### (static) _isHigherTile (tileId) → {Boolean}
+#### _isHigherTile (tileId) → {Boolean}
  高層[☆]のタイルか。
 
 ##### Parameters:
@@ -144,7 +144,7 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
     </dd>
 </dl>
 
-#### (static) _isOverpassPosition (mx, my) → {Boolean}
+####  _isOverpassPosition (mx, my) → {Boolean}
 立体交差か。
 標準では何の動作もしない空メソッドでプラグインによって機能を追加する。OverpassTile.js プラグインで使われている。
 
@@ -163,7 +163,7 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
     </dd>
 </dl>
 
-#### (static) _isTableTile (tileId) → {Boolean}
+####  _isTableTile (tileId) → {Boolean}
  テーブルタイルか。
 
 ##### Parameters:
@@ -180,27 +180,27 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
     </dd>
 </dl>
 
-#### (static) _paintAllTiles (startX, startY)
+#### _paintAllTiles (startX, startY)
  全タイルを描画。
 
 ##### Parameters:
 | Name | Type | Description |
 | --- | --- | --- |
-| `startX` | [Number](Number.md) |  |
-| `startY` | [Number](Number.md) |  |
+| `startX` | [Number](Number.md) | 画面の左上 マップ x座標(タイル数) |
+| `startY` | [Number](Number.md) | 画面の左上 マップ y座標(タイル数) |
 
-#### (static) _paintTiles (startX, startY, x, y)
+#### _paintTiles (startX, startY, x, y)
  指定位置のタイルを描画。
 
 ##### Parameters:
 | Name | Type | Description |
 | --- | --- | --- |
-| `startX` | [Number](Number.md) |  |
-| `startY` | [Number](Number.md) |  |
-| `x` | [Number](Number.md) | x座標(タイル数) |
-| `y` | [Number](Number.md) | y座標(タイル数) |
+| `startX` | [Number](Number.md) | 画面の左上 マップ x座標(タイル数) |
+| `startY` | [Number](Number.md) | 画面の左上 マップ y座標(タイル数) |
+| `x` | [Number](Number.md) | 画面上の x座標(タイル数) |
+| `y` | [Number](Number.md) | 画面上の y座標(タイル数) |
 
-#### (static) _readLastTiles (i, x, y) → {[Array](Array.md).\<[Number](Number.md)>}
+#### _readLastTiles (i, x, y) → {[Array](Array.md).\<[Number](Number.md)>}
  指定位置の最新タイル配列を返す。
 
 ##### Parameters:
@@ -218,15 +218,15 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
     </dd>
 </dl>
 
-#### (static) _readMapData (x, y, z) → {[Number](Number.md)}
+#### _readMapData (x, y, z) → {[Number](Number.md)}
  指定位置のタイルIDを返す。<br />
-ただし z が 4 の場合、返り値は [_drawShadow](#static-_drawshadow-bitmap-shadowbits-dx-dy) の引数 shadowBits にあたる。
+ ただし z が 4 の場合、返り値は [_drawShadow](#static-_drawshadow-bitmap-shadowbits-dx-dy) の引数 shadowBits にあたる。
 
 ##### Parameters:
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) | x位置(タイル数) |
-| `y` | [Number](Number.md) | y位置(タイル数) |
+| `x` | [Number](Number.md) | マップ x座標(タイル数) |
+| `y` | [Number](Number.md) | マップ y座標(タイル数) |
 | `z` | [Number](Number.md) |  0:Aタイル, 1:A2タイル右, 2〜3:B〜Eタイル, 4:影ペン, 5:リージョン |
 
 ##### Returns:
@@ -237,28 +237,27 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
     </dd>
 </dl>
 
-#### (static) _sortChildren ()
+#### _sortChildren ()
  子オブジェクトのソート。
 
-#### (static) _updateLayerPositions (startX, startY)
+####  _updateLayerPositions (startX, startY)
  レイヤーの位置をアップデート。
 
 ##### Parameters:
-
 | Name | Type | Description |
 | --- | --- | --- |
-| `startX` | [Number](Number.md) |  |
-| `startY` | [Number](Number.md) |  |
+| `startX` | [Number](Number.md) | 画面の左上 マップ x座標(タイル数) |
+| `startY` | [Number](Number.md) | 画面の左上 マップ y座標(タイル数) |
 
-#### (static) _writeLastTiles (i, x, y, tiles)
+####  _writeLastTiles (i, x, y, tiles)
  指定位置に最新のタイル情報を書き込む。
 
 ##### Parameters:
 | Name | Type | Description |
 | --- | --- | --- |
 | `i` | [Number](Number.md) |  レイヤー階層(0: 低層, 1: 高層) |
-| `x` | [Number](Number.md) | x座標(タイル数) |
-| `y` | [Number](Number.md) | y座標(タイル数) |
+| `x` | [Number](Number.md) | マップ x座標(タイル数) |
+| `y` | [Number](Number.md) | マップ y座標(タイル数) |
 | `tiles` | [Array](Array.md).\<[Number](Number.md)> | タイルIDの配列 |
 
 #### (static) getAutotileKind (tileId) → {[Number](Number.md)}
@@ -480,7 +479,7 @@ A5(通常)のタイルか。
 </dl>
 
 #### (static) isVisibleTile (tileId) → {Boolean}
- 表示されるタイル番号か。
+ 表示されるタイルか。
 
 ##### Parameters:
 | Name | Type | Description |
@@ -608,13 +607,13 @@ A5(通常)のタイルか。
 </dl>
 
 #### (static) makeAutotileId (kind, shape) → {[Number](Number.md)}
- オートタイルのIDを生成して返す。
+ 指定したオートタイルの種類と形からタイルIDを返す。
 
 ##### Parameters:
 | Name | Type | Description |
 | --- | --- | --- |
-| `kind` | [Number](Number.md) |  種類 |
-| `shape` | [Number](Number.md) |  0 〜 47 のオートタイルの形を表す番号 |
+| `kind` | [Number](Number.md) |  種類(See: [getAutotileKind](#static-getautotilekind-tileid--number)) |
+| `shape` | [Number](Number.md) |  形(See: [getAutotileShape](#static-getautotileshape-tileid--number)) |
 
 ##### Returns:
 <dl>
