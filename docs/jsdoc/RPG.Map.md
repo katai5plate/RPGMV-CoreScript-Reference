@@ -3,21 +3,21 @@
 ## namespace [RPG](RPG.md)
 
  マップ用JSONのデータ構造。data/MapXXX.json( XXX は3桁の数値) 大域変数の、現在のマップのデータ [$dataMap](global.md#datamap-rpgmap) か Map管理オブジェクト [$gameMap](global.md#gamemap-game_map) を介して扱う。描画は [Tilemap](Tilemap.md) か [ShaderTilemap](ShaderTilemap.md) で行われる。<br />
- dataプロパティの情報は [Tilemap. _readMapData](Tilemap.md#static-_readmapdata-x-y-z--number) を使って取り出す。
+ data プロパティは一次元配列で、 x + ( y + z*h )*w を添字に取り出せる。x:x座標, y:y座標, w:マップ幅, h:マップ高さ, z:マップ重ね順。<br />
+ zの内容は、0:Aタイル, 1:A2タイル右ほか, 2〜3:B〜Eタイル, 4:影ペン, 5:リージョン となっている。
  
-
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `displayName` | [String](String.md) | [表示名] |
 | `tilesetId` | [Number](Number.md) | [タイルセット]のID |
-| `width` | [Number](Number.md) |  マップの[幅] |
-| `height` | [Number](Number.md) |  マップの[高さ] |
-| `scrollType` | [Number](Number.md) | [スクロールタイプ] (0: ループしない, 1: 縦方向にループする, 2: 横方向にループする, 3: 縦横共にループする) |
+| `width` | [Number](Number.md) | マップの[幅] |
+| `height` | [Number](Number.md) | マップの[高さ] |
+| `scrollType` | [Number](Number.md) | [スクロールタイプ] (0:ループしない, 1:縦方向にループする, 2:横方向にループする, 3:縦横共にループする) |
 | `specifyBattleback` | Boolean | [戦闘背景指定]するか |
-| `battleback1Name` | [String](String.md) |  レイヤー奥の戦闘背景画像1(地面)のファイル名 |
-| `battleback2Name` | [String](String.md) |  レイヤー手前の戦闘背景画像2(壁)のファイル名 |
+| `battleback1Name` | [String](String.md) | レイヤー奥の戦闘背景画像1(地面)のファイル名 |
+| `battleback2Name` | [String](String.md) | レイヤー手前の戦闘背景画像2(壁)のファイル名 |
 | `autoplayBgm` | Boolean | [BGM自動演奏]するか |
 | `bgm` | [RPG.AudioFile](RPG.AudioFile.md) | BGMの音声 |
 | `autoplayBgs` | Boolean | [BGS自動演奏]するか |
@@ -31,11 +31,8 @@
 | `parallaxSx` | [Number](Number.md) | [遠景]が[横方向にループする]場合の[スクロール]量 |
 | `parallaxSy` | [Number](Number.md) | [遠景]が[縦方向にループする]場合の[スクロール]量 |
 | `parallaxShow` | Boolean | [遠景]を[エディターに表示する]か |
-| `data` | [Array](Array.md).<[Number](Number.md)> |  タイルIDの配列によるマップデータ |
+| `data` | [Array](Array.md).<[Number](Number.md)> | タイルIDの配列によるマップデータ |
 | `events` | [Array](Array.md).<[RPG.Event](RPG.Event.md)> | [イベント]データの配列 |
-
-<dl>
-</dl>
 
 ### Extends
 
@@ -43,11 +40,7 @@
 
 ### Classes
 
-<dl>
-    <dt><a href="RPG.Map.Encounter.md">Encounter</a></dt>
-    <dd></dd>
-</dl>
-
+* [Encounter](RPG.Map.Encounter.md)
 
  <br>
 
