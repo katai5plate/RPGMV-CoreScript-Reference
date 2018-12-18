@@ -2,8 +2,10 @@
 
 ## namespace [RPG](RPG.md)
 
- マップ用JSONのデータ構造。data/MapXXX.json( XXX は3桁の数値) 大域変数の、現在のマップのデータ [$dataMap](global.md#datamap-rpgmap) か Map管理オブジェクト [$gameMap](global.md#gamemap-game_map) を介して扱う。描画は [Tilemap](Tilemap.md) か [ShaderTilemap](ShaderTilemap.md) で行われる。<br />
- data プロパティは一次元配列で、 x + ( y + z*h )*w を添字に取り出せる。x:x座標, y:y座標, w:マップ幅, h:マップ高さ, z:マップ重ね順。<br />
+ マップ用JSONのデータ構造。data/MapXXX.json( XXX は3桁の数値) 大域変数の、現在のマップのデータ [$dataMap](global.md#datamap-rpgmap) か Map管理オブジェクト [$gameMap](global.md#gamemap-game_map) を介して扱う。描画は [Tilemap](Tilemap.md) か [ShaderTilemap](ShaderTilemap.md) で行われる。
+ 
+ data プロパティは一次元配列で、 x + ( y + z*h )*w を添字に取り出せる。<br />
+ x:x座標, y:y座標, w:マップ幅, h:マップ高さ, z:マップ重ね順。<br />
  zの内容は、0:Aタイル, 1:A2タイル右ほか, 2〜3:B〜Eタイル, 4:影ペン, 5:リージョン となっている。
  
 ##### Properties:
