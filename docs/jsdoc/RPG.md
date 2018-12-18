@@ -10,67 +10,35 @@
 
 ### Classes
 
-<dl>
-    <dt><a>Actor</a></dt>
-    <dd></dd>
-    <dt><a>Animation</a></dt>
-    <dd></dd>
-    <dt><a>Armor</a></dt>
-    <dd></dd>
-    <dt><a>AudioFile</a></dt>
-    <dd></dd>
-    <dt><a>BaseItem</a></dt>
-    <dd></dd>
-    <dt><a>BattleEventPage</a></dt>
-    <dd></dd>
-    <dt><a>Class</a></dt>
-    <dd></dd>
-    <dt><a>CommonEvent</a></dt>
-    <dd></dd>
-    <dt><a>Damage</a></dt>
-    <dd></dd>
-    <dt><a>Effect</a></dt>
-    <dd></dd>
-    <dt><a>Enemy</a></dt>
-    <dd></dd>
-    <dt><a>EquipItem</a></dt>
-    <dd></dd>
-    <dt><a>Event</a></dt>
-    <dd></dd>
-    <dt><a>EventCommand</a></dt>
-    <dd></dd>
-    <dt><a>EventPage</a></dt>
-    <dd></dd>
-    <dt><a>Item</a></dt>
-    <dd></dd>
-    <dt><a>Map</a></dt>
-    <dd></dd>
-    <dt><a>MapInfo</a></dt>
-    <dd></dd>
-    <dt><a href="RPG.MetaData.html">MetaData</a></dt>
-    <dd></dd>
-    <dt><a>MoveCommand</a></dt>
-    <dd></dd>
-    <dt><a>MoveRoute</a></dt>
-    <dd></dd>
-    <dt><a>Skill</a></dt>
-    <dd></dd>
-    <dt><a>State</a></dt>
-    <dd></dd>
-    <dt><a>System</a></dt>
-    <dd></dd>
-    <dt><a href="RPG.Tileset.html">Tileset</a></dt>
-    <dd></dd>
-    <dt><a>Trait</a></dt>
-    <dd></dd>
-    <dt><a>Troop</a></dt>
-    <dd></dd>
-    <dt><a>UsableItem</a></dt>
-    <dd></dd>
-    <dt><a>Weapon</a></dt>
-    <dd></dd>
-</dl>
-
+* [Actor](RPG.Actor.md)
+* [Animation](RPG.Animation.md)
+* [Armor](RPG.Armor.md)
+* [AudioFile](RPG.AudioFile.md)
+* [BaseItem](RPG.BaseItem.md)
+* [BattleEventPage](RPG.BattleEventPage.md)
+* [Class](RPG.Class.md)
+* [CommonEvent](RPG.CommonEvent.md)
+* [Damage](RPG.Damage.md)
+* [Effect](RPG.Effect.md)
+* [Enemy](RPG.Enemy.md)
+* [EquipItem](RPG.EquipItem.md)
+* [Event](RPG.Event.md)
+* [EventCommand](RPG.EventCommand.md)
+* [EventPage](RPG.EventPage.md)
+* [Item](RPG.Item.md)
+* [Map](RPG.Map.md)
+* [MapInfo](RPG.MapInfo.md)
+* [MetaData](RPG.MetaData.md)
+* [MoveCommand](RPG.MoveCommand.md)
+* [MoveRoute](RPG.MoveRoute.md)
+* [Skill](RPG.Skill.md)
+* [State](RPGState..md)
+* [System](RPG.System.md)
+* [Tileset](RPGTileset..md)
+* [Trait](RPG.Trait.md)
+* [Troop](RPG.Troop.md)
+* [UsableItem](RPG.UsableItem.md)
+* [Weapon](RPG.Weapon.md)
 
  <br>
 
