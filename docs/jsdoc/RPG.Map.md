@@ -14,8 +14,8 @@
 | --- | --- | --- |
 | `displayName` | [String](String.md) | [表示名] |
 | `tilesetId` | [Number](Number.md) | [タイルセット]のID |
-| `width` | [Number](Number.md) | マップの[幅] |
-| `height` | [Number](Number.md) | マップの[高さ] |
+| `width` | [Number](Number.md) | マップの\[幅](タイル数) |
+| `height` | [Number](Number.md) | マップの\[高さ](タイル数) |
 | `scrollType` | [Number](Number.md) | [スクロールタイプ] (0:ループしない, 1:縦方向にループする, 2:横方向にループする, 3:縦横共にループする) |
 | `specifyBattleback` | Boolean | [戦闘背景指定]するか |
 | `battleback1Name` | [String](String.md) | レイヤー奥の戦闘背景画像1(地面)のファイル名 |
