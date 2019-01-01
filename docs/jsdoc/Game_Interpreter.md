@@ -34,35 +34,31 @@
 | `_character` | [Game_Event](Game_Event.md) |  |
 | `_childInterpreter` | [Game_Interpreter](Game_Interpreter.md) |  |
 
-<dl>
-</dl>
 
 ### Methods
 
-#### (static) requestImages (list, commonList)
+#### (static) requestImages (list, commonList opt)
+コマンドに含まれる画像を用意する。
 
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
-| `list` | [Array](Array.md).<[RPG.EventCommand](RPG.EventCommand.md)> |  |
-| `commonList` | [Array](Array.md).<*> |  |
+| Name | Type | Attributes | Description |
+| --- | --- | --- | --- |
+| `list` | [Array](Array.md).<[RPG.EventCommand](RPG.EventCommand.md)> |  | コマンドの配列 |
+| `commonList` | [Array](Array.md).<*> | \<optional> |  |
 
-<dl>
-</dl>
 
 #### changeHp (target, value, allowDeath)
+[HP]を指定値により増減する。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Number](Number.md) |  |
-| `value` | [Number](Number.md) |  |
-| `allowDeath` | [Number](Number.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象アクターまたは敵 |
+| `value` | [Number](Number.md) | 変更するHPの量 |
+| `allowDeath` | Boolean | 死亡していても適用するか |
 
-<dl>
-</dl>
 
 #### character (param) → {[Game_Character](Game_Character.md)}
 
@@ -72,52 +68,42 @@
 | --- | --- | --- |
 | `param` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Game_Character</a></span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="Game_Character.html">Game_Character</a></span>
+    </dd>
+</dl>
 
 #### checkFreeze () → {Boolean}
 
 
 Checks if the interpreter has frozen.
-<dl>
-</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+    <dt> Type </dt>
+    <dd>
+        <span>Boolean</span>
+    </dd>
+</dl>
 
 #### checkOverflow ()
 
-<dl>
-</dl>
 
 #### clear ()
 
 
 Clears the interpreter.
-<dl>
-</dl>
 
 #### command101 () → {Boolean}
 
 
 Show Text
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -132,8 +118,6 @@ Show Text
 
 
 Show Choices
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -148,8 +132,6 @@ Show Choices
 
 
 Input Number
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -164,8 +146,6 @@ Input Number
 
 
 Select Item
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -180,8 +160,6 @@ Select Item
 
 
 Show Scrolling Text
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -196,8 +174,6 @@ Show Scrolling Text
 
 
 Comment
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -212,8 +188,6 @@ Comment
 
 
 Conditional Branch
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -228,8 +202,6 @@ Conditional Branch
 
 
 Loop
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -244,8 +216,6 @@ Loop
 
 
 Break Loop
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -260,8 +230,6 @@ Break Loop
 
 
 Exit Event Processing
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -276,8 +244,6 @@ Exit Event Processing
 
 
 Common Event
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -292,8 +258,6 @@ Common Event
 
 
 Label
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -308,8 +272,6 @@ Label
 
 
 Jump to Label
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -324,8 +286,6 @@ Jump to Label
 
 
 Control Switches
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -340,8 +300,6 @@ Control Switches
 
 
 Control Variables
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -356,8 +314,6 @@ Control Variables
 
 
 Control Self Switch
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -372,8 +328,6 @@ Control Self Switch
 
 
 Control Timer
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -388,8 +342,6 @@ Control Timer
 
 
 Change Gold
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -404,8 +356,6 @@ Change Gold
 
 
 Change Items
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -420,8 +370,6 @@ Change Items
 
 
 Change Weapons
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -436,8 +384,6 @@ Change Weapons
 
 
 Change Armors
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -452,8 +398,6 @@ Change Armors
 
 
 Change Party Member
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -468,8 +412,6 @@ Change Party Member
 
 
 Change Battle BGM
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -484,8 +426,6 @@ Change Battle BGM
 
 
 Change Victory ME
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -500,8 +440,6 @@ Change Victory ME
 
 
 Change Save Access
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -516,8 +454,6 @@ Change Save Access
 
 
 Change Menu Access
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -532,8 +468,6 @@ Change Menu Access
 
 
 Change Encounter Disable
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -548,8 +482,6 @@ Change Encounter Disable
 
 
 Change Formation Access
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -564,8 +496,6 @@ Change Formation Access
 
 
 Change Window Color
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -580,8 +510,6 @@ Change Window Color
 
 
 Change Defeat ME
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -596,8 +524,6 @@ Change Defeat ME
 
 
 Change Vehicle BGM
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -612,8 +538,6 @@ Change Vehicle BGM
 
 
 Transfer Player
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -628,8 +552,6 @@ Transfer Player
 
 
 Set Vehicle Location
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -644,8 +566,6 @@ Set Vehicle Location
 
 
 Set Event Location
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -660,8 +580,6 @@ Set Event Location
 
 
 Set Scroll Map
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -676,8 +594,6 @@ Set Scroll Map
 
 
 Set Movement Route
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -692,8 +608,6 @@ Set Movement Route
 
 
 Getting On and Off Vehicles
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -708,8 +622,6 @@ Getting On and Off Vehicles
 
 
 Change Transparency
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -724,8 +636,6 @@ Change Transparency
 
 
 Show Animation
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -740,8 +650,6 @@ Show Animation
 
 
 Show Balloon Icon
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -756,8 +664,6 @@ Show Balloon Icon
 
 
 Erase Event
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -772,8 +678,6 @@ Erase Event
 
 
 Change Player Followers
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -788,8 +692,6 @@ Change Player Followers
 
 
 Gather Followers
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -804,8 +706,6 @@ Gather Followers
 
 
 Fadeout Screen
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -820,8 +720,6 @@ Fadeout Screen
 
 
 Fadein Screen
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -836,8 +734,6 @@ Fadein Screen
 
 
 Tint Screen
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -852,8 +748,6 @@ Tint Screen
 
 
 Flash Screen
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -868,8 +762,6 @@ Flash Screen
 
 
 Shake Screen
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -884,8 +776,6 @@ Shake Screen
 
 
 Wait
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -900,8 +790,6 @@ Wait
 
 
 Show Picture
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -916,8 +804,6 @@ Show Picture
 
 
 Move Picture
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -932,8 +818,6 @@ Move Picture
 
 
 Rotate Picture
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -948,8 +832,6 @@ Rotate Picture
 
 
 Tint Picture
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -964,8 +846,6 @@ Tint Picture
 
 
 Erase Picture
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -980,8 +860,6 @@ Erase Picture
 
 
 Set Weather Effect
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -996,8 +874,6 @@ Set Weather Effect
 
 
 Play BGM
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1012,8 +888,6 @@ Play BGM
 
 
 Fadeout BGM
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1028,8 +902,6 @@ Fadeout BGM
 
 
 Save BGM
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1044,8 +916,6 @@ Save BGM
 
 
 Resume BGM
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1060,8 +930,6 @@ Resume BGM
 
 
 Play BGS
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1076,8 +944,6 @@ Play BGS
 
 
 Fadeout BGS
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1092,8 +958,6 @@ Fadeout BGS
 
 
 Play ME
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1108,8 +972,6 @@ Play ME
 
 
 Play SE
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1124,8 +986,6 @@ Play SE
 
 
 Stop SE
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1140,8 +1000,6 @@ Stop SE
 
 
 Play Movie
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1156,8 +1014,6 @@ Play Movie
 
 
 Change Map Name Display
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1172,8 +1028,6 @@ Change Map Name Display
 
 
 Change Tileset
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1188,8 +1042,6 @@ Change Tileset
 
 
 Change Battle Back
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1204,8 +1056,6 @@ Change Battle Back
 
 
 Change Parallax
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1220,8 +1070,6 @@ Change Parallax
 
 
 Get Location Info
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1236,8 +1084,6 @@ Get Location Info
 
 
 Battle Processing
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1252,8 +1098,6 @@ Battle Processing
 
 
 Shop Processing
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1268,8 +1112,6 @@ Shop Processing
 
 
 Name Input Processing
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1284,8 +1126,6 @@ Name Input Processing
 
 
 Change HP
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1300,8 +1140,6 @@ Change HP
 
 
 Change MP
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1316,8 +1154,6 @@ Change MP
 
 
 Change State
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1332,8 +1168,6 @@ Change State
 
 
 Recover All
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1348,8 +1182,6 @@ Recover All
 
 
 Change EXP
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1364,8 +1196,6 @@ Change EXP
 
 
 Change Level
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1380,8 +1210,6 @@ Change Level
 
 
 Change Parameter
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1396,8 +1224,6 @@ Change Parameter
 
 
 Change Skill
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1412,8 +1238,6 @@ Change Skill
 
 
 Change Equipment
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1428,8 +1252,6 @@ Change Equipment
 
 
 Change Name
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1444,8 +1266,6 @@ Change Name
 
 
 Change Class
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1460,8 +1280,6 @@ Change Class
 
 
 Change Actor Images
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1476,8 +1294,6 @@ Change Actor Images
 
 
 Change Vehicle Image
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1492,8 +1308,6 @@ Change Vehicle Image
 
 
 Change Nickname
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1508,8 +1322,6 @@ Change Nickname
 
 
 Change Profile
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1524,8 +1336,6 @@ Change Profile
 
 
 Change TP
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1540,8 +1350,6 @@ Change TP
 
 
 Change Enemy HP
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1556,8 +1364,6 @@ Change Enemy HP
 
 
 Change Enemy MP
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1572,8 +1378,6 @@ Change Enemy MP
 
 
 Change Enemy State
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1588,8 +1392,6 @@ Change Enemy State
 
 
 Enemy Recover All
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1604,8 +1406,6 @@ Enemy Recover All
 
 
 Enemy Appear
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1620,8 +1420,6 @@ Enemy Appear
 
 
 Enemy Transform
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1636,8 +1434,6 @@ Enemy Transform
 
 
 Show Battle Animation
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1652,8 +1448,6 @@ Show Battle Animation
 
 
 Force Action
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1668,8 +1462,6 @@ Force Action
 
 
 Abort Battle
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1684,8 +1476,6 @@ Abort Battle
 
 
 Change Enemy TP
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1700,8 +1490,6 @@ Change Enemy TP
 
 
 Open Menu Screen
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1716,8 +1504,6 @@ Open Menu Screen
 
 
 Open Save Screen
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1732,8 +1518,6 @@ Open Save Screen
 
 
 Game Over
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1748,8 +1532,6 @@ Game Over
 
 
 Return to Title Screen
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1764,8 +1546,6 @@ Return to Title Screen
 
 
 Script
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1796,8 +1576,6 @@ Script
 
 
 When [**]
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1812,8 +1590,6 @@ When [**]
 
 
 When Cancel
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1828,8 +1604,6 @@ When Cancel
 
 
 Else
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1844,8 +1618,6 @@ Else
 
 
 Repeat Above
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1860,8 +1632,6 @@ Repeat Above
 
 
 If Win
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1876,8 +1646,6 @@ If Win
 
 
 If Escape
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1892,8 +1660,6 @@ If Escape
 
 
 If Lose
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1908,8 +1674,6 @@ If Lose
 
 
 Returns the current event command.
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1924,8 +1688,6 @@ Returns the current event command.
 
 
 Returns the currrent eventId.
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1940,8 +1702,6 @@ Returns the currrent eventId.
 
 
 Executes the event command; returns true or false based on execution.
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1954,8 +1714,6 @@ Executes the event command; returns true or false based on execution.
 
 #### fadeSpeed () → {[Number](Number.md)}
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1976,8 +1734,6 @@ Executes the event command; returns true or false based on execution.
 | `param1` | [Number](Number.md) |  |
 | `param2` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1992,15 +1748,11 @@ Executes the event command; returns true or false based on execution.
 
 
  オブジェクト生成時の初期化。
-<dl>
-</dl>
 
 #### isRunning () → {Boolean}
 
 
 Returns true if the interpreter is running.
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -2021,8 +1773,6 @@ Returns true if the interpreter is running.
 | `param2` | [Number](Number.md) |  |
 | `callback` | function |  |
 
-<dl>
-</dl>
 
 #### iterateActorId (param, callback)
 
@@ -2033,8 +1783,6 @@ Returns true if the interpreter is running.
 | `param` | [Number](Number.md) |  |
 | `callback` | function |  |
 
-<dl>
-</dl>
 
 #### iterateActorIndex (param, callback)
 
@@ -2045,8 +1793,6 @@ Returns true if the interpreter is running.
 | `param` | [Number](Number.md) |  |
 | `callback` | function |  |
 
-<dl>
-</dl>
 
 #### iterateBattler (param1, param2, callback)
 
@@ -2058,8 +1804,6 @@ Returns true if the interpreter is running.
 | `param2` | [Number](Number.md) |  |
 | `callback` | function |  |
 
-<dl>
-</dl>
 
 #### iterateEnemyIndex (param, callback)
 
@@ -2070,8 +1814,6 @@ Returns true if the interpreter is running.
 | `param` | [Number](Number.md) |  |
 | `callback` | function |  |
 
-<dl>
-</dl>
 
 #### jumpTo (index)
 
@@ -2081,15 +1823,11 @@ Returns true if the interpreter is running.
 | --- | --- | --- |
 | `index` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### nextEventCode () → {[Number](Number.md)}
 
 
 Returns the next event code.
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -2110,8 +1848,6 @@ Returns the next event code.
 | `operandType` | [Number](Number.md) |  |
 | `operand` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -2132,8 +1868,6 @@ Returns the next event code.
 | `operationType` | [Number](Number.md) |  |
 | `value` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### pluginCommand (command, args)
 
@@ -2147,8 +1881,6 @@ Returns the next event code.
 | `command` | [String](String.md) |  コマンド名 |
 | `args` | [Array](Array.md).<[String](String.md)> |  引数の配列 |
 
-<dl>
-</dl>
 
 ##### Example
 
@@ -2171,8 +1903,6 @@ Sets up the interpreter with the list of event commands, and the given event Id.
 | `list` | [Array](Array.md).<[RPG.EventCommand](RPG.EventCommand.md)> |  |
 | `eventId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### setupChild (list, eventId)
 
@@ -2183,8 +1913,6 @@ Sets up the interpreter with the list of event commands, and the given event Id.
 | `list` | [Array](Array.md).<[RPG.EventCommand](RPG.EventCommand.md)> |  |
 | `eventId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### setupChoices (params)
 
@@ -2194,8 +1922,6 @@ Sets up the interpreter with the list of event commands, and the given event Id.
 | --- | --- | --- |
 | `params` | [Array](Array.md).<*> |  |
 
-<dl>
-</dl>
 
 #### setupItemChoice (params)
 
@@ -2205,8 +1931,6 @@ Sets up the interpreter with the list of event commands, and the given event Id.
 | --- | --- | --- |
 | `params` | [Array](Array.md).<[Number](Number.md)> |  |
 
-<dl>
-</dl>
 
 #### setupNumInput (params)
 
@@ -2216,15 +1940,11 @@ Sets up the interpreter with the list of event commands, and the given event Id.
 | --- | --- | --- |
 | `params` | [Array](Array.md).<[Number](Number.md)> |  |
 
-<dl>
-</dl>
 
 #### setupReservedCommonEvent () → {Boolean}
 
 
 Returns true if the event is on the current map.
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -2246,34 +1966,24 @@ Sets the wait mode of the interpreter.
 | --- | --- | --- |
 | `waitMode` | [String](String.md) |  |
 
-<dl>
-</dl>
 
 #### skipBranch ()
 
 
 Skips a conditional branch on the interpreter.
-<dl>
-</dl>
 
 #### terminate ()
 
 
 Terminates the game interpreter.
-<dl>
-</dl>
 
 #### update ()
 
-<dl>
-</dl>
 
 #### updateChild () → {Boolean}
 
 
 Updates the child game interpreter.
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -2288,8 +1998,6 @@ Updates the child game interpreter.
 
 
 Updates the wait of the game interpreter.
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -2302,8 +2010,6 @@ Updates the wait of the game interpreter.
 
 #### updateWaitCount () → {Boolean}
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -2316,8 +2022,6 @@ Updates the wait of the game interpreter.
 
 #### updateWaitMode () → {Boolean}
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -2330,8 +2034,6 @@ Updates the wait of the game interpreter.
 
 #### videoFileExt () → {[String](String.md)}
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -2353,8 +2055,6 @@ sets a specified wait duration for the interpreter.
 | --- | --- | --- |
 | `duration` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 
  <br>
