@@ -4,7 +4,8 @@
 
 #### new EventPage ()
 
-[EVページ]を構成するJSONデータ。[RPG.Map](RPG.Map.md) の events プロパティに含まれている。
+[EVページ]を構成するJSONデータ。<br/>
+[RPG.Event](RPG.Event.md)  pages プロパティに含まれている。
 
 ##### Properties:
 
