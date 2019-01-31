@@ -1,8 +1,6 @@
 # Class: EventPage
 
-## [RPG](RPG.md).  EventPage ()
-
-#### new EventPage ()
+## Namespace: [RPG](RPG.md)
 
 [EVページ]を構成するJSONデータ。<br/>
 [RPG.Event](RPG.Event.md)  pages プロパティに含まれている。
