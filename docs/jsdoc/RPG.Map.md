@@ -1,6 +1,6 @@
 # Class: Map
 
-## namespace [RPG](RPG.md)
+## Namespace: [RPG](RPG.md)
 
  マップ用JSONのデータ構造。data/MapXXX.json( XXX は3桁の数値) 大域変数の、現在のマップのデータ [$dataMap](global.md#datamap-rpgmap) か Map管理オブジェクト [$gameMap](global.md#gamemap-game_map) を介して扱う。描画は [Tilemap](Tilemap.md) か [ShaderTilemap](ShaderTilemap.md) で行われる。
  
