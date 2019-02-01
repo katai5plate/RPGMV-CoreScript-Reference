@@ -1,23 +1,20 @@
 # Class: Event
 
-## [RPG](RPG.md).  Event ()
+## Namespace: [RPG](RPG.md)
 
-#### new Event ()
-
-The JSON data structure of a map event.
+マップ[イベント]を構成する JSON データ。<br />
+[RPG.Map](RPG.Map.md)の events プロパティに含まれる。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `id` | [Number](Number.md) | The event ID. |
-| `name` | [String](String.md) | The event name. |
-| `x` | [Number](Number.md) | The event's x-coordinate on the map. |
-| `y` | [Number](Number.md) | The event's y-coordinate on the map. |
-| `pages` | [Array](Array.md).<[RPG.EventPage](RPG.EventPage.md)> | The event pages. |
+| `id` | [Number](Number.md) | イベント ID |
+| `name` | [String](String.md) | イベント名 |
+| `x` | [Number](Number.md) | マップ上のx座標(タイル数) |
+| `y` | [Number](Number.md) | マップ上のy座標(タイル数) |
+| `pages` | [Array](Array.md).<[RPG.EventPage](RPG.EventPage.md)> | [EVページ]の配列 |
 
-<dl>
-</dl>
 
 ### Extends
 
