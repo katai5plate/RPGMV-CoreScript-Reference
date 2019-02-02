@@ -4,7 +4,9 @@
 
 #### new Game_Event ()
 
- マップに配置する[イベント]を定義したオブジェクト。[実行内容]を得る [Game_Event#event](Game_Event.html#event) メソッドなどを含む。
+ マップに配置する[イベント]を定義したオブジェクト。
+ 
+ [RPG.Event](RPG.Event.md) を得る [Game_Event#event](Game_Event.md#event---rpgevent) メソッドなどを含む。
 
 ##### Properties:
 
@@ -22,9 +24,6 @@
 | `_prelockDirection` | [Number](Number.md) |  |
 | `_locked` | Boolean |  |
 
-<dl>
-</dl>
-
 ### Extends
 
 * [Game_Character](Game_Character.md)
@@ -33,22 +32,12 @@
 
 #### advanceMoveRouteIndex ()
 
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#advanceMoveRouteIndex</a>
-                        </li>
-                    </ul>
-                </dd>
-                <dt>To Do:</dt>
-                <dd>
-                    <ul>
-                        <li>&#x3053;&#x306E;&#x7528;&#x8A9E;&#x306E;&#x610F;&#x5473;&#x304C;&#x5206;&#x304B;&#x3063;&#x305F;&#x3089;&#x6559;&#x3048;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;</li>
-                    </ul>
-                </dd>
-            </dl>
+この用語の意味が分かったら教えてください
+
+##### Inherited From:
+
+* [Game_Character#advanceMoveRouteIndex](Game_Character.md#advanceMoveRouteIndex)
+
 
 #### animationId () → {[Number](Number.md)}
 

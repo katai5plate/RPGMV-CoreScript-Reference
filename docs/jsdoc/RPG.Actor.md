@@ -1,10 +1,9 @@
 # Class: Actor
 
-## [RPG](RPG.md).  Actor ()
+## Namespace: [RPG](RPG.md)
 
-#### new Actor ()
-
- アクター用JSON( data/Actors.json )のデータ構造。 配列として定義された大域変数 [$dataActors](global.html#$dataActors) を介して扱う。
+ アクター用JSON( data/Actors.json )のデータ構造。<br />
+ 大域変数 [$dataActors](global.html#$dataActors) に配列として定義されている。
 
 ##### Properties:
 
@@ -25,8 +24,6 @@
 | `profile` | [String](String.md) | [プロフィール]の文 |
 | `traits` | [Array](Array.md).<[RPG.Trait](RPG.Trait.md)> | [特徴]の配列 |
 
-<dl>
-</dl>
 
 ### Extends
 

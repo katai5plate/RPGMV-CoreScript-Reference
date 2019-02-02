@@ -3,7 +3,9 @@
 ## Namespace: [RPG](RPG.md)
 
 マップ[イベント]を構成する JSON データ。<br />
-[RPG.Map](RPG.Map.md)の events プロパティに含まれる。
+[RPG.Map](RPG.Map.md)の events プロパティに含まれ、[Game_Event#event](Game_Event.md#event---rpgevent) メソッドでも得られる。
+
+類似のクラスに [RPG.CommonEvent](RPG.CommonEvent.md), [RPG.Troop](RPG.Troop.md) がある。
 
 ##### Properties:
 

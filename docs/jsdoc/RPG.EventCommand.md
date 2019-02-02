@@ -4,13 +4,15 @@
 
 [実行内容]に記述される[イベントコマンド] を構成するJSONデータ。
 
-[RPG.EventPage](RPG.EventPage.md) か [RPG.CommonEvent](RPG.CommonEvent.md) の list プロパティに含まれる。
+[RPG.EventPage](RPG.EventPage.md) ・[RPG.EventPage](RPG.EventPage.md) ・ [RPG.CommonEvent](RPG.CommonEvent.md) の list プロパティに含まれる。
+
+記述された内容は [Game_Interpreter](Game_Interpreter.md) のcommandXXX メソッドで処理される。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.md) | イベント番号([Game_Interpreter](Game_Interpreter.md) のcommandXXX メソッドで処理される) |
+| `code` | [Number](Number.md) | イベント番号 |
 | `indent` | [Number](Number.md) | 階層(インデント)の深さ(通常は0で[条件分岐]コマンドにより1階層ずつ深くなる) |
 | `parameters` | [Array](Array.md).<*> | コマンドに渡される引数の配列 |
 

@@ -2,8 +2,10 @@
 
 ## Namespace: [RPG](RPG.md)
 
-[EVページ]を構成するJSONデータ。<br/>
+イベントの[EVページ]を構成するJSONデータ。<br/>
 [RPG.Event](RPG.Event.md)  pages プロパティに含まれている。
+
+類似のクラスに [RPG.BattleEventPage](RPG.BattleEventPage.md) がある。 
 
 ##### Properties:
 
