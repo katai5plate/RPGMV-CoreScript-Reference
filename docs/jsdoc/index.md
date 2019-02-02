@@ -8,7 +8,7 @@
 * オブジェクト
 
 	* [システム](index.md#システム)
-	* [スイッチ変数](index.md#スイッチ変数)
+	* [スイッチ・変数](index.md#スイッチ変数)
 	* [マップキャラクタ](index.md#マップキャラクタ)
 	* [バトルキャラクタ](index.md#バトルキャラクタ)
 	* [その他オブジェクト](index.md#その他オブジェクト)
@@ -26,7 +26,7 @@
 	* [シーン(Scene_Base)](index.md#シーンscene_base)
 	* [ウィンドウ(Window_Base)](index.md#ウィンドウwindow_base)
 
-		* [選択ウィンドウ(Window_Selectable)](選択ウィンドウwindow_selectable)
+		* [選択ウィンドウ(Window_Selectable)](index.md#選択ウィンドウwindow_selectable)
 		* [コマンドウィンドウ(Window_Command)](index.md#コマンドウィンドウwindow_command)
 
 
