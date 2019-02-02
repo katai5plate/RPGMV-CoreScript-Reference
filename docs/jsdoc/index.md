@@ -27,7 +27,8 @@
 	* [ウィンドウ(Window_Base)](index.md#ウィンドウwindow_base)
 
 		* [選択ウィンドウ(Window_Selectable)](index.md#選択ウィンドウwindow_selectable)
-		* [コマンドウィンドウ(Window_Command)](index.md#コマンドウィンドウwindow_command)
+
+			* [コマンドウィンドウ(Window_Command)](index.md#コマンドウィンドウwindow_command)
 
 
 ### JavaScript拡張
@@ -268,7 +269,7 @@
 * [Window_ScrollText](Window_ScrollText.md)
 * [Window_ShopStatus](Window_ShopStatus.md)
 * [Window_SkillStatus](Window_SkillStatus.md)
-* [Window_Selectable](Window_Selectable.md) → [Extends](選択ウィンドウwindow_selectable)
+* [Window_Selectable](Window_Selectable.md) → [Extends](index.md#選択ウィンドウwindow_selectable)
 
 
 #### 選択ウィンドウ(Window_Selectable)
