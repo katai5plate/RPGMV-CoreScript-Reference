@@ -1,4 +1,29 @@
 # クラスツリー
+
+## 目次
+ * [JavaScript拡張](index.md#JavaScript拡張)
+ * [管理(静的オブジェクト)](index.md#管理静的オブジェクト)
+ * [ユーティリティ](index.md#ユーティリティ)
+ * オブジェクト
+	 * [システム](index.md#システム)
+	 * [スイッチ変数](index.md#スイッチ変数)
+	 * [マップキャラクタ](index.md#マップキャラクタ)
+	 * [バトルキャラクタ](index.md#バトルキャラクタ)
+	 * [その他オブジェクト](index.md#その他オブジェクト)
+ * [データベース(JSON)](index.md#データベースjson)
+ * [入力](index.md#入力)
+ * [音声](index.md#音声)
+ * [画像](index.md#画像)
+	 * [レンダラ](index.md#レンダラ)
+	 * [シェーダ](index.md#シェーダ)
+	 * [スプライト(Sprite)](index.md#スプライトsprite)
+ 　* [コンテナ(PIXI.Container)](index.md#コンテナpixicontainer)
+ 　* [シーン(Scene_Base)](index.md#シーンscene_base)
+ 　* [ウィンドウ(Window_Base)](index.md#ウィンドウwindow_base)
+　	 * [選択ウィンドウ(Window_Selectable)](選択ウィンドウwindow_selectable)
+　	 * [コマンドウィンドウ(Window_Command)](index.md#コマンドウィンドウwindow_command)
+
+
 ### JavaScript拡張
 
 * [Array](Array.md)
@@ -133,11 +158,11 @@
     * [PIXI.BaseTexture](http://pixijs.download/release/docs/PIXI.BaseTexture.html)
     * [PIXI.Texture](http://pixijs.download/release/docs/PIXI.Texture.html)
     * [PIXI.DisplayObject](http://pixijs.download/release/docs/PIXI.DisplayObject.html)
-        * [PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html) → Extends
+        * [PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html) → [Extends](index.md#コンテナpixicontainer)
             * [PIXI.Graphics](http://pixijs.download/release/docs/PIXI.Graphics.html)
                 * [PIXI.tilemap.GraphicsLayer](https://github.com/pixijs/pixi-tilemap/blob/master/src/GraphicsLayer.ts)
             * [PIXI.Sprite](http://pixijs.download/release/docs/PIXI.Sprite.html)
-                * [Sprite](Sprite.md) → Extends
+                * [Sprite](Sprite.md) → [Extends](index.md#スプライトsprite)
 
 
 #### レンダラ
@@ -197,9 +222,9 @@
 * [Tilemap](Tilemap.md)
     * [ShaderTilemap](ShaderTilemap.md)
 * [Stage](Stage.md)
-    * [Scene_Base](Scene_Base.md) → Extends
+    * [Scene_Base](Scene_Base.md) → [Extends](index.md#シーンscene_base)
 * [Window](Window.md)
-    * [Window_Base](Window_Base.md) → Extends
+    * [Window_Base](Window_Base.md) → [Extends](index.md#ウィンドウwindow_base)
 
 
 #### シーン(Scene_Base)
@@ -237,7 +262,7 @@
 * [Window_ScrollText](Window_ScrollText.md)
 * [Window_ShopStatus](Window_ShopStatus.md)
 * [Window_SkillStatus](Window_SkillStatus.md)
-* [Window_Selectable](Window_Selectable.md) → Extends
+* [Window_Selectable](Window_Selectable.md) → [Extends](選択ウィンドウwindow_selectable)
 
 
 #### 選択ウィンドウ(Window_Selectable)
@@ -264,7 +289,7 @@
     * [Window_EquipItem](Window_EquipItem.md)
     * [Window_EventItem](Window_EventItem.md)
     * [Window_ShopSell](Window_ShopSell.md)
-* [Window_Command](Window_Command.md) → Extends
+* [Window_Command](Window_Command.md) → [Extends](index.md#コマンドウィンドウwindow_command)
 
 
 #### コマンドウィンドウ(Window_Command)
