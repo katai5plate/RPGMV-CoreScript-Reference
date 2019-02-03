@@ -7,6 +7,8 @@
 [コモンイベント]を定義したクラス。<br />
 JSONの定義データは [RPG.CommonEvent](RPG.CommonEvent.md)。
 
+[Game_Map](Game_Map.md) の _commonEvents プロパティに保持されている。
+
 ##### Properties:
 
 | Name | Type | Description |

@@ -1,273 +1,27 @@
-# Class: Game_Unit
+# Class: Game_Unit## Game_Unit ()#### new Game_Unit ()戦闘時のグループを扱う、[Game_Party](Game_Party.md) と [Game_Troop](Game_Troop.md) の親クラス。##### Properties:| Name | Type | Description || --- | --- | --- || `_inBattle` | Boolean | 戦闘中か |### Methods#### agility () → {[Number](Number.md)}ユニットの素早さを返す。##### Returns:<dl>	<dt> Type </dt>	<dd>		<span><a>Number</a></span>	</dd></dl>#### aliveMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
 
-## Game_Unit ()
+生存しているバトラーを配列で返す。
+##### Returns:<dl>	<dt> Type </dt>	<dd>		<span><a>Array</a>.&lt;<a>Game_Battler</a>&gt;</span>	</dd></dl>#### clearActions ()アクションを取り消す。
 
-#### new Game_Unit ()
+#### clearResults ()アクションの結果を取り消す。#### deadMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}死亡しているバトラーを配列で返す。##### Returns:<dl>	<dt> Type </dt>	<dd>		<span><a>Array</a>.&lt;<a>Game_Battler</a>&gt;</span>	</dd></dl>#### inBattle () → {Boolean}戦闘中か返す。
+##### Returns:<dl>	<dt> Type </dt>	<dd>		<span>Boolean</span>	</dd></dl>#### initialize ()オブジェクト生成時の初期化。#### isAllDead () → {Boolean}
 
-The superclass of [Game_Party](Game_Party.md) and [Game_Troop](Game_Troop.md).
+全バトラーが死亡したか。
+##### Returns:<dl>	<dt> Type </dt>	<dd>		<span>Boolean</span>	</dd></dl>#### makeActions ()
 
-##### Properties:
+戦闘行動を作成する。#### members () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
+戦闘中のバトラー生死問わず全て配列で返す。
+##### Returns:<dl>	<dt> Type </dt>	<dd>		<span><a>Array</a>.&lt;<a>Game_Battler</a>&gt;</span>	</dd></dl>#### movableMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
+動ける(死亡や麻痺などでない)バトラーを配列で返す。
+##### Returns:<dl>	<dt> Type </dt>	<dd>		<span><a>Array</a>.&lt;<a>Game_Battler</a>&gt;</span>	</dd></dl>#### onBattleEnd ()
+戦闘終了時に呼ばれるハンドラ。#### onBattleStart ()
 
-| Name | Type | Description |
-| --- | --- | --- |
-| `_inBattle` | Boolean |  |
+戦闘開始時に呼ばれるハンドラ。
 
-<dl>
-</dl>
+#### randomDeadTarget () → {[Game_Battler](Game_Battler.md)}
 
-### Methods
+死亡したバトラーからランダムに1体を返す。
+##### Returns:<dl>	<dt> Type </dt>	<dd>		<span><a>Game_Battler</a></span>	</dd></dl>#### randomTarget () → {[Game_Battler](Game_Battler.md)}
 
-#### agility () → {[Number](Number.md)}
-
-Returns the agility of the unit.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### aliveMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
-
-Returns the list of alive battlers.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Game_Battler</a>&gt;</span>
-                </dd>
-            </dl>
-
-#### clearActions ()
-
-Clears the unit's actions.
-<dl>
-</dl>
-
-#### clearResults ()
-
-Clears the action results.
-<dl>
-</dl>
-
-#### deadMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
-
-Returns the list of dead battlers.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Game_Battler</a>&gt;</span>
-                </dd>
-            </dl>
-
-#### inBattle () → {Boolean}
-
-Returns true if unit is in battle.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### initialize ()
-
- オブジェクト生成時の初期化。
-<dl>
-</dl>
-
-#### isAllDead () → {Boolean}
-
-Returns true if all members of the unit are dead.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### makeActions ()
-
-Creates the action's of the game unit.
-<dl>
-</dl>
-
-#### members () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
-
-Returns the list of battlers.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Game_Battler</a>&gt;</span>
-                </dd>
-            </dl>
-
-#### movableMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
-
-Returns the list of movable members.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Game_Battler</a>&gt;</span>
-                </dd>
-            </dl>
-
-#### onBattleEnd ()
-
-Handler for when battle has ended.
-<dl>
-</dl>
-
-#### onBattleStart ()
-
-Handler for when battle is started.
-<dl>
-</dl>
-
-#### randomDeadTarget () → {[Game_Battler](Game_Battler.md)}
-
-Returns a random dead target from the game unit.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Game_Battler</a></span>
-                </dd>
-            </dl>
-
-#### randomTarget () → {[Game_Battler](Game_Battler.md)}
-
-Returns a random target from the game unit.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Game_Battler</a></span>
-                </dd>
-            </dl>
-
-#### select (activeMember)
-
-Selects a member of the unit given a battler.
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `activeMember` | [Game_Battler](Game_Battler.md) |  |
-
-<dl>
-</dl>
-
-#### smoothDeadTarget (index) → {[Game_Battler](Game_Battler.md)}
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `index` | [Number](Number.md) |  |
-
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Game_Battler</a></span>
-                </dd>
-            </dl>
-
-#### smoothTarget (index) → {[Game_Battler](Game_Battler.md)}
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `index` | [Number](Number.md) |  |
-
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Game_Battler</a></span>
-                </dd>
-            </dl>
-
-#### substituteBattler () → {[Game_Battler](Game_Battler.md)}
-
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Game_Battler</a></span>
-                </dd>
-            </dl>
-
-#### tgrSum () → {[Number](Number.md)}
-
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
- <br>
-
-  Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
+含まれるバトラーからランダムに1体を返す。##### Returns:<dl>	<dt> Type </dt>	<dd>		<span><a>Game_Battler</a></span>	</dd></dl>#### select (activeMember)
+指定されたバトラーを選択する。##### Parameters:| Name | Type | Description || --- | --- | --- || `activeMember` | [Game_Battler](Game_Battler.md) | バトラー |#### smoothDeadTarget (index) → {[Game_Battler](Game_Battler.md)}##### Parameters:| Name | Type | Description || --- | --- | --- || `index` | [Number](Number.md) |  |##### Returns:<dl>	<dt> Type </dt>	<dd>		<span><a>Game_Battler</a></span>	</dd></dl>#### smoothTarget (index) → {[Game_Battler](Game_Battler.md)}##### Parameters:| Name | Type | Description || --- | --- | --- || `index` | [Number](Number.md) |  |##### Returns:<dl>	<dt> Type </dt>	<dd>		<span><a>Game_Battler</a></span>	</dd></dl>#### substituteBattler () → {[Game_Battler](Game_Battler.md)}##### Returns:<dl>	<dt> Type </dt>	<dd>		<span><a>Game_Battler</a></span>	</dd></dl>#### tgrSum () → {[Number](Number.md)}##### Returns:<dl>	<dt> Type </dt>	<dd>		<span><a>Number</a></span>	</dd></dl> <br>  Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
