@@ -3,7 +3,7 @@
 ## Namespace: [RPG](RPG.md)
 
 [コモンイベント]を構成する JSON データ。ファイル data/CommonEvents.json に記述されている。<br />
-大域変数 [$dataCommonEvents](global.md#$dataCommonEvents) に配列として定義されている。
+大域変数 [$dataCommonEvents](global.md#datacommonevents-arrayrpgcommonevent) に配列として定義されている。
 
 類似のクラスに [RPG.Event](RPG.Event.md)、[RPG.Troop](RPG.Troop.md) がある。
 また条件を記述した [RPG.EventPage.Conditions](RPG.EventPage.Conditions.md)、[RPG.BattleEventPage.Conditions](RPG.BattleEventPage.Conditions.md) の役割も持っている。
