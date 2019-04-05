@@ -1,7 +1,7 @@
 # Class: ResourceHandler
 
 データの読み込みの制御に使われる静的クラス。<br />
-[Bitmap](Bitmap.md)、[Graphics](Graphics.md)、[WebAudio](WebAudio.md)、[DataManager](DataManager.md)、で使われている。
+[Bitmap](Bitmap.md)、[Graphics](Graphics.md)、[WebAudio](WebAudio.md)、[DataManager](DataManager.md)、[Input](Input.md) で使われている。
 
 ##### Properties:
 
