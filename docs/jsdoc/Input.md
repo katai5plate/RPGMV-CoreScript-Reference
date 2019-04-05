@@ -97,7 +97,8 @@ x,y方向の入力からテンキー方向を生成
 イベントハンドラの設定
 
 #### (static) _shouldPreventDefault (keyCode)
-イベントの規定動作をさせるか
+イベントの規定動作を防ぐか。<br/>
+keyCode が 33:pageup, 34:pagedown, 37:left, 38:up, 39:right, 40:down のいずれかであった場合 true を返す。
 
 ##### Parameters:
 
