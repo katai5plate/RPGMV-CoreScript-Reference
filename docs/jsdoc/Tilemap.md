@@ -278,6 +278,7 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 
 #### (static) getAutotileKind (tileId) → {[Number](Number.md)}
  オートタイルの種類を返す。
+ 返り値から以下の表にしたがって判断が必要だが、各種isXXXメソッドを使えば種類が確定できる。
 
 ##### Parameters:
 
@@ -286,12 +287,13 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 | `tileId` | [Number](Number.md) | タイルID |
 
 ##### Returns:
+
 | Set | Description |
 | --- | --- |
 | A1 | 海:0、深海:1、浅瀬障害:2,3、水面:4,6,8,10,12,14、滝:5,7,9,11,13,15 |
-| A2 | 16 〜 47 |
-| A3 | 48 〜 79 |
-| A4 | 80 〜 127 |
+| A2 | 地面:16〜19,24〜27,32〜35,40〜43、重ねて配置用:20〜23,28〜31,36〜39,44〜47 |
+| A3 | 屋根:48〜55,64〜71、壁:56〜63,72〜79 |
+| A4 | 壁上：80〜87,96〜103,112〜119、壁:88〜95,104〜111,120〜127 |
 
 <dl>
     <dt> Type </dt>
@@ -320,7 +322,7 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 </dl>
 
 #### (static) isAutotile (tileId) → {Boolean}
- オートタイルか。
+ オートタイル(A1〜A4)か。
 
 ##### Parameters:
 
@@ -337,7 +339,7 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 </dl>
 
 #### (static) isFloorTypeAutotile (tileId) → {Boolean}
- 地表面のオートタイルか。
+ (壁や滝ではない)地表面のオートタイルか。
 
 ##### Parameters:
 
@@ -354,7 +356,7 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 </dl>
 
 #### (static) isGroundTile (tileId) → {Boolean}
- 地表のタイルか。
+ 地表(A1,A2,A5)のタイルか。
 
 ##### Parameters:
 
@@ -371,7 +373,7 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 </dl>
 
 #### (static) isRoofTile (tileId) → {Boolean}
- 屋根タイルか。
+ 屋根(A3奇数行)タイルか。
 
 ##### Parameters:
 
@@ -388,7 +390,7 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 </dl>
 
 #### (static) isSameKindTile (tileID1, tileID2) → {Boolean}
- 指定したタイルが同じ種類か。
+ 指定したタイルが(オートタイルの形は問わないで)同じ種類か。
 
 ##### Parameters:
 
@@ -406,7 +408,7 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 </dl>
 
 #### (static) isShadowingTile (tileId) → {Boolean}
- 設置した時に影が自動でつけられるタイルか。
+ 設置した時に影が自動でつけられるタイル(A3 と A4)か。
 
 ##### Parameters:
 
@@ -508,7 +510,7 @@ A5(通常)のタイルか。
 </dl>
 
 #### (static) isVisibleTile (tileId) → {Boolean}
- 表示されるタイルか。
+ 表示されるタイル(0〜TILE_ID_MAXに含まれる)か。
 
 ##### Parameters:
 
@@ -525,7 +527,7 @@ A5(通常)のタイルか。
 </dl>
 
 #### (static) isWallSideTile (tileId) → {Boolean}
- 壁面タイルか。
+ 壁面タイル(A3偶数行 と A4偶数行)か。
 
 ##### Parameters:
 
@@ -542,7 +544,7 @@ A5(通常)のタイルか。
 </dl>
 
 #### (static) isWallTile (tileId) → {Boolean}
- 壁タイルか。
+ 壁タイル(A3偶数行 と A4)か。
 
 ##### Parameters:
 
@@ -559,7 +561,7 @@ A5(通常)のタイルか。
 </dl>
 
 #### (static) isWallTopTile (tileId) → {Boolean}
- 壁上面タイルか。
+ 壁上面タイル(A4奇数行)か。
 
 ##### Parameters:
 
@@ -576,7 +578,7 @@ A5(通常)のタイルか。
 </dl>
 
 #### (static) isWallTypeAutotile (tileId) → {Boolean}
- 壁タイプのオートタイルか。
+ 壁タイプのタイル(A3 と A4偶数行)か。
 
 ##### Parameters:
 
@@ -593,7 +595,7 @@ A5(通常)のタイルか。
 </dl>
 
 #### (static) isWaterfallTile (tileId) → {Boolean}
- 滝のタイルか。
+ 滝のタイル(A1で偶数列2番目以降)か。
 
 ##### Parameters:
 
