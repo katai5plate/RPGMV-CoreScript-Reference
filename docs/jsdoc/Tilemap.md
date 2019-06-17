@@ -23,9 +23,9 @@
 | `TILE_ID_D` | [Number](Number.md) | [static] Dタイルの開始番号(512) |
 | `TILE_ID_E` | [Number](Number.md) | [static] Eタイルの開始番号(768) |
 | `TILE_ID_MAX` | [Number](Number.md) | [static] タイルの終端番号(8192) |
-| `FLOOR_AUTOTILE_TABLE` | [Array](Array.md).<[Array](Array.md).<[Array](Array.md).<[Number](Number.md)>>> | [static] 床オートタイル組み立てテーブル |
-| `WALL_AUTOTILE_TABLE` | [Array](Array.md).<[Array](Array.md).<[Array](Array.md).<[Number](Number.md)>>> | [static] 壁オートタイル組み立てテーブル |
-| `WATERFALL_AUTOTILE_TABLE` | [Array](Array.md).<[Array](Array.md).<[Array](Array.md).<[Number](Number.md)>>> | [static] 滝オートタイル組み立てテーブル |
+| `FLOOR_AUTOTILE_TABLE` | [Array](Array.md).<[Array](Array.md).<[Array](Array.md).<[Number](Number.md)\>\>\> | [static] 床オートタイル組み立てテーブル |
+| `WALL_AUTOTILE_TABLE` | [Array](Array.md).<[Array](Array.md).<[Array](Array.md).<[Number](Number.md)\>\>\> | [static] 壁オートタイル組み立てテーブル |
+| `WATERFALL_AUTOTILE_TABLE` | [Array](Array.md).<[Array](Array.md).<[Array](Array.md).<[Number](Number.md)\>\>\> | [static] 滝オートタイル組み立てテーブル |
 | `parent` | Object | [read-only][super] 親オブジェクト(タイルマップを保持している[Spriteset_Map](Spriteset_Map.md)) |
 | `children` | [Array](Array.md).\<[Sprite](Sprite.md)> | [read-only][super] 子オブジェクト([Sprite](Sprite.md) 、[Sprite_Character](Sprite_Character.md) 、[Sprite_Destination](Sprite_Destination.md) を含む配列) |
 | `animationCount` | [Number](Number.md) |  オートタイルアニメーションのカウント |
@@ -46,7 +46,7 @@
 ### Methods
 
 #### _compareChildOrder (a, b)
-[\_sortChildren](#static-_sortchildren-)用ソート条件のコールバック関数。<br />
+[\_sortChildren](#_sortchildren-)用ソート条件のコールバック関数。<br />
 childrenプロパティに含まれる子オブジェクトが、a, b に渡される。<br />
 順番は渡されたオブジェクトの z, y, spriteIdプロパティによって評価される。
 
@@ -252,6 +252,7 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 
 #### _sortChildren ()
  子オブジェクトのソート。
+ ソート条件は[\_compareChildOrder](#_comparechildorder-a-b)に記述。
 
 ####  _updateLayerPositions (startX, startY)
  レイヤーの位置をアップデート。
