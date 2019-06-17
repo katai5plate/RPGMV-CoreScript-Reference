@@ -390,7 +390,7 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 </dl>
 
 #### (static) isSameKindTile (tileID1, tileID2) → {Boolean}
- 指定したタイルが(オートタイルの形は問わないで)同じ種類か。
+ 指定したタイルが(オートタイルのシェイプは問わないで)同じ種類か。
 
 ##### Parameters:
 
@@ -652,8 +652,8 @@ A5(通常)のタイルか。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `kind` | [Number](Number.md) |  種類(See: [getAutotileKind](#static-getautotilekind-tileid--number)) |
-| `shape` | [Number](Number.md) |  形(See: [getAutotileShape](#static-getautotileshape-tileid--number)) |
+| `kind` | [Number](Number.md) | 種類(See: [getAutotileKind](#static-getautotilekind-tileid--number)) |
+| `shape` | [Number](Number.md) | シェイプ(See: [getAutotileShape](#static-getautotileshape-tileid--number)) |
 
 ##### Returns:
 <dl>
