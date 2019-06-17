@@ -303,7 +303,7 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 </dl>
 
 #### (static) getAutotileShape (tileId) → {[Number](Number.md)}
- オートタイルの形を返す。
+ オートタイルのシェイプを返す。
 
 ##### Parameters:
 
@@ -312,7 +312,7 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 | `tileId` | [Number](Number.md) | タイルID |
 
 ##### Returns:
-地面・床:0〜47、屋根・壁:0〜15、滝:0〜3 の値
+地面・床・壁上面:0〜47、屋根・壁:0〜15、滝:0〜3 の値
 
 <dl>
     <dt> Type </dt>
@@ -339,7 +339,7 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 </dl>
 
 #### (static) isFloorTypeAutotile (tileId) → {Boolean}
- (壁や滝ではない)地表面のオートタイルか。
+ (48シェイプを持つ)地表面タイプのオートタイルか。
 
 ##### Parameters:
 
@@ -578,7 +578,7 @@ A5(通常)のタイルか。
 </dl>
 
 #### (static) isWallTypeAutotile (tileId) → {Boolean}
- 壁タイプのタイル(A3 と A4偶数行)か。
+ (16シェイプを持つ)壁タイプのタイルか。
 
 ##### Parameters:
 
@@ -612,7 +612,7 @@ A5(通常)のタイルか。
 </dl>
 
 #### (static) isWaterfallTypeAutotile (tileId) → {Boolean}
- 滝タイプのオートタイルか。
+ (4シェイプを持つ)滝タイプのオートタイルか。
 
 ##### Parameters:
 
@@ -629,7 +629,7 @@ A5(通常)のタイルか。
 </dl>
 
 #### (static) isWaterTile (tileId) → {Boolean}
- 水面のタイルか。
+ 水面のタイル(浅瀬障害を除くA1)か。
 
 ##### Parameters:
 
@@ -646,7 +646,7 @@ A5(通常)のタイルか。
 </dl>
 
 #### (static) makeAutotileId (kind, shape) → {[Number](Number.md)}
- 指定したオートタイルの種類と形からタイルIDを返す。
+ 指定したオートタイルの種類とシェイプからタイルIDを返す。
 
 ##### Parameters:
 
