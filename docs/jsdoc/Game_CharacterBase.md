@@ -57,7 +57,7 @@
 <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>Number</a></span>
+		<span>Number</span>
 	</dd>
 </dl>
 
@@ -71,7 +71,7 @@
  <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>Number</a></span>
+		<span>Number</span>
 	</dd>
 </dl>
 
@@ -85,7 +85,7 @@
 <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>Number</a></span>
+		<span>Number</span>
 	</dd>
 </dl>
 
@@ -100,22 +100,21 @@
 <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>Number</a></span>
+		<span>Number</span>
 	</dd>
 </dl>
 
 
 #### bushDepth () → {[Number](Number.md)}
 
-[茂み]の深さを返す。
+[茂み]の深さ(ピクセル数)を返す。
 
 ##### Returns:
 
- ピクセル
 <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>Number</a></span>
+		<span>Number</span>
 	</dd>
 </dl>
 
@@ -174,7 +173,7 @@
 <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>Number</a></span>
+		<span>Number</span>
 	</dd>
 </dl>
 
@@ -188,7 +187,7 @@
 <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>String</a></span>
+		<span>String</span>
 	</dd>
 </dl>
 
@@ -265,7 +264,7 @@
 <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>Number</a></span>
+		<span>Number</span>
 	</dd>
 </dl>
 
@@ -279,7 +278,7 @@
 <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>Number</a></span>
+		<span>Number</span>
 	</dd>
 </dl>
 
@@ -704,7 +703,7 @@
 <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>Number</a></span>
+		<span>Number</span>
 	</dd>
 </dl>
 
@@ -730,7 +729,7 @@
 <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>Number</a></span>
+		<span>Number</span>
 	</dd>
 </dl>
 
@@ -758,7 +757,7 @@
 <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>Number</a></span>
+		<span>Number</span>
 	</dd>
 </dl>
 
@@ -773,7 +772,7 @@
 <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>Number</a></span>
+		<span>Number</span>
 	</dd>
 </dl>
 
@@ -799,7 +798,7 @@
 <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>Number</a></span>
+		<span>Number</span>
 	</dd>
 </dl>
 
@@ -813,7 +812,7 @@
 <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>Number</a></span>
+		<span>Number</span>
 	</dd>
 </dl>
 
@@ -868,7 +867,7 @@
 <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>Number</a></span>
+		<span>Number</span>
 	</dd>
 </dl>
 
@@ -887,7 +886,7 @@
 <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>Number</a></span>
+		<span>Number</span>
 	</dd>
 </dl>
 
@@ -941,7 +940,7 @@
 <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>Number</a></span>
+		<span>Number</span>
 	</dd>
 </dl>
 
@@ -955,7 +954,7 @@
 <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>Number</a></span>
+		<span>Number</span>
 	</dd>
 </dl>
 
@@ -969,7 +968,7 @@
 <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>Number</a></span>
+		<span>Number</span>
 	</dd>
 </dl>
 
@@ -984,7 +983,7 @@
 <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>Number</a></span>
+		<span>Number</span>
 	</dd>
 </dl>
 
@@ -1005,7 +1004,7 @@
 <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>Number</a></span>
+		<span>Number</span>
 	</dd>
 </dl>
 
@@ -1026,7 +1025,7 @@
 <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>Number</a></span>
+		<span>Number</span>
 	</dd>
 </dl>
 
@@ -1217,7 +1216,7 @@
 <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>Number</a></span>
+		<span>Number</span>
 	</dd>
 </dl>
 
@@ -1246,7 +1245,7 @@
 <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>Number</a></span>
+		<span>Number</span>
 	</dd>
 </dl>
 
@@ -1260,7 +1259,7 @@
 <dl>
 	<dt> Type </dt>
 	<dd>
-		<span><a>Number</a></span>
+		<span>Number</span>
 	</dd>
 </dl>
 
