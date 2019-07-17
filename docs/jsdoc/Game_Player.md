@@ -24,295 +24,242 @@
 | `_followers` | [Game_Followers](Game_Followers.md) |  |
 | `_encounterCount` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ### Extends
 
 * [Game_Character](Game_Character.md)
 
+### Overrides
+
+#### [Game_Character](Game_Character.md)
+* [checkEventTriggerTouch (x, y)](Game_Character.md#checkEventTriggerTouch)
+* [increaseSteps ()](Game_Character.md#increaseSteps)
+* [initialize ()](Game_Character.md#initialize)
+* [initMembers ()](Game_Character.md#initMembers)
+* [isDashing ()](Game_Character.md#isDashing)
+* [isDebugThrough ()](Game_Character.md#isDebugThrough)
+* [isMapPassable (x, y, d)](Game_Character.md#isMapPassable)
+* [isStopping () ](Game_Character.md#isStopping)
+* [jump (xPlus, yPlus)](Game_Character.md#jump)
+* [locate (x, y)](Game_Character.md#locate)
+* [moveDiagonally (horz, vert)](Game_Character.md#moveDiagonally)
+* [moveStraight (d)](Game_Character.md#moveStraight)
+* [update (sceneActive opt)](Game_Character.md#update)
+
+
+
+### Inherited From
+
+#### [Game_CharacterBase](Game_CharacterBase.md)
+
+* [animationId ()](Game_CharacterBase.md#animationid---number)
+* [animationWait ()](Game_CharacterBase.md#animationwait---number)
+* [balloonId ()](Game_CharacterBase.md#balloonid---number)
+* [blendMode ()](Game_CharacterBase.md#blendmode---number)
+* [bushDepth ()](Game_CharacterBase.md#bushdepth---number)
+* [canPass (x, y, d)](Game_CharacterBase.md#canPass)
+* [canPassDiagonally (x, y, horz, vert)](Game_CharacterBase.md#canPassDiagonally)
+* [characterIndex ()](Game_CharacterBase.md#characterIndex)
+* [characterName ()](Game_CharacterBase.md#characterName)
+* [checkEventTriggerTouch (x, y)](Game_CharacterBase.md#checkEventTriggerTouch)
+* [checkEventTriggerTouchFront (d)](Game_CharacterBase.md#checkEventTriggerTouchFront)
+* [checkStop (threshold)](Game_CharacterBase.md#checkStop)
+* [copyPosition (character)](Game_CharacterBase.md#copyPosition)
+* [endAnimation ()](Game_CharacterBase.md#endAnimation)
+* [endBalloon ()](Game_CharacterBase.md#endBalloon)
+* [direction ()](Game_CharacterBase.md#direction)
+* [distancePerFrame ()](Game_CharacterBase.md#distancePerFrame)
+* [hasStepAnime ()](Game_CharacterBase.md#hasStepAnime)
+* [hasWalkAnime ()](Game_CharacterBase.md#hasWalkAnime)
+* [increaseSteps ()](Game_CharacterBase.md#increaseSteps)
+* [isAnimationPlaying ()](Game_CharacterBase.md#isAnimationPlaying)
+* [isBalloonPlaying ()](Game_CharacterBase.md#isBalloonPlaying)
+* [isCollidedWithCharacters (x, y)](Game_CharacterBase.md#isCollidedWithCharacters)
+* [isCollidedWithEvents (x, y)](Game_CharacterBase.md#isCollidedWithEvents)
+* [isCollidedWithVehicles (x, y)](Game_CharacterBase.md#isCollidedWithVehicles)
+* [isDashing ()](Game_CharacterBase.md#isDashing)
+* [isDebugThrough ()](Game_CharacterBase.md#isDebugThrough)
+* [isDirectionFixed ()](Game_CharacterBase.md#isDirectionFixed)
+* [isJumping ()](Game_CharacterBase.md#isJumping)
+* [isMapPassable (x, y, d)](Game_CharacterBase.md#isMapPassable)
+* [isMovementSucceeded (x opt, y opt)](Game_CharacterBase.md#isMovementSucceeded)
+* [isMoving ()](Game_CharacterBase.md#isMoving)
+* [isNearTheScreen ()](Game_CharacterBase.md#isNearTheScreen)
+* [isNormalPriority ()](Game_CharacterBase.md#isNormalPriority)
+* [isObjectCharacter ()](Game_CharacterBase.md#isObjectCharacter)
+* [isOnBush ()](Game_CharacterBase.md#isOnBush)
+* [isOnLadder ()](Game_CharacterBase.md#isOnLadder)
+* [isOriginalPattern ()](Game_CharacterBase.md#isOriginalPattern)
+* [isStopping ()](Game_CharacterBase.md#isStopping)
+* [isThrough ()](Game_CharacterBase.md#isThrough)
+* [isTile ()](Game_CharacterBase.md#isTile)
+* [isTransparent ()](Game_CharacterBase.md#isTransparent)
+* [jump (xPlus, yPlus)](Game_CharacterBase.md#jump)
+* [jumpHeight ()](Game_CharacterBase.md#jumpHeight)
+* [locate (x, y)](Game_CharacterBase.md#locate)
+* [maxPattern ()](Game_CharacterBase.md#maxPattern)
+* [moveDiagonally (horz, vert)](Game_CharacterBase.md#moveDiagonally)
+* [moveFrequency ()](Game_CharacterBase.md#moveFrequency)
+* [moveSpeed ()](Game_CharacterBase.md#moveSpeed)
+* [moveStraight (d)](Game_CharacterBase.md#moveStraight)
+* [opacity ()](Game_CharacterBase.md#opacity)
+* [pattern ()](Game_CharacterBase.md#pattern)
+* [pos (x, y)](Game_CharacterBase.md#pos)
+* [posNt (x, y)](Game_CharacterBase.md#posNt)
+* [realMoveSpeed ()](Game_CharacterBase.md#realMoveSpeed)
+* [refreshBushDepth ()](Game_CharacterBase.md#refreshBushDepth)
+* [regionId ()](Game_CharacterBase.md#regionId)
+* [requestAnimation (animationId)](Game_CharacterBase.md#requestAnimation)
+* [requestBalloon (balloonId)](Game_CharacterBase.md#requestBalloon)
+* [resetPattern ()](Game_CharacterBase.md#resetPattern)
+* [resetStopCount ()](Game_CharacterBase.md#resetStopCount)
+* [reverseDir (d)](Game_CharacterBase.md#reverseDir)
+* [screenX ()](Game_CharacterBase.md#screenX)
+* [screenY ()](Game_CharacterBase.md#screenY)
+* [screenZ ()](Game_CharacterBase.md#screenZ)
+* [scrolledX ()](Game_CharacterBase.md#scrolledX)
+* [scrolledY ()](Game_CharacterBase.md#scrolledY)
+* [setBlendMode (blendMode)](Game_CharacterBase.md#setBlendMode)
+* [setDirection (d)](Game_CharacterBase.md#setDirection)
+* [setDirectionFix (directionFix)](Game_CharacterBase.md#setDirectionFix)
+* [setImage (characterName, characterIndex)](Game_CharacterBase.md#setImage)
+* [setMoveFrequency (moveFrequency)](Game_CharacterBase.md#setMoveFrequency)
+* [setMovementSuccess (success)](Game_CharacterBase.md#setMovementSuccess)
+* [setMoveSpeed (moveSpeed)](Game_CharacterBase.md#setMoveSpeed)
+* [setOpacity (opacity)](Game_CharacterBase.md#setOpacity)
+* [setPattern (pattern)](Game_CharacterBase.md#setPattern)
+* [setPosition (x, y)](Game_CharacterBase.md#setPosition)
+* [setPriorityType (priorityType)](Game_CharacterBase.md#setPriorityType)
+* [setStepAnime (stepAnime)](Game_CharacterBase.md#setStepAnime)
+* [setThrough (through)](Game_CharacterBase.md#setThrough)
+* [setTileImage (tileId)](Game_CharacterBase.md#setTileImage)
+* [setTransparent (transparent)](Game_CharacterBase.md#setTransparent)
+* [setWalkAnime (walkAnime)](Game_CharacterBase.md#setWalkAnime)
+* [shiftY ()](Game_CharacterBase.md#shiftY)
+* [startAnimation ()](Game_CharacterBase.md#startAnimation)
+* [startBalloon ()](Game_CharacterBase.md#startBalloon)
+* [straighten ()](Game_CharacterBase.md#straighten)
+* [terrainTag ()](Game_CharacterBase.md#terrainTag)
+* [tileId ()](Game_CharacterBase.md#tileId)
+* [turnTowardPlayer ()](Game_CharacterBase.md#update)
+* [updateAnimation ()](Game_CharacterBase.md#updateAnimation)
+* [updateAnimationCount ()](Game_CharacterBase.md#updateAnimationCount)
+* [updateJump ()](Game_CharacterBase.md#updateJump)
+* [updateMove ()](Game_CharacterBase.md#updateMove)
+* [updatePattern ()](Game_CharacterBase.md#updatePattern)
+
+
+#### [Game_Character](Game_Character)
+
+* [advanceMoveRouteIndex ()](Game_Character.md#advanceMoveRouteIndex)
+* [deltaXFrom (x)](Game_Character.md#deltaXFrom)
+* [deltaYFrom (y)(Game_Character.md#deltaYFrom)
+* [findDirectionTo (goalX, goalY)](Game_Character.md#findDirectionTo)
+* [ forceMoveRoute (moveRoute)](Game_Character.md#forceMoveRoute)
+* [isMoveRouteForcing ()](Game_Character.md#isMoveRouteForcing)
+* [memorizeMoveRoute ()](Game_Character.md#memorizeMoveRoute)
+* [moveAwayFromCharacter (character)](Game_Character.md#moveAwayFromCharacter)
+* [moveAwayFromPlayer ()](Game_Character.md#moveAwayFromPlayer)
+* [moveBackward ()](Game_Character.md#moveBackward)
+* [moveForward ()](Game_Character.md#moveForward)
+* [moveRandom ()](Game_Character.md#moveRandom)
+* [moveTowardCharacter (character)](Game_Character.md#moveTowardCharacter)
+* [moveTowardPlayer ()](Game_Character.md#moveTowardPlayer)
+* [processMoveCommand (command)](Game_Character.md#processMoveCommand)
+* [processRouteEnd ()](Game_Character.md#processRouteEnd)
+* [restoreMoveRoute ()](Game_Character.md#restoreMoveRoute)
+* [searchLimit ()](Game_Character.md#searchLimit)
+* [setMoveRoute (moveRoute)](Game_Character.md#setMoveRoute)
+* [swap (character)](Game_Character.md#swap)
+* [turn180 ()](Game_Character.md#turn180)
+* [turnAwayFromCharacter (character)](Game_Character.md#turnAwayFromCharacter)
+* [turnAwayFromPlayer ()](Game_Character.md#turnAwayFromPlayer)
+* [turnLeft90 ()](Game_Character.md#turnLeft90)
+* [turnRandom ()](Game_Character.md#turnRandom)
+* [turnRight90 ()](Game_Character.md#turnRight90)
+* [turnRightOrLeft90 ()](Game_Character.md#turnRightOrLeft90)
+* [turnTowardCharacter (character)](Game_Character.md#turnTowardCharacter)
+* [turnTowardPlayer ()](Game_Character.md#turnTowardPlayer)
+* [updateRoutineMove ()](Game_Character.md#updateRoutineMove)
+* [updateStop ()](Game_Character.md#updateStop)
+
+
 ### Methods
 
-#### advanceMoveRouteIndex ()
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#advanceMoveRouteIndex</a>
-                        </li>
-                    </ul>
-                </dd>
-                <dt>To Do:</dt>
-                <dd>
-                    <ul>
-                        <li>&#x3053;&#x306E;&#x7528;&#x8A9E;&#x306E;&#x610F;&#x5473;&#x304C;&#x5206;&#x304B;&#x3063;&#x305F;&#x3089;&#x6559;&#x3048;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;</li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### animationId () → {[Number](Number.md)}
-
- アニメーションIDを返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#animationId</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### animationWait () → {[Number](Number.md)}
-
- アニメーションの待ち時間を返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#animationWait</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
- フレーム
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### areFollowersGathered () → {Boolean}
 
-[隊列メンバー]が集合しているか。
-<dl>
-</dl>
+[隊列メンバー]が集合しているか。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### areFollowersGathering () → {Boolean}
 
-[隊列メンバー]の集合中か。
+[隊列メンバー]の集合中か。
+
+##### Returns:
+
 <dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
 </dl>
 
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### balloonId () → {[Number](Number.md)}
-
- フキダシアイコンIDを返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#balloonId</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### blendMode () → {[Number](Number.md)}
-
-[合成方法]を返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#blendMode</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-0: 通常, 1: 加算, 2: 乗算, 3: スクリーン
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### bushDepth () → {[Number](Number.md)}
-
-[茂み]の深さを返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#bushDepth</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
- ピクセル
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### canEncounter () → {Boolean}
 
- 敵と遭遇できる(エンカウント)状態か。
-<dl>
-</dl>
+ 敵と遭遇できる(エンカウント)状態か。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### canMove () → {Boolean}
 
- プレイヤーキャラクタを操作可能か。
+ プレイヤーキャラクタを操作可能か。
+
+##### Returns:
+
 <dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
 </dl>
 
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### canPass (x, y, d) → {Boolean}
-
- 指定位置から指定向きへの通行が可能か。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-| `d` | [Number](Number.md) |  向き(テンキー対応) |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#canPass</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### canPassDiagonally (x, y, horz, vert) → {Boolean}
-
- 指定位置から斜め指定向きへの通行が可能か。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-| `horz` | [Number](Number.md) |  横方向(テンキー対応) |
-| `vert` | [Number](Number.md) |  縦方向(テンキー対応) |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#canPassDiagonally</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### canStartLocalEvents () → {Boolean}
 
- 地表の[イベント]を実行できるか。 飛行船などで空を飛んでいる場合、実行できない。
-<dl>
-</dl>
+ 地表の[イベント]を実行できるか。 飛行船などで空を飛んでいる場合、実行できない。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### center (x, y)
 
- 画面中心を基準にマップを表示。 [Game_Map#setDisplayPos](Game_Map.html#setDisplayPos) は左上を基準とする。
+ 画面中心を基準にマップを表示。 [Game_Map#setDisplayPos](Game_Map.html#setDisplayPos) は左上を基準とする。
 
 ##### Parameters:
 
@@ -321,90 +268,40 @@
 | `x` | [Number](Number.md) |  タイル数 |
 | `y` | [Number](Number.md) |  タイル数 |
 
-<dl>
-</dl>
 
 #### centerX () → {[Number](Number.md)}
 
- 画面の中心 x座標。
-<dl>
-</dl>
+ 画面の中心 x座標(タイル数)。
 
 ##### Returns:
 
- タイル数
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span><a>Number</a></span>
+	</dd>
+</dl>
+
 
 #### centerY () → {[Number](Number.md)}
 
- 画面中心 y座標。
+ 画面中心 y座標。
+
+##### Returns:
+
+
+ タイル数
 <dl>
+	<dt> Type </dt>
+	<dd>
+		<span><a>Number</a></span>
+	</dd>
 </dl>
 
-##### Returns:
-
- タイル数
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### characterIndex () → {[Number](Number.md)}
-
- キャラクタ画像の番号を返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#characterIndex</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### characterName () → {[String](String.md)}
-
- キャラクタ画像のファイル名を返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#characterName</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
 
 #### checkEventTriggerHere (triggers)
 
- 現在地にある[イベント]のうち、指定[トリガー]のものを実行。
+ 現在地にある[イベント]のうち、指定[トリガー]のものを実行。
 
 ##### Parameters:
 
@@ -412,12 +309,10 @@
 | --- | --- | --- |
 | `triggers` | [Array](Array.md).<[Number](Number.md)> |  |
 
-<dl>
-</dl>
 
 #### checkEventTriggerThere (triggers)
 
- 現在地の一歩前にある[イベント]のうち、指定[トリガー]のものを実行。
+ 現在地の一歩前にある[イベント]のうち、指定[トリガー]のものを実行。
 
 ##### Parameters:
 
@@ -425,280 +320,44 @@
 | --- | --- | --- |
 | `triggers` | [Array](Array.md).<[Number](Number.md)> |  |
 
-<dl>
-</dl>
-
-#### checkEventTriggerTouch (x, y)
-
- タッチ(クリック)で発生する[イベント]を実行。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#checkEventTriggerTouch</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### checkEventTriggerTouchFront (d)
-
- 指定方向にあるイベントトリガを起動。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `d` | [Number](Number.md) |  向き(テンキー対応) |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#checkEventTriggerTouchFront</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### checkStop (threshold) → {Boolean}
-
- 停止状態が閾値を超えたか。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `threshold` | [Number](Number.md) |  停止カウントの閾値(フレーム) |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#checkStop</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### clearTransferInfo ()
 
-[場所移動]情報を削除。
-<dl>
-</dl>
+[場所移動]情報を削除。
 
-#### copyPosition (character)
-
- 指定キャラクタの位置を自身の位置にコピー。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `character` | [Game_Player](Game_Player.md) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#copyPosition</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### deltaXFrom (x) → {[Number](Number.md)}
-
- 指定した x座標と自身の x座標の差分を返す。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#deltaXFrom</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
- タイル数
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### deltaYFrom (y) → {[Number](Number.md)}
-
- 指定した y座標と自身の y座標の差分を返す。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `y` | [Number](Number.md) |  タイル数 |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#deltaYFrom</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
- タイル数
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### direction () → {[Number](Number.md)}
-
- 向きを返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#direction</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
- 向き(テンキー対応)
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### distancePerFrame () → {[Number](Number.md)}
-
- フレーム毎の移動距離を返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#distancePerFrame</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### encounterProgressValue () → {[Number](Number.md)}
 
-[エンカウント]の発生カウントダウン量。 スキルや船の上などで減っている場合、茂みで増えている場合がある。
-<dl>
-</dl>
+[エンカウント]の発生カウントダウン量。 スキルや船の上などで減っている場合、茂みで増えている場合がある。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span><a>Number</a></span>
+	</dd>
+</dl>
 
-#### endAnimation ()
-
-[アニメーション]表示を終了。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#endAnimation</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### endBalloon ()
-
-[フキダシアイコン]表示を終了。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#endBalloon</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### executeEncounter () → {Boolean}
 
- エンカウントを実行。
-<dl>
-</dl>
+ エンカウントを実行。
 
 ##### Returns:
 
- 実行できたか。
+ 実行できたか。
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### executeMove (direction)
 
- 指定の向きへ[一歩前進]。
+ 指定の向きへ[一歩前進]。
 
 ##### Parameters:
 
@@ -706,310 +365,111 @@
 | --- | --- | --- |
 | `direction` | [Number](Number.md) |  向き(テンキー対応) |
 
-<dl>
-</dl>
 
 #### fadeType () → {[Number](Number.md)}
 
-[場所移動]時の[フェード]を返す。
+[場所移動]時の[フェード]を返す。
+
+##### Returns:
+
 <dl>
+	<dt> Type </dt>
+	<dd>
+		<span><a>Number</a></span>
+	</dd>
 </dl>
 
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### findDirectionTo (goalX, goalY) → {[Number](Number.md)}
-
- 指定座標へたどり着くための向きを返す。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `goalX` | [Number](Number.md) |  タイル数 |
-| `goalY` | [Number](Number.md) |  タイル数 |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#findDirectionTo</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
- 向き(テンキー対応)
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### followers () → {[Game_Followers](Game_Followers.md)}
 
-[隊列メンバー]を返す。
-<dl>
-</dl>
+[隊列メンバー]を返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Game_Followers</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span><a>Game_Followers</a></span>
+	</dd>
+</dl>
+
 
 #### forceMoveForward ()
 
- 強制的にプレイヤーキャラクタを前に進める。
-<dl>
-</dl>
+ 強制的にプレイヤーキャラクタを前に進める。
 
-#### forceMoveRoute (moveRoute)
-
-[移動ルート]を強制。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `moveRoute` | [RPG.MoveRoute](RPG.MoveRoute.md) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#forceMoveRoute</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### gatherFollowers ()
 
-[隊列メンバーの集合]。
-<dl>
-</dl>
+[隊列メンバーの集合]。
+
 
 #### getInputDirection () → {[Number](Number.md)}
 
- 入力された向きを返す。
-<dl>
-</dl>
+ 入力された向きを返す。
 
 ##### Returns:
 
- 向き(テンキー対応)
+ 向き(テンキー対応)
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span><a>Number</a></span>
+	</dd>
+</dl>
+
 
 #### getOffVehicle () → {Boolean}
 
-[乗り物]から降りる。
-<dl>
-</dl>
+[乗り物]から降りる。
 
 ##### Returns:
 
- 降りた
+ 降りた
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### getOnOffVehicle () → {Boolean}
 
-[乗り物]の乗り降りを行う。 乗っていたら降り、降りていたら乗る。
-<dl>
-</dl>
+[乗り物]の乗り降りを行う。 乗っていたら降り、降りていたら乗る。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### getOnVehicle () → {Boolean}
 
-[乗り物]へ乗る。
+[乗り物]へ乗る。
+
+##### Returns:
+
+ 乗った
 <dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
 </dl>
-
-##### Returns:
-
- 乗った
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### hasStepAnime () → {Boolean}
-
-[足踏みアニメ]するか。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#hasStepAnime</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### hasWalkAnime () → {Boolean}
-
-[歩行アニメ]するか。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#hasWalkAnime</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### hideFollowers ()
 
-[隊列歩行]をしない。
-<dl>
-</dl>
+[隊列歩行]をしない。
 
-#### increaseSteps ()
-
- 歩き出す(歩数を増やす)。
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#increaseSteps</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### initialize ()
-
- オブジェクト生成時の初期化。
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#initialize</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### initMembers ()
-
- メンバ変数の初期化。
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#initMembers</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### isAnimationPlaying () → {Boolean}
-
-[アニメーション]表示中か。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#isAnimationPlaying</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isBalloonPlaying () → {Boolean}
-
-[フキダシアイコン]表示中か。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#isBalloonPlaying</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isCollided (x, y) → {Boolean}
 
- 指定位置が通行不能か。
+ 指定位置が通行不能か。
 
 ##### Parameters:
 
@@ -1018,774 +478,146 @@
 | `x` | [Number](Number.md) |  タイル数 |
 | `y` | [Number](Number.md) |  タイル数 |
 
+##### Returns:
+
 <dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
 </dl>
 
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isCollidedWithCharacters (x, y) → {Boolean}
-
- 指定位置がキャラによって塞がれているか。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#isCollidedWithCharacters</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isCollidedWithEvents (x, y) → {Boolean}
-
- 指定位置が[イベント]によって塞がれているか。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#isCollidedWithEvents</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isCollidedWithVehicles (x, y) → {Boolean}
-
- 指定位置が[乗り物]によって塞がれているか。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#isCollidedWithVehicles</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isDashButtonPressed () → {Boolean}
 
- ダッシュボタン(シフト)が押されているか。
+ ダッシュボタン(シフト)が押されているか。
+
+##### Returns:
+
 <dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
 </dl>
 
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isDashing () → {Boolean}
-
- 現在ダッシュ中か。
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#isDashing</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isDebugThrough () → {Boolean}
-
- デバッグ用のすり抜け移動中か。
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#isDebugThrough</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isDirectionFixed () → {Boolean}
-
-[向き固定]か。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#isDirectionFixed</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isInAirship () → {Boolean}
 
-[飛行船]に乗っているか。
-<dl>
-</dl>
+[飛行船]に乗っているか。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### isInBoat () → {Boolean}
 
-[小型船]に乗っているか。
-<dl>
-</dl>
+[小型船]に乗っているか。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### isInShip () → {Boolean}
 
-[大型船]に乗っているか。
-<dl>
-</dl>
+[大型船]に乗っているか。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### isInVehicle () → {Boolean}
 
-[乗り物]に乗っているか。
+[乗り物]に乗っているか。
+
+##### Returns:
+
 <dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
 </dl>
 
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isJumping () → {Boolean}
-
- ジャンプ中か。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#isJumping</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isMapPassable (x, y, d) → {Boolean}
-
- 指定位置から指定向きへのマップ通行が可能か。 キャラ・[イベント]による障害を考慮しない。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-| `d` | [Number](Number.md) |  向き(テンキー対応) |
-
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#isMapPassable</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isMovementSucceeded (x opt, y opt) → {Boolean}
-
- 移動可能か。
-
-##### Parameters:
-
-| Name | Type | Attributes | Description |
-| --- | --- | --- | --- |
-| `x` | [Number](Number.md) | <optional> |  |
-| `y` | [Number](Number.md) | <optional> |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#isMovementSucceeded</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isMoveRouteForcing () → {Boolean}
-
-[移動ルート]が強制されているか。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#isMoveRouteForcing</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isMoving () → {Boolean}
-
- 移動中(タイル毎の座標ではない)か。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#isMoving</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isNearTheScreen () → {Boolean}
-
- 画面端に近いか。あるいは、スクロールを止める位置か。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#isNearTheScreen</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-}
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isNormal () → {Boolean}
 
- 歩行状態かつ強制移動中でないか。
+ 歩行状態かつ強制移動中でないか。
+
+##### Returns:
+
 <dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
 </dl>
 
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isNormalPriority () → {Boolean}
-
-[プライオリティ]が[通常キャラと同じ]か。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#isNormalPriority</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isObjectCharacter () → {Boolean}
-
- キャラクタ用(characters フォルダ以下)の画像か。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#isObjectCharacter</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isOnBush () → {Boolean}
-
-[茂み]に乗っているか。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#isOnBush</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isOnDamageFloor () → {Boolean}
 
-[ダメージ床]に乗っているか。
+[ダメージ床]に乗っているか。
+
+##### Returns:
+
 <dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
 </dl>
 
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isOnLadder () → {Boolean}
-
-[梯子]に乗っているか。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#isOnLadder</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isOriginalPattern () → {Boolean}
-
- オリジナルのパターンか。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#isOriginalPattern</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isStopping () → {Boolean}
-
- プレイヤーキャラクタが停止しているか。
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#isStopping</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isThrough () → {Boolean}
-
-[すり抜け]状態か。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#isThrough</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isTile () → {Boolean}
-
- タイル用(tilesets フォルダ以下)の画像か。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#isTile</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isTransferring () → {Boolean}
 
-[場所移動]中か。
+[場所移動]中か。
+
+##### Returns:
+
 <dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
 </dl>
 
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isTransparent () → {Boolean}
-
-[透明]状態か。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#isTransparent</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### jump (xPlus, yPlus)
-
-[ジャンプ]。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `xPlus` | [Number](Number.md) | x方向の移動(タイル数) |
-| `yPlus` | [Number](Number.md) | y方向の移動(タイル数) |
-
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#jump</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### jumpHeight () → {[Number](Number.md)}
-
- 現在のジャンプの高さを返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#jumpHeight</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
- ピクセル
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### locate (x, y)
-
- 現在のマップ内での[イベントの位置設定]。 [Game_CharacterBase#setPosition](Game_CharacterBase.html#setPosition) と異なり、姿勢などを初期化。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#locate</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### makeEncounterCount ()
 
- 次の[エンカウント]までのカウント数の設定。
-<dl>
-</dl>
+ 次の[エンカウント]までのカウント数の設定。
+
 
 #### makeEncounterTroopId () → {[Number](Number.md)}
 
- 次の[エンカウント]の敵グループIDを生成して返す。
+ 次の[エンカウント]の敵グループIDを生成して返す。
+
+##### Returns:
+
 <dl>
+	<dt> Type </dt>
+	<dd>
+		<span><a>Number</a></span>
+	</dd>
 </dl>
 
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### maxPattern () → {[Number](Number.md)}
-
- 最大パターン数を返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#maxPattern</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### meetsEncounterConditions (encounter) → {Boolean}
 
@@ -1796,528 +628,61 @@
 | `encounter` | [RPG.Map.Encounter](RPG.Map.Encounter.md) |  |
 
 <dl>
-                <dt>To Do:</dt>
-                <dd>
-                    <ul>
-                        <li>&#x3053;&#x306E;&#x7528;&#x8A9E;&#x306E;&#x610F;&#x5473;&#x304C;&#x5206;&#x304B;&#x3063;&#x305F;&#x3089;&#x6559;&#x3048;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;</li>
-                    </ul>
-                </dd>
-            </dl>
+	<dt>To Do:</dt>
+	<dd>
+		<ul>
+			<li>この用語の意味が分かったら教えてください</li>
+		</ul>
+	</dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
 
-#### memorizeMoveRoute ()
-
-[移動ルート]を記録。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#memorizeMoveRoute</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### moveAwayFromCharacter (character)
-
- 指定キャラクタから遠ざかる。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `character` | [Game_Character](Game_Character.md) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#moveAwayFromCharacter</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### moveAwayFromPlayer ()
-
-[プレイヤーから遠ざかる]。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#moveAwayFromPlayer</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### moveBackward ()
-
-[一歩後退]。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#moveBackward</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### moveByInput ()
 
- 入力に応じて移動する。
-<dl>
-</dl>
+ 入力に応じて移動する。
 
-#### moveDiagonally (horz, vert)
-
- 指定の方向に斜めに進む。 テンキーの対応に従って9で右上に進めそうだが、水平と垂直を別に指定する。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `horz` | [Number](Number.md) |  水平向き(4: 左, 6:右) |
-| `vert` | [Number](Number.md) |  垂直向き(2: 下, 8: 上) |
-
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#moveDiagonally</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### moveForward ()
-
-[一歩前進]。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#moveForward</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### moveFrequency () → {[Number](Number.md)}
-
- 移動[頻度]を返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#moveFrequency</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-1: 最低, 2: 低, 3: 通常, 4: 高, 5: 最高
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### moveRandom ()
-
-[ランダムに移動][タイプ:ランダム]。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#moveRandom</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### moveSpeed () → {[Number](Number.md)}
-
- 移動[速度]を返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#moveSpeed</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-1: 1/8倍速, 2: 1/4倍速, 3: 1/2倍速, 4: 通常速, 5: 2倍速, 6: 4倍速
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### moveStraight (d)
-
- 指定の向きへ[一歩前進]。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `d` | [Number](Number.md) |  向き(テンキー対応) |
-
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#moveStraight</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### moveTowardCharacter (character)
-
- 指定キャラクタに近づく。[タイプ:近づく]。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `character` | [Game_Character](Game_Character.md) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#moveTowardCharacter</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### moveTowardPlayer ()
-
-[プレイヤーに近づく]。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#moveTowardPlayer</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### newMapId () → {[Number](Number.md)}
 
- 移動予定のマップIDを返す。
+ 移動予定のマップIDを返す。
+
+##### Returns:
+
 <dl>
+	<dt> Type </dt>
+	<dd>
+		<span><a>Number</a></span>
+	</dd>
 </dl>
 
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### opacity () → {[Number](Number.md)}
-
-[不透明度]を返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#opacity</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-0〜255
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### pattern () → {[Number](Number.md)}
-
- 歩行パターンの番号を返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#pattern</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### performTransfer ()
 
-[場所移動]の実行。
-<dl>
-</dl>
+[場所移動]の実行。
 
-#### pos (x, y) → {Boolean}
-
- 指定位置にいるか。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#pos</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### posNt (x, y) → {Boolean}
-
- 指定位置にいて、通行不可か。たぶん Nt = No Through。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#posNt</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### processMoveCommand (command)
-
-[移動コマンド]を実行。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `command` | [RPG.MoveCommand](RPG.MoveCommand.md) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#processMoveCommand</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### processRouteEnd ()
-
-[移動ルート]の終了。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#processRouteEnd</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### realMoveSpeed () → {[Number](Number.md)}
-
-(ダッシュ状態も考慮して)現在の移動速度を返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#realMoveSpeed</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### refresh ()
 
- プレイヤーキャラクタを更新。
-<dl>
-</dl>
+ プレイヤーキャラクタを更新。
 
-#### refreshBushDepth ()
-
-[茂み]の深さを更新。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#refreshBushDepth</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### regionId () → {[Number](Number.md)}
-
- 乗っているリージョンIDを返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#regionId</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### requestAnimation (animationId)
-
- アニメーションIDの設定。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `animationId` | [Number](Number.md) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#requestAnimation</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### requestBalloon (balloonId)
-
- フキダシアイコンIDを設定。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `balloonId` | [Number](Number.md) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#requestBalloon</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### requestMapReload ()
 
- マップの読み込みの予約。
-<dl>
-</dl>
+ マップの読み込みの予約。
+
 
 #### reserveTransfer (mapId, x, y, d opt, fadeType opt)
 
- 指定した値で[場所移動]の予約。
+ 指定した値で[場所移動]の予約。
 
 ##### Parameters:
 
@@ -2329,653 +694,15 @@
 | `d` | [Number](Number.md) | <optional> |  向き(テンキー対応) |
 | `fadeType` | [Number](Number.md) | <optional> |  |
 
-<dl>
-</dl>
-
-#### resetPattern ()
-
- オリジナルのパターンにリセット。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#resetPattern</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### resetStopCount ()
-
- 停止カウンタをリセット。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#resetStopCount</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### restoreMoveRoute ()
-
- 記録した[移動ルート]に戻す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#restoreMoveRoute</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### reverseDir (d) → {[Number](Number.md)}
-
- 指定向きの逆向きを返す。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `d` | [Number](Number.md) |  向き(テンキー対応) |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#reverseDir</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
- 向き(テンキー対応)
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### screenX () → {[Number](Number.md)}
-
- 画面上の x座標を返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#screenX</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
- ピクセル
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### screenY () → {[Number](Number.md)}
-
- 画面上の y座標を返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#screenY</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
- ピクセル
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### screenZ () → {[Number](Number.md)}
-
- 重なり位置を返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#screenZ</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-1: 通常キャラの下, 3:通常キャラと同じ , 5: 通常キャラの上
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### scrolledX () → {[Number](Number.md)}
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#scrolledX</a>
-                        </li>
-                    </ul>
-                </dd>
-                <dt>To Do:</dt>
-                <dd>
-                    <ul>
-                        <li>&#x3053;&#x306E;&#x7528;&#x8A9E;&#x306E;&#x610F;&#x5473;&#x304C;&#x5206;&#x304B;&#x3063;&#x305F;&#x3089;&#x6559;&#x3048;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;</li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### scrolledY () → {[Number](Number.md)}
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#scrolledY</a>
-                        </li>
-                    </ul>
-                </dd>
-                <dt>To Do:</dt>
-                <dd>
-                    <ul>
-                        <li>&#x3053;&#x306E;&#x7528;&#x8A9E;&#x306E;&#x610F;&#x5473;&#x304C;&#x5206;&#x304B;&#x3063;&#x305F;&#x3089;&#x6559;&#x3048;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;</li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### searchLimit () → {[Number](Number.md)}
-
- ルート検索の上限数を返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#searchLimit</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### setBlendMode (blendMode)
-
-[合成方法]の設定。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `blendMode` | [Number](Number.md) | 0: 通常, 1: 加算, 2: 乗算, 3: スクリーン |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#setBlendMode</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### setDirection (d)
-
- 向きの設定。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `d` | [Number](Number.md) |  向き(テンキー対応) |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#setDirection</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### setDirectionFix (directionFix)
-
-[向き固定]の設定。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `directionFix` | Boolean |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#setDirectionFix</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### setImage (characterName, characterIndex)
-
- キャラクタ画像の設定(タイル画像と同時には設定できない)。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `characterName` | [String](String.md) |  ファイル名 |
-| `characterIndex` | [Number](Number.md) |  番号 |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#setImage</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### setMoveFrequency (moveFrequency)
-
- 移動[頻度]の設定。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `moveFrequency` | [Number](Number.md) | 1: 最低, 2: 低, 3: 通常, 4: 高, 5: 最高 |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#setMoveFrequency</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### setMovementSuccess (success)
-
- 移動可能かの設定。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `success` | Boolean |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#setMovementSuccess</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### setMoveRoute (moveRoute)
-
-[移動ルート]の設定。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `moveRoute` | [RPG.MoveRoute](RPG.MoveRoute.md) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#setMoveRoute</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### setMoveSpeed (moveSpeed)
-
- 移動[速度]の設定。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `moveSpeed` | [Number](Number.md) | 1: 1/8倍速, 2: 1/4倍速, 3: 1/2倍速, 4: 通常速, 5: 2倍速, 6: 4倍速 |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#setMoveSpeed</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### setOpacity (opacity)
-
-[不透明度]の設定。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `opacity` | [Number](Number.md) | 0〜255 |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#setOpacity</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### setPattern (pattern)
-
- 指定番号のパターンを設定。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `pattern` | [Number](Number.md) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#setPattern</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### setPosition (x, y)
-
- 現在のマップ内での[イベントの位置設定]
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#setPosition</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### setPriorityType (priorityType)
-
-[プライオリティ]の設定。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `priorityType` | [Number](Number.md) | 0: 通常キャラの下, 1:通常キャラと同じ , 2: 通常キャラの上 |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#setPriorityType</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### setStepAnime (stepAnime)
-
-[足踏みアニメ]するかの設定。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `stepAnime` | Boolean |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#setStepAnime</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### setThrough (through)
-
-[すり抜け]状態の設定。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `through` | Boolean |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#setThrough</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### setTileImage (tileId)
-
- タイル画像の設定(キャラクタ画像と同時には設定できない)。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `tileId` | [Number](Number.md) |  タイルID |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#setTileImage</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### setTransparent (transparent)
-
-[透明]状態の設定。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `transparent` | Boolean |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#setTransparent</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### setWalkAnime (walkAnime)
-
-[歩行アニメ]するかの設定。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `walkAnime` | Boolean |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#setWalkAnime</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### shiftY () → {[Number](Number.md)}
-
- 縦方向へのシフト量を返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#shiftY</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
- ピクセル
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### showFollowers ()
 
-[隊列歩行]を行う。
-<dl>
-</dl>
+[隊列歩行]を行う。
 
-#### startAnimation ()
-
-[アニメーション]表示開始。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#startAnimation</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### startBalloon ()
-
-[フキダシアイコン]表示開始。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#startBalloon</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### startMapEvent (x, y, triggers, normal)
 
- 指定位置と[トリガー]に対応する[イベント]を開始。
+ 指定位置と[トリガー]に対応する[イベント]を開始。
 
 ##### Parameters:
 
@@ -2986,137 +713,51 @@
 | `triggers` | [Array](Array.md).<[Number](Number.md)> |  |
 | `normal` | Boolean |  |
 
-<dl>
-</dl>
-
-#### straighten ()
-
- キャラを(歩き・足踏みの途中でない)直立状態に。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#straighten</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### swap (character)
-
- 指定したキャラクタと場所を入れ替わる。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `character` | [Game_Character](Game_Character.md) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#swap</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### terrainTag () → {[Number](Number.md)}
-
- 乗っている[地形タグ]を返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#terrainTag</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### tileId () → {[Number](Number.md)}
-
- タイルIDを返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#tileId</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### triggerAction () → {Boolean}
 
-[決定ボタン]に相当する[トリガー]アクションを実行。
-<dl>
-</dl>
+[決定ボタン]に相当する[トリガー]アクションを実行。
 
 ##### Returns:
 
- アクションがなされたか
+ アクションがなされたか
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### triggerButtonAction () → {Boolean}
 
- 決定ボタンに対応するアクションを実行。
-<dl>
-</dl>
+ 決定ボタンに対応するアクションを実行。
 
 ##### Returns:
 
- アクションがなされたか
+ アクションがなされたか
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### triggerTouchAction () → {Boolean}
 
- 画面タッチ(クリック)によるアクションを実行。
-<dl>
-</dl>
+ 画面タッチ(クリック)によるアクションを実行。
 
 ##### Returns:
 
- アクションがなされたか
+ アクションがなされたか
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### triggerTouchActionD1 (x1, y1) → {Boolean}
 
@@ -3128,22 +769,23 @@
 | `y1` | [Number](Number.md) |  |
 
 <dl>
-                <dt>To Do:</dt>
-                <dd>
-                    <ul>
-                        <li>&#x3053;&#x306E;&#x7528;&#x8A9E;&#x306E;&#x610F;&#x5473;&#x304C;&#x5206;&#x304B;&#x3063;&#x305F;&#x3089;&#x6559;&#x3048;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;</li>
-                    </ul>
-                </dd>
-            </dl>
+	<dt>To Do:</dt>
+	<dd>
+		<ul>
+			<li>この用語の意味が分かったら教えてください</li>
+		</ul>
+	</dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### triggerTouchActionD2 (x2, y2) → {Boolean}
 
@@ -3155,22 +797,22 @@
 | `y2` | [Number](Number.md) |  |
 
 <dl>
-                <dt>To Do:</dt>
-                <dd>
-                    <ul>
-                        <li>&#x3053;&#x306E;&#x7528;&#x8A9E;&#x306E;&#x610F;&#x5473;&#x304C;&#x5206;&#x304B;&#x3063;&#x305F;&#x3089;&#x6559;&#x3048;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;</li>
-                    </ul>
-                </dd>
-            </dl>
+	<dt>To Do:</dt>
+	<dd>
+		<ul>
+			<li>この用語の意味が分かったら教えてください</li>
+		</ul>
+	</dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
 
 #### triggerTouchActionD3 (x2, y2) → {Boolean}
 
@@ -3182,255 +824,37 @@
 | `y2` | [Number](Number.md) |  |
 
 <dl>
-                <dt>To Do:</dt>
-                <dd>
-                    <ul>
-                        <li>&#x3053;&#x306E;&#x7528;&#x8A9E;&#x306E;&#x610F;&#x5473;&#x304C;&#x5206;&#x304B;&#x3063;&#x305F;&#x3089;&#x6559;&#x3048;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;</li>
-                    </ul>
-                </dd>
-            </dl>
+	<dt>To Do:</dt>
+	<dd>
+		<ul>
+			<li>この用語の意味が分かったら教えてください</li>
+		</ul>
+	</dd>
+</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### turn180 ()
-
-[180度回転]。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#turn180</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### turnAwayFromCharacter (character)
-
- 指定キャラクタの逆を向く。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `character` | [Game_Character](Game_Character.md) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#turnAwayFromCharacter</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### turnAwayFromPlayer ()
-
-[プレイヤーの逆を向く]。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#turnAwayFromPlayer</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### turnLeft90 ()
-
-[左に90度回転]。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#turnLeft90</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### turnRandom ()
-
-[ランダムに方向転換]。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#turnRandom</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### turnRight90 ()
-
-[右に90度回転]。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#turnRight90</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### turnRightOrLeft90 ()
-
-[右か左に90度回転]。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#turnRightOrLeft90</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### turnTowardCharacter (character)
-
- 指定キャラクタの方を向く。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `character` | [Game_Character](Game_Character.md) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#turnTowardCharacter</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### turnTowardPlayer ()
-
-[プレイヤーの方を向く]。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#turnTowardPlayer</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### update (sceneActive opt)
-
- プレイヤーキャラクタのアップデート。
-
-##### Parameters:
-
-| Name | Type | Attributes | Description |
-| --- | --- | --- | --- |
-| `sceneActive` | [Number](Number.md) | <optional> |  |
-
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#update</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### updateAnimation ()
-
- アニメーションをアップデート。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#updateAnimation</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### updateAnimationCount ()
-
- アニメーションのカウンタをアップデート。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#updateAnimationCount</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+   
 
 #### updateDashing ()
 
- ダッシュ状態をアップデート。
-<dl>
-</dl>
+ ダッシュ状態をアップデート。
+
 
 #### updateEncounterCount ()
 
-[エンカウント]のカウントをアップデート。
-<dl>
-</dl>
+[エンカウント]のカウントをアップデート。
 
-#### updateJump ()
-
- ジャンプ状態をアップデート。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#updateJump</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### updateMove ()
-
- 移動状態をアップデート。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#updateMove</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### updateNonmoving (wasMoving)
 
- 移動状態をアップデート。
+ 移動状態をアップデート。
 
 ##### Parameters:
 
@@ -3438,36 +862,6 @@
 | --- | --- | --- |
 | `wasMoving` | Boolean | (true: 動いた, false: 止まっている) |
 
-<dl>
-</dl>
-
-#### updatePattern ()
-
- パターンをアップデート。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_CharacterBase#updatePattern</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### updateRoutineMove ()
-
-[移動ルート]をアップデート。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#updateRoutineMove</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### updateScroll (lastScrolledX, lastScrolledY)
 
@@ -3479,60 +873,44 @@
 | `lastScrolledY` | [Number](Number.md) |  |
 
 <dl>
-                <dt>To Do:</dt>
-                <dd>
-                    <ul>
-                        <li>&#x3053;&#x306E;&#x7528;&#x8A9E;&#x306E;&#x610F;&#x5473;&#x304C;&#x5206;&#x304B;&#x3063;&#x305F;&#x3089;&#x6559;&#x3048;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;</li>
-                    </ul>
-                </dd>
-            </dl>
+	<dt>To Do:</dt>
+	<dd>
+		<ul>
+			<li>この用語の意味が分かったら教えてください</li>
+		</ul>
+	</dd>
+</dl>
 
-#### updateStop ()
-
- 停止状態をアップデート。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Character#updateStop</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### updateVehicle ()
 
-[乗り物]をアップデート。
-<dl>
-</dl>
+[乗り物]をアップデート。
+
 
 #### updateVehicleGetOff ()
 
-[乗り物]からの降りた状態にアップデート。
-<dl>
-</dl>
+[乗り物]からの降りた状態にアップデート。
+
 
 #### updateVehicleGetOn ()
 
-[乗り物]へ乗った状態にアップデート。
-<dl>
-</dl>
+[乗り物]へ乗った状態にアップデート。
+
 
 #### vehicle () → {[Game_Vehicle](Game_Vehicle.md)}
 
-[乗り物]を返す。
-<dl>
-</dl>
+[乗り物]を返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Game_Vehicle</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span><a>Game_Vehicle</a></span>
+	</dd>
+</dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
