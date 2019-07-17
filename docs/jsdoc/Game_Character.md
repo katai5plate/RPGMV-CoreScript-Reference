@@ -70,14 +70,18 @@
 
 * [Game_CharacterBase](Game_CharacterBase.md)
 
-###Overrides: [Game_CharacterBase](Game_CharacterBase.md)
+### Overrides
+
+#### [Game_CharacterBase](Game_CharacterBase.md)
 
 * [initialize ()](Game_CharacterBase#initialize)
 * [initMembers ()](Game_CharacterBase#initMembers)
 * [updateStop ()](Game_CharacterBase#updateStop)
 
 
-###Inherited From: [Game_CharacterBase](Game_CharacterBase.md)
+### Inherited From
+
+#### [Game_CharacterBase](Game_CharacterBase.md)
 
 * [animationId ()](Game_CharacterBase.md#animationid---number)
 * [animationWait ()](Game_CharacterBase.html#animationwait---number)
