@@ -8,42 +8,44 @@
  
 キャラの状態だけではなく、 乗っているマップの状態や移動可能かを調べたりもできる。
 
+_から始まるプロパティに関しては、基本的にメソッドが用意されているので、直接扱わずにメソッドを介して扱う。
+
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) | [read-only] マップ上のX座標 |
-| `y` | [Number](Number.md) | [read-only] マップ上のY座標 |
-| `_x` | [Number](Number.md) |  |
-| `_y` | [Number](Number.md) |  |
-| `_realX` | [Number](Number.md) |  |
-| `_realY` | [Number](Number.md) |  |
-| `_moveSpeed` | [Number](Number.md) |  |
-| `_moveFrequency` | [Number](Number.md) |  |
-| `_opacity` | [Number](Number.md) |  |
-| `_blendMode` | [Number](Number.md) |  |
-| `_direction` | [Number](Number.md) |  |
-| `_pattern` | [Number](Number.md) |  |
-| `_priorityType` | [Number](Number.md) |  |
-| `_tileId` | [Number](Number.md) |  |
-| `_characterName` | [String](String.md) |  |
-| `_characterIndex` | [Number](Number.md) |  |
-| `_isObjectCharacter` | Boolean |  |
-| `_walkAnime` | Boolean |  |
-| `_stepAnime` | Boolean |  |
-| `_directionFix` | Boolean |  |
-| `_through` | Boolean |  |
-| `_transparent` | Boolean |  |
-| `_bushDepth` | [Number](Number.md) |  |
-| `_animationId` | [Number](Number.md) |  |
-| `_balloonId` | [Number](Number.md) |  |
-| `_animationPlaying` | Boolean |  |
-| `_balloonPlaying` | Boolean |  |
-| `_animationCount` | [Number](Number.md) |  |
-| `_stopCount` | [Number](Number.md) |  |
-| `_jumpCount` | [Number](Number.md) |  |
-| `_jumpPeak` | [Number](Number.md) |  |
-| `_movementSuccess` | Boolean |  |
+| `x` | [Number](Number.md) | [read-only] マップ上のX座標(タイル数) |
+| `y` | [Number](Number.md) | [read-only] マップ上のY座標(タイル数) |
+| `_x` | [Number](Number.md) | x と同じ |
+| `_y` | [Number](Number.md) | y と同じ |
+| `_realX` | [Number](Number.md) | 整数でない x |
+| `_realY` | [Number](Number.md) | 整数でない y |
+| `_moveSpeed` | [Number](Number.md) | 移動[速度] |
+| `_moveFrequency` | [Number](Number.md) | 移動[頻度] |
+| `_opacity` | [Number](Number.md) | 不透明度(0〜255) |
+| `_blendMode` | [Number](Number.md) | \[合成方法\](0:通常、1:加算、2:乗算、3:スクリーン) [Graphics](Graphics.md)に定数が定義してある |
+| `_direction` | [Number](Number.md) | 向き(テンキー対応) |
+| `_pattern` | [Number](Number.md) | 歩行パターン |
+| `_priorityType` | [Number](Number.md) | [プライオリティ] |
+| `_tileId` | [Number](Number.md) | 足元のタイルID |
+| `_characterName` | [String](String.md) | キャラクタの[名前] |
+| `_characterIndex` | [Number](Number.md) | キャラクタ番号 |
+| `_isObjectCharacter` | Boolean | オブジェクトか |
+| `_walkAnime` | Boolean | [歩行アニメ] |
+| `_stepAnime` | Boolean | [足踏みアニメ] |
+| `_directionFix` | Boolean | [向き固定] |
+| `_through` | Boolean | [すり抜け] |
+| `_transparent` | Boolean | [透明化] |
+| `_bushDepth` | [Number](Number.md) | [茂み]の深さ |
+| `_animationId` | [Number](Number.md) | アニメID |
+| `_balloonId` | [Number](Number.md) | フキダシID |
+| `_animationPlaying` | Boolean | アニメ再生中か |
+| `_balloonPlaying` | Boolean | フキダシ表示中か |
+| `_animationCount` | [Number](Number.md) | アニメのカウント |
+| `_stopCount` | [Number](Number.md) | 停止カウント |
+| `_jumpCount` | [Number](Number.md) | ジャンプのカウント |
+| `_jumpPeak` | [Number](Number.md) | ジャンプの頂点 |
+| `_movementSuccess` | Boolean | 移動できたか |
 
 
 ### Methods
