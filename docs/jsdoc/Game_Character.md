@@ -72,8 +72,6 @@
 
 ### Overrides
 
-#### [Game_CharacterBase](Game_CharacterBase.md)
-
 * [initialize ()](Game_CharacterBase.md#initialize)
 * [initMembers ()](Game_CharacterBase.md#initMembers)
 * [updateStop ()](Game_CharacterBase.md#updateStop)

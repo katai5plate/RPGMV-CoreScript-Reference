@@ -31,11 +31,10 @@
 
 ### Overrides
 
-* [checkEventTriggerTouch (x, y)](Game_Character.md#checkeventtriggertouch-x-y--boolean)
-* [increaseSteps ()](Game_Character.md#increasesteps-)
-* [initialize ()](Game_Character.md#initialize-)
-* [initMembers ()](Game_Character.md#initmembers-)
-* [isDashing ()](Game_Character.md#isdashing---boolean)
+* [checkEventTriggerTouch (x, y)](Game_CharacterBase.md#checkeventtriggertouch-x-y--boolean)
+* [increaseSteps ()](Game_CharacterBase.md#increasesteps-)
+* [initialize ()](Game_CharacterBase.md#initialize-)
+* [initMembers ()](Game_CharacterBase.md#initmembers-)
 * [isDashing ()](Game_CharacterBase.md#isdashing---boolean)
 * [isDebugThrough ()](Game_CharacterBase.md#isdebugthrough---boolean)
 * [isMapPassable (x, y, d)](Game_CharacterBase.md#ismappassable-x-y-d--boolean)
@@ -44,7 +43,7 @@
 * [locate (x, y)](Game_CharacterBase.md#locate-x-y)
 * [moveDiagonally (horz, vert)](Game_CharacterBase.md#movediagonally-horz-vert)
 * [moveStraight (d)](Game_CharacterBase.md#movestraight-d)
-* [update (sceneActive opt)](Game_Character.md#update-)
+* [update](Game_CharacterBase.md#update-)
 
 
 ### Inherited From
