@@ -205,10 +205,6 @@ To Do: この用語の意味が分かったら教えてください。
 </dl>
 
 
-#### processRouteEnd ()
-[移動ルート]の終了。
-
-
 #### deltaYFrom (y) → {[Number](Number.md)}
  指定した y座標と自身の y座標の差分(タイル数)を返す。
 
@@ -317,6 +313,10 @@ To Do: この用語の意味が分かったら教えてください。
 | `command` | [RPG.MoveCommand](RPG.MoveCommand.md) |  |
 
 
+#### processRouteEnd ()
+[移動ルート]の終了。
+
+
 #### restoreMoveRoute ()
  記録した[移動ルート]に戻す。
 
@@ -387,6 +387,9 @@ To Do: この用語の意味が分かったら教えてください。
 | --- | --- | --- |
 | `character` | [Game_Character](Game_Character.md) |  |
 
+
+#### turnTowardPlayer ()
+[プレイヤーの方を向く]。
 
 #### updateRoutineMove ()
 [移動ルート]をアップデート。

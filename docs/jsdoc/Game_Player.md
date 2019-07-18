@@ -151,44 +151,43 @@
 
 #### [Game_Character](Game_Character)
 
-* [advanceMoveRouteIndex ()](Game_Character.md#advanceMoveRouteIndex)
-* [deltaXFrom (x)](Game_Character.md#deltaXFrom)
-* [deltaYFrom (y)](Game_Character.md#deltaYFrom)
-* [findDirectionTo (goalX, goalY)](Game_Character.md#findDirectionTo)
-* [ forceMoveRoute (moveRoute)](Game_Character.md#forceMoveRoute)
-* [isMoveRouteForcing ()](Game_Character.md#isMoveRouteForcing)
-* [memorizeMoveRoute ()](Game_Character.md#memorizeMoveRoute)
-* [moveAwayFromCharacter (character)](Game_Character.md#moveAwayFromCharacter)
-* [moveAwayFromPlayer ()](Game_Character.md#moveAwayFromPlayer)
-* [moveBackward ()](Game_Character.md#moveBackward)
-* [moveForward ()](Game_Character.md#moveForward)
-* [moveRandom ()](Game_Character.md#moveRandom)
-* [moveTowardCharacter (character)](Game_Character.md#moveTowardCharacter)
-* [moveTowardPlayer ()](Game_Character.md#moveTowardPlayer)
-* [processMoveCommand (command)](Game_Character.md#processMoveCommand)
-* [processRouteEnd ()](Game_Character.md#processRouteEnd)
-* [restoreMoveRoute ()](Game_Character.md#restoreMoveRoute)
-* [searchLimit ()](Game_Character.md#searchLimit)
-* [setMoveRoute (moveRoute)](Game_Character.md#setMoveRoute)
-* [swap (character)](Game_Character.md#swap)
-* [turn180 ()](Game_Character.md#turn180)
-* [turnAwayFromCharacter (character)](Game_Character.md#turnAwayFromCharacter)
-* [turnAwayFromPlayer ()](Game_Character.md#turnAwayFromPlayer)
-* [turnLeft90 ()](Game_Character.md#turnLeft90)
-* [turnRandom ()](Game_Character.md#turnRandom)
-* [turnRight90 ()](Game_Character.md#turnRight90)
-* [turnRightOrLeft90 ()](Game_Character.md#turnRightOrLeft90)
-* [turnTowardCharacter (character)](Game_Character.md#turnTowardCharacter)
-* [turnTowardPlayer ()](Game_Character.md#turnTowardPlayer)
-* [updateRoutineMove ()](Game_Character.md#updateRoutineMove)
-* [updateStop ()](Game_Character.md#updateStop)
+* [advanceMoveRouteIndex ()](Game_Character.md#advancemoverouteindex-)
+* [deltaXFrom (x)](Game_Character.md#deltaxfrom-x--number)
+* [deltaYFrom (y)](Game_Character.md#deltayfrom-y--number)
+* [findDirectionTo (goalX, goalY)](Game_Character.md#finddirectionto-goalx-goaly--number)
+* [forceMoveRoute (moveRoute)](Game_Character.md#forcemoveroute-moveroute)
+* [isMoveRouteForcing ()](Game_Character.md#ismoverouteforcing---boolean)
+* [memorizeMoveRoute ()](Game_Character.md#memorizemoveroute-)
+* [moveAwayFromCharacter (character)](Game_Character.md#moveawayfromcharacter-character)
+* [moveAwayFromPlayer ()](Game_Character.md#moveawayfromplayer-)
+* [moveBackward ()](Game_Character.md#movebackward-)
+* [moveForward ()](Game_Character.md#moveforward-)
+* [moveRandom ()](Game_Character.md#moverandom-)
+* [moveTowardCharacter (character)](Game_Character.md#movetowardcharacter-character)
+* [moveTowardPlayer ()](Game_Character.md#movetowardplayer-)
+* [processMoveCommand (command)](Game_Character.md#processmovecommand-command)
+* [processRouteEnd ()](Game_Character.md#processrouteend-)
+* [restoreMoveRoute ()](Game_Character.md#restoremoveroute-)
+* [searchLimit ()](Game_Character.md#searchlimit---number)
+* [setMoveRoute (moveRoute)](Game_Character.md#setmoveroute-moveroute)
+* [swap (character)](Game_Character.md#swap-character)
+* [turn180 ()](Game_Character.md#turn180-)
+* [turnAwayFromCharacter (character)](Game_Character.md#turnawayfromcharacter-character)
+* [turnAwayFromPlayer ()](Game_Character.md#turnawayfromplayer-)
+* [turnLeft90 ()](Game_Character.md#turnleft90-)
+* [turnRandom ()](Game_Character.md#turnrandom-)
+* [turnRight90 ()](Game_Character.md#turnright90-)
+* [turnRightOrLeft90 ()](Game_Character.md#turnrightorleft90-)
+* [turnTowardCharacter (character)](Game_Character.md#turntowardcharacter-character)
+* [turnTowardPlayer ()](Game_Character.md#turntowardplayer-)
+* [updateRoutineMove ()](Game_Character.md#updateroutinemove-)
+* [updateStop ()](Game_Character.md#updatestop-)
 
 
 ### Methods
 
 
 #### areFollowersGathered () → {Boolean}
-
 [隊列メンバー]が集合しているか。
 
 ##### Returns:
@@ -202,7 +201,6 @@
 
 
 #### areFollowersGathering () → {Boolean}
-
 [隊列メンバー]の集合中か。
 
 ##### Returns:
@@ -216,7 +214,6 @@
 
 
 #### canEncounter () → {Boolean}
-
  敵と遭遇できる(エンカウント)状態か。
 
 ##### Returns:
@@ -230,7 +227,6 @@
 
 
 #### canMove () → {Boolean}
-
  プレイヤーキャラクタを操作可能か。
 
 ##### Returns:
@@ -244,7 +240,6 @@
 
 
 #### canStartLocalEvents () → {Boolean}
-
  地表の[イベント]を実行できるか。 飛行船などで空を飛んでいる場合、実行できない。
 
 ##### Returns:
@@ -258,7 +253,6 @@
 
 
 #### center (x, y)
-
  画面中心を基準にマップを表示。 [Game_Map#setDisplayPos](Game_Map.html#setDisplayPos) は左上を基準とする。
 
 ##### Parameters:
@@ -270,7 +264,6 @@
 
 
 #### centerX () → {[Number](Number.md)}
-
  画面の中心 x座標(タイル数)。
 
 ##### Returns:
@@ -284,13 +277,10 @@
 
 
 #### centerY () → {[Number](Number.md)}
-
- 画面中心 y座標。
+ 画面中心 y座標(タイル数)。
 
 ##### Returns:
 
-
- タイル数
 <dl>
 	<dt> Type </dt>
 	<dd>
@@ -300,7 +290,6 @@
 
 
 #### checkEventTriggerHere (triggers)
-
  現在地にある[イベント]のうち、指定[トリガー]のものを実行。
 
 ##### Parameters:
@@ -311,7 +300,6 @@
 
 
 #### checkEventTriggerThere (triggers)
-
  現在地の一歩前にある[イベント]のうち、指定[トリガー]のものを実行。
 
 ##### Parameters:
@@ -322,12 +310,10 @@
 
 
 #### clearTransferInfo ()
-
 [場所移動]情報を削除。
 
 
 #### encounterProgressValue () → {[Number](Number.md)}
-
 [エンカウント]の発生カウントダウン量。 スキルや船の上などで減っている場合、茂みで増えている場合がある。
 
 ##### Returns:
@@ -341,7 +327,6 @@
 
 
 #### executeEncounter () → {Boolean}
-
  エンカウントを実行。
 
 ##### Returns:
@@ -356,7 +341,6 @@
 
 
 #### executeMove (direction)
-
  指定の向きへ[一歩前進]。
 
 ##### Parameters:
@@ -367,7 +351,6 @@
 
 
 #### fadeType () → {[Number](Number.md)}
-
 [場所移動]時の[フェード]を返す。
 
 ##### Returns:
@@ -381,7 +364,6 @@
 
 
 #### followers () → {[Game_Followers](Game_Followers.md)}
-
 [隊列メンバー]を返す。
 
 ##### Returns:
@@ -395,17 +377,14 @@
 
 
 #### forceMoveForward ()
-
  強制的にプレイヤーキャラクタを前に進める。
 
 
 #### gatherFollowers ()
-
 [隊列メンバーの集合]。
 
 
 #### getInputDirection () → {[Number](Number.md)}
-
  入力された向きを返す。
 
 ##### Returns:
@@ -420,7 +399,6 @@
 
 
 #### getOffVehicle () → {Boolean}
-
 [乗り物]から降りる。
 
 ##### Returns:
@@ -435,7 +413,6 @@
 
 
 #### getOnOffVehicle () → {Boolean}
-
 [乗り物]の乗り降りを行う。 乗っていたら降り、降りていたら乗る。
 
 ##### Returns:
@@ -449,7 +426,6 @@
 
 
 #### getOnVehicle () → {Boolean}
-
 [乗り物]へ乗る。
 
 ##### Returns:
@@ -463,12 +439,10 @@
 </dl>
 
 #### hideFollowers ()
-
 [隊列歩行]をしない。
 
 
 #### isCollided (x, y) → {Boolean}
-
  指定位置が通行不能か。
 
 ##### Parameters:
@@ -489,7 +463,6 @@
 
 
 #### isDashButtonPressed () → {Boolean}
-
  ダッシュボタン(シフト)が押されているか。
 
 ##### Returns:
@@ -503,7 +476,6 @@
 
 
 #### isInAirship () → {Boolean}
-
 [飛行船]に乗っているか。
 
 ##### Returns:
@@ -517,7 +489,6 @@
 
 
 #### isInBoat () → {Boolean}
-
 [小型船]に乗っているか。
 
 ##### Returns:
@@ -531,7 +502,6 @@
 
 
 #### isInShip () → {Boolean}
-
 [大型船]に乗っているか。
 
 ##### Returns:
@@ -545,7 +515,6 @@
 
 
 #### isInVehicle () → {Boolean}
-
 [乗り物]に乗っているか。
 
 ##### Returns:
@@ -559,7 +528,6 @@
 
 
 #### isNormal () → {Boolean}
-
  歩行状態かつ強制移動中でないか。
 
 ##### Returns:
@@ -573,7 +541,6 @@
 
 
 #### isOnDamageFloor () → {Boolean}
-
 [ダメージ床]に乗っているか。
 
 ##### Returns:
@@ -587,7 +554,6 @@
 
 
 #### isTransferring () → {Boolean}
-
 [場所移動]中か。
 
 ##### Returns:
@@ -601,12 +567,10 @@
 
 
 #### makeEncounterCount ()
-
  次の[エンカウント]までのカウント数の設定。
 
 
 #### makeEncounterTroopId () → {[Number](Number.md)}
-
  次の[エンカウント]の敵グループIDを生成して返す。
 
 ##### Returns:
@@ -647,12 +611,10 @@
 
 
 #### moveByInput ()
-
  入力に応じて移動する。
 
 
 #### newMapId () → {[Number](Number.md)}
-
  移動予定のマップIDを返す。
 
 ##### Returns:
@@ -666,22 +628,18 @@
 
 
 #### performTransfer ()
-
 [場所移動]の実行。
 
 
 #### refresh ()
-
  プレイヤーキャラクタを更新。
 
 
 #### requestMapReload ()
-
  マップの読み込みの予約。
 
 
 #### reserveTransfer (mapId, x, y, d opt, fadeType opt)
-
  指定した値で[場所移動]の予約。
 
 ##### Parameters:
@@ -696,12 +654,10 @@
 
 
 #### showFollowers ()
-
 [隊列歩行]を行う。
 
 
 #### startMapEvent (x, y, triggers, normal)
-
  指定位置と[トリガー]に対応する[イベント]を開始。
 
 ##### Parameters:
@@ -715,7 +671,6 @@
 
 
 #### triggerAction () → {Boolean}
-
 [決定ボタン]に相当する[トリガー]アクションを実行。
 
 ##### Returns:
@@ -730,7 +685,6 @@
 
 
 #### triggerButtonAction () → {Boolean}
-
  決定ボタンに対応するアクションを実行。
 
 ##### Returns:
@@ -745,7 +699,6 @@
 
 
 #### triggerTouchAction () → {Boolean}
-
  画面タッチ(クリック)によるアクションを実行。
 
 ##### Returns:
@@ -843,17 +796,14 @@
    
 
 #### updateDashing ()
-
  ダッシュ状態をアップデート。
 
 
 #### updateEncounterCount ()
-
 [エンカウント]のカウントをアップデート。
 
 
 #### updateNonmoving (wasMoving)
-
  移動状態をアップデート。
 
 ##### Parameters:
@@ -883,22 +833,18 @@
 
 
 #### updateVehicle ()
-
 [乗り物]をアップデート。
 
 
 #### updateVehicleGetOff ()
-
 [乗り物]からの降りた状態にアップデート。
 
 
 #### updateVehicleGetOn ()
-
 [乗り物]へ乗った状態にアップデート。
 
 
 #### vehicle () → {[Game_Vehicle](Game_Vehicle.md)}
-
 [乗り物]を返す。
 
 ##### Returns:
