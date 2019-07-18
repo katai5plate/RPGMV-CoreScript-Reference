@@ -10,19 +10,19 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_vehicleType` | [String](String.md) |  |
-| `_vehicleGettingOn` | Boolean |  |
-| `_vehicleGettingOff` | Boolean |  |
-| `_dashing` | Boolean |  |
-| `_needsMapReload` | Boolean |  |
-| `_transferring` | Boolean |  |
-| `_newMapId` | [Number](Number.md) |  |
-| `_newX` | [Number](Number.md) |  |
-| `_newY` | [Number](Number.md) |  |
-| `_newDirection` | [Number](Number.md) |  |
-| `_fadeType` | [Number](Number.md) |  |
-| `_followers` | [Game_Followers](Game_Followers.md) |  |
-| `_encounterCount` | [Number](Number.md) |  |
+| `_vehicleType` | [String](String.md) | [乗り物]の種類 |
+| `_vehicleGettingOn` | Boolean | [乗り物]に乗っているか |
+| `_vehicleGettingOff` | Boolean | [乗り物]から降りているか |
+| `_dashing` | Boolean | ダッシュ中か |
+| `_needsMapReload` | Boolean | マップの再読み込みが必要か |
+| `_transferring` | Boolean | マップの移動中か |
+| `_newMapId` | [Number](Number.md) | 移動先のマップID |
+| `_newX` | [Number](Number.md) | 移動先のx座標(タイル数) |
+| `_newY` | [Number](Number.md) | 移動先のy座標(タイル数) |
+| `_newDirection` | [Number](Number.md) | 移動先の向き(テンキー対応) |
+| `_fadeType` | [Number](Number.md) | フェードの種類 |
+| `_followers` | [Game_Followers](Game_Followers.md) | 隊列メンバ |
+| `_encounterCount` | [Number](Number.md) | エンカウントのカウント |
 
 
 ### Extends
@@ -153,7 +153,7 @@
 
 * [advanceMoveRouteIndex ()](Game_Character.md#advanceMoveRouteIndex)
 * [deltaXFrom (x)](Game_Character.md#deltaXFrom)
-* [deltaYFrom (y)(Game_Character.md#deltaYFrom)
+* [deltaYFrom (y)](Game_Character.md#deltaYFrom)
 * [findDirectionTo (goalX, goalY)](Game_Character.md#findDirectionTo)
 * [ forceMoveRoute (moveRoute)](Game_Character.md#forceMoveRoute)
 * [isMoveRouteForcing ()](Game_Character.md#isMoveRouteForcing)
