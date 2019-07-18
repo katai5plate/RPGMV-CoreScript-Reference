@@ -29,22 +29,6 @@
 
 * [Game_Character](Game_Character.md)
 
-### Overrides
-
-* [checkEventTriggerTouch (x, y)](Game_CharacterBase.md#checkeventtriggertouch-x-y--boolean)
-* [increaseSteps ()](Game_CharacterBase.md#increasesteps-)
-* [initialize ()](Game_CharacterBase.md#initialize-)
-* [initMembers ()](Game_CharacterBase.md#initmembers-)
-* [isDashing ()](Game_CharacterBase.md#isdashing---boolean)
-* [isDebugThrough ()](Game_CharacterBase.md#isdebugthrough---boolean)
-* [isMapPassable (x, y, d)](Game_CharacterBase.md#ismappassable-x-y-d--boolean)
-* [isStopping ()](Game_CharacterBase.md#isstopping---boolean)
-* [jump (xPlus, yPlus)](Game_CharacterBase.md#jump-xplus-yplus)
-* [locate (x, y)](Game_CharacterBase.md#locate-x-y)
-* [moveDiagonally (horz, vert)](Game_CharacterBase.md#movediagonally-horz-vert)
-* [moveStraight (d)](Game_CharacterBase.md#movestraight-d)
-* [update](Game_CharacterBase.md#update-)
-
 
 ### Inherited From
 
@@ -136,8 +120,6 @@
 * [updateJump ()](Game_CharacterBase.md#updatejump-)
 * [updateMove ()](Game_CharacterBase.md#updatemove-)
 * [updatePattern ()](Game_CharacterBase.md#updatepattern-)
-* [updateStop ()](Game_CharacterBase.md#updatestop-) Overrides: [Game_Character](Game_Character.md)
-
 
 #### [Game_Character](Game_Character)
 
@@ -171,9 +153,11 @@
 * [turnTowardCharacter (character)](Game_Character.md#turntowardcharacter-character)
 * [turnTowardPlayer ()](Game_Character.md#turntowardplayer-)
 * [updateRoutineMove ()](Game_Character.md#updateroutinemove-)
+* [updateStop ()](Game_Character.md#updatestop-)
+
+
 
 ### Methods
-
 
 #### areFollowersGathered () → {Boolean}
 [隊列メンバー]が集合しているか。
@@ -295,6 +279,29 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `triggers` | [Array](Array.md).<[Number](Number.md)> |  |
+
+
+#### checkEventTriggerTouch (x, y) → {Boolean}
+ 指定位置にあるイベントトリガを起動。
+
+##### Overrides:
+[Game_CharacterBase#checkEventTriggerTouch (x, y)](Game_CharacterBase.md#checkeventtriggertouch-x-y--boolean)
+
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `x` | [Number](Number.md) |  タイル数 |
+| `y` | [Number](Number.md) |  タイル数 |
+
+##### Returns:
+
+<dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
 
 
 #### clearTransferInfo ()
@@ -450,8 +457,60 @@
 </dl>
 
 
+#### increaseSteps ()
+ 歩き出す(歩数を増やす)。
+
+##### Overrides:
+[Game_CharacterBase#increaseSteps ()](Game_CharacterBase.md#increasesteps-)
+
+#### initialize ()
+ オブジェクト生成時の初期化。
+ 
+##### Overrides:
+[Game_CharacterBase#initialize ()](Game_CharacterBase.md#initialize-)
+
+
+#### initMembers ()
+ メンバ変数の初期化。
+
+##### Overrides:
+[Game_CharacterBase#initMembers ()](Game_CharacterBase.md#initmembers-)
+
+
 #### isDashButtonPressed () → {Boolean}
  ダッシュボタン(シフト)が押されているか。
+
+##### Returns:
+
+<dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
+
+#### isDashing () → {Boolean}
+ 現在ダッシュ中か。
+
+##### Overrides:
+[Game_CharacterBase#isDashing ()](Game_CharacterBase.md#isdashing---boolean)
+
+##### Returns:
+
+<dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
+
+#### isDebugThrough () → {Boolean}
+ デバッグ用のすり抜け移動中か。
+
+##### Overrides:
+[Game_CharacterBase#isDebugThrough ()](Game_CharacterBase.md#isdebugthrough---boolean)
 
 ##### Returns:
 
@@ -515,6 +574,30 @@
 </dl>
 
 
+#### isMapPassable (x, y, d) → {Boolean}
+ 指定位置から指定向きへのマップ通行が可能か。 キャラ・[イベント]による障害を考慮しない。
+
+##### Overrides:
+[Game_CharacterBase#isMapPassable (x, y, d)](Game_CharacterBase.md#ismappassable-x-y-d--boolean)
+
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `x` | [Number](Number.md) |  タイル数 |
+| `y` | [Number](Number.md) |  タイル数 |
+| `d` | [Number](Number.md) |  向き(テンキー対応) |
+
+##### Returns:
+
+<dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
+
 #### isNormal () → {Boolean}
  歩行状態かつ強制移動中でないか。
 
@@ -541,6 +624,22 @@
 </dl>
 
 
+#### isStopping () → {Boolean}
+ 止まっている(タイル毎の座標にいる)か。
+
+##### Overrides:
+[Game_CharacterBase#isStopping ()](Game_CharacterBase.md#isstopping---boolean)
+
+##### Returns:
+
+<dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
+
 #### isTransferring () → {Boolean}
 [場所移動]中か。
 
@@ -552,6 +651,33 @@
 		<span>Boolean</span>
 	</dd>
 </dl>
+
+#### jump (xPlus, yPlus)
+[ジャンプ]。
+
+##### Overrides:
+[Game_CharacterBase#jump (xPlus, yPlus)](Game_CharacterBase.md#jump-xplus-yplus)
+
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `xPlus` | [Number](Number.md) | x方向の移動(タイル数) |
+| `yPlus` | [Number](Number.md) | y方向の移動(タイル数) |
+
+
+#### locate (x, y)
+ 現在のマップ内での[イベントの位置設定]。 [setPosition](Game_CharacterBase.md#setposition-x-y) と異なり、姿勢などを初期化。
+ 
+##### Overrides:
+[Game_CharacterBase#locate (x, y)](Game_CharacterBase.md#locate-x-y)
+
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `x` | [Number](Number.md) |  タイル数 |
+| `y` | [Number](Number.md) |  タイル数 |
 
 
 #### makeEncounterCount ()
@@ -600,6 +726,34 @@
 
 #### moveByInput ()
  入力に応じて移動する。
+
+
+#### moveDiagonally (horz, vert)
+ 指定の方向に斜めに進む。
+ テンキーの対応に従って9で右上に進めそうだが、水平と垂直を別に指定する。
+
+##### Overrides:
+[Game_CharacterBase#moveDiagonally (horz, vert)](Game_CharacterBase.md#movediagonally-horz-vert)
+
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `horz` | [Number](Number.md) |  水平向き(4: 左, 6:右) |
+| `vert` | [Number](Number.md) |  垂直向き(2: 下, 8: 上) |
+
+
+#### moveStraight (d)
+ 指定の向きへ[一歩前進]。
+ 
+##### Overrides:
+[Game_CharacterBase#moveStraight (d)](Game_CharacterBase.md#movestraight-d)
+
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `d` | [Number](Number.md) |  向き(テンキー対応) |
 
 
 #### newMapId () → {[Number](Number.md)}
@@ -755,6 +909,7 @@
 	</dd>
 </dl>
 
+
 #### triggerTouchActionD3 (x2, y2) → {Boolean}
 
 ##### Parameters:
@@ -781,7 +936,14 @@
 		<span>Boolean</span>
 	</dd>
 </dl>
-   
+
+
+#### update ()
+プレイヤーキャラをアップデート。
+
+##### Overrides:
+[Game_CharacterBase#update](Game_CharacterBase.md#update-)
+
 
 #### updateDashing ()
  ダッシュ状態をアップデート。

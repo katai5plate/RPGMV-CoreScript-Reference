@@ -70,12 +70,6 @@
 
 * [Game_CharacterBase](Game_CharacterBase.md)
 
-### Overrides
-
-* [initialize ()](Game_CharacterBase.md#initialize)
-* [initMembers ()](Game_CharacterBase.md#initMembers)
-* [updateStop ()](Game_CharacterBase.md#updateStop)
-
 
 ### Inherited From
 
@@ -176,6 +170,7 @@
 * [updateMove ()](Game_CharacterBase.md#updatemove-)
 * [updatePattern ()](Game_CharacterBase.md#updatepattern-)
 
+
 ### Methods
 
 #### advanceMoveRouteIndex ()
@@ -247,6 +242,20 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `moveRoute` | [RPG.MoveRoute](RPG.MoveRoute.md) |  |
+
+
+#### initialize ()
+オブジェクト生成時の初期化。
+ 
+##### Overrides:
+[initialize ()](Game_CharacterBase.md#initialize-)
+
+
+#### initMembers ()
+ メンバ変数の初期化。
+
+##### Overrides:
+[initMembers ()](Game_CharacterBase.md#initmembers-)
 
 
 #### isMoveRouteForcing () → {Boolean}
@@ -389,6 +398,11 @@
 #### updateRoutineMove ()
 [移動ルート]をアップデート。
 
+#### updateStop ()
+ 停止状態をアップデート。
+ 
+##### Overrides:
+[Game_CharacterBase.updateStop ()](Game_CharacterBase.md#updatestop-)
 
  <br>
 

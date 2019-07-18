@@ -182,7 +182,7 @@
 | `y` | [Number](Number.md) |  タイル数 |
 
 ##### Overrides:
-[Game_Character#checkEventTriggerTouch](Game_Character.md#checkEventTriggerTouch)
+[Game_Character#checkEventTriggerTouch](Game_Character.md#checkeventtriggertouch-x-y--boolean)
 
 
 #### clearPageSettings ()
@@ -249,21 +249,21 @@
 | `moveRoute` | [RPG.MoveRoute](RPG.MoveRoute.md) |  |
 
 ##### Overrides:
-[Game_Character#forceMoveRoute](Game_Character.md#forceMoveRoute)
+[Game_Character#forceMoveRoute](Game_Character.md#forcemoveroute-moveroute)
 
 
 #### initialize ()
  オブジェクト生成時の初期化。
 
 ##### Overrides:
-[Game_Character#initialize](Game_Character.md#initialize)
+[Game_Character#initialize](Game_Character.md#initialize-)
 
 
 #### initMembers ()
  メンバ変数を初期化。
  
 ##### Overrides:
-[Game_Character#initMembers](Game_Character.md#initMembers)
+[Game_Character#initMembers](Game_Character.md#initmembers-)
 
 
 #### isCollidedWithCharacters (x, y) → {Boolean}
@@ -277,7 +277,7 @@
 | `y` | [Number](Number.md) |  タイル数 |
 
 ##### Overrides:
-[Game_Character#isCollidedWithCharacters](Game_Character.md#isCollidedWithCharacters)
+[Game_Character#isCollidedWithCharacters](Game_Character.md#iscollidedwithcharacters-x-y--boolean)
 
 ##### Returns:
 
@@ -299,7 +299,7 @@
 | `y` | [Number](Number.md) |  タイル数 |
 
 ##### Overrides:
-[Game_Character#isCollidedWithEvents](Game_Character.md#isCollidedWithEvents)
+[Game_Character#isCollidedWithEvents](Game_Character.md#iscollidedwithevents-x-y--boolean)
 
 ##### Returns:
 
@@ -347,7 +347,7 @@
 [画像]が初期パターンか。
 
 ##### Overrides:
-[Game_Character#isOriginalPattern](Game_Character.md#isOriginalPattern)
+[Game_Character#isOriginalPattern](Game_Character.md#isoriginalpattern---boolean)
 
 
 #### isStarting () → {Boolean}
@@ -406,7 +406,7 @@
 | `y` | [Number](Number.md) |  タイル数 |
 
 ##### Overrides:
-[Game_Character#locate](Game_Character.md#locate)
+[Game_Character#locate](Game_Character.md#locate-x-y)
 
 
 #### lock ()
@@ -465,7 +465,7 @@
 [画像]を初期パターンに戻す。
 
 ##### Overrides:
-[Game_Character#resetPattern](Game_Character.md#resetPattern)
+[Game_Character#resetPattern](Game_Character.md#resetpattern-)
 
 
 #### setupPage ()
@@ -502,7 +502,7 @@
 [イベント]をアップデート。
 
 ##### Overrides:
-[Game_Character#update](Game_Character.md#update)
+[Game_Character#update](Game_Character.md#update-)
 
 
 #### updateParallel ()
@@ -517,7 +517,7 @@
  停止状態をアップデート。
  
 ##### Overrides:
-[Game_Character#updateStop](Game_Character.md#updateStop)
+[Game_Character#updateStop](Game_Character.md#updatestop-)
 
 
  <br>
