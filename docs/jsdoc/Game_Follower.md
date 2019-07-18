@@ -17,10 +17,6 @@
 
 * [Game_Character](Game_Character.md)
 
-### Overrides
-* [initialize ()](Game_CharacterBase.md#initialize-)
-* [update ()](Game_CharacterBase.md#update-)
-
 
 ### Inherited From
 
@@ -181,6 +177,13 @@
 | `character` | [Game_Character](Game_Character.md) |  |
 
 
+#### initialize ()
+オブジェクト生成時の初期化。
+ 
+##### Overrides:
+[Game_Character.initialize ()](Game_Character.md#initialize-)
+
+
 #### isVisible () → {Boolean}
 [隊列メンバー]が表示されているか。
 
@@ -197,6 +200,12 @@
 #### refresh ()
 [隊列メンバー]を更新。
 
+
+#### update ()
+[隊列メンバー]をアップデート。
+
+##### Overrides:
+[Game_CharacterBase.update ()](Game_CharacterBase.md#update-)
 
 
  <br>

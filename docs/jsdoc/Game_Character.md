@@ -248,14 +248,14 @@
 オブジェクト生成時の初期化。
  
 ##### Overrides:
-[initialize ()](Game_CharacterBase.md#initialize-)
+[Game_CharacterBase.initialize ()](Game_CharacterBase.md#initialize-)
 
 
 #### initMembers ()
  メンバ変数の初期化。
 
 ##### Overrides:
-[initMembers ()](Game_CharacterBase.md#initmembers-)
+[Game_CharacterBase.initMembers ()](Game_CharacterBase.md#initmembers-)
 
 
 #### isMoveRouteForcing () → {Boolean}
