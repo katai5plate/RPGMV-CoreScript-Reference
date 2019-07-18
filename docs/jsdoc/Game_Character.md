@@ -179,8 +179,7 @@
 ### Methods
 
 #### advanceMoveRouteIndex ()
-
-To Do: この用語の意味が分かったら教えてください。
+[移動ルート]の実行位置を進める。
 
 #### deltaXFrom (x) → {[Number](Number.md)}
  指定した x座標と自身の x座標の差分(タイル数)を返す。

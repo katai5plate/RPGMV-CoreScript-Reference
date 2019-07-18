@@ -802,6 +802,7 @@
 
 
 #### updateScroll (lastScrolledX, lastScrolledY)
+スクロール処理
 
 ##### Parameters:
 
@@ -809,15 +810,6 @@
 | --- | --- | --- |
 | `lastScrolledX` | [Number](Number.md) |  |
 | `lastScrolledY` | [Number](Number.md) |  |
-
-<dl>
-	<dt>To Do:</dt>
-	<dd>
-		<ul>
-			<li>この用語の意味が分かったら教えてください</li>
-		</ul>
-	</dd>
-</dl>
 
 
 #### updateVehicle ()
