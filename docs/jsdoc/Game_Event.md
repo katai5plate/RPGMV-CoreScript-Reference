@@ -12,17 +12,17 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_mapId` | [Number](Number.md) |  |
-| `_eventId` | [Number](Number.md) |  |
-| `_moveType` | [Number](Number.md) |  |
-| `_trigger` | [Number](Number.md) |  |
-| `_starting` | Boolean |  |
-| `_erased` | Boolean |  |
-| `_pageIndex` | [Number](Number.md) |  |
-| `_originalPattern` | [Number](Number.md) |  |
-| `_originalDirection` | [Number](Number.md) |  |
-| `_prelockDirection` | [Number](Number.md) |  |
-| `_locked` | Boolean |  |
+| `_mapId` | [Number](Number.md) | マップID |
+| `_eventId` | [Number](Number.md) | イベントID |
+| `_moveType` | [Number](Number.md) | 自律移動[タイプ] |
+| `_trigger` | [Number](Number.md) | トリガ |
+| `_starting` | Boolean | 開始しているか |
+| `_erased` | Boolean | 削除されているか |
+| `_pageIndex` | [Number](Number.md) | ページ番号 |
+| `_originalPattern` | [Number](Number.md) | オリジナルパターン |
+| `_originalDirection` | [Number](Number.md) | オリジナル向き |
+| `_prelockDirection` | [Number](Number.md) | 前にロックされた方向 |
+| `_locked` | Boolean | ロックされているか |
 
 ### Extends
 
