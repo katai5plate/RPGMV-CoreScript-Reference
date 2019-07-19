@@ -188,13 +188,15 @@
 | --- | --- | --- |
 | `type` | [String](String.md) |  |
 
-##### Overrides: [Game_Character#initialize](Game_Character.md#initialize-)
+##### Overrides:
+[Game_Character.initialize ()](Game_Character.md#initialize-)
 
 
 #### initMembers ()
  メンバ変数の初期化。
  
-##### Overrides:[Game_Character#initMembers](Game_Character.md#initmembers-)
+##### Overrides:
+[Game_Character.initMembers ()](Game_Character.md#initmembers-)
  
  
 #### initMoveSpeed ()
@@ -286,7 +288,8 @@
 | `y` | [Number](Number.md) |  タイル数 |
 | `d` | [Number](Number.md) |  向き(テンキー対応) |
 
-##### Overrides:[Game_CharacterBase#isMapPassable](Game_CharacterBase.md#ismappassable-x-y-d--boolean)
+##### Overrides:
+[Game_CharacterBase.isMapPassable ( x, y, d )](Game_CharacterBase.md#ismappassable-x-y-d--boolean)
 
 ##### Returns:
 
@@ -355,7 +358,8 @@
 | `x` | [Number](Number.md) |  タイル数 |
 | `y` | [Number](Number.md) |  タイル数 |
 
-##### Overrides:[Game_CharacterBase#pos](Game_CharacterBase.md#pos-)
+##### Overrides:
+[Game_CharacterBase.pos ( x, y )](Game_CharacterBase.md#pos-)
 
 ##### Returns:
 
@@ -449,7 +453,8 @@
 #### update ()
 [乗り物]をアップデート。
 
-##### Overrides:[Game_CharacterBase#update](Game_CharacterBase.md#update-)
+##### Overrides:
+[Game_CharacterBase.update ()](Game_CharacterBase.md#update-)
 
 
 #### updateAirship ()
