@@ -55,7 +55,6 @@
 * [isDebugThrough ()](Game_CharacterBase.md#isdebugthrough---boolean)
 * [isDirectionFixed ()](Game_CharacterBase.md#isdirectionfixed---boolean)
 * [isJumping ()](Game_CharacterBase.md#isjumping---boolean)
-* [isMapPassable (x, y, d)](Game_CharacterBase.md#ismappassable-x-y-d--boolean)
 * [isMovementSucceeded (x opt, y opt)](Game_CharacterBase.md#ismovementsucceeded-x-opt-y-opt--boolean)
 * [isMoving ()](Game_CharacterBase.md#ismoving---boolean)
 * [isNearTheScreen ()](Game_CharacterBase.md#isnearthescreen---boolean)
@@ -195,7 +194,7 @@
 #### initMembers ()
  メンバ変数の初期化。
  
-##### Overrides:[Game_Character#initMembers](Game_Character.md#initMembers-)
+##### Overrides:[Game_Character#initMembers](Game_Character.md#initmembers-)
  
  
 #### initMoveSpeed ()
@@ -287,7 +286,7 @@
 | `y` | [Number](Number.md) |  タイル数 |
 | `d` | [Number](Number.md) |  向き(テンキー対応) |
 
-##### Overrides:[Game_Character#isMapPassable](Game_Character#isMapPassable-)
+##### Overrides:[Game_CharacterBase#isMapPassable](Game_CharacterBase.md#ismappassable-x-y-d--boolean)
 
 ##### Returns:
 
@@ -356,7 +355,7 @@
 | `x` | [Number](Number.md) |  タイル数 |
 | `y` | [Number](Number.md) |  タイル数 |
 
-##### Overrides:[Game_Character#pos](Game_Character.md#pos-)
+##### Overrides:[Game_CharacterBase#pos](Game_CharacterBase.md#pos-)
 
 ##### Returns:
 
@@ -450,7 +449,7 @@
 #### update ()
 [乗り物]をアップデート。
 
-##### Overrides:[Game_Character#update](Game_Character.md#update-)
+##### Overrides:[Game_CharacterBase#update](Game_CharacterBase.md#update-)
 
 
 #### updateAirship ()

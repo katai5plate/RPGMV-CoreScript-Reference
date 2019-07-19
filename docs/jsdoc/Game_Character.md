@@ -164,6 +164,7 @@
 * [straighten ()](Game_CharacterBase.md#straighten-)
 * [terrainTag ()](Game_CharacterBase.md#terraintag---number)
 * [tileId ()](Game_CharacterBase.md#tileid---number)
+* [update ()](Game_CharacterBase.md#update-)
 * [updateAnimation ()](Game_CharacterBase.md#updateanimation-)
 * [updateAnimationCount ()](Game_CharacterBase.md#updateanimationcount-)
 * [updateJump ()](Game_CharacterBase.md#updatejump-)
