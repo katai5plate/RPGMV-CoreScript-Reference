@@ -4,207 +4,157 @@
 
 #### new Game_Followers ()
 
- 隊列の並びなどを管理する。[Game_Follower](Game_Follower.md) を配列として定義したクラス。 [Game_Player#followers](Game_Player.md#followers---game_followers) メソッドで得られる。
+ 隊列の並びなどを管理する。[Game_Follower](Game_Follower.md) を配列として定義したクラス。 [Game_Player.followers ()](Game_Player.md#followers---game_followers) メソッドで得られる。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_visible` | Boolean |  |
-| `_gathering` | Boolean |  |
-| `_data` | [Array](Array.md).<[Game_Follower](Game_Follower.md)> |  |
+| `_visible` | Boolean | [バーティの隊列歩行]か |
+| `_gathering` | Boolean | 集合しているか |
+| `_data` | [Array](Array.md).<[Game_Follower](Game_Follower.md)> | [隊列メンバー]の配列 |
 
-<dl>
-</dl>
 
 ### Methods
 
 #### areGathered () → {Boolean}
-
-
 [隊列メンバー]が集合しているか。
-<dl>
-</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
 
 #### areGathering () → {Boolean}
-
-
 [隊列メンバー]の集合中か。
-<dl>
-</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### areMoving () → {Boolean}
-
-
 [隊列メンバー]が移動中か。
-<dl>
-</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### follower (index) → {[Game_Follower](Game_Follower.md)}
-
-
  指定した番号の[隊列メンバー]を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
-
-<dl>
-</dl>
+| `index` | [Number](Number.md) | [隊列メンバー]番号 |
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Game_Follower</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span><a href="Game_Follower.html">Game_Follower</a></span>
+	</dd>
+</dl>
+
 
 #### forEach (callback, thisObject)
-
-
  各[隊列メンバー]オブジェクトを対象に関数を実行する。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `callback` | function |  |
-| `thisObject` | * |  |
+| `callback` | function | コールバック関数 |
+| `thisObject` | * | 現在のオブジェクト(通常this) |
 
-<dl>
-</dl>
+
 
 #### gather ()
-
-
 [隊列メンバーの集合]。
-<dl>
-</dl>
+
 
 #### hide ()
-
-
 [隊列メンバー]を表示しない。
-<dl>
-</dl>
+
 
 #### initialize ()
-
-
  オブジェクト生成時の初期化。
-<dl>
-</dl>
+
 
 #### isSomeoneCollided (x, y) → {Boolean}
-
-
  指定位置に[隊列メンバー]の誰かがいるか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-
-<dl>
-</dl>
+| `x` | [Number](Number.md) |  x座標(タイル数) |
+| `y` | [Number](Number.md) |  y座標(タイル数) |
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### isVisible () → {Boolean}
-
-
 [隊列メンバー]が表示されているか。
-<dl>
-</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### jumpAll ()
-
-
 [隊列メンバー]全員を、プレイヤーキャラクタの[ジャンプ]高さに揃える。
-<dl>
-</dl>
+
 
 #### refresh ()
-
-
 [隊列メンバー]を更新。
-<dl>
-</dl>
+
 
 #### reverseEach (callback, thisObject)
-
-
  各[隊列メンバー]オブジェクトを対象に逆順に関数を実行する。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `callback` | function |  |
-| `thisObject` | * |  |
+| `callback` | function | コールバック関数 |
+| `thisObject` | * | 現在のオブジェクト(通常this) |
 
-<dl>
-</dl>
 
 #### show ()
-
-
 [隊列メンバー]を表示。
-<dl>
-</dl>
+
 
 #### synchronize (x, y, d)
-
-
  指定の位置と向きに[隊列メンバー]を揃える。
 
 ##### Parameters:
@@ -215,38 +165,26 @@
 | `y` | [Number](Number.md) |  タイル数 |
 | `d` | [Number](Number.md) |  向き(テンキー対応) |
 
-<dl>
-</dl>
 
 #### update ()
-
-
 [隊列メンバー]をアップデート。
-<dl>
-</dl>
+
 
 #### updateMove ()
-
-
 [隊列メンバー]の移動をアップデート。
-<dl>
-</dl>
+
 
 #### visibleFollowers () → {[Array](Array.md).<[Game_Follower](Game_Follower.md)>}
-
-
  表示中の[隊列メンバー]の配列を返す。
-<dl>
-</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Game_Follower</a>&gt;</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span><a href="Array.html">Array</a>.&lt;<a href="Game_Follower.html">Game_Follower</a>&gt;</span>
+	</dd>
+</dl>
 
 
  <br>
