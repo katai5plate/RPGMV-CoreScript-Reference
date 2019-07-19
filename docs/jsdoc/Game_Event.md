@@ -55,8 +55,6 @@
 * [increaseSteps ()](Game_CharacterBase.md#increasesteps-)
 * [isAnimationPlaying ()](Game_CharacterBase.md#isanimationplaying---boolean)
 * [isBalloonPlaying ()](Game_CharacterBase.md#isballoonplaying---boolean)
-* [isCollidedWithCharacters (x, y)](Game_CharacterBase.md#iscollidedwithcharacters-x-y--boolean)
-* [isCollidedWithEvents (x, y)](Game_CharacterBase.md#iscollidedwithevents-x-y--boolean)
 * [isCollidedWithVehicles (x, y)](Game_CharacterBase.md#iscollidedwithvehicles-x-y--boolean)
 * [isDashing ()](Game_CharacterBase.md#isdashing---boolean)
 * [isDebugThrough ()](Game_CharacterBase.md#isdebugthrough---boolean)
@@ -70,14 +68,12 @@
 * [isObjectCharacter ()](Game_CharacterBase.md#isobjectcharacter---boolean)
 * [isOnBush ()](Game_CharacterBase.md#isonbush---boolean)
 * [isOnLadder ()](Game_CharacterBase.md#isonladder---boolean)
-* [isOriginalPattern ()](Game_CharacterBase.md#isoriginalpattern---boolean)
 * [isStopping ()](Game_CharacterBase.md#isstopping---boolean)
 * [isThrough ()](Game_CharacterBase.md#isthrough---boolean)
 * [isTile ()](Game_CharacterBase.md#istile---boolean)
 * [isTransparent ()](Game_CharacterBase.md#istransparent---boolean)
 * [jump (xPlus, yPlus)](Game_CharacterBase.md#jump-xplus-yplus)
 * [jumpHeight ()](Game_CharacterBase.md#jumpheight---number)
-* [locate (x, y)](Game_CharacterBase.md#locate-x-y)
 * [maxPattern ()](Game_CharacterBase.md#maxpattern---number)
 * [moveDiagonally (horz, vert)](Game_CharacterBase.md#movediagonally-horz-vert)
 * [moveFrequency ()](Game_CharacterBase.md#movefrequency---number)
@@ -92,7 +88,6 @@
 * [regionId ()](Game_CharacterBase.md#regionid---number)
 * [requestAnimation (animationId)](Game_CharacterBase.md#requestanimation-animationid)
 * [requestBalloon (balloonId)](Game_CharacterBase.md#requestballoon-balloonid)
-* [resetPattern ()](Game_CharacterBase.md#resetpattern-)
 * [resetStopCount ()](Game_CharacterBase.md#resetstopcount-)
 * [reverseDir (d)](Game_CharacterBase.md#reversedir-d--number)
 * [screenX ()](Game_CharacterBase.md#screenx---number)
@@ -182,7 +177,7 @@
 | `y` | [Number](Number.md) |  タイル数 |
 
 ##### Overrides:
-[Game_Character#checkEventTriggerTouch](Game_Character.md#checkeventtriggertouch-x-y--boolean)
+[Game_Character.checkEventTriggerTouch ()](Game_Character.md#checkeventtriggertouch-x-y--boolean)
 
 
 #### clearPageSettings ()
@@ -249,21 +244,21 @@
 | `moveRoute` | [RPG.MoveRoute](RPG.MoveRoute.md) |  |
 
 ##### Overrides:
-[Game_Character#forceMoveRoute](Game_Character.md#forcemoveroute-moveroute)
+[Game_Character.forceMoveRoute ()](Game_Character.md#forcemoveroute-moveroute)
 
 
 #### initialize ()
  オブジェクト生成時の初期化。
 
 ##### Overrides:
-[Game_Character#initialize](Game_Character.md#initialize-)
+[Game_Character.initialize ()](Game_Character.md#initialize-)
 
 
 #### initMembers ()
  メンバ変数を初期化。
  
 ##### Overrides:
-[Game_Character#initMembers](Game_Character.md#initmembers-)
+[Game_Character.initMembers ()](Game_Character.md#initmembers-)
 
 
 #### isCollidedWithCharacters (x, y) → {Boolean}
@@ -277,7 +272,7 @@
 | `y` | [Number](Number.md) |  タイル数 |
 
 ##### Overrides:
-[Game_Character#isCollidedWithCharacters](Game_Character.md#iscollidedwithcharacters-x-y--boolean)
+[Game_CharacterBase.isCollidedWithCharacters (x, y)](Game_CharacterBase.md#iscollidedwithcharacters-x-y--boolean)
 
 ##### Returns:
 
@@ -299,7 +294,7 @@
 | `y` | [Number](Number.md) |  タイル数 |
 
 ##### Overrides:
-[Game_Character#isCollidedWithEvents](Game_Character.md#iscollidedwithevents-x-y--boolean)
+[Game_CharacterBase.isCollidedWithEvents (x, y)](Game_CharacterBase.md#iscollidedwithevents-x-y--boolean)
 
 ##### Returns:
 
@@ -347,7 +342,7 @@
 [画像]が初期パターンか。
 
 ##### Overrides:
-[Game_Character#isOriginalPattern](Game_Character.md#isoriginalpattern---boolean)
+[Game_CharacterBase.isOriginalPattern ()](Game_CharacterBase.md#isoriginalpattern---boolean)
 
 
 #### isStarting () → {Boolean}
@@ -406,7 +401,8 @@
 | `y` | [Number](Number.md) |  タイル数 |
 
 ##### Overrides:
-[Game_Character#locate](Game_Character.md#locate-x-y)
+[Game_CharacterBase.locate (x, y)](Game_CharacterBase.md#locate-x-y)
+
 
 
 #### lock ()
@@ -460,12 +456,11 @@
 #### refresh ()
 [イベント]を更新。
 
-
 #### resetPattern ()
 [画像]を初期パターンに戻す。
 
 ##### Overrides:
-[Game_Character#resetPattern](Game_Character.md#resetpattern-)
+[Game_CharacterBase.resetPattern ()](Game_CharacterBase.md#resetpattern-)
 
 
 #### setupPage ()
@@ -478,7 +473,6 @@
 
 #### start ()
 [イベント]を開始。
-
 
 
 #### stopCountThreshold () → {[Number](Number.md)}
@@ -502,7 +496,7 @@
 [イベント]をアップデート。
 
 ##### Overrides:
-[Game_Character#update](Game_Character.md#update-)
+[Game_CharacterBase.update ()](Game_CharacterBase.md#update-)
 
 
 #### updateParallel ()
@@ -517,7 +511,7 @@
  停止状態をアップデート。
  
 ##### Overrides:
-[Game_Character#updateStop](Game_Character.md#updatestop-)
+[Game_Character.updateStop ()](Game_Character.md#updatestop-)
 
 
  <br>
