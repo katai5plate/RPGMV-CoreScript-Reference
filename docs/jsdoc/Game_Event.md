@@ -6,7 +6,7 @@
 
  マップに配置する[イベント]を定義したオブジェクト。
  
- [RPG.Event](RPG.Event.md) を得る [Game_Event#event](Game_Event.md#event---rpgevent) メソッドなどを含む。
+ [RPG.Event](RPG.Event.md) を得る [Game_Event.event ()](Game_Event.md#event---rpgevent) メソッドなどを含む。
 
 ##### Properties:
 
