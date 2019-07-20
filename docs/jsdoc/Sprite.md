@@ -4,8 +4,12 @@
 
 #### new Sprite (bitmap)
 
-描画のための基本オブジェクト。[Sprite_Animation](Sprite_Animation.md), [Sprite_Button](Sprite_Button.md), [Sprite_Damage](Sprite_Damage.md), [Sprite_Destination](Sprite_Destination.md), [Sprite_Picture](Sprite_Picture.md), [Sprite_StateIcon](Sprite_StateIcon.md), [Sprite_Timer](Sprite_Timer.md) および [Spriteset_Base](Spriteset_Base.md) と [Sprite_Base](Sprite_Base.md) のスーパークラス。<br />
+描画のための基本オブジェクト。[Sprite_Animation](Sprite_Animation.md), [Sprite_Button](Sprite_Button.md), [Sprite_Damage](Sprite_Damage.md), [Sprite_Destination](Sprite_Destination.md), [Sprite_Picture](Sprite_Picture.md), [Sprite_StateIcon](Sprite_StateIcon.md), [Sprite_Timer](Sprite_Timer.md) および [Spriteset_Base](Spriteset_Base.md) と [Sprite_Base](Sprite_Base.md) のスーパークラス。
+
 PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイルから読み込んだ[Bitmap](Bitmap.md)を、コンストラクタ引数に指定してSpriteを生成し、[Stage](Stage.md)などのコンテナオブジェクトにaddChildする、という手順で画像を表示する。
+
+継承元の [PIXI.Sprite](http://pixijs.download/release/docs/PIXI.Sprite.html) には多くのプロパティ・メソッドが存在するが、ほとんどはここに書いてないので、実際の利用には、ある程度は継承元の使い方も理解しておく必要がある。
+
 
 ##### Parameters:
 
@@ -41,11 +45,11 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 
 ### Extends
 
-* [PIXI.Sprite](http://pixijs.download/release/docs/PIXI.Sprite.html)
+* [PIXI.Sprite](PIXI.Sprite.md)
 
 ### Methods
 
-#### (static) _createTinter (w, h)
+#### _createTinter (w, h)
 
 ##### Parameters:
 
@@ -55,7 +59,7 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | `h` | [Number](Number.md) |  |
 
 
-#### (static) _executeTint (x, y, w, h)
+#### _executeTint (x, y, w, h)
 
 ##### Parameters:
 
@@ -67,7 +71,7 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | `h` | [Number](Number.md) |  |
 
 
-#### (static) _isInBitmapRect (x, y, w, h) → {Boolean}
+#### _isInBitmapRect (x, y, w, h) → {Boolean}
 
 ##### Parameters:
 
@@ -88,7 +92,7 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
                 </dd>
             </dl>
 
-#### (static) _needsTint () → {Boolean}
+#### _needsTint () → {Boolean}
 
 
 ##### Returns:
@@ -100,22 +104,13 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
                 </dd>
             </dl>
 
-#### (static) _onBitmapLoad ()
+#### _onBitmapLoad ()
 
 
-#### (static) _refresh ()
+#### _refresh ()
 
 
-#### (static) _renderCanvas (renderer)
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `renderer` | Object |  |
-
-
-#### (static) _renderWebGL (renderer)
+#### _renderCanvas (renderer)
 
 ##### Parameters:
 
@@ -124,7 +119,16 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | `renderer` | Object |  |
 
 
-#### (static) getBlendColor () → {[Array](Array.md)}
+#### _renderWebGL (renderer)
+
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `renderer` | Object |  |
+
+
+#### getBlendColor () → {[Array](Array.md)}
 
 
  合成される色(r, g, b)と不透明度(a)を返す。
@@ -140,7 +144,7 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
                 </dd>
             </dl>
 
-#### (static) getColorTone () → {[Array](Array.md)}
+#### getColorTone () → {[Array](Array.md)}
 
 
  補正される色調(r, g, b)とグレー(gray)を返す。
@@ -156,7 +160,7 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
                 </dd>
             </dl>
 
-#### (static) initialize (bitmap)
+#### initialize (bitmap)
 
 
  オブジェクト生成時の初期化。
@@ -168,7 +172,7 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | `bitmap` | [Bitmap](Bitmap.md) |  |
 
 
-#### (static) move (x, y)
+#### move (x, y)
 
 
  位置の指定。
@@ -181,7 +185,7 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | `y` | [Number](Number.md) | y座標 |
 
 
-#### (static) setBlendColor (color)
+#### setBlendColor (color)
 
 
  合成される色(r, g, b)と不透明度(a)を設定。
@@ -193,7 +197,7 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | `color` | [Array](Array.md) | [r, g, b, a] の配列 |
 
 
-#### (static) setColorTone (tone)
+#### setColorTone (tone)
 
 
  補正される色調(r, g, b)とグレー(gray)を設定。
@@ -205,7 +209,7 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | `tone` | [Array](Array.md) | [r, g, b, gray] の配列 |
 
 
-#### (static) setFrame (x, y, width, height)
+#### setFrame (x, y, width, height)
  保持している画像(bitmap)の表示領域を指定。
 
 ##### Parameters:
@@ -218,19 +222,18 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | `height` | [Number](Number.md) |  矩形枠の高さ(ピクセル) |
 
 
-#### (static) update ()
+#### update ()
  フレーム毎のアップデート。
 
+
 #### _speedUpCustomBlendModes (renderer)
-
-
-checks if we need to speed up custom blendmodes
+カスタムブレンドモードのスピードアップの要不要をチェック
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `renderer` |  |  |
+| `renderer` |  | レンダラ |
 
 
 

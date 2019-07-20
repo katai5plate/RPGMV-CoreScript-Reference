@@ -20,7 +20,7 @@ The sprite which changes the screen color in 2D canvas mode.
 
 ### Extends
 
-* [PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html)
+* [PIXI.Container](PIXI.Container.md)
 
 ### Methods
 

@@ -26,7 +26,7 @@ The weather effect which displays rain, storm, or snow.
 
 ### Extends
 
-* [PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html)
+* [PIXI.Container](PIXI.Container.md)
 
 ### Methods
 

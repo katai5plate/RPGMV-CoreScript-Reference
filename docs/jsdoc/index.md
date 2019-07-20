@@ -6,7 +6,7 @@
 * [管理(静的オブジェクト)](index.md#管理静的オブジェクト)
 * [ユーティリティ](index.md#ユーティリティ)
 * オブジェクト
-
+* 
 	* [システム](index.md#システム)
 	* [スイッチ・変数](index.md#スイッチ変数)
 	* [マップキャラクタ](index.md#マップキャラクタ)
@@ -21,7 +21,6 @@
 	* [レンダラ](index.md#レンダラ)
 	* [シェーダ](index.md#シェーダ)
 	* [スプライト(Sprite)](index.md#スプライトsprite)
-
 	* [コンテナ(PIXI.Container)](index.md#コンテナpixicontainer)
 	* [シーン(Scene_Base)](index.md#シーンscene_base)
 	* [ウィンドウ(Window_Base)](index.md#ウィンドウwindow_base)
@@ -164,11 +163,11 @@
 * EventEmitter
     * [PIXI.BaseTexture](http://pixijs.download/release/docs/PIXI.BaseTexture.html)
     * [PIXI.Texture](http://pixijs.download/release/docs/PIXI.Texture.html)
-    * [PIXI.DisplayObject](http://pixijs.download/release/docs/PIXI.DisplayObject.html)
-        * [PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html) → [Extends](index.md#コンテナpixicontainer)
+    * [PIXI.DisplayObject](PIXI.DisplayObject.md)
+        * [PIXI.Container](PIXI.Container.md) → [Extends](index.md#コンテナpixicontainer)
             * [PIXI.Graphics](http://pixijs.download/release/docs/PIXI.Graphics.html)
                 * [PIXI.tilemap.GraphicsLayer](https://github.com/pixijs/pixi-tilemap/blob/master/src/GraphicsLayer.ts)
-            * [PIXI.Sprite](http://pixijs.download/release/docs/PIXI.Sprite.html)
+            * [PIXI.Sprite](PIXI.Sprite.md)
                 * [Sprite](Sprite.md) → [Extends](index.md#スプライトsprite)
 
 

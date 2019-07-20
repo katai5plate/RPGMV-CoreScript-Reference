@@ -8,6 +8,8 @@
 
 静的プロパティに定義してある定数は、[移動ルートの設定]の[移動コマンド]に対応している。
 
+[Sprite_Character](Sprite_Character.md) のコンストラクタ引数として渡され、表示される。
+
 ##### Properties:
 
 | Name | Type | Description |

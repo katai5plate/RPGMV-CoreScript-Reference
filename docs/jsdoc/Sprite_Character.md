@@ -4,8 +4,9 @@
 
 #### new Sprite_Character (character)
 
-[イベント][アクター][フォロワー][乗り物]といった、キャラクタを表示するスプライト。<br />
-[Spriteset_Map.createCharacters](Spriteset_Map.md#createcharacters-)で生成される。
+[イベント][アクター][フォロワー][乗り物]といった、キャラクタを表示するスプライト。
+
+[Spriteset_Map](Spriteset_Map.md) の createCharacters() で生成され、_characterSprites に格納される。
 
 ##### Parameters:
 
@@ -29,6 +30,11 @@
 ### Extends
 
 * [Sprite_Base](Sprite_Base.md)
+
+### Inherited From:
+#### [Sprite](Sprite.md)
+
+* [_speedUpCustomBlendModes (renderer)](Sprite.md#)
 
 ### Methods
 

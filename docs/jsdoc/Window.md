@@ -11,7 +11,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `children` | [Array](Array.md).<*> | [super][read-only] 子オブジェクト |
+| `children` | [Array](Array.md).&lt;\*&gt; | [super][read-only] 子オブジェクト |
 | `parent` | [PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html) | [super][read-only] 親オブジェクト |
 | `active` | Boolean | ウィンドウがアクティブか |
 | `openness` | [Number](Number.md) | 開放度 (0 〜 255) |
@@ -46,7 +46,7 @@
 | `_windowCursorSprite` | [Sprite](Sprite.md) |  |
 | `_windowFrameSprite` | [Sprite](Sprite.md) |  |
 | `_windowContentsSprite` | [Sprite](Sprite.md) |  |
-| `_windowArrowSprites` | [Array](Array.md).<*> |  |
+| `_windowArrowSprites` | [Array](Array.md).&lt;\*&gt; |  |
 | `_windowPauseSignSprite` | [Sprite](Sprite.md) |  |
 | `_downArrowSprite` | [Sprite](Sprite.md) |  |
 | `_upArrowSprite` | [Sprite](Sprite.md) |  |
@@ -56,7 +56,7 @@
 
 ### Extends
 
-* [PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html)
+* [PIXI.Container](PIXI.Container.md)
 
 ### Methods
 

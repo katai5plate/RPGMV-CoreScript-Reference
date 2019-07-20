@@ -81,8 +81,6 @@ canvas 色調変更を生成。
             </dl>
 
 #### createCharacters ()
-
-
  キャラクタスプライト([Sprite_Character](Sprite_Character.md))の生成。
 <dl>
 </dl>
