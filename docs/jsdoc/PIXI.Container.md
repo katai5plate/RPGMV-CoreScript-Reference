@@ -44,10 +44,26 @@
 
 * [PIXI.DisplayObject](PIXI.DisplayObject.md)
 
+
+### Inherited From
+
+#### [PIXI.DisplayObject](PIXI.DisplayObject.md)
+
+* [(static) mixin (source)](PIXI.DisplayObject.md#static-mixin-source)
+* [\_recursivePostUpdateTransform ()](PIXI.DisplayObject.md#_recursivepostupdatetransform-)
+* [displayObjectUpdateTransform ()](PIXI.DisplayObject.md#displayobjectupdatetransform-)
+* [getBounds (skipUpdate, rect)](PIXI.DisplayObject.md#getbounds-skipupdate-rect--pixirectangle)
+* [getGlobalPosition (point, skipUpdate)](PIXI.DisplayObject.md#getglobalposition-point-skipupdate--pixipoint)
+* [getLocalBounds (rect)](PIXI.DisplayObject.md#getlocalbounds-rect--pixirectangle)
+* [setParent (container)](PIXI.DisplayObject.md#setparent-container--pixicontainer)
+* [setTransform (x, y, scaleX, scaleY, rotation, skewX, skewY, pivotX, pivotY)](PIXI.DisplayObject.md#settransform-x-y-scalex-scaley-rotation-skewx-skewy-pivotx-pivoty--pixidisplayobject)
+* [toGlobal (position, point, skipUpdate)](PIXI.DisplayObject.md#toglobal-position-point-skipupdate--pixipoint)
+* [toLocal (position, from, point, skipUpdate)](PIXI.DisplayObject.md#tolocal-position-from-point-skipupdate--pixipoint)
+
+
 ### Methods
 
 #### _calculateBounds ()
-
 
 
 #### _render (renderer)
@@ -109,7 +125,7 @@
 </dl>
 
 
-#### calculateBounds()
+#### calculateBounds ()
 矩形範囲の再計算。
 
 
@@ -132,7 +148,6 @@ options に Object として指定する内容
 | `children` | Boolean | false | opt. 子も破棄するか|
 | `texture` | Boolean | false | opt. children と texture が true だと子のテクスチャを破棄する |
 | `baseTexture` | Boolean | false | opt. children と baseTexture が true だと子のベーステクスチャを破棄する |
-
 
 
 #### getChildAt (index) → {PIXI.DisplayObject}

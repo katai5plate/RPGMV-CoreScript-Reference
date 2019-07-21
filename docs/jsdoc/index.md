@@ -165,7 +165,7 @@
     * [PIXI.Texture](http://pixijs.download/release/docs/PIXI.Texture.html)
     * [PIXI.DisplayObject](PIXI.DisplayObject.md)
         * [PIXI.Container](PIXI.Container.md) → [Extends](index.md#コンテナpixicontainer)
-            * [PIXI.Graphics](http://pixijs.download/release/docs/PIXI.Graphics.html)
+            * [PIXI.Graphics](PIXI.Graphics.md)
                 * [PIXI.tilemap.GraphicsLayer](https://github.com/pixijs/pixi-tilemap/blob/master/src/GraphicsLayer.ts)
             * [PIXI.Sprite](PIXI.Sprite.md)
                 * [Sprite](Sprite.md) → [Extends](index.md#スプライトsprite)

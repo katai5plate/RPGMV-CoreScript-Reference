@@ -2,7 +2,7 @@
 
 ## PIXI.Sprite (texture)
 
-#### new Sprite (texture)
+#### new PIXI.Sprite (texture)
 描画のための基本オブジェクト。[Sprite](Sprite.md) のスーパークラス。
 
 詳細は本家 PIXI のサイト [PIXI.Sprite](http://pixijs.download/release/docs/PIXI.Sprite.html) を参照。
@@ -31,6 +31,42 @@
 | `tint` | [Number](Number.md) |  |
 
 
+### Inherited From
+
+#### [PIXI.DisplayObject](PIXI.DisplayObject.md)
+
+* [(static) mixin (source)](PIXI.DisplayObject.md#static-mixin-source)
+* [\_recursivePostUpdateTransform ()](PIXI.DisplayObject.md#_recursivepostupdatetransform-)
+* [displayObjectUpdateTransform ()](PIXI.DisplayObject.md#displayobjectupdatetransform-)
+* [getBounds (skipUpdate, rect)](PIXI.DisplayObject.md#getbounds-skipupdate-rect--pixirectangle)
+* [getGlobalPosition (point, skipUpdate)](PIXI.DisplayObject.md#getglobalposition-point-skipupdate--pixipoint)
+* [setParent (container)](PIXI.DisplayObject.md#setparent-container--pixicontainer)
+* [setTransform (x, y, scaleX, scaleY, rotation, skewX, skewY, pivotX, pivotY)](PIXI.DisplayObject.md#settransform-x-y-scalex-scaley-rotation-skewx-skewy-pivotx-pivoty--pixidisplayobject)
+* [toGlobal (position, point, skipUpdate)](PIXI.DisplayObject.md#toglobal-position-point-skipupdate--pixipoint)
+* [toLocal (position, from, point, skipUpdate)](PIXI.DisplayObject.md#tolocal-position-from-point-skipupdate--pixipoint)
+
+
+#### [PIXI.Container](PIXI.Container.md)
+
+* [\_renderCanvas (renderer)](PIXI.Container.md#_rendercanvas-renderer)
+* [addChild (child) ](PIXI.Container.md#addchild-child--pixidisplayobject)
+* [addChildAt (child, index)](PIXI.Container.md#addchildat-child-index--pixidisplayobject)
+* [calculateBounds ()](PIXI.Container.md#calculatebounds-)
+* [getChildAt (index)](PIXI.Container.md#getchildat-index--pixidisplayobject)
+* [getChildByName (name)](PIXI.Container.md#getchildbyname-name--pixidisplayobject)
+* [getChildIndex (child)](PIXI.Container.md#getchildindex-child--pixidisplayobject)
+* [onChildrenChange ()](PIXI.Container.md#onchildrenchange-)
+* [removeChild (child)](PIXI.Container.md#removechild-child--pixidisplayobject)
+* [removeChildAt (index)](PIXI.Container.md#removechildat-index--pixidisplayobject)
+* [removeChildren (beginIndex, endIndex)](PIXI.Container.md#removechildren-beginindex-endindex--arraypixidisplayobject)
+* [render (renderer)](PIXI.Container.md#render-renderer)
+* [renderAdvanced (renderer)](PIXI.Container.md#renderadvanced-renderer)
+* [setChildIndex (child, index)](PIXI.Container.md#setchildindex-child-index)
+* [sortChildren ()](PIXI.Container.md#sortchildren-)
+* [swapChildren (child, child2)](PIXI.Container.md#swapchildren-child-child2)
+* [updateTransform ()](PIXI.Container.md#updatetransform-)
+
+
 ### Extends
 
 * [PIXI.Container](PIXI.Container.md)
@@ -57,6 +93,25 @@
 </dl>
 
 
+#### _calculateBounds ()
+
+##### Overrides:
+ [PIXI.Container.md.\_calculateBounds ()](PIXI.Container.md#_calculatebounds-)
+ 
+ 
+#### _render (renderer)
+
+##### Overrides:
+
+* [PIXI.Container.md.\_render (renderer)](PIXI.Container.md#_render-renderer)
+ 
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `renderer` | [PIXI.Renderer](http://pixijs.download/release/docs/PIXI.Renderer.html) |  |
+
+ 
 #### calculateTrimmedVertices ()
 
 #### calculateVertices ()
@@ -78,6 +133,59 @@
     </dd>
 </dl>
 
+
+#### destroy (options)
+破棄する。
+
+##### Overrides:
+[PIXI.Container.destroy (options)](PIXI.Container.md#destroy-options)
+
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `options ` | Object \| Boolean | opt. 以下のオプション全てに同じ値が設定される |
+
+options に Object として指定する内容
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| `children` | Boolean | false | opt. 子も破棄するか|
+| `texture` | Boolean | false | opt. children と texture が true だと子のテクスチャを破棄する |
+| `baseTexture` | Boolean | false | opt. children と baseTexture が true だと子のベーステクスチャを破棄する |
+
+
+#### getLocalBounds (rect) → {PIXI.Rectangle}
+
+##### Overrides:
+[PIXI.DisplayObject.getLocalBounds (rect)](PIXI.DisplayObject.md#getlocalbounds-rect--pixirectangle)
+
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `rect` | PIXI.Rectangle | opt. |
+
+##### Returns:
+
+<dl>
+    <dt> Type </dt>
+    <dd>
+        <span><a href="http://pixijs.download/release/docs/PIXI.Rectangle.html">PIXI.Rectangle</a></span>
+    </dd>
+</dl>
+
+
+#### renderCanvas (renderer)
+
+##### Overrides:
+[PIXI.Container.renderCanvas (renderer)](PIXI.Container.md#rendercanvas-renderer)
+
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `renderer` | [PIXI.CanvasRenderer](http://pixijs.download/release/docs/PIXI.Renderer.html) |  |
 
  <br>
 
