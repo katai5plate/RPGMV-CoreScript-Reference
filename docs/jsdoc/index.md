@@ -6,27 +6,22 @@
 * [管理(静的オブジェクト)](index.md#管理静的オブジェクト)
 * [ユーティリティ](index.md#ユーティリティ)
 * オブジェクト
-
 	* [システム](index.md#システム)
 	* [スイッチ・変数](index.md#スイッチ変数)
 	* [マップキャラクタ](index.md#マップキャラクタ)
 	* [バトルキャラクタ](index.md#バトルキャラクタ)
 	* [その他オブジェクト](index.md#その他オブジェクト)
-
 * [データベース(JSON)](index.md#データベースjson)
 * [入力](index.md#入力)
 * [音声](index.md#音声)
 * [画像](index.md#画像)
-
 	* [レンダラ](index.md#レンダラ)
 	* [シェーダ](index.md#シェーダ)
 	* [スプライト(Sprite)](index.md#スプライトsprite)
 	* [コンテナ(PIXI.Container)](index.md#コンテナpixicontainer)
 	* [シーン(Scene_Base)](index.md#シーンscene_base)
 	* [ウィンドウ(Window_Base)](index.md#ウィンドウwindow_base)
-
 		* [選択ウィンドウ(Window_Selectable)](index.md#選択ウィンドウwindow_selectable)
-		
 			* [コマンドウィンドウ(Window_Command)](index.md#コマンドウィンドウwindow_command)
 
 
