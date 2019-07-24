@@ -6,7 +6,7 @@
 * [管理(静的オブジェクト)](index.md#管理静的オブジェクト)
 * [ユーティリティ](index.md#ユーティリティ)
 * オブジェクト
-* 
+
 	* [システム](index.md#システム)
 	* [スイッチ・変数](index.md#スイッチ変数)
 	* [マップキャラクタ](index.md#マップキャラクタ)
@@ -26,7 +26,7 @@
 	* [ウィンドウ(Window_Base)](index.md#ウィンドウwindow_base)
 
 		* [選択ウィンドウ(Window_Selectable)](index.md#選択ウィンドウwindow_selectable)
-
+		
 			* [コマンドウィンドウ(Window_Command)](index.md#コマンドウィンドウwindow_command)
 
 
