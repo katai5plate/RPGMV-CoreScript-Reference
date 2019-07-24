@@ -8,7 +8,7 @@
 
 PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイルから読み込んだ[Bitmap](Bitmap.md)を、コンストラクタ引数に指定してSpriteを生成し、[Stage](Stage.md)などのコンテナオブジェクトにaddChildする、という手順で画像を表示する。
 
-継承元の [PIXI.Sprite](http://pixijs.download/release/docs/PIXI.Sprite.html) には多くのプロパティ・メソッドが存在するが、ほとんどはここに書いてないので、実際の利用には、ある程度は継承元の使い方も理解しておく必要がある。
+継承されているプロパティから代表的なものもここに書いたが、詳しいくは継承元の [PIXI.Sprite](PIXI.Sprite.md) を参照。
 
 
 ##### Parameters:
@@ -131,27 +131,27 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | `w` | [Number](Number.md) |  |
 | `h` | [Number](Number.md) |  |
 
-
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### _needsTint () → {Boolean}
 
-
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### _onBitmapLoad ()
 
@@ -161,8 +161,8 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 
 #### _renderCanvas (renderer)
 
-#### Overrides
-[PIXI.Container\_renderCanvas (renderer)](PIXI.Container.md#_rendercanvas-renderer)
+##### Overrides
+[PIXI.Container.\_renderCanvas (renderer)](PIXI.Container.md#_rendercanvas-renderer)
 
 ##### Parameters:
 
@@ -172,7 +172,7 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 
 
 #### _renderWebGL (renderer)
-PX
+WebGL でレンダリング。
 
 ##### Parameters:
 
@@ -181,41 +181,43 @@ PX
 | `renderer` | Object |  |
 
 
+#### _speedUpCustomBlendModes (renderer)
+カスタムブレンドモードのスピードアップの要不要をチェック
+
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `renderer` |  | レンダラ |
+
+
 #### getBlendColor () → {[Array](Array.md)}
-
-
  合成される色(r, g, b)と不透明度(a)を返す。
 
 ##### Returns:
-
-
 [r, g, b, a] の配列
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span><a href="Array.html">Array</a></span>
+	</dd>
+</dl>
+
 
 #### getColorTone () → {[Array](Array.md)}
-
-
  補正される色調(r, g, b)とグレー(gray)を返す。
 
 ##### Returns:
-
-
 [r, g, b, gray] の配列
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span><a href="Array.html">Array</a></span>
+	</dd>
+</dl>
+
 
 #### initialize (bitmap)
-
-
  オブジェクト生成時の初期化。
 
 ##### Parameters:
@@ -226,8 +228,6 @@ PX
 
 
 #### move (x, y)
-
-
  位置の指定。
 
 ##### Parameters:
@@ -239,8 +239,6 @@ PX
 
 
 #### setBlendColor (color)
-
-
  合成される色(r, g, b)と不透明度(a)を設定。
 
 ##### Parameters:
@@ -251,8 +249,6 @@ PX
 
 
 #### setColorTone (tone)
-
-
  補正される色調(r, g, b)とグレー(gray)を設定。
 
 ##### Parameters:
@@ -277,16 +273,6 @@ PX
 
 #### update ()
  フレーム毎のアップデート。
-
-
-#### _speedUpCustomBlendModes (renderer)
-カスタムブレンドモードのスピードアップの要不要をチェック
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `renderer` |  | レンダラ |
 
 
 
