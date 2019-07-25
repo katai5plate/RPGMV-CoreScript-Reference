@@ -6,7 +6,15 @@
 
 [イベント][アクター][フォロワー][乗り物]といった、キャラクタを表示するスプライト。
 
+コンストラクタの引数(Parameters)として渡される以下のキャラクタデータオブジェクトによって挙動が決まる。
+
+* [Game_Player](Game_Player.md)
+* [Game_Follower](Game_Follower.md)
+* [Game_Event](Game_Event.md)
+* [Game_Vehicle](Game_Vehicle.md)
+
 [Spriteset_Map](Spriteset_Map.md) の createCharacters() で生成され、_characterSprites に格納される。
+
 
 ##### Parameters:
 
@@ -31,32 +39,83 @@
 
 * [Sprite_Base](Sprite_Base.md)
 
-### Inherited From:
+
+### Inherited From
+
+#### [PIXI.DisplayObject](PIXI.DisplayObject.md)
+
+* [(static) mixin (source)](PIXI.DisplayObject.md#static-mixin-source)
+* [\_recursivePostUpdateTransform ()](PIXI.DisplayObject.md#_recursivepostupdatetransform-)
+* [displayObjectUpdateTransform ()](PIXI.DisplayObject.md#displayobjectupdatetransform-)
+* [getBounds (skipUpdate, rect)](PIXI.DisplayObject.md#getbounds-skipupdate-rect--pixirectangle)
+* [getGlobalPosition (point, skipUpdate)](PIXI.DisplayObject.md#getglobalposition-point-skipupdate--pixipoint)
+* [setParent (container)](PIXI.DisplayObject.md#setparent-container--pixicontainer)
+* [setTransform (x, y, scaleX, scaleY, rotation, skewX, skewY, pivotX, pivotY)](PIXI.DisplayObject.md#settransform-x-y-scalex-scaley-rotation-skewx-skewy-pivotx-pivoty--pixidisplayobject)
+* [toGlobal (position, point, skipUpdate)](PIXI.DisplayObject.md#toglobal-position-point-skipupdate--pixipoint)
+* [toLocal (position, from, point, skipUpdate)](PIXI.DisplayObject.md#tolocal-position-from-point-skipupdate--pixipoint)
+
+
+#### [PIXI.Container](PIXI.Container.md)
+
+* [addChild (child) ](PIXI.Container.md#addchild-child--pixidisplayobject)
+* [addChildAt (child, index)](PIXI.Container.md#addchildat-child-index--pixidisplayobject)
+* [calculateBounds ()](PIXI.Container.md#calculatebounds-)
+* [getChildAt (index)](PIXI.Container.md#getchildat-index--pixidisplayobject)
+* [getChildByName (name)](PIXI.Container.md#getchildbyname-name--pixidisplayobject)
+* [getChildIndex (child)](PIXI.Container.md#getchildindex-child--pixidisplayobject)
+* [onChildrenChange ()](PIXI.Container.md#onchildrenchange-)
+* [removeChild (child)](PIXI.Container.md#removechild-child--pixidisplayobject)
+* [removeChildAt (index)](PIXI.Container.md#removechildat-index--pixidisplayobject)
+* [removeChildren (beginIndex, endIndex)](PIXI.Container.md#removechildren-beginindex-endindex--arraypixidisplayobject)
+* [render (renderer)](PIXI.Container.md#render-renderer)
+* [renderAdvanced (renderer)](PIXI.Container.md#renderadvanced-renderer)
+* [setChildIndex (child, index)](PIXI.Container.md#setchildindex-child-index)
+* [sortChildren ()](PIXI.Container.md#sortchildren-)
+* [swapChildren (child, child2)](PIXI.Container.md#swapchildren-child-child2)
+* [updateTransform ()](PIXI.Container.md#updatetransform-)
+
+
+#### [PIXI.Sprite](PIXI.Sprite.md)
+
+* [(static) from (source, options)](PIXI.Sprite.md#static-from-source-options--pixisprite)
+* [\_calculateBounds ()](PIXI.Sprite.md#_calculatebounds-)
+* [\_render (renderer)](PIXI.Sprite.md#_render-renderer)
+* [calculateTrimmedVertices ()](PIXI.Sprite.md#calculatetrimmedvertices-)
+* [calculateVertices ()](PIXI.Sprite.md#calculatevertices-)
+* [containsPoint (point)](PIXI.Sprite.md#containspoint-point--boolean)
+* [destroy (options)](PIXI.Sprite.md#destroy-options)
+* [getLocalBounds (rect)](PIXI.Sprite.md#getlocalbounds-rect--pixirectangle)
+* [renderCanvas (renderer)](PIXI.Sprite.md#rendercanvas-renderer)
+
+
 #### [Sprite](Sprite.md)
 
-* [_speedUpCustomBlendModes (renderer)](Sprite.md#)
+* [\_createTinter (w, h)](Sprite.md#_createtinter-w-h)
+* [\_executeTint (x, y, w, h)](Sprite.md#_executetint-x-y-w-h)
+* [\_isInBitmapRect (x, y, w, h)](Sprite.md#_isinbitmaprect-x-y-w-h--boolean)
+* [\_needsTint ()](Sprite.md#_needstint---boolean)
+* [\_onBitmapLoad ()](Sprite.md#_onbitmapload-)
+* [\_refresh ()](Sprite.md#_refresh-)
+* [\_renderCanvas (renderer)](Sprite.md#_rendercanvas-renderer)
+* [\_renderWebGL (renderer)](Sprite.md#_renderwebgl-renderer)
+* [\_speedUpCustomBlendModes (renderer)](Sprite.md#_speedupcustomblendmodes-renderer)
+* [getBlendColor ()](Sprite.md#getblendcolor---array)
+* [getColorTone ()](Sprite.md#getcolortone---array)
+* [move (x, y)](Sprite.md#Sprite.md#move-x-y)
+* [setBlendColor (color)](Sprite.md#setblendcolor-color)
+* [setColorTone (tone)](Sprite.md#setcolortone-tone)
+* [setFrame (x, y, width, height)](Sprite.md#setframe-x-y-width-height)
+
+#### [Sprite_Base](Sprite_Base.md)
+
+* [hide ()](Sprite_Base.md#)
+* [isAnimationPlaying ()](Sprite_Base.md#)
+* [show ()](Sprite_Base.md#)
+* [startAnimation (animation, mirror, delay)](Sprite_Base.md#)
+* [updateAnimationSprites ()](Sprite_Base.md#)
+
 
 ### Methods
-
-#### _speedUpCustomBlendModes (renderer)
-checks if we need to speed up custom blendmodes
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `renderer` |  |  |
-
-<dl>
-    <dt>Inherited From:</dt>
-    <dd>
-        <ul>
-            <li>
-                <a>Sprite#_speedUpCustomBlendModes</a>
-            </li>
-        </ul>
-    </dd>
-</dl>
 
 #### characterBlockX () → {[Number](Number.md)}
 
@@ -70,6 +129,7 @@ checks if we need to speed up custom blendmodes
     </dd>
 </dl>
 
+
 #### characterBlockY () → {[Number](Number.md)}
 
 
@@ -82,10 +142,9 @@ checks if we need to speed up custom blendmodes
     </dd>
 </dl>
 
+
 #### characterPatternX () → {[Number](Number.md)}
 
-
-Returns the character x pattern.
 
 ##### Returns:
 
@@ -95,12 +154,11 @@ Returns the character x pattern.
         <span><a href="Number.html">Number</a></span>
     </dd>
 </dl>
+
 
 #### characterPatternY () → {[Number](Number.md)}
 
 
-Returns the character y pattern.
-
 ##### Returns:
 
 <dl>
@@ -109,28 +167,14 @@ Returns the character y pattern.
         <span><a href="Number.html">Number</a></span>
     </dd>
 </dl>
+
 
 #### createHalfBodySprites ()
 
 
 #### endBalloon ()
+フキダシを削除。
 
-
-Ends the balloon sprite, removing it from the Game_Character object sprite.
-
-#### hide ()
-スプライトを非表示。
-
-<dl>
-    <dt>Inherited From:</dt>
-    <dd>
-        <ul>
-            <li>
-                <a>Sprite_Base#hide</a>
-            </li>
-        </ul>
-    </dd>
-</dl>
 
 #### initialize (character)
  オブジェクト生成時の初期化。
@@ -141,48 +185,15 @@ Ends the balloon sprite, removing it from the Game_Character object sprite.
 | --- | --- | --- |
 | `character` | [Game_Character](Game_Character.md) |  |
 
-<dl>
-    <dt>Overrides:</dt>
-    <dd>
-        <ul>
-            <li>
-                <a>Sprite_Base#initialize</a>
-            </li>
-        </ul>
-    </dd>
-</dl>
+##### Overrides:
+[Sprite_Base.initialize ()](Sprite_Base.md#initialize-)
+
 
 #### initMembers ()
 
 
-#### isAnimationPlaying () → {boolean}
-
-
-Returns true if an animation is currently playing.
-<dl>
-    <dt>Inherited From:</dt>
-    <dd>
-        <ul>
-            <li>
-                <a>Sprite_Base#isAnimationPlaying</a>
-            </li>
-        </ul>
-    </dd>
-</dl>
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
 #### isBalloonPlaying () → {boolean}
-
-
-Returns true if a balloon animation is playing on the character.
+フキダシが動作しているか。
 
 ##### Returns:
 
@@ -192,11 +203,10 @@ Returns true if a balloon animation is playing on the character.
         <span>Boolean</span>
     </dd>
 </dl>
+
 
 #### isImageChanged () → {Boolean}
-
-
-Returns true if the sprite character image has changed.
+画像が切り替わったか。
 
 ##### Returns:
 
@@ -206,11 +216,10 @@ Returns true if the sprite character image has changed.
         <span>Boolean</span>
     </dd>
 </dl>
+
 
 #### isTile () → {boolean}
-
-
-Returns true if the Game_Character object tileId is greater than 0.
+タイルの上に乗っている(0 < tileID)か。
 
 ##### Returns:
 
@@ -221,10 +230,9 @@ Returns true if the Game_Character object tileId is greater than 0.
     </dd>
 </dl>
 
+
 #### patternHeight () → {[Number](Number.md)}
-
-
-Returns the pattern height.
+パターンの高さ(ピクセル)を返す。
 
 ##### Returns:
 
@@ -234,11 +242,10 @@ Returns the pattern height.
         <span><a href="Number.html">Number</a></span>
     </dd>
 </dl>
+
 
 #### patternWidth () → {[Number](Number.md)}
-
-
-Returns the pattern width.
+パターンの幅(ピクセル)を返す。
 
 ##### Returns:
 
@@ -249,10 +256,9 @@ Returns the pattern width.
     </dd>
 </dl>
 
+
 #### setCharacter (character)
-
-
-Sets the current Game_Character object attached to the sprite.
+キャラクタを再設定。コンストラクタに渡す値と同じ。
 
 ##### Parameters:
 
@@ -262,64 +268,24 @@ Sets the current Game_Character object attached to the sprite.
 
 
 #### setCharacterBitmap ()
+キャラクタの画像を設定。
 
-
-Sets the sprite character bitmap.
 
 #### setTileBitmap ()
+タイル画像を設定。
 
 
 #### setupAnimation ()
+アニメーションを設定。
 
 
 #### setupBalloon ()
+フキダシの設定。
 
-
-Sets up the Game_Character object balloon sprite, and calls the startBalloon method.
-
-#### show ()
-
-
-Shows the sprite.
-<dl>
-    <dt>Inherited From:</dt>
-    <dd>
-        <ul>
-            <li>
-                <a>Sprite_Base#show</a>
-            </li>
-        </ul>
-    </dd>
-</dl>
-
-#### startAnimation (animation, mirror, delay)
-
-
-Starts a new animation on the current sprite by assigning a new Sprite_Animation object to the sprite's parent.
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `animation` | [RPG.Animation](RPG.Animation.md) |  |
-| `mirror` | Boolean |  |
-| `delay` | [Number](Number.md) |  |
-
-<dl>
-    <dt>Inherited From:</dt>
-    <dd>
-        <ul>
-            <li>
-                <a>Sprite_Base#startAnimation</a>
-            </li>
-        </ul>
-    </dd>
-</dl>
 
 #### startBalloon ()
+フキダシの表示を開始。
 
-
-Starts the balloon sprite on the Game_Character object.
 
 #### tilesetBitmap (tileId) → {[Bitmap](Bitmap.md)}
 
@@ -328,7 +294,6 @@ Starts the balloon sprite on the Game_Character object.
 | Name | Type | Description |
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) |  |
-
 
 ##### Returns:
 
@@ -339,56 +304,31 @@ Starts the balloon sprite on the Game_Character object.
     </dd>
 </dl>
 
+
 #### update ()
 
-<dl>
-    <dt>Overrides:</dt>
-    <dd>
-        <ul>
-            <li>
-                <a>Sprite_Base#update</a>
-            </li>
-        </ul>
-    </dd>
-</dl>
+##### Overrides:
+[Sprite_Base.update()](Sprite_Base.md#update-)
+
 
 #### updateAnimation ()
 
 
-#### updateAnimationSprites ()
-
-
-Updates the animation sprites, cloning them; if the sprite is playing, pushes the sprites into animation sprites, otherwise the sprite is removed.
-<dl>
-    <dt>Inherited From:</dt>
-    <dd>
-        <ul>
-            <li>
-                <a>Sprite_Base#updateAnimationSprites</a>
-            </li>
-        </ul>
-    </dd>
-</dl>
-
 #### updateBalloon ()
+フキダシをアップデート。
 
-
-Processes the balloon sprite, calls the endBaloon method if the balloon sprite is done playing.
 
 #### updateBitmap ()
+ビットマップをアップデート。
 
-
-Updates the bitmap of the sprite character.
 
 #### updateCharacterFrame ()
+キャラクタのフレームをアップデート。
 
-
-Updates the sprite character -- character frame.
 
 #### updateFrame ()
+フレームをアップデート。
 
-
-Updates the sprite character frame.
 
 #### updateHalfBodySprites ()
 
@@ -397,27 +337,18 @@ Updates the sprite character frame.
 
 
 #### updatePosition ()
+キャラクタの位置をアップデート。
 
-
-Updates the position of the sprite character.
 
 #### updateTileFrame ()
+タイルのフレームをアップデート。
 
-
-Updates the sprite character tile frame.
 
 #### updateVisibility ()
+表示プロパティのアップデート。
 
-<dl>
-    <dt>Overrides:</dt>
-    <dd>
-        <ul>
-            <li>
-                <a>Sprite_Base#updateVisibility</a>
-            </li>
-        </ul>
-    </dd>
-</dl>
+##### Overrides:
+[Sprite_Base.updateVisibility ()](Sprite_Base.md#updateVisibility-)
 
 
  <br>
