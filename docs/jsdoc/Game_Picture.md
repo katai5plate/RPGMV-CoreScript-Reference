@@ -3,21 +3,20 @@
 ## Game_Picture ()
 
 #### new Game_Picture ()
-
-The game object class for a picture.
+画像のデータを保持するクラス。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_name` | [String](String.md) |  |
+| `_name` | [String](String.md) | 名前 |
 | `_origin` | [Number](Number.md) |  |
-| `_x` | [Number](Number.md) |  |
-| `_y` | [Number](Number.md) |  |
-| `_scaleX` | [Number](Number.md) |  |
-| `_scaleY` | [Number](Number.md) |  |
-| `_opacity` | [Number](Number.md) |  |
-| `_blendMode` | [Number](Number.md) |  |
+| `_x` | [Number](Number.md) | x座標(ピクセル) |
+| `_y` | [Number](Number.md) | y座標(ピクセル) |
+| `_scaleX` | [Number](Number.md) | x拡大率 |
+| `_scaleY` | [Number](Number.md) | y拡大率 |
+| `_opacity` | [Number](Number.md) | 不透明度 |
+| `_blendMode` | [Number](Number.md) | 合成モード |
 | `_targetX` | [Number](Number.md) |  |
 | `_targetY` | [Number](Number.md) |  |
 | `_targetScaleX` | [Number](Number.md) |  |
@@ -27,75 +26,56 @@ The game object class for a picture.
 | `_tone` | [Array](Array.md).<[Number](Number.md)> |  |
 | `_toneTarget` | [Array](Array.md).<[Number](Number.md)> |  |
 | `_toneDuration` | [Number](Number.md) |  |
-| `_angle` | [Number](Number.md) |  |
+| `_angle` | [Number](Number.md) | 回転角(度) |
 | `_rotationSpeed` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ### Methods
 
 #### angle () → {[Number](Number.md)}
-
-Returns the angle of the game picture.
-<dl>
-</dl>
+Returns the angle of the game picture.
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span><a href="Number.html">Number</a></span>
+	</dd>
+</dl>
+
 
 #### blendMode () → {[Number](Number.md)}
-
-Returns the blend mode of the game picture.
-<dl>
-</dl>
+Returns the blend mode of the game picture.
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span><a href="Number.html">Number</a></span>
+	</dd>
+</dl>
+
 
 #### erase ()
+Erases the game picture.
 
-Erases the game picture.
-<dl>
-</dl>
 
 #### initBasic ()
 
-<dl>
-</dl>
 
 #### initialize ()
-
- オブジェクト生成時の初期化。
-<dl>
-</dl>
+ オブジェクト生成時の初期化。
 
 #### initRotation ()
 
-<dl>
-</dl>
 
 #### initTarget ()
 
-<dl>
-</dl>
 
 #### initTone ()
 
-<dl>
-</dl>
 
 #### move (origin, x, y, scaleX, scaleY, opacity, blendMode, duration)
 
@@ -112,55 +92,48 @@ The game object class for a picture.
 | `blendMode` | [Number](Number.md) |  |
 | `duration` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### name () → {[String](String.md)}
-
-Returns the name of the game picture.
-<dl>
-</dl>
+名前を返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span><a href="String.html">String</a></span>
+	</dd>
+</dl>
+
 
 #### opacity () → {[Number](Number.md)}
-
-Returns the opacity of the game picture.
-<dl>
-</dl>
+不透明度を返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span><a href="Number.html">Number</a></span>
+	</dd>
+</dl>
+
 
 #### origin () → {[Number](Number.md)}
-
-Returns the origin of the game picture.
-<dl>
-</dl>
+原点を返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span><a href="Number.html">Number</a></span>
+	</dd>
+</dl>
+
 
 #### rotate (speed)
+回転。
 
 ##### Parameters:
 
@@ -168,38 +141,32 @@ The game object class for a picture.
 | --- | --- | --- |
 | `speed` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### scaleX () → {[Number](Number.md)}
-
-Returns x scale of the game picture.
-<dl>
-</dl>
+x拡大率を返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span><a href="Number.html">Number</a></span>
+	</dd>
+</dl>
+
 
 #### scaleY () → {[Number](Number.md)}
-
-Returns the y scale of the game picture.
-<dl>
-</dl>
+y拡大率を返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span><a href="Number.html">Number</a></span>
+	</dd>
+</dl>
+
 
 #### show (name, origin, x, y, scaleX, scaleY, opacity, blendMode)
 
@@ -216,8 +183,6 @@ The game object class for a picture.
 | `opacity` | [Number](Number.md) |  |
 | `blendMode` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### tint (tone, duration)
 
@@ -228,77 +193,62 @@ The game object class for a picture.
 | `tone` | [Array](Array.md).<[Number](Number.md)> |  |
 | `duration` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### tone () → {[Array](Array.md).<[Number](Number.md)>}
-
-Returns the tone of the game picture.
-<dl>
-</dl>
+[色調]を返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Number</a>&gt;</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span><a href="Array.html">Array</a>.&lt;<a href="Number.html">Number</a>&gt;</span>
+	</dd>
+</dl>
+
 
 #### update ()
+フレーム毎の画像のアップデート。
 
-Updates the game picture.
-<dl>
-</dl>
 
 #### updateMove ()
+移動のアップデート。
 
-Updates the movement of the game picture.
-<dl>
-</dl>
 
 #### updateRotation ()
+回転のアップデート。
 
-Updates the rotation of the game picture.
-<dl>
-</dl>
 
 #### updateTone ()
+色調のアップデート。
 
-Updates the tone of the game picture.
-<dl>
-</dl>
 
 #### x () → {[Number](Number.md)}
-
-Returns the picture x coordinate.
-<dl>
-</dl>
+x座標(ピクセル)を返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span><a href="Number.html">Number</a></span>
+	</dd>
+</dl>
+
 
 #### y () → {[Number](Number.md)}
-
-Returns the picture y coordinate.
-<dl>
-</dl>
+y座標(ピクセル)を返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span><a href="Number.html">Number</a></span>
+	</dd>
+</dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
