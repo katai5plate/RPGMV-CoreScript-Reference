@@ -31,6 +31,11 @@
 | `tint` | [Number](Number.md) |  |
 
 
+### Extends
+
+* [PIXI.Container](PIXI.Container.md)
+
+
 ### Inherited From
 
 #### [PIXI.DisplayObject](PIXI.DisplayObject.md)
@@ -66,10 +71,6 @@
 * [swapChildren (child, child2)](PIXI.Container.md#swapchildren-child-child2)
 * [updateTransform ()](PIXI.Container.md#updatetransform-)
 
-
-### Extends
-
-* [PIXI.Container](PIXI.Container.md)
 
 ### Methods
 
