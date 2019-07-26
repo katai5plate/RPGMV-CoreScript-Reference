@@ -23,11 +23,6 @@
 
 詳細は本家 PIXI のサイト [PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html) を参照。
 
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `bitmap` | [Bitmap](Bitmap.md) |  スプライトに設定する画像 |
 
 ##### Properties:
 
