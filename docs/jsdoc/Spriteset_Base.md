@@ -137,14 +137,14 @@ WebGL 色調変更を生成。
  オブジェクト生成時の初期化。
  
 ##### Overrides
-[PIXI.Sprite.initialize()](PIXI.Container.md#initialize-)
+[Sprite.initialize()](Sprite.md#initialize-)
 
 
 #### update ()
 フレーム毎のアップデート。
 
 ##### Overrides
-[PIXI.Sprite.initialize()](PIXI.Container.md#update-)
+[Sprite.update()](Sprite.md#update-)
 
 
 #### updateCanvasToneChanger ()
