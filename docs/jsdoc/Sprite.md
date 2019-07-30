@@ -234,8 +234,8 @@ WebGL でレンダリング。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) | x座標 |
-| `y` | [Number](Number.md) | y座標 |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
 
 
 #### setBlendColor (color)
