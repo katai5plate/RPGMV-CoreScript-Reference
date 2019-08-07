@@ -1,21 +1,28 @@
 # Class: Item
 
-## [RPG](RPG.md).  Item ()
+## namespace [RPG](RPG.md)
 
-#### new Item ()
+アイテムの情報を記述したJSONデータ。ファイル data/Items.json に記述されている。
 
-The JSON data structure of an Item. Define to [$dataItems](global.html#$dataItems) as Array.
+ [$dataItems](global.md#dataitems-arrayrpgitem) に配列として格納されている。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `itypeIdThe` | [Number](Number.md) | item type ID. 1: Regular item 2: Key item |
-| `price` | [Number](Number.md) | The item's price. |
-| `consumable` | Boolean | The truth value indicating whether the item disappears when used. |
+| `itypeId` | [Number](Number.md) | [アイテムタイプ]のID (下表を参照) |
+| `price` | [Number](Number.md) | [価格] |
+| `consumable` | Boolean | [消耗]するか |
 
-<dl>
-</dl>
+##### itypeId
+
+| ID | [アイテムタイプ] |
+| --- | --- |
+| 1 | 通常アイテム |
+| 2 | 大事なもの |
+| 3 | 隠しアイテムA |
+| 4 | 隠しアイテムB |
+
 
 ### Extends
 

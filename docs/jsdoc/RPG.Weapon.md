@@ -1,20 +1,46 @@
 # Class: Weapon
 
-## [RPG](RPG.md).  Weapon ()
+## namespace [RPG](RPG.md)
 
-#### new Weapon ()
+[データベース]-[武器]で設定された情報を記述したJSONデータ。
 
-The JSON data structure of a weapon. Define to [$dataWeapons](global.html#$dataWeapons) as Array.
+ファイル data/Weapons.json に記述されている。
+
+読み込まれたデータは、[$dataWeapons](global.md#dataweapons-arrayrpgweapon) に配列として格納されている。
+
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `wtypeId` | [Number](Number.md) | The weapon type ID. |
-| `animationId` | [Number](Number.md) | The animation ID when using the weapon. |
+| `wtypeId` | [Number](Number.md) | [武器タイプ]のID |
+| `animationId` | [Number](Number.md) | [アニメーション]のID |
 
-<dl>
-</dl>
+
+##### wtypeId
+
+[データベース]-[タイプ]-[武器タイプ] で設定されたID。
+
+ [System](RPG.System.md) の weaponTypes プロパティに登録されている。
+ 
+ 下表はデフォルトの値。
+
+| ID | [武器タイプ] |
+| --- | --- |
+| 0 | なし |
+| 1 | 短剣 |
+| 2 | 剣 |
+| 3 | フレイル |
+| 4 | 斧 |
+| 5 | ムチ |
+| 6 | 杖 |
+| 7 | 弓 |
+| 8 | クロスボウ |
+| 9 | 銃 |
+| 10 | 爪 |
+| 11 | グローブ |
+| 11 | 槍 |
+
 
 ### Extends
 

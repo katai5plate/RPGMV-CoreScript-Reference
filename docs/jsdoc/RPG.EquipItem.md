@@ -1,22 +1,48 @@
 # Class: EquipItem
 
-## [RPG](RPG.md).  EquipItem ()
+## namespace [RPG](RPG.md)
 
-#### new EquipItem ()
-
-A superclass of [RPG.Armor](RPG.Armor.md) and [RPG.Weapon](RPG.Weapon.md).
+[RPG.Armor](RPG.Armor.md) と [RPG.Weapon](RPG.Weapon.md) のスーパークラス。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `price` | [Number](Number.md) | The price of the weapon or armor. |
-| `etypeId` | [Number](Number.md) | The type of weapon or armor. 0: Weapon 1: Shield 2: Head 3: Body 4: Accessory |
-| `params` | [Array](Array.md).<[Number](Number.md)> | The amount of parameter change. An array of integers using the following IDs as subscripts: 0: Maximum hit points 1: Maximum magic points 2: Attack power 3: Defense power 4: Magic attack power 5: Magic defense power 6: Agility 7: Luck |
-| `traits` | [Array](Array.md).<[RPG.Trait](RPG.Trait.md)> | The array of Trait data. |
+| `price` | [Number](Number.md) | [価格] |
+| `etypeId` | [Number](Number.md) | [装備タイプ]のID (下表を参照) |
+| `params` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [能力値変化量]の配列<br />(下表を参照) |
+| `traits` | [Array](Array.md).&lt;[RPG.Trait](RPG.Trait.md)&gt; | [特徴]の配列 |
 
-<dl>
-</dl>
+###### etypeId:装備タイプID
+
+[データベース]-[タイプ]-[装備タイプ] で設定されたID。
+
+ [System](RPG.System.md) の equipTypes プロパティに登録されている。
+ 
+ 下表はデフォルトの値。
+
+| ID | [装備タイプ] |
+| --- | --- |
+| 0 | なし |
+| 1 | 盾 |
+| 2 | 頭 |
+| 3 | 身体 |
+| 4 | 装飾品 |
+
+###### params
+
+以下の順に[能力値変化量]が書かれた配列。
+
+| 番号 | [能力値] |
+| --- | --- || 0 | 最大HP |
+| 1 | 最大MP |
+| 2 | 攻撃力 |
+| 3 | 防御力 |
+| 4 | 魔法力 |
+| 5 | 魔法防御 |
+| 6 | 敏捷性 |
+| 7 | 運 |
+
 
 ### Extends
 

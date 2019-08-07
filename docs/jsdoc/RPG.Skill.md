@@ -1,25 +1,37 @@
 # Class: Skill
 
-## [RPG](RPG.md).  Skill ()
+## namespace [RPG](RPG.md)
 
-#### new Skill ()
+スキルの情報を記述したJSONデータ。
 
-The JSON data structure of a skill. Define to [$dataSkills](global.html#$dataSkills) as Array.
+[$dataSkills](global.md#dataskills-arrayrpgskill) に配列として格納されている。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stypeId` | [Number](Number.md) | Skill type ID. |
-| `mpCost` | [Number](Number.md) | Number of MP consumed. |
-| `tpCost` | [Number](Number.md) | Number of TP consumed |
-| `message1` | [String](String.md) | The use message. |
-| `message2` | [String](String.md) | The use message. |
-| `requiredWtypeId1` | [Number](Number.md) | Weapon type required. |
-| `requiredWtypeId2` | [Number](Number.md) | Weapon type required. |
+| `stypeId` | [Number](Number.md) | [スキルタイプ]のID (下表を参照) |
+| `mpCost` | [Number](Number.md) | [消費MP] |
+| `tpCost` | [Number](Number.md) | [消費TP] |
+| `message1` | [String](String.md) | 上段[メッセージ] |
+| `message2` | [String](String.md) | 下段[メッセージ] |
+| `requiredWtypeId1` | [Number](Number.md) | [必要武器]の[武器タイプ1] |
+| `requiredWtypeId2` | [Number](Number.md) | [必要武器]の[武器タイプ2] |
 
-<dl>
-</dl>
+
+##### stypeId
+
+[データベース]-[タイプ]-[スキルタイプ] で設定されたID。
+
+ [System](RPG.System.md) の skillTypes プロパティに登録されている。
+ 
+ 下表はデフォルトの値。
+
+| ID | [スキルタイプ] |
+| --- | --- |
+| 0 | なし |
+| 1 | 魔法 |
+| 2 | 必殺技 |
 
 ### Extends
 

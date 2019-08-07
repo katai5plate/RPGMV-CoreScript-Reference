@@ -1,19 +1,37 @@
 # Class: Armor
 
-## [RPG](RPG.md).  Armor ()
+## namespace [RPG](RPG.md)
 
-#### new Armor ()
+[データベース]-[防具]で設定された情報を記述したJSONデータ。
 
-The data class for armor. Define to [$dataArmors](global.html#$dataArmors) as Array.
+ファイル data/Armors.json に記述されている。
+
+読み込まれたデータは、[$dataArmors](global.md#dataarmors-arrayrpgarmor)に配列として格納されている。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `atypeId` | [Number](Number.md) | The armor type ID. |
+| `atypeId` | [Number](Number.md) | [防具タイプ]ID |
 
-<dl>
-</dl>
+
+##### atypeId
+
+[データベース]-[タイプ]-[防具タイプ] で設定されたID。
+
+ [System](RPG.System.md) の armorTypes プロパティに登録されている。
+ 
+下表はデフォルトの値。
+
+| ID | [防具タイプ] |
+| --- | --- |
+| 1 | 一般防具 |
+| 2 | 魔法防具 |
+| 3 | 軽装防具 |
+| 4 | 重装防具 |
+| 5 | 小型盾 |
+| 6 | 大型盾 | 
+
 
 ### Extends
 

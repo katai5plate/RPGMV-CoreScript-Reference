@@ -2,7 +2,8 @@
 
 ## Namespace: [RPG](RPG.md)
 
-敵グループのバトルイベントの [EVページ] を構成する JSON データ。<br />
+敵グループのバトルイベントの [EVページ] を構成する JSON データ。
+
 [RPG.Troop](RPG.Troop.md) の pages プロパティに含まれる。
 
 類似のクラスに [RPG.EventPage](RPG.EventPage.md) がある。 

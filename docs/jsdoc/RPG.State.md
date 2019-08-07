@@ -1,17 +1,17 @@
 # Class: State
 
-## [RPG](RPG.md).  State ()
+## namespace [RPG](RPG.md)
 
-#### new State ()
+ステートを記録したJSONデータで、ファイル data/States.json に記録されている。
 
-The JSON data structure of a state. Define to [$dataStates](global.html#$dataStates) as Array.
+読み込まれたデータは、[$dataStates](global.md#datastates-arrayrpgstate) に配列として格納されている。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `id` | [Number](Number.md) | The ID. |
-| `name` | [String](String.md) | The name. |
+| `id` | [Number](Number.md) | ID |
+| `name` | [String](String.md) | 名前 |
 | `restriction` | [Number](Number.md) | Action restrictions. 0: None 1: Attack enemy 2: Attack enemy or ally 3: Attack ally 4: Cannot act |
 | `priority` | [Number](Number.md) | The state priority (0..100). |
 | `removeAtBattleEnd` | Boolean | Removes state at end of battle (true/false). |

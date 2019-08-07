@@ -1,28 +1,49 @@
 # Class: UsableItem
 
-## [RPG](RPG.md).  UsableItem ()
+## namespace [RPG](RPG.md)
 
-#### new UsableItem ()
-
-The Superclass of [RPG.Skill](RPG.Skill.md) and [RPG.Item](RPG.Item.md)
+[RPG.Skill](RPG.Skill.md) と [RPG.Item](RPG.Item.md) のスーパークラス。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `scope` | [Number](Number.md) | The scope of effects. 0: None 1: One Enemy 2: All Enemies 3: One Random Enemy 4: Two Random Enemies 5: Three Random Enemies 6: Four Random Enemies 7: One Ally 8: All Allies 9: One Ally (Dead) 10: All Allies (Dead) 11: The User |
-| `occasion` | [Number](Number.md) | When the item/skill may be used. 0: Always 1: Only in battle 2: Only from the menu 3: Never |
-| `speed` | [Number](Number.md) | The speed correction. |
-| `successRate` | [Number](Number.md) | The success rate. |
-| `repeats` | [Number](Number.md) | The number of repeats. |
-| `tpGain` | [Number](Number.md) | The number of TP gained. |
-| `hitType` | [Number](Number.md) | The type of hit. 0: Certain hit 1: Physical attack 2: Magical attack |
-| `animationId` | [Number](Number.md) | The animation ID. |
-| `damage` | [RPG.Damage](RPG.Damage.md) | Damage. |
-| `effects` | [Array](Array.md).<[RPG.Effect](RPG.Effect.md)> | A list of use effects. An RPG.Effect array. |
+| `scope` | [Number](Number.md) | [範囲] \(下表を参照) |
+| `occasion` | [Number](Number.md) | [使用可能時] \(下表を参照)  |
+| `speed` | [Number](Number.md) | [速度補正] |
+| `successRate` | [Number](Number.md) | [成功率] % (0〜100) |
+| `repeats` | [Number](Number.md) | [連続回数] \(1〜9) |
+| `tpGain` | [Number](Number.md) | [得TP] \(0〜100) |
+| `hitType` | [Number](Number.md) | [命中タイプ] \(下表を参照)  |
+| `animationId` | [Number](Number.md) | [アニメーション]のID |
+| `damage` | [RPG.Damage](RPG.Damage.md) | [ダメージ] |
+| `effects` | [Array](Array.md).&lt;[RPG.Effect](RPG.Effect.md)&gt; | [使用効果]の配列 |
 
-<dl>
-</dl>
+
+##### scope
+
+| 番号 | [範囲] |
+| --- | --- |
+|  0 | なし ||  1 | 敵単体 ||  2 | 敵全体 ||  3 | 敵 1 体ランダム ||  4 | 敵 2 体ランダム ||  5 | 敵 3 体ランダム ||  6 | 敵 4 体ランダム ||  7 | 味方単体 ||  8 | 味方全体 ||  9 | 味方単体(戦闘不能) ||  10 | 味方全体(戦闘不能) ||  11 | 使用者 |
+
+##### occasion
+
+| 番号 | [使用可能時] |
+| --- | --- |
+| 0 | 常時 |
+| 1 | バトル画面 |
+| 2 | メニュー画面 |
+| 3 | 使用不可 |
+
+##### hitType
+
+| 番号 | [命中タイプ] |
+| --- | --- |
+| 0 | 必中 |
+| 1 | 物理攻撃 |
+| 2 | 魔法攻撃 |
+
+
 
 ### Extends
 

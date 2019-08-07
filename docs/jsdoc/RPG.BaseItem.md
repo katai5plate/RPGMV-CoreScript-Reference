@@ -1,22 +1,25 @@
 # Class: BaseItem
 
-## [RPG](RPG.md).  BaseItem ()
+## namespace [RPG](RPG.md)
 
-#### new BaseItem ()
+[アイテム]はもちろん、[武器][防具][敵][状態]などにも使われる基本クラス。
 
-A superclass of actor, class, [RPG.UsableItem](RPG.UsableItem.md), weapon, armor, enemy, and state. Some items are unnecessary depending on the type of data, but they are included for convenience sake.
+[RPG.UsableItem](RPG.UsableItem.md)、[RPG.EquipItem](RPG.EquipItem.md) のスーパークラス。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `id` | [Number](Number.md) | The item ID. |
-| `name` | [String](String.md) | The item name. |
-| `iconIndex` | [Number](Number.md) | The icon number. |
-| `description` | [String](String.md) | The description text. |
+| `id` | [Number](Number.md) | アイテムID |
+| `name` | [String](String.md) | [名前] |
+| `iconIndex` | [Number](Number.md) | [アイコン]番号 |
+| `description` | [String](String.md) | [説明]文 |
 
-<dl>
-</dl>
+
+###### アイテムID
+
+[データベース]-[アイテム] の番号。
+
 
 ### Extends
 
