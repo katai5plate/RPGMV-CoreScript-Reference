@@ -4,7 +4,7 @@
 
 #### new Game_Player ()
 
-(乗り物を含む)プレイヤーキャラクタを定義したクラス。マップの[場所移動]も含む。 大域変数 [$gamePlayer](global.html#$gamePlayer) を介して扱う。
+(乗り物を含む)プレイヤーキャラクタを定義したクラス。マップの[場所移動]も含む。 大域変数 [$gamePlayer](global.md#gameplayer-game_player) を介して扱う。
 
 ##### Properties:
 
