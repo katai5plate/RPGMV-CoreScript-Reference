@@ -4,7 +4,7 @@
 
 [特徴]のJSONデータ。
 
-[EquipItem](RPG.EquipItem.md) の traits プロパティに記録されている。
+[RPG.EquipItem](RPG.EquipItem.md) の traits プロパティが持っている。
 
 別に公式の初心者講座の[武器の特徴を設定する](https://tkool.jp/mv/guide/004_005b.html#03)、[防具の特徴を設定する](https://tkool.jp/mv/guide/004_005c.html#03)や、本体のヘルプの記述を参照してほしい。
 
