@@ -4,6 +4,8 @@
 
 スキルの情報を記述したJSONデータ。
 
+ファイル data/Skills.json に記述されている。
+
 [$dataSkills](global.md#dataskills-arrayrpgskill) に配列として格納されている。
 
 ##### Properties:
