@@ -29,6 +29,10 @@
 | `batches` | [Array](Array.md).&lt;Object&gt; |  |
 | `batchTint` | [Number](Number.md) | Default: -1 |
 | `blendMode` | [Number](Number.md) | Default: [PIXI.BLEND_MODES](http://pixijs.download/release/docs/PIXI.html#.BLEND_MODES).NORMAL |
+
+
+| Name | Type | Description |
+| --- | --- | --- |
 | `currentPath` | [PIXI.Polygon](http://pixijs.download/release/docs/PIXI.Polygon.html) |  |
 | `fill ` | [PIXI.FillStyle](http://pixijs.download/release/docs/PIXI.FillStyle.html) | [read-only] 塗りの形式 |
 | `geometry` | [PIXI.GraphicsGeometry](http://pixijs.download/release/docs/ PIXI.GraphicsGeometry.html) |  |
