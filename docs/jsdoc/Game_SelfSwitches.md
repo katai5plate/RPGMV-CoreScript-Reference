@@ -6,6 +6,8 @@
 
 [EVページ]の条件判定で使われる[セルフスイッチ]を扱うためのクラス。
 
+類似のものとして [Game_Variables](Game_Variables.md)、[Game_Switches](Game_Switches.md) がある。
+
 [RPG.EventPage](RPG.EventPage.md) の conditions([RPG.EventPage.Conditions](RPG.EventPage.Conditions.md))、あるいは [RPG.BattleEventPage](RPG.BattleEventPage.md) の conditions([RPG.BattleEventPage.Conditions](RPG.BattleEventPage.Conditions.md)) に[セルフスイッチ]の判定が設定されている。
 
 大域変数 [$gameSelfSwitches](global.md#$gameselfswitches-game_selfswitches)  を介して扱う。
@@ -32,7 +34,6 @@ key は [ マップID, イベントID, タイプ ] の形式の配列で、タ�
 
 #### setValue (key, value)
 指定した[セルフスイッチ]に値を設定。
-
 
 ##### Parameters:
 
