@@ -37,6 +37,9 @@
 | `fill ` | [PIXI.FillStyle](http://pixijs.download/release/docs/PIXI.FillStyle.html) | [read-only] 塗りの形式 |
 | `geometry` | [PIXI.GraphicsGeometry](http://pixijs.download/release/docs/ PIXI.GraphicsGeometry.html) |  |
 | `line` | [PIXI.LineStyle](http://pixijs.download/release/docs/PIXI.LineStyle.html) | [read-only] 線の形式 |
+
+| Name | Type | Description |
+| --- | --- | --- |
 | `pluginName` | [String](String.md) | Default: 'batch' |
 | `shader` | [PIXI.Shader](http://pixijs.download/release/docs/PIXI.Shader.html) |  |
 | ` state` | [PIXI.State](http://pixijs.download/release/docs/PIXI.State.html) |  |
