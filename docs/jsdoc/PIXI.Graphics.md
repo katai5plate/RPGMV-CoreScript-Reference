@@ -23,20 +23,20 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `_fillStyle` | [PIXI.FillStyle](http://pixijs.download/release/docs/PIXI.FillStyle.html) | 塗りの形式 |
-| `_holeMode` | Boolean | Default: false |
+| `_holeMode` | Boolean | 規定値: false |
 | `_lineStyle` | [PIXI.LineStyle](http://pixijs.download/release/docs/PIXI.LineStyle.html) | 線の形式 |
 | `_matrix` | [PIXI.Matrix](http://pixijs.download/release/docs/PIXI.Matrix.html) | 変形行列 |
 | `batches` | [Array](Array.md).&lt;Object&gt; |  |
-| `batchTint` | [Number](Number.md) | Default: -1 |
-| `blendMode` | [Number](Number.md) | Default: [PIXI.BLEND_MODES](http://pixijs.download/release/docs/PIXI.html#.BLEND_MODES).NORMAL |
+| `batchTint` | [Number](Number.md) | 規定値: -1 |
+| `blendMode` | [Number](Number.md) | 規定値: [PIXI.BLEND_MODES](http://pixijs.download/release/docs/PIXI.html#.BLEND_MODES).NORMAL |
 | `currentPath` | [PIXI.Polygon](http://pixijs.download/release/docs/PIXI.Polygon.html) |  |
 | `fill ` | [PIXI.FillStyle](http://pixijs.download/release/docs/PIXI.FillStyle.html) | [read-only] 塗りの形式 |
 | `geometry` | [PIXI.GraphicsGeometry](http://pixijs.download/release/docs/PIXI.GraphicsGeometry.html) |  |
 | `line` | [PIXI.LineStyle](http://pixijs.download/release/docs/PIXI.LineStyle.html) | [read-only] 線の形式 |
-| `pluginName` | [String](String.md) | Default: 'batch' |
-| `shader` | [PIXI.Shader](http://pixijs.download/release/docs/PIXI.Shader.html) |  |
-| ` state` | [PIXI.State](http://pixijs.download/release/docs/PIXI.State.html) |  |
-| `tint` | [Number](Number.md) | Default: 0xFFFFFF |
+| `pluginName` | [String](String.md) | 規定値: \'batch\' |
+| `shader` | [PIXI.Shader](http://pixijs.download/release/docs/PIXI.Shader.html) | シェーダー |
+| ` state` | [PIXI.State](http://pixijs.download/release/docs/PIXI.State.html) | 状態 |
+| `tint` | [Number](Number.md) | 規定値: 0xFFFFFF |
 | `vertexData` | Float32Array | |
 
 
