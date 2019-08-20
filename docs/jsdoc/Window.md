@@ -31,161 +31,116 @@
 | `height` | [Number](Number.md) | 拡大縮小前のウィンドウ高さ(ピクセル) |
 | `margin` | [Number](Number.md) | 背景マージン幅(ピクセル) |
 | `padding` | [Number](Number.md) | 枠とコンテンツの間のパディング幅(ピクセル) |
-| `_isWindow` | Boolean |  |
-| `_windowskin` | [Bitmap](Bitmap.md) |  |
-| `_width` | [Number](Number.md) |  |
-| `_height` | [Number](Number.md) |  |
-| `_cursorRect` | [Rectangle](Rectangle.md) |  |
-| `_openness` | [Number](Number.md) |  |
-| `_animationCount` | [Number](Number.md) |  |
-| `_padding` | [Number](Number.md) |  |
-| `_margin` | [Number](Number.md) |  |
-| `_colorTone` | [Array](Array.md).<[Number](Number.md)> |  |
-| `_windowSpriteContainer` | [PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html) |  |
-| `_windowBackSprite` | [Sprite](Sprite.md) |  |
-| `_windowCursorSprite` | [Sprite](Sprite.md) |  |
-| `_windowFrameSprite` | [Sprite](Sprite.md) |  |
-| `_windowContentsSprite` | [Sprite](Sprite.md) |  |
-| `_windowArrowSprites` | [Array](Array.md).&lt;\*&gt; |  |
-| `_windowPauseSignSprite` | [Sprite](Sprite.md) |  |
-| `_downArrowSprite` | [Sprite](Sprite.md) |  |
-| `_upArrowSprite` | [Sprite](Sprite.md) |  |
+| `_isWindow` | Boolean | ウィンドウか |
+| `_windowskin` | [Bitmap](Bitmap.md) | ウィンドウのスキンに使う画像 |
+| `_width` | [Number](Number.md) | 幅 |
+| `_height` | [Number](Number.md) | 高さ |
+| `_cursorRect` | [Rectangle](Rectangle.md) | カーソル矩形 |
+| `_openness` | [Number](Number.md) | 開放度  |
+| `_animationCount` | [Number](Number.md) | アニメーションカウント |
+| `_padding` | [Number](Number.md) | パディング |
+| `_margin` | [Number](Number.md) | マージン |
+| `_colorTone` | [Array](Array.md).&lt;[Number](Number.md)&gt; | カラートーン |
+| `_windowSpriteContainer` | [PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html) | 画像コンテナ |
+| `_windowBackSprite` | [Sprite](Sprite.md) | 背景 |
+| `_windowCursorSprite` | [Sprite](Sprite.md) | カーソル |
+| `_windowFrameSprite` | [Sprite](Sprite.md) | 枠 |
+| `_windowContentsSprite` | [Sprite](Sprite.md) | 内容 |
+| `_windowArrowSprites` | [Array](Array.md).&lt;\*&gt; | 矢印 |
+| `_windowPauseSignSprite` | [Sprite](Sprite.md) | ポーズサイン |
+| `_downArrowSprite` | [Sprite](Sprite.md) | 下向き矢印 |
+| `_upArrowSprite` | [Sprite](Sprite.md) | 上向き矢印 |
 
-<dl>
-</dl>
 
 ### Extends
 
 * [PIXI.Container](PIXI.Container.md)
 
+
+### Inherited From
+
+#### [PIXI.DisplayObject](PIXI.DisplayObject.md)
+
+* [(static) mixin (source)](PIXI.DisplayObject.md#static-mixin-source)
+* [\_recursivePostUpdateTransform ()](PIXI.DisplayObject.md#_recursivepostupdatetransform-)
+* [displayObjectUpdateTransform ()](PIXI.DisplayObject.md#displayobjectupdatetransform-)
+* [getBounds (skipUpdate, rect)](PIXI.DisplayObject.md#getbounds-skipupdate-rect--pixirectangle)
+* [getGlobalPosition (point, skipUpdate)](PIXI.DisplayObject.md#getglobalposition-point-skipupdate--pixipoint)
+* [setParent (container)](PIXI.DisplayObject.md#setparent-container--pixicontainer)
+* [setTransform (x, y, scaleX, scaleY, rotation, skewX, skewY, pivotX, pivotY)](PIXI.DisplayObject.md#settransform-x-y-scalex-scaley-rotation-skewx-skewy-pivotx-pivoty--pixidisplayobject)
+* [toGlobal (position, point, skipUpdate)](PIXI.DisplayObject.md#toglobal-position-point-skipupdate--pixipoint)
+* [toLocal (position, from, point, skipUpdate)](PIXI.DisplayObject.md#tolocal-position-from-point-skipupdate--pixipoint)
+
+
+#### [PIXI.Container](PIXI.Container.md)
+
+* [addChild (child) ](PIXI.Container.md#addchild-child--pixidisplayobject)
+* [addChildAt (child, index)](PIXI.Container.md#addchildat-child-index--pixidisplayobject)
+* [calculateBounds ()](PIXI.Container.md#calculatebounds-)
+* [destroy ()](PIXI.Container.md#destroy-)
+* [getChildAt (index)](PIXI.Container.md#getchildat-index--pixidisplayobject)
+* [getChildByName (name)](PIXI.Container.md#getchildbyname-name--pixidisplayobject)
+* [getChildIndex (child)](PIXI.Container.md#getchildindex-child--pixidisplayobject)
+* [onChildrenChange ()](PIXI.Container.md#onchildrenchange-)
+* [removeChild (child)](PIXI.Container.md#removechild-child--pixidisplayobject)
+* [removeChildAt (index)](PIXI.Container.md#removechildat-index--pixidisplayobject)
+* [removeChildren (beginIndex, endIndex)](PIXI.Container.md#removechildren-beginindex-endindex--arraypixidisplayobject)
+* [render (renderer)](PIXI.Container.md#render-renderer)
+* [renderAdvanced (renderer)](PIXI.Container.md#renderadvanced-renderer)
+* [renderCanvas (renderer)](PIXI.Container.md#rendercanvas-renderer)
+* [setChildIndex (child, index)](PIXI.Container.md#setchildindex-child-index)
+* [sortChildren ()](PIXI.Container.md#sortchildren-)
+* [swapChildren (child, child2)](PIXI.Container.md#swapchildren-child-child2)
+
 ### Methods
 
-#### (static) _createAllParts ()
+####  _createAllParts ()
+ウィンドウの表示に必要な部品を生成する。
 
-<dl>
-</dl>
+####  _onWindowskinLoad ()
+スキンがダウンロードされたときのハンドラ。
 
-#### (static) _onWindowskinLoad ()
+####  _refreshAllParts ()
+部品の再描画。
 
-<dl>
-</dl>
+####  _refreshArrows ()
+矢印の再描画。
 
-#### (static) _refreshAllParts ()
+####  _refreshBack ()
+背景の再描画。
 
-<dl>
-</dl>
+####  _refreshContents ()
+内容の再描画。
 
-#### (static) _refreshArrows ()
+####  _refreshCursor ()
+カーソルの再描画。
 
-<dl>
-</dl>
+####  _refreshFrame ()
+枠の再描画。
 
-#### (static) _refreshBack ()
+####  _refreshPauseSign ()
+ポーズサインの再描画。
 
-<dl>
-</dl>
+####  _updateArrows ()
+矢印のアップデート。
 
-#### (static) _refreshContents ()
+####  _updateContents ()
+内容のアップデート。
 
-<dl>
-</dl>
+####  _updateCursor ()
+カーソルのアップデート。
 
-#### (static) _refreshCursor ()
-
-<dl>
-</dl>
-
-#### (static) _refreshFrame ()
-
-<dl>
-</dl>
-
-#### (static) _refreshPauseSign ()
-
-<dl>
-</dl>
-
-#### (static) _updateArrows ()
-
-<dl>
-</dl>
-
-#### (static) _updateContents ()
-
-<dl>
-</dl>
-
-#### (static) _updateCursor ()
-
-<dl>
-</dl>
-
-#### (static) _updatePauseSign ()
-
-<dl>
-</dl>
-
-#### (static) updateTransform ()
-
-<dl>
-</dl>
-
-#### addChild (child) → {Object}
-
-[super] コンテナに子オブジェクトを追加し、追加されたオブジェクトを返す。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `child` | [PIXI.DisplayObject](http://pixijs.download/release/docs/PIXI.DisplayObject.html) | 追加するオブジェクト |
-
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Object</span>
-    </dd>
-</dl>
-
-#### addChildAt (child, index) → {Object}
-[super] コンテナの指定位置に子オブジェクトを追加し、追加されたオブジェクトを返す。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `child` | [PIXI.DisplayObject](http://pixijs.download/release/docs/PIXI.DisplayObject.html)  | 追加するオブジェクト |
-| `index` | [Number](Number.md) | 追加位置 |
-
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Object</span>
-    </dd>
-</dl>
+####  _updatePauseSign ()
+ポーズサインのアップデート。
 
 #### addChildToBack (child) → {Object}
-
 背景とコンテンツの間に子オブジェクトを追加し、追加されたオブジェクトを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `child` | [PIXI.DisplayObject](http://pixijs.download/release/docs/PIXI.DisplayObject.html)  | 追加するオブジェクト |
-
-<dl>
-</dl>
+| `child` | [PIXI.DisplayObject](PIXI.DisplayObject.md)  | 追加するオブジェクト |
 
 ##### Returns:
 
@@ -196,18 +151,14 @@
     </dd>
 </dl>
 
-#### initialize ()
 
+#### initialize ()
  オブジェクト生成時の初期化。
-<dl>
-</dl>
+
 
 #### isClosed () → {Boolean}
-
 ウィンドウが完全に閉じているか。<br />
 つまり、openness === 0 であるか。
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -222,8 +173,6 @@
 
 ウィンドウが完全に開いているか。<br />
 つまり、openness === 255 であるか。
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -233,6 +182,7 @@
         <span>Boolean</span>
     </dd>
 </dl>
+
 
 #### move (x, y, width, height)
 指定した位置と大きさにウィンドウを変更。
@@ -246,68 +196,6 @@
 | `width` | [Number](Number.md) | ウィンドウ幅(ピクセル) |
 | `height` | [Number](Number.md) | ウィンドウ高さ(ピクセル) |
 
-<dl>
-</dl>
-
-#### removeChild (child) → {Object}
-
-[super] 指定したオブジェクトをコンテナから取り除いて、返す。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `child` | [PIXI.DisplayObject](http://pixijs.download/release/docs/PIXI.DisplayObject.html) | 取り除くオブジェクト |
-
-<dl>
-    <dt>Inherited From:</dt>
-    <dd>
-        <ul>
-            <li>
-                <a href="http://pixijs.download/release/docs/PIXI.Container.html#removeChild">PIXI.Container#removeChild</a>
-            </li>
-        </ul>
-    </dd>
-</dl>
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Object</span>
-    </dd>
-</dl>
-
-#### removeChildAt (index) → {Object}
-[super] 指定位置のオブジェクトをコンテナから取り除いて、返す。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `index` | [Number](Number.md) | 取り除くオブジェクトの位置 |
-
-
-<dl>
-    <dt>Inherited From:</dt>
-    <dd>
-        <ul>
-            <li>
-                <a href="http://pixijs.download/release/docs/PIXI.Container.html#removeChildAt">PIXI.Container#removeChildAt</a>
-            </li>
-        </ul>
-    </dd>
-</dl>
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Object</span>
-    </dd>
-</dl>
 
 #### setCursorRect (x, y, width, height)
 コマンド用カーソルの位置と大きさを設定。
@@ -321,8 +209,6 @@
 | `width` | [Number](Number.md) | カーソル幅(ピクセル) |
 | `height` | [Number](Number.md) | カーソル高さ(ピクセル) |
 
-<dl>
-</dl>
 
 #### setTone (r, g, b)
 背景の色調を設定。
@@ -335,14 +221,15 @@
 | `g` | [Number](Number.md) | 緑(-255 〜 255) |
 | `b` | [Number](Number.md) | 青(-255 〜 255) |
 
-<dl>
-</dl>
 
 #### update ()
-
 フレーム毎のアップデート。
-<dl>
-</dl>
+
+
+#### updateTransform ()
+
+##### Overrides:
+ [PIXI.Container.updateTransform ()](PIXI.Container.md#updatetransform-)
 
 
  <br>

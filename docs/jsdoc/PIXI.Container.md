@@ -208,7 +208,7 @@ options に Object として指定する内容
 
 
 #### onChildrenChange () 
-
+子オブジェクトが変更された時のハンドラ。
 
 #### removeChild (child) → {PIXI.DisplayObject}
 子オブジェクトを削除。
