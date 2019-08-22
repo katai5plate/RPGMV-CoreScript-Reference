@@ -40,7 +40,7 @@
 | `_animationCount` | [Number](Number.md) | アニメーションカウント |
 | `_padding` | [Number](Number.md) | パディング |
 | `_margin` | [Number](Number.md) | マージン |
-| `_colorTone` | [Array](Array.md).&lt;[Number](Number.md)&gt; | カラートーン |
+| `_colorTone` | [Array](Array.md).&lt;[Number](Number.md)&gt; | 色調 |
 | `_windowSpriteContainer` | [PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html) | 画像コンテナ |
 | `_windowBackSprite` | [Sprite](Sprite.md) | 背景 |
 | `_windowCursorSprite` | [Sprite](Sprite.md) | カーソル |
