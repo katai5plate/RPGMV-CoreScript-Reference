@@ -2,11 +2,9 @@
 
 ## namespace [RPG](RPG.md)
 
-[データベース]-[防具]で設定された情報を記述したJSONデータ。
+[データベース]-[防具]で設定された情報を記述したファイル( data/Armors.json )のJSONデータ。
 
-ファイル data/Armors.json に記述されている。
-
-読み込まれたデータは、[$dataArmors](global.md#dataarmors-arrayrpgarmor)に配列として格納されている。
+大域変数 [$dataArmors](global.md#dataarmors-arrayrpgarmor)に配列として格納されている。
 
 ##### Properties:
 

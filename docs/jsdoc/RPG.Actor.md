@@ -2,8 +2,9 @@
 
 ## Namespace: [RPG](RPG.md)
 
- アクター用JSON( data/Actors.json )のデータ構造。<br />
- 大域変数 [$dataActors](global.html#$dataActors) に配列として定義されている。
+ アクターを記述したファイル( data/Actors.json )のJSONデータ。
+
+ 大域変数 [$dataActors](global.md#dataactors-arrayrpgactor) に配列として格納されている。
 
 ##### Properties:
 
