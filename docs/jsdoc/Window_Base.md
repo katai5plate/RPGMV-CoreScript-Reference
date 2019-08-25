@@ -653,7 +653,7 @@ Dimmer背景を非表示。
 
 
 #### initialize (x, y, width, height)
-[supre]オブジェクト生成時の初期化。
+オブジェクト生成時の初期化。
 
 ##### Parameters:
 
@@ -664,16 +664,8 @@ Dimmer背景を非表示。
 | `width` | [Number](Number.md) | 描画領域の幅(ピクセル) |
 | `height` | [Number](Number.md) | 描画領域の高さ(ピクセル) |
 
-<dl>
-    <dt>Overrides:</dt>
-    <dd>
-        <ul>
-            <li>
-                <a href="Window.html#initialize-">Window#initialize</a>
-            </li>
-        </ul>
-    </dd>
-</dl>
+##### Overrides:
+[Window.initialize ()](Window.md#initialize-)
 
 
 #### isClosing () → {Boolean}
