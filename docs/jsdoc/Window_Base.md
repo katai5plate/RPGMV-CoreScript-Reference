@@ -1113,7 +1113,7 @@ Dimmer背景を表示。
 
 
 #### textWidth (text) → {[Number](Number.md)}
-指定文字列の幅を返す。
+指定文字列の幅(ピクセル)を返す。
 
 ##### Parameters:
 
