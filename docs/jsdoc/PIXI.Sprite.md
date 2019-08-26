@@ -97,14 +97,14 @@
 #### _calculateBounds ()
 
 ##### Overrides:
- [PIXI.Container.md.\_calculateBounds ()](PIXI.Container.md#_calculatebounds-)
+ [PIXI.Container.\_calculateBounds ()](PIXI.Container.md#_calculatebounds-)
  
  
 #### _render (renderer)
 
 ##### Overrides:
 
-* [PIXI.Container.md.\_render (renderer)](PIXI.Container.md#_render-renderer)
+* [PIXI.Container.\_render (renderer)](PIXI.Container.md#_render-renderer)
  
 ##### Parameters:
 
