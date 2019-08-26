@@ -163,8 +163,83 @@
 * [updateTone ()](Window_Base.md#updatetone-)
 
 #### [Window_Selectable](Window_Selectable.md)
-* [activate ()](Window_Selectable.md#activate-)* [bottomRow ()](Window_Selectable.md#bottomrow---number)* [callCancelHandler ()](Window_Selectable.md#callcancelhandler-)* [callHandler (symbol)](Window_Selectable.md#callhandler-symbol)
-* [callUpdateHelp ()](Window_Selectable.md#callupdatehelp-)* [clearItem (index)](Window_Selectable.md#clearitem-index)* [cursorAll ()](Window_Selectable.md#cursorall---boolean)* [cursorDown (wrap)](Window_Selectable.md#cursordown-wrap)* [cursorFixed ()](Window_Selectable.md#cursorfixed---boolean)* [cursorLeft (wrap)](Window_Selectable.md#cursorleft-wrap)* [cursorPagedown ()](Window_Selectable.md#cursorpagedown-)* [cursorPageup ()](Window_Selectable.md#cursorpageup-)* [cursorRight (wrap)](Window_Selectable.md#cursorright-wrap)* [cursorUp (wrap)](Window_Selectable.md#cursorup-wrap)* [deactivate ()](Window_Selectable.md#deactivate-)* [deselect ()](Window_Selectable.md#deselect-)* [drawAllItems ()](Window_Selectable.md#drawallitems-)* [ensureCursorVisible ()](Window_Selectable.md#ensurecursorvisible-)* [hideHelpWindow ()](Window_Selectable.md#hidehelpwindow-)* [hitTest (x, y)](Window_Selectable.md#hittest-x-y--number)* [index ()](Window_Selectable.md#index---number)* [isCancelEnabled ()](Window_Selectable.md#iscancelenabled---boolean)* [isCancelTriggered ()](Window_Selectable.md#iscanceltriggered---boolean)* [isContentsArea (x, y)](Window_Selectable.md#iscontentsarea-x-y--boolean)* [isCursorMovable ()](Window_Selectable.md#iscursormovable---boolean)* [isCursorVisible ()](Window_Selectable.md#iscursorvisible---boolean)* [isHandled (symbol)](Window_Selectable.md#ishandled-symbol--boolean)* [isHorizontal ()](Window_Selectable.md#ishorizontal---boolean)* [isOkTriggered ()](Window_Selectable.md#isoktriggered---boolean)* [isOpenAndActive ()](Window_Selectable.md#isopenandactive---boolean)* [isTouchedInsideFrame ()](Window_Selectable.md#istouchedinsideframe---boolean)* [isTouchOkEnabled ()](Window_Selectable.md#istouchokenabled---boolean)* [itemHeight ()](Window_Selectable.md#itemheight---number)* [itemRect (index)](Window_Selectable.md#itemrect-index--rectangle)* [itemRectForText (index)](Window_Selectable.md#itemrectfortext-index--rectangle)* [itemWidth ()](Window_Selectable.md#itemwidth---number)* [maxCols ()](Window_Selectable.md#maxcols---number)* [maxPageItems ()](Window_Selectable.md#maxpageitems---number)* [maxPageRows ()](Window_Selectable.md#maxpagerows---number)* [maxRows ()](Window_Selectable.md#maxrows---number)* [maxTopRow ()](Window_Selectable.md#maxtoprow---number)* [onTouch (triggered)](Window_Selectable.md#ontouch-triggered)* [playBuzzerSound ()](Window_Selectable.md#playbuzzersound-)* [playOkSound ()](Window_Selectable.md#playoksound-)* [processCancel ()](Window_Selectable.md#processcancel-)* [processCursorMove ()](Window_Selectable.md#processcursormove-)* [processHandling ()](Window_Selectable.md#processhandling-)* [processOk ()](Window_Selectable.md#processok-)* [processPagedown ()](Window_Selectable.md#processpagedown-)* [processPageup ()](Window_Selectable.md#processpageup-)* [processTouch ()](Window_Selectable.md#processtouch-)* [processWheel ()](Window_Selectable.md#processwheel-)* [redrawCurrentItem ()](Window_Selectable.md#redrawcurrentitem-)* [redrawItem (index)](Window_Selectable.md#redrawitem-index)* [refresh ()](Window_Selectable.md#refresh-)* [reselect ()](Window_Selectable.md#reselect-)* [resetScroll ()](Window_Selectable.md#resetscroll-)* [row ()](Window_Selectable.md#row---number)* [scrollDown ()](Window_Selectable.md#scrolldown-)* [scrollUp ()](Window_Selectable.md#scrollup-)* [select (index)](Window_Selectable.md#select-index)* [setBottomRow (row)](Window_Selectable.md#setbottomrow-row)* [setCursorAll (cursorAll)](Window_Selectable.md#setcursorall-cursorall)* [setCursorFixed (cursorFixed)](Window_Selectable.md#setcursorfixed-cursorfixed)* [setHandler (symbol, method)](Window_Selectable.md#sethandler-symbol-method)* [setHelpWindow (helpWindow)](Window_Selectable.md#sethelpwindow-helpwindow)* [setHelpWindowItem (item)](Window_Selectable.md#sethelpwindowitem-item)* [setTopRow (row)](Window_Selectable.md#settoprow-row)* [showHelpWindow ()](Window_Selectable.md#showhelpwindow-)* [spacing ()](Window_Selectable.md#spacing---number)* [topIndex ()](Window_Selectable.md#topindex---number)* [topRow ()](Window_Selectable.md#toprow---number)* [update ()](Window_Selectable.md#update-)* [updateCursor ()](Window_Selectable.md#updatecursor-)* [updateHelp ()](Window_Selectable.md#updatehelp-)* [updateInputData ()](Window_Selectable.md#updateinputdata-)
+
+* [activate ()](Window_Selectable.md#activate-)
+* [bottomRow ()](Window_Selectable.md#bottomrow---number)
+* [callCancelHandler ()](Window_Selectable.md#callcancelhandler-)
+* [callHandler (symbol)](Window_Selectable.md#callhandler-symbol)
+* [callUpdateHelp ()](Window_Selectable.md#callupdatehelp-)
+* [clearItem (index)](Window_Selectable.md#clearitem-index)
+* [cursorAll ()](Window_Selectable.md#cursorall---boolean)
+* [cursorDown (wrap)](Window_Selectable.md#cursordown-wrap)
+* [cursorFixed ()](Window_Selectable.md#cursorfixed---boolean)
+* [cursorLeft (wrap)](Window_Selectable.md#cursorleft-wrap)
+* [cursorPagedown ()](Window_Selectable.md#cursorpagedown-)
+* [cursorPageup ()](Window_Selectable.md#cursorpageup-)
+* [cursorRight (wrap)](Window_Selectable.md#cursorright-wrap)
+* [cursorUp (wrap)](Window_Selectable.md#cursorup-wrap)
+* [deactivate ()](Window_Selectable.md#deactivate-)
+* [deselect ()](Window_Selectable.md#deselect-)
+* [drawAllItems ()](Window_Selectable.md#drawallitems-)
+* [ensureCursorVisible ()](Window_Selectable.md#ensurecursorvisible-)
+* [hideHelpWindow ()](Window_Selectable.md#hidehelpwindow-)
+* [hitTest (x, y)](Window_Selectable.md#hittest-x-y--number)
+* [index ()](Window_Selectable.md#index---number)
+* [isCancelEnabled ()](Window_Selectable.md#iscancelenabled---boolean)
+* [isCancelTriggered ()](Window_Selectable.md#iscanceltriggered---boolean)
+* [isContentsArea (x, y)](Window_Selectable.md#iscontentsarea-x-y--boolean)
+* [isCursorMovable ()](Window_Selectable.md#iscursormovable---boolean)
+* [isCursorVisible ()](Window_Selectable.md#iscursorvisible---boolean)
+* [isHandled (symbol)](Window_Selectable.md#ishandled-symbol--boolean)
+* [isHorizontal ()](Window_Selectable.md#ishorizontal---boolean)
+* [isOkTriggered ()](Window_Selectable.md#isoktriggered---boolean)
+* [isOpenAndActive ()](Window_Selectable.md#isopenandactive---boolean)
+* [isTouchedInsideFrame ()](Window_Selectable.md#istouchedinsideframe---boolean)
+* [isTouchOkEnabled ()](Window_Selectable.md#istouchokenabled---boolean)
+* [itemHeight ()](Window_Selectable.md#itemheight---number)
+* [itemRect (index)](Window_Selectable.md#itemrect-index--rectangle)
+* [itemRectForText (index)](Window_Selectable.md#itemrectfortext-index--rectangle)
+* [itemWidth ()](Window_Selectable.md#itemwidth---number)
+* [maxCols ()](Window_Selectable.md#maxcols---number)
+* [maxPageItems ()](Window_Selectable.md#maxpageitems---number)
+* [maxPageRows ()](Window_Selectable.md#maxpagerows---number)
+* [maxRows ()](Window_Selectable.md#maxrows---number)
+* [maxTopRow ()](Window_Selectable.md#maxtoprow---number)
+* [onTouch (triggered)](Window_Selectable.md#ontouch-triggered)
+* [playBuzzerSound ()](Window_Selectable.md#playbuzzersound-)
+* [playOkSound ()](Window_Selectable.md#playoksound-)
+* [processCancel ()](Window_Selectable.md#processcancel-)
+* [processCursorMove ()](Window_Selectable.md#processcursormove-)
+* [processHandling ()](Window_Selectable.md#processhandling-)
+* [processOk ()](Window_Selectable.md#processok-)
+* [processPagedown ()](Window_Selectable.md#processpagedown-)
+* [processPageup ()](Window_Selectable.md#processpageup-)
+* [processTouch ()](Window_Selectable.md#processtouch-)
+* [processWheel ()](Window_Selectable.md#processwheel-)
+* [redrawCurrentItem ()](Window_Selectable.md#redrawcurrentitem-)
+* [redrawItem (index)](Window_Selectable.md#redrawitem-index)
+* [refresh ()](Window_Selectable.md#refresh-)
+* [reselect ()](Window_Selectable.md#reselect-)
+* [resetScroll ()](Window_Selectable.md#resetscroll-)
+* [row ()](Window_Selectable.md#row---number)
+* [scrollDown ()](Window_Selectable.md#scrolldown-)
+* [scrollUp ()](Window_Selectable.md#scrollup-)
+* [select (index)](Window_Selectable.md#select-index)
+* [setBottomRow (row)](Window_Selectable.md#setbottomrow-row)
+* [setCursorAll (cursorAll)](Window_Selectable.md#setcursorall-cursorall)
+* [setCursorFixed (cursorFixed)](Window_Selectable.md#setcursorfixed-cursorfixed)
+* [setHandler (symbol, method)](Window_Selectable.md#sethandler-symbol-method)
+* [setHelpWindow (helpWindow)](Window_Selectable.md#sethelpwindow-helpwindow)
+* [setHelpWindowItem (item)](Window_Selectable.md#sethelpwindowitem-item)
+* [setTopRow (row)](Window_Selectable.md#settoprow-row)
+* [showHelpWindow ()](Window_Selectable.md#showhelpwindow-)
+* [spacing ()](Window_Selectable.md#spacing---number)
+* [topIndex ()](Window_Selectable.md#topindex---number)
+* [topRow ()](Window_Selectable.md#toprow---number)
+* [update ()](Window_Selectable.md#update-)
+* [updateCursor ()](Window_Selectable.md#updatecursor-)
+* [updateHelp ()](Window_Selectable.md#updatehelp-)
+* [updateInputData ()](Window_Selectable.md#updateinputdata-)
 
 
 ### Methods
@@ -267,7 +342,8 @@
 
 #### drawItem (index)
 
-##### Overrides:[Window_Selectable.drawItem (index)](Window_Selectable.md#drawitem-index)
+##### Overrides:
+[Window_Selectable.drawItem (index)](Window_Selectable.md#drawitem-index)
 
 
 #### findExt (ext) → {[Number](Number.md)}
@@ -345,12 +421,14 @@ Finds a command object and returns the index number based on the symbol property
 
 #### isCurrentItemEnabled () → {Boolean}
 
-##### Overrides:[Window_Selectable.isCurrentItemEnabled ()](Window_Selectable.md#iscurrentitemenabled---boolean)
+##### Overrides:
+[Window_Selectable.isCurrentItemEnabled ()](Window_Selectable.md#iscurrentitemenabled---boolean)
 
 
 #### isOkEnabled () → {Boolean}
 
-##### Overrides:[Window_Selectable.isOkEnabled ()](Window_Selectable.md#isokenabled---boolean)
+##### Overrides:
+[Window_Selectable.isOkEnabled ()](Window_Selectable.md#isokenabled---boolean)
 
 
 #### itemTextAlign () → {[String](String.md)}
@@ -367,12 +445,13 @@ Finds a command object and returns the index number based on the symbol property
 
 
 #### makeCommandList ()
-メニューに全項目を追加。 個々の追加は #addCommand で行っている。
+メニューに全項目を追加。 個々の追加は [addCommand](Window_Command.md#addcommand-name-symbol-enabled-ext) で行っている。
 
 
 #### maxItems () → {[Number](Number.md)}
 
-##### Overrides:[Window_Selectable.maxItems ()](Window_Selectable.md#maxitems---number)
+##### Overrides:
+[Window_Selectable.maxItems ()](Window_Selectable.md#maxitems---number)
 
 
 #### numVisibleRows () → {[Number](Number.md)}
