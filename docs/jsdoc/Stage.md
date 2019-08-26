@@ -14,123 +14,51 @@
 | `parent` | Object | [super][read-only] このオブジェクトを含む親オブジェクト |
 | `interactive` | Boolean |  操作可能か |
 
-<dl>
-</dl>
 
 ### Extends
 
 * [PIXI.Container](PIXI.Container.md)
 
+
+### Inherited From
+
+#### [PIXI.DisplayObject](PIXI.DisplayObject.md)
+
+* [(static) mixin (source)](PIXI.DisplayObject.md#static-mixin-source)
+* [\_recursivePostUpdateTransform ()](PIXI.DisplayObject.md#_recursivepostupdatetransform-)
+* [displayObjectUpdateTransform ()](PIXI.DisplayObject.md#displayobjectupdatetransform-)
+* [getBounds (skipUpdate, rect)](PIXI.DisplayObject.md#getbounds-skipupdate-rect--pixirectangle)
+* [getGlobalPosition (point, skipUpdate)](PIXI.DisplayObject.md#getglobalposition-point-skipupdate--pixipoint)
+* [setParent (container)](PIXI.DisplayObject.md#setparent-container--pixicontainer)
+* [setTransform (x, y, scaleX, scaleY, rotation, skewX, skewY, pivotX, pivotY)](PIXI.DisplayObject.md#settransform-x-y-scalex-scaley-rotation-skewx-skewy-pivotx-pivoty--pixidisplayobject)
+* [toGlobal (position, point, skipUpdate)](PIXI.DisplayObject.md#toglobal-position-point-skipupdate--pixipoint)
+* [toLocal (position, from, point, skipUpdate)](PIXI.DisplayObject.md#tolocal-position-from-point-skipupdate--pixipoint)
+
+#### [PIXI.Container](PIXI.Container.md)
+
+* [addChild (child) ](PIXI.Container.md#addchild-child--pixidisplayobject)
+* [addChildAt (child, index)](PIXI.Container.md#addchildat-child-index--pixidisplayobject)
+* [calculateBounds ()](PIXI.Container.md#calculatebounds-)
+* [destroy ()](PIXI.Container.md#destroy-)
+* [getChildAt (index)](PIXI.Container.md#getchildat-index--pixidisplayobject)
+* [getChildByName (name)](PIXI.Container.md#getchildbyname-name--pixidisplayobject)
+* [getChildIndex (child)](PIXI.Container.md#getchildindex-child--pixidisplayobject)
+* [onChildrenChange ()](PIXI.Container.md#onchildrenchange-)
+* [removeChild (child)](PIXI.Container.md#removechild-child--pixidisplayobject)
+* [removeChildAt (index)](PIXI.Container.md#removechildat-index--pixidisplayobject)
+* [removeChildren (beginIndex, endIndex)](PIXI.Container.md#removechildren-beginindex-endindex--arraypixidisplayobject)
+* [render (renderer)](PIXI.Container.md#render-renderer)
+* [renderAdvanced (renderer)](PIXI.Container.md#renderadvanced-renderer)
+* [renderCanvas (renderer)](PIXI.Container.md#rendercanvas-renderer)
+* [setChildIndex (child, index)](PIXI.Container.md#setchildindex-child-index)
+* [sortChildren ()](PIXI.Container.md#sortchildren-)
+* [swapChildren (child, child2)](PIXI.Container.md#swapchildren-child-child2)
+* [updateTransform ()](PIXI.Container.md#updatetransform-)
+
 ### Methods
 
-#### addChild (child) → {Object}
-
-
-[super] 子オブジェクトを追加。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `child` | Object |  追加するオブジェクト |
-
-<dl>
-</dl>
-
-##### Returns:
-
-
- 追加されたオブジェクト
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
-
-#### addChildAt (child, index) → {Object}
-
-
-[super] 指定位置に子オブジェクトを追加。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.md) |  追加位置 |
-
-<dl>
-</dl>
-
-##### Returns:
-
-
- 追加されたオブジェクト
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
-
 #### initialize ()
-
-
  オブジェクト生成時の初期化。
-<dl>
-</dl>
-
-#### removeChild (child) → {Object}
-
-
-[super] 子オブジェクトを取り除く。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `child` | Object |  取り除くオブジェクト |
-
-<dl>
-</dl>
-
-##### Returns:
-
-
- 取り除かれたオブジェクト
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
-
-#### removeChildAt (index) → {Object}
-
-
-[super] 指定位置にある子オブジェクトを取り除く。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `index` | [Number](Number.md) |  取り除く位置 |
-
-<dl>
-</dl>
-
-##### Returns:
-
-
- 取り除かれたオブジェクト
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
-
 
  <br>
 

@@ -4,7 +4,8 @@
 
 #### new Window ()
 
-ゲーム内で使われるウィンドウ。[Window_Base](Window_Base.md)のスーパークラス。<br />
+ゲーム内で使われるウィンドウ。[Window_Base](Window_Base.md)のスーパークラス。
+
 ブラウザやその他アプリケーションのウィンドウではない。
 
 ##### Properties:
@@ -71,7 +72,6 @@
 * [toGlobal (position, point, skipUpdate)](PIXI.DisplayObject.md#toglobal-position-point-skipupdate--pixipoint)
 * [toLocal (position, from, point, skipUpdate)](PIXI.DisplayObject.md#tolocal-position-from-point-skipupdate--pixipoint)
 
-
 #### [PIXI.Container](PIXI.Container.md)
 
 * [addChild (child) ](PIXI.Container.md#addchild-child--pixidisplayobject)
@@ -91,6 +91,7 @@
 * [setChildIndex (child, index)](PIXI.Container.md#setchildindex-child-index)
 * [sortChildren ()](PIXI.Container.md#sortchildren-)
 * [swapChildren (child, child2)](PIXI.Container.md#swapchildren-child-child2)
+
 
 ### Methods
 
