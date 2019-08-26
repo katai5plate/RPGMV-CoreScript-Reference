@@ -4,210 +4,129 @@
 
 #### new WindowLayer ()
 
-The layer which contains game windows.
+[Scene_Base](Scene_Base.md) に含まれ [Window_Base](Window_Base.md) をまとめているレイヤー。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `voidFilter` | PIXI.filters.VoidFilter | [static] |
-| `children` | [Array](Array.md) | [super][read-only] The array of children of the window. |
-| `parent` | Object | [super][read-only] The object that contains the window. |
-| `x` | [Number](Number.md) | The x coordinate of the window layer. |
-| `y` | [Number](Number.md) | The y coordinate of the window layer. |
-| `width` | [Number](Number.md) | The width of the window layer in pixels. |
-| `height` | [Number](Number.md) | The height of the window layer in pixels. |
+| `voidFilter` | PIXI.filters.VoidFilter | [static] voidフィルタ |
+| `children` | [Array](Array.md).&lt;[Window_Base](Window_Base.md)&gt; | [read-only] 子ウィンドウ |
+| `parent` | Object | [read-only] 親オブジェクト |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `width` | [Number](Number.md) | 幅(ピクセル) |
+| `height` | [Number](Number.md) | 高さ(ピクセル) |
 
-<dl>
-</dl>
 
 ### Extends
 
 * [PIXI.Container](PIXI.Container.md)
 
+
+### Inherited From
+
+#### [PIXI.DisplayObject](PIXI.DisplayObject.md)
+
+* [(static) mixin (source)](PIXI.DisplayObject.md#static-mixin-source)
+* [\_recursivePostUpdateTransform ()](PIXI.DisplayObject.md#_recursivepostupdatetransform-)
+* [displayObjectUpdateTransform ()](PIXI.DisplayObject.md#displayobjectupdatetransform-)
+* [getBounds (skipUpdate, rect)](PIXI.DisplayObject.md#getbounds-skipupdate-rect--pixirectangle)
+* [getGlobalPosition (point, skipUpdate)](PIXI.DisplayObject.md#getglobalposition-point-skipupdate--pixipoint)
+* [setParent (container)](PIXI.DisplayObject.md#setparent-container--pixicontainer)
+* [setTransform (x, y, scaleX, scaleY, rotation, skewX, skewY, pivotX, pivotY)](PIXI.DisplayObject.md#settransform-x-y-scalex-scaley-rotation-skewx-skewy-pivotx-pivoty--pixidisplayobject)
+* [toGlobal (position, point, skipUpdate)](PIXI.DisplayObject.md#toglobal-position-point-skipupdate--pixipoint)
+* [toLocal (position, from, point, skipUpdate)](PIXI.DisplayObject.md#tolocal-position-from-point-skipupdate--pixipoint)
+
+#### [PIXI.Container](PIXI.Container.md)
+
+* [addChild (child) ](PIXI.Container.md#addchild-child--pixidisplayobject)
+* [addChildAt (child, index)](PIXI.Container.md#addchildat-child-index--pixidisplayobject)
+* [calculateBounds ()](PIXI.Container.md#calculatebounds-)
+* [destroy ()](PIXI.Container.md#destroy-)
+* [getChildAt (index)](PIXI.Container.md#getchildat-index--pixidisplayobject)
+* [getChildByName (name)](PIXI.Container.md#getchildbyname-name--pixidisplayobject)
+* [getChildIndex (child)](PIXI.Container.md#getchildindex-child--pixidisplayobject)
+* [onChildrenChange ()](PIXI.Container.md#onchildrenchange-)
+* [removeChild (child)](PIXI.Container.md#removechild-child--pixidisplayobject)
+* [removeChildAt (index)](PIXI.Container.md#removechildat-index--pixidisplayobject)
+* [removeChildren (beginIndex, endIndex)](PIXI.Container.md#removechildren-beginindex-endindex--arraypixidisplayobject)
+* [render (renderer)](PIXI.Container.md#render-renderer)
+* [renderAdvanced (renderer)](PIXI.Container.md#renderadvanced-renderer)
+* [renderCanvas (renderer)](PIXI.Container.md#rendercanvas-renderer)
+* [setChildIndex (child, index)](PIXI.Container.md#setchildindex-child-index)
+* [sortChildren ()](PIXI.Container.md#sortchildren-)
+* [swapChildren (child, child2)](PIXI.Container.md#swapchildren-child-child2)
+*  [updateTransform ()](PIXI.Container.md#updatetransform-)
+
+
 ### Methods
 
 #### (static) _canvasClearWindowRect (renderSession, window)
+ウィンドウの矩形範囲を消去。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `renderSession` | Object |  |
-| `window` | [Window](Window.md) |  |
+| `renderSession` | Object | レンダラ |
+| `window` | [Window](Window.md) | ウィンドウ |
 
-<dl>
-</dl>
 
 #### (static) _maskWindow (window)
+ウィンドウをマスク。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `window` | [Window](Window.md) |  |
+| `window` | [Window](Window.md) | ウィンドウ |
 
-<dl>
-</dl>
 
 #### (static) _renderCanvas (renderSession)
+canvas でレンダリング。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `renderSession` | Object |  |
+| `renderSession` | Object | レンダラ |
 
-<dl>
-</dl>
 
 #### (static) renderWebGL (renderSession)
+WebGLでレンダリング。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `renderSession` | Object |  |
-
-<dl>
-</dl>
-
-#### addChild (child) → {Object}
+| `renderSession` | Object | レンダラ |
 
 
-[super] Adds a child to the container.
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `child` | Object | The child to add |
-
-<dl>
-</dl>
-
-##### Returns:
-
-
-The child that was added
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
-
-#### addChildAt (child, index) → {Object}
-
-
-[super] Adds a child to the container at a specified index.
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `child` | Object | The child to add |
-| `index` | [Number](Number.md) | The index to place the child in |
-
-<dl>
-</dl>
-
-##### Returns:
-
-
-The child that was added
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
 
 #### initialize ()
+オブジェクト生成時の初期化。
 
-
- オブジェクト生成時の初期化。
-<dl>
-</dl>
 
 #### move (x, y, width, height)
-
-
-Sets the x, y, width, and height all at once.
+指定座標と大きさに変更。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) | The x coordinate of the window layer |
-| `y` | [Number](Number.md) | The y coordinate of the window layer |
-| `width` | [Number](Number.md) | The width of the window layer |
-| `height` | [Number](Number.md) | The height of the window layer |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `width` | [Number](Number.md) | 幅(ピクセル) |
+| `height` | [Number](Number.md) | 高さ(ピクセル) |
 
-<dl>
-</dl>
 
 #### onRemoveAsAChild ()
+親から削除された時に呼ばれるハンドラ。
 
-<dl>
-</dl>
-
-#### removeChild (child) → {Object}
-
-
-[super] Removes a child to the container.
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `child` | Object | The child to remove |
-
-<dl>
-</dl>
-
-##### Returns:
-
-
-The child that was removed
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
-
-#### removeChildAt (index) → {Object}
-
-
-[super] Removes a child from the specified index position.
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `index` | [Number](Number.md) | The index to get the child from |
-
-<dl>
-</dl>
-
-##### Returns:
-
-
-The child that was removed
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
 
 #### update ()
-
-
-Updates the window layer for each frame.
-<dl>
-</dl>
+フレーム毎のアップデート。
 
 
  <br>

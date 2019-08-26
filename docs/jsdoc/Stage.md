@@ -4,7 +4,9 @@
 
 #### (abstract) new Stage ()
 
- 画面構成オブジェクトのツリーへの追加・削除を行う基礎オブジェクト。 [Scene_Base](Scene_Base.md) のスーパークラス。
+ 画面構成オブジェクトのツリーへの追加・削除を行う基礎オブジェクト。 
+ 
+ [Scene_Base](Scene_Base.md) のスーパークラス。
 
 ##### Properties:
 
