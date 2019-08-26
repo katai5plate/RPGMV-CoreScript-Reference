@@ -238,8 +238,26 @@
 
 #### [Window_Command](Window_Command.md)
 
-* [addCommand (name, symbol, enabled, ext)](Window_Command#addcommand-name-symbol-enabled-ext)* [callOkHandler ()](Window_Command#callokhandler-)* [commandName (index)](Window_Command#commandname-index--string)* [commandSymbol (index)](Window_Command#commandsymbol-index--string)* [currentData ()](Window_Command#currentdata---object)* [currentExt ()](Window_Command#currentext---0bject)* [currentSymbol ()](Window_Command#currentsymbol---string)* [drawItem (index)](Window_Command#drawitem-index)* [findExt (ext)](Window_Command#findext-ext--number)* [findSymbol (symbol)](Window_Command#findsymbol-symbol--number)
-* [isCommandEnabled (index) ](Window_Command#iscommandenabled-index--boolean)* [isCurrentItemEnabled ()](Window_Command#iscurrentitemenabled---boolean)* [isOkEnabled ()](Window_Command#isokenabled---boolean)* [itemTextAlign ()](Window_Command#itemtextalign---string)* [maxItems ()](Window_Command#maxitems---number)* [numVisibleRows ()](Window_Command#numvisiblerows---number)* [refresh ()](Window_Command#refresh-)* [selectExt (ext)](Window_Command#selectext-ext)* [selectSymbol (symbol)](Window_Command#selectsymbol-symbol)* [windowHeight ()](Window_Command#windowheight---number)
+* [addCommand (name, symbol, enabled, ext)](Window_Command.md#addcommand-name-symbol-enabled-ext)
+* [callOkHandler ()](Window_Command.md#callokhandler-)
+* [commandName (index)](Window_Command.md#commandname-index--string)
+* [commandSymbol (index)](Window_Command.md#commandsymbol-index--string)
+* [currentData ()](Window_Command.md#currentdata---object)
+* [currentExt ()](Window_Command.md#currentext---0bject)
+* [currentSymbol ()](Window_Command.md#currentsymbol---string)
+* [drawItem (index)](Window_Command.md#drawitem-index)
+* [findExt (ext)](Window_Command.md#findext-ext--number)
+* [findSymbol (symbol)](Window_Command.md#findsymbol-symbol--number)
+* [isCommandEnabled (index) ](Window_Command.md#iscommandenabled-index--boolean)
+* [isCurrentItemEnabled ()](Window_Command.md#iscurrentitemenabled---boolean)
+* [isOkEnabled ()](Window_Command.md#isokenabled---boolean)
+* [itemTextAlign ()](Window_Command.md#itemtextalign---string)
+* [maxItems ()](Window_Command.md#maxitems---number)
+* [numVisibleRows ()](Window_Command.md#numvisiblerows---number)
+* [refresh ()](Window_Command.md#refresh-)
+* [selectExt (ext)](Window_Command.md#selectext-ext)
+* [selectSymbol (symbol)](Window_Command.md#selectsymbol-symbol)
+* [windowHeight ()](Window_Command.md#windowheight---number)
 
 
 ### Methods
@@ -249,7 +267,8 @@
 
 #### initialize ()
 
-##### Overrides:[Window_Command.initialize (x, y)](Window_Command#initialize-x-y)
+##### Overrides:
+[Window_Command.initialize (x, y)](Window_Command#initialize-x-y)
 
 
 #### isContinueEnabled () → {Boolean}
@@ -267,7 +286,8 @@
 
 #### makeCommandList ()
 
-##### Overrides[Window_Command.makeCommandList ()](Window_Command#makecommandlist-)
+##### Overrides
+[Window_Command.makeCommandList ()](Window_Command#makecommandlist-)
 
 
 #### processOk ()
@@ -287,7 +307,8 @@
 #### windowWidth () → {[Number](Number.md)}
 固定のウィンドウ幅、240(ピクセル)を返す。
 
-##### Overrides[Window_Command.windowWidth ()](Window_Command#windowwidth---number)
+##### Overrides
+[Window_Command.windowWidth ()](Window_Command#windowwidth---number)
 
 
  <br>
