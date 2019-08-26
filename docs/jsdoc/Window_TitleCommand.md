@@ -6,6 +6,8 @@
 
 タイトル画面に表示されるコマンドウィンドウ。
 
+[Scene_Title](Scene_Title.md) の \_commandWindow プロパティに保持される。
+
 ##### Properties:
 
 | Name | Type | Description |
