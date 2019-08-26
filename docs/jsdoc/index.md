@@ -3,7 +3,7 @@
 ## 目次
 
 * [JavaScript拡張](index.md#JavaScript拡張)
-* [管理(静的オブジェクト)](index.md#管理静的オブジェクト)
+* [マネージャ](index.md#マネージャ)
 * [ユーティリティ](index.md#ユーティリティ)
 * オブジェクト
 	* [システム](index.md#システム)
@@ -32,7 +32,7 @@
 * [String](String.md)
 * [Math](Math.md)
 
-### 管理(静的オブジェクト)
+### マネージャ
 
 * [AudioManager](AudioManager.md)
 * [BattleManager](BattleManager.md)
