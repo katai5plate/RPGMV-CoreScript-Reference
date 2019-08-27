@@ -7,6 +7,8 @@
  コマンド選択用ウィンドウ。
  
   [Window_ActorCommand](Window_ActorCommand.md), [Window_ChoiceList](Window_ChoiceList.md), [Window_GameEnd](Window_GameEnd.md), [Window_MenuCommand](Window_MenuCommand.md), [Window_Options](Window_Options.md), [Window_SkillType](Window_SkillType.md), [Window_PartyCommand](Window_PartyCommand.md), [Window_TitleCommand](Window_TitleCommand.md) と [Window_HorzCommand](Window_HorzCommand.md) のスーパークラス。
+  
+コマンドは画面に表示される「表示名」と、内部でコマンドを識別するために使われる「シンボル」が別に存在するので注意。
 
 ##### Parameters:
 
@@ -251,9 +253,9 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.md) |  表示名 |
-| `symbol` | [String](String.md) |  言語によらない名 |
-| `enabled` | Boolean |  選択可能か |
+| `name` | [String](String.md) | 表示名 |
+| `symbol` | [String](String.md) | シンボル |
+| `enabled` | Boolean | 選択可能か |
 | `ext` | * \| Object |  |
 
 
@@ -270,7 +272,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
+| `index` | [Number](Number.md) | コマンド番号 |
 
 ##### Returns:
 
@@ -283,13 +285,13 @@
 
 
 #### commandSymbol (index) → {[String](String.md)}
-指定番号のコマンドシンボルを返す。
+指定番号のシンボルを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
+| `index` | [Number](Number.md) | コマンド番号 |
 
 ##### Returns:
 
@@ -366,15 +368,13 @@
 
 
 #### findSymbol (symbol) → {[Number](Number.md)}
-
-
-Finds a command object and returns the index number based on the symbol property.
+指定されたシンボルをもつコマンドの番号を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `symbol` | [String](String.md) |  |
+| `symbol` | [String](String.md) | シンボル |
 
 
 ##### Returns:
