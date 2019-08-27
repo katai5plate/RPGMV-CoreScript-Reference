@@ -253,31 +253,18 @@
 
 
 #### processNewLine (textState)
-新たな行を処理。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.md) | テキストの情報 |
 
 ##### Overrides:[Window_Base.processNewLine (textState)](Window_Base.md#processnewline-textstate)
 
 
 #### processNewPage (textState)
 
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `textState` | [MV.TextState](MV.TextState.md) |  |
-
 ##### Overrides:
 [Window_Base.processNewPage (textState)](Window_Base.md#processnewpage-textstate)
 
 
 #### startInput () → {Boolean}
-
+入力の開始。
 
 ##### Returns:
 
@@ -290,33 +277,25 @@
 
 
 #### startMessage ()
-
-
-Starts the displaying of the message within the message window.
+メッセージ表示の開始。
 
 
 #### startPause ()
-
-
-Starts a pause for the message window; this will only be lifted if the user presses a button.
+入力待ちの停止状態の開始。
 
 
 #### startWait (count)
-
-
-Starts a wait for the message window.
+指定カウント分の待ち状態の開始。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `count` | [Number](Number.md) |  |
+| `count` | [Number](Number.md) | 待ち時間(フレーム) |
 
 
 #### subWindows () → {[Array](Array.md).<[Window_Base](Window_Base.md)>}
-
-
-Returns the sub windows attached to the message window.
+サブウィンドウの配列を得る。
 
 ##### Returns:
 
@@ -329,9 +308,7 @@ Returns the sub windows attached to the message window.
 
 
 #### terminateMessage ()
-
-
-Terminates the message and closes the gold and message window.
+メッセージを停止してウィンドウを閉じる。
 
 
 #### update ()
@@ -341,15 +318,11 @@ Terminates the message and closes the gold and message window.
 
 
 #### updateBackground ()
-
-
-Updates the background of the message window.
+背景のアップデート。
 
 
 #### updateInput () → {Boolean}
-
-
-Updates input when the message window is processing.
+入力のアップデート。
 
 ##### Returns:
 
@@ -362,12 +335,11 @@ Updates input when the message window is processing.
 
 
 #### updateLoading ()
+読み込みのアップデート。
 
 
 #### updateMessage () → {Boolean}
-
-
-Updates the message.
+メッセージのアップデート。
 
 ##### Returns:
 
@@ -380,18 +352,15 @@ Updates the message.
 
 
 #### updatePlacement ()
-
-
-Updates the placement of the message window.
+ウィンドウの配置のアップデート。
 
 
 #### updateShowFast ()
+メッセージ速度のアップデート。
 
 
 #### updateWait () → {Boolean}
-
-
-Updates the wait of the message window.
+待機状態のアップデート。
 
 ##### Returns:
 
@@ -404,9 +373,7 @@ Updates the wait of the message window.
 
 
 #### windowHeight () → {[Number](Number.md)}
-
-
-Returns the height of the window.
+ウィンドウの高さを返す。
 
 ##### Returns:
 
@@ -419,9 +386,7 @@ Returns the height of the window.
 
 
 #### windowWidth () → {[Number](Number.md)}
-
-
-Returns the width of the window.
+ウィンドウの幅を返す。
 
 ##### Returns:
 
