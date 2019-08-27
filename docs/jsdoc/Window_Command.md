@@ -260,9 +260,7 @@
 
 
 #### callOkHandler ()
-
-##### Overrides:
-[Window_Selectable.callOkHandler ()](Window_Selectable.md#callokhandler-)
+Overrides: [Window_Selectable.callOkHandler ()](Window_Selectable.md#callokhandler-)
 
 
 #### commandName (index) → {[String](String.md)}
@@ -274,15 +272,6 @@
 | --- | --- | --- |
 | `index` | [Number](Number.md) | コマンド番号 |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>String</span>
-    </dd>
-</dl>
-
 
 #### commandSymbol (index) → {[String](String.md)}
 指定番号のシンボルを返す。
@@ -293,59 +282,21 @@
 | --- | --- | --- |
 | `index` | [Number](Number.md) | コマンド番号 |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>String</span>
-    </dd>
-</dl>
-
 
 #### currentData () → {Object}
 現在のコマンドのオブジェクトを返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Object</span>
-    </dd>
-</dl>
 
 
 #### currentExt () → {*|0bject}
 現在のコマンドの ext プロパティを返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>*</span> | <span>Object</span>
-    </dd>
-</dl>
-
 
 #### currentSymbol () → {[String](String.md)}
 現在のコマンドのシンボルを返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>String</span>
-    </dd>
-</dl>
-
 
 #### drawItem (index)
-
-##### Overrides:
-[Window_Selectable.drawItem (index)](Window_Selectable.md#drawitem-index)
+Overrides: [Window_Selectable.drawItem (index)](Window_Selectable.md#drawitem-index)
 
 
 #### findExt (ext) → {[Number](Number.md)}
@@ -356,15 +307,6 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `ext` | * \| Object |  |
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Number</span>
-    </dd>
-</dl>
 
 
 #### findSymbol (symbol) → {[Number](Number.md)}
@@ -377,17 +319,8 @@
 | `symbol` | [String](String.md) | シンボル |
 
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Number</span>
-    </dd>
-</dl>
-
-
 #### initialize (x, y)
+Overrides: [Window_Selectable.initialize (x, y, width, height)](Window_Selectable.md#initialize-x-y-width-height)
 
 ##### Parameters:
 
@@ -395,9 +328,6 @@
 | --- | --- | --- |
 | `x` | [Number](Number.md) | x座標(ピクセル) |
 | `y` | [Number](Number.md) | y座標(ピクセル) |
-
-##### Overrides:
-[Window_Selectable.initialize (x, y, width, height)](Window_Selectable.md#initialize-x-y-width-height)
 
 
 #### isCommandEnabled (index) → {Boolean}
@@ -409,39 +339,17 @@
 | --- | --- | --- |
 | `index` | [Number](Number.md) |  |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
 
 #### isCurrentItemEnabled () → {Boolean}
-
-##### Overrides:
-[Window_Selectable.isCurrentItemEnabled ()](Window_Selectable.md#iscurrentitemenabled---boolean)
+Overrides: [Window_Selectable.isCurrentItemEnabled ()](Window_Selectable.md#iscurrentitemenabled---boolean)
 
 
 #### isOkEnabled () → {Boolean}
-
-##### Overrides:
-[Window_Selectable.isOkEnabled ()](Window_Selectable.md#isokenabled---boolean)
+Overrides: [Window_Selectable.isOkEnabled ()](Window_Selectable.md#isokenabled---boolean)
 
 
 #### itemTextAlign () → {[String](String.md)}
  'left', 'center', 'right' のいずれかの値で、文字揃えを指定。
- 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>String</span>
-    </dd>
-</dl>
 
 
 #### makeCommandList ()
@@ -449,28 +357,15 @@
 
 
 #### maxItems () → {[Number](Number.md)}
-
-##### Overrides:
-[Window_Selectable.maxItems ()](Window_Selectable.md#maxitems---number)
+Overrides: [Window_Selectable.maxItems ()](Window_Selectable.md#maxitems---number)
 
 
 #### numVisibleRows () → {[Number](Number.md)}
 表示されている行(ロー)の数を返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Number</span>
-    </dd>
-</dl>
-
 
 #### refresh ()
-
-##### Overrides:
-[Window_Selectable.refresh ()](Window_Selectable.md#refresh-)
+Overrides: [Window_Selectable.refresh ()](Window_Selectable.md#refresh-)
 
 
 #### selectExt (ext)
@@ -493,31 +388,12 @@ ext プロパティに従ってコマンドを選択。
 | `symbol` | [String](String.md) | シンボル |
 
 
-
 #### windowHeight () → {[Number](Number.md)}
 ウィンドウの高さ(ピクセル)を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Number</span>
-    </dd>
-</dl>
 
 
 #### windowWidth () → {[Number](Number.md)}
 ウィンドウの幅(ピクセル)を返す。規定値 : 240
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Number</span>
-    </dd>
-</dl>
 
 
  <br>

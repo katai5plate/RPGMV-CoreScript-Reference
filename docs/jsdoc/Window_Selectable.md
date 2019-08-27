@@ -182,22 +182,11 @@
 ### Methods
 
 #### activate ()
-
-##### Overrides:
-[Window_Base.activate ()](Window_Base.md#activate-)
+Overrides: [Window_Base.activate ()](Window_Base.md#activate-)
 
 
 #### bottomRow () → {[Number](Number.md)}
 行数を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
 
 
 #### callCancelHandler ()
@@ -234,15 +223,6 @@ OKのハンドラを呼ぶ。
 #### cursorAll () → {Boolean}
 全項目を選択しているか。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
 
 #### cursorDown (wrap)
 カーソルを下に移動。
@@ -256,15 +236,6 @@ OKのハンドラを呼ぶ。
 
 #### cursorFixed () → {Boolean}
 カーソルが固定されているか。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 
 #### cursorLeft (wrap)
@@ -306,10 +277,7 @@ OKのハンドラを呼ぶ。
 
 
 #### deactivate ()
-
-##### Overrides:
-
-[Window_Base.deactivate ()](Window_Base.md#deactivate-)
+Overrides: [Window_Base.deactivate ()](Window_Base.md#deactivate-)
 
 
 #### deselect ()
@@ -348,60 +316,21 @@ OKのハンドラを呼ぶ。
 | `x` | [Number](Number.md) | x座標(ピクセル) |
 | `y` | [Number](Number.md) | y座標(ピクセル) |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
-
 
 #### index () → {[Number](Number.md)}
 選択中の項目の番号を返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
-
 
 #### initialize (x, y, width, height)
- オブジェクト生成時の初期化。
-
-##### Overrides:
-[Window_Base.initialize (x, y, width, height)](Window_Base.md#initialize-x-y-width-height)
+Overrides: [Window_Base.initialize (x, y, width, height)](Window_Base.md#initialize-x-y-width-height)
 
 
 #### isCancelEnabled () → {Boolean}
 キャンセルが可能か。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
 
 #### isCancelTriggered () → {Boolean}
 キャンセルが起動されたか。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 
 #### isContentsArea (x, y) → {Boolean}
@@ -414,52 +343,17 @@ OKのハンドラを呼ぶ。
 | `x` | [Number](Number.md) | x座標(ピクセル) |
 | `y` | [Number](Number.md) | y座標(ピクセル) |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
 
 #### isCurrentItemEnabled () → {Boolean}
 選択中の項目が利用可能か。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 
 #### isCursorMovable () → {Boolean}
 カーソルが動かせるか。
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
 
 #### isCursorVisible () → {Boolean}
 カーソルが表示中か。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 
 #### isHandled (symbol) → {Boolean}
@@ -471,105 +365,33 @@ OKのハンドラを呼ぶ。
 | --- | --- | --- |
 | `symbol` | [String](String.md) | ハンドラ名 |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
 
 #### isHorizontal () → {Boolean}
 縦一列のコマンド並びか。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 
 #### isOkEnabled () → {Boolean}
 OKが可能か。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
 
 #### isOkTriggered () → {Boolean}
 OKが起動されたか。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 
 #### isOpenAndActive () → {Boolean}
 ウィンドウが開いてアクティブか。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
 
 #### isTouchedInsideFrame () → {Boolean}
 枠の内側をタッチされたか。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 
 #### isTouchOkEnabled () → {Boolean}
 タッチ入力によるOKが可能か。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
 
 #### itemHeight () → {[Number](Number.md)}
 項目の高さ(ピクセル)を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
 
 
 #### itemRect (index) → {[Rectangle](Rectangle.md)}
@@ -581,15 +403,6 @@ OKが起動されたか。
 | --- | --- | --- |
 | `index` | [Number](Number.md) | 項目番号 |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Rectangle.html">Rectangle</a></span>
-    </dd>
-</dl>
-
 
 #### itemRectForText (index) → {[Rectangle](Rectangle.md)}
 指定された項目の文字列用の矩形範囲を返す。
@@ -600,105 +413,33 @@ OKが起動されたか。
 | --- | --- | --- |
 | `index` | [Number](Number.md) | 項目番号 |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Rectangle.html">Rectangle</a></span>
-    </dd>
-</dl>
-
 
 #### itemWidth () → {[Number](Number.md)}
 項目の幅(ピクセル)を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
 
 
 #### maxCols () → {[Number](Number.md)}
 ウィンドウが持つ最大列(カラム)数を返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
-
 
 #### maxItems () → {[Number](Number.md)}
 ウィンドウが持つ最大項目数を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
 
 
 #### maxPageItems () → {[Number](Number.md)}
 ページが持つ最大項目数を返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
-
 
 #### maxPageRows () → {[Number](Number.md)}
 ページが持つ最大行(ロー)数を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
 
 
 #### maxRows () → {[Number](Number.md)}
 ウィンドウが持つ最大行(ロー)数を返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
-
 
 #### maxTopRow () → {[Number](Number.md)}
 最後の最上部の行(ロー)数を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
 
 
 #### onTouch (triggered)
@@ -779,15 +520,6 @@ OKの処理。
 
 #### row () → {[Number](Number.md)}
 現在の行(ロー)数を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
 
 
 #### scrollDown ()
@@ -885,46 +617,17 @@ OKの処理。
 #### spacing () → {[Number](Number.md)}
 空白の量(ピクセル)を返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
-
 
 #### topIndex () → {[Number](Number.md)}
 スクロールリストの上にある項目の番号を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
 
 
 #### topRow () → {[Number](Number.md)}
 上の行(ロー)の番号を返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
-
 
 #### update ()
-
-##### Overrides:
-[Window_Base.update ()](Window_Base.md#update-)
+Overrides: [Window_Base.update ()](Window_Base.md#update-)
 
 
 #### updateCursor ()

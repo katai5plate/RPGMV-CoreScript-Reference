@@ -143,15 +143,6 @@
 | --- | --- | --- |
 | `child` | [PIXI.DisplayObject](PIXI.DisplayObject.md)  | 追加するオブジェクト |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Object</span>
-    </dd>
-</dl>
-
 
 #### initialize ()
  オブジェクト生成時の初期化。
@@ -161,28 +152,11 @@
 ウィンドウが完全に閉じているか。<br />
 つまり、openness === 0 であるか。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### isOpen () → {Boolean}
 
 ウィンドウが完全に開いているか。<br />
 つまり、openness === 255 であるか。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 
 #### move (x, y, width, height)
@@ -228,9 +202,7 @@
 
 
 #### updateTransform ()
-
-##### Overrides:
- [PIXI.Container.updateTransform ()](PIXI.Container.md#updatetransform-)
+Overrides: [PIXI.Container.updateTransform ()](PIXI.Container.md#updatetransform-)
 
 
  <br>

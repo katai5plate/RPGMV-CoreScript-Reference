@@ -123,20 +123,9 @@
 #### doesContinue () → {Boolean}
 まだテキストがあり、かつ設定が変更されていないか。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
 
 #### initialize ()
-
-##### Overrides:
-[Window_Base.initialize ()](Window_Base.md#initialize-)
+Overrides: [Window_Base.initialize ()](Window_Base.md#initialize-)
 
 
 #### initMembers ()
@@ -145,15 +134,6 @@
 
 #### isAnySubWindowActive () → {Boolean}
 サブウィンドウがアクティブか。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 
 #### isEndOfText (textState) → {Boolean}
@@ -166,27 +146,8 @@
 | `textState` | [MV.TextState](MV.TextState.md) | 調べるテキストの情報 |
 
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
-
 #### isTriggered () → {Boolean}
 決定・キャンセルなどのトリガが起動されたか。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 
 #### loadMessageFace ()
@@ -202,27 +163,9 @@
 | --- | --- | --- |
 | `textState` | [MV.TextState](MV.TextState.md) | 調べるテキストの情報 |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
 
 #### newLineX () → {[Number](Number.md)}
 [顔]表示の有無に応じて、新たな行の表示開始位置を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Number</span>
-    </dd>
-</dl>
 
 
 #### newPage (textState)
@@ -238,42 +181,21 @@
 #### numVisibleRows () → {[Number](Number.md)}
 表示される行数を返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Number</span>
-    </dd>
-</dl>
-
 
 #### onEndOfText ()
 メッセージを全て表示した時に呼ばれるハンドラ。
 
 
 #### processNewLine (textState)
-
-##### Overrides:[Window_Base.processNewLine (textState)](Window_Base.md#processnewline-textstate)
+Overrides: [Window_Base.processNewLine (textState)](Window_Base.md#processnewline-textstate)
 
 
 #### processNewPage (textState)
-
-##### Overrides:
-[Window_Base.processNewPage (textState)](Window_Base.md#processnewpage-textstate)
+Overrides: [Window_Base.processNewPage (textState)](Window_Base.md#processnewpage-textstate)
 
 
 #### startInput () → {Boolean}
 入力の開始。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 
 #### startMessage ()
@@ -297,24 +219,13 @@
 #### subWindows () → {[Array](Array.md).<[Window_Base](Window_Base.md)>}
 サブウィンドウの配列を得る。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Array.&lt;Window_Base&gt;</span>
-    </dd>
-</dl>
-
 
 #### terminateMessage ()
 メッセージを停止してウィンドウを閉じる。
 
 
 #### update ()
-
-##### Overrides:
-[Window_Base.update ()](Window_Base.md#update-)
+Overrides: [Window_Base.update ()](Window_Base.md#update-)
 
 
 #### updateBackground ()
@@ -324,15 +235,6 @@
 #### updateInput () → {Boolean}
 入力のアップデート。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
 
 #### updateLoading ()
 読み込みのアップデート。
@@ -340,15 +242,6 @@
 
 #### updateMessage () → {Boolean}
 メッセージのアップデート。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 
 #### updatePlacement ()
@@ -362,40 +255,13 @@
 #### updateWait () → {Boolean}
 待機状態のアップデート。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
 
 #### windowHeight () → {[Number](Number.md)}
 ウィンドウの高さを返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Number</span>
-    </dd>
-</dl>
-
 
 #### windowWidth () → {[Number](Number.md)}
 ウィンドウの幅を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Number</span>
-    </dd>
-</dl>
 
 
  <br>

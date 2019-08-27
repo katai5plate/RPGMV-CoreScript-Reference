@@ -89,15 +89,6 @@
 | --- | --- | --- |
 | `actorIndex` | [Number](Number.md) | アクターの番号(1から始まる) |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
-
 
 #### calcTextHeight (textState, all) → {[Number](Number.md)}
 指定したテキストの表示時の高さ(ピクセル)を計算して返す。
@@ -108,15 +99,6 @@
 | --- | --- | --- |
 | `textState` | [MV.TextState](MV.TextState.md) | 計算するテキストの情報 |
 | `all` | Boolean | 複数行を加算するか |
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
 
 
 #### canvasToLocalX (x) → {[Number](Number.md)}
@@ -129,16 +111,6 @@
 | `x` | [Number](Number.md) | Canvas の x座標 |
 
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
-
-
 #### canvasToLocalY (y) → {[Number](Number.md)}
 指定したCanvas の y座標を、ゲーム画面のローカルy座標に変換して返す。
 
@@ -147,15 +119,6 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `y` | [Number](Number.md) | Canvas の y座標 |
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
 
 
 #### changePaintOpacity (enabled)
@@ -185,27 +148,9 @@
 #### contentsHeight () → {[Number](Number.md)}
 ウィンドウに含まれるコンテンツの高さを返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
-
 
 #### contentsWidth () → {[Number](Number.md)}
 ウィンドウに含まれるコンテンツの幅を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
 
 
 #### convertEscapeCharacters (text) → {[String](String.md)}
@@ -217,30 +162,12 @@
 | --- | --- | --- |
 | `text` | [String](String.md) | 変換元の文字列 |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
-
 
 #### createContents ()
 テキストなどを表示するコンテンツ領域を生成。
 
 #### crisisColor () → {[String](String.md)}
 危険色(CSS形式)を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
 
 
 #### deactivate ()
@@ -250,40 +177,13 @@
 #### deathColor () → {[String](String.md)}
 死亡色(CSS形式)を返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
-
 
 #### dimColor1 () → {[String](String.md)}
 Dimmer背景の色1(CSS形式)を返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
-
 
 #### dimColor2 () → {[String](String.md)}
 Dimmer背景の色2(CSS形式)を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
 
 
 #### drawActorCharacter (actor, x, y)
@@ -556,15 +456,6 @@ Dimmer背景の色2(CSS形式)を返す。
 | `x` | [Number](Number.md) | x座標(ピクセル) |
 | `y` | [Number](Number.md) | y座標(ピクセル) |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
-
 
 #### fittingHeight (numLines) → {[Number](Number.md)}
 指定された行数に必要な高さを返す。<br />
@@ -576,27 +467,9 @@ Dimmer背景の色2(CSS形式)を返す。
 | --- | --- | --- |
 | `numLines` | [Number](Number.md) | 行数 |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
-
 
 #### gaugeBackColor () → {[String](String.md)}
 ゲージの背景色(CSS形式)を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
 
 
 #### hide ()
@@ -616,44 +489,17 @@ Dimmer背景を非表示。
 | --- | --- | --- |
 | `actor` | [Game_Actor](Game_Actor.md) | 対象の[アクター] |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
-
 
 #### hpGaugeColor1 () → {[String](String.md)}
 [HP]ゲージの色1(CSS形式)を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
 
 
 #### hpGaugeColor2 () → {[String](String.md)}
 [HP]ゲージの色2(CSS形式)を返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
-
 
 #### initialize (x, y, width, height)
-オブジェクト生成時の初期化。
+Overrides: [Window.initialize ()](Window.md#initialize-)
 
 ##### Parameters:
 
@@ -664,47 +510,18 @@ Dimmer背景を非表示。
 | `width` | [Number](Number.md) | 描画領域の幅(ピクセル) |
 | `height` | [Number](Number.md) | 描画領域の高さ(ピクセル) |
 
-##### Overrides:
-[Window.initialize ()](Window.md#initialize-)
 
 
 #### isClosing () → {Boolean}
 ウィンドウが閉じている途中か。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
 
 #### isOpening () → {Boolean}
 ウィンドウが開いている途中か。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
 
 #### lineHeight () → {[Number](Number.md)}
 行の高さ(ピクセル)を返す。規定値: 36
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
 
 
 #### loadWindowskin ()
@@ -728,66 +545,21 @@ Dimmer背景を非表示。
 | --- | --- | --- |
 | `actor` | [Game_Actor](Game_Actor.md) | 対象の[アクター] |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
-
 
 #### mpCostColor () → {[String](String.md)}
 [消費MP]の色(CSS形式)を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
 
 
 #### mpGaugeColor1 () → {[String](String.md)}
 [MP]ゲージの色1(CSS形式)を返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
-
 
 #### mpGaugeColor2 () → {[String](String.md)}
 [MP]ゲージの色2(CSS形式)を返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
-
 
 #### normalColor () → {[String](String.md)}
 通常色(CSS形式)を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
 
 
 #### obtainEscapeCode (textState)
@@ -800,14 +572,6 @@ indexは取り出した文字の数だけ進む。
 | --- | --- | --- |
 | `textState` | [MV.TextState](MV.TextState.md) | 処理する状態つき文字列 |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
-
 
 #### obtainEscapeParam (textState) → {Number|String}
 textStateのindex以降に含まれる制御文字の添字を返す。<br />
@@ -819,16 +583,6 @@ indexは取り出した文字の数だけ進む。<br />
 | Name | Type | Description |
 | --- | --- | --- |
 | `textState` | [MV.TextState](MV.TextState.md) | 処理する状態つき文字列 |
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span> | 
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
 
 
 #### open ()
@@ -845,14 +599,6 @@ indexは取り出した文字の数だけ進む。<br />
 | --- | --- | --- |
 | `change` | [Number](Number.md) | 負の値: powerDownColor, 0:normalColor, 正の値:powerUpColor |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
-
 
 #### partyMemberName (partyMemberIndex) → {[String](String.md)}
 指定したパーティーメンバー番号に対応した名前を返す。
@@ -863,52 +609,17 @@ indexは取り出した文字の数だけ進む。<br />
 | --- | --- | --- |
 | `partyMemberIndex` | [Number](Number.md) | パーティーメンバー番号(1から開始される) |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
-
 
 #### pendingColor () → {[String](String.md)}
 未決定色(CSS形式)を返す。
-
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
 
 
 #### powerDownColor () → {[String](String.md)}
 パワーダウン色(CSS形式)を返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
-
 
 #### powerUpColor () → {[String](String.md)}
 パワーアップ色(CSS形式)を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
 
 
 #### processCharacter (textState)
@@ -1017,66 +728,21 @@ Dimmer背景を表示。
 #### standardBackOpacity () → {[Number](Number.md)}
 標準の背景の不透明度を返す。規定値:192
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
-
 
 #### standardFontFace () → {[String](String.md)}
 標準のフォント名を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
 
 
 #### standardFontSize () → {[Number](Number.md)}
 標準のフォントサイズを返す。規定値:28
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
-
 
 #### standardPadding () → {[Number](Number.md)}
 標準のパディング幅を返す。規定値:18
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
-
 
 #### systemColor () → {[String](String.md)}
 システム色(CSS形式)を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
 
 
 #### textColor (n) → {[String](String.md)}
@@ -1089,27 +755,9 @@ Dimmer背景を表示。
 | --- | --- | --- |
 | `n` | [Number](Number.md) | カラー番号(0 〜 31) |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
-
 
 #### textPadding () → {[Number](Number.md)}
 パディング幅を返す。規定値:6
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
 
 
 #### textWidth (text) → {[Number](Number.md)}
@@ -1121,15 +769,6 @@ Dimmer背景を表示。
 | --- | --- | --- |
 | `text` | [String](String.md) | 測定する文字列 |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
-
 
 #### tpColor (actor) → {[String](String.md)}
 指定した[アクター]の[TP]の色(CSS形式)を返す。
@@ -1140,72 +779,25 @@ Dimmer背景を表示。
 | --- | --- | --- |
 | `actor` | [Game_Actor](Game_Actor.md) | 対象の[アクター] |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
-
 
 #### tpCostColor () → {[String](String.md)}
 [消費TP]の色(CSS形式)を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
 
 
 #### tpGaugeColor1 () → {[String](String.md)}
 [TP]ゲージの色1(CSS形式)を返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
-
 
 #### tpGaugeColor2 () → {[String](String.md)}
 [TP]ゲージの色2(CSS形式)を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.html">String</a></span>
-    </dd>
-</dl>
 
 
 #### translucentOpacity () → {[Number](Number.md)}
 ウィンドウ背景の不透明度を返す。規定値:160
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
-
 
 #### update ()
-
-##### Overrides:
-[Window.update ()](Window#update-)
+Overrides: [Window.update ()](Window#update-)
 
 
 #### updateBackgroundDimmer ()

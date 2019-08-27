@@ -268,34 +268,19 @@
 コマンド位置を初期化する。
 
 #### initialize ()
-
-##### Overrides:
-[Window_Command.initialize (x, y)](Window_Command#initialize-x-y)
+Overrides: [Window_Command.initialize (x, y)](Window_Command.md#initialize-x-y)
 
 
 #### isContinueEnabled () → {Boolean}
 [コンティニュー]で続きからプレイできるか。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
 
 #### makeCommandList ()
-
-##### Overrides
-[Window_Command.makeCommandList ()](Window_Command#makecommandlist-)
+Overrides: [Window_Command.makeCommandList ()](Window_Command.md#makecommandlist-)
 
 
 #### processOk ()
-
-##### Overrides
-[Window_Selectable.processOk ()](Window_Selectable.md#processok-)
+Overrides: [Window_Selectable.processOk ()](Window_Selectable.md#processok-)
 
 
 #### selectLast ()
@@ -307,10 +292,7 @@
 
 
 #### windowWidth () → {[Number](Number.md)}
-固定のウィンドウ幅、240(ピクセル)を返す。
-
-##### Overrides
-[Window_Command.windowWidth ()](Window_Command#windowwidth---number)
+Overrides: [Window_Command.windowWidth ()](Window_Command.md#windowwidth---number)
 
 
  <br>
