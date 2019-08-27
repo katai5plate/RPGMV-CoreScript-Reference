@@ -31,27 +31,9 @@
 #### (static) _getTimeInMsWithoutMobileSafari () → {[Number](Number.md)}
 iOS Safari を除き、現在の時刻(ms)を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### (static) backgroundBitmap () → {[Bitmap](Bitmap.md)}
 生成された背景用に(ぼかした)スナップショットを返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Bitmap</a></span>
-	</dd>
-</dl>
 
 
 #### (static) catchException (e)
@@ -121,27 +103,9 @@ NW.js の初期化。
 #### (static) isCurrentSceneBusy () → {Boolean}
 シーンの実行中か。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### (static) isCurrentSceneStarted () → {Boolean}
 現在のシーンが開始されているか。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### (static) isNextScene (sceneClass) → {Boolean}
@@ -153,15 +117,6 @@ NW.js の初期化。
 | --- | --- | --- |
 | `sceneClass` | [Scene_Base](Scene_Base.md) | 比較するシーン |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### (static) isPreviousScene (sceneClass) → {Boolean}
 指定したシーンが前のシーンか。
@@ -172,27 +127,9 @@ NW.js の初期化。
 | --- | --- | --- |
 | `sceneClass` | [Scene_Base](Scene_Base.md) | 比較するシーン  |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### (static) isSceneChanging () → {Boolean}
  シーンの変更中か。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### (static) onError (e)
@@ -233,15 +170,6 @@ NW.js の初期化。
 
 #### (static) preferableRendererType () → {[String](String.md)}
 環境に適したレンダ方式(canvas, webgl, auto のいずれか)を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>String</span>
-	</dd>
-</dl>
 
 
 #### (static) prepareNextScene ()
@@ -287,27 +215,9 @@ NW.js の初期化。
 #### (static) shouldUseCanvasRenderer () → {Boolean}
 canvas レンダ方式を使っているか。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### (static) snap () → {[Bitmap](Bitmap.md)}
 スナップショットを返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Bitmap</a></span>
-	</dd>
-</dl>
 
 
 #### (static) snapForBackground ()

@@ -11,21 +11,14 @@
 | `_errorUrls` | [Array](Array.md).<[String](String.md)> | [static] |
 | `_parameters` | Object | [static] {[key: string]: {[key: string]: string}} |
 
-<dl>
-</dl>
 
 ### Methods
 
 #### (static) checkErrors ()
-
-
  エラーを検査。
-<dl>
-</dl>
+
 
 #### (static) loadScript (name)
-
-
  外部スクリプトファイルを読み込む。
 
 ##### Parameters:
@@ -34,12 +27,8 @@
 | --- | --- | --- |
 | `name` | [String](String.md) |  スクリプトファイル名 |
 
-<dl>
-</dl>
 
 #### (static) onError (e)
-
-
  エラーハンドラ。
 
 ##### Parameters:
@@ -48,12 +37,8 @@
 | --- | --- | --- |
 | `e` | Event |  |
 
-<dl>
-</dl>
 
 #### (static) parameters (name) → {Object}
-
-
  指定プラグイン名に対応するパラメータをオブジェクトで返す。 本体ヘルプの「プラグイン仕様」の項目も参照のこと。
 
 ##### Parameters:
@@ -62,23 +47,8 @@
 | --- | --- | --- |
 | `name` | [String](String.md) |  プラグイン名(英字の大小を区別しない) |
 
-<dl>
-</dl>
-
-##### Returns:
-
-
- パラメータのキーと値の組み合わせ
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
 
 #### (static) setParameters (name, parameters)
-
-
  パラメータを設定。
 
 ##### Parameters:
@@ -88,12 +58,8 @@
 | `name` | [String](String.md) |  プラグイン名(英字の大小を区別しない) |
 | `parameters` | Object |  パラメータのキーと値の組み合わせ |
 
-<dl>
-</dl>
 
 #### (static) setup (plugins)
-
-
  プラグインの初期化。
 
 ##### Parameters:
@@ -102,8 +68,6 @@
 | --- | --- | --- |
 | `plugins` | [Array](Array.md).<[MV.PluginSettings](MV.PluginSettings.md)> |  |
 
-<dl>
-</dl>
 
 
  <br>
