@@ -10,694 +10,197 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `menuCalling` | Boolean |  |
-| `_waitCount` | [Number](Number.md) |  |
-| `_encounterEffectDuration` | [Number](Number.md) |  |
-| `_mapLoaded` | Boolean |  |
-| `_touchCount` | [Number](Number.md) |  |
-| `_transfer` | Boolean |  |
-| `_spriteset` | [Spriteset_Map](Spriteset_Map.md) |  |
-| `_mapNameWindow` | [Window_MapName](Window_MapName.md) |  |
-| `_scrollTextWindow` | [Window_ScrollText](Window_ScrollText.md) |  |
-| `_messageWindow` | [Window_Message](Window_Message.md) |  |
+| `menuCalling` | Boolean | メニューが呼ばれているか |
+| `_waitCount` | [Number](Number.md) | 待ちカウント |
+| `_encounterEffectDuration` | [Number](Number.md) | エンカウント効果時間 |
+| `_mapLoaded` | Boolean | マップが読み込まれているか |
+| `_touchCount` | [Number](Number.md) | タッチ時間 |
+| `_transfer` | Boolean | 遷移中か |
+| `_spriteset` | [Spriteset_Map](Spriteset_Map.md) | スプライトセット |
+| `_mapNameWindow` | [Window_MapName](Window_MapName.md) | マップ名表示ウィンドウ |
+| `_scrollTextWindow` | [Window_ScrollText](Window_ScrollText.md) | スクロール表示ウィンドウ |
+| `_messageWindow` | [Window_Message](Window_Message.md) | メッセージウィンドウ |
 
-<dl>
-</dl>
 
 ### Extends
 
 * [Scene_Base](Scene_Base.md)
 
+### Inherited From
+
+#### [PIXI.DisplayObject](PIXI.DisplayObject.md)
+
+* [(static) mixin (source)](PIXI.DisplayObject.md#static-mixin-source)
+* [\_recursivePostUpdateTransform ()](PIXI.DisplayObject.md#_recursivepostupdatetransform-)
+* [displayObjectUpdateTransform ()](PIXI.DisplayObject.md#displayobjectupdatetransform-)
+* [getBounds (skipUpdate, rect)](PIXI.DisplayObject.md#getbounds-skipupdate-rect--pixirectangle)
+* [getGlobalPosition (point, skipUpdate)](PIXI.DisplayObject.md#getglobalposition-point-skipupdate--pixipoint)
+* [setParent (container)](PIXI.DisplayObject.md#setparent-container--pixicontainer)
+* [setTransform (x, y, scaleX, scaleY, rotation, skewX, skewY, pivotX, pivotY)](PIXI.DisplayObject.md#settransform-x-y-scalex-scaley-rotation-skewx-skewy-pivotx-pivoty--pixidisplayobject)
+* [toGlobal (position, point, skipUpdate)](PIXI.DisplayObject.md#toglobal-position-point-skipupdate--pixipoint)
+* [toLocal (position, from, point, skipUpdate)](PIXI.DisplayObject.md#tolocal-position-from-point-skipupdate--pixipoint)
+
+#### [PIXI.Container](PIXI.Container.md)
+
+* [addChild (child) ](PIXI.Container.md#addchild-child--pixidisplayobject)
+* [addChildAt (child, index)](PIXI.Container.md#addchildat-child-index--pixidisplayobject)
+* [calculateBounds ()](PIXI.Container.md#calculatebounds-)
+* [destroy ()](PIXI.Container.md#destroy-)
+* [getChildAt (index)](PIXI.Container.md#getchildat-index--pixidisplayobject)
+* [getChildByName (name)](PIXI.Container.md#getchildbyname-name--pixidisplayobject)
+* [getChildIndex (child)](PIXI.Container.md#getchildindex-child--pixidisplayobject)
+* [onChildrenChange ()](PIXI.Container.md#onchildrenchange-)
+* [removeChild (child)](PIXI.Container.md#removechild-child--pixidisplayobject)
+* [removeChildAt (index)](PIXI.Container.md#removechildat-index--pixidisplayobject)
+* [removeChildren (beginIndex, endIndex)](PIXI.Container.md#removechildren-beginindex-endindex--arraypixidisplayobject)
+* [render (renderer)](PIXI.Container.md#render-renderer)
+* [renderAdvanced (renderer)](PIXI.Container.md#renderadvanced-renderer)
+* [renderCanvas (renderer)](PIXI.Container.md#rendercanvas-renderer)
+* [setChildIndex (child, index)](PIXI.Container.md#setchildindex-child-index)
+* [sortChildren ()](PIXI.Container.md#sortchildren-)
+* [swapChildren (child, child2)](PIXI.Container.md#swapchildren-child-child2)
+* [updateTransform ()](PIXI.Container.md#updatetransform-)
+
+#### [Scene_Base](Scene_Base.md)
+
+* [addWindow (Window)](Scene_Base.md#addwindow-window)
+* [attachReservation ()](Scene_Base.md#attachreservation-)
+* [checkGameover ()](Scene_Base.md#checkgameover-)
+* [createFadeSprite ()](Scene_Base.md#createfadesprite-)
+* [createWindowLayer ()](Scene_Base.md#createwindowlayer-)
+* [detachReservation ()](Scene_Base.md#detachreservation-)
+* [fadeOutAll ()](Scene_Base.md#fadeoutall-)
+* [fadeSpeed ()](Scene_Base.md#fadespeed---number)
+* [isActive () ](Scene_Base.md#isactive---boolean)
+* [isBusy ()](Scene_Base.md#isbusy---boolean)
+* [isReady ()](Scene_Base.md#isready---boolean)
+* [popScene ()](Scene_Base.md#popscene-)
+* [slowFadeSpeed ()](Scene_Base.md#slowfadespeed---number)
+* [start ()](Scene_Base.md#start-)
+* [startFadeIn (duration opt, white opt)](Scene_Base.md#startfadein-duration-opt-white-opt)
+* [startFadeOut (duration opt, white opt)](Scene_Base.md#startfadeout-duration-opt-white-opt)
+* [stop ()](Scene_Base.md#stop-)
+* [terminate ()](Scene_Base.md#terminate-)
+* [updateChildren ()](Scene_Base.md#updatechildren-)
+* [updateFade ()](Scene_Base.md#updatefade-)
+
+
 ### Methods
 
-#### addChild (child) → {Object}
-
-[super] 子オブジェクトを追加。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `child` | Object |  追加するオブジェクト |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Stage#addChild</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
- 追加されたオブジェクト
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
-
-#### addChildAt (child, index) → {Object}
-
-[super] 指定位置に子オブジェクトを追加。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.md) |  追加位置 |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Stage#addChildAt</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
- 追加されたオブジェクト
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
-
-#### addWindow (Window)
-
- ウィンドウレイヤーにウィンドウを追加。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `Window` |  |  追加するウィンドウ |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#addWindow</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### attachReservation ()
-
- キューに予約を追加。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#attachReservation</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
 #### callMenu ()
+ メニューの呼び出し。
 
- メニューの呼び出し。
-<dl>
-</dl>
-
-#### checkGameover ()
-
- ゲームオーバー状態か検査。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#checkGameover</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### create ()
+Overrides: [Scene_Base.create ()](Scene_Base.md#create-)
 
- シーンの生成。
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#create</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### createAllWindows ()
+ ウィンドウを生成。
 
- ウィンドウを生成。
-<dl>
-</dl>
 
 #### createDisplayObjects ()
+ シーンに必要な全表示オブジェクトを生成。
 
- シーンに必要な全表示オブジェクトを生成。
-<dl>
-</dl>
-
-#### createFadeSprite ()
-
- フェード用のスプライトを生成。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#createFadeSprite</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### createMapNameWindow ()
+ マップ名表示ウィンドウ生成。
 
- マップ名表示ウィンドウ生成。
-<dl>
-</dl>
 
 #### createMessageWindow ()
+ メッセージウィンドウ生成。
 
- メッセージウィンドウ生成。
-<dl>
-</dl>
 
 #### createScrollTextWindow ()
+ スクロールテキストウィンドウの生成。
 
- スクロールテキストウィンドウの生成。
-<dl>
-</dl>
 
 #### createSpriteset ()
+ マップスプライト([Spriteset_Map](Spriteset_Map.md))を生成。
 
- マップスプライト([Spriteset_Map](Spriteset_Map.md))を生成。
-<dl>
-</dl>
-
-#### createWindowLayer ()
-
- ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#createWindowLayer</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### detachReservation ()
-
- キューから予約を削除。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#detachReservation</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### encounterEffectSpeed () → {[Number](Number.md)}
+ エンカウント効果のスピードを返す。
 
- エンカウント効果のスピードを返す。
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### fadeInForTransfer ()
+ 遷移時のフェードイン。
 
- 遷移時のフェードイン。
-<dl>
-</dl>
-
-#### fadeOutAll ()
-
- 全ての映像と音声を、遅い速度でフェードアウト。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#fadeOutAll</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### fadeOutForTransfer ()
-
- 遷移時のフェードアウト。
-<dl>
-</dl>
-
-#### fadeSpeed () → {[Number](Number.md)}
-
- フェード速度を返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#fadeSpeed</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+ 遷移時のフェードアウト。
+ 
 
 #### initialize ()
+Overrides: [Scene_Base.initialize ()](Scene_Base.md#initialize-)
 
- オブジェクト生成時の初期化。
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#initialize</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### isActive () → {Boolean}
-
- シーンがアクティブか。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#isActive</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isBusy () → {Boolean}
+Overrides: [Scene_Base.isBusy ()](Scene_Base.md#isbusy---boolean)
 
- シーン動作中か。
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#isBusy</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isDebugCalled () → {Boolean}
+ デバッグウィンドウが呼ばれているか。
 
- デバッグウィンドウが呼ばれているか。
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isFastForward () → {Boolean}
+ 早送りモードか。
 
- 早送りモードか。
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isMapTouchOk () → {Boolean}
+ タッチ移動が可能か。
 
- タッチ移動が可能か。
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isMenuCalled () → {Boolean}
+ メニューが呼ばれているか。
 
- メニューが呼ばれているか。
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isMenuEnabled () → {Boolean}
+ メニュー使用可か。
 
- メニュー使用可か。
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isReady () → {Boolean}
+Overrides: [Scene_Base.isReady ()](Scene_Base.md#isready---boolean)
 
- データのロードなどの準備完了か。
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#isReady</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isSceneChangeOk () → {Boolean}
+ シーンの変更可能か。
 
- シーンの変更可能か。
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### launchBattle ()
+ 戦闘シーンの開始。
 
- 戦闘シーンの開始。
-<dl>
-</dl>
 
 #### needsFadeIn () → {Boolean}
+ フェードインするか。
 
- フェードインするか。
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### needsSlowFadeOut () → {Boolean}
+ フェードアウトするか。
 
- フェードアウトするか。
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### onMapLoaded ()
+ シーンの読み込みが完了した時に呼ばれるハンドラ。
 
- シーンの読み込みが完了した時に呼ばれるハンドラ。
-<dl>
-</dl>
-
-#### popScene ()
-
- シーンを引き出す(pop)。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#popScene</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### processMapTouch ()
+ タッチをキャラクタの移動に変換。
 
- タッチをキャラクタの移動に変換。
-<dl>
-</dl>
-
-#### removeChild (child) → {Object}
-
-[super] 子オブジェクトを取り除く。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `child` | Object |  取り除くオブジェクト |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Stage#removeChild</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
- 取り除かれたオブジェクト
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
-
-#### removeChildAt (index) → {Object}
-
-[super] 指定位置にある子オブジェクトを取り除く。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `index` | [Number](Number.md) |  取り除く位置 |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Stage#removeChildAt</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
- 取り除かれたオブジェクト
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
-
-#### slowFadeSpeed () → {[Number](Number.md)}
-
- 遅いフェード速度を返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#slowFadeSpeed</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-Return the fade speed
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### snapForBattleBackground ()
+ 戦闘背景が指定されていない場合の、マップのスナップショット表示。
 
- 戦闘背景が指定されていない場合の、マップのスナップショット表示。
-<dl>
-</dl>
 
 #### start ()
+Overrides: [Scene_Base.start ()](Scene_Base.md#start-)
 
- シーンの開始。
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#start</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### startEncounterEffect ()
+ エンカウント時の効果の表示開始。
 
- エンカウント時の効果の表示開始。
-<dl>
-</dl>
-
-#### startFadeIn (duration opt, white opt)
-
- フェードインの要求。
-
-##### Parameters:
-
-| Name | Type | Attributes | Default | Description |
-| --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.md) | <optional> | 30 |  フェードインにかける時間 |
-| `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#startFadeIn</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### startFadeOut (duration opt, white opt)
-
- フェードアウトの要求。
-
-##### Parameters:
-
-| Name | Type | Attributes | Default | Description |
-| --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.md) | <optional> | 30 |  フェードアウトにかける時間 |
-| `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#startFadeOut</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### startFlashForEncounter (duration)
-
- エンカウント時のフラッシュ開始。
+ エンカウント時のフラッシュ開始。
 
 ##### Parameters:
 
@@ -705,153 +208,58 @@
 | --- | --- | --- |
 | `duration` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### stop ()
+Overrides: [Scene_Base.stop ()](Scene_Base.md#stop-)
 
- シーンを停止し次のシーンの準備をする。
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#stop</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### stopAudioOnBattleStart ()
+ 戦闘開始前の音声の停止。
 
- 戦闘開始前の音声の停止。
-<dl>
-</dl>
 
 #### terminate ()
+Overrides: [Scene_Base.terminate ()](Scene_Base.md#terminate-)
 
- シーンの中断。
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#terminate</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### update ()
+Overrides: [Scene_Base.update ()](Scene_Base.md#update-)
 
- フレーム毎のアップデート。
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#update</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### updateCallDebug ()
+ デバッグウィンドウを呼ぶアップデート。
 
- デバッグウィンドウを呼ぶアップデート。
-<dl>
-</dl>
 
 #### updateCallMenu ()
+ メニュー呼び出しのアップデート。
 
- メニュー呼び出しのアップデート。
-<dl>
-</dl>
-
-#### updateChildren ()
-
- 子オブジェクトのアップデート。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#updateChildren</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### updateDestination ()
+ タッチ位置表示をアップデート。
 
- タッチ位置表示をアップデート。
-<dl>
-</dl>
 
 #### updateEncounter ()
+ エンカウントをアップデート。
 
- エンカウントをアップデート。
-<dl>
-</dl>
 
 #### updateEncounterEffect ()
+ エンカウント時の効果のアップデート。
 
- エンカウント時の効果のアップデート。
-<dl>
-</dl>
-
-#### updateFade ()
-
- フェードのアップデート。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#updateFade</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### updateMain ()
+[$gameMap](global.html#$gameMap), [$gamePlayer](global.html#$gamePlayer), [$gameTimer](global.html#$gameTimer), [$gameScreen](global.html#$gameScreen) をアップデート。
 
-[$gameMap](global.html#$gameMap), [$gamePlayer](global.html#$gamePlayer), [$gameTimer](global.html#$gameTimer), [$gameScreen](global.html#$gameScreen) をアップデート。
-<dl>
-</dl>
 
 #### updateMainMultiply ()
+ メインをアップデート。早送りモードだと2度アップデート。
 
- メインをアップデート。早送りモードだと2度アップデート。
-<dl>
-</dl>
 
 #### updateScene ()
+ シーンのアップデート。
 
- シーンのアップデート。
-<dl>
-</dl>
 
 #### updateTransferPlayer ()
+ プレイヤーのマップ移動のアップデート。
 
- プレイヤーのマップ移動のアップデート。
-<dl>
-</dl>
 
 #### updateWaitCount () → {Boolean}
-
- 待ちカウントをアップデート。
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
- <br>
-
-  Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
+ 待ちカウントをアップデート。
