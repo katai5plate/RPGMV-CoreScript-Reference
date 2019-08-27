@@ -183,7 +183,7 @@
 | `numLines` | [Number](Number.md) | 行数 |
 
 ##### Overrides:
-[Window_Base.initialize ()](Window_Base.md#initialize-x-y-width-height)
+[Window_Base.initialize (x, y, width, height)](Window_Base.md#initialize-x-y-width-height)
 
 
 #### refresh (item)
