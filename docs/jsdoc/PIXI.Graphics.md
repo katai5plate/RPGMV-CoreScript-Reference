@@ -508,7 +508,7 @@ options に Object として指定する内容
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `scaleMode` | [Number](Number.md) | |
+| `scaleMode` | [Number](Number.md) | [PIXI.SCALE_MODES](http://pixijs.download/release/docs/PIXI.html#.SCALE_MODES) |
 | `resolution` | [Number](Number.md) |  |
 
 ##### Returns:
