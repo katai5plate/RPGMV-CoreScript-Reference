@@ -14,10 +14,12 @@ JavaScript の配列にいくつかRPGツクールMV独自のメソッドが追�
 
 #### clone () → {[Array](Array.md)}
 配列を(シャロー)コピーして返す。
+多分、標準の slice() を使った方がいい。
 
 
 #### contains (element) → {Boolean}
 指定した値が配列に含まれるか。
+多分、標準の includes()を使った方がいい。
 
 ##### Parameters:
 
