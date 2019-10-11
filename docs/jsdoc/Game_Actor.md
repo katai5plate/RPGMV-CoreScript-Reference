@@ -6,6 +6,11 @@
 
 [アクター]を定義したクラス。
 
+[Game_Battler](Game_Battler.md)のサブクラス。
+
+グローバル変数である$gameActors(Game_Actors.md)、$gameParty(Game_Party.md)から参照されるアクターの実体。
+アクターのパラメータの取得、画像の設定、バトルに関わる処理とサイドビュー時の画像処理に関わる。
+
 ##### Properties:
 
 | Name | Type | Description |
@@ -92,7 +97,8 @@
 
 #### actor () → {[RPG.Actor](RPG.Actor.md)}
 
-Returns the database information of the actor.
+
+Returns the database information of the actor.
 <dl>
 </dl>
 
@@ -107,7 +113,8 @@
 
 #### actorId () → {[Number](Number.md)}
 
-Returns the id of the actor.
+
+Returns the id of the actor.
 <dl>
 </dl>
 
@@ -122,7 +129,8 @@
 
 #### addBuff (paramId, turns)
 
-Adds a buff to the battler for the specified number of turns on the selected parameter.
+
+Adds a buff to the battler for the specified number of turns on the selected parameter.
 
 ##### Parameters:
 
@@ -144,7 +152,8 @@
 
 #### addDebuff (paramId, turns)
 
-Adds a debuff to the battler for the specified number of turns on the selected parameter.
+
+Adds a debuff to the battler for the specified number of turns on the selected parameter.
 
 ##### Parameters:
 
@@ -210,7 +219,8 @@
 
 #### addNewState (stateId)
 
-Adds a new state given a state id to the battler.
+
+Adds a new state given a state id to the battler.
 
 ##### Parameters:
 
@@ -251,7 +261,8 @@
 
 #### addState (stateId)
 
-Adds a state to the battler given the specified state id.
+
+Adds a state to the battler given the specified state id.
 
 ##### Parameters:
 
@@ -272,7 +283,8 @@
 
 #### allIcons () → {[Array](Array.md).<[Number](Number.md)>}
 
-Returns all of the icons attached to the battler.
+
+Returns all of the icons attached to the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -295,7 +307,8 @@
 
 #### allTraits () → {[Array](Array.md).<[RPG.Trait](RPG.Trait.md)>}
 
-Returns all the traits of the battler.
+
+Returns all the traits of the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -318,7 +331,8 @@
 
 #### appear ()
 
-Shows the game battler.
+
+Shows the game battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -332,7 +346,8 @@
 
 #### armors () → {[Array](Array.md).<[RPG.Armor](RPG.Armor.md)>}
 
-Returns the armor of the actor.
+
+Returns the armor of the actor.
 <dl>
 </dl>
 
@@ -347,7 +362,8 @@
 
 #### attackAnimationId1 () → {[Number](Number.md)}
 
-Returns the first attack animation id.
+
+Returns the first attack animation id.
 <dl>
 </dl>
 
@@ -362,7 +378,8 @@
 
 #### attackAnimationId2 () → {[Number](Number.md)}
 
-Returns the second attack animation id.
+
+Returns the second attack animation id.
 <dl>
 </dl>
 
@@ -377,7 +394,8 @@
 
 #### attackElements () → {[Array](Array.md).<[Number](Number.md)>}
 
-Returns the attack element ids.
+
+Returns the attack element ids.
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -400,7 +418,8 @@
 
 #### attackSkillId () → {[Number](Number.md)}
 
-Returns the attack skill id in the database.
+
+Returns the attack skill id in the database.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -423,7 +442,8 @@
 
 #### attackSpeed () → {[Number](Number.md)}
 
-Returns the attack speed of the battler.
+
+Returns the attack speed of the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -446,7 +466,8 @@
 
 #### attackStates () → {[Array](Array.md).<[Number](Number.md)>}
 
-Returns the attack states of the battler as a list of numbers.
+
+Returns the attack states of the battler as a list of numbers.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -488,7 +509,8 @@
 
 #### attackTimesAdd () → {[Number](Number.md)}
 
-Returns the number of attacks available to the battler.
+
+Returns the number of attacks available to the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -511,7 +533,8 @@
 
 #### bareHandsAnimationId () → {[Number](Number.md)}
 
-Returns the animation id for a barehanded attack.
+
+Returns the animation id for a barehanded attack.
 <dl>
 </dl>
 
@@ -526,7 +549,8 @@
 
 #### bareHandsElementId () → {[Number](Number.md)}
 
-Returns the element id of barehanded attacks.
+
+Returns the element id of barehanded attacks.
 <dl>
 </dl>
 
@@ -541,7 +565,8 @@
 
 #### basicFloorDamage () → {[Number](Number.md)}
 
-Returns the basic floor damage.
+
+Returns the basic floor damage.
 <dl>
 </dl>
 
@@ -570,7 +595,8 @@
 
 #### benchMembersExpRate () → {[Number](Number.md)}
 
-Returns the exp rate of actors not in battle; this is set in the database.
+
+Returns the exp rate of actors not in battle; this is set in the database.
 <dl>
 </dl>
 
@@ -585,7 +611,8 @@
 
 #### bestEquipItem (slotId)
 
-Equips the best item in the given slot.
+
+Equips the best item in the given slot.
 
 ##### Parameters:
 
@@ -598,7 +625,8 @@
 
 #### buff (paramId) → {[Number](Number.md)}
 
-Buffs the current parameter id.
+
+Buffs the current parameter id.
 
 ##### Parameters:
 
@@ -657,7 +685,8 @@
 
 #### buffIcons () → {[Array](Array.md).<[Number](Number.md)>}
 
-Returns the array of buff icons attached to the battler; this is determined by the active buffs on the battler.
+
+Returns the array of buff icons attached to the battler; this is determined by the active buffs on the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -680,7 +709,8 @@
 
 #### buffLength () → {[Number](Number.md)}
 
-Returns the length of the buff.
+
+Returns the length of the buff.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -703,7 +733,8 @@
 
 #### calcEquipItemPerformance (item) → {[Number](Number.md)}
 
-Calculates the equip item performance and returns the sum/difference.
+
+Calculates the equip item performance and returns the sum/difference.
 
 ##### Parameters:
 
@@ -725,7 +756,8 @@
 
 #### canAttack () → {Boolean}
 
-Returns true if the battler can attack.
+
+Returns true if the battler can attack.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -748,7 +780,8 @@
 
 #### canEquip (item) → {Boolean}
 
-Returns true if the battler can equip the item.
+
+Returns true if the battler can equip the item.
 
 ##### Parameters:
 
@@ -778,7 +811,8 @@
 
 #### canEquipArmor (item) → {Boolean}
 
-Returns true if the battler can equip armor.
+
+Returns true if the battler can equip armor.
 
 ##### Parameters:
 
@@ -808,7 +842,8 @@
 
 #### canEquipWeapon (item) → {Boolean}
 
-Returns true if the battler can equip a weapon.
+
+Returns true if the battler can equip a weapon.
 
 ##### Parameters:
 
@@ -838,7 +873,8 @@
 
 #### canGuard () → {Boolean}
 
-Returns true if the battler can guard.
+
+Returns true if the battler can guard.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -861,7 +897,8 @@
 
 #### canInput () → {Boolean}
 
-Returns true if the battler can input actions.
+
+Returns true if the battler can input actions.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -906,7 +943,8 @@
 
 #### canPaySkillCost (skill) → {Boolean}
 
-Returns true if the battler can pay the cost of the specified skill.
+
+Returns true if the battler can pay the cost of the specified skill.
 
 ##### Parameters:
 
@@ -936,7 +974,8 @@
 
 #### canUse (item) → {Boolean}
 
-Returns true if the battler can use the item.
+
+Returns true if the battler can use the item.
 
 ##### Parameters:
 
@@ -966,7 +1005,8 @@
 
 #### changeClass (classId, keepExp)
 
-Changes the actor class; if keep is true, the actor will retain their experience points.
+
+Changes the actor class; if keep is true, the actor will retain their experience points.
 
 ##### Parameters:
 
@@ -980,7 +1020,8 @@
 
 #### changeEquip (slotId, item)
 
-Changes the actor equipment in the given slot with the given equip item. Places the original item into the party inventory.
+
+Changes the actor equipment in the given slot with the given equip item. Places the original item into the party inventory.
 
 ##### Parameters:
 
@@ -994,7 +1035,8 @@
 
 #### changeEquipById (etypeId, itemId)
 
-Changes the actor equip with an item based on the equip id.
+
+Changes the actor equip with an item based on the equip id.
 
 ##### Parameters:
 
@@ -1008,7 +1050,8 @@
 
 #### changeExp (exp, show)
 
-Change the actor experience points; leveling up the actor if it's above the required exp for the current level. If show is set to true, actor level up with be displayed.
+
+Change the actor experience points; leveling up the actor if it's above the required exp for the current level. If show is set to true, actor level up with be displayed.
 
 ##### Parameters:
 
@@ -1022,7 +1065,8 @@
 
 #### changeLevel (level, show)
 
-Changes the actor level; if show is set to true, the actor level will be displayed.
+
+Changes the actor level; if show is set to true, the actor level will be displayed.
 
 ##### Parameters:
 
@@ -1083,13 +1127,15 @@
 
 #### checkFloorEffect ()
 
-Checks the effect of the floor on the actor.
+
+Checks the effect of the floor on the actor.
 <dl>
 </dl>
 
 #### clearActions ()
 
-Clears all of the actor's animations.
+
+Clears all of the actor's animations.
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -1103,7 +1149,8 @@
 
 #### clearAnimations ()
 
-Clears animations from the battler.
+
+Clears animations from the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1117,7 +1164,8 @@
 
 #### clearBuffs ()
 
-Clears buffs from the battler.
+
+Clears buffs from the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1131,7 +1179,8 @@
 
 #### clearDamagePopup ()
 
-Clear damage pop up from the battler.
+
+Clear damage pop up from the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1145,7 +1194,8 @@
 
 #### clearEffect ()
 
-Clears effect from the battler.
+
+Clears effect from the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1159,13 +1209,15 @@
 
 #### clearEquipments ()
 
-Clears the actor's equipment; items are returned to the inventory.
+
+Clears the actor's equipment; items are returned to the inventory.
 <dl>
 </dl>
 
 #### clearMotion ()
 
-Clears motion from the battler.
+
+Clears motion from the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1192,7 +1244,8 @@
 
 #### clearResult ()
 
-Clears the battler action result.
+
+Clears the battler action result.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1206,7 +1259,8 @@
 
 #### clearStates ()
 
-Clears all states from the actor.
+
+Clears all states from the actor.
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -1220,7 +1274,8 @@
 
 #### clearTp ()
 
-Clears the battler's tp.
+
+Clears the battler's tp.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1234,7 +1289,8 @@
 
 #### clearWeaponAnimation ()
 
-Clear weapon animation from the battler.
+
+Clear weapon animation from the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1248,7 +1304,8 @@
 
 #### collapseType () → {[Number](Number.md)}
 
-Returns the collapse type of the battler.
+
+Returns the collapse type of the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1271,7 +1328,8 @@
 
 #### confusionLevel () → {[Number](Number.md)}
 
-Returns the confusion level of the battler.
+
+Returns the confusion level of the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1294,7 +1352,8 @@
 
 #### consumeItem (item)
 
-Has the battler consume the given item.
+
+Has the battler consume the given item.
 
 ##### Parameters:
 
@@ -1315,7 +1374,8 @@
 
 #### currentAction () → {[Game_Action](Game_Action.md)}
 
-Returns the current action of the battler.
+
+Returns the current action of the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1338,7 +1398,8 @@
 
 #### currentClass () → {[RPG.Class](RPG.Class.md)}
 
-Returns the current class of the actor from the database.
+
+Returns the current class of the actor from the database.
 <dl>
 </dl>
 
@@ -1353,7 +1414,8 @@
 
 #### currentExp () → {[Number](Number.md)}
 
-Returns the current experience points of the actor.
+
+Returns the current experience points of the actor.
 <dl>
 </dl>
 
@@ -1368,7 +1430,8 @@
 
 #### currentLevelExp () → {[Number](Number.md)}
 
-Returns the current level's experience for the actor.
+
+Returns the current level's experience for the actor.
 <dl>
 </dl>
 
@@ -1383,7 +1446,8 @@
 
 #### deathStateId () → {[Number](Number.md)}
 
-Returns the death state id.
+
+Returns the death state id.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1466,7 +1530,8 @@
 
 #### die ()
 
-Kills the battler.
+
+Kills the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1480,7 +1545,8 @@
 
 #### discardEquip (item)
 
-Discards the given equip item from the actor; item is not return to the party inventory.
+
+Discards the given equip item from the actor; item is not return to the party inventory.
 
 ##### Parameters:
 
@@ -1493,7 +1559,8 @@
 
 #### displayLevelUp (newSkills)
 
-Displays the actor level up in a message window, with the learned skills.
+
+Displays the actor level up in a message window, with the learned skills.
 
 ##### Parameters:
 
@@ -1506,7 +1573,8 @@
 
 #### effectType () → {[String](String.md)}
 
-Returns the effect type of the battler.
+
+Returns the effect type of the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1557,7 +1625,8 @@
 
 #### equips () → {[Array](Array.md).<[RPG.EquipItem](RPG.EquipItem.md)>}
 
-Returns the equipment of the actor.
+
+Returns the equipment of the actor.
 <dl>
 </dl>
 
@@ -1572,7 +1641,8 @@
 
 #### equipSlots () → {[Array](Array.md).<[Number](Number.md)>}
 
-Returns the equip slots of the actor.
+
+Returns the equip slots of the actor.
 <dl>
 </dl>
 
@@ -1606,7 +1676,8 @@
 
 #### eraseState (stateId)
 
-Erase the specified state from the actor.
+
+Erase the specified state from the actor.
 
 ##### Parameters:
 
@@ -1627,7 +1698,8 @@
 
 #### escape ()
 
-Has the battler escape from battle; plays a sound on escaping.
+
+Has the battler escape from battle; plays a sound on escaping.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1641,13 +1713,15 @@
 
 #### executeFloorDamage ()
 
-Executes the floor dmaage on the actor.
+
+Executes the floor dmaage on the actor.
 <dl>
 </dl>
 
 #### expForLevel (level) → {[Number](Number.md)}
 
-Returns the exp required to level.
+
+Returns the exp required to level.
 
 ##### Parameters:
 
@@ -1669,7 +1743,8 @@
 
 #### faceIndex () → {[Number](Number.md)}
 
-Returns the face index of the actor.
+
+Returns the face index of the actor.
 <dl>
 </dl>
 
@@ -1684,7 +1759,8 @@
 
 #### faceName () → {[String](String.md)}
 
-Returns the face name of the actor; this is the image of faces for the actor.
+
+Returns the face name of the actor; this is the image of faces for the actor.
 <dl>
 </dl>
 
@@ -1699,7 +1775,8 @@
 
 #### finalExpRate () → {[Number](Number.md)}
 
-Returns the final exp rate of the actor based on if the actor is a reserved party member or an active battle member.
+
+Returns the final exp rate of the actor based on if the actor is a reserved party member or an active battle member.
 <dl>
 </dl>
 
@@ -1754,7 +1831,8 @@
 
 #### forceChangeEquip (slotId, item)
 
-Forces the actor to change equipment in the given slot with the given equip item without placing the item back into the party inventory.
+
+Forces the actor to change equipment in the given slot with the given equip item without placing the item back into the party inventory.
 
 ##### Parameters:
 
@@ -1768,7 +1846,8 @@
 
 #### forgetSkill (skillId)
 
-Actor forgets the specified skill given the skill id from the actor's usable skills.
+
+Actor forgets the specified skill given the skill id from the actor's usable skills.
 
 ##### Parameters:
 
@@ -1795,7 +1874,8 @@
 
 #### gainExp (exp)
 
-Gives the specified exp to the actor.
+
+Gives the specified exp to the actor.
 
 ##### Parameters:
 
@@ -1808,7 +1888,8 @@
 
 #### gainHp (value)
 
-Adds the specified amount of hp to the battler.
+
+Adds the specified amount of hp to the battler.
 
 ##### Parameters:
 
@@ -1829,7 +1910,8 @@
 
 #### gainMp (value)
 
-Adds the specified amount of mp to the battler.
+
+Adds the specified amount of mp to the battler.
 
 ##### Parameters:
 
@@ -1850,7 +1932,8 @@
 
 #### gainSilentTp (value)
 
-Adds a specified amount of tp to the battler silently.
+
+Adds a specified amount of tp to the battler silently.
 
 ##### Parameters:
 
@@ -1871,7 +1954,8 @@
 
 #### gainTp (value)
 
-Adds the specified amount of tp to the battler.
+
+Adds the specified amount of tp to the battler.
 
 ##### Parameters:
 
@@ -1892,7 +1976,8 @@
 
 #### guardSkillId () → {[Number](Number.md)}
 
-Returns the guard skill id in the database.
+
+Returns the guard skill id in the database.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -1915,7 +2000,8 @@
 
 #### hasArmor (armor) → {Boolean}
 
-Returns true if the actor has armor.
+
+Returns true if the actor has armor.
 
 ##### Parameters:
 
@@ -1937,7 +2023,8 @@
 
 #### hasNoWeapons () → {Boolean}
 
-Returns true if the actor has no weapon.
+
+Returns true if the actor has no weapon.
 <dl>
 </dl>
 
@@ -1972,7 +2059,8 @@
 
 #### hasWeapon (weapon) → {Boolean}
 
-Returns true if the actor has a weapon.
+
+Returns true if the actor has a weapon.
 
 ##### Parameters:
 
@@ -1994,7 +2082,8 @@
 
 #### hide ()
 
-Hides the game battler.
+
+Hides the game battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2008,7 +2097,8 @@
 
 #### hpRate () → {[Number](Number.md)}
 
-Returns the percentage of the battler's hp left as a float.
+
+Returns the percentage of the battler's hp left as a float.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2064,7 +2154,8 @@
 
 #### initEquips (equips)
 
-Initialize actor equipment in the given slots.
+
+Initialize actor equipment in the given slots.
 
 ##### Parameters:
 
@@ -2077,13 +2168,15 @@
 
 #### initExp ()
 
-Initialize exp of the actor.
+
+Initialize exp of the actor.
 <dl>
 </dl>
 
 #### initialize (actorId)
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 
 ##### Parameters:
 
@@ -2104,7 +2197,8 @@
 
 #### initImages ()
 
-Initialize images of the actor.
+
+Initialize images of the actor.
 <dl>
 </dl>
 
@@ -2123,13 +2217,15 @@
 
 #### initSkills ()
 
-Initialize actor skills.
+
+Initialize actor skills.
 <dl>
 </dl>
 
 #### initTp ()
 
-Initializes the battler's tp; tp is random.
+
+Initializes the battler's tp; tp is random.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2143,7 +2239,8 @@
 
 #### inputtingAction () → {[Game_Action](Game_Action.md)}
 
-Returns action the actor is inputting.
+
+Returns action the actor is inputting.
 <dl>
 </dl>
 
@@ -2158,7 +2255,8 @@
 
 #### isActing () → {Boolean}
 
-Returns true if the battler is performing an action in battle.
+
+Returns true if the battler is performing an action in battle.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2203,7 +2301,8 @@
 
 #### isAlive () → {Boolean}
 
-Returns true if the battler is alive.
+
+Returns true if the battler is alive.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2248,7 +2347,8 @@
 
 #### isAppeared () → {Boolean}
 
-Returns true if the game battler is not hidden.
+
+Returns true if the game battler is not hidden.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2271,7 +2371,8 @@
 
 #### isAutoBattle () → {Boolean}
 
-Returns true if the battler is set to battle automatically.
+
+Returns true if the battler is set to battle automatically.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2294,7 +2395,8 @@
 
 #### isBattleMember () → {Boolean}
 
-Returns true if the actor is a member in battle.
+
+Returns true if the actor is a member in battle.
 <dl>
 </dl>
 
@@ -2393,7 +2495,8 @@
 
 #### isChanting () → {Boolean}
 
-Returns true if the battler is chanting in combat.
+
+Returns true if the battler is chanting in combat.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2416,7 +2519,8 @@
 
 #### isClass (gameClass) → {Boolean}
 
-Returns true if the actor is the specified class from the database.
+
+Returns true if the actor is the specified class from the database.
 
 ##### Parameters:
 
@@ -2438,7 +2542,8 @@
 
 #### isConfused () → {Boolean}
 
-Returns true if the battler is confused.
+
+Returns true if the battler is confused.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2483,7 +2588,8 @@
 
 #### isDead () → {Boolean}
 
-Returns true if the battler is dead.
+
+Returns true if the battler is dead.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2556,7 +2662,8 @@
 
 #### isDualWield () → {Boolean}
 
-Returns true if the battler dual wields.
+
+Returns true if the battler dual wields.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2579,7 +2686,8 @@
 
 #### isDying () → {Boolean}
 
-Returns true if the battler is dying.
+
+Returns true if the battler is dying.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2624,7 +2732,8 @@
 
 #### isEnemy () → {Boolean}
 
-Returns true if the battler is an enemy.
+
+Returns true if the battler is an enemy.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2675,7 +2784,8 @@
 
 #### isEquipChangeOk (slotId) → {Boolean}
 
-Returns true if the equip change is okay in the given slot.
+
+Returns true if the equip change is okay in the given slot.
 
 ##### Parameters:
 
@@ -2697,7 +2807,8 @@
 
 #### isEquipped (item) → {Boolean}
 
-Returns true if the actor is equipped with the specific item.
+
+Returns true if the actor is equipped with the specific item.
 
 ##### Parameters:
 
@@ -2817,7 +2928,8 @@
 
 #### isGuard () → {Boolean}
 
-Returns true if the battler is guarding.
+
+Returns true if the battler is guarding.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2840,7 +2952,8 @@
 
 #### isGuardWaiting () → {Boolean}
 
-Returns true if the battler is waiting to guard.
+
+Returns true if the battler is waiting to guard.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2863,7 +2976,8 @@
 
 #### isHidden () → {Boolean}
 
-Returns true if the game battler is hidden.
+
+Returns true if the game battler is hidden.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2886,7 +3000,8 @@
 
 #### isInputting () → {Boolean}
 
-Returns true if the battler is inputting commands in battle.
+
+Returns true if the battler is inputting commands in battle.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -2909,7 +3024,8 @@
 
 #### isLearnedSkill (skillId) → {Boolean}
 
-Returns true if the actor has learned the specified skill given the specified skill id.
+
+Returns true if the actor has learned the specified skill given the specified skill id.
 
 ##### Parameters:
 
@@ -2987,7 +3103,8 @@
 
 #### isMaxLevel () → {Boolean}
 
-Returns true if the actor is max level.
+
+Returns true if the actor is max level.
 <dl>
 </dl>
 
@@ -3024,7 +3141,8 @@
 
 #### isMotionRequested () → {Boolean}
 
-Returns true if a motion is requested.
+
+Returns true if a motion is requested.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3047,7 +3165,8 @@
 
 #### isOccasionOk (item) → {Boolean}
 
-Returns true if the item occasion is okay.
+
+Returns true if the item occasion is okay.
 
 ##### Parameters:
 
@@ -3077,7 +3196,8 @@
 
 #### isPreserveTp () → {Boolean}
 
-Returns true if tp is preserved between battles.
+
+Returns true if tp is preserved between battles.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3100,7 +3220,8 @@
 
 #### isRestricted () → {Boolean}
 
-Returns true if the game battler is restricted.
+
+Returns true if the game battler is restricted.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3229,7 +3350,8 @@
 
 #### isSpriteVisible () → {Boolean}
 
-Returns true if the actor sprite is visible.
+
+Returns true if the actor sprite is visible.
 <dl>
 </dl>
 
@@ -3244,7 +3366,8 @@
 
 #### isStateAddable (stateId) → {Boolean}
 
-Returns true if the specified state given the state id is addable.
+
+Returns true if the specified state given the state id is addable.
 
 ##### Parameters:
 
@@ -3274,7 +3397,8 @@
 
 #### isStateAffected (stateId) → {Boolean}
 
-Returns true if the battler is affected by the specified state given the state id.
+
+Returns true if the battler is affected by the specified state given the state id.
 
 ##### Parameters:
 
@@ -3304,7 +3428,8 @@
 
 #### isStateExpired (stateId) → {Boolean}
 
-Returns true if the state, given the state id is expired.
+
+Returns true if the state, given the state id is expired.
 
 ##### Parameters:
 
@@ -3362,7 +3487,8 @@
 
 #### isStateRestrict (stateId) → {Boolean}
 
-Returns true if the specified state given the state id restricts.
+
+Returns true if the specified state given the state id restricts.
 
 ##### Parameters:
 
@@ -3436,7 +3562,8 @@
 
 #### isWaiting () → {Boolean}
 
-Returns true if the battler is waiting in battle.
+
+Returns true if the battler is waiting in battle.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3459,7 +3586,8 @@
 
 #### isWeaponAnimationRequested () → {Boolean}
 
-Returns true if a weapon animation is requested.
+
+Returns true if a weapon animation is requested.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3502,7 +3630,8 @@
 
 #### lastBattleSkill () → {[RPG.Skill](RPG.Skill.md)}
 
-Returns the last battle skill of the actor.
+
+Returns the last battle skill of the actor.
 <dl>
 </dl>
 
@@ -3517,7 +3646,8 @@
 
 #### lastCommandSymbol () → {[String](String.md)}
 
-Returns the last command symbol that the actor used.
+
+Returns the last command symbol that the actor used.
 <dl>
 </dl>
 
@@ -3532,7 +3662,8 @@
 
 #### lastMenuSkill () → {[RPG.Skill](RPG.Skill.md)}
 
-Returns the last menu skill of the actor.
+
+Returns the last menu skill of the actor.
 <dl>
 </dl>
 
@@ -3547,7 +3678,8 @@
 
 #### learnSkill (skillId)
 
-Actor learns the specified skill given the skill id.
+
+Actor learns the specified skill given the skill id.
 
 ##### Parameters:
 
@@ -3560,19 +3692,22 @@
 
 #### levelDown ()
 
-Level down the actor.
+
+Level down the actor.
 <dl>
 </dl>
 
 #### levelUp ()
 
-Level up the actor.
+
+Level up the actor.
 <dl>
 </dl>
 
 #### makeActionList () → {[Array](Array.md).<[Game_Action](Game_Action.md)>}
 
-Creates the action list for the actor.
+
+Creates the action list for the actor.
 <dl>
 </dl>
 
@@ -3600,7 +3735,8 @@
 
 #### makeActionTimes () → {[Number](Number.md)}
 
-Creates the number of times for an action.
+
+Creates the number of times for an action.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3623,7 +3759,8 @@
 
 #### makeAutoBattleActions ()
 
-Creates the auto battle actions for the game actor.
+
+Creates the auto battle actions for the game actor.
 <dl>
 </dl>
 
@@ -3634,7 +3771,8 @@
 
 #### makeSpeed ()
 
-Calculates the speed of the battler.
+
+Calculates the speed of the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3648,7 +3786,8 @@
 
 #### maxFloorDamage () → {[Number](Number.md)}
 
-Returns the max floor damage.
+
+Returns the max floor damage.
 <dl>
 </dl>
 
@@ -3663,7 +3802,8 @@
 
 #### maxLevel ()
 
-Returns the maximum level of the actor.
+
+Returns the maximum level of the actor.
 <dl>
 </dl>
 
@@ -3691,7 +3831,8 @@
 
 #### maxTp () → {[Number](Number.md)}
 
-Returns the maximum tp of the battler.
+
+Returns the maximum tp of the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3714,7 +3855,8 @@
 
 #### meetsItemConditions (item) → {Boolean}
 
-Returns true if the battler meets the item conditions.
+
+Returns true if the battler meets the item conditions.
 
 ##### Parameters:
 
@@ -3744,7 +3886,8 @@
 
 #### meetsSkillConditions (skill) → {Boolean}
 
-Returns true if the battler meets the skill conditions.
+
+Returns true if the battler meets the skill conditions.
 
 ##### Parameters:
 
@@ -3824,7 +3967,8 @@
 
 #### motionType () → {[String](String.md)}
 
-Returns the motion type of the battler.
+
+Returns the motion type of the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3847,7 +3991,8 @@
 
 #### mpRate () → {[Number](Number.md)}
 
-Returns the percentage of the battler's mp left as a float.
+
+Returns the percentage of the battler's mp left as a float.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -3870,7 +4015,8 @@
 
 #### name (name)
 
-Sets the actor name.
+
+Sets the actor name.
 
 ##### Parameters:
 
@@ -3883,7 +4029,8 @@
 
 #### nextLevelExp () → {[Number](Number.md)}
 
-Returns the experience points for the next level of the actor.
+
+Returns the experience points for the next level of the actor.
 <dl>
 </dl>
 
@@ -3898,7 +4045,8 @@
 
 #### nextRequiredExp () → {[Number](Number.md)}
 
-Returns the next required experience points for the actor to level up.
+
+Returns the next required experience points for the actor to level up.
 <dl>
 </dl>
 
@@ -3913,7 +4061,8 @@
 
 #### nickname () → {[String](String.md)}
 
-Returns the nickname of the actor.
+
+Returns the nickname of the actor.
 <dl>
 </dl>
 
@@ -3928,7 +4077,8 @@
 
 #### numActions () → {[Number](Number.md)}
 
-Returns the number of battler actions.
+
+Returns the number of battler actions.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4009,13 +4159,15 @@
 
 #### onPlayerWalk ()
 
-Handler for when the player walks on the map scene.
+
+Handler for when the player walks on the map scene.
 <dl>
 </dl>
 
 #### onRestrict ()
 
-Handler for when theb attler is restricted.
+
+Handler for when theb attler is restricted.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4056,7 +4208,8 @@
 
 #### optimizeEquipments ()
 
-Optimize the actor's equipment.
+
+Optimize the actor's equipment.
 <dl>
 </dl>
 
@@ -4082,7 +4235,8 @@
 
 #### param (paramId) → {[Number](Number.md)}
 
-Returns a standard parameter, given a paramId; standard parameters include: HP, MP, Atk, M.Atk, Def, M.Def, Luck, Agility.
+
+Returns a standard parameter, given a paramId; standard parameters include: HP, MP, Atk, M.Atk, Def, M.Def, Luck, Agility.
 
 ##### Parameters:
 
@@ -4308,7 +4462,8 @@
 
 #### paySkillCost (skill)
 
-Pays the cost of the skill when activating the skill.
+
+Pays the cost of the skill when activating the skill.
 
 ##### Parameters:
 
@@ -4380,7 +4535,8 @@
 
 #### performAttack ()
 
-Performs the attack motion for the actor.
+
+Performs the attack motion for the actor.
 <dl>
 </dl>
 
@@ -4425,7 +4581,8 @@
 
 #### performEscape ()
 
-Performs the escape motion for the actor.
+
+Performs the escape motion for the actor.
 <dl>
 </dl>
 
@@ -4457,13 +4614,15 @@
 
 #### performMapDamage ()
 
-Perform damage to the actor on the map scene.
+
+Perform damage to the actor on the map scene.
 <dl>
 </dl>
 
 #### performMiss ()
 
-Perform miss motion.
+
+Perform miss motion.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4477,7 +4636,8 @@
 
 #### performRecovery ()
 
-Perform recovery motion.
+
+Perform recovery motion.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4491,7 +4651,8 @@
 
 #### performReflection ()
 
-Performs the reflect motion.
+
+Performs the reflect motion.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4505,7 +4666,8 @@
 
 #### performSubstitute (target)
 
-Perform substitute motion with the specified game battler.
+
+Perform substitute motion with the specified game battler.
 
 ##### Parameters:
 
@@ -4526,13 +4688,15 @@
 
 #### performVictory ()
 
-Perform the victory motion for the actor.
+
+Perform the victory motion for the actor.
 <dl>
 </dl>
 
 #### profile () → {[String](String.md)}
 
-Returns the actor profile.
+
+Returns the actor profile.
 <dl>
 </dl>
 
@@ -4547,7 +4711,8 @@
 
 #### recoverAll ()
 
-Recovers the battler from all states and restores the battler to maximum hp and mp.
+
+Recovers the battler from all states and restores the battler to maximum hp and mp.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4561,7 +4726,8 @@
 
 #### refresh ()
 
-Refreshes the actor.
+
+Refreshes the actor.
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -4575,7 +4741,8 @@
 
 #### regenerateAll ()
 
-Handler for when battle has started.
+
+Handler for when battle has started.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4589,7 +4756,8 @@
 
 #### regenerateHp ()
 
-Has the battler regenerate hp based on their hp regen.
+
+Has the battler regenerate hp based on their hp regen.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4603,7 +4771,8 @@
 
 #### regenerateMp ()
 
-Has the battler regenerate mp based on their mp regen.
+
+Has the battler regenerate mp based on their mp regen.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4617,7 +4786,8 @@
 
 #### regenerateTp ()
 
-Has the battler regenerate tp based on their tp regen.
+
+Has the battler regenerate tp based on their tp regen.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4631,7 +4801,8 @@
 
 #### releaseUnequippableItems (forcing)
 
-Returns items the actor can't normally equip to the party inventory.
+
+Returns items the actor can't normally equip to the party inventory.
 
 ##### Parameters:
 
@@ -4644,7 +4815,8 @@
 
 #### removeAllBuffs ()
 
-Removes all buffs from the battler.
+
+Removes all buffs from the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4703,7 +4875,8 @@
 
 #### removeCurrentAction ()
 
-Removes the current battler action.
+
+Removes the current battler action.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4717,7 +4890,8 @@
 
 #### removeState (stateId)
 
-Removes the specified state given the state id.
+
+Removes the specified state given the state id.
 
 ##### Parameters:
 
@@ -4789,7 +4963,8 @@
 
 #### requestMotion (motionType)
 
-Request the specified motion on the game battler.
+
+Request the specified motion on the game battler.
 
 ##### Parameters:
 
@@ -4823,7 +4998,8 @@
 
 #### resetStateCounts (stateId)
 
-Reset state count of the specified state.
+
+Reset state count of the specified state.
 
 ##### Parameters:
 
@@ -4844,7 +5020,8 @@
 
 #### restriction () → {[Number](Number.md)}
 
-Returns the number of the restriction.
+
+Returns the number of the restriction.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4867,7 +5044,8 @@
 
 #### result () → {[Game_ActionResult](Game_ActionResult.md)}
 
-Returns the battler action result.
+
+Returns the battler action result.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4890,7 +5068,8 @@
 
 #### revive ()
 
-Revives the battler.
+
+Revives the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -4945,7 +5124,8 @@
 
 #### setAction (index, action)
 
-Sets the action at the specified index for the battler.
+
+Sets the action at the specified index for the battler.
 
 ##### Parameters:
 
@@ -4986,7 +5166,8 @@
 
 #### setBattlerImage (battlerName)
 
-Sets the battler image of the actor; this is the sprite displayed in the side view mode.
+
+Sets the battler image of the actor; this is the sprite displayed in the side view mode.
 
 ##### Parameters:
 
@@ -5011,7 +5192,8 @@
 
 #### setFaceImage (faceName, faceIndex)
 
-Sets the face image of the actor given the face image (from database) and face index within the iamge.
+
+Sets the face image of the actor given the face image (from database) and face index within the iamge.
 
 ##### Parameters:
 
@@ -5025,7 +5207,8 @@
 
 #### setHp (hp)
 
-Sets the battler hp.
+
+Sets the battler hp.
 
 ##### Parameters:
 
@@ -5057,7 +5240,8 @@
 
 #### setLastCommandSymbol (symbol)
 
-Sets the last command symbol to the given symbol; this is the selected command in the battle menu.
+
+Sets the last command symbol to the given symbol; this is the selected command in the battle menu.
 
 ##### Parameters:
 
@@ -5100,7 +5284,8 @@
 
 #### setMp (mp)
 
-Sets the battler mp.
+
+Sets the battler mp.
 
 ##### Parameters:
 
@@ -5121,7 +5306,8 @@
 
 #### setName (name)
 
-Sets the actor name.
+
+Sets the actor name.
 
 ##### Parameters:
 
@@ -5134,7 +5320,8 @@
 
 #### setNickname (nickname)
 
-Sets the nickname of the actor.
+
+Sets the nickname of the actor.
 
 ##### Parameters:
 
@@ -5147,7 +5334,8 @@
 
 #### setProfile (profile)
 
-Sets the actor profile.
+
+Sets the actor profile.
 
 ##### Parameters:
 
@@ -5160,7 +5348,8 @@
 
 #### setTp (tp)
 
-Sets the battler tp.
+
+Sets the battler tp.
 
 ##### Parameters:
 
@@ -5192,7 +5381,8 @@
 
 #### shiftAnimation () → {[MV.BattlerAnimation](MV.BattlerAnimation.md)}
 
-Shifts the battler animation.
+
+Shifts the battler animation.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -5215,7 +5405,8 @@
 
 #### shouldDisplayLevelUp () → {Boolean}
 
-Returns true if the actor should display level up in a message window.
+
+Returns true if the actor should display level up in a message window.
 <dl>
 </dl>
 
@@ -5230,19 +5421,22 @@
 
 #### showAddedStates ()
 
-Shows the added states to the actor.
+
+Shows the added states to the actor.
 <dl>
 </dl>
 
 #### showRemovedStates ()
 
-Shows the removed states from the actor.
+
+Shows the removed states from the actor.
 <dl>
 </dl>
 
 #### skillMpCost (skill) → {[Number](Number.md)}
 
-Returns the mp cost of the skill.
+
+Returns the mp cost of the skill.
 
 ##### Parameters:
 
@@ -5272,7 +5466,8 @@
 
 #### skills () → {[Array](Array.md).<[RPG.Skill](RPG.Skill.md)>}
 
-Returns the actor's skills; even if the skills are not usable.
+
+Returns the actor's skills; even if the skills are not usable.
 <dl>
 </dl>
 
@@ -5287,7 +5482,8 @@
 
 #### skillTpCost (skill) → {[Number](Number.md)}
 
-Returns the tp cost of the skill.
+
+Returns the tp cost of the skill.
 
 ##### Parameters:
 
@@ -5317,7 +5513,8 @@
 
 #### slotType () → {[Number](Number.md)}
 
-Returns the battler slot type of a trait.
+
+Returns the battler slot type of a trait.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -5340,7 +5537,8 @@
 
 #### sortStates ()
 
-Sorts the states attached to the battler.
+
+Sorts the states attached to the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -5410,7 +5608,8 @@
 
 #### speed () → {[Number](Number.md)}
 
-Returns the speed of the battler.
+
+Returns the speed of the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -5433,7 +5632,8 @@
 
 #### startAnimation (animationId, mirror, delay)
 
-Starts the animation on the actor given the specified animation id; if mirror is set to true, the animation will be mirrored. If a delay is enter, the animation will be delayed.
+
+Starts the animation on the actor given the specified animation id; if mirror is set to true, the animation will be mirrored. If a delay is enter, the animation will be delayed.
 
 ##### Parameters:
 
@@ -5456,7 +5656,8 @@
 
 #### startDamagePopup ()
 
-Starts a damage pop up on the battler.
+
+Starts a damage pop up on the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -5470,7 +5671,8 @@
 
 #### startWeaponAnimation (weaponImageId)
 
-Starts the weapon animation on te battler given a weapon id.
+
+Starts the weapon animation on te battler given a weapon id.
 
 ##### Parameters:
 
@@ -5491,7 +5693,8 @@
 
 #### stateIcons () → {[Array](Array.md).<[Number](Number.md)>}
 
-Returns the array of state icons attached to the battler; this is determined by the active states on the battler.
+
+Returns the array of state icons attached to the battler; this is determined by the active states on the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -5608,7 +5811,8 @@
 
 #### states () → {[Array](Array.md).<[RPG.State](RPG.State.md)>}
 
-Returns the states applied to the battler.
+
+Returns the states applied to the battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -5656,7 +5860,8 @@
 
 #### tpRate () → {[Number](Number.md)}
 
-Returns the percentage of the battler's tp left as a float.
+
+Returns the percentage of the battler's tp left as a float.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -5679,7 +5884,8 @@
 
 #### tradeItemWithParty (newItem, oldItem) → {Boolean}
 
-Trades the new item with the old item in the party inventory.
+
+Trades the new item with the old item in the party inventory.
 
 ##### Parameters:
 
@@ -5900,7 +6106,8 @@
 
 #### updateBuffTurns ()
 
-Updates the buff turns on battler.
+
+Updates the buff turns on battler.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -5938,7 +6145,8 @@
 
 #### usableSkills () → {[Array](Array.md).<[RPG.Skill](RPG.Skill.md)>}
 
-Returns the usable skills of the actor.
+
+Returns the usable skills of the actor.
 <dl>
 </dl>
 
@@ -5953,7 +6161,8 @@
 
 #### useItem (item)
 
-Has theb attler use the given item.
+
+Has theb attler use the given item.
 
 ##### Parameters:
 
@@ -5974,7 +6183,8 @@
 
 #### weaponImageId () → {[Number](Number.md)}
 
-Returns the weapon image id.
+
+Returns the weapon image id.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -5997,7 +6207,8 @@
 
 #### weapons () → {[Array](Array.md).<[RPG.Weapon](RPG.Weapon.md)>}
 
-Returns the weapon of the actor.
+
+Returns the weapon of the actor.
 <dl>
 </dl>
 
@@ -6036,7 +6247,9 @@
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
-            </dl>
+            </dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
