@@ -8,7 +8,7 @@
 
 [Game_Battler](Game_Battler.md)のサブクラス。
 
-グローバル変数である$gameActors(Game_Actors.md)、$gameParty(Game_Party.md)から参照されるアクターの実体。
+大域変数である $gameActors([GamaActors](Game_Actors.md))、$gameParty([GameParty](Game_Party.md)) から参照されるアクターの実体。
 アクターのパラメータの取得、画像の設定、バトルに関わる処理とサイドビュー時の画像処理に関わる。
 
 ##### Properties:
