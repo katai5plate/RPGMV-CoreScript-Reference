@@ -32,8 +32,8 @@
 | `bitmaps` | [Array](Array.md).<[Bitmap](Bitmap.md)> | タイルセット画像の配列(0〜9)<br />(0:A1, 1:A2, 2:A3, 3:A4, 4:A5, 5:B, 6:C, 7:D, 8:E) |
 | `origin` | [Point](Point.md) |  スクロールに対する基準点 |
 | `flags` | [Array](Array.md).<[Number](Number.md)> |  フラグ(See:[RPG.Tileset](RPG.Tileset.md)) |
-| `tileHeight` | [Number](Number.md) | タイル高さ(default:48 ピクセル) |
-| `tileWidth` | [Number](Number.md) | タイル幅(default:48 ピクセル) |
+| `tileHeight` | [Number](Number.md) | タイル高さ(規定値:48 ピクセル) |
+| `tileWidth` | [Number](Number.md) | タイル幅(規定値:48 ピクセル) |
 | `height` | [Number](Number.md) | 画面高さ(ピクセル) |
 | `width` | [Number](Number.md) | 画面幅(ピクセル) |
 | `horizontalWrap` | Boolean | 横方向にループするか |
