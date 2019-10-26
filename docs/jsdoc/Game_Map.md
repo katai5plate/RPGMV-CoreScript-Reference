@@ -19,9 +19,9 @@
 | `_displayX` | [Number](Number.md) | マップ表示のX座標 [displayX](Game_Map.md#displayx---number) |
 | `_displayY` | [Number](Number.md) | マップ表示のY座標 [displayY](Game_Map.md#displayy---number) |
 | `_nameDisplay` | Boolean | マップの表示名を表示するか |
-| `_scrollDirection` | [Number](Number.md) | スクロール方向 |
-| `_scrollRest` | [Number](Number.md) |  |
-| `_scrollSpeed` | [Number](Number.md) |  スクロール速度 |
+| `_scrollDirection` | [Number](Number.md) | スクロール方向(テンキー対応) |
+| `_scrollRest` | [Number](Number.md) | スクロールの残り距離 |
+| `_scrollSpeed` | [Number](Number.md) | スクロール速度 |
 | `_parallaxName` | [String](String.md) | [遠景]のファイル名 [parallaxName](Game_Map.md#parallaxname---string) |
 | `_parallaxZero` | Boolean | 視差を0にするか |
 | `_parallaxLoopX` | Boolean | [横方向にループする] |
