@@ -264,7 +264,7 @@ y座標(タイル数)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tilesetId` | [Number](Number.md) |  |
+| `tilesetId` | [Number](Number.md) | [タイルセット]のID |
 
 
 #### checkLayeredTilesFlags (x, y, bit) → {Boolean}
