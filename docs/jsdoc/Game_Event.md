@@ -23,6 +23,7 @@
 | `_originalDirection` | [Number](Number.md) | オリジナル向き |
 | `_prelockDirection` | [Number](Number.md) | 前にロックされた方向 |
 | `_locked` | Boolean | ロックされているか |
+| `_interpreter` | [Game_Interpreter](Game_Interpreter.md) | インタプリタ |
 
 ### Extends
 
