@@ -14,8 +14,8 @@
 | --- | --- | --- |
 | `_mapId` | [Number](Number.md) | マップID |
 | `_eventId` | [Number](Number.md) | イベントID |
-| `_moveType` | [Number](Number.md) | 自律移動[タイプ] |
-| `_trigger` | [Number](Number.md) | トリガ |
+| `_moveType` | [Number](Number.md) | 自律移動の[タイプ] (0: 固定, 1: ランダム, 2: 近づく, 3: カスタム) |
+| `_trigger` | [Number](Number.md) | [トリガー] (0: 決定ボタン, 1: プレイヤーから接触, 2: イベントから接触, 3: 自動実行, 4: 並列処理) |
 | `_starting` | Boolean | 開始しているか |
 | `_erased` | Boolean | 削除されているか |
 | `_pageIndex` | [Number](Number.md) | ページ番号 |
