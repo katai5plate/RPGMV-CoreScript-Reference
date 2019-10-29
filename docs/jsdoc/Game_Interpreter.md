@@ -6,7 +6,7 @@
 
 [実行内容]に書かれたイベントコマンドを実行するクラス。 
 
-[EventCommand](RPG.EventCommand.md) は、[Game_Event](Game_Event.md) の [EventPage](RPG.EventPage.md) や [Game_CommonEvent](Game_CommonEvent.md) の [CommonEvent](RPG.CommonEvent.md)、 [Game_Troop](Game_Troop.md) の [BattleEventPage](RPG.BattleEventPage.md)に含まれる。
+[EventCommand](RPG.EventCommand.md) は、[Game_Event](Game_Event.md) や [Game_CommonEvent](Game_CommonEvent.md)、[Game_Troop](Game_Troop.md) の lis プロパティに含まれる。
 
 また、このクラスはプラグインコマンドを処理する[pluginCommand](#plugincommand-command-args)を含む。
 
