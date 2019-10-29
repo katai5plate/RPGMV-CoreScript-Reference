@@ -1925,7 +1925,9 @@ Game_Interpreter.prototype.pluginCommand = function ( command, args ){
 
 
 #### setupChild (list, eventId)
-子インタプリタの準備。
+[コモンイベント]用の子インタプリタの準備。
+
+See: [command117](Game_Interpreter.md#command117---boolean)
 
 ##### Parameters:
 
