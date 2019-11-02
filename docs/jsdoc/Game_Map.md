@@ -18,7 +18,7 @@
 | `_vehicles` | [Array](Array.md).<[Game_Vehicle](Game_Vehicle.md)> | [乗り物]の配列 |
 | `_displayX` | [Number](Number.md) | マップ表示のX座標 [displayX](Game_Map.md#displayx---number) |
 | `_displayY` | [Number](Number.md) | マップ表示のY座標 [displayY](Game_Map.md#displayy---number) |
-| `_nameDisplay` | Boolean | マップの表示名を表示するか |
+| `_nameDisplay` | Boolean | マップの[名前]を表示するか |
 | `_scrollDirection` | [Number](Number.md) | スクロール方向(テンキー対応) |
 | `_scrollRest` | [Number](Number.md) | スクロールの残り距離 |
 | `_scrollSpeed` | [Number](Number.md) | スクロール速度 |
