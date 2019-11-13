@@ -6,9 +6,9 @@
 
 [実行内容]に書かれたイベントコマンドを実行するクラス。 
 
-[EventCommand](RPG.EventCommand.md) は、[Game_Event](Game_Event.md) や [Game_CommonEvent](Game_CommonEvent.md)、[Game_Troop](Game_Troop.md) の list プロパティに含まれ、Game_Interpreter は、それらのクラスの \_interpreter プロパティに含まれる。
+[RPG.EventCommand](RPG.EventCommand.md) は、[Game_Event](Game_Event.md) や [Game_CommonEvent](Game_CommonEvent.md)、[Game_Troop](Game_Troop.md) の list プロパティに含まれ、Game_Interpreter は、それらのクラスの \_interpreter プロパティに含まれる。
 
-また、このクラスはプラグインコマンドを処理する[pluginCommand](#plugincommand-command-args)を含む。
+また、このクラスはプラグインコマンドを処理する[pluginCommand](Game_Interpreter.md#plugincommand-command-args)を含む。
 
 commandXXX(XXXは数字)というメソッドはイベントコマンドに対応した処理を行う、詳細は 
 [RPGツクールMV プラグインコマンド集 リファレンス \[イベントコード一覧\]](https://docs.google.com/spreadsheets/d/1rOIzDuhLC6IqJPEFciYOmXWL_O7X9-hMValMs7DpWCk/edit#gid=1266374350) を参照。

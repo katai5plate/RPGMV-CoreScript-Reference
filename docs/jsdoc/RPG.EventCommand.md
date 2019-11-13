@@ -4,7 +4,7 @@
 
 [実行内容]に記述される[イベントコマンド] を構成するJSONデータ。
 
-[EventPage](RPG.EventPage.md)、[BattleEventPage](RPG.BattleEventPage.md)、[CommonEvent](RPG.CommonEvent.md) の list プロパティに含まれる。
+[RPG.EventPage](RPG.EventPage.md)、[RPG.BattleEventPage](RPG.BattleEventPage.md)、[RPG.CommonEvent](RPG.CommonEvent.md) の list プロパティに含まれる。
 
 記述された内容は [Game_Interpreter](Game_Interpreter.md) のcommandXXX メソッドで処理される。
 
