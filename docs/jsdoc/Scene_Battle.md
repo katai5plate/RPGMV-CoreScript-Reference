@@ -4,803 +4,298 @@
 
 #### new Scene_Battle ()
 
-The scene class of the battle screen.
+戦闘画面のシーンクラス。
+
+[SceneManager](SceneManager.md) と [BattleManager](BattleManager.md) のふたつのマネージャで制御される。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_spriteset` | [Spriteset_Battle](Spriteset_Battle.md) |  |
-| `_statusWindow` | [Window_BattleStatus](Window_BattleStatus.md) |  |
-| `_partyCommandWindow` | [Window_PartyCommand](Window_PartyCommand.md) |  |
-| `_actorCommandWindow` | [Window_ActorCommand](Window_ActorCommand.md) |  |
-| `_skillWindow` | [Window_BattleSkill](Window_BattleSkill.md) |  |
-| `_itemWindow` | [Window_BattleItem](Window_BattleItem.md) |  |
-| `_actorWindow` | [Window_BattleActor](Window_BattleActor.md) |  |
-| `_enemyWindow` | [Window_BattleEnemy](Window_BattleEnemy.md) |  |
-| `_logWindow` | [Window_BattleLog](Window_BattleLog.md) |  |
-| `_helpWindow` | [Window_Help](Window_Help.md) |  |
-| `_messageWindow` | [Window_Message](Window_Message.md) |  |
-| `_scrollTextWindow` | [Window_ScrollText](Window_ScrollText.md) |  |
+| `_spriteset` | [Spriteset_Battle](Spriteset_Battle.md) | スプライトセット |
+| `_statusWindow` | [Window_BattleStatus](Window_BattleStatus.md) | [ステータス]ウィンドウ |
+| `_partyCommandWindow` | [Window_PartyCommand](Window_PartyCommand.md) | [バーティ]コマンドウィンドウ |
+| `_actorCommandWindow` | [Window_ActorCommand](Window_ActorCommand.md) | [アクター]コマンドウィンドウ |
+| `_skillWindow` | [Window_BattleSkill](Window_BattleSkill.md) | [スキル]ウィンドウ |
+| `_itemWindow` | [Window_BattleItem](Window_BattleItem.md) | [アイテム]ウィンドウ |
+| `_actorWindow` | [Window_BattleActor](Window_BattleActor.md) | [アクター]選択ウィンドウ |
+| `_enemyWindow` | [Window_BattleEnemy](Window_BattleEnemy.md) | [敵]選択ウィンドウ |
+| `_logWindow` | [Window_BattleLog](Window_BattleLog.md) | ログウィンドウ |
+| `_helpWindow` | [Window_Help](Window_Help.md) | ヘルプウィンドウ |
+| `_messageWindow` | [Window_Message](Window_Message.md) | メッセージウィンドウ |
+| `_scrollTextWindow` | [Window_ScrollText](Window_ScrollText.md) | スクロールテキストウィンドウ |
 
-<dl>
-</dl>
 
 ### Extends
 
 * [Scene_Base](Scene_Base.md)
 
+### Inherited From
+
+#### [PIXI.DisplayObject](PIXI.DisplayObject.md)
+
+* [(static) mixin (source)](PIXI.DisplayObject.md#static-mixin-source)
+* [\_recursivePostUpdateTransform ()](PIXI.DisplayObject.md#_recursivepostupdatetransform-)
+* [displayObjectUpdateTransform ()](PIXI.DisplayObject.md#displayobjectupdatetransform-)
+* [getBounds (skipUpdate, rect)](PIXI.DisplayObject.md#getbounds-skipupdate-rect--pixirectangle)
+* [getGlobalPosition (point, skipUpdate)](PIXI.DisplayObject.md#getglobalposition-point-skipupdate--pixipoint)
+* [setParent (container)](PIXI.DisplayObject.md#setparent-container--pixicontainer)
+* [setTransform (x, y, scaleX, scaleY, rotation, skewX, skewY, pivotX, pivotY)](PIXI.DisplayObject.md#settransform-x-y-scalex-scaley-rotation-skewx-skewy-pivotx-pivoty--pixidisplayobject)
+* [toGlobal (position, point, skipUpdate)](PIXI.DisplayObject.md#toglobal-position-point-skipupdate--pixipoint)
+* [toLocal (position, from, point, skipUpdate)](PIXI.DisplayObject.md#tolocal-position-from-point-skipupdate--pixipoint)
+
+#### [PIXI.Container](PIXI.Container.md)
+
+* [addChild (child)](PIXI.Container.md#addchild-child--pixidisplayobject)
+* [addChildAt (child, index)](PIXI.Container.md#addchildat-child-index--pixidisplayobject)
+* [calculateBounds ()](PIXI.Container.md#calculatebounds-)
+* [destroy ()](PIXI.Container.md#destroy-)
+* [getChildAt (index)](PIXI.Container.md#getchildat-index--pixidisplayobject)
+* [getChildByName (name)](PIXI.Container.md#getchildbyname-name--pixidisplayobject)
+* [getChildIndex (child)](PIXI.Container.md#getchildindex-child--pixidisplayobject)
+* [onChildrenChange ()](PIXI.Container.md#onchildrenchange-)
+* [removeChild (child)](PIXI.Container.md#removechild-child--pixidisplayobject)
+* [removeChildAt (index)](PIXI.Container.md#removechildat-index--pixidisplayobject)
+* [removeChildren (beginIndex, endIndex)](PIXI.Container.md#removechildren-beginindex-endindex--arraypixidisplayobject)
+* [render (renderer)](PIXI.Container.md#render-renderer)
+* [renderAdvanced (renderer)](PIXI.Container.md#renderadvanced-renderer)
+* [renderCanvas (renderer)](PIXI.Container.md#rendercanvas-renderer)
+* [setChildIndex (child, index)](PIXI.Container.md#setchildindex-child-index)
+* [sortChildren ()](PIXI.Container.md#sortchildren-)
+* [swapChildren (child, child2)](PIXI.Container.md#swapchildren-child-child2)
+* [updateTransform ()](PIXI.Container.md#updatetransform-)
+
+#### [Scene_Base](Scene_Base.md))
+
+* [addWindow (Window)](Scene_Base.md#addwindow-window)
+* [attachReservation ()](Scene_Base.md#attachreservation-)
+* [checkGameover ()](Scene_Base.md#checkgameover-)
+* [createFadeSprite ()](Scene_Base.md#createfadesprite-)
+* [createWindowLayer ()](Scene_Base.md#createwindowlayer-)
+* [detachReservation ()](Scene_Base.md#detachreservation-)
+* [fadeOutAll ()](Scene_Base.md#fadeoutall-)
+* [fadeSpeed (](Scene_Base.md#fadespeed---number)
+* [isActive ()](Scene_Base.md#isactive---boolean)
+* [isBusy ()](Scene_Base.md#isbusy---boolean)
+* [isReady ()](Scene_Base.md#isready---boolean)
+* [popScene ()](Scene_Base.md#popscene-)
+* [slowFadeSpeed ()](Scene_Base.md#slowfadespeed---number)
+* [startFadeIn (duration opt, white opt)](Scene_Base.md#startfadein-duration-opt-white-opt)
+* [startFadeOut (duration opt, white opt)](Scene_Base.md#startfadeout-duration-opt-white-opt)
+* [updateChildren ()](Scene_Base.md#updatechildren-)
+* [updateFade ()](Scene_Base.md#updatefade-)
+
+
 ### Methods
 
-#### addChild (child) → {Object}
-
-[super] 子オブジェクトを追加。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `child` | Object |  追加するオブジェクト |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Stage#addChild</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
- 追加されたオブジェクト
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
-
-#### addChildAt (child, index) → {Object}
-
-[super] 指定位置に子オブジェクトを追加。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.md) |  追加位置 |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Stage#addChildAt</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
- 追加されたオブジェクト
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
-
-#### addWindow (Window)
-
- ウィンドウレイヤーにウィンドウを追加。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `Window` |  |  追加するウィンドウ |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#addWindow</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### attachReservation ()
-
- キューに予約を追加。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#attachReservation</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### changeInputWindow ()
-
-<dl>
-</dl>
-
-#### checkGameover ()
-
- ゲームオーバー状態か検査。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#checkGameover</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
 #### commandAttack ()
+[攻撃]コマンドのハンドラ。
 
-Handler for the attack command.
-<dl>
-</dl>
 
 #### commandEscape ()
+[逃げる]コマンドのハンドラ。
 
-Handler for the escape command on battle start.
-<dl>
-</dl>
 
 #### commandFight ()
+[戦う]コマンドのハンドラ。
 
-Handler for the fight command on battle start..
-<dl>
-</dl>
 
 #### commandGuard ()
+[防御]コマンドのハンドラ。
 
-Handler for the guard command.
-<dl>
-</dl>
 
 #### commandItem ()
+[アイテム]コマンドのハンドラ。
 
-Handler for the item command.
-<dl>
-</dl>
 
 #### commandSkill ()
+[スキル]コマンドのハンドラ。
 
-Handler for the skill command.
-<dl>
-</dl>
 
 #### create ()
+Overrides: [Scene_Base](Scene_Base.md#create-)
 
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#create</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### createActorCommandWindow ()
+[アクター]コマンドウィンドウ([Window_ActorCommand](Window_ActorCommand.md))を生成。
 
-Creates the actor command window.
-<dl>
-</dl>
 
 #### createActorWindow ()
+[アクター]選択ウィンドウ([Window_BattleActor](Window_BattleActor.md))を生成。
 
-Creates the actor window.
-<dl>
-</dl>
 
 #### createAllWindows ()
+戦闘シーンに必要なすべてのウィンドウを生成。
 
-Creates all the windows within the battle scene.
-<dl>
-</dl>
 
 #### createDisplayObjects ()
+表示に必要なオブジェクトを生成。
+スプライトセット、ウィンドウレイヤー、ウィンドウなど。
 
-Creates all the display objects including: the spritesheet, window layer, windows, and more.
-<dl>
-</dl>
 
 #### createEnemyWindow ()
+[敵]選択ウィンドウ([Window_BattleEnemy](Window_BattleEnemy.md))を生成。
 
-Creates the enemy window.
-<dl>
-</dl>
-
-#### createFadeSprite ()
-
- フェード用のスプライトを生成。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#createFadeSprite</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### createHelpWindow ()
+ヘルプウィンドウ([Window_Help](Window_Help.md))を生成。
 
-Creates the help window.
-<dl>
-</dl>
 
 #### createItemWindow ()
+[アイテム]ウィンドウ([Window_BattleItem](Window_BattleItem.md))を生成。
 
-Creates the item window.
-<dl>
-</dl>
 
 #### createLogWindow ()
+ログウィンドウ([Window_BattleLog](Window_BattleLog.md))を生成。
 
-Creates the log window.
-<dl>
-</dl>
 
 #### createMessageWindow ()
+メッセージウィンドウ([Window_Message](Window_Message.md))を生成。
 
-Creates the message window on the battle scene.
-<dl>
-</dl>
 
 #### createPartyCommandWindow ()
-
-<dl>
-</dl>
+[パーティ]コマンドウィンドウ([Window_PartyCommand](Window_PartyCommand.md))を生成。
 
 #### createScrollTextWindow ()
+スクロールテキストウィンドウ([Window_ScrollText](Window_ScrollText.md))を生成。
 
-Creates the scroll text window.
-<dl>
-</dl>
 
 #### createSkillWindow ()
+[スキル]ウィンドウ([Window_BattleSkill](Window_BattleSkill.md))を生成。
 
-Creates the skill window.
-<dl>
-</dl>
 
 #### createSpriteset ()
+戦闘シーンに必要なスプライトセットを生成。
+[アクター][敵]など。
 
-Creates the spriteset within the battle scene. This includes sprites for actors, enemies, etc.
-<dl>
-</dl>
 
 #### createStatusWindow ()
+[ステータス]ウィンドウ([Window_BattleStatus](Window_BattleStatus.md))を生成。
 
-<dl>
-</dl>
-
-#### createWindowLayer ()
-
- ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#createWindowLayer</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### detachReservation ()
-
- キューから予約を削除。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#detachReservation</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### endCommandSelection ()
+コマンド選択の終了処理。
 
-<dl>
-</dl>
-
-#### fadeOutAll ()
-
- 全ての映像と音声を、遅い速度でフェードアウト。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#fadeOutAll</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### fadeSpeed () → {[Number](Number.md)}
-
- フェード速度を返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#fadeSpeed</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### initialize ()
+Overrides:[Stage](Stage.md#initialize-)
 
- オブジェクト生成時の初期化。
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#initialize</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### isActive () → {Boolean}
-
- シーンがアクティブか。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#isActive</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isAnyInputWindowActive () → {Boolean}
+入力ウィンドウがアクティブか。
+
+##### Returns:
 
 <dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
 </dl>
 
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isBusy () → {Boolean}
-
- フェード動作中か。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#isBusy</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isReady () → {Boolean}
-
- シーンの準備ができているか。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#isReady</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### needsSlowFadeOut () → {Boolean}
-
-Returns true if the battle needs a slow fade out.
-<dl>
-</dl>
+ゆっくりしたフェードアウトが必要か。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### onActorCancel ()
+[アクター]選択ウィンドウで[キャンセル]が選択された時のハンドラ
 
-<dl>
-</dl>
 
 #### onActorOk ()
+[アクター]選択ウィンドウで[OK]が選択された時のハンドラ
 
-<dl>
-</dl>
 
 #### onEnemyCancel ()
+[敵]選択ウィンドウで[キャンセル]が選択された時のハンドラ
 
-<dl>
-</dl>
 
 #### onEnemyOk ()
+[敵]選択ウィンドウで[OK]が選択された時のハンドラ。
 
-Handler for when an enemy is selected.
-<dl>
-</dl>
 
 #### onItemCancel ()
+[アイテム]ウィンドウで[キャンセル]が選択された時のハンドラ
 
-<dl>
-</dl>
 
 #### onItemOk ()
+[アイテム]ウィンドウで[OK]が選択された時のハンドラ。
 
-<dl>
-</dl>
 
 #### onSelectAction ()
-
-<dl>
-</dl>
+アイテムかスキルが選択された時のハンドラ。
 
 #### onSkillCancel ()
+[スキル]ウィンドウで[キャンセル]が選択された時のハンドラ
 
-<dl>
-</dl>
 
 #### onSkillOk ()
+[スキル]ウィンドウで[OK]が選択された時のハンドラ。
 
-Handler for when a skill is selected.
-<dl>
-</dl>
-
-#### popScene ()
-
- シーンを引き出す(pop)。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#popScene</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### refreshStatus ()
+[ステータス]の回復。
 
-<dl>
-</dl>
-
-#### removeChild (child) → {Object}
-
-[super] 子オブジェクトを取り除く。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `child` | Object |  取り除くオブジェクト |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Stage#removeChild</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
- 取り除かれたオブジェクト
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
-
-#### removeChildAt (index) → {Object}
-
-[super] 指定位置にある子オブジェクトを取り除く。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `index` | [Number](Number.md) |  取り除く位置 |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Stage#removeChildAt</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
- 取り除かれたオブジェクト
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Object</span>
-                </dd>
-            </dl>
 
 #### selectActorSelection ()
+[アクター]選択ウィンドウの準備。
 
-<dl>
-</dl>
 
 #### selectEnemySelection ()
+[敵]選択ウィンドウの準備。
 
-<dl>
-</dl>
 
 #### selectNextCommand ()
+ひとつ先のコマンドを選択。
 
-Selects the next command in the battle scene.
-<dl>
-</dl>
 
 #### selectPreviousCommand ()
+ひとつ前のコマンドを選択。
 
-Selects the previous command in the battle scene.
-<dl>
-</dl>
-
-#### slowFadeSpeed () → {[Number](Number.md)}
-
- 遅いフェード速度を返す。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#slowFadeSpeed</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-Return the fade speed
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### start ()
+Overrides:[Scene_Base](Scene_Base.md#start-)
 
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#start</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### startActorCommandSelection ()
+[アクター]コマンドの選択開始。
 
-<dl>
-</dl>
-
-#### startFadeIn (duration opt, white opt)
-
- フェードインの要求。
-
-##### Parameters:
-
-| Name | Type | Attributes | Default | Description |
-| --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.md) | <optional> | 30 |  フェードインにかける時間 |
-| `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#startFadeIn</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### startFadeOut (duration opt, white opt)
-
- フェードアウトの要求。
-
-##### Parameters:
-
-| Name | Type | Attributes | Default | Description |
-| --- | --- | --- | --- | --- |
-| `duration` | [Number](Number.md) | <optional> | 30 |  フェードアウトにかける時間 |
-| `white` | Boolean | <optional> | false |  白で[フェード]するか(falseだと黒) |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#startFadeOut</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### startPartyCommandSelection ()
-
-<dl>
-</dl>
+[パーティ]コマンドの選択開始。
 
 #### stop ()
+Overrides:[Scene_Base](Scene_Base.md#stop-)
 
-Stops the battle scene.
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#stop</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### terminate ()
+Overrides:[Scene_Base](Scene_Base.md#terminate-)
 
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#terminate</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### update ()
+Overrides:[Scene_Base](Scene_Base.md#update-)
 
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#update</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### updateBattleProcess ()
-
-<dl>
-</dl>
-
-#### updateChildren ()
-
- 子オブジェクトのアップデート。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#updateChildren</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### updateFade ()
-
- フェードのアップデート。
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Scene_Base#updateFade</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+戦闘段階のアップデート。
 
 #### updateStatusWindow ()
+[ステータス]ウィンドウのアップデート。
 
-Updates the status window on the battle scene.
-<dl>
-</dl>
 
 #### updateWindowPositions ()
+ウィンドウ位置のアップデート。
 
-Updates the position of the battle scene windows.
-<dl>
-</dl>
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
