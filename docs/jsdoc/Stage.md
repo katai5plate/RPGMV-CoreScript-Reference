@@ -1,8 +1,8 @@
 # Class: Stage
 
-## (abstract) Stage ()
+## Stage ()
 
-#### (abstract) new Stage ()
+#### new Stage ()
 
  画面構成オブジェクトのツリーへの追加・削除を行う基礎オブジェクト。 
  

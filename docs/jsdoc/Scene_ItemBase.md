@@ -1,8 +1,8 @@
 # Class: Scene_ItemBase
 
-## (abstract) Scene_ItemBase ()
+## Scene_ItemBase ()
 
-#### (abstract) new Scene_ItemBase ()
+#### new Scene_ItemBase ()
 
 The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
@@ -13,8 +13,6 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 | `_actorWindow` | [Window_MenuActor](Window_MenuActor.md) |  |
 | `_itemWindow` | [Window_Selectable](Window_Selectable.md) |  |
 
-<dl>
-</dl>
 
 ### Extends
 
@@ -24,13 +22,13 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### activateItemWindow ()
 
-Activates the item window.
-<dl>
-</dl>
+
+Activates the item window.
 
 #### actor () → {[Game_Actor](Game_Actor.md)}
 
-Returns the current game actor.
+
+Returns the current game actor.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -53,7 +51,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### addChild (child) → {Object}
 
-[super] 子オブジェクトを追加。
+
+[super] 子オブジェクトを追加。
 
 ##### Parameters:
 
@@ -74,7 +73,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 ##### Returns:
 
- 追加されたオブジェクト
+
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -84,7 +84,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### addChildAt (child, index) → {Object}
 
-[super] 指定位置に子オブジェクトを追加。
+
+[super] 指定位置に子オブジェクトを追加。
 
 ##### Parameters:
 
@@ -106,7 +107,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 ##### Returns:
 
- 追加されたオブジェクト
+
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -116,7 +118,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### addWindow (Window)
 
- ウィンドウレイヤーにウィンドウを追加。
+
+ ウィンドウレイヤーにウィンドウを追加。
 
 ##### Parameters:
 
@@ -137,12 +140,11 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### applyItem ()
 
-<dl>
-</dl>
 
 #### attachReservation ()
 
- キューに予約を追加。
+
+ キューに予約を追加。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -156,9 +158,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### canUse () → {Boolean}
 
-Returns true if the user (game actor) can use the item.
-<dl>
-</dl>
+
+Returns true if the user (game actor) can use the item.
 
 ##### Returns:
 
@@ -171,13 +172,13 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### checkCommonEvent ()
 
-Checks the common event set on the item.
-<dl>
-</dl>
+
+Checks the common event set on the item.
 
 #### checkGameover ()
 
- ゲームオーバー状態か検査。
+
+ ゲームオーバー状態か検査。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -204,13 +205,13 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### createActorWindow ()
 
-Creates the actor window within the base item scene.
-<dl>
-</dl>
+
+Creates the actor window within the base item scene.
 
 #### createFadeSprite ()
 
- フェード用のスプライトを生成。
+
+ フェード用のスプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -224,7 +225,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### createHelpWindow ()
 
-Creates the help window.
+
+Creates the help window.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -238,7 +240,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### createWindowLayer ()
 
- ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
+
+ ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -252,7 +255,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### detachReservation ()
 
- キューから予約を削除。
+
+ キューから予約を削除。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -266,12 +270,11 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### determineItem ()
 
-<dl>
-</dl>
 
 #### fadeOutAll ()
 
- 全ての映像と音声を、遅い速度でフェードアウト。
+
+ 全ての映像と音声を、遅い速度でフェードアウト。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -285,7 +288,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### fadeSpeed () → {[Number](Number.md)}
 
- フェード速度を返す。
+
+ フェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -308,7 +312,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### hideSubWindow (window)
 
-Hides the sub window.
+
+Hides the sub window.
 
 ##### Parameters:
 
@@ -316,12 +321,11 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 | --- | --- | --- |
 | `window` | [Window_Base](Window_Base.md) |  |
 
-<dl>
-</dl>
 
 #### initialize ()
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -335,7 +339,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### isActive () → {Boolean}
 
- シーンがアクティブか。
+
+ シーンがアクティブか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -358,7 +363,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### isBusy () → {Boolean}
 
- フェード動作中か。
+
+ フェード動作中か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -381,9 +387,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### isCursorLeft () → {Boolean}
 
-Returns true if the cursor is left.
-<dl>
-</dl>
+
+Returns true if the cursor is left.
 
 ##### Returns:
 
@@ -396,9 +401,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### isItemEffectsValid () → {Boolean}
 
-Returns true if the item effects are valid on the target(the user).
-<dl>
-</dl>
+
+Returns true if the item effects are valid on the target(the user).
 
 ##### Returns:
 
@@ -411,7 +415,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### isReady () → {Boolean}
 
- シーンの準備ができているか。
+
+ シーンの準備ができているか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -434,9 +439,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### item () → {*}
 
-Returns the item attached to the item window within the base item scene.
-<dl>
-</dl>
+
+Returns the item attached to the item window within the base item scene.
 
 ##### Returns:
 
@@ -449,8 +453,6 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### itemTargetActors () → {[Game_Actor](Game_Actor.md)}
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -463,7 +465,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### nextActor ()
 
-Moves to the next actor in the party.
+
+Moves to the next actor in the party.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -477,8 +480,6 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### onActorCancel ()
 
-<dl>
-</dl>
 
 #### onActorChange ()
 
@@ -495,12 +496,11 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### onActorOk ()
 
-<dl>
-</dl>
 
 #### popScene ()
 
- シーンを引き出す(pop)。
+
+ シーンを引き出す(pop)。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -514,7 +514,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### previousActor ()
 
-Moves to the previous actor in the party.
+
+Moves to the previous actor in the party.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -528,7 +529,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### removeChild (child) → {Object}
 
-[super] 子オブジェクトを取り除く。
+
+[super] 子オブジェクトを取り除く。
 
 ##### Parameters:
 
@@ -549,7 +551,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 ##### Returns:
 
- 取り除かれたオブジェクト
+
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -559,7 +562,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### removeChildAt (index) → {Object}
 
-[super] 指定位置にある子オブジェクトを取り除く。
+
+[super] 指定位置にある子オブジェクトを取り除く。
 
 ##### Parameters:
 
@@ -580,7 +584,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 ##### Returns:
 
- 取り除かれたオブジェクト
+
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -609,7 +614,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### showSubWindow (window)
 
-Shows the sub window.
+
+Shows the sub window.
 
 ##### Parameters:
 
@@ -617,12 +623,11 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 | --- | --- | --- |
 | `window` | [Window_Base](Window_Base.md) |  |
 
-<dl>
-</dl>
 
 #### slowFadeSpeed () → {[Number](Number.md)}
 
- 遅いフェード速度を返す。
+
+ 遅いフェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -636,7 +641,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 ##### Returns:
 
-Return the fade speed
+
+Return the fade speed
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -646,7 +652,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### start ()
 
- シーンの開始。
+
+ シーンの開始。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -660,7 +667,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### startFadeIn (duration opt, white opt)
 
- フェードインの要求。
+
+ フェードインの要求。
 
 ##### Parameters:
 
@@ -682,7 +690,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### startFadeOut (duration opt, white opt)
 
- フェードアウトの要求。
+
+ フェードアウトの要求。
 
 ##### Parameters:
 
@@ -704,7 +713,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### stop ()
 
- シーンの停止。
+
+ シーンの停止。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -718,7 +728,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### terminate ()
 
- 遷移前のシーン中断。
+
+ 遷移前のシーン中断。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -732,7 +743,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### update ()
 
- フレーム毎のアップデート。
+
+ フレーム毎のアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -746,7 +758,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### updateActor ()
 
-Updates the current actor.
+
+Updates the current actor.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -760,7 +773,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### updateChildren ()
 
- 子オブジェクトのアップデート。
+
+ 子オブジェクトのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -774,7 +788,8 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### updateFade ()
 
- フェードのアップデート。
+
+ フェードのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -788,15 +803,13 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
 
 #### useItem ()
 
-Uses the current item.
-<dl>
-</dl>
+
+Uses the current item.
 
 #### user () → {[Game_Actor](Game_Actor.md)}
 
-Returns the current game actor.
-<dl>
-</dl>
+
+Returns the current game actor.
 
 ##### Returns:
 
@@ -805,7 +818,9 @@ The superclass of [Scene_Item](Scene_Item.md) and [Scene_Skill](Scene_Skill.md).
                 <dd>
                     <span><a>Game_Actor</a></span>
                 </dd>
-            </dl>
+            </dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

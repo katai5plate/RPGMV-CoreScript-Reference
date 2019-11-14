@@ -1,8 +1,8 @@
 # Class: Scene_MenuBase
 
-## (abstract) Scene_MenuBase ()
+## Scene_MenuBase ()
 
-#### (abstract) new Scene_MenuBase ()
+#### new Scene_MenuBase ()
 
  メニュー型シーンの基礎クラス。 [Scene_File](Scene_File.md), [Scene_ItemBase](Scene_ItemBase.md) and [Scene_Debug](Scene_Debug.md), [Scene_Equip](Scene_Equip.md), [Scene_GameEnd](Scene_GameEnd.md), [Scene_Menu](Scene_Menu.md), [Scene_Name](Scene_Name.md), [Scene_Options](Scene_Options.md), [Scene_Shop](Scene_Shop.md), [Scene_Status](Scene_Status.md) のスーパークラス。
 
@@ -14,8 +14,6 @@
 | `_backgroundSprite` | [Sprite](Sprite.md) |  シーンの背景となるスプライト |
 | `_helpWindow` | [Window_Help](Window_Help.md) |  シーンに付加されるヘルプウィンドウ |
 
-<dl>
-</dl>
 
 ### Extends
 
@@ -25,9 +23,8 @@
 
 #### actor () → {[Game_Actor](Game_Actor.md)}
 
-Returns the current game actor.
-<dl>
-</dl>
+
+Returns the current game actor.
 
 ##### Returns:
 
@@ -40,7 +37,8 @@
 
 #### addChild (child) → {Object}
 
-[super] 子オブジェクトを追加。
+
+[super] 子オブジェクトを追加。
 
 ##### Parameters:
 
@@ -61,7 +59,8 @@
 
 ##### Returns:
 
- 追加されたオブジェクト
+
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -71,7 +70,8 @@
 
 #### addChildAt (child, index) → {Object}
 
-[super] 指定位置に子オブジェクトを追加。
+
+[super] 指定位置に子オブジェクトを追加。
 
 ##### Parameters:
 
@@ -93,7 +93,8 @@
 
 ##### Returns:
 
- 追加されたオブジェクト
+
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -103,7 +104,8 @@
 
 #### addWindow (Window)
 
- ウィンドウレイヤーにウィンドウを追加。
+
+ ウィンドウレイヤーにウィンドウを追加。
 
 ##### Parameters:
 
@@ -124,7 +126,8 @@
 
 #### attachReservation ()
 
- キューに予約を追加。
+
+ キューに予約を追加。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -138,7 +141,8 @@
 
 #### checkGameover ()
 
- ゲームオーバー状態か検査。
+
+ ゲームオーバー状態か検査。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -152,7 +156,8 @@
 
 #### create ()
 
- シーンを生成。
+
+ シーンを生成。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -166,7 +171,8 @@
 
 #### createFadeSprite ()
 
- フェード用のスプライトを生成。
+
+ フェード用のスプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -180,13 +186,13 @@
 
 #### createHelpWindow ()
 
-Creates the help window.
-<dl>
-</dl>
+
+Creates the help window.
 
 #### createWindowLayer ()
 
- ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
+
+ ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -200,7 +206,8 @@
 
 #### detachReservation ()
 
- キューから予約を削除。
+
+ キューから予約を削除。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -214,7 +221,8 @@
 
 #### fadeOutAll ()
 
- 全ての映像と音声を、遅い速度でフェードアウト。
+
+ 全ての映像と音声を、遅い速度でフェードアウト。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -228,7 +236,8 @@
 
 #### fadeSpeed () → {[Number](Number.md)}
 
- フェード速度を返す。
+
+ フェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -251,7 +260,8 @@
 
 #### initialize ()
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -265,7 +275,8 @@
 
 #### isActive () → {Boolean}
 
- シーンがアクティブか。
+
+ シーンがアクティブか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -288,7 +299,8 @@
 
 #### isBusy () → {Boolean}
 
- フェード動作中か。
+
+ フェード動作中か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -311,7 +323,8 @@
 
 #### isReady () → {Boolean}
 
- シーンの準備ができているか。
+
+ シーンの準備ができているか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -334,18 +347,16 @@
 
 #### nextActor ()
 
-Moves to the next actor in the party.
-<dl>
-</dl>
+
+Moves to the next actor in the party.
 
 #### onActorChange ()
 
-<dl>
-</dl>
 
 #### popScene ()
 
- シーンを引き出す(pop)。
+
+ シーンを引き出す(pop)。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -359,13 +370,13 @@
 
 #### previousActor ()
 
-Moves to the previous actor in the party.
-<dl>
-</dl>
+
+Moves to the previous actor in the party.
 
 #### removeChild (child) → {Object}
 
-[super] 子オブジェクトを取り除く。
+
+[super] 子オブジェクトを取り除く。
 
 ##### Parameters:
 
@@ -386,7 +397,8 @@
 
 ##### Returns:
 
- 取り除かれたオブジェクト
+
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -396,7 +408,8 @@
 
 #### removeChildAt (index) → {Object}
 
-[super] 指定位置にある子オブジェクトを取り除く。
+
+[super] 指定位置にある子オブジェクトを取り除く。
 
 ##### Parameters:
 
@@ -417,7 +430,8 @@
 
 ##### Returns:
 
- 取り除かれたオブジェクト
+
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -433,12 +447,11 @@
 | --- | --- | --- |
 | `opacity` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### slowFadeSpeed () → {[Number](Number.md)}
 
- 遅いフェード速度を返す。
+
+ 遅いフェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -452,7 +465,8 @@
 
 ##### Returns:
 
-Return the fade speed
+
+Return the fade speed
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -462,7 +476,8 @@
 
 #### start ()
 
- シーンの開始。
+
+ シーンの開始。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -476,7 +491,8 @@
 
 #### startFadeIn (duration opt, white opt)
 
- フェードインの要求。
+
+ フェードインの要求。
 
 ##### Parameters:
 
@@ -498,7 +514,8 @@
 
 #### startFadeOut (duration opt, white opt)
 
- フェードアウトの要求。
+
+ フェードアウトの要求。
 
 ##### Parameters:
 
@@ -520,7 +537,8 @@
 
 #### stop ()
 
- シーンの停止。
+
+ シーンの停止。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -534,7 +552,8 @@
 
 #### terminate ()
 
- 遷移前のシーン中断。
+
+ 遷移前のシーン中断。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -548,7 +567,8 @@
 
 #### update ()
 
- フレーム毎のアップデート。
+
+ フレーム毎のアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -562,13 +582,13 @@
 
 #### updateActor ()
 
-Updates the current actor.
-<dl>
-</dl>
+
+Updates the current actor.
 
 #### updateChildren ()
 
- 子オブジェクトのアップデート。
+
+ 子オブジェクトのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -582,7 +602,8 @@
 
 #### updateFade ()
 
- フェードのアップデート。
+
+ フェードのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -592,7 +613,9 @@
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            </dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

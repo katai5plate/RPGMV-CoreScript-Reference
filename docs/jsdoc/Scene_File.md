@@ -1,8 +1,8 @@
 # Class: Scene_File
 
-## (abstract) Scene_File ()
+## Scene_File ()
 
-#### (abstract) new Scene_File ()
+#### new Scene_File ()
 
 The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
@@ -12,8 +12,6 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 | --- | --- | --- |
 | `_listWindow` | [Window_SavefileList](Window_SavefileList.md) |  |
 
-<dl>
-</dl>
 
 ### Extends
 
@@ -23,12 +21,11 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### activateListWindow ()
 
-<dl>
-</dl>
 
 #### actor () → {[Game_Actor](Game_Actor.md)}
 
-Returns the current game actor.
+
+Returns the current game actor.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -51,7 +48,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### addChild (child) → {Object}
 
-[super] 子オブジェクトを追加。
+
+[super] 子オブジェクトを追加。
 
 ##### Parameters:
 
@@ -72,7 +70,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 ##### Returns:
 
- 追加されたオブジェクト
+
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -82,7 +81,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### addChildAt (child, index) → {Object}
 
-[super] 指定位置に子オブジェクトを追加。
+
+[super] 指定位置に子オブジェクトを追加。
 
 ##### Parameters:
 
@@ -104,7 +104,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 ##### Returns:
 
- 追加されたオブジェクト
+
+ 追加されたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -114,7 +115,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### addWindow (Window)
 
- ウィンドウレイヤーにウィンドウを追加。
+
+ ウィンドウレイヤーにウィンドウを追加。
 
 ##### Parameters:
 
@@ -135,7 +137,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### attachReservation ()
 
- キューに予約を追加。
+
+ キューに予約を追加。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -149,7 +152,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### checkGameover ()
 
- ゲームオーバー状態か検査。
+
+ ゲームオーバー状態か検査。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -176,7 +180,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### createFadeSprite ()
 
- フェード用のスプライトを生成。
+
+ フェード用のスプライトを生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -203,12 +208,11 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### createListWindow ()
 
-<dl>
-</dl>
 
 #### createWindowLayer ()
 
- ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
+
+ ウィンドウレイヤー[WindowLayer](WindowLayer.md) を生成。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -222,7 +226,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### detachReservation ()
 
- キューから予約を削除。
+
+ キューから予約を削除。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -236,7 +241,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### fadeOutAll ()
 
- 全ての映像と音声を、遅い速度でフェードアウト。
+
+ 全ての映像と音声を、遅い速度でフェードアウト。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -250,7 +256,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### fadeSpeed () → {[Number](Number.md)}
 
- フェード速度を返す。
+
+ フェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -273,9 +280,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### firstSavefileIndex () → {[Number](Number.md)}
 
-Returns the index of the first save file.
-<dl>
-</dl>
+
+Returns the index of the first save file.
 
 ##### Returns:
 
@@ -288,8 +294,6 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### helpWindowText () → {[String](String.md)}
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -302,7 +306,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### initialize ()
 
- オブジェクト生成時の初期化。
+
+ オブジェクト生成時の初期化。
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
@@ -316,7 +321,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### isActive () → {Boolean}
 
- シーンがアクティブか。
+
+ シーンがアクティブか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -339,7 +345,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### isBusy () → {Boolean}
 
- フェード動作中か。
+
+ フェード動作中か。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -362,7 +369,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### isReady () → {Boolean}
 
- シーンの準備ができているか。
+
+ シーンの準備ができているか。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -385,13 +393,13 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### mode ()
 
-The current mode of the scene; the modes are 'save' or 'load'.
-<dl>
-</dl>
+
+The current mode of the scene; the modes are 'save' or 'load'.
 
 #### nextActor ()
 
-Moves to the next actor in the party.
+
+Moves to the next actor in the party.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -418,13 +426,13 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### onSavefileOk ()
 
-Handler for when a save file is selected within the file scene.
-<dl>
-</dl>
+
+Handler for when a save file is selected within the file scene.
 
 #### popScene ()
 
- シーンを引き出す(pop)。
+
+ シーンを引き出す(pop)。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -438,7 +446,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### previousActor ()
 
-Moves to the previous actor in the party.
+
+Moves to the previous actor in the party.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -452,7 +461,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### removeChild (child) → {Object}
 
-[super] 子オブジェクトを取り除く。
+
+[super] 子オブジェクトを取り除く。
 
 ##### Parameters:
 
@@ -473,7 +483,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 ##### Returns:
 
- 取り除かれたオブジェクト
+
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -483,7 +494,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### removeChildAt (index) → {Object}
 
-[super] 指定位置にある子オブジェクトを取り除く。
+
+[super] 指定位置にある子オブジェクトを取り除く。
 
 ##### Parameters:
 
@@ -504,7 +516,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 ##### Returns:
 
- 取り除かれたオブジェクト
+
+ 取り除かれたオブジェクト
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -514,9 +527,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### savefileId ()
 
-Returns the current savefileId.
-<dl>
-</dl>
+
+Returns the current savefileId.
 
 #### setBackgroundOpacity (opacity)
 
@@ -539,7 +551,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### slowFadeSpeed () → {[Number](Number.md)}
 
- 遅いフェード速度を返す。
+
+ 遅いフェード速度を返す。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -553,7 +566,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 ##### Returns:
 
-Return the fade speed
+
+Return the fade speed
 <dl>
                 <dt> Type </dt>
                 <dd>
@@ -576,7 +590,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### startFadeIn (duration opt, white opt)
 
- フェードインの要求。
+
+ フェードインの要求。
 
 ##### Parameters:
 
@@ -598,7 +613,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### startFadeOut (duration opt, white opt)
 
- フェードアウトの要求。
+
+ フェードアウトの要求。
 
 ##### Parameters:
 
@@ -620,7 +636,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### stop ()
 
- シーンの停止。
+
+ シーンの停止。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -634,7 +651,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### terminate ()
 
- 遷移前のシーン中断。
+
+ 遷移前のシーン中断。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -648,7 +666,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### update ()
 
- フレーム毎のアップデート。
+
+ フレーム毎のアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -662,7 +681,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### updateActor ()
 
-Updates the current actor.
+
+Updates the current actor.
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -676,7 +696,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### updateChildren ()
 
- 子オブジェクトのアップデート。
+
+ 子オブジェクトのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -690,7 +711,8 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
 
 #### updateFade ()
 
- フェードのアップデート。
+
+ フェードのアップデート。
 <dl>
                 <dt>Inherited From:</dt>
                 <dd>
@@ -700,7 +722,9 @@ The superclass of [Scene_Save](Scene_Save.md) and [Scene_Load](Scene_Load.md).
                         </li>
                     </ul>
                 </dd>
-            </dl>
+            </dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

@@ -1,8 +1,8 @@
 # Class: Scene_Base
 
-## (abstract) Scene_Base ()
+## Scene_Base ()
 
-#### (abstract) new Scene_Base ()
+#### new Scene_Base ()
 
  シーンの基礎オブジェクト。シーン管理は [SceneManager](SceneManager.md) で行う。
 

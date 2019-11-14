@@ -1,8 +1,8 @@
 # Class: Game_CharacterBase
 
-## (abstract) Game_CharacterBase ()
+## Game_CharacterBase ()
 
-#### (abstract) new Game_CharacterBase ()
+#### new Game_CharacterBase ()
 
  マップ上のキャラクタに共通する処理を行うクラス。 [Game_Character](Game_Character.md) のスーパークラス。
  

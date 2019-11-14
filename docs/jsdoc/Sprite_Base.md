@@ -1,8 +1,8 @@
 # Class: Sprite_Base
 
-## (abstract) Sprite_Base ()
+## Sprite_Base ()
 
-#### (abstract) new Sprite_Base ()
+#### new Sprite_Base ()
 
 アニメーションする表示物のためのクラス。<br />
 [Sprite_Balloon](Sprite_Balloon.md),

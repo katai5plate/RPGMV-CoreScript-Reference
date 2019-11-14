@@ -1,8 +1,8 @@
 # Class: Window_Command
 
-## (abstract) Window_Command (x, y)
+## Window_Command (x, y)
 
-#### (abstract) new Window_Command (x, y)
+#### new Window_Command (x, y)
 
  コマンド選択用ウィンドウ。
  

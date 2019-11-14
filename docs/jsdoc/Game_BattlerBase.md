@@ -1,8 +1,8 @@
 # Class: Game_BattlerBase
 
-## (abstract) Game_BattlerBase ()
+## Game_BattlerBase ()
 
-#### (abstract) new Game_BattlerBase ()
+#### new Game_BattlerBase ()
 
 The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains parameters calculation.
 
@@ -81,15 +81,11 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | `_buffs` | [Array](Array.md).<[Number](Number.md)> |  |
 | `_buffTurns` | [Array](Array.md).<[Number](Number.md)> |  |
 
-<dl>
-</dl>
 
 ### Methods
 
 #### actionPlusSet () → {[Array](Array.md).<[Number](Number.md)>}
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -102,8 +98,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### addedSkills () → {[Array](Array.md).<[Number](Number.md)>}
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -116,8 +110,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### addedSkillTypes () → {[Array](Array.md).<[Number](Number.md)>}
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -130,7 +122,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### addNewState (stateId)
 
-Adds a new state given a state id to the battler.
+
+Adds a new state given a state id to the battler.
 
 ##### Parameters:
 
@@ -138,8 +131,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `stateId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### addParam (paramId, value)
 
@@ -150,14 +141,11 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | `paramId` | [Number](Number.md) |  |
 | `value` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### allIcons () → {[Array](Array.md).<[Number](Number.md)>}
 
-Returns all of the icons attached to the battler.
-<dl>
-</dl>
+
+Returns all of the icons attached to the battler.
 
 ##### Returns:
 
@@ -170,9 +158,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### allTraits () → {[Array](Array.md).<[RPG.Trait](RPG.Trait.md)>}
 
-Returns all the traits of the battler.
-<dl>
-</dl>
+
+Returns all the traits of the battler.
 
 ##### Returns:
 
@@ -185,15 +172,13 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### appear ()
 
-Shows the game battler.
-<dl>
-</dl>
+
+Shows the game battler.
 
 #### attackElements () → {[Array](Array.md).<[Number](Number.md)>}
 
-Returns the attack elements of the battler as a list of numbers.
-<dl>
-</dl>
+
+Returns the attack elements of the battler as a list of numbers.
 
 ##### Returns:
 
@@ -206,9 +191,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### attackSkillId () → {[Number](Number.md)}
 
-Returns the attack skill id in the database.
-<dl>
-</dl>
+
+Returns the attack skill id in the database.
 
 ##### Returns:
 
@@ -221,9 +205,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### attackSpeed () → {[Number](Number.md)}
 
-Returns the attack speed of the battler.
-<dl>
-</dl>
+
+Returns the attack speed of the battler.
 
 ##### Returns:
 
@@ -236,9 +219,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### attackStates () → {[Array](Array.md).<[Number](Number.md)>}
 
-Returns the attack states of the battler as a list of numbers.
-<dl>
-</dl>
+
+Returns the attack states of the battler as a list of numbers.
 
 ##### Returns:
 
@@ -257,14 +239,11 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `stateId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### attackTimesAdd () → {[Number](Number.md)}
 
-Returns the number of attacks available to the battler.
-<dl>
-</dl>
+
+Returns the number of attacks available to the battler.
 
 ##### Returns:
 
@@ -277,7 +256,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### buff (paramId) → {[Number](Number.md)}
 
-Buffs the current parameter id.
+
+Buffs the current parameter id.
 
 ##### Parameters:
 
@@ -285,8 +265,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `paramId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -306,8 +284,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | `buffLevel` | [Number](Number.md) |  |
 | `paramId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -320,9 +296,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### buffIcons () → {[Array](Array.md).<[Number](Number.md)>}
 
-Returns the array of buff icons attached to the battler; this is determined by the active buffs on the battler.
-<dl>
-</dl>
+
+Returns the array of buff icons attached to the battler; this is determined by the active buffs on the battler.
 
 ##### Returns:
 
@@ -335,9 +310,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### buffLength () → {[Number](Number.md)}
 
-Returns the length of the buff.
-<dl>
-</dl>
+
+Returns the length of the buff.
 
 ##### Returns:
 
@@ -350,9 +324,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### canAttack () → {Boolean}
 
-Returns true if the battler can attack.
-<dl>
-</dl>
+
+Returns true if the battler can attack.
 
 ##### Returns:
 
@@ -365,7 +338,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### canEquip (item) → {Boolean}
 
-Returns true if the battler can equip the item.
+
+Returns true if the battler can equip the item.
 
 ##### Parameters:
 
@@ -373,8 +347,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -387,7 +359,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### canEquipArmor (item) → {Boolean}
 
-Returns true if the battler can equip armor.
+
+Returns true if the battler can equip armor.
 
 ##### Parameters:
 
@@ -395,8 +368,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -409,7 +380,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### canEquipWeapon (item) → {Boolean}
 
-Returns true if the battler can equip a weapon.
+
+Returns true if the battler can equip a weapon.
 
 ##### Parameters:
 
@@ -417,8 +389,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -431,9 +401,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### canGuard () → {Boolean}
 
-Returns true if the battler can guard.
-<dl>
-</dl>
+
+Returns true if the battler can guard.
 
 ##### Returns:
 
@@ -446,9 +415,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### canInput () → {Boolean}
 
-Returns true if the battler can input actions.
-<dl>
-</dl>
+
+Returns true if the battler can input actions.
 
 ##### Returns:
 
@@ -461,8 +429,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### canMove () → {Boolean}
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -475,7 +441,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### canPaySkillCost (skill) → {Boolean}
 
-Returns true if the battler can pay the cost of the specified skill.
+
+Returns true if the battler can pay the cost of the specified skill.
 
 ##### Parameters:
 
@@ -483,8 +450,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -497,7 +462,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### canUse (item) → {Boolean}
 
-Returns true if the battler can use the item.
+
+Returns true if the battler can use the item.
 
 ##### Parameters:
 
@@ -505,8 +471,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -519,25 +483,19 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### clearBuffs ()
 
-Clears buffs from the battler.
-<dl>
-</dl>
+
+Clears buffs from the battler.
 
 #### clearParamPlus ()
 
-<dl>
-</dl>
 
 #### clearStates ()
 
-<dl>
-</dl>
 
 #### collapseType () → {[Number](Number.md)}
 
-Returns the collapse type of the battler.
-<dl>
-</dl>
+
+Returns the collapse type of the battler.
 
 ##### Returns:
 
@@ -550,9 +508,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### confusionLevel () → {[Number](Number.md)}
 
-Returns the confusion level of the battler.
-<dl>
-</dl>
+
+Returns the confusion level of the battler.
 
 ##### Returns:
 
@@ -565,9 +522,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### deathStateId () → {[Number](Number.md)}
 
-Returns the death state id.
-<dl>
-</dl>
+
+Returns the death state id.
 
 ##### Returns:
 
@@ -586,8 +542,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `paramId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -606,14 +560,11 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `paramId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### die ()
 
-Kills the battler.
-<dl>
-</dl>
+
+Kills the battler.
 
 #### elementRate (elementId) → {[Number](Number.md)}
 
@@ -623,8 +574,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `elementId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -643,12 +592,11 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `paramId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### eraseState (stateId)
 
-Erases the current state from the game battler given the stateId in the editor database.
+
+Erases the current state from the game battler given the stateId in the editor database.
 
 ##### Parameters:
 
@@ -656,14 +604,11 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `stateId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### guardSkillId () → {[Number](Number.md)}
 
-Returns the guard skill id in the database.
-<dl>
-</dl>
+
+Returns the guard skill id in the database.
 
 ##### Returns:
 
@@ -676,15 +621,13 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### hide ()
 
-Hides the game battler.
-<dl>
-</dl>
+
+Hides the game battler.
 
 #### hpRate () → {[Number](Number.md)}
 
-Returns the percentage of the battler's hp left as a float.
-<dl>
-</dl>
+
+Returns the percentage of the battler's hp left as a float.
 
 ##### Returns:
 
@@ -703,25 +646,19 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `paramId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### initialize ()
 
- オブジェクト生成時の初期化。
-<dl>
-</dl>
+
+ オブジェクト生成時の初期化。
 
 #### initMembers ()
 
-<dl>
-</dl>
 
 #### isActor () → {Boolean}
 
-Returns true if the battler is an actor.
-<dl>
-</dl>
+
+Returns true if the battler is an actor.
 
 ##### Returns:
 
@@ -734,9 +671,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### isAlive () → {Boolean}
 
-Returns true if the battler is alive.
-<dl>
-</dl>
+
+Returns true if the battler is alive.
 
 ##### Returns:
 
@@ -749,9 +685,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### isAppeared () → {Boolean}
 
-Returns true if the game battler is not hidden.
-<dl>
-</dl>
+
+Returns true if the game battler is not hidden.
 
 ##### Returns:
 
@@ -764,9 +699,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### isAutoBattle () → {Boolean}
 
-Returns true if the battler is set to battle automatically.
-<dl>
-</dl>
+
+Returns true if the battler is set to battle automatically.
 
 ##### Returns:
 
@@ -785,8 +719,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `paramId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -805,8 +737,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `paramId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -825,8 +755,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `paramId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -839,9 +767,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### isConfused () → {Boolean}
 
-Returns true if the battler is confused.
-<dl>
-</dl>
+
+Returns true if the battler is confused.
 
 ##### Returns:
 
@@ -854,9 +781,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### isDead () → {Boolean}
 
-Returns true if the battler is dead.
-<dl>
-</dl>
+
+Returns true if the battler is dead.
 
 ##### Returns:
 
@@ -869,8 +795,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### isDeathStateAffected () → {Boolean}
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -889,8 +813,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `paramId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -903,9 +825,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### isDualWield () → {Boolean}
 
-Returns true if the battler dual wields.
-<dl>
-</dl>
+
+Returns true if the battler dual wields.
 
 ##### Returns:
 
@@ -918,9 +839,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### isDying () → {Boolean}
 
-Returns true if the battler is dying.
-<dl>
-</dl>
+
+Returns true if the battler is dying.
 
 ##### Returns:
 
@@ -933,9 +853,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### isEnemy () → {Boolean}
 
-Returns true if the battler is an enemy.
-<dl>
-</dl>
+
+Returns true if the battler is an enemy.
 
 ##### Returns:
 
@@ -954,8 +873,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `atypeId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -974,8 +891,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `etypeId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -994,8 +909,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `etypeId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1014,8 +927,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `wtypeId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1028,9 +939,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### isGuard () → {Boolean}
 
-Returns true if the battler is guarding.
-<dl>
-</dl>
+
+Returns true if the battler is guarding.
 
 ##### Returns:
 
@@ -1043,9 +953,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### isHidden () → {Boolean}
 
-Returns true if the game battler is hidden.
-<dl>
-</dl>
+
+Returns true if the game battler is hidden.
 
 ##### Returns:
 
@@ -1064,8 +973,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `paramId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1084,8 +991,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `paramId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1098,7 +1003,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### isOccasionOk (item) → {Boolean}
 
-Returns true if the item occasion is okay.
+
+Returns true if the item occasion is okay.
 
 ##### Parameters:
 
@@ -1106,8 +1012,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1120,9 +1024,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### isPreserveTp () → {Boolean}
 
-Returns true if tp is preserved between battles.
-<dl>
-</dl>
+
+Returns true if tp is preserved between battles.
 
 ##### Returns:
 
@@ -1135,9 +1038,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### isRestricted () → {Boolean}
 
-Returns true if the game battler is restricted.
-<dl>
-</dl>
+
+Returns true if the game battler is restricted.
 
 ##### Returns:
 
@@ -1156,8 +1058,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `stypeId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1176,8 +1076,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `stypeId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1190,7 +1088,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### isSkillWtypeOk (skill) → {Boolean}
 
-Returns true if the skill is a weapon type oriented skill.
+
+Returns true if the skill is a weapon type oriented skill.
 
 ##### Parameters:
 
@@ -1198,8 +1097,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1212,7 +1109,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### isStateAffected (stateId) → {Boolean}
 
-Returns true if the battler is affected by the specified state given the state id.
+
+Returns true if the battler is affected by the specified state given the state id.
 
 ##### Parameters:
 
@@ -1220,8 +1118,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `stateId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1234,7 +1130,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### isStateExpired (stateId) → {Boolean}
 
-Returns true if the state, given the state id is expired.
+
+Returns true if the state, given the state id is expired.
 
 ##### Parameters:
 
@@ -1242,8 +1139,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `stateId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1262,8 +1157,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `stateId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1276,8 +1169,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### isSubstitute () → {Boolean}
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1290,9 +1181,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### maxTp () → {[Number](Number.md)}
 
-Returns the maximum tp of the battler.
-<dl>
-</dl>
+
+Returns the maximum tp of the battler.
 
 ##### Returns:
 
@@ -1305,7 +1195,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### meetsItemConditions (item) → {Boolean}
 
-Returns true if the battler meets the item conditions.
+
+Returns true if the battler meets the item conditions.
 
 ##### Parameters:
 
@@ -1313,8 +1204,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `item` | [RPG.Item](RPG.Item.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1327,7 +1216,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### meetsSkillConditions (skill) → {Boolean}
 
-Returns true if the battler meets the skill conditions.
+
+Returns true if the battler meets the skill conditions.
 
 ##### Parameters:
 
@@ -1335,8 +1225,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1355,8 +1243,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1369,8 +1255,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### mostImportantStateText () → {[String](String.md)}
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1383,9 +1267,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### mpRate () → {[Number](Number.md)}
 
-Returns the percentage of the battler's mp left as a float.
-<dl>
-</dl>
+
+Returns the percentage of the battler's mp left as a float.
 
 ##### Returns:
 
@@ -1398,9 +1281,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### onRestrict ()
 
-Handler for when the battler is restricted.
-<dl>
-</dl>
+
+Handler for when the battler is restricted.
 
 #### overwriteBuffTurns (paramId, turns)
 
@@ -1411,12 +1293,11 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | `paramId` | [Number](Number.md) |  |
 | `turns` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### param (paramId) → {[Number](Number.md)}
 
-Returns a standard parameter, given a paramId; standard parameters include: HP, MP, Atk, M.Atk, Def, M.Def, Luck, Agility.
+
+Returns a standard parameter, given a paramId; standard parameters include: HP, MP, Atk, M.Atk, Def, M.Def, Luck, Agility.
 
 ##### Parameters:
 
@@ -1424,8 +1305,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `paramId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1438,7 +1317,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### paramBase (paramId) → {[Number](Number.md)}
 
-Returns the base parameters of the battler; this is determined by their current level and the paramId given.
+
+Returns the base parameters of the battler; this is determined by their current level and the paramId given.
 
 ##### Parameters:
 
@@ -1446,8 +1326,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `paramId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1466,8 +1344,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `paramId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1486,8 +1362,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `paramId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1506,8 +1380,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `paramId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1526,8 +1398,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `paramId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1546,8 +1416,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `paramId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1566,8 +1434,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `abilityId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1580,7 +1446,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### paySkillCost (skill)
 
-Pays the cost of the skill when activating the skill.
+
+Pays the cost of the skill when activating the skill.
 
 ##### Parameters:
 
@@ -1588,24 +1455,21 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
-<dl>
-</dl>
 
 #### recoverAll ()
 
-Recovers the battler from all states and restores the battler to maximum hp and mp.
-<dl>
-</dl>
+
+Recovers the battler from all states and restores the battler to maximum hp and mp.
 
 #### refresh ()
 
-Refreshes the battler.
-<dl>
-</dl>
+
+Refreshes the battler.
 
 #### resetStateCounts (stateId)
 
-Resets the state count of the specified state, given the state id.
+
+Resets the state count of the specified state, given the state id.
 
 ##### Parameters:
 
@@ -1613,14 +1477,11 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `stateId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### restriction () → {[Number](Number.md)}
 
-Returns the number of the restriction.
-<dl>
-</dl>
+
+Returns the number of the restriction.
 
 ##### Returns:
 
@@ -1633,13 +1494,13 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### revive ()
 
-Revives the battler.
-<dl>
-</dl>
+
+Revives the battler.
 
 #### setHp (hp)
 
-Sets the battler hp.
+
+Sets the battler hp.
 
 ##### Parameters:
 
@@ -1647,12 +1508,11 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `hp` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### setMp (mp)
 
-Sets the battler mp.
+
+Sets the battler mp.
 
 ##### Parameters:
 
@@ -1660,12 +1520,11 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `mp` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### setTp (tp)
 
-Sets the battler tp.
+
+Sets the battler tp.
 
 ##### Parameters:
 
@@ -1673,12 +1532,11 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `tp` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### skillMpCost (skill) → {[Number](Number.md)}
 
-Returns the mp cost of the skill.
+
+Returns the mp cost of the skill.
 
 ##### Parameters:
 
@@ -1686,8 +1544,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1700,7 +1556,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### skillTpCost (skill) → {[Number](Number.md)}
 
-Returns the tp cost of the skill.
+
+Returns the tp cost of the skill.
 
 ##### Parameters:
 
@@ -1708,8 +1565,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `skill` | [RPG.Skill](RPG.Skill.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1722,9 +1577,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### slotType () → {[Number](Number.md)}
 
-Returns the battler slot type of a trait.
-<dl>
-</dl>
+
+Returns the battler slot type of a trait.
 
 ##### Returns:
 
@@ -1737,9 +1591,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### sortStates ()
 
-Sorts the states attached to the battler.
-<dl>
-</dl>
+
+Sorts the states attached to the battler.
 
 #### sparam (sparamId) → {[Number](Number.md)}
 
@@ -1749,8 +1602,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `sparamId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1769,8 +1620,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `flagId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1783,9 +1632,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### stateIcons () → {[Array](Array.md).<[Number](Number.md)>}
 
-Returns the array of state icons attached to the battler; this is determined by the active states on the battler.
-<dl>
-</dl>
+
+Returns the array of state icons attached to the battler; this is determined by the active states on the battler.
 
 ##### Returns:
 
@@ -1798,8 +1646,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### stateMotionIndex () → {[Number](Number.md)}
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1812,8 +1658,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### stateOverlayIndex () → {[Number](Number.md)}
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1832,8 +1676,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `stateId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1846,8 +1688,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### stateResistSet () → {[Array](Array.md).<[Number](Number.md)>}
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1860,9 +1700,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### states () → {[Array](Array.md).<[RPG.State](RPG.State.md)>}
 
-Returns the states applied to the battler.
-<dl>
-</dl>
+
+Returns the states applied to the battler.
 
 ##### Returns:
 
@@ -1875,9 +1714,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### tpRate () → {[Number](Number.md)}
 
-Returns the percentage of the battler's tp left as a float.
-<dl>
-</dl>
+
+Returns the percentage of the battler's tp left as a float.
 
 ##### Returns:
 
@@ -1890,9 +1728,8 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### traitObjects () → {[Array](Array.md).<*>}
 
-Returns an array of the all objects having traits. States only here.
-<dl>
-</dl>
+
+Returns an array of the all objects having traits. States only here.
 
 ##### Returns:
 
@@ -1911,8 +1748,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `code` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1932,8 +1767,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | `code` | [Number](Number.md) |  |
 | `id` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1952,8 +1785,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `code` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1973,8 +1804,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | `code` | [Number](Number.md) |  |
 | `id` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -1993,8 +1822,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `code` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -2014,8 +1841,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | `code` | [Number](Number.md) |  |
 | `id` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -2028,14 +1853,11 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 
 #### updateBuffTurns ()
 
-Updates the buff turns on battler.
-<dl>
-</dl>
+
+Updates the buff turns on battler.
 
 #### updateStateTurns ()
 
-<dl>
-</dl>
 
 #### xparam (xparamId) → {[Number](Number.md)}
 
@@ -2045,8 +1867,6 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 | --- | --- | --- |
 | `xparamId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 ##### Returns:
 
@@ -2055,7 +1875,9 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
                 <dd>
                     <span><a>Number</a></span>
                 </dd>
-            </dl>
+            </dl>
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

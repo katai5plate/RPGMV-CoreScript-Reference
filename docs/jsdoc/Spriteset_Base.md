@@ -1,8 +1,8 @@
 # Class: Spriteset_Base
 
-## (abstract) Spriteset_Base ()
+## Spriteset_Base ()
 
-#### (abstract) new Spriteset_Base ()
+#### new Spriteset_Base ()
 
 複数のスプライトを組み合わせて使うクラス。
 

@@ -1,8 +1,8 @@
 # Class: Window_Selectable
 
-## (abstract) Window_Selectable (x, y, width, height)
+## Window_Selectable (x, y, width, height)
 
-#### (abstract) new Window_Selectable (x, y, width, height)
+#### new Window_Selectable (x, y, width, height)
 
 コマンドカーソルの移動やスクロールを行うウィンドウ。
 
