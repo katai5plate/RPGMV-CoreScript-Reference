@@ -1,751 +1,675 @@
 # Class: BattleManager
 
-The static class that manages battle progress.
+戦闘の進行を制御する静的クラス。
+
+[Scene_Battle](Scene_Battle.md) のコントロール部。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_phase` | [String](String.md) | [static] |
-| `_canEscape` | Boolean | [static] [static] |
-| `_canLose` | Boolean | [static] |
-| `_battleTest` | Boolean | [static] |
-| `_eventCallback` | function | [static] |
-| `_preemptive` | Boolean | [static] |
-| `_surprise` | Boolean | [static] |
-| `_actorIndex` | [Number](Number.md) | [static] |
-| `_actionForcedBattler` | [Game_Battler](Game_Battler.md) | [static] |
-| `_mapBgm` | [MV.AudioParameters](MV.AudioParameters.md) | [static] |
-| `_mapBgs` | [MV.AudioParameters](MV.AudioParameters.md) | [static] |
-| `_actionBattlers` | [Array](Array.md).<[Game_Battler](Game_Battler.md)> | [static] |
-| `_subject` | [Game_Battler](Game_Battler.md) | [static] |
-| `_action` | [Game_Action](Game_Action.md) | [static] |
-| `_targets` | [Array](Array.md).<[Game_Battler](Game_Battler.md)> | [static] |
-| `_logWindow` | [Window_BattleLog](Window_BattleLog.md) | [static] |
-| `_statusWindow` | [Window_BattleStatus](Window_BattleStatus.md) | [static] |
-| `_spriteset` | [Spriteset_Battle](Spriteset_Battle.md) | [static] |
-| `_escapeRatio` | [Number](Number.md) | [static] |
-| `_escaped` | Boolean | [static] |
-| `_rewards` | [MV.BattleRewards](MV.BattleRewards.md) | [static] |
+| `_phase` | [String](String.md) | [static] 状態 'start', 'turn', 'action', 'turnEnd', 'battleEnd' |
+| `_canEscape` | Boolean | [static] [逃走可] |
+| `_canLose` | Boolean | [static] [敗北可] |
+| `_battleTest` | Boolean | [static] [戦闘テスト]か |
+| `_eventCallback` | function | [static] コールバック関数 |
+| `_preemptive` | Boolean | [static] [先制攻撃]か |
+| `_surprise` | Boolean | [static] [不意打ち]か |
+| `_actorIndex` | [Number](Number.md) | [static] アクター番号 |
+| `_actionForcedBattler` | [Game_Battler](Game_Battler.md) | [static] 強制行動のアクター |
+| `_mapBgm` | [MV.AudioParameters](MV.AudioParameters.md) | [static] 戦闘BGM |
+| `_mapBgs` | [MV.AudioParameters](MV.AudioParameters.md) | [static] 戦闘BGS |
+| `_actionBattlers` | [Array](Array.md).<[Game_Battler](Game_Battler.md)> | [static] アクションを行うバトラー |
+| `_subject` | [Game_Battler](Game_Battler.md) | [static] 対象バトラー |
+| `_action` | [Game_Action](Game_Action.md) | [static] アクション |
+| `_targets` | [Array](Array.md).<[Game_Battler](Game_Battler.md)> | [static] 目標バトラー |
+| `_logWindow` | [Window_BattleLog](Window_BattleLog.md) | [static] ログウィンドウ |
+| `_statusWindow` | [Window_BattleStatus](Window_BattleStatus.md) | [static] ステータスウィンドウ |
+| `_spriteset` | [Spriteset_Battle](Spriteset_Battle.md) | [static] スプライトセット |
+| `_escapeRatio` | [Number](Number.md) | [static] 逃走確率 |
+| `_escaped` | Boolean | [static] 逃走成功か |
+| `_rewards` | [MV.BattleRewards](MV.BattleRewards.md) | [static] 報酬 |
 
-<dl>
-</dl>
 
 ### Methods
 
 #### (static) abort ()
+中止。
 
-<dl>
-</dl>
 
 #### (static) actor () → {[Game_Actor](Game_Actor.md)}
-
-<dl>
-</dl>
+アクターを返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Game_Actor</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Game_Actor</span>
+	</dd>
+</dl>
+
 
 #### (static) allBattleMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
-
-<dl>
-</dl>
+すべての戦闘に参加しているバトラーを返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Game_Battler</a>&gt;</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Array.&lt;Game_Battler&gt;</span>
+	</dd>
+</dl>
+
 
 #### (static) applySubstitute (target) → {[Game_Battler](Game_Battler.md)}
+対象が死んでいるなどしたら、代わりを選んで返す。
+問題なければ、対象をそのまま返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
 
-<dl>
-</dl>
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Game_Battler</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Game_Battler</span>
+	</dd>
+</dl>
+
 
 #### (static) canEscape () → {Boolean}
-
-<dl>
-</dl>
+[逃走可]か。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### (static) canLose () → {Boolean}
-
-<dl>
-</dl>
+[敗北可]か。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### (static) changeActor (newActorIndex, lastActorActionState)
+アクターの変更。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `newActorIndex` | [Number](Number.md) |  |
-| `lastActorActionState` | [String](String.md) |  |
+| `newActorIndex` | [Number](Number.md) | 新しいアクターの番号 |
+| `lastActorActionState` | [String](String.md) | 現在のアクターの行動状態 |
 
-<dl>
-</dl>
 
 #### (static) checkAbort () → {Boolean}
-
-<dl>
-</dl>
+パーティがいないなど中止する状態なら中止し、中止を実行したか返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### (static) checkBattleEnd () → {Boolean}
-
-<dl>
-</dl>
+味方か敵が全滅しているなど戦闘終了状態なら終了し、終了を実行したか返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### (static) checkSubstitute (target) → {Boolean}
+対象が死んでいるなどして代わりが必要か返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
-
-<dl>
-</dl>
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### (static) clearActor ()
+アクターの順番を初期位置に戻す。
 
-<dl>
-</dl>
 
 #### (static) displayDefeatMessage ()
+[敗北]メッセージを表示。
 
-<dl>
-</dl>
 
 #### (static) displayDropItems ()
+[アイテム獲得]メッセージを表示。
 
-<dl>
-</dl>
 
 #### (static) displayEscapeFailureMessage ()
+[逃走失敗]メッセージを表示。
 
-<dl>
-</dl>
 
 #### (static) displayEscapeSuccessMessage ()
+[逃走成功]メッセージを表示。
 
-<dl>
-</dl>
 
 #### (static) displayExp ()
+[経験値獲得]メッセージを表示。
 
-<dl>
-</dl>
 
 #### (static) displayGold ()
+[お金獲得]メッセージを表示。
 
-<dl>
-</dl>
 
 #### (static) displayRewards ()
+報酬(経験値・お金・アイテム)メッセージを表示。
 
-<dl>
-</dl>
 
 #### (static) displayStartMessages ()
+[出現]メッセージを表示。
 
-<dl>
-</dl>
 
 #### (static) displayVictoryMessage ()
+[勝利]メッセージを表示。
 
-<dl>
-</dl>
 
 #### (static) endAction ()
+行動終了処理。
 
-<dl>
-</dl>
 
 #### (static) endBattle (result)
+戦闘終了処理。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `result` | [Number](Number.md) |  |
+| `result` | [Number](Number.md) | 0:勝利 1:中断 2:敗北 |
 
-<dl>
-</dl>
 
 #### (static) endTurn ()
+ターン終了処理。
 
-<dl>
-</dl>
 
 #### (static) forceAction (battler)
+強制行動。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `battler` | [Game_Battler](Game_Battler.md) |  |
+| `battler` | [Game_Battler](Game_Battler.md) | 対象バトラー |
 
-<dl>
-</dl>
 
 #### (static) gainDropItems ()
+[ドロップアイテム]を得る。
 
-<dl>
-</dl>
 
 #### (static) gainExp ()
+[経験値]を得る。
 
-<dl>
-</dl>
 
 #### (static) gainGold ()
+[お金]を得る。
 
-<dl>
-</dl>
 
 #### (static) gainRewards ()
+報酬(経験値・お金・アイテム)を得る。
 
-<dl>
-</dl>
 
 #### (static) getNextSubject () → {[Game_Battler](Game_Battler.md)}
-
-<dl>
-</dl>
+次の対象バトラーを返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Game_Battler</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Game_Battler</span>
+	</dd>
+</dl>
+
 
 #### (static) initMembers ()
+メンバ変数の初期化。
 
-<dl>
-</dl>
 
-#### (static) inputtingAction ()
-
-<dl>
-</dl>
+#### (static) inputtingAction () → {[Game_Action](Game_Action.md)}
+入力されたアクションを返す。
 
 ##### Returns:
 
+<dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Game_Action</span>
+	</dd>
+</dl>
 
-Game_Action
 
 #### (static) invokeAction (subject, target)
+指定対象が指定目標に対してのアクションを起動する。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `subject` | [Game_Battler](Game_Battler.md) |  |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `subject` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
-<dl>
-</dl>
 
 #### (static) invokeCounterAttack (subject, target)
+指定対象が指定目標に対しての反撃アクションを起動する。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `subject` | [Game_Battler](Game_Battler.md) |  |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `subject` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
-<dl>
-</dl>
 
 #### (static) invokeMagicReflection (subject, target)
+指定対象が指定目標に対しての魔法反射アクションを起動する。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `subject` | [Game_Battler](Game_Battler.md) |  |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `subject` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
-<dl>
-</dl>
 
 #### (static) invokeNormalAction (subject, target)
+指定対象が指定目標に対しての通常アクションを起動する。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `subject` | [Game_Battler](Game_Battler.md) |  |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `subject` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
-<dl>
-</dl>
 
 #### (static) isAborting () → {Boolean}
-
-<dl>
-</dl>
+中断処理中か。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### (static) isActionForced () → {Boolean}
-
-<dl>
-</dl>
+強制行動中か。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### (static) isBattleEnd () → {Boolean}
-
-<dl>
-</dl>
+戦闘終了状態(敵か味方が全滅)か。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### (static) isBattleTest () → {Boolean}
-
-<dl>
-</dl>
+[戦闘テスト]での実行か。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### (static) isBusy () → {Boolean}
-
-<dl>
-</dl>
+メッセージ表示などの処理中か。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### (static) isEscaped () → {Boolean}
-
-<dl>
-</dl>
+逃走完了したか。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### (static) isForcedTurn () → {Boolean}
-
-<dl>
-</dl>
+強制されたターンか。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### (static) isInputting () → {Boolean}
-
-<dl>
-</dl>
+入力中か。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### (static) isInTurn () → {Boolean}
-
-<dl>
-</dl>
+ターンの最中か。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### (static) isTurnEnd () → {Boolean}
-
-<dl>
-</dl>
+ターンの終了状態か。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### (static) makeActionOrders ()
+アクションの順番を設定。
 
-<dl>
-</dl>
 
 #### (static) makeEscapeRatio ()
+逃走確率を設定。
 
-<dl>
-</dl>
 
 #### (static) makeRewards ()
+報酬を設定。
 
-<dl>
-</dl>
 
 #### (static) onEncounter ()
+エンカウント時に呼ばれるハンドラ。
+[先制攻撃][不意打ち]の判定。
 
-<dl>
-</dl>
 
 #### (static) playBattleBgm ()
+戦闘BGMを再生。
 
-<dl>
-</dl>
 
 #### (static) playDefeatMe ()
+敗北MEを再生。
 
-<dl>
-</dl>
 
 #### (static) playVictoryMe ()
+勝利MEを再生。
 
-<dl>
-</dl>
 
 #### (static) processAbort ()
+中止処理。
 
-<dl>
-</dl>
 
 #### (static) processDefeat ()
+敗北処理。
 
-<dl>
-</dl>
 
 #### (static) processEscape () → {Boolean}
-
-<dl>
-</dl>
+逃走処理を行い、逃走が成功したか返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### (static) processForcedAction ()
+強制アクションの処理。
 
-<dl>
-</dl>
 
 #### (static) processTurn ()
+ターンの処理。
 
-<dl>
-</dl>
 
 #### (static) processVictory ()
+勝利処理。
 
-<dl>
-</dl>
 
 #### (static) rateSurprise () → {[Number](Number.md)}
-
-<dl>
-</dl>
+[不意打ち]の確率を得る。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Number</span>
+	</dd>
+</dl>
+
 
 #### (static) refreshStatus ()
+[ステータス]を回復する。
 
-<dl>
-</dl>
 
 #### (static) replayBgmAndBgs ()
+BGMとBGSの続きを再生。
 
-<dl>
-</dl>
 
 #### (static) saveBgmAndBgs ()
+BGMとBGSの状態を保存。
 
-<dl>
-</dl>
 
 #### (static) selectNextCommand ()
+ひとつ先のコマンドを選択。
 
-<dl>
-</dl>
 
 #### (static) selectPreviousCommand ()
+ひとつ前のコマンドを選択。
 
-<dl>
-</dl>
 
 #### (static) setBattleTest (battleTest)
+[テスト戦闘]状態か設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `battleTest` | Boolean |  |
+| `battleTest` | Boolean | [テスト戦闘]状態か |
 
-<dl>
-</dl>
 
 #### (static) setEventCallback (callback)
+(endBattleから帰る)コールバック関数を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `callback` | function |  |
+| `callback` | function | コールバック関数 |
 
-<dl>
-</dl>
 
 #### (static) setLogWindow (logWindow)
+ログウィンドウを設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `logWindow` | [Window_BattleLog](Window_BattleLog.md) |  |
+| `logWindow` | [Window_BattleLog](Window_BattleLog.md) | ログウィンドウ |
 
-<dl>
-</dl>
 
 #### (static) setSpriteset (spriteset)
+スプライトセットを設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `spriteset` | [Spriteset_Battle](Spriteset_Battle.md) |  |
+| `spriteset` | [Spriteset_Battle](Spriteset_Battle.md) | スプライトセット |
 
-<dl>
-</dl>
 
 #### (static) setStatusWindow (statusWindow)
+ステータスウィンドウを設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `statusWindow` | [Window_BattleStatus](Window_BattleStatus.md) |  |
+| `statusWindow` | [Window_BattleStatus](Window_BattleStatus.md) | ステータスウィンドウ |
 
-<dl>
-</dl>
 
 #### (static) setup (troopId, canEscape, canLose)
+戦闘の設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `troopId` | [Number](Number.md) |  |
-| `canEscape` | Boolean |  |
-| `canLose` | Boolean |  |
+| `troopId` | [Number](Number.md) | 敵グループID |
+| `canEscape` | Boolean | [逃走可] |
+| `canLose` | Boolean | [敗北可] |
 
-<dl>
-</dl>
 
 #### (static) startAction ()
+アクション開始。
 
-<dl>
-</dl>
 
 #### (static) startBattle ()
+戦闘開始。
 
-<dl>
-</dl>
 
 #### (static) startInput ()
+入力開始。
 
-<dl>
-</dl>
 
 #### (static) startTurn ()
+ターン開始。
 
-<dl>
-</dl>
 
 #### (static) update ()
-
-<dl>
-</dl>
+フレーム毎のアップデート。
 
 #### (static) updateAction ()
+アクションのアップデート。
 
-<dl>
-</dl>
 
 #### (static) updateBattleEnd ()
+戦闘終了のアップデート。
 
-<dl>
-</dl>
 
 #### (static) updateEvent () → {Boolean}
-
-<dl>
-</dl>
+イベントのアップデート。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### (static) updateEventMain () → {Boolean}
-
-<dl>
-</dl>
+イベント主要部分のアップデート。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Boolean</span>
+	</dd>
+</dl>
+
 
 #### (static) updateTurn ()
+ターンのアップデート。
 
-<dl>
-</dl>
 
 #### (static) updateTurnEnd ()
-
-<dl>
-</dl>
+ターン終了のアップテート。
 
 
  <br>
