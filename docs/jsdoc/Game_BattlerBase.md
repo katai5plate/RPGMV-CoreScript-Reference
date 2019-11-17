@@ -4,7 +4,9 @@
 
 #### new Game_BattlerBase ()
 
-The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains parameters calculation.
+[Game_Battler](Game_Battler.md) のスーパークラス。
+
+[BattleManager](BattleManager.md) に保持され、戦闘シーンでのパラメータの計算につかわれる。
 
 ##### Properties:
 
@@ -90,11 +92,11 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Number</a>&gt;</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Array.&lt;Number&gt;</span>
+	</dd>
+</dl>
 
 #### addedSkills () → {[Array](Array.md).<[Number](Number.md)>}
 
@@ -102,11 +104,11 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Number</a>&gt;</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Array.&lt;Number&gt;</span>
+	</dd>
+</dl>
 
 #### addedSkillTypes () → {[Array](Array.md).<[Number](Number.md)>}
 
@@ -114,11 +116,11 @@ The superdeclare class of [Game_Battler](Game_Battler.md). It mainly contains pa
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Number</a>&gt;</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Array.&lt;Number&gt;</span>
+	</dd>
+</dl>
 
 #### addNewState (stateId)
 
@@ -150,11 +152,11 @@ Returns all of the icons attached to the battler.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Number</a>&gt;</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Array.&lt;Number&gt;</span>
+	</dd>
+</dl>
 
 #### allTraits () → {[Array](Array.md).<[RPG.Trait](RPG.Trait.md)>}
 
@@ -164,11 +166,11 @@ Returns all the traits of the battler.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>RPG.Trait</a>&gt;</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Array.&lt;RPG.Trait&gt;</span>
+	</dd>
+</dl>
 
 #### appear ()
 
@@ -183,11 +185,11 @@ Returns the attack elements of the battler as a list of numbers.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Number</a>&gt;</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Array.&lt;Number&gt;</span>
+	</dd>
+</dl>
 
 #### attackSkillId () → {[Number](Number.md)}
 
@@ -225,11 +227,11 @@ Returns the attack states of the battler as a list of numbers.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Number</a>&gt;</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Array.&lt;Number&gt;</span>
+	</dd>
+</dl>
 
 #### attackStatesRate (stateId)
 
@@ -302,11 +304,11 @@ Returns the array of buff icons attached to the battler; this is determined by t
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Number</a>&gt;</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Array.&lt;Number&gt;</span>
+	</dd>
+</dl>
 
 #### buffLength () → {[Number](Number.md)}
 
@@ -1638,11 +1640,11 @@ Returns the array of state icons attached to the battler; this is determined by 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Number</a>&gt;</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Array.&lt;Number&gt;</span>
+	</dd>
+</dl>
 
 #### stateMotionIndex () → {[Number](Number.md)}
 
@@ -1692,11 +1694,11 @@ Returns the array of state icons attached to the battler; this is determined by 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Number</a>&gt;</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Array.&lt;Number&gt;</span>
+	</dd>
+</dl>
 
 #### states () → {[Array](Array.md).<[RPG.State](RPG.State.md)>}
 
@@ -1752,11 +1754,12 @@ Returns an array of the all objects having traits. States only here.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>RPG.Trait</a>&gt;</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Array.&lt;RPG.Trait&gt;</span>
+	</dd>
+</dl>
+
 
 #### traitsPi (code, id) → {[Number](Number.md)}
 
@@ -1789,11 +1792,11 @@ Returns an array of the all objects having traits. States only here.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Number</a>&gt;</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Array.&lt;Number&gt;</span>
+	</dd>
+</dl>
 
 #### traitsSum (code, id) → {[Number](Number.md)}
 
@@ -1845,11 +1848,11 @@ Returns an array of the all objects having traits. States only here.
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>RPG.Trait</a>&gt;</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Array.&lt;RPG.Trait&gt;</span>
+	</dd>
+</dl>
 
 #### updateBuffTurns ()
 
