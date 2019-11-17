@@ -11,7 +11,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.md) | コマンドのコード番号 |
+| `code` | [Number](Number.md) | コマンドのコード番号([Game_Character](Game_Character.md) に定数が定義してある) |
 | `parameters` | [Array](Array.md).&lt;*&gt; | コマンド毎に必要な引数 |
 
 
