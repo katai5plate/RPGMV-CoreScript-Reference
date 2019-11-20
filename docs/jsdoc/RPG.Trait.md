@@ -181,10 +181,10 @@ code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定�
 
 | ID | [特殊フラグ] |
 | --- | --- |
-| 0 | 自動戦闘 |
-| 1 | 防御 |
-| 2 | 身代わり |
-| 3 | TP持ち越し |
+| FLAG\_ID\_AUTO\_BATTLE:0 | 自動戦闘 |
+| FLAG\_ID\_GUARD:1 | 防御 |
+| FLAG\_ID\_SUBSTITUTE:2 | 身代わり |
+| FLAG\_ID\_PRESERVE\_TP:3 | TP持ち越し |
 
 ###### 63 : 消滅エフェクトID
 
