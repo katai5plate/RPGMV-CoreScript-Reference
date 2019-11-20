@@ -16,36 +16,36 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `TRAIT\_ELEMENT\_RATE` | [Number](Number.md) | [static] [耐性 - 属性有効度] |
-| `TRAIT\_DEBUFF\_RATE` | [Number](Number.md) | [static] [耐性 - 弱体有効度]  |
-| `TRAIT\_STATE\_RATE` | [Number](Number.md) | [static] [耐性 - ステート有効度] |
-| `TRAIT\_STATE\_RESIST` | [Number](Number.md) | [static] [耐性 - ステート無効化] |
-| `TRAIT\_PARAM` | [Number](Number.md) | [static] [能力値 - 通常能力値] |
-| `TRAIT\_XPARAM` | [Number](Number.md) | [static] [能力値 - 追加能力値] |
-| `TRAIT\_SPARAM` | [Number](Number.md) | [static] [能力値 - 特殊能力値] |
-| `TRAIT\_ATTACK\_ELEMENT` | [Number](Number.md) | [static] [攻撃 - 攻撃時属性]|
-| `TRAIT\_ATTACK\_STATE` | [Number](Number.md) | [static] [攻撃 - 攻撃時ステート] |
-| `TRAIT\_ATTACK\_SPEED` | [Number](Number.md) | [static] [攻撃 - 攻撃速度補正] |
-| `TRAIT\_ATTACK\_TIMES` | [Number](Number.md) | [static] [攻撃 - 攻撃追加回数] |
-| `TRAIT\_STYPE\_ADD` | [Number](Number.md) | [static] [スキル - スキルタイプ追加] |
-| `TRAIT\_STYPE\_SEAL` | [Number](Number.md) | [static] [スキル - スキルタイプ封印] |
-| `TRAIT\_SKILL\_ADD` | [Number](Number.md) | [static] [スキル - スキル追加] |
-| `TRAIT\_SKILL\_SEAL` | [Number](Number.md) | [static] [スキル - スキル封印] |
-| `TRAIT\_EQUIP\_WTYPE` | [Number](Number.md) | [static] [装備 - 武器タイプ装備] |
-| `TRAIT\_EQUIP\_ATYPE` | [Number](Number.md) | [static] [装備 - 防具タイプ装備] |
-| `TRAIT\_EQUIP\_LOCK` | [Number](Number.md) | [static] [装備 - 装備固定] |
-| `TRAIT\_EQUIP\_SEAL` | [Number](Number.md) | [static] [装備 - 装備封印 |
-| `TRAIT\_SLOT\_TYPE` | [Number](Number.md) | [static] [装備 - スロットタイプ] |
-| `TRAIT\_ACTION\_PLUS` | [Number](Number.md) | [static] [その他 - 行動回数追加] |
-| `TRAIT\_SPECIAL\_FLAG` | [Number](Number.md) | [static] [その他 - 特殊フラグ] |
-| `TRAIT\_COLLAPSE\_TYPE` | [Number](Number.md) | [static] [その他 - 消滅エフェクト] |
-| `TRAIT\_PARTY\_ABILITY` | [Number](Number.md) | [static] [その他 - バーティ能力] |
-| `FLAG\_ID\_AUTO\_BATTLE` | [Number](Number.md) | [static] 特殊フラグIDの[自動戦闘]|
-| `FLAG\_ID\_GUARD` | [Number](Number.md) | [static] 特殊フラグIDの[防御]|
-| `FLAG\_ID\_SUBSTITUTE` | [Number](Number.md) | [static] 特殊フラグIDの[身代わり]|
-| `FLAG\_ID\_PRESERVE\_TP` | [Number](Number.md) | [static] 特殊フラグIDの[TP持ち越し]|
-| `ICON\_BUFF\_START` | [Number](Number.md) | [static] 能力強化アイコンの開始位置 |
-| `ICON\_DEBUFF\_START` | [Number](Number.md) | [static] 能力減少アイコンの開始位置  |
+| `TRAIT_ELEMENT_RATE` | [Number](Number.md) | [static] [耐性 - 属性有効度] |
+| `TRAIT_DEBUFF_RATE` | [Number](Number.md) | [static] [耐性 - 弱体有効度]  |
+| `TRAIT_STATE_RATE` | [Number](Number.md) | [static] [耐性 - ステート有効度] |
+| `TRAIT_STATE_RESIST` | [Number](Number.md) | [static] [耐性 - ステート無効化] |
+| `TRAIT_PARAM` | [Number](Number.md) | [static] [能力値 - 通常能力値] |
+| `TRAIT_XPARAM` | [Number](Number.md) | [static] [能力値 - 追加能力値] |
+| `TRAIT_SPARAM` | [Number](Number.md) | [static] [能力値 - 特殊能力値] |
+| `TRAIT_ATTACK_ELEMENT` | [Number](Number.md) | [static] [攻撃 - 攻撃時属性]|
+| `TRAIT_ATTACK_STATE` | [Number](Number.md) | [static] [攻撃 - 攻撃時ステート] |
+| `TRAIT_ATTACK_SPEED` | [Number](Number.md) | [static] [攻撃 - 攻撃速度補正] |
+| `TRAIT_ATTACK_TIMES` | [Number](Number.md) | [static] [攻撃 - 攻撃追加回数] |
+| `TRAIT_STYPE_ADD` | [Number](Number.md) | [static] [スキル - スキルタイプ追加] |
+| `TRAIT_STYPE_SEAL` | [Number](Number.md) | [static] [スキル - スキルタイプ封印] |
+| `TRAIT_SKILL_ADD` | [Number](Number.md) | [static] [スキル - スキル追加] |
+| `TRAIT_SKILL_SEAL` | [Number](Number.md) | [static] [スキル - スキル封印] |
+| `TRAIT_EQUIP_WTYPE` | [Number](Number.md) | [static] [装備 - 武器タイプ装備] |
+| `TRAIT_EQUIP_ATYPE` | [Number](Number.md) | [static] [装備 - 防具タイプ装備] |
+| `TRAIT_EQUIP_LOCK` | [Number](Number.md) | [static] [装備 - 装備固定] |
+| `TRAIT_EQUIP_SEAL` | [Number](Number.md) | [static] [装備 - 装備封印 |
+| `TRAIT_SLOT_TYPE` | [Number](Number.md) | [static] [装備 - スロットタイプ] |
+| `TRAIT_ACTION_PLUS` | [Number](Number.md) | [static] [その他 - 行動回数追加] |
+| `TRAIT_SPECIAL_FLAG` | [Number](Number.md) | [static] [その他 - 特殊フラグ] |
+| `TRAIT_COLLAPSE_TYPE` | [Number](Number.md) | [static] [その他 - 消滅エフェクト] |
+| `TRAIT_PARTY_ABILITY` | [Number](Number.md) | [static] [その他 - バーティ能力] |
+| `FLAG_ID_AUTO_BATTLE` | [Number](Number.md) | [static] 特殊フラグIDの[自動戦闘]|
+| `FLAG_ID_GUARD` | [Number](Number.md) | [static] 特殊フラグIDの[防御]|
+| `FLAG_ID_SUBSTITUTE` | [Number](Number.md) | [static] 特殊フラグIDの[身代わり]|
+| `FLAG_ID_PRESERVE_TP` | [Number](Number.md) | [static] 特殊フラグIDの[TP持ち越し]|
+| `ICON_BUFF_START` | [Number](Number.md) | [static] 能力強化アイコンの開始位置 |
+| `ICON_DEBUFF_START` | [Number](Number.md) | [static] 能力減少アイコンの開始位置  |
 | `hp` | [Number](Number.md) | [read-only] HP |
 | `mp` | [Number](Number.md) | [read-only] MP |
 | `tp` | [Number](Number.md) | [read-only] TP |
