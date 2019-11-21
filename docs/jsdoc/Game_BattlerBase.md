@@ -177,7 +177,7 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 
 #### appear ()
-出現する。
+バトラーを出現させる。
 
 
 #### attackElements () → {[Array](Array.md).<[Number](Number.md)>}
@@ -469,13 +469,15 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 
 #### clearBuffs ()
-能力強化を消す。
+能力強化を戻す。
 
 
 #### clearParamPlus ()
+能力強化量を戻す。
 
 
 #### clearStates ()
+状態変化を戻す。
 
 
 #### collapseType () → {[Number](Number.md)}
@@ -492,9 +494,7 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 
 #### confusionLevel () → {[Number](Number.md)}
-
-
-Returns the confusion level of the battler.
+混乱レベルを返す。
 
 ##### Returns:
 
@@ -507,9 +507,7 @@ Returns the confusion level of the battler.
 
 
 #### deathStateId () → {[Number](Number.md)}
-
-
-Returns the death state id.
+死亡状態のID(規定値:1)を返す。
 
 ##### Returns:
 
@@ -541,18 +539,17 @@ Returns the death state id.
 
 
 #### decreaseBuff (paramId)
+指定通常能力の能力強化を減少させる。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.md) | 通常能力ID |
 
 
 #### die ()
-
-
-Kills the battler.
+バトラーを死亡状態にする。
 
 
 #### elementRate (elementId) → {[Number](Number.md)}
@@ -564,7 +561,6 @@ Kills the battler.
 | --- | --- | --- |
 | `elementId` | [Number](Number.md) | 属性ID |
 
-
 ##### Returns:
 
 <dl>
@@ -574,31 +570,29 @@ Kills the battler.
 	</dd>
 </dl>
 
+
 #### eraseBuff (paramId)
+指定通常能力の強化を消す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.md) | 通常能力ID |
 
 
 #### eraseState (stateId)
-
-
-Erases the current state from the game battler given the stateId in the editor database.
+指定状態を消す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
+| `stateId` | [Number](Number.md) | 状態ID |
 
 
 #### guardSkillId () → {[Number](Number.md)}
-
-
-Returns the guard skill id in the database.
+防御スキルのID(規定値:2)を返す。
 
 ##### Returns:
 
@@ -611,14 +605,11 @@ Returns the guard skill id in the database.
 
 
 #### hide ()
+バトラーを隠す。
 
-
-Hides the game battler.
 
 #### hpRate () → {[Number](Number.md)}
-
-
-Returns the percentage of the battler's hp left as a float.
+HPのパーセント量を返す。
 
 ##### Returns:
 
@@ -631,26 +622,25 @@ Returns the percentage of the battler's hp left as a float.
 
 
 #### increaseBuff (paramId)
+指定通常能力を強化。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.md) | 通常能力ID |
 
 
 #### initialize ()
-
-
  オブジェクト生成時の初期化。
 
+
 #### initMembers ()
+メンバ変数を初期化。
 
 
 #### isActor () → {Boolean}
-
-
-Returns true if the battler is an actor.
+アクターか。
 
 ##### Returns:
 
@@ -660,11 +650,10 @@ Returns true if the battler is an actor.
 		<span>Boolean</span>
 	</dd>
 </dl>
+
 
 #### isAlive () → {Boolean}
-
-
-Returns true if the battler is alive.
+生きているか。
 
 ##### Returns:
 
@@ -674,11 +663,10 @@ Returns true if the battler is alive.
 		<span>Boolean</span>
 	</dd>
 </dl>
+
 
 #### isAppeared () → {Boolean}
-
-
-Returns true if the game battler is not hidden.
+現れているか。
 
 ##### Returns:
 
@@ -688,11 +676,10 @@ Returns true if the game battler is not hidden.
 		<span>Boolean</span>
 	</dd>
 </dl>
+
 
 #### isAutoBattle () → {Boolean}
-
-
-Returns true if the battler is set to battle automatically.
+オートバトルか。
 
 ##### Returns:
 
@@ -702,15 +689,16 @@ Returns true if the battler is set to battle automatically.
 		<span>Boolean</span>
 	</dd>
 </dl>
+
 
 #### isBuffAffected (paramId) → {Boolean}
+指定通常能力値に強化がかかっているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
-
+| `paramId` | [Number](Number.md) | 通常能力値ID |
 
 ##### Returns:
 
@@ -720,15 +708,16 @@ Returns true if the battler is set to battle automatically.
 		<span>Boolean</span>
 	</dd>
 </dl>
+
 
 #### isBuffExpired (paramId) → {Boolean}
+指定通常能力値の強化が切れているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
-
+| `paramId` | [Number](Number.md) | 通常能力値ID |
 
 ##### Returns:
 
@@ -738,15 +727,16 @@ Returns true if the battler is set to battle automatically.
 		<span>Boolean</span>
 	</dd>
 </dl>
+
 
 #### isBuffOrDebuffAffected (paramId) → {Boolean}
+指定通常能力値が強化・弱化されているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `paramId` | [Number](Number.md) |  |
-
 
 ##### Returns:
 
@@ -756,11 +746,10 @@ Returns true if the battler is set to battle automatically.
 		<span>Boolean</span>
 	</dd>
 </dl>
+
 
 #### isConfused () → {Boolean}
-
-
-Returns true if the battler is confused.
+混乱しているか。
 
 ##### Returns:
 
@@ -770,11 +759,10 @@ Returns true if the battler is confused.
 		<span>Boolean</span>
 	</dd>
 </dl>
+
 
 #### isDead () → {Boolean}
-
-
-Returns true if the battler is dead.
+表示されて死亡状態か。
 
 ##### Returns:
 
@@ -784,9 +772,10 @@ Returns true if the battler is dead.
 		<span>Boolean</span>
 	</dd>
 </dl>
+
 
 #### isDeathStateAffected () → {Boolean}
-
+死亡状態か。
 
 ##### Returns:
 
@@ -797,14 +786,15 @@ Returns true if the battler is dead.
 	</dd>
 </dl>
 
+
 #### isDebuffAffected (paramId) → {Boolean}
+指定通常能力値が弱化されているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
-
+| `paramId` | [Number](Number.md) | 常能力値ID |
 
 ##### Returns:
 
@@ -814,11 +804,10 @@ Returns true if the battler is dead.
 		<span>Boolean</span>
 	</dd>
 </dl>
+
 
 #### isDualWield () → {Boolean}
-
-
-Returns true if the battler dual wields.
+二刀流か。
 
 ##### Returns:
 
@@ -828,11 +817,10 @@ Returns true if the battler dual wields.
 		<span>Boolean</span>
 	</dd>
 </dl>
+
 
 #### isDying () → {Boolean}
-
-
-Returns true if the battler is dying.
+瀕死(規定値:最大HPの1/4以下)か。
 
 ##### Returns:
 
@@ -843,10 +831,9 @@ Returns true if the battler is dying.
 	</dd>
 </dl>
 
+
 #### isEnemy () → {Boolean}
-
-
-Returns true if the battler is an enemy.
+敵か。
 
 ##### Returns:
 
@@ -935,9 +922,7 @@ Returns true if the battler is an enemy.
 
 
 #### isGuard () → {Boolean}
-
-
-Returns true if the battler is guarding.
+防御中か。
 
 ##### Returns:
 
@@ -947,11 +932,10 @@ Returns true if the battler is guarding.
 		<span>Boolean</span>
 	</dd>
 </dl>
+
 
 #### isHidden () → {Boolean}
-
-
-Returns true if the game battler is hidden.
+隠れているか。
 
 ##### Returns:
 
@@ -961,15 +945,16 @@ Returns true if the game battler is hidden.
 		<span>Boolean</span>
 	</dd>
 </dl>
+
 
 #### isMaxBuffAffected (paramId) → {Boolean}
+指定通常能力値が最強化されているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
-
+| `paramId` | [Number](Number.md) | 通常能力値ID |
 
 ##### Returns:
 
@@ -979,15 +964,16 @@ Returns true if the game battler is hidden.
 		<span>Boolean</span>
 	</dd>
 </dl>
+
 
 #### isMaxDebuffAffected (paramId) → {Boolean}
+指定通常能力値が最弱化されているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
-
+| `paramId` | [Number](Number.md) | 通常能力値ID |
 
 ##### Returns:
 
@@ -997,18 +983,16 @@ Returns true if the game battler is hidden.
 		<span>Boolean</span>
 	</dd>
 </dl>
+
 
 #### isOccasionOk (item) → {Boolean}
-
-
-Returns true if the item occasion is okay.
+指定アイテムが使用可能か。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
-
+| `item` | [RPG.UsableItem](RPG.UsableItem.md) | アイテム |
 
 ##### Returns:
 
@@ -1018,11 +1002,10 @@ Returns true if the item occasion is okay.
 		<span>Boolean</span>
 	</dd>
 </dl>
+
 
 #### isPreserveTp () → {Boolean}
-
-
-Returns true if tp is preserved between battles.
+[TP持ち越し]か。
 
 ##### Returns:
 
@@ -1033,10 +1016,9 @@ Returns true if tp is preserved between battles.
 	</dd>
 </dl>
 
+
 #### isRestricted () → {Boolean}
-
-
-Returns true if the game battler is restricted.
+何かの行動制約状態か。
 
 ##### Returns:
 
@@ -1076,7 +1058,6 @@ Returns true if the game battler is restricted.
 | --- | --- | --- |
 | `stypeId` | [Number](Number.md) | スキルタイプID |
 
-
 ##### Returns:
 
 <dl>
@@ -1085,18 +1066,16 @@ Returns true if the game battler is restricted.
 		<span>Boolean</span>
 	</dd>
 </dl>
+
 
 #### isSkillWtypeOk (skill) → {Boolean}
-
-
-Returns true if the skill is a weapon type oriented skill.
+指定スキルの発動条件に合う装備をしているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.md) |  |
-
+| `skill` | [RPG.Skill](RPG.Skill.md) | スキル |
 
 ##### Returns:
 
@@ -1106,18 +1085,16 @@ Returns true if the skill is a weapon type oriented skill.
 		<span>Boolean</span>
 	</dd>
 </dl>
+
 
 #### isStateAffected (stateId) → {Boolean}
-
-
-Returns true if the battler is affected by the specified state given the state id.
+指定した状態か。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
-
+| `stateId` | [Number](Number.md) | 状態ID |
 
 ##### Returns:
 
@@ -1127,18 +1104,16 @@ Returns true if the battler is affected by the specified state given the state i
 		<span>Boolean</span>
 	</dd>
 </dl>
+
 
 #### isStateExpired (stateId) → {Boolean}
-
-
-Returns true if the state, given the state id is expired.
+指定状態が切れているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
-
+| `stateId` | [Number](Number.md) | 状態ID |
 
 ##### Returns:
 
@@ -1148,15 +1123,16 @@ Returns true if the state, given the state id is expired.
 		<span>Boolean</span>
 	</dd>
 </dl>
+
 
 #### isStateResist (stateId) → {Boolean}
+指定状態が無効化されているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
-
+| `stateId` | [Number](Number.md) | 状態ID |
 
 ##### Returns:
 
@@ -1166,9 +1142,10 @@ Returns true if the state, given the state id is expired.
 		<span>Boolean</span>
 	</dd>
 </dl>
+
 
 #### isSubstitute () → {Boolean}
-
+[身代わり]状態か。
 
 ##### Returns:
 
@@ -1179,10 +1156,9 @@ Returns true if the state, given the state id is expired.
 	</dd>
 </dl>
 
+
 #### maxTp () → {[Number](Number.md)}
-
-
-Returns the maximum tp of the battler.
+最大TPを返す。
 
 ##### Returns:
 
@@ -1195,16 +1171,13 @@ Returns the maximum tp of the battler.
 
 
 #### meetsItemConditions (item) → {Boolean}
-
-
-Returns true if the battler meets the item conditions.
+指定アイテムを持っていて使用可能か。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.Item](RPG.Item.md) |  |
-
+| `item` | [RPG.Item](RPG.Item.md) | アイテム |
 
 ##### Returns:
 
@@ -1214,18 +1187,16 @@ Returns true if the battler meets the item conditions.
 		<span>Boolean</span>
 	</dd>
 </dl>
+
 
 #### meetsSkillConditions (skill) → {Boolean}
-
-
-Returns true if the battler meets the skill conditions.
+指定スキルを使用可能か。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.md) |  |
-
+| `skill` | [RPG.Skill](RPG.Skill.md) | スキル |
 
 ##### Returns:
 
@@ -1235,15 +1206,16 @@ Returns true if the battler meets the skill conditions.
 		<span>Boolean</span>
 	</dd>
 </dl>
+
 
 #### meetsUsableItemConditions (item) → {Boolean}
+指定アイテムが使用可能か。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
-
+| `item` | [RPG.UsableItem](RPG.UsableItem.md) | アイテム |
 
 ##### Returns:
 
@@ -1254,22 +1226,22 @@ Returns true if the battler meets the skill conditions.
 	</dd>
 </dl>
 
-#### mostImportantStateText () → {[String](String.md)}
 
+#### mostImportantStateText () → {[String](String.md)}
+現在の状態を表すメッセージ文字列を返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>String</span>
+	</dd>
+</dl>
+
 
 #### mpRate () → {[Number](Number.md)}
-
-
-Returns the percentage of the battler's mp left as a float.
+MPのパーセント量を返す。
 
 ##### Returns:
 
@@ -1282,31 +1254,28 @@ Returns the percentage of the battler's mp left as a float.
 
 
 #### onRestrict ()
+行動制約された時に呼ばれるハンドラ。
 
-
-Handler for when the battler is restricted.
 
 #### overwriteBuffTurns (paramId, turns)
+通常能力強化状態の有効ターンを追加。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
-| `turns` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.md) | 通常能力ID |
+| `turns` | [Number](Number.md) | 追加ターン |
 
 
 #### param (paramId) → {[Number](Number.md)}
-
-
-Returns a standard parameter, given a paramId; standard parameters include: HP, MP, Atk, M.Atk, Def, M.Def, Luck, Agility.
+指定通常能力値の様々な強化などの計算後の値を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
-
+| `paramId` | [Number](Number.md) | 通常能力ID |
 
 ##### Returns:
 
@@ -1319,16 +1288,13 @@ Returns a standard parameter, given a paramId; standard parameters include: HP, 
 
 
 #### paramBase (paramId) → {[Number](Number.md)}
-
-
-Returns the base parameters of the battler; this is determined by their current level and the paramId given.
+指定通常能力値の基本値を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
-
+| `paramId` | [Number](Number.md) | 通常能力ID |
 
 ##### Returns:
 
@@ -1341,13 +1307,13 @@ Returns the base parameters of the battler; this is determined by their current 
 
 
 #### paramBuffRate (paramId) → {[Number](Number.md)}
+指定通常能力値の強化率を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
-
+| `paramId` | [Number](Number.md) | 通常能力ID |
 
 ##### Returns:
 
@@ -1360,13 +1326,13 @@ Returns the base parameters of the battler; this is determined by their current 
 
 
 #### paramMax (paramId) → {[Number](Number.md)}
+指定通常能力値の最大値を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
-
+| `paramId` | [Number](Number.md) | 通常能力ID |
 
 ##### Returns:
 
@@ -1379,13 +1345,13 @@ Returns the base parameters of the battler; this is determined by their current 
 
 
 #### paramMin (paramId) → {[Number](Number.md)}
+指定通常能力値の最小値を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
-
+| `paramId` | [Number](Number.md) | 通常能力ID |
 
 ##### Returns:
 
@@ -1398,13 +1364,13 @@ Returns the base parameters of the battler; this is determined by their current 
 
 
 #### paramPlus (paramId) → {[Number](Number.md)}
+指定通常能力値に加算される値を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
-
+| `paramId` | [Number](Number.md) | 通常能力ID |
 
 ##### Returns:
 
@@ -1455,43 +1421,37 @@ Returns the base parameters of the battler; this is determined by their current 
 
 
 #### paySkillCost (skill)
-
-
-Pays the cost of the skill when activating the skill.
+スキルに必要なコスト(MP・TP)を消費。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.md) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) | スキル |
 
 
 #### recoverAll ()
+HP・MP全回復し状態を解除。
 
-
-Recovers the battler from all states and restores the battler to maximum hp and mp.
 
 #### refresh ()
+能力値や状態を規定値内に収める処理。
 
-
-Refreshes the battler.
 
 #### resetStateCounts (stateId)
-
-
-Resets the state count of the specified state, given the state id.
+指定状態の有効ターン数を初期化。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
+| `stateId` | [Number](Number.md) | 状態ID |
 
 
 #### restriction () → {[Number](Number.md)}
+行動制約の状態を示す値を返す。
 
-
-Returns the number of the restriction.
+0:なし, 1:敵を攻撃, 2:無作為攻撃, 3:味方を攻撃, 4:行動不可
 
 ##### Returns:
 
@@ -1504,57 +1464,47 @@ Returns the number of the restriction.
 
 
 #### revive ()
+復活。
 
-
-Revives the battler.
 
 #### setHp (hp)
-
-
-Sets the battler hp.
+HPを設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `hp` | [Number](Number.md) |  |
+| `hp` | [Number](Number.md) | HP |
 
 
 #### setMp (mp)
-
-
-Sets the battler mp.
+MPを設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `mp` | [Number](Number.md) |  |
+| `mp` | [Number](Number.md) | MP |
 
 
 #### setTp (tp)
-
-
-Sets the battler tp.
+TPを設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tp` | [Number](Number.md) |  |
+| `tp` | [Number](Number.md) | TP |
 
 
 #### skillMpCost (skill) → {[Number](Number.md)}
-
-
-Returns the mp cost of the skill.
+指定スキルに必要なMPを消費。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.md) |  |
-
+| `skill` | [RPG.Skill](RPG.Skill.md) | スキル |
 
 ##### Returns:
 
@@ -1567,16 +1517,13 @@ Returns the mp cost of the skill.
 
 
 #### skillTpCost (skill) → {[Number](Number.md)}
-
-
-Returns the tp cost of the skill.
+指定スキルに必要なTPを消費。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.md) |  |
-
+| `skill` | [RPG.Skill](RPG.Skill.md) | スキル |
 
 ##### Returns:
 
@@ -1602,7 +1549,7 @@ Returns the tp cost of the skill.
 
 
 #### sortStates ()
-Sorts the states attached to the battler.
+優先度で状態の並び替え。
 
 
 #### sparam (sparamId) → {[Number](Number.md)}
@@ -1645,9 +1592,7 @@ Sorts the states attached to the battler.
 
 
 #### stateIcons () → {[Array](Array.md).<[Number](Number.md)>}
-
-
-Returns the array of state icons attached to the battler; this is determined by the active states on the battler.
+状態のアイコン番号を配列で返す。
 
 ##### Returns:
 
@@ -1658,8 +1603,9 @@ Returns the array of state icons attached to the battler; this is determined by 
 	</dd>
 </dl>
 
-#### stateMotionIndex () → {[Number](Number.md)}
 
+#### stateMotionIndex () → {[Number](Number.md)}
+SVでの状態の動作番号を返す。
 
 ##### Returns:
 
@@ -1672,7 +1618,7 @@ Returns the array of state icons attached to the battler; this is determined by 
 
 
 #### stateOverlayIndex () → {[Number](Number.md)}
-
+SVでの状態の重ね合わせ番号を返す。
 
 ##### Returns:
 
@@ -1717,23 +1663,20 @@ Returns the array of state icons attached to the battler; this is determined by 
 
 
 #### states () → {[Array](Array.md).<[RPG.State](RPG.State.md)>}
-
-
-Returns the states applied to the battler.
+適用中の状態を配列で返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>RPG.State</a>&gt;</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Array.&lt;RPG.State&gt;</span>
+	</dd>
+</dl>
+
 
 #### tpRate () → {[Number](Number.md)}
-
-
-Returns the percentage of the battler's tp left as a float.
+TPのパーセント量を返す。
 
 ##### Returns:
 
@@ -1746,26 +1689,26 @@ Returns the percentage of the battler's tp left as a float.
 
 
 #### traitObjects () → {[Array](Array.md).<*>}
-
-
-Returns an array of the all objects having traits. States only here.
+特徴オブジェクトを配列で返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;*&gt;</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Array.&lt;*&gt;</span>
+	</dd>
+</dl>
+
 
 #### traits (code) → {[Array](Array.md).<[RPG.Trait](RPG.Trait.md)>}
+指定番号(TRAIT_定数)の特徴を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.md) |  |
+| `code` | [Number](Number.md) | 特徴番号 |
 
 
 ##### Returns:
@@ -1779,14 +1722,14 @@ Returns an array of the all objects having traits. States only here.
 
 
 #### traitsPi (code, id) → {[Number](Number.md)}
+指定番号(TRAIT_定数)・IDの特徴を掛け合わせて返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.md) |  |
-| `id` | [Number](Number.md) |  |
-
+| `code` | [Number](Number.md) | 特徴番号 |
+| `id` | [Number](Number.md) | 特徴ID |
 
 ##### Returns:
 
@@ -1799,13 +1742,13 @@ Returns an array of the all objects having traits. States only here.
 
 
 #### traitsSet (code) → {[Array](Array.md).<[Number](Number.md)>}
+指定番号(TRAIT_定数)の特徴を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.md) |  |
-
+| `code` | [Number](Number.md) | 特徴番号 |
 
 ##### Returns:
 
@@ -1817,14 +1760,14 @@ Returns an array of the all objects having traits. States only here.
 </dl>
 
 #### traitsSum (code, id) → {[Number](Number.md)}
+指定番号(TRAIT_定数)・IDの特徴を足し合わせて返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.md) |  |
-| `id` | [Number](Number.md) |  |
-
+| `code` | [Number](Number.md) | 特徴番号 |
+| `id` | [Number](Number.md) | 特徴ID |
 
 ##### Returns:
 
@@ -1837,13 +1780,13 @@ Returns an array of the all objects having traits. States only here.
 
 
 #### traitsSumAll (code) → {[Number](Number.md)}
+指定番号(TRAIT_定数)の特徴を積算して返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.md) |  |
-
+| `code` | [Number](Number.md) | 特徴番号 |
 
 ##### Returns:
 
@@ -1856,14 +1799,14 @@ Returns an array of the all objects having traits. States only here.
 
 
 #### traitsWithId (code, id) → {[Array](Array.md).<[RPG.Trait](RPG.Trait.md)>}
+指定番号(TRAIT_定数)・IDの特徴を配列で返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.md) |  |
-| `id` | [Number](Number.md) |  |
-
+| `code` | [Number](Number.md) | 特徴番号 |
+| `id` | [Number](Number.md) | 特徴ID |
 
 ##### Returns:
 
@@ -1874,12 +1817,13 @@ Returns an array of the all objects having traits. States only here.
 	</dd>
 </dl>
 
+
 #### updateBuffTurns ()
+通常能力値強化のアップデート。
 
-
-Updates the buff turns on battler.
 
 #### updateStateTurns ()
+状態変化のアップデート。
 
 
 #### xparam (xparamId) → {[Number](Number.md)}
