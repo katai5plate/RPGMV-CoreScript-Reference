@@ -18,7 +18,7 @@
 
 #### codeと対応するデータ形式
 
-code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定数として定義されている。例えば 11 ではなんの数値か分からないので <code>Game\_BattlerBase.TRAIT\_ELEMENT\_RATE</code> の形で使う。
+code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定数として定義されている。例えば 11 ではなんの数値か分からないので <code>Game_BattlerBase.TRAIT_ELEMENT_RATE</code> の形で使う。
 
 下表で 変動率・比率・増減値は 1 が 100%に当たる数値。
 
@@ -28,18 +28,18 @@ code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定�
 
 | code | 内容 | dataId | value |
 | --- | --- | --- | --- |
-| TRAIT\_ELEMENT\_RATE:11 | 属性有効度 | [属性ID](RPG.Trait.md#属性id) | 変動率 (0〜10) |
-| TRAIT\_DEBUFF\_RATE:12 | 弱体有効度 | [能力値ID](RPG.Trait.md#能力値id) | 変動率 (0〜10) |
-| TRAIT\_STATE\_RATE:13 | ステート有効度 | [ステートID](RPG.Trait.md#ステートid) | 変動率 (0〜10) |
-| TRAIT\_STATE\_RESIST:14 | ステート無効化 | [ステートID](RPG.Trait.md#ステートid) | *1* |
+| `TRAIT_ELEMENT_RATE:11` | 属性有効度 | [属性ID](RPG.Trait.md#属性id) | 変動率 (0〜10) |
+| `TRAIT_DEBUFF_RATE:12` | 弱体有効度 | [能力値ID](RPG.Trait.md#能力値id) | 変動率 (0〜10) |
+| `TRAIT_STATE_RATE:13` | ステート有効度 | [ステートID](RPG.Trait.md#ステートid) | 変動率 (0〜10) |
+| `TRAIT_STATE_RESIST:14` | ステート無効化 | [ステートID](RPG.Trait.md#ステートid) | *1* |
 
 ##### [能力値]
 
 | code | 内容 | dataId | value |
 | --- | --- | --- | --- |
-| TRAIT\_PARAM:21 | 通常能力値 | [能力値ID](RPG.Trait.md#能力値id) | 変動率 (0〜10) |
-| TRAIT\_XPARAM:22 | 追加能力値 | [追加能力値ID](RPG.Trait.md#22--追加能力値) |  比率 (-10〜10) |
-| TRAIT\_SPARAM:23 | 特殊能力値 | [特殊能力値ID](RPG.Trait.md#23--特殊能力値) |  変動率 (0〜10) |
+| `TRAIT_PARAM:21` | 通常能力値 | [能力値ID](RPG.Trait.md#能力値id) | 変動率 (0〜10) |
+| `TRAIT_XPARAM:22` | 追加能力値 | [追加能力値ID](RPG.Trait.md#22--追加能力値) |  比率 (-10〜10) |
+| `TRAIT_SPARAM:23` | 特殊能力値 | [特殊能力値ID](RPG.Trait.md#23--特殊能力値) |  変動率 (0〜10) |
 
 ######  22 : 追加能力値
 
@@ -75,31 +75,31 @@ code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定�
 
 | code | 内容 | dataId | value |
 | --- | --- | --- | --- |
-| TRAIT\_ATTACK\_ELEMENT:31 | 攻撃時属性 | [属性ID](RPG.Trait.md#属性id) | *1* |
-| TRAIT\_ATTACK\_STATE:32 | 攻撃時ステート | [ステートID](RPG.Trait.md#ステートid) | 変動率 (0〜10) |
-| TRAIT\_ATTACK\_SPEED:33 | 攻撃速度補正 | *0* | 増減値 (-10〜10) |
-| TRAIT\_ATTACK\_TIMES:34 | 攻撃追加回数 | *0*  | 攻撃追加回数(-9.0〜9.0)|
+| `TRAIT_ATTACK_ELEMENT:31` | 攻撃時属性 | [属性ID](RPG.Trait.md#属性id) | *1* |
+| `TRAIT_ATTACK_STATE:32` | 攻撃時ステート | [ステートID](RPG.Trait.md#ステートid) | 変動率 (0〜10) |
+| `TRAIT_ATTACK_SPEED:33` | 攻撃速度補正 | *0* | 増減値 (-10〜10) |
+| `TRAIT_ATTACK_TIMES:34` | 攻撃追加回数 | *0*  | 攻撃追加回数(-9.0〜9.0)|
 
 
 ##### [スキル]
 
 | code | 内容 | dataId | value |
 | --- | --- | --- | --- |
-| TRAIT\_STYPE\_ADD:41 | スキルタイプ追加 | [スキルタイプID](RPG.Trait.md#スキルタイプid) | *1* |
-| TRAIT\_STYPE\_SEAL:42 | スキルタイプ封印 | [スキルタイプID](RPG.Trait.md#スキルタイプid) | *1* |
-| TRAIT\_SKILL\_ADD:43 | スキル追加 | [スキルID](RPG.Trait.md#スキルid) | *1* |
-| TRAIT\_SKILL\_SEAL:44 | スキル封印 | [スキルID](RPG.Trait.md#スキルid) | *1* |
+| `TRAIT_STYPE_ADD:41` | スキルタイプ追加 | [スキルタイプID](RPG.Trait.md#スキルタイプid) | *1* |
+| `TRAIT_STYPE_SEAL:42` | スキルタイプ封印 | [スキルタイプID](RPG.Trait.md#スキルタイプid) | *1* |
+| `TRAIT_SKILL_ADD:43` | スキル追加 | [スキルID](RPG.Trait.md#スキルid) | *1* |
+| `TRAIT_SKILL_SEAL:44` | スキル封印 | [スキルID](RPG.Trait.md#スキルid) | *1* |
 
 
 ##### [装備]
 
 | code | 内容 | dataId | value |
 | --- | --- | --- | --- |
-| TRAIT\_EQUIP\_WTYPE:51 | 武器タイプ装備 | [武器タイプID](RPG.Trait.md#51--武器タイプid) | *1* |
-| TRAIT\_EQUIP\_ATYPE:52 | 防具タイプ装備 | [防具タイプID](RPG.Trait.md#52--防具タイプid) | *1* |
-| TRAIT\_EQUIP\_LOCK:53 | 装備固定 | [装備タイプID](RPG.Trait.md#53-54--装備タイプid) | *1* |
-| TRAIT\_EQUIP\_SEAL:54 | 装備封印 | [装備タイプID](RPG.Trait.md#53-54--装備タイプid) | *1* |
-| TRAIT\_SLOT\_TYPE:55 | スロットタイプ | [スロットタイプID](RPG.Trait.md#55--スロットタイプid) | *1* |
+| `TRAIT_EQUIP_WTYPE:51` | 武器タイプ装備 | [武器タイプID](RPG.Trait.md#51--武器タイプid) | *1* |
+| `TRAIT_EQUIP_ATYPE:52` | 防具タイプ装備 | [防具タイプID](RPG.Trait.md#52--防具タイプid) | *1* |
+| `TRAIT_EQUIP_LOCK:53` | 装備固定 | [装備タイプID](RPG.Trait.md#53-54--装備タイプid) | *1* |
+| `TRAIT_EQUIP_SEAL:54` | 装備封印 | [装備タイプID](RPG.Trait.md#53-54--装備タイプid) | *1* |
+| `TRAIT_SLOT_TYPE:55` | スロットタイプ | [スロットタイプID](RPG.Trait.md#55--スロットタイプid) | *1* |
 
 ###### 51 : 武器タイプID
 
@@ -107,7 +107,7 @@ code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定�
 
  [System](RPG.System.md) の weaponTypes プロパティに登録されている。
  
- 下表はデフォルトの値。
+ 下表は規定値。
 
 | ID | [武器タイプ] |
 | --- | --- |
@@ -172,19 +172,19 @@ code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定�
 
 | code | 内容 | dataId | value |
 | --- | --- | --- | --- |
-| TRAIT\_ACTION\_PLUS:61 | 行動回数追加 | *0* | 確率(%) |
-| TRAIT\_SPECIAL\_FLAG:62 | 特殊フラグ | [特殊フラグID](RPG.Trait.md#62--特殊フラグid) | *1* |
-| TRAIT\_COLLAPSE\_TYPE:63 | 消滅エフェクト | [消滅エフェクトID](RPG.Trait.md#63--消滅エフェクトid) | *1*|
-| TRAIT\_PARTY\_ABILITY:64 | パーティ能力 | [パーティ能力ID](RPG.Trait.md#64--パーティ能力id) | *1* |
+| `TRAIT_ACTION_PLUS:61` | 行動回数追加 | *0* | 確率(%) |
+| `TRAIT_SPECIAL_FLAG:62` | 特殊フラグ | [特殊フラグID](RPG.Trait.md#62--特殊フラグid) | *1* |
+| `TRAIT_COLLAPSE_TYPE:63` | 消滅エフェクト | [消滅エフェクトID](RPG.Trait.md#63--消滅エフェクトid) | *1*|
+| `TRAIT_PARTY_ABILITY:64` | パーティ能力 | [パーティ能力ID](RPG.Trait.md#64--パーティ能力id) | *1* |
 
 ###### 62 : 特殊フラグID
 
 | ID | [特殊フラグ] |
 | --- | --- |
-| FLAG\_ID\_AUTO\_BATTLE:0 | 自動戦闘 |
-| FLAG\_ID\_GUARD:1 | 防御 |
-| FLAG\_ID\_SUBSTITUTE:2 | 身代わり |
-| FLAG\_ID\_PRESERVE\_TP:3 | TP持ち越し |
+| `FLAG_ID_AUTO_BATTLE:0` | 自動戦闘 |
+| `FLAG_ID_GUARD:1` | 防御 |
+| `FLAG_ID_SUBSTITUTE:2` | 身代わり |
+| `FLAG_ID_PRESERVE_TP:3` | TP持ち越し |
 
 ###### 63 : 消滅エフェクトID
 
@@ -275,7 +275,7 @@ code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定�
 
  [System](RPG.System.md) の skillTypes プロパティに登録されている。
  
- 下表はデフォルトの値。
+ 下表は規定値。
 
 | ID | [スキルタイプ] |
 | --- | --- |
