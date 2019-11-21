@@ -4,7 +4,7 @@
 
 敵を記述したファイル( data/Enemies.json )のJSONデータ。
  
-大域変数 [$dataEnemys](global.md#dataenemys-arrayrpgenemy) に配列として格納されている。
+大域変数 [$dataEnemies](global.md#dataenemies-arrayrpgenemy) に配列として格納されている。
 
 ##### Properties:
 
