@@ -1498,7 +1498,7 @@ TPを設定。
 
 
 #### skillMpCost (skill) → {[Number](Number.md)}
-指定スキルに必要なMPを消費。
+指定スキルに必要なMPを返す。
 
 ##### Parameters:
 
@@ -1517,7 +1517,7 @@ TPを設定。
 
 
 #### skillTpCost (skill) → {[Number](Number.md)}
-指定スキルに必要なTPを消費。
+指定スキルに必要なTPを返す。
 
 ##### Parameters:
 
