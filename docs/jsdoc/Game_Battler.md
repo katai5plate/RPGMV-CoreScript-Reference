@@ -4,7 +4,9 @@
 
 #### new Game_Battler ()
 
-The superdeclare class of [Game_Actor](Game_Actor.md) and [Game_Enemy](Game_Enemy.md). It contains methods for sprites
+[Game_Actor](Game_Actor.md) と [Game_Enemy](Game_Enemy.md) のスーパークラス。
+
+アイコンやアニメーションを含む、バトラーの動作を制御する。
 
 ##### Properties:
 
@@ -114,7 +116,6 @@ The superdeclare class of [Game_Actor](Game_Actor.md) and [Game_Enemy](Game_Enem
 * [meetsUsableItemConditions (item)](Game_BattlerBase.md#meetsusableitemconditions-item--boolean)
 * [mostImportantStateText ()](Game_BattlerBase.md#mostimportantstatetext---string)
 * [mpRate ()](Game_BattlerBase.md#mprate---number)
-* [onRestrict ()](Game_BattlerBase.md#onrestrict-)
 * [overwriteBuffTurns (paramId, turns)](Game_BattlerBase.md#overwritebuffturns-paramid-turns)
 * [param (paramId)](Game_BattlerBase.md#param-paramid--number)
 * [paramBase (paramId)](Game_BattlerBase.md#parambase-paramid--number)
@@ -160,12 +161,13 @@ The superdeclare class of [Game_Actor](Game_Actor.md) and [Game_Enemy](Game_Enem
 ### Methods
 
 #### action (index) → {[Game_Action](Game_Action.md)}
+指定番号のアクションを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
+| `index` | [Number](Number.md) | アクション番号 |
 
 ##### Returns:
 
@@ -175,95 +177,90 @@ The superdeclare class of [Game_Actor](Game_Actor.md) and [Game_Enemy](Game_Enem
 		<span>Game_Action</span>
 	</dd>
 </dl>
-
-
 
 
 #### addBuff (paramId, turns)
-Adds a buff to the battler for the specified number of turns on the selected parameter.
+指定通常能力に指定ターン数の強化を追加。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
-| `turns` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.md) | 通常能力ID |
+| `turns` | [Number](Number.md) | ターン数 |
 
 
 #### addDebuff (paramId, turns)
-Adds a debuff to the battler for the specified number of turns on the selected parameter.
+指定通常能力に指定ターン数の弱化を追加。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
-| `turns` | [Number](Number.md) |  |
-
+| `paramId` | [Number](Number.md) | 通常能力ID |
+| `turns` | [Number](Number.md) | ターン数 |
 
 
 #### addState (stateId)
-
-
-Adds a state to the battler given the specified state id.
+指定ステートを追加。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
-
+| `stateId` | [Number](Number.md) | ステートID |
 
 
 #### chargeTpByDamage (damageRate)
+ダメージ率にしたがって、TPを増やす。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `damageRate` | [Number](Number.md) |  |
+| `damageRate` | [Number](Number.md) | (最大HPを1とした場合の)ダメージ割合 |
 
 
 #### clearActions ()
-Clears the battler actions.
+アクションを消去。
 
 
 #### clearAnimations ()
-Clears animations from the battler.
+アニメーションを消去。
 
 
 #### clearDamagePopup ()
-Clear damage pop up from the battler.
+ダメージポップアップを消去。
 
 
 #### clearEffect ()
-Clears effect from the battler.
+エフェクトを消去。
 
 
 #### clearMotion ()
-Clears motion from the battler.
+モーションを消去。
 
 
 #### clearTp ()
-Clears the battler's tp.
+TPを0に。
 
 
 #### clearWeaponAnimation ()
-Clear weapon animation from the battler.
+武器アニメーションを消去。
 
 
 #### consumeItem (item)
-Has the battler consume the given item.
+指定アイテムを消費。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
+| `item` | [RPG.UsableItem](RPG.UsableItem.md) | アイテム |
 
 
 #### currentAction () → {[Game_Action](Game_Action.md)}
-Returns the current action of the battler.
+現在のアクションを返す。
 
 ##### Returns:
 
@@ -275,13 +272,12 @@ Returns the current action of the battler.
 </dl>
 
 
-
 #### deselect ()
-
+選択を外す。
 
 
 #### effectType () → {[String](String.md)}
-Returns the effect type of the battler.
+エフェクトタイプを返す。
 
 ##### Returns:
 
@@ -294,73 +290,74 @@ Returns the effect type of the battler.
 
 
 #### escape ()
-Has the battler escape from battle; plays a sound on escaping.
+戦闘から逃げる。
 
 
 #### forceAction (skillId, targetIndex)
+指定したスキルを強制する。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skillId` | [Number](Number.md) |  |
-| `targetIndex` | [Number](Number.md) |  |
+| `skillId` | [Number](Number.md) | スキルID |
+| `targetIndex` | [Number](Number.md) | 対象番号 |
 
 
 #### gainHp (value)
-Adds the specified amount of hp to the battler.
+指定量のHPを回復。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.md) |  |
+| `value` | [Number](Number.md) | HP回復量 |
 
 
 #### gainMp (value)
-Adds the specified amount of mp to the battler.
+指定量のMPを回復。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.md) |  |
+| `value` | [Number](Number.md) | MP回復量 |
 
 
 #### gainSilentTp (value)
-Adds a specified amount of tp to the battler silently.
+指定量のTPを非表示で回復。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.md) |  |
+| `value` | [Number](Number.md) | TP回復量 |
 
 
 #### gainTp (value)
-Adds the specified amount of tp to the battler.
+指定量のTPを回復。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.md) |  |
+| `value` | [Number](Number.md) | TP回復量 |
 
 
 #### initialize ()
-Overrides: [Game_BattlerBase](Game_BattlerBase.md)
+Overrides: [Game_BattlerBase](Game_BattlerBase.md#initialize-)
 
 
 #### initMembers ()
-Overrides: [Game_BattlerBase](Game_BattlerBase.md)
+Overrides: [Game_BattlerBase](Game_BattlerBase.md#initmembers-)
 
 
 #### initTp ()
-Initializes the battler's tp; tp is random.
+TPの量を25までのランダムな値に初期化。
 
 
 #### isActing () → {Boolean}
-Returns true if the battler is performing an action in battle.
+アクション実行中か。
 
 ##### Returns:
 
@@ -372,11 +369,8 @@ Returns true if the battler is performing an action in battle.
 </dl>
 
 
-
-
-
 #### isAnimationRequested () → {Boolean}
-
+アニメーションが要求されているか。
 
 ##### Returns:
 
@@ -389,7 +383,7 @@ Returns true if the battler is performing an action in battle.
 
 
 #### isChanting () → {Boolean}
-Returns true if the battler is chanting in combat.
+魔法詠唱中か。
 
 ##### Returns:
 
@@ -402,7 +396,7 @@ Returns true if the battler is chanting in combat.
 
 
 #### isDamagePopupRequested () → {Boolean}
-
+ダメージポップアップが要求されているか。
 
 ##### Returns:
 
@@ -415,7 +409,7 @@ Returns true if the battler is chanting in combat.
 
 
 #### isEffectRequested () → {Boolean}
-
+エフェクトが要求されているか。
 
 ##### Returns:
 
@@ -428,7 +422,7 @@ Returns true if the battler is chanting in combat.
 
 
 #### isGuardWaiting () → {Boolean}
-Returns true if the battler is waiting to guard.
+[防御]して待機中か。
 
 ##### Returns:
 
@@ -441,7 +435,7 @@ Returns true if the battler is waiting to guard.
 
 
 #### isInputting () → {Boolean}
-Returns true if the battler is inputting commands in battle.
+戦闘コマンド入力中か。
 
 ##### Returns:
 
@@ -454,7 +448,7 @@ Returns true if the battler is inputting commands in battle.
 
 
 #### isMotionRefreshRequested () → {Boolean}
-
+モーションの初期化が要求されているか。
 
 ##### Returns:
 
@@ -467,7 +461,7 @@ Returns true if the battler is inputting commands in battle.
 
 
 #### isMotionRequested () → {Boolean}
-Returns true if a motion is requested.
+モーションが要求されているか。
 
 ##### Returns:
 
@@ -480,7 +474,7 @@ Returns true if a motion is requested.
 
 
 #### isSelected () → {Boolean}
-
+選択されているか。
 
 ##### Returns:
 
@@ -492,16 +486,14 @@ Returns true if a motion is requested.
 </dl>
 
 
-
 #### isStateAddable (stateId) → {Boolean}
-Returns true if the specified state given the state id is addable.
+指定ステートが付加可能か。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
-
+| `stateId` | [Number](Number.md) | ステートID |
 
 ##### Returns:
 
@@ -514,14 +506,13 @@ Returns true if the specified state given the state id is addable.
 
 
 #### isStateRestrict (stateId) → {Boolean}
-Returns true if the specified state given the state id restricts.
+指定ステートが[行動制約によって解除]かつ、現在行動制約中か。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
-
+| `stateId` | [Number](Number.md) | ステートID |
 
 ##### Returns:
 
@@ -534,7 +525,7 @@ Returns true if the specified state given the state id restricts.
 
 
 #### isUndecided () → {Boolean}
-
+行動が未選択か。
 
 ##### Returns:
 
@@ -547,7 +538,7 @@ Returns true if the specified state given the state id restricts.
 
 
 #### isWaiting () → {Boolean}
-Returns true if the battler is waiting in battle.
+待機中か。
 
 ##### Returns:
 
@@ -560,7 +551,7 @@ Returns true if the battler is waiting in battle.
 
 
 #### isWeaponAnimationRequested () → {Boolean}
-Returns true if a weapon animation is requested.
+武器アニメーションが要求されているか。
 
 ##### Returns:
 
@@ -573,11 +564,11 @@ Returns true if a weapon animation is requested.
 
 
 #### makeActions ()
-Creates the actions for the battler.
+アニメーションを生成。
 
 
 #### makeActionTimes () → {[Number](Number.md)}
-Creates the number of times for an action.
+行動回数を設定して返す。
 
 ##### Returns:
 
@@ -590,11 +581,11 @@ Creates the number of times for an action.
 
 
 #### makeSpeed ()
-Calculates the speed of the battler.
+速度を設定。
 
 
 #### maxSlipDamage () → {[Number](Number.md)}
-
+最大スリップダメージ量を返す。
 
 ##### Returns:
 
@@ -607,7 +598,7 @@ Calculates the speed of the battler.
 
 
 #### motionType () → {[String](String.md)}
-Returns the motion type of the battler.
+行動タイプを返す。
 
 ##### Returns:
 
@@ -620,7 +611,7 @@ Returns the motion type of the battler.
 
 
 #### numActions () → {[Number](Number.md)}
-Returns the number of battler actions.
+行動番号を返す。
 
 ##### Returns:
 
@@ -633,106 +624,99 @@ Returns the number of battler actions.
 
 
 #### onAllActionsEnd ()
+全行動終了ハンドラ。
 
 
 #### onBattleEnd ()
+戦闘終了ハンドラ。
 
 
 #### onBattleStart ()
+戦闘開始ハンドラ。
 
 
 #### onDamage (value)
+被ダメージハンドラ。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.md) |  |
+| `value` | [Number](Number.md) | HPダメージ量 |
 
 
 #### onRestrict ()
-
-
-Handler for when theb attler is restricted.
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_BattlerBase#onRestrict</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+Overrides: [Game_BattlerBase](Game_BattlerBase.md#onrestrict-)
 
 
 #### onTurnEnd ()
+ターン終了ハンドラ。
 
 
 #### performAction (action)
-Perform given action motion.
+指定アクションを実行。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `action` | [Game_Action](Game_Action.md) |  |
+| `action` | [Game_Action](Game_Action.md) | アクション |
 
 
 #### performActionEnd ()
-Perform action end motion.
+行動終了を実行。
 
 
 #### performActionStart (action)
-Perform action start motion, given the specified game action.
+指定アクションの開始動作を実行。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `action` | [Game_Action](Game_Action.md) |  |
+| `action` | [Game_Action](Game_Action.md) | アクション |
 
 
 #### performCollapse ()
-Performs the collapse motion.
+倒れる動作を実行。
 
 
 #### performCounter ()
-Perform counter motion.
+カウンター動作を実行。
 
 
 #### performDamage ()
-Perform damage motion.
+被ダメージ動作を実行。
 
 
 #### performEvasion ()
-Perform evasion motion.
+回避動作を実行。
 
 
 #### performMagicEvasion ()
-Perform magic evasion motion.
+魔法回避動作を実行。
 
 
 #### performMiss ()
-Perform miss motion.
+失敗動作を実行。
 
 
 #### performRecovery ()
-Perform recovery motion.
+回復動作を実行。
 
 
 #### performReflection ()
-Performs the reflect motion.
+魔法反射動作を実行。
 
 
 #### performSubstitute (target)
-Perform substitute motion with the specified game battler.
+身代わり動作を実行
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 身代わり対象 |
 
 
 #### refresh ()
@@ -740,151 +724,157 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md)
 
 
 #### regenerateAll ()
-Handler for when battle has started.
+自動回復・ダメージを適用。
 
 
 #### regenerateHp ()
-Has the battler regenerate hp based on their hp regen.
+HP自動回復を適用。
 
 
 #### regenerateMp ()
-Has the battler regenerate mp based on their mp regen.
+MP自動回復を適用。
 
 
 #### regenerateTp ()
-Has the battler regenerate tp based on their tp regen.
+TP自動回復を適用。
 
 
 #### removeAllBuffs ()
-Removes all buffs from the battler.
+全能力強化を解除。
 
 
 #### removeBattleStates ()
-
+ステートを解除。
 
 #### removeBuff (paramId)
+指定通常能力の強化を解除。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.md) | 通常能力ID |
 
 
 #### removeBuffsAuto ()
-
+ターン終了した能力強化・弱化を解除。
 
 #### removeCurrentAction ()
-Removes the current battler action.
+現在の行動を解除。
 
 
 #### removeState (stateId)
-Removes the specified state given the state id.
+指定ステートを解除。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
+| `stateId` | [Number](Number.md) | ステートID |
 
 
 #### removeStatesAuto (timing)
+指定条件のステートを解除。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `timing` | [Number](Number.md) |  |
+| `timing` | [Number](Number.md) | 解除条件 1:行動終了時 2:ターン終了時 |
 
 
 #### removeStatesByDamage ()
+[ダメージで解除]のステートを解除。
 
 
 #### requestEffect (effectType)
+指定エフェクトを要求。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `effectType` | [String](String.md) |  |
+| `effectType` | [String](String.md) | エフェクトタイプ |
 
 
 #### requestMotion (motionType)
-Request the specified motion on the game battler.
+指定モーションを要求。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `motionType` | [String](String.md) |  |
+| `motionType` | [String](String.md) | モーションタイプ |
 
 
 #### requestMotionRefresh ()
+モーションの初期化を要求。
 
 
 #### result () → {[Game_ActionResult](Game_ActionResult.md)}
-Returns the battler action result.
+行動結果を返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Game_ActionResult</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span><a>Game_ActionResult</a></span>
+	</dd>
+</dl>
 
 
 #### select ()
+バトラーの選択。
 
 
 #### setAction (index, action)
+指定番号のバトラーにアクションを設定。
 Sets the action at the specified index for the battler.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
-| `action` | [Game_Action](Game_Action.md) |  |
+| `index` | [Number](Number.md) | バトラー番号 |
+| `action` | [Game_Action](Game_Action.md) | アクション |
 
 
 #### setActionState (actionState)
+指定アクション状態を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actionState` | [String](String.md) |  |
+| `actionState` | [String](String.md) | アクション状態 |
 
 
 #### setLastTarget (target)
+目標バトラーを設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
-
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### shiftAnimation () → {[MV.BattlerAnimation](MV.BattlerAnimation.md)}
-
-
-Shifts the battler animation.
+次のアニメーションを返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>MV.BattlerAnimation</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>MV.BattlerAnimation</span>
+	</dd>
+</dl>
 
 
 #### speed () → {[Number](Number.md)}
-Returns the speed of the battler.
+速度を返す。
 
 ##### Returns:
 
@@ -897,43 +887,43 @@ Returns the speed of the battler.
 
 
 #### startAnimation (animationId, mirror, delay)
-Starts the specified animation, given the animation id on the battler.
+指定アニメーション開始(追加)。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `animationId` | [Number](Number.md) |  |
-| `mirror` | Boolean |  |
-| `delay` | [Number](Number.md) |  |
+| `animationId` | [Number](Number.md) | アニメーションID |
+| `mirror` | Boolean | 反転するか |
+| `delay` | [Number](Number.md) | 遅延 |
 
 
 #### startDamagePopup ()
-Starts a damage pop up on the battler.
+ダメージポップアップ開始。
 
 
 #### startWeaponAnimation (weaponImageId)
-Starts the weapon animation on te battler given a weapon id.
+指定武器のアニメーション開始。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `weaponImageId` | [Number](Number.md) |  |
+| `weaponImageId` | [Number](Number.md) | 武器ID |
 
 
 #### useItem (item)
-Has theb attler use the given item.
+指定アイテムを使用。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.UsableItem](RPG.UsableItem.md) |  |
+| `item` | [RPG.UsableItem](RPG.UsableItem.md) | アイテム |
 
 
 #### weaponImageId () → {[Number](Number.md)}
-Returns the weapon image id.
+武器画像IDを返す。
 
 ##### Returns:
 
