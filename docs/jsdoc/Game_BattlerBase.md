@@ -82,8 +82,8 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 | `_tp` | [Number](Number.md) | TP |
 | `_hidden` | Boolean | 隠れているか |
 | `_paramPlus` | [Array](Array.md).<[Number](Number.md)> | 強化能力 |
-| `_states` | [Array](Array.md).<[Number](Number.md)> | 状態 |
-| `_stateTurns` | Object | {[stateId: number]: number} 状態の残りターン|
+| `_states` | [Array](Array.md).<[Number](Number.md)> | ステート |
+| `_stateTurns` | Object | {[stateId: number]: number} ステートの残りターン|
 | `_buffs` | [Array](Array.md).<[Number](Number.md)> | 能力の強化 |
 | `_buffTurns` | [Array](Array.md).<[Number](Number.md)> | 強化の残りターン |
 
@@ -130,13 +130,13 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 
 #### addNewState (stateId)
-新たな状態を追加。
+新たなステートを追加。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | 状態ID |
+| `stateId` | [Number](Number.md) | ステートID |
 
 
 #### addParam (paramId, value)
@@ -220,7 +220,7 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 
 #### attackStates () → {[Array](Array.md).<[Number](Number.md)>}
-攻撃状態を配列で返す。
+攻撃ステートを配列で返す。
 
 ##### Returns:
 
@@ -233,13 +233,13 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 
 #### attackStatesRate (stateId)
-攻撃状態の付加率を返す。
+攻撃ステートの付加率を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | 状態ID |
+| `stateId` | [Number](Number.md) | ステートID |
 
 
 #### attackTimesAdd () → {[Number](Number.md)}
@@ -477,7 +477,7 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 
 #### clearStates ()
-状態変化を戻す。
+ステート変化を戻す。
 
 
 #### collapseType () → {[Number](Number.md)}
@@ -507,7 +507,7 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 
 #### deathStateId () → {[Number](Number.md)}
-死亡状態のID(規定値:1)を返す。
+死亡ステートのID(規定値:1)を返す。
 
 ##### Returns:
 
@@ -549,7 +549,7 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 
 #### die ()
-バトラーを死亡状態にする。
+バトラーを死亡ステートにする。
 
 
 #### elementRate (elementId) → {[Number](Number.md)}
@@ -582,13 +582,13 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 
 #### eraseState (stateId)
-指定状態を消す。
+指定ステートを消す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | 状態ID |
+| `stateId` | [Number](Number.md) | ステートID |
 
 
 #### guardSkillId () → {[Number](Number.md)}
@@ -762,7 +762,7 @@ HPのパーセント量を返す。
 
 
 #### isDead () → {Boolean}
-表示されて死亡状態か。
+表示されて死亡ステートか。
 
 ##### Returns:
 
@@ -775,7 +775,7 @@ HPのパーセント量を返す。
 
 
 #### isDeathStateAffected () → {Boolean}
-死亡状態か。
+死亡ステートか。
 
 ##### Returns:
 
@@ -1018,7 +1018,7 @@ HPのパーセント量を返す。
 
 
 #### isRestricted () → {Boolean}
-何かの行動制約状態か。
+何かの行動制約ステートか。
 
 ##### Returns:
 
@@ -1088,13 +1088,13 @@ HPのパーセント量を返す。
 
 
 #### isStateAffected (stateId) → {Boolean}
-指定した状態か。
+指定したステートか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | 状態ID |
+| `stateId` | [Number](Number.md) | ステートID |
 
 ##### Returns:
 
@@ -1107,13 +1107,13 @@ HPのパーセント量を返す。
 
 
 #### isStateExpired (stateId) → {Boolean}
-指定状態が切れているか。
+指定ステートが切れているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | 状態ID |
+| `stateId` | [Number](Number.md) | ステートID |
 
 ##### Returns:
 
@@ -1126,13 +1126,13 @@ HPのパーセント量を返す。
 
 
 #### isStateResist (stateId) → {Boolean}
-指定状態が無効化されているか。
+指定ステートが無効化されているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | 状態ID |
+| `stateId` | [Number](Number.md) | ステートID |
 
 ##### Returns:
 
@@ -1145,7 +1145,7 @@ HPのパーセント量を返す。
 
 
 #### isSubstitute () → {Boolean}
-[身代わり]状態か。
+[身代わり]ステートか。
 
 ##### Returns:
 
@@ -1228,7 +1228,7 @@ HPのパーセント量を返す。
 
 
 #### mostImportantStateText () → {[String](String.md)}
-現在の状態を表すメッセージ文字列を返す。
+現在のステートを表すメッセージ文字列を返す。
 
 ##### Returns:
 
@@ -1258,7 +1258,7 @@ MPのパーセント量を返す。
 
 
 #### overwriteBuffTurns (paramId, turns)
-通常能力強化状態の有効ターンを追加。
+通常能力強化の有効ターンを追加。
 
 ##### Parameters:
 
@@ -1431,21 +1431,21 @@ MPのパーセント量を返す。
 
 
 #### recoverAll ()
-HP・MP全回復し状態を解除。
+HP・MP全回復しステートを解除。
 
 
 #### refresh ()
-能力値や状態を規定値内に収める処理。
+能力値やステートを規定値内に収める処理。
 
 
 #### resetStateCounts (stateId)
-指定状態の有効ターン数を初期化。
+指定ステートの有効ターン数を初期化。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | 状態ID |
+| `stateId` | [Number](Number.md) | ステートID |
 
 
 #### restriction () → {[Number](Number.md)}
@@ -1549,7 +1549,7 @@ TPを設定。
 
 
 #### sortStates ()
-優先度で状態の並び替え。
+優先度でステートの並び替え。
 
 
 #### sparam (sparamId) → {[Number](Number.md)}
@@ -1592,7 +1592,7 @@ TPを設定。
 
 
 #### stateIcons () → {[Array](Array.md).<[Number](Number.md)>}
-状態のアイコン番号を配列で返す。
+ステートのアイコン番号を配列で返す。
 
 ##### Returns:
 
@@ -1605,7 +1605,7 @@ TPを設定。
 
 
 #### stateMotionIndex () → {[Number](Number.md)}
-SVでの状態の動作番号を返す。
+SVでのステートの動作番号を返す。
 
 ##### Returns:
 
@@ -1618,7 +1618,7 @@ SVでの状態の動作番号を返す。
 
 
 #### stateOverlayIndex () → {[Number](Number.md)}
-SVでの状態の重ね合わせ番号を返す。
+SVでのステートの重ね合わせ番号を返す。
 
 ##### Returns:
 
@@ -1663,7 +1663,7 @@ SVでの状態の重ね合わせ番号を返す。
 
 
 #### states () → {[Array](Array.md).<[RPG.State](RPG.State.md)>}
-適用中の状態を配列で返す。
+適用中のステートを配列で返す。
 
 ##### Returns:
 
@@ -1823,7 +1823,7 @@ TPのパーセント量を返す。
 
 
 #### updateStateTurns ()
-状態変化のアップデート。
+ステート変化のアップデート。
 
 
 #### xparam (xparamId) → {[Number](Number.md)}
