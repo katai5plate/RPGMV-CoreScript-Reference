@@ -813,7 +813,7 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#erasestate-stateid)
 
 #### initialize (actorId)
 指定アクターで初期化。
-Overrides: [Game_Battler](Game_Battler.md#initialize-)
+Overrides:[Game_Battler](Game_Battler.md#initialize-)
 
 ##### Parameters:
 
@@ -827,7 +827,7 @@ Overrides: [Game_Battler](Game_Battler.md#initialize-)
 
 
 #### initMembers ()
-Overrides: [Game_Battler](Game_Battler.md#initmembers-)
+Overrides:[Game_Battler](Game_Battler.md#initmembers-)
 
 
 #### initSkills ()
@@ -1178,7 +1178,7 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#parammax-paramid--number)
 
 
 #### paramPlus (paramId) → {[Number](Number.md)}
-Overrides: [Game_BattlerBase](Game_BattlerBase.md#paramplus-paramid--number)
+Overrides:[Game_BattlerBase](Game_BattlerBase.md#paramplus-paramid--number)
 
 
 #### performAction (action)
