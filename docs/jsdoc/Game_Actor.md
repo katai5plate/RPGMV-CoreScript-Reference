@@ -4,9 +4,9 @@
 
 #### new Game_Actor ()
 
-[アクター]を定義したクラス。
+大域変数である [$gameActors](global.md#gameactors-game_actors)([Game_Actors](Game_Actors.md))、[$gameParty](global.md#gameparty-game_party)([Game_Party](Game_Party.md)) から参照される[アクター]の実体。
 
-大域変数である $gameActors([Game_Actors](Game_Actors.md))、$gameParty([Game_Party](Game_Party.md)) から参照されるアクターの実体。
+JSONデータとしては {[RPG.Actor](RPG.Actor.md)} に定義されている。
 
 アクターのパラメータの取得、画像の設定、戦闘の処理とサイドビュー時の画像処理を行う。
 
@@ -21,11 +21,11 @@
 | `_profile` | [String](String.md) | [プロフィール] |
 | `_classId` | [Number](Number.md) | クラスID |
 | `_level` | [Number](Number.md) | [レベル] |
-| `_characterName` | [String](String.md) | [歩行キャラ]画像ファイル名 |
+| `_characterName` | [String](String.md) | [歩行キャラ]画像ファイル名(拡張子なし) |
 | `_characterIndex` | [Number](Number.md) | [歩行キャラ]画像番号 |
-| `_faceName` | [String](String.md) | [顔]画像ファイル名 |
+| `_faceName` | [String](String.md) | [顔]画像ファイル名(拡張子なし) |
 | `_faceIndex` | [Number](Number.md) | [顔]画像番号 |
-| `_battlerName` | [String](String.md) | [[SV]戦闘キャラ]画像ファイル名 |
+| `_battlerName` | [String](String.md) | [[SV]戦闘キャラ]画像ファイル名(拡張子なし) |
 | `_exp` | Object | {[classId: number]: number} |
 | `_skills` | [Array](Array.md).<[Number](Number.md)> | [スキル]の配列 |
 | `_equips` | [Array](Array.md).<[Game_Item](Game_Item.md)> | [装備]の配列 |
@@ -72,7 +72,6 @@
 * [canUse (item)](Game_BattlerBase.md#canuse-item--boolean)
 * [clearBuffs ()](Game_BattlerBase.md#clearbuffs-)
 * [clearParamPlus ()](Game_BattlerBase.md#clearparamplus-)
-* [clearStates ()](Game_BattlerBase.md#clearstates-)
 * [collapseType ()](Game_BattlerBase.md#collapsetype---number)
 * [confusionLevel ()](Game_BattlerBase.md#confusionlevel---number)
 * [deathStateId ()](Game_BattlerBase.md#deathstateid---number)
@@ -81,12 +80,10 @@
 * [die ()](Game_BattlerBase.md#die-)
 * [elementRate (elementId)](Game_BattlerBase.md#elementrate-elementid--number)
 * [eraseBuff (paramId)](Game_BattlerBase.md#erasebuff-paramid)
-* [eraseState (stateId)](Game_BattlerBase.md#erasestate-stateid)
 * [guardSkillId ()](Game_BattlerBase.md#guardskillid---number)
 * [hide ()](Game_BattlerBase.md#hide-)
 * [hpRate ()](Game_BattlerBase.md#hprate---number)
 * [increaseBuff (paramId)](Game_BattlerBase.md#increasebuff-paramid)
-* [isActor ()](Game_BattlerBase.md#isactor---boolean)
 * [isAlive ()](Game_BattlerBase.md#isalive---boolean)
 * [isAppeared ()](Game_BattlerBase.md#isappeared---boolean)
 * [isAutoBattle ()](Game_BattlerBase.md#isautobattle---boolean)
@@ -113,7 +110,6 @@
 * [isRestricted ()](Game_BattlerBase.md#isrestricted---boolean)
 * [isSkillSealed (stypeId)](Game_BattlerBase.md#isskillsealed-stypeid--boolean)
 * [isSkillTypeSealed (stypeId)](Game_BattlerBase.md#isskilltypesealed-stypeid--boolean)
-* [isSkillWtypeOk (skill)](Game_BattlerBase.md#isskillwtypeok-skill--boolean)
 * [isStateAffected (stateId)](Game_BattlerBase.md#isstateaffected-stateid--boolean)
 * [isStateExpired (stateId)](Game_BattlerBase.md#isstateexpired-stateid--boolean)
 * [isStateResist (stateId)](Game_BattlerBase.md#isstateresist-stateid--boolean)
@@ -121,21 +117,16 @@
 * [maxTp ()](Game_BattlerBase.md#maxtp---number)
 * [meetsItemConditions (item)](Game_BattlerBase.md#Game_BattlerBase.md#meetsitemconditions-item--boolean)
 * [meetsSkillConditions (skill)](Game_BattlerBase.md#meetsskillconditions-skill--boolean)
-* [meetsUsableItemConditions (item)](Game_BattlerBase.md#meetsusableitemconditions-item--boolean)
 * [mostImportantStateText ()](Game_BattlerBase.md#mostimportantstatetext---string)
 * [mpRate ()](Game_BattlerBase.md#mprate---number)
 * [overwriteBuffTurns (paramId, turns)](Game_BattlerBase.md#overwritebuffturns-paramid-turns)
 * [param (paramId)](Game_BattlerBase.md#param-paramid--number)
-* [paramBase (paramId)](Game_BattlerBase.md#parambase-paramid--number)
 * [paramBuffRate (paramId)](Game_BattlerBase.md#parambuffrate-paramid--number)
-* [paramMax (paramId)](Game_BattlerBase.md#parammax-paramid--number)
 * [paramMin (paramId)](Game_BattlerBase.md#parammin-paramid--number)
-* [paramPlus (paramId)](Game_BattlerBase.md#paramplus-paramid--number)
 * [paramRate (paramId)](Game_BattlerBase.md#paramrate-paramid--number)
 * [partyAbility (abilityId)](Game_BattlerBase.md#partyability-abilityid--boolean)
 * [paySkillCost (skill)](Game_BattlerBase.md#payskillcost-skill)
 * [recoverAll ()](Game_BattlerBase.md#recoverall-)
-* [resetStateCounts (stateId)](Game_BattlerBase.md#resetstatecounts-stateid)
 * [restriction ()](Game_BattlerBase.md#restriction---number)
 * [revive ()](Game_BattlerBase.md#revive-)
 * [setHp (hp)](Game_BattlerBase.md#sethp-hp)
@@ -171,7 +162,6 @@
 * [addDebuff (paramId, turns)](Game_Battler.md#adddebuff-paramid-turns)
 * [addState (stateId)](Game_Battler.md#addstate-stateid)
 * [chargeTpByDamage (damageRate)](Game_Battler.md#chargetpbydamage-damagerate)
-* [clearActions ()](Game_Battler.md#clearactions-)
 * [clearAnimations ()](Game_Battler.md#clearanimations-)
 * [clearDamagePopup ()](Game_Battler.md#cleardamagepopup-)
 * [clearEffect ()](Game_Battler.md#cleareffect-)
@@ -204,7 +194,6 @@
 * [isUndecided ()](Game_Battler.md#isundecided---boolean)
 * [isWaiting ()](Game_Battler.md#iswaiting---boolean)
 * [isWeaponAnimationRequested ()](Game_Battler.md#isweaponanimationrequested---boolean)
-* [makeActions ()](Game_Battler.md#makeactions-)
 * [makeActionTimes ()](Game_Battler.md#makeactiontimes---number)
 * [makeSpeed ()](Game_Battler.md#makespeed-)
 * [maxSlipDamage ()](Game_Battler.md#maxslipdamage---number)
@@ -216,14 +205,6 @@
 * [onDamage (value)](Game_Battler.md#ondamage-value)
 * [onRestrict ()](Game_Battler.md#onrestrict-)
 * [onTurnEnd ()](Game_Battler.md#onturnend-)
-* [performAction (action)](Game_Battler.md#performaction-action)
-* [performActionEnd ()](Game_Battler.md#performactionend-)
-* [performActionStart (action)](Game_Battler.md#performactionstart-action)
-* [performCollapse ()](Game_Battler.md#performcollapse-)
-* [performCounter ()](Game_Battler.md#performcounter-)
-* [performDamage ()](Game_Battler.md#performdamage-)
-* [performEvasion ()](Game_Battler.md#performevasion-)
-* [performMagicEvasion ()](Game_Battler.md#performmagicevasion-)
 * [performMiss ()](Game_Battler.md#performmiss-)
 * [performRecovery ()](Game_Battler.md#performrecovery-)
 * [performReflection ()](Game_Battler.md#performreflection-)
@@ -250,7 +231,6 @@
 * [setLastTarget (target)](Game_Battler.md#setlasttarget-target)
 * [shiftAnimation ()](Game_Battler.md#shiftanimation---mvbattleranimation)
 * [speed ()](Game_Battler.md#speed---number)
-* [startAnimation (animationId, mirror, delay)](Game_Battler.md#startanimation-animationid-mirror-delay)
 * [startDamagePopup ()](Game_Battler.md#startdamagepopup-)
 * [startWeaponAnimation (weaponImageId)](Game_Battler.md#startweaponanimation-weaponimageid)
 * [useItem (item)](Game_Battler.md#useitem-item)
@@ -395,7 +375,7 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#attackelements---arraynumber)
 
 
 #### bestEquipItem (slotId)
-指定スロットのベストの装備アイテムを返す。
+指定スロットの最強装備を返す。
 
 ##### Parameters:
 
@@ -457,31 +437,29 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#attackelements---arraynumber)
 
 
 #### changeExp (exp, show)
-Change the actor experience points; leveling up the actor if it's above the required exp for the current level. If show is set to true, actor level up with be displayed.
+経験値を加え、必要ならレベルアップ処理を行う。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `exp` | [Number](Number.md) |  |
-| `show` | Boolean |  |
+| `exp` | [Number](Number.md) | 経験値 |
+| `show` | Boolean | レベルアップ表示をするか |
 
 
 #### changeLevel (level, show)
-
-
-Changes the actor level; if show is set to true, the actor level will be displayed.
+指定レベルに変更する。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `level` | [Number](Number.md) |  |
-| `show` | Boolean |  |
+| `level` | [Number](Number.md) | レベル |
+| `show` | Boolean | レベルを表示するか |
 
 
 #### characterIndex () → {[Number](Number.md)}
-
+キャラ番号を返す。
 
 ##### Returns:
 
@@ -494,7 +472,7 @@ Changes the actor level; if show is set to true, the actor level will be display
 
 
 #### characterName () → {[String](String.md)}
-
+キャラの[名前]を返す。
 
 ##### Returns:
 
@@ -506,38 +484,37 @@ Changes the actor level; if show is set to true, the actor level will be display
 </dl>
 
 
-
 #### checkFloorEffect ()
-Checks the effect of the floor on the actor.
+フロア効果を調べる。
 
 
 #### clearActions ()
-Overrides:Game_Battler#clearActions
+Overrides:[Game_Battler](Game_Battler.md#clearactions-)
 
 
 #### clearEquipments ()
-Clears the actor's equipment; items are returned to the inventory.
+全ての装備を外す。
 
 
 #### clearStates ()
-Overrides:Game_Battler#clearStates
+Overrides:[Game_BattlerBase](Game_BattlerBase.md#clearstates-)
 
 
 #### currentClass () → {[RPG.Class](RPG.Class.md)}
-Returns the current class of the actor from the database.
+現在の[クラス]を返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>RPG.Class</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>RPG.Class</span>
+	</dd>
+</dl>
 
 
 #### currentExp () → {[Number](Number.md)}
-Returns the current experience points of the actor.
+現在の[経験値]を返す。
 
 ##### Returns:
 
@@ -550,7 +527,7 @@ Returns the current experience points of the actor.
 
 
 #### currentLevelExp () → {[Number](Number.md)}
-Returns the current level's experience for the actor.
+現在のレベルの必要経験値を返す。
 
 ##### Returns:
 
@@ -562,75 +539,68 @@ Returns the current level's experience for the actor.
 </dl>
 
 
-
-
-
-
 #### discardEquip (item)
-Discards the given equip item from the actor; item is not return to the party inventory.
+装備を捨て、所持品に残さない。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.md) | アイテム |
 
 
 #### displayLevelUp (newSkills)
-Displays the actor level up in a message window, with the learned skills.
+指定スキルの習得とレベルアップのメッセージを表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `newSkills` | [Array](Array.md).<[RPG.Skill](RPG.Skill.md)> |  |
+| `newSkills` | [Array](Array.md).<[RPG.Skill](RPG.Skill.md)> | スキルの配列 |
 
 
 #### equips () → {[Array](Array.md).<[RPG.EquipItem](RPG.EquipItem.md)>}
-Returns the equipment of the actor.
+装備の配列を返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>RPG.EquipItem</a>&gt;</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Array.&lt;RPG.EquipItem&gt;</span>
+	</dd>
+</dl>
 
 
 #### equipSlots () → {[Array](Array.md).<[Number](Number.md)>}
-Returns the equip slots of the actor.
+装備スロットの配列を返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Number</a>&gt;</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Array.&lt;Number&gt;</span>
+	</dd>
+</dl>
 
 
 #### eraseState (stateId)
-Overrides:>Game_Battler#eraseState
+Overrides:[Game_BattlerBase](Game_BattlerBase.md#erasestate-stateid)
 
 
 #### executeFloorDamage ()
-Executes the floor dmaage on the actor.
+フロアダメージを与える。
 
 
 #### expForLevel (level) → {[Number](Number.md)}
-
-
-Returns the exp required to level.
+指定レベルまでのレベルアップに必要な経験値を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `level` | [Number](Number.md) |  |
-
+| `level` | [Number](Number.md) | レベル |
 
 ##### Returns:
 
@@ -643,9 +613,7 @@ Returns the exp required to level.
 
 
 #### faceIndex () → {[Number](Number.md)}
-
-
-Returns the face index of the actor.
+[顔]画像番号を返す。
 
 ##### Returns:
 
@@ -658,9 +626,7 @@ Returns the face index of the actor.
 
 
 #### faceName () → {[String](String.md)}
-
-
-Returns the face name of the actor; this is the image of faces for the actor.
+[顔]画像ファイル名(拡張子なし)を返す。
 
 ##### Returns:
 
@@ -673,9 +639,7 @@ Returns the face name of the actor; this is the image of faces for the actor.
 
 
 #### finalExpRate () → {[Number](Number.md)}
-
-
-Returns the final exp rate of the actor based on if the actor is a reserved party member or an active battle member.
+戦闘に出ているか控えかで変わる経験値の比率を返す。
 
 ##### Returns:
 
@@ -688,81 +652,76 @@ Returns the final exp rate of the actor based on if the actor is a reserved part
 
 
 #### findNewSkills (lastSkills) → {[Array](Array.md).<[RPG.Skill](RPG.Skill.md)>}
+指定スキルを習得済みとして、身習得スキルを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `lastSkills` | [Array](Array.md).<[RPG.Skill](RPG.Skill.md)> |  |
-
+| `lastSkills` | [Array](Array.md).&lt;[RPG.Skill](RPG.Skill.md)&gt; | スキルの配列 |
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>RPG.Skill</a>&gt;</span>
-                </dd>
-            </dl>
-
+	<dt> Type </dt>
+	<dd>
+		<span>Array.&lt;RPG.Skill&gt;</span>
+	</dd>
+</dl>
 
 
 #### forceChangeEquip (slotId, item)
-Forces the actor to change equipment in the given slot with the given equip item without placing the item back into the party inventory.
+指定スロットの装備を(持ち物に戻さず)強制的に変更。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `slotId` | [Number](Number.md) |  |
-| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
+| `slotId` | [Number](Number.md) | スロットID |
+| `item` | [RPG.EquipItem](RPG.EquipItem.md) | アイテム |
 
 
 #### forgetSkill (skillId)
-Actor forgets the specified skill given the skill id from the actor's usable skills.
+指定スキルを忘却(非習得に)。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skillId` | [Number](Number.md) |  |
+| `skillId` | [Number](Number.md) | スキルID |
 
 
 #### friendsUnit () → {[Game_Party](Game_Party.md)}
-
+味方パーティを返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Game_Party</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Game_Party</span>
+	</dd>
+</dl>
 
 
 #### gainExp (exp)
-Gives the specified exp to the actor.
+指定経験値を加える。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `exp` | [Number](Number.md) |  |
-
-
-
+| `exp` | [Number](Number.md) | 経験値 |
 
 
 #### hasArmor (armor) → {Boolean}
-Returns true if the actor has armor.
+指定鎧を装備しているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `armor` | [RPG.Armor](RPG.Armor.md) |  |
-
+| `armor` | [RPG.Armor](RPG.Armor.md) | 鎧 |
 
 ##### Returns:
 
@@ -775,9 +734,7 @@ Returns true if the actor has armor.
 
 
 #### hasNoWeapons () → {Boolean}
-
-
-Returns true if the actor has no weapon.
+武器を持っていな(素手)か。
 
 ##### Returns:
 
@@ -790,13 +747,13 @@ Returns true if the actor has no weapon.
 
 
 #### hasSkill (skillId) → {Boolean}
+指定スキルを持っているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skillId` | [Number](Number.md) |  |
-
+| `skillId` | [Number](Number.md) | スキルID |
 
 ##### Returns:
 
@@ -809,14 +766,13 @@ Returns true if the actor has no weapon.
 
 
 #### hasWeapon (weapon) → {Boolean}
-Returns true if the actor has a weapon.
+指定武器を持っているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `weapon` | [RPG.Weapon](RPG.Weapon.md) |  |
-
+| `weapon` | [RPG.Weapon](RPG.Weapon.md) | 武器 |
 
 ##### Returns:
 
@@ -828,11 +784,8 @@ Returns true if the actor has a weapon.
 </dl>
 
 
-
-
-
 #### index () → {[Number](Number.md)}
-
+キャラ番号を返す。
 
 ##### Returns:
 
@@ -845,56 +798,61 @@ Returns true if the actor has a weapon.
 
 
 #### initEquips (equips)
-Initialize actor equipment in the given slots.
+指定スロットを初期化する。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `equips` | [Array](Array.md).<[Number](Number.md)> |  |
+| `equips` | [Array](Array.md).&lt;[Number](Number.md)&gt; | スロットIDの配列 |
 
 
 #### initExp ()
-Initialize exp of the actor.
+[経験値]を初期化。
 
 
 #### initialize (actorId)
-Overrides:Game_Battler#initialize
+指定アクターで初期化。
+Overrides: [Game_Battler](Game_Battler.md#initialize-)
+
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `actorId` | [Number](Number.md) | アクターID |
 
 
 #### initImages ()
-Initialize images of the actor.
+画像の初期化。
 
 
 #### initMembers ()
-Overrides:Game_Battler#initMembers
+Overrides: [Game_Battler](Game_Battler.md#initmembers-)
 
 
 #### initSkills ()
-Initialize actor skills.
-
+スキルの初期化。
 
 
 #### inputtingAction () → {[Game_Action](Game_Action.md)}
-Returns action the actor is inputting.
+入力された行動を返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Game_Action</a></span>
-                </dd>
-            </dl>
-
+	<dt> Type </dt>
+	<dd>
+		<span>Game_Action</span>
+	</dd>
+</dl>
 
 
 #### isActor () → {Boolean}
-Overrides:Game_Battler#isActor
+Overrides:[Game_BattlerBase](Game_BattlerBase.md#isactor---boolean)
 
 
 #### isBattleMember () → {Boolean}
-Returns true if the actor is a member in battle.
+戦闘に参加しているか。
 
 ##### Returns:
 
@@ -904,19 +862,16 @@ Returns true if the actor is a member in battle.
 		<span>Boolean</span>
 	</dd>
 </dl>
-
-
 
 
 #### isClass (gameClass) → {Boolean}
-Returns true if the actor is the specified class from the database.
+指定したクラスか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `gameClass` | [RPG.Class](RPG.Class.md) |  |
-
+| `gameClass` | [RPG.Class](RPG.Class.md) | クラス |
 
 ##### Returns:
 
@@ -928,18 +883,14 @@ Returns true if the actor is the specified class from the database.
 </dl>
 
 
-
-
-
 #### isEquipChangeOk (slotId) → {Boolean}
-Returns true if the equip change is okay in the given slot.
+指定スロットの装備を変更可能か。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `slotId` | [Number](Number.md) |  |
-
+| `slotId` | [Number](Number.md) | スロットID |
 
 ##### Returns:
 
@@ -952,14 +903,13 @@ Returns true if the equip change is okay in the given slot.
 
 
 #### isEquipped (item) → {Boolean}
-Returns true if the actor is equipped with the specific item.
+指定アイテムが装備されているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
-
+| `item` | [RPG.EquipItem](RPG.EquipItem.md) | アイテム |
 
 ##### Returns:
 
@@ -969,12 +919,10 @@ Returns true if the actor is equipped with the specific item.
 		<span>Boolean</span>
 	</dd>
 </dl>
-
-
 
 
 #### isFormationChangeOk () → {Boolean}
-
+隊列の変更が可能か。
 
 ##### Returns:
 
@@ -986,16 +934,14 @@ Returns true if the actor is equipped with the specific item.
 </dl>
 
 
-
 #### isLearnedSkill (skillId) → {Boolean}
-Returns true if the actor has learned the specified skill given the specified skill id.
+指定スキルを習得しているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skillId` | [Number](Number.md) |  |
-
+| `skillId` | [Number](Number.md) | スキルID |
 
 ##### Returns:
 
@@ -1008,7 +954,7 @@ Returns true if the actor has learned the specified skill given the specified sk
 
 
 #### isMaxLevel () → {Boolean}
-Returns true if the actor is max level.
+最大レベルに到達しているか。
 
 ##### Returns:
 
@@ -1018,25 +964,14 @@ Returns true if the actor is max level.
 		<span>Boolean</span>
 	</dd>
 </dl>
-
-
 
 
 #### isSkillWtypeOk (skill) → {Boolean}
-Overrides:Game_Battler#isSkillWtypeOk
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
+Overrides:[Game_BattlerBase](Game_BattlerBase.md#isskillwtypeok-skill--boolean)
 
 
 #### isSpriteVisible () → {Boolean}
-Returns true if the actor sprite is visible.
+スプライト(画像)が表示されているか。
 
 ##### Returns:
 
@@ -1048,16 +983,14 @@ Returns true if the actor sprite is visible.
 </dl>
 
 
-
-
 #### isWtypeEquipped (wtypeId) → {Boolean}
+指定武器タイプの武器を装備しているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `wtypeId` | [Number](Number.md) |  |
-
+| `wtypeId` | [Number](Number.md) | 武器タイプID |
 
 ##### Returns:
 
@@ -1070,24 +1003,20 @@ Returns true if the actor sprite is visible.
 
 
 #### lastBattleSkill () → {[RPG.Skill](RPG.Skill.md)}
-
-
-Returns the last battle skill of the actor.
+最後の戦闘スキルを返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>RPG.Skill</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>RPG.Skill</span>
+	</dd>
+</dl>
 
 
 #### lastCommandSymbol () → {[String](String.md)}
-
-
-Returns the last command symbol that the actor used.
+最後のコマンドを返す。
 
 ##### Returns:
 
@@ -1100,66 +1029,63 @@ Returns the last command symbol that the actor used.
 
 
 #### lastMenuSkill () → {[RPG.Skill](RPG.Skill.md)}
-Returns the last menu skill of the actor.
+最後のメニュースキルを返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>RPG.Skill</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>RPG.Skill</span>
+	</dd>
+</dl>
 
 
 #### learnSkill (skillId)
-Actor learns the specified skill given the skill id.
+指定スキルを習得する。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skillId` | [Number](Number.md) |  |
+| `skillId` | [Number](Number.md) | スキルID |
 
 
 #### levelDown ()
-Level down the actor.
+レベルダウンを実行。
 
 
 #### levelUp ()
-Level up the actor.
+レベルアップを実行。
 
 
 #### makeActionList () → {[Array](Array.md).<[Game_Action](Game_Action.md)>}
-Creates the action list for the actor.
+行動の配列を生成して返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Game_Action</a>&gt;</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Array.&lt;Game_Action&gt;</span>
+	</dd>
+</dl>
 
 
 #### makeActions ()
-Overrides:Game_Battler#makeActions
-
-
+Overrides:[Game_Battler](Game_Battler.md#makeactions-)
 
 
 #### makeAutoBattleActions ()
-Creates the auto battle actions for the game actor.
+自動戦闘の行動を生成。
+
 
 #### makeConfusionActions ()
-
-
-
+混乱状態の行動を生成。
 
 
 #### maxFloorDamage () → {[Number](Number.md)}
-Returns the max floor damage.
+最大のフロアダメージを返す。
 
 ##### Returns:
 
@@ -1172,29 +1098,19 @@ Returns the max floor damage.
 
 
 #### maxLevel ()
-Returns the maximum level of the actor.
+最大レベルを返す。
 
 
 #### meetsUsableItemConditions (item) → {Boolean}
-Overrides:Game_Battler#meetsUsableItemConditions
+Overrides:[Game_BattlerBase](Game_BattlerBase.md#meetsusableitemconditions-item--boolean)
 
 
-#### name (name)
-
-
-Sets the actor name.
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `name` | [String](String.md) |  |
+#### name ()
+[名前]を返す。
 
 
 #### nextLevelExp () → {[Number](Number.md)}
-
-
-Returns the experience points for the next level of the actor.
+次のレベルの必要経験値を返す。
 
 ##### Returns:
 
@@ -1204,11 +1120,10 @@ Returns the experience points for the next level of the actor.
 		<span>Number</span>
 	</dd>
 </dl>
+
 
 #### nextRequiredExp () → {[Number](Number.md)}
-
-
-Returns the next required experience points for the actor to level up.
+[次のレベルまで]の経験値を返す。
 
 ##### Returns:
 
@@ -1219,10 +1134,9 @@ Returns the next required experience points for the actor to level up.
 	</dd>
 </dl>
 
+
 #### nickname () → {[String](String.md)}
-
-
-Returns the nickname of the actor.
+[二つ名]を返す。
 
 ##### Returns:
 
@@ -1235,97 +1149,88 @@ Returns the nickname of the actor.
 
 
 #### onPlayerWalk ()
-
-
-Handler for when the player walks on the map scene.
+マップシーンで歩いているときに呼ばれるハンドラ。
 
 
 #### opponentsUnit () → {[Game_Troop](Game_Troop.md)}
-
+敵グループを返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Game_Troop</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Game_Troop</span>
+	</dd>
+</dl>
 
 
 #### optimizeEquipments ()
-Optimize the actor's equipment.
+[最強装備]にする。
 
 
 #### paramBase (paramId) → {[Number](Number.md)}
-Overrides:Game_Battler#paramBase
+Overrides:[Game_BattlerBase](Game_BattlerBase.md#parambase-paramid--number)
 
 
 #### paramMax (paramId) → {[Number](Number.md)}
-Overrides:Game_Battler#paramMax
+Overrides:[Game_BattlerBase](Game_BattlerBase.md#parammax-paramid--number)
 
 
 #### paramPlus (paramId) → {[Number](Number.md)}
-Overrides:Game_Battler#paramPlus
+Overrides: [Game_BattlerBase](Game_BattlerBase.md#paramplus-paramid--number)
 
 
 #### performAction (action)
-Overrides:>Game_Battler#performAction
+Overrides:[Game_Battler](Game_Battler.md#performaction-action)
 
 
 #### performActionEnd ()
-Overrides:Game_Battler#performActionEnd
+Overrides:[Game_Battler](Game_Battler.md#performactionend-)
 
 
 #### performActionStart (action)
-Overrides:Game_Battler#performActionStart
+Overrides:[Game_Battler](Game_Battler.md#performactionstart-action)
 
 
 #### performAttack ()
-Performs the attack motion for the actor.
+攻撃動作を実行。
 
 
 #### performCollapse ()
-Overrides:Game_Battler#performCollapse
+Overrides:[Game_Battler](Game_Battler.md#performcollapse-)
 
 
 #### performCounter ()
-Overrides:Game_Battler#performCounter
+Overrides:[Game_Battler](Game_Battler.md#performcounter-)
 
 
 #### performDamage ()
-Overrides:Game_Battler#performDamage
+Overrides:[Game_Battler](Game_Battler.md#performdamage-)
 
 
 #### performEscape ()
+逃走動作を実行。
 
-
-Performs the escape motion for the actor.
 
 #### performEvasion ()
-Overrides:Game_Battler#performEvasion
+Overrides:[Game_Battler](Game_Battler.md#performevasion-)
 
 
 #### performMagicEvasion ()
-Overrides:Game_Battler#performMagicEvasion
+Overrides:[Game_Battler](Game_Battler.md#performmagicevasion-)
 
 
 #### performMapDamage ()
-
-
-Perform damage to the actor on the map scene.
-
+マップシーンでの被ダメージ動作を実行。
 
 
 #### performVictory ()
+勝利動作を実行。
 
-
-Perform the victory motion for the actor.
 
 #### profile () → {[String](String.md)}
-
-
-Returns the actor profile.
+[プロフィール]を返す。
 
 ##### Returns:
 
@@ -1337,47 +1242,26 @@ Returns the actor profile.
 </dl>
 
 
-
 #### refresh ()
 Overrides:[Game_Battler](Game_Battler.md#refresh-)
 
 
 #### releaseUnequippableItems (forcing)
-Returns items the actor can't normally equip to the party inventory.
+装備不可アイテムの装備を外す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `forcing` | Boolean |  |
-
-
-
+| `forcing` | Boolean | 強制的に外すか |
 
 
 #### resetStateCounts (stateId)
-Reset state count of the specified state.
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
-
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Game_Battler#resetStateCounts</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+Overrides:[Game_BattlerBase](Game_BattlerBase.md#resetstatecounts-stateid)
 
 
 #### selectNextCommand () → {Boolean}
-
+次のコマンドを選択し、選択できたか返す。
 
 ##### Returns:
 
@@ -1390,7 +1274,7 @@ Reset state count of the specified state.
 
 
 #### selectPreviousCommand () → {Boolean}
-
+前のコマンドを選択し、選択できたか返す。
 
 ##### Returns:
 
@@ -1403,105 +1287,109 @@ Reset state count of the specified state.
 
 
 #### setBattlerImage (battlerName)
-Sets the battler image of the actor; this is the sprite displayed in the side view mode.
+SVのバトラー画像を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `battlerName` | [String](String.md) |  |
+| `battlerName` | [String](String.md) | [[SV]戦闘キャラ]画像ファイル名(拡張子なし) |
 
 
 #### setCharacterImage (characterName, characterIndex)
+トップビューのキャラ画像を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `characterName` | [String](String.md) |  |
-| `characterIndex` | [Number](Number.md) |  |
+| `characterName` | [String](String.md) | キャラ画像ファイル名(拡張子なし) |
+| `characterIndex` | [Number](Number.md) | キャラ画像番号 |
 
 
 #### setFaceImage (faceName, faceIndex)
-Sets the face image of the actor given the face image (from database) and face index within the iamge.
+キャラの[顔]画像を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `faceName` | [String](String.md) |  |
-| `faceIndex` | [Number](Number.md) |  |
+| `faceName` | [String](String.md) | [顔]画像ファイル名(拡張子なし) |
+| `faceIndex` | [Number](Number.md) | [顔]画像番号 |
 
 
 #### setLastBattleSkill (skill)
+最後の戦闘スキルを設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.md) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) | スキル |
 
 
 #### setLastCommandSymbol (symbol)
-Sets the last command symbol to the given symbol; this is the selected command in the battle menu.
+最後に選択されたコマンドを設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `symbol` | [String](String.md) |  |
+| `symbol` | [String](String.md) | コマンドシンボル |
 
 
 #### setLastMenuSkill (skill)
+最後に選択されたメニュースキルを設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skill` | [RPG.Skill](RPG.Skill.md) |  |
+| `skill` | [RPG.Skill](RPG.Skill.md) | スキル |
 
 
 #### setName (name)
-Sets the actor name.
+[名前]を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.md) |  |
+| `name` | [String](String.md) | [名前] |
 
 
 #### setNickname (nickname)
-Sets the nickname of the actor.
+[二つ名]を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `nickname` | [String](String.md) |  |
+| `nickname` | [String](String.md) | [二つ名] |
 
 
 #### setProfile (profile)
-Sets the actor profile.
+[プロフィール]を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `profile` | [String](String.md) |  |
+| `profile` | [String](String.md) | [プロフィール] |
 
 
 #### setup (actorId)
+指定アクターで Gama_Actor を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actorId` | [Number](Number.md) |  |
+| `actorId` | [Number](Number.md) | アクターID |
 
 
 #### shouldDisplayLevelUp () → {Boolean}
-Returns true if the actor should display level up in a message window.
+レベルアップのメッセージ表示を行うか。
 
 ##### Returns:
 
@@ -1514,33 +1402,32 @@ Returns true if the actor should display level up in a message window.
 
 
 #### showAddedStates ()
-Shows the added states to the actor.
+ステート付加のメッセージ表示を行うか。
 
 
 #### showRemovedStates ()
-Shows the removed states from the actor.
+ステート解除のメッセージ表示を行うか。
 
 
 #### skills () → {[Array](Array.md).<[RPG.Skill](RPG.Skill.md)>}
-Returns the actor's skills; even if the skills are not usable.
+取得済みスキルを返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>RPG.Skill</a>&gt;</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Array.&lt;RPG.Skill&gt;</span>
+	</dd>
+</dl>
 
 
 #### startAnimation (animationId, mirror, delay)
-Overrides:Game_Battler#startAnimation
-
+Overrides:[Game_Battler](Game_Battler.md#startanimation-animationid-mirror-delay)
 
 
 #### stepsForTurn () → {[Number](Number.md)}
-
+戦闘1ターンに当たる歩数(規定値:20)を返す。
 
 ##### Returns:
 
@@ -1553,27 +1440,24 @@ Overrides:Game_Battler#startAnimation
 
 
 #### testEscape (item)
+指定アイテムが[特殊効果 - 逃げる]を持っているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
-
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) | アイテム |
 
 
 #### tradeItemWithParty (newItem, oldItem) → {Boolean}
-
-
-Trades the new item with the old item in the party inventory.
+所持アイテムを交換し、交換できたか返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `newItem` | [RPG.EquipItem](RPG.EquipItem.md) |  |
-| `oldItem` | [RPG.EquipItem](RPG.EquipItem.md) |  |
-
+| `newItem` | [RPG.EquipItem](RPG.EquipItem.md) | 新アイテム |
+| `oldItem` | [RPG.EquipItem](RPG.EquipItem.md) | 旧アイテム |
 
 ##### Returns:
 
@@ -1584,42 +1468,40 @@ Trades the new item with the old item in the party inventory.
 	</dd>
 </dl>
 
-#### traitObjects () → {[Array](Array.md).<*>}
-Overrides:[Game_Battle](Game_Battler.mdr#traitobjects)</a>
 
+#### traitObjects () → {[Array](Array.md).<*>}
+Overrides:[Game_Battler](Game_Battler.mdr#traitobjects)</a>
 
 
 #### turnEndOnMap ()
+マップ上でターン終了(相当)の歩数を歩いた。
 
 
 #### updateStateSteps (state)
+指定ステート解除条件の歩数をアップデート。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `state` | [RPG.State](RPG.State.md) |  |
+| `state` | [RPG.State](RPG.State.md) | ステート |
 
 
 #### usableSkills () → {[Array](Array.md).<[RPG.Skill](RPG.Skill.md)>}
-
-
-Returns the usable skills of the actor.
+使用可能なスキルの配列を返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>RPG.Skill</a>&gt;</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Array.&lt;RPG.Skill&gt;</span>
+	</dd>
+</dl>
 
 
 #### weapons () → {[Array](Array.md).<[RPG.Weapon](RPG.Weapon.md)>}
-
-
-Returns the weapon of the actor.
+装備している武器を配列で返す。
 
 ##### Returns:
 
