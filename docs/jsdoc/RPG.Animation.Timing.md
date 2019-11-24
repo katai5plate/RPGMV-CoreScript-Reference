@@ -1,27 +1,18 @@
 # Class: Timing
 
-## [RPG](RPG.md) [.Animation](RPG.Animation.md).  Timing ()
+## Namespace: [RPG](RPG.md).[Animation](RPG.Animation.md)
 
-#### new Timing ()
-
-The data class for the timing of an animation's SE and flash effects. Define to $dataTiming as Array.
+アニメーションの効果音とエフェクトのタイミングを記述したデータで、[RPG.Animation](RPG.Animation.md) の timings 属性に含まれる。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `frame` | [Number](Number.md) | The frame number. 1 less than the number displayed in RPG Maker. |
-| `se` | [RPG.AudioFile](RPG.AudioFile.md) | The sound effect or SE |
-| `flashScope` | [Number](Number.md) | The flash area (0: none, 1: target, 2: screen; 3: hide target). |
-| `flashColor` | [Array](Array.md).<[Number](Number.md)> | The color of the flash (Color). |
-| `flashDuration` | [Number](Number.md) | The duration of the flash. |
-
-<dl>
-</dl>
-
-### Extends
-
-* [RPG.MetaData](RPG.MetaData.md)
+| `frame` | [Number](Number.md) | フレーム番号(エディタで表示されるより1少ない) |
+| `se` | [RPG.AudioFile](RPG.AudioFile.md) | 効果音 |
+| `flashScope` | [Number](Number.md) | フラッシュ範囲(0:なし, 1:ターゲット, 2:スクリーン; 3:隠れたターゲット) |
+| `flashColor` | [Array](Array.md).<[Number](Number.md)> | フラッシュの色の配列 |
+| `flashDuration` | [Number](Number.md) | フラッシュの継続時間 |
 
  <br>
 
