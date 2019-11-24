@@ -2,12 +2,14 @@
 
 ## Namespace: [RPG](RPG.md)
 
- マップ用JSONのデータ構造。data/MapXXX.json( XXX は3桁の数値)<br />
- 大域変数の、現在のマップのデータ [$dataMap](global.md#datamap-rpgmap) か Map管理オブジェクト [$gameMap](global.md#gamemap-game_map) を介して扱う。<br />
- 描画は [Tilemap](Tilemap.md) か [ShaderTilemap](ShaderTilemap.md) で行われる。
+マップ用JSONのデータ構造。data/MapXXX.json( XXX は3桁の数値)<br />
+大域変数の [$dataMap](global.md#datamap-rpgmap) か Map管理オブジェクト [$gameMap](global.md#gamemap-game_map)( [Game_Map](Game_Map.md) )を介して扱う。<br />
+ゲーム全体のマップリストは [$dataMapInfos](global.html#$datamapInfos-arrayrpgmapInfo)( [RPG.MapInfo](RPG.MapInfo.md) ) に記録されている。
+
+マップシーンは [Scene_Map](Scene_Map.md) で管理される。
  
- data プロパティは一次元配列で、<code>data[ x + ( y + z\*h )\*w ]</code> の形で取り出せる。<br />
- x: x座標, y: y座標, w: マップ幅, h: マップ高さ, z: マップ重ね順。<br />
+data 属性は一次元配列で、<code>data[ x + ( y + z\*h )\*w ]</code> の形で取り出せる。<br />
+x: x座標, y: y座標, w: マップ幅, h: マップ高さ, z: マップ重ね順。
  
 #### z:マップ重ね順
  
@@ -53,7 +55,7 @@
 
 ### Classes
 
-* [Encounter](RPG.Map.Encounter.md)
+* [RPG.Map.Encounter](RPG.Map.Encounter.md)
 
  <br>
 
