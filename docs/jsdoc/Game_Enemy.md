@@ -82,7 +82,6 @@ The game object declare class for an enemy.
 * [isDebuffAffected (paramId)](Game_BattlerBase.md#isdebuffaffected-paramid--boolean)
 * [isDualWield ()](Game_BattlerBase.md#isdualwield---boolean)
 * [isDying ()](Game_BattlerBase.md#isdying---boolean)
-* [isEnemy ()](Game_BattlerBase.md#isenemy---boolean)
 * [isEquipAtypeOk (atypeId)](Game_BattlerBase.md#isequipatypeok-atypeid--boolean)
 * [isEquipTypeLocked (etypeId)](Game_BattlerBase.md#isequiptypelocked-etypeid--boolean)
 * [isEquipTypeSealed (etypeId)](Game_BattlerBase.md#isequiptypesealed-etypeid--boolean)
@@ -109,7 +108,6 @@ The game object declare class for an enemy.
 * [mpRate ()](Game_BattlerBase.md#mprate---number)
 * [overwriteBuffTurns (paramId, turns)](Game_BattlerBase.md#overwritebuffturns-paramid-turns)
 * [param (paramId)](Game_BattlerBase.md#param-paramid--number)
-* [paramBase (paramId)](Game_BattlerBase.md#parambase-paramid--number)
 * [paramBuffRate (paramId)](Game_BattlerBase.md#parambuffrate-paramid--number)
 * [paramMax (paramId)](Game_BattlerBase.md#parammax-paramid--number)
 * [paramMin (paramId)](Game_BattlerBase.md#parammin-paramid--number)
@@ -187,7 +185,6 @@ The game object declare class for an enemy.
 * [isUndecided ()](Game_Battler.md#isundecided---boolean)
 * [isWaiting ()](Game_Battler.md#iswaiting---boolean)
 * [isWeaponAnimationRequested ()](Game_Battler.md#isweaponanimationrequested---boolean)
-* [makeActions ()](Game_Battler.md#makeactions-)
 * [makeActionTimes ()](Game_Battler.md#makeactiontimes---number)
 * [makeSpeed ()](Game_Battler.md#makespeed-)
 * [maxSlipDamage ()](Game_Battler.md#maxslipdamage---number)
@@ -199,12 +196,7 @@ The game object declare class for an enemy.
 * [onDamage (value)](Game_Battler.md#ondamage-value)
 * [onRestrict ()](Game_Battler.md#onrestrict-)
 * [onTurnEnd ()](Game_Battler.md#onturnend-)
-* [performAction (action)](Game_Battler.md#performaction-action)
-* [performActionEnd ()](Game_Battler.md#performactionend-)
-* [performActionStart (action)](Game_Battler.md#performactionstart-action)
-* [performCollapse ()](Game_Battler.md#performcollapse-)
 * [performCounter ()](Game_Battler.md#performcounter-)
-* [performDamage ()](Game_Battler.md#performdamage-)
 * [performEvasion ()](Game_Battler.md#performevasion-)
 * [performMagicEvasion ()](Game_Battler.md#performmagicevasion-)
 * [performMiss ()](Game_Battler.md#performmiss-)
@@ -257,7 +249,7 @@ The game object declare class for an enemy.
 
 
 #### battlerName () → {[String](String.md)}
-
+[名前]を返す。
 
 ##### Returns:
 
@@ -283,20 +275,20 @@ The game object declare class for an enemy.
 
 
 #### enemy () → {[RPG.Enemy](RPG.Enemy.md)}
-Returns the enemy information from the database.
+[敵]のデータベース情報を返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>RPG.Enemy</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>RPG.Enemy</span>
+	</dd>
+</dl>
 
 
 #### enemyId () → {[Number](Number.md)}
-Returns the enemy id.
+敵のIDを返す。
 
 ##### Returns:
 
@@ -309,7 +301,7 @@ Returns the enemy id.
 
 
 #### exp () → {[Number](Number.md)}
-Returns the enemy's exp amount.
+敵の[経験値]を返す。
 
 ##### Returns:
 
@@ -322,7 +314,7 @@ Returns the enemy's exp amount.
 
 
 #### friendsUnit () → {[Game_Troop](Game_Troop.md)}
-Returns the other troops in the enemy team.
+敵グループを返す。
 
 ##### Returns:
 
@@ -335,9 +327,7 @@ Returns the other troops in the enemy team.
 
 
 #### gold () → {[Number](Number.md)}
-
-
-Returns enemy's given gold.
+[所持金]を返す。
 
 ##### Returns:
 
@@ -350,7 +340,7 @@ Returns enemy's given gold.
 
 
 #### index () → {[Number](Number.md)}
-
+敵番号を返す。
 
 ##### Returns:
 
@@ -363,21 +353,30 @@ Returns enemy's given gold.
 
 
 #### initialize (enemyId, x, y)
+指定の敵と座標で初期化。
 Overrides:[Game_Battler#initialize]
-
-#### initMembers ()
-Overrides:[Game_Battler#initMembers]
-
-
-#### isActionValid (action) → {Boolean}
-Returns true if the enemy action is valid.
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.md) |  |
+| `enemyId` | [Number](Number.md) | 敵ID |
+| `x` | [Number](Number.md) | x座標 |
+| `y` | [Number](Number.md) | y座標 |
 
+
+#### initMembers ()
+Overrides:[Game_Battler](Game_Battler.md#initmembers-)
+
+
+#### isActionValid (action) → {Boolean}
+行動が実行可能か。
+
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.md) | 行動 |
 
 ##### Returns:
 
@@ -390,7 +389,7 @@ Returns true if the enemy action is valid.
 
 
 #### isBattleMember () → {Boolean}
-
+戦闘に参加しているか。
 
 ##### Returns:
 
@@ -403,11 +402,11 @@ Returns true if the enemy action is valid.
 
 
 #### isEnemy () → {Boolean}
-Overrides:[Game_Battler#isEnemy]
+Overrides:[Game_BattlerBase](Game_BattlerBase.md#isenemy---boolean)
 
 
 #### isLetterEmpty () → {Boolean}
-
+接尾辞(A,B...など)が付いていない名前か。
 
 ##### Returns:
 
@@ -420,7 +419,7 @@ Overrides:[Game_Battler#isEnemy]
 
 
 #### isSpriteVisible () → {Boolean}
-Returns true if the enemy sprite is visible.
+画像が表示されているか。
 
 ##### Returns:
 
@@ -433,49 +432,50 @@ Returns true if the enemy sprite is visible.
 
 
 #### itemObject (kind, dataId) → {[RPG.BaseItem](RPG.BaseItem.md)}
+指定したアイテムを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `kind` | [Number](Number.md) | 1:item 2:weapon 3:armor |
-| `dataId` | Numver |  |
+| `kind` | [Number](Number.md) | 種類(1:アイテム, 2:武器, 3:防具) |
+| `dataId` | Numver | アイテムID |
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>RPG.BaseItem</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>RPG.BaseItem</span>
+	</dd>
+</dl>
 
 
 #### makeActions ()
-Overrides:[Game_Battler#makeActions]
+Overrides:[Game_Battler](Game_Battler.md#makeactions-)
 
 
 #### makeDropItems () → {[Array](Array.md).<[RPG.BaseItem](RPG.BaseItem.md)>}
-Creates the drop items for the enemy specified by the database.
+ドロップアイテムを生成して返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>RPG.BaseItem</a>&gt;</span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Array.&lt;RPG.BaseItem&gt;</span>
+	</dd>
+</dl>
 
 
 #### meetsCondition (action) → {Boolean}
+行動が[行動パターン - 条件]に合致しているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.md) |  |
-
+| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.md) | 行動 |
 
 ##### Returns:
 
@@ -488,13 +488,14 @@ Creates the drop items for the enemy specified by the database.
 
 
 #### meetsHpCondition (param1, param2) → {Boolean}
+[条件 - HP]に合致しているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param1` | [Number](Number.md) |  |
-| `param2` | [Number](Number.md) |  |
+| `param1` | [Number](Number.md) | 範囲下限HP |
+| `param2` | [Number](Number.md) | 範囲上限HP |
 
 
 ##### Returns:
@@ -508,13 +509,14 @@ Creates the drop items for the enemy specified by the database.
 
 
 #### meetsMpCondition (param1, param2) → {Boolean}
+[条件 - MP]に合致しているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param1` | [Number](Number.md) |  |
-| `param2` | [Number](Number.md) |  |
+| `param1` | [Number](Number.md) | 範囲下限MP |
+| `param2` | [Number](Number.md) | 範囲上限MP |
 
 ##### Returns:
 
@@ -527,13 +529,13 @@ Creates the drop items for the enemy specified by the database.
 
 
 #### meetsPartyLevelCondition (param) → {Boolean}
+[条件 - パーティLv]に合致しているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param` | [Number](Number.md) |  |
-
+| `param` | [Number](Number.md) | レベル |
 
 ##### Returns:
 
@@ -546,12 +548,13 @@ Creates the drop items for the enemy specified by the database.
 
 
 #### meetsStateCondition (param) → {Boolean}
+[条件 - ステート]に合致しているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param` | [Number](Number.md) |  |
+| `param` | [Number](Number.md) | ステートID |
 
 ##### Returns:
 
@@ -564,12 +567,13 @@ Creates the drop items for the enemy specified by the database.
 
 
 #### meetsSwitchCondition (param) → {Boolean}
+[条件 - スイッチ]に合致しているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param` | [Number](Number.md) |  |
+| `param` | [Number](Number.md) | スイッチID |
 
 ##### Returns:
 
@@ -582,13 +586,14 @@ Creates the drop items for the enemy specified by the database.
 
 
 #### meetsTurnCondition (param1, param2) → {Boolean}
+[条件 - ターン]に合致しているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param1` | [Number](Number.md) |  |
-| `param2` | [Number](Number.md) |  |
+| `param1` | [Number](Number.md) | 範囲下限ターン |
+| `param2` | [Number](Number.md) | 範囲上限ターン |
 
 ##### Returns:
 
@@ -601,7 +606,7 @@ Creates the drop items for the enemy specified by the database.
 
 
 #### name () → {[String](String.md)}
-Returns the enemy name with letter.
+接尾辞つきの名前を返す。
 
 ##### Returns:
 
@@ -614,20 +619,20 @@ Returns the enemy name with letter.
 
 
 #### opponentsUnit () → {[Game_Party](Game_Party.md)}
-Returns the game party.
+味方パーティを返す。
 
 ##### Returns:
 
 <dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Game_Party</a></span>
-                </dd>
-            </dl>
+	<dt> Type </dt>
+	<dd>
+		<span>Game_Party</span>
+	</dd>
+</dl>
 
 
 #### originalName () → {[String](String.md)}
-Returns the enemy original name.
+[名前]を返す。
 
 ##### Returns:
 
@@ -640,31 +645,31 @@ Returns the enemy original name.
 
 
 #### paramBase (paramId) → {[Number](Number.md)}
-Overrides:[Game_Battler#paramBase]
+Overrides:[Game_BattlerBase](Game_BattlerBase.md#parambase-paramid--number)
 
 
 #### performAction (action)
-Overrides:[Game_Battler#performAction]
+Overrides:[Game_Battler](Game_Battler.md#performaction-action)
 
 
 #### performActionEnd ()
-Overrides:[Game_Battler#performActionEnd]
+Overrides:[Game_Battler](Game_Battler.md#performactionend-)
 
 
 #### performActionStart (action)
-Overrides:[Game_Battler#performActionStart]
+Overrides [Game_Battler](Game_Battler.md#performactionstart-action)
 
 
 #### performCollapse ()
-Overrides:[Game_Battler#performCollapse]
+Overrides:[Game_Battler](Game_Battler.md#performcollapse-)
 
 
 #### performDamage ()
-Overrides:[Game_Battler#performDamage]
+Overrides:[Game_Battler](Game_Battler.md#performdamage-)
 
 
 #### screenX () → {[Number](Number.md)}
-Returns enemy screen X coordinate.
+画面上の x座標を返す。
 
 ##### Returns:
 
@@ -677,7 +682,7 @@ Returns enemy screen X coordinate.
 
 
 #### screenY () → {[Number](Number.md)}
-Returns enemy screen Y position.
+画面上の y座標を返す。
 
 ##### Returns:
 
@@ -690,14 +695,14 @@ Returns enemy screen Y position.
 
 	
 #### selectAction (actionList, ratingZero) → {[RPG.Enemy.Action](RPG.Enemy.Action.md)}
+指定した行動リストの中から選択した行動を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actionList` | [Array](Array.md).<[RPG.Enemy.Action](RPG.Enemy.Action.md)> |  |
-| `ratingZero` | [Number](Number.md) |  |
-
+| `actionList` | [Array](Array.md).<[RPG.Enemy.Action](RPG.Enemy.Action.md)> | 行動の配列 |
+| `ratingZero` | [Number](Number.md) | ゼロのレーティング |
 
 ##### Returns:
 
@@ -710,55 +715,59 @@ Returns enemy screen Y position.
 
 
 #### selectAllActions (actionList)
+指定した行動リストを元に全行動を選択。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actionList` | [Array](Array.md).<[RPG.Enemy.Action](RPG.Enemy.Action.md)> |  |
+| `actionList` | [Array](Array.md).<[RPG.Enemy.Action](RPG.Enemy.Action.md)> | 行動の配列 |
 
 
 #### setLetter (letter)
+接尾辞(A,B...など)を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `letter` | [String](String.md) |  |
+| `letter` | [String](String.md) | 接尾辞 |
 
 
 #### setPlural (plural)
+群(2体以上)であるか設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `plural` | Boolean |  |
+| `plural` | Boolean | 群か |
 
 
 #### setup (enemyId, x, y)
+指定の敵と座標で Gama_Enemy を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `enemyId` | [Number](Number.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+| `enemyId` | [Number](Number.md) | 敵ID |
+| `x` | [Number](Number.md) | x座標 |
+| `y` | [Number](Number.md) | y座標 |
 
 
-#### traitObjects () → {*}
-Overrides:[Game_Battler#traitObjects]
+#### traitObjects () → {[Array](Array.md).<[RPG.State](RPG.State.md)>}
+Overrides:[Game_Battler](Game_Battler.mdr#traitobjects)</a>
 
 
 #### transform (enemyId)
-Transform the enemy into another enemy based on id.
+指定の敵へ変更(変身)。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `enemyId` | [Number](Number.md) |  |
+| `enemyId` | [Number](Number.md) | 敵ID |
 
 
  <br>
