@@ -5,6 +5,8 @@
 #### new Scene_Map ()
 
  マップ表示シーン。マップ表示スプライト [Spriteset_Map](Spriteset_Map.md) と 関連ウィンドウ[Window_MapName](Window_MapName.md) 、 [Window_ScrollText](Window_ScrollText.md) 、 [Window_Message](Window_Message.md) を持っている。
+ 
+マップタイルの描画は \_spriteset([Spriteset_Map](Spriteset_Map.md)) に含まれる \_tilemap([Tilemap](Tilemap.md) か [ShaderTilemap](ShaderTilemap.md))で行われる。
 
 ##### Properties:
 
