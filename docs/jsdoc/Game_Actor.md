@@ -6,7 +6,7 @@
 
 大域変数である [$gameActors](global.md#gameactors-game_actors)([Game_Actors](Game_Actors.md))、[$gameParty](global.md#gameparty-game_party)([Game_Party](Game_Party.md)) から参照される[アクター]の実体。
 
-JSONデータとしては {[RPG.Actor](RPG.Actor.md)} に定義されている。
+JSONデータとしては [RPG.Actor](RPG.Actor.md) に定義されている。
 
 アクターのパラメータの取得、画像の設定、戦闘の処理とサイドビュー時の画像処理を行う。
 
