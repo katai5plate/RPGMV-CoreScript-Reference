@@ -4,17 +4,21 @@
 
 #### new Game_Enemy ()
 
-The game object declare class for an enemy.
+戦闘中の[敵]を表すクラス。
+
+JSONデータとしては {[RPG.Enemy](RPG.Enemy.md)} に定義されている。
+
+敵のパラメータの取得、画像の設定、戦闘の処理を行う。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_enemyId` | [Number](Number.md) |  |
-| `_letter` | [String](String.md) |  |
-| `_plural` | Boolean |  |
-| `_screenX` | [Number](Number.md) |  |
-| `_screenY` | [Number](Number.md) |  |
+| `_enemyId` | [Number](Number.md) | 敵ID |
+| `_letter` | [String](String.md) | 接尾辞(A,B...など) |
+| `_plural` | Boolean | 群(2体以上)か |
+| `_screenX` | [Number](Number.md) | 画面上の x座標 |
+| `_screenY` | [Number](Number.md) | 画面上の y座標  |
 
 
 ### Extends
