@@ -2,45 +2,26 @@
 
 ## MV
 
-
-
 RPGツクールMVで使われる構造体的なオブジェクト。
-<dl>
-</dl>
+
+ネームスペースに MV とか、クラス名を便宜上つけているが、JavaScript上は単なる Object の一種。
 
 ### Classes
 
-<dl>
-                    <dt><a>AudioParameters</a></dt>
-                    <dd></dd>
-                    <dt><a>BattleLogMethod</a></dt>
-                    <dd></dd>
-                    <dt><a>BattlerAnimation</a></dt>
-                    <dd></dd>
-                    <dt><a>BattleRewards</a></dt>
-                    <dd></dd>
-                    <dt><a>CommandItem</a></dt>
-                    <dd></dd>
-                    <dt><a>ConfigData</a></dt>
-                    <dd></dd>
-                    <dt><a>DatabaseFile</a></dt>
-                    <dd></dd>
-                    <dt><a>Matrix</a></dt>
-                    <dd></dd>
-                    <dt><a>Motion</a></dt>
-                    <dd></dd>
-                    <dt><a>PluginSettings</a></dt>
-                    <dd></dd>
-                    <dt><a>SaveContents</a></dt>
-                    <dd></dd>
-                    <dt><a>SaveFileInfo</a></dt>
-                    <dd></dd>
-                    <dt><a href="MV.TextState.html">TextState</a></dt>
-                    <dd></dd>
-                    <dt><a>TouchInputEvents</a></dt>
-                    <dd></dd>
-                </dl>
-
+* [AudioParameters](MV.AudioParameters.md)
+* [BattleLogMethod](MV.BattleLogMethod.md)
+* [BattlerAnimation](MV.BattlerAnimation.md)
+* [BattleRewards](MV.BattleRewards.md)
+* [CommandItem](MV.CommandItem.md)
+* [ConfigData](MV.ConfigData.md)
+* [DatabaseFile](MV.DatabaseFile.md)
+* [Matrix](MV.Matrix.md)
+* [Motion](MV.Motion.md)
+* [PluginSettings](MV.PluginSettings.md)
+* [SaveContents](MV.SaveContents.md)
+* [SaveFileInfo](MV.SaveFileInfo.md)
+* [TextState](MV.TextState.md)
+* [TouchInputEvents](MV.TouchInputEvents.md)
 
  <br>
 
