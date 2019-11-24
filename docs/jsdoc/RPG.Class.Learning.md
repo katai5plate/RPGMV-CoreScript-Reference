@@ -1,24 +1,15 @@
 # Class: Learning
 
-## [RPG](RPG.md) [.Class](RPG.Class.md).  Learning ()
+## namespace [RPG](RPG.md) . [Class](RPG.Class.md)
 
-#### new Learning ()
-
-The data class for a class's [Skills to Learn].
+スキル取得に必要な条件。[Class](RPG.Class.md) の learnings 属性に含まれる。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `level` | [Number](Number.md) | The level. |
-| `skillId` | [Number](Number.md) | The ID of the skill to learn. |
-
-<dl>
-</dl>
-
-### Extends
-
-* [RPG.MetaData](RPG.MetaData.md)
+| `level` | [Number](Number.md) | [レベル] |
+| `skillId` | [Number](Number.md) | スキルID |
 
  <br>
 
