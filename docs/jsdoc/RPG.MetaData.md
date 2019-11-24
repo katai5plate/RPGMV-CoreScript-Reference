@@ -3,16 +3,17 @@
 ## namespace [RPG](RPG.md)
 
  多くのデータに含まれる[メモ]のデータ。<br />
- [RPG.Actor](RPG.Actor.md), [RPG.Animation](RPG.Animation.md), [RPG.Animation.Timing](RPG.Animation.Timing.md), [RPG.Class](RPG.Class.md), [RPG.Class.Learning](RPG.Class.Learning.md), [RPG.Enemy](RPG.Enemy.md), [RPG.Event](RPG.Event.md), [RPG.BaseItem](RPG.BaseItem.md), [RPG.Map](RPG.Map.md), [RPG.State](RPG.State.md), [RPG.Tileset](RPG.Tileset.md) のスーパークラス。<br />
+ [RPG.Actor](RPG.Actor.md), [RPG.Class](RPG.Class.md), [RPG.Enemy](RPG.Enemy.md), [RPG.Event](RPG.Event.md), [RPG.BaseItem](RPG.BaseItem.md), [RPG.Map](RPG.Map.md), [RPG.State](RPG.State.md), [RPG.Tileset](RPG.Tileset.md) のスーパークラス。
+
  note から meta への変換は[DataManager.extractMetadata](DataManager.md#static-extractmetadata-data)メソッドで行われる。<br />
- meta プロパティに記録されたデータは、主にプラグイン用のパラメータとして使う。
+ meta 属性に記録されたデータは、主にプラグイン用のパラメータとして使う。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `note` | [String](String.md) | [メモ]の内容 |
-| `meta` | Object | note に書いてあった\<名前:値>形式のデータを解析した結果 |
+| `meta` | Object | note 内の &lt;名前:値&gt;形式のデータを解析した結果 |
 
  <br>
 
