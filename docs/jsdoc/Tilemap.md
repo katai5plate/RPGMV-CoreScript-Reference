@@ -6,7 +6,8 @@
 
 [RPG.Tileset](RPG.Tileset.md)と[RPG.Map](RPG.Map.md)に従い、2Dベースのタイルマップを表示するためのコンテナクラス。 <br />
 静的メソッドを多く持つユーティリティクラスでもある。<br />
-描画モードが Canvas Mode の場合に使われる、描画モードはF2キーを押して確かめられる。なお、Canvas Mode は古いブラウザなどの一部環境でしか使われない。<br />
+描画モードが Canvas Mode の場合に使われる、描画モードはF2キーを押して確かめられる。<br />
+なお、Canvas Mode は古いブラウザなどの一部環境でしか使われない。<br />
  [ShaderTilemap](ShaderTilemap.md) のスーパークラス。
 
 ##### Properties:
