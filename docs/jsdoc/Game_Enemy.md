@@ -8,7 +8,8 @@
 
 JSONデータとしては [RPG.Enemy](RPG.Enemy.md) に定義されている。
 
-敵のパラメータの取得、画像の設定、戦闘の処理を行う。
+敵のパラメータの取得、画像の設定を行う。<br />
+また設定された[行動パターン]\([RPG.Enemy.Action](RPG.Enemy.Action.md)) に従って戦闘の処理を行う。
 
 ##### Properties:
 
@@ -374,13 +375,13 @@ Overrides:[Game_Battler](Game_Battler.md#initmembers-)
 
 
 #### isActionValid (action) → {Boolean}
-行動が実行可能か。
+[行動パターン]が実行可能か。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.md) | 行動 |
+| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.md) | [行動パターン] |
 
 ##### Returns:
 
@@ -473,13 +474,13 @@ Overrides:[Game_Battler](Game_Battler.md#makeactions-)
 
 
 #### meetsCondition (action) → {Boolean}
-行動が[行動パターン - 条件]に合致しているか。
+[行動パターン]が[条件]に合致しているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.md) | 行動 |
+| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.md) | [行動パターン] |
 
 ##### Returns:
 
@@ -699,13 +700,13 @@ Overrides:[Game_Battler](Game_Battler.md#performdamage-)
 
 	
 #### selectAction (actionList, ratingZero) → {[RPG.Enemy.Action](RPG.Enemy.Action.md)}
-指定した行動リストの中から選択した行動を返す。
+指定した[行動パターン]リストの中から選択した[行動パターン]を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actionList` | [Array](Array.md).<[RPG.Enemy.Action](RPG.Enemy.Action.md)> | 行動の配列 |
+| `actionList` | [Array](Array.md).<[RPG.Enemy.Action](RPG.Enemy.Action.md)> | [行動パターン]の配列 |
 | `ratingZero` | [Number](Number.md) | ゼロのレーティング |
 
 ##### Returns:
@@ -719,13 +720,13 @@ Overrides:[Game_Battler](Game_Battler.md#performdamage-)
 
 
 #### selectAllActions (actionList)
-指定した行動リストを元に全行動を選択。
+指定した[行動パターン]リストを元に全行動を選択。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actionList` | [Array](Array.md).<[RPG.Enemy.Action](RPG.Enemy.Action.md)> | 行動の配列 |
+| `actionList` | [Array](Array.md).<[RPG.Enemy.Action](RPG.Enemy.Action.md)> | [行動パターン]の配列 |
 
 
 #### setLetter (letter)
