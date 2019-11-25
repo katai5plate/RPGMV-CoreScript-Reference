@@ -2,38 +2,35 @@
 
 ## namespace [RPG](RPG.md)
 
-ステートを記録したJSONデータで、ファイル data/States.json に記録されている。
+[ステート]を記録したファイル( data/States.json )のJSONデータ。
 
-読み込まれたデータは、[$dataStates](global.md#datastates-arrayrpgstate) に配列として格納されている。
+読み込まれたデータは、大域変数 [$dataStates](global.md#datastates-arrayrpgstate) に配列として格納されている。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `id` | [Number](Number.md) | ID |
-| `name` | [String](String.md) | 名前 |
-| `restriction` | [Number](Number.md) | Action restrictions. 0: None 1: Attack enemy 2: Attack enemy or ally 3: Attack ally 4: Cannot act |
-| `priority` | [Number](Number.md) | The state priority (0..100). |
-| `removeAtBattleEnd` | Boolean | Removes state at end of battle (true/false). |
-| `removeByRestriction` | Boolean | Removes state by action restriction (true/false). |
-| `autoRemovalTiming` | [Number](Number.md) | The timing of automatic state removal. 0: None 1: At end of action 2: At end of turn |
-| `minTurns` | [Number](Number.md) | The minimum turns of the duration. |
-| `maxTurns` | [Number](Number.md) | The maximum turns of the duration. |
-| `removeByDamage` | Boolean | Removes state by damage (true/false). |
-| `chanceByDamage` | [Number](Number.md) | Chance of state being removed by damage (%). |
-| `removeByWalking` | Boolean | Removes state by walking (true/false). |
-| `stepToRemove` | [Number](Number.md) | Number of steps until state is removed. |
-| `iconIndex` | [Number](Number.md) | The icon number. |
-| `message1` | [String](String.md) | The message when an actor fell in the state. |
-| `message2` | [String](String.md) | The message when an enemy fell in the state. |
-| `message3` | [String](String.md) | The message when the state remains. |
-| `message4` | [String](String.md) | The message when the state is removed. |
-| `motion` | [Number](Number.md) | The side-view motion. |
-| `overlay` | [Number](Number.md) | The side-view overlay. |
-| `traits` | [Array](Array.md).<[RPG.Trait](RPG.Trait.md)> | The array of Trait data. |
-
-<dl>
-</dl>
+| `name` | [String](String.md) | [名前] |
+| `restriction` | [Number](Number.md) | [行動制約] \( 0:なし, 1:敵に攻撃, 2:誰かを攻撃, 3:味方を攻撃, 4:行動できない ) |
+| `priority` | [Number](Number.md) | [優先度] \(0~100) |
+| `removeAtBattleEnd` | Boolean | [戦闘終了時に解除] |
+| `removeByRestriction` | Boolean | [行動制約によって解除] |
+| `autoRemovalTiming` | [Number](Number.md) | [自動解除のタイミング] \(0:なし, 1:行動終了時, 2:ターン終了時) |
+| `minTurns` | [Number](Number.md) | [継続ターン数]の下限 |
+| `maxTurns` | [Number](Number.md) | [継続ターン数]の上限 |
+| `removeByDamage` | Boolean | [ダメージで解除] |
+| `chanceByDamage` | [Number](Number.md) | [ダメージで解除]の%確率 |
+| `removeByWalking` | Boolean | [歩数で解除] |
+| `stepToRemove` | [Number](Number.md) | [歩数で解除]の歩数 |
+| `iconIndex` | [Number](Number.md) | [アイコン]の番号 |
+| `message1` | [String](String.md) | [アクターがこの状態になったとき] |
+| `message2` | [String](String.md) | [敵キャラがこの状態になったとき] |
+| `message3` | [String](String.md) | [この状態が継続しているとき] |
+| `message4` | [String](String.md) | [この状態が解除されたとき] |
+| `motion` | [Number](Number.md) | [[SV]モーション] |
+| `overlay` | [Number](Number.md) |  [[SV]重ね合わせ] |
+| `traits` | [Array](Array.md).<[RPG.Trait](RPG.Trait.md)> | [特徴]の配列 |
 
 ### Extends
 
