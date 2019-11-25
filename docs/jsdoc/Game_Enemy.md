@@ -243,118 +243,37 @@ JSONデータとしては [RPG.Enemy](RPG.Enemy.md) に定義されている。
 #### battlerHue () → {[Number](Number.md)}
 色相。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### battlerName () → {[String](String.md)}
 [名前]を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>String</span>
-	</dd>
-</dl>
 
 
 #### dropItemRate () → {[Number](Number.md)}
 ドロップアイテム出現率を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### enemy () → {[RPG.Enemy](RPG.Enemy.md)}
 [敵]のデータベース情報を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>RPG.Enemy</span>
-	</dd>
-</dl>
 
 
 #### enemyId () → {[Number](Number.md)}
 敵のIDを返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### exp () → {[Number](Number.md)}
 敵の[経験値]を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### friendsUnit () → {[Game_Troop](Game_Troop.md)}
 敵グループを返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Game_Troop</span>
-	</dd>
-</dl>
-
 
 #### gold () → {[Number](Number.md)}
 [所持金]を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### index () → {[Number](Number.md)}
 敵番号を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### initialize (enemyId, x, y)
@@ -383,27 +302,9 @@ Overrides:[Game_Battler](Game_Battler.md#initmembers-)
 | --- | --- | --- |
 | `action` | [RPG.Enemy.Action](RPG.Enemy.Action.md) | [行動パターン] |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isBattleMember () → {Boolean}
 戦闘に参加しているか。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### isEnemy () → {Boolean}
@@ -413,27 +314,9 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#isenemy---boolean)
 #### isLetterEmpty () → {Boolean}
 接尾辞(A,B...など)が付いていない名前か。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isSpriteVisible () → {Boolean}
 画像が表示されているか。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### itemObject (kind, dataId) → {[RPG.BaseItem](RPG.BaseItem.md)}
@@ -446,15 +329,6 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#isenemy---boolean)
 | `kind` | [Number](Number.md) | 種類(1:アイテム, 2:武器, 3:防具) |
 | `dataId` | Numver | アイテムID |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>RPG.BaseItem</span>
-	</dd>
-</dl>
-
 
 #### makeActions ()
 Overrides:[Game_Battler](Game_Battler.md#makeactions-)
@@ -462,15 +336,6 @@ Overrides:[Game_Battler](Game_Battler.md#makeactions-)
 
 #### makeDropItems () → {[Array](Array.md).<[RPG.BaseItem](RPG.BaseItem.md)>}
 ドロップアイテムを生成して返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Array.&lt;RPG.BaseItem&gt;</span>
-	</dd>
-</dl>
 
 
 #### meetsCondition (action) → {Boolean}
@@ -481,15 +346,6 @@ Overrides:[Game_Battler](Game_Battler.md#makeactions-)
 | Name | Type | Description |
 | --- | --- | --- |
 | `action` | [RPG.Enemy.Action](RPG.Enemy.Action.md) | [行動パターン] |
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### meetsHpCondition (param1, param2) → {Boolean}
@@ -503,16 +359,6 @@ Overrides:[Game_Battler](Game_Battler.md#makeactions-)
 | `param2` | [Number](Number.md) | 範囲上限HP |
 
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
-
 #### meetsMpCondition (param1, param2) → {Boolean}
 [条件 - MP]に合致しているか。
 
@@ -522,15 +368,6 @@ Overrides:[Game_Battler](Game_Battler.md#makeactions-)
 | --- | --- | --- |
 | `param1` | [Number](Number.md) | 範囲下限MP |
 | `param2` | [Number](Number.md) | 範囲上限MP |
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### meetsPartyLevelCondition (param) → {Boolean}
@@ -542,15 +379,6 @@ Overrides:[Game_Battler](Game_Battler.md#makeactions-)
 | --- | --- | --- |
 | `param` | [Number](Number.md) | レベル |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### meetsStateCondition (param) → {Boolean}
 [条件 - ステート]に合致しているか。
@@ -561,15 +389,6 @@ Overrides:[Game_Battler](Game_Battler.md#makeactions-)
 | --- | --- | --- |
 | `param` | [Number](Number.md) | ステートID |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### meetsSwitchCondition (param) → {Boolean}
 [条件 - スイッチ]に合致しているか。
@@ -579,15 +398,6 @@ Overrides:[Game_Battler](Game_Battler.md#makeactions-)
 | Name | Type | Description |
 | --- | --- | --- |
 | `param` | [Number](Number.md) | スイッチID |
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### meetsTurnCondition (param1, param2) → {Boolean}
@@ -600,53 +410,17 @@ Overrides:[Game_Battler](Game_Battler.md#makeactions-)
 | `param1` | [Number](Number.md) | 範囲下限ターン |
 | `param2` | [Number](Number.md) | 範囲上限ターン |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### name () → {[String](String.md)}
 接尾辞つきの名前を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>String</span>
-	</dd>
-</dl>
 
 
 #### opponentsUnit () → {[Game_Party](Game_Party.md)}
 味方パーティを返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Game_Party</span>
-	</dd>
-</dl>
-
 
 #### originalName () → {[String](String.md)}
 [名前]を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>String</span>
-	</dd>
-</dl>
 
 
 #### paramBase (paramId) → {[Number](Number.md)}
@@ -676,27 +450,9 @@ Overrides:[Game_Battler](Game_Battler.md#performdamage-)
 #### screenX () → {[Number](Number.md)}
 画面上の x座標を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### screenY () → {[Number](Number.md)}
 画面上の y座標を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 	
 #### selectAction (actionList, ratingZero) → {[RPG.Enemy.Action](RPG.Enemy.Action.md)}
@@ -708,15 +464,6 @@ Overrides:[Game_Battler](Game_Battler.md#performdamage-)
 | --- | --- | --- |
 | `actionList` | [Array](Array.md).<[RPG.Enemy.Action](RPG.Enemy.Action.md)> | [行動パターン]の配列 |
 | `ratingZero` | [Number](Number.md) | ゼロのレーティング |
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>RPG.Enemy.Action</span>
-	</dd>
-</dl>
 
 
 #### selectAllActions (actionList)
