@@ -169,15 +169,6 @@
 | --- | --- | --- |
 | `index` | [Number](Number.md) | アクション番号 |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Game_Action</span>
-	</dd>
-</dl>
-
 
 #### addBuff (paramId, turns)
 指定通常能力に指定ターン数の強化を追加。
@@ -262,15 +253,6 @@ TPを0に。
 #### currentAction () → {[Game_Action](Game_Action.md)}
 現在のアクションを返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Game_Action</span>
-	</dd>
-</dl>
-
 
 #### deselect ()
 選択を外す。
@@ -278,15 +260,6 @@ TPを0に。
 
 #### effectType () → {[String](String.md)}
 エフェクトタイプを返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>String</span>
-	</dd>
-</dl>
 
 
 #### escape ()
@@ -359,131 +332,41 @@ TPの量を25までのランダムな値に初期化。
 #### isActing () → {Boolean}
 アクション実行中か。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isAnimationRequested () → {Boolean}
 アニメーションが要求されているか。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### isChanting () → {Boolean}
 魔法詠唱中か。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isDamagePopupRequested () → {Boolean}
 ダメージポップアップが要求されているか。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### isEffectRequested () → {Boolean}
 エフェクトが要求されているか。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isGuardWaiting () → {Boolean}
 [防御]して待機中か。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### isInputting () → {Boolean}
 戦闘コマンド入力中か。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isMotionRefreshRequested () → {Boolean}
 モーションの初期化が要求されているか。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### isMotionRequested () → {Boolean}
 モーションが要求されているか。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isSelected () → {Boolean}
 選択されているか。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### isStateAddable (stateId) → {Boolean}
@@ -495,15 +378,6 @@ TPの量を25までのランダムな値に初期化。
 | --- | --- | --- |
 | `stateId` | [Number](Number.md) | ステートID |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isStateRestrict (stateId) → {Boolean}
 指定ステートが[行動制約によって解除]かつ、現在行動制約中か。
@@ -514,53 +388,17 @@ TPの量を25までのランダムな値に初期化。
 | --- | --- | --- |
 | `stateId` | [Number](Number.md) | ステートID |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isUndecided () → {Boolean}
 行動が未選択か。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### isWaiting () → {Boolean}
 待機中か。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isWeaponAnimationRequested () → {Boolean}
 武器アニメーションが要求されているか。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### makeActions ()
@@ -570,15 +408,6 @@ TPの量を25までのランダムな値に初期化。
 #### makeActionTimes () → {[Number](Number.md)}
 行動回数を設定して返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### makeSpeed ()
 速度を設定。
@@ -587,40 +416,13 @@ TPの量を25までのランダムな値に初期化。
 #### maxSlipDamage () → {[Number](Number.md)}
 最大スリップダメージ量を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### motionType () → {[String](String.md)}
 行動タイプを返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>String</span>
-	</dd>
-</dl>
-
 
 #### numActions () → {[Number](Number.md)}
 行動番号を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### onAllActionsEnd ()
@@ -814,15 +616,6 @@ TP自動回復を適用。
 #### result () → {[Game_ActionResult](Game_ActionResult.md)}
 行動結果を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Game_ActionResult</a></span>
-	</dd>
-</dl>
-
 
 #### select ()
 バトラーの選択。
@@ -863,27 +656,9 @@ Sets the action at the specified index for the battler.
 #### shiftAnimation () → {[MV.BattlerAnimation](MV.BattlerAnimation.md)}
 次のアニメーションを返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>MV.BattlerAnimation</span>
-	</dd>
-</dl>
-
 
 #### speed () → {[Number](Number.md)}
 速度を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### startAnimation (animationId, mirror, delay)
@@ -924,16 +699,6 @@ Sets the action at the specified index for the battler.
 
 #### weaponImageId () → {[Number](Number.md)}
 武器画像IDを返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 
  <br>

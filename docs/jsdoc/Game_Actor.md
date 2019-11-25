@@ -243,66 +243,21 @@ JSONデータとしては [RPG.Actor](RPG.Actor.md) に定義されている。
 #### actor () → {[RPG.Actor](RPG.Actor.md)}
 [アクター]のデータベース情報を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>RPG.Actor</span>
-	</dd>
-</dl>
-
 
 #### actorId () → {[Number](Number.md)}
 アクターIDを返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### armors () → {[Array](Array.md).<[RPG.Armor](RPG.Armor.md)>}
 防具を返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Array.&lt;RPG.Armor&gt;</span>
-    </dd>
-</dl>
-
 
 #### attackAnimationId1 () → {[Number](Number.md)}
 1撃目のアニメーションIDを返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### attackAnimationId2 () → {[Number](Number.md)}
 2撃目のアニメーションIDを返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### attackElements () → {[Array](Array.md).<[Number](Number.md)>}
@@ -312,66 +267,21 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#attackelements---arraynumber)
 #### bareHandsAnimationId () → {[Number](Number.md)}
 素手攻撃のアニメーションIDを返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### bareHandsElementId () → {[Number](Number.md)}
 素手攻撃の属性IDを返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### basicFloorDamage () → {[Number](Number.md)}
 基本フロアダメージを返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### battlerName () → {[String](String.md)}
 バトラーの名前を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>String</span>
-	</dd>
-</dl>
-
 
 #### benchMembersExpRate () → {[Number](Number.md)}
 戦闘に参加していないメンバーの経験値の取得率を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### bestEquipItem (slotId)
@@ -392,15 +302,6 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#attackelements---arraynumber)
 | Name | Type | Description |
 | --- | --- | --- |
 | `item` | [RPG.EquipItem](RPG.EquipItem.md) | アイテム |
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### changeClass (classId, keepExp)
@@ -461,27 +362,9 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#attackelements---arraynumber)
 #### characterIndex () → {[Number](Number.md)}
 キャラ番号を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### characterName () → {[String](String.md)}
 キャラの[名前]を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>String</span>
-	</dd>
-</dl>
 
 
 #### checkFloorEffect ()
@@ -503,40 +386,13 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#clearstates-)
 #### currentClass () → {[RPG.Class](RPG.Class.md)}
 現在の[クラス]を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>RPG.Class</span>
-	</dd>
-</dl>
-
 
 #### currentExp () → {[Number](Number.md)}
 現在の[経験値]を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### currentLevelExp () → {[Number](Number.md)}
 現在のレベルの必要経験値を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### discardEquip (item)
@@ -562,27 +418,9 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#clearstates-)
 #### equips () → {[Array](Array.md).<[RPG.EquipItem](RPG.EquipItem.md)>}
 装備の配列を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Array.&lt;RPG.EquipItem&gt;</span>
-	</dd>
-</dl>
-
 
 #### equipSlots () → {[Array](Array.md).<[Number](Number.md)>}
 装備スロットの配列を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Array.&lt;Number&gt;</span>
-	</dd>
-</dl>
 
 
 #### eraseState (stateId)
@@ -602,53 +440,17 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#erasestate-stateid)
 | --- | --- | --- |
 | `level` | [Number](Number.md) | レベル |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### faceIndex () → {[Number](Number.md)}
 [顔]画像番号を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### faceName () → {[String](String.md)}
 [顔]画像ファイル名(拡張子なし)を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>String</span>
-	</dd>
-</dl>
-
 
 #### finalExpRate () → {[Number](Number.md)}
 戦闘に出ているか控えかで変わる経験値の比率を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### findNewSkills (lastSkills) → {[Array](Array.md).<[RPG.Skill](RPG.Skill.md)>}
@@ -659,15 +461,6 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#erasestate-stateid)
 | Name | Type | Description |
 | --- | --- | --- |
 | `lastSkills` | [Array](Array.md).&lt;[RPG.Skill](RPG.Skill.md)&gt; | スキルの配列 |
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Array.&lt;RPG.Skill&gt;</span>
-	</dd>
-</dl>
 
 
 #### forceChangeEquip (slotId, item)
@@ -694,15 +487,6 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#erasestate-stateid)
 #### friendsUnit () → {[Game_Party](Game_Party.md)}
 味方パーティを返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Game_Party</span>
-	</dd>
-</dl>
-
 
 #### gainExp (exp)
 指定経験値を加える。
@@ -723,27 +507,9 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#erasestate-stateid)
 | --- | --- | --- |
 | `armor` | [RPG.Armor](RPG.Armor.md) | 鎧 |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### hasNoWeapons () → {Boolean}
 武器を持っていな(素手)か。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### hasSkill (skillId) → {Boolean}
@@ -755,15 +521,6 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#erasestate-stateid)
 | --- | --- | --- |
 | `skillId` | [Number](Number.md) | スキルID |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### hasWeapon (weapon) → {Boolean}
 指定武器を持っているか。
@@ -774,27 +531,9 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#erasestate-stateid)
 | --- | --- | --- |
 | `weapon` | [RPG.Weapon](RPG.Weapon.md) | 武器 |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### index () → {[Number](Number.md)}
 キャラ番号を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### initEquips (equips)
@@ -837,15 +576,6 @@ Overrides:[Game_Battler](Game_Battler.md#initmembers-)
 #### inputtingAction () → {[Game_Action](Game_Action.md)}
 入力された行動を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Game_Action</span>
-	</dd>
-</dl>
-
 
 #### isActor () → {Boolean}
 Overrides:[Game_BattlerBase](Game_BattlerBase.md#isactor---boolean)
@@ -853,15 +583,6 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#isactor---boolean)
 
 #### isBattleMember () → {Boolean}
 戦闘に参加しているか。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### isClass (gameClass) → {Boolean}
@@ -873,15 +594,6 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#isactor---boolean)
 | --- | --- | --- |
 | `gameClass` | [RPG.Class](RPG.Class.md) | クラス |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isEquipChangeOk (slotId) → {Boolean}
 指定スロットの装備を変更可能か。
@@ -891,15 +603,6 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#isactor---boolean)
 | Name | Type | Description |
 | --- | --- | --- |
 | `slotId` | [Number](Number.md) | スロットID |
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### isEquipped (item) → {Boolean}
@@ -911,27 +614,9 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#isactor---boolean)
 | --- | --- | --- |
 | `item` | [RPG.EquipItem](RPG.EquipItem.md) | アイテム |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isFormationChangeOk () → {Boolean}
 隊列の変更が可能か。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### isLearnedSkill (skillId) → {Boolean}
@@ -943,27 +628,9 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#isactor---boolean)
 | --- | --- | --- |
 | `skillId` | [Number](Number.md) | スキルID |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isMaxLevel () → {Boolean}
 最大レベルに到達しているか。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### isSkillWtypeOk (skill) → {Boolean}
@@ -972,15 +639,6 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#isskillwtypeok-skill--boolean)
 
 #### isSpriteVisible () → {Boolean}
 スプライト(画像)が表示されているか。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### isWtypeEquipped (wtypeId) → {Boolean}
@@ -992,53 +650,17 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#isskillwtypeok-skill--boolean)
 | --- | --- | --- |
 | `wtypeId` | [Number](Number.md) | 武器タイプID |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### lastBattleSkill () → {[RPG.Skill](RPG.Skill.md)}
 最後の戦闘スキルを返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>RPG.Skill</span>
-	</dd>
-</dl>
 
 
 #### lastCommandSymbol () → {[String](String.md)}
 最後のコマンドを返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>String</span>
-	</dd>
-</dl>
-
 
 #### lastMenuSkill () → {[RPG.Skill](RPG.Skill.md)}
 最後のメニュースキルを返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>RPG.Skill</span>
-	</dd>
-</dl>
 
 
 #### learnSkill (skillId)
@@ -1062,15 +684,6 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#isskillwtypeok-skill--boolean)
 #### makeActionList () → {[Array](Array.md).<[Game_Action](Game_Action.md)>}
 行動の配列を生成して返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Array.&lt;Game_Action&gt;</span>
-	</dd>
-</dl>
-
 
 #### makeActions ()
 Overrides:[Game_Battler](Game_Battler.md#makeactions-)
@@ -1086,15 +699,6 @@ Overrides:[Game_Battler](Game_Battler.md#makeactions-)
 
 #### maxFloorDamage () → {[Number](Number.md)}
 最大のフロアダメージを返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### maxLevel ()
@@ -1112,40 +716,13 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#meetsusableitemconditions-item-
 #### nextLevelExp () → {[Number](Number.md)}
 次のレベルの必要経験値を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### nextRequiredExp () → {[Number](Number.md)}
 [次のレベルまで]の経験値を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### nickname () → {[String](String.md)}
 [二つ名]を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>String</span>
-	</dd>
-</dl>
 
 
 #### onPlayerWalk ()
@@ -1154,15 +731,6 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#meetsusableitemconditions-item-
 
 #### opponentsUnit () → {[Game_Troop](Game_Troop.md)}
 敵グループを返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Game_Troop</span>
-	</dd>
-</dl>
 
 
 #### optimizeEquipments ()
@@ -1232,15 +800,6 @@ Overrides:[Game_Battler](Game_Battler.md#performmagicevasion-)
 #### profile () → {[String](String.md)}
 [プロフィール]を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>String</span>
-	</dd>
-</dl>
-
 
 #### refresh ()
 Overrides:[Game_Battler](Game_Battler.md#refresh-)
@@ -1263,27 +822,9 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#resetstatecounts-stateid)
 #### selectNextCommand () → {Boolean}
 次のコマンドを選択し、選択できたか返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### selectPreviousCommand () → {Boolean}
 前のコマンドを選択し、選択できたか返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### setBattlerImage (battlerName)
@@ -1391,15 +932,6 @@ SVのバトラー画像を設定。
 #### shouldDisplayLevelUp () → {Boolean}
 レベルアップのメッセージ表示を行うか。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### showAddedStates ()
 ステート付加のメッセージ表示を行うか。
@@ -1412,15 +944,6 @@ SVのバトラー画像を設定。
 #### skills () → {[Array](Array.md).<[RPG.Skill](RPG.Skill.md)>}
 取得済みスキルを返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Array.&lt;RPG.Skill&gt;</span>
-	</dd>
-</dl>
-
 
 #### startAnimation (animationId, mirror, delay)
 Overrides:[Game_Battler](Game_Battler.md#startanimation-animationid-mirror-delay)
@@ -1428,15 +951,6 @@ Overrides:[Game_Battler](Game_Battler.md#startanimation-animationid-mirror-delay
 
 #### stepsForTurn () → {[Number](Number.md)}
 戦闘1ターンに当たる歩数(規定値:20)を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### testEscape (item)
@@ -1458,15 +972,6 @@ Overrides:[Game_Battler](Game_Battler.md#startanimation-animationid-mirror-delay
 | --- | --- | --- |
 | `newItem` | [RPG.EquipItem](RPG.EquipItem.md) | 新アイテム |
 | `oldItem` | [RPG.EquipItem](RPG.EquipItem.md) | 旧アイテム |
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### traitObjects () → {[Array](Array.md).<*>}
@@ -1490,27 +995,9 @@ Overrides:[Game_Battler](Game_Battler.mdr#traitobjects)</a>
 #### usableSkills () → {[Array](Array.md).<[RPG.Skill](RPG.Skill.md)>}
 使用可能なスキルの配列を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Array.&lt;RPG.Skill&gt;</span>
-	</dd>
-</dl>
-
 
 #### weapons () → {[Array](Array.md).<[RPG.Weapon](RPG.Weapon.md)>}
 装備している武器を配列で返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Array.&lt;RPG.Weapon&gt;</span>
-	</dd>
-</dl>
 
 
  <br>
