@@ -1,8 +1,6 @@
 # Class: TestBattler
 
-## [RPG](RPG.md) [.System](RPG.System.md).  TestBattler ()
-
-#### new TestBattler ()
+## Namespace [RPG](RPG.md) . [System](RPG.System.md)
 
 The JSON data structure of an actor used in battle tests.
 

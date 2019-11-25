@@ -1,6 +1,6 @@
 # Class: State
 
-## namespace [RPG](RPG.md)
+## Namespace [RPG](RPG.md)
 
 [ステート]を記録したファイル( data/States.json )のJSONデータ。
 

@@ -1,6 +1,6 @@
 # Class: Weapon
 
-## namespace [RPG](RPG.md)
+## Namespace [RPG](RPG.md)
 
 [データベース]-[武器]で設定された情報を記述したJSONデータ。
 

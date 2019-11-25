@@ -1,6 +1,6 @@
 # Class: EquipItem
 
-## namespace [RPG](RPG.md)
+## Namespace [RPG](RPG.md)
 
 [RPG.Armor](RPG.Armor.md) と [RPG.Weapon](RPG.Weapon.md) のスーパークラス。
 

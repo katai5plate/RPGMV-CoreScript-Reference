@@ -1,6 +1,6 @@
 # Class: Enemy
 
-## namespace [RPG](RPG.md)
+## Namespace [RPG](RPG.md)
 
 敵を記述したファイル( data/Enemies.json )のJSONデータ。
  

@@ -1,6 +1,6 @@
 # Class: UsableItem
 
-## namespace [RPG](RPG.md)
+## Namespace [RPG](RPG.md)
 
 [RPG.Skill](RPG.Skill.md) と [RPG.Item](RPG.Item.md) のスーパークラス。
 

@@ -1,6 +1,6 @@
 # Class: Tileset
 
-## namespace [RPG](RPG.md)
+## Namespace [RPG](RPG.md)
 
 [タイルセット]を記録したファイル( data/Tilesets.json )のJSONデータ。
 

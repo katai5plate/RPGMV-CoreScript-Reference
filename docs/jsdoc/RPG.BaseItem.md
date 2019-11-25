@@ -1,6 +1,6 @@
 # Class: BaseItem
 
-## namespace [RPG](RPG.md)
+## Namespace [RPG](RPG.md)
 
 [アイテム]はもちろん、[武器][防具][敵][状態]などにも使われる基本クラス。
 

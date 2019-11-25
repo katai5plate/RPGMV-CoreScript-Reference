@@ -1,6 +1,6 @@
 # Class: Encounter
 
-## namespace [RPG](RPG.md) . [Map](RPG.Map.md)
+## Namespace [RPG](RPG.md) . [Map](RPG.Map.md)
 
 [エンカウント]のJSONデータ。
 

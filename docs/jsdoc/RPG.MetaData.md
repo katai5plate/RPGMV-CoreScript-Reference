@@ -1,6 +1,6 @@
 # Class: MetaData
 
-## namespace [RPG](RPG.md)
+## Namespace [RPG](RPG.md)
 
  多くのデータに含まれる[メモ]のデータ。<br />
  [RPG.Actor](RPG.Actor.md), [RPG.Class](RPG.Class.md), [RPG.Enemy](RPG.Enemy.md), [RPG.Event](RPG.Event.md), [RPG.BaseItem](RPG.BaseItem.md), [RPG.Map](RPG.Map.md), [RPG.State](RPG.State.md), [RPG.Tileset](RPG.Tileset.md) のスーパークラス。

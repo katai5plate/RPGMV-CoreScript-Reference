@@ -14,7 +14,7 @@
 | --- | --- | --- |
 | `code` | [Number](Number.md) | イベント番号 |
 | `indent` | [Number](Number.md) | 階層(インデント)の深さ(通常は0で[条件分岐]コマンドにより1階層ずつ深くなる) |
-| `parameters` | [Array](Array.md).<*> | コマンドに渡される引数の配列 |
+| `parameters` | [Array](Array.md).&lt;*&gt; | コマンドに渡される引数の配列 |
 
 
  <br>

@@ -1,8 +1,6 @@
 # Class: Terms
 
-## [RPG](RPG.md) [.System](RPG.System.md).  Terms ()
-
-#### new Terms ()
+## Namespace [RPG](RPG.md) . [System](RPG.System.md)
 
 The JSON data structure of the terminology.
 

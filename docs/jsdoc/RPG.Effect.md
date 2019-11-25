@@ -1,6 +1,6 @@
 # Class: Effect
 
-## namespace [RPG](RPG.md)
+## Namespace [RPG](RPG.md)
 
 アイテムやスキルの[使用効果]のデータ。
 

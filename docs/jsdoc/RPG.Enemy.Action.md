@@ -1,6 +1,6 @@
 # Class: Action
 
-## namespace [RPG](RPG.md) . [Enemy](RPG.Enemy.md)
+## Namespace [RPG](RPG.md) . [Enemy](RPG.Enemy.md)
 
 [行動パターン]のJSONデータ。
 

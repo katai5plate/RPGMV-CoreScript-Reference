@@ -1,8 +1,6 @@
 # Class: System
 
-## [RPG](RPG.md).  System ()
-
-#### new System ()
+## Namespace [RPG](RPG.md)
 
 The JSON data structure of the system. Define to [$dataSystem](global.html#$dataSystem)
 

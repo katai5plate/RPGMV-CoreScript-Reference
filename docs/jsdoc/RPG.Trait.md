@@ -1,6 +1,6 @@
 # Class: Trait
 
-## namespace [RPG](RPG.md)
+## Namespace [RPG](RPG.md)
 
 [特徴]のJSONデータで、[RPG.Actor](RPG.Actor.md)、[RPG.Enemy](RPG.Enemy.md) および [RPG.EquipItem](RPG.EquipItem.md) JSONデータ traits 属性に記録されている。
 

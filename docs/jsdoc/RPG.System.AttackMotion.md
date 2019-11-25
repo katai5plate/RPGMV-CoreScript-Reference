@@ -1,8 +1,6 @@
 # Class: AttackMotion
 
-## [RPG](RPG.md) [.System](RPG.System.md).  AttackMotion ()
-
-#### new AttackMotion ()
+## Namespace [RPG](RPG.md) . [System](RPG.System.md)
 
 The JSON data structure of an attack motion.
 

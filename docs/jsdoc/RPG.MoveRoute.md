@@ -1,6 +1,6 @@
 # Class: MoveRoute
 
-## [RPG](RPG.md).  MoveRoute ()
+## Namespace [RPG](RPG.md)
 
 [移動ルート]を構成する JSONデータ。
 
@@ -13,7 +13,7 @@
 | `repeat` | Boolean | [動作をくり返す]　|
 | `skippable` | Boolean | [移動できない場合は飛ばす] |
 | `wait` | Boolean | [完了までウエイト] |
-| `list` | [Array](Array.md).<[RPG.MoveCommand](RPG.MoveCommand.md)> | [移動コマンド]の配列 |
+| `list` | [Array](Array.md).&lt;[RPG.MoveCommand](RPG.MoveCommand.md)&gt; | [移動コマンド]の配列 |
 
  <br>
 

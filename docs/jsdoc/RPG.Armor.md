@@ -1,6 +1,6 @@
 # Class: Armor
 
-## namespace [RPG](RPG.md)
+## Namespace [RPG](RPG.md)
 
 [データベース]-[防具]で設定された情報を記述したファイル( data/Armors.json )のJSONデータ。
 

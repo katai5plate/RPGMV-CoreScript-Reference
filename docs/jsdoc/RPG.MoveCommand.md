@@ -1,7 +1,6 @@
 # Class: MoveCommand
 
-## [RPG](RPG.md).MoveCommand ()
-
+## Namespace [RPG](RPG.md)
 
 [移動コマンド]を構成する JSONデータ。
 

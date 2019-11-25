@@ -1,6 +1,6 @@
 # Class: Damage
 
-## namespace [RPG](RPG.md)
+## Namespace [RPG](RPG.md)
 
 ダメージのデータ。
 

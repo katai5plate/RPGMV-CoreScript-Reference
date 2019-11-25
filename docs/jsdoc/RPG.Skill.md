@@ -1,6 +1,6 @@
 # Class: Skill
 
-## namespace [RPG](RPG.md)
+## Namespace [RPG](RPG.md)
 
 スキルの情報を記述したJSONデータ。
 
