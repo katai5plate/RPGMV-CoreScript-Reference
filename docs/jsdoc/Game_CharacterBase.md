@@ -55,67 +55,22 @@ _から始まるプロパティに関しては、基本的にメソッドが用�
 #### animationId () → {[Number](Number.md)}
  アニメーションIDを返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### animationWait () → {[Number](Number.md)}
  アニメーションの待ち時間(フレーム数)を返す。
-
-##### Returns:
-
- <dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### balloonId () → {[Number](Number.md)}
  フキダシアイコンIDを返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### blendMode () → {[Number](Number.md)}
 [合成方法]を返す。
-
-##### Returns:
-
 0: 通常, 1: 加算, 2: 乗算, 3: スクリーン
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### bushDepth () → {[Number](Number.md)}
 [茂み]の深さ(ピクセル数)を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### canPass (x, y, d) → {Boolean}
@@ -128,15 +83,6 @@ _から始まるプロパティに関しては、基本的にメソッドが用�
 | `x` | [Number](Number.md) |  タイル数 |
 | `y` | [Number](Number.md) |  タイル数 |
 | `d` | [Number](Number.md) |  向き(テンキー対応) |
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### canPassDiagonally (x, y, horz, vert) → {Boolean}
@@ -151,40 +97,13 @@ _から始まるプロパティに関しては、基本的にメソッドが用�
 | `horz` | [Number](Number.md) |  横方向(テンキー対応) |
 | `vert` | [Number](Number.md) |  縦方向(テンキー対応) |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### characterIndex () → {[Number](Number.md)}
  キャラクタ画像の番号(0〜7)を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### characterName () → {[String](String.md)}
  キャラクタ画像のファイル名(拡張子なし)を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>String</span>
-	</dd>
-</dl>
 
 
 #### checkEventTriggerTouch (x, y) → {Boolean}
@@ -196,15 +115,6 @@ _から始まるプロパティに関しては、基本的にメソッドが用�
 | --- | --- | --- |
 | `x` | [Number](Number.md) |  タイル数 |
 | `y` | [Number](Number.md) |  タイル数 |
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### checkEventTriggerTouchFront (d)
@@ -226,15 +136,6 @@ _から始まるプロパティに関しては、基本的にメソッドが用�
 | --- | --- | --- |
 | `threshold` | [Number](Number.md) |  停止カウントの閾値(フレーム) |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### copyPosition (character)
  指定キャラクタの位置を自身の位置にコピー。
@@ -249,27 +150,9 @@ _から始まるプロパティに関しては、基本的にメソッドが用�
 #### direction () → {[Number](Number.md)}
  向き(テンキー対応)を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### distancePerFrame () → {[Number](Number.md)}
  フレーム毎の移動距離を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### endAnimation ()
@@ -283,27 +166,9 @@ _から始まるプロパティに関しては、基本的にメソッドが用�
 #### hasStepAnime () → {Boolean}
 [足踏みアニメ]するか。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### hasWalkAnime () → {Boolean}
 [歩行アニメ]するか。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### increaseSteps ()
@@ -321,27 +186,9 @@ _から始まるプロパティに関しては、基本的にメソッドが用�
 #### isAnimationPlaying () → {Boolean}
 [アニメーション]表示中か。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isBalloonPlaying () → {Boolean}
 [フキダシアイコン]表示中か。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### isCollidedWithCharacters (x, y) → {Boolean}
@@ -354,15 +201,6 @@ _から始まるプロパティに関しては、基本的にメソッドが用�
 | `x` | [Number](Number.md) |  タイル数 |
 | `y` | [Number](Number.md) |  タイル数 |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isCollidedWithEvents (x, y) → {Boolean}
  指定位置が[イベント]によって塞がれているか。
@@ -373,15 +211,6 @@ _から始まるプロパティに関しては、基本的にメソッドが用�
 | --- | --- | --- |
 | `x` | [Number](Number.md) |  タイル数 |
 | `y` | [Number](Number.md) |  タイル数 |
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### isCollidedWithVehicles (x, y) → {Boolean}
@@ -394,66 +223,21 @@ _から始まるプロパティに関しては、基本的にメソッドが用�
 | `x` | [Number](Number.md) |  タイル数 |
 | `y` | [Number](Number.md) |  タイル数 |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isDashing () → {Boolean}
  現在ダッシュ中か。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### isDebugThrough () → {Boolean}
  デバッグ用のすり抜け移動中か。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isDirectionFixed () → {Boolean}
 [向き固定]か。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isJumping () → {Boolean}
  ジャンプ中か。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### isMapPassable (x, y, d) → {Boolean}
@@ -467,15 +251,6 @@ _から始まるプロパティに関しては、基本的にメソッドが用�
 | `y` | [Number](Number.md) |  タイル数 |
 | `d` | [Number](Number.md) |  向き(テンキー対応) |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isMovementSucceeded (x opt, y opt) → {Boolean}
  移動に成功したか。
@@ -487,157 +262,49 @@ _から始まるプロパティに関しては、基本的にメソッドが用�
 | `x` | [Number](Number.md) | <optional> |  |
 | `y` | [Number](Number.md) | <optional> |  |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isMoving () → {Boolean}
  移動中(タイル毎の座標ではない)か。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### isNearTheScreen () → {Boolean}
  画面端に近いか。あるいは、スクロールを止める位置か。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isNormalPriority () → {Boolean}
 [プライオリティ]が[通常キャラと同じ]か。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### isObjectCharacter () → {Boolean}
  キャラクタ用(characters フォルダ以下)の画像か。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isOnBush () → {Boolean}
 [茂み]に乗っているか。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### isOnLadder () → {Boolean}
 [梯子]に乗っているか。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isOriginalPattern () → {Boolean}
  オリジナルのパターンか。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### isStopping () → {Boolean}
  止まっている(タイル毎の座標にいる)か。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isThrough () → {Boolean}
 [すり抜け]状態か。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### isTile () → {Boolean}
  タイル用(tilesets フォルダ以下)の画像か。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isTransparent () → {Boolean}
 [透明]状態か。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### jump (xPlus, yPlus)
@@ -654,15 +321,6 @@ _から始まるプロパティに関しては、基本的にメソッドが用�
 #### jumpHeight () → {[Number](Number.md)}
  現在のジャンプの高さ(ピクセル数)を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### locate (x, y)
  現在のマップ内での[イベントの位置設定]。 [setPosition](Game_CharacterBase.md#setposition-x-y) と異なり、姿勢などを初期化。
@@ -677,15 +335,6 @@ _から始まるプロパティに関しては、基本的にメソッドが用�
 
 #### maxPattern () → {[Number](Number.md)}
  最大パターン数を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### moveDiagonally (horz, vert)
@@ -702,30 +351,12 @@ _から始まるプロパティに関しては、基本的にメソッドが用�
 
 #### moveFrequency () → {[Number](Number.md)}
  移動[頻度]を返す。
-
-##### Returns:
-
 1: 最低, 2: 低, 3: 通常, 4: 高, 5: 最高
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### moveSpeed () → {[Number](Number.md)}
  移動[速度]を返す。
-
-##### Returns:
-
 1: 1/8倍速, 2: 1/4倍速, 3: 1/2倍速, 4: 通常速, 5: 2倍速, 6: 4倍速
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### moveStraight (d)
@@ -741,27 +372,9 @@ _から始まるプロパティに関しては、基本的にメソッドが用�
 #### opacity () → {[Number](Number.md)}
 [不透明度]\(0〜255)を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### pattern () → {[Number](Number.md)}
  歩行パターン(0〜2)を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### pos (x, y) → {Boolean}
@@ -774,15 +387,6 @@ _から始まるプロパティに関しては、基本的にメソッドが用�
 | `x` | [Number](Number.md) |  |
 | `y` | [Number](Number.md) |  |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### posNt (x, y) → {Boolean}
  指定位置にいて、通行不可か。たぶん Nt = No Through。
@@ -794,27 +398,9 @@ _から始まるプロパティに関しては、基本的にメソッドが用�
 | `x` | [Number](Number.md) |  |
 | `y` | [Number](Number.md) |  |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### realMoveSpeed () → {[Number](Number.md)}
 (ダッシュ状態も考慮して)現在の移動速度を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### refreshBushDepth ()
@@ -823,15 +409,6 @@ _から始まるプロパティに関しては、基本的にメソッドが用�
 
 #### regionId () → {[Number](Number.md)}
  乗っているリージョンIDを返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### requestAnimation (animationId)
@@ -872,54 +449,17 @@ _から始まるプロパティに関しては、基本的にメソッドが用�
 | `d` | [Number](Number.md) |  向き(テンキー対応) |
 
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
-
 #### screenX () → {[Number](Number.md)}
  画面上の x座標(ピクセル数)を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### screenY () → {[Number](Number.md)}
  画面上の y座標(ピクセル数)を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### screenZ () → {[Number](Number.md)}
  重なり位置を返す。
-
-##### Returns:
-
 1: 通常キャラの下, 3:通常キャラと同じ , 5: 通常キャラの上
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### scrolledX () → {[Number](Number.md)}
@@ -933,15 +473,6 @@ _から始まるプロパティに関しては、基本的にメソッドが用�
 	</dd>
 </dl>
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### scrolledY () → {[Number](Number.md)}
 
@@ -951,15 +482,6 @@ _から始まるプロパティに関しては、基本的にメソッドが用�
 		<ul>
 			<li>この用語の意味が分かったら教えてください</li>
 		</ul>
-	</dd>
-</dl>
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
 	</dd>
 </dl>
 
@@ -1129,15 +651,6 @@ _から始まるプロパティに関しては、基本的にメソッドが用�
 #### shiftY () → {[Number](Number.md)}
  縦方向へのシフト量(ピクセル数)を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### startAnimation ()
 [アニメーション]表示開始。
@@ -1154,27 +667,9 @@ _から始まるプロパティに関しては、基本的にメソッドが用�
 #### terrainTag () → {[Number](Number.md)}
  乗っている[地形タグ]を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
-
 
 #### tileId () → {[Number](Number.md)}
  タイルIDを返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### update ()
