@@ -4,369 +4,223 @@
 
 #### new Sprite_Battler (battler opt)
 
-The superclass of [Sprite_Actor](Sprite_Actor.md) and [Sprite_Enemy](Sprite_Enemy.md).
+[Sprite_Actor](Sprite_Actor.md) と [Sprite_Enemy](Sprite_Enemy.md) のスーパークラス。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `battler` | [Game_Battler](Game_Battler.md) | <optional> |  |
+| `battler` | [Game_Battler](Game_Battler.md) | &lt;optional&gt; | バトラー |
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_battler` | [Game_Battler](Game_Battler.md) |  |
-| `_damages` | [Array](Array.md).<[Sprite_Damage](Sprite_Damage.md)> |  |
-| `_homeX` | [Number](Number.md) |  |
-| `_homeY` | [Number](Number.md) |  |
-| `_offsetX` | [Number](Number.md) |  |
-| `_offsetY` | [Number](Number.md) |  |
-| `_targetOffsetX` | [Number](Number.md) |  |
-| `_targetOffsetY` | [Number](Number.md) |  |
-| `_movementDuration` | [Number](Number.md) |  |
-| `_selectionEffectCount` | [Number](Number.md) |  |
+| `_battler` | [Game_Battler](Game_Battler.md) | バトラー |
+| `_damages` | [Array](Array.md).<[Sprite_Damage](Sprite_Damage.md)> | ダメージポップアップ用 |
+| `_homeX` | [Number](Number.md) | 基点の x座標 |
+| `_homeY` | [Number](Number.md) | 基点の y座標 |
+| `_offsetX` | [Number](Number.md) | xオフセット |
+| `_offsetY` | [Number](Number.md) | yオフセット |
+| `_targetOffsetX` | [Number](Number.md) | 対象の xオフセット |
+| `_targetOffsetY` | [Number](Number.md) | 対象の yオフセット |
+| `_movementDuration` | [Number](Number.md) | 移動の継続時間 |
+| `_selectionEffectCount` | [Number](Number.md) | 選択エフェクトのカウント |
 
-<dl>
-</dl>
 
 ### Extends
 
 * [Sprite_Base](Sprite_Base.md)
 
+### Inherited From
+
+#### [PIXI.DisplayObject](PIXI.DisplayObject.md)
+
+* [(static) mixin (source)](PIXI.DisplayObject.md#static-mixin-source)
+* [\_recursivePostUpdateTransform ()](PIXI.DisplayObject.md#_recursivepostupdatetransform-)
+* [displayObjectUpdateTransform ()](PIXI.DisplayObject.md#displayobjectupdatetransform-)
+* [getBounds (skipUpdate, rect)](PIXI.DisplayObject.md#getbounds-skipupdate-rect--pixirectangle)
+* [getGlobalPosition (point, skipUpdate)](PIXI.DisplayObject.md#getglobalposition-point-skipupdate--pixipoint)
+* [setParent (container)](PIXI.DisplayObject.md#setparent-container--pixicontainer)
+* [setTransform (x, y, scaleX, scaleY, rotation, skewX, skewY, pivotX, pivotY)](PIXI.DisplayObject.md#settransform-x-y-scalex-scaley-rotation-skewx-skewy-pivotx-pivoty--pixidisplayobject)
+* [toGlobal (position, point, skipUpdate)](PIXI.DisplayObject.md#toglobal-position-point-skipupdate--pixipoint)
+* [toLocal (position, from, point, skipUpdate)](PIXI.DisplayObject.md#tolocal-position-from-point-skipupdate--pixipoint)
+
+
+#### [PIXI.Container](PIXI.Container.md)
+
+* [addChild (child) ](PIXI.Container.md#addchild-child--pixidisplayobject)
+* [addChildAt (child, index)](PIXI.Container.md#addchildat-child-index--pixidisplayobject)
+* [calculateBounds ()](PIXI.Container.md#calculatebounds-)
+* [getChildAt (index)](PIXI.Container.md#getchildat-index--pixidisplayobject)
+* [getChildByName (name)](PIXI.Container.md#getchildbyname-name--pixidisplayobject)
+* [getChildIndex (child)](PIXI.Container.md#getchildindex-child--pixidisplayobject)
+* [onChildrenChange ()](PIXI.Container.md#onchildrenchange-)
+* [removeChild (child)](PIXI.Container.md#removechild-child--pixidisplayobject)
+* [removeChildAt (index)](PIXI.Container.md#removechildat-index--pixidisplayobject)
+* [removeChildren (beginIndex, endIndex)](PIXI.Container.md#removechildren-beginindex-endindex--arraypixidisplayobject)
+* [render (renderer)](PIXI.Container.md#render-renderer)
+* [renderAdvanced (renderer)](PIXI.Container.md#renderadvanced-renderer)
+* [setChildIndex (child, index)](PIXI.Container.md#setchildindex-child-index)
+* [sortChildren ()](PIXI.Container.md#sortchildren-)
+* [swapChildren (child, child2)](PIXI.Container.md#swapchildren-child-child2)
+* [updateTransform ()](PIXI.Container.md#updatetransform-)
+
+
+#### [PIXI.Sprite](PIXI.Sprite.md)
+
+* [(static) from (source, options)](PIXI.Sprite.md#static-from-source-options--pixisprite)
+* [\_calculateBounds ()](PIXI.Sprite.md#_calculatebounds-)
+* [\_render (renderer)](PIXI.Sprite.md#_render-renderer)
+* [calculateTrimmedVertices ()](PIXI.Sprite.md#calculatetrimmedvertices-)
+* [calculateVertices ()](PIXI.Sprite.md#calculatevertices-)
+* [containsPoint (point)](PIXI.Sprite.md#containspoint-point--boolean)
+* [destroy (options)](PIXI.Sprite.md#destroy-options)
+* [getLocalBounds (rect)](PIXI.Sprite.md#getlocalbounds-rect--pixirectangle)
+* [renderCanvas (renderer)](PIXI.Sprite.md#rendercanvas-renderer)
+
+
+#### [Sprite](Sprite.md)
+
+* [\_createTinter (w, h)](Sprite.md#_createtinter-w-h)
+* [\_executeTint (x, y, w, h)](Sprite.md#_executetint-x-y-w-h)
+* [\_isInBitmapRect (x, y, w, h)](Sprite.md#_isinbitmaprect-x-y-w-h--boolean)
+* [\_needsTint ()](Sprite.md#_needstint---boolean)
+* [\_onBitmapLoad ()](Sprite.md#_onbitmapload-)
+* [\_refresh ()](Sprite.md#_refresh-)
+* [\_renderCanvas (renderer)](Sprite.md#_rendercanvas-renderer)
+* [\_renderWebGL (renderer)](Sprite.md#_renderwebgl-renderer)
+* [\_speedUpCustomBlendModes (renderer)](Sprite.md#_speedupcustomblendmodes-renderer)
+* [getBlendColor ()](Sprite.md#getblendcolor---array)
+* [getColorTone ()](Sprite.md#getcolortone---array)
+* [move (x, y)](Sprite.md#Sprite.md#move-x-y)
+* [setBlendColor (color)](Sprite.md#setblendcolor-color)
+* [setColorTone (tone)](Sprite.md#setcolortone-tone)
+* [setFrame (x, y, width, height)](Sprite.md#setframe-x-y-width-height)
+
+#### [Sprite_Base](Sprite_Base.md)
+
+* [hide ()](Sprite_Base.md#hide-)
+* [isAnimationPlaying ()](Sprite_Base.md#isanimationplaying---boolean)
+* [show ()](Sprite_Base.md#show-)
+* [startAnimation (animation, mirror, delay)](Sprite_Base.md#startanimation-animation-mirror-delay)
+* [updateAnimationSprites ()](Sprite_Base.md#updateanimationsprites-)
+
+
 ### Methods
 
-#### _speedUpCustomBlendModes (renderer)
-
-checks if we need to speed up custom blendmodes
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `renderer` |  |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite#_speedUpCustomBlendModes</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
 #### damageOffsetX () → {[Number](Number.md)}
+ダメージの xオフセットを返す。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### damageOffsetY () → {[Number](Number.md)}
+ダメージの yオフセットを返す。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### hide ()
-
-Hides the sprite.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#hide</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### inHomePosition () → {Boolean}
+基点にいるか。
 
-Returns true if the sprite battler is in the home position.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### initialize ()
+Overrides:[Sprite_Base](Sprite_Base.md#initialize-)
 
- オブジェクト生成時の初期化。
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#initialize</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### initMembers ()
+メンバ変数を初期化。
 
-<dl>
-</dl>
-
-#### isAnimationPlaying () → {boolean}
-
-Returns true if an animation is currently playing.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#isAnimationPlaying</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>boolean</span>
-                </dd>
-            </dl>
 
 #### isEffecting () → {Boolean}
+効果が加わっているか(常にfalse)
 
-Returns false for sprite battler.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isMoving () → {boolean}
+移動中か。
 
-Returns true if the sprite for the battler is moving.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>boolean</span>
-                </dd>
-            </dl>
 
 #### onMoveEnd ()
+移動が終わった時に呼ばれるハンドラ。
 
-Handler for when movement has ended.
-<dl>
-</dl>
 
 #### setBattler (battler)
-
-Sets the game battler of the sprite battler.
+バトラーを設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `battler` | [Game_Battler](Game_Battler.md) |  |
+| `battler` | [Game_Battler](Game_Battler.md) | バトラー |
 
-<dl>
-</dl>
 
 #### setHome (x, y)
-
-Sets the home position of the sprite battler to the given x and y coordinates.
+基点を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) | 基点の x座標 |
+| `y` | [Number](Number.md) | 基点の y座標 |
 
-<dl>
-</dl>
 
 #### setupAnimation ()
+アニメーションの準備。
 
-Sets up animation on the sprite battler.
-<dl>
-</dl>
 
 #### setupDamagePopup ()
+ダメージポップアップの準備。
 
-Sets up damage popup on the sprite battler.
-<dl>
-</dl>
-
-#### show ()
-
-Shows the sprite.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#show</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### startAnimation (animation, mirror, delay)
-
-Starts a new animation on the current sprite by assigning a new Sprite_Animation object to the sprite's parent.
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `animation` | [RPG.Animation](RPG.Animation.md) |  |
-| `mirror` | Boolean |  |
-| `delay` | [Number](Number.md) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#startAnimation</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### startMove (x, y, duration)
+指定座標へ移動開始。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `duration` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) | 対象 x座標 |
+| `y` | [Number](Number.md) | 対象 y座標 |
+| `duration` | [Number](Number.md) | 移動の継続時間 |
 
-<dl>
-</dl>
 
 #### update ()
+Overrides:[Sprite_Base](Sprite_Base.md#update-)
 
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#update</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### updateAnimation ()
+アニメーションのアップデート。
 
-Updates the sprite battler animation.
-<dl>
-</dl>
-
-#### updateAnimationSprites ()
-
-Updates the animation sprites, cloning them; if the sprite is playing, pushes the sprites into animation sprites, otherwise the sprite is removed.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#updateAnimationSprites</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### updateBitmap ()
+画像のアップデート。
 
-Updates the bitmap of the sprite battler.
-<dl>
-</dl>
 
 #### updateDamagePopup ()
+ダメージポップアップのアップデート。
 
-Updates the damage pop up for the sprite battler.
-<dl>
-</dl>
 
 #### updateFrame ()
+フレームのアップデート。
 
-Updates the sprite battler's current frame.
-<dl>
-</dl>
 
 #### updateMain ()
+主要なアップデート。
 
-Updates the main loop of the sprite battler.
-<dl>
-</dl>
 
 #### updateMove ()
+移動のアップデート。
 
-Updates movement on the sprite battler.
-<dl>
-</dl>
 
 #### updatePosition ()
+位置のアップデート。
 
-Updates the position of the sprite battler.
-<dl>
-</dl>
 
 #### updateSelectionEffect ()
-
-<dl>
-</dl>
+選択エフェクトのアップデート。
 
 #### updateVisibility ()
+Overrides:[Sprite_Base](Sprite_Base.md#updateVisibility-)
 
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#updateVisibility</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
