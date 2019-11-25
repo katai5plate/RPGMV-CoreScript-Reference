@@ -2,71 +2,65 @@
 
 ## Namespace [RPG](RPG.md)
 
-The JSON data structure of the system. Define to [$dataSystem](global.html#$dataSystem)
+[システム]と[タイプ][用語]およびその他の設定の情報を記述したファイル( data/System.json )のJSONデータ。
+
+大域変数 [$dataSystem](global.md#datasystem-rpgsystem) に格納されている。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `gameTitle` | [String](String.md) | The game title. |
-| `versionId` | [Number](Number.md) | A random number used for update checks. The number changes every time data is saved in RPG Maker. |
-| `locale` | [String](String.md) | The locale string such as "ja_JP" and "en_US". |
-| `partyMembers` | [Array](Array.md).<[Number](Number.md)> | The initial party. An array of actor IDs. |
-| `currencyUnit` | [String](String.md) | The unit of currency. |
-| `windowTone` | [Array](Array.md).<[Number](Number.md)> | The window color. |
-| `attackMotions` | [Array](Array.md).<[RPG.System.AttackMotion](RPG.System.AttackMotion.md)> | The array of System.AttackMotion data. |
-| `elements` | [Array](Array.md).<[String](String.md)> | A list of elements. A string array using element IDs as subscripts, with the element in the 0 position being nil. |
-| `equipTypes` | [Array](Array.md).<[String](String.md)> | he equipment type. A string array with the following subscripts: 1: Weapon 2: Shield 3: Head 4: Body 5: Accessory |
-| `skillTypes` | [Array](Array.md).<[String](String.md)> | A list of skill types. A string array using skill type IDs as subscripts, with the element in the 0 position being nil. |
-| `weaponTypes` | [Array](Array.md).<[String](String.md)> | A list of weapon types. A string array using weapon type IDs as subscripts, with the element in the 0 position being nil. |
-| `armorTypes` | [Array](Array.md).<[String](String.md)> | A list of armor types. A string array using armor type IDs as subscripts, with the element in the 0 position being nil. |
-| `switches` | [Array](Array.md).<[String](String.md)> | A switch name list. A string array using switch IDs as subscripts, with the element in the 0 position being nil. |
-| `variables` | [Array](Array.md).<[String](String.md)> | A variable name list. A string array using variable IDs as subscripts, with the element in the 0 position being nil. |
-| `boat` | [RPG.System.Vehicle](RPG.System.Vehicle.md) | Boat settings. |
-| `ship` | [RPG.System.Vehicle](RPG.System.Vehicle.md) | Ship settings. |
-| `airship` | [RPG.System.Vehicle](RPG.System.Vehicle.md) | Airship settings. |
-| `title1Name` | [String](String.md) | The file name of the title (background) graphic. |
-| `title2Name` | [String](String.md) | The file name of the title (frame) graphic. |
-| `optDrawTitle` | Boolean | The truth value of the [Draw Game Title] option. |
-| `optTransparent` | Boolean | The truth value of the [Start Transparent] option. |
-| `optFollowers` | Boolean | The truth value of the [Show Player Followers] option. |
-| `optSlipDeath` | Boolean | The truth value of the [K.O. by Slip Damage] option. |
-| `optFloorDeath` | Boolean | The truth value of the [K.O. by Floor Damage] option. |
-| `optDisplayTp` | Boolean | The truth value of the [Display TP in Battle] option. |
-| `optExtraExp` | Boolean | The truth value of the [Reserve Members' EXP] option. |
-| `optSideView` | Boolean | The truth value of the [use side-view battle] option. |
-| `titleBgm` | [RPG.AudioFile](RPG.AudioFile.md) | The title BGM. |
-| `battleBgm` | [RPG.AudioFile](RPG.AudioFile.md) | The battle BGM. |
-| `battleEndMe` | [RPG.AudioFile](RPG.AudioFile.md) | The battle end ME. |
-| `gameoverMe` | [RPG.AudioFile](RPG.AudioFile.md) | The gameover ME. |
-| `sounds` | [Array](Array.md).<[RPG.AudioFile](RPG.AudioFile.md)> | Sound effects. An RPG.SE array. |
-| `startMapId` | [Number](Number.md) | The map ID of the player's initial position. |
-| `startX` | [Number](Number.md) | The map's x-coordinate of the player's initial position. |
-| `startY` | [Number](Number.md) | The map's y-coordinate of the player's initial position. |
-| `terms` | [RPG.System.Terms](RPG.System.Terms.md) | Terms. |
-| `testBattlers` | [Array](Array.md).<[RPG.System.TestBattler](RPG.System.TestBattler.md)> | Party settings for battle tests. |
-| `testTroopId` | [Number](Number.md) | The enemy troop ID for battle tests. |
-| `battleback1Name` | [String](String.md) | The file name of the battle background (floor) graphic for use in editing enemy troops and battle tests. |
-| `battleback2Name` | [String](String.md) | The file name of the battle background (wall) graphic for use in editing enemy troops and battle tests. |
-| `battlerName` | [String](String.md) | The battler graphic file name for use in editing animations. |
-| `battlerHue` | [Number](Number.md) | The adjustment value for the battler graphic's hue (0..360) for use in editing animations. |
-| `editMapId` | [Number](Number.md) | The ID of the map currently being edited. For internal use. |
+| `gameTitle` | [String](String.md) | [ゲームタイトル] |
+| `versionId` | [Number](Number.md) | RPGメーカーMVによって自動的に保存されるバージョンID |
+| `locale` | [String](String.md) | 地域設定 "ja_JP" か "en_US" |
+| `partyMembers` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [初期パーティ] アクターIDの配列 |
+| `currencyUnit` | [String](String.md) | [通貨単位] |
+| `windowTone` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [ウィンドウカラー] |
+| `attackMotions` | [Array](Array.md).&lt;[RPG.System.AttackMotion](RPG.System.AttackMotion.md)&gt; | [[SV]攻撃モーション]の配列 |
+| `elements` | [Array](Array.md).&lt;[String](String.md)&gt; | [属性]の名前の配列(0位置は空文字列) |
+| `equipTypes` | [Array](Array.md).&lt;[String](String.md)&gt; | [装備タイプ]の名前の配列(0位置は空文字列) |
+| `skillTypes` | [Array](Array.md).&lt;[String](String.md)&gt; | [スキルタイプ]の名前の配列(0位置は空文字列) |
+| `weaponTypes` | [Array](Array.md).&lt;[String](String.md)&gt; | [武器タイプ]の名前の配列(0位置は空文字列) |
+| `armorTypes` | [Array](Array.md).&lt;[String](String.md)&gt; | [防具タイプ]の名前の配列(0位置は空文字列) |
+| `switches` | [Array](Array.md).&lt;[String](String.md)&gt; | [スイッチ]の名前の配列(0位置は空文字列) |
+| `variables` | [Array](Array.md).&lt;[String](String.md)&gt; | [変数]の名前の配列(0位置は空文字列) |
+| `boat` | [RPG.System.Vehicle](RPG.System.Vehicle.md) | [小型船]の設定 |
+| `ship` | [RPG.System.Vehicle](RPG.System.Vehicle.md) | [大型船]の設定 |
+| `airship` | [RPG.System.Vehicle](RPG.System.Vehicle.md) | [飛行船]の設定 |
+| `title1Name` | [String](String.md) | タイトル画面の背景画像(拡張子を含まない) |
+| `title2Name` | [String](String.md) | タイトル画面の枠画像(拡張子を含まない) |
+| `optDrawTitle` | Boolean | [ゲームタイトルの描画] |
+| `optTransparent` | Boolean | [透明状態で開始] |
+| `optFollowers` | Boolean | [パーティの隊列歩行] |
+| `optSlipDeath` | Boolean | [スリップダメージで戦闘不能] |
+| `optFloorDeath` | Boolean | [床ダメージで戦闘不能] |
+| `optDisplayTp` | Boolean | [バトル画面でTPを表示] |
+| `optExtraExp` | Boolean | [控えメンバーも経験値を獲得] |
+| `optSideView` | Boolean | [サイドビュー戦闘を使用] |
+| `titleBgm` | [RPG.AudioFile](RPG.AudioFile.md) | [音楽 - タイプ - タイトル] |
+| `battleBgm` | [RPG.AudioFile](RPG.AudioFile.md) | [音楽 - タイプ - 戦闘] |
+| `battleEndMe` | [RPG.AudioFile](RPG.AudioFile.md) | [音楽 - タイプ - 勝利] |
+| `gameoverMe` | [RPG.AudioFile](RPG.AudioFile.md) | [音楽 - タイプ - ゲームオーバー] |
+| `sounds` | [Array](Array.md).&lt;[RPG.AudioFile](RPG.AudioFile.md)&gt; | [効果音]の音声データの配列 |
+| `startMapId` | [Number](Number.md) | プレイヤーの [初期位置] のマップID |
+| `startX` | [Number](Number.md) | プレイヤーの [初期位置] のx座標(タイル数) |
+| `startY` | [Number](Number.md) | プレイヤーの [初期位置] のy座標(タイル数)|
+| `terms` | [RPG.System.Terms](RPG.System.Terms.md) | [用語] |
+| `testBattlers` | [Array](Array.md).&lt;[RPG.System.TestBattler](RPG.System.TestBattler.md)&gt; | 戦闘テスト用のパーティ |
+| `testTroopId` | [Number](Number.md) | 戦闘テスト用の敵グループID |
+| `battleback1Name` | [String](String.md) |  戦闘テスト用の背景画像1(拡張子を含まない) |
+| `battleback2Name` | [String](String.md) |  戦闘テスト用の背景画像2(拡張子を含まない) |
+| `battlerName` | [String](String.md) | アニメーション制作時の背景画像(拡張子を含まない) |
+| `battlerHue` | [Number](Number.md) | アニメーション制作時の敵の色相(0〜360) |
+| `editMapId` | [Number](Number.md) | 最後に編集中だったマップID |
 
-<dl>
-</dl>
 
 ### Classes
 
-<dl>
-                    <dt><a>AttackMotion</a></dt>
-                    <dd></dd>
-                    <dt><a>Terms</a></dt>
-                    <dd></dd>
-                    <dt><a>TestBattler</a></dt>
-                    <dd></dd>
-                    <dt><a>Vehicle</a></dt>
-                    <dd></dd>
-                </dl>
+* [RPG.System.AttackMotion](RPG.System.AttackMotion.md)
+* [RPG.System.Terms](RPG.System.Terms.md)
+* [RPG.System.TestBattler](RPG.System.TestBattler.md)
+* [RPG.System.Vehicle](RPG.System.Vehicle.md)
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
