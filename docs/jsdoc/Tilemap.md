@@ -144,13 +144,6 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 ####  _isOverpassPosition (mx, my) → {Boolean}
 立体交差か。
@@ -164,14 +157,6 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 | `my` | [Number](Number.md) | マップ y座標(タイル数) |
 
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
 ####  _isTableTile (tileId) → {Boolean}
  テーブルタイルか。
 
@@ -182,13 +167,6 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### _paintAllTiles (startX, startY)
  全タイルを描画。
@@ -223,13 +201,6 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 | `x` | [Number](Number.md) | x座標(タイル数) |
 | `y` | [Number](Number.md) | y座標(タイル数) |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Array.html">Array</a>.&lt;<a href="Number.html">Number</a>&gt;</span>
-    </dd>
-</dl>
 
 #### _readMapData (x, y, z) → {[Number](Number.md)}
  指定位置のタイルIDを返す。<br />
@@ -243,13 +214,6 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 | `y` | [Number](Number.md) | マップ y座標(タイル数) |
 | `z` | [Number](Number.md) |  0:Aタイル, 1:A2タイル右, 2〜3:B〜Eタイル, 4:影ペン, 5:リージョン |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
 
 #### _sortChildren ()
  子オブジェクトのソート。
@@ -281,14 +245,6 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
  オートタイルの種類を返す。
  返り値から以下の表にしたがって判断が必要だが、各種isXXXメソッドを使えば種類が確定できる。
 
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `tileId` | [Number](Number.md) | タイルID |
-
-##### Returns:
-
 | Set | Description |
 | --- | --- |
 | A1 | 海:0、深海:1、浅瀬障害:2,3、水面:4,6,8,10,12,14、滝:5,7,9,11,13,15 |
@@ -296,15 +252,16 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 | A3 | 屋根:48〜55,64〜71、壁:56〜63,72〜79 |
 | A4 | 壁上：80〜87,96〜103,112〜119、壁:88〜95,104〜111,120〜127 |
 
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `tileId` | [Number](Number.md) | タイルID |
+
 
 #### (static) getAutotileShape (tileId) → {[Number](Number.md)}
  オートタイルのシェイプを返す。
+地面・床・壁上面:0〜47、屋根・壁:0〜15、滝:0〜3 の値
 
 ##### Parameters:
 
@@ -312,15 +269,6 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-##### Returns:
-地面・床・壁上面:0〜47、屋根・壁:0〜15、滝:0〜3 の値
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
 
 #### (static) isAutotile (tileId) → {Boolean}
  オートタイル(A1〜A4)か。
@@ -331,13 +279,6 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### (static) isFloorTypeAutotile (tileId) → {Boolean}
  (48シェイプを持つ)地表面タイプのオートタイルか。
@@ -348,13 +289,6 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### (static) isGroundTile (tileId) → {Boolean}
  地表(A1,A2,A5)のタイルか。
@@ -365,13 +299,6 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### (static) isRoofTile (tileId) → {Boolean}
  屋根(A3奇数行)タイルか。
@@ -382,13 +309,6 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### (static) isSameKindTile (tileID1, tileID2) → {Boolean}
  指定したタイルが(オートタイルのシェイプは問わないで)同じ種類か。
@@ -400,13 +320,6 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 | `tileID1` | [Number](Number.md) | タイルID |
 | `tileID2` | [Number](Number.md) | タイルID |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### (static) isShadowingTile (tileId) → {Boolean}
  設置した時に影が自動でつけられるタイル(A3 と A4)か。
@@ -417,13 +330,6 @@ childrenプロパティに含まれる子オブジェクトが、a, b に渡さ�
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### (static) isTileA1 (tileId) → {Boolean}
 A1(アニメーション)のタイルか。
@@ -434,13 +340,6 @@ A1(アニメーション)のタイルか。
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### (static) isTileA2 (tileId) → {Boolean}
 A2(地面)のタイルか。
@@ -451,13 +350,6 @@ A2(地面)のタイルか。
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### (static) isTileA3 (tileId) → {Boolean}
 A3(建物)のタイルか。
@@ -468,13 +360,6 @@ A3(建物)のタイルか。
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### (static) isTileA4 (tileId) → {Boolean}
 A4(壁)のタイルか。
@@ -485,13 +370,6 @@ A4(壁)のタイルか。
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### (static) isTileA5 (tileId) → {Boolean}
 A5(通常)のタイルか。
@@ -502,13 +380,6 @@ A5(通常)のタイルか。
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### (static) isVisibleTile (tileId) → {Boolean}
  表示されるタイル(0〜TILE_ID_MAXに含まれる)か。
@@ -519,13 +390,6 @@ A5(通常)のタイルか。
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### (static) isWallSideTile (tileId) → {Boolean}
  壁面タイル(A3偶数行 と A4偶数行)か。
@@ -536,13 +400,6 @@ A5(通常)のタイルか。
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### (static) isWallTile (tileId) → {Boolean}
  壁タイル(A3偶数行 と A4)か。
@@ -553,13 +410,6 @@ A5(通常)のタイルか。
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### (static) isWallTopTile (tileId) → {Boolean}
  壁上面タイル(A4奇数行)か。
@@ -570,13 +420,6 @@ A5(通常)のタイルか。
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### (static) isWallTypeAutotile (tileId) → {Boolean}
  (16シェイプを持つ)壁タイプのタイルか。
@@ -587,13 +430,6 @@ A5(通常)のタイルか。
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### (static) isWaterfallTile (tileId) → {Boolean}
  滝のタイル(A1で偶数列2番目以降)か。
@@ -604,13 +440,6 @@ A5(通常)のタイルか。
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### (static) isWaterfallTypeAutotile (tileId) → {Boolean}
  (4シェイプを持つ)滝タイプのオートタイルか。
@@ -621,13 +450,6 @@ A5(通常)のタイルか。
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### (static) isWaterTile (tileId) → {Boolean}
  水面のタイル(浅瀬障害を除くA1)か。
@@ -638,13 +460,6 @@ A5(通常)のタイルか。
 | --- | --- | --- |
 | `tileId` | [Number](Number.md) | タイルID |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### (static) makeAutotileId (kind, shape) → {[Number](Number.md)}
  指定したオートタイルの種類とシェイプからタイルIDを返す。
@@ -656,16 +471,9 @@ A5(通常)のタイルか。
 | `kind` | [Number](Number.md) | 種類(See: [getAutotileKind](#static-getautotilekind-tileid--number)) |
 | `shape` | [Number](Number.md) | シェイプ(See: [getAutotileShape](#static-getautotileshape-tileid--number)) |
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
 
 #### addChild (child) → {Object}
-[super] コンテナに子オブジェクトを追加。
+[super] コンテナに子オブジェクトを追加し、追加されたオブジェクトを返す。
 
 ##### Parameters:
 
@@ -673,17 +481,9 @@ A5(通常)のタイルか。
 | --- | --- | --- |
 | `child` | Object |  追加するオブジェクト |
 
-##### Returns:
- 追加されたオブジェクト
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Object</span>
-    </dd>
-</dl>
 
 #### addChildAt (child, index) → {Object}
-[super] コンテナの指定位置に子オブジェクトを追加。
+[super] コンテナの指定位置に子オブジェクトを追加、追加されたオブジェクトを返す。
 
 ##### Parameters:
 
@@ -692,14 +492,6 @@ A5(通常)のタイルか。
 | `child` | Object |  追加するオブジェクト |
 | `index` | [Number](Number.md) |  追加位置 |
 
-##### Returns:
- 追加されたオブジェクト
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Object</span>
-    </dd>
-</dl>
 
 #### initialize ()
  オブジェクト生成時の初期化。
@@ -707,19 +499,14 @@ A5(通常)のタイルか。
 #### isReady () → {Boolean}
  描画準備ができているか。
  
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### refresh ()
  タイルマップを更新。
 
+
 #### refreshTileset ()
  タイルセットを更新。
+
 
 #### removeChild (child) → {Object}
 [super] コンテナから子オブジェクトを取り除く
@@ -730,17 +517,9 @@ A5(通常)のタイルか。
 | --- | --- | --- |
 | `child` | Object |  取り除くオブジェクト |
 
-##### Returns:
- 取り除かれたオブジェクト
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Object</span>
-    </dd>
-</dl>
 
 #### removeChildAt (index) → {Object}
-[super] コンテナの指定位置から子オブジェクトを取り除く
+[super] コンテナの指定位置から子オブジェクトを取り除き、 取り除かれたオブジェクトを返す。
 
 ##### Parameters:
 
@@ -748,14 +527,6 @@ A5(通常)のタイルか。
 | --- | --- | --- |
 | `index` | [Number](Number.md) |  取り除くオブジェクトの位置 |
 
-##### Returns:
- 取り除かれたオブジェクト
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Object</span>
-    </dd>
-</dl>
 
 #### setData (width, height, data)
  タイルマップのデータを設定。
@@ -768,8 +539,10 @@ A5(通常)のタイルか。
 | `height` | [Number](Number.md) |  マップの高さ(タイル数) |
 | `data` | [Array](Array.md) | 一次元配列によるマップのデータ(See: [Game_Map.data](Game_Map.md#data---arraynumber)) |
 
+
 #### update ()
  フレーム毎のタイルマップのアップデート。
+
 
 #### updateTransform ()
  描画・変形のアップデート。
