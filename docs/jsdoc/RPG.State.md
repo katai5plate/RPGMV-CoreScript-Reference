@@ -30,7 +30,7 @@
 | `message4` | [String](String.md) | [この状態が解除されたとき] |
 | `motion` | [Number](Number.md) | [[SV]モーション] |
 | `overlay` | [Number](Number.md) |  [[SV]重ね合わせ] |
-| `traits` | [Array](Array.md).<[RPG.Trait](RPG.Trait.md)> | [特徴]の配列 |
+| `traits` | [Array](Array.md).&lt;[RPG.Trait](RPG.Trait.md)&gt; | [特徴]の配列 |
 
 ### Extends
 
