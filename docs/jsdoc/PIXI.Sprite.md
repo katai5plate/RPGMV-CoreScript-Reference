@@ -84,27 +84,12 @@
 | `options` | Object | opt. |
 
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>PIXI.Sprite</span>
-    </dd>
-</dl>
-
-
 #### _calculateBounds ()
-
-##### Overrides:
- [PIXI.Container.\_calculateBounds ()](PIXI.Container.md#_calculatebounds-)
+Overrides:[PIXI.Container](PIXI.Container.md#_calculatebounds-)
  
  
 #### _render (renderer)
-
-##### Overrides:
-
-* [PIXI.Container.\_render (renderer)](PIXI.Container.md#_render-renderer)
+Overrides:[PIXI.Container](PIXI.Container.md#_render-renderer)
  
 ##### Parameters:
 
@@ -115,9 +100,12 @@
  
 #### calculateTrimmedVertices ()
 
+
 #### calculateVertices ()
 
+
 #### containsPoint (point) → {Boolean}
+
 
 ##### Parameters:
 
@@ -125,21 +113,9 @@
 | --- | --- | --- |
 | `point` | [PIXI.Point](http://pixijs.download/release/docs/PIXI.Point.html) |  |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> Boolean </span>
-    </dd>
-</dl>
-
 
 #### destroy (options)
-破棄する。
-
-##### Overrides:
-[PIXI.Container.destroy (options)](PIXI.Container.md#destroy-options)
+Overrides:[PIXI.Container](PIXI.Container.md#destroy-options)
 
 ##### Parameters:
 
@@ -157,9 +133,7 @@ options に Object として指定する内容
 
 
 #### getLocalBounds (rect) → {PIXI.Rectangle}
-
-##### Overrides:
-[PIXI.DisplayObject.getLocalBounds (rect)](PIXI.DisplayObject.md#getlocalbounds-rect--pixirectangle)
+Overrides:[PIXI.DisplayObject](PIXI.DisplayObject.md#getlocalbounds-rect--pixirectangle)
 
 ##### Parameters:
 
@@ -167,20 +141,9 @@ options に Object として指定する内容
 | --- | --- | --- |
 | `rect` | PIXI.Rectangle | opt. |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="http://pixijs.download/release/docs/PIXI.Rectangle.html">PIXI.Rectangle</a></span>
-    </dd>
-</dl>
-
 
 #### renderCanvas (renderer)
-
-##### Overrides:
-[PIXI.Container.renderCanvas (renderer)](PIXI.Container.md#rendercanvas-renderer)
+Overrides:[PIXI.Container](PIXI.Container.md#rendercanvas-renderer)
 
 ##### Parameters:
 

@@ -88,16 +88,7 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `skipUpdate` | Boolean | opt. |
-| `rect` | PIXI.Rectangle | opt. |
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="http://pixijs.download/release/docs/PIXI.Rectangle.html">PIXI.Rectangle</a></span>
-    </dd>
-</dl>
+| `rect` | [PIXI.Rectangle](http://pixijs.download/release/docs/PIXI.Rectangle.html) | opt. |
 
 
 #### getGlobalPosition (point, skipUpdate) → {PIXI.Point}
@@ -110,15 +101,6 @@
 | `point` | PIXI.Point | opt. |
 | `skipUpdate` | Boolean | opt. |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="http://pixijs.download/release/docs/PIXI.Rectangle.html">PIXI.Point</a></span>
-    </dd>
-</dl>
-
 
 #### getLocalBounds (rect) → {PIXI.Rectangle}
 
@@ -126,16 +108,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `rect` | PIXI.Rectangle | opt. |
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="http://pixijs.download/release/docs/PIXI.Rectangle.html">PIXI.Rectangle</a></span>
-    </dd>
-</dl>
+| `rect` | [PIXI.Rectangle](http://pixijs.download/release/docs/PIXI.Rectangle.html) | opt. |
 
 
 #### render (renderer)
@@ -154,20 +127,11 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `container ` | PIXI.Container | 親に指定するコンテナオブジェクト |
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="http://pixijs.download/release/docs/PIXI.Container.html"> PIXI.Container </a></span>
-    </dd>
-</dl>
+| `container ` | [PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html) | 親に指定するコンテナオブジェクト |
 
 
 #### setTransform (x, y, scaleX, scaleY, rotation, skewX, skewY, pivotX, pivotY) → {PIXI.DisplayObject}
-まとめて変形を設定する。
+まとめて変形を設定して[PIXI.DisplayObject](http://pixijs.download/release/docs/PIXI.DisplayObject.html)を返す。
 
 ##### Parameters:
 
@@ -183,15 +147,6 @@
 | `pivotX` | [Number](Number.md) | 回転軸x座標 |
 | `pivotY` | [Number](Number.md) | 回転軸y座標 |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="PIXI.DisplayObject.html">PIXI.DisplayObject </a></span>
-    </dd>
-</dl>
-
 
 #### toGlobal (position, point, skipUpdate) → {PIXI.Point}
 グローバル座標に変換。
@@ -200,18 +155,9 @@
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `position` |  | PIXI.Point | 変換元の座標 |
-| `point` |  | PIXI.Point | opt. |
+| `position` |  | [PIXI.Point](http://pixijs.download/release/docs/PIXI.Point.html) | 変換元の座標 |
+| `point` |  | [PIXI.Point](http://pixijs.download/release/docs/PIXI.Point.html) | opt. |
 | `skipUpdate` | false | Boolean | opt. |
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="http://pixijs.download/release/docs/PIXI.Rectangle.html">PIXI.Point</a></span>
-    </dd>
-</dl>
 
 
 #### toLocal (position, from, point, skipUpdate) → {PIXI.Point}
@@ -221,19 +167,10 @@
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `position` |  | PIXI.Point | 変換元の座標 |
+| `position` |  | [PIXI.Point](http://pixijs.download/release/docs/PIXI.Point.html) | 変換元の座標 |
 | `from` |  | PIXI.DisplayObject | opt. |
-| `point` |  | PIXI.Point | opt. |
+| `point` |  | [PIXI.Point](http://pixijs.download/release/docs/PIXI.Point.html) | opt. |
 | `skipUpdate` | false | Boolean | opt. |
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="http://pixijs.download/release/docs/PIXI.Rectangle.html">PIXI.Point</a></span>
-    </dd>
-</dl>
 
 
 #### updateTransform ()

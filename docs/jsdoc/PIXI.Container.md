@@ -89,16 +89,6 @@
 | `child` | [PIXI.DisplayObject](PIXI.DisplayObject.md) | 追加するオブジェクト |
 
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="PIXI.DisplayObject.html"> PIXI.DisplayObject </a></span>
-    </dd>
-</dl>
-
-
 #### addChildAt (child, index) → {PIXI.DisplayObject}
 子オブジェクトを追加。
 
@@ -110,25 +100,12 @@
 | `index` | [Number](Number.md) | 追加位置 |
 
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="PIXI.DisplayObject.html"> PIXI.DisplayObject </a></span>
-    </dd>
-</dl>
-
-
 #### calculateBounds ()
 矩形範囲の再計算。
 
 
 #### destroy (options)
-破棄する。
-
-##### Overrides:
-[PIXI.DisplayObject.destroy()](PIXI.DisplayObject.md#destroy-)
+Overrides:[PIXI.DisplayObject](PIXI.DisplayObject.md#destroy-)
 
 ##### Parameters:
 
@@ -155,17 +132,6 @@ options に Object として指定する内容
 | `index` | [Number](Number.md) | 子オブジェクトの番号 |
 
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="PIXI.DisplayObject.html"> PIXI.DisplayObject </a></span>
-    </dd>
-</dl>
-
-
-
 #### getChildByName (name) → {PIXI.DisplayObject}
 指定番号の子オブジェクトを得る。
 
@@ -174,16 +140,6 @@ options に Object として指定する内容
 | Name | Type | Description |
 | --- | --- | --- |
 | `name` | [String](String.md) | 子オブジェクトの名前 |
-
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="PIXI.DisplayObject.html"> PIXI.DisplayObject </a></span>
-    </dd>
-</dl>
 
 
 #### getChildIndex (child) → {PIXI.DisplayObject}
@@ -196,19 +152,9 @@ options に Object として指定する内容
 | `child ` | [PIXI.DisplayObject](PIXI.DisplayObject.md) | 子オブジェクト |
 
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html"> Number  </a></span>
-    </dd>
-</dl>
-
-
-
 #### onChildrenChange () 
 子オブジェクトが変更された時のハンドラ。
+
 
 #### removeChild (child) → {PIXI.DisplayObject}
 子オブジェクトを削除。
@@ -219,15 +165,6 @@ options に Object として指定する内容
 | --- | --- | --- |
 | `child ` | [PIXI.DisplayObject](PIXI.DisplayObject.md) | 子オブジェクト |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="PIXI.DisplayObject.html"> PIXI.DisplayObject </a></span>
-    </dd>
-</dl>
-
 
 #### removeChildAt (index) → {PIXI.DisplayObject}
 指定番号の子オブジェクトを削除。
@@ -237,15 +174,6 @@ options に Object として指定する内容
 | Name | Type | Description |
 | --- | --- | --- |
 | `index` | [Number](Number.md) | 子オブジェクトの番号 |
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="PIXI.DisplayObject.html"> PIXI.DisplayObject </a></span>
-    </dd>
-</dl>
 
 
 #### removeChildren (beginIndex, endIndex) → {Array.&lt;PIXI.DisplayObject&gt;}
@@ -258,20 +186,9 @@ options に Object として指定する内容
 | `beginIndex ` | [Number](Number.md) | 子オブジェクトの開始番号 |
 | `endIndex ` | [Number](Number.md) | 子オブジェクトの終了番号 |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Array.&lt;<a href="PIXI.DisplayObject.html"> PIXI.DisplayObject </a>&gt;</span>
-    </dd>
-</dl>
-
 
 #### render (renderer)
-
-##### Overrides:
-[PIXI.DisplayObject. render()](PIXI.DisplayObject.md#render--renderer)
+Overrides:[PIXI.DisplayObject](PIXI.DisplayObject.md#render--renderer)
 
 ##### Parameters:
 
@@ -311,6 +228,7 @@ options に Object として指定する内容
 #### sortChildren ()
 子オブジェクトを zIndex に従ってソート。
 
+
 #### swapChildren (child, child2)
 子オブジェクトの位置(番号)を入れ替える。
 
@@ -323,9 +241,7 @@ options に Object として指定する内容
 
 
 #### updateTransform ()
-
-##### Overrides:
-[PIXI.DisplayObject. updateTransform()](PIXI.DisplayObject.md#updateTransform-)
+Overrides:[PIXI.DisplayObject](PIXI.DisplayObject.md#updateTransform-)
 
 
 

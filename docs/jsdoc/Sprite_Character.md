@@ -108,68 +108,33 @@
 
 #### [Sprite_Base](Sprite_Base.md)
 
-* [hide ()](Sprite_Base.md#)
-* [isAnimationPlaying ()](Sprite_Base.md#)
-* [show ()](Sprite_Base.md#)
-* [startAnimation (animation, mirror, delay)](Sprite_Base.md#)
-* [updateAnimationSprites ()](Sprite_Base.md#)
+* [hide ()](Sprite_Base.md#hide-)
+* [isAnimationPlaying ()](Sprite_Base.md#isanimationplaying---boolean)
+* [show ()](Sprite_Base.md#show-)
+* [startAnimation (animation, mirror, delay)](Sprite_Base.md#startanimation-animation-mirror-delay)
+* [updateAnimationSprites ()](Sprite_Base.md#updateanimationsprites-)
 
 
 ### Methods
 
 #### characterBlockX () → {[Number](Number.md)}
-
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
+ブロックの x座標を返す。
 
 
 #### characterBlockY () → {[Number](Number.md)}
-
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
+ブロックの y座標を返す。
 
 
 #### characterPatternX () → {[Number](Number.md)}
-
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
+キャラパターンの x座標を返す。
 
 
 #### characterPatternY () → {[Number](Number.md)}
-
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
+キャラパターンの y座標を返す。
 
 
 #### createHalfBodySprites ()
+半分のスプライトを生成。
 
 
 #### endBalloon ()
@@ -185,76 +150,31 @@
 | --- | --- | --- |
 | `character` | [Game_Character](Game_Character.md) |  |
 
-##### Overrides:
-[Sprite_Base.initialize ()](Sprite_Base.md#initialize-)
+Overrides:[Sprite_Base](Sprite_Base.md#initialize-)
 
 
 #### initMembers ()
+メンバ変数の初期化。
 
 
 #### isBalloonPlaying () → {boolean}
 フキダシが動作しているか。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
 
 #### isImageChanged () → {Boolean}
 画像が切り替わったか。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 
 #### isTile () → {boolean}
 タイルの上に乗っている(0 < tileID)か。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
 
 #### patternHeight () → {[Number](Number.md)}
 パターンの高さ(ピクセル)を返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
-
 
 #### patternWidth () → {[Number](Number.md)}
 パターンの幅(ピクセル)を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
 
 
 #### setCharacter (character)
@@ -288,30 +208,21 @@
 
 
 #### tilesetBitmap (tileId) → {[Bitmap](Bitmap.md)}
+指定タイルIDのタイルセット画像(ビットマップ)を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tileId` | [Number](Number.md) |  |
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a>Bitmap</a></span>
-    </dd>
-</dl>
+| `tileId` | [Number](Number.md) | タイルID |
 
 
 #### update ()
-
-##### Overrides:
-[Sprite_Base.update()](Sprite_Base.md#update-)
+Overrides:[Sprite_Base](Sprite_Base.md#update-)
 
 
 #### updateAnimation ()
+アニメーションをアップデート。
 
 
 #### updateBalloon ()
@@ -331,9 +242,11 @@
 
 
 #### updateHalfBodySprites ()
+半分のスプライトをアップデート。
 
 
 #### updateOther ()
+その他のアップデート。
 
 
 #### updatePosition ()
@@ -345,10 +258,7 @@
 
 
 #### updateVisibility ()
-表示プロパティのアップデート。
-
-##### Overrides:
-[Sprite_Base.updateVisibility ()](Sprite_Base.md#updateVisibility-)
+Overrides:[Sprite_Base](Sprite_Base.md#updateVisibility-)
 
 
  <br>

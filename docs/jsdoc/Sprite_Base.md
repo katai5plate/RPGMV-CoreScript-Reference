@@ -97,27 +97,18 @@
 #### hide ()
 スプライトを非表示。
 
+
 #### initialize ()
- オブジェクト生成時の初期化。
- 
-##### Overrides
-[PIXI.Sprite.initialize()](PIXI.Container.md#initialize-)
+Overrides:[Sprite](Sprite.md#initialize-)
 
 
 #### isAnimationPlaying () → {boolean}
 アニメーションが行われているか。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>boolean</span>
-    </dd>
-</dl>
 
 #### show ()
 スプライトを表示。
+
 
 #### startAnimation (animation, mirror, delay)
 アニメーションを開始。
@@ -132,14 +123,12 @@
 
 
 #### update ()
-フレーム毎のアップデート。
-
-##### Overrides
-[PIXI.Sprite.initialize()](PIXI.Container.md#update-)
+Overrides:[Sprite](Sprite.md#update-)
 
 
 #### updateAnimationSprites ()
 アニメーションスプライトのアップデート。
+
 
 #### updateVisibility ()
 表示プロパティのアップデート。

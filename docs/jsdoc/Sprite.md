@@ -99,13 +99,14 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 ### Methods
 
 #### _createTinter (w, h)
+指定の幅と高さで矩形枠を生成。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `w` | [Number](Number.md) |  |
-| `h` | [Number](Number.md) |  |
+| `w` | [Number](Number.md) | 幅(ピクセル) |
+| `h` | [Number](Number.md) | 高さ(ピクセル) |
 
 
 #### _executeTint (x, y, w, h)
@@ -114,61 +115,43 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `w` | [Number](Number.md) |  |
-| `h` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `w` | [Number](Number.md) | 幅(ピクセル) |
+| `h` | [Number](Number.md) | 高さ(ピクセル) |
 
 
 #### _isInBitmapRect (x, y, w, h) → {Boolean}
+指定した矩形枠内にいるか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `w` | [Number](Number.md) |  |
-| `h` | [Number](Number.md) |  |
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `w` | [Number](Number.md) | 幅(ピクセル) |
+| `h` | [Number](Number.md) | 高さ(ピクセル) |
 
 
 #### _needsTint () → {Boolean}
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### _onBitmapLoad ()
-
+ビットマップ読み込み時に呼ばれるハンドラ。
 
 #### _refresh ()
+再設定。
 
 
 #### _renderCanvas (renderer)
-
-##### Overrides
-[PIXI.Container.\_renderCanvas (renderer)](PIXI.Container.md#_rendercanvas-renderer)
+Overrides:[PIXI.Container](PIXI.Container.md#_rendercanvas-renderer)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `renderer` | Object |  |
+| `renderer` | Object | レンダラ |
 
 
 #### _renderWebGL (renderer)
@@ -178,43 +161,25 @@ WebGL でレンダリング。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `renderer` | Object |  |
+| `renderer` | Object | レンダラ |
 
 
 #### _speedUpCustomBlendModes (renderer)
-カスタムブレンドモードのスピードアップの要不要をチェック
+カスタムブレンドモードのスピードアップの要不要をチェック。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `renderer` |  | レンダラ |
+| `renderer` | Object | レンダラ |
 
 
 #### getBlendColor () → {[Array](Array.md)}
- 合成される色(r, g, b)と不透明度(a)を返す。
-
-##### Returns:
-[r, g, b, a] の配列
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a href="Array.html">Array</a></span>
-	</dd>
-</dl>
+ 合成される色(r, g, b)と不透明度(a)を[ r, g, b, a ] の配列として返す。
 
 
 #### getColorTone () → {[Array](Array.md)}
- 補正される色調(r, g, b)とグレー(gray)を返す。
-
-##### Returns:
-[r, g, b, gray] の配列
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a href="Array.html">Array</a></span>
-	</dd>
-</dl>
+ 補正される色調(r, g, b)とグレー(gray)を[ r, g, b, gray ] の配列として返す。
 
 
 #### initialize (bitmap)
@@ -224,7 +189,7 @@ WebGL でレンダリング。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `bitmap` | [Bitmap](Bitmap.md) |  |
+| `bitmap` | [Bitmap](Bitmap.md) | ビットマップ |
 
 
 #### move (x, y)
