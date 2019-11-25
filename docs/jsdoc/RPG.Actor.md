@@ -16,12 +16,12 @@
 | `classId` | [Number](Number.md) | [クラス]ID |
 | `initialLevel` | [Number](Number.md) | [初期レベル] |
 | `maxLevel` | [Number](Number.md) | [最大レベル] |
-| `characterName` | [String](String.md) | [歩行キャラ]画像ファイル名 |
+| `characterName` | [String](String.md) | [歩行キャラ]画像ファイル名(拡張子を含まない) |
 | `characterIndex` | [Number](Number.md) | 8分割された[歩行キャラ]画像のひとつを指定する番号(0 〜 7) |
-| `faceName` | [String](String.md) | [顔]画像のファイル名 |
+| `faceName` | [String](String.md) | [顔]画像のファイル名(拡張子を含まない) |
 | `faceIndex` | [Number](Number.md) | 8分割された[顔]画像のひとつを指定する番号(0 〜 7) |
-| `battlerName` | [String](String.md) | [[SV]戦闘キャラ]画像ファイル名 |
-| `equips` | [Array](Array.md).<[Number](Number.md)> | [初期装備](装備品 ID の配列) |
+| `battlerName` | [String](String.md) | [[SV]戦闘キャラ]画像ファイル名(拡張子を含まない) |
+| `equips` | [Array](Array.md).<[Number](Number.md)> | [初期装備] \(装備アイテムID の配列) |
 | `profile` | [String](String.md) | [プロフィール]の文 |
 | `traits` | [Array](Array.md).<[RPG.Trait](RPG.Trait.md)> | [特徴]の配列 |
 
