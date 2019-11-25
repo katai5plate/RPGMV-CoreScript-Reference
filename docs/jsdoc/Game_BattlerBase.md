@@ -53,7 +53,7 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 | `mmp` | [Number](Number.md) | [read-only] 最大MP |
 | `atk` | [Number](Number.md) | [read-only] 攻撃力 |
 | `def` | [Number](Number.md) | [read-only] 防御力 |
-| `mat` | [Number](Number.md) | [read-only] 魔法攻撃力 |
+| `mat` | [Number](Number.md) | [read-only] 魔法力 |
 | `mdf` | [Number](Number.md) | [read-only] 魔法防御力 |
 | `agi` | [Number](Number.md) | [read-only] 敏捷性 |
 | `luk` | [Number](Number.md) | [read-only] 運 |

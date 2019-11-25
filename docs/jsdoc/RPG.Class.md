@@ -13,7 +13,7 @@
 | `id` | [Number](Number.md) |職業ID |
 | `name` | [String](String.md) | [名前] |
 | `expParams` | [Array](Array.md).<[Number](Number.md)> | [経験値曲線]<br />配列の内容(0: 基本値, 1: 補正値, 2: 増加度A 3:増加度B) |
-| `params` | [Array](Array.md).<[Array](Array.md).<[Number](Number.md)>> | [能力値曲線]の配列の内容(0:最大HP, 1:最大MP, 2:攻撃力, 3:防御力, 4:魔法攻撃力, 5:魔法防御力 6:敏捷性 7:運)、次の配列はレベル毎の能力値 |
+| `params` | [Array](Array.md).<[Array](Array.md).<[Number](Number.md)>> | [能力値曲線]の配列の内容(0:最大HP, 1:最大MP, 2:攻撃力, 3:防御力, 4:魔法力, 5:魔法防御力 6:敏捷性 7:運)、次の配列はレベル毎の能力値 |
 | `learnings` | [Array](Array.md).<[RPG.Class.Learning](RPG.Class.Learning.md)> | [取得するスキル]に必要な条件の配列 |
 | `traits` | [Array](Array.md).<[RPG.Trait](RPG.Trait.md)> | [特徴]の配列 |
 

@@ -14,7 +14,7 @@
 | `battlerHue` | [Number](Number.md) | [色相] \(0~360). |
 | `name` | [String](String.md) | [名前] |
 | `id` | [Number](Number.md) | ID |
-| `params` | [Array](Array.md).&lt;[Number](Number.md)&gt; | 通常能力が次の順に記録された配列( 0:最大HP, 1:最大MP, 2:攻撃力, 3:防御力, 4:魔法攻撃力, 5:魔法防御力, 6:敏捷性, 7:運 )|
+| `params` | [Array](Array.md).&lt;[Number](Number.md)&gt; | 通常能力が次の順に記録された配列( 0:最大HP, 1:最大MP, 2:攻撃力, 3:防御力, 4:魔法力, 5:魔法防御力, 6:敏捷性, 7:運 )|
 | `exp` | [Number](Number.md) | [経験値] |
 | `gold` | [Number](Number.md) | [所持金] |
 | `dropItems` | [Array](Array.md).<[RPG.Enemy.DropItem](RPG.Enemy.DropItem.md)> | [ドロップアイテム]の配列 |
