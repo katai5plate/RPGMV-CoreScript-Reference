@@ -1,8 +1,8 @@
 # Class: Sprite_Actor
 
-## Sprite_Actor (battler opt)
+## Sprite_Actor (actor opt)
 
-#### new Sprite_Actor (battler opt)
+#### new Sprite_Actor (actor opt)
 
 アクター表示用のスプライトクラス。
 [Game_Actor](Game_Actor.md) を基に生成する。
@@ -11,8 +11,7 @@
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `battler` | [Game_Battler](Game_Battler.md) | &lt;optional&gt; | バトラー |
-
+| `actor` | [Game_Actor](Game_Actor.md) | &lt;optional&gt; | アクターオブジェクト |
 
 ##### Properties:
 
@@ -135,8 +134,6 @@
 
 ####  [Sprite_Battler](Sprite_Battler.md)
 
-* [damageOffsetX ()](Sprite_Battler.md#damageoffsetx---number)
-* [damageOffsetY ()](Sprite_Battler.md#damageoffsety---number)
 * [inHomePosition () ](Sprite_Battler.md#inhomeposition---boolean)
 * [isEffecting ()](Sprite_Battler.md#iseffecting---boolean)
 * [isMoving ()](Sprite_Battler.md#ismoving---boolean)
