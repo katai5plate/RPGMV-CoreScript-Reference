@@ -4,237 +4,128 @@
 
 #### new Sprite_Actor (battler opt)
 
-The sprite for displaying an actor.
+アクター表示用のスプライトクラス。
+[Game_Actor](Game_Actor.md) を基に生成する。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `battler` | [Game_Battler](Game_Battler.md) | <optional> |  |
+| `battler` | [Game_Battler](Game_Battler.md) | &lt;optional&gt; |  |
+
 
 ##### Properties:
 
-<table>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Type</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><code>MOTIONS</code></td>
-                            <td>
-                                <span>Object</span>
-                            </td>
-                            <td>[static] <h6>Properties</h6>
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Type</th>
-                                            <th>Description</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><code>walk</code></td>
-                                            <td>
-                                                <span><a>MV.Motion</a></span>
-                                            </td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><code>wait</code></td>
-                                            <td>
-                                                <span><a>MV.Motion</a></span>
-                                            </td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><code>chant</code></td>
-                                            <td>
-                                                <span><a>MV.Motion</a></span>
-                                            </td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><code>guard</code></td>
-                                            <td>
-                                                <span><a>MV.Motion</a></span>
-                                            </td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><code>damage</code></td>
-                                            <td>
-                                                <span><a>MV.Motion</a></span>
-                                            </td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><code>evade</code></td>
-                                            <td>
-                                                <span><a>MV.Motion</a></span>
-                                            </td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><code>thrust</code></td>
-                                            <td>
-                                                <span><a>MV.Motion</a></span>
-                                            </td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><code>swing</code></td>
-                                            <td>
-                                                <span><a>MV.Motion</a></span>
-                                            </td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><code>missile</code></td>
-                                            <td>
-                                                <span><a>MV.Motion</a></span>
-                                            </td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><code>skill</code></td>
-                                            <td>
-                                                <span><a>MV.Motion</a></span>
-                                            </td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><code>spell</code></td>
-                                            <td>
-                                                <span><a>MV.Motion</a></span>
-                                            </td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><code>item</code></td>
-                                            <td>
-                                                <span><a>MV.Motion</a></span>
-                                            </td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><code>escape</code></td>
-                                            <td>
-                                                <span><a>MV.Motion</a></span>
-                                            </td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><code>victory</code></td>
-                                            <td>
-                                                <span><a>MV.Motion</a></span>
-                                            </td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><code>dying</code></td>
-                                            <td>
-                                                <span><a>MV.Motion</a></span>
-                                            </td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><code>abnormal</code></td>
-                                            <td>
-                                                <span><a>MV.Motion</a></span>
-                                            </td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><code>sleep</code></td>
-                                            <td>
-                                                <span><a>MV.Motion</a></span>
-                                            </td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><code>dead</code></td>
-                                            <td>
-                                                <span><a>MV.Motion</a></span>
-                                            </td>
-                                            <td></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><code>_battlerName</code></td>
-                            <td>
-                                <span><a>String</a></span>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><code>_motion</code></td>
-                            <td>
-                                <span><a>MV.Motion</a></span>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><code>_motionCount</code></td>
-                            <td>
-                                <span><a>Number</a></span>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><code>_pattern</code></td>
-                            <td>
-                                <span><a>Number</a></span>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><code>_mainSprite</code></td>
-                            <td>
-                                <span><a>Sprite_Base</a></span>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><code>_shadowSprite</code></td>
-                            <td>
-                                <span><a>Sprite</a></span>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><code>_weaponSprite</code></td>
-                            <td>
-                                <span><a>Sprite_Weapon</a></span>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><code>_stateSprite</code></td>
-                            <td>
-                                <span><a>Sprite_StateOverlay</a></span>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><code>_actor</code></td>
-                            <td>
-                                <span><a>Game_Actor</a></span>
-                            </td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-<dl>
-</dl>
+| Name | Type | Description |
+| --- | --- | --- |
+| MOTIONS | Object | [static] [MOTIONS](Sprite_Actor.md#motions)に詳細 |
+| \_battlerName | [String](String.md) |
+| \_motion | [MV.Motion](MV.Motion.md) |
+| \_motionCount | [Number](Number.md) |
+| \_pattern | [Number](Number.md) |
+| \_mainSprite | [Sprite_Base](Sprite_Base.md) |
+| \_shadowSprite | [Sprite](Sprite.md) |
+| \_weaponSprite | [Sprite_Weapon](Sprite_Weapon.md) |
+| \_stateSprite | [Sprite_StateOverlay](Sprite_StateOverlay.md) |
+| \_actor | [Game_Actor](Game_Actor.md) |
+
+###### MOTIONS
+サイドビュー時のモーション指定用定数。
+
+| Name | Type | Description |
+| --- | --- | --- |
+| walk | [MV.Motion](MV.Motion.md) | 歩く |
+| wait | [MV.Motion](MV.Motion.md) | 待機 |
+| chant | [MV.Motion](MV.Motion.md) | 詠唱 |
+| guard | [MV.Motion](MV.Motion.md) | 防御 |
+| damage | [MV.Motion](MV.Motion.md) | ダメージ |
+| evade | [MV.Motion](MV.Motion.md) | 回避 |
+| thrust | [MV.Motion](MV.Motion.md) | 突き |
+| swing | [MV.Motion](MV.Motion.md) | 振り |
+| missile | [MV.Motion](MV.Motion.md) | 飛び道具 |
+| skill | [MV.Motion](MV.Motion.md) | スキル |
+| spell | [MV.Motion](MV.Motion.md) | 魔法 |
+| item | [MV.Motion](MV.Motion.md) | アイテム |
+| escape | [MV.Motion](MV.Motion.md) | 逃走 |
+| victory | [MV.Motion](MV.Motion.md) | 勝利 |
+| dying | [MV.Motion](MV.Motion.md)| 瀕死 |
+| abnormal | [MV.Motion](MV.Motion.md) | 状態異常 |
+| sleep | [MV.Motion](MV.Motion.md) | 睡眠 |
+| dead | [MV.Motion](MV.Motion.md) | 死亡 |
+
+### Inherited From
+
+#### [PIXI.DisplayObject](PIXI.DisplayObject.md)
+
+* [(static) mixin (source)](PIXI.DisplayObject.md#static-mixin-source)
+* [\_recursivePostUpdateTransform ()](PIXI.DisplayObject.md#_recursivepostupdatetransform-)
+* [displayObjectUpdateTransform ()](PIXI.DisplayObject.md#displayobjectupdatetransform-)
+* [getBounds (skipUpdate, rect)](PIXI.DisplayObject.md#getbounds-skipupdate-rect--pixirectangle)
+* [getGlobalPosition (point, skipUpdate)](PIXI.DisplayObject.md#getglobalposition-point-skipupdate--pixipoint)
+* [setParent (container)](PIXI.DisplayObject.md#setparent-container--pixicontainer)
+* [setTransform (x, y, scaleX, scaleY, rotation, skewX, skewY, pivotX, pivotY)](PIXI.DisplayObject.md#settransform-x-y-scalex-scaley-rotation-skewx-skewy-pivotx-pivoty--pixidisplayobject)
+* [toGlobal (position, point, skipUpdate)](PIXI.DisplayObject.md#toglobal-position-point-skipupdate--pixipoint)
+* [toLocal (position, from, point, skipUpdate)](PIXI.DisplayObject.md#tolocal-position-from-point-skipupdate--pixipoint)
+
+
+#### [PIXI.Container](PIXI.Container.md)
+
+* [addChild (child) ](PIXI.Container.md#addchild-child--pixidisplayobject)
+* [addChildAt (child, index)](PIXI.Container.md#addchildat-child-index--pixidisplayobject)
+* [calculateBounds ()](PIXI.Container.md#calculatebounds-)
+* [getChildAt (index)](PIXI.Container.md#getchildat-index--pixidisplayobject)
+* [getChildByName (name)](PIXI.Container.md#getchildbyname-name--pixidisplayobject)
+* [getChildIndex (child)](PIXI.Container.md#getchildindex-child--pixidisplayobject)
+* [onChildrenChange ()](PIXI.Container.md#onchildrenchange-)
+* [removeChild (child)](PIXI.Container.md#removechild-child--pixidisplayobject)
+* [removeChildAt (index)](PIXI.Container.md#removechildat-index--pixidisplayobject)
+* [removeChildren (beginIndex, endIndex)](PIXI.Container.md#removechildren-beginindex-endindex--arraypixidisplayobject)
+* [render (renderer)](PIXI.Container.md#render-renderer)
+* [renderAdvanced (renderer)](PIXI.Container.md#renderadvanced-renderer)
+* [setChildIndex (child, index)](PIXI.Container.md#setchildindex-child-index)
+* [sortChildren ()](PIXI.Container.md#sortchildren-)
+* [swapChildren (child, child2)](PIXI.Container.md#swapchildren-child-child2)
+* [updateTransform ()](PIXI.Container.md#updatetransform-)
+
+
+#### [PIXI.Sprite](PIXI.Sprite.md)
+
+* [(static) from (source, options)](PIXI.Sprite.md#static-from-source-options--pixisprite)
+* [\_calculateBounds ()](PIXI.Sprite.md#_calculatebounds-)
+* [\_render (renderer)](PIXI.Sprite.md#_render-renderer)
+* [calculateTrimmedVertices ()](PIXI.Sprite.md#calculatetrimmedvertices-)
+* [calculateVertices ()](PIXI.Sprite.md#calculatevertices-)
+* [containsPoint (point)](PIXI.Sprite.md#containspoint-point--boolean)
+* [destroy (options)](PIXI.Sprite.md#destroy-options)
+* [getLocalBounds (rect)](PIXI.Sprite.md#getlocalbounds-rect--pixirectangle)
+* [renderCanvas (renderer)](PIXI.Sprite.md#rendercanvas-renderer)
+
+
+#### [Sprite](Sprite.md)
+
+* [\_createTinter (w, h)](Sprite.md#_createtinter-w-h)
+* [\_executeTint (x, y, w, h)](Sprite.md#_executetint-x-y-w-h)
+* [\_isInBitmapRect (x, y, w, h)](Sprite.md#_isinbitmaprect-x-y-w-h--boolean)
+* [\_needsTint ()](Sprite.md#_needstint---boolean)
+* [\_onBitmapLoad ()](Sprite.md#_onbitmapload-)
+* [\_refresh ()](Sprite.md#_refresh-)
+* [\_renderCanvas (renderer)](Sprite.md#_rendercanvas-renderer)
+* [\_renderWebGL (renderer)](Sprite.md#_renderwebgl-renderer)
+* [\_speedUpCustomBlendModes (renderer)](Sprite.md#_speedupcustomblendmodes-renderer)
+* [getBlendColor ()](Sprite.md#getblendcolor---array)
+* [getColorTone ()](Sprite.md#getcolortone---array)
+* [move (x, y)](Sprite.md#Sprite.md#move-x-y)
+* [setBlendColor (color)](Sprite.md#setblendcolor-color)
+* [setColorTone (tone)](Sprite.md#setcolortone-tone)
+* [setFrame (x, y, width, height)](Sprite.md#setframe-x-y-width-height)
+
+#### [Sprite_Base](Sprite_Base.md)
+
+* [hide ()](Sprite_Base.md#hide-)
+* [isAnimationPlaying ()](Sprite_Base.md#isanimationplaying---boolean)
+* [show ()](Sprite_Base.md#show-)
+* [startAnimation (animation, mirror, delay)](Sprite_Base.md#startanimation-animation-mirror-delay)
+* [updateAnimationSprites ()](Sprite_Base.md#updateanimationsprites-)
 
 ### Extends
 
@@ -242,280 +133,63 @@ The sprite for displaying an actor.
 
 ### Methods
 
-#### _speedUpCustomBlendModes (renderer)
-
-checks if we need to speed up custom blendmodes
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `renderer` |  |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite#_speedUpCustomBlendModes</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
 #### createMainSprite ()
+Creates the main sprite of the sprite actor.
 
-Creates the main sprite of the sprite actor.
-<dl>
-</dl>
 
 #### createShadowSprite ()
+Creates the shadow sprite of the sprite actor.
 
-Creates the shadow sprite of the sprite actor.
-<dl>
-</dl>
 
 #### createStateSprite ()
+Creates the state sprite of the sprite actor.
 
-Creates the state sprite of the sprite actor.
-<dl>
-</dl>
 
 #### createWeaponSprite ()
+Sets the weapon sprite of the sprite actor.
 
-Sets the weapon sprite of the sprite actor.
-<dl>
-</dl>
 
 #### damageOffsetX () → {[Number](Number.md)}
+Overrides:[Sprite_Battler](Sprite_Battler.md#damageoffsetx)
 
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#damageOffsetX</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### damageOffsetY () → {[Number](Number.md)}
+Overrides:[Sprite_Battler](Sprite_Battler.md#damageoffsety)</a>
 
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#damageOffsetY</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### hide ()
-
-Hides the sprite.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#hide</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### inHomePosition () → {Boolean}
-
-Returns true if the sprite battler is in the home position.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#inHomePosition</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### initialize (battler opt)
-
- オブジェクト生成時の初期化。
+Overrides:[Sprite_Battler](Sprite_Battler.md#initialize-)
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `battler` | [Game_Actor](Game_Actor.md) | <optional> |  |
+| `battler` | [Game_Actor](Game_Actor.md) | &lt;optional&gt; |  |
 
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#initialize</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### initMembers ()
+Overrides:[Sprite_Battler](Sprite_Battler.md#initmembers-)
 
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#initMembers</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### isAnimationPlaying () → {boolean}
-
-Returns true if an animation is currently playing.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#isAnimationPlaying</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>boolean</span>
-                </dd>
-            </dl>
-
-#### isEffecting () → {Boolean}
-
-Returns false for sprite battler.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#isEffecting</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isMoving () → {boolean}
-
-Returns true if the sprite for the battler is moving.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#isMoving</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>boolean</span>
-                </dd>
-            </dl>
 
 #### motionSpeed () → {[Number](Number.md)}
+Returns the speed of the motion for the sprite actor.
 
-Returns the speed of the motion for the sprite actor.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### moveToStartPosition ()
+Moves the sprite actor to the start position.
 
-Moves the sprite actor to the start position.
-<dl>
-</dl>
 
 #### onMoveEnd ()
+Overrides:[Sprite_Battler](Sprite_Battler.md#onmoveend-)
 
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#onMoveEnd</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### refreshMotion ()
+Refreshes the motion of the sprite actor.
 
-Refreshes the motion of the sprite actor.
-<dl>
-</dl>
 
 #### retreat ()
+Has the sprite actor retreat.
 
-Has the sprite actor retreat.
-<dl>
-</dl>
 
 #### setActorHome (index)
 
@@ -525,138 +199,25 @@ The sprite for displaying an actor.
 | --- | --- | --- |
 | `index` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### setBattler (battler)
+Overrides:[Sprite_Battler](Sprite_Battler.md#setbattler-)
 
-Sets the battler of the sprite actor.
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `battler` | [Game_Actor](Game_Actor.md) |  |
-
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#setBattler</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### setHome (x, y)
-
-Sets the home position of the sprite battler to the given x and y coordinates.
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#setHome</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### setupAnimation ()
-
-Sets up animation on the sprite battler.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#setupAnimation</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### setupDamagePopup ()
-
-Sets up damage popup on the sprite battler.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#setupDamagePopup</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### setupMotion ()
+Sets up motion on the sprite actor.
 
-Sets up motion on the sprite actor.
-<dl>
-</dl>
 
 #### setupWeaponAnimation ()
+Sets up weapon animation on the sprite actor.
 
-Sets up weapon animation on the sprite actor.
-<dl>
-</dl>
-
-#### show ()
-
-Shows the sprite.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#show</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### startAnimation (animation, mirror, delay)
-
-Starts a new animation on the current sprite by assigning a new Sprite_Animation object to the sprite's parent.
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `animation` | [RPG.Animation](RPG.Animation.md) |  |
-| `mirror` | Boolean |  |
-| `delay` | [Number](Number.md) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#startAnimation</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### startEntryMotion ()
+Starts the entry motion of the sprite actor.
 
-Starts the entry motion of the sprite actor.
-<dl>
-</dl>
 
 #### startMotion (motionType)
-
-Starts the motion given the specified motion type.
+Starts the motion given the specified motion type.
 
 ##### Parameters:
 
@@ -664,210 +225,48 @@ The sprite for displaying an actor.
 | --- | --- | --- |
 | `motionType` | [String](String.md) |  |
 
-<dl>
-</dl>
-
-#### startMove (x, y, duration)
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `duration` | [Number](Number.md) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#startMove</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### stepBack ()
+Has the sprite actor step back.
 
-Has the sprite actor step back.
-<dl>
-</dl>
 
 #### stepForward ()
+Has the sprite actor step forward.
 
-Has the sprite actor step forward.
-<dl>
-</dl>
 
 #### update ()
+Overrides:[Sprite_Battler](Sprite_Battler.md#update-)
 
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#update</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### updateAnimation ()
-
-Updates the sprite battler animation.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#updateAnimation</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### updateAnimationSprites ()
-
-Updates the animation sprites, cloning them; if the sprite is playing, pushes the sprites into animation sprites, otherwise the sprite is removed.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#updateAnimationSprites</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### updateBitmap ()
+Overrides:[Sprite_Battler](Sprite_Battler.md#updateBitmap-)
 
-Updates the sprite actor's movement.
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#updateBitmap</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### updateDamagePopup ()
-
-Updates the damage pop up for the sprite battler.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#updateDamagePopup</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### updateFrame ()
+Overrides:[Sprite_Battler](Sprite_Battler.md#updateFrame-)
 
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#updateFrame</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### updateMain ()
+Overrides:[Sprite_Battler](Sprite_Battler.md#updateMain-)
 
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#updateMain</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### updateMotion ()
+Updates the sprite actor's motion.
 
-Updates the sprite actor's motion.
-<dl>
-</dl>
 
 #### updateMotionCount ()
 
-<dl>
-</dl>
 
 #### updateMove ()
+Overrides:[Sprite_Battler](Sprite_Battler.md#updateMove-)
 
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#updateMove</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### updatePosition ()
-
-Updates the position of the sprite battler.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#updatePosition</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### updateSelectionEffect ()
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#updateSelectionEffect</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### updateShadow ()
 
-<dl>
-</dl>
 
 #### updateTargetPosition ()
 
-<dl>
-</dl>
 
-#### updateVisibility ()
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#updateVisibility</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
