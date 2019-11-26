@@ -11,7 +11,7 @@
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `battler` | [Game_Battler](Game_Battler.md) | &lt;optional&gt; |  |
+| `battler` | [Game_Battler](Game_Battler.md) | &lt;optional&gt; | バトラー |
 
 
 ##### Properties:
@@ -19,18 +19,19 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | MOTIONS | Object | [static] [MOTIONS](Sprite_Actor.md#motions)に詳細 |
-| \_battlerName | [String](String.md) |
-| \_motion | [MV.Motion](MV.Motion.md) |
-| \_motionCount | [Number](Number.md) |
-| \_pattern | [Number](Number.md) |
-| \_mainSprite | [Sprite_Base](Sprite_Base.md) |
-| \_shadowSprite | [Sprite](Sprite.md) |
-| \_weaponSprite | [Sprite_Weapon](Sprite_Weapon.md) |
-| \_stateSprite | [Sprite_StateOverlay](Sprite_StateOverlay.md) |
-| \_actor | [Game_Actor](Game_Actor.md) |
+| \_battlerName | [String](String.md) | SVの画像ファイル名(拡張子を含まない)
+| \_motion | [MV.Motion](MV.Motion.md) | 現在のモーション |
+| \_motionCount | [Number](Number.md) | モーションのカウンタ |
+| \_pattern | [Number](Number.md) | モーションのパターン |
+| \_mainSprite | [Sprite_Base](Sprite_Base.md) | 本体のスプライト |
+| \_shadowSprite | [Sprite](Sprite.md) | 影のスプライト |
+| \_weaponSprite | [Sprite_Weapon](Sprite_Weapon.md) | 武器のスプライト |
+| \_stateSprite | [Sprite_StateOverlay](Sprite_StateOverlay.md) | ステートのスプライト |
+| \_actor | [Game_Actor](Game_Actor.md) | 生成基のアクター |
 
 ###### MOTIONS
-サイドビュー時のモーション指定用定数。
+サイドビュー時のモーション指定用の定数。<br />
+例えば <code>Sprite_Actor.MOTIONS.walk</code> といった形で使用する。
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -134,19 +135,19 @@
 ### Methods
 
 #### createMainSprite ()
-Creates the main sprite of the sprite actor.
+本体のスプライトを生成。
 
 
 #### createShadowSprite ()
-Creates the shadow sprite of the sprite actor.
+影のスプライトを生成。
 
 
 #### createStateSprite ()
-Creates the state sprite of the sprite actor.
+ステートのスプライトを生成。
 
 
 #### createWeaponSprite ()
-Sets the weapon sprite of the sprite actor.
+武器のスプライトを生成。
 
 
 #### damageOffsetX () → {[Number](Number.md)}
@@ -164,7 +165,7 @@ Overrides:[Sprite_Battler](Sprite_Battler.md#initialize-)
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `battler` | [Game_Actor](Game_Actor.md) | &lt;optional&gt; |  |
+| `battler` | [Game_Actor](Game_Actor.md) | &lt;optional&gt; | バトラー |
 
 
 #### initMembers ()
@@ -172,11 +173,11 @@ Overrides:[Sprite_Battler](Sprite_Battler.md#initmembers-)
 
 
 #### motionSpeed () → {[Number](Number.md)}
-Returns the speed of the motion for the sprite actor.
+モーションの速度を返す。
 
 
 #### moveToStartPosition ()
-Moves the sprite actor to the start position.
+開始点に移動。
 
 
 #### onMoveEnd ()
@@ -184,20 +185,21 @@ Overrides:[Sprite_Battler](Sprite_Battler.md#onmoveend-)
 
 
 #### refreshMotion ()
-Refreshes the motion of the sprite actor.
+モーションを再設定。
 
 
 #### retreat ()
-Has the sprite actor retreat.
+モーションの再開。
 
 
 #### setActorHome (index)
+指定隊列番号から基点を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
+| `index` | [Number](Number.md) | 隊列番号 |
 
 
 #### setBattler (battler)
@@ -205,33 +207,33 @@ Overrides:[Sprite_Battler](Sprite_Battler.md#setbattler-)
 
 
 #### setupMotion ()
-Sets up motion on the sprite actor.
+モーションの準備。
 
 
 #### setupWeaponAnimation ()
-Sets up weapon animation on the sprite actor.
+武器アニメの準備。
 
 
 #### startEntryMotion ()
-Starts the entry motion of the sprite actor.
+入場モーションの準備。
 
 
 #### startMotion (motionType)
-Starts the motion given the specified motion type.
+指定モーションを開始。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `motionType` | [String](String.md) |  |
+| `motionType` | [String](String.md) | モーションタイプ([MOTIONS](Sprite_Actor.md#motions)のNameを文字列指定) |
 
 
 #### stepBack ()
-Has the sprite actor step back.
+後退しているか。
 
 
 #### stepForward ()
-Has the sprite actor step forward.
+前進しているか。
 
 
 #### update ()
@@ -251,10 +253,11 @@ Overrides:[Sprite_Battler](Sprite_Battler.md#updateMain-)
 
 
 #### updateMotion ()
-Updates the sprite actor's motion.
+モーションのアップデート。
 
 
 #### updateMotionCount ()
+モーションカウントのアップデート。
 
 
 #### updateMove ()
@@ -262,9 +265,11 @@ Overrides:[Sprite_Battler](Sprite_Battler.md#updateMove-)
 
 
 #### updateShadow ()
+影のアップデート。
 
 
 #### updateTargetPosition ()
+目標位置のアップデート。
 
 
  <br>
