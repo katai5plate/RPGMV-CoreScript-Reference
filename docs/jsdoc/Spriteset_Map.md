@@ -122,10 +122,10 @@
 
 
 #### createLowerLayer ()
+Overrides:[Spriteset_Base](Spriteset_Base.md#createLowerLayer-)
+
  基本スプライトに加え、[遠景]、[タイルマップ]、キャラクタ、影、タッチ位置表示、天候を含む下レイヤを生成。
 
-##### Overrides
-[Spriteset_Base.createLowerLayer ()](Spriteset_Base.md#createLowerLayer-)
 
 
 #### createParallax ()
@@ -149,10 +149,7 @@
 
 
 #### initialize ()
- オブジェクト生成時の初期化。
- 
-##### Overrides
-[Spriteset.initialize()](Spriteset.md#initialize-)
+Overrides:[Spriteset](Spriteset.md#initialize-)
 
 
 #### loadTileset ()
@@ -160,10 +157,7 @@
 
 
 #### update ()
-フレーム毎のアップデート。
-
-##### Overrides
-[Spriteset.initialize()](Spriteset.md#update-)
+Overrides:[Spriteset.](Spriteset.md#update-)
 
 
 #### updateParallax ()

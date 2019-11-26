@@ -14,13 +14,13 @@
 | --- | --- | --- |
 | `_tone` | [Array](Array.md).&lt;[Number](Number.md)&gt; | 色調 |
 | `_baseSprite` | [Sprite](Sprite.md) | 基本スプライト |
-| `_blackScreen` | [ScreenSprite](ScreenSprite.md) |  |
-| `_toneFilter` | [ToneFilter](ToneFilter.md) |  |
-| `_toneSprite` | [ToneSprite](ToneSprite.md) |  |
-| `_pictureContainer` | [Sprite](Sprite.md) |  |
-| `_timerSprite` | [Sprite_Timer](Sprite_Timer.md) |  |
-| `_flashSprite` | [ScreenSprite](ScreenSprite.md) |  |
-| `_fadeSprite` | [ScreenSprite](ScreenSprite.md) |  |
+| `_blackScreen` | [ScreenSprite](ScreenSprite.md) | 黒背景 |
+| `_toneFilter` | [ToneFilter](ToneFilter.md) | トーンフィルタ |
+| `_toneSprite` | [ToneSprite](ToneSprite.md) | トーンスプライト |
+| `_pictureContainer` | [Sprite](Sprite.md) | ピクチャコンテナ |
+| `_timerSprite` | [Sprite_Timer](Sprite_Timer.md) | タイマースプライト |
+| `_flashSprite` | [ScreenSprite](ScreenSprite.md) | フラッシュスプライト |
+| `_fadeSprite` | [ScreenSprite](ScreenSprite.md) | フェードスプライト |
 
 
 ### Extends
@@ -134,17 +134,11 @@ WebGL 色調変更を生成。
 
 
 #### initialize ()
- オブジェクト生成時の初期化。
- 
-##### Overrides
-[Sprite.initialize()](Sprite.md#initialize-)
+Overrides:[Sprite](Sprite.md#initialize-)
 
 
 #### update ()
-フレーム毎のアップデート。
-
-##### Overrides
-[Sprite.update()](Sprite.md#update-)
+Overrides:[Sprite](Sprite.md#update-)
 
 
 #### updateCanvasToneChanger ()
