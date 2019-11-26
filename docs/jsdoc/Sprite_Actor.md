@@ -54,6 +54,11 @@
 | sleep | [MV.Motion](MV.Motion.md) | 睡眠 |
 | dead | [MV.Motion](MV.Motion.md) | 死亡 |
 
+### Extends
+
+* [Sprite_Battler](Sprite_Battler.md)
+
+
 ### Inherited From
 
 #### [PIXI.DisplayObject](PIXI.DisplayObject.md)
@@ -128,9 +133,24 @@
 * [startAnimation (animation, mirror, delay)](Sprite_Base.md#startanimation-animation-mirror-delay)
 * [updateAnimationSprites ()](Sprite_Base.md#updateanimationsprites-)
 
-### Extends
+####  [Sprite_Battler](Sprite_Battler.md)
 
-* [Sprite_Battler](Sprite_Battler.md)
+* [damageOffsetX ()](Sprite_Battler.md#damageoffsetx---number)
+* [damageOffsetY ()](Sprite_Battler.md#damageoffsety---number)
+* [inHomePosition () ](Sprite_Battler.md#inhomeposition---boolean)
+* [isEffecting ()](Sprite_Battler.md#iseffecting---boolean)
+* [isMoving ()](Sprite_Battler.md#ismoving---boolean)
+* [setHome (x, y)](Sprite_Battler.md#sethome-x-y)
+* [setupAnimation ()](Sprite_Battler.md#setupanimation-)
+* [setupDamagePopup ()](Sprite_Battler.md#setupdamagepopup-)
+* [startMove (x, y, duration)](Sprite_Battler.md#startmove-x-y-duration)
+* [updateAnimation ()](Sprite_Battler.md#updateanimation-)
+* [updateDamagePopup ()](Sprite_Battler.md#updatedamagepopup-)
+* [updateMove ()](Sprite_Battler.md#updatemove-)
+* [updatePosition ()](Sprite_Battler.md#updateposition-)
+* [updateSelectionEffect ()](Sprite_Battler.md#updateselectioneffect-)
+* [updateVisibility ()](Sprite_Battler.md#updatevisibility-)
+
 
 ### Methods
 
