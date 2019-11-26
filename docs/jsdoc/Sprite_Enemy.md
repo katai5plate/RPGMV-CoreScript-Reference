@@ -1,144 +1,139 @@
 # Class: Sprite_Enemy
 
-## Sprite_Enemy ()
+## Sprite_Enemy (enemy opt)
 
-#### new Sprite_Enemy ()
+#### new Sprite_Enemy (enemy opt)
 
-The sprite for displaying an enemy.
+敵表示用のスプライトクラス。 [Game_Enemy](Game_Enemy.md) を基に生成する。
+
+##### Parameters:
+
+| Name | Type | Attributes | Description |
+| --- | --- | --- | --- |
+| `enemy` | [Game_Enemy](Game_Enemy.md) | &lt;optional&gt; | 敵(エネミー)オブジェクト |
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `battler` | [Game_Enemy](Game_Enemy.md) |  |
-| `_enemy` | [Game_Enemy](Game_Enemy.md) |  |
-| `_appeared` | Boolean |  |
-| `_battlerName` | [String](String.md) |  |
-| `_battlerHue` | [Number](Number.md) |  |
-| `_effectType` | [String](String.md) |  |
-| `_effectDuration` | [Number](Number.md) |  |
-| `_shake` | [Number](Number.md) |  |
-| `_stateIconSprite` | [Sprite_StateIcon](Sprite_StateIcon.md) |  |
+| `_enemy` | [Game_Enemy](Game_Enemy.md) | 敵のデータ |
+| `_appeared` | Boolean | 出現しているか |
+| `_battlerName` | [String](String.md) | 画像ファイル名(拡張子を除く) |
+| `_battlerHue` | [Number](Number.md) | 色相(0〜360) |
+| `_effectType` | [String](String.md) | エフェクトタイプ  |
+| `_effectDuration` | [Number](Number.md) | エフェクト継続時間 |
+| `_shake` | [Number](Number.md) | 揺れているか |
+| `_stateIconSprite` | [Sprite_StateIcon](Sprite_StateIcon.md) | ステートアイコン |
 
-<dl>
-</dl>
 
 ### Extends
 
 * [Sprite_Battler](Sprite_Battler.md)
 
+
+### Inherited From
+
+#### [PIXI.DisplayObject](PIXI.DisplayObject.md)
+
+* [(static) mixin (source)](PIXI.DisplayObject.md#static-mixin-source)
+* [\_recursivePostUpdateTransform ()](PIXI.DisplayObject.md#_recursivepostupdatetransform-)
+* [displayObjectUpdateTransform ()](PIXI.DisplayObject.md#displayobjectupdatetransform-)
+* [getBounds (skipUpdate, rect)](PIXI.DisplayObject.md#getbounds-skipupdate-rect--pixirectangle)
+* [getGlobalPosition (point, skipUpdate)](PIXI.DisplayObject.md#getglobalposition-point-skipupdate--pixipoint)
+* [setParent (container)](PIXI.DisplayObject.md#setparent-container--pixicontainer)
+* [setTransform (x, y, scaleX, scaleY, rotation, skewX, skewY, pivotX, pivotY)](PIXI.DisplayObject.md#settransform-x-y-scalex-scaley-rotation-skewx-skewy-pivotx-pivoty--pixidisplayobject)
+* [toGlobal (position, point, skipUpdate)](PIXI.DisplayObject.md#toglobal-position-point-skipupdate--pixipoint)
+* [toLocal (position, from, point, skipUpdate)](PIXI.DisplayObject.md#tolocal-position-from-point-skipupdate--pixipoint)
+
+
+#### [PIXI.Container](PIXI.Container.md)
+
+* [addChild (child) ](PIXI.Container.md#addchild-child--pixidisplayobject)
+* [addChildAt (child, index)](PIXI.Container.md#addchildat-child-index--pixidisplayobject)
+* [calculateBounds ()](PIXI.Container.md#calculatebounds-)
+* [getChildAt (index)](PIXI.Container.md#getchildat-index--pixidisplayobject)
+* [getChildByName (name)](PIXI.Container.md#getchildbyname-name--pixidisplayobject)
+* [getChildIndex (child)](PIXI.Container.md#getchildindex-child--pixidisplayobject)
+* [onChildrenChange ()](PIXI.Container.md#onchildrenchange-)
+* [removeChild (child)](PIXI.Container.md#removechild-child--pixidisplayobject)
+* [removeChildAt (index)](PIXI.Container.md#removechildat-index--pixidisplayobject)
+* [removeChildren (beginIndex, endIndex)](PIXI.Container.md#removechildren-beginindex-endindex--arraypixidisplayobject)
+* [render (renderer)](PIXI.Container.md#render-renderer)
+* [renderAdvanced (renderer)](PIXI.Container.md#renderadvanced-renderer)
+* [setChildIndex (child, index)](PIXI.Container.md#setchildindex-child-index)
+* [sortChildren ()](PIXI.Container.md#sortchildren-)
+* [swapChildren (child, child2)](PIXI.Container.md#swapchildren-child-child2)
+* [updateTransform ()](PIXI.Container.md#updatetransform-)
+
+
+#### [PIXI.Sprite](PIXI.Sprite.md)
+
+* [(static) from (source, options)](PIXI.Sprite.md#static-from-source-options--pixisprite)
+* [\_calculateBounds ()](PIXI.Sprite.md#_calculatebounds-)
+* [\_render (renderer)](PIXI.Sprite.md#_render-renderer)
+* [calculateTrimmedVertices ()](PIXI.Sprite.md#calculatetrimmedvertices-)
+* [calculateVertices ()](PIXI.Sprite.md#calculatevertices-)
+* [containsPoint (point)](PIXI.Sprite.md#containspoint-point--boolean)
+* [destroy (options)](PIXI.Sprite.md#destroy-options)
+* [getLocalBounds (rect)](PIXI.Sprite.md#getlocalbounds-rect--pixirectangle)
+* [renderCanvas (renderer)](PIXI.Sprite.md#rendercanvas-renderer)
+
+
+#### [Sprite](Sprite.md)
+
+* [\_createTinter (w, h)](Sprite.md#_createtinter-w-h)
+* [\_executeTint (x, y, w, h)](Sprite.md#_executetint-x-y-w-h)
+* [\_isInBitmapRect (x, y, w, h)](Sprite.md#_isinbitmaprect-x-y-w-h--boolean)
+* [\_needsTint ()](Sprite.md#_needstint---boolean)
+* [\_onBitmapLoad ()](Sprite.md#_onbitmapload-)
+* [\_refresh ()](Sprite.md#_refresh-)
+* [\_renderCanvas (renderer)](Sprite.md#_rendercanvas-renderer)
+* [\_renderWebGL (renderer)](Sprite.md#_renderwebgl-renderer)
+* [\_speedUpCustomBlendModes (renderer)](Sprite.md#_speedupcustomblendmodes-renderer)
+* [getBlendColor ()](Sprite.md#getblendcolor---array)
+* [getColorTone ()](Sprite.md#getcolortone---array)
+* [move (x, y)](Sprite.md#Sprite.md#move-x-y)
+* [setBlendColor (color)](Sprite.md#setblendcolor-color)
+* [setColorTone (tone)](Sprite.md#setcolortone-tone)
+* [setFrame (x, y, width, height)](Sprite.md#setframe-x-y-width-height)
+
+#### [Sprite_Base](Sprite_Base.md)
+
+* [hide ()](Sprite_Base.md#hide-)
+* [isAnimationPlaying ()](Sprite_Base.md#isanimationplaying---boolean)
+* [show ()](Sprite_Base.md#show-)
+* [startAnimation (animation, mirror, delay)](Sprite_Base.md#startanimation-animation-mirror-delay)
+* [updateAnimationSprites ()](Sprite_Base.md#updateanimationsprites-)
+
+####  [Sprite_Battler](Sprite_Battler.md)
+
+* [inHomePosition () ](Sprite_Battler.md#inhomeposition---boolean)
+* [isMoving ()](Sprite_Battler.md#ismoving---boolean)
+* [onMoveEnd ()](Sprite_Battler.md#onmoveend-)
+* [setHome (x, y)](Sprite_Battler.md#sethome-x-y)
+* [setupAnimation ()](Sprite_Battler.md#setupanimation-)
+* [setupDamagePopup ()](Sprite_Battler.md#setupdamagepopup-)
+* [startMove (x, y, duration)](Sprite_Battler.md#startmove-x-y-duration)
+* [updateAnimation ()](Sprite_Battler.md#updateanimation-)
+* [updateDamagePopup ()](Sprite_Battler.md#updatedamagepopup-)
+* [updateMain ()](Sprite_Battler.md#updatemain-)
+* [updateMove ()](Sprite_Battler.md#updatemove-)
+* [updateSelectionEffect ()](Sprite_Battler.md#updateselectioneffect-)
+* [updateVisibility ()](Sprite_Battler.md#updatevisibility-)
+
 ### Methods
 
-#### _speedUpCustomBlendModes (renderer)
-
-checks if we need to speed up custom blendmodes
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `renderer` |  |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite#_speedUpCustomBlendModes</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### createStateIconSprite ()
 
-<dl>
-</dl>
-
 #### damageOffsetX () → {[Number](Number.md)}
-
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#damageOffsetX</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+Overrides:[Sprite_Battler](Sprite_Battler.md#damageoffsetx---number)
 
 #### damageOffsetY () → {[Number](Number.md)}
-
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#damageOffsetY</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### hide ()
-
-Hides the sprite.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#hide</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### inHomePosition () → {Boolean}
-
-Returns true if the sprite battler is in the home position.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#inHomePosition</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+Overrides:[Sprite_Battler](Sprite_Battler.md#damageoffsety---number)
 
 #### initialize (battler)
-
- オブジェクト生成時の初期化。
+Overrides:[Sprite_Battler](Sprite_Battler.md#initialize-)
 
 ##### Parameters:
 
@@ -146,522 +141,134 @@ The sprite for displaying an enemy.
 | --- | --- | --- |
 | `battler` | [Game_Enemy](Game_Enemy.md) |  |
 
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#initialize</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### initMembers ()
+Overrides:[Sprite_Battler](Sprite_Battler.md#initmembers-)
 
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#initMembers</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### initVisibility ()
+表示状態を初期化。
 
-<dl>
-</dl>
-
-#### isAnimationPlaying () → {boolean}
-
-Returns true if an animation is currently playing.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#isAnimationPlaying</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>boolean</span>
-                </dd>
-            </dl>
 
 #### isEffecting () → {Boolean}
+Overrides:[Sprite_Battler](Sprite_Battler.md#iseffecting---boolean)
 
-Returns true if the effect type on the sprite enemy is not null.
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#isEffecting</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isMoving () → {boolean}
-
-Returns true if the sprite for the battler is moving.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#isMoving</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>boolean</span>
-                </dd>
-            </dl>
 
 #### loadBitmap (name, hue)
+指定したビットマップ画像を読み込む。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.md) |  |
-| `hue` | [Number](Number.md) |  |
+| `name` | [String](String.md) | ファイル名(拡張子を含まない) |
+| `hue` | [Number](Number.md) | 色相(0〜360) |
 
-<dl>
-</dl>
-
-#### onMoveEnd ()
-
-Handler for when movement has ended.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#onMoveEnd</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### revertToNormal ()
+状態を通常に戻す。
 
-Revers the sprite enemy to a normal state.
-<dl>
-</dl>
 
 #### setBattler (battler)
+Overrides:[Sprite_Battler](Sprite_Battler.md#setbattler-battler)
 
-Sets the battler to an instance of game enemy.
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `battler` | [Game_Enemy](Game_Enemy.md) | Instance of game enemy. |
-
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#setBattler</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### setHome (x, y)
-
-Sets the home position of the sprite battler to the given x and y coordinates.
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#setHome</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### setupAnimation ()
-
-Sets up animation on the sprite battler.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#setupAnimation</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### setupDamagePopup ()
-
-Sets up damage popup on the sprite battler.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#setupDamagePopup</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### setupEffect ()
+エフェクトの準備。
 
-<dl>
-</dl>
-
-#### show ()
-
-Shows the sprite.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#show</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### startAnimation (animation, mirror, delay)
-
-Starts a new animation on the current sprite by assigning a new Sprite_Animation object to the sprite's parent.
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `animation` | [RPG.Animation](RPG.Animation.md) |  |
-| `mirror` | Boolean |  |
-| `delay` | [Number](Number.md) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#startAnimation</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### startAppear ()
+出現の開始。
 
-Starts the appearinig effect on the sprite enemy.
-<dl>
-</dl>
 
 #### startBlink ()
+点滅の開始。
 
-Starts the blink effect on the sprite enemy.
-<dl>
-</dl>
 
 #### startBossCollapse ()
+[消滅エフェクト - ボス]開始。
 
-Starts the boss collapse effect of the sprite enemy.
-<dl>
-</dl>
 
 #### startCollapse ()
+[消滅エフェクト - 通常]開始。
 
-Starts the collapse effect of the sprite enemy.
-<dl>
-</dl>
 
 #### startDisappear ()
+消滅の開始。
 
-Starts the disappearing effect on the sprite enemy.
-<dl>
-</dl>
 
 #### startEffect (effectType)
+指定したエフェクトの開始。
+
+エフェクトタイプは 'appear', 'disappear', 'whiten', 'blink', 'collapse':, 'bossCollapse', 'instantCollapse'
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `effectType` | [String](String.md) |  |
+| `effectType` | [String](String.md) | エフェクトタイプ |
 
-<dl>
-</dl>
 
 #### startInstantCollapse ()
+[消滅エフェクト - 瞬間消去]開始。
 
-Starts the instant collapse effect of the sprite enemy.
-<dl>
-</dl>
-
-#### startMove (x, y, duration)
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `duration` | [Number](Number.md) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#startMove</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### startWhiten ()
+白く変化開始。
 
-Starts the whiten effect on the sprite enemy.
-<dl>
-</dl>
 
 #### update ()
+Overrides:[Sprite_Battler](Sprite_Battler.md#update-)
 
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#update</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### updateAnimation ()
-
-Updates the sprite battler animation.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#updateAnimation</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### updateAnimationSprites ()
-
-Updates the animation sprites, cloning them; if the sprite is playing, pushes the sprites into animation sprites, otherwise the sprite is removed.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#updateAnimationSprites</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### updateAppear ()
+出現エフェクトをアップデート。
 
-Updates the appear effect on the sprite enemy.
-<dl>
-</dl>
 
 #### updateBitmap ()
+Overrides:[Sprite_Battler](Sprite_Battler.md#updatebitmap-)
 
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#updateBitmap</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### updateBlink ()
+点滅をアップデート。
 
-Updates the blink effect on the sprite enemy.
-<dl>
-</dl>
 
 #### updateBossCollapse ()
+[消滅エフェクト - ボス]をアップデート。
 
-Updates the boss collapse effect.
-<dl>
-</dl>
 
 #### updateCollapse ()
+[消滅エフェクト - 通常]をアップデート。
 
-Updates the collapse effect.
-<dl>
-</dl>
-
-#### updateDamagePopup ()
-
-Updates the damage pop up for the sprite battler.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#updateDamagePopup</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### updateDisappear ()
+消滅エフェクトをアップデート。
 
-<dl>
-</dl>
 
 #### updateEffect ()
+エフェクトをアップデート。
 
-<dl>
-</dl>
 
 #### updateFrame ()
+Overrides:[Sprite_Battler](Sprite_Battler.md#updateframe-)
 
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#updateFrame</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### updateInstantCollapse ()
+[消滅エフェクト - 瞬間消去]をアップデート。
 
-Updates the instant collapse effect.
-<dl>
-</dl>
-
-#### updateMain ()
-
-Updates the main loop of the sprite battler.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#updateMain</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### updateMove ()
-
-Updates movement on the sprite battler.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#updateMove</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### updatePosition ()
+Overrides:[updatePosition ()](Sprite_Battler.md#updateposition-)
 
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#updatePosition</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### updateSelectionEffect ()
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#updateSelectionEffect</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### updateStateSprite ()
+ステートスプライトをアップデート。
 
-Updates the state sprite on the sprite enemy.
-<dl>
-</dl>
-
-#### updateVisibility ()
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Battler#updateVisibility</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### updateWhiten ()
+白エフェクトをアップデート。
 
-Updates the whiten effect on the sprite enemy.
-<dl>
-</dl>
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
