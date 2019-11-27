@@ -3,7 +3,8 @@
 ## Spriteset_Battle ()
 
 #### new Spriteset_Battle ()
-戦闘シーン用のスプライトセット。
+戦闘シーン用のスプライトセット。背景・敵・アクターを含む。
+
 [Scene_Battle](Scene_Battle.md) オブジェクトで管理される。
 
 ##### Properties:
@@ -11,12 +12,12 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `_battlebackLocated` | Boolean |  |
-| `_backgroundSprite` | [Sprite](Sprite.md) |  |
-| `_battleField` | [Sprite](Sprite.md) |  |
-| `_back1Sprite` | [TilingSprite](TilingSprite.md) |  |
-| `_back2Sprite` | [TilingSprite](TilingSprite.md) |  |
-| `_enemySprites` | [Array](Array.md).<[Sprite_Enemy](Sprite_Enemy.md)> |  |
-| `_actorSprites` | [Array](Array.md).<[Sprite_Actor](Sprite_Actor.md)> |  |
+| `_backgroundSprite` | [Sprite](Sprite.md) | 背景スプライト |
+| `_battleField` | [Sprite](Sprite.md) | 戦闘フィールド |
+| `_back1Sprite` | [TilingSprite](TilingSprite.md) | 背景1スプライト |
+| `_back2Sprite` | [TilingSprite](TilingSprite.md) | 背景2スプライト |
+| `_enemySprites` | [Array](Array.md).&lt;[Sprite_Enemy](Sprite_Enemy.md)&gt; | 敵スプライトの配列 |
+| `_actorSprites` | [Array](Array.md).&lt;[Sprite_Actor](Sprite_Actor.md)&gt; | アクタースプライトの配列 |
 
 
 ### Extends
@@ -110,304 +111,134 @@
 ### Methods
 
 #### autotileType (z) → {[Number](Number.md)}
+戦闘発生地点の指定レイヤーのオートタイルタイプ(地形タイプ)を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `z` | [Number](Number.md) |  |
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.md">Number</a></span>
-    </dd>
-</dl>
+| `z` | [Number](Number.md) | レイヤー |
 
 
-#### battleback1Bitmap () → {[Bitmap](Bitmap.md)}Returns battleb ack 2 of the battle spriteset.
 
-##### Returns:Instance of the Bitmap class.
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a>Bitmap</a></span>
-    </dd>
-</dl>
+#### battleback1Bitmap () → {[Bitmap](Bitmap.md)}背景1のビットマップを返す。
 
 
 #### battleback1Name () → {[String](String.md)}
+背景1のファイル名を返す。
 
 
-##### Returns:Name of battleback 1 bitmap.
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.md">String</a></span>
-    </dd>
-</dl>
-
-
-#### battleback2Bitmap () → {[Bitmap](Bitmap.md)}Returns battleback 2 of the battle spriteset.
-
-##### Returns:
-Instance of the Bitmap class.
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a>Bitmap</a></span>
-    </dd>
-</dl>
+#### battleback2Bitmap () → {[Bitmap](Bitmap.md)}背景2のビットマップを返す。
 
 
 #### battleback2Name () → {[String](String.md)}
+背景2のファイル名を返す。
 
 
-##### Returns:Name of battleback 2 bitmap.
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.md">String</a></span>
-    </dd>
-</dl>
-
-
-#### battlerSprites () → {[Array](Array.md).<[Sprite_Battler](Sprite_Battler.md)>}Returns all battler sprites on the battle spriteset.
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Array.md">Array</a>.&lt;<a href="Sprite_Battler.md">Sprite_Battler</a>&gt;</span>
-    </dd>
-</dl>
+#### battlerSprites () → {[Array](Array.md).<[Sprite_Battler](Sprite_Battler.md)>}バトラー(アクター + 敵)の配列を返す。
 
 
 #### compareEnemySprite (a, b) → {[Number](Number.md)}
+敵スプライトを比較し、その差を返す。
+重ね合わせのソートで使われるコールバック関数。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `a` | [Sprite_Enemy](Sprite_Enemy.md) |  |
-| `b` | [Sprite_Enemy](Sprite_Enemy.md) |  |
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.md">Number</a></span>
-    </dd>
-</dl>
+| `a` | [Sprite_Enemy](Sprite_Enemy.md) | 敵スプライトA |
+| `b` | [Sprite_Enemy](Sprite_Enemy.md) | 敵スプライトB |
 
 
-#### createActors ()Creates sprite actors for the battle spriteset.
+#### createActors ()アクタースプライトを生成。
 
 
-#### createBackground ()Creates the background of the battle spriteset.
+#### createBackground ()背景を生成。
 
 
-#### createBattleback ()Creates the battleback of the battle spriteset.
+#### createBattleback ()背景(奥)を生成。
 
 
-#### createBattleField ()Creates the battlefield of the battle spriteset.
+#### createBattleField ()背景(地面)を生成。
 
 
-#### createEnemies ()Creates sprite enemies for the battle spriteset.
+#### createEnemies ()敵スプライトを生成。
 
 
 #### createLowerLayer ()
-下層レイヤーを生成。
-
-##### Overrides
-[Spriteset_Base.createLowerLayer ()](Spriteset_Base.md#createLowerLayer-)
+Overrides;[Spriteset_Base](Spriteset_Base.md#createLowerLayer-)
 
 
 #### defaultBattleback1Name () → {[String](String.md)}
-
-
-##### Returns:Name of the default battleback 1 name.
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.md">String</a></span>
-    </dd>
-</dl>
+規定値の背景1のファイル名を返す。
 
 
 #### defaultBattleback2Name () → {[String](String.md)}
+規定値の背景2のファイル名を返す。
 
 
-##### Returns:Name of the default battleback 2 name.
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.md">String</a></span>
-    </dd>
-</dl>
+#### isAnimationPlaying () → {Boolean}アニメーション再生中か。
 
 
-#### isAnimationPlaying () → {Boolean}Returns true if animation is playing on the battle spriteset.
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
+#### isAnyoneMoving () → {Boolean}アクターや敵が動作中か。
 
 
-#### isAnyoneMoving () → {Boolean}Returns true if any sprite actor or enemy is moving.
-
-##### Returns:Representing whether any battle participants are moving.
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
-
-#### isBusy () → {Boolean}Returns true if the battle spriteset is busy.
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
+#### isBusy () → {Boolean}処理中か。
 
 
 #### isEffecting () → {Boolean}
+エフェクト中か。
 
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
-
-#### locateBattleback ()Locates the battleback and adjusts the coordinates of the battleback.
+#### locateBattleback ()戦闘背景を配置。
 
 
 #### normalBattleback1Name () → {[String](String.md)}
-
-
-##### Returns:
-Name of the normal battleback 1 bitmap.
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.md">String</a></span>
-    </dd>
-</dl>
+通常の背景1のファイル名。
 
 
 #### normalBattleback2Name () → {[String](String.md)}
+通常の背景2のファイル名。
 
 
-##### Returns:Name of the normal battleback 2 bitmap.
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.md">String</a></span>
-    </dd>
-</dl>
+#### overworldBattleback1Name () → {[String](String.md)}[タイルセット]の[モード]が[フィールドタイプ]の場合の背景1のファイル名。
 
 
-#### overworldBattleback1Name () → {[String](String.md)}Returns the battleback 1 name as a string.
+#### overworldBattleback2Name () → {[String](String.md)}[タイルセット]の[モード]が[フィールドタイプ]の場合の背景2のファイル名。
 
-##### Returns:Name of overworld battleback 1 bitmap.
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.md">String</a></span>
-    </dd>
-</dl>
-
-
-#### overworldBattleback2Name () → {[String](String.md)}Returns the battleback 2 name as a string.
-
-##### Returns:Name of overworld battleback 2 bitmap.
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.md">String</a></span>
-    </dd>
-</dl>
 
 #### shipBattleback1Name () → {[String](String.md)}
+船の場合の背景1のファイル名。
 
-##### Returns:Name of the ship battleback 1 bitmap.
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.md">String</a></span>
-    </dd>
-</dl>
 
 #### shipBattleback2Name () → {[String](String.md)}
+船の場合の背景2のファイル名。
 
 
-##### Returns:
-Name of the ship battleback 2 bitmap.
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.md">String</a></span>
-    </dd>
-</dl>
-
-#### terrainBattleback1Name (type) → {[String](String.md)}Given the specified terrtain type, return the battleback 1 name.
+#### terrainBattleback1Name (type) → {[String](String.md)}
+指定した地形に応じた背景1のファイル名。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `type` | [Number](Number.md) | Terrain type. |
-
-##### Returns:Name of the terrtain battleback 1 bitmap.
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.md">String</a></span>
-    </dd>
-</dl>
+| `type` | [Number](Number.md) | 地形タイプ(autotileTypeの返り値) |
 
 
-#### terrainBattleback2Name (type) → {[String](String.md)}Given the specified terrain type, return the battleback 2 name.
+#### terrainBattleback2Name (type) → {[String](String.md)}
+指定した地形に応じた背景1のファイル名。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `type` | [Number](Number.md) | Terrain type. |
-
-##### Returns:Name of the terrain battleback 2 bitmap.
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="String.md">String</a></span>
-    </dd>
-</dl>
+| `type` | [Number](Number.md) | 地形タイプ(autotileTypeの返り値) |
 
 
-#### updateActors ()Updates the actor sprites on the battle spriteset.
+#### updateActors ()アクターのアップデート。
 
 
-#### updateBattleback ()Updates the battleback of the battle spriteset.
+#### updateBattleback ()背景のアップデート。
 
  <br>
 
