@@ -6,13 +6,15 @@
 
 大域変数 [$dataSystem](global.md#datasystem-rpgsystem) に格納されている。
 
+ゲーム中に変化のある情報は  [$gameSystem](global.html#$gamesystem-game_system) ([Game_System](Game_System.md)) が扱う。
+
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `gameTitle` | [String](String.md) | [ゲームタイトル] |
 | `versionId` | [Number](Number.md) | RPGメーカーMVによって自動的に保存されるバージョンID |
-| `locale` | [String](String.md) | 地域設定 "ja_JP" か "en_US" |
+| `locale` | [String](String.md) | 地域設定 ja\_JP, en\_US, zh\_CN, zh\_TW, ko\_KR, ru\_RU |
 | `partyMembers` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [初期パーティ] アクターIDの配列 |
 | `currencyUnit` | [String](String.md) | [通貨単位] |
 | `windowTone` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [ウィンドウカラー] |

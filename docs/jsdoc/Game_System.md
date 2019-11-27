@@ -4,500 +4,219 @@
 
 #### new Game_System ()
 
- システムデータを扱うクラス。 大域変数 [$gameSystem](global.html#$gameSystem) を介して扱う。
+変化のあるシステムデータを扱うクラス。
+大域変数 [$gameSystem](global.html#$gamesystem-game_system) に格納されている。
+
+変化のない情報は大域変数 [$dataSystem](global.md#datasystem-rpgsystem) に記述されている。
+
+また、このクラスの属性(メンバ変数)はセーブデータに保存される。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_saveEnabled` | Boolean |  |
-| `_menuEnabled` | Boolean |  |
-| `_encounterEnabled` | Boolean |  |
-| `_formationEnabled` | Boolean |  |
-| `_battleCount` | [Number](Number.md) |  |
-| `_winCount` | [Number](Number.md) |  |
-| `_escapeCount` | [Number](Number.md) |  |
-| `_saveCount` | [Number](Number.md) |  |
-| `_versionId` | [Number](Number.md) |  |
-| `_framesOnSave` | [Number](Number.md) |  |
-| `_bgmOnSave` | [RPG.AudioFile](RPG.AudioFile.md) |  |
-| `_bgsOnSave` | [RPG.AudioFile](RPG.AudioFile.md) |  |
-| `_windowTone` | [Array](Array.md).<[Number](Number.md)> |  |
-| `_battleBgm` | [RPG.AudioFile](RPG.AudioFile.md) |  |
-| `_victoryMe` | [RPG.AudioFile](RPG.AudioFile.md) |  |
-| `_defeatMe` | [RPG.AudioFile](RPG.AudioFile.md) |  |
-| `_savedBgm` | [RPG.AudioFile](RPG.AudioFile.md) |  |
-| `_walkingBgm` | [RPG.AudioFile](RPG.AudioFile.md) |  |
+| `_saveEnabled` | Boolean | [セーブ]メニューありか |
+| `_menuEnabled` | Boolean | メニュー表示されるか |
+| `_encounterEnabled` | Boolean | エンカウントありか |
+| `_formationEnabled` | Boolean | [並び替え]メニューありか |
+| `_battleCount` | [Number](Number.md) | 戦闘回数 |
+| `_winCount` | [Number](Number.md) | 勝利回数 |
+| `_escapeCount` | [Number](Number.md) | 逃亡回数 |
+| `_saveCount` | [Number](Number.md) | セーブ回数 |
+| `_versionId` | [Number](Number.md) | バージョンID |
+| `_framesOnSave` | [Number](Number.md) | 保存累積フレーム数 |
+| `_bgmOnSave` | [RPG.AudioFile](RPG.AudioFile.md) | 保存BGM |
+| `_bgsOnSave` | [RPG.AudioFile](RPG.AudioFile.md) | 保存BGS |
+| `_windowTone` | [Array](Array.md).<[Number](Number.md)> | ウィンドウのトーン |
+| `_battleBgm` | [RPG.AudioFile](RPG.AudioFile.md) | [音楽 - タイプ - 戦闘] |
+| `_victoryMe` | [RPG.AudioFile](RPG.AudioFile.md) | [音楽 - タイプ - 勝利] |
+| `_defeatMe` | [RPG.AudioFile](RPG.AudioFile.md) | [音楽 - タイプ - 敗北] |
+| `_savedBgm` | [RPG.AudioFile](RPG.AudioFile.md) | 保存されたBGM |
+| `_walkingBgm` | [RPG.AudioFile](RPG.AudioFile.md) | 移動のBGM |
 
-<dl>
-</dl>
 
 ### Methods
 
 #### battleBgm () → {[RPG.AudioFile](RPG.AudioFile.md)}
+戦闘BGMを返す。
 
-Returns the current battle background music.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>RPG.AudioFile</a></span>
-                </dd>
-            </dl>
 
 #### battleCount () → {[Number](Number.md)}
-
-Returns the number of battles the player has participated in.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+戦闘回数を返す。
 
 #### defeatMe () → {[RPG.AudioFile](RPG.AudioFile.md)}
+敗北MEを返す。
 
-Returns the defeat musical effect.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>RPG.AudioFile</a></span>
-                </dd>
-            </dl>
 
 #### disableEncounter ()
+エンカウントなしに変更。
 
-Returns true if the player can encounter enemies.
-<dl>
-</dl>
 
 #### disableFormation ()
+[並び替え]メニューなしに変更。
 
-Disables the use of the formation command in the menu.
-<dl>
-</dl>
 
 #### disableMenu ()
+メニュー表示なしに変更。
 
-Disables the menu from being accessed.
-<dl>
-</dl>
 
 #### disableSave ()
-
-Disables the ability to save the game.
-<dl>
-</dl>
+[セーブ]メニューなしに変更。
 
 #### enableEncounter ()
+エンカウントありに変更。
 
-<dl>
-</dl>
 
 #### enableFormation ()
-
-Enables the use of the formation command in the menu.
-<dl>
-</dl>
+[並び替え]メニューありに変更。
 
 #### enableMenu ()
-
-Enables the menu to be accessed.
-<dl>
-</dl>
+メニュー表示ありに変更。
 
 #### enableSave ()
-
-Enables the ability to save the game.
-<dl>
-</dl>
+[セーブ]メニューありに変更。
 
 #### escapeCount () → {[Number](Number.md)}
+逃亡回数を返す。
 
-Returns the number of battles the player has escaped from in battle.
-<dl>
-</dl>
 
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### initialize ()
-
- オブジェクト生成時の初期化。
-<dl>
-</dl>
+#### initialize ()オブジェクト生成時の初期化。
 
 #### isChinese () → {Boolean}
+ロケールが中国か。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isCJK () → {Boolean}
+ロケールが日本・韓国・中国のいずれかか。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isEncounterEnabled () → {Boolean}
+エンカウントありか。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isFormationEnabled () → {Boolean}
-
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+[並び替え]メニューありか。
 
 #### isJapanese () → {Boolean}
+ロケールが日本か。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isKorean () → {Boolean}
+ロケールが韓国か。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isMenuEnabled () → {Boolean}
+メニュー表示ありか。
 
-Returns true if the menu is enabled.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isRussian () → {Boolean}
+ロケールがロシアか。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isSaveEnabled () → {Boolean}
+[セーブ]メニューありか。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isSideView () → {Boolean}
+サイドビュー戦闘か。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### onAfterLoad ()
+ロード完了ハンドラ。
 
-<dl>
-</dl>
 
 #### onBattleEscape ()
-
-<dl>
-</dl>
+戦闘逃亡時ハンドラ。
 
 #### onBattleStart ()
+戦闘開始ハンドラ。
 
-<dl>
-</dl>
 
 #### onBattleWin ()
+戦闘勝利ハンドラ。
 
-<dl>
-</dl>
 
 #### onBeforeSave ()
-
-<dl>
-</dl>
+保存前ハンドラ。
 
 #### playtime () → {[Number](Number.md)}
+プレイ時間を返す。
 
-Returns the total play time.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### playtimeText () → {[String](String.md)}
+プレイ時間を文字列で返す。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
 
 #### replayBgm ()
+保存したBGMの続きから再生。
 
-Replays the saved background music.
-<dl>
-</dl>
 
 #### replayWalkingBgm ()
-
-Replays the saved walking background music.
-<dl>
-</dl>
+移動BGMの続きから再生。
 
 #### saveBgm ()
-
-Saves background music to the game system object.
-<dl>
-</dl>
+現在のBGMを保存。
 
 #### saveCount () → {[Number](Number.md)}
+セーブ回数を返す。
 
-Returns the number of saves the player has made in game.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### saveWalkingBgm ()
-
-Saves the walking background music.
-<dl>
-</dl>
+移動BGMを保存。
 
 #### saveWalkingBgm2 ()
-
-Saves the second walking bgm from the map data.
-<dl>
-</dl>
+移動BGM2を保存。
 
 #### setBattleBgm (value)
-
-Sets the battle background music.
+指定した戦闘BGMに設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [RPG.AudioFile](RPG.AudioFile.md) |  |
+| `value` | [RPG.AudioFile](RPG.AudioFile.md) | 戦闘BGM |
 
-<dl>
-</dl>
 
 #### setDefeatMe (value)
-
-Sets the defeat musical effect.
+敗北MEの設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [RPG.AudioFile](RPG.AudioFile.md) |  |
+| `value` | [RPG.AudioFile](RPG.AudioFile.md) | 敗北ME |
 
-<dl>
-</dl>
 
 #### setVictoryMe (value)
-
-Sets the victory musical effect.
+勝利MEの設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [RPG.AudioFile](RPG.AudioFile.md) |  |
+| `value` | [RPG.AudioFile](RPG.AudioFile.md) | 勝利ME |
 
-<dl>
-</dl>
 
 #### setWindowTone (value)
-
-Sets the window tone, given an array of rgb. Example: [0, 255, 255].
+指定した[ウィンドウカラー]に設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Array](Array.md).<[Number](Number.md)> |  |
+| `value` | [Array](Array.md).<[Number](Number.md)> | [ r, g, b ] の配列(各-255〜255) |
 
-<dl>
-</dl>
 
 #### versionId () → {[Number](Number.md)}
+バージョンIDを返す。#### victoryMe () → {[RPG.AudioFile](RPG.AudioFile.md)}
+勝利MEを返す。
 
-Returns the version id represented in the database.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### victoryMe () → {[RPG.AudioFile](RPG.AudioFile.md)}
-
-Returns the victory musical effect.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>RPG.AudioFile</a></span>
-                </dd>
-            </dl>
 
 #### winCount () → {[Number](Number.md)}
-
-Returns the number of the wins the player has gained in battle.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+勝利回数を返す。
 
 #### windowTone () → {[Array](Array.md).<[Number](Number.md)>}
-
-Returns the tone of the window in the database.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Number</a>&gt;</span>
-                </dd>
-            </dl>
+[ウィンドウカラー] を返す。
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
