@@ -9,21 +9,21 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_scene` | [Scene_Base](Scene_Base.md) | [static]現在のシーン |
-| `_nextScene` | [Scene_Base](Scene_Base.md) | [static]次のシーン |
-| `_stack` | [Array](Array.md).<function()> | [static]シーンなどの履歴 |
-| `_stopped` | Boolean | [static] |
-| `_sceneStarted` | Boolean | [static] |
-| `_exiting` | Boolean | [static] |
-| `_previousClass` | function | [static]前のシーンなど |
-| `_backgroundBitmap` | [Bitmap](Bitmap.md) | [static] |
-| `_screenWidth` | [Number](Number.md) | [static]画面の幅(ピクセル) |
-| `_screenHeight` | [Number](Number.md) | [static]画面の高さ(ピクセル) |
-| `_boxWidth` | [Number](Number.md) | [static]幅(ピクセル) |
-| `_boxHeight` | [Number](Number.md) | [static]高さ(ピクセル) |
-| `_deltaTime` | [Number](Number.md) | [static] |
-| `_currentTime` | [Number](Number.md) | [static] |
-| `_accumulator` | [Number](Number.md) | [static] |
+| `_scene` | [Scene_Base](Scene_Base.md) | [static] 現在のシーン |
+| `_nextScene` | [Scene_Base](Scene_Base.md) | [static] 次のシーン |
+| `_stack` | [Array](Array.md).&lt;Function&gt; | [static] シーンなどの履歴 |
+| `_stopped` | Boolean | [static] 停止しているか|
+| `_sceneStarted` | Boolean | [static] 開始しているか|
+| `_exiting` | Boolean | [static] 抜けているか |
+| `_previousClass` | Function | [static]前のシーンなど |
+| `_backgroundBitmap` | [Bitmap](Bitmap.md) | [static] 背景画像 |
+| `_screenWidth` | [Number](Number.md) | [static] 画面の幅(ピクセル) |
+| `_screenHeight` | [Number](Number.md) | [static] 画面の高さ(ピクセル) |
+| `_boxWidth` | [Number](Number.md) | [static] 幅(ピクセル) |
+| `_boxHeight` | [Number](Number.md) | [static] 高さ(ピクセル) |
+| `_deltaTime` | [Number](Number.md) | [static] 単位時間 |
+| `_currentTime` | [Number](Number.md) | [static] 現在の時刻 |
+| `_accumulator` | [Number](Number.md) | [static] _deltaTimeまでの経過時間 |
 
 
 ### Methods
