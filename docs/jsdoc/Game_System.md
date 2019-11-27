@@ -5,7 +5,7 @@
 #### new Game_System ()
 
 変化のあるシステムデータを扱うクラス。
-大域変数 [$gameSystem](global.html#gamesystem-game_system) に格納されている。
+大域変数 [$gameSystem](global.md#gamesystem-game_system) に格納されている。
 
 変化のない情報は大域変数 [$dataSystem](global.md#datasystem-rpgsystem) に記述されている。
 
