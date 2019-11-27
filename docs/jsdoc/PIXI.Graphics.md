@@ -6,16 +6,17 @@
 
 [PIXI.tilemap.GraphicsLayer](https://github.com/pixijs/pixi-tilemap/blob/master/src/GraphicsLayer.ts) のスーパークラス。
 
-線や丸などを使って画像を描くためのクラス。
+線や丸などを使って画像を描くためのクラス。<br />
 多くのメソッドが自分自身である PIXI.Graphics を返してくるのは、メソッドを連続で書くメソッドチェーンを使えるようにするため。
 
-詳細は本家 PIXI のサイト [PIXI.Graphics](http://pixijs.download/release/docs/PIXI.Graphics.html) を参照。
+詳細は本家 PIXI のサイト [PIXI.Graphics](http://pixijs.download/release/docs/PIXI.Graphics.html) を参照。<br />
+なお、JavaScript の canvas クラスと共通する部分が多いので、そちらを調べても良い。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `geometry ` | [PIXI.GraphicsGeometry](http://pixijs.download/release/docs/PIXI.GraphicsGeometry.html) | opt. |
+| `geometry ` | [PIXI.GraphicsGeometry](http://pixijs.download/release/docs/PIXI.GraphicsGeometry.html) | opt. ジオメトリ |
 
 
 ##### Properties:
@@ -23,21 +24,21 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `_fillStyle` | [PIXI.FillStyle](http://pixijs.download/release/docs/PIXI.FillStyle.html) | 塗りの形式 |
-| `_holeMode` | Boolean | 規定値: false |
+| `_holeMode` | Boolean | 穴あけモードか(規定値: false) |
 | `_lineStyle` | [PIXI.LineStyle](http://pixijs.download/release/docs/PIXI.LineStyle.html) | 線の形式 |
 | `_matrix` | [PIXI.Matrix](http://pixijs.download/release/docs/PIXI.Matrix.html) | 変形行列 |
-| `batches` | [Array](Array.md).&lt;Object&gt; |  |
-| `batchTint` | [Number](Number.md) | 規定値: -1 |
-| `blendMode` | [Number](Number.md) | 規定値: [PIXI.BLEND_MODES](http://pixijs.download/release/docs/PIXI.html#.BLEND_MODES).NORMAL |
-| `currentPath` | [PIXI.Polygon](http://pixijs.download/release/docs/PIXI.Polygon.html) |  |
+| `batches` | [Array](Array.md).&lt;Object&gt; | バッチ |
+| `batchTint` | [Number](Number.md) | (規定値: -1) |
+| `blendMode` | [Number](Number.md) | ブレンドモード(規定値: [PIXI.BLEND_MODES](http://pixijs.download/release/docs/PIXI.html#.BLEND_MODES).NORMAL) |
+| `currentPath` | [PIXI.Polygon](http://pixijs.download/release/docs/PIXI.Polygon.html) | 現在のパス |
 | `fill` | [PIXI.FillStyle](http://pixijs.download/release/docs/PIXI.FillStyle.html) | [read-only] 塗りの形式 |
-| `geometry` | [PIXI.GraphicsGeometry](http://pixijs.download/release/docs/PIXI.GraphicsGeometry.html) |  |
+| `geometry` | [PIXI.GraphicsGeometry](http://pixijs.download/release/docs/PIXI.GraphicsGeometry.html) | ジオメトリ |
 | `line` | [PIXI.LineStyle](http://pixijs.download/release/docs/PIXI.LineStyle.html) | [read-only] 線の形式 |
 | `pluginName` | [String](String.md) | 規定値: \'batch\' |
 | `shader` | [PIXI.Shader](http://pixijs.download/release/docs/PIXI.Shader.html) | シェーダー |
 | `state` | [PIXI.State](http://pixijs.download/release/docs/PIXI.State.html) | 状態 |
-| `tint` | [Number](Number.md) | 規定値: 0xFFFFFF |
-| `vertexData` | Float32Array | |
+| `tint` | [Number](Number.md) | 枠線の色(規定値: 0xFFFFFF) |
+| `vertexData` | Float32Array | 頂点データ |
 
 
 ### Extends
@@ -86,79 +87,56 @@
 ### Methods
 
 #### _calculateBounds ()
-
-##### Overrides:
- [PIXI.Container.md.\_calculateBounds ()](PIXI.Container.md#_calculatebounds-)
+Overrides:[PIXI.Container.md](PIXI.Container.md#_calculatebounds-)
  
  
 #### _initCurve (x, y)
+曲線の初期化。
 
 ##### Parameters:
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `x` | [Number](Number.md)  | 0 | opt. |
-| `y` | [Number](Number.md)  | 0 | opt. |
+| `x` | [Number](Number.md)  | 0 | opt. x座標(ピクセル) |
+| `y` | [Number](Number.md)  | 0 | opt. y座標(ピクセル) |
 
  
 #### _render (renderer)
+Overrides:[\_render (renderer)](PIXI.Container.md#_render-renderer)
 
-##### Overrides:
 
-* [PIXI.Container.md.\_render (renderer)](PIXI.Container.md#_render-renderer)
- 
+#### arc (cx, cy, radius, startAngle, endAngle, anticlockwise) →  {PIXI.Graphics}
+円弧を描き、自分自身を返す。
+
+##### Parameters:
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| `cx` | [Number](Number.md)  |  | 中心 x座標(ピクセル) |
+| `cy` | [Number](Number.md)  |  | 中心 y座標(ピクセル) |
+| `radius` | [Number](Number.md)  |  | 半径(ピクセル) |
+| `startAngle` | [Number](Number.md)  |  | 開始角度 |
+| `endAngle` | [Number](Number.md)  |  | 終点角度 |
+| `anticlockwise` | [Number](Number.md)  | false | opt. 反時計回りか |
+
+
+#### arcTo (x1, y1, x2, y2, radius) →  {PIXI.Graphics}
+角丸を描き、自身を返す。<br />
+直前のポイント - 中間点、中間点 - 到達点 と直線を引き、両直線に接するようにradius 半径の円弧を描く、という手順で角丸を描く。
+
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `renderer` | [PIXI.Renderer](http://pixijs.download/release/docs/PIXI.Renderer.html) |  |
-
-#### arc (cx, cy, radius, startAngle, endAngle, anticlockwise) →  {PIXI.Graphics}
-
-##### Parameters:
-
-| Name | Type | Default | Description |
-| --- | --- | --- | --- |
-| `cx` | [Number](Number.md)  |  | |
-| `cy` | [Number](Number.md)  |  |  |
-| `radius` | [Number](Number.md)  |  |  |
-| `startAngle` | [Number](Number.md)  |  |  |
-| `endAngle` | [Number](Number.md)  |  |  |
-| `anticlockwise` | [Number](Number.md)  | false | opt. |
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> PIXI.Graphics </span>
-    </dd>
-</dl>
-
-
-#### arcTo (x1, y1, x2, y2, radius) →  {PIXI.Graphics}
-
-##### Parameters:
-
-| Name | Type | Default | Description |
-| --- | --- | --- | --- |
-| `x1` | [Number](Number.md)  |  | |
-| `y1` | [Number](Number.md)  |  |  |
-| `x2` | [Number](Number.md)  |  | |
-| `y2` | [Number](Number.md)  |  |  |
-| `radius` | [Number](Number.md)  |  |  |
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> PIXI.Graphics </span>
-    </dd>
-</dl>
+| `x1` | [Number](Number.md)  | 中間点の x座標(ピクセル) |
+| `y1` | [Number](Number.md)  | 中間点の y座標(ピクセル) |
+| `x2` | [Number](Number.md)  | 到達点の x座標(ピクセル) |
+| `y2` | [Number](Number.md)  | 到達点の y座標(ピクセル) |
+| `radius` | [Number](Number.md) | 角丸の半径(ピクセル) |
 
 
 #### beginFill (color, alpha) →  {PIXI.Graphics}
+塗り潰しを開始し、自身を返す。
 
 ##### Parameters:
 
@@ -167,113 +145,59 @@
 | `color` | [Number](Number.md)  | 0 | opt. |
 | `alpha` | [Number](Number.md)  | 1 | opt. |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> PIXI.Graphics </span>
-    </dd>
-</dl>
-
 
 #### beginHole () →  {PIXI.Graphics}
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> PIXI.Graphics </span>
-    </dd>
-</dl>
-
+最後に描いたシェイプの内側に穴を開け始め、自身を返す。
 
 
 #### beginTextureFill (color, alpha) →  {PIXI.Graphics}
+テクスチャの塗り潰しを開始し、自身を返す。<br />
+第1引数の color は代わりに texture も使える。<br />
+第2引数の alpha は数値でも PIXI.Matrix でも指定可能。
 
 ##### Parameters:
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `texture` | [PIXI.Texture](http://pixijs.download/release/docs/PIXI.Texture.html)   | PIXI.Texture.WHITE | opt. |
-| `color` | [Number](Number.md)  | 0xffffff | opt. |
-| `alpha` | [Number](Number.md)  | 1 | opt. |
-| `alpha` | [PIXI.Matrix](http://pixijs.download/release/docs/PIXI.Matrix.html)  | null | opt. |
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> PIXI.Graphics </span>
-    </dd>
-</dl>
+| `texture` | [PIXI.Texture](http://pixijs.download/release/docs/PIXI.Texture.html)   | PIXI.Texture.WHITE | opt. 塗り潰しテクスチャ |
+| `color` | [Number](Number.md)  | 0xffffff | opt. 塗り潰し色 |
+| `alpha` | [Number](Number.md)  | 1 | opt. 不透明度 |
+| `alpha` | [PIXI.Matrix](http://pixijs.download/release/docs/PIXI.Matrix.html)  | null | opt. 不透明度 |
 
 
 #### bezierCurveTo (cpX, cpY, cpX2, cpY2, toX, toY) →  {PIXI.Graphics}
+3次ベジェ曲線を引き、自身を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `cpX` | [Number](Number.md)  |  |
-| `cpY` | [Number](Number.md)  |  |
-| `cpX2` | [Number](Number.md)  |  |
-| `cpY2` | [Number](Number.md)  |  |
-| `toX` | [Number](Number.md)  |  |
-| `toY` | [Number](Number.md)  |  |
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> PIXI.Graphics </span>
-    </dd>
-</dl>
+| `cpX` | [Number](Number.md)  | 制御点1の x座標(ピクセル) |
+| `cpY` | [Number](Number.md)  | 制御点1の y座標(ピクセル) |
+| `cpX2` | [Number](Number.md)  | 制御点2の x座標(ピクセル) |
+| `cpY2` | [Number](Number.md)  | 制御点2の y座標(ピクセル) |
+| `toX` | [Number](Number.md)  | 到達点の x座標(ピクセル) |
+| `toY` | [Number](Number.md)  | 到達点の y座標(ピクセル) |
 
 
 #### calculateTints ()
+枠線を計算。
 
 
 #### calculateVertices ()
+頂点を計算。
 
 
 #### clear () →  {PIXI.Graphics}
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> PIXI.Graphics </span>
-    </dd>
-</dl>
+画像を消去して、自身を返す。
 
 
 #### clone () →  {PIXI.Graphics}
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> PIXI.Graphics </span>
-    </dd>
-</dl>
+複製を作って返す。
 
 
 #### closePath () →  {PIXI.Graphics}
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> PIXI.Graphics </span>
-    </dd>
-</dl>
+パスを閉じて、自身を返す。
 
 
 #### containsPoint (point) →  {Boolean}
@@ -285,21 +209,9 @@
 | --- | --- | --- |
 | `point ` | [PIXI.Point](http://pixijs.download/release/docs/PIXI.Point.html) |  |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> Boolean </span>
-    </dd>
-</dl>
-
 
 #### destroy (options)
-破棄する。
-
-##### Overrides:
-[PIXI.Container.destroy (options)](PIXI.Container.md#destroy-options)
+Overrides:[PIXI.Container](PIXI.Container.md#destroy-options)
 
 ##### Parameters:
 
@@ -317,50 +229,32 @@ options に Object として指定する内容
 
 
 #### drawCircle (x, y, radius) →  {PIXI.Graphics}
-円を描く。
+円を描き、自身を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md)  | 中心のx座標(ピクセル) |
-| `y` | [Number](Number.md)  | 中心のy座標(ピクセル) |
+| `x` | [Number](Number.md)  | 中心の x座標(ピクセル) |
+| `y` | [Number](Number.md)  | 中心の y座標(ピクセル) |
 | `radius` | [Number](Number.md)  | 半径(ピクセル) |
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> PIXI.Graphics </span>
-    </dd>
-</dl>
 
 
 #### drawEllipse (x, y, width, height) →  {PIXI.Graphics}
-楕円を描く。
+楕円を描き、自身を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md)  | 中心のx座標(ピクセル) |
-| `y` | [Number](Number.md)  | 中心のy座標(ピクセル) |
+| `x` | [Number](Number.md)  | 中心の x座標(ピクセル) |
+| `y` | [Number](Number.md)  | 中心の y座標(ピクセル) |
 | `width` | [Number](Number.md)  | 幅(ピクセル) |
 | `height` | [Number](Number.md)  | 高さ(ピクセル) |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> PIXI.Graphics </span>
-    </dd>
-</dl>
-
 
 #### drawPolygon (path) →  {PIXI.Graphics}
-多角形を描く。
+多角形を描き、自身を返す。
 
 ##### Parameters:
 
@@ -368,40 +262,23 @@ options に Object として指定する内容
 | --- | --- | --- |
 | `path ` | [Array](Array.md).&lt;[Number](Number.md)&gt; \| [Array](Array.md).&lt;[PIXI.Point](http://pixijs.download/release/docs/PIXI.Point.html)&gt; \| [Array](Array.md).&lt;[PIXI.Polygon](http://pixijs.download/release/docs/PIXI.Polygon.html)&gt;  | パス |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> PIXI.Graphics </span>
-    </dd>
-</dl>
-
 
 #### drawRect (x, y, width, height) →  {PIXI.Graphics}
-四角形を描く。
+四角形を描き、自身を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md)  | 中心のx座標(ピクセル) |
-| `y` | [Number](Number.md)  | 中心のy座標(ピクセル) |
+| `x` | [Number](Number.md)  | 中心の x座標(ピクセル) |
+| `y` | [Number](Number.md)  | 中心の y座標(ピクセル) |
 | `width` | [Number](Number.md)  | 幅(ピクセル) |
 | `height` | [Number](Number.md)  | 高さ(ピクセル) |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> PIXI.Graphics </span>
-    </dd>
-</dl>
 
 
 #### drawRoundedRect (x, y, width, height, radius) →  {PIXI.Graphics}
-角丸の四角形を描く。
+角丸の四角形を描き、自身を返す。
 
 ##### Parameters:
 
@@ -413,18 +290,9 @@ options に Object として指定する内容
 | `height` | [Number](Number.md)  | 高さ(ピクセル) |
 | `radius` | [Number](Number.md)  | 半径(ピクセル) |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> PIXI.Graphics </span>
-    </dd>
-</dl>
-
 
 #### drawShape (shape) →  {PIXI.Graphics}
-角丸の四角形を描く。
+角丸の四角形を描き、自身を返す。
 
 ##### Parameters:
 
@@ -432,18 +300,9 @@ options に Object として指定する内容
 | --- | --- | --- |
 | `shape` | [PIXI.Circle](http://pixijs.download/release/docs/PIXI.Circle.html) \| [PIXI.Ellipse](http://pixijs.download/release/docs/PIXI.Ellipse.html) \| [PIXI.Polygon](http://pixijs.download/release/docs/PIXI.Polygon.html) \| [PIXI.Rectangle](http://pixijs.download/release/docs/PIXI.Rectangle.html) \| [PIXI.RoundedRectangle](http://pixijs.download/release/docs/PIXI.RoundedRectangle.html)  | |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> PIXI.Graphics </span>
-    </dd>
-</dl>
-
 
 #### drawStar (x, y, points, radius, innerRadius, rotation) →  {PIXI.Graphics}
-星型の図形を描く。
+星型の図形を描き、自身を返す。
 
 ##### Parameters:
 
@@ -456,84 +315,36 @@ options に Object として指定する内容
 | `innerRadius` | [Number](Number.md) | radius の半分 | opt. 内側の半径(ピクセル) |
 | `rotation` | [Number](Number.md)  | 0 | opt. 回転角(ラジアン) |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> PIXI.Graphics </span>
-    </dd>
-</dl>
-
 
 #### endFill () →  {PIXI.Graphics}
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> PIXI.Graphics </span>
-    </dd>
-</dl>
+塗り潰しを終了し、自身を返す。
 
 
 #### endHole () →  {PIXI.Graphics}
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> PIXI.Graphics </span>
-    </dd>
-</dl>
+穴あけを終了し、自身を返す。
 
 
 #### finishPoly () →  {PIXI.Graphics}
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> PIXI.Graphics </span>
-    </dd>
-</dl>
+多角形を終了し、自身を返す。
 
 
 #### generateCanvasTexture (scaleMode, resolution) →  {PIXI.Texture}
+指定の設定でテクスチャ([PIXI.Texture](http://pixijs.download/release/docs/PIXI.Texture.html))を生成して返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `scaleMode` | [Number](Number.md) | [PIXI.SCALE_MODES](http://pixijs.download/release/docs/PIXI.html#.SCALE_MODES) |
-| `resolution` | [Number](Number.md) |  |
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> <a href="http://pixijs.download/release/docs/PIXI.Texture.html">PIXI.Texture</a> </span>
-    </dd>
-</dl>
+| `resolution` | [Number](Number.md) | 解像度 |
 
 
 #### isFastRect () →  {Boolean}
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> Boolean </span>
-    </dd>
-</dl>
+最初の角か。
 
 
 #### lineStyle (width, color, alpha, alignment, native) →  {PIXI.Graphics}
+指定の値でラインスタイルを設定し、自身を返す。
 
 ##### Parameters:
 
@@ -545,17 +356,9 @@ options に Object として指定する内容
 | `alignment` | [Number](Number.md) | 0.5 | opt.  |
 | `native` | Boolean | false | opt. |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> PIXI.Graphics </span>
-    </dd>
-</dl>
-
 
 #### lineTextureStyle (width, texture, color, alpha, matrix, alignment, native) →  {PIXI.Graphics}
+指定の値でラインテクスチャスタイルを設定し、自身を返す。
 
 ##### Parameters:
 
@@ -569,18 +372,9 @@ options に Object として指定する内容
 | `alignment` | [Number](Number.md) | 0.5 | opt.  |
 | `native` | Boolean | false | opt. |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> PIXI.Graphics </span>
-    </dd>
-</dl>
-
 
 #### lineTo (x, y) →  {PIXI.Graphics}
-指定座標まで線を引く。
+指定座標まで線を引き、自身を返す。
 
 ##### Parameters:
 
@@ -588,19 +382,10 @@ options に Object として指定する内容
 | --- | --- | --- |
 | `x` | [Number](Number.md)  | x座標(ピクセル) |
 | `y` | [Number](Number.md)  | y座標(ピクセル) |
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> PIXI.Graphics </span>
-    </dd>
-</dl>
 
 
 #### moveTo (x, y) →  {PIXI.Graphics}
-指定座標まで描画位置を移動。
+指定座標まで描画位置を移動し、自身を返す。
 
 ##### Parameters:
 
@@ -609,18 +394,9 @@ options に Object として指定する内容
 | `x` | [Number](Number.md)  | x座標(ピクセル) |
 | `y` | [Number](Number.md)  | y座標(ピクセル) |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> PIXI.Graphics </span>
-    </dd>
-</dl>
-
 
 #### quadraticCurveTo (cpX, cpY, toX, toY) →  {PIXI.Graphics}
-ベジェ曲線を引く。
+2次ベジェ曲線を引き、自身を返す。
 
 ##### Parameters:
 
@@ -631,36 +407,19 @@ options に Object として指定する内容
 | `toX` | [Number](Number.md)  | x座標(ピクセル) |
 | `toY` | [Number](Number.md)  | y座標(ピクセル) |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> PIXI.Graphics </span>
-    </dd>
-</dl>
-
 
 #### setMatrix (matrix) →  {PIXI.Graphics}
+マトリクスを設定し、自身を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `matrix` | [PIXI.Matrix](http://pixijs.download/release/docs/PIXI.Matrix.html)   |  |
+| `matrix` | [PIXI.Matrix](http://pixijs.download/release/docs/PIXI.Matrix.html)   | マトリクス |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span> PIXI.Graphics </span>
-    </dd>
-</dl>
 
 ####  startPoly ()
-
-
+多角形の描画を開始。
 
  <br>
 
