@@ -10,18 +10,15 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `YEPWarned` | Boolean | [static] |
-| `opacity` | [Number](Number.md) |  不透明度 (0 〜 255) |
-| `anchor` | [Point](Point.md) |  |
+| `YEPWarned` | Boolean | [static] YEP_CoreEngine の警告が必要か |
+| `opacity` | [Number](Number.md) |  不透明度 (0〜255) |
+| `anchor` | [Point](Point.md) | 基点 |
 | `blendMode` | [Number](Number.md) | [合成方法] (PIXI.BLEND_MODES.NOMAL | ADD | MULTIPLY | SCREEN) |
-| `_graphics` | PIXI.Graphics |  画像 |
-| `_red` | [Number](Number.md) |  赤 (0 〜 255) |
-| `_green` | [Number](Number.md) |  緑 (0 〜 255) |
-| `_blue` | [Number](Number.md) |  青 (0 〜 255) |
-| `_colorText` | [String](String.md) |  色文字列(ex: 'red') |
-
-<dl>
-</dl>
+| `_graphics` | [PIXI.Graphics](PIXI.Graphics.md) |  画像管理オブジェクト |
+| `_red` | [Number](Number.md) |  赤 (0〜255) |
+| `_green` | [Number](Number.md) |  緑 (0〜255) |
+| `_blue` | [Number](Number.md) |  青 (0〜255) |
+| `_colorText` | [String](String.md) |  色文字列(例: 'red') |
 
 ### Extends
 
@@ -30,46 +27,29 @@
 ### Methods
 
 #### (static) warnYep ()
-
-<dl>
-</dl>
+必要なら YEP_CoreEngine の警告。
 
 #### initialize ()
-
-
  オブジェクト生成時の初期化。
-<dl>
-</dl>
 
 #### setBlack ()
+黒に設定。
 
-
-Sets black to the color of the screen sprite.
-<dl>
-</dl>
 
 #### setColor (r, g, b)
-
-
-Sets the color of the screen sprite by values.
+指定した色に設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `r` | [Number](Number.md) | The red value in the range (0, 255) |
-| `g` | [Number](Number.md) | The green value in the range (0, 255) |
-| `b` | [Number](Number.md) | The blue value in the range (0, 255) |
+| `r` | [Number](Number.md) | 赤(0〜255) |
+| `g` | [Number](Number.md) | 緑(0〜255) |
+| `b` | [Number](Number.md) | 青(0〜255) |
 
-<dl>
-</dl>
 
 #### setWhite ()
-
-
-Sets white to the color of the screen sprite.
-<dl>
-</dl>
+白に設定。
 
 
  <br>
