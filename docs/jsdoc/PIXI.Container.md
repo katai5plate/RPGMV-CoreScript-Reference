@@ -28,7 +28,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `children` | [Array](Array.md).&lt;[PIXI.DisplayObject](PIXI.DisplayObject.md)&gt;  | [read-only]子オブジェクト |
+| `children` | [Array](Array.md).&lt;[PIXI.DisplayObject](PIXI.DisplayObject.md)&gt; | [read-only]子オブジェクト |
 | `width` | [Number](Number.md) | 拡大縮小前の画像の幅(ピクセル) |
 | `height` | [Number](Number.md) | 拡大縮小前の画像の高さ(ピクセル) |
 | `sortableChildren` | Boolean |  子が(zIndexで)ソート可能か |

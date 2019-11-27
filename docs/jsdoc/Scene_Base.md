@@ -105,7 +105,7 @@
 
 
 #### initialize ()
-Overrides: [Stage.initialize ()](Stage.md#initialize-)
+Overrides: [Stage](Stage.md#initialize-)
 
 
 #### isActive () → {Boolean}

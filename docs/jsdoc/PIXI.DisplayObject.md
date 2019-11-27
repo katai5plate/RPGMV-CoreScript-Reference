@@ -18,7 +18,7 @@
 | `_bounds` | [PIXI.Bounds](http://pixijs.download/release/docs/PIXI.Bounds.html) | 矩形範囲 |
 | `_destroyed` | Boolean | destroy() により破棄されているか |
 | `_lastSortedIndex` | [Number](Number.md) | 最終ソート番号 |
-| `_mask` | [PIXI.Graphics](http://pixijs.download/release/docs/PIXI.Graphics.html) \| [PIXI.Sprite](PIXI.Sprite.md) \| null | マスク画像 |
+| `_mask` | [PIXI.Graphics](PIXI.Graphics.md) \| [PIXI.Sprite](PIXI.Sprite.md) \| null | マスク画像 |
 | `_tempDisplayObjectParent` | PIXI.DisplayObject | 仮の親オブジェクト |
 | `_zIndex` | [Number](Number.md) | 高い番号ほど手前に表示される番号 |
 | `accessible` | Boolean | 操作可能か |
@@ -35,9 +35,9 @@
 | `interactive` | Boolean | (クリック)操作可能か |
 | `isSprite` | Boolean | スプライトか |
 | `localTransform` | [PIXI.Matrix](http://pixijs.download/release/docs/PIXI.Matrix.html) | [read-only]ローカルな変形 |
-| `mask` | [PIXI.Graphics](http://pixijs.download/release/docs/PIXI.Graphics.html) \| [PIXI.Sprite](PIXI.Sprite.md) \| null | マスク画像 |
+| `mask` | [PIXI.Graphics](PIXI.Graphics.md) \| [PIXI.Sprite](PIXI.Sprite.md) \| null | マスク画像 |
 | `name` | [String](String.md) | 名前 |
-| `parent` | [PIXI.Container](http://pixijs.download/dev/docs/PIXI.Container.html) | [read-only] 親コンテナオブジェクト |
+| `parent` | [PIXI.Container](PIXI.Container.md) | [read-only] 親コンテナオブジェクト |
 | `pivot` | [PIXI.IPoin](http://pixijs.download/release/docs/PIXI.html#.IPoint) | 回転軸 |
 | `position` | [Point](Point.md) | 位置(x, y を同時に指定) |
 | `renderable` | Boolean | レンダ可能か |

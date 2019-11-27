@@ -12,8 +12,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `children` | [Array](Array.md) | [read-only] このオブジェクトに含まれる子オブジェクト |
-| `parent` | Object | [read-only] このオブジェクトを含む親オブジェクト |
+| `children` | [Array](Array.md).&lt;[PIXI.DisplayObject](PIXI.DisplayObject.md)&gt; | [read-only] このオブジェクトに含まれる子オブジェクト |
+| `parent` | [PIXI.Container](PIXI.Container.md) | [read-only] このオブジェクトを含む親オブジェクト |
 | `interactive` | Boolean |  操作可能か |
 
 
