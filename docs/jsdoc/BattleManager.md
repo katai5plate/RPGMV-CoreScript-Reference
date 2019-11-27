@@ -40,27 +40,9 @@
 #### (static) actor () → {[Game_Actor](Game_Actor.md)}
 アクターを返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Game_Actor</span>
-	</dd>
-</dl>
-
 
 #### (static) allBattleMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
 すべての戦闘に参加しているバトラーを返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Array.&lt;Game_Battler&gt;</span>
-	</dd>
-</dl>
 
 
 #### (static) applySubstitute (target) → {[Game_Battler](Game_Battler.md)}
@@ -74,40 +56,12 @@
 | `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
 
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Game_Battler</span>
-	</dd>
-</dl>
-
-
 #### (static) canEscape () → {Boolean}
 [逃走可]か。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### (static) canLose () → {Boolean}
 [敗北可]か。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### (static) changeActor (newActorIndex, lastActorActionState)
@@ -124,27 +78,9 @@
 #### (static) checkAbort () → {Boolean}
 パーティがいないなど中止する状態なら中止し、中止を実行したか返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### (static) checkBattleEnd () → {Boolean}
 味方か敵が全滅しているなど戦闘終了状態なら終了し、終了を実行したか返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### (static) checkSubstitute (target) → {Boolean}
@@ -155,15 +91,6 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### (static) clearActor ()
@@ -253,15 +180,6 @@
 #### (static) getNextSubject () → {[Game_Battler](Game_Battler.md)}
 次の対象バトラーを返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Game_Battler</span>
-	</dd>
-</dl>
-
 
 #### (static) initMembers ()
 メンバ変数の初期化。
@@ -269,15 +187,6 @@
 
 #### (static) inputtingAction () → {[Game_Action](Game_Action.md)}
 入力されたアクションを返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Game_Action</span>
-	</dd>
-</dl>
 
 
 #### (static) invokeAction (subject, target)
@@ -327,131 +236,41 @@
 #### (static) isAborting () → {Boolean}
 中断処理中か。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### (static) isActionForced () → {Boolean}
 強制行動中か。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### (static) isBattleEnd () → {Boolean}
 戦闘終了状態(敵か味方が全滅)か。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### (static) isBattleTest () → {Boolean}
 [戦闘テスト]での実行か。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### (static) isBusy () → {Boolean}
 メッセージ表示などの処理中か。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### (static) isEscaped () → {Boolean}
 逃走完了したか。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### (static) isForcedTurn () → {Boolean}
 強制されたターンか。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### (static) isInputting () → {Boolean}
 入力中か。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### (static) isInTurn () → {Boolean}
 ターンの最中か。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### (static) isTurnEnd () → {Boolean}
 ターンの終了状態か。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### (static) makeActionOrders ()
@@ -494,15 +313,6 @@
 #### (static) processEscape () → {Boolean}
 逃走処理を行い、逃走が成功したか返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### (static) processForcedAction ()
 強制アクションの処理。
@@ -518,15 +328,6 @@
 
 #### (static) rateSurprise () → {[Number](Number.md)}
 [不意打ち]の確率を得る。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 
 #### (static) refreshStatus ()
@@ -641,27 +442,9 @@ BGMとBGSの状態を保存。
 #### (static) updateEvent () → {Boolean}
 イベントのアップデート。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### (static) updateEventMain () → {Boolean}
 イベント主要部分のアップデート。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### (static) updateTurn ()
