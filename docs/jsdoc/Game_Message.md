@@ -37,7 +37,7 @@
 | `_faceIndex` | [Number](Number.md) | [顔]番号 |
 | `_background` | [Number](Number.md) | [背景] |
 | `_positionType` | [Number](Number.md) | [ウィンドウ位置] |
-| `_choiceDefaultType` | [Number](Number.md) |選択肢の[デフォルト]|
+| `_choiceDefaultType` | [Number](Number.md) |選択肢の[デフォルト] |
 | `_choiceCancelType` | [Number](Number.md) | 選択肢の[キャンセル] |
 | `_choiceBackground` | [Number](Number.md) | 選択肢の[背景] |
 | `_choicePostionType` | [Number](Number.md) | 選択肢の[ウィンドウ位置] |

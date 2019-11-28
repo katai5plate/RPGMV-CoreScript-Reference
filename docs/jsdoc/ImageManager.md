@@ -628,7 +628,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 
 
 #### (static) setDefaultReservationId (reservationId)
-デフォルトのキャッシュIDを設定。
+キャッシュIDの規定値を設定。
 
 ##### Parameters:
 
@@ -638,7 +638,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 
 
 #### (static) update ()
-アップデート。
+フレーム毎のアップデート。
 
 
  <br>

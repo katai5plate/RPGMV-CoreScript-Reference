@@ -2,7 +2,7 @@
 
 ## Namespace: [RPG](RPG.md).[Animation](RPG.Animation.md)
 
-アニメーションの効果音とエフェクトのタイミングを記述したデータで、[RPG.Animation](RPG.Animation.md) の timings 属性に含まれる。
+アニメーションの効果音とエフェクトのタイミングを記述したデータで、[RPG.Animation](RPG.Animation.md) の timings プロパティに含まれる。
 
 ##### Properties:
 

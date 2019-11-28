@@ -8,7 +8,7 @@
 
 マップシーンは [Scene_Map](Scene_Map.md) で管理される。
  
-data 属性は一次元配列で、<code>data[ x + ( y + z\*h )\*w ]</code> の形で取り出せる。<br />
+data プロパティは一次元配列で、<code>data[ x + ( y + z\*h )\*w ]</code> の形で取り出せる。<br />
 x: x座標, y: y座標, w: マップ幅, h: マップ高さ, z: マップ重ね順。
  
 #### z:マップ重ね順

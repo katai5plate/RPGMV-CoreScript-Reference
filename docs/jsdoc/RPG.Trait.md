@@ -2,7 +2,8 @@
 
 ## Namespace [RPG](RPG.md)
 
-[特徴]のJSONデータで、[RPG.Actor](RPG.Actor.md)、[RPG.Enemy](RPG.Enemy.md) および [RPG.EquipItem](RPG.EquipItem.md) JSONデータ traits 属性に記録されている。
+[特徴]のJSONデータで、[RPG.Actor](RPG.Actor.md)、[RPG.Enemy](RPG.Enemy.md) および [RPG.EquipItem](RPG.EquipItem.md) JSONデータ 
+traits プロパティに記録されている。
 
 
 別に公式の初心者講座の、アクターの[特徴の設定](https://tkool.jp/mv/guide/004_003c.html)と、他の[敵キャラの能力を設定する\[特徴\]](https://tkool.jp/mv/guide/004_008a.html#03)、[武器の特徴を設定する](https://tkool.jp/mv/guide/004_005b.html#03)、[防具の特徴を設定する](https://tkool.jp/mv/guide/004_005c.html#03)や、本体のヘルプの記述を参照。
@@ -18,7 +19,7 @@
 
 #### codeと対応するデータ形式
 
-code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定数として定義されている。例えば 11 ではなんの数値か分からないので <code>Game_BattlerBase.TRAIT_ELEMENT_RATE</code> の形で使う。
+code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定数として定義されている。例えば <code>Game_BattlerBase.TRAIT_ELEMENT_RATE</code> の形で使う。
 
 下表で 変動率・比率・増減値は 1 が 100%に当たる数値。
 
@@ -132,7 +133,7 @@ code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定�
 
  [System](RPG.System.md) の armorTypes プロパティに登録されている。
  
-下表はデフォルトの値。
+下表は規定値。
 
 | ID | [防具タイプ] |
 | --- | --- |
@@ -150,7 +151,7 @@ code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定�
 
  [System](RPG.System.md) の equipTypes プロパティに登録されている。
  
- 下表はデフォルトの値。
+ 下表は規定値。
 
 | ID | [装備タイプ] |
 | --- | --- |
@@ -212,7 +213,7 @@ code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定�
 
  [System](RPG.System.md) の elements プロパティに登録されている。
  
- 下表の -1 と 0 は固定、 1 以降はデフォルトの値。
+ 下表の -1 と 0 は固定、 1 以降は規定値。
 
 | ID | [属性] |
 | --- | --- |
@@ -245,9 +246,9 @@ code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定�
 
 ###### ステートID
 
-[$dataStates](global.md#datastates-arrayrpgstate) ([State](RPG.State.md) の配列)のid。
+[$dataStates](global.md#datastates-arrayrpgstate) ([State](RPG.State.md) の配列)の id プロパティ。
 
-下表はデフォルトの値。
+下表は規定値。
 
 | ID | [ステート] |
 | --- | --- |

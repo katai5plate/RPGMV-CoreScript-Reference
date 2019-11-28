@@ -2,7 +2,7 @@
 
 ## Namespace [RPG](RPG.md) . [Class](RPG.Class.md)
 
-スキル取得に必要な条件。[Class](RPG.Class.md) の learnings 属性に含まれる。
+スキル取得に必要な条件。[Class](RPG.Class.md) の learnings プロパティに含まれる。
 
 ##### Properties:
 

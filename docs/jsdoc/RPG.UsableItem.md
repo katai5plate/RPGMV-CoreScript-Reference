@@ -4,17 +4,18 @@
 
 [RPG.Skill](RPG.Skill.md) と [RPG.Item](RPG.Item.md) のスーパークラス。
 
+
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `scope` | [Number](Number.md) | [範囲] \(下表を参照) |
-| `occasion` | [Number](Number.md) | [使用可能時] \(下表を参照)  |
+| `scope` | [Number](Number.md) | [範囲] \([下表](RPG.UsableItem.md#scope)を参照) |
+| `occasion` | [Number](Number.md) | [使用可能時] \([下表](RPG.UsableItem.md#occasion)を参照)  |
 | `speed` | [Number](Number.md) | [速度補正] |
 | `successRate` | [Number](Number.md) | [成功率] % (0〜100) |
 | `repeats` | [Number](Number.md) | [連続回数] \(1〜9) |
 | `tpGain` | [Number](Number.md) | [得TP] \(0〜100) |
-| `hitType` | [Number](Number.md) | [命中タイプ] \(下表を参照)  |
+| `hitType` | [Number](Number.md) | [命中タイプ] \([下表](RPG.UsableItem.md#hittype)を参照)  |
 | `animationId` | [Number](Number.md) | [アニメーション]のID |
 | `damage` | [RPG.Damage](RPG.Damage.md) | [ダメージ] |
 | `effects` | [Array](Array.md).&lt;[RPG.Effect](RPG.Effect.md)&gt; | [使用効果]の配列 |
@@ -36,12 +37,14 @@
 | 3 | 使用不可 |
 
 ##### hitType
+hitType は [Game\_Action](Game_Action.md) の定数として定義されている。例えば、<code>Game\_Action.HITTYPE\_CERTAIN</code> のような形で使う。
 
 | 番号 | [命中タイプ] |
 | --- | --- |
-| 0 | 必中 |
-| 1 | 物理攻撃 |
-| 2 | 魔法攻撃 |
+| `HITTYPE_CERTAIN:0` | 必中 |
+| `HITTYPE_PHYSICAL:1` | 物理攻撃 |
+| `HITTYPE_MAGICAL:2` | 魔法攻撃 |
+
 
 
 
