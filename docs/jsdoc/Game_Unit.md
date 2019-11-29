@@ -16,154 +16,66 @@
 ### Methods
 
 #### agility () → {[Number](Number.md)}
-
 ユニットの素早さを返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Number</span>
-	</dd>
-</dl>
 
 #### aliveMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
-
 生存しているバトラーを配列で返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Array</a>.&lt;<a>Game_Battler</a>&gt;</span>
-	</dd>
-</dl>
 
 #### clearActions ()
-
 アクションを取り消す。
 
 
 #### clearResults ()
-
 アクションの結果を取り消す。
 
 
 #### deadMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
-
 死亡しているバトラーを配列で返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Array</a>.&lt;<a>Game_Battler</a>&gt;</span>
-	</dd>
-</dl>
 
 #### inBattle () → {Boolean}
+戦闘中か。
 
-戦闘中か返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 #### initialize ()
-
 オブジェクト生成時の初期化。
 
+
 #### isAllDead () → {Boolean}
-
 全バトラーが死亡したか。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### makeActions ()
-
 戦闘行動を作成する。
 
 
 #### members () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
-
 戦闘中のバトラー生死問わず全て配列で返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Array</a>.&lt;<a>Game_Battler</a>&gt;</span>
-	</dd>
-</dl>
 
 #### movableMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
-
 動ける(死亡や麻痺などでない)バトラーを配列で返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Array</a>.&lt;<a>Game_Battler</a>&gt;</span>
-	</dd>
-</dl>
 
 #### onBattleEnd ()
-
 戦闘終了時に呼ばれるハンドラ。
 
 
 #### onBattleStart ()
-
 戦闘開始時に呼ばれるハンドラ。
 
 
 #### randomDeadTarget () → {[Game_Battler](Game_Battler.md)}
-
 死亡したバトラーからランダムに1体を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Game_Battler</a></span>
-	</dd>
-</dl>
 
 #### randomTarget () → {[Game_Battler](Game_Battler.md)}
-
 含まれるバトラーからランダムに1体を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Game_Battler</a></span>
-	</dd>
-</dl>
 
 #### select (activeMember)
-
 指定されたバトラーを選択する。
 
 ##### Parameters:
@@ -174,65 +86,32 @@
 
 
 #### smoothDeadTarget (index) → {[Game_Battler](Game_Battler.md)}
+指定番号のメンバーを優先して死亡しているメンバーを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Game_Battler</a></span>
-	</dd>
-</dl>
+| `index` | [Number](Number.md) | メンバー番号 |
 
 
 #### smoothTarget (index) → {[Game_Battler](Game_Battler.md)}
+指定番号のメンバーを優先して生きているメンバーを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
-
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Game_Battler</a></span>
-	</dd>
-</dl>
+| `index` | [Number](Number.md) | メンバー番号 |
 
 
 #### substituteBattler () → {[Game_Battler](Game_Battler.md)}
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Game_Battler</a></span>
-	</dd>
-</dl>
+身代わりのバトラーを返す。
 
 
 #### tgrSum () → {[Number](Number.md)}
+生きているメンバーの[狙われ率]の合計を返す。
 
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Number</a></span>
-	</dd>
-</dl>
 
 
  <br>
