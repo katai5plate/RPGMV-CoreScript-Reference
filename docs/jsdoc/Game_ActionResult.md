@@ -4,252 +4,152 @@
 
 #### new Game_ActionResult ()
 
-The game object declare class for a result of a battle action. For convinience, all member variables in this declare class are public.
+ [Game_Action](Game_Action.md) の結果を記述したオブジェクト。
+
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `used` | Boolean |  |
-| `missed` | Boolean |  |
-| `evaded` | Boolean |  |
-| `physical` | Boolean |  |
-| `drain` | Boolean |  |
-| `critical` | Boolean |  |
-| `success` | Boolean |  |
-| `hpAffected` | Boolean |  |
-| `hpDamage` | [Number](Number.md) |  |
-| `mpDamage` | [Number](Number.md) |  |
-| `tpDamage` | [Number](Number.md) |  |
-| `addedStates` | [Array](Array.md).<[Number](Number.md)> |  |
-| `removedStates` | [Array](Array.md).<[Number](Number.md)> |  |
-| `addedBuffs` | [Array](Array.md).<[Number](Number.md)> |  |
-| `addedDebuffs` | [Array](Array.md).<[Number](Number.md)> |  |
-| `removedBuffs` | [Array](Array.md).<[Number](Number.md)> |  |
+| `used` | Boolean | 使ったか |
+| `missed` | Boolean | 失敗か |
+| `evaded` | Boolean | [回避]か |
+| `physical` | Boolean | [物理攻撃]か |
+| `drain` | Boolean | [吸収]か |
+| `critical` | Boolean | [会心]か |
+| `success` | Boolean | 成功か |
+| `hpAffected` | Boolean | HPに変化があったか |
+| `hpDamage` | [Number](Number.md) | HPのダメージ量 |
+| `mpDamage` | [Number](Number.md) | MPのダメージ量 |
+| `tpDamage` | [Number](Number.md) | TPのダメージ量 |
+| `addedStates` | [Array](Array.md).<[Number](Number.md)> | 付加された[ステート]の配列 |
+| `removedStates` | [Array](Array.md).<[Number](Number.md)> | 削除された[ステート]の配列 |
+| `addedBuffs` | [Array](Array.md).<[Number](Number.md)> | 付加された[強化]の配列 |
+| `addedDebuffs` | [Array](Array.md).<[Number](Number.md)> | 付加された[弱体]の配列 |
+| `removedBuffs` | [Array](Array.md).<[Number](Number.md)> | 削除された[強化][弱体]の配列 |
 
-<dl>
-</dl>
 
 ### Methods
 
 #### addedStateObjects () → {[Array](Array.md).<[RPG.State](RPG.State.md)>}
+付加された[ステート]の配列を返す。
 
-Returns the added states from the action result.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>RPG.State</a>&gt;</span>
-                </dd>
-            </dl>
 
 #### clear ()
-
-Clears the game action result.
-<dl>
-</dl>
+結果情報を消す。
 
 #### initialize ()
-
- オブジェクト生成時の初期化。
-<dl>
-</dl>
+ オブジェクト生成時の初期化。
 
 #### isBuffAdded (paramId) → {Boolean}
-
-Returns true if the a buff is added to the specified param from the action result.
+指定された能力値に[強化]が付加されたか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isBuffRemoved (paramId) → {Boolean}
+指定された能力値の[強化]が削除されたか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isDebuffAdded (paramId) → {Boolean}
+指定された能力値に[弱体]が付加されたか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isHit () → {Boolean}
+攻撃がヒットしたか。
 
-Returns true if the action result is a hit.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
-
-#### isStateAdded (stateId)
+#### isStateAdded (stateId) → {Boolean}
+指定ステートが付加されたか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.State.md#ステートid) |
 
-<dl>
-</dl>
 
 #### isStateRemoved (stateId) → {Boolean}
+指定ステートが削除されたか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.State.md#ステートid) |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isStatusAffected () → {Boolean}
+指定ステートが効果を発揮したか。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### pushAddedBuff (paramId)
+指定された能力値の[強化]の付加を追加。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
-<dl>
-</dl>
 
 #### pushAddedDebuff (paramId)
+指定された能力値の[弱体]の付加を追加。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
-<dl>
-</dl>
 
 #### pushAddedState (stateId)
+指定ステートの付加を追加。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.State.md#ステートid) |
 
-<dl>
-</dl>
 
 #### pushRemovedBuff (paramId)
+指定された能力値の[強化]の削除を追加。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
-<dl>
-</dl>
 
 #### pushRemovedState (stateId)
+指定ステートの削除を追加。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) |  |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.State.md#ステートid) |
 
-<dl>
-</dl>
 
 #### removedStateObjects () → {[Array](Array.md).<[RPG.State](RPG.State.md)>}
-
-Returns the removes states from the result.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>RPG.State</a>&gt;</span>
-                </dd>
-            </dl>
+削除されたステートの配列を返す。
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
