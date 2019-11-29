@@ -12,7 +12,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_active` | Boolean |  アクティブか[Scene_Base.isActive ()](Scene_Base.md#isActive-) |
+| `_active` | Boolean |  アクティブか[Scene_Base.isActive ()](Scene_Base.md#isactive---boolean) |
 | `_fadeSign` | [Number](Number.md) | フェードの状態(  -1:OUT, 0:なし, 1:IN ) |
 | `_fadeDuration` | [Number](Number.md) |  フェードにかける時間 |
 | `_fadeSprite` | [ScreenSprite](ScreenSprite.md) |  フェードに使うスプライト |
