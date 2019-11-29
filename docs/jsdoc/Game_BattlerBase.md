@@ -81,10 +81,10 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 | `_mp` | [Number](Number.md) | MP |
 | `_tp` | [Number](Number.md) | TP |
 | `_hidden` | Boolean | 隠れているか |
-| `_paramPlus` | [Array](Array.md).<[Number](Number.md)> | 強化能力 |
-| `_states` | [Array](Array.md).<[Number](Number.md)> | ステート |
+| `_paramPlus` | [Array](Array.md).<[Number](Number.md)> | 能力値強化量の配列 |
+| `_states` | [Array](Array.md).<[Number](Number.md)> | [ステートID](RPG.Trait.md#ステートid) の配列 |
 | `_stateTurns` | Object | {[stateId: number]: number} ステートの残りターン|
-| `_buffs` | [Array](Array.md).<[Number](Number.md)> | 能力の強化 |
+| `_buffs` | [Array](Array.md).<[Number](Number.md)> | 能力の強化の配列 |
 | `_buffTurns` | [Array](Array.md).<[Number](Number.md)> | 強化の残りターン |
 
 
@@ -109,7 +109,7 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | ステートID |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.Trait.md#ステートid) |
 
 
 #### addParam (paramId, value)
@@ -119,7 +119,7 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | 通常能力ID |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
 | `value` | [Number](Number.md) | 値 |
 
 
@@ -148,17 +148,17 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 
 #### attackStates () → {[Array](Array.md).<[Number](Number.md)>}
-攻撃ステートを配列で返す。
+攻撃[ステートID](RPG.Trait.md#ステートid)を配列で返す。
 
 
 #### attackStatesRate (stateId)
-攻撃ステートの付加率を返す。
+指定攻撃ステートの付加率を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | ステートID |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.Trait.md#ステートid) |
 
 
 #### attackTimesAdd () → {[Number](Number.md)}
@@ -172,22 +172,22 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | 通常能力ID |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
 
 
 #### buffIconIndex (buffLevel, paramId) → {[Number](Number.md)}
-強化アイコンの番号を返す。
+[強化]アイコンの番号を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `buffLevel` | [Number](Number.md) | 強化レベル |
-| `paramId` | [Number](Number.md) | 通常能力ID |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
 
 
 #### buffIcons () → {[Array](Array.md).<[Number](Number.md)>}
-付加中の強化アイコン番号を配列で返す。
+付加中の[強化]アイコン番号を配列で返す。
 
 
 #### buffLength () → {[Number](Number.md)}
@@ -261,7 +261,7 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 
 #### clearBuffs ()
-能力強化を戻す。
+能力[強化]を戻す。
 
 
 #### clearParamPlus ()
@@ -291,17 +291,17 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | 通常能力値ID |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
 
 
 #### decreaseBuff (paramId)
-指定通常能力の能力強化を減少させる。
+指定通常能力の[強化]を減少させる。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | 通常能力ID |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
 
 
 #### die ()
@@ -315,17 +315,17 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `elementId` | [Number](Number.md) | 属性ID |
+| `elementId` | [Number](Number.md) | [属性ID](RPG.Trait.md#属性id) |
 
 
 #### eraseBuff (paramId)
-指定通常能力の強化を消す。
+指定通常能力の[強化]を消す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | 通常能力ID |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
 
 
 #### eraseState (stateId)
@@ -335,7 +335,7 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | ステートID |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.Trait.md#ステートid) |
 
 
 #### guardSkillId () → {[Number](Number.md)}
@@ -351,13 +351,13 @@ HPのパーセント量を返す。
 
 
 #### increaseBuff (paramId)
-指定通常能力を強化。
+指定通常能力を[強化]。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | 通常能力ID |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
 
 
 #### initialize ()
@@ -385,33 +385,33 @@ HPのパーセント量を返す。
 
 
 #### isBuffAffected (paramId) → {Boolean}
-指定通常能力値に強化がかかっているか。
+指定通常能力値に[強化]がかかっているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | 通常能力値ID |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
 
 
 #### isBuffExpired (paramId) → {Boolean}
-指定通常能力値の強化が切れているか。
+指定通常能力値の[強化]が切れているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | 通常能力値ID |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
 
 
 #### isBuffOrDebuffAffected (paramId) → {Boolean}
-指定通常能力値が強化・弱化されているか。
+指定通常能力値が[強化][弱体]されているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) |  |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
 
 
 #### isConfused () → {Boolean}
@@ -427,13 +427,13 @@ HPのパーセント量を返す。
 
 
 #### isDebuffAffected (paramId) → {Boolean}
-指定通常能力値が弱化されているか。
+指定通常能力値が[弱体]されているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | 常能力値ID |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
 
 
 #### isDualWield () → {Boolean}
@@ -455,7 +455,7 @@ HPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `atypeId` | [Number](Number.md) | 防具タイプID |
+| `atypeId` | [Number](Number.md) | [防具タイプID](RPG.Trait.md#52--防具タイプid) |
 
 
 #### isEquipTypeLocked (etypeId) → {Boolean}
@@ -465,7 +465,7 @@ HPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `etypeId` | [Number](Number.md) | 装備タイプID |
+| `etypeId` | [Number](Number.md) | [装備タイプID](RPG.Trait.md#53-54--装備タイプid) |
 
 
 #### isEquipTypeSealed (etypeId) → {Boolean}
@@ -475,7 +475,7 @@ HPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `etypeId` | [Number](Number.md) | 装備タイプID |
+| `etypeId` | [Number](Number.md) | [装備タイプID](RPG.Trait.md#53-54--装備タイプid) |
 
 
 #### isEquipWtypeOk (wtypeId) → {Boolean}
@@ -485,7 +485,7 @@ HPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `wtypeId` | [Number](Number.md) | 武器タイプID |
+| `wtypeId` | [Number](Number.md) | [武器タイプID](RPG.Trait.md#51--武器タイプid) |
 
 
 #### isGuard () → {Boolean}
@@ -497,23 +497,23 @@ HPのパーセント量を返す。
 
 
 #### isMaxBuffAffected (paramId) → {Boolean}
-指定通常能力値が最強化されているか。
+指定通常能力値が最[強化]されているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | 通常能力値ID |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
 
 
 #### isMaxDebuffAffected (paramId) → {Boolean}
-指定通常能力値が最弱化されているか。
+指定通常能力値が最[弱体]されているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | 通常能力値ID |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
 
 
 #### isOccasionOk (item) → {Boolean}
@@ -541,7 +541,7 @@ HPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stypeId` | [Number](Number.md) | スキルタイプID |
+| `stypeId` | [Number](Number.md) | [スキルタイプID](RPG.Trait.md#スキルタイプid) |
 
 
 #### isSkillTypeSealed (stypeId) → {Boolean}
@@ -551,7 +551,7 @@ HPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stypeId` | [Number](Number.md) | スキルタイプID |
+| `stypeId` | [Number](Number.md) | [スキルタイプID](RPG.Trait.md#スキルタイプid) |
 
 
 #### isSkillWtypeOk (skill) → {Boolean}
@@ -571,7 +571,7 @@ HPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | ステートID |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.Trait.md#ステートid) |
 
 
 #### isStateExpired (stateId) → {Boolean}
@@ -581,7 +581,7 @@ HPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | ステートID |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.Trait.md#ステートid) |
 
 
 #### isStateResist (stateId) → {Boolean}
@@ -591,7 +591,7 @@ HPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | ステートID |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.Trait.md#ステートid) |
 
 
 #### isSubstitute () → {Boolean}
@@ -645,24 +645,24 @@ MPのパーセント量を返す。
 
 
 #### overwriteBuffTurns (paramId, turns)
-通常能力強化の有効ターンを追加。
+通常能力[強化]の有効ターンを追加。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | 通常能力ID |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
 | `turns` | [Number](Number.md) | 追加ターン |
 
 
 #### param (paramId) → {[Number](Number.md)}
-指定通常能力値の様々な強化などの計算後の値を返す。
+指定通常能力値の様々な[強化]などの計算後の値を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | 通常能力ID |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
 
 
 #### paramBase (paramId) → {[Number](Number.md)}
@@ -672,17 +672,17 @@ MPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | 通常能力ID |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
 
 
 #### paramBuffRate (paramId) → {[Number](Number.md)}
-指定通常能力値の強化率を返す。
+指定通常能力値の[強化]率を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | 通常能力ID |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
 
 
 #### paramMax (paramId) → {[Number](Number.md)}
@@ -692,7 +692,7 @@ MPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | 通常能力ID |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
 
 
 #### paramMin (paramId) → {[Number](Number.md)}
@@ -702,7 +702,7 @@ MPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | 通常能力ID |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
 
 
 #### paramPlus (paramId) → {[Number](Number.md)}
@@ -712,7 +712,7 @@ MPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | 通常能力ID |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
 
 
 #### paramRate (paramId) → {[Number](Number.md)}
@@ -722,7 +722,7 @@ MPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | 通常能力値ID |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
 
 
 #### partyAbility (abilityId) → {Boolean}
@@ -732,7 +732,7 @@ MPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `abilityId` | [Number](Number.md) | パーティ能力ID |
+| `abilityId` | [Number](Number.md) |  [パーティ能力ID](RPG.Trait.md#64--パーティ能力id) |
 
 
 #### paySkillCost (skill)
@@ -760,7 +760,7 @@ HP・MP全回復しステートを解除。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | ステートID |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.Trait.md#ステートid) |
 
 
 #### restriction () → {[Number](Number.md)}
@@ -838,7 +838,7 @@ TPを設定。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `sparamId` | [Number](Number.md) | 特殊能力値ID |
+| `sparamId` | [Number](Number.md) | [特殊能力値ID](RPG.Trait.md#23--特殊能力値id) |
 
 
 #### specialFlag (flagId) → {Boolean}
@@ -870,11 +870,11 @@ SVでのステートの重ね合わせ番号を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | ステートID |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.Trait.md#ステートid) |
 
 
 #### stateResistSet () → {[Array](Array.md).<[Number](Number.md)>}
-[耐性 - ステート無効化]に対応する、ステートIDの配列を返す。
+[耐性 - ステート無効化]に対応する、[ステートID](RPG.Trait.md#ステートid)の配列を返す。
 
 
 #### states () → {[Array](Array.md).<[RPG.State](RPG.State.md)>}
@@ -890,70 +890,70 @@ TPのパーセント量を返す。
 
 
 #### traits (code) → {[Array](Array.md).<[RPG.Trait](RPG.Trait.md)>}
-指定番号(TRAIT_定数)の特徴を返す。
+指定特徴コード(TRAIT_定数)の特徴を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.md) | 特徴番号 |
+| `code` | [Number](Number.md) | [特徴コード](RPG.Trait.md#code) |
 
 
 #### traitsPi (code, id) → {[Number](Number.md)}
-指定番号(TRAIT_定数)・IDの特徴を掛け合わせて返す。
+指定特徴コード(TRAIT_定数)・IDの値を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.md) | 特徴番号 |
+| `code` | [Number](Number.md) | [特徴コード](RPG.Trait.md#code) |
 | `id` | [Number](Number.md) | 特徴ID |
 
 
 #### traitsSet (code) → {[Array](Array.md).<[Number](Number.md)>}
-指定番号(TRAIT_定数)の特徴を返す。
+指定特徴コード(TRAIT_定数)の、特徴IDの配列を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.md) | 特徴番号 |
+| `code` | [Number](Number.md) | [特徴コード](RPG.Trait.md#code) |
 
 
 #### traitsSum (code, id) → {[Number](Number.md)}
-指定番号(TRAIT_定数)・IDの特徴を足し合わせて返す。
+指定特徴コード(TRAIT_定数)・IDの特徴を足し合わせて返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.md) | 特徴番号 |
+| `code` | [Number](Number.md) | [特徴コード](RPG.Trait.md#code) |
 | `id` | [Number](Number.md) | 特徴ID |
 
 
 #### traitsSumAll (code) → {[Number](Number.md)}
-指定番号(TRAIT_定数)の特徴を積算して返す。
+指定特徴コード(TRAIT_定数)の特徴を積算して返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.md) | 特徴番号 |
+| `code` | [Number](Number.md) | [特徴コード](RPG.Trait.md#code) |
 
 
 #### traitsWithId (code, id) → {[Array](Array.md).<[RPG.Trait](RPG.Trait.md)>}
-指定番号(TRAIT_定数)・IDの特徴を配列で返す。
+指定特徴コード(TRAIT_定数)・IDの特徴を配列で返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.md) | 特徴番号 |
+| `code` | [Number](Number.md) | [特徴コード](RPG.Trait.md#code) |
 | `id` | [Number](Number.md) | 特徴ID |
 
 
 #### updateBuffTurns ()
-通常能力値強化のアップデート。
+通常能力値[強化]のアップデート。
 
 
 #### updateStateTurns ()
@@ -967,7 +967,7 @@ TPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `xparamId` | [Number](Number.md) | 追加能力値ID  |
+| `xparamId` | [Number](Number.md) | [追加能力値ID](RPG.Trait.md#22--追加能力値id) |
 
 
  <br>

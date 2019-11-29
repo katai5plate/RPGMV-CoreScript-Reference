@@ -12,14 +12,14 @@ traits プロパティに記録されている。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `code` | [Number](Number.md) | [特徴]コード |
+| `code` | [Number](Number.md) | [特徴]コード([下表](RPG.Trait.md#code)を参照) |
 | `dataId` | [Number](Number.md) | code 毎に意味の異なるID |
 | `value` | [Number](Number.md) | code 毎に意味の異なる値 |
 
 
-#### codeと対応するデータ形式
+#### code
 
-code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定数として定義されている。例えば <code>Game_BattlerBase.TRAIT_ELEMENT_RATE</code> の形で使う。
+code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定数として定義されている。例えば <code>Game_BattlerBase.TRAIT\_ELEMENT\_RATE</code> の形で使う。
 
 下表で 変動率・比率・増減値は 1 が 100%に当たる数値。
 
@@ -39,10 +39,10 @@ code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定�
 | code | 内容 | dataId | value |
 | --- | --- | --- | --- |
 | `TRAIT_PARAM:21` | 通常能力値 | [能力値ID](RPG.Trait.md#能力値id) | 変動率 (0〜10) |
-| `TRAIT_XPARAM:22` | 追加能力値 | [追加能力値ID](RPG.Trait.md#22--追加能力値) |  比率 (-10〜10) |
-| `TRAIT_SPARAM:23` | 特殊能力値 | [特殊能力値ID](RPG.Trait.md#23--特殊能力値) |  変動率 (0〜10) |
+| `TRAIT_XPARAM:22` | 追加能力値 | [追加能力値ID](RPG.Trait.md#22--追加能力値id) |  比率 (-10〜10) |
+| `TRAIT_SPARAM:23` | 特殊能力値 | [特殊能力値ID](RPG.Trait.md#23--特殊能力値id) |  変動率 (0〜10) |
 
-######  22 : 追加能力値
+######  22 : 追加能力値ID
 
 | ID | 追加能力値 |
 | --- | --- |
@@ -57,7 +57,7 @@ code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定�
 | 8 | MP再生率|
 | 9 | TP再生率 |
  
-###### 23 : 特殊能力値
+###### 23 : 特殊能力値ID
  
 | ID | 特殊能力値 |
 | --- | --- |
@@ -267,7 +267,7 @@ code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定�
 
 ###### スキルID
 
-[\$dataSkills](global.md#dataskills-arrayrpgskill) ([RPG.Skill](RPG.Skill.md) の配列)の番号。
+[$dataSkills](global.md#dataskills-arrayrpgskill) ([RPG.Skill](RPG.Skill.md) の配列)の番号。
 
 
 ###### スキルタイプID

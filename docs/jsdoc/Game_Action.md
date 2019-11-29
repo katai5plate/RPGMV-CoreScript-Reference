@@ -4,1360 +4,755 @@
 
 #### new Game_Action ()
 
-Game_Action The game object class representing a battle action.
+戦闘の行動を記述したクラス。
+
+攻撃や防御、スキル・アイテムの使用など。
 
 ##### Properties:
 
+EFFECT\_ から始まる定数は、[[使用効果](RPG.Effect.md#code)] を指定するのに使う。<br />
+SPECIAL\_EFFECT\_ESCAPE は、[使用効果 - 特殊効果]の dataId を指定するのに使う。<br />
+HITTYPE\_から始まる定数は、[[命中タイプ](RPG.UsableItem.md#hittype)] を指定するのに使う。
+
 | Name | Type | Description |
 | --- | --- | --- |
-| `EFFECT_RECOVER_HP` | [Number](Number.md) | [static] |
-| `EFFECT_RECOVER_MP` | [Number](Number.md) | [static] |
-| `EFFECT_GAIN_TP` | [Number](Number.md) | [static] |
-| `EFFECT_ADD_STATE` | [Number](Number.md) | [static] |
-| `EFFECT_REMOVE_STATE` | [Number](Number.md) | [static] |
-| `EFFECT_ADD_BUFF` | [Number](Number.md) | [static] |
-| `EFFECT_ADD_DEBUFF` | [Number](Number.md) | [static] |
-| `EFFECT_REMOVE_BUFF` | [Number](Number.md) | [static] |
-| `EFFECT_REMOVE_DEBUFF` | [Number](Number.md) | [static] |
-| `EFFECT_SPECIAL` | [Number](Number.md) | [static] |
-| `EFFECT_GROW` | [Number](Number.md) | [static] |
-| `EFFECT_LEARN_SKILL` | [Number](Number.md) | [static] |
-| `EFFECT_COMMON_EVENT` | [Number](Number.md) | [static] |
-| `SPECIAL_EFFECT_ESCAPE` | [Number](Number.md) | [static] |
-| `HITTYPE_CERTAIN` | [Number](Number.md) | [static] |
-| `HITTYPE_PHYSICAL` | [Number](Number.md) | [static] |
-| `HITTYPE_MAGICAL` | [Number](Number.md) | [static] |
-| `_subjectActorId` | [Number](Number.md) |  |
-| `_subjectEnemyIndex` | [Number](Number.md) |  |
-| `_targetIndex` | [Number](Number.md) |  |
-| `_forcing` | Boolean |  |
-| `_item` | [Game_Item](Game_Item.md) |  |
+| `EFFECT_RECOVER_HP` | [Number](Number.md) | [static] HP回復 |
+| `EFFECT_RECOVER_MP` | [Number](Number.md) | [static] MP回復 |
+| `EFFECT_GAIN_TP` | [Number](Number.md) | [static] TP増加 |
+| `EFFECT_ADD_STATE` | [Number](Number.md) | [static] ステート付加 |
+| `EFFECT_REMOVE_STATE` | [Number](Number.md) | [static] ステート解除 |
+| `EFFECT_ADD_BUFF` | [Number](Number.md) | [static] 強化 |
+| `EFFECT_ADD_DEBUFF` | [Number](Number.md) | [static] 弱体 |
+| `EFFECT_REMOVE_BUFF` | [Number](Number.md) | [static] 強化の解除 |
+| `EFFECT_REMOVE_DEBUFF` | [Number](Number.md) | [static] 弱体の解除 |
+| `EFFECT_SPECIAL` | [Number](Number.md) | [static] 特殊効果 |
+| `EFFECT_GROW` | [Number](Number.md) | [static] 成長 |
+| `EFFECT_LEARN_SKILL` | [Number](Number.md) | [static] スキル習得 |
+| `EFFECT_COMMON_EVENT` | [Number](Number.md) | [static] コモンイベント |
+| `SPECIAL_EFFECT_ESCAPE` | [Number](Number.md) | [static] 特殊効果 - 逃げる |
+| `HITTYPE_CERTAIN` | [Number](Number.md) | [static] 必中 |
+| `HITTYPE_PHYSICAL` | [Number](Number.md) | [static] 物理攻撃 |
+| `HITTYPE_MAGICAL` | [Number](Number.md) | [static] 魔法攻撃 |
+| `_subjectActorId` | [Number](Number.md) | 行動主体アクターID |
+| `_subjectEnemyIndex` | [Number](Number.md) | 行動主体敵番号 |
+| `_targetIndex` | [Number](Number.md) | 対象番号 |
+| `_forcing` | Boolean | 強制行動か |
+| `_item` | [Game_Item](Game_Item.md) | スキル・アイテム |
 
-<dl>
-</dl>
 
 ### Methods
 
-#### (static) initialize (subject, forcing)
-
- オブジェクト生成時の初期化。
+#### (static) initialize (subject, forcing) オブジェクト生成時の初期化。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `subject` | [Game_Battler](Game_Battler.md) |  |
-| `forcing` | Boolean |  |
+| `subject` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `forcing` | Boolean | 強制行動か |
 
-<dl>
-</dl>
 
 #### apply (target)
+指定対象の出現。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
 
-<dl>
-</dl>
 
 #### applyCritical (damage) → {[Number](Number.md)}
+指定ダメージで[会心]攻撃。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `damage` | [Number](Number.md) |  |
+| `damage` | [Number](Number.md) | ダメージ量 |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### applyGlobal ()
+全体に適用。
 
-<dl>
-</dl>
 
 #### applyGuard (damage, target) → {[Number](Number.md)}
+指定ダメージを対象バトラーが防御し、防御分を減らしたダメージを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `damage` | [Number](Number.md) |  |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `damage` | [Number](Number.md) | ダメージ量 |
+| `target` | [Game_Battler](Game_Battler.md) |対象バトラー |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### applyItemEffect (target, effect)
+指定対象にエフェクトを適用。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
-| `effect` | [RPG.Effect](RPG.Effect.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `effect` | [RPG.Effect](RPG.Effect.md) | エフェクト |
 
-<dl>
-</dl>
 
 #### applyItemUserEffect (target)
+指定対象にアイテムの効果を適用。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
 
-<dl>
-</dl>
 
 #### applyVariance (damage, variance) → {[Number](Number.md)}
+指定ダメージに対して[分散度]を適用したダメージを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `damage` | [Number](Number.md) |  |
-| `variance` | [Number](Number.md) |  |
+| `damage` | [Number](Number.md) | ダメージ量 |
+| `variance` | [Number](Number.md) | [分散度] % (0〜100) |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### calcElementRate (target) → {[Number](Number.md)}
+指定対象への[属性]の効果率を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### checkDamageType (list) → {Boolean}
+_item プロパティのダメージタイプと同じものが、指定したの配列の中にあるか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `list` | [Array](Array.md).<[Number](Number.md)> |  |
+| `list` | [Array](Array.md).<[Number](Number.md)> | [[ダメージタイプ](RPG.Damage.md#type)]の配列 |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### checkItemScope (list) → {Boolean}
+_item プロパティの[範囲]と同じものが、指定したの配列の中にあるか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `list` | [Array](Array.md).<[Number](Number.md)> |  |
+| `list` | [Array](Array.md).<[Number](Number.md)> |[[範囲](RPG.UsableItem.md#scope)]の配列|
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### clear ()
+アイテムと対象IDを空に。
 
-<dl>
-</dl>
 
 #### confusionTarget () → {[Game_Battler](Game_Battler.md)}
+混乱している場合の、対象バトラーを選んで返す。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Game_Battler</a></span>
-                </dd>
-            </dl>
 
 #### decideRandomTarget ()
+[範囲]に沿って、対象をランダムに決定。
 
-<dl>
-</dl>
 
 #### elementsMaxRate (target, elements) → {[Number](Number.md)}
+ 指定対象の指定属性のうち最大の[耐性 - 属性有効度]を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
-| `elements` | [Array](Array.md).<[Number](Number.md)> |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `elements` | [Array](Array.md).<[Number](Number.md)> | [属性ID](RPG.Damage.md#elementid属性id))の配列 |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### evalDamageFormula (target) → {[Number](Number.md)}
+[[ダメージ](RPG.Damage.md)]の[計算式]を適用し、ダメージ量を返す。<br />
+target引数は使われていないが、プラグインなど将来の拡張用かと思われる。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### evaluate () → {[Number](Number.md)}
+全ての対象に効果を適用して、総ダメージ量を返す。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### evaluateWithTarget (target) → {[Number](Number.md)}
+指定対象に効果を適用して、ダメージ量を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### executeDamage (target, value)
+指定対象にダメージを与える。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
-| `value` | [Number](Number.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `value` | [Number](Number.md) | ダメージ量 |
 
-<dl>
-</dl>
 
 #### executeHpDamage (target, value)
+指定対象にHPダメージを与える。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
-| `value` | [Number](Number.md) |  |
-
-<dl>
-</dl>
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `value` | [Number](Number.md) | HPダメージ量 |
 
 #### executeMpDamage (target, value)
+指定対象にMPダメージを与える。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
-| `value` | [Number](Number.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `value` | [Number](Number.md) | MPダメージ量 |
 
-<dl>
-</dl>
 
 #### friendsUnit () → {[Game_Unit](Game_Unit.md)}
+味方パーティを返す。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Game_Unit</a></span>
-                </dd>
-            </dl>
 
 #### gainDrainedHp (value)
+敵から吸収したHPを得る。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.md) |  |
+| `value` | [Number](Number.md) | HP回復量 |
 
-<dl>
-</dl>
 
 #### gainDrainedMp (value)
+敵から吸収したMPを得る。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.md) |  |
+| `value` | [Number](Number.md) | MP回復量 |
 
-<dl>
-</dl>
 
 #### hasItemAnyValidEffects (target) → {Boolean}
+指定対象が、なんらかの[使用効果]\([RPG.Effect](RPG.Effect.md))を発生させるか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isAttack () → {Boolean}
+行動が[攻撃]か。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isCertainHit () → {Boolean}
+[[命中タイプ](RPG.UsableItem.md#hittype)]が[必中]か。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isDamage () → {Boolean}
+[[ダメージ - タイプ](RPG.Damage.md#type)]が[HPダメージ]か[MPダメージ]か。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isDrain () → {Boolean}
+[[ダメージ - タイプ](RPG.Damage.md#type)]が[HP吸収]か[MP吸収]か。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isForAll () → {Boolean}
+[[範囲](RPG.UsableItem.md#scope)]が敵味方・戦闘不能問わず全体か。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isForDeadFriend () → {Boolean}
+[[範囲](RPG.UsableItem.md#scope)]が戦闘不能の味方か。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isForFriend () → {Boolean}
+[[範囲](RPG.UsableItem.md#scope)]が味方(自身も含む)か。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isForOne () → {Boolean}
+[[範囲](RPG.UsableItem.md#scope)]が敵味方問わず単体(複数回含まず)か。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isForOpponent () → {Boolean}
+[[範囲](RPG.UsableItem.md#scope)]が敵単体(複数回も含む)か。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isForRandom () → {Boolean}
+[[範囲](RPG.UsableItem.md#scope)]がランダムな敵か。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isForUser () → {Boolean}
+[[範囲](RPG.UsableItem.md#scope)]が自分自身か。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isGuard () → {Boolean}
+行動が[防御]か。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isHpEffect () → {Boolean}
+[[ダメージ - タイプ](RPG.Damage.md#type)]がHPに関するものか。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isHpRecover () → {Boolean}
+[[ダメージ - タイプ](RPG.Damage.md#type)]が[HP回復]か。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isItem () → {Boolean}
+[アイテム]か。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isMagical () → {Boolean}
+[[命中タイプ](RPG.UsableItem.md#hittype)]が[魔法攻撃]か。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isMagicSkill () → {Boolean}
+[魔法]スキルか。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isMpEffect () → {Boolean}
+[[ダメージ - タイプ](RPG.Damage.md#type)]がMPに関するものか。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isMpRecover () → {Boolean}
+[[ダメージ - タイプ](RPG.Damage.md#type)]が[MP回復]か。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isPhysical () → {Boolean}
+[[命中タイプ](RPG.UsableItem.md#hittype)]が[物理攻撃]か。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isRecover () → {Boolean}
+[[ダメージ - タイプ](RPG.Damage.md#type)]が[MP回復]か。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isSkill () → {Boolean}
+[スキル]か。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### isValid () → {Boolean}
+行動可能か。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### item () → {[RPG.UsableItem](RPG.UsableItem.md)}
+行動の情報を記述したオブジェクトを返す。<br />
+道具というより項目ぐらいの意味で、攻撃・スキルなどにもこれが使われる。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>RPG.UsableItem</a></span>
-                </dd>
-            </dl>
 
 #### itemCnt (target) → {[Number](Number.md)}
+指定対象の[反撃率]を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### itemCri (target) → {[Number](Number.md)}
+指定対象の[会心率]を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### itemEffectAddAttackState (target, effect)
+指定対象に攻撃の[使用効果]を加える。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
-| `effect` | [RPG.Effect](RPG.Effect.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `effect` | [RPG.Effect](RPG.Effect.md) | [使用効果] |
 
-<dl>
-</dl>
 
 #### itemEffectAddBuff (target, effect)
+指定対象に[強化]の[使用効果]を加える。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
-| `effect` | [RPG.Effect](RPG.Effect.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `effect` | [RPG.Effect](RPG.Effect.md) | [使用効果] |
 
-<dl>
-</dl>
 
 #### itemEffectAddDebuff (target, effect)
+指定対象に[弱体]の[使用効果]を加える。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
-| `effect` | [RPG.Effect](RPG.Effect.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `effect` | [RPG.Effect](RPG.Effect.md) | [使用効果] |
 
-<dl>
-</dl>
 
 #### itemEffectAddNormalState (target, effect)
+指定対象に通常の[使用効果]を加える。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
-| `effect` | [RPG.Effect](RPG.Effect.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `effect` | [RPG.Effect](RPG.Effect.md) | [使用効果] ||
 
-<dl>
-</dl>
 
 #### itemEffectAddState (target, effect)
+指定対象に[使用効果]を加える。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
-| `effect` | [RPG.Effect](RPG.Effect.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `effect` | [RPG.Effect](RPG.Effect.md) | [使用効果] |
 
-<dl>
-</dl>
 
 #### itemEffectCommonEvent (target, effect)
+指定対象に[コモンイベント]の[使用効果]を加える。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
-| `effect` | [RPG.Effect](RPG.Effect.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `effect` | [RPG.Effect](RPG.Effect.md) | [使用効果] |
 
-<dl>
-</dl>
 
 #### itemEffectGainTp (target, effect)
+指定対象に[TP増加]の[使用効果]を加える。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
-| `effect` | [RPG.Effect](RPG.Effect.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `effect` | [RPG.Effect](RPG.Effect.md) | [使用効果] |
 
-<dl>
-</dl>
 
 #### itemEffectGrow (target, effect)
+指定対象に[成長]の[使用効果]を加える。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
-| `effect` | [RPG.Effect](RPG.Effect.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `effect` | [RPG.Effect](RPG.Effect.md) | [使用効果] |
 
-<dl>
-</dl>
 
 #### itemEffectLearnSkill (target, effect)
+指定対象に[スキル習得]の[使用効果]を加える。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
-| `effect` | [RPG.Effect](RPG.Effect.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `effect` | [RPG.Effect](RPG.Effect.md) | [使用効果] |
 
-<dl>
-</dl>
 
 #### itemEffectRecoverHp (target, effect)
+指定対象に[HP回復]の[使用効果]を加える。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
-| `effect` | [RPG.Effect](RPG.Effect.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `effect` | [RPG.Effect](RPG.Effect.md) | [使用効果] |
 
-<dl>
-</dl>
 
 #### itemEffectRecoverMp (target, effect)
+指定対象に[MP回復]の[使用効果]を加える。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
-| `effect` | [RPG.Effect](RPG.Effect.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `effect` | [RPG.Effect](RPG.Effect.md) | [使用効果] |
 
-<dl>
-</dl>
 
 #### itemEffectRemoveBuff (target, effect)
+指定対象に[強化の解除]の[使用効果]を加える。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
-| `effect` | [RPG.Effect](RPG.Effect.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `effect` | [RPG.Effect](RPG.Effect.md) | [使用効果] |
 
-<dl>
-</dl>
 
 #### itemEffectRemoveDebuff (target, effect)
+指定対象に[弱体の解除]の[使用効果]を加える。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
-| `effect` | [RPG.Effect](RPG.Effect.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `effect` | [RPG.Effect](RPG.Effect.md) | [使用効果] |
 
-<dl>
-</dl>
 
 #### itemEffectRemoveState (target, effect)
+指定対象に[ステート解除]の[使用効果]を加える。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
-| `effect` | [RPG.Effect](RPG.Effect.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `effect` | [RPG.Effect](RPG.Effect.md) | [使用効果] |
 
-<dl>
-</dl>
 
 #### itemEffectSpecial (target, effect)
+指定対象に[特殊効果]の[使用効果]を加える。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
-| `effect` | [RPG.Effect](RPG.Effect.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `effect` | [RPG.Effect](RPG.Effect.md) | [使用効果] |
 
-<dl>
-</dl>
 
 #### itemEva (target) → {[Number](Number.md)}
+指定対象の[回避率]を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### itemHit (target) → {[Number](Number.md)}
+指定対象の[命中率]を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### itemMrf (target) → {[Number](Number.md)}
+指定対象の[魔法反射率]を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### itemTargetCandidates () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
+対象となり得るバトラーを配列で返す。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Game_Battler</a>&gt;</span>
-                </dd>
-            </dl>
 
 #### lukEffectRate (target) → {[Number](Number.md)}
+指定対象の[幸運]の適用率を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### makeDamageValue (target, critical) → {[Number](Number.md)}
+指定対象へのダメージ量を計算して返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
-| `critical` | Boolean |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `critical` | Boolean | [会心]か |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### makeSuccess (target)
+行動結果用に指定対象の行動に成功したフラグを立てる。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
 
-<dl>
-</dl>
 
 #### makeTargets () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
+対象となり得るバトラーを配列で返す。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Game_Battler</a>&gt;</span>
-                </dd>
-            </dl>
 
 #### needsSelection () → {Boolean}
+[[範囲](RPG.UsableItem.md#scope)]が単体で対象の選択が必要か。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### numRepeats () → {[Number](Number.md)}
+繰り返し行動回数を返す。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### numTargets () → {[Number](Number.md)}
+単体攻撃対象の数を返す。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### opponentsUnit () → {[Game_Unit](Game_Unit.md)}
+敵対グループを返す。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Game_Unit</a></span>
-                </dd>
-            </dl>
 
 #### prepare ()
+準備。
 
-<dl>
-</dl>
 
 #### repeatTargets (targets) → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
+繰り返し行動の対象を配列で返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `targets` | [Array](Array.md).<[Game_Battler](Game_Battler.md)> |  |
+| `targets` | [Array](Array.md).<[Game_Battler](Game_Battler.md)> | 対象バトラーの配列 |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Game_Battler</a>&gt;</span>
-                </dd>
-            </dl>
 
 #### setAttack ()
+攻撃の準備。
 
-<dl>
-</dl>
 
 #### setConfusion ()
+混乱の準備。
 
-<dl>
-</dl>
 
 #### setEnemyAction (action)
+敵に指定[行動パターン]を準備。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.md) |  |
+| `action` | [RPG.Enemy.Action](RPG.Enemy.Action.md) | [行動パターン] |
 
-<dl>
-</dl>
 
 #### setGuard ()
+防御の準備。
 
-<dl>
-</dl>
 
 #### setItem (itemId)
+指定アイテムの準備。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `itemId` | [Number](Number.md) |  |
+| `itemId` | [Number](Number.md) | アイテムID |
 
-<dl>
-</dl>
 
 #### setItemObject (object)
+指定アイテム・スキルの準備。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `object` | [RPG.UsableItem](RPG.UsableItem.md) |  |
+| `object` | [RPG.UsableItem](RPG.UsableItem.md) | アイテム・スキル |
 
-<dl>
-</dl>
 
 #### setSkill (skillId)
+指定スキルの準備。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skillId` | [Number](Number.md) |  |
+| `skillId` | [Number](Number.md) | スキルID |
 
-<dl>
-</dl>
 
 #### setSubject (subject)
+行動主体を指定して変更。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `subject` | [Game_Battler](Game_Battler.md) |  |
+| `subject` | [Game_Battler](Game_Battler.md) | 行動主体バトラー |
 
-<dl>
-</dl>
 
 #### setTarget (targetIndex)
+番号で対象を指定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `targetIndex` | [Number](Number.md) |  |
+| `targetIndex` | [Number](Number.md) | 対象番号 |
 
-<dl>
-</dl>
 
 #### speed () → {[Number](Number.md)}
+速度を返す。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### subject () → {[Game_Battler](Game_Battler.md)}
+行動主体を返す。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Game_Battler</a></span>
-                </dd>
-            </dl>
 
 #### targetsForFriends () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
+味方側のバトラーの配列を返す。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Game_Battler</a>&gt;</span>
-                </dd>
-            </dl>
 
 #### targetsForOpponents () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
+敵側のバトラーの配列を返す。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Game_Battler</a>&gt;</span>
-                </dd>
-            </dl>
 
 #### testApply (target) → {Boolean}
+対象に行動を試験適用し、その結果は行動可能か。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### testItemEffect (target, effect) → {Boolean}
+対象に[使用効果]を試験適用し、その結果は実行可能か。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
-| `effect` | [RPG.Effect](RPG.Effect.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `effect` | [RPG.Effect](RPG.Effect.md) | [使用効果] |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)

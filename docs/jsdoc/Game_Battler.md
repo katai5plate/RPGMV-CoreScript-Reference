@@ -171,24 +171,24 @@
 
 
 #### addBuff (paramId, turns)
-指定通常能力に指定ターン数の強化を追加。
+指定通常能力に指定ターン数の[強化]を追加。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | 通常能力ID |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
 | `turns` | [Number](Number.md) | ターン数 |
 
 
 #### addDebuff (paramId, turns)
-指定通常能力に指定ターン数の弱化を追加。
+指定通常能力に指定ターン数の[弱体]を追加。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | 通常能力ID |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
 | `turns` | [Number](Number.md) | ターン数 |
 
 
@@ -199,7 +199,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | ステートID |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.Trait.md#ステートid) |
 
 
 #### chargeTpByDamage (damageRate)
@@ -376,7 +376,7 @@ TPの量を25までのランダムな値に初期化。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | ステートID |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.Trait.md#ステートid) |
 
 
 #### isStateRestrict (stateId) → {Boolean}
@@ -386,7 +386,7 @@ TPの量を25までのランダムな値に初期化。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | ステートID |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.Trait.md#ステートid) |
 
 
 #### isUndecided () → {Boolean}
@@ -542,24 +542,25 @@ TP自動回復を適用。
 
 
 #### removeAllBuffs ()
-全能力強化を解除。
+全能力の[強化]を解除。
 
 
 #### removeBattleStates ()
 ステートを解除。
 
 #### removeBuff (paramId)
-指定通常能力の強化を解除。
+指定通常能力の[強化]を解除。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | 通常能力ID |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
 
 
 #### removeBuffsAuto ()
-ターン終了した能力強化・弱化を解除。
+ターン終了した能力[強化][弱体]を解除。
+
 
 #### removeCurrentAction ()
 現在の行動を解除。
@@ -572,7 +573,7 @@ TP自動回復を適用。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | ステートID |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.Trait.md#ステートid) |
 
 
 #### removeStatesAuto (timing)
