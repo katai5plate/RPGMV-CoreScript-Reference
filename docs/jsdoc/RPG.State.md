@@ -7,11 +7,11 @@
 読み込まれたデータは、大域変数 [$dataStates](global.md#datastates-arrayrpgstate) に配列として格納されている。
 
 #### ステートID
-以下は規定値なので、
+以下0は固定、他は規定値。
 
 | ID | [ステート] |
 | --- | --- |
-| 0 | 通常(21:ステート付加のみ) |
+| 0 | 通常 |
 | 1 | 戦闘不能 |
 | 2 | 防御 |
 | 3 | 不死身 |
@@ -23,11 +23,12 @@
 | 9 | 魅了 |
 | 10 | 睡眠 |
 
+
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `id` | [Number](Number.md) | ステートID(上表を参照) |
+| `id` | [Number](Number.md) | [ステートID](RPG.State.md#ステートid) |
 | `name` | [String](String.md) | [名前] |
 | `restriction` | [Number](Number.md) | [行動制約] \( 0:なし, 1:敵に攻撃, 2:誰かを攻撃, 3:味方を攻撃, 4:行動できない ) |
 | `priority` | [Number](Number.md) | [優先度] \(0~100) |
