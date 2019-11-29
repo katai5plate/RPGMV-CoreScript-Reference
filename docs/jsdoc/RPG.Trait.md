@@ -196,7 +196,7 @@ code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定�
 | 2 | 消えない |
 
 ###### パーティ能力ID
-[Game_Party](Game_Party.md) にIDの定数が定義されている。例えば <code>Game\_Party. ABILITY\_ENCOUNTER\_HALF </code> の形で使う。
+[Game_Party](Game_Party.md) にIDの定数が定義されている。例えば <code>Game_Party.ABILITY_ENCOUNTER_HALF</code> の形で使う。
 
 | ID | [パーティ能力] |
 | --- | --- |
