@@ -168,10 +168,6 @@
     * [PIXI.Texture](http://pixijs.download/release/docs/PIXI.Texture.html)
     * [PIXI.DisplayObject](PIXI.DisplayObject.md)
         * [PIXI.Container](PIXI.Container.md) → [Extends](index.md#コンテナpixicontainer)
-            * [PIXI.Graphics](PIXI.Graphics.md)
-                * [PIXI.tilemap.GraphicsLayer](https://github.com/pixijs/pixi-tilemap/blob/master/src/GraphicsLayer.ts)
-            * [PIXI.Sprite](PIXI.Sprite.md)
-                * [Sprite](Sprite.md) → [Extends](index.md#スプライトsprite)
 
 
 #### レンダラ
@@ -197,6 +193,27 @@
             * [PIXI.tilemap.RectTileShader](https://github.com/pixijs/pixi-tilemap/blob/master/src/RectTileShader.ts)
 
 
+#### コンテナ(PIXI.Container)
+
+* [ScreenSprite](ScreenSprite.md)
+* [ToneSprite](ToneSprite.md)
+* [Weather](Weather.md)
+* [WindowLayer](WindowLayer.md)
+* [PIXI.tilemap.CompositeRectTileLayer](https://github.com/pixijs/pixi-tilemap/blob/master/src/CompositeRectTileLayer.ts)
+* [PIXI.tilemap.RectTileLayer](https://github.com/pixijs/pixi-tilemap/blob/master/src/RectTileLayer.ts)
+* [PIXI.tilemap.ZLayer](https://github.com/pixijs/pixi-tilemap/blob/master/src/ZLayer.ts)
+* [PIXI.Graphics](PIXI.Graphics.md)
+    * [PIXI.tilemap.GraphicsLayer](https://github.com/pixijs/pixi-tilemap/blob/master/src/GraphicsLayer.ts)
+* [Tilemap](Tilemap.md)
+    * [ShaderTilemap](ShaderTilemap.md)
+* [PIXI.Sprite](PIXI.Sprite.md)
+    * [Sprite](Sprite.md) → [Extends](index.md#スプライトsprite)
+* [Stage](Stage.md)
+    * [Scene_Base](Scene_Base.md) → [Extends](index.md#シーンscene_base)
+* [Window](Window.md)
+    * [Window_Base](Window_Base.md) → [Extends](index.md#ウィンドウwindow_base)
+
+
 #### スプライト(Sprite)
 
 * [Sprite_Animation](Sprite_Animation.md)
@@ -217,23 +234,6 @@
     * [Sprite_Battler](Sprite_Battler.md)
         * [Sprite_Actor](Sprite_Actor.md)
         * [Sprite_Enemy](Sprite_Enemy.md)
-
-
-#### コンテナ(PIXI.Container)
-
-* [ScreenSprite](ScreenSprite.md)
-* [ToneSprite](ToneSprite.md)
-* [Weather](Weather.md)
-* [WindowLayer](WindowLayer.md)
-* [PIXI.tilemap.CompositeRectTileLayer](https://github.com/pixijs/pixi-tilemap/blob/master/src/CompositeRectTileLayer.ts)
-* [PIXI.tilemap.RectTileLayer](https://github.com/pixijs/pixi-tilemap/blob/master/src/RectTileLayer.ts)
-* [PIXI.tilemap.ZLayer](https://github.com/pixijs/pixi-tilemap/blob/master/src/ZLayer.ts)
-* [Tilemap](Tilemap.md)
-    * [ShaderTilemap](ShaderTilemap.md)
-* [Stage](Stage.md)
-    * [Scene_Base](Scene_Base.md) → [Extends](index.md#シーンscene_base)
-* [Window](Window.md)
-    * [Window_Base](Window_Base.md) → [Extends](index.md#ウィンドウwindow_base)
 
 
 #### シーン(Scene_Base)
