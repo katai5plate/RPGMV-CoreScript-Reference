@@ -19,7 +19,7 @@ traits プロパティに記録されている。
 
 #### code
 
-code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定数として定義されている。例えば <code>Game_BattlerBase.TRAIT\_ELEMENT\_RATE</code> の形で使う。
+code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定数として定義されている。例えば <code>Game_BattlerBase.TRAIT_ELEMENT_RATE</code> の形で使う。
 
 下表で 変動率・比率・増減値は 1 が 100%に当たる数値。
 
@@ -96,13 +96,13 @@ code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定�
 
 | code | 内容 | dataId | value |
 | --- | --- | --- | --- |
-| `TRAIT_EQUIP_WTYPE:51` | 武器タイプ装備 | [武器タイプID](RPG.Trait.md#51--武器タイプid) | *1* |
-| `TRAIT_EQUIP_ATYPE:52` | 防具タイプ装備 | [防具タイプID](RPG.Trait.md#52--防具タイプid) | *1* |
-| `TRAIT_EQUIP_LOCK:53` | 装備固定 | [装備タイプID](RPG.Trait.md#53-54--装備タイプid) | *1* |
-| `TRAIT_EQUIP_SEAL:54` | 装備封印 | [装備タイプID](RPG.Trait.md#53-54--装備タイプid) | *1* |
-| `TRAIT_SLOT_TYPE:55` | スロットタイプ | [スロットタイプID](RPG.Trait.md#55--スロットタイプid) | *1* |
+| `TRAIT_EQUIP_WTYPE:51` | 武器タイプ装備 | [武器タイプID](RPG.Trait.md#武器タイプid) | *1* |
+| `TRAIT_EQUIP_ATYPE:52` | 防具タイプ装備 | [防具タイプID](RPG.Trait.md#防具タイプid) | *1* |
+| `TRAIT_EQUIP_LOCK:53` | 装備固定 | [装備タイプID](RPG.Trait.md#装備タイプid) | *1* |
+| `TRAIT_EQUIP_SEAL:54` | 装備封印 | [装備タイプID](RPG.Trait.md#装備タイプid) | *1* |
+| `TRAIT_SLOT_TYPE:55` | スロットタイプ | [スロットタイプID](RPG.Trait.md#スロットタイプid) | *1* |
 
-###### 51 : 武器タイプID
+###### 武器タイプID
 
 [データベース]-[タイプ]-[武器タイプ] で設定されたID。
 
@@ -127,7 +127,7 @@ code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定�
 | 11 | 槍 |
 
 
-###### 52 : 防具タイプID
+###### 防具タイプID
 
 [データベース]-[タイプ]-[防具タイプ] で設定されたID。
 
@@ -145,7 +145,7 @@ code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定�
 | 6 | 大型盾 | 
 
 
-###### 53 ,54 : 装備タイプID
+###### 装備タイプID
 
 [データベース]-[タイプ]-[装備タイプ] で設定されたID。
 
@@ -161,7 +161,7 @@ code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定�
 | 3 | 身体 |
 | 4 | 装飾品 |
 
-###### 55 : スロットタイプID
+###### スロットタイプID
 
 | ID | [スロットタイプ] |
 | --- | --- |
@@ -174,11 +174,11 @@ code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定�
 | code | 内容 | dataId | value |
 | --- | --- | --- | --- |
 | `TRAIT_ACTION_PLUS:61` | 行動回数追加 | *0* | 確率(%) |
-| `TRAIT_SPECIAL_FLAG:62` | 特殊フラグ | [特殊フラグID](RPG.Trait.md#62--特殊フラグid) | *1* |
-| `TRAIT_COLLAPSE_TYPE:63` | 消滅エフェクト | [消滅エフェクトID](RPG.Trait.md#63--消滅エフェクトid) | *1*|
-| `TRAIT_PARTY_ABILITY:64` | パーティ能力 | [パーティ能力ID](RPG.Trait.md#64--パーティ能力id) | *1* |
+| `TRAIT_SPECIAL_FLAG:62` | 特殊フラグ | [特殊フラグID](RPG.Trait.md#特殊フラグid) | *1* |
+| `TRAIT_COLLAPSE_TYPE:63` | 消滅エフェクト | [消滅エフェクトID](RPG.Trait.md#消滅エフェクトid) | *1*|
+| `TRAIT_PARTY_ABILITY:64` | パーティ能力 | [パーティ能力ID](RPG.Trait.md#パーティ能力id) | *1* |
 
-###### 62 : 特殊フラグID
+###### 特殊フラグID
 
 | ID | [特殊フラグ] |
 | --- | --- |
@@ -187,7 +187,7 @@ code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定�
 | `FLAG_ID_SUBSTITUTE:2` | 身代わり |
 | `FLAG_ID_PRESERVE_TP:3` | TP持ち越し |
 
-###### 63 : 消滅エフェクトID
+###### 消滅エフェクトID
 
 | ID | [消滅エフェクト] |
 | --- | --- |
@@ -195,16 +195,17 @@ code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定�
 | 1 | ボス |
 | 2 | 消えない |
 
-###### 64 : パーティ能力ID
+###### パーティ能力ID
+[Game_Party](Game_Party.md) にIDの定数が定義されている。例えば <code>Game\_Party. ABILITY\_ENCOUNTER\_HALF </code> の形で使う。
 
 | ID | [パーティ能力] |
 | --- | --- |
-| 0 | エンカウント半減 |
-| 1 | エンカウント無効 |
-| 2 | 不意打ち無効 |
-| 3 | 先制攻撃率アップ |
-| 4 | 獲得金額2倍 |
-| 5 | アイテム入手率2倍 |
+| `ABILITY_ENCOUNTER_HALF:0` | エンカウント半減 |
+| `ABILITY_ENCOUNTER_NONE:1` | エンカウント無効 |
+| `ABILITY_CANCEL_SURPRISE:2` | 不意打ち無効 |
+| `ABILITY_RAISE_PREEMPTIVE:3` | 先制攻撃率アップ |
+| `ABILITY_GOLD_DOUBLE:4` | 獲得金額2倍 |
+| `ABILITY_DROP_ITEM_DOUBLE:5` | アイテム入手率2倍 |
 
 
 ###### スキルタイプID
