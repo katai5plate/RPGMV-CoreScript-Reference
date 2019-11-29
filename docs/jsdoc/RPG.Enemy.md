@@ -6,15 +6,29 @@
  
 大域変数 [$dataEnemies](global.md#dataenemies-arrayrpgenemy) に配列として格納されている。
 
+##### 能力値ID
+
+| ID | [能力値] |
+| --- | --- |
+| 0 | 最大HP |
+| 1 | 最大MP |
+| 2 | 攻撃力 |
+| 3 | 防御力 |
+| 4 | 魔法力 |
+| 5 | 魔法防御 |
+| 6 | 敏捷性 |
+| 7 | 運 |
+
+
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `battlerName` | [String](String.md) | 画像ファイル名(拡張子なし) |
-| `battlerHue` | [Number](Number.md) | [色相] \(0~360). |
+| `battlerHue` | [Number](Number.md) | [色相] \(0~360) |
 | `name` | [String](String.md) | [名前] |
-| `id` | [Number](Number.md) | ID |
-| `params` | [Array](Array.md).&lt;[Number](Number.md)&gt; | 通常能力が次の順に記録された配列( 0:最大HP, 1:最大MP, 2:攻撃力, 3:防御力, 4:魔法力, 5:魔法防御力, 6:敏捷性, 7:運 )|
+| `id` | [Number](Number.md) | 敵ID |
+| `params` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [能力値ID](RPG.Enemy.md#能力値id)の順に値が記録された配列 |
 | `exp` | [Number](Number.md) | [経験値] |
 | `gold` | [Number](Number.md) | [所持金] |
 | `dropItems` | [Array](Array.md).<[RPG.Enemy.DropItem](RPG.Enemy.DropItem.md)> | [ドロップアイテム]の配列 |

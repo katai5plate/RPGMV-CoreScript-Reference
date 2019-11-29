@@ -269,7 +269,7 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#attackelements---arraynumber)
 
 
 #### bareHandsElementId () → {[Number](Number.md)}
-素手攻撃の属性IDを返す。
+素手攻撃の[属性ID](RPG.Damage.md#属性id)を返す。
 
 
 #### basicFloorDamage () → {[Number](Number.md)}
@@ -481,7 +481,7 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#erasestate-stateid)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skillId` | [Number](Number.md) | スキルID |
+| `skillId` | [Number](Number.md) | [スキルID](RPG.Skill.md#スキルid) |
 
 
 #### friendsUnit () → {[Game_Party](Game_Party.md)}
@@ -519,7 +519,7 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#erasestate-stateid)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skillId` | [Number](Number.md) | スキルID |
+| `skillId` | [Number](Number.md) | [スキルID](RPG.Skill.md#スキルid) |
 
 
 #### hasWeapon (weapon) → {Boolean}
@@ -626,7 +626,7 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#isactor---boolean)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skillId` | [Number](Number.md) | スキルID |
+| `skillId` | [Number](Number.md) | [スキルID](RPG.Skill.md#スキルid) |
 
 
 #### isMaxLevel () → {Boolean}
@@ -670,7 +670,7 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#isskillwtypeok-skill--boolean)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skillId` | [Number](Number.md) | スキルID |
+| `skillId` | [Number](Number.md) | [スキルID](RPG.Skill.md#スキルid) |
 
 
 #### levelDown ()

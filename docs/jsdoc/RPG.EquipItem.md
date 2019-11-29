@@ -9,11 +9,11 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `price` | [Number](Number.md) | [価格] |
-| `etypeId` | [Number](Number.md) | [装備タイプ]のID (下表を参照) |
-| `params` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [能力値変化量]の配列<br />(下表を参照) |
+| `etypeId` | [Number](Number.md) | [装備タイプID](RPG.EquipItem.md#装備タイプID) |
+| `params` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [能力値ID](RPG.Enemy.md#能力値id)の順に[能力値変化量]が書かれた配列 |
 | `traits` | [Array](Array.md).&lt;[RPG.Trait](RPG.Trait.md)&gt; | [特徴]の配列 |
 
-###### etypeId:装備タイプID
+###### 装備タイプID
 
 [データベース]-[タイプ]-[装備タイプ] で設定されたID。
 
@@ -28,20 +28,6 @@
 | 2 | 頭 |
 | 3 | 身体 |
 | 4 | 装飾品 |
-
-###### params
-
-以下の順に[能力値変化量]が書かれた配列。
-
-| 番号 | [能力値] |
-| --- | --- || 0 | 最大HP |
-| 1 | 最大MP |
-| 2 | 攻撃力 |
-| 3 | 防御力 |
-| 4 | 魔法力 |
-| 5 | 魔法防御 |
-| 6 | 敏捷性 |
-| 7 | 運 |
 
 
 ### Extends

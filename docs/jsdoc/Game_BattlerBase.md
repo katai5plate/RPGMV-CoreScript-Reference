@@ -82,7 +82,7 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 | `_tp` | [Number](Number.md) | TP |
 | `_hidden` | Boolean | 隠れているか |
 | `_paramPlus` | [Array](Array.md).<[Number](Number.md)> | 能力値強化量の配列 |
-| `_states` | [Array](Array.md).<[Number](Number.md)> | [ステートID](RPG.Trait.md#ステートid) の配列 |
+| `_states` | [Array](Array.md).<[Number](Number.md)> | [ステートID](RPG.State.md#ステートid) の配列 |
 | `_stateTurns` | Object | {[stateId: number]: number} ステートの残りターン|
 | `_buffs` | [Array](Array.md).<[Number](Number.md)> | 能力の強化の配列 |
 | `_buffTurns` | [Array](Array.md).<[Number](Number.md)> | 強化の残りターン |
@@ -109,7 +109,7 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | [ステートID](RPG.Trait.md#ステートid) |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.State.md#ステートid) |
 
 
 #### addParam (paramId, value)
@@ -119,7 +119,7 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 | `value` | [Number](Number.md) | 値 |
 
 
@@ -148,7 +148,7 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 
 #### attackStates () → {[Array](Array.md).<[Number](Number.md)>}
-攻撃[ステートID](RPG.Trait.md#ステートid)を配列で返す。
+攻撃[ステートID](RPG.State.md#ステートid)を配列で返す。
 
 
 #### attackStatesRate (stateId)
@@ -158,7 +158,7 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | [ステートID](RPG.Trait.md#ステートid) |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.State.md#ステートid) |
 
 
 #### attackTimesAdd () → {[Number](Number.md)}
@@ -172,7 +172,7 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
 
 #### buffIconIndex (buffLevel, paramId) → {[Number](Number.md)}
@@ -183,7 +183,7 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 | Name | Type | Description |
 | --- | --- | --- |
 | `buffLevel` | [Number](Number.md) | 強化レベル |
-| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
 
 #### buffIcons () → {[Array](Array.md).<[Number](Number.md)>}
@@ -291,7 +291,7 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
 
 #### decreaseBuff (paramId)
@@ -301,7 +301,7 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
 
 #### die ()
@@ -315,7 +315,7 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `elementId` | [Number](Number.md) | [属性ID](RPG.Trait.md#属性id) |
+| `elementId` | [Number](Number.md) | [属性ID](RPG.Damage.md#属性id) |
 
 
 #### eraseBuff (paramId)
@@ -325,7 +325,7 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
 
 #### eraseState (stateId)
@@ -335,7 +335,7 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | [ステートID](RPG.Trait.md#ステートid) |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.State.md#ステートid) |
 
 
 #### guardSkillId () → {[Number](Number.md)}
@@ -357,7 +357,7 @@ HPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
 
 #### initialize ()
@@ -391,7 +391,7 @@ HPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
 
 #### isBuffExpired (paramId) → {Boolean}
@@ -401,7 +401,7 @@ HPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
 
 #### isBuffOrDebuffAffected (paramId) → {Boolean}
@@ -411,7 +411,7 @@ HPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
 
 #### isConfused () → {Boolean}
@@ -433,7 +433,7 @@ HPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
 
 #### isDualWield () → {Boolean}
@@ -503,7 +503,7 @@ HPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
 
 #### isMaxDebuffAffected (paramId) → {Boolean}
@@ -513,7 +513,7 @@ HPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
 
 #### isOccasionOk (item) → {Boolean}
@@ -571,7 +571,7 @@ HPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | [ステートID](RPG.Trait.md#ステートid) |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.State.md#ステートid) |
 
 
 #### isStateExpired (stateId) → {Boolean}
@@ -581,7 +581,7 @@ HPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | [ステートID](RPG.Trait.md#ステートid) |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.State.md#ステートid) |
 
 
 #### isStateResist (stateId) → {Boolean}
@@ -591,7 +591,7 @@ HPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | [ステートID](RPG.Trait.md#ステートid) |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.State.md#ステートid) |
 
 
 #### isSubstitute () → {Boolean}
@@ -651,7 +651,7 @@ MPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 | `turns` | [Number](Number.md) | 追加ターン |
 
 
@@ -662,7 +662,7 @@ MPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
 
 #### paramBase (paramId) → {[Number](Number.md)}
@@ -672,7 +672,7 @@ MPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
 
 #### paramBuffRate (paramId) → {[Number](Number.md)}
@@ -682,7 +682,7 @@ MPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
 
 #### paramMax (paramId) → {[Number](Number.md)}
@@ -692,7 +692,7 @@ MPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
 
 #### paramMin (paramId) → {[Number](Number.md)}
@@ -702,7 +702,7 @@ MPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
 
 #### paramPlus (paramId) → {[Number](Number.md)}
@@ -712,7 +712,7 @@ MPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
 
 #### paramRate (paramId) → {[Number](Number.md)}
@@ -722,7 +722,7 @@ MPのパーセント量を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
 
 #### partyAbility (abilityId) → {Boolean}
@@ -760,7 +760,7 @@ HP・MP全回復しステートを解除。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | [ステートID](RPG.Trait.md#ステートid) |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.State.md#ステートid) |
 
 
 #### restriction () → {[Number](Number.md)}
@@ -870,11 +870,11 @@ SVでのステートの重ね合わせ番号を返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | [ステートID](RPG.Trait.md#ステートid) |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.State.md#ステートid) |
 
 
 #### stateResistSet () → {[Array](Array.md).<[Number](Number.md)>}
-[耐性 - ステート無効化]に対応する、[ステートID](RPG.Trait.md#ステートid)の配列を返す。
+[耐性 - ステート無効化]に対応する、[ステートID](RPG.State.md#ステートid)の配列を返す。
 
 
 #### states () → {[Array](Array.md).<[RPG.State](RPG.State.md)>}

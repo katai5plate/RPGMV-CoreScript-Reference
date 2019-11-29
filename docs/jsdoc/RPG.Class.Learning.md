@@ -9,7 +9,7 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `level` | [Number](Number.md) | [レベル] |
-| `skillId` | [Number](Number.md) | スキルID |
+| `skillId` | [Number](Number.md) | [スキルID](RPG.Skill.md#スキルid) |
 
  <br>
 

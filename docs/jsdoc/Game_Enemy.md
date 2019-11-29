@@ -387,7 +387,7 @@ Overrides:[Game_Battler](Game_Battler.md#makeactions-)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `param` | [Number](Number.md) | ステートID |
+| `param` | [Number](Number.md) | [ステートID](RPG.State.md#ステートid) |
 
 
 #### meetsSwitchCondition (param) → {Boolean}

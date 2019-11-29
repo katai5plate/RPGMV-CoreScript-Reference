@@ -2,7 +2,8 @@
 
 ## Namespace: [RPG](RPG.md)
 
-アクターを記述したファイル( data/Actors.json )のJSONデータ。
+アクターを記述したファイル( data/Actors.json )のJSONデータ。<br />
+このデータをもとに [Game_Actor](Game_Actor.md) が生成される。
 
 大域変数 [$dataActors](global.md#dataactors-arrayrpgactor) に配列として格納されている。
 
@@ -10,10 +11,10 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `id` | [Number](Number.md) | ID |
+| `id` | [Number](Number.md) | アクターID |
 | `name` | [String](String.md) | [名前] |
 | `nickname` | [String](String.md) | [二つ名] |
-| `classId` | [Number](Number.md) | [クラス]ID |
+| `classId` | [Number](Number.md) | クラスID |
 | `initialLevel` | [Number](Number.md) | [初期レベル] |
 | `maxLevel` | [Number](Number.md) | [最大レベル] |
 | `characterName` | [String](String.md) | [歩行キャラ]画像ファイル名(拡張子を含まない) |

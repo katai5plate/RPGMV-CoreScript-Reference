@@ -32,67 +32,30 @@ code は [Game\_Action](Game_Action.md) の定数として定義されている�
 
 | code | 使用効果 | dataId | value1 | value2 |
 | --- | --- | --- | --- | --- |
-| `EFFECT_ADD_STATE:21` | ステート付加 | ステートID | 確率 % (0〜100) | *0* |
-| `EFFECT_REMOVE_STATE:22` | ステート解除 | ステートID | 確率 % (0〜100) | *0* |
+| `EFFECT_ADD_STATE:21` | ステート付加 | [ステートID](RPG.State.md#ステートID)) | 確率 % (0〜100) | *0* |
+| `EFFECT_REMOVE_STATE:22` | ステート解除 | [ステートID](RPG.State.md#ステートID)) | 確率 % (0〜100) | *0* |
 
 ##### [能力値]
 
 | code | 使用効果 | dataId | value1 | value2 |
 | --- | --- | --- | --- | --- |
-| `EFFECT_ADD_BUFF:31` | 強化 | 能力値ID | ターン数(1～1000) | *0* |
-| `EFFECT_ADD_DEBUFF:32` | 弱体 | 能力値ID | ターン数(1～1000) | *0* |
-| `EFFECT_REMOVE_BUFF:33` | 強化の解除 | 能力値ID | *1* | *0* |
-| `EFFECT_REMOVE_DEBUFF:34` | 弱体の解除 | 能力値ID | *1* | *0* |
+| `EFFECT_ADD_BUFF:31` | 強化 | [能力値ID](RPG.Enemy.md#能力値id) | ターン数(1～1000) | *0* |
+| `EFFECT_ADD_DEBUFF:32` | 弱体 | [能力値ID](RPG.Enemy.md#能力値id) | ターン数(1～1000) | *0* |
+| `EFFECT_REMOVE_BUFF:33` | 強化の解除 | [能力値ID](RPG.Enemy.md#能力値id) | *1* | *0* |
+| `EFFECT_REMOVE_DEBUFF:34` | 弱体の解除 | [能力値ID](RPG.Enemy.md#能力値id) | *1* | *0* |
 
 ##### [その他]
 
 | code | 使用効果 | dataId | value1 | value2 |
 | --- | --- | --- | --- | --- |
 | `EFFECT_SPECIAL:41` | 特殊効果 | `SPECIAL_EFFECT_ESCAPE:0`逃げる | *1* | *0* |
-| `EFFECT_GROW:42` | 成長 | 能力値ID | 上昇値 | *0* |
-| `EFFECT_LEARN_SKILL:43` | スキル習得 | スキルID | *1* | *0* |
+| `EFFECT_GROW:42` | 成長 | [能力値ID](RPG.Enemy.md#能力値id) | 上昇値 | *0* |
+| `EFFECT_LEARN_SKILL:43` | スキル習得 | [スキルID](RPG.Skill.md#スキルid) | *1* | *0* |
 | `EFFECT_COMMON_EVENT:44` | コモンイベント | コモンイベントID | *1* | *0* |
-
-###### dataId:ステートID
-
-[$dataStates](global.md#datastates-arrayrpgstate) ([State](RPG.State.md) の配列)の id プロパティ。
-
-下表は規定値。
-
-| ID | [ステート] |
-| --- | --- |
-| 0 | 通常(21:ステート付加のみ) |
-| 1 | 戦闘不能 |
-| 2 | 防御 |
-| 3 | 不死身 |
-| 4 | 毒 |
-| 5 | 暗闇 |
-| 6 | 沈黙 |
-| 7 | 激昂 |
-| 8 | 混乱 |
-| 9 | 魅了 |
-| 10 | 睡眠 |
-
-###### dataId:能力値ID
-
-| ID | [能力値] |
-| --- | --- |
-| 0 | 最大HP |
-| 1 | 最大MP |
-| 2 | 攻撃力 |
-| 3 | 防御力 |
-| 4 | 魔法力 |
-| 5 | 魔法防御 |
-| 6 | 敏捷性 |
-| 7 | 運 |
-
-###### dataId:スキルID
-
-[\$dataSkills](global.md#dataskills-arrayrpgskill) ([RPG.Skill](RPG.Skill.md) の配列)の番号。
 
 ###### dataId:コモンイベントID
 
- [\$dataCommonEvents](global.md#datacommonevents-arrayrpgcommonevent)  ([CommonEvent](RPG.CommonEvent.md) の配列)の番号。
+ [$dataCommonEvents](global.md#datacommonevents-arrayrpgcommonevent)  ([CommonEvent](RPG.CommonEvent.md) の配列)の番号。
  
  <br>
 

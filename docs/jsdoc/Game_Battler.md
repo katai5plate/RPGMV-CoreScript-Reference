@@ -12,18 +12,18 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_actions` | [Array](Array.md).<[Game_Action](Game_Action.md)> |  |
-| `_speed` | [Number](Number.md) |  |
-| `_result` | [Game_ActionResult](Game_ActionResult.md) |  |
-| `_actionState` | [String](String.md) |  |
-| `_lastTargetIndex` | [Number](Number.md) |  |
-| `_animations` | [Array](Array.md).<[MV.BattlerAnimation](MV.BattlerAnimation.md)> |  |
-| `_damagePopup` | Boolean |  |
-| `_effectType` | [String](String.md) |  |
-| `_motionType` | [String](String.md) |  |
-| `_weaponImageId` | [Number](Number.md) |  |
-| `_motionRefresh` | Boolean |  |
-| `_selected` | Boolean |  |
+| `_actions` | [Array](Array.md).<[Game_Action](Game_Action.md)> | 行動の配列 |
+| `_speed` | [Number](Number.md) | 速度 |
+| `_result` | [Game_ActionResult](Game_ActionResult.md) | 行動の結果 |
+| `_actionState` | [String](String.md) | 行動状態 |
+| `_lastTargetIndex` | [Number](Number.md) | 最後の対象番号 |
+| `_animations` | [Array](Array.md).<[MV.BattlerAnimation](MV.BattlerAnimation.md)> | アニメーションの配列 |
+| `_damagePopup` | Boolean | ダメージポップアップするか |
+| `_effectType` | [String](String.md) | エフェクトタイプ |
+| `_motionType` | [String](String.md) | モーションタイプ |
+| `_weaponImageId` | [Number](Number.md) | 武器画像ID |
+| `_motionRefresh` | Boolean | モーションを更新するか |
+| `_selected` | Boolean | 選択されているか |
 
 
 ### Extends
@@ -177,7 +177,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 | `turns` | [Number](Number.md) | ターン数 |
 
 
@@ -188,7 +188,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 | `turns` | [Number](Number.md) | ターン数 |
 
 
@@ -199,7 +199,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | [ステートID](RPG.Trait.md#ステートid) |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.State.md#ステートid) |
 
 
 #### chargeTpByDamage (damageRate)
@@ -273,7 +273,7 @@ TPを0に。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skillId` | [Number](Number.md) | スキルID |
+| `skillId` | [Number](Number.md) | [スキルID](RPG.Skill.md#スキルid) |
 | `targetIndex` | [Number](Number.md) | 対象番号 |
 
 
@@ -376,7 +376,7 @@ TPの量を25までのランダムな値に初期化。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | [ステートID](RPG.Trait.md#ステートid) |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.State.md#ステートid) |
 
 
 #### isStateRestrict (stateId) → {Boolean}
@@ -386,7 +386,7 @@ TPの量を25までのランダムな値に初期化。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | [ステートID](RPG.Trait.md#ステートid) |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.State.md#ステートid) |
 
 
 #### isUndecided () → {Boolean}
@@ -555,7 +555,7 @@ TP自動回復を適用。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `paramId` | [Number](Number.md) | [能力値ID](RPG.Trait.md#能力値id) |
+| `paramId` | [Number](Number.md) | [能力値ID](RPG.Enemy.md#能力値id) |
 
 
 #### removeBuffsAuto ()
@@ -573,7 +573,7 @@ TP自動回復を適用。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stateId` | [Number](Number.md) | [ステートID](RPG.Trait.md#ステートid) |
+| `stateId` | [Number](Number.md) | [ステートID](RPG.State.md#ステートid) |
 
 
 #### removeStatesAuto (timing)

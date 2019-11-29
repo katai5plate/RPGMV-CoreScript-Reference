@@ -12,7 +12,7 @@
 
 EFFECT\_ から始まる定数は、[[使用効果](RPG.Effect.md#code)] を指定するのに使う。<br />
 SPECIAL\_EFFECT\_ESCAPE は、[使用効果 - 特殊効果]の dataId を指定するのに使う。<br />
-HITTYPE\_から始まる定数は、[[命中タイプ](RPG.UsableItem.md#hittype)] を指定するのに使う。
+HITTYPE\_から始まる定数は、[[命中タイプ](RPG.UsableItem.md#命中タイプ)] を指定するのに使う。
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -136,7 +136,7 @@ _item プロパティのダメージタイプと同じものが、指定した�
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `list` | [Array](Array.md).<[Number](Number.md)> | [[ダメージタイプ](RPG.Damage.md#type)]の配列 |
+| `list` | [Array](Array.md).<[Number](Number.md)> | ダメージの[[タイプ](RPG.Damage.md#タイプ)]の配列 |
 
 
 #### checkItemScope (list) → {Boolean}
@@ -146,7 +146,7 @@ _item プロパティの[範囲]と同じものが、指定したの配列の中
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `list` | [Array](Array.md).<[Number](Number.md)> |[[範囲](RPG.UsableItem.md#scope)]の配列|
+| `list` | [Array](Array.md).<[Number](Number.md)> |[[範囲](RPG.UsableItem.md#範囲)]の配列|
 
 
 #### clear ()
@@ -169,7 +169,7 @@ _item プロパティの[範囲]と同じものが、指定したの配列の中
 | Name | Type | Description |
 | --- | --- | --- |
 | `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
-| `elements` | [Array](Array.md).<[Number](Number.md)> | [属性ID](RPG.Damage.md#elementid属性id))の配列 |
+| `elements` | [Array](Array.md).<[Number](Number.md)> | [属性ID](RPG.Damage.md#属性id))の配列 |
 
 
 #### evalDamageFormula (target) → {[Number](Number.md)}
@@ -254,7 +254,7 @@ target引数は使われていないが、プラグインなど将来の拡張�
 
 
 #### hasItemAnyValidEffects (target) → {Boolean}
-指定対象が、なんらかの[使用効果]\([RPG.Effect](RPG.Effect.md))を発生させるか。
+指定対象が、なんらかの[[使用効果](RPG.Effect.md)]を発生させるか。
 
 ##### Parameters:
 
@@ -268,43 +268,43 @@ target引数は使われていないが、プラグインなど将来の拡張�
 
 
 #### isCertainHit () → {Boolean}
-[[命中タイプ](RPG.UsableItem.md#hittype)]が[必中]か。
+[[命中タイプ](RPG.UsableItem.md#命中タイプ)]が[必中]か。
 
 
 #### isDamage () → {Boolean}
-[[ダメージ - タイプ](RPG.Damage.md#type)]が[HPダメージ]か[MPダメージ]か。
+ダメージの[[タイプ](RPG.Damage.md#タイプ)]が[HPダメージ]か[MPダメージ]か。
 
 
 #### isDrain () → {Boolean}
-[[ダメージ - タイプ](RPG.Damage.md#type)]が[HP吸収]か[MP吸収]か。
+ダメージの[[タイプ](RPG.Damage.md#タイプ)]が[HP吸収]か[MP吸収]か。
 
 
 #### isForAll () → {Boolean}
-[[範囲](RPG.UsableItem.md#scope)]が敵味方・戦闘不能問わず全体か。
+[[範囲](RPG.UsableItem.md#範囲)]が敵味方・戦闘不能問わず全体か。
 
 
 #### isForDeadFriend () → {Boolean}
-[[範囲](RPG.UsableItem.md#scope)]が戦闘不能の味方か。
+[[範囲](RPG.UsableItem.md#範囲)]が戦闘不能の味方か。
 
 
 #### isForFriend () → {Boolean}
-[[範囲](RPG.UsableItem.md#scope)]が味方(自身も含む)か。
+[[範囲](RPG.UsableItem.md#範囲)]が味方(自身も含む)か。
 
 
 #### isForOne () → {Boolean}
-[[範囲](RPG.UsableItem.md#scope)]が敵味方問わず単体(複数回含まず)か。
+[[範囲](RPG.UsableItem.md#範囲)]が敵味方問わず単体(複数回含まず)か。
 
 
 #### isForOpponent () → {Boolean}
-[[範囲](RPG.UsableItem.md#scope)]が敵単体(複数回も含む)か。
+[[範囲](RPG.UsableItem.md#範囲)]が敵単体(複数回も含む)か。
 
 
 #### isForRandom () → {Boolean}
-[[範囲](RPG.UsableItem.md#scope)]がランダムな敵か。
+[[範囲](RPG.UsableItem.md#範囲)]がランダムな敵か。
 
 
 #### isForUser () → {Boolean}
-[[範囲](RPG.UsableItem.md#scope)]が自分自身か。
+[[範囲](RPG.UsableItem.md#範囲)]が自分自身か。
 
 
 #### isGuard () → {Boolean}
@@ -312,11 +312,11 @@ target引数は使われていないが、プラグインなど将来の拡張�
 
 
 #### isHpEffect () → {Boolean}
-[[ダメージ - タイプ](RPG.Damage.md#type)]がHPに関するものか。
+ダメージの[[タイプ](RPG.Damage.md#タイプ)]がHPに関するものか。
 
 
 #### isHpRecover () → {Boolean}
-[[ダメージ - タイプ](RPG.Damage.md#type)]が[HP回復]か。
+ダメージの[[タイプ](RPG.Damage.md#タイプ)]が[HP回復]か。
 
 
 #### isItem () → {Boolean}
@@ -324,7 +324,7 @@ target引数は使われていないが、プラグインなど将来の拡張�
 
 
 #### isMagical () → {Boolean}
-[[命中タイプ](RPG.UsableItem.md#hittype)]が[魔法攻撃]か。
+[[命中タイプ](RPG.UsableItem.md#命中タイプ)]が[魔法攻撃]か。
 
 
 #### isMagicSkill () → {Boolean}
@@ -332,19 +332,19 @@ target引数は使われていないが、プラグインなど将来の拡張�
 
 
 #### isMpEffect () → {Boolean}
-[[ダメージ - タイプ](RPG.Damage.md#type)]がMPに関するものか。
+ダメージの[[タイプ](RPG.Damage.md#タイプ)]がMPに関するものか。
 
 
 #### isMpRecover () → {Boolean}
-[[ダメージ - タイプ](RPG.Damage.md#type)]が[MP回復]か。
+ダメージの[[タイプ](RPG.Damage.md#タイプ)]が[MP回復]か。
 
 
 #### isPhysical () → {Boolean}
-[[命中タイプ](RPG.UsableItem.md#hittype)]が[物理攻撃]か。
+[[命中タイプ](RPG.UsableItem.md#命中タイプ)]が[物理攻撃]か。
 
 
 #### isRecover () → {Boolean}
-[[ダメージ - タイプ](RPG.Damage.md#type)]が[MP回復]か。
+ダメージの[[タイプ](RPG.Damage.md#タイプ)]が[MP回復]か。
 
 
 #### isSkill () → {Boolean}
@@ -615,7 +615,7 @@ target引数は使われていないが、プラグインなど将来の拡張�
 
 
 #### needsSelection () → {Boolean}
-[[範囲](RPG.UsableItem.md#scope)]が単体で対象の選択が必要か。
+[[範囲](RPG.UsableItem.md#範囲)]が単体で対象の選択が必要か。
 
 
 #### numRepeats () → {[Number](Number.md)}
@@ -693,7 +693,7 @@ target引数は使われていないが、プラグインなど将来の拡張�
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `skillId` | [Number](Number.md) | スキルID |
+| `skillId` | [Number](Number.md) | [スキルID](RPG.Skill.md#スキルid)  |
 
 
 #### setSubject (subject)

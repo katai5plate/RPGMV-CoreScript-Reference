@@ -29,16 +29,16 @@ code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定�
 
 | code | 内容 | dataId | value |
 | --- | --- | --- | --- |
-| `TRAIT_ELEMENT_RATE:11` | 属性有効度 | [属性ID](RPG.Trait.md#属性id) | 変動率 (0〜10) |
-| `TRAIT_DEBUFF_RATE:12` | 弱体有効度 | [能力値ID](RPG.Trait.md#能力値id) | 変動率 (0〜10) |
-| `TRAIT_STATE_RATE:13` | ステート有効度 | [ステートID](RPG.Trait.md#ステートid) | 変動率 (0〜10) |
-| `TRAIT_STATE_RESIST:14` | ステート無効化 | [ステートID](RPG.Trait.md#ステートid) | *1* |
+| `TRAIT_ELEMENT_RATE:11` | 属性有効度 | [属性ID](RPG.Damage.md#属性id) | 変動率 (0〜10) |
+| `TRAIT_DEBUFF_RATE:12` | 弱体有効度 | [能力値ID](RPG.Enemy.md#能力値id) | 変動率 (0〜10) |
+| `TRAIT_STATE_RATE:13` | ステート有効度 | [ステートID](RPG.State.md#ステートid) | 変動率 (0〜10) |
+| `TRAIT_STATE_RESIST:14` | ステート無効化 | [ステートID](RPG.State.md#ステートid) | *1* |
 
 ##### [能力値]
 
 | code | 内容 | dataId | value |
 | --- | --- | --- | --- |
-| `TRAIT_PARAM:21` | 通常能力値 | [能力値ID](RPG.Trait.md#能力値id) | 変動率 (0〜10) |
+| `TRAIT_PARAM:21` | 通常能力値 | [能力値ID](RPG.Enemy.md#能力値id) | 変動率 (0〜10) |
 | `TRAIT_XPARAM:22` | 追加能力値 | [追加能力値ID](RPG.Trait.md#22--追加能力値id) |  比率 (-10〜10) |
 | `TRAIT_SPARAM:23` | 特殊能力値 | [特殊能力値ID](RPG.Trait.md#23--特殊能力値id) |  変動率 (0〜10) |
 
@@ -76,8 +76,8 @@ code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定�
 
 | code | 内容 | dataId | value |
 | --- | --- | --- | --- |
-| `TRAIT_ATTACK_ELEMENT:31` | 攻撃時属性 | [属性ID](RPG.Trait.md#属性id) | *1* |
-| `TRAIT_ATTACK_STATE:32` | 攻撃時ステート | [ステートID](RPG.Trait.md#ステートid) | 変動率 (0〜10) |
+| `TRAIT_ATTACK_ELEMENT:31` | 攻撃時属性 | [属性ID](RPG.Damage.md#属性id) | *1* |
+| `TRAIT_ATTACK_STATE:32` | 攻撃時ステート | [ステートID](RPG.State.md#ステートid) | 変動率 (0〜10) |
 | `TRAIT_ATTACK_SPEED:33` | 攻撃速度補正 | *0* | 増減値 (-10〜10) |
 | `TRAIT_ATTACK_TIMES:34` | 攻撃追加回数 | *0*  | 攻撃追加回数(-9.0〜9.0)|
 
@@ -86,10 +86,10 @@ code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定�
 
 | code | 内容 | dataId | value |
 | --- | --- | --- | --- |
-| `TRAIT_STYPE_ADD:41` | スキルタイプ追加 | [スキルタイプID](RPG.Trait.md#スキルタイプid) | *1* |
-| `TRAIT_STYPE_SEAL:42` | スキルタイプ封印 | [スキルタイプID](RPG.Trait.md#スキルタイプid) | *1* |
-| `TRAIT_SKILL_ADD:43` | スキル追加 | [スキルID](RPG.Trait.md#スキルid) | *1* |
-| `TRAIT_SKILL_SEAL:44` | スキル封印 | [スキルID](RPG.Trait.md#スキルid) | *1* |
+| `TRAIT_STYPE_ADD:41` | スキルタイプ追加 | [スキルタイプID](RPG.Skill.md#スキルタイプid) | *1* |
+| `TRAIT_STYPE_SEAL:42` | スキルタイプ封印 | [スキルタイプID](RPG.Skill.md#スキルタイプid) | *1* |
+| `TRAIT_SKILL_ADD:43` | スキル追加 | [スキルID](RPG.Skill.md#スキルid) | *1* |
+| `TRAIT_SKILL_SEAL:44` | スキル封印 | [スキルID](RPG.Skill.md#スキルid) | *1* |
 
 
 ##### [装備]
@@ -205,69 +205,6 @@ code の数値は [Game_BattlerBase](Game_BattlerBase.md) の静的クラス定�
 | 3 | 先制攻撃率アップ |
 | 4 | 獲得金額2倍 |
 | 5 | アイテム入手率2倍 |
-
-
-###### 属性ID
-
-[データベース]-[タイプ]-[属性] で設定されたID。
-
- [System](RPG.System.md) の elements プロパティに登録されている。
- 
- 下表の -1 と 0 は固定、 1 以降は規定値。
-
-| ID | [属性] |
-| --- | --- |
-| -1 | 通常攻撃 |
-| 0 | なし |
-| 1 | 物理 |
-| 2 | 炎 |
-| 3 | 氷 |
-| 4 | 雷 |
-| 5 | 水 |
-| 6 | 土 |
-| 7 | 風 |
-| 8 | 光 |
-| 9 | 闇 |
-
-
-###### 能力値ID
-
-| ID | [能力値] |
-| --- | --- |
-| 0 | 最大HP |
-| 1 | 最大MP |
-| 2 | 攻撃力 |
-| 3 | 防御力 |
-| 4 | 魔法力 |
-| 5 | 魔法防御 |
-| 6 | 敏捷性 |
-| 7 | 運 |
-
-
-###### ステートID
-
-[$dataStates](global.md#datastates-arrayrpgstate) ([State](RPG.State.md) の配列)の id プロパティ。
-
-下表は規定値。
-
-| ID | [ステート] |
-| --- | --- |
-| 0 | 通常攻撃(21:ステート付加のみ) |
-| 1 | 戦闘不能 |
-| 2 | 防御 |
-| 3 | 不死身 |
-| 4 | 毒 |
-| 5 | 暗闇 |
-| 6 | 沈黙 |
-| 7 | 激昂 |
-| 8 | 混乱 |
-| 9 | 魅了 |
-| 10 | 睡眠 |
-
-
-###### スキルID
-
-[$dataSkills](global.md#dataskills-arrayrpgskill) ([RPG.Skill](RPG.Skill.md) の配列)の番号。
 
 
 ###### スキルタイプID

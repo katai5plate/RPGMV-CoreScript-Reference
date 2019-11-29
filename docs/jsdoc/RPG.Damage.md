@@ -10,24 +10,24 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `type` | [Number](Number.md) | ダメージの[タイプ] \([下表](RPG.Damage.md#type)を参照) |
-| `elementId` | [Number](Number.md) |[属性]のID \([下表](RPG.Damage.md#elementid属性id)を参照) |
+| `type` | [Number](Number.md) | [タイプ](RPG.Damage.md#タイプ) |
+| `elementId` | [Number](Number.md) | [属性ID](RPG.Damage.md#属性id) |
 | `formula` | [String](String.md) | [計算式] |
 | `variance` | [Number](Number.md) | [分散度] % (0〜100) |
 | `critical` | Boolean | [会心]するか |
-##### type
+##### タイプ
 
 | 番号 | [タイプ] |
 | --- | --- |
 |  0 | なし ||  1 | HPダメージ ||  2 | MPダメージ ||  3 | HP回復 ||  4 | MP回復 ||  5 | HP吸収 ||  6 | MP吸収 |
 
-##### elementId:属性ID
+##### 属性ID
 
 [データベース]-[タイプ]-[属性] で設定されたID。
 
  [System](RPG.System.md) の elements プロパティに登録されている。
  
- 下表の -1 と 0 は固定、 1 以降は規定値。
+ 下表の -1 と 0 は固定、1 以降は規定値。
 
 | ID | [属性] |
 | --- | --- |
