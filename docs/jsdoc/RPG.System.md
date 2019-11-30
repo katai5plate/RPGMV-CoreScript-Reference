@@ -19,11 +19,11 @@
 | `currencyUnit` | [String](String.md) | [通貨単位] |
 | `windowTone` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [ウィンドウカラー] |
 | `attackMotions` | [Array](Array.md).&lt;[RPG.System.AttackMotion](RPG.System.AttackMotion.md)&gt; | [[SV]攻撃モーション]の配列 |
-| `elements` | [Array](Array.md).&lt;[String](String.md)&gt; | [属性]の名前の配列(0位置は空文字列) |
-| `equipTypes` | [Array](Array.md).&lt;[String](String.md)&gt; | [装備タイプ]の名前の配列(0位置は空文字列) |
-| `skillTypes` | [Array](Array.md).&lt;[String](String.md)&gt; | [スキルタイプ]の名前の配列(0位置は空文字列) |
-| `weaponTypes` | [Array](Array.md).&lt;[String](String.md)&gt; | [武器タイプ]の名前の配列(0位置は空文字列) |
-| `armorTypes` | [Array](Array.md).&lt;[String](String.md)&gt; | [防具タイプ]の名前の配列(0位置は空文字列) |
+| `elements` | [Array](Array.md).&lt;[String](String.md)&gt; | [属性ID](RPG.Damage.md#属性id)に対応する名称の配列 |
+| `equipTypes` | [Array](Array.md).&lt;[String](String.md)&gt; | [装備タイプID](RPG.Trait.md#装備タイプid)に対応する名称の配列 |
+| `skillTypes` | [Array](Array.md).&lt;[String](String.md)&gt; | [スキルタイプID](RPG.Trait.md#スキルタイプid)に対応する名称の配列 |
+| `weaponTypes` | [Array](Array.md).&lt;[String](String.md)&gt; | [武器タイプID](RPG.Trait.md#武器タイプid)に対応する名称の配列 |
+| `armorTypes` | [Array](Array.md).&lt;[String](String.md)&gt; | [防具タイプID](RPG.Trait.md#防具タイプid)に対応する名称の配列 |
 | `switches` | [Array](Array.md).&lt;[String](String.md)&gt; | [スイッチ]の名前の配列(0位置は空文字列) |
 | `variables` | [Array](Array.md).&lt;[String](String.md)&gt; | [変数]の名前の配列(0位置は空文字列) |
 | `boat` | [RPG.System.Vehicle](RPG.System.Vehicle.md) | [小型船]の設定 |
