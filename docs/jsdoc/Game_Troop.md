@@ -4,7 +4,7 @@
 
 #### new Game_Troop ()
 
-[敵グループ]を定義したクラス。<br />
+戦闘シーンでの[敵グループ]を定義したクラス。<br />
 JSONの定義データは [RPG.Troop](RPG.Troop.md)。
 
 大域変数 [$gameTroop](global.md#gametroop-game_troop) に定義されている。

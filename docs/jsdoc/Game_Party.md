@@ -4,7 +4,10 @@
 
 #### new Game_Party ()
 
-The game object class for the party. Information such as gold and items is included. Use as global variable [$gameParty](global.md#gameparty-game_party)
+[パーティ]を定義したクラス。<br />
+大域変数 [$gameParty](global.md#gameparty-game_party) に定義されている。
+
+戦闘シーンでの[敵グループ]は [Game_Troop](Game_Troop.md) で、マップのキャラは [Game_Player](Game_Player.md)、[Game_Follower](Game_Follower.md) で管理される。
 
 
 ##### Properties:
@@ -17,12 +20,12 @@ The game object class for the party. Information such as gold and items is inclu
 | `ABILITY_RAISE_PREEMPTIVE` | [Number](Number.md) | [static] 先制攻撃率アップ |
 | `ABILITY_GOLD_DOUBLE` | [Number](Number.md) | [static] 獲得金額2倍 |
 | `ABILITY_DROP_ITEM_DOUBLE` | [Number](Number.md) | [static] アイテム入手率2倍 |
-| `_gold` | [Number](Number.md) |  |
-| `_steps` | [Number](Number.md) |  |
-| `_lastItem` | [Game_Item](Game_Item.md) |  |
-| `_menuActorId` | [Number](Number.md) |  |
-| `_targetActorId` | [Number](Number.md) |  |
-| `_actors` | [Array](Array.md).<[Game_Actor](Game_Actor.md)> |  |
+| `_gold` | [Number](Number.md) | 所持金 |
+| `_steps` | [Number](Number.md) | 歩数 |
+| `_lastItem` | [Game_Item](Game_Item.md) | 最後のアイテム |
+| `_menuActorId` | [Number](Number.md) | メニューのアクターID |
+| `_targetActorId` | [Number](Number.md) | 対象のアクターID |
+| `_actors` | [Array](Array.md).<[Game_Actor](Game_Actor.md)> | アクターの配列 |
 | `_items` | Object | {[itemId: number]: number} |
 | `_weapons` | Object | {[itemId: number]: number} |
 | `_armors` | Object | {[itemId: number]: number} |
@@ -35,369 +38,441 @@ The game object class for the party. Information such as gold and items is inclu
 
 #### [Game_Unit](Game_Unit.md)
 
-* [agility ()](Game_Unit.md#)* [aliveMembers ()](Game_Unit.md#)* [clearActions ()](Game_Unit.md#)* [clearResults ()](Game_Unit.md#)* [deadMembers ()](Game_Unit.md#)* [inBattle ()](Game_Unit.md#)* [makeActions ()](Game_Unit.md#)* [members ()](Game_Unit.md#)* [movableMembers ()](Game_Unit.md#)* [onBattleEnd ()](Game_Unit.md#)* [onBattleStart ()](Game_Unit.md#)* [randomDeadTarget ()](Game_Unit.md#)* [randomTarget ()](Game_Unit.md#)* [select (activeMember)](Game_Unit.md#)* [smoothDeadTarget (index)](Game_Unit.md#)* [smoothTarget (index)](Game_Unit.md#)* [substituteBattler ()](Game_Unit.md#)* [tgrSum ()](Game_Unit.md#)
+* [agility ()](Game_Unit.md#agility---number)
+* [aliveMembers ()](Game_Unit.md#alivemembers---arraygame_battler)
+* [clearActions ()](Game_Unit.md#clearactions-)
+* [clearResults ()](Game_Unit.md#clearresults-)
+* [deadMembers ()](Game_Unit.md#deadmembers---arraygame_battler)
+* [inBattle ()](Game_Unit.md#inbattle---boolean)
+* [makeActions ()](Game_Unit.md#makeactions-)
+* [movableMembers ()](Game_Unit.md#movablemembers---arraygame_battler)
+* [onBattleEnd ()](Game_Unit.md#onbattleend-)
+* [onBattleStart ()](Game_Unit.md#onbattlestart-)
+* [randomDeadTarget ()](Game_Unit.md#randomdeadtarget---game_battler)
+* [randomTarget ()](Game_Unit.md#randomtarget---game_battler)
+* [select (activeMember)](Game_Unit.md#select-activemember)
+* [smoothDeadTarget (index)](Game_Unit.md#smoothdeadtarget-index--game_battler)
+* [smoothTarget (index)](Game_Unit.md#smoothtarget-index--game_battler)
+* [substituteBattler ()](Game_Unit.md#substitutebattler---game_battler)
+* [tgrSum ()](Game_Unit.md#tgrsum---number)
 
 
 ### Methods
 
 #### addActor (actorId)
-Adds an actor to the party given the actor id.
+指定したアクターを追加。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actorId` | [Number](Number.md) |  |
+| `actorId` | [Number](Number.md) | アクターID |
 
 
 #### allItems () → {[Array](Array.md).<[RPG.BaseItem](RPG.BaseItem.md)>}
-Returns all items within the party's posession. Items can be of equip item, or item type.
+パーティが持つ全アイテムを配列で返す。
+
 
 #### allMembers () → {[Array](Array.md).<[Game_Actor](Game_Actor.md)>}
+パーティの全アクターを配列で返す。
 
 
 #### armors () → {[Array](Array.md).<[RPG.Armor](RPG.Armor.md)>}
-Returns the party's armor.
+パーティが持つ全防具を配列で返す。
+
 
 #### battleMembers () → {[Array](Array.md).<[Game_Actor](Game_Actor.md)>}
-Returns the battle members in the party.
+戦闘に参加する全アクターを配列で返す。
+
 
 #### canInput () → {Boolean}
+入力可能か。
 
 
 #### canUse (item) → {Boolean}
-Returns true if the party can use the item.
+指定アイテムが使用可能か。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) | アイテム |
 
 
 #### charactersForSavefile () → {[Array](Array.md).<[Array](Array.md).<*>>}
-Returns the characters that go on the save life.Array of [{String}name, {Number}index]
+セーブファイルに記録されているキャラ画像情報を配列で返す。<br />
+[ "ファイル名", キャラ番号 ] という2値の配列がキャラ数ぶん入った配列。
+
 
 #### consumeItem (item)
-Has the party consume the given item.
+指定アイテムを消費。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) | アイテム |
 
 
 #### discardMembersEquip (item, amount)
+指定の装備を捨てる。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
-| `amount` | [Number](Number.md) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.md) | 装備アイテム |
+| `amount` | [Number](Number.md) | 数 |
 
 
 #### equipItems () → {[Array](Array.md).<[RPG.EquipItem](RPG.EquipItem.md)>}
-Returns the party's equippable items.
+パーティが持つ全装備可能アイテムを配列で返す。
+
 
 #### exists () → {Boolean}
-
+パーティが存在する(少なくとも一人いる)か。
 
 #### facesForSavefile () → {[Array](Array.md).<[Array](Array.md).<*>>}
-Returns the actor faces for the save file.
+セーブファイルに記録されている顔画像情報を配列で返す。<br />
+[ "ファイル名", 顔番号 ] という2値の配列がキャラ数ぶん入った配列。
+
 
 #### gainGold (amount)
-Increases the party gold given a specified amount.
+指定金額ぶん所持金を増やす。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `amount` | [Number](Number.md) |  |
+| `amount` | [Number](Number.md) | 金額 |
 
 
 #### gainItem (item, amount, includeEquip)
+指定アイテムを得る。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
-| `amount` | [Number](Number.md) |  |
-| `includeEquip` | Boolean |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) | アイテム |
+| `amount` | [Number](Number.md) | 数 |
+| `includeEquip` | Boolean | 装備しているものを含むか |
 
 
 #### gold () → {[Number](Number.md)}
-Returns party gold.
+所持金の金額を返す。
+
 
 #### hasCancelSurprise () → {Boolean}
+[不意打ち無効]のパーティ能力を持つか。
 
 
 #### hasDropItemDouble () → {Boolean}
-Returns true if the party has double drop item in effect.
+[アイテム入手率2倍]のパーティ能力を持つか。
+
 
 #### hasEncounterHalf () → {Boolean}
-Returns true if the encounter rate is set to half.
+[エンカウント半減]のパーティ能力を持つか。
+
 
 #### hasEncounterNone () → {Boolean}
-Returns true if the encounter rate is set to none.
+[エンカウント無効]のパーティ能力を持つか。
 
 
 #### hasGoldDouble () → {Boolean}
-Returns true if the party has double gold in effect.
+[獲得金額2倍]のパーティ能力を持つか。
+
 
 #### hasItem (item, includeEquip) → {Boolean}
-Returns true if the party has the given item; if includeEquip is set to true, this will also check party equipment.
+指定アイテムをパーティが持っているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
-| `includeEquip` | Boolean |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) | アイテム |
+| `includeEquip` | Boolean | 装備しているものを含むか |
 
 
 #### hasMaxItems (item) → {Boolean}
+指定アイテムを最大数を持っているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) | アイテム |
 
 
 #### hasRaisePreemptive () → {Boolean}
-Returns true if the party has an increased chance of preemptive strike.
+[先制攻撃率アップ]のパーティ能力を持つか。
 
 
 #### highestLevel () → {[Number](Number.md)}
-Returns the highest level in the party.
+パーティメンバー中最高のレベルを返す。
+
 
 #### increaseSteps ()
-Increases the number of steps the party has taken.
+歩数を増やす。
+
 
 #### initAllItems ()
+全てのアイテムを初期化。
 
 
-#### initialize ()Overrides:[Game_Unit](Game_Unit.md#initialize-)
+#### initialize ()
+Overrides:[Game_Unit](Game_Unit.md#initialize-)
 
 
-#### isAllDead () → {Boolean}Overrides:[Game_Unit](Game_Unit.md#isalldead---boolean)
+#### isAllDead () → {Boolean}
+Overrides:[Game_Unit](Game_Unit.md#isalldead---boolean)
 
 
 #### isAnyMemberEquipped (item) → {Boolean}
-Returns true if any party member has the specified equip item.
+指定アイテムをいずれかのメンバーが装備しているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.EquipItem](RPG.EquipItem.md) |  |
+| `item` | [RPG.EquipItem](RPG.EquipItem.md) | 装備アイテム |
 
 
 #### isEmpty () → {Boolean}
+パーティメンパーが0人か。
 
 
 #### itemContainer (item) → {[Array](Array.md).<[RPG.BaseItem](RPG.BaseItem.md)>}
+指定アイテムが含まれるカテゴリ全体を配列で返す。<br />
+[アイテム][武器][防具]のいずれかのカテゴリ。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) | アイテム |
 
 
 #### items () → {[Array](Array.md).<[RPG.Item](RPG.Item.md)>}
+アイテム(武器・防具を含まない)を配列で返す。
 
 
 #### lastItem () → {[RPG.BaseItem](RPG.BaseItem.md)}
-Returns the last item selected by the game party.
+最後に選択されたアイテムを返す。
+
 
 #### leader () → {[Game_Actor](Game_Actor.md)}
-Returns the leader of the party.
+リーダーであるアクターを返す。
 
 
 #### loseGold (amount)
-Decreases the party gold given a specified amount.
+指定金額の所持金を減らす。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `amount` | [Number](Number.md) |  |
+| `amount` | [Number](Number.md) | 金額 |
 
 
 #### loseItem (item, amount, includeEquip)
+指定アイテムを減らす。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
-| `amount` | [Number](Number.md) |  |
-| `includeEquip` | Boolean |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) | アイテム |
+| `amount` | [Number](Number.md) | 数 |
+| `includeEquip` | Boolean | 装備しているものを含むか |
 
 
 #### makeMenuActorNext ()
+次のアクターのメニューを生成。
 
 
 #### makeMenuActorPrevious ()
+前のアクターのメニューを生成。
 
 
 #### maxBattleMembers () → {[Number](Number.md)}
-Returns the maximum battle members in the party.
+戦闘参加メンバーの最大数(規定値:4)を返す。
+
 
 #### maxGold () → {[Number](Number.md)}
-Returns maximum gold of the party.
+最大所持金(規定値:99999999)を返す。
+
 
 #### maxItems (item) → {[Number](Number.md)}
-Returns the maximum number of items of the given item.
+指定アイテムの最大数(規定値:99)を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) | アイテム |
 
 
 #### members () → {[Array](Array.md).<[Game_Actor](Game_Actor.md)>}
 Overrides:[Game_Unit](Game_Unit.md#members---arraygame_battler)
 
 
-#### menuActor () → {[Game_Actor](Game_Actor.md)}Returns the actor that will be used in the current menu; this is for menu scenes that target one actor.
+#### menuActor () → {[Game_Actor](Game_Actor.md)}
+現在のメニューで選択されているアクターを返す。
+
 
 #### name () → {[String](String.md)}
+パーティの名前を返す。<br />
+ひとりの時は「アクター名」、複数いる時は「アクター名たち」(規定値)
 
 
-#### numItems (item) → {[Number](Number.md)
-Returns the number of items in the possession of the party of the given item.
+#### numItems (item) → {[Number](Number.md)}
+パーティが持っている指定アイテムの数を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) | アイテム |
 
 
 #### onPlayerWalk ()
-Handler for when the player walks.
+プレイヤーが歩く時に呼ばれるハンドラ。
+
 
 #### partyAbility (abilityId) → {Boolean}
+指定[パーティ能力]を持つアクターがいるか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `abilityId` | [Number](Number.md) |  |
+| `abilityId` | [Number](Number.md) | [パーティ能力ID](RPG.Trait.md#パーティ能力id)  |
 
 
 #### performEscape ()
-Performs escape motion for the entire party.
+パーティ全体の逃亡モーションを開始。
+
 
 #### performVictory ()
-Performs victory motion for the entire party.
+パーティ全体の勝利モーションを開始。
+
 
 #### ratePreemptive (troopAgi) → {[Number](Number.md)}
+指定敵素早さに対して先制攻撃の確率を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `troopAgi` | [Number](Number.md) |  |
-
+| `troopAgi` | [Number](Number.md) | 素早さ |
 
 
 #### rateSurprise (troopAgi) → {[Number](Number.md)}
+指定敵素早さに対して不意打ちの確率を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `troopAgi` | [Number](Number.md) |  |
+| `troopAgi` | [Number](Number.md) | 素早さ |
 
 
 #### removeActor (actorId)
-Removes an actor from the party given the actor id.
+指定アクターを取り除く。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actorId` | [Number](Number.md) |  |
+| `actorId` | [Number](Number.md) | アクターID |
 
 
 #### removeBattleStates ()
-Remove battle states from all actors in the party.
+全パーティメンバーのステートを削除。
+
 
 #### requestMotionRefresh ()
-Refreshes the motion on all actors in the party.
+全パーティメンバーのモーションを初期化。
+
 
 #### reviveBattleMembers ()
-Revive the battle members of the party.
+全戦闘参加メンバーを蘇生。
+
 
 #### setLastItem (item)
+指定アイテムを最後のアイテムに設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) | アイテム |
 
 
 #### setMenuActor (actor)
+指定アクターをメニューで選択された状態に。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `actor` | [Game_Actor](Game_Actor.md) | アクター |
 
 
 #### setTargetActor (actor)
+指定アクターを対象アクターに。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `actor` | [Game_Actor](Game_Actor.md) | アクター |
 
 
 #### setupBattleTest ()
-Sets up a test battle with the party.
+戦闘テストの準備。
+
 
 #### setupBattleTestItems ()
-Sets up the battle test items.
+戦闘テストのアイテムの準備。
+
 
 #### setupBattleTestMembers ()
-Sets up the battle test members.
+戦闘テストのメンバーの準備。
+
 
 #### setupStartingMembers ()
-Sets up the starting party members.
+開始メンバーの準備。
+
 
 #### size () → {[Number](Number.md)}
-Returns number of party member.
+パーティメンバーの数を返す。
+
 
 #### steps () → {[Number](Number.md)}
-Returns the number of steps the party has taken.
+歩数を返す。
+
 
 #### swapOrder (index1, index2)
+指定した番号のアクターを入れ替え。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index1` | [Number](Number.md) |  |
-| `index2` | [Number](Number.md) |  |
+| `index1` | [Number](Number.md) | アクター1の番号 |
+| `index2` | [Number](Number.md) | アクター2の番号 |
 
 
 #### targetActor () → {[Game_Actor](Game_Actor.md)}
-
+対象アクターを返す。
 
 
 #### weapons () → {[Array](Array.md).<[RPG.Weapon](RPG.Weapon.md)>}
-Returns the weapons of the party.
-
+パーティが持つ全武器を配列で返す。
+
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
