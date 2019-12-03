@@ -21,10 +21,10 @@
 	* [シェーダ](index.md#シェーダ)
 	* [コンテナ(PIXI.Container)](index.md#コンテナpixicontainer)
 		* [スプライト(Sprite)](index.md#スプライトsprite)
-	* [シーン(Scene_Base)](index.md#シーンscene_base)
-	* [ウィンドウ(Window_Base)](index.md#ウィンドウwindow_base)
-		* [選択ウィンドウ(Window_Selectable)](index.md#選択ウィンドウwindow_selectable)
-			* [コマンドウィンドウ(Window_Command)](index.md#コマンドウィンドウwindow_command)
+		* [シーン(Scene_Base)](index.md#シーンscene_base)
+		* [ウィンドウ(Window_Base)](index.md#ウィンドウwindow_base)
+			* [選択ウィンドウ(Window_Selectable)](index.md#選択ウィンドウwindow_selectable)
+				* [コマンドウィンドウ(Window_Command)](index.md#コマンドウィンドウwindow_command)
 
 
 ### JavaScript拡張
