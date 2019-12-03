@@ -8,7 +8,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_phase` | [String](String.md) | [static] 状態 'start', 'turn', 'action', 'turnEnd', 'battleEnd' |
+| `_phase` | [String](String.md) | [static] 状態 'init', '''start', 'input', 'turn', 'action', 'turnEnd', 'battleEnd', 'aborting', null |
 | `_canEscape` | Boolean | [static] [逃走可] |
 | `_canLose` | Boolean | [static] [敗北可] |
 | `_battleTest` | Boolean | [static] [戦闘テスト]か |
