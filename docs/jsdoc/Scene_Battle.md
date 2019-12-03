@@ -74,7 +74,7 @@
 * [createWindowLayer ()](Scene_Base.md#createwindowlayer-)
 * [detachReservation ()](Scene_Base.md#detachreservation-)
 * [fadeOutAll ()](Scene_Base.md#fadeoutall-)
-* [fadeSpeed (](Scene_Base.md#fadespeed---number)
+* [fadeSpeed ()](Scene_Base.md#fadespeed---number)
 * [isActive ()](Scene_Base.md#isactive---boolean)
 * [isBusy ()](Scene_Base.md#isbusy---boolean)
 * [isReady ()](Scene_Base.md#isready---boolean)
@@ -87,6 +87,10 @@
 
 
 ### Methods
+
+#### changeInputWindow ()
+[パーティ]か[アクター]のコマンド選択、非選択を状態に応じて切り替え。
+
 
 #### commandAttack ()
 [攻撃]コマンドのハンドラ。
