@@ -1,8 +1,7 @@
 # Class: StorageManager
 
-The static class that manages storage for saving game data.
-<dl>
-</dl>
+ゲームのセーブデータを管理する静的クラス。
+
 
 ### Methods
 
@@ -14,8 +13,6 @@ The static class that manages storage for saving game data.
 | --- | --- | --- |
 | `savefileId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### (static) backupExists (savefileId) → {Boolean}
 
@@ -25,17 +22,6 @@ The static class that manages storage for saving game data.
 | --- | --- | --- |
 | `savefileId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### (static) cleanBackup (savefileId) → {Boolean}
 
@@ -45,17 +31,6 @@ The static class that manages storage for saving game data.
 | --- | --- | --- |
 | `savefileId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### (static) exists (savefileId) → {Boolean}
 
@@ -65,31 +40,10 @@ The static class that manages storage for saving game data.
 | --- | --- | --- |
 | `savefileId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### (static) isLocalMode () → {Boolean}
 
-<dl>
-</dl>
 
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### (static) load (savefileId) → {[String](String.md)}
 
@@ -99,17 +53,6 @@ The static class that manages storage for saving game data.
 | --- | --- | --- |
 | `savefileId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
 
 #### (static) loadFromLocalBackupFile (savefileId) → {[String](String.md)}
 
@@ -119,17 +62,6 @@ The static class that manages storage for saving game data.
 | --- | --- | --- |
 | `savefileId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
 
 #### (static) loadFromLocalFile (savefileId) → {[String](String.md)}
 
@@ -139,17 +71,6 @@ The static class that manages storage for saving game data.
 | --- | --- | --- |
 | `savefileId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
 
 #### (static) loadFromWebStorage (savefileId) → {[String](String.md)}
 
@@ -159,17 +80,6 @@ The static class that manages storage for saving game data.
 | --- | --- | --- |
 | `savefileId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
 
 #### (static) loadFromWebStorageBackup (savefileId) → {[String](String.md)}
 
@@ -179,17 +89,6 @@ The static class that manages storage for saving game data.
 | --- | --- | --- |
 | `savefileId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
 
 #### (static) localFileBackupExists (savefileId) → {Boolean}
 
@@ -199,31 +98,10 @@ The static class that manages storage for saving game data.
 | --- | --- | --- |
 | `savefileId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### (static) localFileDirectoryPath () → {[String](String.md)}
 
-<dl>
-</dl>
 
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
 
 #### (static) localFileExists (savefileId) → {Boolean}
 
@@ -233,17 +111,6 @@ The static class that manages storage for saving game data.
 | --- | --- | --- |
 | `savefileId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### (static) localFilePath (savefileId) → {[String](String.md)}
 
@@ -253,17 +120,6 @@ The static class that manages storage for saving game data.
 | --- | --- | --- |
 | `savefileId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
 
 #### (static) remove (savefileId)
 
@@ -273,8 +129,6 @@ The static class that manages storage for saving game data.
 | --- | --- | --- |
 | `savefileId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### (static) removeLocalFile (savefileId)
 
@@ -284,8 +138,6 @@ The static class that manages storage for saving game data.
 | --- | --- | --- |
 | `savefileId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### (static) removeWebStorage (savefileId)
 
@@ -295,8 +147,6 @@ The static class that manages storage for saving game data.
 | --- | --- | --- |
 | `savefileId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### (static) restoreBackup (savefileId)
 
@@ -306,8 +156,6 @@ The static class that manages storage for saving game data.
 | --- | --- | --- |
 | `savefileId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### (static) save (savefileId, json)
 
@@ -318,8 +166,6 @@ The static class that manages storage for saving game data.
 | `savefileId` | [Number](Number.md) |  |
 | `json` | [String](String.md) |  |
 
-<dl>
-</dl>
 
 #### (static) saveToLocalFile (savefileId, json)
 
@@ -330,8 +176,6 @@ The static class that manages storage for saving game data.
 | `savefileId` | [Number](Number.md) |  |
 | `json` | [String](String.md) |  |
 
-<dl>
-</dl>
 
 #### (static) saveToWebStorage (savefileId, json)
 
@@ -342,8 +186,6 @@ The static class that manages storage for saving game data.
 | `savefileId` | [Number](Number.md) |  |
 | `json` | [String](String.md) |  |
 
-<dl>
-</dl>
 
 #### (static) webStorageBackupExists (savefileId) → {Boolean}
 
@@ -353,17 +195,6 @@ The static class that manages storage for saving game data.
 | --- | --- | --- |
 | `savefileId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### (static) webStorageExists (savefileId) → {Boolean}
 
@@ -373,17 +204,6 @@ The static class that manages storage for saving game data.
 | --- | --- | --- |
 | `savefileId` | [Number](Number.md) |  |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### (static) webStorageKey (savefileId) → {[String](String.md)}
 
@@ -392,18 +212,6 @@ The static class that manages storage for saving game data.
 | Name | Type | Description |
 | --- | --- | --- |
 | `savefileId` | [Number](Number.md) |  |
-
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
 
 
  <br>
