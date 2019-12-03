@@ -289,7 +289,7 @@
         * [Scene_Skill](Scene_Skill.md)
 
 
-#### [Window_Base](Window_Base.md)
+#### [ウィンドウ(Window_Base)](Window_Base.md)
 
 * [Window_EquipStatus](Window_EquipStatus.md)
 * [Window_Gold](Window_Gold.md)
