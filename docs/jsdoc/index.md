@@ -5,34 +5,47 @@
 * [JavaScript拡張](index.md#javascript拡張)
 * [マネージャ](index.md#マネージャ)
 * [ユーティリティ](index.md#ユーティリティ)
-* オブジェクト
-	* [システム](index.md#システム)
-	* [スイッチ・変数](index.md#スイッチ変数)
-	* [マップキャラクタ](index.md#マップキャラクタ)
-	* [バトルキャラクタ](index.md#バトルキャラクタ)
-	* [その他オブジェクト](index.md#その他オブジェクト)
-* [データベース(JSON)](index.md#データベースjson)
-	* [イベントコマンド](index.md#イベントコマンド)
-	*  [メモつきデータ(MetaData)](index.md#メモつきデータmetadata)
 * [入力](index.md#入力)
 * [音声](index.md#音声)
-* [画像](index.md#画像)
-	* [レンダラ](index.md#レンダラ)
-	* [シェーダ](index.md#シェーダ)
-	* [コンテナ(PIXI.Container)](index.md#コンテナpixicontainer)
-		* [スプライト(Sprite)](index.md#スプライトsprite)
-		* [シーン(Scene_Base)](index.md#シーンscene_base)
-		* [ウィンドウ(Window_Base)](index.md#ウィンドウwindow_base)
-			* [選択ウィンドウ(Window_Selectable)](index.md#選択ウィンドウwindow_selectable)
-				* [コマンドウィンドウ(Window_Command)](index.md#コマンドウィンドウwindow_command)
+
+
+データベース(JSON)
+
+* [イベントコマンド](index.md#イベントコマンド)
+*  [メモつきデータ(MetaData)](index.md#メモつきデータmetadata)
+* [その他データベース](index.md#その他データベース)
+
+オブジェクト
+
+* [システム](index.md#システム)
+* [スイッチ・変数](index.md#スイッチ変数)
+* [マップキャラクタ](index.md#マップキャラクタ)
+* [バトルキャラクタ](index.md#バトルキャラクタ)
+* [その他オブジェクト](index.md#その他オブジェクト)
+
+画像
+
+* [コア機能](index.md#コア機能)
+* [レンダラ](index.md#レンダラ)
+* [シェーダ](index.md#シェーダ)
+* [コンテナ(PIXI.Container)](index.md#コンテナpixicontainer)
+	* [スプライト(Sprite)](index.md#スプライトsprite)
+	* [シーン(Scene_Base)](index.md#シーンscene_base)
+	* [ウィンドウ(Window_Base)](index.md#ウィンドウwindow_base)
+		* [選択ウィンドウ(Window_Selectable)](index.md#選択ウィンドウwindow_selectable)
+			* [コマンドウィンドウ(Window_Command)](index.md#コマンドウィンドウwindow_command)
+
+※ 以下で表われる「→ Extends」は継承のツリーの続きへのリンクです。
 
 
 ### JavaScript拡張
 
 * [Array](Array.md)
+* [Math](Math.md)
 * [Number](Number.md)
 * [String](String.md)
-* [Math](Math.md)
+
+
 
 ### マネージャ
 
@@ -47,16 +60,76 @@
 * [StorageManager](StorageManager.md)
 * [TextManager](TextManager.md)
 
+
+
 ### ユーティリティ
 
-* [JsonEx](JsonEx.md)
-* [Utils](Utils.md)
 * [CacheEntry](CacheEntry.md)
 * [CacheMap](CacheMap.md)
 * [Decrypter](Decrypter.md)
+* [ImageCache](ImageCache.md)
+* [JsonEx](JsonEx.md)
 * [RequestQueue](RequestQueue.md)
 * [ResourceHandler](ResourceHandler.md)
-* [ImageCache](ImageCache.md)
+* [Utils](Utils.md)
+
+
+
+### 入力
+
+* [Input](Input.md)
+* [TouchInput](TouchInput.md)
+
+
+
+### 音声
+
+* [WebAudio](WebAudio.md)
+* [Html5Audio](Html5Audio.md)
+
+
+
+### データベース(JSON)
+
+#### イベントコマンド
+
+* [BattleEventPage](RPG.BattleEventPage.md) . [Conditions](RPG.BattleEventPage.Conditions.md)
+* [CommonEvent](RPG.CommonEvent.md)([$dataCommonEvents](global.md#datacommonevents-arrayrpgcommonevent))
+* [EventCommand](RPG.EventCommand.md)([$testEvent](global.md#testevent-arrayrpgeventcommand))
+* [EventPage](RPG.EventPage.md) . [Conditions](RPG.EventPage.Conditions.md) \| [Image](RPG.EventPage.Image.md)
+* [MoveCommand](RPG.MoveCommand.md)
+* [MoveRoute](RPG.MoveRoute.md)
+
+#### メモつきデータ(MetaData)
+
+* [MetaData](RPG.MetaData.md)
+	* [Actor](RPG.Actor.md)([$dataActors](global.md#dataactors-arrayrpgactor))
+	* [Class](RPG.Class.md)([$dataClasses](global.md#dataclasses-arrayrpgclass)) . [Learning](RPG.Class.Learning.md)
+	* [Enemy](RPG.Enemy.md)([$dataEnemies](global.md#dataenemies-arrayrpgenemy)) . [Action](RPG.Enemy.Action.md) \| [DropItem](RPG.Enemy.DropItem.md)
+	* [Event](RPG.Event.md)
+	* [Map](RPG.Map.md)([$dataMap](global.md#datamap-rpgmap)) . [Encounter](RPG.Map.Encounter.md)
+	* [State](RPG.State.md)([$dataStates](global.md#datastates-arrayrpgstate))
+	* [Tileset](RPG.Tileset.md)([$dataTilesets](global.md#datatilesets-arrayrpgtileset))
+	* [BaseItem](RPG.BaseItem.md)
+	    * [UsableItem](RPG.UsableItem.md)
+	        * [Item](RPG.Item.md)([$dataItems](global.md#dataitems-arrayrpgitem))
+	        * [Skill](RPG.Skill.md)([$dataSkills](global.md#dataskills-arrayrpgskill))
+	    * [EquipItem](RPG.EquipItem.md)
+	        * [Armor](RPG.Armor.md)([$dataArmors](global.md#dataarmors-arrayrpgarmor))
+	        * [Weapon](RPG.Weapon.md)([$dataWeapons](global.md#dataweapons-arrayrpgweapon))
+
+#### その他データベース
+
+* [Animation](RPG.Animation.md)([$dataAnimations](global.md#dataanimations-arrayrpganimation)) . [Timing](RPG.Animation.Timing.md)
+* [AudioFile](RPG.AudioFile.md)
+* [MapInfo](RPG.MapInfo.md)([$dataMapInfos](global.md#datamapinfos-arrayrpgmapinfo))
+* [System](RPG.System.md)([$dataSystem](global.md#datasystem-rpgsystem)) . [AttackMotion](RPG.System.AttackMotion.md) \| [Terms](RPG.System.Terms.md) \| [TestBattler](RPG.System.TestBattler.md) \| [Vehicle](RPG.System.Vehicle.md)
+* [Troop](RPG.Troop.md)([$dataTroops](global.md#datatroops-arrayrpgtroop))
+* [Damage](RPG.Damage.md)
+* [Effect](RPG.Effect.md)
+* [Trait](RPG.Trait.md)
+
+
 
 ### オブジェクト
 
@@ -88,10 +161,10 @@
 
 * [Game_Action](Game_Action.md)
 * [Game_ActionResult](Game_ActionResult.md)
+* [Game_Actors](Game_Actors.md)([$gameActors](global.md#dataactors-arrayrpgactor))
 * [Game_Unit](Game_Unit.md)
     * [Game_Party](Game_Party.md)([$gameParty](global.md#gameparty-game_party))
     * [Game_Troop](Game_Troop.md)([$gameTroop](global.md#gametroop-game_troop))
-* [Game_Actors](Game_Actors.md)([$gameActors](global.md#dataactors-arrayrpgactor))
 * [Game_BattlerBase](Game_BattlerBase.md)
     * [Game_Battler](Game_Battler.md)
         * [Game_Actor](Game_Actor.md)
@@ -100,60 +173,16 @@
 #### その他オブジェクト
 
 * [Game_Item](Game_Item.md)
-* [Game_Picture](Game_Picture.md)
 * [Game_Map](Game_Map.md)([$gameMap](global.md#gamemap-game_map))
 * [Game_Message](Game_Message.md)([$gameMessage](global.md#gamemessage-game_message))
+* [Game_Picture](Game_Picture.md)
 * [Game_Screen](Game_Screen.md)([$gameScreen](global.md#gamescreen-game_screen))
 
-### データベース(JSON)
 
-* [Animation](RPG.Animation.md)([$dataAnimations](global.md#dataanimations-arrayrpganimation)) . [Timing](RPG.Animation.Timing.md)
-* [AudioFile](RPG.AudioFile.md)
-* [MapInfo](RPG.MapInfo.md)([$dataMapInfos](global.md#datamapinfos-arrayrpgmapinfo))
-* [System](RPG.System.md)([$dataSystem](global.md#datasystem-rpgsystem)) . [AttackMotion](RPG.System.AttackMotion.md) \| [Terms](RPG.System.Terms.md) \| [TestBattler](RPG.System.TestBattler.md) \| [Vehicle](RPG.System.Vehicle.md)
-* [Troop](RPG.Troop.md)([$dataTroops](global.md#datatroops-arrayrpgtroop))
-* [Damage](RPG.Damage.md)
-* [Effect](RPG.Effect.md)
-* [Trait](RPG.Trait.md)
-* [MetaData](RPG.MetaData.md) → [Extends](index.md#メモつきデータ(MetaData))
-
-#### イベントコマンド
-
-* [BattleEventPage](RPG.BattleEventPage.md) . [Conditions](RPG.BattleEventPage.Conditions.md)
-* [CommonEvent](RPG.CommonEvent.md)([$dataCommonEvents](global.md#datacommonevents-arrayrpgcommonevent))
-* [EventCommand](RPG.EventCommand.md)([$testEvent](global.md#testevent-arrayrpgeventcommand))
-* [EventPage](RPG.EventPage.md) . [Conditions](RPG.EventPage.Conditions.md) \| [Image](RPG.EventPage.Image.md)
-* [MoveCommand](RPG.MoveCommand.md)
-* [MoveRoute](RPG.MoveRoute.md)
-
-#### メモつきデータ(MetaData)
-
-* [Actor](RPG.Actor.md)([$dataActors](global.md#dataactors-arrayrpgactor))
-* [Class](RPG.Class.md)([$dataClasses](global.md#dataclasses-arrayrpgclass)) . [Learning](RPG.Class.Learning.md)
-* [Enemy](RPG.Enemy.md)([$dataEnemies](global.md#dataenemies-arrayrpgenemy)) . [Action](RPG.Enemy.Action.md) \| [DropItem](RPG.Enemy.DropItem.md)
-* [Event](RPG.Event.md)
-* [Map](RPG.Map.md)([$dataMap](global.md#datamap-rpgmap)) . [Encounter](RPG.Map.Encounter.md)
-* [State](RPG.State.md)([$dataStates](global.md#datastates-arrayrpgstate))
-* [Tileset](RPG.Tileset.md)([$dataTilesets](global.md#datatilesets-arrayrpgtileset))
-* [BaseItem](RPG.BaseItem.md)
-    * [UsableItem](RPG.UsableItem.md)
-        * [Item](RPG.Item.md)([$dataItems](global.md#dataitems-arrayrpgitem))
-        * [Skill](RPG.Skill.md)([$dataSkills](global.md#dataskills-arrayrpgskill))
-    * [EquipItem](RPG.EquipItem.md)
-        * [Armor](RPG.Armor.md)([$dataArmors](global.md#dataarmors-arrayrpgarmor))
-        * [Weapon](RPG.Weapon.md)([$dataWeapons](global.md#dataweapons-arrayrpgweapon))
-
-### 入力
-
-* [Input](Input.md)
-* [TouchInput](TouchInput.md)
-
-### 音声
-
-* [WebAudio](WebAudio.md)
-* [Html5Audio](Html5Audio.md)
 
 ### 画像
+
+#### コア機能
 
 * [Bitmap](Bitmap.md)
 * [Graphics](Graphics.md)
@@ -193,7 +222,7 @@
             * [PIXI.tilemap.RectTileShader](https://github.com/pixijs/pixi-tilemap/blob/master/src/RectTileShader.ts)
 
 
-#### コンテナ(PIXI.Container)
+#### [コンテナ(PIXI.Container)](PIXI.Container.md)
 
 * [ScreenSprite](ScreenSprite.md)
 * [ToneSprite](ToneSprite.md)
@@ -214,7 +243,7 @@
     * [Window_Base](Window_Base.md) → [Extends](index.md#ウィンドウwindow_base)
 
 
-#### スプライト(Sprite)
+#### [スプライト(Sprite)](Sprite.md)
 
 * [Sprite_Animation](Sprite_Animation.md)
 * [Sprite_Button](Sprite_Button.md)
@@ -236,7 +265,7 @@
         * [Sprite_Enemy](Sprite_Enemy.md)
 
 
-#### シーン(Scene_Base)
+#### [シーン(Scene_Base)](Scene_Base.md)
 
 * [Scene_Battle](Scene_Battle.md)
 * [Scene_Boot](Scene_Boot.md)
@@ -260,7 +289,7 @@
         * [Scene_Skill](Scene_Skill.md)
 
 
-#### ウィンドウ(Window_Base)
+#### [Window_Base](Window_Base.md)
 
 * [Window_EquipStatus](Window_EquipStatus.md)
 * [Window_Gold](Window_Gold.md)
@@ -274,7 +303,7 @@
 * [Window_Selectable](Window_Selectable.md) → [Extends](index.md#選択ウィンドウwindow_selectable)
 
 
-#### 選択ウィンドウ(Window_Selectable)
+#### [選択ウィンドウ(Window_Selectable)](Window_Selectable.md)
 
 * [Window_BattleEnemy](Window_BattleEnemy.md)
 * [Window_BattleLog](Window_BattleLog.md)
@@ -301,7 +330,7 @@
 * [Window_Command](Window_Command.md) → [Extends](index.md#コマンドウィンドウwindow_command)
 
 
-#### コマンドウィンドウ(Window_Command)
+#### [コマンドウィンドウ(Window_Command)](Window_Command.md)
 
 * [Window_ActorCommand](Window_ActorCommand.md)
 * [Window_ChoiceList](Window_ChoiceList.md)
