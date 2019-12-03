@@ -65,7 +65,7 @@
 * [swapChildren (child, child2)](PIXI.Container.md#swapchildren-child-child2)
 * [updateTransform ()](PIXI.Container.md#updatetransform-)
 
-#### [Scene_Base](Scene_Base.md))
+#### [Scene_Base](Scene_Base.md)
 
 * [addWindow (Window)](Scene_Base.md#addwindow-window)
 * [attachReservation ()](Scene_Base.md#attachreservation-)
@@ -184,27 +184,9 @@ Overrides:[Stage](Stage.md#initialize-)
 #### isAnyInputWindowActive () → {Boolean}
 入力ウィンドウがアクティブか。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### needsSlowFadeOut () → {Boolean}
 ゆっくりしたフェードアウトが必要か。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### onActorCancel ()
