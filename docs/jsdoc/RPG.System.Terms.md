@@ -11,7 +11,7 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `basic` | [Array](Array.md).<[String](String.md)> | [[基本ステータス]](RPG.System.Terms.md#[基本ステータス]) |
-| `paramsParameters` | [Array](Array.md).<[String](String.md)> | [[能力値]](RPG.System.Terms.md#[能力値]) |
+| `params` | [Array](Array.md).<[String](String.md)> | [[能力値]](RPG.System.Terms.md#[能力値]) |
 | `commands` | [Array](Array.md).<[String](String.md)> | [[コマンド]](RPG.System.Terms.md#[コマンド]) |
 | `messages` | Object |[メッセージ] [key: String]: String |
 
