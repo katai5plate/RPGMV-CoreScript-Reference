@@ -8,7 +8,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_phase` | [String](String.md) | [static] 状態 'init', '''start', 'input', 'turn', 'action', 'turnEnd', 'battleEnd', 'aborting', null |
+| `_phase` | [String](String.md) | [static] 行動状態 'init', '''start', 'input', 'turn', 'action', 'turnEnd', 'battleEnd', 'aborting', 'waiting', 'undecided', '', null |
 | `_canEscape` | Boolean | [static] [逃走可] |
 | `_canLose` | Boolean | [static] [敗北可] |
 | `_battleTest` | Boolean | [static] [戦闘テスト]か |
@@ -440,11 +440,11 @@ BGMとBGSの状態を保存。
 
 
 #### (static) updateEvent () → {Boolean}
-イベントのアップデート。
+イベントのアップデートを行い、何か実行されたか返す。
 
 
 #### (static) updateEventMain () → {Boolean}
-イベント主要部分のアップデート。
+イベント主要部分のアップデートを行い、何か実行されたか返す。
 
 
 #### (static) updateTurn ()
