@@ -1,117 +1,64 @@
 # Class: ConfigManager
 
-The static class that manages the configuration data.
+[オプション]のデータを扱う、静的クラス。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `bgmVolume` | [Number](Number.md) | [static] |
-| `bgsVolume` | [Number](Number.md) | [static] |
-| `meVolume` | [Number](Number.md) | [static] |
-| `seVolume` | [Number](Number.md) | [static] |
+| `alwaysDash ` | Boolean | [static] [常時ダッシュ] |
+| `commandRemember ` | Boolean | [static] [コマンド記憶] |
+| `bgmVolume` | [Number](Number.md) | [static] [BGM 音量] |
+| `bgsVolume` | [Number](Number.md) | [static] [BGS 音量] |
+| `meVolume` | [Number](Number.md) | [static] [ME 音量] |
+| `seVolume` | [Number](Number.md) | [static] [SE 音量] |
 
-<dl>
-</dl>
 
-### Members
-
-#### (static) alwaysDash :Boolean
-
-##### Type:
-
-* Boolean
-
-<dl>
-</dl>
-
-#### (static) commandRemember :Boolean
-
-##### Type:
-
-* Boolean
-
-<dl>
-</dl>
 
 ### Methods
 
 #### (static) applyData (config)
+指定オプションを適用。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `config` | [MV.ConfigData](MV.ConfigData.md) |  |
+| `config` | [MV.ConfigData](MV.ConfigData.md) | オプションデータ |
 
-<dl>
-</dl>
 
 #### (static) load ()
+オプションデータの読み込み。
 
-<dl>
-</dl>
 
 #### (static) makeData () → {[MV.ConfigData](MV.ConfigData.md)}
+オプションデータを生成して返す。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>MV.ConfigData</a></span>
-                </dd>
-            </dl>
 
 #### (static) readFlag (config, name) → {Boolean}
+指定オプションデータのフラグを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `config` | [MV.ConfigData](MV.ConfigData.md) |  |
-| `name` | [String](String.md) |  |
+| `config` | [MV.ConfigData](MV.ConfigData.md) | オプションデータ |
+| `name` | [String](String.md) | 設定名( 'alwaysDash', 'commandRemember' ) |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### (static) readVolume (config, name) → {[Number](Number.md)}
+指定オプションデータの音量を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `config` | [MV.ConfigData](MV.ConfigData.md) |  |
-| `name` | [String](String.md) |  |
+| `name` | [String](String.md) | 設定名( 'bgmVolume', 'bgsVolume', 'meVolume', 'seVolume' ) |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### (static) save ()
-
-<dl>
-</dl>
+オプションデータの保存。
 
 
  <br>
