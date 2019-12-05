@@ -5,241 +5,120 @@
 #### $dataActors :[Array](Array.md).<[RPG.Actor](RPG.Actor.md)>
  アクター用JSON( data/Actors.json )のデータ構造。
 
-##### Type:
-
-* [Array](Array.md).<[RPG.Actor](RPG.Actor.md)>
-
 
 #### $dataAnimations :[Array](Array.md).<[RPG.Animation](RPG.Animation.md)>
  アニメーション用JSON( data/Animations.json )のデータ構造。
-
-##### Type:
-
-* [Array](Array.md).<[RPG.Animation](RPG.Animation.md)>
 
 
 #### $dataArmors :[Array](Array.md).<[RPG.Armor](RPG.Armor.md)>
  防具用JSON( data/Armors.json )のデータ構造。
 
-##### Type:
-
-* [Array](Array.md).<[RPG.Armor](RPG.Armor.md)>
-
 
 #### $dataClasses :[Array](Array.md).<[RPG.Class](RPG.Class.md)>
  クラス用JSON( data/Classes.json )のデータ構造。
-
-##### Type:
-
-* [Array](Array.md).<[RPG.Class](RPG.Class.md)>
 
 
 #### $dataCommonEvents :[Array](Array.md).<[RPG.CommonEvent](RPG.CommonEvent.md)>
  コモンイベント用JSON( data/CommonEvents.json )のデータ構造。
 
-##### Type:
-
-* [Array](Array.md).<[RPG.CommonEvent](RPG.CommonEvent.md)>
-
 
 #### $dataEnemies :[Array](Array.md).<[RPG.Enemy](RPG.Enemy.md)>
  敵用JSON( data/Enemies.json )のデータ構造。 RPGMakerMV Enemy data.
-
-##### Type:
-
-* [Array](Array.md).<[RPG.Enemy](RPG.Enemy.md)>
 
 
 #### $dataItems :[Array](Array.md).<[RPG.Item](RPG.Item.md)>
  アイテム用JSON( data/Items.json )のデータ構造。
 
-##### Type:
-
-* [Array](Array.md).<[RPG.Item](RPG.Item.md)>
-
 
 #### $dataMap :[RPG.Map](RPG.Map.md)
  現在のマップ用JSON( data/MapXXX.json( XXX は3桁の数値) )のデータ構造。
-
-##### Type:
-
-* [RPG.Map](RPG.Map.md)
 
 
 #### $dataMapInfos :[Array](Array.md).<[RPG.MapInfo](RPG.MapInfo.md)>
  マップ情報用JSON( data/MapInfo.json )のデータ構造。
 
-##### Type:
-
-* [Array](Array.md).<[RPG.MapInfo](RPG.MapInfo.md)>
-
 
 #### $dataSkills :[Array](Array.md).<[RPG.Skill](RPG.Skill.md)>
  スキル用JSON( data/Skills.json )のデータ構造。
-
-##### Type:
-
-* [Array](Array.md).<[RPG.Skill](RPG.Skill.md)>
 
 
 #### $dataStates :[Array](Array.md).<[RPG.State](RPG.State.md)>
  状態用JSON( data/States.json )のデータ構造。
 
-##### Type:
-
-* [Array](Array.md).<[RPG.State](RPG.State.md)>
-
 
 #### $dataSystem :[RPG.System](RPG.System.md)
  システム用JSON( data/System.json )のデータ構造。
-
-##### Type:
-
-* [RPG.System](RPG.System.md)
 
 
 #### $dataTilesets :[Array](Array.md).<[RPG.Tileset](RPG.Tileset.md)>
  タイルセット用JSON( data/Tilesets.json )のデータ構造。
 
-##### Type:
-
-* [Array](Array.md).<[RPG.Tileset](RPG.Tileset.md)>
-
 
 #### $dataTroops :[Array](Array.md).<[RPG.Troop](RPG.Troop.md)>
  敵グループ用JSON( data/Troops.json )のデータ構造。
-
-##### Type:
-
-* [Array](Array.md).<[RPG.Troop](RPG.Troop.md)>
 
 
 #### $dataWeapons :[Array](Array.md).<[RPG.Weapon](RPG.Weapon.md)>
  武器用JSON( data/Weapons.json )のデータ構造。
 
-##### Type:
-
-* [Array](Array.md).<[RPG.Weapon](RPG.Weapon.md)>
-
 
 #### $gameActors :[Game_Actors](Game_Actors.md)
 [アクター]管理用の静的クラス。
-
-##### Type:
-
-* [Game_Actors](Game_Actors.md)
 
 
 #### $gameMap :[Game_Map](Game_Map.md)
 [マップ]管理用の静的クラス。
 
-##### Type:
-
-* [Game_Map](Game_Map.md)
-
 
 #### $gameMessage :[Game_Message](Game_Message.md)
  メッセージ管理用の静的クラス。
-
-##### Type:
-
-* [Game_Message](Game_Message.md)
 
 
 #### $gameParty :[Game_Party](Game_Party.md)
 [パーティー]管理用の静的クラス。
 
-##### Type:
-
-* [Game_Party](Game_Party.md)
-
 
 #### $gamePlayer :[Game_Player](Game_Player.md)
 [プレイヤー]管理用の静的クラス。
-
-##### Type:
-
-* [Game_Player](Game_Player.md)
 
 
 #### $gameScreen :[Game_Screen](Game_Screen.md)
  画面管理用の静的クラス。
 
-##### Type:
-
-* [Game_Screen](Game_Screen.md)
-
 
 #### $gameSelfSwitches :[Game_SelfSwitches](Game_SelfSwitches.md)
 [セルフスイッチ]管理用の静的クラス。
-
-##### Type:
-
-* [Game_SelfSwitches](Game_SelfSwitches.md)
 
 
 #### $gameSwitches :[Game_Switches](Game_Switches.md)
 [スイッチ]管理用の静的クラス。
 
-##### Type:
-
-* [Game_Switches](Game_Switches.md)
-
 
 #### $gameSystem :[Game_System](Game_System.md)
 [システム]管理用の静的クラス。※セーブされる
-
-##### Type:
-
-* [Game_System](Game_System.md)
 
 
 #### $gameTemp :[Game_Temp](Game_Temp.md)
 RPGMakerMV Temporary game data; not saved with the game.
 
-##### Type:
-
-* [Game_Temp](Game_Temp.md)
-
 
 #### $gameTimer :[Game_Timer](Game_Timer.md)
  タイマー管理用の静的クラス。
-
-##### Type:
-
-* [Game_Timer](Game_Timer.md)
 
 
 #### $gameTroop :[Game_Troop](Game_Troop.md)
 [敵グループ]管理用の静的クラス。
 
-##### Type:
-
-* [Game_Troop](Game_Troop.md)
-
 
 #### $gameVariables :[Game_Variables](Game_Variables.md)
 [変数]管理用の静的クラス。
-
-##### Type:
-
-* [Game_Variables](Game_Variables.md)
 
 
 #### $plugins :[Array](Array.md).<[MV.PluginSettings](MV.PluginSettings.md)>
 RPGツクールMV プラグイン設定( js/plugins.js )の配列。
 
-##### Type:
-
-* [Array](Array.md).<[MV.PluginSettings](MV.PluginSettings.md)>
-
 
 #### $testEvent :[Array](Array.md).<[RPG.EventCommand](RPG.EventCommand.md)>
-
-##### Type:
-
-* [Array](Array.md).<[RPG.EventCommand](RPG.EventCommand.md)>
-
 
 
  <br>
