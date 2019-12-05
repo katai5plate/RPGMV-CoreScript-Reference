@@ -76,7 +76,7 @@
 
 
 #### initialize (x, y)
-Overrides: [Window_Base.initialize (x, y, width, height)](Window_Base.md#initialize-x-y-width-height)
+Overrides: [Window_Base](Window_Base.md#initialize-x-y-width-height)
 
 | Parameter | Type | Description |
 | --- | --- | --- |
@@ -85,7 +85,7 @@ Overrides: [Window_Base.initialize (x, y, width, height)](Window_Base.md#initial
 
 
 #### open ()
-Overrides: [Window_Base .open ()](Window_Base.md#open-)
+Overrides: [Window_Base](Window_Base.md#open-)
 
 
 #### refresh ()
@@ -93,7 +93,7 @@ Overrides: [Window_Base .open ()](Window_Base.md#open-)
 
 
 #### value () → {[Number](Number.md)}
-$gameParty.gold を数値で返す。
+[$gameParty](global.md#gameparty-game_party).gold を数値で返す。
 
 
 #### windowHeight () → {[Number](Number.md)}
