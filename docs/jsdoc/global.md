@@ -63,11 +63,11 @@
 
 
 #### $gameActors :[Game_Actors](Game_Actors.md)
-[アクター]管理用の静的クラス。
+[アクター]管理用の静的クラス。※セーブされる
 
 
 #### $gameMap :[Game_Map](Game_Map.md)
-[マップ]管理用の静的クラス。
+[マップ]管理用の静的クラス。※セーブされる
 
 
 #### $gameMessage :[Game_Message](Game_Message.md)
@@ -75,23 +75,23 @@
 
 
 #### $gameParty :[Game_Party](Game_Party.md)
-[パーティー]管理用の静的クラス。
+[パーティー]管理用の静的クラス。※セーブされる
 
 
 #### $gamePlayer :[Game_Player](Game_Player.md)
-[プレイヤー]管理用の静的クラス。
+[プレイヤー]管理用の静的クラス。※セーブされる
 
 
 #### $gameScreen :[Game_Screen](Game_Screen.md)
- 画面管理用の静的クラス。
+ 画面管理用の静的クラス。※セーブされる
 
 
 #### $gameSelfSwitches :[Game_SelfSwitches](Game_SelfSwitches.md)
-[セルフスイッチ]管理用の静的クラス。
+[セルフスイッチ]管理用の静的クラス。※セーブされる
 
 
 #### $gameSwitches :[Game_Switches](Game_Switches.md)
-[スイッチ]管理用の静的クラス。
+[スイッチ]管理用の静的クラス。※セーブされる
 
 
 #### $gameSystem :[Game_System](Game_System.md)
@@ -103,7 +103,7 @@ RPGMakerMV Temporary game data; not saved with the game.
 
 
 #### $gameTimer :[Game_Timer](Game_Timer.md)
- タイマー管理用の静的クラス。
+ タイマー管理用の静的クラス。※セーブされる
 
 
 #### $gameTroop :[Game_Troop](Game_Troop.md)
@@ -111,7 +111,7 @@ RPGMakerMV Temporary game data; not saved with the game.
 
 
 #### $gameVariables :[Game_Variables](Game_Variables.md)
-[変数]管理用の静的クラス。
+[変数]管理用の静的クラス。※セーブされる
 
 
 #### $plugins :[Array](Array.md).<[MV.PluginSettings](MV.PluginSettings.md)>
