@@ -7,7 +7,7 @@
 変化のあるシステムデータを扱うクラス。
 大域変数 [$gameSystem](global.md#gamesystem-game_system) に格納されている。
 
-変化のない情報は大域変数 [$dataSystem](global.md#datasystem-rpgsystem) に記述されている。
+変化のない情報は大域変数 [$dataSystem](global.md#datasystem-rpgsystem)([RPG.System](RPG.System.md)) に記述されている。
 
 また、このクラスのプロパティはセーブデータに保存される。
 
