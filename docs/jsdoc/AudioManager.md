@@ -20,7 +20,7 @@ BGM, BGS, ME, SE を扱う静的クラス。
 | `_bgmBuffer` | Html5AudioStatic \| [WebAudio](WebAudio.md) | [static] BGMバッファ |
 | `_bgsBuffer` | Html5AudioStatic \| [WebAudio](WebAudio.md) | [static] BGSバッファ |
 | `_meBuffer` | Html5AudioStatic \| [WebAudio](WebAudio.md) | [static] MEバッファ |
-| `_seBuffers` | [Array](Array.md).&lt;(Html5AudioStatic \| [WebAudio](WebAudio.md))&gt; | [static] SEバッファ |
+| `_seBuffers` | [Array](Array.md).&lt;Html5AudioStatic \| [WebAudio](WebAudio.md)&gt; | [static] SEバッファ |
 | `_staticBuffers ` | [Array](Array.md).&lt;Html5AudioStatic \| [WebAudio](WebAudio.md)&gt; | [static] 静的バッファ |
 | `_replayFadeTime` | [Number](Number.md) | [static] リプレイフェード時間 |
 | `_path` | [String](String.md) | [static] 音声フォルダのパス(規定値: 'audio/') |
