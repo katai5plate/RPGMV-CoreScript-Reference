@@ -136,7 +136,7 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 
 
 #### attackElements () → {[Array](Array.md).<[Number](Number.md)>}
- [攻撃時属性]の配列を得る。
+ [攻撃時属性]の配列を返す。
 
 
 #### attackSkillId () → {[Number](Number.md)}

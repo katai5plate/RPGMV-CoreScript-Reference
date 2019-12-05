@@ -123,7 +123,7 @@ options に Object として指定する内容
 
 
 #### getChildAt (index) → {PIXI.DisplayObject}
-指定番号の子オブジェクトを得る。
+指定番号の子オブジェクトを返す。
 
 ##### Parameters:
 
@@ -133,7 +133,7 @@ options に Object として指定する内容
 
 
 #### getChildByName (name) → {PIXI.DisplayObject}
-指定番号の子オブジェクトを得る。
+指定番号の子オブジェクトを返す。
 
 ##### Parameters:
 
@@ -143,7 +143,7 @@ options に Object として指定する内容
 
 
 #### getChildIndex (child) → {PIXI.DisplayObject}
-子オブジェクトの番号を得る。
+子オブジェクトの番号を返す。
 
 ##### Parameters:
 

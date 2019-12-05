@@ -81,7 +81,7 @@
 
 
 #### getBounds (skipUpdate, rect) → {PIXI.Rectangle}
-矩形範囲を得る。
+矩形範囲を返す。
 
 ##### Parameters:
 

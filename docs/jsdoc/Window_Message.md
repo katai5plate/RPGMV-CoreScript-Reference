@@ -217,7 +217,7 @@ Overrides: [Window_Base.processNewPage (textState)](Window_Base.md#processnewpag
 
 
 #### subWindows () → {[Array](Array.md).<[Window_Base](Window_Base.md)>}
-サブウィンドウの配列を得る。
+サブウィンドウの配列を返す。
 
 
 #### terminateMessage ()

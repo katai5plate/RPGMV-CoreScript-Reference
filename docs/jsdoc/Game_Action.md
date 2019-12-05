@@ -234,7 +234,7 @@ target引数は使われていないが、プラグインなど将来の拡張�
 
 
 #### gainDrainedHp (value)
-敵から吸収したHPを得る。
+敵から吸収したHPを返す。
 
 ##### Parameters:
 
@@ -244,7 +244,7 @@ target引数は使われていないが、プラグインなど将来の拡張�
 
 
 #### gainDrainedMp (value)
-敵から吸収したMPを得る。
+敵から吸収したMPを返す。
 
 ##### Parameters:
 

@@ -162,19 +162,19 @@
 
 
 #### (static) gainDropItems ()
-[ドロップアイテム]を得る。
+[ドロップアイテム]を返す。
 
 
 #### (static) gainExp ()
-[経験値]を得る。
+[経験値]を返す。
 
 
 #### (static) gainGold ()
-[お金]を得る。
+[お金]を返す。
 
 
 #### (static) gainRewards ()
-報酬(経験値・お金・アイテム)を得る。
+報酬(経験値・お金・アイテム)を返す。
 
 
 #### (static) getNextSubject () → {[Game_Battler](Game_Battler.md)}
@@ -327,7 +327,7 @@
 
 
 #### (static) rateSurprise () → {[Number](Number.md)}
-[不意打ち]の確率を得る。
+[不意打ち]の確率を返す。
 
 
 #### (static) refreshStatus ()

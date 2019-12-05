@@ -148,7 +148,7 @@
 
 
 #### gainItem (item, amount, includeEquip)
-指定アイテムを得る。
+指定アイテムを返す。
 
 ##### Parameters:
 
