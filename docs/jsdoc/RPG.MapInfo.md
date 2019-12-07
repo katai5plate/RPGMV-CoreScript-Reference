@@ -2,10 +2,9 @@
 
 ## Namespace: [RPG](RPG.md)
 
-
-ゲーム全体に含まれるマップ一覧情報を構成する JSON データ。ファイル data/MapInfos.json に記述されている。
-
-大域変数 [$dataMapInfos](global.html#$datamapInfos-arrayrpgmapInfo) に配列として定義されている。
+| データベース| JSONファイル | 大域変数 | オブジェクト |
+| --- | --- | --- | --- |
+| マップ一覧 | MapInfos.json | [$dataMapInfos](global.html#$datamapInfos-arrayrpgmapInfo)(配列) |  |
 
 含まれる情報はエディタ用の性格が強い。
 

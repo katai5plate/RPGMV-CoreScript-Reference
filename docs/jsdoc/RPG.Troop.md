@@ -2,9 +2,9 @@
 
 ## Namespace: [RPG](RPG.md)
 
-敵グループを構成する JSONデータ。<br />
-大域変数 [$dataTroops](global.md#datatroops-arrayrpgtroop) に配列として定義されている。<br />
-ゲーム上は [Game_Troop](Game_Troop.md)クラスとして現れる。
+| データベース| JSONファイル | 大域変数 | オブジェクト |
+| --- | --- | --- | --- |
+| [敵グループ] | Troops.json | [$dataTroops](global.md#datatroops-arrayrpgtroop)(配列) | [Game_Troop](Game_Troop.md) |
 
 類似のクラスに [RPG.Event](RPG.Event.md), [RPG.CommonEvent](RPG.CommonEvent.md) がある。
 

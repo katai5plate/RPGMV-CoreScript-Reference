@@ -2,10 +2,9 @@
 
 ## Namespace: [RPG](RPG.md)
 
-アクターを記述したファイル( data/Actors.json )のJSONデータ。<br />
-このデータをもとに [Game_Actor](Game_Actor.md) が生成される。
-
-大域変数 [$dataActors](global.md#dataactors-arrayrpgactor) に配列として格納されている。
+| データベース| JSONファイル | 大域変数 | オブジェクト |
+| --- | --- | --- | --- |
+| [アクター] | Actors.json | [$dataActors](global.md#dataactors-arrayrpgactor) (配列) | [Game_Actor](Game_Actor.md) |
 
 ##### Properties:
 

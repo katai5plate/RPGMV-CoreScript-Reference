@@ -2,19 +2,21 @@
 
 ## Namespace [RPG](RPG.md)
 
-アイテムの情報を記述したJSONデータ。ファイル data/Items.json に記述されている。
+| データベース| JSONファイル | 大域変数 | オブジェクト |
+| --- | --- | --- | --- |
+| [アイテム] | Items.json |  [$dataItems](global.md#dataitems-arrayrpgitem)(配列) | [Game_Item](Game_Item.md) |
 
- [$dataItems](global.md#dataitems-arrayrpgitem) に配列として格納されている。
+[Game_Item](Game_Item.md) の _dataClass プロパティは 'item' になる。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `itypeId` | [Number](Number.md) | [アイテムタイプ]のID (下表を参照) |
+| `itypeId` | [Number](Number.md) | [アイテムタイプID](RPG.Item.md#アイテムタイプid) |
 | `price` | [Number](Number.md) | [価格] |
 | `consumable` | Boolean | [消耗]するか |
 
-##### itypeId
+##### アイテムタイプID
 
 | ID | [アイテムタイプ] |
 | --- | --- |

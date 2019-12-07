@@ -2,9 +2,9 @@
 
 ## Namespace: [RPG](RPG.md)
 
-アニメーションを記述したファイル( data/Animations.json )のJSONデータ。
-
-大域変数 [$dataAnimations](global.md#dataanimations-arrayrpganimation) に配列として格納されている。
+| データベース| JSONファイル | 大域変数 | オブジェクト |
+| --- | --- | --- | --- |
+| [アニメーション] | Animations.json | [$dataAnimations](global.md#dataanimations-arrayrpganimation)(配列) | [Sprite_Animation](Sprite_Animation.md) |
 
 ##### Properties:
 

@@ -32,7 +32,7 @@
 | `_parallaxY` | [Number](Number.md) | 遠景 y位置(ピクセル) |
 | `_battleback1Name` | [String](String.md) | レイヤー奥の戦闘背景画像1(地面)のファイル名 [battleback1Name](Game_Map.md#battleback1name---string) |
 | `_battleback2Name` | [String](String.md) | レイヤー手前の戦闘背景画像2(壁)のファイル名 [battleback2Name](Game_Map.md#battleback2name---string) |
-| `_needsRefresh` | Boolean | [Game_Map#requestRefresh](Game_Map.html#requestrefresh-mapid)などで更新予約がされているか |
+| `_needsRefresh` | Boolean | [Game_Map#requestRefresh](Game_Map.md#requestrefresh-mapid)などで更新予約がされているか |
 
 
 ### Methods

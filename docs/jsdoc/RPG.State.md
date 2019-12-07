@@ -2,26 +2,11 @@
 
 ## Namespace [RPG](RPG.md)
 
-[ステート]を記録したファイル( data/States.json )のJSONデータ。
+| データベース| JSONファイル | 大域変数 | オブジェクト |
+| --- | --- | --- | --- |
+| [ステート] | States.json | [$dataStates](global.md#datastates-arrayrpgstate)(配列) |  |
 
-読み込まれたデータは、大域変数 [$dataStates](global.md#datastates-arrayrpgstate) に配列として格納されている。
-
-#### ステートID
-以下0は固定、他は規定値。
-
-| ID | [ステート] |
-| --- | --- |
-| 0 | 通常 |
-| 1 | 戦闘不能 |
-| 2 | 防御 |
-| 3 | 不死身 |
-| 4 | 毒 |
-| 5 | 暗闇 |
-| 6 | 沈黙 |
-| 7 | 激昂 |
-| 8 | 混乱 |
-| 9 | 魅了 |
-| 10 | 睡眠 |
+[Game_BattlerBase](Game_BattlerBase.md) の _states プロパティで参照される。
 
 
 ##### Properties:
@@ -49,6 +34,24 @@
 | `motion` | [Number](Number.md) | [[SV]モーション] |
 | `overlay` | [Number](Number.md) |  [[SV]重ね合わせ] |
 | `traits` | [Array](Array.md).&lt;[RPG.Trait](RPG.Trait.md)&gt; | [特徴]の配列 |
+
+##### ステートID
+以下0は固定、他は規定値。
+
+| ID | [ステート] |
+| --- | --- |
+| 0 | 通常 |
+| 1 | 戦闘不能 |
+| 2 | 防御 |
+| 3 | 不死身 |
+| 4 | 毒 |
+| 5 | 暗闇 |
+| 6 | 沈黙 |
+| 7 | 激昂 |
+| 8 | 混乱 |
+| 9 | 魅了 |
+| 10 | 睡眠 |
+
 
 ### Extends
 

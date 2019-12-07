@@ -2,9 +2,14 @@
 
 ## Namespace: [RPG](RPG.md)
 
-マップ用JSONのデータ構造。data/MapXXX.json( XXX は3桁の数値)<br />
-大域変数の [$dataMap](global.md#datamap-rpgmap) か Map管理オブジェクト [$gameMap](global.md#gamemap-game_map)( [Game_Map](Game_Map.md) )を介して扱う。<br />
-ゲーム全体のマップリストは [$dataMapInfos](global.html#$datamapInfos-arrayrpgmapInfo)( [RPG.MapInfo](RPG.MapInfo.md) ) に記録されている。
+| データベース| JSONファイル | 大域変数 | オブジェクト |
+| --- | --- | --- | --- |
+| マップ | MapXXX.json | [$dataMap](global.md#datamap-rpgmap) | [Game_Map](Game_Map.md) |
+
+JSONファイルの XXX は3桁の数値。
+
+
+ゲーム全体のマップリストは [$dataMapInfos](global.html#$datamapInfos-arrayrpgmapInfo)( [RPG.MapInfo](RPG.MapInfo.md) ) に格納されている。
 
 マップシーンは [Scene_Map](Scene_Map.md) で管理される。
  

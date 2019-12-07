@@ -2,10 +2,11 @@
 
 ## Namespace [RPG](RPG.md)
 
-スキルの情報を記述したJSONデータ。
+| データベース| JSONファイル | 大域変数 | オブジェクト |
+| --- | --- | --- | --- |
+| [スキル] | Skills.json | [$dataSkills](global.md#dataskills-arrayrpgskill)(配列) | [Game_Item](Game_Item.md) |
 
-ファイル data/Skills.json に記述されている。
-
+[Game_Item](Game_Item.md) の _dataClass プロパティは 'skill' になる。
 
 ##### Properties:
 

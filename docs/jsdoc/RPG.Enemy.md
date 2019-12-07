@@ -2,22 +2,10 @@
 
 ## Namespace [RPG](RPG.md)
 
-敵を記述したファイル( data/Enemies.json )のJSONデータ。
- 
-大域変数 [$dataEnemies](global.md#dataenemies-arrayrpgenemy) に配列として格納されている。
+| データベース| JSONファイル | 大域変数 | オブジェクト |
+| --- | --- | --- | --- |
+| [敵キャラ] | Enemies.json | [$dataEnemies](global.md#dataenemies-arrayrpgenemy) (配列) | [Game_Enemy](Game_Enemy.md) |
 
-##### 能力値ID
-
-| ID | [能力値] |
-| --- | --- |
-| 0 | 最大HP |
-| 1 | 最大MP |
-| 2 | 攻撃力 |
-| 3 | 防御力 |
-| 4 | 魔法力 |
-| 5 | 魔法防御 |
-| 6 | 敏捷性 |
-| 7 | 運 |
 
 
 ##### Properties:
@@ -35,6 +23,18 @@
 | `actions` | [Array](Array.md).<[RPG.Enemy.Action](RPG.Enemy.Action.md)> | [行動パターン]の配列 |
 | `traits` | [Array](Array.md).<[RPG.Trait](RPG.Trait.md)> | [特徴]の配列 |
 
+##### 能力値ID
+
+| ID | [能力値] |
+| --- | --- |
+| 0 | 最大HP |
+| 1 | 最大MP |
+| 2 | 攻撃力 |
+| 3 | 防御力 |
+| 4 | 魔法力 |
+| 5 | 魔法防御 |
+| 6 | 敏捷性 |
+| 7 | 運 |
 
 ### Extends
 

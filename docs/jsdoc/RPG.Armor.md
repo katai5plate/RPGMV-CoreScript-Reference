@@ -2,18 +2,20 @@
 
 ## Namespace [RPG](RPG.md)
 
-[データベース]-[防具]で設定された情報を記述したファイル( data/Armors.json )のJSONデータ。
+| データベース| JSONファイル | 大域変数 | オブジェクト |
+| --- | --- | --- | --- |
+| [防具] | Armors.json | [$dataArmors](global.md#dataarmors-arrayrpgarmor)(配列) | [Game_Item](Game_Item.md) |
 
-大域変数 [$dataArmors](global.md#dataarmors-arrayrpgarmor)に配列として格納されている。
+[Game_Item](Game_Item.md) の _dataClass プロパティは 'armor' になる。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `atypeId` | [Number](Number.md) | [防具タイプ]ID |
+| `atypeId` | [Number](Number.md) | [防具タイプID](RPG.Armor.md#防具タイプid) |
 
 
-##### atypeId
+##### 防具タイプID
 
 [データベース]-[タイプ]-[防具タイプ] で設定されたID。
 

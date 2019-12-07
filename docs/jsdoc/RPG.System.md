@@ -2,9 +2,9 @@
 
 ## Namespace [RPG](RPG.md)
 
-[システム]と[タイプ][用語]およびその他の設定の情報を記述したファイル( data/System.json )のJSONデータ。
-
-大域変数 [$dataSystem](global.md#datasystem-rpgsystem) に格納されている。
+| データベース| JSONファイル | 大域変数 | オブジェクト |
+| --- | --- | --- | --- |
+| [システム] | System.json | [$dataSystem](global.md#datasystem-rpgsystem) |  |
 
 ゲーム中に変化のある情報は  [$gameSystem](global.html#$gamesystem-game_system) ([Game_System](Game_System.md)) が扱う。
 

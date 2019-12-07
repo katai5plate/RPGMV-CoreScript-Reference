@@ -2,11 +2,11 @@
 
 ## Namespace [RPG](RPG.md)
 
-[タイルセット]を記録したファイル( data/Tilesets.json )のJSONデータ。
+| データベース| JSONファイル | 大域変数 | オブジェクト |
+| --- | --- | --- | --- |
+| [タイルセット] | Tilesets.json | [$dataTilesets](global.md#datatilesets-arrayrpgtileset)(配列) |  |
 
-読み込まれたデータは、大域変数 [$dataTilesets](global.md#datatilesets-arrayrpgtileset) に配列として定義されている。
-
-通常はマップ管理オブジェクトを定義してある大域変数 [$gameMap](global.md#gamemap-game_map) ([Game_Map](Game_Map.md))を介して扱う。
+大域変数 [$gameMap](global.md#gamemap-game_map) ([Game_Map](Game_Map.md))の_tilesetId プロパティなどで参照される。
 
 ##### Properties:
 
@@ -18,7 +18,7 @@
 | `tilesetNames` | [Array](Array.md).<[String](String.md)> | タイルセットに使われる画像ファイル名の配列<br />( 0:A1, 1:A2, 2:A3, 3:A4, 4:A5, 5:B, 6:C, 7:D, 8:E ) |
 | `flags` | [Array](Array.md).<[Number](Number.md)> | タイルの性質を記録したビットフラグの配列 |
 
-###### flagsに指定するビットの内容
+##### flagsに指定するビットの内容
 
 | Number | Description |
 | --- | --- |

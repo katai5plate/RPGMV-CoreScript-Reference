@@ -6,12 +6,13 @@
 
 The sprite for displaying an animation.
 
+
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_checker1` | Object | [static]{key: RPG.Animation} |
-| `_checker2` | Object | [static]{key: RPG.Animation} |
+| `_checker1` | Object | [static]{key: [RPG.Animation](RPG.Animation.md)} |
+| `_checker2` | Object | [static]{key: [RPG.Animation](RPG.Animation.md)} |
 | `z` | [Number](Number.md) |  |
 | `_target` | [Sprite_Base](Sprite_Base.md) |  |
 | `_animation` | [RPG.Animation](RPG.Animation.md) |  |

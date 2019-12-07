@@ -2,22 +2,21 @@
 
 ## Namespace [RPG](RPG.md)
 
-[データベース]-[武器]で設定された情報を記述したJSONデータ。
+| データベース| JSONファイル | 大域変数 | オブジェクト |
+| --- | --- | --- | --- |
+| [武器] | Weapons.json | [$dataWeapons](global.md#dataweapons-arrayrpgweapon)(配列) | [Game_Item](Game_Item.md) |
 
-ファイル data/Weapons.json に記述されている。
-
-読み込まれたデータは、[$dataWeapons](global.md#dataweapons-arrayrpgweapon) に配列として格納されている。
-
+[Game_Item](Game_Item.md) の _dataClass プロパティは 'weapon' になる。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `wtypeId` | [Number](Number.md) | [武器タイプ]のID |
-| `animationId` | [Number](Number.md) | [アニメーション]のID |
+| `wtypeId` | [Number](Number.md) | [武器タイプID](RPG.Weapon#武器タイプid) |
+| `animationId` | [Number](Number.md) | [[アニメーション](RPG.Animation.md)]のID |
 
 
-##### wtypeId
+##### 武器タイプID
 
 [データベース]-[タイプ]-[武器タイプ] で設定されたID。
 

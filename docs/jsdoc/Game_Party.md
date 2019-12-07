@@ -5,7 +5,7 @@
 #### new Game_Party ()
 
 [パーティ]を定義したクラス。<br />
-大域変数 [$gameParty](global.md#gameparty-game_party) に定義されている。
+大域変数 [$gameParty](global.md#gameparty-game_party) に格納されている。
 
 戦闘シーンでの[敵グループ]は [Game_Troop](Game_Troop.md) で、マップのキャラは [Game_Player](Game_Player.md)、[Game_Follower](Game_Follower.md) で管理される。
 

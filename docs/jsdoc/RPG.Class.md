@@ -2,9 +2,12 @@
 
 ## Namespace: [RPG](RPG.md)
 
-[職業]を記述したファイル( data/Classes.json )のJSONデータ。
+| データベース| JSONファイル | 大域変数 | オブジェクト |
+| --- | --- | --- | --- |
+| [職業] | Classes.json | [$dataClasses](global.md#dataclasses-arrayrpgclass)(配列) |  |
 
-大域変数 [$dataClasses](global.md#dataclasses-arrayrpgclass) に配列として格納されている。
+[Game_Actor](Game_Actor.md) の _classId プロパティで参照される。
+
 
 ##### Properties:
 
