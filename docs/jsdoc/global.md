@@ -1,117 +1,133 @@
 # Global
 
+大域(グローバル)変数の一覧。
+
+多くの箇所で参照されるクラスが$から始まる大域変数に格納されていて、次の種類がある。
+
+* 名前に data が付いた( dataフォルダ以下にあるJSONファイルの)データ
+* 名前に game が付いた管理用のクラス
+* そのほかのクラス
+
+$gameXxx の多くはセーブデータにされるが、セーブされないものもある。
+
 ### Members
 
 #### $dataActors :[Array](Array.md).<[RPG.Actor](RPG.Actor.md)>
- アクター用JSON( data/Actors.json )のデータ構造。
+ アクター用JSON( Actors.json )。
 
 
 #### $dataAnimations :[Array](Array.md).<[RPG.Animation](RPG.Animation.md)>
- アニメーション用JSON( data/Animations.json )のデータ構造。
+ アニメーション用JSON( Animations.json )。
 
 
 #### $dataArmors :[Array](Array.md).<[RPG.Armor](RPG.Armor.md)>
- 防具用JSON( data/Armors.json )のデータ構造。
+ 防具用JSON( Armors.json )。
 
 
 #### $dataClasses :[Array](Array.md).<[RPG.Class](RPG.Class.md)>
- クラス用JSON( data/Classes.json )のデータ構造。
+ クラス用JSON( Classes.json )。
 
 
 #### $dataCommonEvents :[Array](Array.md).<[RPG.CommonEvent](RPG.CommonEvent.md)>
- コモンイベント用JSON( data/CommonEvents.json )のデータ構造。
+ コモンイベント用JSON( CommonEvents.json )。
 
 
 #### $dataEnemies :[Array](Array.md).<[RPG.Enemy](RPG.Enemy.md)>
- 敵用JSON( data/Enemies.json )のデータ構造。 RPGMakerMV Enemy data.
+ 敵用JSON( Enemies.json )。
 
 
 #### $dataItems :[Array](Array.md).<[RPG.Item](RPG.Item.md)>
- アイテム用JSON( data/Items.json )のデータ構造。
+ アイテム用JSON( Items.json )。
 
 
 #### $dataMap :[RPG.Map](RPG.Map.md)
- 現在のマップ用JSON( data/MapXXX.json( XXX は3桁の数値) )のデータ構造。
+ 現在のマップ用JSON( MapXXX.json( XXX は3桁の数値) )。
 
 
 #### $dataMapInfos :[Array](Array.md).<[RPG.MapInfo](RPG.MapInfo.md)>
- マップ情報用JSON( data/MapInfo.json )のデータ構造。
+ マップ情報用JSON( MapInfo.json )。
 
 
 #### $dataSkills :[Array](Array.md).<[RPG.Skill](RPG.Skill.md)>
- スキル用JSON( data/Skills.json )のデータ構造。
+ スキル用JSON( Skills.json )。
 
 
 #### $dataStates :[Array](Array.md).<[RPG.State](RPG.State.md)>
- 状態用JSON( data/States.json )のデータ構造。
+ 状態用JSON( States.json )。
 
 
 #### $dataSystem :[RPG.System](RPG.System.md)
- システム用JSON( data/System.json )のデータ構造。
+ システム用JSON( System.json )。
 
 
 #### $dataTilesets :[Array](Array.md).<[RPG.Tileset](RPG.Tileset.md)>
- タイルセット用JSON( data/Tilesets.json )のデータ構造。
+ タイルセット用JSON( Tilesets.json )。
 
 
 #### $dataTroops :[Array](Array.md).<[RPG.Troop](RPG.Troop.md)>
- 敵グループ用JSON( data/Troops.json )のデータ構造。
+ 敵グループ用JSON( Troops.json )。
 
 
 #### $dataWeapons :[Array](Array.md).<[RPG.Weapon](RPG.Weapon.md)>
- 武器用JSON( data/Weapons.json )のデータ構造。
+ 武器用JSON( Weapons.json )。
+
+
+--
 
 
 #### $gameActors :[Game_Actors](Game_Actors.md)
-[アクター]管理用の静的クラス。※セーブされる
+[アクター]管理用のクラス。※セーブされる
 
 
 #### $gameMap :[Game_Map](Game_Map.md)
-[マップ]管理用の静的クラス。※セーブされる
+[マップ]管理用のクラス。※セーブされる
 
 
 #### $gameMessage :[Game_Message](Game_Message.md)
- メッセージ管理用の静的クラス。
+ メッセージ管理用のクラス。
 
 
 #### $gameParty :[Game_Party](Game_Party.md)
-[パーティー]管理用の静的クラス。※セーブされる
+[パーティー]管理用のクラス。※セーブされる
 
 
 #### $gamePlayer :[Game_Player](Game_Player.md)
-[プレイヤー]管理用の静的クラス。※セーブされる
+[プレイヤー]管理用のクラス。※セーブされる
 
 
 #### $gameScreen :[Game_Screen](Game_Screen.md)
- 画面管理用の静的クラス。※セーブされる
+ 画面管理用のクラス。※セーブされる
 
 
 #### $gameSelfSwitches :[Game_SelfSwitches](Game_SelfSwitches.md)
-[セルフスイッチ]管理用の静的クラス。※セーブされる
+[セルフスイッチ]管理用のクラス。※セーブされる
 
 
 #### $gameSwitches :[Game_Switches](Game_Switches.md)
-[スイッチ]管理用の静的クラス。※セーブされる
+[スイッチ]管理用のクラス。※セーブされる
 
 
 #### $gameSystem :[Game_System](Game_System.md)
-[システム]管理用の静的クラス。※セーブされる
+[システム]管理用のクラス。※セーブされる
 
 
 #### $gameTemp :[Game_Temp](Game_Temp.md)
-RPGMakerMV Temporary game data; not saved with the game.
+ゲームの一時データを保持しておくクラス。
 
 
 #### $gameTimer :[Game_Timer](Game_Timer.md)
- タイマー管理用の静的クラス。※セーブされる
+ タイマー管理用のクラス。※セーブされる
 
 
 #### $gameTroop :[Game_Troop](Game_Troop.md)
-[敵グループ]管理用の静的クラス。
+[敵グループ]管理用のクラス。
 
 
 #### $gameVariables :[Game_Variables](Game_Variables.md)
-[変数]管理用の静的クラス。※セーブされる
+[変数]管理用のクラス。※セーブされる
+
+
+--
 
 
 #### $plugins :[Array](Array.md).<[MV.PluginSettings](MV.PluginSettings.md)>
@@ -119,6 +135,7 @@ RPGツクールMV プラグイン設定( js/plugins.js )の配列。
 
 
 #### $testEvent :[Array](Array.md).<[RPG.EventCommand](RPG.EventCommand.md)>
+[テスト]を実行した場合に渡される[イベント]の配列。
 
 
  <br>
