@@ -13,7 +13,7 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `_actions` | [Array](Array.md).<[Game_Action](Game_Action.md)> | 行動の配列 |
-| `_speed` | [Number](Number.md) | 速度 |
+| `_speed` | [Number](Number.md) | 速度(行動順を決定する) |
 | `_result` | [Game_ActionResult](Game_ActionResult.md) | 行動の結果 |
 | `_actionState` | [String](String.md) | 行動状態 |
 | `_lastTargetIndex` | [Number](Number.md) | 最後の対象番号 |
@@ -410,7 +410,7 @@ TPの量を25までのランダムな値に初期化。
 
 
 #### makeSpeed ()
-速度を設定。
+速度(行動順を決定する)を設定。
 
 
 #### maxSlipDamage () → {[Number](Number.md)}
@@ -659,7 +659,7 @@ Sets the action at the specified index for the battler.
 
 
 #### speed () → {[Number](Number.md)}
-速度を返す。
+速度(行動順を決定する)を返す。
 
 
 #### startAnimation (animationId, mirror, delay)
