@@ -39,7 +39,7 @@ TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出
 | `TRAIT_ACTION_PLUS` | [Number](Number.md) | [static] [その他 - 行動回数追加] |
 | `TRAIT_SPECIAL_FLAG` | [Number](Number.md) | [static] [その他 - 特殊フラグ] |
 | `TRAIT_COLLAPSE_TYPE` | [Number](Number.md) | [static] [その他 - 消滅エフェクト] |
-| `TRAIT_PARTY_ABILITY` | [Number](Number.md) | [static] [その他 - バーティ能力] |
+| `TRAIT_PARTY_ABILITY` | [Number](Number.md) | [static] [その他 - パーティ能力] |
 | `FLAG_ID_AUTO_BATTLE` | [Number](Number.md) | [static] 特殊フラグIDの[自動戦闘]|
 | `FLAG_ID_GUARD` | [Number](Number.md) | [static] 特殊フラグIDの[防御]|
 | `FLAG_ID_SUBSTITUTE` | [Number](Number.md) | [static] 特殊フラグIDの[身代わり]|
@@ -726,7 +726,7 @@ MPのパーセント量を返す。
 
 
 #### partyAbility (abilityId) → {Boolean}
-指定パーティ能力が[その他 - バーティ能力]か。
+指定パーティ能力が[その他 - パーティ能力]か。
 
 ##### Parameters:
 

@@ -14,7 +14,7 @@
 | --- | --- | --- |
 | `_spriteset` | [Spriteset_Battle](Spriteset_Battle.md) | 戦闘スプライトセット |
 | `_statusWindow` | [Window_BattleStatus](Window_BattleStatus.md) | [ステータス]ウィンドウ |
-| `_partyCommandWindow` | [Window_PartyCommand](Window_PartyCommand.md) | [バーティ]コマンドウィンドウ |
+| `_partyCommandWindow` | [Window_PartyCommand](Window_PartyCommand.md) | [パーティ]コマンドウィンドウ |
 | `_actorCommandWindow` | [Window_ActorCommand](Window_ActorCommand.md) | [アクター]コマンドウィンドウ |
 | `_skillWindow` | [Window_BattleSkill](Window_BattleSkill.md) | [スキル]ウィンドウ |
 | `_itemWindow` | [Window_BattleItem](Window_BattleItem.md) | [アイテム]ウィンドウ |

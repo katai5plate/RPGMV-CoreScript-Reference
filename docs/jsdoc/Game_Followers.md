@@ -10,7 +10,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_visible` | Boolean | [バーティの隊列歩行]か |
+| `_visible` | Boolean | [パーティの隊列歩行]か |
 | `_gathering` | Boolean | 集合しているか |
 | `_data` | [Array](Array.md).<[Game_Follower](Game_Follower.md)> | [隊列メンバー]の配列 |
 
@@ -20,39 +20,13 @@
 #### areGathered () → {Boolean}
 [隊列メンバー]が集合しているか。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 #### areGathering () → {Boolean}
 [隊列メンバー]の集合中か。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### areMoving () → {Boolean}
 [隊列メンバー]が移動中か。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### follower (index) → {[Game_Follower](Game_Follower.md)}
@@ -64,15 +38,6 @@
 | --- | --- | --- |
 | `index` | [Number](Number.md) | [隊列メンバー]番号 |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a href="Game_Follower.html">Game_Follower</a></span>
-	</dd>
-</dl>
-
 
 #### forEach (callback, thisObject)
  各[隊列メンバー]オブジェクトを対象に関数を実行する。
@@ -83,7 +48,6 @@
 | --- | --- | --- |
 | `callback` | function | コールバック関数 |
 | `thisObject` | * | 現在のオブジェクト(通常this) |
-
 
 
 #### gather ()
@@ -108,27 +72,9 @@
 | `x` | [Number](Number.md) |  x座標(タイル数) |
 | `y` | [Number](Number.md) |  y座標(タイル数) |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isVisible () → {Boolean}
 [隊列メンバー]が表示されているか。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### jumpAll ()
@@ -176,15 +122,6 @@
 
 #### visibleFollowers () → {[Array](Array.md).<[Game_Follower](Game_Follower.md)>}
  表示中の[隊列メンバー]の配列を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a href="Array.html">Array</a>.&lt;<a href="Game_Follower.html">Game_Follower</a>&gt;</span>
-	</dd>
-</dl>
 
 
  <br>
