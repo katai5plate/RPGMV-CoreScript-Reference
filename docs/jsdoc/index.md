@@ -124,7 +124,7 @@
 * [AudioFile](RPG.AudioFile.md)
 * [MapInfo](RPG.MapInfo.md)([$dataMapInfos](global.md#datamapinfos-arrayrpgmapinfo))
 * [System](RPG.System.md)([$dataSystem](global.md#datasystem-rpgsystem)) . [AttackMotion](RPG.System.AttackMotion.md) \| [Terms](RPG.System.Terms.md) \| [TestBattler](RPG.System.TestBattler.md) \| [Vehicle](RPG.System.Vehicle.md)
-* [Troop](RPG.Troop.md)([$dataTroops](global.md#datatroops-arrayrpgtroop))
+* [Troop](RPG.Troop.md)([$dataTroops](global.md#datatroops-arrayrpgtroop)) . [Member](RPG.Troop.Member.md)
 * [Damage](RPG.Damage.md)
 * [Effect](RPG.Effect.md)
 * [Trait](RPG.Trait.md)

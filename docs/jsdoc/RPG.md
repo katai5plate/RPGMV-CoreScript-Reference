@@ -19,7 +19,7 @@
 * [MoveRoute](RPG.MoveRoute.md)
 * [System](RPG.System.md) . [AttackMotion](RPG.System.AttackMotion.md) \| [Terms](RPG.System.Terms.md) \| [TestBattler](RPG.System.TestBattler.md) \| [Vehicle](RPG.System.Vehicle.md)
 * [Trait](RPG.Trait.md)
-* [Troop](RPG.Troop.md)
+* [Troop](RPG.Troop.md) . [Member](RPG.Troop.Member.md)
 * [MetaData](RPG.MetaData.md)
 	* [Actor](RPG.Actor.md)
 	* [Class](RPG.Class.md) . [Learning](RPG.Class.Learning.md)

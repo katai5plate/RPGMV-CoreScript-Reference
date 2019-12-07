@@ -15,7 +15,7 @@
 | --- | --- | --- |
 | `id` | [Number](Number.md) | 敵グループID |
 | `name` | [String](String.md) | 敵グループ名 |
-| `members` | [Array](Array.md).<[Troop.Member](Troop.Member.md)> | メンバー |
+| `members` | [Array](Array.md).<[RPG.Troop.Member](RPG.Troop.Member.md)> | メンバー |
 | `pages` | [Array](Array.md).<[RPG.BattleEventPage](RPG.BattleEventPage.md)> | [バトルイベント] |
 
 
