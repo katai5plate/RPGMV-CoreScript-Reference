@@ -18,6 +18,9 @@
 | `members` | [Array](Array.md).<[RPG.Troop.Member](RPG.Troop.Member.md)> | メンバー |
 | `pages` | [Array](Array.md).<[RPG.BattleEventPage](RPG.BattleEventPage.md)> | [バトルイベント] |
 
+### Classes
+
+* [RPG.Troop.Member](RPG.Troop.Member.md)
 
  <br>
 
