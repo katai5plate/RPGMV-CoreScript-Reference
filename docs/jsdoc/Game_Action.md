@@ -73,7 +73,7 @@ HITTYPE\_から始まる定数は、[[命中タイプ](RPG.UsableItem.md#命中�
 
 
 #### applyGlobal ()
-全体に適用。
+[使用効果]に含まれる[コモンイベント]を抽出して [$GameTemp](global.md#gametemp-game_temp)([Game_Temp](Game_Temp.md)) に保持。
 
 
 #### applyGuard (damage, target) → {[Number](Number.md)}
