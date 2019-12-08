@@ -1,15 +1,18 @@
 # Class: DataManager
 
- データベースの管理を行う静的クラス。 セーブデータの管理など行う。だいたい、$XXXで大域変数に設定されているものの管理。
+[データベース]の管理を行う静的クラス。 <br />
+$XXXで大域変数に設定されているものや、セーブデータの管理など行う。
+
+大域変数について詳細は [Global](Global.md) のページを参照。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_globalId` | [String](String.md) | [static]システムID 'RPGMV' |
-| `_lastAccessedId` | [Number](Number.md) | [static]最後にセーブ・ロードを行ったファイルのID |
+| `_globalId` | [String](String.md) | [static] システムID 'RPGMV' |
+| `_lastAccessedId` | [Number](Number.md) | [static] 最後にセーブ・ロードを行ったファイルのID |
 | `_errorUrl` | * | [static] |
-| `_databaseFiles` | [Array](Array.md).\<Object> | [static]読み込むデータファイル情報(Object例:{ name: '$dataXxx', src: 'Xxx.json'}) |
+| `_databaseFiles` | [Array](Array.md).\<Object> | [static] 読み込むデータファイル情報(Object例:{ name: '$dataXxx', src: 'Xxx.json'}) |
 
 
 ### Methods
