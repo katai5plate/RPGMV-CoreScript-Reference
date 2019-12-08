@@ -1,14 +1,16 @@
 # Class: Window
 
-## Window ()
+## Extends: [PIXI.Container](PIXI.Container.md)
 
-#### new Window ()
+### new Window ()
+ゲーム内で使われるウィンドウ。ブラウザやその他アプリケーションのウィンドウではない。
 
-ゲーム内で使われるウィンドウ。[Window_Base](Window_Base.md)のスーパークラス。
+### Sub Class
 
-ブラウザやその他アプリケーションのウィンドウではない。
+* [Window_Base](Window_Base.md)
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -51,11 +53,6 @@
 | `_windowPauseSignSprite` | [Sprite](Sprite.md) | ポーズサイン |
 | `_downArrowSprite` | [Sprite](Sprite.md) | 下向き矢印 |
 | `_upArrowSprite` | [Sprite](Sprite.md) | 上向き矢印 |
-
-
-### Extends
-
-* [PIXI.Container](PIXI.Container.md)
 
 
 ### Inherited From

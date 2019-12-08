@@ -1,12 +1,21 @@
 # Class: Window_Selectable
 
-## Window_Selectable (x, y, width, height)
+## Extends: [Window_Base](Window_Base.md)
 
-#### new Window_Selectable (x, y, width, height)
-
+### new Window_Selectable (x, y, width, height)
 コマンドカーソルの移動やスクロールを行うウィンドウ。
 
-以下のスーパークラス。
+#### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `x` | [Number](Number.md) | ウィンドウ x座標(ピクセル) |
+| `y` | [Number](Number.md) | ウィンドウ y座標(ピクセル) |
+| `width` | [Number](Number.md) | ウィンドウ幅(ピクセル) |
+| `height` | [Number](Number.md) | ウィンドウ高さ(ピクセル) |
+
+
+### Sub Classes
 
 * [Window_BattleEnemy](Window_BattleEnemy.md)
 * [Window_BattleLog](Window_BattleLog.md)
@@ -25,16 +34,7 @@
 * [Window_ItemList](Window_ItemList.md)
 * [Window_Command](Window_Command.md)
 
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) | ウィンドウ x座標(ピクセル) |
-| `y` | [Number](Number.md) | ウィンドウ y座標(ピクセル) |
-| `width` | [Number](Number.md) | ウィンドウ幅(ピクセル) |
-| `height` | [Number](Number.md) | ウィンドウ高さ(ピクセル) |
-
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -47,12 +47,6 @@
 | `_touching` | Boolean | タッチされているか |
 | `_scrollX` | [Number](Number.md) | x軸のスクロール量 |
 | `_scrollY` | [Number](Number.md) | y軸のスクロール量 |
-
-
-### Extends
-
-* [Window_Base](Window_Base.md)
-
 
 ### Inherited From
 

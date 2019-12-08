@@ -1,12 +1,13 @@
 # Class: PIXI.Container
 
-## PIXI.Container ()
+## Extends: [PIXI.DisplayObject](PIXI.DisplayObject.md)
 
-#### new PIXI.Container ()
+### new PIXI.Container ()
+描画オブジェクトを含むコンテナ。<br />
+詳細は本家 PIXI のサイト [PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html) を参照。
 
-描画オブジェクトを含むコンテナ。
 
-以下のスーパークラス。
+### Sub Classes
 
 * [PIXI.Sprite](PIXI.Sprite.md) 
 * [PIXI.Graphics](PIXI.Graphics.md)
@@ -21,10 +22,8 @@
 * [Stage](Stage.md)
 * [Window](Window.md)
 
-詳細は本家 PIXI のサイト [PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html) を参照。
 
-
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -33,11 +32,6 @@
 | `height` | [Number](Number.md) | 拡大縮小前の画像の高さ(ピクセル) |
 | `sortableChildren` | Boolean |  子が(zIndexで)ソート可能か |
 | `sortDirty` | Boolean |  次回アップデート時ソートされるか |
-
-
-### Extends
-
-* [PIXI.DisplayObject](PIXI.DisplayObject.md)
 
 
 ### Inherited From

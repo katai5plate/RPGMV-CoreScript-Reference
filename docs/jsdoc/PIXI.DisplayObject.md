@@ -1,16 +1,17 @@
 # Class: PIXI.DisplayObject
 
-## PIXI.DisplayObject ()
+## Extends: [PIXI.utils.EventEmitter](http://pixijs.download/release/docs/PIXI.utils.EventEmitter.html)
 
-#### new PIXI.DisplayObject ()
-
-画面に表示されるもの一般の基本となるオブジェクト。
-
-[PIXI.Container](PIXI.Container.md) のスーパークラス。
-
+### new PIXI.DisplayObject ()
+画面に表示されるもの一般の基本となるオブジェクト。<br />
 詳細は本家 PIXI のサイト [PIXI.DisplayObject](http://pixijs.download/release/docs/PIXI.DisplayObject.html) を参照。
 
-##### Properties:
+
+### Sub Class
+* [PIXI.Container](PIXI.Container.md)
+
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -53,10 +54,6 @@
 | `y` | [Number](Number.md) | y座標(ピクセル) |
 | `zIndex` | [Number](Number.md) | 高い番号ほど手前に表示される番号 |
 
-
-### Extends
-
-* [PIXI.utils.EventEmitter](http://pixijs.download/release/docs/PIXI.utils.EventEmitter.html)
 
 ### Methods
 

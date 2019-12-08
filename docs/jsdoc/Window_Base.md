@@ -1,24 +1,11 @@
 # Class: Window_Base
 
-## Window_Base (x, y, width, height, \_iconWidth, \_iconHeight, \_faceWidth, \_faceHeight, \_opening, \_closing)
+## Extends: [Window](Window.md)
 
-#### new Window_Base (x, y, width, height, \_iconWidth, \_iconHeight, \_faceWidth, \_faceHeight, \_opening, \_closing)
-
+### new Window_Base (x, y, width, height, \_iconWidth, \_iconHeight, \_faceWidth, \_faceHeight, \_opening, \_closing)
 メッセージやステータスなどを描くためのメソッドを多く持つ、ウィンドウオブジェクト。
 
-以下のスーパークラス。
-
-* [Window_EquipStatus](Window_EquipStatus.md)
-* [Window_Gold](Window_Gold.md), [Window_Help](Window_Help.md)
-* [Window_MapName](Window_MapName.md)
-* [Window_Message](Window_Message.md)
-* [Window_NameEdit](Window_NameEdit.md)
-* [Window_ScrollText](Window_ScrollText.md)
-* [Window_ShopStatus](Window_ShopStatus.md)
-* [Window_SkillStatus](Window_SkillStatus.md)
-* [Window_Selectable](Window_Selectable.md)
-
-##### Parameters:
+#### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -34,9 +21,18 @@
 | `_closing` | Boolean | ウィンドウが閉じている途中か |
 
 
-### Extends
+### Sub Classes
 
-* [Window](Window.md)
+* [Window_EquipStatus](Window_EquipStatus.md)
+* [Window_Gold](Window_Gold.md)
+* [Window_Help](Window_Help.md)
+* [Window_MapName](Window_MapName.md)
+* [Window_Message](Window_Message.md)
+* [Window_NameEdit](Window_NameEdit.md)
+* [Window_ScrollText](Window_ScrollText.md)
+* [Window_ShopStatus](Window_ShopStatus.md)
+* [Window_SkillStatus](Window_SkillStatus.md)
+* [Window_Selectable](Window_Selectable.md)
 
 
 ### Inherited From

@@ -1,12 +1,20 @@
 # Class: Window_Command
 
-## Window_Command (x, y)
+## Extends: [Window_Selectable](Window_Selectable.md)
 
-#### new Window_Command (x, y)
+### new Window_Command (x, y)
+コマンド選択用ウィンドウ。<br />
+コマンドは画面に表示される「表示名」と、内部でコマンドを識別するために使われる「シンボル」が別に存在するので注意。
 
- コマンド選択用ウィンドウ。
- 
-以下のスーパークラス。
+#### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `x` | [Number](Number.md) | ウィンドウ x座標(ピクセル) |
+| `y` | [Number](Number.md) | ウィンドウ y座標(ピクセル) |
+
+
+### Sub Classes
 
 * [Window_ActorCommand](Window_ActorCommand.md)
 * [Window_ChoiceList](Window_ChoiceList.md)
@@ -17,20 +25,6 @@
 * [Window_PartyCommand](Window_PartyCommand.md)
 * [Window_TitleCommand](Window_TitleCommand.md)
 * [Window_HorzCommand](Window_HorzCommand.md)
-
-コマンドは画面に表示される「表示名」と、内部でコマンドを識別するために使われる「シンボル」が別に存在するので注意。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) | ウィンドウ x座標(ピクセル) |
-| `y` | [Number](Number.md) | ウィンドウ y座標(ピクセル) |
-
-
-### Extends
-
-* [Window_Selectable](Window_Selectable.md)
 
 
 ### Inherited From
