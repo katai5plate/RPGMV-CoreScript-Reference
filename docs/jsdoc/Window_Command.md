@@ -6,8 +6,18 @@
 
  コマンド選択用ウィンドウ。
  
-  [Window_ActorCommand](Window_ActorCommand.md), [Window_ChoiceList](Window_ChoiceList.md), [Window_GameEnd](Window_GameEnd.md), [Window_MenuCommand](Window_MenuCommand.md), [Window_Options](Window_Options.md), [Window_SkillType](Window_SkillType.md), [Window_PartyCommand](Window_PartyCommand.md), [Window_TitleCommand](Window_TitleCommand.md) と [Window_HorzCommand](Window_HorzCommand.md) のスーパークラス。
-  
+以下のスーパークラス。
+
+* [Window_ActorCommand](Window_ActorCommand.md)
+* [Window_ChoiceList](Window_ChoiceList.md)
+* [Window_GameEnd](Window_GameEnd.md)
+* [Window_MenuCommand](Window_MenuCommand.md)
+* [Window_Options](Window_Options.md)
+* [Window_SkillType](Window_SkillType.md)
+* [Window_PartyCommand](Window_PartyCommand.md)
+* [Window_TitleCommand](Window_TitleCommand.md)
+* [Window_HorzCommand](Window_HorzCommand.md)
+
 コマンドは画面に表示される「表示名」と、内部でコマンドを識別するために使われる「シンボル」が別に存在するので注意。
 
 ##### Parameters:
@@ -260,7 +270,7 @@
 
 
 #### callOkHandler ()
-Overrides: [Window_Selectable.callOkHandler ()](Window_Selectable.md#callokhandler-)
+Overrides: [Window_Selectable](Window_Selectable.md#callokhandler-)
 
 
 #### commandName (index) → {[String](String.md)}
@@ -287,7 +297,7 @@ Overrides: [Window_Selectable.callOkHandler ()](Window_Selectable.md#callokhandl
 現在のコマンドのオブジェクトを返す。
 
 
-#### currentExt () → {*|0bject}
+#### currentExt () → {*|Object}
 現在のコマンドの ext プロパティを返す。
 
 
@@ -296,7 +306,7 @@ Overrides: [Window_Selectable.callOkHandler ()](Window_Selectable.md#callokhandl
 
 
 #### drawItem (index)
-Overrides: [Window_Selectable.drawItem (index)](Window_Selectable.md#drawitem-index)
+Overrides: [Window_Selectable](Window_Selectable.md#drawitem-index)
 
 
 #### findExt (ext) → {[Number](Number.md)}
@@ -306,7 +316,7 @@ Overrides: [Window_Selectable.drawItem (index)](Window_Selectable.md#drawitem-in
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `ext` | * \| Object |  |
+| `ext` | * \| Object | コマンドハンドラ |
 
 
 #### findSymbol (symbol) → {[Number](Number.md)}
@@ -320,7 +330,7 @@ Overrides: [Window_Selectable.drawItem (index)](Window_Selectable.md#drawitem-in
 
 
 #### initialize (x, y)
-Overrides: [Window_Selectable.initialize (x, y, width, height)](Window_Selectable.md#initialize-x-y-width-height)
+Overrides: [Window_Selectable](Window_Selectable.md#initialize-x-y-width-height)
 
 ##### Parameters:
 
@@ -337,15 +347,15 @@ Overrides: [Window_Selectable.initialize (x, y, width, height)](Window_Selectabl
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
+| `index` | [Number](Number.md) | コマンド番号 |
 
 
 #### isCurrentItemEnabled () → {Boolean}
-Overrides: [Window_Selectable.isCurrentItemEnabled ()](Window_Selectable.md#iscurrentitemenabled---boolean)
+Overrides: [Window_Selectable](Window_Selectable.md#iscurrentitemenabled---boolean)
 
 
 #### isOkEnabled () → {Boolean}
-Overrides: [Window_Selectable.isOkEnabled ()](Window_Selectable.md#isokenabled---boolean)
+Overrides: [Window_Selectable](Window_Selectable.md#isokenabled---boolean)
 
 
 #### itemTextAlign () → {[String](String.md)}
@@ -357,7 +367,7 @@ Overrides: [Window_Selectable.isOkEnabled ()](Window_Selectable.md#isokenabled--
 
 
 #### maxItems () → {[Number](Number.md)}
-Overrides: [Window_Selectable.maxItems ()](Window_Selectable.md#maxitems---number)
+Overrides: [Window_Selectable](Window_Selectable.md#maxitems---number)
 
 
 #### numVisibleRows () → {[Number](Number.md)}
@@ -365,7 +375,7 @@ Overrides: [Window_Selectable.maxItems ()](Window_Selectable.md#maxitems---numbe
 
 
 #### refresh ()
-Overrides: [Window_Selectable.refresh ()](Window_Selectable.md#refresh-)
+Overrides: [Window_Selectable](Window_Selectable.md#refresh-)
 
 
 #### selectExt (ext)
@@ -375,7 +385,7 @@ ext プロパティに従ってコマンドを選択。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `ext` | any |object |  |
+| `ext` | * \| Object | コマンドハンドラ |
 
 
 #### selectSymbol (symbol)

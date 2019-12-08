@@ -6,7 +6,24 @@
 
 コマンドカーソルの移動やスクロールを行うウィンドウ。
 
-[Window_BattleEnemy](Window_BattleEnemy.md), [Window_BattleLog](Window_BattleLog.md), [Window_DebugEdit](Window_DebugEdit.md), [Window_DebugRange](Window_DebugRange.md), [Window_EquipSlot](Window_EquipSlot.md), [Window_NameInput](Window_NameInput.md), [Window_NumberInput](Window_NumberInput.md), [Window_SavefileList](Window_SavefileList.md), [Window_ShopBuy](Window_ShopBuy.md), [Window_ShopNumber](Window_ShopNumber.md), [Window_Status](Window_Status.md) および [Window_BattleStatus](Window_BattleStatus.md), [Window_MenuStatus](Window_MenuStatus.md), [Window_SkillList](Window_SkillList.md) および [Window_ItemList](Window_ItemList.md) および [Window_Command](Window_Command.md) のスーパークラス。
+以下のスーパークラス。
+
+* [Window_BattleEnemy](Window_BattleEnemy.md)
+* [Window_BattleLog](Window_BattleLog.md)
+* [Window_DebugEdit](Window_DebugEdit.md)
+* [Window_DebugRange](Window_DebugRange.md)
+* [Window_EquipSlot](Window_EquipSlot.md)
+* [Window_NameInput](Window_NameInput.md)
+* [Window_NumberInput](Window_NumberInput.md)
+* [Window_SavefileList](Window_SavefileList.md)
+* [Window_ShopBuy](Window_ShopBuy.md)
+* [Window_ShopNumber](Window_ShopNumber.md)
+* [Window_Status](Window_Status.md)
+* [Window_BattleStatus](Window_BattleStatus.md)
+* [Window_MenuStatus](Window_MenuStatus.md)
+* [Window_SkillList](Window_SkillList.md)
+* [Window_ItemList](Window_ItemList.md)
+* [Window_Command](Window_Command.md)
 
 ##### Parameters:
 
@@ -182,7 +199,7 @@
 ### Methods
 
 #### activate ()
-Overrides: [Window_Base.activate ()](Window_Base.md#activate-)
+Overrides: [Window_Base](Window_Base.md#activate-)
 
 
 #### bottomRow () → {[Number](Number.md)}
@@ -277,7 +294,7 @@ OKのハンドラを呼ぶ。
 
 
 #### deactivate ()
-Overrides: [Window_Base.deactivate ()](Window_Base.md#deactivate-)
+Overrides: [Window_Base](Window_Base.md#deactivate-)
 
 
 #### deselect ()
@@ -322,7 +339,7 @@ Overrides: [Window_Base.deactivate ()](Window_Base.md#deactivate-)
 
 
 #### initialize (x, y, width, height)
-Overrides: [Window_Base.initialize (x, y, width, height)](Window_Base.md#initialize-x-y-width-height)
+Overrides: [Window_Base](Window_Base.md#initialize-x-y-width-height)
 
 
 #### isCancelEnabled () → {Boolean}
@@ -627,7 +644,7 @@ OKの処理。
 
 
 #### update ()
-Overrides: [Window_Base.update ()](Window_Base.md#update-)
+Overrides: [Window_Base](Window_Base.md#update-)
 
 
 #### updateCursor ()

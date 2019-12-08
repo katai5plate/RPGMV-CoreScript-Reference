@@ -202,7 +202,7 @@
 
 
 #### updateTransform ()
-Overrides: [PIXI.Container.updateTransform ()](PIXI.Container.md#updatetransform-)
+Overrides: [PIXI.Container](PIXI.Container.md#updatetransform-)
 
 
  <br>

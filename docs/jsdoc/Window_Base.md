@@ -1,11 +1,22 @@
 # Class: Window_Base
 
-## Window_Base (x, y, width, height, _iconWidth, _iconHeight, _faceWidth, _faceHeight, _opening, _closing)
+## Window_Base (x, y, width, height, \_iconWidth, \_iconHeight, \_faceWidth, \_faceHeight, \_opening, \_closing)
 
-#### new Window_Base (x, y, width, height, _iconWidth, _iconHeight, _faceWidth, _faceHeight, _opening, _closing)
+#### new Window_Base (x, y, width, height, \_iconWidth, \_iconHeight, \_faceWidth, \_faceHeight, \_opening, \_closing)
 
-メッセージやステータスなどを描くためのメソッドを多く持つ、ウィンドウオブジェクト。<br />
-[Window_EquipStatus](Window_EquipStatus.md), [Window_Gold](Window_Gold.md), [Window_Help](Window_Help.md), [Window_MapName](Window_MapName.md), [Window_Message](Window_Message.md), [Window_NameEdit](Window_NameEdit.md), [Window_ScrollText](Window_ScrollText.md), [Window_ShopStatus](Window_ShopStatus.md), [Window_SkillStatus](Window_SkillStatus.md) および [Window_Selectable](Window_Selectable.md) のスーパークラス。
+メッセージやステータスなどを描くためのメソッドを多く持つ、ウィンドウオブジェクト。
+
+以下のスーパークラス。
+
+* [Window_EquipStatus](Window_EquipStatus.md)
+* [Window_Gold](Window_Gold.md), [Window_Help](Window_Help.md)
+* [Window_MapName](Window_MapName.md)
+* [Window_Message](Window_Message.md)
+* [Window_NameEdit](Window_NameEdit.md)
+* [Window_ScrollText](Window_ScrollText.md)
+* [Window_ShopStatus](Window_ShopStatus.md)
+* [Window_SkillStatus](Window_SkillStatus.md)
+* [Window_Selectable](Window_Selectable.md)
 
 ##### Parameters:
 
@@ -499,7 +510,7 @@ Dimmer背景を非表示。
 
 
 #### initialize (x, y, width, height)
-Overrides: [Window.initialize ()](Window.md#initialize-)
+Overrides: [Window](Window.md#initialize-)
 
 ##### Parameters:
 
@@ -797,7 +808,7 @@ Dimmer背景を表示。
 
 
 #### update ()
-Overrides: [Window.update ()](Window#update-)
+Overrides: [Window](Window#update-)
 
 
 #### updateBackgroundDimmer ()
