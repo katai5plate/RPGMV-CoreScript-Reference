@@ -2,7 +2,8 @@
 
 戦闘の進行を制御する静的クラス。
 
-[Scene_Battle](Scene_Battle.md) のコントロール部。
+[Scene_Battle](Scene_Battle.md) のコントロール部。[Game_Party](Game_Party.md)([$gameParty](global.md#gameparty-game_party))、[Game_Troop](Game_Troop.md)([$gameTroop](global.md#gametroop-game_troop)) を扱う。
+
 
 ##### Properties:
 
@@ -19,10 +20,10 @@
 | `_actionForcedBattler` | [Game_Battler](Game_Battler.md) | [static] 強制行動のアクター |
 | `_mapBgm` | [MV.AudioParameters](MV.AudioParameters.md) | [static] 戦闘BGM |
 | `_mapBgs` | [MV.AudioParameters](MV.AudioParameters.md) | [static] 戦闘BGS |
-| `_actionBattlers` | [Array](Array.md).<[Game_Battler](Game_Battler.md)> | [static] アクションを行うバトラー |
+| `_actionBattlers` | [Array](Array.md).<[Game_Battler](Game_Battler.md)> | [static] アクションを行うバトラーの配列(行動順) |
 | `_subject` | [Game_Battler](Game_Battler.md) | [static] 対象バトラー |
 | `_action` | [Game_Action](Game_Action.md) | [static] アクション |
-| `_targets` | [Array](Array.md).<[Game_Battler](Game_Battler.md)> | [static] 目標バトラー |
+| `_targets` | [Array](Array.md).<[Game_Battler](Game_Battler.md)> | [static] 目標バトラーの配列 |
 | `_logWindow` | [Window_BattleLog](Window_BattleLog.md) | [static] ログウィンドウ |
 | `_statusWindow` | [Window_BattleStatus](Window_BattleStatus.md) | [static] ステータスウィンドウ |
 | `_spriteset` | [Spriteset_Battle](Spriteset_Battle.md) | [static] スプライトセット |
@@ -42,7 +43,7 @@
 
 
 #### (static) allBattleMembers () → {[Array](Array.md).<[Game_Battler](Game_Battler.md)>}
-すべての戦闘に参加しているバトラーを返す。
+戦闘に参加している全バトラーを返す。
 
 
 #### (static) applySubstitute (target) → {[Game_Battler](Game_Battler.md)}
@@ -319,7 +320,7 @@
 
 
 #### (static) processTurn ()
-ターンの処理。
+ターン継続処理。
 
 
 #### (static) processVictory ()
@@ -331,7 +332,7 @@
 
 
 #### (static) refreshStatus ()
-[ステータス]を回復する。
+[ステータス]表示を再描画。
 
 
 #### (static) replayBgmAndBgs ()
