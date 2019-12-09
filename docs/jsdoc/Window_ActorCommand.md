@@ -1,22 +1,16 @@
 # Class: Window_ActorCommand
 
-## Window_ActorCommand ()
+## Extends: [Window_Command](Window_Command.md)
 
-#### new Window_ActorCommand ()
+### new Window_ActorCommand ()
+戦闘シーンのアクターのコマンド( [攻撃][スキル][防御][アイテム] )を表示するウィンドウ。
 
-戦闘シーンのアクターのコマンドを表示するウィンドウ。
 
-
-##### Properties:
+#### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `_actor` | [Game_Actor](Game_Actor.md) |アクター |
-
-
-### Extends
-
-* [Window_Command](Window_Command.md)
 
 
 ### Inherited From
@@ -241,28 +235,26 @@
 
 #### [Window_Command](Window_Command.md)
 
-* [addCommand (name, symbol, enabled, ext)](Window_Command#addcommand-name-symbol-enabled-ext)
-* [callOkHandler ()](Window_Command#callokhandler-)
-* [commandName (index)](Window_Command#commandname-index--string)
-* [commandSymbol (index)](Window_Command#commandsymbol-index--string)
-* [currentData ()](Window_Command#currentdata---object)
-* [currentExt ()](Window_Command#currentext---0bject)
-* [currentSymbol ()](Window_Command#currentsymbol---string)
-* [drawItem (index)](Window_Command#drawitem-index)
-* [findExt (ext)](Window_Command#findext-ext--number)
-* [findSymbol (symbol)](Window_Command#findsymbol-symbol--number)
-* [isCommandEnabled (index) ](Window_Command#iscommandenabled-index--boolean)
-* [isCurrentItemEnabled ()](Window_Command#iscurrentitemenabled---boolean)
-* [isOkEnabled ()](Window_Command#isokenabled---boolean)
-* [itemTextAlign ()](Window_Command#itemtextalign---string)
-* [makeCommandList ()](Window_Command#makecommandlist-)
-* [maxItems ()](Window_Command#maxitems---number)
-* [numVisibleRows ()](Window_Command#numvisiblerows---number)
-* [refresh ()](Window_Command#refresh-)
-* [selectExt (ext)](Window_Command#selectext-ext)
-* [selectSymbol (symbol)](Window_Command#selectsymbol-symbol)
-* [windowHeight ()](Window_Command#windowheight---number)
-* [windowWidth ()](Window_Command#windowwidth---number)
+* [addCommand (name, symbol, enabled, ext)](Window_Command.md#addcommand-name-symbol-enabled-ext)
+* [callOkHandler ()](Window_Command.md#callokhandler-)
+* [commandName (index)](Window_Command.md#commandname-index--string)
+* [commandSymbol (index)](Window_Command.md#commandsymbol-index--string)
+* [currentData ()](Window_Command.md#currentdata---object)
+* [currentExt ()](Window_Command.md#currentext---object)
+* [currentSymbol ()](Window_Command.md#currentsymbol---string)
+* [drawItem (index)](Window_Command.md#drawitem-index)
+* [findExt (ext)](Window_Command.md#findext-ext--number)
+* [findSymbol (symbol)](Window_Command.md#findsymbol-symbol--number)
+* [isCommandEnabled (index) ](Window_Command.md#iscommandenabled-index--boolean)
+* [isCurrentItemEnabled ()](Window_Command.md#iscurrentitemenabled---boolean)
+* [isOkEnabled ()](Window_Command.md#isokenabled---boolean)
+* [itemTextAlign ()](Window_Command.md#itemtextalign---string)
+* [maxItems ()](Window_Command.md#maxitems---number)
+* [refresh ()](Window_Command.md#refresh-)
+* [selectExt (ext)](Window_Command.md#selectext-ext)
+* [selectSymbol (symbol)](Window_Command.md#selectsymbol-symbol)
+* [windowHeight ()](Window_Command.md#windowheight---number)
+* [windowWidth ()](Window_Command.md#windowwidth---number)
 
 
 ### Methods
@@ -285,19 +277,19 @@
 
 
 #### initialize ()
-Overrides: [Window_Command.initialize (x, y)](Window_Command#initialize-x-y)
+Overrides: [Window_Command](Window_Command.md#initialize-x-y)
 
 
 #### makeCommandList ()
-Overrides: [Window_Command.makeCommandList ()](Window_Command#makeCommandlist-)
+Overrides: [Window_Command](Window_Command.md#makecommandlist-)
 
 
 #### numVisibleRows () → {[Number](Number.md)}
-Overrides: [Window_Command.numVisibleRows ()](Window_Command#numvisiblerows-)
+Overrides: [Window_Command](Window_Command.md#numvisiblerows-)
 
 
 #### processOk ()
-Overrides: [Window_Command.processOk ()](Window_Command#processok-)
+Overrides: [Window_Command](Window_Command.md#processok-)
 
 
 #### setup (actor)
@@ -311,4 +303,4 @@ Overrides: [Window_Command.processOk ()](Window_Command#processok-)
 
 
 #### windowWidth () → {[Number](Number.md)}
-Overrides: [Window_Command.windowWidth ()](Window_Command#windowwidth---number)
+Overrides: [Window_Command](Window_Command.md#windowwidth---number)
