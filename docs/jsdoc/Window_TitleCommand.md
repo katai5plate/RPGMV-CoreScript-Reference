@@ -5,11 +5,12 @@
 ### new Window_TitleCommand ()
 タイトル画面に表示されるコマンドウィンドウ。<br />
 [Scene_Title](Scene_Title.md) の \_commandWindow プロパティに保持される。
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_lastCommandSymbol` | [String](String.md) | 最後に実行したシンボル |
+| `_lastCommandSymbol` | [String](String.md) | [Static] [コマンド記憶]用シンボル |
 
 
 ### Inherited From
@@ -277,7 +278,7 @@ Overrides: [Window_Selectable.processOk ()](Window_Selectable.md#processok-)
 
 
 #### selectLast ()
-最後に実行した項目を選択。
+前に選んだメニューを選ぶ。
 
 
 #### updatePlacement ()
