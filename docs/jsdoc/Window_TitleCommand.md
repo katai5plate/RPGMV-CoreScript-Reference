@@ -1,23 +1,16 @@
 # Class: Window_TitleCommand
 
-## Window_TitleCommand ()
+## Extends: [Window_Command](Window_Command.md)
 
-#### new Window_TitleCommand ()
-
-タイトル画面に表示されるコマンドウィンドウ。
-
+### new Window_TitleCommand ()
+タイトル画面に表示されるコマンドウィンドウ。<br />
 [Scene_Title](Scene_Title.md) の \_commandWindow プロパティに保持される。
-
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `_lastCommandSymbol` | [String](String.md) | 最後に実行したシンボル |
 
-
-### Extends
-
-* [Window_Command](Window_Command.md)
 
 ### Inherited From
 
@@ -245,7 +238,7 @@
 * [commandName (index)](Window_Command.md#commandname-index--string)
 * [commandSymbol (index)](Window_Command.md#commandsymbol-index--string)
 * [currentData ()](Window_Command.md#currentdata---object)
-* [currentExt ()](Window_Command.md#currentext---0bject)
+* [currentExt ()](Window_Command.md#currentext---object)
 * [currentSymbol ()](Window_Command.md#currentsymbol---string)
 * [drawItem (index)](Window_Command.md#drawitem-index)
 * [findExt (ext)](Window_Command.md#findext-ext--number)
