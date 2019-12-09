@@ -269,6 +269,7 @@ Overrides:[Window_Command](Window_Command.md#numvisiblerows-number)
 #### setup ()
 準備。
 
+
 #### windowWidth () → {[Number](Number.md)}
 Overrides:[Window_Command](Window_Command.md#windowwidth-number)
 
