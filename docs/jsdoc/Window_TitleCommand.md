@@ -286,7 +286,7 @@ Overrides: [Window_Selectable.processOk ()](Window_Selectable.md#processok-)
 
 
 #### windowWidth () → {[Number](Number.md)}
-Overrides: [Window_Command.windowWidth ()](Window_Command.md#windowwidth---number)
+Overrides: [Window_Command](Window_Command.md#windowwidth---number)
 
 
  <br>

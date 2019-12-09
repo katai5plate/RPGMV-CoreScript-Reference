@@ -345,7 +345,7 @@ Overrides: [Window_Command](Window_Command.md#processok-)
 
 
 #### windowWidth () → {[Number](Number.md)}
-Overrides: [Window_Command.windowWidth ()](Window_Command.md#windowwidth---number)
+Overrides: [Window_Command](Window_Command.md#windowwidth---number)
 
 
 

@@ -203,7 +203,6 @@
 * [processCancel ()](Window_Selectable.md#processcancel-)
 * [processCursorMove ()](Window_Selectable.md#processcursormove-)
 * [processHandling ()](Window_Selectable.md#processhandling-)
-* [processOk ()](Window_Selectable.md#processok-)
 * [processPagedown ()](Window_Selectable.md#processpagedown-)
 * [processPageup ()](Window_Selectable.md#processpageup-)
 * [processTouch ()](Window_Selectable.md#processtouch-)
@@ -289,7 +288,7 @@ Overrides: [Window_Command](Window_Command.md#numvisiblerows-)
 
 
 #### processOk ()
-Overrides: [Window_Command](Window_Command.md#processok-)
+Overrides: [Window_Selectable](Window_Selectable.md#processok-)
 
 
 #### setup (actor)

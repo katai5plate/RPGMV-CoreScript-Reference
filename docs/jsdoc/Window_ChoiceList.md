@@ -294,12 +294,14 @@ Overrides: [Window_Command](Window_Command.md#makecommandlist-)
 #### maxChoiceWidth () → {[Number](Number.md)}
 最大の選択肢(文字)の幅を返す。
 
+
 #### numVisibleRows ()
 Overrides: [Window_Command](Window_Command.md#numvisiblerows-)
 
 
 #### selectDefault ()
 規定項目の選択。
+
 
 #### start ()
 ウィンドウの開始。
@@ -318,8 +320,10 @@ Overrides: [Window_Command](Window_Command.md#numvisiblerows-)
 #### updateBackground ()
 背景のアップデート。
 
+
 #### updatePlacement ()
 ウィンドウの配置のアップデート。
+
 
 #### windowWidth () → {[Number](Number.md)}
 Overrides: [Window_Command](Window_Command.md#windowwidth---number)
