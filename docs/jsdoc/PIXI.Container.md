@@ -99,7 +99,7 @@
 
 
 #### destroy (options)
-Overrides:[PIXI.DisplayObject](PIXI.DisplayObject.md#destroy-)
+Overrides: [PIXI.DisplayObject](PIXI.DisplayObject.md#destroy-)
 
 ##### Parameters:
 
@@ -182,7 +182,7 @@ options に Object として指定する内容
 
 
 #### render (renderer)
-Overrides:[PIXI.DisplayObject](PIXI.DisplayObject.md#render--renderer)
+Overrides: [PIXI.DisplayObject](PIXI.DisplayObject.md#render-renderer)
 
 ##### Parameters:
 
@@ -235,7 +235,7 @@ Overrides:[PIXI.DisplayObject](PIXI.DisplayObject.md#render--renderer)
 
 
 #### updateTransform ()
-Overrides:[PIXI.DisplayObject](PIXI.DisplayObject.md#updateTransform-)
+Overrides: [PIXI.DisplayObject](PIXI.DisplayObject.md#updateTransform-)
 
 
 
