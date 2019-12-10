@@ -269,13 +269,13 @@
 #### initialize ()
 Overrides: [Window_Command](Window_Command.md#initialize-x-y)
 
-#### initialize ()
+#### itemTextAlign () → {[String](String.md)}
 Overrides: [Window_Command](Window_Command.md#itemtextalign---string)
 
-#### initialize ()
+#### maxCols () → {[Number](Number.md)}
 Overrides: [Window_Selectable](Window_Selectable.md#maxcols---number)
 
-#### initialize ()
+#### numVisibleRows () → {[Number](Number.md)}
 Overrides: [Window_Command](Window_Command.md#numvisiblerows---number)
 
 
