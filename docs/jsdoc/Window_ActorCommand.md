@@ -3,7 +3,7 @@
 ## Extends: [Window_Command](Window_Command.md)
 
 ### new Window_ActorCommand ()
-戦闘シーンのアクターのコマンド( [攻撃][スキル][防御][アイテム] )を表示するウィンドウ。
+戦闘シーンのアクターのコマンド( [攻撃][スキル][防御][アイテム] )のウィンドウ。
 
 
 #### Properties:
