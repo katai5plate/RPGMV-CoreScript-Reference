@@ -12,6 +12,7 @@
 | `width` | [Number](Number.md) | 幅(ピクセル) |
 | `purchaseOnly` | Boolean | [購入のみ]か |
 
+
 ### Properties:
 
 | Name | Type | Description |

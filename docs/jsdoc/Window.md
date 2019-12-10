@@ -5,7 +5,7 @@
 ### new Window ()
 ゲーム内で使われるウィンドウ。ブラウザやその他アプリケーションのウィンドウではない。
 
-### Sub Class
+### Sub Classes
 
 * [Window_Base](Window_Base.md)
 

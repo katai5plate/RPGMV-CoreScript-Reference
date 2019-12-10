@@ -2,8 +2,9 @@
 
 ## Extends: [Window_HorzCommand](Window_HorzCommand.md)
 
-#### new Window_ItemCategory ()
+### new Window_ItemCategory ()
 [アイテム]や[ショップの処理]で水平に並ぶコマンド( [購入する][売却する][やめる] )のウィンドウ。
+
 
 ### Properties:
 

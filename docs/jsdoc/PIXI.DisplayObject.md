@@ -7,7 +7,7 @@
 詳細は本家 PIXI のサイト [PIXI.DisplayObject](http://pixijs.download/release/docs/PIXI.DisplayObject.html) を参照。
 
 
-### Sub Class
+### Sub Classes
 * [PIXI.Container](PIXI.Container.md)
 
 
