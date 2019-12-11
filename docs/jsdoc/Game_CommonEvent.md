@@ -1,15 +1,14 @@
 # Class: Game_CommonEvent
 
-## Game_CommonEvent ()
+### new Game_CommonEvent ()
 
-#### new Game_CommonEvent ()
+| データベース| JSONデータ |
+| --- | --- |
+| [コモンイベント] | [RPG.CommonEvent](RPG.CommonEvent.md) |
 
-[コモンイベント]を定義したクラス。<br />
-JSONの定義データは [RPG.CommonEvent](RPG.CommonEvent.md)。
+関連クラス: [Game_Interpreter](Game_Interpreter.md)、[Game_Map](Game_Map.md)
 
-[Game_Map](Game_Map.md) の \_commonEvents プロパティに保持されている。
-
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -17,21 +16,10 @@ JSONの定義データは [RPG.CommonEvent](RPG.CommonEvent.md)。
 | `_interpreter` | [Game_Interpreter](Game_Interpreter.md) | コマンドインタプリタ |
 
 
-
 ### Methods
 
 #### event () → {[RPG.CommonEvent](RPG.CommonEvent.md)}
 JSONの定義データを返す。
-
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>RPG.CommonEvent</span>
-    </dd>
-</dl>
 
 
 #### initialize ()
@@ -41,27 +29,9 @@ JSONの定義データを返す。
 #### isActive () → {Boolean}
 この[コモンイベント]がアクティブか。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
 
 #### list () → {[Array](Array.md).<[RPG.EventCommand](RPG.EventCommand.md)>}
 [イベントコマンド]を配列で返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a>Array</a>.&lt;RPG.EventCommand&gt;</span>
-    </dd>
-</dl>
 
 
 #### refresh ()
