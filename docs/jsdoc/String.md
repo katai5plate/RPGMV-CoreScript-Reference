@@ -1,9 +1,6 @@
 # Class: String
 
-## String ()
-
-#### new String ()
-
+### new String ()
 JavaScript の文字列にいくつかRPGツクールMV独自のメソッドが追加してある。
 
 詳細は [MDN の Stringのページ](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String)を見てもらうとして。

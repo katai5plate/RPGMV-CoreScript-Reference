@@ -1,9 +1,6 @@
 # Class: Array
 
-## Array ()
-
-#### new Array ()
-
+### new Array ()
 JavaScript の配列にいくつかRPGツクールMV独自のメソッドが追加してある。
 
 詳細は [MDN の Arrayのページ](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array)を見てもらうとして。

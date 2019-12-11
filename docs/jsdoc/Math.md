@@ -1,9 +1,6 @@
 # Class: Math
 
-## Math ()
-
-#### new Math ()
-
+### new Math ()
 JavaScript の MathオブジェクトにいくつかRPGツクールMV独自のメソッドが追加してある。
 
 詳細は [MDN の Mathのページ](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Math)を見てもらうとして。

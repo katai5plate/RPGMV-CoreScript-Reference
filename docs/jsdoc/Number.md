@@ -1,9 +1,6 @@
 # Class: Number
 
-## Number ()
-
-#### new Number ()
-
+### new Number ()
 JavaScript の数値にいくつかRPGツクールMV独自のメソッドが追加してある。
 
 詳細は [MDN の Numberのページ](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Number)を見てもらうとして。
