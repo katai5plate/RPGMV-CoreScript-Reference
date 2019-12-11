@@ -1,9 +1,9 @@
 # Class: Input
-
 キーボードとゲームパッド(コントローラ)の入力に関する静的クラス。<br />
 JavaScriptの[KeyboardEvent](https://developer.mozilla.org/ja/docs/Web/API/KeyboardEvent)と[Gamepad](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad)周りを扱う。
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
