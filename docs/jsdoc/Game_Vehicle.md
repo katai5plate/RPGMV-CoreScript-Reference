@@ -1,12 +1,12 @@
 # Class: Game_Vehicle
 
-## Game_Vehicle ()
+## Extends: [Game_Character](Game_Character.md)
 
-#### new Game_Vehicle ()
-
+### new Game_Vehicle ()
 [乗り物]を定義したクラス。 大体の機能は [Game_Player](Game_Player.md) クラスから使える。
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -15,11 +15,6 @@
 | `_altitude` | [Number](Number.md) | 高度 |
 | `_driving` | Boolean | 運転中か |
 | `_bgm` | [RPG.AudioFile](RPG.AudioFile.md) | [乗り物]用BGM |
-
-
-### Extends
-
-* [Game_Character](Game_Character.md)
 
 
 ### Inherited From
@@ -160,43 +155,21 @@
 #### canMove () → {Boolean}
 [乗り物]を操作可能か。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### getOff ()
 [乗り物]から降りる。
 
+
 #### getOn ()
-
-
 [乗り物]へ乗る。
 
 
 #### initialize (type)
- オブジェクト生成時の初期化。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `type` | [String](String.md) |  |
-
-##### Overrides:
-[Game_Character.initialize ()](Game_Character.md#initialize-)
+Overrides: [Game_Character](Game_Character.md#initialize-)
 
 
 #### initMembers ()
- メンバ変数の初期化。
- 
-##### Overrides:
-[Game_Character.initMembers ()](Game_Character.md#initmembers-)
+Overrides: [Game_Character](Game_Character.md#initmembers-)
  
  
 #### initMoveSpeed ()
@@ -206,41 +179,13 @@
 #### isAirship () → {Boolean}
 [飛行船]か。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isBoat () → {Boolean}
 [小型船]か。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
-
 
 #### isHighest () → {Boolean}
  最高高度か。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### isLandOk (x, y, d) → {Boolean}
@@ -250,81 +195,26 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
+| `x` | [Number](Number.md) |  x座標(タイル数) |
+| `y` | [Number](Number.md) |  y座標(タイル数) |
 | `d` | [Number](Number.md) |  向き(テンキー対応) |
 
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 #### isLowest () → {Boolean}
  着陸しているか(最低高度か)。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isMapPassable (x, y, d) → {Boolean}
- 指定位置から指定向きへのマップ通行が可能か。 キャラ・[イベント]による障害を考慮しない。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-| `d` | [Number](Number.md) |  向き(テンキー対応) |
-
-##### Overrides:
-[Game_CharacterBase.isMapPassable ( x, y, d )](Game_CharacterBase.md#ismappassable-x-y-d--boolean)
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#ismappassable-x-y-d--boolean)
 
 
 #### isShip () → {Boolean}
 [大型船]か。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isTakeoffOk () → {Boolean}
  離陸可能か。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### loadSystemSettings ()
@@ -334,41 +224,13 @@
 #### maxAltitude () → {[Number](Number.md)}
  最高高度(ピクセル)を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Number</a></span>
-	</dd>
-</dl>
-
 
 #### playBgm ()
 [乗り物]用のBGMを再生。
 
 
 #### pos (x, y) → {Boolean}
- 指定位置にいるか。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-
-##### Overrides:
-[Game_CharacterBase.pos ( x, y )](Game_CharacterBase.md#pos-)
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#pos-)
 
 
 #### refresh ()
@@ -389,7 +251,6 @@
 | `bgm` | [RPG.AudioFile](RPG.AudioFile.md) |  |
 
 
-
 #### setLocation (mapId, x, y)
  指定マップ・位置に移動。
 
@@ -402,59 +263,24 @@
 | `y` | [Number](Number.md) |  タイル数 |
 
 
-
-
-
 #### shadowOpacity () → {[Number](Number.md)}
- 影の不透明度を返す。
-
-##### Returns:
-
-0〜255
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Number</a></span>
-	</dd>
-</dl>
+ 影の不透明度(0〜255)を返す。
 
 
 #### shadowX () → {[Number](Number.md)}
  画面上の影の x座標(ピクセル)を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Number</a></span>
-	</dd>
-</dl>
-
 
 #### shadowY () → {[Number](Number.md)|[Number](Number.md)}
  画面上の影の y座標(ピクセル)を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Number</a></span>
-	</dd>
-</dl>
 
 
 #### syncWithPlayer ()
  プレイヤー位置に揃える。
 
 
-
 #### update ()
-[乗り物]をアップデート。
-
-##### Overrides:
-[Game_CharacterBase.update ()](Game_CharacterBase.md#update-)
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#update-)
 
 
 #### updateAirship ()
@@ -467,15 +293,6 @@
 
 #### vehicle () → {[RPG.System.Vehicle](RPG.System.Vehicle.md)}
  現在の[乗り物]情報オブジェクトを返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a href="RPG.System.Vehicle.html">RPG.System.Vehicle</a></span>
-	</dd>
-</dl>
 
 
  <br>

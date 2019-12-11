@@ -1,12 +1,12 @@
 # Class: Game_Followers
 
-## Game_Followers ()
+### new Game_Followers ()
+[Game_Follower](Game_Follower.md) をまとめた隊列の並びなどを管理するクラス。
 
-#### new Game_Followers ()
+ [$gamePlayer.followers()](Game_Player.md#followers---game_followers) メソッドで得られる。
 
- 隊列の並びなどを管理する。[Game_Follower](Game_Follower.md) を配列として定義したクラス。 [Game_Player.followers ()](Game_Player.md#followers---game_followers) メソッドで得られる。
 
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

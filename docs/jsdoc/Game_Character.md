@@ -1,76 +1,78 @@
 # Class: Game_Character
 
-## Game_Character ()
+## Extends: [Game_CharacterBase](Game_CharacterBase.md)
 
-#### new Game_Character ()
-
-[Game_Player](Game_Player.md), [Game_Follower](Game_Follower.md), [Game_Vehicle](Game_Vehicle.md) および [Game_Event](Game_Event.md) のスーパークラス。
+### new Game_Character ()
+マップに表示されるキャラ用のクラス。
 
 静的プロパティに定義してある定数は、[移動ルートの設定]の[移動コマンド]に対応している。
 
 [Sprite_Character](Sprite_Character.md) のコンストラクタ引数として渡され、表示される。
 
-##### Properties:
+### Sub Classes
+
+* [Game_Player](Game_Player.md)
+* [Game_Follower](Game_Follower.md)
+* [Game_Vehicle](Game_Vehicle.md)
+* [Game_Event](Game_Event.md)
+
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `ROUTE_END` | [Number](Number.md) | [static]終了 |
-| `ROUTE_MOVE_DOWN` | [Number](Number.md) | [static][下に移動] |
-| `ROUTE_MOVE_LEFT` | [Number](Number.md) | [static][左に移動] |
-| `ROUTE_MOVE_RIGHT` | [Number](Number.md) | [static][右に移動] |
-| `ROUTE_MOVE_UP` | [Number](Number.md) | [static][上に移動] |
-| `ROUTE_MOVE_LOWER_L` | [Number](Number.md) | [static][左下に移動] |
-| `ROUTE_MOVE_LOWER_R` | [Number](Number.md) | [static][右下に移動] |
-| `ROUTE_MOVE_UPPER_L` | [Number](Number.md) | [static][左上に移動] |
-| `ROUTE_MOVE_UPPER_R` | [Number](Number.md) | [static][右上に移動] |
-| `ROUTE_MOVE_RANDOM` | [Number](Number.md) | [static][ランダムに移動] |
-| `ROUTE_MOVE_TOWARD` | [Number](Number.md) | [static][プレイヤーに近く] |
-| `ROUTE_MOVE_AWAY` | [Number](Number.md) | [static][プレイヤーから遠ざかる] |
-| `ROUTE_MOVE_FORWARD` | [Number](Number.md) | [static][一歩前進] |
-| `ROUTE_MOVE_BACKWARD` | [Number](Number.md) | [static][一歩後退] |
-| `ROUTE_JUMP` | [Number](Number.md) | [static][ジャンプ] |
-| `ROUTE_WAIT` | [Number](Number.md) | [static][ウェイト] |
-| `ROUTE_TURN_DOWN` | [Number](Number.md) | [static][下を向く] |
-| `ROUTE_TURN_LEFT` | [Number](Number.md) | [static][左を向く] |
-| `ROUTE_TURN_RIGHT` | [Number](Number.md) | [static][右を向く] |
-| `ROUTE_TURN_UP` | [Number](Number.md) | [static][上を向く] |
-| `ROUTE_TURN_90D_R` | [Number](Number.md) | [static][右に90度回転] |
-| `ROUTE_TURN_90D_L` | [Number](Number.md) | [static][左に90度回転] |
-| `ROUTE_TURN_180D` | [Number](Number.md) | [static][180度回転] |
-| `ROUTE_TURN_90D_R_L` | [Number](Number.md) | [static][右か左に90度回転] |
-| `ROUTE_TURN_RANDOM` | [Number](Number.md) | [static][ランダムに方向転換] |
-| `ROUTE_TURN_TOWARD` | [Number](Number.md) | [static][プレイヤーの方を向く] |
-| `ROUTE_TURN_AWAY` | [Number](Number.md) | [static][プレイヤーの逆を向く] |
-| `ROUTE_SWITCH_ON` | [Number](Number.md) | [static][スイッチON] |
-| `ROUTE_SWITCH_OFF` | [Number](Number.md) | [static][スイッチOFF] |
-| `ROUTE_CHANGE_SPEED` | [Number](Number.md) | [static][移動速度の変更] |
-| `ROUTE_CHANGE_FREQ` | [Number](Number.md) | [static][移動頻度の変更] |
-| `ROUTE_WALK_ANIME_ON` | [Number](Number.md) | [static][歩行アニメON] |
-| `ROUTE_WALK_ANIME_OFF` | [Number](Number.md) | [static][歩行アニメOFF] |
-| `ROUTE_STEP_ANIME_ON` | [Number](Number.md) | [static][足踏みアニメON] |
-| `ROUTE_STEP_ANIME_OFF` | [Number](Number.md) | [static][足踏みアニメOFF] |
-| `ROUTE_DIR_FIX_ON` | [Number](Number.md) | [static][向き固定ON] |
-| `ROUTE_DIR_FIX_OFF` | [Number](Number.md) | [static][向き固定OFF] |
-| `ROUTE_THROUGH_ON` | [Number](Number.md) | [static][すり抜けON] |
-| `ROUTE_THROUGH_OFF` | [Number](Number.md) | [static][すり抜けOFF] |
-| `ROUTE_TRANSPARENT_ON` | [Number](Number.md) | [static][透明化ON] |
-| `ROUTE_TRANSPARENT_OFF` | [Number](Number.md) | [static][透明化OFF] |
-| `ROUTE_CHANGE_IMAGE` | [Number](Number.md) | [static][画像の変更] |
-| `ROUTE_CHANGE_OPACITY` | [Number](Number.md) | [static][不透明度の変更] |
-| `ROUTE_CHANGE_BLEND_MODE` | [Number](Number.md) | [static][合成方法の変更] |
-| `ROUTE_PLAY_SE` | [Number](Number.md) | [static][SEの演奏] |
-| `ROUTE_SCRIPT` | [Number](Number.md) | [static][スクリプト] |
+| `ROUTE_END` | [Number](Number.md) | [static] 終了 |
+| `ROUTE_MOVE_DOWN` | [Number](Number.md) | [static] [下に移動] |
+| `ROUTE_MOVE_LEFT` | [Number](Number.md) | [static] [左に移動] |
+| `ROUTE_MOVE_RIGHT` | [Number](Number.md) | [static] [右に移動] |
+| `ROUTE_MOVE_UP` | [Number](Number.md) | [static] [上に移動] |
+| `ROUTE_MOVE_LOWER_L` | [Number](Number.md) | [static] [左下に移動] |
+| `ROUTE_MOVE_LOWER_R` | [Number](Number.md) | [static] [右下に移動] |
+| `ROUTE_MOVE_UPPER_L` | [Number](Number.md) | [static] [左上に移動] |
+| `ROUTE_MOVE_UPPER_R` | [Number](Number.md) | [static] [右上に移動] |
+| `ROUTE_MOVE_RANDOM` | [Number](Number.md) | [static] [ランダムに移動] |
+| `ROUTE_MOVE_TOWARD` | [Number](Number.md) | [static] [プレイヤーに近く] |
+| `ROUTE_MOVE_AWAY` | [Number](Number.md) | [static] [プレイヤーから遠ざかる] |
+| `ROUTE_MOVE_FORWARD` | [Number](Number.md) | [static] [一歩前進] |
+| `ROUTE_MOVE_BACKWARD` | [Number](Number.md) | [static] [一歩後退] |
+| `ROUTE_JUMP` | [Number](Number.md) | [static] [ジャンプ] |
+| `ROUTE_WAIT` | [Number](Number.md) | [static] [ウェイト] |
+| `ROUTE_TURN_DOWN` | [Number](Number.md) | [static] [下を向く] |
+| `ROUTE_TURN_LEFT` | [Number](Number.md) | [static] [左を向く] |
+| `ROUTE_TURN_RIGHT` | [Number](Number.md) | [static] [右を向く] |
+| `ROUTE_TURN_UP` | [Number](Number.md) | [static] [上を向く] |
+| `ROUTE_TURN_90D_R` | [Number](Number.md) | [static] [右に90度回転] |
+| `ROUTE_TURN_90D_L` | [Number](Number.md) | [static] [左に90度回転] |
+| `ROUTE_TURN_180D` | [Number](Number.md) | [static] [180度回転] |
+| `ROUTE_TURN_90D_R_L` | [Number](Number.md) | [static] [右か左に90度回転] |
+| `ROUTE_TURN_RANDOM` | [Number](Number.md) | [static] [ランダムに方向転換] |
+| `ROUTE_TURN_TOWARD` | [Number](Number.md) | [static] [プレイヤーの方を向く] |
+| `ROUTE_TURN_AWAY` | [Number](Number.md) | [static] [プレイヤーの逆を向く] |
+| `ROUTE_SWITCH_ON` | [Number](Number.md) | [static] [スイッチON] |
+| `ROUTE_SWITCH_OFF` | [Number](Number.md) | [static] [スイッチOFF] |
+| `ROUTE_CHANGE_SPEED` | [Number](Number.md) | [static] [移動速度の変更] |
+| `ROUTE_CHANGE_FREQ` | [Number](Number.md) | [static] [移動頻度の変更] |
+| `ROUTE_WALK_ANIME_ON` | [Number](Number.md) | [static] [歩行アニメON] |
+| `ROUTE_WALK_ANIME_OFF` | [Number](Number.md) | [static] [歩行アニメOFF] |
+| `ROUTE_STEP_ANIME_ON` | [Number](Number.md) | [static] [足踏みアニメON] |
+| `ROUTE_STEP_ANIME_OFF` | [Number](Number.md) | [static] [足踏みアニメOFF] |
+| `ROUTE_DIR_FIX_ON` | [Number](Number.md) | [static] [向き固定ON] |
+| `ROUTE_DIR_FIX_OFF` | [Number](Number.md) | [static] [向き固定OFF] |
+| `ROUTE_THROUGH_ON` | [Number](Number.md) | [static] [すり抜けON] |
+| `ROUTE_THROUGH_OFF` | [Number](Number.md) | [static] [すり抜けOFF] |
+| `ROUTE_TRANSPARENT_ON` | [Number](Number.md) | [static] [透明化ON] |
+| `ROUTE_TRANSPARENT_OFF` | [Number](Number.md) | [static] [透明化OFF] |
+| `ROUTE_CHANGE_IMAGE` | [Number](Number.md) | [static] [画像の変更] |
+| `ROUTE_CHANGE_OPACITY` | [Number](Number.md) | [static] [不透明度の変更] |
+| `ROUTE_CHANGE_BLEND_MODE` | [Number](Number.md) | [static] [合成方法の変更] |
+| `ROUTE_PLAY_SE` | [Number](Number.md) | [static] [SEの演奏] |
+| `ROUTE_SCRIPT` | [Number](Number.md) | [static] [スクリプト] |
 | `_moveRouteForcing` | Boolean | [移動ルート]を強制しているか |
 | `_moveRoute` | [RPG.MoveRoute](RPG.MoveRoute.md) | [移動ルート] |
 | `_moveRouteIndex` | [Number](Number.md) | [移動ルート]の番号 |
 | `_originalMoveRoute` | [RPG.MoveRoute](RPG.MoveRoute.md) | オリジナルの[移動ルート] |
 | `_originalMoveRouteIndex` | [Number](Number.md) | オリジナルの[移動ルート]の番号 |
 | `_waitCount` | [Number](Number.md) | ウェイト |
-
-
-### Extends
-
-* [Game_CharacterBase](Game_CharacterBase.md)
 
 
 ### Inherited From
@@ -179,6 +181,7 @@
 #### advanceMoveRouteIndex ()
 [移動ルート]の実行位置を進める。
 
+
 #### deltaXFrom (x) → {[Number](Number.md)}
  指定した x座標と自身の x座標の差分(タイル数)を返す。
 
@@ -187,15 +190,6 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `x` | [Number](Number.md) | タイル数 |
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
 
 
 #### deltaYFrom (y) → {[Number](Number.md)}
@@ -206,16 +200,6 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `y` | [Number](Number.md) |  タイル数 |
-
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
 
 
 #### findDirectionTo (goalX, goalY) → {[Number](Number.md)}
@@ -229,14 +213,6 @@
 | `goalY` | [Number](Number.md) |  タイル数 |
 
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
-
 #### forceMoveRoute (moveRoute)
 [移動ルート]を強制。
 
@@ -248,33 +224,20 @@
 
 
 #### initialize ()
-オブジェクト生成時の初期化。
- 
-##### Overrides:
-[Game_CharacterBase.initialize ()](Game_CharacterBase.md#initialize-)
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#initialize-)
 
 
 #### initMembers ()
- メンバ変数の初期化。
-
-##### Overrides:
-[Game_CharacterBase.initMembers ()](Game_CharacterBase.md#initmembers-)
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#initmembers-)
 
 
 #### isMoveRouteForcing () → {Boolean}
 [移動ルート]が強制されているか。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### memorizeMoveRoute ()
 [移動ルート]を記録。
+
 
 #### moveAwayFromCharacter (character)
  指定キャラクタから遠ざかる。
@@ -289,14 +252,18 @@
 #### moveAwayFromPlayer ()
 [プレイヤーから遠ざかる]。
 
+
 #### moveBackward ()
 [一歩後退]。
+
 
 #### moveForward ()
 [一歩前進]。
 
+
 #### moveRandom ()
-[ランダムに移動][タイプ:ランダム]。
+[ランダムに移動] [タイプ:ランダム]。
+
 
 #### moveTowardCharacter (character)
  指定キャラクタに近づく。[タイプ:近づく]。
@@ -307,8 +274,10 @@
 | --- | --- | --- |
 | `character` | [Game_Character](Game_Character.md) |  |
 
+
 #### moveTowardPlayer ()
 [プレイヤーに近づく]。
+
 
 #### processMoveCommand (command)
 [移動コマンド]を実行。
@@ -327,17 +296,10 @@
 #### restoreMoveRoute ()
  記録した[移動ルート]に戻す。
 
+
 #### searchLimit () → {[Number](Number.md)}
  ルート検索の上限数を返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Number.html">Number</a></span>
-    </dd>
-</dl>
 
 #### setMoveRoute (moveRoute)
 [移動ルート]の設定。
@@ -348,6 +310,7 @@
 | --- | --- | --- |
 | `moveRoute` | [RPG.MoveRoute](RPG.MoveRoute.md) |  |
 
+
 #### swap (character)
  指定したキャラクタと場所を入れ替わる。
 
@@ -357,8 +320,10 @@
 | --- | --- | --- |
 | `character` | [Game_Character](Game_Character.md) |  |
 
+
 #### turn180 ()
 [180度回転]。
+
 
 #### turnAwayFromCharacter (character)
  指定キャラクタの逆を向く。
@@ -373,17 +338,22 @@
 #### turnAwayFromPlayer ()
 [プレイヤーの逆を向く]。
 
+
 #### turnLeft90 ()
 [左に90度回転]。
+
 
 #### turnRandom ()
 [ランダムに方向転換]。
 
+
 #### turnRight90 ()
 [右に90度回転]。
 
+
 #### turnRightOrLeft90 ()
 [右か左に90度回転]。
+
 
 #### turnTowardCharacter (character)
  指定キャラクタの方を向く。
@@ -398,14 +368,13 @@
 #### turnTowardPlayer ()
 [プレイヤーの方を向く]。
 
+
 #### updateRoutineMove ()
 [移動ルート]をアップデート。
 
+
 #### updateStop ()
- 停止状態をアップデート。
- 
-##### Overrides:
-[Game_CharacterBase.updateStop ()](Game_CharacterBase.md#updatestop-)
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#updatestop-)
 
  <br>
 

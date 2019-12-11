@@ -1,10 +1,15 @@
 # Class: Game_Player
 
-## Game_Player ()
+## Extends: [Game_Character](Game_Character.md)
 
-#### new Game_Player ()
+### new Game_Player ()
 
-(乗り物を含む)プレイヤーキャラクタを定義したクラス。マップの[場所移動]も含む。 大域変数 [$gamePlayer](global.md#gameplayer-game_player) を介して扱う。
+| 大域変数 | セーブデータ |
+| --- | --- |
+| [$gamePlayer](global.md#gameplayer-game_player) | 保存される |
+
+(乗り物を含む)プレイヤーキャラクタを定義したクラス。マップの[場所移動]の処理なども含む。
+
 
 ##### Properties:
 
@@ -23,11 +28,6 @@
 | `_fadeType` | [Number](Number.md) | フェードの種類 |
 | `_followers` | [Game_Followers](Game_Followers.md) | 隊列メンバ |
 | `_encounterCount` | [Number](Number.md) | エンカウントのカウント |
-
-
-### Extends
-
-* [Game_Character](Game_Character.md)
 
 
 ### Inherited From
@@ -162,66 +162,21 @@
 #### areFollowersGathered () → {Boolean}
 [隊列メンバー]が集合しているか。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### areFollowersGathering () → {Boolean}
 [隊列メンバー]の集合中か。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### canEncounter () → {Boolean}
  敵と遭遇できる(エンカウント)状態か。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### canMove () → {Boolean}
  プレイヤーキャラクタを操作可能か。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### canStartLocalEvents () → {Boolean}
  地表の[イベント]を実行できるか。 飛行船などで空を飛んでいる場合、実行できない。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### center (x, y)
@@ -238,27 +193,9 @@
 #### centerX () → {[Number](Number.md)}
  画面の中心 x座標(タイル数)。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Number</a></span>
-	</dd>
-</dl>
-
 
 #### centerY () → {[Number](Number.md)}
  画面中心 y座標(タイル数)。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Number</a></span>
-	</dd>
-</dl>
 
 
 #### checkEventTriggerHere (triggers)
@@ -294,15 +231,6 @@
 | `x` | [Number](Number.md) |  タイル数 |
 | `y` | [Number](Number.md) |  タイル数 |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### clearTransferInfo ()
 [場所移動]情報を削除。
@@ -311,28 +239,9 @@
 #### encounterProgressValue () → {[Number](Number.md)}
 [エンカウント]の発生カウントダウン量。 スキルや船の上などで減っている場合、茂みで増えている場合がある。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Number</a></span>
-	</dd>
-</dl>
-
 
 #### executeEncounter () → {Boolean}
- エンカウントを実行。
-
-##### Returns:
-
- 実行できたか。
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
+ エンカウントを実行し、実行できたか返す。
 
 
 #### executeMove (direction)
@@ -348,27 +257,9 @@
 #### fadeType () → {[Number](Number.md)}
 [場所移動]時の[フェード]を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Number</a></span>
-	</dd>
-</dl>
-
 
 #### followers () → {[Game_Followers](Game_Followers.md)}
 [隊列メンバー]を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Game_Followers</a></span>
-	</dd>
-</dl>
 
 
 #### forceMoveForward ()
@@ -380,58 +271,20 @@
 
 
 #### getInputDirection () → {[Number](Number.md)}
- 入力された向きを返す。
-
-##### Returns:
-
- 向き(テンキー対応)
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Number</a></span>
-	</dd>
-</dl>
+ 入力された向き(テンキー対応)を返す。
 
 
 #### getOffVehicle () → {Boolean}
-[乗り物]から降りる。
-
-##### Returns:
-
- 降りた
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
+[乗り物]から降り、降りたか返す。
 
 
 #### getOnOffVehicle () → {Boolean}
 [乗り物]の乗り降りを行う。 乗っていたら降り、降りていたら乗る。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### getOnVehicle () → {Boolean}
-[乗り物]へ乗る。
+[乗り物]へ乗り、乗ったか返す。
 
-##### Returns:
-
- 乗った
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 #### hideFollowers ()
 [隊列歩行]をしない。
@@ -447,237 +300,73 @@
 | `x` | [Number](Number.md) |  タイル数 |
 | `y` | [Number](Number.md) |  タイル数 |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### increaseSteps ()
- 歩き出す(歩数を増やす)。
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#increasesteps-)
 
-##### Overrides:
-[Game_CharacterBase#increaseSteps ()](Game_CharacterBase.md#increasesteps-)
 
 #### initialize ()
- オブジェクト生成時の初期化。
- 
-##### Overrides:
-[Game_CharacterBase#initialize ()](Game_CharacterBase.md#initialize-)
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#initialize-)
 
 
 #### initMembers ()
- メンバ変数の初期化。
-
-##### Overrides:
-[Game_CharacterBase#initMembers ()](Game_CharacterBase.md#initmembers-)
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#initmembers-)
 
 
 #### isDashButtonPressed () → {Boolean}
  ダッシュボタン(シフト)が押されているか。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isDashing () → {Boolean}
- 現在ダッシュ中か。
-
-##### Overrides:
-[Game_CharacterBase#isDashing ()](Game_CharacterBase.md#isdashing---boolean)
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#isdashing---boolean)
 
 
 #### isDebugThrough () → {Boolean}
- デバッグ用のすり抜け移動中か。
-
-##### Overrides:
-[Game_CharacterBase#isDebugThrough ()](Game_CharacterBase.md#isdebugthrough---boolean)
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#isdebugthrough---boolean)
 
 
 #### isInAirship () → {Boolean}
 [飛行船]に乗っているか。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isInBoat () → {Boolean}
 [小型船]に乗っているか。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### isInShip () → {Boolean}
 [大型船]に乗っているか。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isInVehicle () → {Boolean}
 [乗り物]に乗っているか。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isMapPassable (x, y, d) → {Boolean}
- 指定位置から指定向きへのマップ通行が可能か。 キャラ・[イベント]による障害を考慮しない。
-
-##### Overrides:
-[Game_CharacterBase#isMapPassable (x, y, d)](Game_CharacterBase.md#ismappassable-x-y-d--boolean)
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-| `d` | [Number](Number.md) |  向き(テンキー対応) |
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#ismappassable-x-y-d--boolean)
 
 
 #### isNormal () → {Boolean}
  歩行状態かつ強制移動中でないか。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isOnDamageFloor () → {Boolean}
 [ダメージ床]に乗っているか。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isStopping () → {Boolean}
- 止まっている(タイル毎の座標にいる)か。
-
-##### Overrides:
-[Game_CharacterBase#isStopping ()](Game_CharacterBase.md#isstopping---boolean)
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#isstopping---boolean)
 
 
 #### isTransferring () → {Boolean}
 [場所移動]中か。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 #### jump (xPlus, yPlus)
-[ジャンプ]。
-
-##### Overrides:
-[Game_CharacterBase#jump (xPlus, yPlus)](Game_CharacterBase.md#jump-xplus-yplus)
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `xPlus` | [Number](Number.md) | x方向の移動(タイル数) |
-| `yPlus` | [Number](Number.md) | y方向の移動(タイル数) |
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#jump-xplus-yplus)
 
 
 #### locate (x, y)
- 現在のマップ内での[イベントの位置設定]。 [setPosition](Game_CharacterBase.md#setposition-x-y) と異なり、姿勢などを初期化。
- 
-##### Overrides:
-[Game_CharacterBase#locate (x, y)](Game_CharacterBase.md#locate-x-y)
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#locate-x-y)
 
 
 #### makeEncounterCount ()
@@ -686,15 +375,6 @@
 
 #### makeEncounterTroopId () → {[Number](Number.md)}
  次の[エンカウント]の敵グループIDを生成して返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Number</a></span>
-	</dd>
-</dl>
 
 
 #### meetsEncounterConditions (encounter) → {Boolean}
@@ -714,59 +394,21 @@
 	</dd>
 </dl>
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### moveByInput ()
  入力に応じて移動する。
 
 
 #### moveDiagonally (horz, vert)
- 指定の方向に斜めに進む。
- テンキーの対応に従って9で右上に進めそうだが、水平と垂直を別に指定する。
-
-##### Overrides:
-[Game_CharacterBase#moveDiagonally (horz, vert)](Game_CharacterBase.md#movediagonally-horz-vert)
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `horz` | [Number](Number.md) |  水平向き(4: 左, 6:右) |
-| `vert` | [Number](Number.md) |  垂直向き(2: 下, 8: 上) |
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#movediagonally-horz-vert)
 
 
 #### moveStraight (d)
- 指定の向きへ[一歩前進]。
- 
-##### Overrides:
-[Game_CharacterBase#moveStraight (d)](Game_CharacterBase.md#movestraight-d)
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `d` | [Number](Number.md) |  向き(テンキー対応) |
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#movestraight-d)
 
 
 #### newMapId () → {[Number](Number.md)}
  移動予定のマップIDを返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Number</a></span>
-	</dd>
-</dl>
 
 
 #### performTransfer ()
@@ -813,45 +455,15 @@
 
 
 #### triggerAction () → {Boolean}
-[決定ボタン]に相当する[トリガー]アクションを実行。
-
-##### Returns:
-
- アクションがなされたか
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
+[決定ボタン]に相当する[トリガー]アクションを実行し、アクションがなされたか返す。
 
 
 #### triggerButtonAction () → {Boolean}
- 決定ボタンに対応するアクションを実行。
-
-##### Returns:
-
- アクションがなされたか
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
+ 決定ボタンに対応するアクションを実行し、アクションがなされたか返す。
 
 
 #### triggerTouchAction () → {Boolean}
- 画面タッチ(クリック)によるアクションを実行。
-
-##### Returns:
-
- アクションがなされたか
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
+ 画面タッチ(クリック)によるアクションを実行し、アクションがなされたか返す。
 
 
 #### triggerTouchActionD1 (x1, y1) → {Boolean}
@@ -869,15 +481,6 @@
 		<ul>
 			<li>この用語の意味が分かったら教えてください</li>
 		</ul>
-	</dd>
-</dl>
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
 	</dd>
 </dl>
 
@@ -900,15 +503,6 @@
 	</dd>
 </dl>
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### triggerTouchActionD3 (x2, y2) → {Boolean}
 
@@ -928,21 +522,9 @@
 	</dd>
 </dl>
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### update ()
-プレイヤーキャラをアップデート。
-
-##### Overrides:
-[Game_CharacterBase#update](Game_CharacterBase.md#update-)
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#update-)
 
 
 #### updateDashing ()
@@ -988,15 +570,6 @@
 
 #### vehicle () → {[Game_Vehicle](Game_Vehicle.md)}
 [乗り物]を返す。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Game_Vehicle</a></span>
-	</dd>
-</dl>
 
 
  <br>

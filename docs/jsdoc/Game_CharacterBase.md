@@ -1,18 +1,19 @@
 # Class: Game_CharacterBase
 
-## Game_CharacterBase ()
-
-#### new Game_CharacterBase ()
-
- マップ上のキャラクタに共通する処理を行うクラス。 [Game_Character](Game_Character.md) のスーパークラス。
- 
+### new Game_CharacterBase ()
+ マップ上のキャラクタに共通する処理を行うクラス。
+  
 キャラの状態だけではなく、 乗っているマップの状態や移動可能かを調べたりもできる。
 
 [移動ルートの設定]で[スクリプト]を使用した際の this はこのクラスになるので例えば <code>this.setPattern(0)</code> とすれば歩行パターンを指定できる。
 
-_から始まるプロパティに関しては、基本的にメソッドが用意されているので、直接扱わずにメソッドを介して扱う。
 
-##### Properties:
+### Sub Classes
+
+* [Game_Character](Game_Character.md)
+
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

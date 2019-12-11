@@ -1,14 +1,14 @@
 # Class: Game_Event
 
-## Game_Event ()
+## Extends: [Game_Character](Game_Character.md)
 
 #### new Game_Event ()
-
- マップに配置する[イベント]を定義したオブジェクト。
+マップに配置する[イベント]を定義したオブジェクト。
  
  [RPG.Event](RPG.Event.md) を返す [Game_Event.event ()](Game_Event.md#event---rpgevent) メソッドなどを含む。
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -24,10 +24,6 @@
 | `_prelockDirection` | [Number](Number.md) | 前にロックされた方向 |
 | `_locked` | Boolean | ロックされているか |
 | `_interpreter` | [Game_Interpreter](Game_Interpreter.md) | コマンドインタプリタ |
-
-### Extends
-
-* [Game_Character](Game_Character.md)
 
 
 ### Inherited From
@@ -161,24 +157,12 @@
 
 ### Methods
 
-
-
 #### checkEventTriggerAuto ()
 [トリガー:自動実行]の[イベント]を実行。
 
 
 #### checkEventTriggerTouch (x, y)
- タッチ(クリック)で発生する[イベント]を実行。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-
-##### Overrides:
-[Game_Character.checkEventTriggerTouch ()](Game_Character.md#checkeventtriggertouch-x-y--boolean)
+Overrides: [Game_Character](Game_Character.md#checkeventtriggertouch-x-y--boolean)
 
 
 #### clearPageSettings ()
@@ -189,7 +173,6 @@
 [イベント]開始フラグを削除。
 
 
-
 #### erase ()
 [イベント]を削除。
 
@@ -198,113 +181,33 @@
 [イベント]情報オブジェクトを返す。
 
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a href="RPG.Event.html">RPG.Event</a></span>
-	</dd>
-</dl>
-
-
 #### eventId () → {[Number](Number.md)}
  イベントIDを返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Number</a></span>
-	</dd>
-</dl>
-
 
 #### findProperPageIndex () → {[Number](Number.md)}
-[出現条件]に合ったイベントのページ番号を返す。
-
-##### Returns:
-
- ページ番号(-1: 見つからない)
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Number</a></span>
-	</dd>
-</dl>
+[出現条件]に合ったイベントのページ番号(-1: 見つからない)を返す。
 
 
 #### forceMoveRoute (moveRoute)
-[移動ルート]を強制。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `moveRoute` | [RPG.MoveRoute](RPG.MoveRoute.md) |  |
-
-##### Overrides:
-[Game_Character.forceMoveRoute ()](Game_Character.md#forcemoveroute-moveroute)
+Overrides: [Game_Character](Game_Character.md#forcemoveroute-moveroute)
 
 
 #### initialize ()
- オブジェクト生成時の初期化。
-
-##### Overrides:
-[Game_Character.initialize ()](Game_Character.md#initialize-)
+Overrides: [Game_Character](Game_Character.md#initialize-)
 
 
 #### initMembers ()
- メンバ変数を初期化。
- 
-##### Overrides:
-[Game_Character.initMembers ()](Game_Character.md#initmembers-)
+Overrides: [Game_Character](Game_Character.md#initmembers-)
 
 
 #### isCollidedWithCharacters (x, y) → {Boolean}
- 指定位置がキャラによって塞がれているか。
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#iscollidedwithcharacters-x-y--boolean)
 
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-
-##### Overrides:
-[Game_CharacterBase.isCollidedWithCharacters (x, y)](Game_CharacterBase.md#iscollidedwithcharacters-x-y--boolean)
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 #### isCollidedWithEvents (x, y) → {Boolean}
- 指定位置が[イベント]によって塞がれているか。
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#iscollidedwithevents-x-y--boolean)
 
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-
-##### Overrides:
-[Game_CharacterBase.isCollidedWithEvents (x, y)](Game_CharacterBase.md#iscollidedwithevents-x-y--boolean)
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 #### isCollidedWithPlayerCharacters (x, y) → {Boolean}
  指定位置がプレイヤーキャラクタによって塞がれているか。
@@ -316,47 +219,17 @@
 | `x` | [Number](Number.md) |  タイル数 |
 | `y` | [Number](Number.md) |  タイル数 |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isNearThePlayer () → {Boolean}
  プレイヤーキャラクタに近い位置にいるか。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### isOriginalPattern () → {Boolean}
-[画像]が初期パターンか。
-
-##### Overrides:
-[Game_CharacterBase.isOriginalPattern ()](Game_CharacterBase.md#isoriginalpattern---boolean)
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#isoriginalpattern---boolean)
 
 
 #### isStarting () → {Boolean}
 [イベント]が開始しているか。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### isTriggerIn (triggers) → {Boolean}
@@ -368,42 +241,13 @@
 | --- | --- | --- |
 | `triggers` | [Array](Array.md).<[Number](Number.md)> |  |
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
-
 
 #### list () → {[Array](Array.md).<[RPG.EventCommand](RPG.EventCommand.md)>}
  現在の[イベントページ]の[イベントコマンド]の配列を返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a href="Array.html">Array</a>.&lt;<a href="RPG.EventCommand.html">RPG.EventCommand</a>&gt;</span>
-	</dd>
-</dl>
-
 
 #### locate (x, y)
- 現在のマップ内での[イベントの位置設定]。 [Game_CharacterBase#setPosition](Game_CharacterBase.html#setPosition) と異なり、姿勢などを初期化。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
-
-##### Overrides:
-[Game_CharacterBase.locate (x, y)](Game_CharacterBase.md#locate-x-y)
-
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#locate-x-y)
 
 
 #### lock ()
@@ -411,22 +255,13 @@
 
 
 #### meetsConditions (page) → {Boolean}
- 指定したページの[出現条件]が満たされているか。
+ 指定ページの[出現条件]が満たされているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `page` | [RPG.EventPage](RPG.EventPage.md) |  |
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
+| `page` | [RPG.EventPage](RPG.EventPage.md) | EVページ |
 
 
 #### moveTypeCustom ()
@@ -444,24 +279,13 @@
 #### page () → {[RPG.EventPage](RPG.EventPage.md)}
  現在の[イベントページ]情報オブジェクトを返す。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a href="RPG.EventPage.html">RPG.EventPage</a></span>
-	</dd>
-</dl>
-
 
 #### refresh ()
 [イベント]を更新。
 
-#### resetPattern ()
-[画像]を初期パターンに戻す。
 
-##### Overrides:
-[Game_CharacterBase.resetPattern ()](Game_CharacterBase.md#resetpattern-)
+#### resetPattern ()
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#resetpattern-)
 
 
 #### setupPage ()
@@ -479,25 +303,13 @@
 #### stopCountThreshold () → {[Number](Number.md)}
  停止カウントの閾値を返す。[頻度]により異なる。
 
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span><a>Number</a></span>
-	</dd>
-</dl>
-
 
 #### unlock ()
  ロックを解除。
 
 
 #### update ()
-[イベント]をアップデート。
-
-##### Overrides:
-[Game_CharacterBase.update ()](Game_CharacterBase.md#update-)
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#update-)
 
 
 #### updateParallel ()
@@ -509,10 +321,7 @@
 
 
 #### updateStop ()
- 停止状態をアップデート。
- 
-##### Overrides:
-[Game_Character.updateStop ()](Game_Character.md#updatestop-)
+Overrides: [Game_Character](Game_Character.md#updatestop-)
 
 
  <br>

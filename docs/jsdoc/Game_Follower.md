@@ -1,21 +1,18 @@
 # Class: Game_Follower
 
-## Game_Follower ()
+## Extends: [Game_Character](Game_Character.md)
 
-#### new Game_Follower ()
+### new Game_Follower ()
+[隊列メンバー]を定義したクラス。 
 
-[隊列メンバー]を定義したクラス。 これを配列として定義した [Game_Followers](Game_Followers.md) クラスがある。
+関連クラス: [Game_Followers](Game_Followers.md)
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `_memberIndex` | [Number](Number.md) | 隊列メンバー番号 |
-
-
-### Extends
-
-* [Game_Character](Game_Character.md)
 
 
 ### Inherited From
@@ -157,15 +154,6 @@
 #### actor () → {[Game_Actor](Game_Actor.md)}
 [アクター]を返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a href="Game_Actor.html">Game_Actor</a></span>
-    </dd>
-</dl>
-
 
 #### chaseCharacter (character)
  指定したキャラクタを追う。
@@ -178,23 +166,11 @@
 
 
 #### initialize ()
-オブジェクト生成時の初期化。
- 
-##### Overrides:
-[Game_Character.initialize ()](Game_Character.md#initialize-)
+Overrides: [Game_Character](Game_Character.md#initialize-)
 
 
 #### isVisible () → {Boolean}
 [隊列メンバー]が表示されているか。
-
-##### Returns:
-
-<dl>
-	<dt> Type </dt>
-	<dd>
-		<span>Boolean</span>
-	</dd>
-</dl>
 
 
 #### refresh ()
@@ -202,10 +178,7 @@
 
 
 #### update ()
-[隊列メンバー]をアップデート。
-
-##### Overrides:
-[Game_CharacterBase.update ()](Game_CharacterBase.md#update-)
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#update-)
 
 
  <br>

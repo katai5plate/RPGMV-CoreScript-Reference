@@ -72,7 +72,7 @@ $gameXxx の多くはセーブデータになるが、セーブされないも�
 [武器]用JSON( Weapons.json )。
 
 
---
+<hr>
 
 
 #### $gameActors :[Game_Actors](Game_Actors.md)
@@ -127,7 +127,7 @@ $gameXxx の多くはセーブデータになるが、セーブされないも�
 [変数]管理用のクラス。※セーブされる
 
 
---
+<hr>
 
 
 #### $plugins :[Array](Array.md).<[MV.PluginSettings](MV.PluginSettings.md)>
