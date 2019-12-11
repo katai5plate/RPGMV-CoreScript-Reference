@@ -1,5 +1,4 @@
 # Class: StorageManager
-
 ゲームのセーブデータを管理する静的クラス。
 
 ローカルファイル機能は、node.js の fs モジュールを使っている。<br />

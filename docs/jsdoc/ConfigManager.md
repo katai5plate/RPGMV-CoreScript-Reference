@@ -1,8 +1,8 @@
 # Class: ConfigManager
-
 [オプション]のデータを扱う、静的クラス。
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -12,7 +12,6 @@
 | `bgsVolume` | [Number](Number.md) | [static] [BGS 音量] |
 | `meVolume` | [Number](Number.md) | [static] [ME 音量] |
 | `seVolume` | [Number](Number.md) | [static] [SE 音量] |
-
 
 
 ### Methods

@@ -1,8 +1,8 @@
 # Class: AudioManager
-
 BGM, BGS, ME, SE を扱う静的クラス。
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

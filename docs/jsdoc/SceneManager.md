@@ -1,11 +1,10 @@
 # Class: SceneManager
-
  シーン遷移を管理する静的クラス。
  
 具体的には [Scene_Base](Scene_Base.md) の子孫クラスの制御を行う。
 
 
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

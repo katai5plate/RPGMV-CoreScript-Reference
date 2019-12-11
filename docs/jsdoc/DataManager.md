@@ -1,11 +1,10 @@
 # Class: DataManager
-
 [データベース]の管理を行う静的クラス。 <br />
 $XXXで大域変数に設定されているものや、セーブデータの管理など行う。
 
 大域変数について詳細は [Global](Global.md) のページを参照。
 
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

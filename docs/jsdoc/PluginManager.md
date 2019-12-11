@@ -1,8 +1,8 @@
 # Class: PluginManager
-
  プラグインを管理する静的クラス。
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

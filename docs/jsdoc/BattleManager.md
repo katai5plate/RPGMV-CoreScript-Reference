@@ -1,11 +1,10 @@
 # Class: BattleManager
-
 戦闘の進行を制御する静的クラス。
 
 [Scene_Battle](Scene_Battle.md) のコントロール部。[Game_Party](Game_Party.md)([$gameParty](global.md#gameparty-game_party))、[Game_Troop](Game_Troop.md)([$gameTroop](global.md#gametroop-game_troop)) を扱う。
 
 
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

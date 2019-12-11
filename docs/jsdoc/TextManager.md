@@ -1,5 +1,4 @@
 # Class: TextManager
-
 [用語]のテキストを管理する静的クラス。
 
 大域変数 [$dataSystem](global.md#datasystem-rpgsystem).terms に保存されている [RPG.System.Terms](RPG.System.Terms.md) を、呼び出しやすくしたもの。
@@ -7,7 +6,7 @@
 用意されているメソッドはプロパティの準備のために使われるもので、通常は素直に必要なプロパティにアクセスすれば良い。
 
 
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
