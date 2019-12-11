@@ -1,17 +1,15 @@
 # Class: ResourceHandler
+データの読み込みの制御に使われる静的クラス。
 
-データの読み込みの制御に使われる静的クラス。<br />
-[Bitmap](Bitmap.md)、[Graphics](Graphics.md)、[WebAudio](WebAudio.md)、[DataManager](DataManager.md)、[Input](Input.md) で使われている。
+関連クラス: [Bitmap](Bitmap.md), [Graphics](Graphics.md), [WebAudio](WebAudio.md), [DataManager](DataManager.md), [Input](Input.md)
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_reloaders` | [Array](Array.md) | [static] |
-| `_defaultRetryInterval` | [Array](Array.md) | [static] |
-
-<dl>
-</dl>
+| `_reloaders` | [Array](Array.md).&lt;Object&gt; | [static] リトライ関数情報の配列 |
+| `_defaultRetryInterval` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [static] リトライ間隔の配列 |
 
 ### Methods
 
@@ -26,32 +24,15 @@
 | `url` | [String](String.md) |  |  | プロジェクト以下のファイルパス |
 | `retryMethod` | Function |  |  | リトライに使われる関数 |
 | `resignMethod` | Function | \<optional>  |  | エラー時に呼ばれる関数 |
-| `retryInterval` | [Array](Array.md).\<[Number](Number.md)> | \<optional> | [500, 1000, 3000] | リトライ間隔 |
+| `retryInterval` | [Array](Array.md).\<[Number](Number.md)> | \<optional> | [500, 1000, 3000] | リトライ間隔の配列  |
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Function</span>
-    </dd>
-</dl>
 
 #### (static) exists () → {Boolean}
 未実行のリトライ関数が存在するか。
 
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### (static) retry ()
 リトライ関数の実行。
-<dl>
-</dl>
 
 
  <br>
