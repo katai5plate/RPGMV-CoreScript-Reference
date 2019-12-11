@@ -4,7 +4,7 @@
 
 | 大域変数 |
 | --- |
-| [$gameScreen](global.html#$gamescreen-game_screen) |
+| [$gameScreen](global.html#gamescreen-game_screen) |
 
 イベントコマンドの[画面]関連の挙動の担当クラス。 
 
