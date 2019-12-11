@@ -1,17 +1,17 @@
 # Class: Game_Switches
 
-## Game_Switches ()
+### new Game_Switches ()
 
-#### new Game_Switches ()
+| 大域変数 | セーブデータ |
+| --- | --- |
+| [$gameSwitches](global.md#gameswitches-game_switches) | 保存される |
 
 条件判定で使われる[スイッチ]を扱うためのクラス。
 
-類似のものとして [Game_Variables](Game_Variables.md)、[Game_SelfSwitches](Game_SelfSwitches.md) がある。
-
-大域変数 [$gameSwitches](global.md#gameswitches-game_switches)  を介して扱う。
+関連クラス: [Game_Variables](Game_Variables.md), [Game_SelfSwitches](Game_SelfSwitches.md) 
 
 
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -23,12 +23,15 @@
 #### clear ()
 値を初期化。
 
+
 #### initialize ()
  オブジェクト生成時の初期化。
+
 
 #### onChange ()
 スイッチの変更時に呼ばれるハンドラ。
 (マップの書き換えを予約)
+
 
 #### setValue (switchId, value)
 指定した[スイッチ]に値を設定。
@@ -49,16 +52,6 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `switchId` | [Number](Number.md) | スイッチID |
-
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 
  <br>

@@ -1,9 +1,6 @@
 # Class: Game_Interpreter
 
-## Game_Interpreter (depth)
-
-#### new Game_Interpreter (depth)
-
+### new Game_Interpreter (depth)
 [実行内容]に書かれたイベントコマンドを実行するクラス。 
 
 [RPG.EventCommand](RPG.EventCommand.md) は、[Game_Event](Game_Event.md) や [Game_CommonEvent](Game_CommonEvent.md)、[Game_Troop](Game_Troop.md) の list プロパティに含まれ、Game_Interpreter は、それらのクラスの \_interpreter プロパティに含まれる。
@@ -15,14 +12,14 @@ commandXXX(XXXは数字)というメソッドはイベントコマンドに対�
 
 イベントコマンドの[スクリプト]を実行する際は、このオブジェクトのインスタンスが this になるので、少々乱暴だが拡張コマンドをメソッドとして追加すると便利。
 
-##### Parameters:
+#### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `depth` | [Number](Number.md) | 世代(規定値:0)childとして何度よばれたかの深さ |
 
 
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

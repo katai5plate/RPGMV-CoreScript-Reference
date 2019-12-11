@@ -1,14 +1,15 @@
 # Class: Game_Temp
 
-## Game_Temp ()
+### new Game_Temp ()
 
-#### new Game_Temp ()
+| 大域変数 |
+| --- |
+| [$GameTemp](global.md#gametemp-game_temp) |
 
 ゲームの一時データを保持しておくクラス。
 
-大域変数 [$GameTemp](global.md#gametemp-game_temp) に格納されている。
 
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

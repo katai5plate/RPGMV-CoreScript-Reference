@@ -1,17 +1,18 @@
 # Class: Game_System
 
-## Game_System ()
+### new Game_System ()
 
-#### new Game_System ()
+| 大域変数 | セーブデータ |
+| --- | --- |
+| [$gameSystem](global.md#gamesystem-game_system) | 保存される |
+
 
 変化のあるシステムデータを扱うクラス。
-大域変数 [$gameSystem](global.md#gamesystem-game_system) に格納されている。
 
-変化のない情報は大域変数 [$dataSystem](global.md#datasystem-rpgsystem)([RPG.System](RPG.System.md)) に記述されている。
+関連クラス: [RPG.System](RPG.System.md)
 
-また、このクラスのプロパティはセーブデータに保存される。
 
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
