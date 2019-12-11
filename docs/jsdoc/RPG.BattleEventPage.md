@@ -1,14 +1,10 @@
-# Class: BattleEventPage
+# Class: [RPG](RPG.md).BattleEventPage
+[RPG.Troop](RPG.Troop.md) の [EVページ] を構成する JSON データ。
 
-## Namespace: [RPG](RPG.md)
+関連クラス: [RPG.EventPage](RPG.EventPage.md)
 
-敵グループのバトルイベントの [EVページ] を構成する JSON データ。
 
-[RPG.Troop](RPG.Troop.md) の pages プロパティに含まれる。
-
-類似のクラスに [RPG.EventPage](RPG.EventPage.md) がある。 
-
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

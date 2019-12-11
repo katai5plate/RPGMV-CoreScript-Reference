@@ -1,12 +1,10 @@
-# Class: MoveCommand
-
-## Namespace [RPG](RPG.md)
-
+# Class: [RPG](RPG.md).MoveCommand
 [移動コマンド]を構成する JSONデータ。
 
 [RPG.MoveRoute](RPG.MoveRoute.md) の list に配列として含まれる。
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

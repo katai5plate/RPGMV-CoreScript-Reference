@@ -1,10 +1,14 @@
-# Class: EquipItem
+# Class: [RPG](RPG.md).EquipItem
 
-## Namespace [RPG](RPG.md)
+## Extends: [RPG.BaseItem](RPG.BaseItem.md)
 
-[RPG.Armor](RPG.Armor.md) と [RPG.Weapon](RPG.Weapon.md) のスーパークラス。
+### Sub Classes
 
-##### Properties:
+* [RPG.Armor](RPG.Armor.md)
+* [RPG.Weapon](RPG.Weapon.md)
+
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -13,7 +17,7 @@
 | `params` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [能力値ID](RPG.Enemy.md#能力値id)の順に[能力値変化量]が書かれた配列 |
 | `traits` | [Array](Array.md).&lt;[RPG.Trait](RPG.Trait.md)&gt; | [特徴]の配列 |
 
-###### 装備タイプID
+#### 装備タイプID
 
 [データベース]-[タイプ]-[装備タイプ] で設定されたID。
 
@@ -29,10 +33,6 @@
 | 3 | 身体 |
 | 4 | 装飾品 |
 
-
-### Extends
-
-* [RPG.BaseItem](RPG.BaseItem.md)
 
  <br>
 

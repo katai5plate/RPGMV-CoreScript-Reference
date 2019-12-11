@@ -1,11 +1,8 @@
-# Class: Member
-
-## Namespace: [RPG](RPG.md) . [Troop](RPG.Troop.md)
-
+# Class: [RPG](RPG.md).[Troop](RPG.Troop.md).Member
  [RPG.Troop](RPG.Troop.md) のメンバーを構成する JSONデータ。
 
 
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

@@ -1,6 +1,6 @@
-# Class: Armor
+# Class: [RPG](RPG.md).Armor
 
-## Namespace [RPG](RPG.md)
+## Extends: [RPG.EquipItem](RPG.EquipItem.md)
 
 | データベース| JSONファイル | 大域変数 | オブジェクト |
 | --- | --- | --- | --- |
@@ -8,14 +8,15 @@
 
 [Game_Item](Game_Item.md) の _dataClass プロパティは 'armor' になる。
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `atypeId` | [Number](Number.md) | [防具タイプID](RPG.Armor.md#防具タイプid) |
 
 
-##### 防具タイプID
+#### 防具タイプID
 
 [データベース]-[タイプ]-[防具タイプ] で設定されたID。
 
@@ -32,10 +33,6 @@
 | 5 | 小型盾 |
 | 6 | 大型盾 | 
 
-
-### Extends
-
-* [RPG.EquipItem](RPG.EquipItem.md)
 
  <br>
 

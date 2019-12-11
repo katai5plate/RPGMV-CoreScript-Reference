@@ -1,12 +1,10 @@
-# Class: Terms
-
-## Namespace [RPG](RPG.md) . [System](RPG.System.md)
-
+# Class: [RPG](RPG.md).[System](RPG.System.md).Terms
 [用語]のJSONデータ。
 
 [TextManager](TextManager.md) を介して使われる。
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -15,7 +13,7 @@
 | `commands` | [Array](Array.md).<[String](String.md)> | [[コマンド]](RPG.System.Terms.md#[コマンド]) |
 | `messages` | Object |[メッセージ] [key: String]: String |
 
-##### [基本ステータス]
+#### [基本ステータス]
 | 番号 | 用語 |
 | --- | --- | --- |
 | 0 | レベル |
@@ -29,7 +27,7 @@
 | 8 | 経験値 |
 | 9 | 経験値 (略) |
 
-##### [能力値]
+#### [能力値]
 | 番号 | 用語 |
 | --- | --- | --- |
 | 0 | 最大HP |
@@ -44,7 +42,7 @@
 | 9 | 回避率 |  |
 
 
-##### [コマンド] 
+#### [コマンド] 
 | 番号 | 用語 |
 | --- | --- | --- |
 | 0 | 戦う |

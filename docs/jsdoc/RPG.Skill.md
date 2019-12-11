@@ -1,6 +1,6 @@
-# Class: Skill
+# Class:  [RPG](RPG.md).Skill
 
-## Namespace [RPG](RPG.md)
+## Extends: [RPG.UsableItem](RPG.UsableItem.md)
 
 | データベース| JSONファイル | 大域変数 | オブジェクト |
 | --- | --- | --- | --- |
@@ -8,7 +8,8 @@
 
 [Game_Item](Game_Item.md) の _dataClass プロパティは 'skill' になる。
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -21,7 +22,7 @@
 | `requiredWtypeId2` | [Number](Number.md) | [必要武器]の[武器タイプ2] |
 
 
-##### スキルID
+#### スキルID
 
 [データベース]-[スキル] で設定されたID。大域変数 [\$dataSkills](global.md#dataskills-arrayrpgskill) の配列の引数でもある。<br />
  下表0〜2は固定、他は規定値で変更可能。
@@ -40,7 +41,7 @@
 | 6 | ファイア |
 | 7 | スパーク |
 
-##### スキルタイプID
+#### スキルタイプID
 
 [データベース]-[タイプ]-[スキルタイプ] で設定されたID。<br />
 スキルタイプ名は [System](RPG.System.md) の skillTypes プロパティに登録されている。
@@ -53,9 +54,6 @@
 | 1 | 魔法 |
 | 2 | 必殺技 |
 
-### Extends
-
-* [RPG.UsableItem](RPG.UsableItem.md)
 
  <br>
 

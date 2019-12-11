@@ -1,12 +1,10 @@
-# Class: AudioFile
-
-## Namespace: [RPG](RPG.md)
-
+# Class: [RPG](RPG.md).AudioFile
 音声ファイル情報を記述したJSONデータ。
 
-[RPG.Animation.Timing](RPG.Animation.Timing.md) などに含まれる。
+関連クラス: [RPG.Animation.Timing](RPG.Animation.Timing.md)
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

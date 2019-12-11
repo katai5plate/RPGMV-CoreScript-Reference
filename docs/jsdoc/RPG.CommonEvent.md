@@ -1,15 +1,13 @@
-# Class: CommonEvent
-
-## Namespace: [RPG](RPG.md)
+# Class: [RPG](RPG.md).CommonEvent
 
 | データベース| JSONファイル | 大域変数 | オブジェクト |
 | --- | --- | --- | --- |
 | [コモンイベント] | CommonEvents.json | [$dataCommonEvents](global.md#datacommonevents-arrayrpgcommonevent)(配列) | [Game_CommonEvent](Game_CommonEvent.md)  |
 
-類似のクラスに [RPG.Event](RPG.Event.md)、[RPG.Troop](RPG.Troop.md) がある。<br />
-また条件を記述した [RPG.EventPage.Conditions](RPG.EventPage.Conditions.md)、[RPG.BattleEventPage.Conditions](RPG.BattleEventPage.Conditions.md) の役割も持っている。
+関連クラス: [RPG.Event](RPG.Event.md)、[RPG.Troop](RPG.Troop.md), [RPG.EventPage.Conditions](RPG.EventPage.Conditions.md), [RPG.BattleEventPage.Conditions](RPG.BattleEventPage.Conditions.md)
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

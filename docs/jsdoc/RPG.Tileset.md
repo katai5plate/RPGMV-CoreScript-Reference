@@ -8,7 +8,8 @@
 
 関連クラス: [Game_Map](Game_Map.md)
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -18,7 +19,7 @@
 | `tilesetNames` | [Array](Array.md).<[String](String.md)> | タイルセットに使われる画像ファイル名の配列<br />( 0:A1, 1:A2, 2:A3, 3:A4, 4:A5, 5:B, 6:C, 7:D, 8:E ) |
 | `flags` | [Array](Array.md).<[Number](Number.md)> | タイルの性質を記録したビットフラグの配列 |
 
-##### flagsに指定するビットの内容
+#### flagsに指定するビットの内容
 
 | Number | Description |
 | --- | --- |

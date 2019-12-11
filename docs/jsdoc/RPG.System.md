@@ -1,14 +1,13 @@
-# Class: System
-
-## Namespace [RPG](RPG.md)
+# Class: [RPG](RPG.md).System
 
 | データベース| JSONファイル | 大域変数 | オブジェクト |
 | --- | --- | --- | --- |
 | [システム] | System.json | [$dataSystem](global.md#datasystem-rpgsystem) |  |
 
-ゲーム中に変化のある情報は  [$gameSystem](global.html#$gamesystem-game_system) ([Game_System](Game_System.md)) が扱う。
+関連クラス: [Game_System](Game_System.md)
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

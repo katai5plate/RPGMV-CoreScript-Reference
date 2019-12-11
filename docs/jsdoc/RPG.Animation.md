@@ -1,12 +1,11 @@
-# Class: Animation
-
-## Namespace: [RPG](RPG.md)
+# Class: [RPG](RPG.md).Animation
 
 | データベース| JSONファイル | 大域変数 | オブジェクト |
 | --- | --- | --- | --- |
 | [アニメーション] | Animations.json | [$dataAnimations](global.md#dataanimations-arrayrpganimation)(配列) | [Sprite_Animation](Sprite_Animation.md) |
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -20,6 +19,7 @@
 | `frameMax` | [Number](Number.md) | 最大[フレーム数] |
 | `frames` | [Array](Array.md).<[Array](Array.md).<[Array](Array.md).<[Number](Number.md)>>> | フレームに含まれる情報の3次元配列 |
 | `timings` | [Array](Array.md).<[RPG.Animation.Timing](RPG.Animation.Timing.md)> | [SEとフラッシュのタイミング]の配列 |
+
 
 ### Classes
 

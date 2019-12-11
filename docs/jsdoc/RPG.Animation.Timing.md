@@ -1,10 +1,10 @@
-# Class: Timing
+# Class: [RPG](RPG.md).[Animation](RPG.Animation.md).Timing
+アニメーションの効果音とエフェクトのタイミングを記述したデータ。
 
-## Namespace: [RPG](RPG.md).[Animation](RPG.Animation.md)
+[RPG.Animation](RPG.Animation.md) の timings プロパティに含まれる。
 
-アニメーションの効果音とエフェクトのタイミングを記述したデータで、[RPG.Animation](RPG.Animation.md) の timings プロパティに含まれる。
 
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

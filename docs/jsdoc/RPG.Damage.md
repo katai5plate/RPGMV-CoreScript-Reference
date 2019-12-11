@@ -1,12 +1,10 @@
-# Class: Damage
-
-## Namespace [RPG](RPG.md)
-
+# Class: [RPG](RPG.md).Damage
 ダメージのデータ。
 
 [RPG.UsableItem](RPG.UsableItem.md) の damage プロパティが持っている。
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -15,13 +13,13 @@
 | `formula` | [String](String.md) | [計算式] |
 | `variance` | [Number](Number.md) | [分散度] % (0〜100) |
 | `critical` | Boolean | [会心]するか |
-##### タイプ
+#### タイプ
 
 | 番号 | [タイプ] |
 | --- | --- |
 |  0 | なし ||  1 | HPダメージ ||  2 | MPダメージ ||  3 | HP回復 ||  4 | MP回復 ||  5 | HP吸収 ||  6 | MP吸収 |
 
-##### 属性ID
+#### 属性ID
 
 [データベース]-[タイプ]-[属性] で設定されたID。
 

@@ -1,12 +1,17 @@
-# Class: BaseItem
+# Class: [RPG](RPG.md).BaseItem
 
-## Namespace [RPG](RPG.md)
+## Extends: [RPG.MetaData](RPG.MetaData.md) 
 
 [アイテム]はもちろん、[武器][防具][敵][状態]などにも使われる基本クラス。
 
-[RPG.UsableItem](RPG.UsableItem.md)、[RPG.EquipItem](RPG.EquipItem.md) のスーパークラス。
 
-##### Properties:
+### Sub Classes
+
+* [RPG.UsableItem](RPG.UsableItem.md)
+* [RPG.EquipItem](RPG.EquipItem.md)
+
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -16,14 +21,11 @@
 | `description` | [String](String.md) | [説明]文 |
 
 
-###### アイテムID
+#### アイテムID
 
 [データベース]-[アイテム] の番号。
 
 
-### Extends
-
-* [RPG.MetaData](RPG.MetaData.md)
 
  <br>
 

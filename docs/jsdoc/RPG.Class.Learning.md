@@ -1,10 +1,8 @@
-# Class: Learning
-
-## Namespace [RPG](RPG.md) . [Class](RPG.Class.md)
-
+# Class: [RPG](RPG.md).[Class](RPG.Class.md).Learning
 スキル取得に必要な条件。[Class](RPG.Class.md) の learnings プロパティに含まれる。
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

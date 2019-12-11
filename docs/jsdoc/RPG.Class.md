@@ -1,6 +1,6 @@
-# Class: Class
+# Class: [RPG](RPG.md).Class
 
-## Namespace: [RPG](RPG.md)
+## Extends: [RPG.MetaData](RPG.MetaData.md) 
 
 | データベース| JSONファイル | 大域変数 | オブジェクト |
 | --- | --- | --- | --- |
@@ -9,7 +9,7 @@
 [Game_Actor](Game_Actor.md) の _classId プロパティで参照される。
 
 
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -20,9 +20,6 @@
 | `learnings` | [Array](Array.md).<[RPG.Class.Learning](RPG.Class.Learning.md)> | [取得するスキル]に必要な条件の配列 |
 | `traits` | [Array](Array.md).<[RPG.Trait](RPG.Trait.md)> | [特徴]の配列 |
 
-### Extends
-
-* [RPG.MetaData](RPG.MetaData.md)
 
 ### Classes
 

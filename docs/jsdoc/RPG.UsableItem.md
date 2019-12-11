@@ -1,11 +1,14 @@
-# Class: UsableItem
+# Class: [RPG](RPG.md).UsableItem
 
-## Namespace [RPG](RPG.md)
+## Extends: [RPG.BaseItem](RPG.BaseItem.md)
 
-[RPG.Skill](RPG.Skill.md) と [RPG.Item](RPG.Item.md) のスーパークラス。
+### Sub Classes
+
+* [RPG.Skill](RPG.Skill.md)
+* [RPG.Item](RPG.Item.md)
 
 
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -21,13 +24,13 @@
 | `effects` | [Array](Array.md).&lt;[RPG.Effect](RPG.Effect.md)&gt; | [使用効果]の配列 |
 
 
-##### 範囲
+#### 範囲
 
 | 番号 | [範囲] |
 | --- | --- |
 |  0 | なし ||  1 | 敵単体 ||  2 | 敵全体 ||  3 | 敵 1 体ランダム ||  4 | 敵 2 体ランダム ||  5 | 敵 3 体ランダム ||  6 | 敵 4 体ランダム ||  7 | 味方単体 ||  8 | 味方全体 ||  9 | 味方単体(戦闘不能) ||  10 | 味方全体(戦闘不能) ||  11 | 使用者 |
 
-##### 使用可能時
+#### 使用可能時
 
 | 番号 | [使用可能時] |
 | --- | --- |
@@ -36,7 +39,7 @@
 | 2 | メニュー画面 |
 | 3 | 使用不可 |
 
-##### 命中タイプ
+#### 命中タイプ
 hitType は [Game\_Action](Game_Action.md) の定数として定義されている。例えば、<code>Game\_Action.HITTYPE\_CERTAIN</code> のような形で使う。
 
 | 番号 | [命中タイプ] |
@@ -48,9 +51,6 @@ hitType は [Game\_Action](Game_Action.md) の定数として定義されてい�
 
 
 
-### Extends
-
-* [RPG.BaseItem](RPG.BaseItem.md)
 
  <br>
 

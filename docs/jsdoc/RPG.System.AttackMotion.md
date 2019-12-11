@@ -1,10 +1,8 @@
-# Class: AttackMotion
-
-## Namespace [RPG](RPG.md) . [System](RPG.System.md)
-
+# Class: [RPG](RPG.md).[System](RPG.System.md).AttackMotion
 [[SV]攻撃モーション]のJSONデータ。
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

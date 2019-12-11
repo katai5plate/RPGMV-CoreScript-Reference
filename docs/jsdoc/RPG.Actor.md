@@ -1,12 +1,13 @@
-# Class: Actor
+# Class: [RPG](RPG.md).Actor
 
-## Namespace: [RPG](RPG.md)
+## Extends: [RPG.MetaData](RPG.MetaData.md)
 
 | データベース| JSONファイル | 大域変数 | オブジェクト |
 | --- | --- | --- | --- |
 | [アクター] | Actors.json | [$dataActors](global.md#dataactors-arrayrpgactor) (配列) | [Game_Actor](Game_Actor.md) |
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -25,10 +26,6 @@
 | `profile` | [String](String.md) | [プロフィール]の文 |
 | `traits` | [Array](Array.md).<[RPG.Trait](RPG.Trait.md)> | [特徴]の配列 |
 
-
-### Extends
-
-* [RPG.MetaData](RPG.MetaData.md)
 
  <br>
 

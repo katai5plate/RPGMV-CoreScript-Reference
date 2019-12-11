@@ -1,12 +1,10 @@
-# Class: Vehicle
-
-## Namespace [RPG](RPG.md) . [System](RPG.System.md)
-
+# Class: [RPG](RPG.md).[System](RPG.System.md).Vehicle
 [乗り物]のJSONデータ。
 
 画像指定については [RPG.Actor](RPG.Actor.md) と同じような作り。
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

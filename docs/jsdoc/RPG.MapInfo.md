@@ -1,14 +1,13 @@
-# Class: MapInfo
-
-## Namespace: [RPG](RPG.md)
+# Class: [RPG](RPG.md).MapInfo
 
 | データベース| JSONファイル | 大域変数 | オブジェクト |
 | --- | --- | --- | --- |
-| マップ一覧 | MapInfos.json | [$dataMapInfos](global.html#$datamapInfos-arrayrpgmapInfo)(配列) |  |
+| マップ一覧 | MapInfos.json | [$dataMapInfos](global.html#datamapInfos-arrayrpgmapInfo)(配列) |  |
 
 含まれる情報はエディタ用の性格が強い。
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

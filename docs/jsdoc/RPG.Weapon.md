@@ -1,6 +1,6 @@
-# Class: Weapon
+# Class: [RPG](RPG.md).Weapon
 
-## Namespace [RPG](RPG.md)
+## Extends: [RPG.EquipItem](RPG.EquipItem.md)
 
 | データベース| JSONファイル | 大域変数 | オブジェクト |
 | --- | --- | --- | --- |
@@ -8,7 +8,8 @@
 
 [Game_Item](Game_Item.md) の _dataClass プロパティは 'weapon' になる。
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -16,7 +17,7 @@
 | `animationId` | [Number](Number.md) | [[アニメーション](RPG.Animation.md)]のID |
 
 
-##### 武器タイプID
+#### 武器タイプID
 
 [データベース]-[タイプ]-[武器タイプ] で設定されたID。
 
@@ -41,9 +42,6 @@
 | 11 | 槍 |
 
 
-### Extends
-
-* [RPG.EquipItem](RPG.EquipItem.md)
 
  <br>
 

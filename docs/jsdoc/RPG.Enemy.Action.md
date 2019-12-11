@@ -1,12 +1,10 @@
-# Class: Action
-
-## Namespace [RPG](RPG.md) . [Enemy](RPG.Enemy.md)
-
+# Class: [RPG](RPG.md).[Enemy](RPG.Enemy.md).Action
 [行動パターン]のJSONデータ。
 
 [Game_Enemy](Game_Enemy.md) で敵の行動を制御するのに使われる。
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

@@ -1,6 +1,6 @@
-# Class: State
+# Class: [RPG](RPG.md).State
 
-## Namespace [RPG](RPG.md)
+## Extends: [RPG.MetaData](RPG.MetaData.md) 
 
 | データベース| JSONファイル | 大域変数 | オブジェクト |
 | --- | --- | --- | --- |
@@ -9,7 +9,7 @@
 [Game_BattlerBase](Game_BattlerBase.md) の _states プロパティで参照される。
 
 
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -35,7 +35,7 @@
 | `overlay` | [Number](Number.md) |  [[SV]重ね合わせ] |
 | `traits` | [Array](Array.md).&lt;[RPG.Trait](RPG.Trait.md)&gt; | [特徴]の配列 |
 
-##### ステートID
+#### ステートID
 以下0は固定、他は規定値。
 
 | ID | [ステート] |
@@ -52,10 +52,6 @@
 | 9 | 魅了 |
 | 10 | 睡眠 |
 
-
-### Extends
-
-* [RPG.MetaData](RPG.MetaData.md)
 
  <br>
 

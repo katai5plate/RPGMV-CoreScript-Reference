@@ -1,13 +1,14 @@
-# Class: Event
+# Class: [RPG](RPG.md).Event
 
-## Namespace: [RPG](RPG.md)
+## Extends: [RPG.MetaData](RPG.MetaData.md) 
 
 マップ[イベント]を構成する JSON データ。<br />
 [RPG.Map](RPG.Map.md)の events プロパティに含まれ、[Game_Event.event()](Game_Event.md#event---rpgevent) メソッドでも得られる。
 
-類似のクラスに [RPG.CommonEvent](RPG.CommonEvent.md), [RPG.Troop](RPG.Troop.md) がある。
+関連クラス: [RPG.CommonEvent](RPG.CommonEvent.md), [RPG.Troop](RPG.Troop.md)
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -17,10 +18,6 @@
 | `y` | [Number](Number.md) | マップ上のy座標(タイル数) |
 | `pages` | [Array](Array.md).<[RPG.EventPage](RPG.EventPage.md)> | [EVページ]の配列 |
 
-
-### Extends
-
-* [RPG.MetaData](RPG.MetaData.md)
 
  <br>
 

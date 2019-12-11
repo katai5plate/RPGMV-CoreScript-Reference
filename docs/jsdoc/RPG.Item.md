@@ -1,6 +1,7 @@
-# Class: Item
+# Class: [RPG](RPG.md).Item
 
-## Namespace [RPG](RPG.md)
+## Extends: [RPG.UsableItem](RPG.UsableItem.md)
+
 
 | データベース| JSONファイル | 大域変数 | オブジェクト |
 | --- | --- | --- | --- |
@@ -8,7 +9,8 @@
 
 [Game_Item](Game_Item.md) の _dataClass プロパティは 'item' になる。
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -16,7 +18,7 @@
 | `price` | [Number](Number.md) | [価格] |
 | `consumable` | Boolean | [消耗]するか |
 
-##### アイテムタイプID
+#### アイテムタイプID
 
 | ID | [アイテムタイプ] |
 | --- | --- |
@@ -26,9 +28,6 @@
 | 4 | 隠しアイテムB |
 
 
-### Extends
-
-* [RPG.UsableItem](RPG.UsableItem.md)
 
  <br>
 

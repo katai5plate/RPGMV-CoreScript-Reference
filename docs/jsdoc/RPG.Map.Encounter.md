@@ -1,10 +1,8 @@
-# Class: Encounter
-
-## Namespace [RPG](RPG.md) . [Map](RPG.Map.md)
-
+# Class: [RPG](RPG.md).[Map](RPG.Map.md).Encounter
 [エンカウント]のJSONデータ。
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

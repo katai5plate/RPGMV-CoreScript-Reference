@@ -1,14 +1,13 @@
-# Class: Enemy
+# Class: [RPG](RPG.md).Enemy
 
-## Namespace [RPG](RPG.md)
+## Extends: [RPG.MetaData](RPG.MetaData.md) 
 
 | データベース| JSONファイル | 大域変数 | オブジェクト |
 | --- | --- | --- | --- |
 | [敵キャラ] | Enemies.json | [$dataEnemies](global.md#dataenemies-arrayrpgenemy) (配列) | [Game_Enemy](Game_Enemy.md) |
 
 
-
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -23,7 +22,7 @@
 | `actions` | [Array](Array.md).<[RPG.Enemy.Action](RPG.Enemy.Action.md)> | [行動パターン]の配列 |
 | `traits` | [Array](Array.md).<[RPG.Trait](RPG.Trait.md)> | [特徴]の配列 |
 
-##### 能力値ID
+#### 能力値ID
 
 | ID | [能力値] |
 | --- | --- |
@@ -36,9 +35,6 @@
 | 6 | 敏捷性 |
 | 7 | 運 |
 
-### Extends
-
-* [RPG.MetaData](RPG.MetaData.md)
 
 ### Classes
 

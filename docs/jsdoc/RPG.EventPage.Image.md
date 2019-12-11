@@ -1,11 +1,10 @@
-# Class: Image
+# Class: [RPG](RPG.md).[EventPage](RPG.EventPage.md).Image
+イベントの [EVページ] の [画像] を構成するJSONデータ。
 
-## Namespace: [RPG](RPG.md).[EventPage](RPG.EventPage.md)
-
-イベントの [EVページ] の [画像] を構成するJSONデータ。<br/>
 [RPG.EventPage](RPG.EventPage.md) の image プロパティに含まれる。
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

@@ -1,6 +1,6 @@
-# Class: Map
+# Class: [RPG](RPG.md).Map
 
-## Namespace: [RPG](RPG.md)
+## Extends: [RPG.MetaData](RPG.MetaData.md) 
 
 | データベース| JSONファイル | 大域変数 | オブジェクト |
 | --- | --- | --- | --- |
@@ -26,7 +26,7 @@ x: x座標, y: y座標, w: マップ幅, h: マップ高さ, z: マップ重ね�
 | 1 | A2タイル右ほか |
 | 0 | Aタイル |
 
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -54,9 +54,6 @@ x: x座標, y: y座標, w: マップ幅, h: マップ高さ, z: マップ重ね�
 | `data` | [Array](Array.md).<[Number](Number.md)> | タイルIDの配列によるマップデータ |
 | `events` | [Array](Array.md).<[RPG.Event](RPG.Event.md)> | [イベント]データの配列 |
 
-### Extends
-
-* [RPG.MetaData](RPG.MetaData.md)
 
 ### Classes
 

@@ -1,13 +1,10 @@
-# Class: Effect
-
-## Namespace [RPG](RPG.md)
-
+# Class: [RPG](RPG.md).Effect
 アイテムやスキルの[使用効果]のデータ。
 
 [RPG.UsableItem](RPG.UsableItem.md) の effects プロパティが持っている。
 
 
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -16,11 +13,11 @@
 | `value1` | [Number](Number.md) | code 毎に意味の異なる値1 |
 | `value2` | [Number](Number.md) | code 毎に意味の異なる値2 |
 
-#### code
+### code
 code は [Game\_Action](Game_Action.md) の定数として定義されている。例えば、<code>Game\_Action.EFFECT\_RECOVER\_HP</code>のような形で使う。<br />
 下表で、*0* や *1* のようなイタリック部分は、数字が入っているが未使用。
 
-##### [回復]
+#### [回復]
 
 | code | 使用効果 | dataId | value1 | value2 |
 | --- | --- | --- | --- | --- |
@@ -28,14 +25,14 @@ code は [Game\_Action](Game_Action.md) の定数として定義されている�
 | `EFFECT_RECOVER_MP:12` | MP回復 | *0* | 回復量 % (0〜100) | 回復量 (固定値) |
 | `EFFECT_GAIN_TP:13` | TP増加 | *0* | 増加量(固定値)| *0* |
 
-##### [ステート]
+#### [ステート]
 
 | code | 使用効果 | dataId | value1 | value2 |
 | --- | --- | --- | --- | --- |
 | `EFFECT_ADD_STATE:21` | ステート付加 | [ステートID](RPG.State.md#ステートID) | 確率 % (0〜100) | *0* |
 | `EFFECT_REMOVE_STATE:22` | ステート解除 | [ステートID](RPG.State.md#ステートID) | 確率 % (0〜100) | *0* |
 
-##### [能力値]
+#### [能力値]
 
 | code | 使用効果 | dataId | value1 | value2 |
 | --- | --- | --- | --- | --- |
@@ -44,7 +41,7 @@ code は [Game\_Action](Game_Action.md) の定数として定義されている�
 | `EFFECT_REMOVE_BUFF:33` | 強化の解除 | [能力値ID](RPG.Enemy.md#能力値id) | *1* | *0* |
 | `EFFECT_REMOVE_DEBUFF:34` | 弱体の解除 | [能力値ID](RPG.Enemy.md#能力値id) | *1* | *0* |
 
-##### [その他]
+#### [その他]
 
 | code | 使用効果 | dataId | value1 | value2 |
 | --- | --- | --- | --- | --- |
@@ -53,7 +50,7 @@ code は [Game\_Action](Game_Action.md) の定数として定義されている�
 | `EFFECT_LEARN_SKILL:43` | スキル習得 | [スキルID](RPG.Skill.md#スキルid) | *1* | *0* |
 | `EFFECT_COMMON_EVENT:44` | コモンイベント | コモンイベントID | *1* | *0* |
 
-###### dataId:コモンイベントID
+##### dataId:コモンイベントID
 
  [$dataCommonEvents](global.md#datacommonevents-arrayrpgcommonevent)  ([CommonEvent](RPG.CommonEvent.md) の配列)の番号。
  

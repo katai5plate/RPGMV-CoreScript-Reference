@@ -1,12 +1,10 @@
-# Class: MoveRoute
-
-## Namespace [RPG](RPG.md)
-
+# Class:  [RPG](RPG.md).MoveRoute
 [移動ルート]を構成する JSONデータ。
 
 [Game_Character](Game_Character.md) などで利用される。
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

@@ -1,9 +1,8 @@
-# Class: DropItem
-
-## Namespace [RPG](RPG.md) . [Enemy](RPG.Enemy.md)
+# Class: [RPG](RPG.md).[Enemy](RPG.Enemy.md).DropItem
 [ドロップアイテム]のJSONデータ。
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
