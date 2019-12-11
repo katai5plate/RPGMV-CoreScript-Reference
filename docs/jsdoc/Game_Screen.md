@@ -1,533 +1,345 @@
 # Class: Game_Screen
 
-## Game_Screen ()
+### new Game_Screen ()
 
-#### new Game_Screen ()
+| 大域変数 |
+| --- |
+| [$gameScreen](global.html#$gamescreen-game_screen) |
 
-The game object class for screen effect data, such as changes in color tone and flashes. Use as global variable [$gameScreen](global.html#$gameScreen)
+イベントコマンドの[画面]関連の挙動の担当クラス。 
 
-##### Properties:
+関連クラス: [Game_Map](Game_Map.md)
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_shake` | [Number](Number.md) |  |
-| `_shakePower` | [Number](Number.md) |  |
-| `_shakeSpeed` | [Number](Number.md) |  |
-| `_shakeDuration` | [Number](Number.md) |  |
-| `_shakeDirection` | [Number](Number.md) |  |
-| `_zoomX` | [Number](Number.md) |  _zoomX property of the game screen. |
-| `_zoomY` | [Number](Number.md) |  _zoomY property of the game screen. |
-| `_zoomScale` | [Number](Number.md) |  |
-| `_zoomScaleTarget` | [Number](Number.md) |  |
-| `_zoomDuration` | [Number](Number.md) |  |
-| `_weatherType` | [String](String.md) |  |
-| `_weatherPower` | [Number](Number.md) |  |
-| `_weatherPowerTarget` | [Number](Number.md) |  |
-| `_weatherDuration` | [Number](Number.md) |  |
-| `_brightness` | [Number](Number.md) | The _brightness property of the game screen; returned when calling the brightness method. |
-| `_fadeOutDuration` | [Number](Number.md) |  |
-| `_fadeInDuration` | [Number](Number.md) |  |
-| `_tone` | [Array](Array.md).<[Number](Number.md)> |  |
-| `_toneTarget` | [Array](Array.md).<[Number](Number.md)> |  |
-| `_toneDuration` | [Number](Number.md) |  |
-| `_flashColor` | [Array](Array.md).<[Number](Number.md)> |  |
-| `_flashDuration` | [Number](Number.md) |  |
-| `_pictures` | [Array](Array.md).<[Game_Picture](Game_Picture.md)> | The array of Game_Pictures that are attached to the game screen. |
+| `_shake` | [Number](Number.md) | [シェイク]でずれた距離 |
+| `_shakePower` | [Number](Number.md) | [シェイク]強さ |
+| `_shakeSpeed` | [Number](Number.md) | [シェイク]速さ |
+| `_shakeDuration` | [Number](Number.md) | [シェイク]継続時間(フレーム) |
+| `_shakeDirection` | [Number](Number.md) | [シェイク]方向 |
+| `_zoomX` | [Number](Number.md) |  x方向の拡大率 |
+| `_zoomY` | [Number](Number.md) |  y方向の拡大率 |
+| `_zoomScale` | [Number](Number.md) | 拡大率 |
+| `_zoomScaleTarget` | [Number](Number.md) | 拡大目標 |
+| `_zoomDuration` | [Number](Number.md) | 拡大の継続時間 |
+| `_weatherType` | [String](String.md) | [天候]タイプ |
+| `_weatherPower` | [Number](Number.md) | [天候]強さ(1~9) |
+| `_weatherPowerTarget` | [Number](Number.md) | [天候]強さの目標(1~9) |
+| `_weatherDuration` | [Number](Number.md) | [天候]の継続時間(フレーム) |
+| `_brightness` | [Number](Number.md) | 明るさ |
+| `_fadeOutDuration` | [Number](Number.md) | フェードアウトの継続時間(フレーム) |
+| `_fadeInDuration` | [Number](Number.md) | フェードインの継続時間(フレーム) |
+| `_tone` | [Array](Array.md).<[Number](Number.md)> | [色調]\(0~0xFFFFFF) |
+| `_toneTarget` | [Array](Array.md).<[Number](Number.md)> | [色調]目標(0~0xFFFFFF) |
+| `_toneDuration` | [Number](Number.md) | [色調]の継続時間(フレーム) |
+| `_flashColor` | [Array](Array.md).<[Number](Number.md)> | [フラッシュ]の色(0~0xFFFFFF) |
+| `_flashDuration` | [Number](Number.md) | [フラッシュ]の継続時間(フレーム) |
+| `_pictures` | [Array](Array.md).<[Game_Picture](Game_Picture.md)> | 追加された[ピクチャ]の配列 |
 
-<dl>
-</dl>
 
 ### Methods
 
 #### brightness () → {[Number](Number.md)}
+画面の明るさを返す。
 
-Returns the brightness of the game screen.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### changeWeather (type, power, duration)
+指定した[天候]に変更。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `type` | [String](String.md) |  |
-| `power` | [Number](Number.md) |  |
-| `duration` | [Number](Number.md) |  |
+| `type` | [String](String.md) | [天候]タイプ |
+| `power` | [Number](Number.md) | [天候]強さ |
+| `duration` | [Number](Number.md) | [天候]継続時間(フレーム) |
 
-<dl>
-</dl>
 
 #### clear ()
+消去。
 
-<dl>
-</dl>
 
 #### clearFade ()
+[フェード]処理の消去。
 
-Clears the screen fade.
-<dl>
-</dl>
 
 #### clearFlash ()
+[フラッシュ]処理の消去。
 
-Clears the screen flash.
-<dl>
-</dl>
 
 #### clearPictures ()
+追加された[ピクチャ]の消去。
 
-Clears the pictures set on the game screen.
-<dl>
-</dl>
 
 #### clearShake ()
+[シェイク]処理の消去。
 
-Clears the screen shake.
-<dl>
-</dl>
 
 #### clearTone ()
+[色調]処理の消去。
 
-Clears the screen tone.
-<dl>
-</dl>
 
 #### clearWeather ()
+[天候]処理の消去。
 
-Clears the screen weather.
-<dl>
-</dl>
 
 #### clearZoom ()
+拡大処理の消去。
 
-Clears the screen zoom.
-<dl>
-</dl>
 
 #### eraseBattlePictures ()
+戦闘ピクチャの消去。
 
-Erases the battle pictures.
-<dl>
-</dl>
 
 #### erasePicture (pictureId)
-
-Erases a picture from the screen given the respected picture id.
+指定した[ピクチャの消去]。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pictureId` | [Number](Number.md) |  |
+| `pictureId` | [Number](Number.md) | ピクチャID |
 
-<dl>
-</dl>
 
 #### flashColor () → {[Array](Array.md).<[Number](Number.md)>}
+[フラッシュ]の色を返す。
 
-<dl>
-</dl>
 
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Number</a>&gt;</span>
-                </dd>
-            </dl>
-
-#### initialize ()
-
- オブジェクト生成時の初期化。
-<dl>
-</dl>
+#### initialize () オブジェクト生成時の初期化。
 
 #### maxPictures () → {[Number](Number.md)}
+最大ピクチャ数を返す。
 
-Returns the maximum number of pictures set on the game screen.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### movePicture (pictureId, origin, x, y, scaleX, scaleY, opacity, blendMode, duration)
+指定した[ピクチャの移動]。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pictureId` | [Number](Number.md) |  |
-| `origin` | [Number](Number.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `scaleX` | [Number](Number.md) |  |
-| `scaleY` | [Number](Number.md) |  |
-| `opacity` | [Number](Number.md) |  |
-| `blendMode` | [Number](Number.md) |  |
-| `duration` | [Number](Number.md) |  |
+| `pictureId` | [Number](Number.md) | ピクチャID |
+| `origin` | [Number](Number.md) | 原点 |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `scaleX` | [Number](Number.md) | 拡大率[幅] |
+| `scaleY` | [Number](Number.md) | 拡大率[高さ] |
+| `opacity` | [Number](Number.md) | [不透明度] |
+| `blendMode` | [Number](Number.md) | [合成方法] |
+| `duration` | [Number](Number.md) | 継続時間 |
 
-<dl>
-</dl>
 
 #### onBattleStart ()
+戦闘シーンの開始時に呼ばれるハンドラ。
 
-Handler for when the battle starts in game; prepares the screen for the battle scene.
-<dl>
-</dl>
 
 #### picture (pictureId) → {[Game_Picture](Game_Picture.md)}
-
-Returns the specified picture given the picture id.
+指定ピクチャを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pictureId` | [Number](Number.md) |  |
+| `pictureId` | [Number](Number.md) | ピクチャID |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Game_Picture</a></span>
-                </dd>
-            </dl>
 
 #### realPictureId (pictureId) → {[Number](Number.md)}
-
-Returns the real picture id, given the picture id.
+通常シーンと戦闘シーンに共通のピクチャIDを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pictureId` | [Number](Number.md) |  |
+| `pictureId` | [Number](Number.md) | ピクチャID |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### rotatePicture (pictureId, speed)
+指定した[ピクチャの回転]。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pictureId` | [Number](Number.md) |  |
-| `speed` | [Number](Number.md) |  |
+| `pictureId` | [Number](Number.md) | ピクチャID |
+| `speed` | [Number](Number.md) | 速度 |
 
-<dl>
-</dl>
 
 #### setZoom (x, y, scale)
+指定した拡大の設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `scale` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) | 拡大率[幅] |
+| `y` | [Number](Number.md) | 拡大率[高さ] |
+| `scale` | [Number](Number.md) | 拡大率 |
 
-<dl>
-</dl>
 
 #### shake () → {[Number](Number.md)}
+[シェイク]でずれた距離を返す。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### showPicture (pictureId, name, origin, x, y, scaleX, scaleY, opacity, blendMode)
+指定した[ピクチャの表示]。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pictureId` | [Number](Number.md) |  |
-| `name` | [String](String.md) |  |
-| `origin` | [Number](Number.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `scaleX` | [Number](Number.md) |  |
-| `scaleY` | [Number](Number.md) |  |
-| `opacity` | [Number](Number.md) |  |
-| `blendMode` | [Number](Number.md) |  |
+| `pictureId` | [Number](Number.md) | ピクチャID |
+| `name` | [String](String.md) | 名前 |
+| `origin` | [Number](Number.md) | 原点 |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `scaleX` | [Number](Number.md) | 拡大率[幅] |
+| `scaleY` | [Number](Number.md) | 拡大率[高さ] |
+| `opacity` | [Number](Number.md) | [不透明度] |
+| `blendMode` | [Number](Number.md) | [合成方法] |
 
-<dl>
-</dl>
 
 #### startFadeIn (duration)
+指定した[フェードイン]を開始。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.md) |  |
+| `duration` | [Number](Number.md) | 継続時間(フレーム) |
 
-<dl>
-</dl>
 
 #### startFadeOut (duration)
+指定した[フェードアウト]を開始。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.md) |  |
+| `duration` | [Number](Number.md) | 継続時間(フレーム) |
 
-<dl>
-</dl>
 
 #### startFlash (color, duration)
+指定した[フラッシュ]を開始。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `color` | [Array](Array.md).<[Number](Number.md)> |  |
-| `duration` | [Number](Number.md) |  |
+| `duration` | [Number](Number.md) | 継続時間(フレーム) |
 
-<dl>
-</dl>
 
 #### startFlashForDamage ()
+ダメージのフラッシュを開始。
 
-<dl>
-</dl>
 
 #### startShake (power, speed, duration)
+指定した[シェイク]を開始。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `power` | [Number](Number.md) |  |
-| `speed` | [Number](Number.md) |  |
-| `duration` | [Number](Number.md) |  |
+| `power` | [Number](Number.md) | [シェイク]強さ |
+| `speed` | [Number](Number.md) | [シェイク]速度 |
+| `duration` | [Number](Number.md) | 継続時間(フレーム) |
 
-<dl>
-</dl>
 
 #### startTint (tone, duration)
+指定した[色調]効果を開始。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tone` | [Array](Array.md).<[Number](Number.md)> |  |
-| `duration` | [Number](Number.md) |  |
+| `tone` | [Array](Array.md).<[Number](Number.md)> | 色調 |
+| `duration` | [Number](Number.md) | 継続時間(フレーム) |
 
-<dl>
-</dl>
 
 #### startZoom (x, y, scale, duration)
+指定した拡大を開始。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `scale` | [Number](Number.md) |  |
-| `duration` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) | 拡大率[幅] |
+| `y` | [Number](Number.md) | 拡大率[高さ] |
+| `scale` | [Number](Number.md) | 拡大率 |
+| `duration` | [Number](Number.md) | 継続時間(フレーム) |
 
-<dl>
-</dl>
 
 #### tintPicture (pictureId, tone, duration)
+指定したピクチャに[色調]効果を追加。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pictureId` | [Number](Number.md) |  |
-| `tone` | [Array](Array.md).<[Number](Number.md)> |  |
-| `duration` | [Number](Number.md) |  |
+| `pictureId` | [Number](Number.md) | ピクチャID |
+| `tone` | [Array](Array.md).<[Number](Number.md)> | 色調 |
+| `duration` | [Number](Number.md) | 継続時間(フレーム) |
 
-<dl>
-</dl>
 
 #### tone () → {[Array](Array.md).<[Number](Number.md)>}
+色調を返す。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Array</a>.&lt;<a>Number</a>&gt;</span>
-                </dd>
-            </dl>
 
 #### update ()
+フレーム毎のアップデート。
 
-Updates the game screen.
-<dl>
-</dl>
 
 #### updateFadeIn ()
+[フェードイン]のアップデート。
 
-Updates the screen fade in.
-<dl>
-</dl>
 
 #### updateFadeOut ()
+[フェードアウト]のアップデート。
 
-Updates the screen fade out.
-<dl>
-</dl>
 
 #### updateFlash ()
+[フラッシュ]のアップデート。
 
-Update the screen flash.
-<dl>
-</dl>
 
 #### updatePictures ()
+[ピクチャ]のアップデート。
 
-Update the screen pictures.
-<dl>
-</dl>
 
 #### updateShake ()
+[シェイク]のアップデート。
 
-Update the screen shake.
-<dl>
-</dl>
 
 #### updateTone ()
+[色調]のアップデート。
 
-Updates the screen tone.
-<dl>
-</dl>
 
 #### updateWeather ()
+[天候]のアップデート。
 
-Update the screen weather.
-<dl>
-</dl>
 
 #### updateZoom ()
+拡大のアップデート。
 
-Update the screen zoom.
-<dl>
-</dl>
 
 #### weatherPower () → {[Number](Number.md)}
+[天候]強さを返す。
+#### weatherType () → {[String](String.md)}
+[天候]のタイプを返す。
 
-Returns the weather power.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### weatherType () → {[String](String.md)}
-
-Returns the current weather type.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
 
 #### zoomScale () → {[Number](Number.md)}
+拡大率を返す。
 
-Returns the zoom scale of the screen.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### zoomX () → {[Number](Number.md)}
+拡大率[幅]を返す。
 
-Returns the zoom x coordinate of the screen.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### zoomY () → {[Number](Number.md)}
-
-Returns the zoom y coordiante of the screen.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
+拡大率[高さ]を返す。
+
  <br>
 
   Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
