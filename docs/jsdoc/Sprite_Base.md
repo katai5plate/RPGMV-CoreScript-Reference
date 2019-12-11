@@ -1,17 +1,11 @@
 # Class: Sprite_Base
 
-## Sprite_Base ()
+## Extends: [Sprite](Sprite.md)
 
-#### new Sprite_Base ()
-
+### new Sprite_Base ()
 アニメーションする表示物のためのクラス。<br />
-[Sprite_Balloon](Sprite_Balloon.md),
-[Sprite_Character](Sprite_Character.md),
-[Sprite_StateOverlay](Sprite_StateOverlay.md),
-[Sprite_Weapon](Sprite_Weapon.md),
-[Sprite_Battler](Sprite_Battler.md) のスーパークラス。
 
-##### Properties:
+#### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -20,9 +14,13 @@
 | `_hiding` | Boolean | 非表示か |
 
 
-### Extends
+### Sub Classes
 
-* [Sprite](Sprite.md)
+* [Sprite_Balloon](Sprite_Balloon.md)
+* [Sprite_Character](Sprite_Character.md)
+* [Sprite_StateOverlay](Sprite_StateOverlay.md)
+* [Sprite_Weapon](Sprite_Weapon.md)
+* [Sprite_Battler](Sprite_Battler.md)
 
 
 ### Inherited From

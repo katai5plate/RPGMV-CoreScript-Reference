@@ -1,9 +1,8 @@
 # Class: Sprite_Character
 
-## Sprite_Character (character)
+## Extends: [Sprite_Base](Sprite_Base.md)
 
-#### new Sprite_Character (character)
-
+### new Sprite_Character (character)
 [イベント][アクター][フォロワー][乗り物]といった、キャラクタを表示するスプライト。
 
 コンストラクタの引数(Parameters)として渡される以下のキャラクタデータオブジェクトによって挙動が決まる。
@@ -15,29 +14,24 @@
 
 [Spriteset_Map](Spriteset_Map.md) の createCharacters() で生成され、_characterSprites に格納される。
 
-
-##### Parameters:
+#### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `character` | [Game_Character](Game_Character.md) | キャラクタデータ |
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `_character` | [Game_Character](Game_Character.md) | キャラクタデータ |
-| `_balloonDuration` | [Number](Number.md) |  |
-| `_tilesetId` | [Number](Number.md) |  |
-| `_upperBody` | [Sprite](Sprite.md) |  |
-| `_lowerBody` | [Sprite](Sprite.md) |  |
-| `_bushDepth` | [Number](Number.md) |  |
+| `_balloonDuration` | [Number](Number.md) | フキダシの継続時間 |
+| `_tilesetId` | [Number](Number.md) | タイルセットID |
+| `_upperBody` | [Sprite](Sprite.md) | 上半身 |
+| `_lowerBody` | [Sprite](Sprite.md) | 下半身 |
+| `_bushDepth` | [Number](Number.md) | 茂みの深さ(ピクセル) |
 | `_balloonSprite` | [Sprite_Balloon](Sprite_Balloon.md) | 付随するフキダシスプライト |
-
-
-### Extends
-
-* [Sprite_Base](Sprite_Base.md)
 
 
 ### Inherited From
@@ -148,9 +142,9 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `character` | [Game_Character](Game_Character.md) |  |
+| `character` | [Game_Character](Game_Character.md) | キャラクタデータ |
 
-Overrides:[Sprite_Base](Sprite_Base.md#initialize-)
+Overrides: [Sprite_Base](Sprite_Base.md#initialize-)
 
 
 #### initMembers ()
@@ -218,7 +212,7 @@ Overrides:[Sprite_Base](Sprite_Base.md#initialize-)
 
 
 #### update ()
-Overrides:[Sprite_Base](Sprite_Base.md#update-)
+Overrides: [Sprite_Base](Sprite_Base.md#update-)
 
 
 #### updateAnimation ()
@@ -258,7 +252,7 @@ Overrides:[Sprite_Base](Sprite_Base.md#update-)
 
 
 #### updateVisibility ()
-Overrides:[Sprite_Base](Sprite_Base.md#updateVisibility-)
+Overrides: [Sprite_Base](Sprite_Base.md#updateVisibility-)
 
 
  <br>

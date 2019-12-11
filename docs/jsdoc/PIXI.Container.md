@@ -3,8 +3,7 @@
 ## Extends: [PIXI.DisplayObject](PIXI.DisplayObject.md)
 
 ### new PIXI.Container ()
-描画オブジェクトを含むコンテナ。<br />
-詳細は本家 PIXI のサイト [PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html) を参照。
+描画オブジェクトを含むコンテナ。詳細は本家 PIXI のサイト [PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html) を参照。
 
 
 ### Sub Classes

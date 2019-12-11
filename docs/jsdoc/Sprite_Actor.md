@@ -1,32 +1,31 @@
 # Class: Sprite_Actor
 
-## Sprite_Actor (actor opt)
+## Extends: [Sprite_Battler](Sprite_Battler.md)
 
-#### new Sprite_Actor (actor opt)
+### new Sprite_Actor (actor opt)
+アクター表示用のスプライトクラス。[Game_Actor](Game_Actor.md) を基に生成する。
 
-アクター表示用のスプライトクラス。
-[Game_Actor](Game_Actor.md) を基に生成する。
-
-##### Parameters:
+#### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
 | `actor` | [Game_Actor](Game_Actor.md) | &lt;optional&gt; | アクターオブジェクト |
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| MOTIONS | Object | [static] [MOTIONS](Sprite_Actor.md#motions)に詳細 |
-| \_battlerName | [String](String.md) | SVの画像ファイル名(拡張子を含まない)
-| \_motion | [MV.Motion](MV.Motion.md) | 現在のモーション |
-| \_motionCount | [Number](Number.md) | モーションのカウンタ |
-| \_pattern | [Number](Number.md) | モーションのパターン |
-| \_mainSprite | [Sprite_Base](Sprite_Base.md) | 本体のスプライト |
-| \_shadowSprite | [Sprite](Sprite.md) | 影のスプライト |
-| \_weaponSprite | [Sprite_Weapon](Sprite_Weapon.md) | 武器のスプライト |
-| \_stateSprite | [Sprite_StateOverlay](Sprite_StateOverlay.md) | ステートのスプライト |
-| \_actor | [Game_Actor](Game_Actor.md) | 生成基のアクター |
+| `MOTIONS` | Object | [static] [MOTIONS](Sprite_Actor.md#motions)に詳細 |
+| `_battlerName` | [String](String.md) | SVの画像ファイル名(拡張子を含まない)
+| `_motion` | [MV.Motion](MV.Motion.md) | 現在のモーション |
+| `_motionCount` | [Number](Number.md) | モーションのカウンタ |
+| `_pattern` | [Number](Number.md) | モーションのパターン |
+| `_mainSprite` | [Sprite_Base](Sprite_Base.md) | 本体のスプライト |
+| `_shadowSprite` | [Sprite](Sprite.md) | 影のスプライト |
+| `_weaponSprite` | [Sprite_Weapon](Sprite_Weapon.md) | 武器のスプライト |
+| `_stateSprite` | [Sprite_StateOverlay](Sprite_StateOverlay.md) | ステートのスプライト |
+| `_actor` | [Game_Actor](Game_Actor.md) | 生成基のアクター |
 
 ###### MOTIONS
 サイドビュー時のモーション指定用の定数。<br />
@@ -52,10 +51,6 @@
 | abnormal | [MV.Motion](MV.Motion.md) | 状態異常 |
 | sleep | [MV.Motion](MV.Motion.md) | 睡眠 |
 | dead | [MV.Motion](MV.Motion.md) | 死亡 |
-
-### Extends
-
-* [Sprite_Battler](Sprite_Battler.md)
 
 
 ### Inherited From

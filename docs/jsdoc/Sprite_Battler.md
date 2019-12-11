@@ -1,18 +1,24 @@
 # Class: Sprite_Battler
 
-## Sprite_Battler (battler opt)
+## Extends: [Sprite_Base](Sprite_Base.md)
 
-#### new Sprite_Battler (battler opt)
+### new Sprite_Battler (battler opt)
+戦闘シーンで表示されるキャラ画像。
 
-[Sprite_Actor](Sprite_Actor.md) と [Sprite_Enemy](Sprite_Enemy.md) のスーパークラス。
-
-##### Parameters:
+#### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
 | `battler` | [Game_Battler](Game_Battler.md) | &lt;optional&gt; | バトラー |
 
-##### Properties:
+
+### Sub Classes
+
+* [Sprite_Actor](Sprite_Actor.md)
+* [Sprite_Enemy](Sprite_Enemy.md)
+
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -27,10 +33,6 @@
 | `_movementDuration` | [Number](Number.md) | 移動の継続時間 |
 | `_selectionEffectCount` | [Number](Number.md) | 選択エフェクトのカウント |
 
-
-### Extends
-
-* [Sprite_Base](Sprite_Base.md)
 
 ### Inherited From
 

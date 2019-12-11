@@ -1,18 +1,18 @@
 # Class: Sprite_Enemy
 
-## Sprite_Enemy (enemy opt)
+##  Extends: [Sprite_Battler](Sprite_Battler.md)
 
-#### new Sprite_Enemy (enemy opt)
+### new Sprite_Enemy (enemy opt)
+[敵キャラ]表示用のスプライトクラス。 [Game_Enemy](Game_Enemy.md) を基に生成する。
 
-敵表示用のスプライトクラス。 [Game_Enemy](Game_Enemy.md) を基に生成する。
-
-##### Parameters:
+#### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
 | `enemy` | [Game_Enemy](Game_Enemy.md) | &lt;optional&gt; | 敵(エネミー)オブジェクト |
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -24,11 +24,6 @@
 | `_effectDuration` | [Number](Number.md) | エフェクト継続時間 |
 | `_shake` | [Number](Number.md) | 揺れているか |
 | `_stateIconSprite` | [Sprite_StateIcon](Sprite_StateIcon.md) | ステートアイコン |
-
-
-### Extends
-
-* [Sprite_Battler](Sprite_Battler.md)
 
 
 ### Inherited From

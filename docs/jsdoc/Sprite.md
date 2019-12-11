@@ -1,23 +1,35 @@
 # Class: Sprite
 
-## Sprite (bitmap)
+## Extends: [PIXI.Sprite](PIXI.Sprite.md)
 
-#### new Sprite (bitmap)
-
-描画のための基本オブジェクト。[Sprite_Animation](Sprite_Animation.md), [Sprite_Button](Sprite_Button.md), [Sprite_Damage](Sprite_Damage.md), [Sprite_Destination](Sprite_Destination.md), [Sprite_Picture](Sprite_Picture.md), [Sprite_StateIcon](Sprite_StateIcon.md), [Sprite_Timer](Sprite_Timer.md) および [Spriteset_Base](Spriteset_Base.md) と [Sprite_Base](Sprite_Base.md) のスーパークラス。
+### new Sprite (bitmap)
+描画のための基本オブジェクト。
 
 PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイルから読み込んだ[Bitmap](Bitmap.md)を、コンストラクタ引数に指定してSpriteを生成し、[Stage](Stage.md)などのコンテナオブジェクトにaddChildする、という手順で画像を表示する。
 
-継承されているプロパティから代表的なものもここに書いたが、詳しいくは継承元の [PIXI.Sprite](PIXI.Sprite.md) を参照。
+継承されているプロパティから代表的なものもここに書いたが、詳しくは継承元の [PIXI.Sprite](PIXI.Sprite.md) を参照。
 
-
-##### Parameters:
+#### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `bitmap` | [Bitmap](Bitmap.md) |  スプライトに設定する画像 |
 
-##### Properties:
+
+### Sub Classes
+
+* [Sprite_Animation](Sprite_Animation.md)
+* [Sprite_Button](Sprite_Button.md)
+* [Sprite_Damage](Sprite_Damage.md)
+* [Sprite_Destination](Sprite_Destination.md)
+* [Sprite_Picture](Sprite_Picture.md)
+* [Sprite_StateIcon](Sprite_StateIcon.md)
+* [Sprite_Timer](Sprite_Timer.md)
+* [Spriteset_Base](Spriteset_Base.md)
+* [Sprite_Base](Sprite_Base.md)
+
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -41,11 +53,6 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | `filters` | [Array](Array.md).<[PIXI.Filter](http://pixijs.download/dev/docs/PIXI.Filter.html)> | フィルタの配列 |
 | `children` | [Array](Array.md).<[PIXI.DisplayObject](http://pixijs.download/dev/docs/PIXI.DisplayObject.html)> | [read-only] 子表示オブジェクトの配列 |
 | `parent` | [PIXI.Container](http://pixijs.download/dev/docs/PIXI.Container.html) | [read-only] 親コンテナオブジェクト |
-
-
-### Extends
-
-* [PIXI.Sprite](PIXI.Sprite.md)
 
 
 ### Inherited From
@@ -140,12 +147,13 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 #### _onBitmapLoad ()
 ビットマップ読み込み時に呼ばれるハンドラ。
 
+
 #### _refresh ()
 再設定。
 
 
 #### _renderCanvas (renderer)
-Overrides:[PIXI.Container](PIXI.Container.md#_rendercanvas-renderer)
+Overrides: [PIXI.Container](PIXI.Container.md#_rendercanvas-renderer)
 
 ##### Parameters:
 

@@ -1,19 +1,23 @@
 # Class: PIXI.Sprite
 
-## PIXI.Sprite (texture)
+## Extends: [PIXI.Container](PIXI.Container.md)
 
-#### new PIXI.Sprite (texture)
-描画のための基本オブジェクト。[Sprite](Sprite.md) のスーパークラス。
+### new PIXI.Sprite (texture)
+描画のための基本オブジェクト。詳細は本家 PIXI のサイト [PIXI.Sprite](http://pixijs.download/release/docs/PIXI.Sprite.html) を参照。
 
-詳細は本家 PIXI のサイト [PIXI.Sprite](http://pixijs.download/release/docs/PIXI.Sprite.html) を参照。
-
-##### Parameters:
+#### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `texture` | [PIXI.Texture](http://pixijs.download/release/docs/PIXI.Texture.html) |  スプライトに設定する画像 |
 
-##### Properties:
+
+### Sub Classes
+
+* [Sprite](Sprite.md) 
+
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -29,11 +33,6 @@
 | `shader` | [PIXI.Filter](http://pixijs.download/release/docs/PIXI.Filter.html) \| [PIXI.Shader](http://pixijs.download/release/docs/PIXI.Shader.html) | [static] |
 | `texture` | [PIXI.Texture](http://pixijs.download/release/docs/PIXI.Texture.html) | スプライトに設定された画像 |
 | `tint` | [Number](Number.md) |  |
-
-
-### Extends
-
-* [PIXI.Container](PIXI.Container.md)
 
 
 ### Inherited From

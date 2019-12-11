@@ -1,14 +1,18 @@
 # Class: Spriteset_Base
 
-## Spriteset_Base ()
+## Extends: [Sprite](Sprite.md)
 
-#### new Spriteset_Base ()
-
+### new Spriteset_Base ()
 複数のスプライトを組み合わせて使うクラス。
 
-[Spriteset_Map](Spriteset_Map.md) と [Spriteset_Battle](Spriteset_Battle.md) のスーパークラス。
 
-##### Properties:
+### Sub Classes
+
+* [Spriteset_Map](Spriteset_Map.md)
+* [Spriteset_Battle](Spriteset_Battle.md)
+
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -21,11 +25,6 @@
 | `_timerSprite` | [Sprite_Timer](Sprite_Timer.md) | タイマースプライト |
 | `_flashSprite` | [ScreenSprite](ScreenSprite.md) | フラッシュスプライト |
 | `_fadeSprite` | [ScreenSprite](ScreenSprite.md) | フェードスプライト |
-
-
-### Extends
-
-* [Sprite](Sprite.md)
 
 
 ### Inherited From

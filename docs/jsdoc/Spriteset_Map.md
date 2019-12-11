@@ -1,12 +1,12 @@
 # Class: Spriteset_Map
 
-## Spriteset_Map ()
+##  Extends: [Spriteset_Base](Spriteset_Base.md)
 
-#### new Spriteset_Map ()
-
+### new Spriteset_Map ()
  マップ表示用スプライトセット。[Scene_Map](Scene_Map.md) オブジェクトで管理される。
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -18,11 +18,6 @@
 | `_destinationSprite` | [Sprite_Destination](Sprite_Destination.md) |  タッチ位置スプライト |
 | `_weather` | [Weather](Weather.md) |  天候 |
 | `_parallaxName` | [String](String.md) | [遠景]画像ファイル名 |
-
-
-### Extends
-
-* [Spriteset_Base](Spriteset_Base.md)
 
 
 ### Inherited From
