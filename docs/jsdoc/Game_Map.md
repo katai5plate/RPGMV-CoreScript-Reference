@@ -1,16 +1,21 @@
 # Class: Game_Map
 
-## Game_Map ()
+### new Game_Map ()
 
-#### new Game_Map ()
+| データベース| JSONデータ | 大域変数 |
+| --- | --- | --- |
+| マップ | [RPG.Map](RPG.Map.md) | [$gameMap](global.md#gamemap-game_map) |
 
-マップのデータ [$dataMap](global.md#datamap-rpgmap) や [$dataTilesets](global.md#datatilesets-arrayrpgtileset) を扱うためのクラス。 表示を中心にスクロール制御や通行判定なども含む。 大域変数 [$gameMap](global.md#gamemap-game_map) を介して扱う。
+[イベント][タイルセット] などを含むマップの管理、スクロール制御や通行判定など役割の多いクラス。 
+
+関連クラス: [Scene_Map](Scene_Map.md), [Game_Screen](Game_Screen.md)、[Spriteset_Map](Spriteset_Map.md), [ShaderTilemap](ShaderTilemap.md)
+
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_interpreter` | [Game_Interpreter](Game_Interpreter.md) | RPGツクールMVのコマンドインタプリタ |
+| `_interpreter` | [Game_Interpreter](Game_Interpreter.md) |コマンドインタプリタ |
 | `_mapId` | [Number](Number.md) | [マップ]のID |
 | `_tilesetId` | [Number](Number.md) | [タイルセット]のID |
 | `_events` | [Array](Array.md).<[Game_Event](Game_Event.md)> | [イベント]の配列 |
