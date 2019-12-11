@@ -1,12 +1,12 @@
-# Class: Tileset
+# Class:  [RPG](RPG.md).Tileset
 
-## Namespace [RPG](RPG.md)
+## Extends: [RPG.MetaData](RPG.MetaData.md)
 
-| データベース| JSONファイル | 大域変数 | オブジェクト |
-| --- | --- | --- | --- |
-| [タイルセット] | Tilesets.json | [$dataTilesets](global.md#datatilesets-arrayrpgtileset)(配列) |  |
+| データベース| JSONファイル | 大域変数 |
+| --- | --- | --- |
+| [タイルセット] | Tilesets.json | [$dataTilesets](global.md#datatilesets-arrayrpgtileset)(配列) |
 
-大域変数 [$gameMap](global.md#gamemap-game_map) ([Game_Map](Game_Map.md))の_tilesetId プロパティなどで参照される。
+関連クラス: [Game_Map](Game_Map.md)
 
 ##### Properties:
 
@@ -36,10 +36,6 @@
 | 0x0800 |  飛行船着地不可 |
 | 0xF000 |  地形タグ |
 
-
-### Extends
-
-* [RPG.MetaData](RPG.MetaData.md)
 
  <br>
 
