@@ -1,7 +1,5 @@
 # Class: Game_Timer
 
-## Game_Timer ()
-
 ### new Game_Timer ()
 
 | 大域変数 | セーブデータ |
@@ -15,8 +13,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_frames` | [Number](Number.md) |  |
-| `_working` | Boolean |  |
+| `_frames` | [Number](Number.md) | 残り時間(フレーム数) |
+| `_working` | Boolean | 動作しているか |
 
 
 ### Methods
@@ -25,35 +23,36 @@
  オブジェクト生成時の初期化。
 
 #### isWorking () → {Boolean}
-Returns true if the timer is working and counting down.
+タイマーが動作しているか。
 
 #### onExpire ()
-Handler for when the time expires on the timer.
+タイマーが完了した時に呼ばれるハンドラ。
+
 
 #### seconds () → {[Number](Number.md)}
-Returns the number of seconds on the timer.
+残り秒数を返す。
 
 #### start (count)
-Starts the timer with the specified number of frames as count.
+指定されたカウントでタイマーを開始。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `count` | [Number](Number.md) |  |
+| `count` | [Number](Number.md) | カウント時間(フレーム数) |
 
 
 #### stop ()
-Stops the timer.
+タイマーを停止。
 
 #### update (sceneActive)
-Updates the game timer.
+シーンがアクティブな場合、タイマーをアップデート。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `sceneActive` | Boolean |  |
+| `sceneActive` | Boolean | シーンがアクティブか |
 
  <br>
 
