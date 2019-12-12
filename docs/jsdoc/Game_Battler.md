@@ -1,14 +1,18 @@
 # Class: Game_Battler
 
-## Game_Battler ()
+## Extends: [Game_BattlerBase](Game_BattlerBase.md)
 
-#### new Game_Battler ()
+### new Game_Battler ()
+戦闘シーンでのアイコンやアニメーションを含む、バトラーの動作を制御する。
 
-[Game_Actor](Game_Actor.md) と [Game_Enemy](Game_Enemy.md) のスーパークラス。
 
-アイコンやアニメーションを含む、バトラーの動作を制御する。
+### Sub Classes
 
-##### Properties:
+* [Game_Actor](Game_Actor.md)
+* [Game_Enemy](Game_Enemy.md)
+
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -24,11 +28,6 @@
 | `_weaponImageId` | [Number](Number.md) | 武器画像ID |
 | `_motionRefresh` | Boolean | モーションを更新するか |
 | `_selected` | Boolean | 選択されているか |
-
-
-### Extends
-
-* [Game_BattlerBase](Game_BattlerBase.md)
 
 
 ### Inherited From

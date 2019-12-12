@@ -2,7 +2,7 @@
 
 ## Extends: [Game_Character](Game_Character.md)
 
-#### new Game_Event ()
+### new Game_Event ()
 マップに配置する[イベント]を定義したオブジェクト。
  
  [RPG.Event](RPG.Event.md) を返す [Game_Event.event ()](Game_Event.md#event---rpgevent) メソッドなどを含む。

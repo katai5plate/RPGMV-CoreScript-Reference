@@ -1,16 +1,21 @@
 # Class: Game_Actor
 
-## Game_Actor ()
+## Extends: [Game_Battler](Game_Battler.md)
 
-#### new Game_Actor ()
+### new Game_Actor ()
 
-大域変数である [$gameActors](global.md#gameactors-game_actors)([Game_Actors](Game_Actors.md))、[$gameParty](global.md#gameparty-game_party)([Game_Party](Game_Party.md)) から参照される[アクター]の実体。
+| データベース| JSONデータ |
+| --- | --- |
+| [アクター] | [RPG.Actor](RPG.Actor.md) |
 
-JSONデータとしては [RPG.Actor](RPG.Actor.md) に定義されている。
+アクターのパラメータの取得、画像の設定、戦闘の処理とサイドビュー時の画像処理を行うクラス。
 
-アクターのパラメータの取得、画像の設定、戦闘の処理とサイドビュー時の画像処理を行う。
+大域変数 [$gameParty](global.md#gameparty-game_party)、[$gameActors](global.md#gameactors-game_actors) から参照される。
 
-##### Properties:
+関連クラス: [Game_Actors](Game_Actors.md), [Game_Party](Game_Party.md), [Scene_Battle](Scene_Battle.md)
+
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -34,10 +39,6 @@ JSONデータとしては [RPG.Actor](RPG.Actor.md) に定義されている。
 | `_lastBattleSkill` | [Game_Item](Game_Item.md) | 最後の戦闘スキル |
 | `_lastCommandSymbol` | [String](String.md) | 最後のコマンド |
 | `_stateSteps` | Object | {[stateId: number]: number} |
-
-### Extends
-
-* [Game_Battler](Game_Battler.md)
 
 
 ### Inherited From

@@ -1,7 +1,7 @@
 # Class: Game_Followers
 
 ### new Game_Followers ()
-[Game_Follower](Game_Follower.md) をまとめた隊列の並びなどを管理するクラス。
+[Game_Follower](Game_Follower.md) をまとめた[隊列メンバー]の並びなどを管理するクラス。
 
  [$gamePlayer.followers()](Game_Player.md#followers---game_followers) メソッドで得られる。
 

@@ -1,18 +1,22 @@
 # Class: Game_Item
 
-## Game_Item ()
+### new Game_Item ()
 
-#### new Game_Item ()
+| データベース| JSONデータ |
+| --- | --- |
+| [アイテム][武器][防具][スキル] | [RPG.BaseItem](RPG.BaseItem.md)  |
 
-[RPG.BaseItem](RPG.BaseItem.md) をもとに作られ、アイテム・武器・防具・スキルを管理するクラス。
+アイテム全般とスキルをまとめて扱うクラス。
 
+
+関連クラス: [RPG.UsableItem](RPG.UsableItem.md), [RPG.Item](RPG.Item.md), [RPG.Skill](RPG.Skill.md), [RPG.EquipItem](RPG.EquipItem.md), [RPG.Weapon](RPG.Weapon.md), [RPG.Armor](RPG.Armor.md)
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `_dataClass` | [String](String.md) | アイテムの種類( 'item', 'skill', 'weapon', 'armor', '' ) |
-| `_itemId` | [Number](Number.md) | アイテムID |
+| `_itemId` | [Number](Number.md) | アイテムID(種類毎に異なる) |
 
 
 ### Methods

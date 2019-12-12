@@ -1,15 +1,19 @@
 # Class: Game_Troop
 
-## Game_Troop ()
+## Extends: [Game_Unit](Game_Unit.md)
 
-#### new Game_Troop ()
+### new Game_Troop ()
 
-戦闘シーンでの[敵グループ]を定義したクラス。<br />
-JSONの定義データは [RPG.Troop](RPG.Troop.md)。
+| データベース| JSONデータ | 大域変数 |
+| --- | --- | --- |
+| [敵グループ] | [RPG.Troop](RPG.Troop.md) | [$gameTroop](global.md#gametroop-game_troop) |
 
-大域変数 [$gameTroop](global.md#gametroop-game_troop) に定義されている。
+戦闘シーンでの[敵グループ]を定義したクラス。
 
-##### Properties:
+関連クラス: [Game_Party](Game_Party.md), [Scene_Battle](Scene_Battle.md)
+
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -22,10 +26,6 @@ JSONの定義データは [RPG.Troop](RPG.Troop.md)。
 | `_turnCount` | [Number](Number.md) | ターンカウンタ |
 | `_namesCount` | Object | {[name: String]: Number} |
 
-
-### Extends
-
-* [Game_Unit](Game_Unit.md)
 
 ### Inherited From
 

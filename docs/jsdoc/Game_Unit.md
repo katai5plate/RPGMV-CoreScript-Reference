@@ -1,12 +1,16 @@
 # Class: Game_Unit
 
-## Game_Unit ()
+### new Game_Unit ()
+戦闘時のグループを扱うクラス。
 
-#### new Game_Unit ()
 
-戦闘時のグループを扱う、[Game_Party](Game_Party.md) と [Game_Troop](Game_Troop.md) の親クラス。
+### Sub Classes
 
-##### Properties:
+* [Game_Party](Game_Party.md)
+* [Game_Troop](Game_Troop.md)
+
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

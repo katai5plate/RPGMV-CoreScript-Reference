@@ -1,13 +1,10 @@
 # Class: Game_ActionResult
 
-## Game_ActionResult ()
-
-#### new Game_ActionResult ()
-
+### new Game_ActionResult ()
  [Game_Action](Game_Action.md) の結果を記述したオブジェクト。
 
 
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

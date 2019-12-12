@@ -1,15 +1,16 @@
 # Class: Game_BattlerBase
 
-## Game_BattlerBase ()
-
-#### new Game_BattlerBase ()
-
-[Game_Battler](Game_Battler.md) のスーパークラス。
-
+### new Game_BattlerBase ()
 [BattleManager](BattleManager.md) に保持され、戦闘シーンでのパラメータの計算につかわれる。
 
-##### Properties:
-TRAIT_が頭についている定数は、[特徴]に含まれる値を取り出す際に使われる。ただし本クラスではそれぞれメソッドが用意されているので、直接使用する必要はない。
+
+### Sub Classes
+
+* [Game_Battler](Game_Battler.md)
+
+
+### Properties:
+TRAIT_が頭についている静的定数は、[特徴]に含まれる値を取り出す際に使われる。ただし本クラスではそれぞれメソッドが用意されているので、直接使用する必要はない。
 
 
 [特徴]の値は[RPG.Trait](RPG.Trait.md) を参照。この値を直接操作する際には TRAIT_接頭辞の定数を使う。

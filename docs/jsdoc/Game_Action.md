@@ -1,14 +1,12 @@
 # Class: Game_Action
 
-## Game_Action ()
-
-#### new Game_Action ()
-
+### new Game_Action ()
 戦闘の行動を記述したクラス。
 
 攻撃や防御、スキル・アイテムの使用など。
 
-##### Properties:
+
+### Properties:
 
 EFFECT\_ から始まる定数は、[[使用効果](RPG.Effect.md#code)] を指定するのに使う。<br />
 SPECIAL\_EFFECT\_ESCAPE は、[使用効果 - 特殊効果]の dataId を指定するのに使う。<br />

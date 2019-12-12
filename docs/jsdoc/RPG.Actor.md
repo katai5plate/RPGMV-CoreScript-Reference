@@ -4,7 +4,7 @@
 
 | データベース| JSONファイル | 大域変数 | オブジェクト |
 | --- | --- | --- | --- |
-| [アクター] | Actors.json | [$dataActors](global.md#dataactors-arrayrpgactor) (配列) | [Game_Actor](Game_Actor.md) |
+| [アクター] | Actors.json | [$dataActors](global.md#dataactors-arrayrpgactor) (配列) | [Game_Actor](Game_Actor.md) \| [Game_Actors](Game_Actors.md) |
 
 
 ### Properties:

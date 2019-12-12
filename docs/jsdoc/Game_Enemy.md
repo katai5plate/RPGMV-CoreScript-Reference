@@ -1,17 +1,20 @@
 # Class: Game_Enemy
 
-## Game_Enemy ()
+## Extends: [Game_Battler](Game_Battler.md)
 
-#### new Game_Enemy ()
+### new Game_Enemy ()
+| データベース| JSONデータ |
+| --- | --- |
+| [敵キャラ] | [RPG.Enemy](RPG.Enemy.md) |
 
-戦闘中の[敵]を表すクラス。
+戦闘中の敵のパラメータの取得、画像の設定を行うクラス。
 
-JSONデータとしては [RPG.Enemy](RPG.Enemy.md) に定義されている。
+大域変数 [$gameTroop](global.md#gametroop-game_troop) を使って参照される。
 
-敵のパラメータの取得、画像の設定を行う。<br />
-また設定された[行動パターン]\([RPG.Enemy.Action](RPG.Enemy.Action.md)) に従って戦闘の処理を行う。
+関連クラス: [RPG.Enemy.Action](RPG.Enemy.Action.md), [Game_Troop](Game_Troop.md), [Game_Actor](Game_Actor.md), [Scene_Battle](Scene_Battle.md)
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -20,11 +23,6 @@ JSONデータとしては [RPG.Enemy](RPG.Enemy.md) に定義されている。
 | `_plural` | Boolean | 群(2体以上)か |
 | `_screenX` | [Number](Number.md) | 画面上の x座標 |
 | `_screenY` | [Number](Number.md) | 画面上の y座標  |
-
-
-### Extends
-
-* [Game_Battler](Game_Battler.md)
 
 
 ### Inherited From

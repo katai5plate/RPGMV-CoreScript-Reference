@@ -1,16 +1,21 @@
 # Class: Game_Party
 
-## Game_Party ()
+## Extends: [Game_Unit](Game_Unit.md)
 
-#### new Game_Party ()
+### new Game_Party ()
 
-[パーティ]を定義したクラス。<br />
-大域変数 [$gameParty](global.md#gameparty-game_party) に格納されている。
+| 大域変数 | セーブデータ |
+| --- | --- |
+| [$gameParty](global.md#gameparty-game_party) | 保存される |
 
-戦闘シーンでの[敵グループ]は [Game_Troop](Game_Troop.md) で、マップのキャラは [Game_Player](Game_Player.md)、[Game_Follower](Game_Follower.md) で管理される。
+[パーティ]を定義したクラス。
+
+関連クラス: [Game_Troop](Game_Troop.md), [Game_Player](Game_Player.md), [Game_Follower](Game_Follower.md), [Game_Actor](Game_Actor.md), [Game_Actors](Game_Actors.md), [Scene_Battle](Scene_Battle.md)
 
 
-##### Properties:
+### Properties:
+
+ABILITY\_ で始まる静的定数は [パーティ能力ID](RPG.Trait.md#パーティ能力id)に使われる。
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -25,14 +30,11 @@
 | `_lastItem` | [Game_Item](Game_Item.md) | 最後のアイテム |
 | `_menuActorId` | [Number](Number.md) | メニューのアクターID |
 | `_targetActorId` | [Number](Number.md) | 対象のアクターID |
-| `_actors` | [Array](Array.md).<[Game_Actor](Game_Actor.md)> | アクターの配列 |
+| `_actors` | [Array](Array.md).&lt;[Game_Actor](Game_Actor.md)&gt; | アクターの配列 |
 | `_items` | Object | {[itemId: number]: number} |
 | `_weapons` | Object | {[itemId: number]: number} |
 | `_armors` | Object | {[itemId: number]: number} |
 
-### Extends
-
-* [Game_Unit](Game_Unit.md)
 
 ### Inherited From
 

@@ -2,16 +2,16 @@
 
 ### new Game_Map ()
 
-| データベース| JSONデータ | 大域変数 |
-| --- | --- | --- |
-| マップ | [RPG.Map](RPG.Map.md) | [$gameMap](global.md#gamemap-game_map) |
+| データベース| JSONデータ | 大域変数 | セーブデータ |
+| --- | --- | --- | --- |
+| マップ | [RPG.Map](RPG.Map.md) | [$gameMap](global.md#gamemap-game_map) | 保存される |
 
 [イベント][タイルセット] などを含むマップの管理、スクロール制御や通行判定など役割の多いクラス。 
 
 関連クラス: [Scene_Map](Scene_Map.md), [Game_Screen](Game_Screen.md)、[Spriteset_Map](Spriteset_Map.md), [ShaderTilemap](ShaderTilemap.md)
 
 
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

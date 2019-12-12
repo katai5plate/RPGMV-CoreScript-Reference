@@ -11,7 +11,7 @@
 (乗り物を含む)プレイヤーキャラクタを定義したクラス。マップの[場所移動]の処理なども含む。
 
 
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

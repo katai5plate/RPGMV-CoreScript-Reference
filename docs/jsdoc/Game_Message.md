@@ -1,33 +1,17 @@
 # Class: Game_Message
 
-## Game_Message ()
+### new Game_Message ()
 
-#### new Game_Message ()
+| 大域変数 |
+| --- |
+| [$gameMessage](global.md#$gamemessage-game_message) |
 
-以下のメッセージウィンドウに表示する文書を制御するクラス。
+メッセージ文字列や設定をこのクラスに一時保存し、ウィンドウが表示の際に参照するクラス。
 
-* [Window_Message](Window_Message.md) … [文章の表示…]
-* [Window_ChoiceList](Window_ChoiceList.md) … [選択肢の表示…] 
-* [Window_NumberInput](Window_NumberInput.md) … [数値入力の処理…]
-* [Window_EventItem](Window_EventItem.md) … [アイテム選択の処理…]
-* [Window_ScrollText](Window_ScrollText.md) … [文章のスクロール表示…]
+関連クラス: [Window_Message](Window_Message.md) , [Window_ChoiceList](Window_ChoiceList.md), [Window_NumberInput](Window_NumberInput.md), [Window_EventItem](Window_EventItem.md), [Window_ScrollText](Window_ScrollText.md)
 
 
-大域変数 [$gameMessage](global.md#$gamemessage-game_message) を介して扱う。
-
-| 番号 | [背景] |
-| --- | --- |
-| 0 | ウィンドウ |
-| 1 | 暗くする |
-| 2 |透明 |
-
-| 番号 | [ウィンドウ位置] |
-| --- | --- |
-| 0 | 上 |
-| 1 | 中 |
-| 2 | 下 |
-
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -35,8 +19,8 @@
 | `_choices` | [Array](Array.md).&lt;[String](String.md)&gt; | 選択肢 |
 | `_faceName` | [String](String.md) | [顔]ファイル名 |
 | `_faceIndex` | [Number](Number.md) | [顔]番号 |
-| `_background` | [Number](Number.md) | [背景] |
-| `_positionType` | [Number](Number.md) | [ウィンドウ位置] |
+| `_background` | [Number](Number.md) | [[背景]](Game_Message.md#背景) |
+| `_positionType` | [Number](Number.md) | [[ウィンドウ位置]](Game_Message.md#ウィンドウ位置) |
 | `_choiceDefaultType` | [Number](Number.md) |選択肢の[デフォルト] |
 | `_choiceCancelType` | [Number](Number.md) | 選択肢の[キャンセル] |
 | `_choiceBackground` | [Number](Number.md) | 選択肢の[背景] |
@@ -49,6 +33,22 @@
 | `_scrollSpeed` | [Number](Number.md) | スクロール速度 |
 | `_scrollNoFast` | Boolean | [早送りなし]か |
 | `_choiceCallback` | function | 選択のコールバック関数 |
+
+#### [背景]
+
+| 番号 | [背景] |
+| --- | --- |
+| 0 | ウィンドウ |
+| 1 | 暗くする |
+| 2 |透明 |
+
+#### [ウィンドウ位置]
+
+| 番号 | [ウィンドウ位置] |
+| --- | --- |
+| 0 | 上 |
+| 1 | 中 |
+| 2 | 下 |
 
 
 ### Methods

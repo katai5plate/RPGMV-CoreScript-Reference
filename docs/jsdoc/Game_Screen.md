@@ -2,13 +2,13 @@
 
 ### new Game_Screen ()
 
-| 大域変数 |
-| --- |
-| [$gameScreen](global.html#gamescreen-game_screen) |
+| 大域変数 | セーブデータ |
+| --- | --- |
+| [$gameScreen](global.md#gamescreen-game_screen) | 保存される |
 
 イベントコマンドの[画面]関連の挙動の担当クラス。 
 
-関連クラス: [Game_Map](Game_Map.md)
+関連クラス: [Game_Map](Game_Map.md), [Game_Picture](Game_Picture.md)
 
 ### Properties:
 

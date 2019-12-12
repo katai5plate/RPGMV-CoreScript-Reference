@@ -9,6 +9,7 @@
 
 [Sprite_Character](Sprite_Character.md) のコンストラクタ引数として渡され、表示される。
 
+
 ### Sub Classes
 
 * [Game_Player](Game_Player.md)
