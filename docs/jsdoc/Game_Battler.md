@@ -16,12 +16,12 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_actions` | [Array](Array.md).<[Game_Action](Game_Action.md)> | 行動の配列 |
+| `_actions` | [Array](Array.md).&lt;[Game_Action](Game_Action.md)&gt; | 行動の配列 |
 | `_speed` | [Number](Number.md) | 速度(行動順を決定する) |
 | `_result` | [Game_ActionResult](Game_ActionResult.md) | 行動の結果 |
 | `_actionState` | [String](String.md) | 行動状態 |
 | `_lastTargetIndex` | [Number](Number.md) | 最後の対象番号 |
-| `_animations` | [Array](Array.md).<[MV.BattlerAnimation](MV.BattlerAnimation.md)> | アニメーションの配列 |
+| `_animations` | [Array](Array.md).&lt;[MV.BattlerAnimation](MV.BattlerAnimation.md)&gt; | アニメーションの配列 |
 | `_damagePopup` | Boolean | ダメージポップアップするか |
 | `_effectType` | [String](String.md) | エフェクトタイプ |
 | `_motionType` | [String](String.md) | モーションタイプ |
@@ -582,7 +582,7 @@ TP自動回復を適用。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `timing` | [Number](Number.md) | 解除条件 1:行動終了時 2:ターン終了時 |
+| `timing` | [Number](Number.md) | 解除条件( 1:行動終了時 2:ターン終了時 ) |
 
 
 #### removeStatesByDamage ()
@@ -623,7 +623,6 @@ TP自動回復を適用。
 
 #### setAction (index, action)
 指定番号のバトラーにアクションを設定。
-Sets the action at the specified index for the battler.
 
 ##### Parameters:
 
@@ -640,7 +639,7 @@ Sets the action at the specified index for the battler.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actionState` | [String](String.md) | アクション状態 |
+| `actionState` | [String](String.md) | アクション状態( 'undecided', 'inputting', 'waiting', 'acting' ) |
 
 
 #### setLastTarget (target)
