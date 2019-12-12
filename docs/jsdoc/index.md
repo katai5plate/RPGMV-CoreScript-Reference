@@ -35,7 +35,8 @@
 		* [選択ウィンドウ(Window_Selectable)](index.md#選択ウィンドウwindow_selectable)
 			* [コマンドウィンドウ(Window_Command)](index.md#コマンドウィンドウwindow_command)
 
-※ 以下で表われる「→ Extends」は継承のツリーの続きへのリンクです。
+※ 以下で表われる「→ Extends」は継承のツリーの続きへのリンク。
+
 
 
 ### JavaScript拡張
