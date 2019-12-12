@@ -11,7 +11,7 @@
 
 大域変数 [$gameTroop](global.md#gametroop-game_troop) を使って参照される。
 
-関連クラス: [RPG.Enemy.Action](RPG.Enemy.Action.md), [Game_Troop](Game_Troop.md), [Game_Actor](Game_Actor.md), [Scene_Battle](Scene_Battle.md)
+関連クラス: [RPG.Enemy.Action](RPG.Enemy.Action.md), [Game_Troop](Game_Troop.md), [Game_Actor](Game_Actor.md), [Game_Party](Game_Party.md), [Scene_Battle](Scene_Battle.md), [BattleManager](BattleManager.md)
 
 
 ### Properties:

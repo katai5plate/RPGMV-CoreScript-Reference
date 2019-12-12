@@ -1,14 +1,14 @@
 # Class: Scene_Battle
 
-## Scene_Battle ()
+## Extends: [Scene_Base](Scene_Base.md)
 
-#### new Scene_Battle ()
+### new Scene_Battle ()
+戦闘シーンのクラス。
 
-戦闘画面のシーンクラス。
+関連クラス: [SceneManager](SceneManager.md), [Game_Actor](Game_Actor.md), [Game_Party](Game_Party.md), [Game_Enemy](Game_Enemy.md), [Game_Troop](Game_Troop.md), [Scene_Battle](Scene_Battle.md), [BattleManager](BattleManager.md)
 
-[SceneManager](SceneManager.md) と [BattleManager](BattleManager.md) のふたつのマネージャで制御される。
 
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -25,10 +25,6 @@
 | `_messageWindow` | [Window_Message](Window_Message.md) | メッセージウィンドウ |
 | `_scrollTextWindow` | [Window_ScrollText](Window_ScrollText.md) | スクロールテキストウィンドウ |
 
-
-### Extends
-
-* [Scene_Base](Scene_Base.md)
 
 ### Inherited From
 

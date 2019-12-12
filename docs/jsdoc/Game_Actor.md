@@ -12,7 +12,7 @@
 
 大域変数 [$gameParty](global.md#gameparty-game_party)、[$gameActors](global.md#gameactors-game_actors) から参照される。
 
-関連クラス: [Game_Actors](Game_Actors.md), [Game_Party](Game_Party.md), [Scene_Battle](Scene_Battle.md)
+関連クラス: [Game_Actors](Game_Actors.md), [Game_Party](Game_Party.md), [Game_Troop](Game_Troop.md), [Game_Enemy](Game_Enemy.md), [Scene_Battle](Scene_Battle.md), [BattleManager](BattleManager.md)
 
 
 ### Properties:

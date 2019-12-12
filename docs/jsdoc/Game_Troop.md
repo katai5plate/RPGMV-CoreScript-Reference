@@ -10,7 +10,7 @@
 
 戦闘シーンでの[敵グループ]を定義したクラス。
 
-関連クラス: [Game_Party](Game_Party.md), [Scene_Battle](Scene_Battle.md)
+関連クラス: [Game_Enemy](Game_Enemy.md), [Game_Actor](Game_Actor.md), [Game_Party](Game_Party.md), [Scene_Battle](Scene_Battle.md), [BattleManager](BattleManager.md)
 
 
 ### Properties:
