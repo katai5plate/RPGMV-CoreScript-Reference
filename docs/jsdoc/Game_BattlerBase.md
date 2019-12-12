@@ -46,7 +46,7 @@ TRAIT_が頭についている静的定数は、[特徴]に含まれる値を取
 | `FLAG_ID_SUBSTITUTE` | [Number](Number.md) | [static] 特殊フラグIDの[身代わり]|
 | `FLAG_ID_PRESERVE_TP` | [Number](Number.md) | [static] 特殊フラグIDの[TP持ち越し]|
 | `ICON_BUFF_START` | [Number](Number.md) | [static] 能力強化アイコンの開始位置 |
-| `ICON_DEBUFF_START` | [Number](Number.md) | [static] 能力減少アイコンの開始位置  |
+| `ICON_DEBUFF_START` | [Number](Number.md) | [static] 能力弱体アイコンの開始位置  |
 | `hp` | [Number](Number.md) | [read-only] HP |
 | `mp` | [Number](Number.md) | [read-only] MP |
 | `tp` | [Number](Number.md) | [read-only] TP |
@@ -382,7 +382,7 @@ HPのパーセント量を返す。
 
 
 #### isAutoBattle () → {Boolean}
-オートバトルか。
+[自動戦闘]か。
 
 
 #### isBuffAffected (paramId) → {Boolean}
