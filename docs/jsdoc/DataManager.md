@@ -1,8 +1,10 @@
 # Class: DataManager
-[データベース]の管理を行う静的クラス。 <br />
+[データベース]の管理を行う静的クラス。
+
 $XXXで大域変数に設定されているものや、セーブデータの管理など行う。
 
-大域変数について詳細は [Global](Global.md) のページを参照。
+大域変数について詳細は [Global](global.md) のページを参照。
+
 
 ### Properties:
 
@@ -102,7 +104,7 @@ data.noteに書いてあるデータを分解しdata.metaに設定。<br />
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
+| `savefileId` | [Number](Number.md) | セーブファイルID |
 
 
 #### (static) isWeapon (item) → {Boolean}
@@ -149,7 +151,7 @@ data.noteに書いてあるデータを分解しdata.metaに設定。<br />
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
+| `savefileId` | [Number](Number.md) | セーブファイルID |
 
 
 #### (static) loadGameWithoutRescue (savefileId) → {Boolean}
@@ -159,7 +161,7 @@ data.noteに書いてあるデータを分解しdata.metaに設定。<br />
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
+| `savefileId` | [Number](Number.md) | セーブファイルID |
 
 
 #### (static) loadGlobalInfo () → {[Array](Array.md).<[MV.SaveFileInfo](MV.SaveFileInfo.md)>}
@@ -177,13 +179,14 @@ GlobalInfo を読み込んで返す。
 
 
 #### (static) loadSavefileImages (info)
- セーブファイルに必要な画像を読み込む。
+ セーブファイルに必要な画像を読み込む。<br />
+読み込まれた画像は[ImageManager](ImageManager.md)に保管される。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `info` | Object |  |
+| `info` | [MV.SaveFileInfo](MV.SaveFileInfo.md) | セーブファイル情報 |
 
 
 #### (static) loadSavefileInfo (savefileId) → {Object}
@@ -193,7 +196,7 @@ GlobalInfo を読み込んで返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
+| `savefileId` | [Number](Number.md) | セーブファイルID |
 
 
 #### (static) makeEmptyMap ()
@@ -201,7 +204,8 @@ GlobalInfo を読み込んで返す。
 
 
 #### (static) makeSaveContents () → {Object}
- セーブ用のデータ作成。$gameで始まる大域変数をまとめたオブジェクトを返す。 ただし$gameTemp, $gameMessage, $gameTroop を含まない。
+セーブ用のデータ作成。$gameで始まる大域変数をまとめたオブジェクトを返す。<br />
+ただし$gameTemp, $gameMessage, $gameTroop を含まない。
 
 
 #### (static) makeSavefileInfo () → {[MV.SaveFileInfo](MV.SaveFileInfo.md)}
@@ -229,7 +233,7 @@ GlobalInfo を読み込んで返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
+| `savefileId` | [Number](Number.md) | セーブファイルID |
 
 
 #### (static) saveGameWithoutRescue (savefileId) → {Boolean}
@@ -239,17 +243,17 @@ GlobalInfo を読み込んで返す。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `savefileId` | [Number](Number.md) |  |
+| `savefileId` | [Number](Number.md) | セーブファイルID |
 
 
 #### (static) saveGlobalInfo (info)
-GlobalInfo を保存。
+セーブファイル情報を保存。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `info` | [MV.SaveFileInfo](MV.SaveFileInfo.md) |  |
+| `info` | [MV.SaveFileInfo](MV.SaveFileInfo.md) | セーブファイル情報 |
 
 
 #### (static) selectSavefileForNewGame ()
