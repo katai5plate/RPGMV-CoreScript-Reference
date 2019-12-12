@@ -8,6 +8,8 @@
 
 ゲームの一時データを保持しておくクラス。
 
+関連クラス: [Game_CommonEvent](Game_CommonEvent.md)
+
 
 ### Properties:
 
@@ -22,31 +24,31 @@
 ### Methods
 
 #### clearCommonEvent ()
-Clears the current reserved common event.
+一時保存の[コモンイベント]を消去。
 
 #### clearDestination ()
-Clears the destination of movement for the player.
+プレイヤーの移動目標データを消去。
 
 #### destinationX () → {[Number](Number.md)}
-Returns the x coordinate of the destination.
+移動目標の x座標を返す。
 
 #### destinationY () → {[Number](Number.md)}
-Returns the y coordinate of the destination.
+移動目標の y座標を返す。
 
 #### initialize ()
  オブジェクト生成時の初期化。
 
 #### isCommonEventReserved () → {Boolean}
-Returns true if a common event has been reserved.
+[コモンイベント]が保存されているか。
 
 #### isDestinationValid () → {Boolean}
-Determines if the destination for the player to move to is valid.
+目標位置が正しいデータか。
 
 #### isPlaytest () → {Boolean}
-Determines if the game is in Play Test mode.
+テストモードか。
 
 #### reserveCommonEvent (commonEventId)
-指定[コモンイベント](Game_CommonEvent.md)を、あとで処理するために保持。
+指定[コモンイベント]を、あとで処理するために保持。
 
 ##### Parameters:
 
@@ -56,18 +58,17 @@ Determines if the game is in Play Test mode.
 
 
 #### reservedCommonEvent () → {*}
-Returns common event data from the database.
-
+一時保存された[コモンイベント]を返す。
 
 #### setDestination (x, y)
-Sets the destination of the player for movement.
+移動目標の座標を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) | x座標(タイル数) |
+| `y` | [Number](Number.md) | y座標(タイル数) |
 
  <br>
 
