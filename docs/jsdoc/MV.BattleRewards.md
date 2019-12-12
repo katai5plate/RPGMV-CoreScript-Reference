@@ -1,19 +1,15 @@
-# Class: BattleRewards
+# Class: [MV](MV.md).BattleRewards
+戦闘の報酬パラメータ。
 
-## Namespace [RPG](RPG.md)
+関連クラス: [BattleManager](BattleManager.md), [RPG.Enemy](RPG.Enemy.md)
 
-戦闘の報酬。[BattleManager](BattleManager.md) の_rewards プロパティなどで使われる。
-
-[RPG.Enemy](RPG.Enemy.md) の exp, gold, dropItems プロパティから生成される。
-
-
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `gold` | [Number](Number.md) | 所持金 |
 | `exp` | [Number](Number.md) | 経験値 |
-| `items` | [Array](Array.md).<[RPG.BaseItem](RPG.BaseItem.md)> | アイテムの配列 |
+| `items` | [Array](Array.md).&lt;[RPG.BaseItem](RPG.BaseItem.md)&gt; | アイテムの配列 |
 
  <br>
 

@@ -1,23 +1,19 @@
-# Class: TextState
+# Class: [MV](MV.md).TextState
+テキストの表示に使われるパラメータ。
 
-## [MV](MV.md).  TextState ()
+関連クラス: [Window_Base](Window_Base.md)
 
-テキストの表示に使われるデータオブジェクト。
 
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `left` | [Number](Number.md) |  |
-| `text` | [String](String.md) |  |
-| `height` | [Number](Number.md) |  |
-
-<dl>
-</dl>
-
+| `index` | [Number](Number.md) | 処理中の文字の位置 |
+| `x` | [Number](Number.md) | x座標 |
+| `y` | [Number](Number.md) | y座標 |
+| `left` | [Number](Number.md) | 残り |
+| `text` | [String](String.md) | 文字列 |
+| `height` | [Number](Number.md) | 行高さ |
 
  <br>
 

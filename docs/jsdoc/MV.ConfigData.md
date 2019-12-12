@@ -1,10 +1,9 @@
-# Class: ConfigData
+# Class: [MV](MV.md).ConfigData
+[オプション]に含まれるパラメータ。
 
-## Namespace [RPG](RPG.md)
+関連クラス: [ConfigManager](ConfigManager.md)
 
-[オプション]に含まれるデータ。[ConfigManager](ConfigManager.md) で使われる。
-
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

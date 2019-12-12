@@ -1,13 +1,11 @@
 # Class: Window_Message
 
-## Window_Message ()
+## Extends: [Window_Base](Window_Base.md)
 
 #### new Window_Message ()
 [文章の表示]をするウィンドウ。
 
-標準では [Scene_Map](Scene_Map.md) と [Scene_Battle](Scene_Battle.md) で生成される。
-
-文章などの設定は [Game_Message](Game_Message.md)( [$gameMessage](global.md#$gamemessage-game_message) ) を通して行われる。
+関連クラス: [Scene_Map](Scene_Map.md), [Scene_Battle](Scene_Battle.md), [Game_Message](Game_Message.md)
 
 
 ##### Properties:
@@ -25,12 +23,6 @@
 | `_choiceWindow` | [Window_ChoiceList](Window_ChoiceList.md) | 選択肢ウィンドウ |
 | `_numberWindow` | [Window_NumberInput](Window_NumberInput.md) | 数値入力ウィンドウ |
 | `_itemWindow` | [Window_EventItem](Window_EventItem.md) | アイテム選択ウィンドウ |
-
-
-### Extends
-
-* [Window_Base](Window_Base.md)
-
 
 
 ### Inherited From

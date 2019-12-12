@@ -3,8 +3,9 @@
 ## Extends: [Window_Selectable](Window_Selectable.md)
 
 ### new Window_Command (x, y)
-コマンド選択用ウィンドウ。<br />
-コマンドは画面に表示される「表示名」と、内部でコマンドを識別するために使われる「シンボル」が別に存在するので注意。
+コマンド選択用ウィンドウ。
+
+コマンド項目には画面に表示される「表示名」と、内部で識別に使われる「シンボル」が別に存在するので注意。
 
 #### Parameters:
 
@@ -25,6 +26,13 @@
 * [Window_SkillType](Window_SkillType.md)
 * [Window_TitleCommand](Window_TitleCommand.md)
 * [Window_HorzCommand](Window_HorzCommand.md)
+
+
+### Properties:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `_list` | [Array](Array.md).&lt;[MV.CommandItem](MV.CommandItem.md)&gt; | コマンドリストの配列 |
 
 
 ### Inherited From
@@ -251,7 +259,7 @@
 ### Methods
 
 #### addCommand (name, symbol, enabled, ext)
-項目を追加する。 項目はオブジェクトに格納される。
+コマンド項目を追加。 
 
 ##### Parameters:
 
@@ -260,7 +268,7 @@
 | `name` | [String](String.md) | 表示名 |
 | `symbol` | [String](String.md) | シンボル |
 | `enabled` | Boolean | 選択可能か |
-| `ext` | * \| Object |  |
+| `ext` | * | 追加情報 |
 
 
 #### callOkHandler ()
@@ -268,35 +276,35 @@ Overrides: [Window_Selectable](Window_Selectable.md#callokhandler-)
 
 
 #### commandName (index) → {[String](String.md)}
-指定番号のコマンド名を返す。
+指定コマンド項目番号の表示名を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) | コマンド番号 |
+| `index` | [Number](Number.md) | コマンド項目番号 |
 
 
 #### commandSymbol (index) → {[String](String.md)}
-指定番号のシンボルを返す。
+指定コマンド項目番号のシンボルを返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) | コマンド番号 |
+| `index` | [Number](Number.md) | コマンド項目番号 |
 
 
-#### currentData () → {Object}
-現在のコマンドのオブジェクトを返す。
+#### currentData () → {[MV.CommandItem](MV.CommandItem.md)}
+現在のコマンド項目のオブジェクトを返す。
 
 
-#### currentExt () → {*|Object}
-現在のコマンドの ext プロパティを返す。
+#### currentExt () → {*}
+現在のコマンド項目の追加情報を返す。
 
 
 #### currentSymbol () → {[String](String.md)}
-現在のコマンドのシンボルを返す。
+現在のコマンド項目のシンボルを返す。
 
 
 #### drawItem (index)
@@ -304,17 +312,17 @@ Overrides: [Window_Selectable](Window_Selectable.md#drawitem-index)
 
 
 #### findExt (ext) → {[Number](Number.md)}
-指定した ext プロパティを持ったコマンドの番号を返す。
+指定した追加情報を持ったコマンド項目の番号を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `ext` | * \| Object | コマンドハンドラ |
+| `ext` | * | 追加情報 |
 
 
 #### findSymbol (symbol) → {[Number](Number.md)}
-指定されたシンボルをもつコマンドの番号を返す。
+指定されたシンボルをもつコマンド項目の番号を返す。
 
 ##### Parameters:
 
@@ -335,13 +343,13 @@ Overrides: [Window_Selectable](Window_Selectable.md#initialize-x-y-width-height)
 
 
 #### isCommandEnabled (index) → {Boolean}
-指定番号のコマンドが使用可能か。
+指定番号のコマンド項目が使用可能か。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) | コマンド番号 |
+| `index` | [Number](Number.md) | コマンド項目番号 |
 
 
 #### isCurrentItemEnabled () → {Boolean}
@@ -373,17 +381,17 @@ Overrides: [Window_Selectable](Window_Selectable.md#refresh-)
 
 
 #### selectExt (ext)
-ext プロパティに従ってコマンドを選択。
+指定した関数に従ってコマンド項目を選択。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `ext` | * \| Object | コマンドハンドラ |
+| `ext` | * | 追加情報 |
 
 
 #### selectSymbol (symbol)
-シンボルに従ってコマンドを選択。
+指定シンボルに従ってコマンド項目を選択。
 
 ##### Parameters:
 

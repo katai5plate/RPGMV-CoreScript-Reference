@@ -3,7 +3,9 @@
 ## Extends: [Sprite_Battler](Sprite_Battler.md)
 
 ### new Sprite_Actor (actor opt)
-アクター表示用のスプライトクラス。[Game_Actor](Game_Actor.md) を基に生成する。
+サイドビューのアクター表示用のスプライト。
+
+関連クラス: [Game_Actor](Game_Actor.md)
 
 #### Parameters:
 
@@ -25,7 +27,7 @@
 | `_shadowSprite` | [Sprite](Sprite.md) | 影のスプライト |
 | `_weaponSprite` | [Sprite_Weapon](Sprite_Weapon.md) | 武器のスプライト |
 | `_stateSprite` | [Sprite_StateOverlay](Sprite_StateOverlay.md) | ステートのスプライト |
-| `_actor` | [Game_Actor](Game_Actor.md) | 生成基のアクター |
+| `_actor` | [Game_Actor](Game_Actor.md) | 生成元のアクター |
 
 ###### MOTIONS
 サイドビュー時のモーション指定用の定数。<br />

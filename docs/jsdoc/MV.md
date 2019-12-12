@@ -1,8 +1,7 @@
 # Namespace: MV
+RPGツクールMVで使われるパラメータ。
 
-## MV
-
-RPGツクールMVで使われるデータオブジェクト。
+主に、メソッドに渡される引数として使われる。
 
 ネームスペースに MV とか、クラス名を便宜上つけているが、JavaScript上は単なる Object の一種。
 
@@ -22,6 +21,7 @@ RPGツクールMVで使われるデータオブジェクト。
 * [SaveFileInfo](MV.SaveFileInfo.md)
 * [TextState](MV.TextState.md)
 * [TouchInputEvents](MV.TouchInputEvents.md)
+
 
  <br>
 

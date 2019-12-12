@@ -13,7 +13,7 @@ $XXXで大域変数に設定されているものや、セーブデータの管�
 | `_globalId` | [String](String.md) | [static] システムID 'RPGMV' |
 | `_lastAccessedId` | [Number](Number.md) | [static] 最後にセーブ・ロードを行ったファイルのID |
 | `_errorUrl` | * | [static] |
-| `_databaseFiles` | [Array](Array.md).\<Object> | [static] 読み込むデータファイル情報(Object例:{ name: '$dataXxx', src: 'Xxx.json'}) |
+| `_databaseFiles` | [Array](Array.md).&lt;[MV.DatabaseFile](MV.DatabaseFile.md)&gt; | [static] 読み込むデータファイル情報 |
 
 
 ### Methods
@@ -38,13 +38,13 @@ data.noteに書いてあるデータを分解しdata.metaに設定。<br />
 
 
 #### (static) extractSaveContents (contents)
- 渡したオブジェクトから$gameで始まる大域変数に値を返す。
+渡したオブジェクトから$gameで始まる大域変数に値を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `contents` | Object |  |
+| `contents` | [MV.SaveContents](MV.SaveContents.md) | 大域変数用オブジェクト |
 
 
 #### (static) isAnySavefileExists () → {Boolean}
@@ -52,13 +52,13 @@ data.noteに書いてあるデータを分解しdata.metaに設定。<br />
 
 
 #### (static) isArmor (item) → {Boolean}
- 指定した項目が[防具]に含まれるか。
+指定した項目が[防具]に含まれるか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | object |  |
+| `item` | Object | [RPG.Armor](RPG.Armor.md)など |
 
 
 #### (static) isBattleTest () → {Boolean}
@@ -80,7 +80,7 @@ data.noteに書いてあるデータを分解しdata.metaに設定。<br />
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | Object |  |
+| `item` | Object | [RPG.Item](RPG.Item.md)など |
 
 
 #### (static) isMapLoaded () → {Boolean}
@@ -94,7 +94,7 @@ data.noteに書いてあるデータを分解しdata.metaに設定。<br />
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | Object |  |
+| `item` | Object | [RPG.Skill](RPG.Skill.md)など |
 
 
 #### (static) isThisGameFile (savefileId) → {Boolean}
@@ -114,7 +114,7 @@ data.noteに書いてあるデータを分解しdata.metaに設定。<br />
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | object |  |
+| `item` | Object | [RPG.Weapon](RPG.Weapon.md)など |
 
 
 #### (static) lastAccessedSavefileId () → {[Number](Number.md)}
@@ -165,7 +165,7 @@ data.noteに書いてあるデータを分解しdata.metaに設定。<br />
 
 
 #### (static) loadGlobalInfo () → {[Array](Array.md).<[MV.SaveFileInfo](MV.SaveFileInfo.md)>}
-GlobalInfo を読み込んで返す。
+セーブファイル情報の配列を読み込んで返す。
 
 
 #### (static) loadMapData (mapId)
@@ -203,9 +203,8 @@ GlobalInfo を読み込んで返す。
  空のマップを作成。
 
 
-#### (static) makeSaveContents () → {Object}
-セーブ用のデータ作成。$gameで始まる大域変数をまとめたオブジェクトを返す。<br />
-ただし$gameTemp, $gameMessage, $gameTroop を含まない。
+#### (static) makeSaveContents () → {[MV.SaveContents](MV.SaveContents.md)}
+セーブ用のデータ作成。$gameで始まる大域変数をまとめたオブジェクトを返す。
 
 
 #### (static) makeSavefileInfo () → {[MV.SaveFileInfo](MV.SaveFileInfo.md)}
@@ -257,7 +256,7 @@ GlobalInfo を読み込んで返す。
 
 
 #### (static) selectSavefileForNewGame ()
-[ニューゲーム]用のセーブファイルを選択。
+ 新規ゲーム用のセーブファイルを選択。
 
 
 #### (static) setupBattleTest ()

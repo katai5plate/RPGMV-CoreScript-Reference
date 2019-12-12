@@ -7,9 +7,9 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `_path` | [String](String.md) | [static] プラグインフォルダのパス |
-| `_scripts` | [Array](Array.md).<[String](String.md)> | [static] |
-| `_errorUrls` | [Array](Array.md).<[String](String.md)> | [static] |
-| `_parameters` | Object | [static] {[key: string]: {[key: string]: string}} |
+| `_scripts` | [Array](Array.md).<[String](String.md)> | [static] スクリプト名の配列 |
+| `_errorUrls` | [Array](Array.md).<[String](String.md)> | [static] 読み込みエラーを記録した配列 |
+| `_parameters` | Object | [static] パラメータのオブジェクト { スクリプト名: [Parameters](MV.PluginSettings.md#parameters), … } |
 
 
 ### Methods
@@ -19,27 +19,27 @@
 
 
 #### (static) loadScript (name)
- 外部スクリプトファイルを読み込む。
+プラグインファイルを読み込む。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.md) |  スクリプトファイル名 |
+| `name` | [String](String.md) | ファイル名(拡張子.jsを含む) |
 
 
 #### (static) onError (e)
- エラーハンドラ。
+エラーハンドラ。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `e` | Event |  |
+| `e` | Event | エラーイベント |
 
 
 #### (static) parameters (name) → {Object}
- 指定プラグイン名に対応するパラメータをオブジェクトで返す。 本体ヘルプの「プラグイン仕様」の項目も参照のこと。
+指定プラグイン名に対応するパラメータをオブジェクトで返す。 本体ヘルプの「プラグイン仕様」の項目も参照のこと。
 
 ##### Parameters:
 
@@ -56,7 +56,7 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `name` | [String](String.md) |  プラグイン名(英字の大小を区別しない) |
-| `parameters` | Object |  パラメータのキーと値の組み合わせ |
+| `parameters` | [Parameters](MV.PluginSettings.md#parameters) |  パラメータの[名前]と[値]の組み合わせ |
 
 
 #### (static) setup (plugins)
@@ -66,7 +66,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `plugins` | [Array](Array.md).<[MV.PluginSettings](MV.PluginSettings.md)> |  |
+| `plugins` | [Array](Array.md).&lt;[MV.PluginSettings](MV.PluginSettings.md)&gt; | プラグイン設定の配列 |
 
 
 
