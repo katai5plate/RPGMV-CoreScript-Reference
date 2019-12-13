@@ -32,7 +32,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_list` | [Array](Array.md).&lt;[MV.CommandItem](MV.CommandItem.md)&gt; | コマンドリストの配列 |
+| `_list` | [Array](Array.md).&lt;[MV.CommandItem](MV.CommandItem.md)&gt; | コマンド項目の配列 |
 
 
 ### Inherited From
