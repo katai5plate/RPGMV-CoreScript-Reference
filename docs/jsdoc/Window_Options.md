@@ -364,7 +364,7 @@ Overrides: [Window_Selectable](Window_Command.md#processok-)
 
 
 #### windowHeight () → {[Number](Number.md)}
-Overrides: [Window_Command)](Window_Command.md#windowheight---number)
+Overrides: [Window_Command](Window_Command.md#windowheight---number)
 
 
 #### windowWidth () → {[Number](Number.md)}
