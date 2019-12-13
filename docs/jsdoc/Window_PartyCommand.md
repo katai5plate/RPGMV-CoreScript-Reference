@@ -234,7 +234,7 @@
 * [commandName (index)](Window_Command.md#commandname-index--string)
 * [commandSymbol (index)](Window_Command.md#commandsymbol-index--string)
 * [currentData ()](Window_Command.md#currentdata---object)
-* [currentExt ()](Window_Command.md#currentext---object)
+* [currentExt ()](Window_Command.md#currentext---)
 * [currentSymbol ()](Window_Command.md#currentsymbol---string)
 * [drawItem (index)](Window_Command.md#drawitem-index)
 * [findExt (ext)](Window_Command.md#findext-ext--number)
