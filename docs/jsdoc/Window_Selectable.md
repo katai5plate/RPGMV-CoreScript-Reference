@@ -208,6 +208,7 @@ Overrides: [Window_Base](Window_Base.md#activate-)
 指定したハンドラを呼ぶ。
 
 ##### Parameters:
+
 | Name | Type | Description |
 | --- | --- | --- |
 | `symbol` | [String](String.md) | ハンドラ名 |
