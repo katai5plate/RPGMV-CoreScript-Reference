@@ -341,7 +341,7 @@ Overrides: [Window_Selectable](Window_Selectable.md#processok-)
 Overrides: [Window_Selectable](Window_Selectable.md#refresh-)
 
 
-#### table () → {[Array](Array.md).<[Array](Array.md).<string>>}
+#### table () → {[Array](Array.md).&lt;[Array](Array.md).&lt;[String](String.md)&gt;&gt;}
 Returns the table of characters to input.
 
 
