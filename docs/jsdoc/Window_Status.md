@@ -1,22 +1,16 @@
 # Class: Window_Status
 
-## Window_Status ()
+## Extends: [Window_Selectable](Window_Selectable.md)
 
-#### new Window_Status ()
-
+### new Window_Status ()
 アクターの全ステータスを表示するウィンドウ。
 
 
-##### Properties:
+#### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `_actor` | [Game_Actor](Game_Actor.md) | アクター |
-
-
-### Extends
-
-* [Window_Selectable](Window_Selectable.md)
 
 
 ### Inherited From
@@ -353,7 +347,7 @@
 
 
 #### initialize ()
-Overrides: [Window_Selectable.initialize (x, y, width, height)](Window_Selectable.md#initialize-x-y-width-height)
+Overrides: [Window_Selectable](Window_Selectable.md#initialize-x-y-width-height)
 
 
 #### lineColor () → {[String](String.md)}
@@ -365,7 +359,7 @@ Overrides: [Window_Selectable.initialize (x, y, width, height)](Window_Selectabl
 
 
 #### refresh ()
-Overrides:[Window_Selectable.refresh ()](Window_Selectable.md#refresh-)
+Overrides: [Window_Selectable](Window_Selectable.md#refresh-)
 
 
 #### setActor (actor)
