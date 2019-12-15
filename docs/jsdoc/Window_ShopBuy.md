@@ -12,17 +12,17 @@ The window for selecting an item to buy on the shop screen.
 | `x` | [Number](Number.md) |  |
 | `y` | [Number](Number.md) |  |
 | `height` | [Number](Number.md) |  |
-| `shopGoods` | [Array](Array.md).<[Array](Array.md).<*>> |  |
+| `shopGoods` | [Array](Array.md).&lt;[Array](Array.md).&lt;*&gt;&gt; |  |
 
 
 ### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_shopGoods` | [Array](Array.md).<[Array](Array.md).<*>> |  |
+| `_shopGoods` | [Array](Array.md).&lt;[Array](Array.md).&lt;*&gt;&gt; |  |
 | `_money` | [Number](Number.md) |  |
-| `_data` | [Array](Array.md).<[RPG.BaseItem](RPG.BaseItem.md)> |  |
-| `_price` | [Array](Array.md).<[Number](Number.md)> |  |
+| `_data` | [Array](Array.md).&lt;[RPG.BaseItem](RPG.BaseItem.md)&gt; |  |
+| `_price` | [Array](Array.md).&lt;[Number](Number.md)&gt; |  |
 | `_statusWindow` | [Window_ShopStatus](Window_ShopStatus.md) |  |
 
 
