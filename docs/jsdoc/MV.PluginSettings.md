@@ -2,7 +2,7 @@
 
 | データベース| JSファイル | 大域変数 |
 | --- | --- | --- |
-| プラグイン | plugins.js | [$plugins](global.md#plugins-plugins) (配列) |
+| プラグイン | plugins.js | [$plugins](global.md#plugins-arraymvpluginsettings) (配列) |
 
 プラグイン管理用のパラメータ。plugins.js は dataフォルダではなく jsフォルダにある。
 
