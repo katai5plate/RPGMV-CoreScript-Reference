@@ -258,10 +258,10 @@ Overrides: [Window_SkillList](Window_SkillList.md#initialize-x-y-width-height)
 
 
 #### show ()
-Overrides: [Window_SkillList](Window_Base.md#show-)
+Overrides: [Window_Base](Window_Base.md#show-)
 
 
 #### hide ()
-Overrides: [Window_SkillList](Window_Base.md#hide-)
+Overrides: [Window_Base](Window_Base.md#hide-)
 
 
