@@ -1,13 +1,11 @@
 # Class: Window_ShopStatus
 
-## Window_ShopStatus (x, y, width, height)
+## Extends: [Window_Base](Window_Base.md)
 
-#### new Window_ShopStatus (x, y, width, height)
-
+### new Window_ShopStatus (x, y, width, height)
 店の装備選択時に表示されるウィンドウ。
 
-
-##### Parameters:
+#### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -16,7 +14,8 @@
 | `width` | [Number](Number.md) | 幅(ピクセル) |
 | `height` | [Number](Number.md) | 高さ(ピクセル) |
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -24,9 +23,6 @@
 | `_pageIndex` | [Number](Number.md) | ページ番号 |
 
 
-### Extends
-
-* [Window_Base](Window_Base.md)
 
 
 ### Inherited From
@@ -291,3 +287,4 @@ Overrides: [Window_Base.update ()](Window_Base.md#update-)
 
 #### updatePage ()
 ページをアップデート。
+

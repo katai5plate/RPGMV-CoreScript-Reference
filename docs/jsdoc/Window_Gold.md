@@ -1,22 +1,16 @@
 # Class: Window_Gold
 
-## Window_Gold (x, y)
+## Extends: [Window_Base](Window_Base.md)
 
-#### new Window_Gold (x, y)
-
+### new Window_Gold (x, y)
 所持金を表示するウィンドウ。
 
-##### Parameters:
+#### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `x` | [Number](Number.md) | x座標(ピクセル) |
 | `y` | [Number](Number.md) | y座標(ピクセル) |
-
-
-### Extends
-
-* [Window_Base](Window_Base.md)
 
 
 ### Inherited From

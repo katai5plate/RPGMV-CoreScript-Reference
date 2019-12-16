@@ -1,12 +1,11 @@
 # Class: Window_SkillStatus
 
-## Window_SkillStatus (x, y, width, height)
+## Extends: [Window_Base](Window_Base.md)
 
-#### new Window_SkillStatus (x, y, width, height)
-
+### new Window_SkillStatus (x, y, width, height)
 スキル選択時に表示されるウィンドウ。
 
-##### Parameters:
+#### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -15,16 +14,12 @@
 | `width` | [Number](Number.md) | 幅(ピクセル) |
 | `height` | [Number](Number.md) | 高さ(ピクセル) |
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `_actor` | [Game_Actor](Game_Actor.md) | アクター |
-
-
-### Extends
-
-* [Window_Base](Window_Base.md)
 
 
 ### Inherited From
@@ -189,3 +184,4 @@ Overrides: [Window_Base.initialize (x, y, width, height)](Window_Base.md#initial
 | Name | Type | Description |
 | --- | --- | --- |
 | `actor` | [Game_Actor](Game_Actor.md) | アクター |
+

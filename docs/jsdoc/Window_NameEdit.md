@@ -1,30 +1,24 @@
 # Class: Window_NameEdit
 
-## Window_NameEdit (actor, maxLength)
+## Extends: [Window_Base](Window_Base.md)
 
-#### new Window_NameEdit (actor, maxLength)
-
+### new Window_NameEdit (actor, maxLength)
 アクターの名前を編集するウィンドウ。
 
-
-##### Parameters:
+#### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `actor` | [Game_Actor](Game_Actor.md) | アクター |
 | `maxLength` | [Number](Number.md) | 最大文字数 |
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `_name` | [String](String.md) | 名前 |
 | `_index` | [Number](Number.md) | 番号 |
-
-
-### Extends
-
-* [Window_Base](Window_Base.md)
 
 
 ### Inherited From

@@ -1,21 +1,15 @@
 # Class: Window_MapName
 
-## Window_MapName ()
+## Extends: [Window_Base](Window_Base.md)
 
-#### new Window_MapName ()
-
+### new Window_MapName ()
 マップ名を表示するウィンドウ。
 
-##### Properties:
+#### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `_showCount` | [Number](Number.md) | 表示時間(フレーム) |
-
-
-### Extends
-
-* [Window_Base](Window_Base.md)
 
 
 ### Inherited From

@@ -1,30 +1,24 @@
 # Class: Window_EquipStatus
 
-## Window_EquipStatus (x, y)
+## Extends: [Window_Base](Window_Base.md)
 
-#### new Window_EquipStatus (x, y)
-
+### new Window_EquipStatus (x, y)
 装備時のパラメータの変化を表示するウィンドウ。
 
-
-##### Parameters:
+#### Parameters:
 
 | Parameter | Type | Description |
 | --- | --- | --- |
 | `x` | [Number](Number.md) | x座標(ピクセル) |
 | `y` | [Number](Number.md) | y座標(ピクセル) |
 
-##### Properties:
+
+### Properties:
 
 | Parameter | Type | Description |
 | --- | --- | --- |
 | `_actor` | [Game_Actor](Game_Actor.md) | アクター |
 | `_tempActor` | [Game_Actor](Game_Actor.md) | 作業用のアクター |
-
-
-### Extends
-
-* [Window_Base](Window_Base.md)
 
 
 ### Inherited From
