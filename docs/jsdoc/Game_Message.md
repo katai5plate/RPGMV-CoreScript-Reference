@@ -4,7 +4,7 @@
 
 | 大域変数 |
 | --- |
-| [$gameMessage](global.md#$gamemessage-game_message) |
+| [$gameMessage](global.md#gamemessage-game_message) |
 
 メッセージ文字列や設定をこのクラスに一時保存し、ウィンドウが表示の際に参照するクラス。
 
