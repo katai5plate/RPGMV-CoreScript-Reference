@@ -1,21 +1,17 @@
 # Class: Scene_Boot
 
-## Scene_Boot ()
+## Extends: [Scene_Base](Scene_Base.md)
 
-#### new Scene_Boot ()
-
+### new Scene_Boot ()
  起動時の初期化を行うシーン。システムに必要なデータや画像を読み込み、戦闘・イベントテストの分岐なども行う。
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_startDate` | Date |  |
+| `_startDate` | Date | 開始時刻 |
 
-
-### Extends
-
-* [Scene_Base](Scene_Base.md)
 
 ### Inherited From
 
@@ -86,11 +82,11 @@
 
 
 #### create ()
-Overrides: [Scene_Base.create ()](Scene_Base.md#create-)
+Overrides: [Scene_Base](Scene_Base.md#create-)
 
 
 #### initialize ()
-Overrides: [Scene_Base.initialize ()](Scene_Base.md#initialize-)
+Overrides: [Scene_Base](Scene_Base.md#initialize-)
 
 
 #### isGameFontLoaded () → {Boolean}
@@ -98,7 +94,7 @@ Overrides: [Scene_Base.initialize ()](Scene_Base.md#initialize-)
 
 
 #### isReady () → {Boolean}
-Overrides: [Scene_Base.isReady ()](Scene_Base.md#isReady-)
+Overrides: [Scene_Base](Scene_Base.md#isReady-)
 
 
 #### loadSystemWindowImage ()
@@ -106,7 +102,7 @@ Overrides: [Scene_Base.isReady ()](Scene_Base.md#isReady-)
 
 
 #### start ()
-Overrides: [Scene_Base.start ()](Scene_Base.md#start-)
+Overrides: [Scene_Base](Scene_Base.md#start-)
 
 
 #### updateDocumentTitle ()

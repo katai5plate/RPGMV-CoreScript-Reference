@@ -1,14 +1,22 @@
 # Class: Scene_Base
 
-## Scene_Base ()
+## Extends: [Stage](Stage.md)
 
-#### new Scene_Base ()
+### new Scene_Base ()
+シーンの基礎オブジェクト。シーン管理は [SceneManager](SceneManager.md) で行う。
 
- シーンの基礎オブジェクト。シーン管理は [SceneManager](SceneManager.md) で行う。
 
-[Scene_Boot](Scene_Boot.md), [Scene_Title](Scene_Title.md), [Scene_Gameover](Scene_Gameover.md), [Scene_Map](Scene_Map.md), [Scene_Battle](Scene_Battle.md), [Scene_MenuBase](Scene_MenuBase.md) のスーパークラス。
+### Sub Classes
 
-##### Properties:
+* [Scene_Boot](Scene_Boot.md)
+* [Scene_Title](Scene_Title.md)
+* [Scene_Gameover](Scene_Gameover.md)
+* [Scene_Map](Scene_Map.md)
+* [Scene_Battle](Scene_Battle.md)
+* [Scene_MenuBase](Scene_MenuBase.md)
+
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -19,10 +27,6 @@
 | `_imageReservationId` | [Number](Number.md) | [ImageManager](ImageManager.md) で使う画像ID |
 | `_windowLayer` | [WindowLayer](WindowLayer.md) |  ウィンドウレイヤ |
 
-
-### Extends
-
-* [Stage](Stage.md)
 
 ### Inherited From
 

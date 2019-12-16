@@ -1,14 +1,14 @@
 # Class: Scene_Map
 
-## Scene_Map ()
+## Extends: [Scene_Base](Scene_Base.md)
 
-#### new Scene_Map ()
+### new Scene_Map ()
+マップ表示シーン。
 
- マップ表示シーン。マップ表示スプライト [Spriteset_Map](Spriteset_Map.md) と 関連ウィンドウ[Window_MapName](Window_MapName.md) 、 [Window_ScrollText](Window_ScrollText.md) 、 [Window_Message](Window_Message.md) を持っている。
- 
-マップタイルの描画は \_spriteset([Spriteset_Map](Spriteset_Map.md)) に含まれる \_tilemap([Tilemap](Tilemap.md) か [ShaderTilemap](ShaderTilemap.md))で行われる。
+関連クラス: [Spriteset_Map](Spriteset_Map.md), [Tilemap](Tilemap.md), [ShaderTilemap](ShaderTilemap.md), [Spriteset_Map](Spriteset_Map.md), [Window_MapName](Window_MapName.md), [Window_ScrollText](Window_ScrollText.md), [Window_Message](Window_Message.md)
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -23,10 +23,6 @@
 | `_scrollTextWindow` | [Window_ScrollText](Window_ScrollText.md) | スクロール表示ウィンドウ |
 | `_messageWindow` | [Window_Message](Window_Message.md) | メッセージウィンドウ |
 
-
-### Extends
-
-* [Scene_Base](Scene_Base.md)
 
 ### Inherited From
 
@@ -248,7 +244,7 @@ Overrides: [Scene_Base.update ()](Scene_Base.md#update-)
 
 
 #### updateMain ()
-[$gameMap](global.html#$gameMap), [$gamePlayer](global.html#$gamePlayer), [$gameTimer](global.html#$gameTimer), [$gameScreen](global.html#$gameScreen) をアップデート。
+[$gameMap](global.md#gamemap-game_map), [$gamePlayer](global.md#gameplayer-game_player), [$gameTimer](global.md#gametimer-game_timer), [$gameScreen](global.md#gamescreen-game_screen) をアップデート。
 
 
 #### updateMainMultiply ()
@@ -265,3 +261,5 @@ Overrides: [Scene_Base.update ()](Scene_Base.md#update-)
 
 #### updateWaitCount () → {Boolean}
  待ちカウントをアップデート。
+ 
+ 

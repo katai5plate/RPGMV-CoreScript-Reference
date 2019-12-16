@@ -1,11 +1,12 @@
 # Class: Scene_Title
 
-## Scene_Title ()
+## Extends: [Scene_Base](Scene_Base.md)
 
-#### new Scene_Title ()
+### new Scene_Title ()
 タイトルのシーン。
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -14,10 +15,6 @@
 | `_backSprite2` | [Sprite](Sprite.md) | 背景2 |
 | `_gameTitleSprite` | [Sprite](Sprite.md) | タイトル |
 
-
-### Extends
-
-* [Scene_Base](Scene_Base.md)
 
 ### Inherited From
 
