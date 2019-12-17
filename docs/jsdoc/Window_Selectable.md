@@ -5,6 +5,8 @@
 ### new Window_Selectable (x, y, width, height)
 コマンドカーソルの移動やスクロールを行うウィンドウ。
 
+関連クラス: [Input](Input.md)
+
 #### Parameters:
 
 | Name | Type | Description |
@@ -42,11 +44,27 @@
 | `_cursorFixed` | Boolean | カーソルが固定されているか |
 | `_cursorAll` | Boolean | 全項目を選択しているか |
 | `_stayCount` | [Number](Number.md) | 選択されてからの待ち時間(フレーム) |
-| `_helpWindow` | * | ヘルプウィンドウ |
-| `_handlers` | Object | ハンドラ |
+| `_helpWindow` | [Window_Help](Window_Help.md) | ヘルプウィンドウ |
+| `_handlers` | Object | {[入力ハンドラ名](Window_Selectable.md#symbol): ハンドラ関数, …} |
 | `_touching` | Boolean | タッチされているか |
 | `_scrollX` | [Number](Number.md) | x軸のスクロール量 |
 | `_scrollY` | [Number](Number.md) | y軸のスクロール量 |
+
+#### 入力ハンドラ名
+RPGツクールMVの主要な入力ハンドラ。<br />
+キーボード、ゲームパッド、タッチパネル、マウスの入力を共通した以下のシンボルに変換している。
+
+| Symbol | Description |
+| --- | --- |
+| `ok` | OK |
+| `cancel` | キャンセル |
+| `up` | ↑ |
+| `down` | ↓ |
+| `left` | ← |
+| `right` | → |
+| `pageup` | ページアップ |
+| `pagedown` | ページダウン |
+
 
 ### Inherited From
 
@@ -211,7 +229,7 @@ Overrides: [Window_Base](Window_Base.md#activate-)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `symbol` | [String](String.md) | ハンドラ名 |
+| `symbol` | [String](String.md) | [入力ハンドラ名](Window_Selectable.md#symbol) |
 
 
 #### callOkHandler ()
@@ -375,7 +393,7 @@ Overrides: [Window_Base](Window_Base.md#initialize-x-y-width-height)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `symbol` | [String](String.md) | ハンドラ名 |
+| `symbol` | [String](String.md) | [入力ハンドラ名](Window_Selectable.md#symbol) |
 
 
 #### isHorizontal () → {Boolean}
@@ -589,7 +607,7 @@ OKの処理。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `symbol` | [String](String.md) | ハンドラ名 |
+| `symbol` | [String](String.md) | [入力ハンドラ名](Window_Selectable.md#symbol) |
 | `method` | Function | ハンドラ関数 |
 
 
