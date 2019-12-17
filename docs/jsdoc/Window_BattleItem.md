@@ -228,6 +228,7 @@ The window for selecting an item to use on the battle screen.
 * [topIndex ()](Window_Selectable.md#topindex---number)
 * [topRow ()](Window_Selectable.md#toprow---number)
 * [update ()](Window_Selectable.md#update-)
+* [updateArrows ()](Window_Selectable.md#updatearrows-)
 * [updateCursor ()](Window_Selectable.md#updatecursor-)
 * [updateInputData ()](Window_Selectable.md#updateinputdata-)
 

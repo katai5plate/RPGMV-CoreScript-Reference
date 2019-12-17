@@ -239,6 +239,7 @@ The window for selecting a save file on the save and load screens.
 * [topIndex ()](Window_Selectable.md#topindex---number)
 * [topRow ()](Window_Selectable.md#toprow---number)
 * [update ()](Window_Selectable.md#update-)
+* [updateArrows ()](Window_Selectable.md#updatearrows-)
 * [updateCursor ()](Window_Selectable.md#updatecursor-)
 * [updateHelp ()](Window_Selectable.md#updatehelp-)
 * [updateInputData ()](Window_Selectable.md#updateinputdata-)

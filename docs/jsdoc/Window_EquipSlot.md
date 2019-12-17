@@ -242,6 +242,7 @@ The window for selecting an equipment slot on the equipment screen.
 * [spacing ()](Window_Selectable.md#spacing---number)
 * [topIndex ()](Window_Selectable.md#topindex---number)
 * [topRow ()](Window_Selectable.md#toprow---number)
+* [updateArrows ()](Window_Selectable.md#updatearrows-)
 * [updateCursor ()](Window_Selectable.md#updatecursor-)
 * [updateInputData ()](Window_Selectable.md#updateinputdata-)
 

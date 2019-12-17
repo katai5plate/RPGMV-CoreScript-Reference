@@ -228,6 +228,7 @@
 * [topIndex ()](Window_Selectable.md#topindex---number)
 * [topRow ()](Window_Selectable.md#toprow---number)
 * [update ()](Window_Selectable.md#update-)
+* [updateArrows ()](Window_Selectable.md#updatearrows-)
 * [updateCursor ()](Window_Selectable.md#updatecursor-)
 * [updateHelp ()](Window_Selectable.md#updatehelp-)
 * [updateInputData ()](Window_Selectable.md#updateinputdata-)
@@ -303,3 +304,4 @@ Overrides: [Window_Selectable](Window_Selectable.md#processok-)
 
 #### windowWidth () → {[Number](Number.md)}
 Overrides: [Window_Command](Window_Command.md#windowwidth---number)
+

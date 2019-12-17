@@ -243,6 +243,7 @@ The window for inputting quantity of items to buy or sell on the shop screen.
 * [spacing ()](Window_Selectable.md#spacing---number)
 * [topIndex ()](Window_Selectable.md#topindex---number)
 * [topRow ()](Window_Selectable.md#toprow---number)
+* [updateArrows ()](Window_Selectable.md#updatearrows-)
 * [updateHelp ()](Window_Selectable.md#updatehelp-)
 * [updateInputData ()](Window_Selectable.md#updateinputdata-)
 

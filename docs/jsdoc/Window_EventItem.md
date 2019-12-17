@@ -234,6 +234,7 @@ The window used for the event command [Select Item].
 * [topIndex ()](Window_Selectable.md#topindex---number)
 * [topRow ()](Window_Selectable.md#toprow---number)
 * [update ()](Window_Selectable.md#update-)
+* [updateArrows ()](Window_Selectable.md#updatearrows-)
 * [updateCursor ()](Window_Selectable.md#updatecursor-)
 * [updateInputData ()](Window_Selectable.md#updateinputdata-)
 

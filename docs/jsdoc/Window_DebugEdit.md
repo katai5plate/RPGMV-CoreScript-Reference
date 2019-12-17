@@ -239,6 +239,7 @@ The window for displaying switches and variables on the debug screen.
 * [spacing ()](Window_Selectable.md#spacing---number)
 * [topIndex ()](Window_Selectable.md#topindex---number)
 * [topRow ()](Window_Selectable.md#toprow---number)
+* [updateArrows ()](Window_Selectable.md#updatearrows-)
 * [updateCursor ()](Window_Selectable.md#updatecursor-)
 * [updateHelp ()](Window_Selectable.md#updatehelp-)
 * [updateInputData ()](Window_Selectable.md#updateinputdata-)

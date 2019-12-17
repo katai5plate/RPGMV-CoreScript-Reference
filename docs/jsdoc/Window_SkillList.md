@@ -26,7 +26,7 @@ The window for selecting a skill on the skill screen.
 | --- | --- | --- |
 | `_actor` | [Game_Actor](Game_Actor.md) |  |
 | `_stypeId` | [Number](Number.md) |  |
-| `_data` | [Array](Array.md).<[RPG.Skill](RPG.Skill.md)> |  |
+| `_data` | [Array](Array.md).&lt;[RPG.Skill](RPG.Skill.md)&gt; |  |
 
 
 ### Inherited From
@@ -244,12 +244,12 @@ The window for selecting a skill on the skill screen.
 * [topIndex ()](Window_Selectable.md#topindex---number)
 * [topRow ()](Window_Selectable.md#toprow---number)
 * [update ()](Window_Selectable.md#update-)
+* [updateArrows ()](Window_Selectable.md#updatearrows-)
 * [updateCursor ()](Window_Selectable.md#updatecursor-)
 * [updateInputData ()](Window_Selectable.md#updateinputdata-)
 
 
 ### Methods
-
 
 #### costWidth () → {[Number](Number.md)}
 

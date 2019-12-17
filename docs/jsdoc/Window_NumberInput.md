@@ -3,7 +3,6 @@
 ## Extends: [Window_Selectable](Window_Selectable.md)
 
 ### new Window_NumberInput (messageWindow)
-
 The window used for the event command [Input Number].
 
 #### Parameters:
@@ -233,13 +232,13 @@ The window used for the event command [Input Number].
 * [showHelpWindow ()](Window_Selectable.md#showhelpwindow-)
 * [topIndex ()](Window_Selectable.md#topindex---number)
 * [topRow ()](Window_Selectable.md#toprow---number)
+* [updateArrows ()](Window_Selectable.md#updatearrows-)
 * [updateCursor ()](Window_Selectable.md#updatecursor-)
 * [updateHelp ()](Window_Selectable.md#updatehelp-)
 * [updateInputData ()](Window_Selectable.md#updateinputdata-)
 
 
 ### Methods
-
 
 #### buttonY () → {[Number](Number.md)}
 

@@ -642,6 +642,10 @@ OKの処理。
 Overrides: [Window_Base](Window_Base.md#update-)
 
 
+#### updateArrows ()
+上下に項目の続きがあることを示す矢印のアップデート。
+
+
 #### updateCursor ()
 カーソルをアップデート。
 
