@@ -3,7 +3,7 @@
 ## Extends: [Scene_Base](Scene_Base.md)
 
 ### new Scene_Battle ()
-戦闘シーンのクラス。
+戦闘シーンのコマンドやメッセージのウィンドウ、[敵キャラ]やサイドビューの[アクター]の画像を管理するクラス。
 
 関連クラス: [SceneManager](SceneManager.md), [Game_Actor](Game_Actor.md), [Game_Party](Game_Party.md), [Game_Enemy](Game_Enemy.md), [Game_Troop](Game_Troop.md), [Scene_Battle](Scene_Battle.md), [BattleManager](BattleManager.md)
 
@@ -19,7 +19,7 @@
 | `_skillWindow` | [Window_BattleSkill](Window_BattleSkill.md) | [スキル]ウィンドウ |
 | `_itemWindow` | [Window_BattleItem](Window_BattleItem.md) | [アイテム]ウィンドウ |
 | `_actorWindow` | [Window_BattleActor](Window_BattleActor.md) | [アクター]選択ウィンドウ |
-| `_enemyWindow` | [Window_BattleEnemy](Window_BattleEnemy.md) | [敵]選択ウィンドウ |
+| `_enemyWindow` | [Window_BattleEnemy](Window_BattleEnemy.md) | [敵キャラ]選択ウィンドウ |
 | `_logWindow` | [Window_BattleLog](Window_BattleLog.md) | ログウィンドウ |
 | `_helpWindow` | [Window_Help](Window_Help.md) | ヘルプウィンドウ |
 | `_messageWindow` | [Window_Message](Window_Message.md) | メッセージウィンドウ |
@@ -134,7 +134,7 @@ Overrides: [Scene_Base](Scene_Base.md#create-)
 
 
 #### createEnemyWindow ()
-[敵]選択ウィンドウ([Window_BattleEnemy](Window_BattleEnemy.md))を生成。
+[敵キャラ]選択ウィンドウ([Window_BattleEnemy](Window_BattleEnemy.md))を生成。
 
 
 #### createHelpWindow ()
@@ -166,7 +166,7 @@ Overrides: [Scene_Base](Scene_Base.md#create-)
 
 #### createSpriteset ()
 戦闘シーンに必要なスプライトセットを生成。
-[アクター][敵]など。
+[アクター][敵キャラ]など。
 
 
 #### createStatusWindow ()
@@ -178,7 +178,7 @@ Overrides: [Scene_Base](Scene_Base.md#create-)
 
 
 #### initialize ()
-Overrides:[Stage](Stage.md#initialize-)
+Overrides:[Scene_Base](Scene_Base.md#initialize-)
 
 
 #### isAnyInputWindowActive () → {Boolean}
@@ -198,11 +198,11 @@ Overrides:[Stage](Stage.md#initialize-)
 
 
 #### onEnemyCancel ()
-[敵]選択ウィンドウで[キャンセル]が選択された時のハンドラ
+[敵キャラ]選択ウィンドウで[キャンセル]が選択された時のハンドラ
 
 
 #### onEnemyOk ()
-[敵]選択ウィンドウで[OK]が選択された時のハンドラ。
+[敵キャラ]選択ウィンドウで[OK]が選択された時のハンドラ。
 
 
 #### onItemCancel ()
@@ -233,7 +233,7 @@ Overrides:[Stage](Stage.md#initialize-)
 
 
 #### selectEnemySelection ()
-[敵]選択ウィンドウの準備。
+[敵キャラ]選択ウィンドウの準備。
 
 
 #### selectNextCommand ()
