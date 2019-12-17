@@ -5,7 +5,7 @@
 ### new Scene_Map ()
 マップ表示シーン。
 
-関連クラス: [Spriteset_Map](Spriteset_Map.md), [Tilemap](Tilemap.md), [ShaderTilemap](ShaderTilemap.md), [Spriteset_Map](Spriteset_Map.md), [Window_MapName](Window_MapName.md), [Window_ScrollText](Window_ScrollText.md), [Window_Message](Window_Message.md)
+関連クラス: [Spriteset_Map](Spriteset_Map.md), [Tilemap](Tilemap.md), [ShaderTilemap](ShaderTilemap.md), [Spriteset_Map](Spriteset_Map.md), [Window_MapName](Window_MapName.md), [Window_ScrollText](Window_ScrollText.md), [Window_Message](Window_Message.md), [Game_Timer](Game_Timer.md), [Game_Screen](Game_Screen.md)
 
 
 ### Properties:

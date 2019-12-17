@@ -5,7 +5,7 @@
 ### new Scene_Battle ()
 戦闘シーンのコマンドやメッセージのウィンドウ、[敵キャラ]やサイドビューの[アクター]の画像を管理するクラス。
 
-関連クラス: [SceneManager](SceneManager.md), [Game_Actor](Game_Actor.md), [Game_Party](Game_Party.md), [Game_Enemy](Game_Enemy.md), [Game_Troop](Game_Troop.md), [Scene_Battle](Scene_Battle.md), [BattleManager](BattleManager.md)
+関連クラス: [SceneManager](SceneManager.md), [Game_Actor](Game_Actor.md), [Game_Party](Game_Party.md), [Game_Enemy](Game_Enemy.md), [Game_Troop](Game_Troop.md), [Scene_Battle](Scene_Battle.md), [BattleManager](BattleManager.md), [Game_Timer](Game_Timer.md), [Game_Screen](Game_Screen.md)
 
 
 ### Properties:
