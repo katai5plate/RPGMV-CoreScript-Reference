@@ -8,6 +8,8 @@
 
 条件判定で使われる[スイッチ]を扱うためのクラス。
 
+スイッチはIDで管理されているが、[RPG.System](RPG.System.md)([$dataSystem](global.md#datasystem-rpgsystem)) の switches プロパティに文字列も存在している。
+
 関連クラス: [Game_Variables](Game_Variables.md), [Game_SelfSwitches](Game_SelfSwitches.md) 
 
 

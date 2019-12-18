@@ -4,7 +4,7 @@
 | --- | --- | --- | --- |
 | [システム] | System.json | [$dataSystem](global.md#datasystem-rpgsystem) |  |
 
-関連クラス: [Game_System](Game_System.md)
+関連クラス: [Game_System](Game_System.md), [Game_Variables](Game_Variables.md), [Game_Switches](Game_Switches.md)
 
 
 ### Properties:

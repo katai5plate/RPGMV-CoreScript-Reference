@@ -8,6 +8,8 @@
 
 条件判定で使われる[変数]を扱うためのクラス。
 
+変数はIDで管理されているが、[RPG.System](RPG.System.md)([$dataSystem](global.md#datasystem-rpgsystem)) の variables プロパティに文字列も存在している。
+
 関連クラス: [Game_Switches](Game_Switches.md), [Game_SelfSwitches](Game_SelfSwitches.md)
 
 
