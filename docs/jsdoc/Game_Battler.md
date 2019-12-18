@@ -19,7 +19,7 @@
 | `_actions` | [Array](Array.md).&lt;[Game_Action](Game_Action.md)&gt; | 行動の配列 |
 | `_speed` | [Number](Number.md) | 速度(行動順を決定する) |
 | `_result` | [Game_ActionResult](Game_ActionResult.md) | 行動の結果 |
-| `_actionState` | [String](String.md) | 行動状態 |
+| `_actionState` | [String](String.md) | [アクション状態](Game_Battler.md#アクション状態) |
 | `_lastTargetIndex` | [Number](Number.md) | 最後の対象番号 |
 | `_animations` | [Array](Array.md).&lt;[MV.BattlerAnimation](MV.BattlerAnimation.md)&gt; | アニメーションの配列 |
 | `_damagePopup` | Boolean | ダメージポップアップするか |
@@ -28,6 +28,15 @@
 | `_weaponImageId` | [Number](Number.md) | 武器画像ID |
 | `_motionRefresh` | Boolean | モーションを更新するか |
 | `_selected` | Boolean | 選択されているか |
+
+#### アクション状態
+
+| ActionState | Description |
+| --- | --- |
+| 'undecided' | 行動未決定 |
+| 'inputting' | 入力中 |
+| 'waiting' | 待ち状態 |
+| 'acting' | 行動中 |
 
 
 ### Inherited From
@@ -639,7 +648,7 @@ TP自動回復を適用。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actionState` | [String](String.md) | アクション状態( 'undecided', 'inputting', 'waiting', 'acting' ) |
+| `actionState` | [String](String.md) | [アクション状態](Game_Battler.md#アクション状態) |
 
 
 #### setLastTarget (target)
