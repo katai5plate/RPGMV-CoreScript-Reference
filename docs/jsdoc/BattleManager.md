@@ -32,7 +32,7 @@
 
 #### 行動状態
 
-| Phase | Discription | update () |
+| Phase | Description | update () |
 | --- | --- | ---|
 | 'init' | 初期化 |
 | 'start' | 開始 | yes |
