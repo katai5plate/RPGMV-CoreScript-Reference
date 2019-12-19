@@ -4,6 +4,8 @@
 
 [アイテム]はもちろん、[武器][防具][敵キャラ][状態]などにも使われる基本クラス。
 
+関連クラス: [DataManager](DataManager.md)
+
 
 ### Sub Classes
 
