@@ -201,7 +201,7 @@
 
 
 #### (static) inputtingAction () → {[Game_Action](Game_Action.md)}
-入力されたアクションを返す。
+入力中のアクターのアクションを返す。
 
 
 #### (static) invokeAction (subject, target)
