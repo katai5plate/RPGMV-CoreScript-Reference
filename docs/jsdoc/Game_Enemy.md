@@ -3,6 +3,7 @@
 ## Extends: [Game_Battler](Game_Battler.md)
 
 ### new Game_Enemy ()
+
 | データベース| JSONデータ |
 | --- | --- |
 | [敵キャラ] | [RPG.Enemy](RPG.Enemy.md) |
