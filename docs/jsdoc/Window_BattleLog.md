@@ -5,14 +5,16 @@
 ### new Window_BattleLog ()
 戦闘ログのウィンドウ。
 
+このウィンドウのメソッドの多くは、[push()](Window_BattleLog.md#push-) によって _methods プロパティに保存され順次実行される。
+
 関連クラス: [Scene_Battle](Scene_Battle.md)
 
 ### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_lines` | [Array](Array.md).&lt;[String](String.md)&gt; |  |
-| `_methods` | [Array](Array.md).&lt;[MV.BattleLogMethod](MV.BattleLogMethod.md)&gt; |  |
+| `_lines` | [Array](Array.md).&lt;[String](String.md)&gt; | 行の配列 |
+| `_methods` | [Array](Array.md).&lt;[MV.BattleLogMethod](MV.BattleLogMethod.md)&gt; | メソッドの配列 |
 | `_waitCount` | [Number](Number.md) |  |
 | `_waitMode` | [String](String.md) |  |
 | `_baseLineStack` | [Array](Array.md).&lt;[Number](Number.md)&gt; |  |
@@ -246,36 +248,39 @@
 ### Methods
 
 #### addText (text)
+行を追加。<br />
+See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.md) |  |
+| `text` | [String](String.md) | 行の文字列 |
 
 
 #### animationBaseDelay () → {[Number](Number.md)}
-
+アニメーションの基本遅延時間( 規定値: 8フレーム )を返す。
 
 
 #### animationNextDelay () → {[Number](Number.md)}
-
+次のアニメーションまでの遅延時間( 規定値: 12フレーム )を返す。
 
 
 #### backColor () → {[String](String.md)}
-
+背景色( 規定値: '#000000' )を返す。
 
 
 #### backPaintOpacity () → {[Number](Number.md)}
+背景の不透明度( 規定値: 64 )を返す。
 
 
-
-#### backRect () → {[Rectangle](Rectangle.md)}
-
+#### backRect () → {[MV.Rectangle](MV.Rectangle.md)}
+背景の矩形範囲を返す。
 
 
 #### callNextMethod ()
-
+次のメソッドを呼ぶ。<br />
+See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 
 #### clear ()
@@ -670,13 +675,15 @@ Overrides: [Window_Selectable](Window_Selectable.md#initialize-x-y-width-height)
 
 
 #### push (methodName, args)
+ログの挙動を予約する。<br />
+引数の内容は [MV.BattleLogMethod](MV.BattleLogMethod.md) と同じ。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `methodName` | [String](String.md) |  |
-| `args` | [Array](Array.md).<any> | ... |
+| `methodName` | [String](String.md) | 呼び出すメソッド名 |
+| `args` | [Array](Array.md).&lt;*&gt; | メソッド毎に異なる引数 |
 
 
 #### pushBaseLine ()

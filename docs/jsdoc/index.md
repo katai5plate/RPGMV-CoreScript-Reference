@@ -190,7 +190,6 @@
 * [PIXI.Point](http://pixijs.download/release/docs/PIXI.Point.html)
     * [Point](Point.md)
 * [PIXI.Rectangle](http://pixijs.download/release/docs/PIXI.Rectangle.html)
-    * [Rectangle](Rectangle.md)
 * PIXI.extras.PictureTilingSprite
     * [TilingSprite](TilingSprite.md)
 * EventEmitter

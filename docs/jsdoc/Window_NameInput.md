@@ -292,7 +292,7 @@ Overrides: [Window_Selectable](Window_Selectable.md#iscursormovable---boolean)
 
 
 
-#### itemRect () → {[Rectangle](Rectangle.md)}
+#### itemRect () → {[MV. Rectangle](MV. Rectangle.md)}
 Overrides: [Window_Selectable](Window_Selectable.md#itemrect-index--rectangle)
 
 

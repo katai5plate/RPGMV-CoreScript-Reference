@@ -1,9 +1,8 @@
 # Namespace: MV
-RPGツクールMVで使われるパラメータ。
-
-主に、メソッドに渡される引数として使われる。
+RPGツクールMVで使われるメソッドのパラメータとなるオブジェクト。
 
 ネームスペースに MV とか、クラス名を便宜上つけているが、JavaScript上は単なる Object の一種。
+
 
 ### Classes
 
@@ -17,6 +16,7 @@ RPGツクールMVで使われるパラメータ。
 * [Matrix](MV.Matrix.md)
 * [Motion](MV.Motion.md)
 * [PluginSettings](MV.PluginSettings.md)
+* [Rectangle](MV.Rectangle.md)
 * [SaveContents](MV.SaveContents.md)
 * [SaveFileInfo](MV.SaveFileInfo.md)
 * [TextState](MV.TextState.md)

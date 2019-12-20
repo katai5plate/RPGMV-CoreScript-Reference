@@ -424,7 +424,7 @@ OKが起動されたか。
 項目の高さ(ピクセル)を返す。
 
 
-#### itemRect (index) → {[Rectangle](Rectangle.md)}
+#### itemRect (index) → {[MV. Rectangle](MV. Rectangle.md)}
 指定された項目の矩形範囲を返す。
 
 ##### Parameters:
@@ -434,7 +434,7 @@ OKが起動されたか。
 | `index` | [Number](Number.md) | 項目番号 |
 
 
-#### itemRectForText (index) → {[Rectangle](Rectangle.md)}
+#### itemRectForText (index) → {[MV. Rectangle](MV. Rectangle.md)}
 指定された項目の文字列用の矩形範囲を返す。
 
 ##### Parameters:

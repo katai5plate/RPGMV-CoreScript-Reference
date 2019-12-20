@@ -220,7 +220,7 @@ Overrides: [Window_Base.initialize (x, y, width, height)](Window_Base.md#initial
 | `maxLength` | [Number](Number.md) | 最大文字数 |
 
 
-#### itemRect (index) → {[Rectangle](Rectangle.md)}
+#### itemRect (index) → {[MV.Rectangle](MV.Rectangle.md)}
 指定位置に占める文字の矩形範囲を返す。
 
 ##### Parameters:
@@ -250,7 +250,7 @@ Overrides: [Window_Base.initialize (x, y, width, height)](Window_Base.md#initial
 アンダーラインの色(CSS形式)を返す。
 
 
-#### underlineRect (index) → {[Rectangle](Rectangle.md)}
+#### underlineRect (index) → {[MV.Rectangle](MV.Rectangle.md)}
 指定位置のアンダーラインの矩形範囲を返す。
 
 ##### Parameters:

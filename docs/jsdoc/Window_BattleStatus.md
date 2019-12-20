@@ -237,7 +237,7 @@ The window for displaying the status of party members on the battle screen.
 
 ### Methods
 
-#### basicAreaRect (index) → {[Rectangle](Rectangle.md)}
+#### basicAreaRect (index) → {[MV.Rectangle](MV.Rectangle.md)}
 
 ##### Parameters:
 
@@ -253,7 +253,7 @@ Draws the basic area for actors within the battle status window.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `rect` | [Rectangle](Rectangle.md) |  |
+| `rect` | [MV.Rectangle](MV.Rectangle.md) |  |
 | `actor` | [Game_Actor](Game_Actor.md) |  |
 
 
@@ -264,7 +264,7 @@ Draws the gauge area for the actors within the battle status window.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `rect` | [Rectangle](Rectangle.md) |  |
+| `rect` | [MV.Rectangle](MV.Rectangle.md) |  |
 | `actor` | [Game_Actor](Game_Actor.md) |  |
 
 
@@ -275,7 +275,7 @@ Draws the gauges in the basic area without tp included.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `rect` | [Rectangle](Rectangle.md) |  |
+| `rect` | [MV.Rectangle](MV.Rectangle.md) |  |
 | `actor` | [Game_Actor](Game_Actor.md) |  |
 
 
@@ -286,7 +286,7 @@ Draws the gauges in the basic area with tp included.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `rect` | [Rectangle](Rectangle.md) |  |
+| `rect` | [MV.Rectangle](MV.Rectangle.md) |  |
 | `actor` | [Game_Actor](Game_Actor.md) |  |
 
 
@@ -300,7 +300,7 @@ Overrides: [Window_Selectable](Window_Selectable.md#drawitem-index)
 | `index` | [Number](Number.md) |  |
 
 
-#### gaugeAreaRect (index) → {[Rectangle](Rectangle.md)}
+#### gaugeAreaRect (index) → {[MV.Rectangle](MV.Rectangle.md)}
 returns a rectangle for the gauges in the gauge area.
 
 ##### Parameters:
