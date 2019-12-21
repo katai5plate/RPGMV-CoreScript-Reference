@@ -7,7 +7,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.md) | メソッド名 |
+| `name` | [String](String.md) | [メソッド名](MV.BattleLogMethod.md#メソッド名) |
 | `params` | [Array](Array.md) | 引数の配列 |
 
 
