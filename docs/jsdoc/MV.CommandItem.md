@@ -1,9 +1,10 @@
 # Class: [MV](MV.md).CommandItem
-コマンドウィンドウ項目のパラメータ。
+コマンドウィンドウ( [Window_Command](Window_Command.md) )の項目のパラメータ。
 
-シンボルは、[Window_Selectable.setHandler()]([Window_Selectable.md#sethandler-symbol-method)メソッドでコールバック関数に紐づけられるのがパターン。
+シンボルは、[Window_Selectable.setHandler()](Window_Selectable.md#sethandler-symbol-method)メソッドでコールバック関数に紐づけられるのがパターン。
 
-関連クラス: [Window_Command](Window_Command.md)
+関連クラス: 
+
 
 ### Properties:
 
