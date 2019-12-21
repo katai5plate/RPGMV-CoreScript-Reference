@@ -5,7 +5,7 @@
 ### new Window_BattleLog ()
 戦闘ログのウィンドウ。
 
-このウィンドウのメソッドの多くは、[push()](Window_BattleLog.md#push-) によって _methods プロパティに保存され順次実行される。
+このウィンドウのメソッドの多くは、[push()](Window_BattleLog.md#push-methodname-args) によって _methods プロパティに保存され順次実行される。
 
 関連クラス: [Scene_Battle](Scene_Battle.md), [RPG.State](RPG.State.md), [Game_ActionResult](Game_ActionResult.md)
 
