@@ -7,18 +7,19 @@
 
 このウィンドウのメソッドの多くは、[push()](Window_BattleLog.md#push-) によって _methods プロパティに保存され順次実行される。
 
-関連クラス: [Scene_Battle](Scene_Battle.md)
+関連クラス: [Scene_Battle](Scene_Battle.md), [RPG.State](RPG.State.md), [Game_ActionResult](Game_ActionResult.md)
 
 ### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
+| `_backBitmap ` | [Bitmap](Bitmap.md) | 背景画像 |
 | `_lines` | [Array](Array.md).&lt;[String](String.md)&gt; | 行の配列 |
 | `_methods` | [Array](Array.md).&lt;[MV.BattleLogMethod](MV.BattleLogMethod.md)&gt; | メソッドの配列 |
-| `_waitCount` | [Number](Number.md) |  |
-| `_waitMode` | [String](String.md) |  |
-| `_baseLineStack` | [Array](Array.md).&lt;[Number](Number.md)&gt; |  |
-| `_spriteset` | [Spriteset_Battle](Spriteset_Battle.md) |  |
+| `_waitCount` | [Number](Number.md) | 待ち時間 |
+| `_waitMode` | [String](String.md) | 待機状態( 'effect', 'movement' ) |
+| `_baseLineStack` | [Array](Array.md).&lt;[Number](Number.md)&gt; | ベースラインのスタック |
+| `_spriteset` | [Spriteset_Battle](Spriteset_Battle.md) | 戦闘スプライトセット |
 
 
 ### Inherited From
@@ -284,220 +285,243 @@ See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 
 #### clear ()
-
+表示を消去。<br />
+See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 
 #### createBackBitmap ()
-
+背景画像を生成。
 
 
 #### createBackSprite ()
-
+背景スプライトを生成。
 
 
 #### displayAction (subject, item)
+指定された行動( [スキル][アイテム]の使用 )を表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `subject` | [Game_Battler](Game_Battler.md) |  |
-| `item` | [Number](Number.md) |  |
+| `subject` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `item` | [RPG.UsableItem](RPG.UsableItem.md) | 使用項目 |
 
 
 #### displayActionResults (subject, target)
+行動結果を表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `subject` | [Game_Battler](Game_Battler.md) |  |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `subject` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### displayAddedStates (target)
+追加されたステートを表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### displayAffectedStatus (target)
+能力値変化を表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### displayAutoAffectedStatus (target)
+自動での能力値変化を表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### displayChangedBuffs (target)
+[強化][弱体]の変化を表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### displayChangedStates (target)
+ステートの変化を表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### displayCounter (target)
+カウンター攻撃を表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### displayCritical (target)
+クリティカル攻撃を表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### displayCurrentState (subject)
+現在のステートを表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `subject` | [Game_Battler](Game_Battler.md) |  |
+| `subject` | [Game_Battler](Game_Battler.md) | 対象バトラー |
 
 
 #### displayDamage (target)
+ダメージ表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### displayEvasion (target)
+回避を表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### displayHpDamage (target)
+HPへのダメージを表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### displayMiss (target)
+攻撃の失敗を表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### displayMpDamage (target)
+MPへのダメージを表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### displayReflection (target)
+反射を表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### displayRemovedStates (target)
+ステートが外れたことを表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### displayRegeneration (subject)
+再生を表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `subject` | [Game_Battler](Game_Battler.md) |  |
+| `subject` | [Game_Battler](Game_Battler.md) | 対象バトラー |
 
 
 #### displaySubstitute (substitute, target)
+[かばう]行動を表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `substitute` | [Game_Battler](Game_Battler.md) |  |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `substitute` | [Game_Battler](Game_Battler.md) | 代理バトラー |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### displayTpDamage (target)
+TPへのダメージを表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### drawBackground ()
-
+背景を描く。
 
 
 #### drawLineText (index)
+指定行の文字を描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
+| `index` | [Number](Number.md) | 行位置 |
 
 
 #### endAction (subject)
+アクションの終了。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `subject` | [Game_Battler](Game_Battler.md) |  |
+| `subject` | [Game_Battler](Game_Battler.md) | 対象バトラー |
 
 
 #### initialize ()
@@ -505,173 +529,203 @@ Overrides: [Window_Selectable](Window_Selectable.md#initialize-x-y-width-height)
 
 
 #### isBusy () → {Boolean}
-
+動作中か。
 
 
 #### isFastForward () → {Boolean}
-
+早送りか。
 
 
 #### makeHpDamageText (target)
+HPへのダメージのメッセージを生成。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### makeMpDamageText (target) → {[String](String.md)}
+MPへのダメージのメッセージを生成。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### makeTpDamageText (target) → {[String](String.md)}
+TPへのダメージのメッセージを生成。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### maxLines () → {[Number](Number.md)}
-
+最大行数を返す。
 
 
 #### messageSpeed () → {[Number](Number.md)}
-
+メッセージスピードを返す。
 
 
 #### numLines () → {[Number](Number.md)}
-
+表示中の行数を返す。
 
 
 #### performAction (subject, action)
+行動を適用。<br />
+See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `subject` | [Game_Battler](Game_Battler.md) |  |
-| `action` | [Game_Action](Game_Action.md) |  |
+| `subject` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `action` | [Game_Action](Game_Action.md) | 行動 |
 
 
 #### performActionEnd (subject)
+行動の終了を適用。<br />
+See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `subject` | [Game_Battler](Game_Battler.md) |  |
+| `subject` | [Game_Battler](Game_Battler.md) | 対象バトラー |
 
 
 #### performActionStart (subject, action)
+行動の開始を適用。<br />
+See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `subject` | [Game_Battler](Game_Battler.md) |  |
-| `action` | [Game_Action](Game_Action.md) |  |
+| `subject` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `action` | [Game_Action](Game_Action.md) | 行動 |
 
 
 #### performCollapse (target)
+倒れたことを適用。<br />
+See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### performCounter (target)
+カウンター攻撃を適用。<br />
+See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### performDamage (target)
+ダメージを適用。<br />
+See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### performEvasion (target)
+回避を適用。<br />
+See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### performMagicEvasion (target)
+魔法反射を適用。<br />
+See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### performMiss (target)
+攻撃失敗を適用。<br />
+See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### performRecovery (target)
+回復を適用。<br />
+See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### performReflection (target)
+反射を適用。<br />
+See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### performSubstitute (target)
+[かばう]行動を適用。<br />
+See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### popBaseLine ()
-
+規定線を取り出す。<br />
+See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 
 #### popupDamage (target)
+ダメージを表示。<br />
+See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) |  |
+| `target` | [Game_Battler](Game_Battler.md) | 目標バトラー |
 
 
 #### push (methodName, args)
@@ -687,7 +741,8 @@ Overrides: [Window_Selectable](Window_Selectable.md#initialize-x-y-width-height)
 
 
 #### pushBaseLine ()
-
+規定線を追加。<br />
+See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 
 #### refresh ()
@@ -695,88 +750,97 @@ Overrides: [Window_Selectable](Window_Selectable.md#refresh-)
 
 
 #### setSpriteset (spriteset)
+スプライトセットを設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `spriteset` | [Spriteset_Battle](Spriteset_Battle.md) |  |
+| `spriteset` | [Spriteset_Battle](Spriteset_Battle.md) | スプライトセット |
 
 
 #### setWaitMode (waitMode)
+待機状態を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `waitMode` | [String](String.md) |  |
+| `waitMode` | [String](String.md) | 待機状態( 'effect', 'movement' ) |
 
 
 #### showActorAttackAnimation (subject, targets)
+アクターの攻撃アニメを表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `subject` | [Game_Battler](Game_Battler.md) |  |
-| `targets` | [Game_Battler](Game_Battler.md) |  |
+| `subject` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `targets` | [Array](Array.md).&lt;[Game_Battler](Game_Battler.md)&gt; | 目標バトラーの配列 |
 
 
 #### showAttackAnimation (subject, targets)
+攻撃アニメを表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `subject` | [Game_Battler](Game_Battler.md) |  |
-| `targets` | [Game_Battler](Game_Battler.md) |  |
+| `subject` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `targets` | [Array](Array.md).&lt;[Game_Battler](Game_Battler.md)&gt; | 目標バトラーの配列 |
 
 
 #### showAnimation (subject, targets, animationId)
+アニメを表示。<br />
+See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `subject` | [Game_Battler](Game_Battler.md) |  |
-| `targets` | [Game_Battler](Game_Battler.md) |  |
-| `animationId` | [Number](Number.md) |  |
+| `subject` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `targets` | [Array](Array.md).&lt;[Game_Battler](Game_Battler.md)&gt; | 目標バトラーの配列 |
+| `animationId` | [Number](Number.md) | アニメーションID |
 
 
 #### showEnemyAttackAnimation (subject, targets)
+敵の攻撃アニメを表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `subject` | [Game_Battler](Game_Battler.md) |  |
-| `targets` | [Game_Battler](Game_Battler.md) |  |
+| `subject` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `targets` | [Array](Array.md).&lt;[Game_Battler](Game_Battler.md)&gt; | 目標バトラーの配列 |
 
 
 #### showNormalAnimation (targets, animationId, mirror)
+通常のアニメを表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `targets` | [Game_Battler](Game_Battler.md) |  |
-| `animationId` | [Number](Number.md) |  |
-| `mirror` | Boolean |  |
+| `targets` | [Array](Array.md).&lt;[Game_Battler](Game_Battler.md)&gt; | 目標バトラーの配列 |
+| `animationId` | [Number](Number.md) | アニメーションID |
+| `mirror` | Boolean | 左右反転するか |
 
 
 #### startAction (subject, action, targets)
+行動の開始。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `subject` | [Game_Battler](Game_Battler.md) |  |
-| `action` | [Game_Action](Game_Action.md) |  |
-| `targets` | [Array](Array.md).<[Game_Battler](Game_Battler.md)> |  |
+| `subject` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `action` | [Game_Action](Game_Action.md) | 行動 |
+| `targets` | [Array](Array.md).&lt;[Game_Battler](Game_Battler.md)&gt; | 目標バトラーの配列 |
 
 
 #### startTurn ()
-
+ターン開始。
 
 
 #### update ()
@@ -784,38 +848,42 @@ Overrides: [Window_Selectable](Window_Selectable.md#update-)
 
 
 #### updateWait () → {Boolean}
-
+待ち時間のアップデート。
 
 
 #### updateWaitCount () → {Boolean}
-
+待ちカウントのアップデート。
 
 
 #### updateWaitMode () → {Boolean}
-
+待ち状態ののアップデート。
 
 
 #### wait ()
-
+待つ。<br />
+See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 
 #### waitForEffect ()
-
+エフェクトを待つ。<br />
+See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 
 #### waitForMovement ()
-
+動作を待つ。<br />
+See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 
 #### waitForNewLine ()
-
+新たな行を待つ。<br />
+See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 
 #### windowHeight () → {[Number](Number.md)}
-
+ウィンドウの高さ(ピクセル)を返す。
 
 
 #### windowWidth () → {[Number](Number.md)}
-
+ウィンドウの幅(ピクセル)を返す。
 
 
