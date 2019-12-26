@@ -1,17 +1,25 @@
 # Class: Game_Action
 
-### new Game_Action ()
-戦闘の行動を記述したクラス。
+### new Game_Action (subject, forcing)
+攻撃や防御、スキル・アイテムの使用など、戦闘の行動を記述したクラス。
 
-攻撃や防御、スキル・アイテムの使用など。
+[Game_Battler](Game_Battler.md) の \_actions プロパティが持っていて、逆にこちらからは [subject()](Game_Action.md#subject-) メソッドで Game\_Battler を取得できる。
 
-関連クラス: [BattleManager](BattleManager.md)
+関連クラス: [BattleManager](BattleManager.md), [Game_Actor](Game_Actor.md), [Game_Enemy](Game_Enemy.md), [Game_ActionResult](Game_ActionResult.md), [RPG.Effect](RPG.Effect.md), [RPG.UsableItem](RPG.UsableItem.md)
+
+
+#### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `subject` | [Game_Battler](Game_Battler.md) | 行動主体 |
+| `forcing` | Boolean | 強制行動か |
 
 
 ### Properties:
 
 * EFFECT\_ から始まる定数は、[[使用効果](RPG.Effect.md#code)] を指定するのに使う。
-* SPECIAL\_EFFECT\_ESCAPE は、[使用効果 - 特殊効果]の dataId を指定するのに使う。
+* SPECIAL\_EFFECT\_ESCAPE は、[[使用効果 - その他 - 特殊効果](RPG.Effect.md#その他)] の dataId を指定するのに使う。
 * HITTYPE\_から始まる定数は、[[命中タイプ](RPG.UsableItem.md#命中タイプ)] を指定するのに使う。
 
 | Name | Type | Description |
@@ -53,7 +61,7 @@
 
 
 #### apply (target)
-指定対象の出現。
+指定対象へ結果( [Game_ActionResult](Game_ActionResult.md) )の適用。
 
 ##### Parameters:
 
