@@ -8,7 +8,7 @@
 
 エディタ上の利用方法については公式の [RPGツクールMV 初心者講座 ステート作成例](https://tkool.jp/mv/guide/004_007c.html) を参照。
 
-関連クラス: [Game_BattlerBase](Game_BattlerBase.md), [Game_Battler](Game_Battler.md), [Game_Actor](Game_Actor.md), [Game_Enemy](Game_Enemy.md), [Game_ActionResult](Game_ActionResult.md)), [Window_BattleLog](Window_BattleLog.md), [RPG.Effect](RPG.Effect.md), [RPG.Trait](RPG.Trait.md
+関連クラス: [Game_BattlerBase](Game_BattlerBase.md), [Game_Battler](Game_Battler.md), [Game_Actor](Game_Actor.md), [Game_Enemy](Game_Enemy.md), [Game_ActionResult](Game_ActionResult.md), [Window_BattleLog](Window_BattleLog.md), [RPG.Effect](RPG.Effect.md), [RPG.Trait](RPG.Trait.md)
 
 
 ### Properties:
