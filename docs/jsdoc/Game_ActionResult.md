@@ -19,11 +19,11 @@
 | `hpDamage` | [Number](Number.md) | HPのダメージ量 |
 | `mpDamage` | [Number](Number.md) | MPのダメージ量 |
 | `tpDamage` | [Number](Number.md) | TPのダメージ量 |
-| `addedStates` | [Array](Array.md).<[Number](Number.md)> | 付加された[ステート]の配列 |
-| `removedStates` | [Array](Array.md).<[Number](Number.md)> | 削除された[ステート]の配列 |
-| `addedBuffs` | [Array](Array.md).<[Number](Number.md)> | 付加された[強化]の配列 |
-| `addedDebuffs` | [Array](Array.md).<[Number](Number.md)> | 付加された[弱体]の配列 |
-| `removedBuffs` | [Array](Array.md).<[Number](Number.md)> | 削除された[強化][弱体]の配列 |
+| `addedStates` | [Array](Array.md).&lt;[Number](Number.md)&gt; | 付加された[ステート]の配列 |
+| `removedStates` | [Array](Array.md).&lt;[Number](Number.md)&gt; | 削除された[ステート]の配列 |
+| `addedBuffs` | [Array](Array.md).&lt;[Number](Number.md)&gt; | 付加された[強化]の配列 |
+| `addedDebuffs` | [Array](Array.md).&lt;[Number](Number.md)&gt; | 付加された[弱体]の配列 |
+| `removedBuffs` | [Array](Array.md).&lt;[Number](Number.md)&gt; | 削除された[強化][弱体]の配列 |
 
 
 ### Methods
