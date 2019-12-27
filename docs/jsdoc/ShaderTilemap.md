@@ -1,123 +1,82 @@
 # Class: ShaderTilemap
 
-## ShaderTilemap ()
+## Extends: [Tilemap](Tilemap.md)
 
-#### new ShaderTilemap ()
+### new ShaderTilemap ()
+描画モード(F2キーを押して確かめられる)が WebGL Mode の場合のタイルマップ。
 
-描画モードが WebGL Mode の場合のタイルマップ。<br/>
-バージョン1.3.0以降は、こっちが実際に使用されているクラスで、[Tilemap](Tilemap.md) の方は実質的に継承されるために存在する abstract(抽象)クラスになっている。<br/>
-描画モードはF2キーを押して確かめられる。
+バージョン1.3.0以降は、こちらの ShaderTilemap が実際に使用されているクラスで、[Tilemap](Tilemap.md) の方は継承されるために存在する abstract(抽象)クラスと、静的メソッド・プロパティを扱うユーティリティクラスの役割となっている。
 
-### Extends
-* [Tilemap](Tilemap.md)
+
+### Inherited From
+
+#### [PIXI.DisplayObject](PIXI.DisplayObject.md)
+
+* [(static) mixin (source)](PIXI.DisplayObject.md#static-mixin-source)
+* [\_recursivePostUpdateTransform ()](PIXI.DisplayObject.md#_recursivepostupdatetransform-)
+* [displayObjectUpdateTransform ()](PIXI.DisplayObject.md#displayobjectupdatetransform-)
+* [getBounds (skipUpdate, rect)](PIXI.DisplayObject.md#getbounds-skipupdate-rect--pixirectangle)
+* [getGlobalPosition (point, skipUpdate)](PIXI.DisplayObject.md#getglobalposition-point-skipupdate--pixipoint)
+* [getLocalBounds (rect)](PIXI.DisplayObject.md#getlocalbounds-rect--pixirectangle)
+* [setParent (container)](PIXI.DisplayObject.md#setparent-container--pixicontainer)
+* [setTransform (x, y, scaleX, scaleY, rotation, skewX, skewY, pivotX, pivotY)](PIXI.DisplayObject.md#settransform-x-y-scalex-scaley-rotation-skewx-skewy-pivotx-pivoty--pixidisplayobject)
+* [toGlobal (position, point, skipUpdate)](PIXI.DisplayObject.md#toglobal-position-point-skipupdate--pixipoint)
+* [toLocal (position, from, point, skipUpdate)](PIXI.DisplayObject.md#tolocal-position-from-point-skipupdate--pixipoint)
+
+#### [PIXI.Container](PIXI.Container.md)
+
+* [addChild (child) ](PIXI.Container.md#addchild-child--pixidisplayobject)
+* [addChildAt (child, index)](PIXI.Container.md#addchildat-child-index--pixidisplayobject)
+* [calculateBounds ()](PIXI.Container.md#calculatebounds-)
+* [destroy ()](PIXI.Container.md#destroy-)
+* [getChildAt (index)](PIXI.Container.md#getchildat-index--pixidisplayobject)
+* [getChildByName (name)](PIXI.Container.md#getchildbyname-name--pixidisplayobject)
+* [getChildIndex (child)](PIXI.Container.md#getchildindex-child--pixidisplayobject)
+* [onChildrenChange ()](PIXI.Container.md#onchildrenchange-)
+* [removeChild (child)](PIXI.Container.md#removechild-child--pixidisplayobject)
+* [removeChildAt (index)](PIXI.Container.md#removechildat-index--pixidisplayobject)
+* [removeChildren (beginIndex, endIndex)](PIXI.Container.md#removechildren-beginindex-endindex--arraypixidisplayobject)
+* [render (renderer)](PIXI.Container.md#render-renderer)
+* [renderAdvanced (renderer)](PIXI.Container.md#renderadvanced-renderer)
+* [renderCanvas (renderer)](PIXI.Container.md#rendercanvas-renderer)
+* [setChildIndex (child, index)](PIXI.Container.md#setchildindex-child-index)
+* [sortChildren ()](PIXI.Container.md#sortchildren-)
+* [swapChildren (child, child2)](PIXI.Container.md#swapchildren-child-child2)
+
+#### [Tilemap](Tilemap.md)
+
+* [\_compareChildOrder (a, b)](Tilemap.md#_comparechildorder-a-b)
+* [\_createLayers ()](Tilemap.md#_createlayers-)
+* [\_drawAutotile (bitmap, tileId, dx, dy)](Tilemap.md#_drawautotile-bitmap-tileid-dx-dy)
+* [\_drawNormalTile (bitmap, tileId, dx, dy)](Tilemap.md#_drawnormaltile-bitmap-tileid-dx-dy)
+* [\_drawShadow (bitmap, shadowBits, dx, dy)](Tilemap.md#_drawshadow-bitmap-shadowbits-dx-dy)
+* [\_drawTableEdge (bitmap, tileId, dx, dy)](Tilemap.md#_drawtableedge-bitmap-tileid-dx-dy)
+* [\_drawTile (bitmap, tileId, dx, dy)](Tilemap.md#_drawtile-bitmap-tileid-dx-dy)
+* [\_isHigherTile (tileId)](Tilemap.md#_ishighertile-tileid--boolean)
+* [\_isOverpassPosition (mx, my)](Tilemap.md#_isoverpassposition-mx-my--boolean)
+* [\_isTableTile (tileId)](Tilemap.md#_istabletile-tileid--boolean)
+* [\_paintAllTiles (startX, startY)](Tilemap.md#_paintalltiles-startx-starty)
+* [\_paintTiles (startX, startY, x, y)](Tilemap.md#_painttiles-startx-starty-x-y)
+* [\_readLastTiles (i, x, y)](Tilemap.md#_readlasttiles-i-x-y--arraynumber)
+* [\_readMapData (x, y, z) ](Tilemap.md#_readmapdata-x-y-z--number)
+* [\_sortChildren ()](Tilemap.md#_sortchildren-)
+* [\_updateLayerPositions (startX, startY)](Tilemap.md#_updatelayerpositions-startx-starty)
+* [\_writeLastTiles (i, x, y, tiles)](Tilemap.md#_writelasttiles-i-x-y-tiles)
+* [isReady ()](Tilemap.md#isready---boolean)
+* [setData (width, height, data)](Tilemap.md#setdata-width-height-data)
+* [update ()](Tilemap.md#update-)
 
 ### Methods
 
-####  _createLayers ()
- レイヤーの生成。
-
-#### _drawAutotile (layers, tileId, dx, dy)
+#### _hackRenderer (renderer) → {PIXI.CanvasRenderer \| PIXI.WebGLRenderer}
+レンダラを環境に合わせて設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `layers` | [Array](Array.md) |  |
-| `tileId` | [Number](Number.md) |  |
-| `dx` | [Number](Number.md) |  |
-| `dy` | [Number](Number.md) |  |
+| `renderer` | [PIXI.CanvasRenderer](http://pixijs.download/release/docs/PIXI.CanvasRenderer.html) \| [PIXI.WebGLRenderer](https://pixijs.download/release/docs/PIXI.WebGLRenderer.html) | レンダラ |
 
-####  _drawNormalTile (layers, tileId, dx, dy)
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `layers` | [Array](Array.md) |  |
-| `tileId` | [Number](Number.md) |  |
-| `dx` | [Number](Number.md) |  |
-| `dy` | [Number](Number.md) |  |
-
-#### _drawShadow (shadowBits, dx, dy)
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `shadowBits` | [Number](Number.md) |  |
-| `dx` | [Number](Number.md) |  |
-| `dy` | [Number](Number.md) |  |
-
-#### _drawTableEdge (layers, tileId, dx, dy)
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `layers` | [Array](Array.md) |  |
-| `tileId` | [Number](Number.md) |  |
-| `dx` | [Number](Number.md) |  |
-| `dy` | [Number](Number.md) |  |
-
-#### _drawTile (layers, tileId, dx, dy)
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `layers` | [Array](Array.md) |  |
-| `tileId` | [Number](Number.md) |  |
-| `dx` | [Number](Number.md) |  |
-| `dy` | [Number](Number.md) |  |
-
-#### _hackRenderer (renderer) → {PIXI.CanvasRenderer|PIXI.WebGLRenderer}
-Uploads animation state in renderer
-
-##### Parameters:
-
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `renderer` | PIXI.CanvasRenderer |PIXI.WebGLRenderer | pixi renderer |
-
-##### Returns:
-pixi renderer
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>PIXI.CanvasRenderer</span> | <span>PIXI.WebGLRenderer</span>
-    </dd>
-</dl>
-
-#### _paintAllTiles (startX, startY)
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `startX` | [Number](Number.md) |  |
-| `startY` | [Number](Number.md) |  |
-
-####  _paintTiles (startX, startY, x, y)
- 指定位置のタイルを描画。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `startX` | [Number](Number.md) |  始点のx座標 |
-| `startY` | [Number](Number.md) |  始点のy座標 |
-| `x` | [Number](Number.md) | x座標 |
-| `y` | [Number](Number.md) | y座標 |
-
-#### _updateLayerPositions (startX, startY)
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `startX` | [Number](Number.md) |  |
-| `startY` | [Number](Number.md) |  |
 
 #### renderCanvas (renderer)
 canvas によって描画する。
@@ -126,7 +85,8 @@ canvas によって描画する。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `renderer` | PIXI.CanvasRenderer | pixi renderer |
+| `renderer` | [PIXI.CanvasRenderer](http://pixijs.download/release/docs/PIXI.CanvasRenderer.html) | レンダラ |
+
 
 #### renderWebGL (renderer)
 WebGL によって描画する。
@@ -135,237 +95,22 @@ WebGL によって描画する。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `renderer` | PIXI.WebGLRenderer | pixi renderer |
+| `renderer` | [PIXI.WebGLRenderer](https://pixijs.download/release/docs/PIXI.WebGLRenderer.html) | レンダラ |
 
-#### updateTransform ()
- 変形のアップデート。
-
-#### addChild (child) → {Object}
-[super] コンテナに子オブジェクトを追加。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `child` | Object |  追加するオブジェクト |
-
-<dl>
-	<dt>Inherited From:</dt>
-	<dd>
-		<ul>
-			<li>
-				<a>Tilemap#addChild</a>
-			</li>
-		</ul>
-	</dd>
-</dl>
-
-##### Returns:
- 追加されたオブジェクト
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Object</span>
-    </dd>
-</dl>
-
-#### addChildAt (child, index) → {Object}
-[super] コンテナの指定位置に子オブジェクトを追加。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `child` | Object |  追加するオブジェクト |
-| `index` | [Number](Number.md) |  追加位置 |
-
-<dl>
-    <dt>Inherited From:</dt>
-    <dd>
-        <ul>
-            <li>
-                <a>Tilemap#addChildAt</a>
-            </li>
-        </ul>
-    </dd>
-</dl>
-
-##### Returns:
- 追加されたオブジェクト
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Object</span>
-    </dd>
-</dl>
 
 #### initialize ()
- オブジェクト生成時の初期化。
-<dl>
-    <dt>Inherited From:</dt>
-    <dd>
-        <ul>
-            <li>
-                <a>Tilemap#initialize</a>
-            </li>
-        </ul>
-    </dd>
-</dl>
+Overrides: [Tilemap](Tilemap.md#initialize-)
 
-#### isReady () → {Boolean}
- 描画準備ができているか。
-<dl>
-    <dt>Inherited From:</dt>
-    <dd>
-        <ul>
-            <li>
-                <a>Tilemap#isReady</a>
-            </li>
-        </ul>
-    </dd>
-</dl>
-
-##### Returns:
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### refresh ()
- 画像の更新。
-<dl>
-    <dt>Overrides:</dt>
-    <dd>
-        <ul>
-            <li>
-                <a>Tilemap#refresh</a>
-            </li>
-        </ul>
-    </dd>
-</dl>
+Overrides: [Tilemap](Tilemap.md#refresh-)
+
 
 #### refreshTileset ()
- タイルセットを更新。
-<dl>
-    <dt>Overrides:</dt>
-    <dd>
-        <ul>
-            <li>
-                <a>Tilemap#refreshTileset</a>
-            </li>
-        </ul>
-    </dd>
-</dl>
+Overrides: [Tilemap](Tilemap.md#refreshtileset-)
 
-#### removeChild (child) → {Object}
-[super] コンテナから子オブジェクトを取り除く
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `child` | Object |  取り除くオブジェクト |
-
-<dl>
-    <dt>Inherited From:</dt>
-    <dd>
-        <ul>
-            <li>
-                <a>Tilemap#removeChild</a>
-            </li>
-        </ul>
-    </dd>
-</dl>
-
-##### Returns:
- 取り除かれたオブジェクト
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Object</span>
-    </dd>
-</dl>
-
-#### removeChildAt (index) → {Object}
-[super] コンテナの指定位置から子オブジェクトを取り除く
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `index` | [Number](Number.md) |  取り除くオブジェクトの位置 |
-
-<dl>
-    <dt>Inherited From:</dt>
-    <dd>
-        <ul>
-            <li>
-                <a>Tilemap#removeChildAt</a>
-            </li>
-        </ul>
-    </dd>
-</dl>
-
-##### Returns:
- 取り除かれたオブジェクト
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Object</span>
-    </dd>
-</dl>
-
-#### setData (width, height, data)
- タイルマップのデータを設定。
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `width` | [Number](Number.md) |  マップの幅(タイル数) |
-| `height` | [Number](Number.md) |  マップの高さ(タイル数) |
-| `data` | [Array](Array.md) |  一次元配列によるマップのデータ |
-
-<dl>
-    <dt>Inherited From:</dt>
-    <dd>
-        <ul>
-            <li>
-                <a>Tilemap#setData</a>
-            </li>
-        </ul>
-    </dd>
-</dl>
-
-#### update ()
- フレーム毎のタイルマップのアップデート。
-<dl>
-    <dt>Inherited From:</dt>
-    <dd>
-        <ul>
-            <li>
-                <a>Tilemap#update</a>
-            </li>
-        </ul>
-    </dd>
-</dl>
 
 #### updateTransform ()
- 変形をアップデート。
-<dl>
-    <dt>Overrides:</dt>
-    <dd>
-        <ul>
-            <li>
-                <a>Tilemap#updateTransform</a>
-            </li>
-        </ul>
-    </dd>
-</dl>
+Overrides: [Tilemap](Tilemap.md#updatetransform-)
 
 
- <br>
-
-  Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
