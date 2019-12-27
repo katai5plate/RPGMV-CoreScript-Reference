@@ -17,11 +17,11 @@
 | --- | --- | --- |
 | `id` | [Number](Number.md) | [ステートID](RPG.State.md#ステートid) |
 | `name` | [String](String.md) | [名前] |
-| `restriction` | [Number](Number.md) | [行動制約] \( 0:なし, 1:敵に攻撃, 2:誰かを攻撃, 3:味方を攻撃, 4:行動できない ) |
+| `restriction` | [Number](Number.md) | [[行動制約]](RPG.State.md#行動制約)) |
 | `priority` | [Number](Number.md) | [優先度] \(0~100) |
 | `removeAtBattleEnd` | Boolean | [戦闘終了時に解除] |
 | `removeByRestriction` | Boolean | [行動制約によって解除] |
-| `autoRemovalTiming` | [Number](Number.md) | [自動解除のタイミング] \(0:なし, 1:行動終了時, 2:ターン終了時) |
+| `autoRemovalTiming` | [Number](Number.md) | [[自動解除のタイミング]](RPG.State.md#自動解除のタイミング)  |
 | `minTurns` | [Number](Number.md) | [継続ターン数]の下限 |
 | `maxTurns` | [Number](Number.md) | [継続ターン数]の上限 |
 | `removeByDamage` | Boolean | [ダメージで解除] |
@@ -53,4 +53,23 @@
 | 8 | 混乱 |
 | 9 | 魅了 |
 | 10 | 睡眠 |
+
+#### [行動制約]
+
+| 番号 | [行動制約] |
+| --- | --- |
+| 0 | なし |
+| 1 | 敵に攻撃 |
+| 2 | 誰かを攻撃 |
+| 3 | 味方を攻撃 |
+| 4 | 行動できない |
+
+#### [自動解除のタイミング]
+
+| 番号 | [自動解除のタイミング] |
+| --- | --- |
+| 0 | なし |
+| 1 | 行動終了時 |
+| 2 | 誰ターン終了時 |
+
 

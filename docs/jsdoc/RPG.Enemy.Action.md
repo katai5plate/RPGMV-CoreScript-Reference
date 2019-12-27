@@ -1,5 +1,7 @@
 # Class: [RPG](RPG.md).[Enemy](RPG.Enemy.md).Action
-[敵キャラ]\([Game_Enemy](Game_Enemy.md))の[行動パターン]のJSONデータ。
+[敵キャラ]の[行動パターン]のJSONデータ。
+
+関連クラス: [Game_Enemy](Game_Enemy.md)
 
 
 ### Properties:
@@ -16,7 +18,7 @@
 
 *0* のようなイタリック部分は、数字が入っているが未使用。
 
-| Number | Description | conditionParam1 | conditionParam2 |
+| 番号 | [条件] | conditionParam1 | conditionParam2 |
 | --- | --- | --- | --- |
 | 0 | 常時 | *0* | *0* |
 | 1 | ターン | 開始ターン | ターン間隔 |

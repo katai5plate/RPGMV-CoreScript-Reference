@@ -42,11 +42,11 @@
 #### 命中タイプ
 hitType は [Game\_Action](Game_Action.md) の定数として定義されている。例えば、<code>Game\_Action.HITTYPE\_CERTAIN</code> のような形で使う。
 
-| 番号 | [命中タイプ] |
-| --- | --- |
-| `HITTYPE_CERTAIN:0` | 必中 |
-| `HITTYPE_PHYSICAL:1` | 物理攻撃 |
-| `HITTYPE_MAGICAL:2` | 魔法攻撃 |
+| 番号 | 定数 | [命中タイプ] |
+| --- | --- | --- |
+| 0 | `HITTYPE_CERTAIN` | 必中 |
+| 1 | `HITTYPE_PHYSICAL` | 物理攻撃 |
+| 2 | `HITTYPE_MAGICAL` | 魔法攻撃 |
 
 
 

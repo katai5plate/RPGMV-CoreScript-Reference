@@ -1,9 +1,7 @@
 # Class: [RPG](RPG.md).[BattleEventPage](RPG.BattleEventPage.md).Conditions
 [敵グループ]の [EVページ] の [条件] を構成するJSONデータ。
 
-[RPG.BattleEventPage](RPG.BattleEventPage.md) の conditions プロパティに含まれる。
-
-関連クラス: [RPG.EventPage.Conditions](RPG.EventPage.Conditions.md)、[RPG.CommonEvent](RPG.CommonEvent.md)
+関連クラス: [RPG.BattleEventPage](RPG.BattleEventPage.md), [RPG.EventPage.Conditions](RPG.EventPage.Conditions.md)、[RPG.CommonEvent](RPG.CommonEvent.md)
 
 
 ### Properties:

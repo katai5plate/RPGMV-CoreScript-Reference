@@ -17,11 +17,10 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `id` | [Number](Number.md) | アイテムID |
+| `id` | [Number](Number.md) | [アイテムID](RPG.BaseItem.md#アイテムid) |
 | `name` | [String](String.md) | [名前] |
 | `iconIndex` | [Number](Number.md) | [アイコン]番号 |
 | `description` | [String](String.md) | [説明]文 |
-
 
 #### アイテムID
 

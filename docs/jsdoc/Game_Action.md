@@ -7,7 +7,6 @@
 
 関連クラス: [BattleManager](BattleManager.md), [Game_Actor](Game_Actor.md), [Game_Enemy](Game_Enemy.md), [Game_ActionResult](Game_ActionResult.md), [RPG.Effect](RPG.Effect.md), [RPG.UsableItem](RPG.UsableItem.md)
 
-
 #### Parameters:
 
 | Name | Type | Description |

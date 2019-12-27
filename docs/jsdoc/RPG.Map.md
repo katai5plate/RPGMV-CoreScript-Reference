@@ -13,18 +13,6 @@ JSONファイルの XXX は3桁の数値。
 
 マップシーンは [Scene_Map](Scene_Map.md) で管理される。
  
-data プロパティは一次元配列で、<code>data[ x + ( y + z\*h )\*w ]</code> の形で取り出せる。<br />
-x: x座標, y: y座標, w: マップ幅, h: マップ高さ, z: マップ重ね順。
- 
-#### z:マップ重ね順
- 
-| Number | Description |
-| --- | --- |
-| 5 | リージョン |
-| 4 | 影ペン |
-| 2〜3 | B〜Eタイル | 
-| 1 | A2タイル右ほか |
-| 0 | Aタイル |
 
 ### Properties:
 
@@ -34,7 +22,7 @@ x: x座標, y: y座標, w: マップ幅, h: マップ高さ, z: マップ重ね�
 | `tilesetId` | [Number](Number.md) | [タイルセット]のID |
 | `width` | [Number](Number.md) | マップの\[幅](タイル数) |
 | `height` | [Number](Number.md) | マップの\[高さ](タイル数) |
-| `scrollType` | [Number](Number.md) | [スクロールタイプ] (0:ループしない, 1:縦方向にループする, 2:横方向にループする, 3:縦横共にループする) |
+| `scrollType` | [Number](Number.md) | [[スクロールタイプ]](RPG.Map.md#スクロールタイプ) |
 | `specifyBattleback` | Boolean | [戦闘背景指定]するか |
 | `battleback1Name` | [String](String.md) | レイヤー奥の戦闘背景画像1(地面)のファイル名 |
 | `battleback2Name` | [String](String.md) | レイヤー手前の戦闘背景画像2(壁)のファイル名 |
@@ -51,9 +39,32 @@ x: x座標, y: y座標, w: マップ幅, h: マップ高さ, z: マップ重ね�
 | `parallaxSx` | [Number](Number.md) | [遠景]が[横方向にループする]場合の[スクロール]量 |
 | `parallaxSy` | [Number](Number.md) | [遠景]が[縦方向にループする]場合の[スクロール]量 |
 | `parallaxShow` | Boolean | [遠景]を[エディターに表示する]か |
-| `data` | [Array](Array.md).<[Number](Number.md)> | タイルIDの配列によるマップデータ |
-| `events` | [Array](Array.md).<[RPG.Event](RPG.Event.md)> | [イベント]データの配列 |
+| `data` | [Array](Array.md).&lt;[Number](Number.md)&gt; | タイルIDの配列による[マップデータ](RPG.Map.md#マップデータ) |
+| `events` | [Array](Array.md).&lt;[RPG.Event](RPG.Event.md)&gt; | [イベント]データの配列 |
 
+####  [スクロールタイプ]
+
+| 番号 | [スクロールタイプ] |
+| --- | --- |
+| 0 | ループしない |
+| 1 | 縦方向にループする |
+| 2 | 横方向にループする |
+| 3 | 縦横共にループする |
+
+#### マップデータ
+data プロパティは一次元配列で、<code>data[ x + ( y + z\*h )\*w ]</code> の形で取り出せる。<br />
+x: x座標, y: y座標, w: マップ幅, h: マップ高さ, z: マップレイヤー
+ 
+##### z:マップレイヤー
+ 
+| z | Description |
+| --- | --- |
+| 0 | Aタイル |
+| 1 | A2タイル右ほか |
+| 2 | B〜Eタイル | 
+| 3 | B〜Eタイル | 
+| 4 | 影ペン |
+| 5 | リージョン |
 
 ### Classes
 
