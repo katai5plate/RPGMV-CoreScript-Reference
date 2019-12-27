@@ -44,7 +44,7 @@
 | `position` | [Point](Point.md) | 位置(x, y を同時に指定) |
 | `renderable` | Boolean | レンダ可能か |
 | `rotation` | [Number](Number.md) | 回転角(ラジアン) |
-| `scale` | [PIXI.IPoin](http://pixijs.download/release/docs/PIXI.html#.IPoint) | 拡大率 |
+| `scale` | [PIXI.IPoin](http://pixijs.download/release/docs/PIXI.html#.IPoint) | 拡大率(ex: 等倍 {1, 1} / 横2倍 {2, 1}) |
 | `skew` | [PIXI.ObservablePoint](http://pixijs.download/release/docs/PIXI.ObservablePoint.html) | 傾斜 |
 | `transform` | [PIXI.Matrix](http://pixijs.download/release/docs/PIXI.Matrix.html) | 変形 |
 | `visible` | Boolean |  表示中か |
