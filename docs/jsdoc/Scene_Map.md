@@ -90,7 +90,7 @@
 
 
 #### create ()
-Overrides: [Scene_Base.create ()](Scene_Base.md#create-)
+Overrides: [Scene_Base](Scene_Base.md#create-)
 
 
 #### createAllWindows ()
@@ -130,11 +130,11 @@ Overrides: [Scene_Base.create ()](Scene_Base.md#create-)
  
 
 #### initialize ()
-Overrides: [Scene_Base.initialize ()](Scene_Base.md#initialize-)
+Overrides: [Scene_Base](Scene_Base.md#initialize-)
 
 
 #### isBusy () → {Boolean}
-Overrides: [Scene_Base.isBusy ()](Scene_Base.md#isbusy---boolean)
+Overrides: [Scene_Base](Scene_Base.md#isbusy---boolean)
 
 
 #### isDebugCalled () → {Boolean}
@@ -158,7 +158,7 @@ Overrides: [Scene_Base.isBusy ()](Scene_Base.md#isbusy---boolean)
 
 
 #### isReady () → {Boolean}
-Overrides: [Scene_Base.isReady ()](Scene_Base.md#isready---boolean)
+Overrides: [Scene_Base](Scene_Base.md#isready---boolean)
 
 
 #### isSceneChangeOk () → {Boolean}
@@ -190,7 +190,7 @@ Overrides: [Scene_Base.isReady ()](Scene_Base.md#isready---boolean)
 
 
 #### start ()
-Overrides: [Scene_Base.start ()](Scene_Base.md#start-)
+Overrides: [Scene_Base](Scene_Base.md#start-)
 
 
 #### startEncounterEffect ()
@@ -208,7 +208,7 @@ Overrides: [Scene_Base.start ()](Scene_Base.md#start-)
 
 
 #### stop ()
-Overrides: [Scene_Base.stop ()](Scene_Base.md#stop-)
+Overrides: [Scene_Base](Scene_Base.md#stop-)
 
 
 #### stopAudioOnBattleStart ()
@@ -216,11 +216,11 @@ Overrides: [Scene_Base.stop ()](Scene_Base.md#stop-)
 
 
 #### terminate ()
-Overrides: [Scene_Base.terminate ()](Scene_Base.md#terminate-)
+Overrides: [Scene_Base](Scene_Base.md#terminate-)
 
 
 #### update ()
-Overrides: [Scene_Base.update ()](Scene_Base.md#update-)
+Overrides: [Scene_Base](Scene_Base.md#update-)
 
 
 #### updateCallDebug ()
