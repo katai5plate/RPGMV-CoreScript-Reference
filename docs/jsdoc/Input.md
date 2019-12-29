@@ -12,20 +12,75 @@ JavaScriptの [KeyboardEvent](https://developer.mozilla.org/ja/docs/Web/API/Keyb
 | --- | --- | --- |
 | `keyRepeatWait` | [Number](Number.md) | [static] キーリピートまでの待ち時間(フレーム) |
 | `keyRepeatInterval` | [Number](Number.md) | [static] キーリピート間隔(フレーム) |
-| `keyMapper` | Object | [static] キーコードとキー名称の変換テーブル |
-| `gamepadMapper` | Object | [static] ゲームパッドのボタンとキー名称の変換テーブル<br />{ code: 'name', ...}  |
-| `dir4` | [Number](Number.md) | [static][read-only] 4方向入力の数値( 0 : ニュートラル 他はテンキー方向) |
-| `dir8` | [Number](Number.md) | [static][read-only]  8方向入力の数値( 0 : ニュートラル 他はテンキー方向) |
+| `keyMapper` | Object | [static] [キーボード入力マップ](Input.md#キーボード入力マップ) |
+| `gamepadMapper` | Object | [static] [ゲームパッド入力マップ](Input.md#ゲームパッド入力マップ)  |
+| `dir4` | [Number](Number.md) | [static][read-only] 4方向入力の数値(テンキー対応) |
+| `dir8` | [Number](Number.md) | [static][read-only]  8方向入力の数値(テンキー対応) |
 | `date` | [Number](Number.md) | [static][read-only] 最後に入力された時刻(ミリ秒) |
 | `_currentState` | Object | [static] 現在の入力状態 {[key: string]: boolean} |
 | `_previousState` | Object | [static] 直前の入力状態 {[key: string]: boolean} |
-| `_gamepadStates` | [Array](Array.md).&lt;[Array](Array.md).&lt;Boolean&gt;&gt; | [static] ゲームパッドの状態 |
+| `_gamepadStates` | [Array](Array.md).&lt;[Array](Array.md).&lt;Boolean&gt;&gt; | [static] ゲームパッドの状態<br />(ゲームパッドの番号, code, 押されているか) |
 | `_latestButton` | [String](String.md) | [static] 最新のボタン |
 | `_pressedTime` | [Number](Number.md) | [static] 入力時間 |
 | `_dir4` | [Number](Number.md) | [static] 4方向入力の数値 |
 | `_dir8` | [Number](Number.md) | [static] 8方向入力の数値 |
-| `_preferredAxis` | [String](String.md) | [static] xとyのうち優先軸(4方向入力を自然にするのに使われる)|
+| `_preferredAxis` | [String](String.md) | [static] xとyのうち優先軸<br />(4方向入力を自然にするのに使われる)|
 | `_date` | [Number](Number.md) | [static] 入力時刻 |
+
+#### キーボード入力マップ
+<code>{ code: 'name', ...}</code> の形の、キーコードと名称の変換テーブル。<br />
+以下は規定値。
+
+| code | name | キーボード |
+| --- | --- | --- |
+| 9 | tab | tab |
+| 13 | ok | enter |
+| 16 | shift | shift |
+| 17 | control | control |
+| 18 | control | alt |
+| 27 | escape | escape |
+| 32 | ok | space |
+| 33 | pageup | pageup |
+| 34 | pagedown | pagedown |
+| 37 | left | left arrow |
+| 38 | up | up arrow |
+| 39 | right | right arrow |
+| 40 | down | down arrow |
+| 45 | escape | insert |
+| 81 | pageup | Q |
+| 87 | pagedown | W |
+| 88 | escape | X |
+| 90 | ok | Z |
+| 96 | escape | numpad 0 |
+| 98 | down | numpad 2 |
+| 100 | left | numpad 4 |
+| 102 | right | numpad 6 |
+| 104 | up | numpad 8 |
+| 120 | debug | F9 |
+
+#### ゲームパッド入力マップ
+<code>{ code: 'name', ...}</code> の形の、ゲームパッドのボタンコードと名称の変換テーブル。<br />
+バッドによってボタン配置はまちまち。Xboxパッドの対応ボタンは参考まで。以下は規定値。
+
+
+| code | name | Xboxパッド |
+| --- | --- | --- |
+| 0 | ok | A |
+| 1 | cancel | B |
+| 2 | shift | X |
+| 3 | menu | Y |
+| 4 | pageup | LB(パンパー) |
+| 5 | pagedown | RB(パンパー) |
+| 6 |  | LT(トリガー) |
+| 7 |  | RT(トリガー) |
+| 8 |  | back |
+| 9 |  | Start |
+| 10 |  | L stick push |
+| 11 |  | R stick push |
+| 12 | up | ↑ |
+| 13 | down | ↓ |
+| 14 | left | ← |
+| 15 | right | → |
 
 
 ### Methods
