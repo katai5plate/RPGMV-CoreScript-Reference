@@ -1,31 +1,32 @@
 # Class: Bitmap
 
-## Bitmap (width, height)
-
-#### new Bitmap (width, height)
+### new Bitmap (width, height)
 
 画像を表す基本オブジェクト。概ね [HTMLCanvasElement](https://developer.mozilla.org/ja/docs/Web/API/HTMLCanvasElement)のラッパーオブジェクト。
 
-##### Parameters:
+関連クラス: [Sprite](Sprite.md), [Graphics](Graphics.md), [ImageManager](ImageManager.md)
+
+#### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `width` | [Number](Number.md) | 画像の幅(ピクセル) |
 | `height` | [Number](Number.md) | 画像の高さ(ピクセル) |
 
-##### Properties:
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `cacheEntry` | [CacheEntry](CacheEntry.md) | Cache entry, for images. In all cases _url is the same as cacheEntry.key |
+| `cacheEntry` | [CacheEntry](CacheEntry.md) | キャッシュエントリ |
 | `fontFace` | [String](String.md) | フォント名 |
 | `fontSize` | [Number](Number.md) | フォントサイズ(ピクセル) |
 | `fontItalic` | Boolean | イタリックか |
 | `textColor` | [String](String.md) | 文字色(CSS形式) |
 | `outlineColor` | [String](String.md) | アウトラインの色(CSS形式) |
 | `outlineWidth` | [Number](Number.md) | アウトラインの文字幅 |
-| `url` | [String](String.md) | [read-only] 画像ファイルのurl |
-| `baseTexture` | [PIXI.BaseTexture](http://pixijs.download/dev/docs/PIXI.BaseTexture.html) | [read-only] The base texture that holds the image. |
+| `url` | [String](String.md) | [read-only] 画像ファイルのURL |
+| `baseTexture` | [PIXI.BaseTexture](http://pixijs.download/dev/docs/PIXI.BaseTexture.html) | [read-only] 基礎テクスチャ |
 | `canvas` | [HTMLCanvasElement](https://developer.mozilla.org/ja/docs/Web/API/HTMLCanvasElement) | [read-only] 画像を描画するcanvas |
 | `context` | [CanvasRenderingContext2D](https://developer.mozilla.org/ja/docs/Web/API/CanvasRenderingContext2D) | [read-only] 2Dレンダリングコンテクスト |
 | `width` | [Number](Number.md) | [read-only] 画像の幅(ピクセル) |
@@ -33,73 +34,72 @@
 | `rect` | [Rectangle](Rectangle.md) | [read-only] 画像の矩形範囲 |
 | `smooth` | Boolean | スムーススケーリングを適用するか |
 | `paintOpacity` | [Number](Number.md) | 不透明度(0 〜 255) |
-| `_loadingState` | [String](String.md) | 読み込みの状態<br/>none: Empty Bitmap<br/>pending: Url requested, but pending to load until startRequest called<br/>purged: Url request completed and purged.<br/>requesting: Requesting supplied URI now.<br/>requestCompleted: Request completed<br/>decrypting: requesting encrypted data from supplied URI or decrypting it.<br/>decryptCompleted: Decrypt completed<br/>loaded: loaded. isReady() === true, so It's usable.<br/>error: error occurred |
+| `_loadingState` | [String](String.md) | [読み込みの状態](Bitmap.md#読み込みの状態) |
+| `_loadListeners` | [Array](Array.md).&lt;Function&gt; | ロードリスナの配列 |
 
-<dl>
-</dl>
+#### 読み込みの状態
+
+| Name | Description |
+| --- | --- |
+| 'none' | 画像なし |
+| 'pending' | URLリクエスト保留中 |
+| 'purged' | URLリクエストを受けてパージ |
+| 'requesting' | URI を補完してリクエスト |
+| 'requestCompleted' | リクエスト終了 |
+| 'decrypting' | 復号中 |
+| 'decryptCompleted' | 復号完了 |
+| 'loaded' | 画像の利用準備完了 |
+| 'error' | エラー発生 |
+
 
 ### Methods
 
 #### (static) _callLoadListeners ()
+全ロードリスナを呼ぶ。
 
-<dl>
-</dl>
 
 #### (static) _drawTextBody (text, tx, ty, maxWidth)
+文字の本体を描く。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.md) |  |
-| `tx` | [Number](Number.md) |  |
-| `ty` | [Number](Number.md) |  |
-| `maxWidth` | [Number](Number.md) |  |
+| `text` | [String](String.md) | 文字列 |
+| `tx` | [Number](Number.md) | x座標(ピクセル) |
+| `ty` | [Number](Number.md) | y座標(ピクセル) |
+| `maxWidth` | [Number](Number.md) | 最大幅(ピクセル) |
 
-<dl>
-</dl>
 
 #### (static) _drawTextOutline (text, tx, ty, maxWidth)
+文字のアウトラインを描く。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `text` | [String](String.md) |  |
-| `tx` | [Number](Number.md) |  |
-| `ty` | [Number](Number.md) |  |
-| `maxWidth` | [Number](Number.md) |  |
+| `text` | [String](String.md) | 文字列 |
+| `tx` | [Number](Number.md) | x座標(ピクセル) |
+| `ty` | [Number](Number.md) | y座標(ピクセル) |
+| `maxWidth` | [Number](Number.md) | 最大幅(ピクセル) |
 
-<dl>
-</dl>
 
-#### (static) _makeFontNameText ()
-
-<dl>
-</dl>
+#### (static) _makeFontNameText () → {[String](String.md)}
+フォント名を文字列で返す。
 
 #### (static) _onError ()
+エラーの時に呼ばれるハンドラ。
 
-<dl>
-</dl>
 
 #### (static) _onLoad ()
+読み込み終了時に呼ばれるハンドラ。
 
-<dl>
-</dl>
 
 #### (static) _setDirty ()
+汚染フラグを設定。
 
-<dl>
-</dl>
-
-#### (static) _setupCssFontLoading ()
-
-<dl>
-</dl>
 
 #### (static) load (url) → {[Bitmap](Bitmap.md)}
-
 画像ファイルを読み込んで、Bitmapオブジェクトを返す。
 
 ##### Parameters:
@@ -108,20 +108,8 @@
 | --- | --- | --- |
 | `url` | [String](String.md) | 画像ファイルのURL |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a>Bitmap</a></span>
-    </dd>
-</dl>
 
 #### (static) snap (stage) → {[Bitmap](Bitmap.md)}
-
 指定したStageのゲーム画面のスナップショットを持ったBitmapオブジェクトを返す。
 
 ##### Parameters:
@@ -130,20 +118,8 @@
 | --- | --- | --- |
 | `stage` | [Stage](Stage.md) | Stageオブジェクト |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a>Bitmap</a></span>
-    </dd>
-</dl>
 
 #### addLoadListener (listner)
-
 画像がロードされたときに呼ばれるリスナ関数を追加。
 
 ##### Parameters:
@@ -152,11 +128,8 @@
 | --- | --- | --- |
 | `listner` | Function | コールバック関数 |
 
-<dl>
-</dl>
 
 #### adjustTone (r, g, b)
-
 指定したRGBに画像の色調を変更。
 
 ##### Parameters:
@@ -167,11 +140,8 @@
 | `g` | [Number](Number.md) | 緑 (-255 〜 255) |
 | `b` | [Number](Number.md) | 青 (-255 〜 255) |
 
-<dl>
-</dl>
 
 #### blt (source, sx, sy, sw, sh, dx, dy, dw opt, dh opt)
-
 指定先画像から画像ブロックを転送。
 
 ##### Parameters:
@@ -185,14 +155,11 @@
 | `sh` | [Number](Number.md) |  |  | 転送元の画像高さ(ピクセル) |
 | `dx` | [Number](Number.md) |  |  | 転送先x座標(ピクセル) |
 | `dy` | [Number](Number.md) |  |  | 転送先y座標(ピクセル) |
-| `dw` | [Number](Number.md) | \<optional> | sw | 転送先の画像幅(ピクセル) |
-| `dh` | [Number](Number.md) | \<optional> | sh | 転送先の画像高さ(ピクセル) |
+| `dw` | [Number](Number.md) | &lt;optional&gt; | sw | 転送先の画像幅(ピクセル) |
+| `dh` | [Number](Number.md) | &lt;optional&gt; | sh | 転送先の画像高さ(ピクセル) |
 
-<dl>
-</dl>
 
 #### bltImage (source, sx, sy, sw, sh, dx, dy, dw opt, dh opt)
-
 指定先画像から画像ブロックを転送。ただし、canvasには描画しない。
 
 ##### Parameters:
@@ -206,30 +173,21 @@
 | `sh` | [Number](Number.md) |  |  | 転送元の画像高さ(ピクセル) |
 | `dx` | [Number](Number.md) |  |  | 転送先x座標(ピクセル) |
 | `dy` | [Number](Number.md) |  |  | 転送先y座標(ピクセル) |
-| `dw` | [Number](Number.md) | \<optional> | sw | 転送先の画像幅(ピクセル) |
-| `dh` | [Number](Number.md) | \<optional> | sh | 転送先の画像高さ(ピクセル) |
+| `dw` | [Number](Number.md) | &lt;optional&gt; | sw | 転送先の画像幅(ピクセル) |
+| `dh` | [Number](Number.md) | &lt;optional&gt; | sh | 転送先の画像高さ(ピクセル) |
 
-<dl>
-</dl>
 
 #### blur ()
-
 ぼかしエフェクトを適用。
 
-<dl>
-</dl>
 
 #### checkDirty ()
+テクスチャが汚染されているかチェック。
 
-updates texture is bitmap was dirty
-<dl>
-</dl>
 
 #### clear ()
-
 画像を削除。
-<dl>
-</dl>
+
 
 #### clearRect (x, y, width, height)
 指定した矩形範囲を削除。
@@ -243,13 +201,10 @@ updates texture is bitmap was dirty
 | `width` | [Number](Number.md) | 矩形幅(ピクセル) |
 | `height` | [Number](Number.md) | 矩形高さ(ピクセル) |
 
-<dl>
-</dl>
 
 #### decode ()
+画像のデコード。
 
-<dl>
-</dl>
 
 #### drawCircle (x, y, radius, color)
 円を描く。
@@ -263,11 +218,8 @@ updates texture is bitmap was dirty
 | `radius` | [Number](Number.md) | 半径(ピクセル) |
 | `color` | [String](String.md) | 色(CSS形式) |
 
-<dl>
-</dl>
 
 #### drawText (text, x, y, maxWidth, lineHeight, align)
-
 文字を描く。
 
 ##### Parameters:
@@ -281,11 +233,8 @@ updates texture is bitmap was dirty
 | `lineHeight` | [Number](Number.md) | 行高さ(ピクセル) |
 | `align` | [String](String.md) | 文字揃え(left, center, right) |
 
-<dl>
-</dl>
 
 #### fillAll (color)
-
 指定色で全体を塗りつぶす。
 
 ##### Parameters:
@@ -294,11 +243,8 @@ updates texture is bitmap was dirty
 | --- | --- | --- |
 | `color` | [String](String.md) | 色(CSS形式) |
 
-<dl>
-</dl>
 
 #### fillRect (x, y, width, height, color)
-
 指定色で矩形範囲を塗りつぶす。
 
 ##### Parameters:
@@ -311,12 +257,9 @@ updates texture is bitmap was dirty
 | `height` | [Number](Number.md) | 矩形高さ(ピクセル) |
 | `color` | [String](String.md) | 色(CSS形式) |
 
-<dl>
-</dl>
 
 #### getAlphaPixel (x, y) → {[String](String.md)}
-
-指定位置の不透明度を返す。
+指定位置の不透明度(16進数)を返す。
 
 ##### Parameters:
 
@@ -325,23 +268,9 @@ updates texture is bitmap was dirty
 | `x` | [Number](Number.md) | x座標(ピクセル) |
 | `y` | [Number](Number.md) | y座標(ピクセル) |
 
-<dl>
-</dl>
-
-##### Returns:
-
-不透明度(16進数)
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a>String</a></span>
-    </dd>
-</dl>
 
 #### getPixel (x, y) → {[String](String.md)}
-
-指定位置のピクセルの色を返す。
+指定位置のピクセルの色(16進数)を返す。
 
 ##### Parameters:
 
@@ -350,22 +279,8 @@ updates texture is bitmap was dirty
 | `x` | [Number](Number.md) | x座標(ピクセル) |
 | `y` | [Number](Number.md) | y座標(ピクセル) |
 
-<dl>
-</dl>
-
-##### Returns:
-
-色(16進数)
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a>String</a></span>
-    </dd>
-</dl>
 
 #### gradientFillRect (x, y, width, height, color1, color2, vertical)
-
 グラデーションで矩形を描画。
 
 ##### Parameters:
@@ -380,12 +295,9 @@ updates texture is bitmap was dirty
 | `color2` | [String](String.md) | 終了色(16進数) |
 | `vertical` | Boolean | 縦にグラデーションをかけるか |
 
-<dl>
-</dl>
 
 #### initialize (width, height)
-
- オブジェクト生成時の初期化。
+オブジェクト生成時の初期化。
 
 ##### Parameters:
 
@@ -394,71 +306,24 @@ updates texture is bitmap was dirty
 | `width` | [Number](Number.md) | 幅(ピクセル) |
 | `height` | [Number](Number.md) | 高さ(ピクセル) |
 
-<dl>
-</dl>
 
 #### isError () → {Boolean}
-
 読み込み中にエラーが発生したか。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### isReady () → {Boolean}
-
 画像の描画準備ができているか。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### isRequestOnly () → {Boolean}
+リクエストだけか。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### isRequestReady () → {Boolean}
+リクエストの準備ができているか。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 #### measureTextWidth (text) → {[Number](Number.md)}
-
 指定文字列の幅を返す。
 
 ##### Parameters:
@@ -467,38 +332,16 @@ updates texture is bitmap was dirty
 | --- | --- | --- |
 | `text` | [String](String.md) | 幅を測定する文字列 |
 
-<dl>
-</dl>
-
-##### Returns:
-
-文字列の幅(ピクセル)
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a>Number</a></span>
-    </dd>
-</dl>
 
 #### request (url) → {[Bitmap](Bitmap.md)}
+指定URLでリクエストを行い、画像を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `url` | [String](String.md) |  |
+| `url` | [String](String.md) | 画像ファイルURL |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span><a>Bitmap</a></span>
-    </dd>
-</dl>
 
 #### resize (width, height)
 指定の大きさに画像をリサイズ。
@@ -510,8 +353,6 @@ updates texture is bitmap was dirty
 | `width` | [Number](Number.md) | 幅(ピクセル) |
 | `height` | [Number](Number.md) | 高さ(ピクセル) |
 
-<dl>
-</dl>
 
 #### rotateHue (offset)
 指定した量だけ色相を変更。
@@ -522,14 +363,11 @@ updates texture is bitmap was dirty
 | --- | --- | --- |
 | `offset` | [Number](Number.md) | 色相の変更量(360度) |
 
-<dl>
-</dl>
 
 #### startRequest ()
+'pending' の状態を解除し画像のリクエストを開始。
 
-<dl>
-</dl>
 
 #### touch ()
-画像がタッチ・クリックされた時に呼ばれるハンドラ。
+解放されていたらキャッシュマップに再追加するなど、キャッシュの延命。
 

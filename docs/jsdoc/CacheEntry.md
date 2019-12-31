@@ -1,46 +1,65 @@
 # Class: CacheEntry
 
 ### new CacheEntry (cache, key, item)
-The resource class. Allows to be collected as a garbage if not use for some time or ticks
+画像・音声のデータを確保しておくクラス。バージョン 1.3.4 で追加された。
+
+TTL とは time to live の略で、ガベッジコレクション(データの破棄)されるまでの生存時間のこと。
+
+関連クラス: [Bitmap](Bitmap.md), [HTML5Audio](HTML5Audio.md), [WebAudio](WebAudio.md)
 
 #### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `cache` | [CacheMap](CacheMap.md) | resource manager |
-| `key` | [String](String.md) | url of the resource |
-| `item` | [String](String.md) | Bitmap, HTML5Audio, WebAudio - whatever you want to store in the cache |
+| `cache` | [CacheMap](CacheMap.md) | キャッシュマップ |
+| `key` | [String](String.md) | データ指定するキー(ファイルのURL) |
+| `item` | [String](String.md) | 保持しているデータの種類('Bitmap', 'HTML5Audio', 'WebAudio') |
+
+
+### Properties:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `cache` | [CacheMap](CacheMap.md) | キャッシュマップ |
+| `cached` | Boolean |キャッシュされているか |
+| `freedByTTL` | Boolean | TTLで解放するか |
+| `key` | [String](String.md) | データ指定するキー(ファイルのURL) |
+| `item` | [String](String.md) | 保持しているデータの種類 ('Bitmap', 'HTML5Audio', 'WebAudio') |
+| `touchSeconds` | [Number](Number.md) | touch 時間 |
+| `touchTicks` | [Number](Number.md) | touch 時間 |
+| `ttlSeconds` | [Number](Number.md) | TTL (0: 設定なし) |
+| `ttlTicks` | [Number](Number.md) | TTL (0: 設定なし) |
 
 
 ### Methods
 
 #### allocate () → {[CacheEntry](CacheEntry.md)}
-Allocates the resource
+リソースを割り当てて、自身を返す。
 
 #### free (byTTL opt)
-frees the resource
+割り当てたリソースを解放。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `byTTL` | Boolean | <optional> |  |
+| `byTTL` | Boolean | &lt;optional&gt; | TTLか |
 
 
 #### isStillAlive () → {Boolean}
-
+生存しているか。
 
 
 #### setTimeToLive (ticks opt, seconds opt) → {[CacheEntry](CacheEntry.md)}
-Sets the time to live
+TTLを設定し、自身を返す。
 
 ##### Parameters:
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `ticks` | [Number](Number.md) | <optional> | TTL in ticks, 0 if not set |
-| `seconds` | [Number](Number.md) | <optional> | TTL in seconds, 0 if not set |
+| `ticks` | [Number](Number.md) | &lt;optional&gt; | TTL 0: 即時 |
+| `seconds` | [Number](Number.md) | &lt;optional&gt; | TTL 0: 即時 |
 
 
 #### touch ()
-makes sure that resource wont freed by Time To Live if resource was already freed by TTL, put it in cache again
+解放されていたらキャッシュマップに再追加するなど、キャッシュの延命。
