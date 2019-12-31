@@ -1,6 +1,9 @@
 # Class: SoundManager
-[効果音]で設定された音声を管理する静的クラス。データは大域変数 [$dataSystem](global.md#datasystem-rpgsystem)([RPG.System](RPG.System.md)) の sounds プロパティに記録されている。
+[効果音]で設定された音声を管理する静的クラス。
 
+データは大域変数 [$dataSystem](global.md#datasystem-rpgsystem) の sounds プロパティに記録されている。
+
+関連クラス: [RPG.System](RPG.System.md), [WebAudio](WebAudio.md), [Html5Audio](Html5Audio.md), [RPG.AudioFile](RPG.AudioFile.md)
 
 ### Methods
 

@@ -1,9 +1,7 @@
 # Class: [RPG](RPG.md).AudioFile
 音声ファイル情報を記述したJSONデータ。
 
-関連クラス: [RPG.Animation.Timing](RPG.Animation.Timing.md)
-
-
+関連クラス: [RPG.Animation.Timing](RPG.Animation.Timing.md), [SoundManager](SoundManager.md), [WebAudio](WebAudio.md), [Html5Audio](Html5Audio.md)
 ### Properties:
 
 | Name | Type | Description |
