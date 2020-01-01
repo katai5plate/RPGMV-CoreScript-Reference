@@ -4,20 +4,13 @@
 
 ### new Stage ()
  画面構成オブジェクトのツリーへの追加・削除を行う基礎オブジェクト。 
+ 
+ 関連クラス: [Graphics](Graphics.md)
 
  
 ### Sub Classes
 
 * [Scene_Base](Scene_Base.md)
-
-
-### Properties:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `children` | [Array](Array.md).&lt;[PIXI.DisplayObject](PIXI.DisplayObject.md)&gt; | [read-only] このオブジェクトに含まれる子オブジェクト |
-| `parent` | [PIXI.Container](PIXI.Container.md) | [read-only] このオブジェクトを含む親オブジェクト |
-| `interactive` | Boolean |  操作可能か |
 
 
 ### Inherited From
