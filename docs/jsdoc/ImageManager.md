@@ -1,16 +1,17 @@
 # Class: ImageManager
-画像ファイルの読み込み、[Bitmap](Bitmap.md)オブジェクトの生成、およびそれらの保持(キャッシュ)・管理を行う静的オブジェクト。
+画像ファイルの読み込み、保持(キャッシュ)、管理を行う静的オブジェクト。
 
 基本としてはloadXxxxを使って画像を読み込むが、遅延を避けるためにrequestXxxxを使って画像の先読みを行うこともできる。
 
 また、reserveXxxxは[releaseReservation](ImageManager.md#static-releasereservation-reservationid)によって解放するまでデータがキャッシュに保持されるので、頻出するデータを読み込んでおくのに向いている。
 
+関連クラス: [Bitmap](Bitmap.md), [Graphics](Graphics.md)
 
 ### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `cache` | [CacheMap](CacheMap.md) | [static] キャッシュ |
+| `cache` | zt | [static] キャッシュ |
 | `_imageCache` | [ImageCache](ImageCache.md) | [static] 画像キャッシュ |
 | `_requestQueue` | [RequestQueue](RequestQueue.md) | [static] リクエストキュー |
 | `_systemReservationId` | [Number](Number.md) | [static] システム予約ID |
@@ -72,7 +73,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
 | `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
-| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
+| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) |
 
 
 #### (static) loadBattleback1 (filename, hue opt) → {[Bitmap](Bitmap.md)}
@@ -83,7 +84,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
 | `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
-| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
+| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) |
 
 
 #### (static) loadBattleback2 (filename, hue opt) → {[Bitmap](Bitmap.md)}
@@ -94,7 +95,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
 | `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
-| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
+| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) |
 
 
 #### (static) loadBitmap (folder, filename, hue, smooth) → {[Bitmap](Bitmap.md)}
@@ -119,7 +120,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
 | `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
-| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
+| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) |
 
 
 #### (static) loadEmptyBitmap () → {[Bitmap](Bitmap.md)}
@@ -134,7 +135,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
 | `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
-| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
+| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) |
 
 
 #### (static) loadFace (filename, hue opt) → {[Bitmap](Bitmap.md)}
@@ -145,7 +146,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
 | `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
-| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
+| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) |
 
 
 #### (static) loadNormalBitmap (path, hue) → {[Bitmap](Bitmap.md)}
@@ -167,7 +168,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
 | `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
-| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
+| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) |
 
 
 #### (static) loadPicture (filename, hue opt) → {[Bitmap](Bitmap.md)}
@@ -178,7 +179,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
 | `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
-| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
+| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) |
 
 
 #### (static) loadSvActor (filename, hue opt) → {[Bitmap](Bitmap.md)}
@@ -189,7 +190,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
 | `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
-| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
+| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) |
 
 
 #### (static) loadSvEnemy (filename, hue opt) → {[Bitmap](Bitmap.md)}
@@ -200,7 +201,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
 | `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
-| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
+| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) |
 
 
 #### (static) loadSystem (filename, hue opt) → {[Bitmap](Bitmap.md)}
@@ -211,7 +212,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
 | `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
-| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
+| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) |
 
 
 #### (static) loadTileset (filename, hue opt) → {[Bitmap](Bitmap.md)}
@@ -222,7 +223,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
 | `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
-| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
+| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) |
 
 
 #### (static) loadTitle1 (filename, hue opt) → {[Bitmap](Bitmap.md)}
@@ -233,7 +234,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
 | `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
-| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
+| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) |
 
 
 #### (static) loadTitle2 (filename, hue opt) → {[Bitmap](Bitmap.md)}
@@ -244,7 +245,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
 | `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
-| `hue` | [Number](Number.md) | \<optional> | 色相(360度) |
+| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) |
 
 
 #### (static) releaseReservation (reservationId)

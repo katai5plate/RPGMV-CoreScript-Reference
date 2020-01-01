@@ -6,6 +6,7 @@
 * [マネージャ](index.md#マネージャ)
 * [ユーティリティ](index.md#ユーティリティ)
 * [入力](index.md#入力)
+* [ファイル](index.md#ファイル)
 * [音声](index.md#音声)
 
 
@@ -35,8 +36,7 @@
 		* [選択ウィンドウ(Window_Selectable)](index.md#選択ウィンドウwindow_selectable)
 			* [コマンドウィンドウ(Window_Command)](index.md#コマンドウィンドウwindow_command)
 
-※ 以下で表われる「→ Extends」は継承のツリーの続きへのリンク。
-
+※ 以下で表われる「→ Extends」は継承先へのリンク。
 
 
 ### JavaScript拡張
@@ -45,7 +45,6 @@
 * [Math](Math.md)
 * [Number](Number.md)
 * [String](String.md)
-
 
 
 ### マネージャ
@@ -62,18 +61,11 @@
 * [TextManager](TextManager.md)
 
 
-
 ### ユーティリティ
 
-* [CacheEntry](CacheEntry.md)
-* [CacheMap](CacheMap.md)
-* [Decrypter](Decrypter.md)
-* [ImageCache](ImageCache.md)
 * [JsonEx](JsonEx.md)
-* [RequestQueue](RequestQueue.md)
 * [ResourceHandler](ResourceHandler.md)
 * [Utils](Utils.md)
-
 
 
 ### 入力
@@ -82,12 +74,19 @@
 * [TouchInput](TouchInput.md)
 
 
+### ファイル
+
+* [CacheEntry](CacheEntry.md)
+* [CacheMap](CacheMap.md)
+* [ImageCache](ImageCache.md)
+* [RequestQueue](RequestQueue.md)
+* [Decrypter](Decrypter.md)
+
 
 ### 音声
 
 * [WebAudio](WebAudio.md)
 * [Html5Audio](Html5Audio.md)
-
 
 
 ### データベース(JSON)

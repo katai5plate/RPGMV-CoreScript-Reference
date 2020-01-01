@@ -4,7 +4,7 @@
 
 画像を表す基本オブジェクト。概ね [HTMLCanvasElement](https://developer.mozilla.org/ja/docs/Web/API/HTMLCanvasElement)のラッパーオブジェクト。
 
-関連クラス: [Sprite](Sprite.md), [Graphics](Graphics.md), [ImageManager](ImageManager.md)
+関連クラス: [Sprite](Sprite.md), [Graphics](Graphics.md), [ImageManager](ImageManager.md), [RequestQueue](RequestQueue.md)
 
 #### Parameters:
 
@@ -320,7 +320,7 @@
 
 
 #### isRequestReady () → {Boolean}
-リクエストの準備ができているか。
+リクエストが完了しているか。
 
 
 #### measureTextWidth (text) → {[Number](Number.md)}
