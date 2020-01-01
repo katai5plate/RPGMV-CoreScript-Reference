@@ -11,7 +11,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `cache` | zt | [static] キャッシュ |
+| `cache` | [CacheMap](cacheMap.md) | [static] キャッシュマップ |
 | `_imageCache` | [ImageCache](ImageCache.md) | [static] 画像キャッシュ |
 | `_requestQueue` | [RequestQueue](RequestQueue.md) | [static] リクエストキュー |
 | `_systemReservationId` | [Number](Number.md) | [static] システム予約ID |
