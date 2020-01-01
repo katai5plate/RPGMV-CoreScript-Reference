@@ -3,7 +3,7 @@
 
 通常の画面を中心に、ビデオ、ローディングやエラー表示、FPSメータなどの表示要素も取り扱う。
 
-関連クラス: [Bitmap](Bitmap.md), [ImageManager](ImageManager.md)
+関連クラス: [Bitmap](Bitmap.md), [ImageManager](ImageManager.md), [Game_Screen](Game_Screen.md)
 
 ### Properties:
 BLEND_ から始まるプロパティは PIXI.blendModes と同じ画像の[合成方法]の指定用定数。
@@ -40,7 +40,7 @@ BLEND_ から始まるプロパティは PIXI.blendModes と同じ画像の[合�
 | `_loadingImage` | HTMLImageElement | [static] ローディング画像 |
 | `_loadingCount` | [Number](Number.md) | [static] ローディングカウント |
 | `_fpsMeterToggled` | Boolean | [static] FPSメータのトグル情報 |
-| `_stretchEnabled` | Boolean | [static] 拡大可能か |
+| `_stretchEnabled` | Boolean | [static] 画面の伸縮可能か |
 | `_canUseDifferenceBlend` | Boolean | [static] 差の絶対値のブレンドが可能か |
 | `_canUseSaturationBlend` | Boolean | [static] 彩度のブレンドが可能か |
 | `_hiddenCanvas` | HTMLCanvasElement | [static] 隠れている canvas |
@@ -231,8 +231,8 @@ FPSメーターの切り替え。
 フルスクリーンに切り替え。
 
 
-#### (static) _switchStretchMode () → {Boolean}
-画面の伸縮モードに切り替え。
+#### (static) _switchStretchMode ()
+画面の伸縮モードをトグルで切り替え。
 
 
 #### (static) _testCanvasBlendModes ()
