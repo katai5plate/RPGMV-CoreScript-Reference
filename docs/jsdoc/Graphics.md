@@ -1,739 +1,474 @@
 # Class: Graphics
-
 画像の処理を行うための静的クラス。
 
-##### Properties:
+通常の画面を中心に、ビデオ、ローディングやエラー表示、FPSメータなどの表示要素も取り扱う。
+
+関連クラス: [Bitmap](Bitmap.md), [ImageManager](ImageManager.md)
+
+### Properties:
+BLEND_ から始まるプロパティは PIXI.blendModes と同じ画像の[合成方法]の指定用定数。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `BLEND_ADD` | [Number](Number.md) | [static] The alias of PIXI.blendModes.ADD. |
-| `BLEND_NORMAL` | [Number](Number.md) | [static] The alias of PIXI.blendModes.NORMAL. |
-| `BLEND_MULTIPLY` | [Number](Number.md) | [static] The alias of PIXI.blendModes.MULTIPLY. |
-| `BLEND_SCREEN` | [Number](Number.md) | [static] The alias of PIXI.blendModes.SCREEN. |
-| `frameCount` | [Number](Number.md) | [static] The total frame count of the game screen. |
-| `width` | [Number](Number.md) | [static] The width of the game screen. |
-| `height` | [Number](Number.md) | [static] The height of the game screen. |
-| `boxWidth` | [Number](Number.md) | [static] The width of the window display area. |
-| `boxHeight` | [Number](Number.md) | [static] The height of the window display area. |
-| `scale` | [Number](Number.md) | [static] The zoom scale of the game screen. |
-| `_width` | [Number](Number.md) | [static] |
-| `_height` | [Number](Number.md) | [static] |
-| `_rendererType` | [String](String.md) | [static] |
-| `_boxWidth` | [Number](Number.md) | [static] |
-| `_boxHeight` | [Number](Number.md) | [static] |
-| `_scale` | [Number](Number.md) | [static] |
-| `_realScale` | [Number](Number.md) | [static] |
-| `_errorPrinter` | Boolean | [static] |
-| `_canvas` | HTMLCanvasElement | [static] |
-| `_video` | HTMLVideoElement | [static] |
-| `_upperCanvas` | HTMLCanvasElement | [static] |
-| `_renderer` | PIXI.SystemRenderer | [static] |
-| `_fpsMeter` | FPSMeter | [static] |
-| `_modeBox` | HTMLDivElement | [static] |
-| `_skipCount` | [Number](Number.md) | [static] |
-| `_maxSkip` | [Number](Number.md) | [static] |
-| `_rendered` | Boolean | [static] |
-| `_loadingImage` | HTMLImageElement | [static] |
-| `_loadingCount` | [Number](Number.md) | [static] |
-| `_fpsMeterToggled` | Boolean | [static] |
-| `_stretchEnabled` | Boolean | [static] |
-| `_canUseDifferenceBlend` | Boolean | [static] |
-| `_canUseSaturationBlend` | Boolean | [static] |
-| `_hiddenCanvas` | [Number](Number.md) | [static] |
+| `BLEND_ADD` | [Number](Number.md) | [static] 加算 |
+| `BLEND_NORMAL` | [Number](Number.md) | [static] 通常 |
+| `BLEND_MULTIPLY` | [Number](Number.md) | [static] 乗算 |
+| `BLEND_SCREEN` | [Number](Number.md) | [static] スクリーン |
+| `frameCount` | [Number](Number.md) | [static] フレームカウント |
+| `width` | [Number](Number.md) | [static] ゲーム画面の幅(ピクセル) |
+| `height` | [Number](Number.md) | [static] ゲーム画面の高さ(ピクセル) |
+| `boxWidth` | [Number](Number.md) | [static] 表示範囲の幅(ピクセル) |
+| `boxHeight` | [Number](Number.md) | [static] 表示範囲の高さ(ピクセル) |
+| `scale` | [Number](Number.md) | [static] 拡大率 |
+| `_width` | [Number](Number.md) | [static] ゲーム画面の幅(ピクセル) |
+| `_height` | [Number](Number.md) | [static] ゲーム画面の高さ(ピクセル) |
+| `_rendererType` | [String](String.md) | [static] [レンダラタイプ](Graphics.md#レンダラタイプ) |
+| `_boxWidth` | [Number](Number.md) | [static] 表示範囲の幅(ピクセル) |
+| `_boxHeight` | [Number](Number.md) | [static] 表示範囲の高さ(ピクセル) |
+| `_scale` | [Number](Number.md) | [static] 拡大率 |
+| `_realScale` | [Number](Number.md) | [static] ウィンドウフィットした実際の拡大率 |
+| `_errorPrinter` | HTMLElemant | [static] エラー表示 p要素 |
+| `_canvas` | HTMLCanvasElement | [static] canvas要素 |
+| `_video` | HTMLVideoElement | [static] video要素 |
+| `_upperCanvas` | HTMLCanvasElement | [static] 上部canvas要素 |
+| `_renderer` | PIXI.SystemRenderer | [static] レンダラ |
+| `_fpsMeter` | FPSMeter | [static] FPSメータ |
+| `_modeBox` | HTMLDivElement | [static] 描画モード表示 |
+| `_skipCount` | [Number](Number.md) | [static] スキップカウント |
+| `_maxSkip` | [Number](Number.md) | [static] 最大スキップ |
+| `_rendered` | Boolean | [static] レンダ完了か |
+| `_loadingImage` | HTMLImageElement | [static] ローディング画像 |
+| `_loadingCount` | [Number](Number.md) | [static] ローディングカウント |
+| `_fpsMeterToggled` | Boolean | [static] FPSメータのトグル情報 |
+| `_stretchEnabled` | Boolean | [static] 拡大可能か |
+| `_canUseDifferenceBlend` | Boolean | [static] 差の絶対値のブレンドが可能か |
+| `_canUseSaturationBlend` | Boolean | [static] 彩度のブレンドが可能か |
+| `_hiddenCanvas` | HTMLCanvasElement | [static] 隠れている canvas |
 
-<dl>
-</dl>
+#### レンダラタイプ
+
+| 値 | レンダラタイプ |
+| --- | --- | --- |
+| 'canvas' | canvasで描画 |
+| 'webgl', | WebGLで描画 |
+| 'auto' | 自動選択 |
+
 
 ### Methods
 
 #### (static) _applyCanvasFilter ()
+canvas フィルタを適用。
 
-<dl>
-</dl>
 
 #### (static) _cancelFullScreen ()
+フルスクリーンを終了。
 
-<dl>
-</dl>
 
 #### (static) _centerElement (element)
+指定要素を中央に配置。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `element` | HTMLElement |  |
+| `element` | HTMLElement | H+TML要素 |
 
-<dl>
-</dl>
 
 #### (static) _clearUpperCanvas ()
+上部 canvas をクリア。
 
-<dl>
-</dl>
 
 #### (static) _createAllElements ()
+全要素の生成。
 
-<dl>
-</dl>
 
 #### (static) _createCanvas ()
+canvas の生成。
 
-<dl>
-</dl>
 
 #### (static) _createErrorPrinter ()
+エラー表示要素を生成。
 
-<dl>
-</dl>
 
 #### (static) _createFontLoader (name)
+指定フォント名でフォントローダを生成。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.md) |  |
+| `name` | [String](String.md) | フォント名 |
 
-<dl>
-</dl>
 
 #### (static) _createFPSMeter ()
+FPSメータ要素を生成。
 
-<dl>
-</dl>
 
 #### (static) _createGameFontLoader ()
+GameFont のフォントローダを生成。
 
-<dl>
-</dl>
 
 #### (static) _createModeBox ()
+モードボックスの生成。<br />
+'WebGL mode' か 'Canvas mode' を表示する要素。
 
-<dl>
-</dl>
 
 #### (static) _createRenderer ()
+レンダラを生成。
 
-<dl>
-</dl>
 
 #### (static) _createUpperCanvas ()
+上部 canvas を生成。
 
-<dl>
-</dl>
 
 #### (static) _createVideo ()
+ビデオ要素を生成。
 
-<dl>
-</dl>
 
-#### (static) _defaultStretchMode ()
+#### (static) _defaultStretchMode () → {Boolean}
+規定のストレッチモードか。
 
-<dl>
-</dl>
 
 #### (static) _disableContextMenu ()
+コンテクストメニューを無効化。
 
-<dl>
-</dl>
 
 #### (static) _disableTextSelection ()
+テキスト選択を無効化。
 
-<dl>
-</dl>
 
 #### (static) _isFullScreen () → {Boolean}
+フルスクリーンか。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### (static) _isVideoVisible () → {Boolean}
+ビデオが表示されているか。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### (static) _makeErrorHtml (name, message) → {[String](String.md)}
+エラー文字列を生成して返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.md) |  |
-| `message` | [String](String.md) |  |
+| `name` | [String](String.md) | エラー名 |
+| `message` | [String](String.md) | メッセージ |
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
 
 #### (static) _modifyExistingElements ()
+存在するHTML要素を(正の zIndex を 0 に)変更。
 
-<dl>
-</dl>
 
 #### (static) _onKeyDown (event)
+キーが押された時に呼ばれるハンドラ。<br />
+(F2, F3, F4 キーの処理)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `event` | KeyboardEvent |  |
+| `event` | KeyboardEvent | キーボードイベント |
 
-<dl>
-</dl>
 
 #### (static) _onTouchEnd (event)
+タッチ操作が終了した時に呼ばれるハンドラ。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `event` | TouchEvent |  |
+| `event` | TouchEvent | タッチイベント |
 
-<dl>
-</dl>
 
 #### (static) _onVideoEnd ()
+ビデオが終了した時に呼ばれるハンドラ。
 
-<dl>
-</dl>
 
 #### (static) _onVideoError ()
+ビデオのエラーが発生した時に呼ばれるハンドラ。
 
-<dl>
-</dl>
 
 #### (static) _onVideoLoad ()
+ビデオが読み込まれた時に呼ばれるハンドラ。
 
-<dl>
-</dl>
 
 #### (static) _onWindowResize ()
+ウィンドウのリサイズした時に呼ばれるハンドラ。
 
-<dl>
-</dl>
 
 #### (static) _paintUpperCanvas ()
+読み込まれた画像を上部 canvas に描画。
 
-<dl>
-</dl>
 
 #### (static) _playVideo (src)
+指定したビデオの再生。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `src` | [String](String.md) |  |
+| `src` | [String](String.md) | 映像ファイルのパス |
 
-<dl>
-</dl>
 
 #### (static) _requestFullScreen ()
+フルスクリーンを要求。
 
-<dl>
-</dl>
+
+#### (static) _setupCssFontLoading ()
+CSSフォント読み込みの準備。
+
 
 #### (static) _setupEventHandlers ()
+イベントハンドラの準備。
 
-<dl>
-</dl>
 
 #### (static) _switchFPSMeter ()
+FPSメーターの切り替え。
 
-<dl>
-</dl>
 
 #### (static) _switchFullScreen ()
+フルスクリーンに切り替え。
 
-<dl>
-</dl>
 
 #### (static) _switchStretchMode () → {Boolean}
+画面の伸縮モードに切り替え。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### (static) _testCanvasBlendModes ()
+ブレンドモードのテスト。
 
-<dl>
-</dl>
 
 #### (static) _updateAllElements ()
+全ての要素をアップデート。
 
-<dl>
-</dl>
 
 #### (static) _updateCanvas ()
+canvas をアップデート。
 
-<dl>
-</dl>
 
 #### (static) _updateErrorPrinter ()
+エラー表示をアップデート。
 
-<dl>
-</dl>
 
 #### (static) _updateRealScale ()
+実際の拡大率をアップデート。
 
-<dl>
-</dl>
 
 #### (static) _updateRenderer ()
+レンダラをアップデート。
 
-<dl>
-</dl>
 
 #### (static) _updateUpperCanvas ()
+上部 canvas をアップデート。
 
-<dl>
-</dl>
 
 #### (static) _updateVideo ()
+ビデオをアップデート。
 
-<dl>
-</dl>
 
 #### (static) _updateVisibility (videoVisible)
+表示・非表示をアップデート。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `videoVisible` | Boolean |  |
+| `videoVisible` | Boolean | ビデオを表示するか |
 
-<dl>
-</dl>
 
 #### (static) callGC ()
+ガベッジコレクションを呼ぶ。
 
-
-Calls pixi.js garbage collector
-<dl>
-</dl>
 
 #### (static) canPlayVideoType (type) → {Boolean}
-
-
-Checks whether the browser can play the specified video type.
+指定のビデオタイプが再生できるか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `type` | [String](String.md) | The video type to test support for |
+| `type` | [String](String.md) | ビデオタイプ |
 
-<dl>
-</dl>
-
-##### Returns:
-
-
-True if the browser can play the specified video type
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### (static) canUseCssFontLoading ()
+CSSフォント読み込みが使用可能か。
 
-<dl>
-</dl>
 
 #### (static) canUseDifferenceBlend () → {Boolean}
+差の絶対値のブレンドが可能か。
 
-
-Checks whether the canvas blend mode 'difference' is supported.
-<dl>
-</dl>
-
-##### Returns:
-
-
-True if the canvas blend mode 'difference' is supported
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### (static) canUseSaturationBlend () → {Boolean}
+彩度のブレンドが可能か。
 
-
-Checks whether the canvas blend mode 'saturation' is supported.
-<dl>
-</dl>
-
-##### Returns:
-
-
-True if the canvas blend mode 'saturation' is supported
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### (static) endLoading ()
+"Now Loading" 画像を消す。
 
-
-Erases the "Now Loading" image.
-<dl>
-</dl>
 
 #### (static) eraseLoadingError ()
+読み込みエラーの表示を消す。
 
-
-Erases the loading error text.
-<dl>
-</dl>
 
 #### (static) hasWebGL () → {Boolean}
+WebGL を持っている(ブラウザ)環境か。
 
-
-Checks whether the current browser supports WebGL.
-<dl>
-</dl>
-
-##### Returns:
-
-
-True if the current browser supports WebGL.
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### (static) hideFps ()
+FPSメータを隠す。
 
-
-Hides the FPSMeter element.
-<dl>
-</dl>
 
 #### (static) initialize (width, height, type)
-
-
-Initializes the graphics system.
+画像機能の初期化。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `width` | [Number](Number.md) | The width of the game screen |
-| `height` | [Number](Number.md) | The height of the game screen |
-| `type` | [String](String.md) | The type of the renderer. 'canvas', 'webgl', or 'auto'. |
+| `width` | [Number](Number.md) | ゲーム画面の幅(ピクセル) |
+| `height` | [Number](Number.md) | ゲーム画面の高さ(ピクセル) |
+| `type` | [String](String.md) | [レンダラタイプ](Graphics.md#レンダラタイプ)  |
 
-<dl>
-</dl>
 
 #### (static) isFontLoaded (name) → {Boolean}
-
-
-Checks whether the font file is loaded.
+指定したフォントファイルが読み込まれているか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.md) | The face name of the font |
+| `name` | [String](String.md) | フォント名 |
 
-<dl>
-</dl>
-
-##### Returns:
-
-
-True if the font file is loaded
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### (static) isInsideCanvas (x, y) → {Boolean}
-
-
-Checks whether the specified point is inside the game canvas area.
+指定座標が canvas 内にあるか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) | The x coordinate on the canvas area |
-| `y` | [Number](Number.md) | The y coordinate on the canvas area |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
 
-<dl>
-</dl>
-
-##### Returns:
-
-
-True if the specified point is inside the game canvas area
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### (static) isVideoPlaying () → {Boolean}
+ビデオが再生されているか。
 
-
-Checks whether the video is playing.
-<dl>
-</dl>
-
-##### Returns:
-
-
-True if the video is playing
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### (static) isWebGL () → {Boolean}
+[レンダラタイプ](Graphics.md#レンダラタイプ) が WebGL か。
 
-
-Checks whether the renderer type is WebGL.
-<dl>
-</dl>
-
-##### Returns:
-
-
-True if the renderer type is WebGL
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### (static) loadFont (name, url)
-
-
-Loads a font file.
+指定したフォントファイルを読み込む。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.md) | The face name of the font |
-| `url` | [String](String.md) | The url of the font file |
+| `name` | [String](String.md) | フォント名 |
+| `url` | [String](String.md) | フォントファイルのURL |
 
-<dl>
-</dl>
 
 #### (static) pageToCanvasX (x) → {[Number](Number.md)}
-
-
-Converts an x coordinate on the page to the corresponding x coordinate on the canvas area.
+ページ内の x座標を canvas 内の x座標に変換して返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) | The x coordinate on the page to be converted |
+| `x` | [Number](Number.md) | ページ内の x座標(ピクセル) |
 
-<dl>
-</dl>
-
-##### Returns:
-
-
-The x coordinate on the canvas area
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### (static) pageToCanvasY (y) → {[Number](Number.md)}
-
-
-Converts a y coordinate on the page to the corresponding y coordinate on the canvas area.
+ページ内の y座標を canvas 内の y座標に変換して返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `y` | [Number](Number.md) | The y coordinate on the page to be converted |
+| `y` | [Number](Number.md) | ページ内の x座標(ピクセル) |
 
-<dl>
-</dl>
-
-##### Returns:
-
-
-The y coordinate on the canvas area
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### (static) playVideo (src)
-
-
-Starts playback of a video.
+指定ビデオファイルを再生。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `src` | [String](String.md) |  |
+| `src` | [String](String.md) | ファイルパス |
 
-<dl>
-</dl>
 
 #### (static) printError (name, message)
-
-
-Displays the error text to the screen.
+エラーを表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | [String](String.md) | The name of the error |
-| `message` | [String](String.md) | The message of the error |
+| `name` | [String](String.md) | エラー名 |
+| `message` | [String](String.md) | エラーメッセージ |
 
-<dl>
-</dl>
 
 #### (static) printLoadingError (url)
-
-
-Displays the loading error text to the screen.
+読み込みエラーを表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `url` | [String](String.md) | The url of the resource failed to load |
+| `url` | [String](String.md) | 読み込みに失敗したファイルのURL |
 
-<dl>
-</dl>
 
 #### (static) render (stage)
-
-
-Renders the stage to the game screen.
+指定ステージ(シーン)の描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `stage` | [Stage](Stage.md) | The stage object to be rendered |
-
-<dl>
-</dl>
-
-#### (static) setLoadingImage ()
+| `stage` | [Stage](Stage.md) | 描画対象オブジェクト |
 
 
-Sets the source of the "Now Loading" image.
-<dl>
-</dl>
+#### (static) setLoadingImage (src)
+ローディング画像を設定。
+
+##### Parameters:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `src` | [String](String.md) | ファイルパス |
+
 
 #### (static) setVideoVolume (value)
-
-
-Sets volume of a video.
+ビデオの音量を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `value` | [Number](Number.md) |  |
+| `value` | [Number](Number.md) | 音量 |
 
-<dl>
-</dl>
 
 #### (static) showFps ()
+FPSメータを表示。
 
-
-Shows the FPSMeter element.
-<dl>
-</dl>
 
 #### (static) startLoading ()
+ローディング画像表示開始。
 
-
-Initializes the counter for displaying the "Now Loading" image.
-<dl>
-</dl>
 
 #### (static) tickEnd ()
+FPSメータへフレーム(tick)の終了を通知。
 
-
-Marks the end of each frame for FPSMeter.
-<dl>
-</dl>
 
 #### (static) tickStart ()
+FPSメータへフレーム(tick)の開始を通知。
 
-
-Marks the beginning of each frame for FPSMeter.
-<dl>
-</dl>
 
 #### (static) updateLoading ()
+ローディング画面をアップデート。
 
 
-Increments the loading counter and displays the "Now Loading" image if necessary.
-<dl>
-</dl>
-
-
- <br>
-
-  Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
