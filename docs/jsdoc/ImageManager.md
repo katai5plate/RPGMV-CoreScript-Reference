@@ -5,7 +5,7 @@
 
 また、reserveXxxxは[releaseReservation](ImageManager.md#static-releasereservation-reservationid)によって解放するまでデータがキャッシュに保持されるので、頻出するデータを読み込んでおくのに向いている。
 
-関連クラス: [Bitmap](Bitmap.md), [Graphics](Graphics.md)
+関連クラス: [Bitmap](Bitmap.md), [Graphics](Graphics.md), [Game_Screen](Game_Screen.md)
 
 ### Properties:
 

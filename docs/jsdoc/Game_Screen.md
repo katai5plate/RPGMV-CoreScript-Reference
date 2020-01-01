@@ -8,7 +8,7 @@
 
 イベントコマンドの[画面]関連の挙動の担当クラス。 
 
-関連クラス: [Game_Map](Game_Map.md), [Game_Picture](Game_Picture.md), [Scene_Map](Scene_Map.md), [Scene_Battle](Scene_Battle.md)
+関連クラス: [Game_Map](Game_Map.md), [Game_Picture](Game_Picture.md), [Scene_Map](Scene_Map.md), [Scene_Battle](Scene_Battle.md), [Graphics](Graphics.md), [ImageManager](ImageManager.md)
 
 
 ### Properties:
