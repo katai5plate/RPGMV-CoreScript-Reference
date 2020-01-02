@@ -254,7 +254,7 @@ The window for selecting a save file on the save and load screens.
 | Name | Type | Description |
 | --- | --- | --- |
 | `info` | Object | {key:String} |
-| `rect` | [MV. Rectangle](MV. Rectangle.md) |  |
+| `rect` | [Rectangle](Rectangle.md) |  |
 | `valid` | Boolean |  |
 
 

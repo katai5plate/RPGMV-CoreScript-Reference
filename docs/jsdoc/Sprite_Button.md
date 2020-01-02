@@ -11,8 +11,8 @@ The sprite for displaying a button.
 | Name | Type | Description |
 | --- | --- | --- |
 | `_touching` | Boolean | タッチ・クリック対応か |
-| `_coldFrame` | [MV.Rectangle](MV.Rectangle.md) | 表示枠 |
-| `_hotFrame` | [MV.Rectangle](MV.Rectangle.md) | タッチ・クリック反応枠 |
+| `_coldFrame` | [Rectangle](Rectangle.md) | 表示枠 |
+| `_hotFrame` | [Rectangle](Rectangle.md) | タッチ・クリック反応枠 |
 | `_clickHandler` | Function | タッチ・クリック時に呼ばれるハンドラ |
 
 

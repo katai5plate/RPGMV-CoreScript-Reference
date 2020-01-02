@@ -275,7 +275,7 @@ See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 背景の不透明度( 規定値: 64 )を返す。
 
 
-#### backRect () → {[MV.Rectangle](MV.Rectangle.md)}
+#### backRect () → {[Rectangle](Rectangle.md)}
 背景の矩形範囲を返す。
 
 

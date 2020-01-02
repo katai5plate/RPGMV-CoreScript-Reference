@@ -1,10 +1,10 @@
 # Class: Sprite_Picture
 
-## Sprite_Picture (pictureId)
+## Extends: [Sprite](Sprite.md)
 
-#### new Sprite_Picture (pictureId)
+### new Sprite_Picture (pictureId)
 
-The sprite for displaying a picture.
+関連クラス: [Game_Picture](Game_Picture.md), [Spriteset_Base](Spriteset_Base.md)
 
 ##### Parameters:
 
@@ -20,10 +20,6 @@ The sprite for displaying a picture.
 | `_pictureName` | [String](String.md) |  |
 | `_isPicture` | Boolean |  |
 
-
-### Extends
-
-* [Sprite](Sprite.md)
 
 ### Methods
 

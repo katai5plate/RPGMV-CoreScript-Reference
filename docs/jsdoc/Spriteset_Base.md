@@ -5,6 +5,7 @@
 ### new Spriteset_Base ()
 複数のスプライトを組み合わせて使うクラス。
 
+関連クラス: [Sprite_Picture](Sprite_Picture.md)
 
 ### Sub Classes
 

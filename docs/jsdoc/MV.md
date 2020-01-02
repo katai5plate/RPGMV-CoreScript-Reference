@@ -16,7 +16,6 @@ RPGツクールMVで使われるメソッドのパラメータとなるオブジ
 * [Matrix](MV.Matrix.md)
 * [Motion](MV.Motion.md)
 * [PluginSettings](MV.PluginSettings.md)
-* [Rectangle](MV.Rectangle.md)
 * [SaveContents](MV.SaveContents.md)
 * [SaveFileInfo](MV.SaveFileInfo.md)
 * [TextState](MV.TextState.md)
