@@ -1,16 +1,15 @@
 # Class: Scene_Shop
 
-## Scene_Shop ()
+## Extends: [Scene_MenuBase](Scene_MenuBase.md)
 
-#### new Scene_Shop ()
-
+### new Scene_Shop ()
 The scene class of the shop screen.
 
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_goods` | [Array](Array.md).<[Array](Array.md).<*>> |  |
+| `_goods` | [Array](Array.md).&lt;[Array](Array.md).&lt;*&gt;&gt; |  |
 | `_purchaseOnly` | Boolean |  |
 | `_item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
 | `_goldWindow` | [Window_Gold](Window_Gold.md) |  |
@@ -23,26 +22,17 @@ The scene class of the shop screen.
 | `_sellWindow` | [Window_ShopSell](Window_ShopSell.md) |  |
 | `_helpWindow` | [Window_Help](Window_Help.md) |  |
 
-<dl>
-</dl>
 
-### Extends
-
-* [Scene_MenuBase](Scene_MenuBase.md)
 
 ### Methods
 
 #### activateBuyWindow ()
 
-Activates the buy window within the shop scene.
-<dl>
-</dl>
+Activates the buy window within the shop scene.
 
 #### activateSellWindow ()
 
-Activates the sell window within the shop scene.
-<dl>
-</dl>
+Activates the sell window within the shop scene.
 
 #### actor () → {[Game_Actor](Game_Actor.md)}
 
@@ -167,9 +157,7 @@ The scene class of the shop screen.
 
 #### buyingPrice () → {[Number](Number.md)}
 
-Returns the buying price for the current item.
-<dl>
-</dl>
+Returns the buying price for the current item.
 
 ##### Returns:
 
@@ -196,15 +184,11 @@ The scene class of the shop screen.
 
 #### commandBuy ()
 
-Handler for pressing buy within the shop scene.
-<dl>
-</dl>
+Handler for pressing buy within the shop scene.
 
 #### commandSell ()
 
-Handler for pressing sell within the shop scene.
-<dl>
-</dl>
+Handler for pressing sell within the shop scene.
 
 #### create ()
 
@@ -221,26 +205,18 @@ The scene class of the shop screen.
 
 #### createBuyWindow ()
 
-Creates the buy window.
-<dl>
-</dl>
+Creates the buy window.
 
 #### createCategoryWindow ()
 
-Creates the category window.
-<dl>
-</dl>
+Creates the category window.
 
 #### createCommandWindow ()
 
-Creates the command window for buying or selling.
-<dl>
-</dl>
+Creates the command window for buying or selling.
 
 #### createDummyWindow ()
 
-<dl>
-</dl>
 
 #### createFadeSprite ()
 
@@ -258,9 +234,7 @@ The scene class of the shop screen.
 
 #### createGoldWindow ()
 
-Creates the gold window on the shop scene.
-<dl>
-</dl>
+Creates the gold window on the shop scene.
 
 #### createHelpWindow ()
 
@@ -278,21 +252,15 @@ The scene class of the shop screen.
 
 #### createNumberWindow ()
 
-Creates the number input window on the shop scene.
-<dl>
-</dl>
+Creates the number input window on the shop scene.
 
 #### createSellWindow ()
 
-Creates the sell window.
-<dl>
-</dl>
+Creates the sell window.
 
 #### createStatusWindow ()
 
-Creates the status window.
-<dl>
-</dl>
+Creates the status window.
 
 #### createWindowLayer ()
 
@@ -310,9 +278,7 @@ The scene class of the shop screen.
 
 #### currencyUnit () → {[String](String.md)}
 
-Returns the currency unit of the game within the shop scene.
-<dl>
-</dl>
+Returns the currency unit of the game within the shop scene.
 
 ##### Returns:
 
@@ -345,8 +311,6 @@ The scene class of the shop screen.
 | --- | --- | --- |
 | `number` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### doSell (number)
 
@@ -356,13 +320,9 @@ The scene class of the shop screen.
 | --- | --- | --- |
 | `number` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### endNumberInput ()
 
-<dl>
-</dl>
 
 #### fadeOutAll ()
 
@@ -486,9 +446,7 @@ The scene class of the shop screen.
 
 #### maxBuy () → {[Number](Number.md)}
 
-Returns the maximum number bought.
-<dl>
-</dl>
+Returns the maximum number bought.
 
 ##### Returns:
 
@@ -501,9 +459,7 @@ The scene class of the shop screen.
 
 #### maxSell () → {[Number](Number.md)}
 
-Returns the maximum number sold.
-<dl>
-</dl>
+Returns the maximum number sold.
 
 ##### Returns:
 
@@ -516,9 +472,7 @@ The scene class of the shop screen.
 
 #### money () → {[Number](Number.md)}
 
-Returns the player gold within the shop scene.
-<dl>
-</dl>
+Returns the player gold within the shop scene.
 
 ##### Returns:
 
@@ -558,45 +512,29 @@ The scene class of the shop screen.
 
 #### onBuyCancel ()
 
-Handler for when buying is cancelled.
-<dl>
-</dl>
+Handler for when buying is cancelled.
 
 #### onBuyOk ()
 
-Handler for when buying is confirmed.
-<dl>
-</dl>
+Handler for when buying is confirmed.
 
 #### onCategoryCancel ()
 
-<dl>
-</dl>
 
 #### onCategoryOk ()
 
-<dl>
-</dl>
 
 #### onNumberCancel ()
 
-<dl>
-</dl>
 
 #### onNumberOk ()
 
-<dl>
-</dl>
 
 #### onSellCancel ()
 
-<dl>
-</dl>
 
 #### onSellOk ()
 
-<dl>
-</dl>
 
 #### popScene ()
 
@@ -621,8 +559,6 @@ The scene class of the shop screen.
 | `goods` | [Array](Array.md).<[Array](Array.md).<*>> |  |
 | `purchaseOnly` | Boolean |  |
 
-<dl>
-</dl>
 
 #### previousActor ()
 
@@ -702,9 +638,7 @@ The scene class of the shop screen.
 
 #### sellingPrice () → {[Number](Number.md)}
 
-Returns the selling price for the current item.
-<dl>
-</dl>
+Returns the selling price for the current item.
 
 ##### Returns:
 
@@ -899,6 +833,3 @@ The scene class of the shop screen.
                     </ul>
                 </dd>
             </dl>
- <br>
-
-  Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
