@@ -21,16 +21,17 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `shader` | [PIXI.Filter](http://pixijs.download/release/docs/PIXI.Filter.html) \| [PIXI.Shader](http://pixijs.download/release/docs/PIXI.Shader.html) | [static] シェーダ|
-| `_cachedTint` | [Number](Number.md) |  |
-| `_tintedCanvas` | HTMLCanvasElement |  |
+| `shader` | [PIXI.Filter](http://pixijs.download/release/docs/PIXI.Filter.html) \| [PIXI.Shader](http://pixijs.download/release/docs/PIXI.Shader.html) | [static] シェーダ |
+| `_cachedTint` | [Number](Number.md) | キャッシュされた色(規定値:0xFFFFFF) |
+| `_tintedCanvas` | HTMLCanvasElement | 着色された canvas |
 | `anchor` | [PIXI.ObservablePoint](http://pixijs.download/release/docs/PIXI.ObservablePoint.html) |座標の基点 (ex: 左上{0, 0} / 右下{1, 1} ) |
 | `blendMode` | [Number](Number.md) | [合成方法](0: 通常, 1: 加算, 2: 乗算, 3: スクリーン)<br/>See:[PIXI.BLEND_MODES](PIXI.BLEND_MODES) |
 | `isSprite` | Boolean | スプライトか |
 | `pluginName` | [String](String.md) | プラグイン名(Default: 'batch') |
 | `roundPixels` | Boolean | ピクセル補完するか |
 | `texture` | [PIXI.Texture](http://pixijs.download/release/docs/PIXI.Texture.html) | スプライトに設定された画像 |
-| `tint` | [Number](Number.md) |  |
+| `tint` | [Number](Number.md) | 着色する色(規定値:0xFFFFFF の場合処理しない) |
+
 
 
 ### Inherited From
@@ -71,14 +72,16 @@
 
 ### Methods
 
-#### (static) from (source, options) → {PIXI.Sprite}
+#### (static) from (source, options opt) → {PIXI.Sprite}
+指定データを元に PIXI.Sprite を生成して返す。<br />
+source には [Number](Number.md)(フレームID), [String](String.md)(画像・ビデオURL), [PIXI.Texture](http://pixijs.download/release/docs/PIXI.Texture.html), HTMLCanvasElement, HTMLVideoElement が指定できる。
 
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
-| `source` | [Number](Number.md) \| [String](String.md) \| [PIXI.Texture](http://pixijs.download/release/docs/PIXI.Texture.html) \| HTMLCanvasElement \| HTMLVideoElement |  |
-| `options` | Object | opt. |
+| Name | Type | Attributes | Description |
+| --- | --- | --- | --- |
+| `source` | * | | 生成元となるデータ |
+| `options` | Object | &lt;optional&gt; | [PIXI.BaseTexture](http://pixijs.download/release/docs/PIXI.BaseTexture.html) のコンストラクタの option と同じ形式 |
 
 
 #### _calculateBounds ()
@@ -90,19 +93,21 @@ Overrides:[PIXI.Container](PIXI.Container.md#_render-renderer)
  
  
 #### calculateTrimmedVertices ()
+トリミングされた頂点データを計算。
 
 
 #### calculateVertices ()
+頂点データを計算。
 
 
 #### containsPoint (point) → {Boolean}
-
+指定座標が含まれるか。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `point` | [PIXI.Point](http://pixijs.download/release/docs/PIXI.Point.html) |  |
+| `point` | [PIXI.Point](http://pixijs.download/release/docs/PIXI.Point.html) | 座標 |
 
 
 #### destroy (options)
