@@ -54,24 +54,27 @@
 ### Methods
 
 #### _calculateBounds ()
+矩形範囲の再計算。
 
 
 #### _render (renderer)
+描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `renderer` | [PIXI.Renderer](http://pixijs.download/release/docs/PIXI.Renderer.html) |  |
+| `renderer` | [PIXI.Renderer](http://pixijs.download/release/docs/PIXI.Renderer.html) | レンダラ |
 
 
 #### _renderCanvas (renderer)
+canvas の描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `renderer` | [PIXI.Renderer](http://pixijs.download/release/docs/PIXI.Renderer.html) |  |
+| `renderer` | [PIXI.Renderer](http://pixijs.download/release/docs/PIXI.Renderer.html) | レンダラ |
 
 
 #### addChild (child) → {PIXI.DisplayObject}
@@ -189,25 +192,27 @@ Overrides: [PIXI.DisplayObject](PIXI.DisplayObject.md#render-renderer)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `renderer` | [PIXI.Renderer](http://pixijs.download/release/docs/PIXI.Renderer.html) |  |
+| `renderer` | [PIXI.Renderer](http://pixijs.download/release/docs/PIXI.Renderer.html) | レンダラ |
 
 
 #### renderAdvanced (renderer)
+WebGL を使った描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `renderer` | [PIXI.Renderer](http://pixijs.download/release/docs/PIXI.Renderer.html) |  |
+| `renderer` | [PIXI.Renderer](http://pixijs.download/release/docs/PIXI.Renderer.html) | レンダラ |
 
 
 #### renderCanvas (renderer)
+canvas の描画
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `renderer` | [PIXI.CanvasRenderer](http://pixijs.download/release/docs/PIXI.Renderer.html) |  |
+| `renderer` | [PIXI.CanvasRenderer](http://pixijs.download/release/docs/PIXI.Renderer.html) | レンダラ |
 
 
 #### setChildIndex (child, index)
