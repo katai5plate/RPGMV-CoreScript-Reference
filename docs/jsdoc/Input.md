@@ -3,7 +3,7 @@
 
 JavaScriptの [KeyboardEvent](https://developer.mozilla.org/ja/docs/Web/API/KeyboardEvent)と[Gamepad](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad) 周りを扱う。
 
-関連クラス: [Window_Selectable](Window_Selectable.md)
+関連クラス: [Window_Selectable](Window_Selectable.md), [TouchInput](TouchInput.md)
 
 
 ### Properties:

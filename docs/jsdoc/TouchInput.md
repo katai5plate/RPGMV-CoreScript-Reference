@@ -1,12 +1,10 @@
 # Class: TouchInput
-
-## TouchInput ()
-
-#### new TouchInput ()
-
 The static class that handles input data from the mouse and touchscreen.
 
-##### Properties:
+関連クラス: [Input](Input.md)
+
+
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -31,8 +29,6 @@ The static class that handles input data from the mouse and touchscreen.
 | `_y` | [Number](Number.md) | [static] |
 | `_date` | [Number](Number.md) | [static] |
 
-<dl>
-</dl>
 
 ### Methods
 
@@ -45,8 +41,6 @@ The static class that handles input data from the mouse and touchscreen.
 | `x` | [Number](Number.md) |  |
 | `y` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### (static) _onLeftButtonDown (event)
 
@@ -56,8 +50,6 @@ The static class that handles input data from the mouse and touchscreen.
 | --- | --- | --- |
 | `event` | MouseEvent |  |
 
-<dl>
-</dl>
 
 #### (static) _onMiddleButtonDown (event)
 
@@ -67,8 +59,6 @@ The static class that handles input data from the mouse and touchscreen.
 | --- | --- | --- |
 | `event` | MouseEvent |  |
 
-<dl>
-</dl>
 
 #### (static) _onMouseDown (event)
 
@@ -78,8 +68,6 @@ The static class that handles input data from the mouse and touchscreen.
 | --- | --- | --- |
 | `event` | MouseEvent |  |
 
-<dl>
-</dl>
 
 #### (static) _onMouseMove (event)
 
@@ -89,8 +77,6 @@ The static class that handles input data from the mouse and touchscreen.
 | --- | --- | --- |
 | `event` | MouseEvent |  |
 
-<dl>
-</dl>
 
 #### (static) _onMouseUp (event)
 
@@ -100,8 +86,6 @@ The static class that handles input data from the mouse and touchscreen.
 | --- | --- | --- |
 | `event` | MouseEvent |  |
 
-<dl>
-</dl>
 
 #### (static) _onMove (x, y)
 
@@ -112,8 +96,6 @@ The static class that handles input data from the mouse and touchscreen.
 | `x` | [Number](Number.md) |  |
 | `y` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### (static) _onPointerDown (event)
 
@@ -123,8 +105,6 @@ The static class that handles input data from the mouse and touchscreen.
 | --- | --- | --- |
 | `event` | PointerEvent |  |
 
-<dl>
-</dl>
 
 #### (static) _onRelease (x, y)
 
@@ -135,8 +115,6 @@ The static class that handles input data from the mouse and touchscreen.
 | `x` | [Number](Number.md) |  |
 | `y` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### (static) _onRightButtonDown (event)
 
@@ -146,8 +124,6 @@ The static class that handles input data from the mouse and touchscreen.
 | --- | --- | --- |
 | `event` | MouseEvent |  |
 
-<dl>
-</dl>
 
 #### (static) _onTouchCancel (event)
 
@@ -157,8 +133,6 @@ The static class that handles input data from the mouse and touchscreen.
 | --- | --- | --- |
 | `event` | TouchEvent |  |
 
-<dl>
-</dl>
 
 #### (static) _onTouchEnd (event)
 
@@ -168,8 +142,6 @@ The static class that handles input data from the mouse and touchscreen.
 | --- | --- | --- |
 | `event` | TouchEvent |  |
 
-<dl>
-</dl>
 
 #### (static) _onTouchMove (event)
 
@@ -179,8 +151,6 @@ The static class that handles input data from the mouse and touchscreen.
 | --- | --- | --- |
 | `event` | TouchEvent |  |
 
-<dl>
-</dl>
 
 #### (static) _onTouchStart (event)
 
@@ -190,8 +160,6 @@ The static class that handles input data from the mouse and touchscreen.
 | --- | --- | --- |
 | `event` | TouchEvent |  |
 
-<dl>
-</dl>
 
 #### (static) _onTrigger (x, y)
 
@@ -202,8 +170,6 @@ The static class that handles input data from the mouse and touchscreen.
 | `x` | [Number](Number.md) |  |
 | `y` | [Number](Number.md) |  |
 
-<dl>
-</dl>
 
 #### (static) _onWheel (event)
 
@@ -213,143 +179,36 @@ The static class that handles input data from the mouse and touchscreen.
 | --- | --- | --- |
 | `event` | WheelEvent |  |
 
-<dl>
-</dl>
 
 #### (static) _setupEventHandlers ()
 
-<dl>
-</dl>
 
 #### (static) clear ()
-
-Clears all the touch data.
-<dl>
-</dl>
+Clears all the touch data.
 
 #### (static) initialize ()
-
-Initializes the touch system.
-<dl>
-</dl>
+Initializes the touch system.
 
 #### (static) isCancelled () → {Boolean}
-
-Checks whether the right mouse button is just pressed.
-<dl>
-</dl>
-
-##### Returns:
-
-True if the right mouse button is just pressed
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+Checks whether the right mouse button is just pressed.
 
 #### (static) isLongPressed () → {Boolean}
-
-Checks whether the left mouse button or touchscreen is kept depressed.
-<dl>
-</dl>
-
-##### Returns:
-
-True if the left mouse button or touchscreen is long-pressed
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+Checks whether the left mouse button or touchscreen is kept depressed.
 
 #### (static) isMoved () → {Boolean}
-
-Checks whether the mouse or a finger on the touchscreen is moved.
-<dl>
-</dl>
-
-##### Returns:
-
-True if the mouse or a finger on the touchscreen is moved
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+Checks whether the mouse or a finger on the touchscreen is moved.
 
 #### (static) isPressed () → {Boolean}
-
-Checks whether the mouse button or touchscreen is currently pressed down.
-<dl>
-</dl>
-
-##### Returns:
-
-True if the mouse button or touchscreen is pressed
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+Checks whether the mouse button or touchscreen is currently pressed down.
 
 #### (static) isReleased () → {Boolean}
-
-Checks whether the left mouse button or touchscreen is released.
-<dl>
-</dl>
-
-##### Returns:
-
-True if the mouse button or touchscreen is released
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+Checks whether the left mouse button or touchscreen is released.
 
 #### (static) isRepeated () → {Boolean}
-
-Checks whether the left mouse button or touchscreen is just pressed or a pseudo key repeat occurred.
-<dl>
-</dl>
-
-##### Returns:
-
-True if the mouse button or touchscreen is repeated
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+Checks whether the left mouse button or touchscreen is just pressed or a pseudo key repeat occurred.
 
 #### (static) isTriggered () → {Boolean}
-
-Checks whether the left mouse button or touchscreen is just pressed.
-<dl>
-</dl>
-
-##### Returns:
-
-True if the mouse button or touchscreen is triggered
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
+Checks whether the left mouse button or touchscreen is just pressed.
 
 #### (static) update ()
-
-Updates the touch data.
-<dl>
-</dl>
- <br>
-
-  Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
+Updates the touch data.
