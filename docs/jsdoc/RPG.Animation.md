@@ -17,8 +17,8 @@
 | `animation2Hue` | [Number](Number.md) | アニメーションの2つ目の色相(0〜360) |
 | `position` | [Number](Number.md) | 表示位置 (0:頭上, 1:中心, 2:足下, 3:画面) |
 | `frameMax` | [Number](Number.md) | 最大[フレーム数] |
-| `frames` | [Array](Array.md).<[Array](Array.md).<[Array](Array.md).<[Number](Number.md)>>> | フレームに含まれる情報の3次元配列 |
-| `timings` | [Array](Array.md).<[RPG.Animation.Timing](RPG.Animation.Timing.md)> | [SEとフラッシュのタイミング]の配列 |
+| `frames` | [Array](Array.md).&lt;[Array](Array.md).&lt;[Array](Array.md).&lt;[Number](Number.md)&gt;&gt;&gt; | フレームに含まれる情報の3次元配列 |
+| `timings` | [Array](Array.md).&lt;[RPG.Animation.Timing](RPG.Animation.Timing.md)&gt; | [SEとフラッシュのタイミング]の配列 |
 
 
 ### Classes

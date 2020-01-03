@@ -7,6 +7,7 @@
 
 [Scene_Battle](Scene_Battle.md) オブジェクトで管理される。
 
+
 ### Properties:
 
 | Name | Type | Description |
@@ -34,7 +35,6 @@
 * [toGlobal (position, point, skipUpdate)](PIXI.DisplayObject.md#toglobal-position-point-skipupdate--pixipoint)
 * [toLocal (position, from, point, skipUpdate)](PIXI.DisplayObject.md#tolocal-position-from-point-skipupdate--pixipoint)
 
-
 #### [PIXI.Container](PIXI.Container.md)
 
 * [addChild (child) ](PIXI.Container.md#addchild-child--pixidisplayobject)
@@ -54,7 +54,6 @@
 * [swapChildren (child, child2)](PIXI.Container.md#swapchildren-child-child2)
 * [updateTransform ()](PIXI.Container.md#updatetransform-)
 
-
 #### [PIXI.Sprite](PIXI.Sprite.md)
 
 * [(static) from (source, options)](PIXI.Sprite.md#static-from-source-options--pixisprite)
@@ -66,7 +65,6 @@
 * [destroy (options)](PIXI.Sprite.md#destroy-options)
 * [getLocalBounds (rect)](PIXI.Sprite.md#getlocalbounds-rect--pixirectangle)
 * [renderCanvas (renderer)](PIXI.Sprite.md#rendercanvas-renderer)
-
 
 #### [Sprite](Sprite.md)
 
@@ -85,7 +83,6 @@
 * [setBlendColor (color)](Sprite.md#setblendcolor-color)
 * [setColorTone (tone)](Sprite.md#setcolortone-tone)
 * [setFrame (x, y, width, height)](Sprite.md#setframe-x-y-width-height)
-
 
 #### [Spriteset_Base](Spriteset_Base.md)
 

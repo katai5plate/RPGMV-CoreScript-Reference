@@ -66,7 +66,6 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 * [toGlobal (position, point, skipUpdate)](PIXI.DisplayObject.md#toglobal-position-point-skipupdate--pixipoint)
 * [toLocal (position, from, point, skipUpdate)](PIXI.DisplayObject.md#tolocal-position-from-point-skipupdate--pixipoint)
 
-
 #### [PIXI.Container](PIXI.Container.md)
 
 * [addChild (child) ](PIXI.Container.md#addchild-child--pixidisplayobject)
@@ -85,7 +84,6 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 * [sortChildren ()](PIXI.Container.md#sortchildren-)
 * [swapChildren (child, child2)](PIXI.Container.md#swapchildren-child-child2)
 * [updateTransform ()](PIXI.Container.md#updatetransform-)
-
 
 #### [PIXI.Sprite](PIXI.Sprite.md)
 

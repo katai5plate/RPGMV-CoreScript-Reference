@@ -2,9 +2,9 @@
 
 ## Extends: [RPG.MetaData](RPG.MetaData.md) 
 
-| データベース| JSONファイル | 大域変数 |
-| --- | --- | --- |
-| [ステート] | States.json | [$dataStates](global.md#datastates-arrayrpgstate)(配列) |
+| データベース| JSONファイル | 大域変数 | オブジェクト |
+| --- | --- | --- | --- |
+| [ステート] | States.json | [$dataStates](global.md#datastates-arrayrpgstate)(配列) | [Sprite_StateIcon](Sprite_StateIcon) |
 
 エディタ上の利用方法については公式の [RPGツクールMV 初心者講座 ステート作成例](https://tkool.jp/mv/guide/004_007c.html) を参照。
 
