@@ -12,7 +12,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_animationSprites` | [Array](Array.md).<[Sprite_Animation](Sprite_Animation.md)> | 付随する[アニメーション]のスプライト |
+| `_animationSprites` | [Array](Array.md).&lt;[Sprite_Animation](Sprite_Animation.md)&gt; | 付随する[アニメーション]のスプライト |
 | `_effectTarget` | [Sprite_Base](Sprite_Base.md) | アニメーションを適用する対象 |
 | `_hiding` | Boolean | 非表示か |
 

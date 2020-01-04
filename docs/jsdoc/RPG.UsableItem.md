@@ -19,7 +19,7 @@
 | `repeats` | [Number](Number.md) | [連続回数] \(1〜9) |
 | `tpGain` | [Number](Number.md) | [得TP] \(0〜100) |
 | `hitType` | [Number](Number.md) | [命中タイプ](RPG.UsableItem.md#命中タイプ) |
-| `animationId` | [Number](Number.md) | [アニメーション]のID |
+| `animationId` | [Number](Number.md) | [[アニメーション](RPG.Animation.md)]のID |
 | `damage` | [RPG.Damage](RPG.Damage.md) | [ダメージ] |
 | `effects` | [Array](Array.md).&lt;[RPG.Effect](RPG.Effect.md)&gt; | [使用効果]の配列 |
 

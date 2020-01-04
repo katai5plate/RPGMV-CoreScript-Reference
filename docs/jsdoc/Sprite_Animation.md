@@ -8,7 +8,7 @@
 | --- | --- | --- |
 | [アニメーション] | [RPG.Animation](RPG.Animation.md), [RPG.Animation.Timing](RPG.Animation.Timing.md) | [$dataAnimations](global.md#dataanimations-arrayrpganimation)(配列) |
 
-[アニメーション]を表示するスプライト。
+[アニメーション]を表示するスプライト。戦闘シーンで設定スクリプトコマンド
 
 関連項目: [Sprite_Base](Sprite_Base.md)
 
@@ -17,25 +17,25 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_checker1` | Object | [static] {key: [RPG.Animation](RPG.Animation.md)} |
-| `_checker2` | Object | [static] {key: [RPG.Animation](RPG.Animation.md)} |
-| `z` | [Number](Number.md) |  |
-| `_target` | [Sprite_Base](Sprite_Base.md) |  |
-| `_animation` | [RPG.Animation](RPG.Animation.md) |  |
-| `_mirror` | Boolean |  |
-| `_delay` | [Number](Number.md) |  |
-| `_rate` | [Number](Number.md) |  |
-| `_duration` | [Number](Number.md) |  |
-| `_flashColor` | [Array](Array.md).&lt;[Number](Number.md)&gt; |  |
-| `_flashDuration` | [Number](Number.md) |  |
-| `_screenFlashDuration` | [Number](Number.md) |  |
-| `_hidingDuration` | [Number](Number.md) |  |
-| `_bitmap1` | [Bitmap](Bitmap.md) |  |
-| `_bitmap2` | [Bitmap](Bitmap.md) |  |
-| `_cellSprites` | [Array](Array.md).&lt;[Sprite](Sprite.md)&gt; |  |
-| `_screenFlashSprite` | [ScreenSprite](ScreenSprite.md) |  |
-| `_duplicated` | Boolean |  |
-| `_reduceArtifacts` | Boolean |  |
+| `_checker1` | Object | [static] すでに生成済みかチェック用オブジェクト {key: [RPG.Animation](RPG.Animation.md)} |
+| `_checker2` | Object | [static] すでに生成済みかチェック用オブジェクト {key: [RPG.Animation](RPG.Animation.md)} |
+| `z` | [Number](Number.md) | 重ね合わせ優先度 |
+| `_target` | [Sprite_Base](Sprite_Base.md) | 対象 |
+| `_animation` | [RPG.Animation](RPG.Animation.md) | アニメーションデータ |
+| `_mirror` | Boolean | 左右反転するか |
+| `_delay` | [Number](Number.md) | 表示時間 |
+| `_rate` | [Number](Number.md) | 表示レート |
+| `_duration` | [Number](Number.md) | 継続時間 |
+| `_flashColor` | [Array](Array.md).&lt;[Number](Number.md)&gt; | フラッシュの色の配列 [ 赤, 緑, 青, 強さ ] |
+| `_flashDuration` | [Number](Number.md) | フラッシュの[時間] \(1/15秒単位) |
+| `_screenFlashDuration` | [Number](Number.md) | [画面]のフラッシュの継続時間 |
+| `_hidingDuration` | [Number](Number.md) | [対象消去]の継続時間 |
+| `_bitmap1` | [Bitmap](Bitmap.md) | [画像]1 |
+| `_bitmap2` | [Bitmap](Bitmap.md) | [画像]2 |
+| `_cellSprites` | [Array](Array.md).&lt;[Sprite](Sprite.md)&gt; | アニメ用スプライトの配列 |
+| `_screenFlashSprite` | [ScreenSprite](ScreenSprite.md) | 画面フラッシュ用スプライト |
+| `_duplicated` | Boolean | 複製か |
+| `_reduceArtifacts` | Boolean | 減らすか |
 
 
 ### Inherited From
@@ -105,97 +105,107 @@
 ### Methods
 
 #### absoluteX () → {[Number](Number.md)}
-Returns the absolute x position of the sprite animation.
+x座標の絶対値を返す。
 
 #### absoluteY () → {[Number](Number.md)}
-Returns the absolute y position of the sprite aniamtion.
+y座標の絶対値を返す。
 
 
 #### createCellSprites ()
-Create the cell sprites of the sprite animation.
+セル用のスプライトを生成。
 
 #### createScreenFlashSprite ()
-Create the screen flash sprite of the sprite animation.
+画面に対するフラッシュ用のスプライトを生成。
 
 #### createSprites ()
-Create the sprites of the sprite animation.
+アニメーション用のスプライトのセットを生成。
 
 #### currentFrameIndex () → {[Number](Number.md)}
-Returns the current frame index of the sprite aniamtion.
+現在のフレーム番号を返す。
+
 
 #### initialize ()
 Overrides:[Sprite](Sprite.md#initialize-)
+
  
 #### initMembers ()
+メンバ変数の初期化。
+
 
 #### isPlaying () → {Boolean}
-Returns true if the sprite animation is playing.
+アニメーションが再生中か。
 
 #### isReady () → {Boolean}
-Returns true if the sprite animation is ready.
+アニメーションの準備ができているか。
 
 #### loadBitmaps ()
-Loads the bitmaps of the sprite animation.
+アニメーション用の画像の読み込み。
 
 #### processTimingData (timing)
+[SEとフラッシュのタイミング]データの実行。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `timing` | [RPG.Animation.Timing](RPG.Animation.Timing.md) |  |
+| `timing` | [RPG.Animation.Timing](RPG.Animation.Timing.md) | [SEとフラッシュのタイミング] |
 
 
 #### remove ()
-Removes the sprite animation.
+アニメーションを取り除く。
 
 
 #### setup (target, animation, mirror, delay)
+アニメーションの準備。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Sprite_Base](Sprite_Base.md) |  |
-| `animation` | [RPG.Animation](RPG.Animation.md) |  |
-| `mirror` | Boolean |  |
-| `delay` | [Number](Number.md) |  |
+| `target` | [Sprite_Base](Sprite_Base.md) | 対象 |
+| `animation` | [RPG.Animation](RPG.Animation.md) | アニメーションデータ |
+| `mirror` | Boolean | 左右反転するか |
+| `delay` | [Number](Number.md) | 時間 |
 
 
 #### setupDuration ()
+継続時間の設定。
 
 
 #### setupRate ()
+表示レート(フレーム)の設定(規定値:4)
 
 
 #### startFlash (color, duration)
+フラッシュの開始。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `color` | [Array](Array.md).&lt;[Number](Number.md)&gt; |  |
-| `duration` | [Number](Number.md) |  |
+| `color` | [Array](Array.md).&lt;[Number](Number.md)&gt; | 色の配列 [ 赤, 緑, 青, 強さ ] |
+| `duration` | [Number](Number.md) | 継続時間 |
 
 
 #### startHiding (duration)
-Starts hiding the sprite animation.
+対象を隠す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `duration` | [Number](Number.md) | The duration of the hide. |
+| `duration` | [Number](Number.md) | 継続時間 |
 
 
 #### startScreenFlash (color, duration)
+画面のフラッシュの開始。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `color` | [Array](Array.md).&lt;[Number](Number.md)&gt; |  |
-| `duration` | [Number](Number.md) |  |
+| `color` | [Array](Array.md).&lt;[Number](Number.md)&gt; | 色の配列 [ 赤, 緑, 青, 強さ ] |
+| `duration` | [Number](Number.md) | 継続時間 |
 
 
 #### update ()
@@ -203,12 +213,13 @@ Overrides:[Sprite](Sprite.md#update-)
 
 
 #### updateAllCellSprites (frame)
+全セルスプライトのアップデート。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `frame` | [Array](Array.md).&lt;[Array](Array.md).&lt;[Number](Number.md)&gt;&gt; |  |
+| `frame` | [Array](Array.md).&lt;[Array](Array.md).&lt;[Number](Number.md)&gt;&gt; | [フレーム情報](RPG.Animation.md#フレーム情報)のセル番号以降 |
 
 
 #### updateCellSprite (sprite, cell)
@@ -222,20 +233,21 @@ Overrides:[Sprite](Sprite.md#update-)
 
 
 #### updateFlash ()
-Updates the flash animation of the sprite animation.
+フラッシュのアップデート。
 
 #### updateFrame ()
-Updates the frame of the sprite aniamtion.
+フレームのアップデート。
 
 #### updateHiding ()
-Updates the hiding of the sprite animation.
+対象消去のアップデート。
 
 #### updateMain ()
-Updates the main loop of the sprite animation.
+主要なアップデート。
 
 #### updatePosition ()
-Updates the position of the sprite animation.
+位置のアップデート。
 
 #### updateScreenFlash ()
+画面のフラッシュのアップデート。
 
 
