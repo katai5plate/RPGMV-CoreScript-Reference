@@ -8,9 +8,9 @@
 | --- | --- | --- |
 | [アニメーション] | [RPG.Animation](RPG.Animation.md), [RPG.Animation.Timing](RPG.Animation.Timing.md) | [$dataAnimations](global.md#dataanimations-arrayrpganimation)(配列) |
 
-[アニメーション]を表示するスプライト。戦闘シーンで設定スクリプトコマンド
+[アニメーション]を表示するスプライト。主に戦闘シーンで使用される。また[アニメーションの表示]スクリプトコマンドからも実行される。
 
-関連項目: [Sprite_Base](Sprite_Base.md)
+関連項目: [Sprite_Base](Sprite_Base.md), [RPG.UsableItem](RPG.UsableItem.md), [RPG.Weapon](RPG.Weapon.md), [Game_Interpreter](Game_Interpreter.md)
 
 
 ### Properties:
