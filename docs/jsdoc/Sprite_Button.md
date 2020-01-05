@@ -5,6 +5,8 @@
 ### new Sprite_Button ()
 ボタン表示用スプライト。
 
+関連クラス: [Window_ShopNumber](Window_ShopNumber.md), [Window_NumberInput](Window_NumberInput.md)
+
 ### Properties:
 
 | Name | Type | Description |
@@ -81,157 +83,88 @@
 
 ### Methods
 
-#### _speedUpCustomBlendModes (renderer)
-
-checks if we need to speed up custom blendmodes
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `renderer` |  |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite#_speedUpCustomBlendModes</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### callClickHandler (height)
-
-Calls the handler method bound to the button.
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `height` | function |  |
+#### callClickHandler ()
+クリックハンドラがあれば呼び出す。
 
 
 #### canvasToLocalX (x) → {number}
-
-Changes the x coordinate of the screen to local sprite x coordinate.
+canvas の x座標をローカル x座標に変換して返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) | canvas の x座標(ピクセル) |
 
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>number</span>
-                </dd>
-            </dl>
 
 #### canvasToLocalY (y) → {number}
-
-Changes the y coordinate of the screen to local sprite y coordinate.
+canvas の y座標をローカル x座標に変換して返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `y` | [Number](Number.md) |  |
+| `y` | [Number](Number.md) | canvas の y座標(ピクセル) |
 
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>number</span>
-                </dd>
-            </dl>
 
 #### initialize ()
+Overrides:[Sprite](Sprite.md#initialize-)
 
- オブジェクト生成時の初期化。
 
 #### isActive () → {boolean}
+ボタンがアクティブか。
 
-Returns true if the sprite button is currently active.
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>boolean</span>
-                </dd>
-            </dl>
 
 #### isButtonTouched () → {boolean}
+ボタンがタッチされたか。
 
-Returns true is the button is presently being touched.
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>boolean</span>
-                </dd>
-            </dl>
 
 #### processTouch ()
+タッチの処理。
 
-Processes weather or not the button is being touched and calls the handler bound to the button.
 
-#### setClickHandler (height)
-
-Creates a new handler and binds it to the button.
+#### setClickHandler (method)
+クリックハンドラの設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `height` | function |  |
+| `method` | Function | クリックハンドラ |
 
 
 #### setColdFrame (x, y, width, height)
-
-Set the button sprites cold frame.
+コールド(非アクティブ)の枠を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
-| `height` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `width` | [Number](Number.md) | 幅(ピクセル) |
+| `height` | [Number](Number.md) | 高さ(ピクセル) |
 
 
 #### setHotFrame (x, y, width, height)
-
-Set the button sprites hot frame
+ホット(アクティブ)の枠を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
-| `height` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `width` | [Number](Number.md) | 幅(ピクセル) |
+| `height` | [Number](Number.md) | 高さ(ピクセル) |
 
 
 #### update ()
+Overrides:[Sprite](Sprite.md#update-)
 
 
 #### updateFrame ()
-
-Update method, which checks if the sprite is being touched and updates the current frame.
-
+ボタン枠のアップテート。
+
 
 
