@@ -1,6 +1,6 @@
 # Class: [RPG](RPG.md).Animation
 
-| データベース| JSONファイル | 大域変数 | オブジェクト |
+| データベース| JSONファイル | 大域変数 | スプライト |
 | --- | --- | --- | --- |
 | [アニメーション] | Animations.json | [$dataAnimations](global.md#dataanimations-arrayrpganimation)(配列) | [Sprite_Animation](Sprite_Animation.md) |
 
@@ -15,9 +15,9 @@
 | --- | --- | --- |
 | `id` | [Number](Number.md) | アニメーションID |
 | `name` | [String](String.md) | エディタで表示される[名前] |
-| `animation1Name` | [String](String.md) | [画像]1のファイル名(拡張子を含まない) |
+| `animation1Name` | [String](String.md) | [画像]1のファイル名(img/animations/ フォルダで、拡張子を含まない) |
 | `animation1Hue` | [Number](Number.md) |[画像]1の色相(0〜360) |
-| `animation2Name` | [String](String.md) | [画像]2のファイル名(拡張子を含まない) |
+| `animation2Name` | [String](String.md) | [画像]2のファイル名((img/animations/ フォルダで、拡張子を含まない) |
 | `animation2Hue` | [Number](Number.md) | [画像]2の色相(0〜360) |
 | `position` | [Number](Number.md) | [[位置](RPG.Animation.md#位置)] |
 | `frameMax` | [Number](Number.md) | 最大[フレーム数] |
