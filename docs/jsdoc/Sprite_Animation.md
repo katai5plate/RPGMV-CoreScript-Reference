@@ -19,7 +19,6 @@
 | --- | --- | --- |
 | `_checker1` | Object | [static] すでに生成済みかチェック用オブジェクト {key: [RPG.Animation](RPG.Animation.md)} |
 | `_checker2` | Object | [static] すでに生成済みかチェック用オブジェクト {key: [RPG.Animation](RPG.Animation.md)} |
-| `z` | [Number](Number.md) | 重ね合わせ優先度 |
 | `_target` | [Sprite_Base](Sprite_Base.md) | 対象 |
 | `_animation` | [RPG.Animation](RPG.Animation.md) | アニメーションデータ |
 | `_mirror` | Boolean | 左右反転するか |
