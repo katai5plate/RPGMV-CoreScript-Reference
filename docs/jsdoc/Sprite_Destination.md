@@ -3,14 +3,15 @@
 ## Extends: [Sprite](Sprite.md)
 
 ### new Sprite_Destination ()
+タッチ箇所を表示するスプライト。
 
-The sprite for displaying the destination place of the touch input.
+関連クラス: [TouchInput](TouchInput.md)
 
 ### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_frameCount` | [Number](Number.md) |  |
+| `_frameCount` | [Number](Number.md) | フレームカウント |
 
 
 ### Inherited From
@@ -79,52 +80,24 @@ The sprite for displaying the destination place of the touch input.
 
 ### Methods
 
-#### _speedUpCustomBlendModes (renderer)
-
-checks if we need to speed up custom blendmodes
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `renderer` |  |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite#_speedUpCustomBlendModes</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
 #### createBitmap ()
+タッチ画像を生成。
 
-Creates the destination bitmap of the destination sprite.
-<dl>
-</dl>
 
 #### initialize ()
+Overrides:[Sprite](Sprite.md#initialize-)
 
- オブジェクト生成時の初期化。
-<dl>
-</dl>
 
 #### update ()
+Overrides:[Sprite](Sprite.md#update-)
 
-<dl>
-</dl>
 
 #### updateAnimation ()
+アニメーションのアップデート。
 
-Updates the destination sprite animation.
-<dl>
-</dl>
 
 #### updatePosition ()
+位置のアップデート。
 
-Updates the position of the destination sprite.
-<dl>
-</dl>
+
+

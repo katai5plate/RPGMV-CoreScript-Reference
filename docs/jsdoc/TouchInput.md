@@ -1,7 +1,7 @@
 # Class: TouchInput
 The static class that handles input data from the mouse and touchscreen.
 
-関連クラス: [Input](Input.md)
+関連クラス: [Input](Input.md), [Sprite_Destination](Sprite_Destination.md)
 
 
 ### Properties:
