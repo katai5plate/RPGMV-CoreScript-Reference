@@ -2,7 +2,7 @@
 
 ## Extends: [RPG.MetaData](RPG.MetaData.md) 
 
-| データベース| JSONファイル | 大域変数 | オブジェクト |
+| データベース| JSONファイル | 大域変数 | スプライト |
 | --- | --- | --- | --- |
 | [ステート] | States.json | [$dataStates](global.md#datastates-arrayrpgstate)(配列) | [Sprite_StateIcon](Sprite_StateIcon) |
 
@@ -28,7 +28,7 @@
 | `chanceByDamage` | [Number](Number.md) | [ダメージで解除]の%確率 |
 | `removeByWalking` | Boolean | [歩数で解除] |
 | `stepToRemove` | [Number](Number.md) | [歩数で解除]の歩数 |
-| `iconIndex` | [Number](Number.md) | [アイコン]の番号 |
+| `iconIndex` | [Number](Number.md) | [アイコン]番号 |
 | `message1` | [String](String.md) | [アクターがこの状態になったとき] |
 | `message2` | [String](String.md) | [敵キャラがこの状態になったとき] |
 | `message3` | [String](String.md) | [この状態が継続しているとき] |

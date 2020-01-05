@@ -8,21 +8,19 @@
 | --- | --- | --- |
 | [ステート] | [RPG.state](RPG.State.md) | [$dataStates](global.md#datastates-arrayrpgstate)(配列) |
 
-ステートアイコン表示用スプライト。
-
-関連クラス: 
+ステートアイコン( img/system/IconSet.png )表示用スプライト。
 
 
 ### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_iconWidth` | [Number](Number.md) | [static] |
-| `_iconHeight` | [Number](Number.md) | [static] |
-| `_battler` | [Game_Battler](Game_Battler.md) |  |
-| `_iconIndex` | [Number](Number.md) |  |
-| `_animationCount` | [Number](Number.md) |  |
-| `_animationIndex` | [Number](Number.md) |  |
+| `_iconWidth` | [Number](Number.md) | [static] アイコンの幅(規定値:32ピクセル) |
+| `_iconHeight` | [Number](Number.md) | [static] アイコンの高さ(規定値:32ピクセル) |
+| `_battler` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `_iconIndex` | [Number](Number.md) | [アイコン]番号 |
+| `_animationCount` | [Number](Number.md) | アニメーションカウント |
+| `_animationIndex` | [Number](Number.md) | アニメーション番号 |
 
 
 ### Inherited From
@@ -91,83 +89,39 @@
 
 ### Methods
 
-#### _speedUpCustomBlendModes (renderer)
-
-checks if we need to speed up custom blendmodes
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `renderer` |  |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite#_speedUpCustomBlendModes</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
 #### animationWait () → {[Number](Number.md)}
+アニメーションの待ち時間を返す。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
 
 #### initialize ()
+Overrides:[Sprite](Sprite.md#initialize-)
 
- オブジェクト生成時の初期化。
-<dl>
-</dl>
 
 #### initMembers ()
+メンバ変数の初期化。
 
-Initializes the sprite state icon properties.
-<dl>
-</dl>
 
 #### loadBitmap ()
+画像の読み込み。
 
-Loads the bitmap of the sprite state icon.
-<dl>
-</dl>
 
 #### setup (battler)
+対象バトラーに対する準備。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `battler` | [Game_Battler](Game_Battler.md) |  |
+| `battler` | [Game_Battler](Game_Battler.md) | 対象バトラー |
 
-<dl>
-</dl>
 
 #### update ()
+Overrides:[Sprite](Sprite.md#update-)
 
-<dl>
-</dl>
 
 #### updateFrame ()
+アイコン枠のアップデート。
 
-Updates the state icon sprite frame.
-<dl>
-</dl>
 
 #### updateIcon ()
-
-Updates the icon displayed in the icon sprite.
-<dl>
-</dl>
+アイコンのアップデート。
