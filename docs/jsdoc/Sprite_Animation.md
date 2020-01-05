@@ -7,8 +7,9 @@
 | データベース| JSONデータ | 大域変数 |
 | --- | --- | --- |
 | [アニメーション] | [RPG.Animation](RPG.Animation.md), [RPG.Animation.Timing](RPG.Animation.Timing.md) | [$dataAnimations](global.md#dataanimations-arrayrpganimation)(配列) |
-
-[アニメーション]を表示するスプライト。主に戦闘シーンで使用される。また[アニメーションの表示]スクリプトコマンドからも実行される。
+	
+[アニメーション]を表示するスプライト。主に戦闘シーンで使用される。<br />
+[アニメーションの表示]スクリプトコマンドからも実行される。
 
 関連クラス: [Sprite_Base](Sprite_Base.md), [Sprite_Damage](Sprite_Damage.md), [RPG.UsableItem](RPG.UsableItem.md), [RPG.Weapon](RPG.Weapon.md), [Game_Interpreter](Game_Interpreter.md)
 
