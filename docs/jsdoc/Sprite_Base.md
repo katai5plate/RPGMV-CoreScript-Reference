@@ -113,9 +113,9 @@ Overrides:[Sprite](Sprite.md#initialize-)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `animation` | [RPG.Animation](RPG.Animation.md) |  |
-| `mirror` | Boolean |  |
-| `delay` | [Number](Number.md) |  |
+| `animation` | [RPG.Animation](RPG.Animation.md) | アニメーションデータ |
+| `mirror` | Boolean | 左右反転するか |
+| `delay` | [Number](Number.md) | 表示時間 |
 
 
 #### update ()

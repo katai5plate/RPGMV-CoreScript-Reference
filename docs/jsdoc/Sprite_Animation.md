@@ -165,7 +165,7 @@ Overrides:[Sprite](Sprite.md#initialize-)
 | `target` | [Sprite_Base](Sprite_Base.md) | 対象 |
 | `animation` | [RPG.Animation](RPG.Animation.md) | アニメーションデータ |
 | `mirror` | Boolean | 左右反転するか |
-| `delay` | [Number](Number.md) | 時間 |
+| `delay` | [Number](Number.md) | 表示時間 |
 
 
 #### setupDuration ()
