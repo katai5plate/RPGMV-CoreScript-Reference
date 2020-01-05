@@ -5,7 +5,7 @@
 ### new Sprite_Timer ()
 [タイマーの操作]イベントコマンドの、タイマー表示用スプライト。
 
-関連クラス: [Game_Interpreter](Game_Interpreter.md)
+関連クラス: [Game_Interpreter](Game_Interpreter.md), [Spriteset_Base](Spriteset_Base.md)
 
 ### Properties:
 
