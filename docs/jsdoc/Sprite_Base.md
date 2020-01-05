@@ -5,8 +5,6 @@
 ### new Sprite_Base ()
 アニメーションする表示物のためのクラス。
 
-関連クラス: [Sprite_Animation](Sprite_Animation.md)
-
 
 ### Properties:
 
@@ -129,5 +127,5 @@ Overrides:[Sprite](Sprite.md#update-)
 
 
 #### updateVisibility ()
-表示プロパティのアップデート。
+表示・非表示のアップデート。
 
