@@ -14,7 +14,7 @@
 | `_duration` | [Number](Number.md) | 継続時間 |
 | `_flashColor` | [Array](Array.md).&lt;[Number](Number.md)&gt; | フラッシュの色の配列 [ 赤, 緑, 青, 強さ ] |
 | `_flashDuration` | [Number](Number.md) | フラッシュの[時間] \(1/15秒単位) |
-| `_damageBitmap` | [Bitmap](Bitmap.md) | ダメージ画像 |
+| `_damageBitmap` | [Bitmap](Bitmap.md) | ダメージ画像( img/system/Damage.png ) |
 
 
 ### Inherited From
