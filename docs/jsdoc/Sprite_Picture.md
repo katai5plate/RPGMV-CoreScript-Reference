@@ -8,7 +8,7 @@
 | --- | --- |
 | [ピクチャ] |[Game_Picture](Game_Picture.md) |
 
-[ピクチャ]の表示用スプライト。
+[ピクチャ]\( img/pictures/ フォルダの画像 )の表示用スプライト。
 
 関連クラス:  [Spriteset_Base](Spriteset_Base.md), [Game_Screen](Game_Screen.md)
 

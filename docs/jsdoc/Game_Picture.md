@@ -6,7 +6,7 @@
 | --- | --- |
 | [ピクチャ] | [Sprite_Picture](Sprite_Picture.md) |
 
-[ピクチャ]関連イベントコマンドに使われる、画像の座標や加工情報。
+[ピクチャ]\( img/pictures/ フォルダの画像 )関連イベントコマンドに使われる、画像の座標や加工情報。
 
 関連クラス: [Game_Screen](Game_Screen.md)
 
