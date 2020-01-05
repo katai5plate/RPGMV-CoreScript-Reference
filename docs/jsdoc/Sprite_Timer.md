@@ -3,8 +3,9 @@
 ## Extends: [Sprite](Sprite.md)
 
 ### new Sprite_Timer ()
-タイマー表示用スプライト。
+[タイマーの操作]イベントコマンドの、タイマー表示用スプライト。
 
+関連クラス: [Game_Interpreter](Game_Interpreter.md)
 
 ### Properties:
 
