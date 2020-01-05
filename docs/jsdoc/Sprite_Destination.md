@@ -5,7 +5,7 @@
 ### new Sprite_Destination ()
 タッチ箇所を表示するスプライト。
 
-関連クラス: [TouchInput](TouchInput.md)
+関連クラス: [TouchInput](TouchInput.md), [Spriteset_Map](Spriteset_Map.md)
 
 ### Properties:
 

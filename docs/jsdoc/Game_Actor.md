@@ -4,15 +4,13 @@
 
 ### new Game_Actor ()
 
-| データベース| JSONデータ |
-| --- | --- |
-| [アクター] | [RPG.Actor](RPG.Actor.md) |
+| データベース| JSONデータ | スプライト |
+| --- | --- | --- |
+| [アクター] | [RPG.Actor](RPG.Actor.md) | [Sprite_Character](Sprite_Character.md), [Sprite_Actor](Sprite_Actor.md) |
 
 アクターのパラメータの取得、画像の設定、戦闘の処理とサイドビュー時の画像処理を行うクラス。
 
-大域変数 [$gameParty](global.md#gameparty-game_party)、[$gameActors](global.md#gameactors-game_actors) から参照される。
-
-関連クラス: [Game_Actors](Game_Actors.md), [Game_Party](Game_Party.md), [Game_Troop](Game_Troop.md), [Game_Enemy](Game_Enemy.md), [Scene_Battle](Scene_Battle.md), [BattleManager](BattleManager.md)
+関連クラス: [Game_Actors](Game_Actors.md), [Game_Party](Game_Party.md), [Game_Troop](Game_Troop.md), [Game_Enemy](Game_Enemy.md), [Scene_Battle](Scene_Battle.md), [BattleManager](BattleManager.md), [Game_Player](Game_Player.md), [Game_Follower](Game_Follower.md)
 
 
 ### Properties:
@@ -32,8 +30,8 @@
 | `_faceIndex` | [Number](Number.md) | [顔]画像番号 |
 | `_battlerName` | [String](String.md) | [[SV]戦闘キャラ]画像ファイル名(拡張子なし) |
 | `_exp` | Object | {[classId: number]: number} |
-| `_skills` | [Array](Array.md).<[Number](Number.md)> | [スキル]の配列 |
-| `_equips` | [Array](Array.md).<[Game_Item](Game_Item.md)> | [装備]の配列 |
+| `_skills` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [スキル]の配列 |
+| `_equips` | [Array](Array.md).&lt;[Game_Item](Game_Item.md)&gt; | [装備]の配列 |
 | `_actionInputIndex` | [Number](Number.md) | 行動の番号 |
 | `_lastMenuSkill` | [Game_Item](Game_Item.md) | 最後のメニュースキル |
 | `_lastBattleSkill` | [Game_Item](Game_Item.md) | 最後の戦闘スキル |

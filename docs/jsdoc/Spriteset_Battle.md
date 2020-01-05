@@ -5,14 +5,14 @@
 ### new Spriteset_Battle ()
 戦闘シーン用のスプライトセット。[背景][アクター][敵キャラ]を含む。
 
-[Scene_Battle](Scene_Battle.md) オブジェクトで管理される。
+関連クラス: [Scene_Battle](Scene_Battle.md)
 
 
 ### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_battlebackLocated` | Boolean |  |
+| `_battlebackLocated` | Boolean | 背景画像が表示されているか |
 | `_backgroundSprite` | [Sprite](Sprite.md) | [背景]スプライト |
 | `_battleField` | [Sprite](Sprite.md) | 戦闘フィールド |
 | `_back1Sprite` | [TilingSprite](TilingSprite.md) | 背景1スプライト |

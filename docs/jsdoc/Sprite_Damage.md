@@ -5,7 +5,7 @@
 ### new Sprite_Damage ()
 ダメージをポップアップさせるスプライト。
 
-関連クラス: [Sprite_Animation](Sprite_Animation.md)
+関連クラス: [Sprite_Animation](Sprite_Animation.md), [Sprite_Battler](Sprite_Battler.md)
 
 ### Properties:
 

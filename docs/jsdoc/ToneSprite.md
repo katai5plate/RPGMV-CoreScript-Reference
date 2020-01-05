@@ -5,7 +5,7 @@
 ### new ToneSprite ()
 The sprite which changes the screen color in 2D canvas mode.
 
-関連クラス: [ToneFilter](ToneFilter.md)
+関連クラス: [ToneFilter](ToneFilter.md), [Spriteset_Base](Spriteset_Base.md)
 
 ### Properties:
 

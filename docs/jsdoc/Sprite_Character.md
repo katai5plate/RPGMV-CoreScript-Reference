@@ -3,6 +3,12 @@
 ## Extends: [Sprite_Base](Sprite_Base.md)
 
 ### new Sprite_Character (character)
+
+| データベース | オブジェクト |
+| --- | --- |
+| [イベント][アクター][フォロワー][乗り物] | [Game_Character](Game_Character.md) |
+
+
 [イベント][アクター][フォロワー][乗り物]といった、キャラクタを表示するスプライト。
 
 コンストラクタの引数(Parameters)として渡される以下のキャラクタデータオブジェクトによって挙動が決まる。

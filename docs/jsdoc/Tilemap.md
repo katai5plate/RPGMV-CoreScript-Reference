@@ -10,7 +10,7 @@
 描画モード(F2キーを押して確かめられる)が Canvas Mode の場合に使われる。<br />
 なお、Canvas Mode は古いブラウザなどの一部環境でしか使われない。
 
-関連クラス: [RPG.Tileset](RPG.Tileset.md)と[RPG.Map](RPG.Map.md)
+関連クラス: [RPG.Map](RPG.Map.md), [RPG.Tileset](RPG.Tileset.md), [Spriteset_Map](Spriteset_Map.md)
 
 
 ### Sub Classes
@@ -19,6 +19,7 @@
 
 
 ### Properties:
+TILE_ から始まる定数はタイルブロックの開始番号。
 
 | Name | Type | Description |
 | --- | --- | --- |

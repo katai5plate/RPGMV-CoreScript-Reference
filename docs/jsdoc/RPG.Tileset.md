@@ -3,10 +3,10 @@
 ## Extends: [RPG.MetaData](RPG.MetaData.md)
 
 | データベース| JSONファイル | 大域変数 |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | [タイルセット] | Tilesets.json | [$dataTilesets](global.md#datatilesets-arrayrpgtileset)(配列) |
 
-関連クラス: [Game_Map](Game_Map.md)
+関連クラス: [Game_Map](Game_Map.md),  [ShaderTilemap](ShaderTilemap.md)
 
 
 ### Properties:
@@ -15,7 +15,7 @@
 | --- | --- | --- |
 | `id` | [Number](Number.md) |  タイルセットのID |
 | `name` | [String](String.md) | [名前] |
-| `mode` | [Number](Number.md) | [モード] |
+| `mode` | [Number](Number.md) | [[モード]](RPG.Tileset.md#モード) |
 | `tilesetNames` | [Array](Array.md).&lt;[String](String.md)&gt; | タイルセットに使われる画像ファイル名の配列<br />( 0:A1, 1:A2, 2:A3, 3:A4, 4:A5, 5:B, 6:C, 7:D, 8:E ) |
 | `flags` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [ビットフラグ](RPG.Tileset.md#タイルの性質を記録したビットフラグ)の配列 |
 
@@ -27,7 +27,6 @@ VX 互換タイプ とあるが、使われていない。
 | 0 |  フィールドタイプ |
 | 1 |  エリアタイプ |
 | 2 |  VX 互換タイプ |
-
 
 #### ビットフラグ
 タイルの性質を記録したフラグのビット位置。

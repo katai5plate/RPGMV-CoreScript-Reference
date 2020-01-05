@@ -3,9 +3,14 @@
 ## Extends: [Sprite_Battler](Sprite_Battler.md)
 
 ### new Sprite_Actor (actor opt)
+
+| データベース| JSONデータ | オブジェクト |
+| --- | --- | --- |
+| [敵キャラ] | [RPG.Actor](RPG.Actor.md) |  [Game_Actor](Game_Actor.md) |
+
 サイドビューのアクター表示用のスプライト。
 
-関連クラス: [Game_Actor](Game_Actor.md)
+関連クラス: [Spriteset_Battle](Spriteset_Battle.md)
 
 #### Parameters:
 

@@ -17,12 +17,12 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `LETTER_TABLE_HALF` | [Array](Array.md).<[String](String.md)> | [static] 名前の接尾辞(A〜Zの半角記号) |
-| `LETTER_TABLE_FULL` | [Array](Array.md).<[String](String.md)> | [static] 名前の接尾辞(A〜Zの全角記号) |
+| `LETTER_TABLE_HALF` | [Array](Array.md).&lt;[String](String.md)&gt; | [static] 名前の接尾辞(A〜Zの半角記号) |
+| `LETTER_TABLE_FULL` | [Array](Array.md).&lt;[String](String.md)&gt; | [static] 名前の接尾辞(A〜Zの全角記号) |
 | `_interpreter` | [Game_Interpreter](Game_Interpreter.md) | コマンドインタプリタ |
 | `_troopId` | [Number](Number.md) | 敵グループID |
 | `_eventFlags` | Object | {[page: Number]: Boolean} |
-| `_enemies` | [Array](Array.md).<[Game_Enemy](Game_Enemy.md)> | [敵キャラ]の配列 |
+| `_enemies` | [Array](Array.md).&lt;[Game_Enemy](Game_Enemy.md)&gt; | [敵キャラ]の配列 |
 | `_turnCount` | [Number](Number.md) | ターンカウンタ |
 | `_namesCount` | Object | {[name: String]: Number} |
 

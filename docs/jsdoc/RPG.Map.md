@@ -2,16 +2,13 @@
 
 ## Extends: [RPG.MetaData](RPG.MetaData.md) 
 
-| データベース| JSONファイル | 大域変数 | オブジェクト |
-| --- | --- | --- | --- |
-| マップ | MapXXX.json | [$dataMap](global.md#datamap-rpgmap) | [Game_Map](Game_Map.md) |
+| データベース| JSONファイル | 大域変数 | オブジェクト | 表示オブジェクト |
+| --- | --- | --- | --- | --- |
+| マップ | MapXXX.json | [$dataMap](global.md#datamap-rpgmap) | [Game_Map](Game_Map.md) | [Spriteset_Map](Spriteset_Map.md) |
 
 JSONファイルの XXX は3桁の数値。
 
-
-ゲーム全体のマップリストは [$dataMapInfos](global.html#$datamapInfos-arrayrpgmapInfo)( [RPG.MapInfo](RPG.MapInfo.md) ) に格納されている。
-
-マップシーンは [Scene_Map](Scene_Map.md) で管理される。
+関連クラス: [Scene_Map](Scene_Map.md), [ShaderTilemap](ShaderTilemap.md), [RPG.MapInfo](RPG.MapInfo.md)
  
 
 ### Properties:
@@ -20,8 +17,8 @@ JSONファイルの XXX は3桁の数値。
 | --- | --- | --- |
 | `displayName` | [String](String.md) | [表示名] |
 | `tilesetId` | [Number](Number.md) | [タイルセット]のID |
-| `width` | [Number](Number.md) | マップの\[幅](タイル数) |
-| `height` | [Number](Number.md) | マップの\[高さ](タイル数) |
+| `width` | [Number](Number.md) | マップの[幅] \(タイル数) |
+| `height` | [Number](Number.md) | マップの[高さ] \(タイル数) |
 | `scrollType` | [Number](Number.md) | [[スクロールタイプ]](RPG.Map.md#スクロールタイプ) |
 | `specifyBattleback` | Boolean | [戦闘背景指定]するか |
 | `battleback1Name` | [String](String.md) | レイヤー奥の戦闘背景画像1(地面)のファイル名 |
@@ -31,7 +28,7 @@ JSONファイルの XXX は3桁の数値。
 | `autoplayBgs` | Boolean | [BGS自動演奏]するか |
 | `bgs` | [RPG.AudioFile](RPG.AudioFile.md) | BGSの音声 |
 | `disableDashing` | Boolean | [ダッシュ禁止]か |
-| `encounterList` | [Array](Array.md).<[RPG.Map.Encounter](RPG.Map.Encounter.md)> | [エンカウント]の配列 |
+| `encounterList` | [Array](Array.md).&lt;[RPG.Map.Encounter](RPG.Map.Encounter.md)&gt; | [エンカウント]の配列 |
 | `encounterStep` | [Number](Number.md) | [敵出現歩数] |
 | `parallaxName` | [String](String.md) | [遠景]の画像ファイル名 |
 | `parallaxLoopX` | Boolean | [遠景]が[横方向にループする]か |

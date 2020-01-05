@@ -4,9 +4,9 @@
 
 ### new Game_Enemy ()
 
-| データベース| JSONデータ |
-| --- | --- |
-| [敵キャラ] | [RPG.Enemy](RPG.Enemy.md) |
+| データベース| JSONデータ | スプライト |
+| --- | --- | --- |
+| [敵キャラ] | [RPG.Enemy](RPG.Enemy.md) | [Sprite_Enemy](Sprite_Enemy.md)
 
 戦闘中の[敵キャラ]のパラメータの取得、画像の設定を行うクラス。
 

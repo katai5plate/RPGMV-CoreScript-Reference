@@ -3,9 +3,12 @@
 ## Extends: [Tilemap](Tilemap.md)
 
 ### new ShaderTilemap ()
+
 描画モード(F2キーを押して確かめられる)が WebGL Mode の場合のタイルマップ。
 
 バージョン1.3.0以降は、こちらの ShaderTilemap が実際に使用されているクラスで、[Tilemap](Tilemap.md) の方は継承されるために存在する abstract(抽象)クラスと、静的メソッド・プロパティを扱うユーティリティクラスの役割となっている。
+
+関連クラス: [RPG.Map](RPG.Map.md), [RPG.Tileset](RPG.Tileset.md), [Spriteset_Map](Spriteset_Map.md)
 
 
 ### Inherited From

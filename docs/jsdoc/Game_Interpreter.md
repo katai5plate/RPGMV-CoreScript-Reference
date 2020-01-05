@@ -5,12 +5,13 @@
 
 このクラスはプラグインコマンドを処理する[pluginCommand](Game_Interpreter.md#plugincommand-command-args)を含む。
 
-commandXXX(XXXは数字)というメソッドはイベントコマンドに対応した処理を行う、詳細は 
+commandXXX(XXXは数字)というメソッドはイベントコマンドに対応した処理を行う。<br />
+詳細は 
 [RPGツクールMV プラグインコマンド集 リファレンス \[イベントコード一覧\]](https://docs.google.com/spreadsheets/d/1rOIzDuhLC6IqJPEFciYOmXWL_O7X9-hMValMs7DpWCk/edit#gid=1266374350) を参照。
 
 イベントコマンドの[スクリプト]を実行する際は、このオブジェクトのインスタンスが this になるので、少々乱暴だが拡張コマンドをメソッドとして追加すると便利。
 
-関連クラス: [RPG.EventCommand](RPG.EventCommand.md), [Game_Event](Game_Event.md), [Game_CommonEvent](Game_CommonEvent.md), [Game_Troop](Game_Troop.md)
+関連クラス: [RPG.EventCommand](RPG.EventCommand.md), [Game_Event](Game_Event.md), [Game_CommonEvent](Game_CommonEvent.md), [Game_Troop](Game_Troop.md), [Game_Character](Game_Character.md)
 
 #### Parameters:
 
@@ -49,8 +50,8 @@ commandXXX(XXXは数字)というメソッドはイベントコマンドに対�
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `list` | [Array](Array.md).<[RPG.EventCommand](RPG.EventCommand.md)> |  | コマンドの配列 |
-| `commonList` | [Array](Array.md).<*> | \<optional> | 既に対象となったコモンイベントのインデックスの配列 |
+| `list` | [Array](Array.md).&lt;[RPG.EventCommand](RPG.EventCommand.md)&gt; |  | コマンドの配列 |
+| `commonList` | [Array](Array.md).&lt;*&gt; | &lt;optional&gt; | 既に対象となったコモンイベントのインデックスの配列 |
 
 
 #### changeHp (target, value, allowDeath)
@@ -683,7 +684,7 @@ param1, param2 は type によって意味が変わる引数で、例えば type
 | Name | Type | Description |
 | --- | --- | --- |
 | `command` | [String](String.md) |  コマンド名 |
-| `args` | [Array](Array.md).<[String](String.md)> |  引数の配列 |
+| `args` | [Array](Array.md).&lt;[String](String.md)&gt; |  引数の配列 |
 
 
 ##### Example
@@ -703,7 +704,7 @@ Game_Interpreter.prototype.pluginCommand = function ( command, args ){
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `list` | [Array](Array.md).<[RPG.EventCommand](RPG.EventCommand.md)> | コマンドのリスト |
+| `list` | [Array](Array.md).&lt;[RPG.EventCommand](RPG.EventCommand.md)&gt; | コマンドのリスト |
 | `eventId` | [Number](Number.md) | イベントID |
 
 
@@ -716,7 +717,7 @@ See: [command117](Game_Interpreter.md#command117---boolean)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `list` | [Array](Array.md).<[RPG.EventCommand](RPG.EventCommand.md)> | コマンドのリスト |
+| `list` | [Array](Array.md).&lt;[RPG.EventCommand](RPG.EventCommand.md)&gt; | コマンドのリスト |
 | `eventId` | [Number](Number.md) | イベントID |
 
 
@@ -727,7 +728,7 @@ See: [command117](Game_Interpreter.md#command117---boolean)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `params` | [Array](Array.md).<*> | 選択ウィンドウの設定 |
+| `params` | [Array](Array.md).&lt;*&gt; | 選択ウィンドウの設定 |
 
 
 #### setupItemChoice (params)
@@ -737,7 +738,7 @@ See: [command117](Game_Interpreter.md#command117---boolean)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `params` | [Array](Array.md).<[Number](Number.md)> | アイテム選択ウィンドウの設定 |
+| `params` | [Array](Array.md).&lt;[Number](Number.md)&gt; | アイテム選択ウィンドウの設定 |
 
 
 #### setupNumInput (params)
@@ -747,7 +748,7 @@ See: [command117](Game_Interpreter.md#command117---boolean)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `params` | [Array](Array.md).<[Number](Number.md)> | 数値入力ウィンドウの設定 |
+| `params` | [Array](Array.md).&lt;[Number](Number.md)&gt; | 数値入力ウィンドウの設定 |
 
 
 #### setupReservedCommonEvent () → {Boolean}

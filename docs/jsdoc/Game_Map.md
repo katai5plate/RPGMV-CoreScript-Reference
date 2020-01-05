@@ -2,13 +2,13 @@
 
 ### new Game_Map ()
 
-| データベース| JSONデータ | 大域変数 | セーブデータ |
-| --- | --- | --- | --- |
-| マップ | [RPG.Map](RPG.Map.md) | [$gameMap](global.md#gamemap-game_map) | 保存される |
+| データベース| JSONデータ | 大域変数 | セーブデータ | 表示オプジェクト |
+| --- | --- | --- | --- | --- |
+| マップ | [RPG.Map](RPG.Map.md) | [$gameMap](global.md#gamemap-game_map) | 保存される | [Spriteset_Map](Spriteset_Map.md) |
 
 [イベント][タイルセット] などを含むマップの管理、スクロール制御や通行判定など役割の多いクラス。 
 
-関連クラス: [Scene_Map](Scene_Map.md), [Game_Screen](Game_Screen.md)、[Spriteset_Map](Spriteset_Map.md), [ShaderTilemap](ShaderTilemap.md)
+関連クラス: [RPG.Tileset](RPG.Tileset.md), [Scene_Map](Scene_Map.md), [Game_Screen](Game_Screen.md), [ShaderTilemap](ShaderTilemap.md)
 
 
 ### Properties:
@@ -18,16 +18,16 @@
 | `_interpreter` | [Game_Interpreter](Game_Interpreter.md) |コマンドインタプリタ |
 | `_mapId` | [Number](Number.md) | [マップ]のID |
 | `_tilesetId` | [Number](Number.md) | [タイルセット]のID |
-| `_events` | [Array](Array.md).<[Game_Event](Game_Event.md)> | [イベント]の配列 |
-| `_commonEvents` | [Array](Array.md).<[Game_CommonEvent](Game_CommonEvent.md)> | [コモンイベント]の配列 |
-| `_vehicles` | [Array](Array.md).<[Game_Vehicle](Game_Vehicle.md)> | [乗り物]の配列 |
-| `_displayX` | [Number](Number.md) | マップ表示のX座標 [displayX](Game_Map.md#displayx---number) |
-| `_displayY` | [Number](Number.md) | マップ表示のY座標 [displayY](Game_Map.md#displayy---number) |
+| `_events` | [Array](Array.md).&lt;[Game_Event](Game_Event.md)&gt; | [イベント]の配列 |
+| `_commonEvents` | [Array](Array.md).&lt;[Game_CommonEvent](Game_CommonEvent.md)&gt; | [コモンイベント]の配列 |
+| `_vehicles` | [Array](Array.md).&lt;[Game_Vehicle](Game_Vehicle.md)&gt; | [乗り物]の配列 |
+| `_displayX` | [Number](Number.md) | マップ表示のX座標 |
+| `_displayY` | [Number](Number.md) | マップ表示のY座標 |
 | `_nameDisplay` | Boolean | マップの[名前]を表示するか |
 | `_scrollDirection` | [Number](Number.md) | スクロール方向(テンキー対応) |
 | `_scrollRest` | [Number](Number.md) | スクロールの残り距離 |
 | `_scrollSpeed` | [Number](Number.md) | スクロール速度 |
-| `_parallaxName` | [String](String.md) | [遠景]のファイル名 [parallaxName](Game_Map.md#parallaxname---string) |
+| `_parallaxName` | [String](String.md) | [遠景]のファイル名 |
 | `_parallaxZero` | Boolean | 視差を0にするか |
 | `_parallaxLoopX` | Boolean | [横方向にループする] |
 | `_parallaxLoopY` | Boolean | [縦方向にループする] |
@@ -35,8 +35,8 @@
 | `_parallaxSy` | [Number](Number.md) | 遠景 y[スクロール]量(ピクセル) |
 | `_parallaxX` | [Number](Number.md) | 遠景 x位置(ピクセル) |
 | `_parallaxY` | [Number](Number.md) | 遠景 y位置(ピクセル) |
-| `_battleback1Name` | [String](String.md) | レイヤー奥の戦闘背景画像1(地面)のファイル名 [battleback1Name](Game_Map.md#battleback1name---string) |
-| `_battleback2Name` | [String](String.md) | レイヤー手前の戦闘背景画像2(壁)のファイル名 [battleback2Name](Game_Map.md#battleback2name---string) |
+| `_battleback1Name` | [String](String.md) | レイヤー奥の戦闘背景画像1(地面)のファイル名 |
+| `_battleback2Name` | [String](String.md) | レイヤー手前の戦闘背景画像2(壁)のファイル名 |
 | `_needsRefresh` | Boolean | [Game_Map#requestRefresh](Game_Map.md#requestrefresh-mapid)などで更新予約がされているか |
 
 

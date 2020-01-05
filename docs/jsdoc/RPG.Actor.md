@@ -2,10 +2,11 @@
 
 ## Extends: [RPG.MetaData](RPG.MetaData.md)
 
-| データベース| JSONファイル | 大域変数 | オブジェクト |
-| --- | --- | --- | --- |
-| [アクター] | Actors.json | [$dataActors](global.md#dataactors-arrayrpgactor) (配列) | [Game_Actor](Game_Actor.md) \| [Game_Actors](Game_Actors.md) |
+| データベース| JSONファイル | 大域変数 | オブジェクト | スプライト |
+| --- | --- | --- | --- | --- |
+| [アクター] | Actors.json | [$dataActors](global.md#dataactors-arrayrpgactor) (配列) | [Game_Actor](Game_Actor.md) | [Sprite_Character](Sprite_Character.md), [Sprite_Actor](Sprite_Actor.md) |
 
+関連クラス: [Game_Actors](Game_Actors.md), [Game_Player](Game_Player.md), [Game_Follower](Game_Follower.md)
 
 ### Properties:
 

@@ -3,11 +3,14 @@
 ## Extends: [Game_CharacterBase](Game_CharacterBase.md)
 
 ### new Game_Character ()
+
+| データベース | スプライト |
+| --- | --- |
+| [イベント][アクター][フォロワー][乗り物] | [Sprite_Character](Sprite_Character.md) |
+
 マップに表示されるキャラ用のクラス。
 
-静的プロパティに定義してある ROUTE_ から始まる定数は、[移動ルートの設定]の[移動コマンド]に対応している。
-
-関連クラス: [Sprite_Character](Sprite_Character.md)
+関連クラス: [Game_Interpreter](Game_Interpreter.md)
 
 
 ### Sub Classes
@@ -19,6 +22,8 @@
 
 
 ### Properties:
+
+ROUTE_ から始まる定数は、[移動ルートの設定]の[移動コマンド]に対応している。
 
 | Name | Type | Description |
 | --- | --- | --- |

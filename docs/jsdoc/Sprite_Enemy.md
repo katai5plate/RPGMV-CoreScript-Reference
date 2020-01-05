@@ -3,7 +3,14 @@
 ##  Extends: [Sprite_Battler](Sprite_Battler.md)
 
 ### new Sprite_Enemy (enemy opt)
-[敵キャラ]表示用のスプライトクラス。 [Game_Enemy](Game_Enemy.md) を基に生成する。
+
+| データベース| JSONデータ | オブジェクト |
+| --- | --- | --- |
+| [敵キャラ] | [RPG.Enemy](RPG.Enemy.md) | [Game_Enemy](Game_Enemy.md) |
+
+[敵キャラ]表示用のスプライトクラス
+
+関連クラス: [Spriteset_Battle](Spriteset_Battle.md), [Game_Troop](Game_Troop.md)
 
 #### Parameters:
 

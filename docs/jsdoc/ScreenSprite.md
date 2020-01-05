@@ -5,6 +5,7 @@
 #### new ScreenSprite ()
  画面全体を覆うフェードなどのエフェクト用スプライト。
 
+関連クラス: [Spriteset_Base](Spriteset_Base.md)
 
 ### Properties:
 

@@ -23,7 +23,7 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `_battler` | [Game_Battler](Game_Battler.md) | バトラー |
-| `_damages` | [Array](Array.md).<[Sprite_Damage](Sprite_Damage.md)> | ダメージポップアップ用 |
+| `_damages` | [Array](Array.md).&lt;[Sprite_Damage](Sprite_Damage.md)&gt; | ダメージポップアップ用 |
 | `_homeX` | [Number](Number.md) | 基点の x座標 |
 | `_homeY` | [Number](Number.md) | 基点の y座標 |
 | `_offsetX` | [Number](Number.md) | xオフセット |

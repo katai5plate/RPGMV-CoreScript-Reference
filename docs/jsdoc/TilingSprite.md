@@ -5,6 +5,8 @@
 ### new TilingSprite (bitmap)
 The sprite object for a tiling image.
 
+関連クラス: [Spriteset_Map](Spriteset_Map.md)
+
 #### Parameters:
 
 | Name | Type | Description |
