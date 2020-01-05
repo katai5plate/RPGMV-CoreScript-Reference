@@ -1,241 +1,135 @@
 # Class: Sprite_Weapon
 
-## Sprite_Weapon ()
+## Extends: [Sprite_Base](Sprite_Base.md)
 
-#### new Sprite_Weapon ()
+### new Sprite_Weapon ()
+武器(img/system/WeaponsX.png)のスプライト。
 
-The sprite for displaying a weapon image for attacking.
 
-##### Properties:
+#### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_weaponImageId` | [Number](Number.md) |  |
-| `_animationCount` | [Number](Number.md) |  |
-| `_pattern` | [Number](Number.md) |  |
+| `_weaponImageId` | [Number](Number.md) | 武器画像ID |
+| `_animationCount` | [Number](Number.md) | アニメーションカウント |
+| `_pattern` | [Number](Number.md) | パターン |
 
-<dl>
-</dl>
 
-### Extends
+### Inherited From
 
-* [Sprite_Base](Sprite_Base.md)
+#### [PIXI.DisplayObject](PIXI.DisplayObject.md)
+
+* [(static) mixin (source)](PIXI.DisplayObject.md#static-mixin-source)
+* [\_recursivePostUpdateTransform ()](PIXI.DisplayObject.md#_recursivepostupdatetransform-)
+* [displayObjectUpdateTransform ()](PIXI.DisplayObject.md#displayobjectupdatetransform-)
+* [getBounds (skipUpdate, rect)](PIXI.DisplayObject.md#getbounds-skipupdate-rect--pixirectangle)
+* [getGlobalPosition (point, skipUpdate)](PIXI.DisplayObject.md#getglobalposition-point-skipupdate--pixipoint)
+* [setParent (container)](PIXI.DisplayObject.md#setparent-container--pixicontainer)
+* [setTransform (x, y, scaleX, scaleY, rotation, skewX, skewY, pivotX, pivotY)](PIXI.DisplayObject.md#settransform-x-y-scalex-scaley-rotation-skewx-skewy-pivotx-pivoty--pixidisplayobject)
+* [toGlobal (position, point, skipUpdate)](PIXI.DisplayObject.md#toglobal-position-point-skipupdate--pixipoint)
+* [toLocal (position, from, point, skipUpdate)](PIXI.DisplayObject.md#tolocal-position-from-point-skipupdate--pixipoint)
+
+#### [PIXI.Container](PIXI.Container.md)
+
+* [addChild (child) ](PIXI.Container.md#addchild-child--pixidisplayobject)
+* [addChildAt (child, index)](PIXI.Container.md#addchildat-child-index--pixidisplayobject)
+* [calculateBounds ()](PIXI.Container.md#calculatebounds-)
+* [getChildAt (index)](PIXI.Container.md#getchildat-index--pixidisplayobject)
+* [getChildByName (name)](PIXI.Container.md#getchildbyname-name--pixidisplayobject)
+* [getChildIndex (child)](PIXI.Container.md#getchildindex-child--pixidisplayobject)
+* [onChildrenChange ()](PIXI.Container.md#onchildrenchange-)
+* [removeChild (child)](PIXI.Container.md#removechild-child--pixidisplayobject)
+* [removeChildAt (index)](PIXI.Container.md#removechildat-index--pixidisplayobject)
+* [removeChildren (beginIndex, endIndex)](PIXI.Container.md#removechildren-beginindex-endindex--arraypixidisplayobject)
+* [render (renderer)](PIXI.Container.md#render-renderer)
+* [renderAdvanced (renderer)](PIXI.Container.md#renderadvanced-renderer)
+* [setChildIndex (child, index)](PIXI.Container.md#setchildindex-child-index)
+* [sortChildren ()](PIXI.Container.md#sortchildren-)
+* [swapChildren (child, child2)](PIXI.Container.md#swapchildren-child-child2)
+* [updateTransform ()](PIXI.Container.md#updatetransform-)
+
+#### [PIXI.Sprite](PIXI.Sprite.md)
+
+* [(static) from (source, options)](PIXI.Sprite.md#static-from-source-options--pixisprite)
+* [\_calculateBounds ()](PIXI.Sprite.md#_calculatebounds-)
+* [\_render (renderer)](PIXI.Sprite.md#_render-renderer)
+* [calculateTrimmedVertices ()](PIXI.Sprite.md#calculatetrimmedvertices-)
+* [calculateVertices ()](PIXI.Sprite.md#calculatevertices-)
+* [containsPoint (point)](PIXI.Sprite.md#containspoint-point--boolean)
+* [destroy (options)](PIXI.Sprite.md#destroy-options)
+* [getLocalBounds (rect)](PIXI.Sprite.md#getlocalbounds-rect--pixirectangle)
+* [renderCanvas (renderer)](PIXI.Sprite.md#rendercanvas-renderer)
+
+#### [Sprite](Sprite.md)
+
+* [\_createTinter (w, h)](Sprite.md#_createtinter-w-h)
+* [\_executeTint (x, y, w, h)](Sprite.md#_executetint-x-y-w-h)
+* [\_isInBitmapRect (x, y, w, h)](Sprite.md#_isinbitmaprect-x-y-w-h--boolean)
+* [\_needsTint ()](Sprite.md#_needstint---boolean)
+* [\_onBitmapLoad ()](Sprite.md#_onbitmapload-)
+* [\_refresh ()](Sprite.md#_refresh-)
+* [\_renderCanvas (renderer)](Sprite.md#_rendercanvas-renderer)
+* [\_renderWebGL (renderer)](Sprite.md#_renderwebgl-renderer)
+* [\_speedUpCustomBlendModes (renderer)](Sprite.md#_speedupcustomblendmodes-renderer)
+* [getBlendColor ()](Sprite.md#getblendcolor---array)
+* [getColorTone ()](Sprite.md#getcolortone---array)
+* [move (x, y)](Sprite.md#Sprite.md#move-x-y)
+* [setBlendColor (color)](Sprite.md#setblendcolor-color)
+* [setColorTone (tone)](Sprite.md#setcolortone-tone)
+* [setFrame (x, y, width, height)](Sprite.md#setframe-x-y-width-height)
+
+#### [Sprite_Base](Sprite_Base.md)
+
+* [hide ()](Sprite_Base.md#hide-)
+* [isAnimationPlaying ()](Sprite_Base.md#isanimationplaying---boolean)
+* [show ()](Sprite_Base.md#show-)
+* [startAnimation (animation, mirror, delay)](Sprite_Base.md#startanimation-animation-mirror-delay)
+* [updateAnimationSprites ()](Sprite_Base.md#updateanimationsprites-)
+* [updateVisibility ()](Sprite_Base.md#updatevisibility-)
+
 
 ### Methods
 
-#### _speedUpCustomBlendModes (renderer)
-
-checks if we need to speed up custom blendmodes
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `renderer` |  |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite#_speedUpCustomBlendModes</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### animationWait () → {[Number](Number.md)}
+アニメーションの待ち時間を返す。
 
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>Number</a></span>
-                </dd>
-            </dl>
-
-#### hide ()
-
-Hides the sprite.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#hide</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### initialize ()
+Overrides:[Sprite_Base](Sprite_Base.md#initialize-)
 
- オブジェクト生成時の初期化。
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#initialize</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### initMembers ()
+メンバ変数を初期化。
 
-Initializes the members of the weapon sprite object.
-<dl>
-</dl>
-
-#### isAnimationPlaying () → {boolean}
-
-Returns true if an animation is currently playing.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#isAnimationPlaying</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>boolean</span>
-                </dd>
-            </dl>
 
 #### isPlaying () → {Boolean}
+再生中か。
 
-Returns true if the weapon sprite is playing.
-<dl>
-</dl>
-
-##### Returns:
-
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span>Boolean</span>
-                </dd>
-            </dl>
 
 #### loadBitmap ()
+画像の読み込み。
 
-Loads the bitmap of the weapon sprite.
-<dl>
-</dl>
 
 #### setup (weaponImageId)
+準備。
+
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `weaponImageId` | [Number](Number.md) |  |
+| `weaponImageId` | [Number](Number.md) | 武器画像ID |
 
-<dl>
-</dl>
-
-#### show ()
-
-Shows the sprite.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#show</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### startAnimation (animation, mirror, delay)
-
-Starts a new animation on the current sprite by assigning a new Sprite_Animation object to the sprite's parent.
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `animation` | [RPG.Animation](RPG.Animation.md) |  |
-| `mirror` | Boolean |  |
-| `delay` | [Number](Number.md) |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#startAnimation</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### update ()
+Overrides:[Sprite_Base](Sprite_Base.md#update-)
 
-<dl>
-                <dt>Overrides:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#update</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
-#### updateAnimationSprites ()
-
-Updates the animation sprites, cloning them; if the sprite is playing, pushes the sprites into animation sprites, otherwise the sprite is removed.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#updateAnimationSprites</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
 
 #### updateFrame ()
+枠のアップデート。
 
-Updates the weapon sprite frames.
-<dl>
-</dl>
 
 #### updatePattern ()
+パターンのアップデート。
 
-Updates the pattern of the weapon sprite.
-<dl>
-</dl>
-
-#### updateVisibility ()
-
-Updadtes the visibility of the sprite based on the _hiding property.
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite_Base#updateVisibility</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
- <br>
-
-  Documentation generated by [JSDoc 3.5.5](https://github.com/jsdoc3/jsdoc)
