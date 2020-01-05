@@ -3,9 +3,12 @@
 ## Extends: [Sprite](Sprite.md)
 
 ### new Sprite_Timer ()
-[タイマーの操作]イベントコマンドの、タイマー表示用スプライト。
+| イベントコマンド | オブジェクト |
+| --- | --- |
+| [タイマーの操作]| [Game_Timer](Game_Timer.md) |
 
 関連クラス: [Game_Interpreter](Game_Interpreter.md), [Spriteset_Base](Spriteset_Base.md)
+
 
 ### Properties:
 
