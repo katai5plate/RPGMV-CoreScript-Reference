@@ -10,7 +10,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_seconds` | [Number](Number.md) |  |
+| `_seconds` | [Number](Number.md) | 秒 |
 
 
 ### Inherited From
@@ -79,64 +79,31 @@
 
 ### Methods
 
-#### _speedUpCustomBlendModes (renderer)
-
-checks if we need to speed up custom blendmodes
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `renderer` |  |  |
-
-<dl>
-                <dt>Inherited From:</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a>Sprite#_speedUpCustomBlendModes</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-
 #### createBitmap ()
+画像の生成。
 
-Creates the bitmap of the sprite timer.
 
 #### initialize ()
+Overrides:[Sprite](Sprite.md#initialize-)
 
- オブジェクト生成時の初期化。
 
 #### redraw ()
-
-Redraws the sprite timer.
-
+再描画。
+
 #### timerText () → {[String](String.md)}
+タイマーを文字列で返す。
 
-Returns the text of the timer.
-
-##### Returns:
-
-The text displayed on the timer.
-<dl>
-                <dt> Type </dt>
-                <dd>
-                    <span><a>String</a></span>
-                </dd>
-            </dl>
 
 #### update ()
+Overrides:[Sprite](Sprite.md#update-)
 
 
 #### updateBitmap ()
-
-Updates the bitmap of the sprite timer.
-
+画像のアップデート。
+
 #### updatePosition ()
-
-Updates the positon of the sprite timer.
-
+位置のアップデート。
+
 #### updateVisibility ()
-
-Updates the visibility of the sprite timer.
+表示・非表示のアップデート。
+
