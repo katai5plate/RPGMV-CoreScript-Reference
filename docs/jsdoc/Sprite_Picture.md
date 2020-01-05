@@ -4,22 +4,28 @@
 
 ### new Sprite_Picture (pictureId)
 
-関連クラス: [Game_Picture](Game_Picture.md), [Spriteset_Base](Spriteset_Base.md)
+| データ | オブジェクト |
+| --- | --- |
+| [ピクチャ] |[Game_Picture](Game_Picture.md) |
+
+[ピクチャ]の表示用スプライト。
+
+関連クラス:  [Spriteset_Base](Spriteset_Base.md), [Game_Screen](Game_Screen.md)
 
 #### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pictureId` | [Number](Number.md) |  |
+| `pictureId` | [Number](Number.md) | ピクチャID( [Game_Screen](Game_Screen.md) の _pictures 配列番号 ) |
 
 
 ### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_pictureId` | [Number](Number.md) |  |
-| `_pictureName` | [String](String.md) |  |
-| `_isPicture` | Boolean |  |
+| `_pictureId` | [Number](Number.md) | ピクチャID |
+| `_pictureName` | [String](String.md) | 名前 |
+| `_isPicture` | Boolean | [ピクチャ]か |
 
 
 ### Inherited From
@@ -89,39 +95,47 @@
 ### Methods
 
 #### initialize (pictureId)
- オブジェクト生成時の初期化。
+Overrides:[Sprite](Sprite.md#initialize-)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `pictureId` | [Number](Number.md) |  |
+| `pictureId` | [Number](Number.md) | ピクチャID |
 
 
 #### loadBitmap ()
+画像を読み込む。
 
 
 #### picture () → {[Game_Picture](Game_Picture.md)}
+ピクチャオブジェクトを返す。
 
 
 #### update ()
+Overrides:[Sprite](Sprite.md#update-)
 
 
 #### updateBitmap ()
+画像のアップデート。
 
 
 #### updateOrigin ()
+原点のアップデート。
 
 
 #### updateOther ()
+その他のアップデート。
 
 
 #### updatePosition ()
+位置のアップデート。
 
 
 #### updateScale ()
+拡大率のアップデート。
 
 
 #### updateTone ()
-
+色調のアップデート。
 

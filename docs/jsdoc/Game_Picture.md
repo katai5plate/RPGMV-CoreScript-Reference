@@ -1,9 +1,14 @@
 # Class: Game_Picture
 
 ### new Game_Picture ()
+
+| データ | スプライト |
+| --- | --- |
+| [ピクチャ] | [Sprite_Picture](Sprite_Picture.md) |
+
 [ピクチャ]関連イベントコマンドに使われる、画像の座標や加工情報。
 
-関連クラス: [Game_Screen](Game_Screen.md), [Sprite_Picture](Sprite_Picture.md)
+関連クラス: [Game_Screen](Game_Screen.md)
 
 
 ### Properties:
