@@ -43,13 +43,14 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | `blendMode` | [Number](Number.md) | [[合成方法]](Sprite.md#合成方法) |
 
 #### [合成方法]
+番号は [Graphics](Graphics.md) の静的クラス定数として定義されている。例えば Graphics.BLEND_ADD の形で使う。
 
-| 番号 | [合成方法] |
-| --- | --- |
-| 0 | 通常 |
-| 1 | 加算 |
-| 2 | 乗算 |
-| 3 | スクリーン |
+| 番号 | 定数 | [合成方法] |
+| --- | --- | --- |
+| 0 | BLEND_NORMAL | 通常 |
+| 1 | BLEND_ADD | 加算 |
+| 2 | BLEND_MULTIPLY | 乗算 |
+| 3 | BLEND_SCREEN | スクリーン |
 
 
 ### Inherited From

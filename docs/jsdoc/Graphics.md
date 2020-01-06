@@ -6,7 +6,7 @@
 関連クラス: [Bitmap](Bitmap.md), [ImageManager](ImageManager.md), [Game_Screen](Game_Screen.md)
 
 ### Properties:
-BLEND_ から始まるプロパティは PIXI.blendModes と同じ画像の[合成方法]の指定用定数。
+BLEND_ から始まるプロパティは PIXI.blendModes と同じ画像の[[合成方法]](Sprite.md#合成方法)の指定用定数。
 
 | Name | Type | Description |
 | --- | --- | --- |

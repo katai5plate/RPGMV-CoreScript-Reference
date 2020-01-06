@@ -25,7 +25,7 @@
 | `_cachedTint` | [Number](Number.md) | キャッシュされた色(規定値:0xFFFFFF) |
 | `_tintedCanvas` | HTMLCanvasElement | 着色された canvas |
 | `anchor` | [PIXI.ObservablePoint](http://pixijs.download/release/docs/PIXI.ObservablePoint.html) |座標の基点 (ex: 左上{0, 0} / 右下{1, 1} ) |
-| `blendMode` | [Number](Number.md) | [合成方法](0: 通常, 1: 加算, 2: 乗算, 3: スクリーン)<br/>See:[PIXI.BLEND_MODES](PIXI.BLEND_MODES) |
+| `blendMode` | [Number](Number.md) | [合成方法]\(0: 通常, 1: 加算, 2: 乗算, 3: スクリーン)<br/>See:[PIXI.BLEND_MODES](PIXI.BLEND_MODES) |
 | `isSprite` | Boolean | スプライトか |
 | `pluginName` | [String](String.md) | プラグイン名(Default: 'batch') |
 | `roundPixels` | Boolean | ピクセル補完するか |

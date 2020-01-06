@@ -14,7 +14,7 @@
 | `YEPWarned` | Boolean | [static] YEP_CoreEngine の警告が必要か |
 | `opacity` | [Number](Number.md) |  不透明度 (0〜255) |
 | `anchor` | [Point](Point.md) | 基点 |
-| `blendMode` | [Number](Number.md) | [合成方法] (PIXI.BLEND_MODES.NOMAL | ADD | MULTIPLY | SCREEN) |
+| `blendMode` | [Number](Number.md) | [[合成方法]](Sprite.md#合成方法) |
 | `_graphics` | [PIXI.Graphics](PIXI.Graphics.md) |  画像管理オブジェクト |
 | `_red` | [Number](Number.md) |  赤 (0〜255) |
 | `_green` | [Number](Number.md) |  緑 (0〜255) |

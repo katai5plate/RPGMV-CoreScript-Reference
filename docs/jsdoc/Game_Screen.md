@@ -128,7 +128,7 @@
 | `scaleX` | [Number](Number.md) | 拡大率[幅] |
 | `scaleY` | [Number](Number.md) | 拡大率[高さ] |
 | `opacity` | [Number](Number.md) | [不透明度] |
-| `blendMode` | [Number](Number.md) | [合成方法] |
+| `blendMode` | [Number](Number.md) | [[合成方法]](Sprite.md#合成方法) |
 | `duration` | [Number](Number.md) | 継続時間 |
 
 
@@ -198,7 +198,7 @@
 | `scaleX` | [Number](Number.md) | 拡大率[幅] |
 | `scaleY` | [Number](Number.md) | 拡大率[高さ] |
 | `opacity` | [Number](Number.md) | [不透明度] |
-| `blendMode` | [Number](Number.md) | [合成方法] |
+| `blendMode` | [Number](Number.md) | [[合成方法]](Sprite.md#合成方法) |
 
 
 #### startFadeIn (duration)

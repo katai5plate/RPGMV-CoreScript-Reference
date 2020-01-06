@@ -26,7 +26,7 @@
 | `_moveSpeed` | [Number](Number.md) | 移動[速度] |
 | `_moveFrequency` | [Number](Number.md) | 移動[頻度] |
 | `_opacity` | [Number](Number.md) | 不透明度(0〜255) |
-| `_blendMode` | [Number](Number.md) | \[合成方法\](0:通常、1:加算、2:乗算、3:スクリーン) [Graphics](Graphics.md)に定数が定義してある |
+| `_blendMode` | [Number](Number.md) | [[合成方法]](Sprite.md#合成方法) |
 | `_direction` | [Number](Number.md) | 向き(テンキー対応) |
 | `_pattern` | [Number](Number.md) | 歩行パターン(0〜2) |
 | `_priorityType` | [Number](Number.md) | [プライオリティ] |

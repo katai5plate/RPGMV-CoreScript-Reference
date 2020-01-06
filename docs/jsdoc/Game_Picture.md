@@ -15,7 +15,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_name` | [String](String.md) | 名前 |
+| `_name` | [String](String.md) | ファイル名 |
 | `_origin` | [Number](Number.md) | 原点 |
 | `_x` | [Number](Number.md) | x座標(ピクセル) |
 | `_y` | [Number](Number.md) | y座標(ピクセル) |
@@ -83,12 +83,12 @@
 | `scaleX` | [Number](Number.md) | 拡大率[幅] |
 | `scaleY` | [Number](Number.md) | 拡大率[高さ] |
 | `opacity` | [Number](Number.md) | [不透明度] |
-| `blendMode` | [Number](Number.md) | [合成方法] |
+| `blendMode` | [Number](Number.md) | [[合成方法]](Sprite.md#合成方法) |
 | `duration` | [Number](Number.md) | 継続時間(フレーム) |
 
 
 #### name () → {[String](String.md)}
-名前を返す。
+ファイル名を返す。
 
 
 #### opacity () → {[Number](Number.md)}
