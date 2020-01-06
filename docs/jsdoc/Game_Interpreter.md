@@ -758,14 +758,24 @@ See: [command117](Game_Interpreter.md#command117---boolean)
 #### setWaitMode (waitMode)
 待ち対象を設定。
 
-待ち対象には次の種類がある。
-message, transfer, scroll, route, animation, balloon, gather, action, video, image
-
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `waitMode` | [String](String.md) | 待ち対象の種類 |
+
+| waitMode | Description |
+| --- | ---|
+|message | メッセージが終わるまで待つ |
+| transfer | 遷移効果が終わるまで待つ |
+| scroll | スクロールが終わるまで待つ |
+| route | 移動が終わるまで待つ |
+| animation | アニメーションが終わるまで待つ |
+| balloon | フキダシが終わるまで待つ |
+| gather | フォロワーの集合が終わるまで待つ |
+| action | アクションが終わるまで待つ |
+| video | 動画が終わるまで待つ |
+| image | 画像表示が終わるまで待つ |
 
 
 #### skipBranch ()
