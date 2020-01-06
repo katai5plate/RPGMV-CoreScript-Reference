@@ -71,7 +71,7 @@ canvas フィルタを適用。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `element` | HTMLElement | H+TML要素 |
+| `element` | HTMLElement | HTML要素 |
 
 
 #### (static) _clearUpperCanvas ()
