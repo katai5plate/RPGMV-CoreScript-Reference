@@ -20,10 +20,10 @@
 | `_shakeSpeed` | [Number](Number.md) | [シェイク]速さ |
 | `_shakeDuration` | [Number](Number.md) | [シェイク]継続時間(フレーム) |
 | `_shakeDirection` | [Number](Number.md) | [シェイク]方向 |
-| `_zoomX` | [Number](Number.md) |  x方向の拡大率 |
-| `_zoomY` | [Number](Number.md) |  y方向の拡大率 |
-| `_zoomScale` | [Number](Number.md) | 拡大率 |
-| `_zoomScaleTarget` | [Number](Number.md) | 拡大目標 |
+| `_zoomX` | [Number](Number.md) |  拡大箇所の x座標(ピクセル) |
+| `_zoomY` | [Number](Number.md) |  拡大箇所の y座標(ピクセル) |
+| `_zoomScale` | [Number](Number.md) | 拡大率(1 で 100%) |
+| `_zoomScaleTarget` | [Number](Number.md) | 拡大率目標 |
 | `_zoomDuration` | [Number](Number.md) | 拡大の継続時間 |
 | `_weatherType` | [String](String.md) | [天候]タイプ |
 | `_weatherPower` | [Number](Number.md) | [天候]強さ(1~9) |
@@ -174,9 +174,9 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) | 拡大率[幅] |
-| `y` | [Number](Number.md) | 拡大率[高さ] |
-| `scale` | [Number](Number.md) | 拡大率 |
+| `x` | [Number](Number.md) | 拡大箇所の x座標(ピクセル) |
+| `y` | [Number](Number.md) | 拡大箇所の y座標(ピクセル) |
+| `scale` | [Number](Number.md) | 拡大率(1 で 100%) |
 
 
 #### shake () → {[Number](Number.md)}
@@ -266,9 +266,9 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) | 拡大率[幅] |
-| `y` | [Number](Number.md) | 拡大率[高さ] |
-| `scale` | [Number](Number.md) | 拡大率 |
+| `x` | [Number](Number.md) | 拡大箇所の x座標(ピクセル) |
+| `y` | [Number](Number.md) | 拡大箇所の y座標(ピクセル) |
+| `scale` | [Number](Number.md) | 拡大率(1 で 100%) |
 | `duration` | [Number](Number.md) | 継続時間(フレーム) |
 
 
@@ -335,9 +335,9 @@
 
 
 #### zoomX () → {[Number](Number.md)}
-拡大率[幅]を返す。
+拡大箇所の x座標(ピクセル)を返す。
 
 
 #### zoomY () → {[Number](Number.md)}
-拡大率[高さ]を返す。
+拡大箇所の y座標(ピクセル)を返す。
 
