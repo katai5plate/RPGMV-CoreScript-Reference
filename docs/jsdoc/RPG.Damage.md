@@ -1,16 +1,14 @@
 # Class: [RPG](RPG.md).Damage
-ダメージのデータ。
+[ダメージ]のデータ。
 
-[RPG.UsableItem](RPG.UsableItem.md) の damage プロパティが持っている。
-
-
+関連クラス: [RPG.UsableItem](RPG.UsableItem.md)
 ### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `type` | [Number](Number.md) | [タイプ](RPG.Damage.md#タイプ) |
 | `elementId` | [Number](Number.md) | [属性ID](RPG.Damage.md#属性id) |
-| `formula` | [String](String.md) | [計算式] |
+| `formula` | [String](String.md) | [[計算式]](RPG.Damage.md#計算式) |
 | `variance` | [Number](Number.md) | [分散度] % (0〜100) |
 | `critical` | Boolean | [会心]するか |
 #### タイプ
@@ -40,4 +38,17 @@
 | 7 | 風 |
 | 8 | 光 |
 | 9 | 闇 |
+
+#### [計算式]
+計算式は eval ( [Game_Action.evalDamageFormula](Game_Action.md#evaldamageformula-target--number) )によって処理されるので、例えば Math.random() メソッドなど JavaScript がそのまま記述できる。<br />
+また、以下の変数が利用できる。
+
+| 変数 | 値 |
+| --- | --- |
+| a | 攻撃側の [Game_BattlerBase](Game_BattlerBase.md) |
+| b | 防御側の [Game_BattlerBase](Game_BattlerBase.md) ( target で代用可 ) |
+| v | [Game_Variables](Game_Variables.md) の \_data プロパティ |
+| item | [RPG.UsableItem](RPG.UsableItem.md) |
+| this | [Game_Action](Game_Action.md) |
+
 

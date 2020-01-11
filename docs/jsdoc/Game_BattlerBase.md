@@ -10,10 +10,12 @@
 
 
 ### Properties:
-TRAIT_が頭についている静的定数は、[特徴]に含まれる値を取り出す際に使われる。ただし本クラスではそれぞれメソッドが用意されているので、直接使用する必要はない。
+TRAIT\_が頭についている静的定数は、[特徴]に含まれる値を取り出す際に使われる。ただし本クラスではそれぞれメソッドが用意されているので、直接使用する必要はない。<br />
+[特徴]の値は[RPG.Trait](RPG.Trait.md) を参照。この値を直接操作する際には TRAIT\_接頭辞の定数を使う。
 
+説明(Description) に [read-only] がついているプロパティは、[RPG.Damage](RPG.Damage.md)の[計算式]などで使うために用意されている。<br />
+計算式の <code>a.atk * 4 - b.def * 2</code> の a や b に Game_BattlerBase(のサブクラス)が代入されている。
 
-[特徴]の値は[RPG.Trait](RPG.Trait.md) を参照。この値を直接操作する際には TRAIT_接頭辞の定数を使う。
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -82,11 +84,11 @@ TRAIT_が頭についている静的定数は、[特徴]に含まれる値を取
 | `_mp` | [Number](Number.md) | MP |
 | `_tp` | [Number](Number.md) | TP |
 | `_hidden` | Boolean | 隠れているか |
-| `_paramPlus` | [Array](Array.md).<[Number](Number.md)> | 能力値強化量の配列 |
-| `_states` | [Array](Array.md).<[Number](Number.md)> | [ステートID](RPG.State.md#ステートid) の配列 |
+| `_paramPlus` | [Array](Array.md).&lt;[Number](Number.md)&gt; | 能力値強化量の配列 |
+| `_states` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [ステートID](RPG.State.md#ステートid) の配列 |
 | `_stateTurns` | Object | {[stateId: number]: number} ステートの残りターン|
-| `_buffs` | [Array](Array.md).<[Number](Number.md)> | 能力の強化の配列 |
-| `_buffTurns` | [Array](Array.md).<[Number](Number.md)> | 強化の残りターン |
+| `_buffs` | [Array](Array.md).&lt;[Number](Number.md)&gt; | 能力の強化の配列 |
+| `_buffTurns` | [Array](Array.md).&lt;[Number](Number.md)&gt; | 強化の残りターン |
 
 
 ### Methods

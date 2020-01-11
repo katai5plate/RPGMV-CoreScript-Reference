@@ -143,7 +143,7 @@ _item プロパティのダメージタイプと同じものが、指定した�
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `list` | [Array](Array.md).<[Number](Number.md)> | ダメージの[[タイプ](RPG.Damage.md#タイプ)]の配列 |
+| `list` | [Array](Array.md).&lt;[Number](Number.md)&gt; | ダメージの[[タイプ](RPG.Damage.md#タイプ)]の配列 |
 
 
 #### checkItemScope (list) → {Boolean}
@@ -153,7 +153,7 @@ _item プロパティの[範囲]と同じものが、指定したの配列の中
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `list` | [Array](Array.md).<[Number](Number.md)> |[[範囲](RPG.UsableItem.md#範囲)]の配列|
+| `list` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [[範囲](RPG.UsableItem.md#範囲)]の配列 |
 
 
 #### clear ()
@@ -176,18 +176,17 @@ _item プロパティの[範囲]と同じものが、指定したの配列の中
 | Name | Type | Description |
 | --- | --- | --- |
 | `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
-| `elements` | [Array](Array.md).<[Number](Number.md)> | [属性ID](RPG.Damage.md#属性id))の配列 |
+| `elements` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [属性ID](RPG.Damage.md#属性id)の配列 |
 
 
 #### evalDamageFormula (target) → {[Number](Number.md)}
-[[ダメージ](RPG.Damage.md)]の[計算式]を適用し、ダメージ量を返す。<br />
-target引数は使われていないが、プラグインなど将来の拡張用かと思われる。
+[[ダメージ]](RPG.Damage.md)の[計算式]を適用し、ダメージ量を返す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー |
+| `target` | [Game_Battler](Game_Battler.md) | 対象バトラー( [計算式]の b ) |
 
 
 #### evaluate () → {[Number](Number.md)}
