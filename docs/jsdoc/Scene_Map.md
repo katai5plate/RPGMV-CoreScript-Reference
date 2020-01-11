@@ -14,7 +14,7 @@
 | --- | --- | --- |
 | `menuCalling` | Boolean | メニューが呼ばれているか |
 | `_waitCount` | [Number](Number.md) | 待ちカウント |
-| `_encounterEffectDuration` | [Number](Number.md) | エンカウント効果時間 |
+| `_encounterEffectDuration` | [Number](Number.md) | エンカウント効果残り時間 |
 | `_mapLoaded` | Boolean | マップが読み込まれているか |
 | `_touchCount` | [Number](Number.md) | タッチ時間 |
 | `_transfer` | Boolean | 遷移中か |
@@ -118,7 +118,7 @@ Overrides: [Scene_Base](Scene_Base.md#create-)
 
 
 #### encounterEffectSpeed () → {[Number](Number.md)}
- エンカウント効果のスピードを返す。
+ エンカウント効果のスピード(規定値:60)を返す。
 
 
 #### fadeInForTransfer ()
