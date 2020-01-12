@@ -246,8 +246,8 @@ Overrides: [Window_Base.initialize (x, y, width, height)](Window_Base.md#initial
 規定値に戻す。
 
 
-#### underlineColor () → {[String](String.md)}
-アンダーラインの色(CSS形式)を返す。
+#### underlineColor () → {[MV.CssColor](MV.CssColor.md)}
+アンダーラインの色を返す。
 
 
 #### underlineRect (index) → {[Rectangle](Rectangle.md)}

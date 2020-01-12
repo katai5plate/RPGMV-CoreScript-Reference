@@ -145,7 +145,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `color` | [String](String.md) | 色(CSS形式) |
+| `color` | [MV.CssColor](MV.CssColor.md) | 色(CSS文字列) |
 
 
 #### close ()
@@ -173,24 +173,24 @@
 #### createContents ()
 テキストなどを表示するコンテンツ領域を生成。
 
-#### crisisColor () → {[String](String.md)}
-危険色(CSS形式)を返す。
+#### crisisColor () → {[MV.CssColor](MV.CssColor.md)}
+危険色を返す。
 
 
 #### deactivate ()
 非アクティブにする。
 
 
-#### deathColor () → {[String](String.md)}
-死亡色(CSS形式)を返す。
+#### deathColor () → {[MV.CssColor](MV.CssColor.md)}
+死亡色を返す。
 
 
-#### dimColor1 () → {[String](String.md)}
-Dimmer背景の色1(CSS形式)を返す。
+#### dimColor1 () → {[MV.CssColor](MV.CssColor.md)}
+Dimmer背景の色1を返す。
 
 
-#### dimColor2 () → {[String](String.md)}
-Dimmer背景の色2(CSS形式)を返す。
+#### dimColor2 () → {[MV.CssColor](MV.CssColor.md)}
+Dimmer背景の色2を返す。
 
 
 #### drawActorCharacter (actor, x, y)
@@ -376,8 +376,8 @@ Dimmer背景の色2(CSS形式)を返す。
 | `x` | [Number](Number.md) | x座標(ピクセル) |
 | `y` | [Number](Number.md) | y座標(ピクセル) |
 | `width` | [Number](Number.md) | 描画領域の幅(ピクセル) |
-| `color1` | [String](String.md) | 現在値色(CSS形式) |
-| `color2` | [String](String.md) | 最大値色(CSS形式) |
+| `color1` | [MV.CssColor](MV.CssColor.md) | 現在値色 |
+| `color2` | [MV.CssColor](MV.CssColor.md) | 最大値色 |
 
 
 #### drawFace (faceName, faceIndex, x, y, width opt, height opt)
@@ -392,8 +392,8 @@ Dimmer背景の色2(CSS形式)を返す。
 | `faceIndex` | [Number](Number.md) |  | キャラクタ番号(0 〜 7) |
 | `x` | [Number](Number.md) |  | x座標(ピクセル) |
 | `y` | [Number](Number.md) |  | y座標(ピクセル) |
-| `width` | [Number](Number.md) | \<optional> | 幅(ピクセル) |
-| `height` | [Number](Number.md) | \<optional> | 高さ(ピクセル) |
+| `width` | [Number](Number.md) | &lt;optional&gt; | 幅(ピクセル) |
+| `height` | [Number](Number.md) | &lt;optional&gt; | 高さ(ピクセル) |
 
 
 #### drawGauge (x, y, width, rate, color1, color2)
@@ -407,8 +407,8 @@ Dimmer背景の色2(CSS形式)を返す。
 | `y` | [Number](Number.md) | y座標(ピクセル) |
 | `width` | [Number](Number.md) | 幅(ピクセル) |
 | `rate` | [Number](Number.md) | 比率(0 〜 1) |
-| `color1` | [String](String.md) | ゲージ色1(CSS形式) |
-| `color2` | [String](String.md) | ゲージ色2(CSS形式) |
+| `color1` | [MV.CssColor](MV.CssColor.md) | ゲージ色1 |
+| `color2` | [MV.CssColor](MV.CssColor.md) | ゲージ色2 |
 
 
 #### drawIcon (iconIndex, x, y)
@@ -475,8 +475,8 @@ Dimmer背景の色2(CSS形式)を返す。
 | `numLines` | [Number](Number.md) | 行数 |
 
 
-#### gaugeBackColor () → {[String](String.md)}
-ゲージの背景色(CSS形式)を返す。
+#### gaugeBackColor () → {[MV.CssColor](MV.CssColor.md)}
+ゲージの背景色を返す。
 
 
 #### hide ()
@@ -487,8 +487,8 @@ Dimmer背景の色2(CSS形式)を返す。
 Dimmer背景を非表示。
 
 
-#### hpColor (actor) → {[String](String.md)}
-指定した[アクター]の[HP]の色(CSS形式)を返す。
+#### hpColor (actor) → {[MV.CssColor](MV.CssColor.md)}
+指定した[アクター]の[HP]の色を返す。
 
 ##### Parameters:
 
@@ -497,12 +497,12 @@ Dimmer背景を非表示。
 | `actor` | [Game_Actor](Game_Actor.md) | 対象の[アクター] |
 
 
-#### hpGaugeColor1 () → {[String](String.md)}
-[HP]ゲージの色1(CSS形式)を返す。
+#### hpGaugeColor1 () → {[MV.CssColor](MV.CssColor.md)}
+[HP]ゲージの色1を返す。
 
 
-#### hpGaugeColor2 () → {[String](String.md)}
-[HP]ゲージの色2(CSS形式)を返す。
+#### hpGaugeColor2 () → {[MV.CssColor](MV.CssColor.md)}
+[HP]ゲージの色2を返す。
 
 
 #### initialize (x, y, width, height)
@@ -543,8 +543,8 @@ Overrides: [Window](Window.md#initialize-)
 フォントサイズを12小さくする。
 
 
-#### mpColor (actor) → {[String](String.md)}
-指定した[アクター]の[MP]の色(CSS形式)を返す。
+#### mpColor (actor) → {[MV.CssColor](MV.CssColor.md)}
+指定した[アクター]の[MP]の色を返す。
 
 ##### Parameters:
 
@@ -553,20 +553,20 @@ Overrides: [Window](Window.md#initialize-)
 | `actor` | [Game_Actor](Game_Actor.md) | 対象の[アクター] |
 
 
-#### mpCostColor () → {[String](String.md)}
-[消費MP]の色(CSS形式)を返す。
+#### mpCostColor () → {[MV.CssColor](MV.CssColor.md)}
+[消費MP]の色を返す。
 
 
-#### mpGaugeColor1 () → {[String](String.md)}
-[MP]ゲージの色1(CSS形式)を返す。
+#### mpGaugeColor1 () → {[MV.CssColor](MV.CssColor.md)}
+[MP]ゲージの色1を返す。
 
 
-#### mpGaugeColor2 () → {[String](String.md)}
-[MP]ゲージの色2(CSS形式)を返す。
+#### mpGaugeColor2 () → {[MV.CssColor](MV.CssColor.md)}
+[MP]ゲージの色2を返す。
 
 
-#### normalColor () → {[String](String.md)}
-通常色(CSS形式)を返す。
+#### normalColor () → {[MV.CssColor](MV.CssColor.md)}
+通常色を返す。
 
 
 #### obtainEscapeCode (textState)
@@ -580,7 +580,7 @@ indexは取り出した文字の数だけ進む。
 | `textState` | [MV.TextState](MV.TextState.md) | 処理する状態つき文字列 |
 
 
-#### obtainEscapeParam (textState) → {Number|String}
+#### obtainEscapeParam (textState) → {[Number](Number.md) | [String](String.md)}
 textStateのindex以降に含まれる制御文字の添字を返す。<br />
 indexは取り出した文字の数だけ進む。<br />
 添字がある場合は数値が返り、ない場合は空文字が返る。
@@ -596,8 +596,8 @@ indexは取り出した文字の数だけ進む。<br />
 ウィンドウを開く。
 
 
-#### paramchangeTextColor (change) → {String}
-指定した数値に対応する色(CSS形式)を返す。<br />
+#### paramchangeTextColor (change) → {[MV.CssColor](MV.CssColor.md)}
+指定した数値に対応する色を返す。<br />
 装備を変える際の能力差分の表示などに使う。
 
 ##### Parameters:
@@ -617,16 +617,16 @@ indexは取り出した文字の数だけ進む。<br />
 | `partyMemberIndex` | [Number](Number.md) | パーティーメンバー番号(1から開始される) |
 
 
-#### pendingColor () → {[String](String.md)}
-未決定色(CSS形式)を返す。
+#### pendingColor () → {}
+未決定色を返す。
 
 
-#### powerDownColor () → {[String](String.md)}
-パワーダウン色(CSS形式)を返す。
+#### powerDownColor () → {[MV.CssColor](MV.CssColor.md)}
+パワーダウン色を返す。
 
 
-#### powerUpColor () → {[String](String.md)}
-パワーアップ色(CSS形式)を返す。
+#### powerUpColor () → {[MV.CssColor](MV.CssColor.md)}
+パワーアップ色を返す。
 
 
 #### processCharacter (textState)
@@ -748,12 +748,12 @@ Dimmer背景を表示。
 標準のパディング幅を返す。規定値:18
 
 
-#### systemColor () → {[String](String.md)}
-システム色(CSS形式)を返す。
+#### systemColor () → {[MV.CssColor](MV.CssColor.md)}
+システム色を返す。
 
 
-#### textColor (n) → {[String](String.md)}
-指定した番号に対応する色(CSS形式)を返す。<br />
+#### textColor (n) → {[MV.CssColor](MV.CssColor.md)}
+指定した番号に対応する色を返す。<br />
 'img/system/window.png' の色で設定される。
 
 ##### Parameters:
@@ -777,8 +777,8 @@ Dimmer背景を表示。
 | `text` | [String](String.md) | 測定する文字列 |
 
 
-#### tpColor (actor) → {[String](String.md)}
-指定した[アクター]の[TP]の色(CSS形式)を返す。
+#### tpColor (actor) → {[MV.CssColor](MV.CssColor.md)}
+指定した[アクター]の[TP]の色を返す。
 
 ##### Parameters:
 
@@ -787,16 +787,16 @@ Dimmer背景を表示。
 | `actor` | [Game_Actor](Game_Actor.md) | 対象の[アクター] |
 
 
-#### tpCostColor () → {[String](String.md)}
-[消費TP]の色(CSS形式)を返す。
+#### tpCostColor () → {[MV.CssColor](MV.CssColor.md)}
+[消費TP]の色を返す。
 
 
-#### tpGaugeColor1 () → {[String](String.md)}
-[TP]ゲージの色1(CSS形式)を返す。
+#### tpGaugeColor1 () → {[MV.CssColor](MV.CssColor.md)}
+[TP]ゲージの色1を返す。
 
 
-#### tpGaugeColor2 () → {[String](String.md)}
-[TP]ゲージの色2(CSS形式)を返す。
+#### tpGaugeColor2 () → {[MV.CssColor](MV.CssColor.md)}
+[TP]ゲージの色2を返す。
 
 
 #### translucentOpacity () → {[Number](Number.md)}

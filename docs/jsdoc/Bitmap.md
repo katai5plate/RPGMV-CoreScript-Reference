@@ -22,8 +22,8 @@
 | `fontFace` | [String](String.md) | フォント名 |
 | `fontSize` | [Number](Number.md) | フォントサイズ(ピクセル) |
 | `fontItalic` | Boolean | イタリックか |
-| `textColor` | [String](String.md) | 文字色(CSS形式) |
-| `outlineColor` | [String](String.md) | アウトラインの色(CSS形式) |
+| `textColor` | [MV.CssColor](MV.CssColor.md) | 文字色 |
+| `outlineColor` | [MV.CssColor](MV.CssColor.md) | アウトラインの色 |
 | `outlineWidth` | [Number](Number.md) | アウトラインの文字幅 |
 | `url` | [String](String.md) | [read-only] 画像ファイルのURL |
 | `baseTexture` | [PIXI.BaseTexture](http://pixijs.download/dev/docs/PIXI.BaseTexture.html) | [read-only] 基礎テクスチャ |
@@ -216,7 +216,7 @@
 | `x` | [Number](Number.md) | 中心x座標(ピクセル) |
 | `y` | [Number](Number.md) | 中心y座標(ピクセル) |
 | `radius` | [Number](Number.md) | 半径(ピクセル) |
-| `color` | [String](String.md) | 色(CSS形式) |
+| `color` | [MV.CssColor](MV.CssColor.md) | 色 |
 
 
 #### drawText (text, x, y, maxWidth, lineHeight, align)
@@ -241,7 +241,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `color` | [String](String.md) | 色(CSS形式) |
+| `color` | [MV.CssColor](MV.CssColor.md) | 色(CSS文字列) |
 
 
 #### fillRect (x, y, width, height, color)
@@ -255,7 +255,7 @@
 | `y` | [Number](Number.md) | 上y座標(ピクセル) |
 | `width` | [Number](Number.md) | 矩形幅(ピクセル) |
 | `height` | [Number](Number.md) | 矩形高さ(ピクセル) |
-| `color` | [String](String.md) | 色(CSS形式) |
+| `color` | [MV.CssColor](MV.CssColor.md) | 色(CSS文字列) |
 
 
 #### getAlphaPixel (x, y) → {[String](String.md)}
@@ -269,8 +269,8 @@
 | `y` | [Number](Number.md) | y座標(ピクセル) |
 
 
-#### getPixel (x, y) → {[String](String.md)}
-指定位置のピクセルの色(16進数)を返す。
+#### getPixel (x, y) → {[MV.CssColor](MV.CssColor.md)}
+指定位置のピクセルの色を返す。
 
 ##### Parameters:
 
@@ -291,8 +291,8 @@
 | `y` | [Number](Number.md) | 上y座標(ピクセル) |
 | `width` | [Number](Number.md) | 矩形幅(ピクセル) |
 | `height` | [Number](Number.md) | 矩形高さ(ピクセル) |
-| `color1` | [String](String.md) | 開始色(16進数) |
-| `color2` | [String](String.md) | 終了色(16進数) |
+| `color1` | [MV.CssColor](MV.CssColor.md) | 開始色 |
+| `color2` | [MV.CssColor](MV.CssColor.md) | 終了色 |
 | `vertical` | Boolean | 縦にグラデーションをかけるか |
 
 
