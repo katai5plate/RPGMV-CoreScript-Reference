@@ -1,10 +1,12 @@
 # Class: [MV](MV.md).TouchInputEvents
+
+## Type: Object
 タッチ入力のイベントのパラメータ。
 
 関連クラス: [TouchInput](TouchInput.md)
 
 
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |

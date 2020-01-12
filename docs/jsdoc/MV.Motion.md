@@ -1,4 +1,6 @@
 # Class: [MV](MV.md).Motion
+
+## Type: Object
 サイドビューのアニメーションを指定するパラメータ。
 
 sv_actors フォルダの画像には、3パターンのアニメーションが18種類あり、index で指定する。

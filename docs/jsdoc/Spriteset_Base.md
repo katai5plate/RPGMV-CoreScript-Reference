@@ -18,7 +18,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_tone` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [[色調]](Game_Screen.md#色調) |
+| `_tone` | [MV.Tone](MV.Tone.md) | [色調] |
 | `_baseSprite` | [Sprite](Sprite.md) | 基本スプライト |
 | `_blackScreen` | [ScreenSprite](ScreenSprite.md) | 黒背景 |
 | `_toneFilter` | [ToneFilter](ToneFilter.md) | トーンフィルタ |

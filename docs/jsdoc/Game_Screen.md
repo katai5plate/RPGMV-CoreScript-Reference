@@ -32,17 +32,12 @@
 | `_brightness` | [Number](Number.md) | 明るさ |
 | `_fadeOutDuration` | [Number](Number.md) | フェードアウトの継続時間(フレーム) |
 | `_fadeInDuration` | [Number](Number.md) | フェードインの継続時間(フレーム) |
-| `_tone` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [[色調]](Game_Screen.md#色調) |
-| `_toneTarget` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [[色調]](Game_Screen.md#色調)目標 |
-| `_toneDuration` | [Number](Number.md) | [色調]の継続時間(フレーム) |
+| `_tone` |  [MV.Tone](MV.Tone.md)  | [色調] |
+| `_toneTarget` |  [MV.Tone](MV.Tone.md)  | 色調目標 |
+| `_toneDuration` | [Number](Number.md) | 色調の継続時間(フレーム) |
 | `_flashColor` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [フラッシュ]の色(0~0xFFFFFF) |
 | `_flashDuration` | [Number](Number.md) | [フラッシュ]の継続時間(フレーム) |
 | `_pictures` | [Array](Array.md).&lt;[Game_Picture](Game_Picture.md)&gt; | 追加された[ピクチャ]の配列 |
-
-#### [色調]
-[ 赤, 緑, 青, グレー ] の数値が並んだ配列。<br />
-赤緑青の数値は -255〜255 の範囲。グレーは 0~255 の範囲。<br />
-例えばセピアの場合 [ 34, -34, -68, 170 ] となる。
 
 
 ### Methods
@@ -260,7 +255,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tone` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [[色調]](Game_Screen.md#色調) |
+| `tone` | [MV.Tone](MV.Tone.md) | [色調] |
 | `duration` | [Number](Number.md) | 継続時間(フレーム) |
 
 
@@ -285,12 +280,12 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `pictureId` | [Number](Number.md) | ピクチャID |
-| `tone` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [[色調]](Game_Screen.md#色調) |
+| `tone` | [MV.Tone](MV.Tone.md) | [色調] |
 | `duration` | [Number](Number.md) | 継続時間(フレーム) |
 
 
-#### tone () → {[Array](Array.md).<[Number](Number.md)>}
-[[色調]](Game_Screen.md#色調)を返す。
+#### tone () → {[MV.Tone](MV.Tone.md)}
+[色調]を返す。
 
 
 #### update ()

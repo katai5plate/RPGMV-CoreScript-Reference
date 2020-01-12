@@ -1,4 +1,6 @@
 # Class: [MV](MV.md).SaveContents
+
+## Type: Object
 セーブされるデータをまとめたパラメータ。
 
 なお、$gameTemp, $gameMessage, $gameTroop は含まない、$gameから始まる大域変数。

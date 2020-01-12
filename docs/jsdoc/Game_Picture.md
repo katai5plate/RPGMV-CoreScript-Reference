@@ -29,8 +29,8 @@
 | `_targetScaleY` | [Number](Number.md) | 目標拡大率(高さ) |
 | `_targetOpacity` | [Number](Number.md) | 目標不透明度 |
 | `_duration` | [Number](Number.md) | 継続時間(フレーム) |
-| `_tone` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [[色調]](Game_Screen.md#色調) |
-| `_toneTarget` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [[色調]](Game_Screen.md#色調) 目標 |
+| `_tone` | [MV.Tone](MV.Tone.md) | [色調] |
+| `_toneTarget` | [MV.Tone](MV.Tone.md) | 色調目標 |
 | `_toneDuration` | [Number](Number.md) | 色調の継続時間 |
 | `_angle` | [Number](Number.md) | 回転角(度) |
 | `_rotationSpeed` | [Number](Number.md) | 回転速度 |
@@ -140,12 +140,12 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tone` | [Array](Array.md).<[Number](Number.md)> | [[色調]](Game_Screen.md#色調) |
+| `tone` | [MV.Tone](MV.Tone.md) | 色調 |
 | `duration` | [Number](Number.md) | 継続時間(フレーム) |
 
 
-#### tone () → {[Array](Array.md).<[Number](Number.md)>}
-[[色調]](Game_Screen.md#色調)を返す。
+#### tone () → {[MV.Tone](MV.Tone.md)}
+色調を返す。
 
 
 #### update ()

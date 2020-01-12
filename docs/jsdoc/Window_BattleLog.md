@@ -9,6 +9,7 @@
 
 関連クラス: [Scene_Battle](Scene_Battle.md), [RPG.State](RPG.State.md), [Game_ActionResult](Game_ActionResult.md)
 
+
 ### Properties:
 
 | Name | Type | Description |
