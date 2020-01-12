@@ -34,7 +34,7 @@
 | `fill` | [PIXI.FillStyle](http://pixijs.download/release/docs/PIXI.FillStyle.html) | [read-only] 塗りの形式 |
 | `geometry` | [PIXI.GraphicsGeometry](http://pixijs.download/release/docs/PIXI.GraphicsGeometry.html) | ジオメトリ |
 | `line` | [PIXI.LineStyle](http://pixijs.download/release/docs/PIXI.LineStyle.html) | [read-only] 線の形式 |
-| `pluginName` | [String](String.md) | 規定値: \'batch\' |
+| `pluginName` | [String](String.md) | 規定値: 'batch' |
 | `shader` | [PIXI.Shader](http://pixijs.download/release/docs/PIXI.Shader.html) | シェーダー |
 | `state` | [PIXI.State](http://pixijs.download/release/docs/PIXI.State.html) | 状態 |
 | `tint` | [Number](Number.md) | 枠線の色(規定値: 0xFFFFFF) |

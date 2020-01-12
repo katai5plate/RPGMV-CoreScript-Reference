@@ -137,5 +137,5 @@ Overrides:[Sprite](Sprite.md#update-)
 
 
 #### updateTone ()
-色調のアップデート。
+[色調]のアップデート。
 

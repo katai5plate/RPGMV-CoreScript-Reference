@@ -18,7 +18,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_tone` | [Array](Array.md).&lt;[Number](Number.md)&gt; | 色調 |
+| `_tone` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [[色調]](Game_Screen.md#色調) |
 | `_baseSprite` | [Sprite](Sprite.md) | 基本スプライト |
 | `_blackScreen` | [ScreenSprite](ScreenSprite.md) | 黒背景 |
 | `_toneFilter` | [ToneFilter](ToneFilter.md) | トーンフィルタ |
@@ -103,7 +103,7 @@
 
 
 #### createCanvasToneChanger ()
-canvas 色調変更を生成。
+canvas [色調]変更を生成。
 
 
 #### createLowerLayer ()
@@ -123,7 +123,7 @@ canvas 色調変更を生成。
 
 
 #### createToneChanger ()
- 色調補正スプライトを生成。
+ [色調]補正スプライトを生成。
 
 
 #### createUpperLayer ()
@@ -131,7 +131,7 @@ canvas 色調変更を生成。
 
 
 #### createWebGLToneChanger ()
-WebGL 色調変更を生成。
+WebGL [色調]変更を生成。
 
 
 #### initialize ()
@@ -143,7 +143,7 @@ Overrides:[Sprite](Sprite.md#update-)
 
 
 #### updateCanvasToneChanger ()
-canvas 色調変更をアップデート。
+canvas [色調]変更をアップデート。
 
 
 #### updatePosition ()
@@ -155,9 +155,9 @@ canvas 色調変更をアップデート。
 
 
 #### updateToneChanger ()
- 色調変更をアップデート。
+ [色調]変更をアップデート。
 
 
 #### updateWebGLToneChanger ()
-WebGL 色調変更をアップデート。
+WebGL [色調]変更をアップデート。
 

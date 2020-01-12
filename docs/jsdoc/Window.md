@@ -14,24 +14,17 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `children` | [Array](Array.md).&lt;\*&gt; | [super][read-only] 子オブジェクト |
-| `parent` | [PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html) | [super][read-only] 親オブジェクト |
 | `active` | Boolean | ウィンドウがアクティブか |
 | `openness` | [Number](Number.md) | 開放度 (0 〜 255) |
 | `contents` | [Bitmap](Bitmap.md) | コンテンツ |
 | `windowskin` | [Bitmap](Bitmap.md) | ウィンドウのスキンに使う画像 |
-| `visible` | Boolean | ウィンドウが表示中か |
 | `pause` | Boolean | ポーズサインが表示中か |
 | `downArrowVisible` | Boolean | 下向きスクロールアローが表示中か|
 | `upArrowVisible` | Boolean | 上むきスクロールアローが表示中か |
-| `opacity` | [Number](Number.md) | コンテンツの不透明度(0 〜 255) |
+| `opacity` | [Number](Number.md) | ウィンドウの不透明度(0 〜 255) |
 | `backOpacity` | [Number](Number.md) | 背景の不透明度(0 〜 255) |
 | `contentsOpacity` | [Number](Number.md) | コンテンツの不透明度(0 〜 255) |
 | `origin` | [Point](Point.md) | スクロールの際のウィンドウの原点 |
-| `x` | [Number](Number.md) | ウィンドウ x座標(ピクセル) |
-| `y` | [Number](Number.md) | ウィンドウ y座標(ピクセル) |
-| `width` | [Number](Number.md) | 拡大縮小前のウィンドウ幅(ピクセル) |
-| `height` | [Number](Number.md) | 拡大縮小前のウィンドウ高さ(ピクセル) |
 | `margin` | [Number](Number.md) | 背景マージン幅(ピクセル) |
 | `padding` | [Number](Number.md) | 枠とコンテンツの間のパディング幅(ピクセル) |
 | `_isWindow` | Boolean | ウィンドウか |
@@ -43,13 +36,13 @@
 | `_animationCount` | [Number](Number.md) | アニメーションカウント |
 | `_padding` | [Number](Number.md) | パディング |
 | `_margin` | [Number](Number.md) | マージン |
-| `_colorTone` | [Array](Array.md).&lt;[Number](Number.md)&gt; | 色調 |
+| `_colorTone` | [Array](Array.md).&lt;[Number](Number.md)&gt; | [[色調]](Game_Screen.md#色調) |
 | `_windowSpriteContainer` | [PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html) | 画像コンテナ |
 | `_windowBackSprite` | [Sprite](Sprite.md) | 背景 |
 | `_windowCursorSprite` | [Sprite](Sprite.md) | カーソル |
 | `_windowFrameSprite` | [Sprite](Sprite.md) | 枠 |
 | `_windowContentsSprite` | [Sprite](Sprite.md) | 内容 |
-| `_windowArrowSprites` | [Array](Array.md).&lt;\*&gt; | 矢印 |
+| `_windowArrowSprites` | [Array](Array.md).&lt;*&gt; | 矢印 |
 | `_windowPauseSignSprite` | [Sprite](Sprite.md) | ポーズサイン |
 | `_downArrowSprite` | [Sprite](Sprite.md) | 下向き矢印 |
 | `_upArrowSprite` | [Sprite](Sprite.md) | 上向き矢印 |
