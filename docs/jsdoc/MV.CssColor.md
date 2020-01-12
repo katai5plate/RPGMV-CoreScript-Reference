@@ -12,7 +12,7 @@ CSS形式の文字列による色指定方法。
 詳しくは[MDN の CSS 色](https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Color)などを参照。
 
 
-関連クラス: [Bitmap](Bitmap.md), [WIndow_Base](WIndow_Base.md), [Window_NameEdit](Window_NameEdit.md), [MV.Tone](MV.Tone.md)
+関連クラス: [Bitmap](Bitmap.md), [Window_Base](Window_Base.md), [Window_NameEdit](Window_NameEdit.md), [MV.Tone](MV.Tone.md)
 
 
 

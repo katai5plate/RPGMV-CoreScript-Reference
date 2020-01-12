@@ -6,7 +6,7 @@
 
 例えばセピアの場合 [ 34, -34, -68, 170 ] となる。
 
-関連クラス: [Game_Screen](Game_Screen.md), [Game_Picture](Game_Picture.md), [Sprite](Sprite.md),[Spriteset_Base](Spriteset_Base.md), [WIndow](WIndow.md), [MV.CssColor](MV.CssColor.md)
+関連クラス: [Game_Screen](Game_Screen.md), [Game_Picture](Game_Picture.md), [Sprite](Sprite.md),[Spriteset_Base](Spriteset_Base.md), [Window](Window.md), [MV.CssColor](MV.CssColor.md)
 
 
 ### Contents:
