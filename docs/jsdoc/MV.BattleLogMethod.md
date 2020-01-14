@@ -16,7 +16,6 @@
 
 #### メソッド名
 
-| [addText](Window_BattleLog.md#addtext-text) | 行を追加 |
 | Method | Description | param1 | param2 | param3 |
 | --- | --- | --- | --- | --- |
 | [addText](Window_BattleLog.md#addtext-text) | 行を追加 | [String](String.md) |
