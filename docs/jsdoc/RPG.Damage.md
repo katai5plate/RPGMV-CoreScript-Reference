@@ -1,7 +1,9 @@
 # Class: [RPG](RPG.md).Damage
 [ダメージ]のデータ。
 
-関連クラス: [RPG.UsableItem](RPG.UsableItem.md)
+関連クラス: [RPG.UsableItem](RPG.UsableItem.md), [Game_Action](Game_Action.md)
+
+
 ### Properties:
 
 | Name | Type | Description |
