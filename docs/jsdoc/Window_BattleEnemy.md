@@ -3,21 +3,23 @@
 ## Extends: [Window_Selectable](Window_Selectable.md)
 
 ### new Window_BattleEnemy (x, y)
-The window for selecting a target enemy on the battle screen.
+敵の選択用のウィンドウ。
+
+関連クラス: [Scene_Battle](Scene_Battle.md)
 
 #### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
 
 
 ### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_enemies` | [Array](Array.md).<[Game_Enemy](Game_Enemy.md)> |  |
+| `_enemies` | [Array](Array.md).&lt;[Game_Enemy](Game_Enemy.md)&gt; | [敵キャラ]の配列 |
 
 
 ### Inherited From
@@ -33,7 +35,6 @@ The window for selecting a target enemy on the battle screen.
 * [setTransform (x, y, scaleX, scaleY, rotation, skewX, skewY, pivotX, pivotY)](PIXI.DisplayObject.md#settransform-x-y-scalex-scaley-rotation-skewx-skewy-pivotx-pivoty--pixidisplayobject)
 * [toGlobal (position, point, skipUpdate)](PIXI.DisplayObject.md#toglobal-position-point-skipupdate--pixipoint)
 * [toLocal (position, from, point, skipUpdate)](PIXI.DisplayObject.md#tolocal-position-from-point-skipupdate--pixipoint)
-
 
 #### [PIXI.Container](PIXI.Container.md)
 
@@ -78,10 +79,10 @@ The window for selecting a target enemy on the battle screen.
 * [contentsWidth ()](Window_Base.md#contentswidth---number)
 * [convertEscapeCharacters (text)](Window_Base.md#convertescapecharacters-text--string)
 * [createContents ()](Window_Base.md#createcontents-)
-* [crisisColor ()](Window_Base.md#crisiscolor---string)
-* [deathColor ()](Window_Base.md#deathcolor---string)
-* [dimColor1 ()](Window_Base.md#dimcolor1---string)
-* [dimColor2 ()](Window_Base.md#dimcolor2---string)
+* [crisisColor ()](Window_Base.md#crisiscolor---mvcsscolor)
+* [deathColor ()](Window_Base.md#deathcolor---mvcsscolor)
+* [dimColor1 ()](Window_Base.md#dimcolor1---mvcsscolor)
+* [dimColor2 ()](Window_Base.md#dimcolor2---mvcsscolor)
 * [drawActorCharacter (actor, x, y)](Window_Base.md#drawactorcharacter-actor-x-y)
 * [drawActorClass (actor, x, y, width)](Window_Base.md#drawactorclass-actor-x-y-width)
 * [drawActorFace (actor, x, y, width, height)](Window_Base.md#drawactorface-actor-x-y-width-height)
@@ -103,30 +104,30 @@ The window for selecting a target enemy on the battle screen.
 * [drawText (text, x, y, maxWidth, align)](Window_Base.md#drawtext-text-x-y-maxwidth-align)
 * [drawTextEx (text, x, y)](Window_Base.md#drawtextex-text-x-y--number)
 * [fittingHeight (numLines)](Window_Base.md#fittingheight-numlines--number)
-* [gaugeBackColor ()](Window_Base.md#gaugebackcolor---string)
+* [gaugeBackColor ()](Window_Base.md#gaugebackcolor---mvcsscolor)
 * [hideBackgroundDimmer ()](Window_Base.md#hidebackgrounddimmer-)
-* [hpColor (actor)](Window_Base.md#hpcolor-actor--string)
-* [hpGaugeColor1 ()](Window_Base.md#hpgaugecolor1---string)
-* [hpGaugeColor2 ()](Window_Base.md#hpgaugecolor2---string)
+* [hpColor (actor)](Window_Base.md#hpcolor-actor--mvcsscolor)
+* [hpGaugeColor1 ()](Window_Base.md#hpgaugecolor1---mvcsscolor)
+* [hpGaugeColor2 ()](Window_Base.md#hpgaugecolor2---mvcsscolor)
 * [isClosing ()](Window_Base.md#isclosing---boolean)
 * [isOpening ()](Window_Base.md#isopening---boolean)
 * [lineHeight ()](Window_Base.md#lineheight---number)
 * [loadWindowskin ()](Window_Base.md#loadwindowskin-)
 * [makeFontBigger ()](Window_Base.md#makefontbigger-)
 * [makeFontSmaller ()](Window_Base.md#makefontsmaller-)
-* [mpColor (actor)](Window_Base.md#mpcolor-actor--string)
-* [mpCostColor ()](Window_Base.md#mpcostcolor---string)
-* [mpGaugeColor1 ()](Window_Base.md#mpgaugecolor1---string)
-* [mpGaugeColor2 ()](Window_Base.md#mpgaugecolor2---string)
-* [normalColor ()](Window_Base.md#normalcolor---string)
+* [mpColor (actor)](Window_Base.md#mpcolor-actor--mvcsscolor)
+* [mpCostColor ()](Window_Base.md#mpcostcolor---mvcsscolor)
+* [mpGaugeColor1 ()](Window_Base.md#mpgaugecolor1---mvcsscolor)
+* [mpGaugeColor2 ()](Window_Base.md#mpgaugecolor2---mvcsscolor)
+* [normalColor ()](Window_Base.md#normalcolor---mvcsscolor)
 * [obtainEscapeCode (textState)](Window_Base.md#obtainescapecode-textstate)
 * [obtainEscapeParam (textState)](Window_Base.md#obtainescapeparam-textstate--numberstring)
 * [open ()](Window_Base.md#open-)
-* [paramchangeTextColor (change)](Window_Base.md#paramchangetextcolor-change--string)
+* [paramchangeTextColor (change)](Window_Base.md#paramchangetextcolor-change--mvcsscolor)
 * [partyMemberName (partyMemberIndex)](Window_Base.md#partymembername-partymemberindex--string)
-* [pendingColor ()](Window_Base.md#pendingcolor---string)
-* [powerDownColor ()](Window_Base.md#powerdowncolor---string)
-* [powerUpColor ()](Window_Base.md#powerupcolor---string)
+* [pendingColor ()](Window_Base.md#pendingcolor---mvcsscolor)
+* [powerDownColor ()](Window_Base.md#powerdowncolor---mvcsscolor)
+* [powerUpColor ()](Window_Base.md#powerupcolor---mvcsscolor)
 * [processCharacter (textState)](Window_Base.md#processcharacter-textstate)
 * [processDrawIcon (iconIndex, textState)](Window_Base.md#processdrawicon-iconindex-textstate)
 * [processEscapeCharacter (code, textState)](Window_Base.md#processescapecharacter-code-textstate)
@@ -143,14 +144,14 @@ The window for selecting a target enemy on the battle screen.
 * [standardFontFace ()](Window_Base.md#standardfontface---string)
 * [standardFontSize ()](Window_Base.md#standardfontsize---number)
 * [standardPadding ()](Window_Base.md#standardpadding---number)
-* [systemColor ()](Window_Base.md#systemcolor---string)
-* [textColor (n)](Window_Base.md#textcolor-n--string)
+* [systemColor ()](Window_Base.md#systemcolor---mvcsscolor)
+* [textColor (n)](Window_Base.md#textcolor-n--mvcsscolor)
 * [textPadding ()](Window_Base.md#textpadding---number)
 * [textWidth (text)](Window_Base.md#textwidth-text--number)
-* [tpColor (actor)](Window_Base.md#tpcolor-actor--string)
-* [tpCostColor ()](Window_Base.md#tpcostcolor---string)
-* [tpGaugeColor1 ()](Window_Base.md#tpgaugecolor1---string)
-* [tpGaugeColor2 ()](Window_Base.md#tpgaugecolor2---string)
+* [tpColor (actor)](Window_Base.md#tpcolor-actor--mvcsscolor)
+* [tpCostColor ()](Window_Base.md#tpcostcolor---mvcsscolor)
+* [tpGaugeColor1 ()](Window_Base.md#tpgaugecolor1---mvcsscolor)
+* [tpGaugeColor2 ()](Window_Base.md#tpgaugecolor2---mvcsscolor)
 * [translucentOpacity ()](Window_Base.md#translucentopacity---number)
 * [updateBackgroundDimmer ()](Window_Base.md#updatebackgrounddimmer-)
 * [updateBackOpacity ()](Window_Base.md#updatebackopacity-)
@@ -240,18 +241,18 @@ The window for selecting a target enemy on the battle screen.
 * [updateInputData ()](Window_Selectable.md#updateinputdata-)
 
 
-
 ### Methods
 
 #### drawItem (index)
 Overrides: [Window_Selectable](Window_Selectable.md#drawitem-index)
 
 
-#### enemy () → {[Game_Enemy](Game_Enemy.md)}Returns the current enemy.
+#### enemy () → {[Game_Enemy](Game_Enemy.md)}
+選択中の[敵キャラ]を返す。
 
 
 #### enemyIndex () → {[Number](Number.md)}
-Returns the current index selected.
+選択中の[敵キャラ]の番号を返す。
 
 
 #### hide ()
@@ -278,7 +279,7 @@ Overrides: [Window_Selectable](Window_Selectable.md#maxitems---number)
 
 
 #### numVisibleRows () → {[Number](Number.md)}
-Returns the number of visible rows.
+表示行数を返す。
 
 
 #### refresh ()
@@ -293,10 +294,10 @@ Overrides: [Window_Selectable](Window_Selectable.md#select-index)
 Overrides: [Window_Base](Window_Base.md#show-)
 
 
-#### windowWidth () → {[Number](Number.md)}
-Returns the window width.
-
-
 #### windowHeight () → {[Number](Number.md)}
-Returns the window height.
+ウィンドウの高さ(ピクセル)を返す。
+
+
+#### windowWidth () → {[Number](Number.md)}
+ウィンドウの幅(ピクセル)を返す。
 
