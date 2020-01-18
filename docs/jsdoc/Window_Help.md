@@ -33,7 +33,6 @@
 * [toGlobal (position, point, skipUpdate)](PIXI.DisplayObject.md#toglobal-position-point-skipupdate--pixipoint)
 * [toLocal (position, from, point, skipUpdate)](PIXI.DisplayObject.md#tolocal-position-from-point-skipupdate--pixipoint)
 
-
 #### [PIXI.Container](PIXI.Container.md)
 
 * [addChild (child) ](PIXI.Container.md#addchild-child--pixidisplayobject)
@@ -74,6 +73,7 @@
 * [changePaintOpacity (enabled)](Window_Base.md#changepaintopacity-enabled)
 * [changeTextColor (color)](Window_Base.md#changetextcolor-color)
 * [close ()](Window_Base.md#close-)
+* [contentsHeight ()](Window_Base.md#contentsheight---number)
 * [contentsWidth ()](Window_Base.md#contentswidth---number)
 * [convertEscapeCharacters (text)](Window_Base.md#convertescapecharacters-text--string)
 * [createContents ()](Window_Base.md#createcontents-)
@@ -122,7 +122,6 @@
 * [normalColor ()](Window_Base.md#normalcolor---string)
 * [obtainEscapeCode (textState)](Window_Base.md#obtainescapecode-textstate)
 * [obtainEscapeParam (textState)](Window_Base.md#obtainescapeparam-textstate--numberstring)
-* [open ()](Window_Base.md#open-)
 * [paramchangeTextColor (change)](Window_Base.md#paramchangetextcolor-change--string)
 * [partyMemberName (partyMemberIndex)](Window_Base.md#partymembername-partymemberindex--string)
 * [pendingColor ()](Window_Base.md#pendingcolor---string)
