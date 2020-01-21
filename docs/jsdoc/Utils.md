@@ -26,7 +26,8 @@
 
 #### (static) isNwjs () → {Boolean}基盤に NW.js を使っているか。
 
-#### (static) isOptionValid (name) → {Boolean}指定オプションが適正か。
+#### (static) isOptionValid (name) → {Boolean}指定オプション(ブラウザだとURLの?以降の&amp;で区切られたクエリ)が含まれるか。<br />
+'test', 'btest', 'etest', 'onTop', 'devToolOff', 'showfps', 'canvas', 'webgl', 'noaudio'
 
 ##### Parameters:
 
