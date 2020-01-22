@@ -10,7 +10,7 @@
 描画モード(F2キーを押して確かめられる)が Canvas Mode の場合に使われる。<br />
 なお、Canvas Mode は古いブラウザなどの一部環境でしか使われない。
 
-関連クラス: [RPG.Map](RPG.Map.md), [RPG.Tileset](RPG.Tileset.md), [Spriteset_Map](Spriteset_Map.md)
+関連クラス: [RPG.Map](RPG.Map.md), [RPG.Tileset](RPG.Tileset.md), [Game_Map](Game_Map.md), [Spriteset_Map](Spriteset_Map.md)
 
 
 ### Sub Classes
@@ -19,20 +19,20 @@
 
 
 ### Properties:
-TILE_ から始まる定数はタイルブロックの開始番号。
+TILE_ から始まる定数はタイルブロックのタイルIDの開始番号。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `TILE_ID_A1` | [Number](Number.md) | [static] A1(アニメーション)タイルの開始番号(2048) |
-| `TILE_ID_A2` | [Number](Number.md) | [static] A2(地面)タイルの開始番号(2816) |
-| `TILE_ID_A3` | [Number](Number.md) | [static] A3(建物)タイルの開始番号(4352) |
-| `TILE_ID_A4` | [Number](Number.md) | [static] A4(壁)タイルの開始番号(5888) |
-| `TILE_ID_A5` | [Number](Number.md) | [static] A5(通常)タイルの開始番号(1536) |
-| `TILE_ID_B` | [Number](Number.md) | [static] Bタイルの開始番号(0) |
-| `TILE_ID_C` | [Number](Number.md) | [static] Cタイルの開始番号(256) |
-| `TILE_ID_D` | [Number](Number.md) | [static] Dタイルの開始番号(512) |
-| `TILE_ID_E` | [Number](Number.md) | [static] Eタイルの開始番号(768) |
-| `TILE_ID_MAX` | [Number](Number.md) | [static] タイルの終端番号(8192) |
+| `TILE_ID_A1` | [Number](Number.md) | [static] A1(アニメーション)タイルIDの開始番号(2048) |
+| `TILE_ID_A2` | [Number](Number.md) | [static] A2(地面)タイルIDの開始番号(2816) |
+| `TILE_ID_A3` | [Number](Number.md) | [static] A3(建物)タイルIDの開始番号(4352) |
+| `TILE_ID_A4` | [Number](Number.md) | [static] A4(壁)タイルIDの開始番号(5888) |
+| `TILE_ID_A5` | [Number](Number.md) | [static] A5(通常)タイルIDの開始番号(1536) |
+| `TILE_ID_B` | [Number](Number.md) | [static] BタイルIDの開始番号(0) |
+| `TILE_ID_C` | [Number](Number.md) | [static] CタイルIDの開始番号(256) |
+| `TILE_ID_D` | [Number](Number.md) | [static] DタイルIDの開始番号(512) |
+| `TILE_ID_E` | [Number](Number.md) | [static] EタイルIDの開始番号(768) |
+| `TILE_ID_MAX` | [Number](Number.md) | [static] タイルIDの終端番号(8192) |
 | `FLOOR_AUTOTILE_TABLE` | [Array](Array.md).&lt;[Array](Array.md).&lt;[Array](Array.md).&lt;[Number](Number.md)&gt;&gt;&gt; | [static] 床オートタイル組み立てテーブル |
 | `WALL_AUTOTILE_TABLE` | [Array](Array.md).&lt;[Array](Array.md).&lt;[Array](Array.md).&lt;[Number](Number.md)&gt;&gt;&gt; | [static] 壁オートタイル組み立てテーブル |
 | `WATERFALL_AUTOTILE_TABLE` | [Array](Array.md).&lt;[Array](Array.md).&lt;[Array](Array.md).&lt;[Number](Number.md)&gt;&gt;&gt; | [static] 滝オートタイル組み立てテーブル |

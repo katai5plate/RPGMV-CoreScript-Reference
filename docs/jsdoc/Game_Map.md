@@ -8,7 +8,9 @@
 
 [イベント][タイルセット] などを含むマップの管理、スクロール制御や通行判定など役割の多いクラス。 
 
-関連クラス: [RPG.Tileset](RPG.Tileset.md), [Scene_Map](Scene_Map.md), [Game_Screen](Game_Screen.md), [ShaderTilemap](ShaderTilemap.md)
+A〜Eの各タイルに割り当てられているタイルIDの数値は [Tilemap](Tilemap.md) で定義されている定数を参照。
+
+関連クラス: [RPG.Tileset](RPG.Tileset.md), [Scene_Map](Scene_Map.md), [Game_Screen](Game_Screen.md), [Tilemap](Tilemap.md), [ShaderTilemap](ShaderTilemap.md)
 
 
 ### Properties:
@@ -37,7 +39,7 @@
 | `_parallaxY` | [Number](Number.md) | 遠景 y位置(ピクセル) |
 | `_battleback1Name` | [String](String.md) | レイヤー奥の戦闘背景画像1(地面)のファイル名 |
 | `_battleback2Name` | [String](String.md) | レイヤー手前の戦闘背景画像2(壁)のファイル名 |
-| `_needsRefresh` | Boolean | [Game_Map#requestRefresh](Game_Map.md#requestrefresh-mapid)などで更新予約がされているか |
+| `_needsRefresh` | Boolean | [requestRefresh()](Game_Map.md#requestrefresh-mapid)などで更新予約がされているか |
 
 
 ### Methods

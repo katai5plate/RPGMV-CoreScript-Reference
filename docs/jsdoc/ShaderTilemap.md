@@ -8,7 +8,7 @@
 
 バージョン1.3.0以降は、こちらの ShaderTilemap が実際に使用されているクラスで、[Tilemap](Tilemap.md) の方は継承されるために存在する abstract(抽象)クラスと、静的メソッド・プロパティを扱うユーティリティクラスの役割となっている。
 
-関連クラス: [RPG.Map](RPG.Map.md), [RPG.Tileset](RPG.Tileset.md), [Spriteset_Map](Spriteset_Map.md)
+関連クラス: [RPG.Map](RPG.Map.md), [RPG.Tileset](RPG.Tileset.md), [Game_Map](Game_Map.md), [Spriteset_Map](Spriteset_Map.md)
 
 
 ### Inherited From
