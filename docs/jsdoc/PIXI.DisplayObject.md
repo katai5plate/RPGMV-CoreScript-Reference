@@ -40,11 +40,11 @@
 | `mask` | [PIXI.Graphics](PIXI.Graphics.md) \| [PIXI.Sprite](PIXI.Sprite.md) \| null | マスク画像 |
 | `name` | [String](String.md) | 名前 |
 | `parent` | [PIXI.Container](PIXI.Container.md) | [read-only] 親コンテナオブジェクト |
-| `pivot` | [PIXI.IPoin](http://pixijs.download/release/docs/PIXI.html#.IPoint) | 回転軸 |
+| `pivot` | [PIXI.IPoint](http://pixijs.download/release/docs/PIXI.IPoint.html) | 回転軸 |
 | `position` | [Point](Point.md) | 位置(x, y を同時に指定) |
 | `renderable` | Boolean | レンダ可能か |
 | `rotation` | [Number](Number.md) | 回転角(ラジアン) |
-| `scale` | [PIXI.IPoin](http://pixijs.download/release/docs/PIXI.html#.IPoint) | 拡大率(ex: 等倍 {1, 1} / 横2倍 {2, 1}) |
+| `scale` | [PIXI.IPoint](http://pixijs.download/release/docs/PIXI.IPoint.html) | 拡大率(ex: 等倍 {1, 1} / 横2倍 {2, 1}) |
 | `skew` | [PIXI.ObservablePoint](http://pixijs.download/release/docs/PIXI.ObservablePoint.html) | 傾斜 |
 | `transform` | [PIXI.Matrix](http://pixijs.download/release/docs/PIXI.Matrix.html) | 変形 |
 | `visible` | Boolean |  表示中か |
