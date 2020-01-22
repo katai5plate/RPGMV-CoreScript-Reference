@@ -1,8 +1,7 @@
 # Class: ImageCache
 
 ### new ImageCache ()
-画像を保持(キャッシュ)するクラス。
-
+画像を保持(キャッシュ)するクラス。Ver.1.5.0 で追加されたクラス。
 
 関連クラス: [ImageManager](ImageManager.md), [CacheEntry](CacheEntry.md), [CacheMap](CacheMap.md), [Bitmap](Bitmap.md)
 
