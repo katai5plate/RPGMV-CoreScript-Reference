@@ -12,7 +12,7 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `_balloonId` | [Number](Number.md) | フキダシID |
-| `_duration` | [Number](Number.md) | 継続時間 |
+| `_duration` | [Number](Number.md) | 継続時間(フレーム) |
 
 
 ### Inherited From
@@ -71,8 +71,8 @@
 * [\_renderCanvas (renderer)](Sprite.md#_rendercanvas-renderer)
 * [\_renderWebGL (renderer)](Sprite.md#_renderwebgl-renderer)
 * [\_speedUpCustomBlendModes (renderer)](Sprite.md#_speedupcustomblendmodes-renderer)
-* [getBlendColor ()](Sprite.md#getblendcolor---array)
-* [getColorTone ()](Sprite.md#getcolortone---array)
+* [getBlendColor ()](Sprite.md#getblendcolor---mvcolor)
+* [getColorTone ()](Sprite.md#getcolortone---mvtone)
 * [move (x, y)](Sprite.md#Sprite.md#move-x-y)
 * [setBlendColor (color)](Sprite.md#setblendcolor-color)
 * [setColorTone (tone)](Sprite.md#setcolortone-tone)
@@ -91,7 +91,7 @@
 ### Methods
 
 #### frameIndex () → {[Number](Number.md)}
-フレーム番号。
+フレーム番号(0〜7)を返す。
 
 
 #### initialize ()
@@ -121,7 +121,7 @@ Overrides:[Sprite_Base](Sprite_Base.md#initialize-)
 
 
 #### speed () → {[Number](Number.md)}
-アニメーション速度を返す。
+1パターンの表示時間(規定値:8フレーム)を返す。
 
 
 #### update ()
@@ -129,8 +129,9 @@ Overrides:[Sprite_Base](Sprite_Base.md#update-)
 
 
 #### updateFrame ()
-フキダシ枠のアップデート。
+画像のアップデート。
+
 
 #### waitTime () → {[Number](Number.md)}
-待ち時間を返す。
+アニメーション後の待ち時間(規定値:12フレーム)を返す。
 

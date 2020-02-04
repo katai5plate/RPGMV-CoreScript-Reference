@@ -80,8 +80,8 @@
 * [\_renderCanvas (renderer)](Sprite.md#_rendercanvas-renderer)
 * [\_renderWebGL (renderer)](Sprite.md#_renderwebgl-renderer)
 * [\_speedUpCustomBlendModes (renderer)](Sprite.md#_speedupcustomblendmodes-renderer)
-* [getBlendColor ()](Sprite.md#getblendcolor---array)
-* [getColorTone ()](Sprite.md#getcolortone---array)
+* [getBlendColor ()](Sprite.md#getblendcolor---mvcolor)
+* [getColorTone ()](Sprite.md#getcolortone---mvtone)
 * [move (x, y)](Sprite.md#Sprite.md#move-x-y)
 * [setBlendColor (color)](Sprite.md#setblendcolor-color)
 * [setColorTone (tone)](Sprite.md#setcolortone-tone)
@@ -116,7 +116,7 @@ Overrides:[Sprite](Sprite.md#initialize-)
 | `animation` | [RPG.Animation](RPG.Animation.md) | アニメーションデータ |
 | `mirror` | Boolean | 左右反転するか |
 | `delay` | [Number](Number.md) | 表示時間 |
-
+	
 
 #### update ()
 Overrides:[Sprite](Sprite.md#update-)
