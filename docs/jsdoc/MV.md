@@ -1,10 +1,10 @@
 # Namespace: MV
 RPGツクールMVで使われるメソッドのパラメータとなるオブジェクト。
 
-ネームスペースに MV とか、クラス名を便宜上つけているが、JavaScript上は単なる Object の一種。
+ネームスペースに MV とか、クラス名を便宜上つけているが、JavaScript上は単なる Object・Array・Stringデータ。
 
 
-### Classes
+### Objects
 
 * [AudioParameters](MV.AudioParameters.md)
 * [BattleLogMethod](MV.BattleLogMethod.md)

@@ -4,7 +4,7 @@
 
 ネームスペースに RPG とか、クラス名を便宜上つけているが、JavaScript上は単なる Object の一種。
 
-### Classes
+### Objects
 
 * [Animation](RPG.Animation.md) . [Timing](RPG.Animation.Timing.md)
 * [AudioFile](RPG.AudioFile.md)
