@@ -113,7 +113,7 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 
 
 #### _executeTint (x, y, w, h)
-[色調]変化を適用。
+指定した矩形枠に[色調]変化を適用。
 
 ##### Parameters:
 
@@ -180,12 +180,12 @@ WebGL でレンダリング。
 | `renderer` | Object | レンダラ |
 
 
-#### getBlendColor () → {[Array](Array.md)}
+#### getBlendColor () → {[MV.Color](MV.Color.md)}
  合成される色(r, g, b)と不透明度(a)を[ r, g, b, a ] の配列として返す。
 
 
-#### getColorTone () → {[Array](Array.md)}
- 補正される[[色調]](Game_Screen.md#色調)を返す。
+#### getColorTone () → {[MV.Tone](MV.Tone.md)}
+ 補正される[色調]を返す。
 
 
 #### initialize (bitmap)
@@ -226,7 +226,7 @@ WebGL でレンダリング。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `tone` | [Array](Array.md) | [r, g, b, gray] の配列 |
+| `tone` | [MV.Tone](MV.Tone.md) | [色調] |
 
 
 #### setFrame (x, y, width, height)

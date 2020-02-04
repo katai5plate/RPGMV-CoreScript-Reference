@@ -24,4 +24,10 @@ RPGツクールMVで使われるメソッドのパラメータとなるオブジ
 
 ### Arrays
 
+* [Color](MV.Color.md)
 * [Tone](MV.Tone.md)
+
+
+### Strings
+
+* [CssColor](MV.CssColor.md)
