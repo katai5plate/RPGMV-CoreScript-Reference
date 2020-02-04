@@ -67,9 +67,10 @@ commandXXX(XXXは数字)というメソッドはイベントコマンドに対�
 
 
 #### character (param) → {[Game_Character](Game_Character.md)}
-指定したIDの[Game_Event](Game_Event.md)を返す。
+指定したIDの[Game_Event](Game_Event.md)を返す。<br />
 0 だとコマンドを含むイベント自身を返す。
-マイナスの値の場合 [Game_Player](Game_Player.md) を返す。
+マイナスの値の場合 [Game_Player](Game_Player.md) を返す。<br />
+[隊列メンバー]オブジェクトを得るには、[Game_Followers.follower()](Game_Followers.md#follower-index--game_follower) を使う。
 
 ##### Parameters:
 
