@@ -5,6 +5,7 @@ $XXXで大域変数に設定されているものや、セーブデータの管�
 
 大域変数について詳細は [Global](global.md) のページを参照。
 
+関連クラス: [JsonEx](JsonEx.md)
 
 ### Properties:
 
