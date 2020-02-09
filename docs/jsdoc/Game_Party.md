@@ -30,7 +30,7 @@ ABILITY\_ で始まる静的定数は [パーティ能力ID](RPG.Trait.md#パー
 | `_lastItem` | [Game_Item](Game_Item.md) | 最後のアイテム |
 | `_menuActorId` | [Number](Number.md) | メニューのアクターID |
 | `_targetActorId` | [Number](Number.md) | 対象のアクターID |
-| `_actors` | [Array](Array.md).&lt;[Game_Actor](Game_Actor.md)&gt; | アクターの配列 |
+| `_actors` | [Array](Array.md) | アクターIDの配列 |
 | `_items` | Object | {[itemId: number]: number} |
 | `_weapons` | Object | {[itemId: number]: number} |
 | `_armors` | Object | {[itemId: number]: number} |
