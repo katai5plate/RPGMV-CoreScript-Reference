@@ -4,13 +4,18 @@
 
 ### new Sprite_Character (character)
 
-| データベース | オブジェクト |
-| --- | --- |
-| [イベント][アクター][フォロワー][乗り物] | [Game_Character](Game_Character.md) |
+| データベース | JSONデータ | オブジェクト |
+| --- | --- | --- | --- |
+|||[Game_Character](Game_Character.md) |
+| [アクター] | [RPG.Actor](RPG.Actor.md) | [Game_Actor](Game_Actor.md) |
+| [プレイヤー] | 〃 | [Game_Player](Game_Player.md) |
+| [フォロワー] | 〃 | [Game_Follower](Game_Follower.md) |
+| [イベント] | [RPG.Event](RPG.Event.md) |[Game_Event](Game_Event.md) |
+| [乗り物] | [RPG.System.Vehicle](RPG.System.Vehicle.md) | [Game_Vehicle](Game_Vehicle.md) |
 
-キャラクタを表示するスプライト。
+マップ上のキャラクタを表示するスプライト。
 
-関連クラス: [Spriteset_Map](Spriteset_Map.md)
+関連クラス: [Scene_Map](Scene_Map.md), [Spriteset_Map](Spriteset_Map.md),[Sprite_Actor](Sprite_Actor.md)
 
 #### Parameters:
 

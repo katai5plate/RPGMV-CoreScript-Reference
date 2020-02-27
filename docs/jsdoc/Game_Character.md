@@ -4,21 +4,24 @@
 
 ### new Game_Character ()
 
-| データベース | スプライト |
-| --- | --- |
-| [イベント][アクター][フォロワー][乗り物] | [Sprite_Character](Sprite_Character.md) |
+| データベース |  JSONデータ | オブジェクト | スプライト |
+| --- | --- | --- | --- |
+| [イベント] | [RPG.Event](RPG.Event.md) | [Game_Event](Game_Event.md) | [Sprite_Character](Sprite_Character.md) |
+| [プレイヤー] | [RPG.Actor](RPG.Actor.md) | [Game_Player](Game_Player.md) | 〃 | 
+| [フォロワー] | 〃 | [Game_Follower](Game_Follower.md) | 〃 | 
+| [乗り物] | [RPG.System.Vehicle](RPG.System.Vehicle.md) |  [Game_Vehicle](Game_Vehicle.md) | 〃 | 
 
 マップに表示されるキャラ用のクラス。
 
-関連クラス: [Game_Interpreter](Game_Interpreter.md)
+関連クラス: [Game_Interpreter](Game_Interpreter.md), [Game_Actor](Game_Actor.md)
 
 
 ### Sub Classes
 
-* [Game_Player](Game_Player.md)
-* [Game_Follower](Game_Follower.md)
-* [Game_Vehicle](Game_Vehicle.md)
 * [Game_Event](Game_Event.md)
+* [Game_Follower](Game_Follower.md)
+* [Game_Player](Game_Player.md)
+* [Game_Vehicle](Game_Vehicle.md)
 
 
 ### Properties:

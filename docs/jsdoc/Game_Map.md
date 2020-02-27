@@ -2,7 +2,7 @@
 
 ### new Game_Map ()
 
-| データベース| JSONデータ | 大域変数 | セーブデータ | 表示オプジェクト |
+| データベース| JSONデータ | 大域変数 | セーブデータ | スプライトセット |
 | --- | --- | --- | --- | --- |
 | マップ | [RPG.Map](RPG.Map.md) | [$gameMap](global.md#gamemap-game_map) | 保存される | [Spriteset_Map](Spriteset_Map.md) |
 

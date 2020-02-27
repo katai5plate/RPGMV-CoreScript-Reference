@@ -2,6 +2,11 @@
 
 ## Extends: [RPG.MetaData](RPG.MetaData.md) 
 
+| データベース| オブジェクト | スプライト |
+| --- | --- | --- | --- | --- |
+| [イベント] | [Game_Event](Game_Event.md) | [Sprite_Character](Sprite_Character.md) |
+ 
+
 マップ[イベント]を構成する JSON データ。
 
 [RPG.Map](RPG.Map.md)の events プロパティに含まれ、[Game_Event.event()](Game_Event.md#event---rpgevent) メソッドでも得られる。

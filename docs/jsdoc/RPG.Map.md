@@ -2,7 +2,7 @@
 
 ## Extends: [RPG.MetaData](RPG.MetaData.md) 
 
-| データベース| JSONファイル | 大域変数 | オブジェクト | 表示オブジェクト |
+| データベース| JSONファイル | 大域変数 | オブジェクト | スプライトセット |
 | --- | --- | --- | --- | --- |
 | マップ | MapXXX.json | [$dataMap](global.md#datamap-rpgmap) | [Game_Map](Game_Map.md) | [Spriteset_Map](Spriteset_Map.md) |
 

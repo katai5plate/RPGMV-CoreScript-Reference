@@ -3,6 +3,11 @@
 ## Extends: [Game_Character](Game_Character.md)
 
 ### new Game_Vehicle ()
+
+| データベース | JSONデータ | スプライト |
+| --- | --- | --- | --- |
+| [乗り物] | [RPG.System.Vehicle](RPG.System.Vehicle.md) | [Sprite_Character](Sprite_Character.md) |
+
 [乗り物]を定義したクラス。 大体の機能は [Game_Player](Game_Player.md) クラスから使える。
 
 
