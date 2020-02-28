@@ -40,7 +40,7 @@
 | 3 | 使用不可 |
 
 #### 命中タイプ
-hitType は [Game\_Action](Game_Action.md) の定数として定義されている。例えば、<code>Game\_Action.HITTYPE\_CERTAIN</code> のような形で使う。
+hitType は [Game_Action](Game_Action.md) の定数として定義されている。例えば、<code>Game_Action.HITTYPE_CERTAIN</code> のような形で使う。
 
 | 番号 | 定数 | [命中タイプ] |
 | --- | --- | --- |
