@@ -13,7 +13,7 @@
 | `value2` | [Number](Number.md) | code 毎に意味の異なる値2 |
 
 ### code
-code は [Game\_Action](Game_Action.md) の定数として定義されている。例えば、<code>Game\_Action.EFFECT\_RECOVER\_HP</code>のような形で使う。<br />
+code は [Game_Action](Game_Action.md) の定数として定義されている。例えば、<code>Game_Action.EFFECT_RECOVER_HP</code>のような形で使う。<br />
 下表で、*0* や *1* のようなイタリック部分は、数字が入っているが未使用。
 
 #### [回復]
