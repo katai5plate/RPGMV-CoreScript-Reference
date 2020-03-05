@@ -8,6 +8,7 @@
 
 [Game_Item](Game_Item.md) の _dataClass プロパティは 'weapon' になる。
 
+関連クラス: [RPG.BaseItem](RPG.BaseItem.md)
 
 ### Properties:
 

@@ -2,7 +2,6 @@
 
 ## Extends: [RPG.UsableItem](RPG.UsableItem.md)
 
-
 | データベース| JSONファイル | 大域変数 | オブジェクト |
 | --- | --- | --- | --- |
 | [アイテム] | Items.json |  [$dataItems](global.md#dataitems-arrayrpgitem)(配列) | [Game_Item](Game_Item.md) |

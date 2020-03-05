@@ -9,6 +9,7 @@
 
 関連クラス: [RPG.UsableItem](RPG.UsableItem.md), [RPG.Weapon](RPG.Weapon.md)
 
+
 ### Properties:
 
 | Name | Type | Description |
