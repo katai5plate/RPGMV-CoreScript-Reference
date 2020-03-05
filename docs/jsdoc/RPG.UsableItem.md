@@ -21,7 +21,7 @@
 | `repeats` | [Number](Number.md) | [連続回数] \(1〜9) |
 | `tpGain` | [Number](Number.md) | [得TP] \(0〜100) |
 | `hitType` | [Number](Number.md) | [命中タイプ](RPG.UsableItem.md#命中タイプ) |
-| `animationId` | [Number](Number.md) | [アニメーションID](RPG.UsableItem.md#アニメーションID) |
+| `animationId` | [Number](Number.md) | [アニメーションID](RPG.UsableItem.md#アニメーションid) |
 | `damage` | [RPG.Damage](RPG.Damage.md) | [ダメージ] |
 | `effects` | [Array](Array.md).&lt;[RPG.Effect](RPG.Effect.md)&gt; | [使用効果]の配列 |
 
@@ -30,7 +30,18 @@
 
 | 番号 | [範囲] |
 | --- | --- |
-|  0 | なし ||  1 | 敵単体 ||  2 | 敵全体 ||  3 | 敵 1 体ランダム ||  4 | 敵 2 体ランダム ||  5 | 敵 3 体ランダム ||  6 | 敵 4 体ランダム ||  7 | 味方単体 ||  8 | 味方全体 ||  9 | 味方単体(戦闘不能) ||  10 | 味方全体(戦闘不能) ||  11 | 使用者 |
+|  0 | なし |
+|  1 | 敵単体 |
+|  2 | 敵全体 |
+|  3 | 敵 1 体ランダム |
+|  4 | 敵 2 体ランダム |
+|  5 | 敵 3 体ランダム |
+|  6 | 敵 4 体ランダム |
+|  7 | 味方単体 |
+|  8 | 味方全体 |
+|  9 | 味方単体(戦闘不能) |
+|  10 | 味方全体(戦闘不能) |
+|  11 | 使用者 |
 
 #### 使用可能時
 
