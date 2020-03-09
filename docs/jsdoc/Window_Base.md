@@ -13,10 +13,10 @@
 | `y` | [Number](Number.md) | ウィンドウ y座標(ピクセル) |
 | `width` | [Number](Number.md) | ウィンドウ幅(ピクセル) |
 | `height` | [Number](Number.md) | ウィンドウ高さ(ピクセル) |
-| `_iconWidth` | [Number](Number.md) | 基本のアイコン幅 (規定値 : 32) |
-| `_iconHeight` | [Number](Number.md) | 基本のアイコン高さ (規定値 : 32) |
-| `_faceWidth` | [Number](Number.md) | 基本の顔画像の幅 (規定値 : 144) |
-| `_faceHeight` | [Number](Number.md) | 基本の顔画像の高さ (規定値 : 144) |
+| `_iconWidth` | [Number](Number.md) | [static] 基本のアイコン幅 (規定値 : 32) |
+| `_iconHeight` | [Number](Number.md) | [static] 基本のアイコン高さ (規定値 : 32) |
+| `_faceWidth` | [Number](Number.md) | [static] 基本の顔画像の幅 (規定値 : 144) |
+| `_faceHeight` | [Number](Number.md) | [static] 基本の顔画像の高さ (規定値 : 144) |
 | `_opening` | Boolean | ウィンドウが開いている途中か |
 | `_closing` | Boolean | ウィンドウが閉じている途中か |
 
