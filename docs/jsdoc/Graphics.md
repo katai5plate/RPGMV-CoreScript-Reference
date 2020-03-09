@@ -3,7 +3,8 @@
 
 通常の画面を中心に、ビデオ、ローディングやエラー表示、FPSメータなどの表示要素も取り扱う。
 
-関連クラス: [Bitmap](Bitmap.md), [ImageManager](ImageManager.md), [Game_Screen](Game_Screen.md)
+関連クラス: [Bitmap](Bitmap.md), [ImageManager](ImageManager.md), [SceneManager](SceneManager.md), [Game_Screen](Game_Screen.md), [Window](Window.md)
+
 
 ### Properties:
 BLEND_ から始まるプロパティは PIXI.blendModes と同じ画像の[[合成方法]](Sprite.md#合成方法)の指定用定数。

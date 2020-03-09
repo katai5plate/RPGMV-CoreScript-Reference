@@ -5,6 +5,7 @@
 ### new Window ()
 ゲーム内で使われるウィンドウ。ブラウザやその他アプリケーションのウィンドウではない。
 
+関連クラス: [Graphics](Graphics.md)
 
 ### Sub Classes
 
