@@ -3,9 +3,24 @@
 ## Extends: [PIXI.Container](PIXI.Container.md)
 
 ### new Window ()
-ゲーム内で使われるウィンドウ。ブラウザやその他アプリケーションのウィンドウではない。
+ゲーム内で使われるウィンドウ。ブラウザやその他アプリケーションのウィンドウではない。<br />
+通常 [WindowLayer](WindowLayer.md) に含まれ、内部に以下のような形で画像を持っている。
 
-関連クラス: [Graphics](Graphics.md)
+* `_windowPauseSignSprite ` ポーズサイン
+* `_upArrowSprite ` 上向き矢印
+* `_downArrowSprite ` 下向き矢印
+* `_windowContentsSprite ` 内容
+	*  `contents `
+* `_windowCursorSprite ` カーソル
+* `_windowSpriteContainer ` ウィンドウ
+	* `_windowFrameSprite ` 枠
+	* `_windowBackSprite ` 背景
+
+このうち `contents ` を書き換えることで、メッセージやアイコンなどの表示内容を変更する。
+
+opacity系のプロパティは、対象スプライトの alpha プロパティを読み書きしているだけ。
+
+関連クラス: [Graphics](Graphics.md), [Scene_Base](Scene_Base.md)
 
 ### Sub Classes
 
@@ -17,33 +32,33 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `active` | Boolean | ウィンドウがアクティブか |
-| `openness` | [Number](Number.md) | 開放度 (0 〜 255) |
-| `contents` | [Bitmap](Bitmap.md) | コンテンツ |
-| `windowskin` | [Bitmap](Bitmap.md) | ウィンドウのスキンに使う画像 |
+| `openness` | [Number](Number.md) | 開放度(0 〜 255) |
+| `contents` | [Bitmap](Bitmap.md) | 内容( `_windowContentsSprite` )の画像 |
+| `windowskin` | [Bitmap](Bitmap.md) | ウィンドウのスキン画像 |
 | `pause` | Boolean | ポーズサインが表示中か |
 | `downArrowVisible` | Boolean | 下向きスクロールアローが表示中か|
 | `upArrowVisible` | Boolean | 上むきスクロールアローが表示中か |
-| `opacity` | [Number](Number.md) | ウィンドウの不透明度(0 〜 255) |
-| `backOpacity` | [Number](Number.md) | 背景の不透明度(0 〜 255) |
-| `contentsOpacity` | [Number](Number.md) | コンテンツの不透明度(0 〜 255) |
+| `opacity` | [Number](Number.md) | ウィンドウ( `_windowSpriteContainer` ) の不透明度(0 〜 255) |
+| `backOpacity` | [Number](Number.md) | 背景( `_windowBackSprite` ) の不透明度(0 〜 255) |
+| `contentsOpacity` | [Number](Number.md) | 内容( `_windowContentsSprite` ) の不透明度(0 〜 255) |
 | `origin` | [Point](Point.md) | スクロールの際のウィンドウの原点 |
-| `margin` | [Number](Number.md) | 背景マージン幅(ピクセル) |
+| `margin` | [Number](Number.md) | 枠の幅(ピクセル) |
 | `padding` | [Number](Number.md) | 枠とコンテンツの間のパディング幅(ピクセル) |
 | `_isWindow` | Boolean | ウィンドウか |
 | `_windowskin` | [Bitmap](Bitmap.md) | ウィンドウのスキンに使う画像 |
 | `_width` | [Number](Number.md) | 幅 |
 | `_height` | [Number](Number.md) | 高さ |
-| `_cursorRect` | [Rectangle](Rectangle.md) | カーソル矩形 |
+| `_cursorRect` | [Rectangle](Rectangle.md) | コマンド選択カーソルの矩形範囲 |
 | `_openness` | [Number](Number.md) | 開放度  |
 | `_animationCount` | [Number](Number.md) | アニメーションカウント |
 | `_padding` | [Number](Number.md) | パディング |
 | `_margin` | [Number](Number.md) | マージン |
 | `_colorTone` | [MV.Tone](MV.Tone.md) | [色調] |
-| `_windowSpriteContainer` | [PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html) | 画像コンテナ |
+| `_windowSpriteContainer` | [PIXI.Container](http://pixijs.download/release/docs/PIXI.Container.html) | ウィンドウ画像コンテナ |
 | `_windowBackSprite` | [Sprite](Sprite.md) | 背景 |
-| `_windowCursorSprite` | [Sprite](Sprite.md) | カーソル |
+| `_windowCursorSprite` | [Sprite](Sprite.md) | コマンド選択カーソル |
 | `_windowFrameSprite` | [Sprite](Sprite.md) | 枠 |
-| `_windowContentsSprite` | [Sprite](Sprite.md) | 内容 |
+| `_windowContentsSprite` | [Sprite](Sprite.md) | 内容( `contents` を含む ) |
 | `_windowArrowSprites` | [Array](Array.md).&lt;*&gt; | 矢印 |
 | `_windowPauseSignSprite` | [Sprite](Sprite.md) | ポーズサイン |
 | `_downArrowSprite` | [Sprite](Sprite.md) | 下向き矢印 |
@@ -90,44 +105,57 @@
 ####  _createAllParts ()
 ウィンドウの表示に必要な部品を生成する。
 
+
 ####  _onWindowskinLoad ()
 スキンがダウンロードされたときのハンドラ。
+
 
 ####  _refreshAllParts ()
 部品の再描画。
 
+
 ####  _refreshArrows ()
 矢印の再描画。
+
 
 ####  _refreshBack ()
 背景の再描画。
 
+
 ####  _refreshContents ()
 内容の再描画。
+
 
 ####  _refreshCursor ()
 カーソルの再描画。
 
+
 ####  _refreshFrame ()
 枠の再描画。
+
 
 ####  _refreshPauseSign ()
 ポーズサインの再描画。
 
+
 ####  _updateArrows ()
 矢印のアップデート。
+
 
 ####  _updateContents ()
 内容のアップデート。
 
+
 ####  _updateCursor ()
 カーソルのアップデート。
+
 
 ####  _updatePauseSign ()
 ポーズサインのアップデート。
 
+
 #### addChildToBack (child) → {Object}
-背景とコンテンツの間に子オブジェクトを追加し、追加されたオブジェクトを返す。
+ウィンドウ( `_windowSpriteContainer` )の上に子オブジェクトを追加し、追加されたオブジェクトを返す。
 
 ##### Parameters:
 
