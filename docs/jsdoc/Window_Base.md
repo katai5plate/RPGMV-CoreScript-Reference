@@ -3,16 +3,17 @@
 ## Extends: [Window](Window.md)
 
 ### new Window_Base (x, y, width, height, \_iconWidth, \_iconHeight, \_faceWidth, \_faceHeight, \_opening, \_closing)
-メッセージやステータスなどを描くためのメソッドを多く持つ、ウィンドウオブジェクト。
+メッセージやステータスなどを描くためのメソッドを多く持つ、ウィンドウオブジェクト。<br />
+多くは、`contents` に対して[Bitmap](Bitmap.md) のメソッドを使う機能。
+
+関連クラス: [Graphics](Graphics.md), [Scene_Base](Scene_Base.md), [WindowLayer](WindowLayer.md), [Game_Message](Game_Message.md)
+
+
 
 #### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) | ウィンドウ x座標(ピクセル) |
-| `y` | [Number](Number.md) | ウィンドウ y座標(ピクセル) |
-| `width` | [Number](Number.md) | ウィンドウ幅(ピクセル) |
-| `height` | [Number](Number.md) | ウィンドウ高さ(ピクセル) |
 | `_iconWidth` | [Number](Number.md) | [static] 基本のアイコン幅 (規定値 : 32) |
 | `_iconHeight` | [Number](Number.md) | [static] 基本のアイコン高さ (規定値 : 32) |
 | `_faceWidth` | [Number](Number.md) | [static] 基本の顔画像の幅 (規定値 : 144) |
@@ -129,7 +130,8 @@
 
 
 #### changePaintOpacity (enabled)
-背景を不透明にするか。
+描画を不透明にするか。<br />
+主に選択の可不可の表現に使う。
 
 ##### Parameters:
 
@@ -174,7 +176,7 @@
 テキストなどを表示するコンテンツ領域を生成。
 
 #### crisisColor () → {[MV.CssColor](MV.CssColor.md)}
-危険色を返す。
+危険色(カラー番号:17)を返す。
 
 
 #### deactivate ()
@@ -182,7 +184,7 @@
 
 
 #### deathColor () → {[MV.CssColor](MV.CssColor.md)}
-死亡色を返す。
+死亡色(カラー番号:18)を返す。
 
 
 #### dimColor1 () → {[MV.CssColor](MV.CssColor.md)}
@@ -476,7 +478,7 @@ Dimmer背景の色2を返す。
 
 
 #### gaugeBackColor () → {[MV.CssColor](MV.CssColor.md)}
-ゲージの背景色を返す。
+ゲージの背景色(カラー番号:19)を返す。
 
 
 #### hide ()
@@ -498,11 +500,11 @@ Dimmer背景を非表示。
 
 
 #### hpGaugeColor1 () → {[MV.CssColor](MV.CssColor.md)}
-[HP]ゲージの色1を返す。
+[HP]ゲージの色1(カラー番号:20)を返す。
 
 
 #### hpGaugeColor2 () → {[MV.CssColor](MV.CssColor.md)}
-[HP]ゲージの色2を返す。
+[HP]ゲージの色2(カラー番号:21)を返す。
 
 
 #### initialize (x, y, width, height)
@@ -554,19 +556,19 @@ Overrides: [Window](Window.md#initialize-)
 
 
 #### mpCostColor () → {[MV.CssColor](MV.CssColor.md)}
-[消費MP]の色を返す。
+[消費MP]の色(カラー番号:23)を返す。
 
 
 #### mpGaugeColor1 () → {[MV.CssColor](MV.CssColor.md)}
-[MP]ゲージの色1を返す。
+[MP]ゲージの色1(カラー番号:22)を返す。
 
 
 #### mpGaugeColor2 () → {[MV.CssColor](MV.CssColor.md)}
-[MP]ゲージの色2を返す。
+[MP]ゲージの色2(カラー番号:23)を返す。
 
 
 #### normalColor () → {[MV.CssColor](MV.CssColor.md)}
-通常色を返す。
+通常色(カラー番号:0)を返す。
 
 
 #### obtainEscapeCode (textState)
@@ -617,16 +619,16 @@ indexは取り出した文字の数だけ進む。<br />
 | `partyMemberIndex` | [Number](Number.md) | パーティーメンバー番号(1から開始される) |
 
 
-#### pendingColor () → {}
-未決定色を返す。
+#### pendingColor () → {[MV.CssColor](MV.CssColor.md)}
+未決定色(選択カーソルの中央の色)を返す。
 
 
 #### powerDownColor () → {[MV.CssColor](MV.CssColor.md)}
-パワーダウン色を返す。
+パワーダウン色(カラー番号:25)を返す。
 
 
 #### powerUpColor () → {[MV.CssColor](MV.CssColor.md)}
-パワーアップ色を返す。
+パワーアップ色(カラー番号:24)を返す。
 
 
 #### processCharacter (textState)
@@ -733,7 +735,7 @@ Dimmer背景を表示。
 
 
 #### standardBackOpacity () → {[Number](Number.md)}
-標準の背景の不透明度を返す。規定値:192
+標準の背景の不透明度(規定値:192)を返す。
 
 
 #### standardFontFace () → {[String](String.md)}
@@ -741,15 +743,15 @@ Dimmer背景を表示。
 
 
 #### standardFontSize () → {[Number](Number.md)}
-標準のフォントサイズを返す。規定値:28
+標準のフォントサイズ(規定値:28)を返す。
 
 
 #### standardPadding () → {[Number](Number.md)}
-標準のパディング幅を返す。規定値:18
+標準のパディング幅(規定値:18)を返す。
 
 
 #### systemColor () → {[MV.CssColor](MV.CssColor.md)}
-システム色を返す。
+システム色(カラー番号:16)を返す。
 
 
 #### textColor (n) → {[MV.CssColor](MV.CssColor.md)}
@@ -764,7 +766,7 @@ Dimmer背景を表示。
 
 
 #### textPadding () → {[Number](Number.md)}
-パディング幅を返す。規定値:6
+文字パディング幅(規定値:6)を返す。
 
 
 #### textWidth (text) → {[Number](Number.md)}
@@ -788,19 +790,19 @@ Dimmer背景を表示。
 
 
 #### tpCostColor () → {[MV.CssColor](MV.CssColor.md)}
-[消費TP]の色を返す。
+[消費TP]の色(カラー番号:29)を返す。
 
 
 #### tpGaugeColor1 () → {[MV.CssColor](MV.CssColor.md)}
-[TP]ゲージの色1を返す。
+[TP]ゲージの色1(カラー番号:28)を返す。
 
 
 #### tpGaugeColor2 () → {[MV.CssColor](MV.CssColor.md)}
-[TP]ゲージの色2を返す。
+[TP]ゲージの色2(カラー番号:29)を返す。
 
 
 #### translucentOpacity () → {[Number](Number.md)}
-ウィンドウ背景の不透明度を返す。規定値:160
+非活性時の不透明度(規定値:160)を返す。
 
 
 #### update ()
