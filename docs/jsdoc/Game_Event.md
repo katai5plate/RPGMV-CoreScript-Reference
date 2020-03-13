@@ -7,6 +7,7 @@
 | データベース| JSONデータ | スプライト |
 | --- | --- | --- | 
 | [イベント] | [RPG.Event](RPG.Event.md) | [Sprite_Character](Sprite_Character.md) |
+
 マップに配置する[イベント]を定義したオブジェクト。
  
  [RPG.Event](RPG.Event.md) を返す [Game_Event.event ()](Game_Event.md#event---rpgevent) メソッドなどを含む。
