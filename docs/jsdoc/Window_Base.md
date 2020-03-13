@@ -20,6 +20,7 @@
 | `_faceHeight` | [Number](Number.md) | [static] 基本の顔画像の高さ (規定値 : 144) |
 | `_opening` | Boolean | ウィンドウが開いている途中か |
 | `_closing` | Boolean | ウィンドウが閉じている途中か |
+| `_dimmerSprite ` | [Sprite](Sprite.md) | [暗くする]背景 |
 
 
 ### Sub Classes
@@ -188,11 +189,11 @@
 
 
 #### dimColor1 () → {[MV.CssColor](MV.CssColor.md)}
-Dimmer背景の色1を返す。
+ [暗くする]背景の色1(規定値:'rgba(0, 0, 0, 0.6)')を返す。
 
 
 #### dimColor2 () → {[MV.CssColor](MV.CssColor.md)}
-Dimmer背景の色2を返す。
+ [暗くする]背景の色2(規定値:'rgba(0, 0, 0, 0)')を返す。
 
 
 #### drawActorCharacter (actor, x, y)
@@ -486,7 +487,7 @@ Dimmer背景の色2を返す。
 
 
 #### hideBackgroundDimmer ()
-Dimmer背景を非表示。
+ [暗くする]背景を非表示。
 
 
 #### hpColor (actor) → {[MV.CssColor](MV.CssColor.md)}
@@ -701,7 +702,7 @@ indexは取り出した文字の数だけ進む。<br />
 
 
 #### refreshDimmerBitmap ()
-Dimmer背景を再描画。
+ [暗くする]背景を再描画。
 
 
 #### reserveFaceImages ()
@@ -731,7 +732,7 @@ Dimmer背景を再描画。
 
 
 #### showBackgroundDimmer ()
-Dimmer背景を表示。
+ [暗くする]背景を表示。
 
 
 #### standardBackOpacity () → {[Number](Number.md)}
@@ -810,7 +811,7 @@ Overrides: [Window](Window#update-)
 
 
 #### updateBackgroundDimmer ()
-Dimmer背景のアップデート。
+ [暗くする]背景のアップデート。
 
 
 #### updateBackOpacity ()
