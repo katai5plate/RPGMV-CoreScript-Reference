@@ -5,9 +5,9 @@
 ### new Window_ScrollText ()
 画面全体に[文章のスクロール表示]をするウィンドウ。
 
-標準では [Scene_Map](Scene_Map.md) と [Scene_Battle](Scene_Battle.md) で生成される。
+表示する文章は Window_ScrollText ではなく [$gameMessage](global.md#gamemessage-game_message) の [setScroll()](Game_Message.md#setscroll-speed-nofast) と [add()](Game_Message.md#add-text) メソッドを利用する。
 
-文章などの設定は [Game_Message](Game_Message.md)( [$gameMessage](global.md#gamemessage-game_message) ) を通して行われる。
+関連クラス:  [Scene_Map](Scene_Map.md), [Scene_Battle](Scene_Battle.md), [Game_Message](Game_Message.md)
 
 
 ### Properties:
@@ -163,7 +163,7 @@
 ### Methods
 
 #### contentsHeight ()
-Overrides: [Window_Base.contentsHeight ()](Window_Base#contentsHeight)
+Overrides: [Window_Base](Window_Base#contentsHeight)
 
 
 #### fastForwardRate () → {[Number](Number.md)}
@@ -171,7 +171,7 @@ Overrides: [Window_Base.contentsHeight ()](Window_Base#contentsHeight)
 
 
 #### initialize ()
-Overrides: [Window_Base.initialize ()](Window_Base.md#initialize)
+Overrides: [Window_Base](Window_Base.md#initialize)
 
 
 #### isFastForward () → {Boolean}
@@ -183,7 +183,7 @@ Overrides: [Window_Base.initialize ()](Window_Base.md#initialize)
 
 
 #### scrollSpeed () → {[Number](Number.md)}
-スクロール速度。
+スクロール速度を返す。
 
 
 #### startMessage ()
@@ -195,7 +195,7 @@ Overrides: [Window_Base.initialize ()](Window_Base.md#initialize)
 
 
 #### update ()
-Overrides: [Window_Base.update ()](Window_Base.md#update)
+Overrides: [Window_Base](Window_Base.md#update)
 
 
 #### updateMessage ()
