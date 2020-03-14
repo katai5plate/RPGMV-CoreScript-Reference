@@ -70,7 +70,7 @@
 
 
 #### (static) playEvasion ()
-[]を再生。
+[回避]を再生。
 
 
 #### (static) playLoad ()
