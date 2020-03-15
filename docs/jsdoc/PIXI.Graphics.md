@@ -23,10 +23,6 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_fillStyle` | [PIXI.FillStyle](http://pixijs.download/release/docs/PIXI.FillStyle.html) | 塗りの形式 |
-| `_holeMode` | Boolean | 穴あけモードか(規定値: false) |
-| `_lineStyle` | [PIXI.LineStyle](http://pixijs.download/release/docs/PIXI.LineStyle.html) | 線の形式 |
-| `_matrix` | [PIXI.Matrix](http://pixijs.download/release/docs/PIXI.Matrix.html) | 変形行列 |
 | `batches` | [Array](Array.md).&lt;Object&gt; | バッチ |
 | `batchTint` | [Number](Number.md) | (規定値: -1) |
 | `blendMode` | [Number](Number.md) | ブレンドモード(規定値: [PIXI.BLEND_MODES](http://pixijs.download/release/docs/PIXI.html#.BLEND_MODES).NORMAL) |
@@ -39,7 +35,11 @@
 | `state` | [PIXI.State](http://pixijs.download/release/docs/PIXI.State.html) | 状態 |
 | `tint` | [Number](Number.md) | 枠線の色(規定値: 0xFFFFFF) |
 | `vertexData` | Float32Array | 頂点データ |
-
+| `graphicsData` | [Array](Array.md).&lt;[PIXI.GraphicsData](http://pixijs.download/release/docs/PIXI.GraphicsData.html)&gt; | 画像データ |
+| `_fillStyle` | [PIXI.FillStyle](http://pixijs.download/release/docs/PIXI.FillStyle.html) | 塗りの形式 |
+| `_holeMode` | Boolean | 穴あけモードか(規定値: false) |
+| `_lineStyle` | [PIXI.LineStyle](http://pixijs.download/release/docs/PIXI.LineStyle.html) | 線の形式 |
+| `_matrix` | [PIXI.Matrix](http://pixijs.download/release/docs/PIXI.Matrix.html) | 変形行列 |
 
 ### Inherited From
 
