@@ -3,19 +3,24 @@
 ## Extends: [PIXI.Container](PIXI.Container.md)
 
 ### new WindowLayer ()
-[Scene_Base](Scene_Base.md) に含まれ [Window_Base](Window_Base.md) をまとめているレイヤー。
+[Scene_Base](Scene_Base.md) に含まれ [Window_Base](Window_Base.md) を children に持つレイヤー。
+
+下にあるウィンドウをマスクするなど、ウィンドウの重なりの制御を行う。<br />
+そのような制御がないなら [Scene_Base](Scene_Base.md) に直接ウィンドウが追加される。
 
 ##### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `voidFilter` | PIXI.filters.VoidFilter | [static] voidフィルタ |
-| `children` | [Array](Array.md).&lt;[Window_Base](Window_Base.md)&gt; | [read-only] 子ウィンドウ |
-| `parent` | Object | [read-only] 親オブジェクト |
-| `x` | [Number](Number.md) | x座標(ピクセル) |
-| `y` | [Number](Number.md) | y座標(ピクセル) |
-| `width` | [Number](Number.md) | 幅(ピクセル) |
-| `height` | [Number](Number.md) | 高さ(ピクセル) |
+| `voidFilter` | [PIXI.filters.VoidFilter]() | [static] 空のフィルタ |
+| `filterArea` | [Number](Number.md) | フィルタ領域 |
+| `filters` | [Array](Array.md)&lt;[PIXI.Filter](http://pixijs.download/release/docs/PIXI.Filter.html)&gt; | フィルタ |
+| `_width` | [Number](Number.md) | 幅(ピクセル) |
+| `_height` | [Number](Number.md) | 高さ(ピクセル) |
+| `_tempCanvas` | HTMLCanvasElement | 一時canvas |
+| `_translationMatrix` | [Array](Array.md).&lt;[Number](Number.md)&gt; | 9個の配列による平行移動行列 |
+| `_windowMask` | [PIXI.Graphics](PIXI.Graphics.md) | ウィンドウマスク |
+| `_windowRect` | [PIXI.Rectangle](http://pixijs.download/release/docs/PIXI.Rectangle.html) | ウィンドウ矩形 |
 
 
 ### Inherited From
@@ -94,7 +99,7 @@ WebGLでレンダリング。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `renderSession` | Object | レンダラ |
+| `renderSession` | [PIXI.Renderer](http://pixijs.download/release/docs/PIXI.Renderer.html) | レンダラ |
 
 
 #### initialize ()
