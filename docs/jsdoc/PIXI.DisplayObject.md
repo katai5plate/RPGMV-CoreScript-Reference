@@ -16,13 +16,6 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_accessibleDiv` | Boolean |  |
-| `_bounds` | [PIXI.Bounds](http://pixijs.download/release/docs/PIXI.Bounds.html) | 矩形範囲 |
-| `_destroyed` | Boolean | destroy() により破棄されているか |
-| `_lastSortedIndex` | [Number](Number.md) | 最終ソート番号 |
-| `_mask` | [PIXI.Graphics](PIXI.Graphics.md) \| [PIXI.Sprite](PIXI.Sprite.md) \| null | マスク画像 |
-| `_tempDisplayObjectParent` | PIXI.DisplayObject | 仮の親オブジェクト |
-| `_zIndex` | [Number](Number.md) | 高い番号ほど手前に表示される番号 |
 | `accessible` | Boolean | 操作可能か |
 | `accessibleHint` | [String](String.md) |  |
 | `accessibleTitle` | [String](String.md) |  |
@@ -54,6 +47,13 @@
 | `x` | [Number](Number.md) | x座標(ピクセル) |
 | `y` | [Number](Number.md) | y座標(ピクセル) |
 | `zIndex` | [Number](Number.md) | 高い番号ほど手前に表示される番号 |
+| `_accessibleDiv` | Boolean |  |
+| `_bounds` | [PIXI.Bounds](http://pixijs.download/release/docs/PIXI.Bounds.html) | 矩形範囲 |
+| `_destroyed` | Boolean | destroy() により破棄されているか |
+| `_lastSortedIndex` | [Number](Number.md) | 最終ソート番号 |
+| `_mask` | [PIXI.Graphics](PIXI.Graphics.md) \| [PIXI.Sprite](PIXI.Sprite.md) \| null | マスク画像 |
+| `_tempDisplayObjectParent` | PIXI.DisplayObject | 仮の親オブジェクト |
+| `_zIndex` | [Number](Number.md) | 高い番号ほど手前に表示される番号 |
 
 
 ### Methods
