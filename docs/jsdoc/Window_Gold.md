@@ -3,7 +3,9 @@
 ## Extends: [Window_Base](Window_Base.md)
 
 ### new Window_Gold (x, y)
-所持金を表示するウィンドウ。
+[所持金]を表示するウィンドウ。
+
+関連クラス: [Scene_Menu](Scene_Menu.md), [Scene_Shop](Scene_Shop.md), [Window_Message](Window_Message.md)
 
 #### Parameters:
 
