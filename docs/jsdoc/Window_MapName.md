@@ -3,7 +3,9 @@
 ## Extends: [Window_Base](Window_Base.md)
 
 ### new Window_MapName ()
-マップ名を表示するウィンドウ。
+マップの[表示名]を表示するウィンドウ。
+
+関連クラス: [Scene_Map](Scene_Map.md)
 
 #### Properties:
 
@@ -156,7 +158,7 @@
 ### Methods
 
 #### close ()
-Overrides: [Window_Base.close ()](Window_Base.md#close-)
+Overrides: [Window_Base](Window_Base.md#close-)
 
 
 #### drawBackground (x, y, width, height)
@@ -173,11 +175,11 @@ Overrides: [Window_Base.close ()](Window_Base.md#close-)
 
 
 #### initialize ()
-Overrides: [Window_Base.initialize (x, y, width, height)](Window_Base.md#initialize-x-y-width-height)
+Overrides: [Window_Base](Window_Base.md#initialize-x-y-width-height)
 
 
 #### open ()
-Overrides: [Window_Base.open ()](Window_Base.md#open-)
+Overrides: [Window_Base](Window_Base.md#open-)
 
 
 #### refresh ()
@@ -185,7 +187,7 @@ Overrides: [Window_Base.open ()](Window_Base.md#open-)
 
 
 #### update ()
-Overrides: [Window_Base.update ()](Window_Base.md#update-)
+Overrides: [Window_Base](Window_Base.md#update-)
 
 
 #### updateFadeIn ()
