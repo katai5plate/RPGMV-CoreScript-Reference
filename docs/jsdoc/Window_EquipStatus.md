@@ -5,6 +5,8 @@
 ### new Window_EquipStatus (x, y)
 装備時のパラメータの変化を表示するウィンドウ。
 
+関連クラス: [Scene_Equip](Scene_Equip.md)
+
 #### Parameters:
 
 | Parameter | Type | Description |
@@ -17,8 +19,8 @@
 
 | Parameter | Type | Description |
 | --- | --- | --- |
-| `_actor` | [Game_Actor](Game_Actor.md) | アクター |
-| `_tempActor` | [Game_Actor](Game_Actor.md) | 作業用のアクター |
+| `_actor` | [Game_Actor](Game_Actor.md) | 現在のアクター |
+| `_tempActor` | [Game_Actor](Game_Actor.md) | 装備後のアクター |
 
 
 ### Inherited From
@@ -218,7 +220,7 @@
 
 
 #### initialize (x, y)
-Overrides: [Window_Base.initialize (x, y, width, height)](Window_Base.md#initialize-x-y-width-height)
+Overrides: [Window_Base](Window_Base.md#initialize-x-y-width-height)
 
 | Parameter | Type | Description |
 | --- | --- | --- |
