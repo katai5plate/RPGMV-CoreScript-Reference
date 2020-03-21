@@ -3,9 +3,10 @@
 ## Extends: [Window_Base](Window_Base.md)
 
 ### new Window_Help (numLines)
-項目が選択された際の解説などを表示するウィンドウ。
+項目が選択された際の解説などを表示するウィンドウ。<br />
+[Window_Message](Window_Message.md) の軽量版とも言える。
 
-関連クラス: [Scene_Battle](Scene_Battle.md)
+関連クラス: [Scene_Battle](Scene_Battle.md), [Scene_MenuBase](Scene_MenuBase.md), [Scene_File](Scene_File.md)
 
 #### Parameters:
 
@@ -171,14 +172,13 @@
 
 
 #### initialize (numLines)
-Overrides: [Window_Base.initialize (x, y, width, height)](Window_Base.md#initialize-x-y-width-height)
+Overrides: [Window_Base](Window_Base.md#initialize-x-y-width-height)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `numLines` | [Number](Number.md) | 行数 |
-
 
 
 #### refresh (item)
