@@ -3,9 +3,10 @@
 ## Extends: [Window_Base](Window_Base.md)
 
 ### new Window_ShopStatus (x, y, width, height)
-店の装備選択時に表示されるウィンドウ。
+[ショップの処理]で装備選択時にステータスが表示されるウィンドウ。
 
-関連クラス: [Scene_Shop](Scene_Shop.md)
+関連クラス: [Scene_Shop](Scene_Shop.md), [Window_ShopBuy](Window_ShopBuy.md), [Window_ShopNumber](Window_ShopNumber.md)
+
 
 #### Parameters:
 

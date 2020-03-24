@@ -3,27 +3,31 @@
 ## Extends: [Window_Selectable](Window_Selectable.md)
 
 ### new Window_ShopNumber (x, y, height)
-The window for inputting quantity of items to buy or sell on the shop screen.
+[ショップの処理]で売買時に個数を選択するウィンドウ。
+
+img/system/ButtonSet.png の画像が使用される。
+
+関連クラス: [Scene_Shop](Scene_Shop.md), [Window_ShopBuy](Window_ShopBuy.md), [Window_ShopStatus](Window_ShopStatus.md)
 
 #### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `height` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `height` | [Number](Number.md) | 高さ(ピクセル) ||
 
 
 ### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_item` | [RPG.BaseItem](RPG.BaseItem.md) | The current item being bought/sold. |
-| `_max` | [Number](Number.md) | Returns the maximum number of the item that can be bought/sold. |
-| `_price` | [Number](Number.md) | The current price of the items. |
-| `_number` | [Number](Number.md) |  |
-| `_currencyUnit` | [String](String.md) | Returns the currency unit of the game. |
-| `_buttons` | [Array](Array.md).&lt;[Sprite_Button](Sprite_Button.md)&gt; | The buttons to input quantity for the quantity of the item to be bought/sold. |
+| `_item` | [RPG.BaseItem](RPG.BaseItem.md) | 売買対象のアイテム |
+| `_max` | [Number](Number.md) | 最大個数 |
+| `_price` | [Number](Number.md) | 値段 |
+| `_number` | [Number](Number.md) | 個数 |
+| `_currencyUnit` | [String](String.md) |通貨単位 |
+| `_buttons` | [Array](Array.md).&lt;[Sprite_Button](Sprite_Button.md)&gt; | ボタンスプライトの配列 |
 
 
 ### Inherited From
@@ -84,10 +88,10 @@ The window for inputting quantity of items to buy or sell on the shop screen.
 * [contentsWidth ()](Window_Base.md#contentswidth---number)
 * [convertEscapeCharacters (text)](Window_Base.md#convertescapecharacters-text--string)
 * [createContents ()](Window_Base.md#createcontents-)
-* [crisisColor ()](Window_Base.md#crisiscolor---string)
-* [deathColor ()](Window_Base.md#deathcolor---string)
-* [dimColor1 ()](Window_Base.md#dimcolor1---string)
-* [dimColor2 ()](Window_Base.md#dimcolor2---string)
+* [crisisColor ()](Window_Base.md#crisiscolor---mvcsscolor)
+* [deathColor ()](Window_Base.md#deathcolor---mvcsscolor)
+* [dimColor1 ()](Window_Base.md#dimcolor1---mvcsscolor)
+* [dimColor2 ()](Window_Base.md#dimcolor2---mvcsscolor)
 * [drawActorCharacter (actor, x, y)](Window_Base.md#drawactorcharacter-actor-x-y)
 * [drawActorClass (actor, x, y, width)](Window_Base.md#drawactorclass-actor-x-y-width)
 * [drawActorFace (actor, x, y, width, height)](Window_Base.md#drawactorface-actor-x-y-width-height)
@@ -109,31 +113,31 @@ The window for inputting quantity of items to buy or sell on the shop screen.
 * [drawText (text, x, y, maxWidth, align)](Window_Base.md#drawtext-text-x-y-maxwidth-align)
 * [drawTextEx (text, x, y)](Window_Base.md#drawtextex-text-x-y--number)
 * [fittingHeight (numLines)](Window_Base.md#fittingheight-numlines--number)
-* [gaugeBackColor ()](Window_Base.md#gaugebackcolor---string)
+* [gaugeBackColor ()](Window_Base.md#gaugebackcolor---mvcsscolor)
 * [hide ()](Window_Base.md#hide-)
 * [hideBackgroundDimmer ()](Window_Base.md#hidebackgrounddimmer-)
-* [hpColor (actor)](Window_Base.md#hpcolor-actor--string)
-* [hpGaugeColor1 ()](Window_Base.md#hpgaugecolor1---string)
-* [hpGaugeColor2 ()](Window_Base.md#hpgaugecolor2---string)
+* [hpColor (actor)](Window_Base.md#hpcolor-actor--mvcsscolor)
+* [hpGaugeColor1 ()](Window_Base.md#hpgaugecolor1---mvcsscolor)
+* [hpGaugeColor2 ()](Window_Base.md#hpgaugecolor2---mvcsscolor)
 * [isClosing ()](Window_Base.md#isclosing---boolean)
 * [isOpening ()](Window_Base.md#isopening---boolean)
 * [lineHeight ()](Window_Base.md#lineheight---number)
 * [loadWindowskin ()](Window_Base.md#loadwindowskin-)
 * [makeFontBigger ()](Window_Base.md#makefontbigger-)
 * [makeFontSmaller ()](Window_Base.md#makefontsmaller-)
-* [mpColor (actor)](Window_Base.md#mpcolor-actor--string)
-* [mpCostColor ()](Window_Base.md#mpcostcolor---string)
-* [mpGaugeColor1 ()](Window_Base.md#mpgaugecolor1---string)
-* [mpGaugeColor2 ()](Window_Base.md#mpgaugecolor2---string)
-* [normalColor ()](Window_Base.md#normalcolor---string)
+* [mpColor (actor)](Window_Base.md#mpcolor-actor--mvcsscolor)
+* [mpCostColor ()](Window_Base.md#mpcostcolor---mvcsscolor)
+* [mpGaugeColor1 ()](Window_Base.md#mpgaugecolor1---mvcsscolor)
+* [mpGaugeColor2 ()](Window_Base.md#mpgaugecolor2---mvcsscolor)
+* [normalColor ()](Window_Base.md#normalcolor---mvcsscolor)
 * [obtainEscapeCode (textState)](Window_Base.md#obtainescapecode-textstate)
 * [obtainEscapeParam (textState)](Window_Base.md#obtainescapeparam-textstate--numberstring)
 * [open ()](Window_Base.md#open-)
-* [paramchangeTextColor (change)](Window_Base.md#paramchangetextcolor-change--string)
+* [paramchangeTextColor (change)](Window_Base.md#paramchangetextcolor-change--mvcsscolor)
 * [partyMemberName (partyMemberIndex)](Window_Base.md#partymembername-partymemberindex--string)
-* [pendingColor ()](Window_Base.md#pendingcolor---string)
-* [powerDownColor ()](Window_Base.md#powerdowncolor---string)
-* [powerUpColor ()](Window_Base.md#powerupcolor---string)
+* [pendingColor ()](Window_Base.md#pendingcolor---mvcsscolor)
+* [powerDownColor ()](Window_Base.md#powerdowncolor---mvcsscolor)
+* [powerUpColor ()](Window_Base.md#powerupcolor---mvcsscolor)
 * [processCharacter (textState)](Window_Base.md#processcharacter-textstate)
 * [processDrawIcon (iconIndex, textState)](Window_Base.md#processdrawicon-iconindex-textstate)
 * [processEscapeCharacter (code, textState)](Window_Base.md#processescapecharacter-code-textstate)
@@ -151,14 +155,14 @@ The window for inputting quantity of items to buy or sell on the shop screen.
 * [standardFontFace ()](Window_Base.md#standardfontface---string)
 * [standardFontSize ()](Window_Base.md#standardfontsize---number)
 * [standardPadding ()](Window_Base.md#standardpadding---number)
-* [systemColor ()](Window_Base.md#systemcolor---string)
-* [textColor (n)](Window_Base.md#textcolor-n--string)
+* [systemColor ()](Window_Base.md#systemcolor---mvcsscolor)
+* [textColor (n)](Window_Base.md#textcolor-n--mvcsscolor)
 * [textPadding ()](Window_Base.md#textpadding---number)
 * [textWidth (text)](Window_Base.md#textwidth-text--number)
-* [tpColor (actor)](Window_Base.md#tpcolor-actor--string)
-* [tpCostColor ()](Window_Base.md#tpcostcolor---string)
-* [tpGaugeColor1 ()](Window_Base.md#tpgaugecolor1---string)
-* [tpGaugeColor2 ()](Window_Base.md#tpgaugecolor2---string)
+* [tpColor (actor)](Window_Base.md#tpcolor-actor--mvcsscolor)
+* [tpCostColor ()](Window_Base.md#tpcostcolor---mvcsscolor)
+* [tpGaugeColor1 ()](Window_Base.md#tpgaugecolor1---mvcsscolor)
+* [tpGaugeColor2 ()](Window_Base.md#tpgaugecolor2---mvcsscolor)
 * [translucentOpacity ()](Window_Base.md#translucentopacity---number)
 * [updateBackgroundDimmer ()](Window_Base.md#updatebackgrounddimmer-)
 * [updateBackOpacity ()](Window_Base.md#updatebackopacity-)
@@ -251,44 +255,45 @@ The window for inputting quantity of items to buy or sell on the shop screen.
 ### Methods
 
 #### buttonY () → {[Number](Number.md)}
-
+ボタンのy座標(ピクセル)を返す。
 
 
 #### changeNumber (amount)
-Changes the quantity, given a number.
+指定個数に変更。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `amount` | [Number](Number.md) |  |
+| `amount` | [Number](Number.md) | 個数 |
 
 
 #### createButtons ()
+ボタンの生成。
 
 
 #### cursorWidth () → {[Number](Number.md)}
-Returns the width of the cursor.
+カーソル幅(ピクセル)を返す。
 
 
 #### cursorX () → {[Number](Number.md)}
-
+カーソルのx位置を返す。
 
 
 #### drawMultiplicationSign ()
-
+×(文字コード:00d7)を描画。
 
 
 #### drawNumber ()
-
+数字を描画。
 
 
 #### drawTotalPrice ()
-Draws the total price of the selected quantity of item.
+合計金額を描画。
 
 
 #### hideButtons ()
-Hides the quantity input buttons.
+ボタンを隠す。
 
 
 #### initialize (x, y, height)
@@ -308,39 +313,39 @@ Overrides: [Window_Selectable](Window_Selectable.md#isoktriggered---boolean)
 
 
 #### itemY () → {[Number](Number.md)}
-
+アイテムのY位置を返す。
 
 
 #### maxDigits () → {[Number](Number.md)}
-
+最大桁を返す。
 
 
 #### number () → {[Number](Number.md)}
-
+個数を返す。
 
 
 #### onButtonDown ()
-
+下が選択された時に呼ばれるハンドラ。
 
 
 #### onButtonDown2 ()
-
+下2が選択された時に呼ばれるハンドラ。
 
 
 #### onButtonOk ()
-
+OKが選択された時に呼ばれるハンドラ。
 
 
 #### onButtonUp ()
-
+上が選択された時に呼ばれるハンドラ。
 
 
 #### onButtonUp2 ()
-
+上2が選択された時に呼ばれるハンドラ。
 
 
 #### placeButtons ()
-
+ボタンを配置。
 
 
 #### playOkSound ()
@@ -348,11 +353,11 @@ Overrides: [Window_Selectable](Window_Selectable.md#playoksound-)
 
 
 #### priceY () → {[Number](Number.md)}
-
+値段のY位置を返す。
 
 
 #### processNumberChange ()
-Processes the change in quantity.
+個数の変更処理。
 
 
 #### refresh ()
@@ -360,27 +365,29 @@ Overrides: [Window_Selectable](Window_Selectable.md#refresh-)
 
 
 #### setCurrencyUnit (currencyUnit)
+通貨単位を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `currencyUnit` | [String](String.md) |  |
+| `currencyUnit` | [String](String.md) | 通貨単位 |
 
 
 #### setup (item, max, price)
+準備。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
-| `max` | [Number](Number.md) |  |
-| `price` | [Number](Number.md) |  |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) | アイテム |
+| `max` | [Number](Number.md) | 最大数 |
+| `price` | [Number](Number.md) | 値段 |
 
 
 #### showButtons ()
-Shows the quantity input buttons.
+ボタンを表示。
 
 
 #### update ()
@@ -388,14 +395,14 @@ Overrides: [Window_Selectable](Window_Selectable.md#update-)
 
 
 #### updateButtonsVisiblity ()
-
+ボタンの表示状態をアップデート。
 
 
 #### updateCursor ()
-Overrides: [Window_Selectable(Window_Selectable.md#updatecursor-)
+Overrides: [Window_Selectable](Window_Selectable.md#updatecursor-)
 
 
 #### windowWidth () → {[Number](Number.md)}
-Returns the width of the window.
+ウィンドウ幅(ピクセル)を返す。
 
 
