@@ -5,6 +5,9 @@
 ### new Window_Message ()
 [文章の表示]をするウィンドウ。
 
+表示する文は Window\_Message ではなく [$gameMessage](global.md#gamemessage-game_message) を経由して設定するため、単に文を表示するだけならばこのクラスを操作する必要はない。<br />
+また、Window\_Messageには選択肢関連のサブウィンドウが含まれるため、新規に文字を表示するウィンドウが必要ならば、[WIndow_Help](WIndow_Help.md) を使うか、Window\_Base を継承して新たにクラスを作る方が良い。
+
 関連クラス: [Scene_Map](Scene_Map.md), [Scene_Battle](Scene_Battle.md), [Game_Message](Game_Message.md)
 
 
@@ -263,7 +266,8 @@ Overrides: [Window_Base](Window_Base.md#processnewpage-textstate)
 
 
 #### startInput () → {Boolean}
-入力の開始。
+入力ウィンドウの開始。<br />
+[Game_Message](Game_Message.md) の [isChoice()](Game_Message.md#ischoice---boolean)、[isNumberInput()](Game_Message.md#isnumberinput---boolean)、[isItemChoice()](Game_Message.md#isitemchoice---boolean) をチェックし、それぞれに対応したウィンドウを開く。 
 
 
 #### startMessage ()

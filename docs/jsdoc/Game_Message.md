@@ -6,9 +6,11 @@
 | --- |
 | [$gameMessage](global.md#gamemessage-game_message) |
 
-メッセージ文字列や設定をこのクラスに一時保存し、ウィンドウが表示の際に参照するクラス。
+メッセージや選択肢の文字列や設定をこのクラスに一時保存し、ウィンドウが表示の際に参照するクラス。<br />
+Game_Message はデータを保持しているだけで、表示の際はウィンドウ側から参照される。<br />
+なお、メッセージの終了待ちには [Game_Interpreter.setWaitMode()](Game_Interpreter.md#setwaitmode-waitmode) メソッドが使われる。
 
-関連クラス: [Window_Message](Window_Message.md) , [Window_ChoiceList](Window_ChoiceList.md), [Window_NumberInput](Window_NumberInput.md), [Window_EventItem](Window_EventItem.md), [Window_ScrollText](Window_ScrollText.md)
+関連クラス: [Window_Base](Window_Base.md), [Window_Message](Window_Message.md), [Window_ChoiceList](Window_ChoiceList.md), [Window_NumberInput](Window_NumberInput.md), [Window_EventItem](Window_EventItem.md), [Window_ScrollText](Window_ScrollText.md)
 
 
 ### Properties:
@@ -66,40 +68,13 @@
 #### allText () → {[String](String.md)}
 メッセージに含まれるすべてのテキストを返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>String</span>
-    </dd>
-</dl>
-
 
 #### background () → {[Number](Number.md)}
-[背景]の番号を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Number</span>
-    </dd>
-</dl>
+[[背景]](Game_Message.md#背景)の番号を返す。
 
 
 #### choiceBackground () → {[Number](Number.md)}
-選択肢の[背景]を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Number</span>
-    </dd>
-</dl>
+選択肢の[[背景]](Game_Message.md#背景)を返す。
 
 
 #### choiceCancelType ()
@@ -113,15 +88,6 @@
 #### choicePositionType () → {[Number](Number.md)}
 選択肢の[ウィンドウ位置]を返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Number</span>
-    </dd>
-</dl>
-
 
 #### choices () → {[Array](Array.md).&lt;[String](String.md)&gt;}
 選択肢を返す。
@@ -134,121 +100,41 @@
 #### faceIndex () → {[Number](Number.md)}
 [顔]番号を返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Number</span>
-    </dd>
-</dl>
-
 
 #### faceName () → {[String](String.md)}
 [顔]ファイル名を返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>String</span>
-    </dd>
-</dl>
 
 
 #### hasText () → {Boolean}
 メッセージがテキストを持っているか。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
 
 #### initialize ()
  オブジェクト生成時の初期化。
 
+
 #### isBusy () → {Boolean}
 表示や入力・選択の最中か。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
 
 #### isChoice () → {Boolean}
-選択肢か。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
+[選択肢の表示…]か。
 
 
 #### isItemChoice () → {Boolean}
-項目の選択か。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
+[アイテム選択の処理…]か。
 
 
 #### isNumberInput () → {Boolean}
-数値の入力か。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
+[数値入力の処理…]か。
 
 
 #### itemChoiceItypeId () → {[Number](Number.md)}
 [アイテムタイプ]を返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Number</span>
-    </dd>
-</dl>
-
 
 #### itemChoiceVariableId () → {[Number](Number.md)}
 選択項目を代入する[変数]IDを返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Number</span>
-    </dd>
-</dl>
 
 
 #### newPage ()
@@ -258,27 +144,9 @@
 #### numInputMaxDigits () → {[Number](Number.md)}
 [桁数]を返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Number</span>
-    </dd>
-</dl>
-
 
 #### numInputVariableId () → {[Number](Number.md)}
 数値を代入する[変数]IDを返す。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Number</span>
-    </dd>
-</dl>
 
 
 #### onChoice (n)
@@ -294,67 +162,31 @@
 #### positionType () → {[Number](Number.md)}
 メッセージウィンドウの[ウィンドウ位置]を返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Number</span>
-    </dd>
-</dl>
-
 
 #### scrollMode () → {Boolean}
 スクロールするか。
-
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
 
 
 #### scrollNoFast () → {Boolean}
 [早送りなし]か。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Boolean</span>
-    </dd>
-</dl>
-
 
 #### scrollSpeed () → {[Number](Number.md)}
 スクロール速度を返す。
 
-##### Returns:
-
-<dl>
-    <dt> Type </dt>
-    <dd>
-        <span>Number</span>
-    </dd>
-</dl>
-
 
 #### setBackground (background)
-メッセージウィンドウの[背景]を設定。
+メッセージウィンドウの[[背景]](Game_Message.md#背景)を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `background` | [Number](Number.md) | \[背景\](既定値 : 0) |
+| `background` | [Number](Number.md) | [背景] \(既定値 : 0) |
 
 
 #### setChoiceBackground (background)
-選択肢の[背景]を設定。
+選択肢の[[背景]](Game_Message.md#背景)を設定。
 
 ##### Parameters:
 
@@ -435,7 +267,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `positionType` | [Number](Number.md) | \[ウィンドウ位置\](既定値 : 2) |
+| `positionType` | [Number](Number.md) | [ウィンドウ位置] \(既定値 : 2) |
 
 
 #### setScroll (speed, noFast)
