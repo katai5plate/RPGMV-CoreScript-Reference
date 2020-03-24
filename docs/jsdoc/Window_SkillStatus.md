@@ -169,7 +169,7 @@
 ### Methods
 
 #### initialize (x, y, width, height)
-Overrides: [Window_Base.initialize (x, y, width, height)](Window_Base.md#initialize-x-y-width-height)
+Overrides: [Window_Base](Window_Base.md#initialize-x-y-width-height)
 
 
 #### refresh ()
