@@ -3,7 +3,10 @@
 ## Extends: [Window_Base](Window_Base.md)
 
 ### new Window_NameEdit (actor, maxLength)
-アクターの名前を編集するウィンドウ。
+[名前入力の処理]で、アクターの名前を編集するウィンドウ。
+
+関連クラス: [Scene_Name](Scene_Name.md)
+
 
 #### Parameters:
 

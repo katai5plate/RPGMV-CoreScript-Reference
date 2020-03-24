@@ -118,15 +118,15 @@ Game_Message はデータを保持しているだけで、表示の際はウィ�
 
 
 #### isChoice () → {Boolean}
-[選択肢の表示…]か。
+[選択肢の表示]か。
 
 
 #### isItemChoice () → {Boolean}
-[アイテム選択の処理…]か。
+[アイテム選択の処理]か。
 
 
 #### isNumberInput () → {Boolean}
-[数値入力の処理…]か。
+[数値入力の処理]か。
 
 
 #### itemChoiceItypeId () → {[Number](Number.md)}

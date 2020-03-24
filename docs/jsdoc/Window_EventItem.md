@@ -3,20 +3,22 @@
 ## Extends: [Window_ItemList](Window_ItemList.md)
 
 ### new Window_EventItem (messageWindow)
-The window used for the event command [Select Item].
+[アイテム選択の処理]をするウィンドウ。
+
+関連クラス: [Window_NumberInput](Window_NumberInput.md)
 
 #### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `messageWindow` | [Window_Message](Window_Message.md) |  |
+| `messageWindow` | [Window_Message](Window_Message.md) | 親メッセージウィンドウ |
 
 
 ### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_messageWindow` | [Window_Message](Window_Message.md) |  |
+| `_messageWindow` | [Window_Message](Window_Message.md) | 親メッセージウィンドウ |
 
 
 ### Inherited From
@@ -269,7 +271,7 @@ Overrides: [Window_ItemList](Window_ItemList.md#initialize-x-y-width-height)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `messageWindow` | [Window_Message](Window_Message.md) |  |
+| `messageWindow` | [Window_Message](Window_Message.md) | 親メッセージウィンドウ |
 
 
 #### isEnabled (item) → {Boolean}
@@ -277,23 +279,25 @@ Overrides: [Window_ItemList](Window_ItemList.md#isenabled-item--boolean)
 
 
 #### numVisibleRows () → {[Number](Number.md)}
-Returns the number of visible rows.
+表示されている行数を返す。
 
 
 #### onCancel ()
-
+キャンセルが選択された時に呼ばれるハンドラ。
 
 
 #### onOk ()
+OKが選択された時に呼ばれるハンドラ。
 
 
-
-#### start ()Starts the event item window.
+#### start ()開始。
 
 
 #### updatePlacement ()
+配置をアップデート。
 
 
-
-#### windowHeight () → {[Number](Number.md)}Returns the height off the window.
+#### windowHeight () → {[Number](Number.md)}
+ウィンドウの高さ(ピクセル)を返す。
+
 

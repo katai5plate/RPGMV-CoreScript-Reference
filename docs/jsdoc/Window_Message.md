@@ -6,7 +6,8 @@
 [文章の表示]をするウィンドウ。
 
 表示する文は Window\_Message ではなく [$gameMessage](global.md#gamemessage-game_message) を経由して設定するため、単に文を表示するだけならばこのクラスを操作する必要はない。<br />
-また、Window\_Messageには選択肢関連のサブウィンドウが含まれるため、新規に文字を表示するウィンドウが必要ならば、[WIndow_Help](WIndow_Help.md) を使うか、Window\_Base を継承して新たにクラスを作る方が良い。
+また、Window\_Message は選択肢関連のサブウィンドウの起動も行う。<br />
+新規に文字を表示するウィンドウが必要ならば、[WIndow_Help](WIndow_Help.md) を使うか、Window\_Base を継承して新たにクラスを作る方が良い。
 
 関連クラス: [Scene_Map](Scene_Map.md), [Scene_Battle](Scene_Battle.md), [Game_Message](Game_Message.md)
 
@@ -22,10 +23,10 @@
 | `_pauseSkip` | Boolean | 入力待ちをとばすか |
 | `_showFast` | Boolean | 一括表示するか |
 | `_lineShowFast` | Boolean | 行を一括表示するか |
-| `_goldWindow` | [Window_Gold](Window_Gold.md) | 所持金ウィンドウ |
-| `_choiceWindow` | [Window_ChoiceList](Window_ChoiceList.md) | 選択肢ウィンドウ |
-| `_numberWindow` | [Window_NumberInput](Window_NumberInput.md) | 数値入力ウィンドウ |
-| `_itemWindow` | [Window_EventItem](Window_EventItem.md) | アイテム選択ウィンドウ |
+| `_goldWindow` | [Window_Gold](Window_Gold.md) | [所持金]ウィンドウ |
+| `_choiceWindow` | [Window_ChoiceList](Window_ChoiceList.md) | [選択肢の表示]ウィンドウ |
+| `_numberWindow` | [Window_NumberInput](Window_NumberInput.md) | [数値入力の処理]ウィンドウ |
+| `_itemWindow` | [Window_EventItem](Window_EventItem.md) | [アイテム選択の処理]ウィンドウ |
 
 
 ### Inherited From

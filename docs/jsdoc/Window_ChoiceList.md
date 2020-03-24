@@ -6,6 +6,8 @@
 [選択肢の表示]コマンドで表示されるウィンドウ。
  
  規定値は[はい][いいえ]。
+  
+関連クラス: [Scene_Menu](Scene_Menu.md), [Scene_Shop](Scene_Shop.md), [Window_Message](Window_Message.md)
 
 #### Parameters:
 

@@ -3,23 +3,26 @@
 ## Extends: [Window_Selectable](Window_Selectable.md)
 
 ### new Window_NumberInput (messageWindow)
-The window used for the event command [Input Number].
+[数値入力の処理]を行うウィンドウ。
+
+関連クラス: [Window_EventItem](Window_EventItem.md)
+
 
 #### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `messageWindow` | [Window_Message](Window_Message.md) |  |
+| `messageWindow` | [Window_Message](Window_Message.md) | 親メッセージウィンドウ |
 
 
 ### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_messageWindow` | [Window_Message](Window_Message.md) |  |
-| `_number` | [Number](Number.md) |  |
-| `_maxDigits` | [Number](Number.md) |  |
-| `_buttons` | [Array](Array.md).&lt;[Sprite_Button](Sprite_Button.md)&gt; |  |
+| `_messageWindow` | [Window_Message](Window_Message.md) | 親メッセージウィンドウ |
+| `_number` | [Number](Number.md) | 入力中の数値 |
+| `_maxDigits` | [Number](Number.md) | 最大桁数 |
+| `_buttons` | [Array](Array.md).&lt;[Sprite_Button](Sprite_Button.md)&gt; | ボタンの配列 |
 
 
 ### Inherited From
@@ -241,19 +244,20 @@ The window used for the event command [Input Number].
 ### Methods
 
 #### buttonY () → {[Number](Number.md)}
-
+ボタンY座標(ピクセル)を返す。
 
 #### changeDigit (up)
+編集中の桁を変更。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `up` | Boolean |  |
+| `up` | Boolean | 桁をあげるか |
 
 
 #### createButtons ()
-Creates the number input window buttons.
+入力用のボタンを生成。
 
 
 #### drawItem (index)
@@ -261,7 +265,7 @@ Overrides: [Window_Selectable](Window_Selectable.md#drawitem-index)
 
 
 #### hideButtons ()
-
+ボタンを隠す。
 
 
 #### initialize (messageWindow)
@@ -271,47 +275,23 @@ Overrides: [Window_Selectable](Window_Selectable.md#initialize-x-y-width-height)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `messageWindow` | [Window_Message](Window_Message.md) |  |
+| `messageWindow` | [Window_Message](Window_Message.md) | 親メッセージウィンドウ |
 
 
-#### isCancelEnabled (up) → {Boolean}
+#### isCancelEnabled () → {Boolean}
 Overrides: [Window_Selectable](Window_Selectable.md#iscancelenabled---boolean)
 
-##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
-| `up` | Boolean |  |
-
-
-#### isOkEnabled (up)
+#### isOkEnabled () → {Boolean}
 Overrides: [Window_Selectable](Window_Selectable.md#isokenabled---boolean)
+|
 
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `up` | Boolean |  |
-
-
-#### isOkTriggered (up)
+#### isOkTriggered () → {Boolean}
 Overrides: [Window_Selectable](Window_Selectable.md#isoktriggered---boolean)
 
-##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
-| `up` | Boolean |  |
-
-
-#### isTouchOkEnabled (up)
+#### isTouchOkEnabled () → {Boolean}
 Overrides: [Window_Selectable](Window_Selectable.md#istouchokenabled---boolean)
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `up` | Boolean |  |
 
 
 #### itemWidth () → {[Number](Number.md)}
@@ -325,24 +305,25 @@ Overrides: [Window_Selectable](Window_Selectable.md#maxcols---number)
 #### maxItems () → {[Number](Number.md)}
 Overrides: [Window_Selectable](Window_Selectable.md#maxitems---number)
 
-#### onButtonDown ()
 
+#### onButtonDown ()
+桁を下げるが選択された時に呼ばれるハンドラ。
 
 
 #### onButtonOk ()
-
+OKが選択された時に呼ばれるハンドラ。
 
 
 #### onButtonUp ()
-
+桁を上げるが選択された時に呼ばれるハンドラ。
 
 
 #### placeButtons ()
-Places the number input window buttons.
+入力用のボタンを配置。
 
 
 #### processDigitChange ()
-
+桁の変更を実行。
 
 
 #### processOk ()
@@ -350,7 +331,7 @@ Overrides: [Window_Selectable](Window_Selectable.md#processok-)
 
 
 #### showButtons ()
-
+ボタンを表示。
 
 
 #### spacing () → {[Number](Number.md)}
@@ -358,7 +339,7 @@ Overrides: [Window_Selectable](Window_Selectable.md#spacing---number)
 
 
 #### start ()
-
+開始。
 
 
 #### update ()
@@ -366,19 +347,18 @@ Overrides: [Window_Selectable](Window_Selectable.md#update-)
 
 
 #### updateButtonsVisiblity ()
-
+ボタンの表示状態をアップデート。
 
 
 #### updatePlacement ()
-
+配置をアップデート。
 
 
 #### windowHeight () → {[Number](Number.md)}
-Returns the window height.
-
+ウィンドウ高さ(ピクセル)を返す。
 
 
 #### windowWidth () → {[Number](Number.md)}
-Returns the window width.
+ウィンドウ幅(ピクセル)を返す。
 
 
