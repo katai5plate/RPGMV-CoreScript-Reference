@@ -5,6 +5,8 @@
 ### new Window_SkillStatus (x, y, width, height)
 スキル選択時に表示されるウィンドウ。
 
+関連クラス: [Scene_Skill](Scene_Skill.md)
+
 #### Parameters:
 
 | Name | Type | Description |

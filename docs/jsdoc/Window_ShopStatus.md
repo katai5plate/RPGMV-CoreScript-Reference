@@ -5,6 +5,8 @@
 ### new Window_ShopStatus (x, y, width, height)
 店の装備選択時に表示されるウィンドウ。
 
+関連クラス: [Scene_Shop](Scene_Shop.md)
+
 #### Parameters:
 
 | Name | Type | Description |
