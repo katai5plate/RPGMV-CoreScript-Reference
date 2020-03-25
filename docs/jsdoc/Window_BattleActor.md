@@ -3,8 +3,9 @@
 ## Extends: [Window_BattleStatus](Window_BattleStatus.md)
 
 ### new Window_BattleActor (x, y)
+戦闘中にアクターを選択するウィンドウ。
 
-The window for selecting a target actor on the battle screen.
+関連クラス: [Scene_Battle](Scene_Battle.md)
 
 #### Parameters:
 
@@ -27,7 +28,6 @@ The window for selecting a target actor on the battle screen.
 * [setTransform (x, y, scaleX, scaleY, rotation, skewX, skewY, pivotX, pivotY)](PIXI.DisplayObject.md#settransform-x-y-scalex-scaley-rotation-skewx-skewy-pivotx-pivoty--pixidisplayobject)
 * [toGlobal (position, point, skipUpdate)](PIXI.DisplayObject.md#toglobal-position-point-skipupdate--pixipoint)
 * [toLocal (position, from, point, skipUpdate)](PIXI.DisplayObject.md#tolocal-position-from-point-skipupdate--pixipoint)
-
 
 #### [PIXI.Container](PIXI.Container.md)
 
@@ -254,7 +254,7 @@ The window for selecting a target actor on the battle screen.
 ### Methods
 
 #### actor () → {[Game_Actor](Game_Actor.md)}
-Returns the current selected actor.
+選択中のアクターを返す。
 
 
 #### hide ()
