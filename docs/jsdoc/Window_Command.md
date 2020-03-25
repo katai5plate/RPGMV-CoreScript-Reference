@@ -374,7 +374,7 @@ Overrides: [Window_Selectable](Window_Selectable.md#maxitems---number)
 
 
 #### numVisibleRows () → {[Number](Number.md)}
-表示されている行(ロー)の数を返す。
+表示されている行数を返す。
 
 
 #### refresh ()
@@ -382,7 +382,7 @@ Overrides: [Window_Selectable](Window_Selectable.md#refresh-)
 
 
 #### selectExt (ext)
-指定した関数に従ってコマンド項目を選択。
+指定した追加情報に従ってコマンド項目を選択。
 
 ##### Parameters:
 
