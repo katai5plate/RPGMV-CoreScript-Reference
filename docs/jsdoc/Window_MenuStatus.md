@@ -2,7 +2,7 @@
 
 ## Extends: [Window_Selectable](Window_Selectable.md)
 
-#### new Window_MenuStatus (x, y)
+### new Window_MenuStatus (x, y)
 メニューでパーティメンバーのステータスを表示するウィンドウ。
 
 関連クラス: [Scene_Menu](Scene_Menu.md), [Window_MenuCommand](Window_MenuCommand.md), [Window_Gold](Window_Gold.md)
