@@ -24,7 +24,7 @@
 
 #### スキルID
 
-[データベース]-[スキル] で設定されたID。大域変数 [\$dataSkills](global.md#dataskills-arrayrpgskill) の配列の番号でもある。<br />
+[データベース]-[スキル] で設定されたID。大域変数 [$dataSkills](global.md#dataskills-arrayrpgskill) の配列の番号でもある。<br />
  下表0〜2は固定、他は規定値で変更可能。
 
 | ID | [スキル] |

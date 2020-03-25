@@ -3,16 +3,18 @@
 ## Extends: [Window_SkillList](Window_SkillList.md)
 
 ### new Window_BattleSkill (x, y, width, height)
-The window for selecting a skill to use on the battle screen.
+戦闘シーンでのスキル選択ウィンドウ。
+
+関連クラス: [Scene_Battle](Scene_Battle.md)
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
-| `height` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) | ウィンドウ x座標(ピクセル) |
+| `y` | [Number](Number.md) | ウィンドウ y座標(ピクセル) |
+| `width` | [Number](Number.md) | ウィンドウ幅(ピクセル) |
+| `height` | [Number](Number.md) | ウィンドウ高さ(ピクセル) |
 
 
 ### Inherited From
@@ -28,7 +30,6 @@ The window for selecting a skill to use on the battle screen.
 * [setTransform (x, y, scaleX, scaleY, rotation, skewX, skewY, pivotX, pivotY)](PIXI.DisplayObject.md#settransform-x-y-scalex-scaley-rotation-skewx-skewy-pivotx-pivoty--pixidisplayobject)
 * [toGlobal (position, point, skipUpdate)](PIXI.DisplayObject.md#toglobal-position-point-skipupdate--pixipoint)
 * [toLocal (position, from, point, skipUpdate)](PIXI.DisplayObject.md#tolocal-position-from-point-skipupdate--pixipoint)
-
 
 #### [PIXI.Container](PIXI.Container.md)
 
