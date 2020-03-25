@@ -3,7 +3,9 @@
 ## Extends: [Window_Selectable](Window_Selectable.md)
 
 #### new Window_MenuStatus (x, y)
-The window for displaying party member status on the menu screen. 
+メニューでパーティメンバーのステータスを表示するウィンドウ。
+
+関連クラス: [Scene_Menu](Scene_Menu.md), [Window_MenuCommand](Window_MenuCommand.md), [Window_Gold](Window_Gold.md)
 
 #### Parameters:
 
@@ -84,10 +86,10 @@ The window for displaying party member status on the menu screen.
 * [contentsWidth ()](Window_Base.md#contentswidth---number)
 * [convertEscapeCharacters (text)](Window_Base.md#convertescapecharacters-text--string)
 * [createContents ()](Window_Base.md#createcontents-)
-* [crisisColor ()](Window_Base.md#crisiscolor---string)
-* [deathColor ()](Window_Base.md#deathcolor---string)
-* [dimColor1 ()](Window_Base.md#dimcolor1---string)
-* [dimColor2 ()](Window_Base.md#dimcolor2---string)
+* [crisisColor ()](Window_Base.md#crisiscolor---mvcsscolor)
+* [deathColor ()](Window_Base.md#deathcolor---mvcsscolor)
+* [dimColor1 ()](Window_Base.md#dimcolor1---mvcsscolor)
+* [dimColor2 ()](Window_Base.md#dimcolor2---mvcsscolor)
 * [drawActorCharacter (actor, x, y)](Window_Base.md#drawactorcharacter-actor-x-y)
 * [drawActorClass (actor, x, y, width)](Window_Base.md#drawactorclass-actor-x-y-width)
 * [drawActorFace (actor, x, y, width, height)](Window_Base.md#drawactorface-actor-x-y-width-height)
@@ -109,31 +111,31 @@ The window for displaying party member status on the menu screen.
 * [drawText (text, x, y, maxWidth, align)](Window_Base.md#drawtext-text-x-y-maxwidth-align)
 * [drawTextEx (text, x, y)](Window_Base.md#drawtextex-text-x-y--number)
 * [fittingHeight (numLines)](Window_Base.md#fittingheight-numlines--number)
-* [gaugeBackColor ()](Window_Base.md#gaugebackcolor---string)
+* [gaugeBackColor ()](Window_Base.md#gaugebackcolor---mvcsscolor)
 * [hide ()](Window_Base.md#hide-)
 * [hideBackgroundDimmer ()](Window_Base.md#hidebackgrounddimmer-)
-* [hpColor (actor)](Window_Base.md#hpcolor-actor--string)
-* [hpGaugeColor1 ()](Window_Base.md#hpgaugecolor1---string)
-* [hpGaugeColor2 ()](Window_Base.md#hpgaugecolor2---string)
+* [hpColor (actor)](Window_Base.md#hpcolor-actor--mvcsscolor)
+* [hpGaugeColor1 ()](Window_Base.md#hpgaugecolor1---mvcsscolor)
+* [hpGaugeColor2 ()](Window_Base.md#hpgaugecolor2---mvcsscolor)
 * [isClosing ()](Window_Base.md#isclosing---boolean)
 * [isOpening ()](Window_Base.md#isopening---boolean)
 * [lineHeight ()](Window_Base.md#lineheight---number)
 * [loadWindowskin ()](Window_Base.md#loadwindowskin-)
 * [makeFontBigger ()](Window_Base.md#makefontbigger-)
 * [makeFontSmaller ()](Window_Base.md#makefontsmaller-)
-* [mpColor (actor)](Window_Base.md#mpcolor-actor--string)
-* [mpCostColor ()](Window_Base.md#mpcostcolor---string)
-* [mpGaugeColor1 ()](Window_Base.md#mpgaugecolor1---string)
-* [mpGaugeColor2 ()](Window_Base.md#mpgaugecolor2---string)
-* [normalColor ()](Window_Base.md#normalcolor---string)
+* [mpColor (actor)](Window_Base.md#mpcolor-actor--mvcsscolor)
+* [mpCostColor ()](Window_Base.md#mpcostcolor---mvcsscolor)
+* [mpGaugeColor1 ()](Window_Base.md#mpgaugecolor1---mvcsscolor)
+* [mpGaugeColor2 ()](Window_Base.md#mpgaugecolor2---mvcsscolor)
+* [normalColor ()](Window_Base.md#normalcolor---mvcsscolor)
 * [obtainEscapeCode (textState)](Window_Base.md#obtainescapecode-textstate)
 * [obtainEscapeParam (textState)](Window_Base.md#obtainescapeparam-textstate--numberstring)
 * [open ()](Window_Base.md#open-)
-* [paramchangeTextColor (change)](Window_Base.md#paramchangetextcolor-change--string)
+* [paramchangeTextColor (change)](Window_Base.md#paramchangetextcolor-change--mvcsscolor)
 * [partyMemberName (partyMemberIndex)](Window_Base.md#partymembername-partymemberindex--string)
-* [pendingColor ()](Window_Base.md#pendingcolor---string)
-* [powerDownColor ()](Window_Base.md#powerdowncolor---string)
-* [powerUpColor ()](Window_Base.md#powerupcolor---string)
+* [pendingColor ()](Window_Base.md#pendingcolor---mvcsscolor)
+* [powerDownColor ()](Window_Base.md#powerdowncolor---mvcsscolor)
+* [powerUpColor ()](Window_Base.md#powerupcolor---mvcsscolor)
 * [processCharacter (textState)](Window_Base.md#processcharacter-textstate)
 * [processDrawIcon (iconIndex, textState)](Window_Base.md#processdrawicon-iconindex-textstate)
 * [processEscapeCharacter (code, textState)](Window_Base.md#processescapecharacter-code-textstate)
@@ -151,14 +153,14 @@ The window for displaying party member status on the menu screen.
 * [standardFontFace ()](Window_Base.md#standardfontface---string)
 * [standardFontSize ()](Window_Base.md#standardfontsize---number)
 * [standardPadding ()](Window_Base.md#standardpadding---number)
-* [systemColor ()](Window_Base.md#systemcolor---string)
-* [textColor (n)](Window_Base.md#textcolor-n--string)
+* [systemColor ()](Window_Base.md#systemcolor---mvcsscolor)
+* [textColor (n)](Window_Base.md#textcolor-n--mvcsscolor)
 * [textPadding ()](Window_Base.md#textpadding---number)
 * [textWidth (text)](Window_Base.md#textwidth-text--number)
-* [tpColor (actor)](Window_Base.md#tpcolor-actor--string)
-* [tpCostColor ()](Window_Base.md#tpcostcolor---string)
-* [tpGaugeColor1 ()](Window_Base.md#tpgaugecolor1---string)
-* [tpGaugeColor2 ()](Window_Base.md#tpgaugecolor2---string)
+* [tpColor (actor)](Window_Base.md#tpcolor-actor--mvcsscolor)
+* [tpCostColor ()](Window_Base.md#tpcostcolor---mvcsscolor)
+* [tpGaugeColor1 ()](Window_Base.md#tpgaugecolor1---mvcsscolor)
+* [tpGaugeColor2 ()](Window_Base.md#tpgaugecolor2---mvcsscolor)
 * [translucentOpacity ()](Window_Base.md#translucentopacity---number)
 * [updateBackgroundDimmer ()](Window_Base.md#updatebackgrounddimmer-)
 * [updateBackOpacity ()](Window_Base.md#updatebackopacity-)
@@ -255,34 +257,37 @@ Overrides: [Window_Selectable](Window_Selectable.md#drawitem-index)
 
 
 #### drawItemBackground (index)
+指定アクターの背景を描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
+| `index` | [Number](Number.md) | アクター番号 |
 
 
 #### drawItemImage (index)
+指定アクターの画像を描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
+| `index` | [Number](Number.md) | アクター番号 |
 
 
 #### drawItemStatus (index)
+指定アクターのステータスを描画。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
+| `index` | [Number](Number.md) | アクター番号 |
 
 
 #### formationMode () → {Boolean}
-Determines if the window is in formation mode; if true, the player can select characters to swap positions with.
+隊列変更モードか。
 
 
 #### initialize (x, y)
@@ -305,7 +310,7 @@ Overrides: [Window_Selectable](Window_Selectable.md#itemheight---number)
 
 
 #### loadImages ()
-Loads the images for the main menu status window.
+画像を読み込む。
 
 
 #### maxItems () → {[Number](Number.md)}
@@ -313,11 +318,11 @@ Overrides: [Window_Selectable](Window_Selectable.md#maxitems---number)
 
 
 #### numVisibleRows () → {[Number](Number.md)}
-Returns the number of visible rows in menu status.
+表示行数を返す。
 
 
 #### pendingIndex () → {[Number](Number.md)}
-
+保留中のアクター番号を返す。
 
 
 #### processOk ()
@@ -325,33 +330,35 @@ Overrides: [Window_Selectable](Window_Selectable.md#processok-)
 
 
 #### selectLast ()
-
+前回選択したアクターを選択。
 
 
 #### setFormationMode (formationMode)
-Sets the formation mode to true or false.
+隊列変更モードを設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `formationMode` | Boolean |  |
+| `formationMode` | Boolean | 隊列変更可能か |
 
 
 #### setPendingIndex (index)
+保留するアクター番号を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) |  |
+| `index` | [Number](Number.md) | アクター番号 |
 
 
 #### windowHeight () → {[Number](Number.md)}
-
+ウィンドウの高さ(ピクセル)を返す。
 
 
 #### windowWidth () → {[Number](Number.md)}
+ウィンドウの幅(ピクセル)を返す。
 
 
 
