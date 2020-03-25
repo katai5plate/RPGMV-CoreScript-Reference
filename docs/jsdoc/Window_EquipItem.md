@@ -3,25 +3,27 @@
 ## Extends: [Window_ItemList](Window_ItemList.md)
 
 ### new Window_EquipItem (x, y, width, height)
-The window for selecting an equipment item on the equipment screen.
+[装備]シーンでのアイテム選択ウィンドウ。
+
+関連クラス: [Scene_Equip](Scene_Equip.md), [RPG.EquipItem](RPG.EquipItem.md)
 
 #### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  |
-| `y` | [Number](Number.md) |  |
-| `width` | [Number](Number.md) |  |
-| `height` | [Number](Number.md) |  |
+| `x` | [Number](Number.md) | ウィンドウ x座標(ピクセル) |
+| `y` | [Number](Number.md) | ウィンドウ y座標(ピクセル) |
+| `width` | [Number](Number.md) | ウィンドウ幅(ピクセル) |
+| `height` | [Number](Number.md) | ウィンドウ高さ(ピクセル) |
 
 
 ### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_actor` | [Game_Actor](Game_Actor.md) |  |
-| `_slotId` | [Number](Number.md) |  |
-| `_statusWindow` | [Window_EquipStatus](Window_EquipStatus.md) |  |
+| `_actor` | [Game_Actor](Game_Actor.md) | アクター |
+| `_slotId` | [Number](Number.md) | スロットID |
+| `_statusWindow` | [Window_EquipStatus](Window_EquipStatus.md) | ステータスウィンドウ |
 
 
 ### Inherited From
@@ -82,10 +84,10 @@ The window for selecting an equipment item on the equipment screen.
 * [contentsWidth ()](Window_Base.md#contentswidth---number)
 * [convertEscapeCharacters (text)](Window_Base.md#convertescapecharacters-text--string)
 * [createContents ()](Window_Base.md#createcontents-)
-* [crisisColor ()](Window_Base.md#crisiscolor---string)
-* [deathColor ()](Window_Base.md#deathcolor---string)
-* [dimColor1 ()](Window_Base.md#dimcolor1---string)
-* [dimColor2 ()](Window_Base.md#dimcolor2---string)
+* [crisisColor ()](Window_Base.md#crisiscolor---mvcsscolor)
+* [deathColor ()](Window_Base.md#deathcolor---mvcsscolor)
+* [dimColor1 ()](Window_Base.md#dimcolor1---mvcsscolor)
+* [dimColor2 ()](Window_Base.md#dimcolor2---mvcsscolor)
 * [drawActorCharacter (actor, x, y)](Window_Base.md#drawactorcharacter-actor-x-y)
 * [drawActorClass (actor, x, y, width)](Window_Base.md#drawactorclass-actor-x-y-width)
 * [drawActorFace (actor, x, y, width, height)](Window_Base.md#drawactorface-actor-x-y-width-height)
@@ -107,31 +109,31 @@ The window for selecting an equipment item on the equipment screen.
 * [drawText (text, x, y, maxWidth, align)](Window_Base.md#drawtext-text-x-y-maxwidth-align)
 * [drawTextEx (text, x, y)](Window_Base.md#drawtextex-text-x-y--number)
 * [fittingHeight (numLines)](Window_Base.md#fittingheight-numlines--number)
-* [gaugeBackColor ()](Window_Base.md#gaugebackcolor---string)
+* [gaugeBackColor ()](Window_Base.md#gaugebackcolor---mvcsscolor)
 * [hide ()](Window_Base.md#hide-)
 * [hideBackgroundDimmer ()](Window_Base.md#hidebackgrounddimmer-)
-* [hpColor (actor)](Window_Base.md#hpcolor-actor--string)
-* [hpGaugeColor1 ()](Window_Base.md#hpgaugecolor1---string)
-* [hpGaugeColor2 ()](Window_Base.md#hpgaugecolor2---string)
+* [hpColor (actor)](Window_Base.md#hpcolor-actor--mvcsscolor)
+* [hpGaugeColor1 ()](Window_Base.md#hpgaugecolor1---mvcsscolor)
+* [hpGaugeColor2 ()](Window_Base.md#hpgaugecolor2---mvcsscolor)
 * [isClosing ()](Window_Base.md#isclosing---boolean)
 * [isOpening ()](Window_Base.md#isopening---boolean)
 * [lineHeight ()](Window_Base.md#lineheight---number)
 * [loadWindowskin ()](Window_Base.md#loadwindowskin-)
 * [makeFontBigger ()](Window_Base.md#makefontbigger-)
 * [makeFontSmaller ()](Window_Base.md#makefontsmaller-)
-* [mpColor (actor)](Window_Base.md#mpcolor-actor--string)
-* [mpCostColor ()](Window_Base.md#mpcostcolor---string)
-* [mpGaugeColor1 ()](Window_Base.md#mpgaugecolor1---string)
-* [mpGaugeColor2 ()](Window_Base.md#mpgaugecolor2---string)
-* [normalColor ()](Window_Base.md#normalcolor---string)
+* [mpColor (actor)](Window_Base.md#mpcolor-actor--mvcsscolor)
+* [mpCostColor ()](Window_Base.md#mpcostcolor---mvcsscolor)
+* [mpGaugeColor1 ()](Window_Base.md#mpgaugecolor1---mvcsscolor)
+* [mpGaugeColor2 ()](Window_Base.md#mpgaugecolor2---mvcsscolor)
+* [normalColor ()](Window_Base.md#normalcolor---mvcsscolor)
 * [obtainEscapeCode (textState)](Window_Base.md#obtainescapecode-textstate)
 * [obtainEscapeParam (textState)](Window_Base.md#obtainescapeparam-textstate--numberstring)
 * [open ()](Window_Base.md#open-)
-* [paramchangeTextColor (change)](Window_Base.md#paramchangetextcolor-change--string)
+* [paramchangeTextColor (change)](Window_Base.md#paramchangetextcolor-change--mvcsscolor)
 * [partyMemberName (partyMemberIndex)](Window_Base.md#partymembername-partymemberindex--string)
-* [pendingColor ()](Window_Base.md#pendingcolor---string)
-* [powerDownColor ()](Window_Base.md#powerdowncolor---string)
-* [powerUpColor ()](Window_Base.md#powerupcolor---string)
+* [pendingColor ()](Window_Base.md#pendingcolor---mvcsscolor)
+* [powerDownColor ()](Window_Base.md#powerdowncolor---mvcsscolor)
+* [powerUpColor ()](Window_Base.md#powerupcolor---mvcsscolor)
 * [processCharacter (textState)](Window_Base.md#processcharacter-textstate)
 * [processDrawIcon (iconIndex, textState)](Window_Base.md#processdrawicon-iconindex-textstate)
 * [processEscapeCharacter (code, textState)](Window_Base.md#processescapecharacter-code-textstate)
@@ -149,14 +151,14 @@ The window for selecting an equipment item on the equipment screen.
 * [standardFontFace ()](Window_Base.md#standardfontface---string)
 * [standardFontSize ()](Window_Base.md#standardfontsize---number)
 * [standardPadding ()](Window_Base.md#standardpadding---number)
-* [systemColor ()](Window_Base.md#systemcolor---string)
-* [textColor (n)](Window_Base.md#textcolor-n--string)
+* [systemColor ()](Window_Base.md#systemcolor---mvcsscolor)
+* [textColor (n)](Window_Base.md#textcolor-n--mvcsscolor)
 * [textPadding ()](Window_Base.md#textpadding---number)
 * [textWidth (text)](Window_Base.md#textwidth-text--number)
-* [tpColor (actor)](Window_Base.md#tpcolor-actor--string)
-* [tpCostColor ()](Window_Base.md#tpcostcolor---string)
-* [tpGaugeColor1 ()](Window_Base.md#tpgaugecolor1---string)
-* [tpGaugeColor2 ()](Window_Base.md#tpgaugecolor2---string)
+* [tpColor (actor)](Window_Base.md#tpcolor-actor--mvcsscolor)
+* [tpCostColor ()](Window_Base.md#tpcostcolor---mvcsscolor)
+* [tpGaugeColor1 ()](Window_Base.md#tpgaugecolor1---mvcsscolor)
+* [tpGaugeColor2 ()](Window_Base.md#tpgaugecolor2---mvcsscolor)
 * [translucentOpacity ()](Window_Base.md#translucentopacity---number)
 * [updateBackgroundDimmer ()](Window_Base.md#updatebackgrounddimmer-)
 * [updateBackOpacity ()](Window_Base.md#updatebackopacity-)
@@ -248,7 +250,7 @@ The window for selecting an equipment item on the equipment screen.
 * [drawItemNumber (item, x, y, width)](Window_ItemList.md#drawitemnumber-item-x-y-width)
 * [isCurrentItemEnabled ()](Window_ItemList.md#iscurrentitemenabled---boolean)
 * [item ()](Window_ItemList.md#item---rpgbaseitem)
-* [makeItemList (item)](Window_ItemList.md#makeitemlist-item--boolean)
+* [makeItemList ()](Window_ItemList.md#makeitemlist-)
 * [maxCols ()](Window_ItemList.md#maxcols---number)
 * [maxItems ()](Window_ItemList.md#maxitems---number)
 * [needsNumber ()](Window_ItemList.md#needsnumber---boolean)
@@ -282,30 +284,33 @@ Overrides: [Window_ItemList](Window_ItemList.md#selectlast-)
 
 
 #### setActor (actor)
+アクターを設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `actor` | [Game_Actor](Game_Actor.md) |  |
+| `actor` | [Game_Actor](Game_Actor.md) | アクター |
 
 
 #### setSlotId (slotId)
+スロットIDを設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `slotId` | [Number](Number.md) |  |
+| `slotId` | [Number](Number.md) | スロットID |
 
 
 #### setStatusWindow (statusWindow)
+ステータスウィンドウを設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `statusWindow` | [Window_EquipStatus](Window_EquipStatus.md) |  |
+| `statusWindow` | [Window_EquipStatus](Window_EquipStatus.md) | ステータスウィンドウ |
 
 
 #### updateHelp ()

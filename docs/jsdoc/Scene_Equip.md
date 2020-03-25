@@ -1,24 +1,22 @@
 # Class: Scene_Equip
 
-## Scene_Equip ()
+## Extends: [Scene_MenuBase](Scene_MenuBase.md)
 
-#### new Scene_Equip ()
+### new Scene_Equip ()
+[装備]シーン。
 
-The scene class of the equipment screen.
+関連クラス: [RPG.EquipItem](RPG.EquipItem.md)
 
-##### Properties:
+### Properties:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_statusWindow` | [Window_EquipStatus](Window_EquipStatus.md) |  |
-| `_commandWindow` | [Window_EquipCommand](Window_EquipCommand.md) |  |
-| `_slotWindow` | [Window_EquipSlot](Window_EquipSlot.md) |  |
-| `_itemWindow` | [Window_EquipItem](Window_EquipItem.md) |  |
+| `_statusWindow` | [Window_EquipStatus](Window_EquipStatus.md) | ステータスウィンドウ |
+| `_commandWindow` | [Window_EquipCommand](Window_EquipCommand.md) | コマンド選択ウィンドウ |
+| `_slotWindow` | [Window_EquipSlot](Window_EquipSlot.md) | スロット選択ウィンドウ |
+| `_itemWindow` | [Window_EquipItem](Window_EquipItem.md) | アイテム選択ウィンドウ |
 
 
-### Extends
-
-* [Scene_MenuBase](Scene_MenuBase.md)
 
 ### Methods
 

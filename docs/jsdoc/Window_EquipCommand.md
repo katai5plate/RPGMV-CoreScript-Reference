@@ -3,9 +3,11 @@
 ## Extends: [Window_HorzCommand](Window_HorzCommand.md)
 
 ### new Window_EquipCommand (x, y, width)
-[装備]で水平に並ぶコマンド( [装備][最強装備][全て外す] )のウィンドウ。
+[装備]シーンで水平に並ぶコマンド( [装備][最強装備][全て外す] )のウィンドウ。
 
-##### Parameters:
+関連クラス: [Scene_Equip](Scene_Equip.md), [RPG.EquipItem](RPG.EquipItem.md)
+
+#### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |

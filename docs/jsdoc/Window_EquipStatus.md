@@ -3,9 +3,9 @@
 ## Extends: [Window_Base](Window_Base.md)
 
 ### new Window_EquipStatus (x, y)
-装備時のパラメータの変化を表示するウィンドウ。
+[装備]シーンでパラメータの変化を表示するウィンドウ。
 
-関連クラス: [Scene_Equip](Scene_Equip.md)
+関連クラス: [Scene_Equip](Scene_Equip.md), [RPG.EquipItem](RPG.EquipItem.md)
 
 #### Parameters:
 

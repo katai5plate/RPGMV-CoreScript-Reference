@@ -3,7 +3,7 @@
 ## Extends: [Window_Selectable](Window_Selectable.md)
 
 ### new Window_EquipSlot (x, y, width, height)
-装備スロットを表示するウィンドウ。
+[装備]シーンでのスロットの選択ウィンドウ。
 
 関連クラス: [Scene_Equip](Scene_Equip.md)
 
@@ -22,7 +22,7 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `_actor` | [Game_Actor](Game_Actor.md) | アクター |
-| `_itemWindow` | [Window_EquipItem](Window_EquipItem.md) | アイテムウィンドウ |
+| `_itemWindow` | [Window_EquipItem](Window_EquipItem.md) | アイテム選択ウィンドウ |
 | `_statusWindow` | [Window_EquipStatus](Window_EquipStatus.md) | ステータスウィンドウ |
 
 
