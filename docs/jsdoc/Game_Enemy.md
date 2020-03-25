@@ -6,11 +6,11 @@
 
 | データベース| JSONデータ | スプライト |
 | --- | --- | --- |
-| [敵キャラ] | [RPG.Enemy](RPG.Enemy.md) | [Sprite_Enemy](Sprite_Enemy.md)
+| [敵キャラ] | [RPG.Enemy](RPG.Enemy.md) | [Sprite_Enemy](Sprite_Enemy.md) |
 
 戦闘中の[敵キャラ]のパラメータの取得、画像の設定を行うクラス。
 
-関連クラス: [RPG.Enemy.Action](RPG.Enemy.Action.md), [Game_Troop](Game_Troop.md), [Game_Actor](Game_Actor.md), [Game_Party](Game_Party.md), [Scene_Battle](Scene_Battle.md), [BattleManager](BattleManager.md)
+関連クラス: [RPG.Enemy.Action](RPG.Enemy.Action.md), [Game_Troop](Game_Troop.md), [Game_Actor](Game_Actor.md), [Game_Party](Game_Party.md), [Scene_Battle](Scene_Battle.md), [BattleManager](BattleManager.md), [Window_BattleEnemy](Window_BattleEnemy.md)
 
 
 ### Properties:
