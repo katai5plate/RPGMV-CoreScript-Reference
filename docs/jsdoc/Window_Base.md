@@ -2,23 +2,19 @@
 
 ## Extends: [Window](Window.md)
 
-### new Window_Base (x, y, width, height, \_iconWidth, \_iconHeight, \_faceWidth, \_faceHeight, \_opening, \_closing)
+### new Window_Base (x, y, width, height )
 メッセージやステータスなどを描くためのメソッドを多く持つ、ウィンドウオブジェクト。<br />
 多くは、`contents` に対して[Bitmap](Bitmap.md) のメソッドを使う機能。
 
 関連クラス: [Graphics](Graphics.md), [Scene_Base](Scene_Base.md), [WindowLayer](WindowLayer.md), [Game_Message](Game_Message.md)
-
 #### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_iconWidth` | [Number](Number.md) | [static] 基本のアイコン幅 (規定値 : 32) |
-| `_iconHeight` | [Number](Number.md) | [static] 基本のアイコン高さ (規定値 : 32) |
-| `_faceWidth` | [Number](Number.md) | [static] 基本の顔画像の幅 (規定値 : 144) |
-| `_faceHeight` | [Number](Number.md) | [static] 基本の顔画像の高さ (規定値 : 144) |
-| `_opening` | Boolean | ウィンドウが開いている途中か |
-| `_closing` | Boolean | ウィンドウが閉じている途中か |
-| `_dimmerSprite ` | [Sprite](Sprite.md) | [暗くする]背景 |
+| `x` | [Number](Number.md) | x座標(ピクセル) |
+| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `width` | [Number](Number.md) | ウィンドウ幅(ピクセル) |
+| `height` | [Number](Number.md) | ウィンドウ高さ(ピクセル) |
 
 
 ### Sub Classes
@@ -33,6 +29,19 @@
 * [Window_ShopStatus](Window_ShopStatus.md)
 * [Window_SkillStatus](Window_SkillStatus.md)
 * [Window_Selectable](Window_Selectable.md)
+
+
+### Properties:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `_iconWidth` | [Number](Number.md) | [static] 基本のアイコン幅 (規定値 : 32) |
+| `_iconHeight` | [Number](Number.md) | [static] 基本のアイコン高さ (規定値 : 32) |
+| `_faceWidth` | [Number](Number.md) | [static] 基本の顔画像の幅 (規定値 : 144) |
+| `_faceHeight` | [Number](Number.md) | [static] 基本の顔画像の高さ (規定値 : 144) |
+| `_opening` | Boolean | ウィンドウが開いている途中か |
+| `_closing` | Boolean | ウィンドウが閉じている途中か |
+| `_dimmerSprite ` | [Sprite](Sprite.md) | [暗くする]背景 |
 
 
 ### Inherited From

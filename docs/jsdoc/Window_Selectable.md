@@ -36,6 +36,7 @@
 * [Window_ItemList](Window_ItemList.md)
 * [Window_Command](Window_Command.md)
 
+
 ### Properties:
 
 | Name | Type | Description |
