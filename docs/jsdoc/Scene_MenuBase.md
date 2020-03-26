@@ -7,8 +7,6 @@
 
 ### Sub Classes
 
-* [Scene_File](Scene_File.md)
-* [Scene_ItemBase](Scene_ItemBase.md)
 * [Scene_Debug](Scene_Debug.md)
 * [Scene_Equip](Scene_Equip.md)
 * [Scene_GameEnd](Scene_GameEnd.md)
@@ -17,6 +15,8 @@
 * [Scene_Options](Scene_Options.md)
 * [Scene_Shop](Scene_Shop.md)
 * [Scene_Status](Scene_Status.md)
+* [Scene_File](Scene_File.md)
+* [Scene_ItemBase](Scene_ItemBase.md)
 
 
 ### Properties:

@@ -5,7 +5,7 @@
 ### new Scene_File ()
 セーブファイルを扱うためのシーン。
 
-関連クラス: 
+関連クラス: [DataManager](DataManager.md)
 
 ### Sub Class
 
@@ -17,7 +17,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_listWindow` | [Window_SavefileList](Window_SavefileList.md) |  |
+| `_listWindow` | [Window_SavefileList](Window_SavefileList.md) | セーブファイルのリストウィンドウ |
 
 
 ### Inherited From
@@ -106,11 +106,11 @@ Overrides: [createHelpWindow ()](Scene_MenuBase.md#createhelpwindow-)
 
 
 #### firstSavefileIndex () → {[Number](Number.md)}
-最初のセーブファイルの番号を返す。
+画面上で最初のセーブファイルの番号を返す。
 
 
 #### helpWindowText () → {[String](String.md)}
-ヘルプウィンドウが表示している文字を返す。
+[システム]で設定した、ヘルプウィンドウに表示する文字を返す。
 
 
 #### initialize ()
