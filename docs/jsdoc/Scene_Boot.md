@@ -5,6 +5,8 @@
 ### new Scene_Boot ()
  起動時の初期化を行うシーン。システムに必要なデータや画像を読み込み、戦闘・イベントテストの分岐なども行う。
 
+関連シーン: [Scene_Title](Scene_Title.md), [Scene_Map](Scene_Map.md), [Scene_Battle](Scene_Battle.md)
+
 
 ### Properties:
 

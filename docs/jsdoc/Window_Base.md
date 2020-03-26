@@ -7,6 +7,7 @@
 多くは、`contents` に対して[Bitmap](Bitmap.md) のメソッドを使う機能。
 
 関連クラス: [Graphics](Graphics.md), [Scene_Base](Scene_Base.md), [WindowLayer](WindowLayer.md), [Game_Message](Game_Message.md)
+
 #### Parameters:
 
 | Name | Type | Description |

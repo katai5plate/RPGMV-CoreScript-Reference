@@ -3,7 +3,6 @@
 ## Extends: [Scene_Base](Scene_Base.md)
 
 ### new Scene_MenuBase ()
-
  メニュー型シーンの基礎クラス。
 
 ### Sub Classes
@@ -93,7 +92,7 @@
 ### Methods
 
 #### actor () → {[Game_Actor](Game_Actor.md)}
-Returns the current game actor.
+現在のアクターを返す。
 
 
 #### create ()
@@ -101,7 +100,7 @@ Overrides: [Scene_Base](Scene_Base.md#create-)
 
 
 #### createHelpWindow ()
-Creates the help window.
+ヘルプウィンドウを生成。
 
 
 #### initialize ()
@@ -109,25 +108,26 @@ Overrides: [Scene_Base](Scene_Base.md#initialize-)
 
 
 #### nextActor ()
-Moves to the next actor in the party.
+パーティの次のアクターに切り替える。
 
 
 #### onActorChange ()
-
+アクターが切り替わった時に呼ばれるハンドラ。
 
 
 #### previousActor ()
-Moves to the previous actor in the party.
+パーティの前のアクターに切り替える。
 
 
 #### setBackgroundOpacity (opacity)
+背景の不透明度を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `opacity` | [Number](Number.md) |  |
+| `opacity` | [Number](Number.md) | 不透明度(0〜255) |
 
 
 #### updateActor ()
-Updates the current actor.
+現在のアクターをアップデート。

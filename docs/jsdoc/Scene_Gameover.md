@@ -5,6 +5,8 @@
 ### new Scene_Gameover ()
 ゲームオーバーのシーン。
 
+関連クラス: [BattleManager](BattleManager.md), [Game_Interpreter](Game_Interpreter.md)<br />
+関連シーン: [Scene_Title](Scene_Title.md), [Scene_Base](Scene_Base.md), [Scene_Battle](Scene_Battle.md)
 
 ### Properties:
 
@@ -76,11 +78,11 @@ Overrides: [Scene_Base](Scene_Base.md#create-)
 
 
 #### createBackground ()
-Creates the background of the game over scene.
+背景を生成。
 
 
 #### gotoTitle ()
-Returns to the title scene (Scene_Title).
+[Scene_Title](Scene_Title.md)へ遷移。
 
 
 #### initialize ()
@@ -88,10 +90,11 @@ Overrides: [Scene_Base](Scene_Base.md#initialize-)
 
 
 #### isTriggered ()
+決定操作(OKキー・ボタン、クリック・タップ)が行われたか。
 
 
 #### playGameoverMusic ()
-Plays the game over music within the game over scene.
+[ゲームオーバー]の音楽の再生。
 
 
 #### start ()

@@ -5,7 +5,10 @@
 ### new Scene_Title ()
 タイトルのシーン。
 
+関連クラス: [Game_Interpreter](Game_Interpreter.md)<br />
+関連シーン: [Scene_Load](Scene_Load.md), [Scene_Options](Scene_Options.md), [Scene_Boot](Scene_Boot.md), [Scene_Map](Scene_Map.md), [Scene_Battle](Scene_Battle.md), [Scene_GameEnd](Scene_GameEnd.md), [Scene_Gameover](Scene_Gameover.md)
 
+   
 ### Properties:
 
 | Name | Type | Description |
@@ -89,7 +92,7 @@
 
 
 #### create ()
-Overrides: [Scene_Base.create ()](Scene_Base.md#create-)
+Overrides: [Scene_Base](Scene_Base.md#create-)
 
 
 #### createBackground ()
@@ -109,11 +112,11 @@ Overrides: [Scene_Base.create ()](Scene_Base.md#create-)
 
 
 #### initialize ()
-Overrides: [Scene_Base.initialize ()](Scene_Base.md#initialize-)
+Overrides: [Scene_Base](Scene_Base.md#initialize-)
 
 
 #### isBusy () → {Boolean}
-Overrides: [Scene_Base.isBusy ()](Scene_Base.md#isBusy-boolean)
+Overrides: [Scene_Base](Scene_Base.md#isBusy-boolean)
 
 
 #### playTitleMusic ()
@@ -121,12 +124,12 @@ Overrides: [Scene_Base.isBusy ()](Scene_Base.md#isBusy-boolean)
 
 
 #### start ()
-Overrides: [Scene_Base.start ()](Scene_Base.md#start-)
+Overrides: [Scene_Base](Scene_Base.md#start-)
 
 
 #### terminate ()
-Overrides: [Scene_Base.terminate ()](Scene_Base.md#terminate-)
+Overrides: [Scene_Base](Scene_Base.md#terminate-)
 
 
 #### update ()
-Overrides: [Scene_Base.update ()](Scene_Base.md#update-)
+Overrides: [Scene_Base](Scene_Base.md#update-)
