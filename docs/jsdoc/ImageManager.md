@@ -73,7 +73,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
 | `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
-| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) |
+| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) (規定値:0) |
 
 
 #### (static) loadBattleback1 (filename, hue opt) → {[Bitmap](Bitmap.md)}
@@ -84,7 +84,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
 | `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
-| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) |
+| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) (規定値:0) |
 
 
 #### (static) loadBattleback2 (filename, hue opt) → {[Bitmap](Bitmap.md)}
@@ -95,21 +95,21 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
 | `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
-| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) |
+| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) (規定値:0) |
 
 
-#### (static) loadBitmap (folder, filename, hue, smooth) → {[Bitmap](Bitmap.md)}
+#### (static) loadBitmap (folder, filename, hue opt, smooth opt) → {[Bitmap](Bitmap.md)}
 指定したフォルダ・ファイル名の画像をプロジェクトフォルダ以下から読み込み、指定した色相にずらし、指定したスムージングの状態で返す。<br />
 色相の変更が必要ない場合 loadBitmap( folder, filename, null, true )　のように、色相に null を渡せば良い。
 
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
-| `folder` | [String](String.md) | フォルダ名('img/faces/'のように指定する) |
-| `filename` | [String](String.md) | ファイル名(拡張子.pngを除く） |
-| `hue` | [Number](Number.md) | 色相(360度) |
-| `smooth` | Boolean | スムージングを行うか |
+| Name | Type | Attributes | Description |
+| --- | --- | --- | --- |
+| `folder` | [String](String.md) | | フォルダ名('img/faces/'のように指定する) |
+| `filename` | [String](String.md) | | ファイル名(拡張子.pngを除く） |
+| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) (規定値:0) |
+| `smooth` | Boolean | &lt;optional&gt; | スムージングを行うか (規定値:false) |
 
 
 #### (static) loadCharacter (filename, hue opt) → {[Bitmap](Bitmap.md)}
@@ -120,7 +120,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
 | `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
-| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) |
+| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) (規定値:0) |
 
 
 #### (static) loadEmptyBitmap () → {[Bitmap](Bitmap.md)}
@@ -135,7 +135,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
 | `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
-| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) |
+| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) (規定値:0) |
 
 
 #### (static) loadFace (filename, hue opt) → {[Bitmap](Bitmap.md)}
@@ -146,7 +146,7 @@ RPGツクールMVの画像キャッシュをクリア。<br />
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
 | `filename` | [String](String.md) |  | ファイル名(拡張子.pngを除く） |
-| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) |
+| `hue` | [Number](Number.md) | &lt;optional&gt; | 色相(360度) (規定値:0) |
 
 
 #### (static) loadNormalBitmap (path, hue) → {[Bitmap](Bitmap.md)}
