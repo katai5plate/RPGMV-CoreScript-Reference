@@ -88,7 +88,6 @@
 * [updateFade ()](Scene_Base.md#updatefade-)
 
 
-
 ### Methods
 
 #### actor () → {[Game_Actor](Game_Actor.md)}
