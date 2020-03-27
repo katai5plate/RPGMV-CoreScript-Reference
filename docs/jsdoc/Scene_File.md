@@ -98,7 +98,7 @@ Overrides: [Scene_MenuBase](Scene_MenuBase.md#create-)
 
 
 #### createHelpWindow ()
-Overrides: [createHelpWindow ()](Scene_MenuBase.md#createhelpwindow-)
+Overrides: [Scene_MenuBase](Scene_MenuBase.md#createhelpwindow-)
 
 
 #### createListWindow ()
