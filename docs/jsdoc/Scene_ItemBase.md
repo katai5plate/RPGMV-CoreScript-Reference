@@ -5,6 +5,9 @@
 ### new Scene_ItemBase ()
 [アイテム][スキル]の使用シーン。
 
+関連クラス: [Game_Action](Game_Action.md)<br />
+関連シーン: [Scene_Map](Scene_Map.md)
+
 ### Sub Classes
 
 * [Scene_Item](Scene_Item.md)
@@ -91,22 +94,22 @@
 ### Methods
 
 #### activateItemWindow ()
-Activates the item window.
+アイテムウィンドウをアクティベート。
 
 
 #### applyItem ()
-
+アイテムの効果を適用。
 
 #### canUse () → {Boolean}
-Returns true if the user (game actor) can use the item.
+選択中のアイテムが選択中のアクターに使用可能か。
 
 
 #### checkCommonEvent ()
-Checks the common event set on the item.
+[コモンイベント]をチェックして [Scene_Map](Scene_Map.md) に遷移。
 
 
 #### createActorWindow ()
-Creates the actor window within the base item scene.
+アクターウィンドウを生成。
 
 
 #### create ()
@@ -114,16 +117,17 @@ Overrides: [Scene_MenuBase](Scene_MenuBase.md#create-)
 
 
 #### determineItem ()
+選択中のアイテムを選択中のアクターに使用。
 
 
 #### hideSubWindow (window)
-Hides the sub window.
+指定サブウィンドウを隠す。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `window` | [Window_Base](Window_Base.md) |  |
+| `window` | [Window_Base](Window_Base.md) | サブウィンドウ |
 
 
 #### initialize ()
@@ -131,41 +135,44 @@ Overrides: [Scene_MenuBase](Scene_MenuBase.md#initialize-)
 
 
 #### isCursorLeft () → {Boolean}
-Returns true if the cursor is left.
+カーソルが左にあるか。
 
 
 #### isItemEffectsValid () → {Boolean}
-Returns true if the item effects are valid on the target(the user).
+選択中のアイテムが選択中のアクターに効果があるか。
 
 
-#### item () → {*}
-Returns the item attached to the item window within the base item scene.
+#### item () → {[RPG.BaseItem](RPG.BaseItem.md)} 
+アイテムウィンドウに追加されているアイテムを返す。
 
 
 #### itemTargetActors () → {[Game_Actor](Game_Actor.md)}
+対象のアクターを返す。
 
 
 #### onActorCancel ()
+アクターがキャンセルされた時に呼ばれるハンドラ。
 
 
 #### onActorOk ()
+アクターが決定された時に呼ばれるハンドラ。
 
 
 #### showSubWindow (window)
-Shows the sub window.
+指定したサブウィンドウを表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `window` | [Window_Base](Window_Base.md) |  |
+| `window` | [Window_Base](Window_Base.md) | サブウィンドウ |
 
 
 #### useItem ()
-Uses the current item.
+選択中のアイテムを使用。
 
 
 #### user () → {[Game_Actor](Game_Actor.md)}
-Returns the current game actor.
+現在のアクターを返す。
 
 
