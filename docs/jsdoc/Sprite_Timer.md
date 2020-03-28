@@ -3,6 +3,7 @@
 ## Extends: [Sprite](Sprite.md)
 
 ### new Sprite_Timer ()
+
 | イベントコマンド | オブジェクト |
 | --- | --- |
 | [タイマーの操作]| [Game_Timer](Game_Timer.md) |
