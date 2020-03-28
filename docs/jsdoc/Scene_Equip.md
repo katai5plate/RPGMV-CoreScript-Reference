@@ -16,7 +16,7 @@
 | `_statusWindow` | [Window_EquipStatus](Window_EquipStatus.md) | ステータスウィンドウ |
 | `_commandWindow` | [Window_EquipCommand](Window_EquipCommand.md) | コマンド選択ウィンドウ |
 | `_slotWindow` | [Window_EquipSlot](Window_EquipSlot.md) | スロット選択ウィンドウ |
-| `_itemWindow` | [Window_EquipItem](Window_EquipItem.md) | アイテム選択ウィンドウ |
+| `_itemWindow` | [Window_EquipItem](Window_EquipItem.md) | 装備選択ウィンドウ |
 
 
 ### Inherited From
@@ -91,28 +91,34 @@
 ### Methods
 
 #### commandClear ()
+[全て外す]コマンド実行。
 
 
-#### commandEquip ()Handler for the equip command.
+#### commandEquip ()
+[装備]コマンド実行。
+
 
 #### commandOptimize ()
-Handler for the optimize command.
+[最強装備]コマンド実行。
 
 #### create ()
 Overrides: [Scene_MenuBase](Scene_MenuBase.md#create-)
 
 
 #### createCommandWindow ()
-Creates the status window within the equip scene.
+コマンド選択ウィンドウの生成。
+
 
 #### createItemWindow ()
-Creates the item window within the equip scene.
+装備選択ウィンドウの生成。
+
 
 #### createSlotWindow ()
-Creates the slot window within the equip scene.
+装備スロット選択ウィンドウの生成。
+
 
 #### createStatusWindow ()
-Creates the status window within the equip scene.
+ステータスウィンドウの生成。
 
 #### initialize ()
 Overrides: [Scene_MenuBase](Scene_MenuBase.md#initialize-)
@@ -123,16 +129,20 @@ Overrides: [Scene_MenuBase](Scene_MenuBase.md#onactorchange-)
 
 
 #### onItemCancel ()
+装備の選択がキャンセルされた時に呼ばれるハンドラ。
 
 
 #### onItemOk ()
+装備の選択が決定された時に呼ばれるハンドラ。
 
 
 #### onSlotCancel ()
+スロットの選択がキャンセルされた時に呼ばれるハンドラ。
 
 
 #### onSlotOk ()
+スロットの選択が決定された時に呼ばれるハンドラ。
 
 
 #### refreshActor ()
-Refreshes the actor within the equip scene.
+アクターを再描画。

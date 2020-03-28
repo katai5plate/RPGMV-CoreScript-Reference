@@ -88,53 +88,65 @@ The scene class of the menu screen.
 ### Methods
 
 #### commandFormation ()
+[並び替え]コマンドの実行。
 
 
 #### commandGameEnd ()
-Handler for what to do when the 'game end' command is clicked.
+[ゲーム終了]コマンドの実行。
+
 
 #### commandItem ()
-Handler for what to do when the 'item' command is clicked.
+[アイテム]コマンドの実行。
+
 
 #### commandOptions ()
-Handler for what to do when the 'option' command is clicked.
+[オプション]コマンドの実行。
+
 
 #### commandPersonal ()
+アクターを選択するモードに移行。
 
 
 #### commandSave ()
-Handler for what to do when the 'save' command is clicked.
+[セーブ]コマンドの実行。
+
 
 #### create ()
 Overrides: [Scene_MenuBase](Scene_MenuBase.md#create-)
 
 
 #### createCommandWindow ()
-Creates the main menu window on the menu scene; contains the commands for menu usage.
+コマンドウィンドウを生成。
+
 
 #### createGoldWindow ()
-Creates the gold window on the menu scene.
+所持金ウィンドウを生成。
+
 
 #### createStatusWindow ()
-Creates the status window on the menu scene.
+ステータスウィンドウを生成。
 
 #### initialize ()
 Overrides: [Scene_MenuBase](Scene_MenuBase.md#initialize-)
 
 
 #### onFormationCancel ()
+[並べ替え]がキャンセルされた時に呼ばれるハンドラ。
 
 
 #### onFormationOk ()
+[並べ替え]が決定された時に呼ばれるハンドラ。
 
 
 #### onPersonalCancel ()
+アクターの選択がキャンセルされた時に呼ばれるハンドラ。
 
 
 #### onPersonalOk ()
+アクターの選択が決定された時に呼ばれるハンドラ。
 
 
 #### start ()
 Overrides: [Scene_Base](Scene_Base.md#start-)
 
-
+

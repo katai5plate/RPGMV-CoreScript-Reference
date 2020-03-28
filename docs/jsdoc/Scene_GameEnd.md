@@ -86,17 +86,19 @@ The scene class of the game end screen.
 ### Methods
 
 #### commandToTitle ()
-Handler for when to title is clicked within the game end screen.
+[タイトルへ]コマンドの実行。
+
 
 #### create ()
 Overrides: [Scene_MenuBase](Scene_MenuBase.md#create-)
 
 
 #### createBackground ()
-Creates the background for the game end scene.
+背景の生成。
+
 
 #### createCommandWindow ()
-Creates the command window for the game end screen.
+コマンド選択ウィンドウの生成。
 
 #### initialize ()
 Overrides: [Scene_MenuBase](Scene_MenuBase.md#initialize-)

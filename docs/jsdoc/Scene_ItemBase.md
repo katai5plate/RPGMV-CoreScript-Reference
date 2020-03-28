@@ -142,7 +142,7 @@ Overrides: [Scene_MenuBase](Scene_MenuBase.md#initialize-)
 選択中のアイテムが選択中のアクターに効果があるか。
 
 
-#### item () → {[RPG.BaseItem](RPG.BaseItem.md)} 
+#### item () → {[RPG.UsableItem](RPG.UsableItem.md)} 
 アイテムウィンドウに追加されているアイテムを返す。
 
 

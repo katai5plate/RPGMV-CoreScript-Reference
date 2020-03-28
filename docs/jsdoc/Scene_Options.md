@@ -3,7 +3,7 @@
 ## Extends: [Scene_MenuBase](Scene_MenuBase.md)
 
 ### new Scene_Options ()
-The scene class of the options screen.
+[オプション]のシーン。
 
 関連シーン: [Scene_Title](Scene_Title.md), [Scene_Menu](Scene_Menu.md)
 

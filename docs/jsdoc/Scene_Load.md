@@ -96,19 +96,19 @@
 ### Methods
 
 #### firstSavefileIndex () → {[Number](Number.md)}
-Overrides:  [firstSavefileIndex ()](Scene_File.md#firstsavefileindex---number)
+Overrides:  [Scene_File](Scene_File.md#firstsavefileindex---number)
 
 
 #### helpWindowText () → {[String](String.md)}
-Overrides: [helpWindowText ()](Scene_File.md#helpwindowtext---string)
+Overrides: [Scene_File](Scene_File.md#helpwindowtext---string)
 
 
 #### initialize ()
-Overrides: [initialize ()](Scene_File.md#initialize-)
+Overrides: [Scene_File](Scene_File.md#initialize-)
 
 
 #### mode () → {[String](String.md)}
-Overrides: [mode ()](Scene_File.md#mode---string)
+Overrides: [Scene_File](Scene_File.md#mode---string)
 
 
 #### onLoadFailure ()
@@ -120,7 +120,7 @@ Overrides: [mode ()](Scene_File.md#mode---string)
 
 
 #### onSavefileOk ()
-Overrides: [onSavefileOk ()](Scene_File.md#onsavefileok-)
+Overrides: [Scene_File](Scene_File.md#onsavefileok-)
 
 
 #### reloadMapIfUpdated ()
@@ -128,5 +128,5 @@ Overrides: [onSavefileOk ()](Scene_File.md#onsavefileok-)
 
 
 #### terminate ()
-Overrides: [Scene_Base.md](Scene_Base.md#terminate-)
+Overrides: [Scene_Base](Scene_Base.md#terminate-)
 

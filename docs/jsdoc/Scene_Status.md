@@ -3,7 +3,7 @@
 ## Extends: [Scene_MenuBase](Scene_MenuBase.md)
 
 ### new Scene_Status ()
-The scene class of the status screen.
+[ステータス]のシーン。
 
 関連シーン: [Scene_Menu](Scene_Menu.md)
 
@@ -89,7 +89,7 @@ Overrides: [Scene_MenuBase](Scene_MenuBase.md#create-)
 
 
 #### initialize ()
-Overrides: [Scene_Base](Scene_Base.md#initialize-)
+Overrides: [Scene_MenuBase](Scene_MenuBase.md#initialize-)
 
 
 #### onActorChange ()
@@ -97,7 +97,7 @@ Overrides: [Scene_MenuBase](Scene_MenuBase.md#onactorchange-)
 
 
 #### refreshActor ()
-Refreshes the actor within the status scene.
+アクターの再描画。
 
 #### start ()
 Overrides: [Scene_Base](Scene_Base.md#start-)

@@ -3,7 +3,7 @@
 ## Extends: [Scene_MenuBase](Scene_MenuBase.md)
 
 ### new Scene_Shop ()
-[ショップ]のシーン。
+[ショップの処理]のシーン。
 
 関連クラス: [Game_Interpreter](Game_Interpreter.md)
 
@@ -99,71 +99,82 @@
 ### Methods
 
 #### activateBuyWindow ()
-Activates the buy window within the shop scene.
+購入ウィンドウをアクティベート。
+
 
 #### activateSellWindow ()
-Activates the sell window within the shop scene.
+売却ウィンドウをアクティベート。
 
 
 #### buyingPrice () → {[Number](Number.md)}
-Returns the buying price for the current item.
+選択中のアイテムの購入金額を返す。
+
 #### commandBuy ()
-Handler for pressing buy within the shop scene.
+[購入する]を実行。
+
 
 #### commandSell ()
-Handler for pressing sell within the shop scene.
+[売却する]を実行。
+
 
 #### create ()
 Overrides: [Scene_MenuBase](Scene_MenuBase.md#create-)
 
 
 #### createBuyWindow ()
-Creates the buy window.
+購入ウィンドウを生成。
+
 
 #### createCategoryWindow ()
+カテゴリウィンドウを生成。
 
-Creates the category window.
 
 #### createCommandWindow ()
-Creates the command window for buying or selling.
+コマンドウィンドウを生成。
+
 
 #### createDummyWindow ()
+ダミーウィンドウを生成。
 
 
 #### createGoldWindow ()
-Creates the gold window on the shop scene.
+所持金ウィンドウを生成。
 
 #### createNumberWindow ()
-Creates the number input window on the shop scene.
+数量ウィンドウを生成。
 
 #### createSellWindow ()
-Creates the sell window.
+売却ウィンドウを生成。
+
 
 #### createStatusWindow ()
-Creates the status window.
+ステータスウィンドウを生成。
 
 #### currencyUnit () → {[String](String.md)}
-Returns the currency unit of the game within the shop scene.
+通貨単位を返す。
 
 #### doBuy (number)
+指定個数の購入を実行。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `number` | [Number](Number.md) |  |
+| `number` | [Number](Number.md) | 個数 |
 
 
 #### doSell (number)
+指定個数の売却を実行。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `number` | [Number](Number.md) |  |
+| `number` | [Number](Number.md) | 個数 |
 
 
 #### endNumberInput ()
+個数の入力を終了。
 
 
 #### initialize ()
@@ -171,46 +182,53 @@ Overrides: [Scene_MenuBase](Scene_MenuBase.md#initialize-)
 
 
 #### maxBuy () → {[Number](Number.md)}
-Returns the maximum number bought.
+最大購入個数を返す。
 
 #### maxSell () → {[Number](Number.md)}
-Returns the maximum number sold.
+最大売却個数を返す。
 
 #### money () → {[Number](Number.md)}
-Returns the player gold within the shop scene.#### onBuyCancel ()
-Handler for when buying is cancelled.
+所持金を返す。
+#### onBuyCancel ()
+購入がキャンセルされた時に呼ばれるハンドラ。
 
 #### onBuyOk ()
-Handler for when buying is confirmed.
+購入が決定された時に呼ばれるハンドラ。
 
 #### onCategoryCancel ()
+カテゴリがキャンセルされた時に呼ばれるハンドラ。
 
 
 #### onCategoryOk ()
+カテゴリが決定された時に呼ばれるハンドラ。
 
 
 #### onNumberCancel ()
+個数入力がキャンセルされた時に呼ばれるハンドラ。
 
 
 #### onNumberOk ()
+個数が決定された時に呼ばれるハンドラ。
 
 
 #### onSellCancel ()
+売却がキャンセルされた時に呼ばれるハンドラ。
 
 
 #### onSellOk ()
-
+売却が決定された時に呼ばれるハンドラ。
 
 
 #### prepare (goods, purchaseOnly)
+[ショップの処理]を実行。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `goods` | [Array](Array.md).<[Array](Array.md).<*>> |  |
-| `purchaseOnly` | Boolean |  |
+| `goods` | [Array](Array.md).&lt;[Array](Array.md).&lt;*&gt;&gt; | 商品の配列 |
+| `purchaseOnly` | Boolean | 購入のみか |
 
 
 #### sellingPrice () → {[Number](Number.md)}
-Returns the selling price for the current item.
+現在のアイテムの売却金額を返す。
