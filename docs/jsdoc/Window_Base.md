@@ -205,15 +205,16 @@
 
 
 #### drawActorCharacter (actor, x, y)
-指定した[アクター]のキャラクタを指定位置に描画。
+指定した[アクター]のキャラクタを指定位置に描画。<br />
+詳細は [drawCharacter()](Window_Base.md#drawcharacter-charactername-characterindex-x-y) を参照。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `actor` | [Game_Actor](Game_Actor.md) | 対象の[アクター] |
-| `x` | [Number](Number.md) | x座標(ピクセル) |
-| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `x` | [Number](Number.md) | 足元のx座標(ピクセル) |
+| `y` | [Number](Number.md) | 足元のy座標(ピクセル) |
 
 
 #### drawActorClass (actor, x, y, width)
@@ -349,7 +350,8 @@
 
 #### drawCharacter (characterName, characterIndex, x, y)
 指定した'img/characters/'フォルダのファイル名とキャラクタ番号で、指定位置にキャラクタを描画。<br />
-キャラクタ番号は左上から始まり右へ進み、2段目に移る。$付きの場合は0のみ。表示されるのは下向き中央のパターン。
+キャラクタ番号は左上から始まり右へ進み、2段目に移る。$付きの場合は0のみ。表示されるのは下向き中央のパターン。<br />
+指定するのは足元の座標なので、左上を指定したい場合 x+24, y+48 としてずらす必要がある。
 
 ##### Parameters:
 
@@ -357,8 +359,8 @@
 | --- | --- | --- |
 | `characterName` | [String](String.md) |  ファイル名(拡張子.pngを除く) |
 | `characterIndex` | [Number](Number.md) | キャラクタ番号(0 〜 7)  |
-| `x` | [Number](Number.md) | x座標(ピクセル) |
-| `y` | [Number](Number.md) | y座標(ピクセル) |
+| `x` | [Number](Number.md) | 足元のx座標(ピクセル) |
+| `y` | [Number](Number.md) | 足元のy座標(ピクセル) |
 
 
 #### drawCurrencyValue (value, unit, x, y, width)
