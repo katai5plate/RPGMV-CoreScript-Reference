@@ -25,8 +25,8 @@ Game_Message はデータを保持しているだけで、表示の際はウィ�
 | `_positionType` | [Number](Number.md) | [[ウィンドウ位置]](Game_Message.md#ウィンドウ位置) |
 | `_choiceDefaultType` | [Number](Number.md) |選択肢の[デフォルト] |
 | `_choiceCancelType` | [Number](Number.md) | 選択肢の[キャンセル] |
-| `_choiceBackground` | [Number](Number.md) | 選択肢の[背景] |
-| `_choicePostionType` | [Number](Number.md) | 選択肢の[ウィンドウ位置] |
+| `_choiceBackground` | [Number](Number.md) | 選択肢の[[背景]](Game_Message.md#背景) |
+| `_choicePostionType` | [Number](Number.md) | 選択肢の[[ウィンドウ位置]](Game_Message.md#ウィンドウ位置) |
 | `_numInputVariableId` | [Number](Number.md) | 数値を代入する[変数]ID |
 | `_numInputMaxDigits` | [Number](Number.md) | [桁数] |
 | `_itemChoiceVariableId` | [Number](Number.md) | 選択を代入する[変数]ID |
@@ -86,7 +86,7 @@ Game_Message はデータを保持しているだけで、表示の際はウィ�
 
 
 #### choicePositionType () → {[Number](Number.md)}
-選択肢の[ウィンドウ位置]を返す。
+選択肢の[[ウィンドウ位置]](Game_Message.md#ウィンドウ位置)を返す。
 
 
 #### choices () → {[Array](Array.md).&lt;[String](String.md)&gt;}
@@ -160,7 +160,7 @@ Game_Message はデータを保持しているだけで、表示の際はウィ�
 
 
 #### positionType () → {[Number](Number.md)}
-メッセージウィンドウの[ウィンドウ位置]を返す。
+メッセージウィンドウの[[ウィンドウ位置]](Game_Message.md#ウィンドウ位置)を返す。
 
 
 #### scrollMode () → {Boolean}
@@ -176,23 +176,23 @@ Game_Message はデータを保持しているだけで、表示の際はウィ�
 
 
 #### setBackground (background)
-メッセージウィンドウの[[背景]](Game_Message.md#背景)を設定。
+メッセージウィンドウの[背景]を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `background` | [Number](Number.md) | [背景] \(既定値 : 0) |
+| `background` | [Number](Number.md) |  [[背景]](Game_Message.md#背景) (既定値 : 0) |
 
 
 #### setChoiceBackground (background)
-選択肢の[[背景]](Game_Message.md#背景)を設定。
+選択肢の[背景]を設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `background` | [Number](Number.md) | [背景] |
+| `background` | [Number](Number.md) |  [[背景]](Game_Message.md#背景) |
 
 
 #### setChoiceCallback (callback)
@@ -212,7 +212,7 @@ Game_Message はデータを保持しているだけで、表示の際はウィ�
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `positionType` | [Number](Number.md) |  |
+| `positionType` | [Number](Number.md) | [[ウィンドウ位置]](Game_Message.md#ウィンドウ位置) |
 
 
 #### setChoices (choices, defaultType, cancelType)
@@ -267,7 +267,7 @@ Game_Message はデータを保持しているだけで、表示の際はウィ�
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `positionType` | [Number](Number.md) | [ウィンドウ位置] \(既定値 : 2) |
+| `positionType` | [Number](Number.md) | [[ウィンドウ位置]](Game_Message.md#ウィンドウ位置) (既定値 : 2) |
 
 
 #### setScroll (speed, noFast)
