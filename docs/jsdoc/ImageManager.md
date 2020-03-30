@@ -1,11 +1,28 @@
 # Class: ImageManager
 画像ファイルの読み込み、保持(キャッシュ)、管理を行う静的オブジェクト。
 
-基本としてはloadXxxxを使って画像を読み込むが、遅延を避けるためにrequestXxxxを使って画像の先読みを行うこともできる。
+読み込みには、キャッシュの方式などが異なる loadXxxx()、reserveXxxx()、reserveXxxx() の3系統がある。
 
-また、reserveXxxxは[releaseReservation](ImageManager.md#static-releasereservation-reservationid)によって解放するまでデータがキャッシュに保持されるので、頻出するデータを読み込んでおくのに向いている。
+#### loadXxxx()
+主に使われる、基本的な画像読み込み。<br />
+メモリ管理上限( [ImageCache.limit](ImageCache.md) )に達すると古い画像からキャッシュが自動で破棄される。<br />
+そのため以前読んだ画像が、常にキャッシュされている保証はない。
+
+#### reserveXxxx()
+自動でキャッシュが**破棄されることはない**のでプリロードに使える。<br />
+キャッシュは [releaseReservation()](ImageManager.md#static-releasereservation-reservationid) によって、明示的に解放できる。<br />
+キャッシュの際の reservationId は [Utils.generateRuntimeId()](Utils.md#static-generateruntimeid---number) メソッドを使って生成すればIDの衝突を防げる。<br />
+バージョン 1.5.0 で導入された機能。
+
+#### requestXxxx()
+まず専用の予約キュー( [RequestQueue](RequestQueue.md) )に保存され。<br />
+予約キューから**順に取り出されて**画像が読み込まれる。<br />
+[Game_Interpreter.requestImages()](Game_Interpreter.md#requestImages--) でイベントに含まれる画像の先読みに使われている。<br />
+読み込みが終わっていれば、次にloadXxxx() を実行した時に瞬時に使える。<br />
+バージョン 1.5.0 で導入された機能。
 
 関連クラス: [Bitmap](Bitmap.md), [Graphics](Graphics.md), [Game_Screen](Game_Screen.md)
+
 
 ### Properties:
 
