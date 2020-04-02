@@ -181,8 +181,12 @@ Overrides: [Window_Base](Window_Base.md#initialize-x-y-width-height)
 | `numLines` | [Number](Number.md) | 行数 |
 
 
-#### refresh (item)
-指定のアイテムで再描画。
+#### refresh ()
+再描画。
+
+
+#### setItem (item)
+指定アイテムの説明を表示。
 
 ##### Parameters:
 
@@ -192,7 +196,7 @@ Overrides: [Window_Base](Window_Base.md#initialize-x-y-width-height)
 
 
 #### setText (text)
-表示する文を設定。
+指定文字を表示。
 
 ##### Parameters:
 
