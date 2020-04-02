@@ -5,7 +5,7 @@
 ### new Window_EquipStatus (x, y)
 [装備]シーンでパラメータの変化を表示するウィンドウ。
 
-関連クラス: [Scene_Equip](Scene_Equip.md), [RPG.EquipItem](RPG.EquipItem.md)
+関連クラス: [Scene_Equip](Scene_Equip.md), [RPG.EquipItem](RPG.EquipItem.md), [Window_EquipSlot](Window_EquipSlot.md), [Window_EquipItem](Window_EquipItem.md)
 
 #### Parameters:
 

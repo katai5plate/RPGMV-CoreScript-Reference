@@ -5,7 +5,7 @@
 ### new Window_EquipItem (x, y, width, height)
 [装備]シーンでのアイテム選択ウィンドウ。
 
-関連クラス: [Scene_Equip](Scene_Equip.md), [RPG.EquipItem](RPG.EquipItem.md)
+関連クラス: [Scene_Equip](Scene_Equip.md), [RPG.EquipItem](RPG.EquipItem.md), [Window_EquipSlot](Window_EquipSlot.md)
 
 #### Parameters:
 
