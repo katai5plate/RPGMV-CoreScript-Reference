@@ -5,7 +5,7 @@
 ### new Window_ItemList (x, y, width, height)
 [アイテム]の選択ウィンドウ。
 
-関連クラス: [Scene_Item](Scene_Item.md)
+関連クラス: [Scene_Item](Scene_Item.md), [Window_ItemCategory](Window_ItemCategory.md)
 
 #### Parameters:
 

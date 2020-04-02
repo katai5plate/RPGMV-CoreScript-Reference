@@ -5,7 +5,7 @@
 ### new Window_SkillList (x, y, width, height)
 [スキル]の選択ウィンドウ。
 
-関連クラス: [Scene_Skill](Scene_Skill.md)
+関連クラス: [Scene_Skill](Scene_Skill.md), [Window_SkillType](Window_SkillType.md)
 
 #### Parameters:
 

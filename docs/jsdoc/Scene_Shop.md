@@ -12,18 +12,18 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_goods` | [Array](Array.md).&lt;[Array](Array.md).&lt;*&gt;&gt; |  |
-| `_purchaseOnly` | Boolean |  |
-| `_item` | [RPG.BaseItem](RPG.BaseItem.md) |  |
-| `_goldWindow` | [Window_Gold](Window_Gold.md) |  |
-| `_commandWindow` | [Window_ShopCommand](Window_ShopCommand.md) |  |
-| `_dummyWindow` | [Window_Base](Window_Base.md) |  |
-| `_numberWindow` | [Window_ShopNumber](Window_ShopNumber.md) |  |
-| `_statusWindow` | [Window_ShopStatus](Window_ShopStatus.md) |  |
-| `_buyWindow` | [Window_ShopBuy](Window_ShopBuy.md) |  |
-| `_categoryWindow` | [Window_ItemCategory](Window_ItemCategory.md) |  |
-| `_sellWindow` | [Window_ShopSell](Window_ShopSell.md) |  |
-| `_helpWindow` | [Window_Help](Window_Help.md) |  |
+| `_goods` | [Array](Array.md).&lt;[Array](Array.md).&lt;*&gt;&gt; | 商品の配列 |
+| `_purchaseOnly` | Boolean | [購入のみ]か |
+| `_item` | [RPG.BaseItem](RPG.BaseItem.md) | 選択中のアイテム |
+| `_goldWindow` | [Window_Gold](Window_Gold.md) | 所持金ウィンドウ |
+| `_commandWindow` | [Window_ShopCommand](Window_ShopCommand.md) | コマンドウィンドウ |
+| `_dummyWindow` | [Window_Base](Window_Base.md) | ダミーウィンドウ |
+| `_numberWindow` | [Window_ShopNumber](Window_ShopNumber.md) | 個数ウィンドウ |
+| `_statusWindow` | [Window_ShopStatus](Window_ShopStatus.md) | ステータスウィンドウ |
+| `_buyWindow` | [Window_ShopBuy](Window_ShopBuy.md) | 購入ウィンドウ |
+| `_categoryWindow` | [Window_ItemCategory](Window_ItemCategory.md) | カテゴリウィンドウ |
+| `_sellWindow` | [Window_ShopSell](Window_ShopSell.md) | 売却ウィンドウ |
+| `_helpWindow` | [Window_Help](Window_Help.md) | ヘルプウィンドウ |
 
 
 ### Inherited From

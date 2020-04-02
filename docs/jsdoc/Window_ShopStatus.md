@@ -3,7 +3,7 @@
 ## Extends: [Window_Base](Window_Base.md)
 
 ### new Window_ShopStatus (x, y, width, height)
-[ショップの処理]で装備選択時にステータスが表示されるウィンドウ。
+[ショップの処理]でアイテム選択時に[持っている数]やパーティメンバの装備可不可が表示されるウィンドウ。
 
 関連クラス: [Scene_Shop](Scene_Shop.md), [Window_ShopBuy](Window_ShopBuy.md), [Window_ShopNumber](Window_ShopNumber.md)
 
