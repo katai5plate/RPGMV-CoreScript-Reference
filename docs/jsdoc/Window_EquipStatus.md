@@ -20,7 +20,7 @@
 | Parameter | Type | Description |
 | --- | --- | --- |
 | `_actor` | [Game_Actor](Game_Actor.md) | 現在のアクター |
-| `_tempActor` | [Game_Actor](Game_Actor.md) | 装備後のアクター |
+| `_tempActor` | [Game_Actor](Game_Actor.md) | 装備の着脱後のアクター |
 
 
 ### Inherited From
@@ -245,7 +245,7 @@ Overrides: [Window_Base](Window_Base.md#initialize-x-y-width-height)
 
 
 #### setTempActor (actor)
-作業対象となるアクターを設定。
+装備の着脱後のアクターを設定。
 
 | Parameter | Type | Description |
 | --- | --- | --- |
