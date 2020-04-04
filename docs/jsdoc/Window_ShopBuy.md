@@ -5,7 +5,7 @@
 ### new Window_ShopBuy (x, y, height, shopGoods)
 [ショップの処理]で購入商品の選択に使われるウィンドウ。
 
-関連クラス: [Scene_Shop](Scene_Shop.md), [Window_ShopNumber](Window_ShopNumber.md), [Window_ShopStatus](Window_ShopStatus.md)
+関連クラス: [Scene_Shop](Scene_Shop.md), [Window_ShopNumber](Window_ShopNumber.md), [Window_ShopStatus](Window_ShopStatus.md), [Window_Help](Window_Help.md)
 
 
 #### Parameters:
