@@ -259,17 +259,17 @@
 
 ### Methods
 
-#### addCommand (name, symbol, enabled, ext)
+#### addCommand (name, symbol, enabled opt, ext opt)
 コマンド項目を追加。 
 
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
-| `name` | [String](String.md) | 表示名 |
-| `symbol` | [String](String.md) | シンボル |
-| `enabled` | Boolean | 選択可能か |
-| `ext` | * | 追加情報 |
+| Name | Type | Attributes | Description |
+| --- | --- | --- | --- |
+| `name` | [String](String.md) | | 表示名 |
+| `symbol` | [String](String.md) | | シンボル |
+| `enabled` | Boolean | &lt;optional&gt;| 選択可能か |
+| `ext` | * | &lt;optional&gt; | 追加情報 |
 
 
 #### callOkHandler ()
