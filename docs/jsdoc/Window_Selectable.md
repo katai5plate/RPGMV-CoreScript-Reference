@@ -479,7 +479,7 @@ OKが起動されたか。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `triggered` | Boolean |  |
+| `triggered` | Boolean | タッチされた瞬間か |
 
 
 #### playBuzzerSound ()
@@ -567,7 +567,7 @@ OKの処理。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `index` | [Number](Number.md) | 項目番号 |
+| `index` | [Number](Number.md) | 項目番号(0から開始) |
 
 
 #### setBottomRow (row)
@@ -617,17 +617,17 @@ OKの処理。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `helpWindow` | [Window_Help](Window_Help.html) | ヘルプウィンドウ |
+| `helpWindow` | [Window_Help](Window_Help.md) | ヘルプウィンドウ |
 
 
 #### setHelpWindowItem (item)
-ヘルプウィンドウの項目を設定。
+指定項目をヘルプウィンドウに表示。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `item` | * | 設定する項目 |
+| `item` | [RPG.BaseItem](RPG.BaseItem.md) \| [String](String.md) | 設定する項目 |
 
 
 #### setTopRow (row)
