@@ -187,8 +187,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
+| `x` | [Number](Number.md) | タイル数 |
+| `y` | [Number](Number.md) | タイル数 |
 
 
 #### centerX () → {[Number](Number.md)}
@@ -206,7 +206,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `triggers` | [Array](Array.md).<[Number](Number.md)> |  |
+| `triggers` | [Array](Array.md).&lt;[Number](Number.md)&gt; |  |
 
 
 #### checkEventTriggerThere (triggers)
@@ -216,7 +216,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `triggers` | [Array](Array.md).<[Number](Number.md)> |  |
+| `triggers` | [Array](Array.md).&lt;[Number](Number.md)&gt; |  |
 
 
 #### checkEventTriggerTouch (x, y) → {Boolean}
@@ -298,8 +298,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
+| `x` | [Number](Number.md) | タイル数 |
+| `y` | [Number](Number.md) | タイル数 |
 
 
 #### increaseSteps ()
@@ -379,21 +379,13 @@ Overrides: [Game_CharacterBase](Game_CharacterBase.md#locate-x-y)
 
 
 #### meetsEncounterConditions (encounter) → {Boolean}
+※ この用語の意味が分かったら教えてください
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `encounter` | [RPG.Map.Encounter](RPG.Map.Encounter.md) |  |
-
-<dl>
-	<dt>To Do:</dt>
-	<dd>
-		<ul>
-			<li>この用語の意味が分かったら教えてください</li>
-		</ul>
-	</dd>
-</dl>
 
 
 #### moveByInput ()
@@ -434,8 +426,8 @@ Overrides: [Game_CharacterBase](Game_CharacterBase.md#movestraight-d)
 | `mapId` | [Number](Number.md) |  |  |
 | `x` | [Number](Number.md) |  |  タイル数 |
 | `y` | [Number](Number.md) |  |  タイル数 |
-| `d` | [Number](Number.md) | <optional> |  向き(テンキー対応) |
-| `fadeType` | [Number](Number.md) | <optional> |  |
+| `d` | [Number](Number.md) | &lt;optional&gt; |  向き(テンキー対応) |
+| `fadeType` | [Number](Number.md) | &lt;optional&gt; |  |
 
 
 #### showFollowers ()
@@ -451,7 +443,7 @@ Overrides: [Game_CharacterBase](Game_CharacterBase.md#movestraight-d)
 | --- | --- | --- |
 | `x` | [Number](Number.md) |  タイル数 |
 | `y` | [Number](Number.md) |  タイル数 |
-| `triggers` | [Array](Array.md).<[Number](Number.md)> |  |
+| `triggers` | [Array](Array.md).&lt;[Number](Number.md)&gt; |  |
 | `normal` | Boolean |  |
 
 
@@ -468,6 +460,7 @@ Overrides: [Game_CharacterBase](Game_CharacterBase.md#movestraight-d)
 
 
 #### triggerTouchActionD1 (x1, y1) → {Boolean}
+※ この用語の意味が分かったら教えてください
 
 ##### Parameters:
 
@@ -476,17 +469,9 @@ Overrides: [Game_CharacterBase](Game_CharacterBase.md#movestraight-d)
 | `x1` | [Number](Number.md) |  |
 | `y1` | [Number](Number.md) |  |
 
-<dl>
-	<dt>To Do:</dt>
-	<dd>
-		<ul>
-			<li>この用語の意味が分かったら教えてください</li>
-		</ul>
-	</dd>
-</dl>
-
 
 #### triggerTouchActionD2 (x2, y2) → {Boolean}
+※ この用語の意味が分かったら教えてください
 
 ##### Parameters:
 
@@ -495,17 +480,10 @@ Overrides: [Game_CharacterBase](Game_CharacterBase.md#movestraight-d)
 | `x2` | [Number](Number.md) |  |
 | `y2` | [Number](Number.md) |  |
 
-<dl>
-	<dt>To Do:</dt>
-	<dd>
-		<ul>
-			<li>この用語の意味が分かったら教えてください</li>
-		</ul>
-	</dd>
-</dl>
 
 
 #### triggerTouchActionD3 (x2, y2) → {Boolean}
+※ この用語の意味が分かったら教えてください
 
 ##### Parameters:
 
@@ -513,15 +491,6 @@ Overrides: [Game_CharacterBase](Game_CharacterBase.md#movestraight-d)
 | --- | --- | --- |
 | `x2` | [Number](Number.md) |  |
 | `y2` | [Number](Number.md) |  |
-
-<dl>
-	<dt>To Do:</dt>
-	<dd>
-		<ul>
-			<li>この用語の意味が分かったら教えてください</li>
-		</ul>
-	</dd>
-</dl>
 
 
 #### update ()
