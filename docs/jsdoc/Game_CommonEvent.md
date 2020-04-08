@@ -6,7 +6,7 @@
 | --- | --- |
 | [コモンイベント] | [RPG.CommonEvent](RPG.CommonEvent.md) |
 
-関連クラス: [Game_Interpreter](Game_Interpreter.md)、[Game_Map](Game_Map.md)
+関連クラス: [Game_Map](Game_Map.md)
 
 
 ### Properties:

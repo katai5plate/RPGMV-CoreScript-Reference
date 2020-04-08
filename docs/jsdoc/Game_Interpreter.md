@@ -11,7 +11,11 @@ commandXXX(XXXは数字)というメソッドはイベントコマンドに対�
 
 イベントコマンドの[スクリプト]を実行する際は、このオブジェクトのインスタンスが this になるので、少々乱暴だが拡張コマンドをメソッドとして追加すると便利。
 
-関連クラス: [RPG.EventCommand](RPG.EventCommand.md), [Game_Event](Game_Event.md), [Game_CommonEvent](Game_CommonEvent.md), [Game_Troop](Game_Troop.md), [Game_Character](Game_Character.md)
+実行箇所や [[トリガー]](RPG.EventPage.md#トリガー) が[並列実行]であるかによって、Game_Interpreter を保持しているオブジェクトは次の異なったものがある。<br />
+[Game_Troop](Game_Troop.md)、[Game_Map](Game_Map.md)、[Game_CommonEvent](Game_CommonEvent.md)、[Game_Event](Game_Event.md)、[Game_Interpreter](Game_Interpreter.md)
+
+関連クラス: [RPG.EventPage](RPG.EventPage.md), [Game_Character](Game_Character.md), [Game_Message](Game_Message.md), [ImageManager](ImageManager.md)
+
 
 #### Parameters:
 
@@ -35,11 +39,25 @@ commandXXX(XXXは数字)というメソッドはイベントコマンドに対�
 | `_list` | [Array](Array.md).&lt;[RPG.EventCommand](RPG.EventCommand.md)&gt; | コマンドのリスト |
 | `_index` | [Number](Number.md) | 現在処理中のコマンドのインデックス |
 | `_waitCount` | [Number](Number.md) | [ウェイト]用のカウンタ |
-| `_waitMode` | [String](String.md) | 待っている処理の種類 |
+| `_waitMode` | [String](String.md) | [ウエイトモード](Game_Interpreter#ウエイトモード) |
 | `_comments` | [Array](Array.md) | コメント行の一時保存 |
 | `_character` | [Game_Event](Game_Event.md) | コマンド対象イベント |
 | `_childInterpreter` | [Game_Interpreter](Game_Interpreter.md) | 子インタプリタ |
 
+#### ウエイトモード
+
+| waitMode | Description |
+| --- | ---|
+| 'message' | メッセージが終わるまで待つ |
+| 'transfer' | 遷移効果が終わるまで待つ |
+| 'scroll' | スクロールが終わるまで待つ |
+| 'route' | 移動が終わるまで待つ |
+| 'animation' | アニメーションが終わるまで待つ |
+| 'balloon' | フキダシが終わるまで待つ |
+| 'gather' | フォロワーの集合が終わるまで待つ |
+| 'action' | アクションが終わるまで待つ |
+| 'video' | 動画が終わるまで待つ |
+| 'image' | 画像表示が終わるまで待つ |
 
 ### Methods
 
@@ -758,26 +776,13 @@ See: [command117](Game_Interpreter.md#command117---boolean)
 
 
 #### setWaitMode (waitMode)
-待ち対象を設定。
+ウエイトモードを設定。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `waitMode` | [String](String.md) | 待ち対象の種類 |
-
-| waitMode | Description |
-| --- | ---|
-| 'message' | メッセージが終わるまで待つ |
-| 'transfer' | 遷移効果が終わるまで待つ |
-| 'scroll' | スクロールが終わるまで待つ |
-| 'route' | 移動が終わるまで待つ |
-| 'animation' | アニメーションが終わるまで待つ |
-| 'balloon' | フキダシが終わるまで待つ |
-| 'gather' | フォロワーの集合が終わるまで待つ |
-| 'action' | アクションが終わるまで待つ |
-| 'video' | 動画が終わるまで待つ |
-| 'image' | 画像表示が終わるまで待つ |
+| `waitMode` | [String](String.md) | [ウエイトモード](Game_Interpreter#ウエイトモード) |
 
 
 #### skipBranch ()
@@ -804,7 +809,7 @@ See: [command117](Game_Interpreter.md#command117---boolean)
 
 
 #### updateWaitMode () → {Boolean}
-待ち対象をアップデート
+[ウエイトモード](Game_Interpreter#ウエイトモード)をアップデート
 
 
 #### videoFileExt () → {[String](String.md)}
