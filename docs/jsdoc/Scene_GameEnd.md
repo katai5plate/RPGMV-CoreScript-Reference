@@ -3,7 +3,7 @@
 ## Extends: [Scene_MenuBase](Scene_MenuBase.md)
 
 ### new Scene_GameEnd ()
-The scene class of the game end screen.
+[ゲーム終了]のシーン。
 
 関連シーン: [Scene_Menu](Scene_Menu.md)
 

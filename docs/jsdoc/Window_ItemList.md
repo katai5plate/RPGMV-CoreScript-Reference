@@ -29,8 +29,18 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_category` | [String](String.md) | カテゴリ( 'none', 'item', 'weapon', 'armor', 'keyItem' ) |
+| `_category` | [String](String.md) | [アイテムカテゴリ](Window_ItemList.md#アイテムカテゴリ) |
 | `_data` | [Array](Array.md).&lt;[RPG.BaseItem](RPG.BaseItem.md)&gt; | アイテムの配列 |
+
+#### アイテムカテゴリ
+
+| 値 | 説明 |
+| --- | --- |
+| 'none' | なし |
+| 'item' | [アイテム]
+| 'weapon' | [武器] |
+| 'armor' | [防具] |
+| 'keyItem' | [大事なもの] |
 
 
 ### Inherited From

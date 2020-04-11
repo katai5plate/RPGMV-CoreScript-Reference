@@ -3,7 +3,7 @@
 ## Extends: [Window_Command](Window_Command.md)
 
 ### new Window_MenuCommand (x, y)
-メニューコマンド( [アイテム][スキル][装備][ステータス][オプション][セーブ][ゲーム終了] )のウィンドウ。
+メニューコマンド( [アイテム][スキル][装備][ステータス][並び替え][オプション][セーブ][ゲーム終了] )のウィンドウ。
 
 関連クラス: [Scene_Menu](Scene_Menu.md), [Window_MenuStatus](Window_MenuStatus.md), [Window_Gold](Window_Gold.md)
 

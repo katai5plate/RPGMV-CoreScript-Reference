@@ -5,7 +5,7 @@
 ### new Window_TitleCommand ()
 タイトル画面に表示されるコマンドウィンドウ。
 
-関連クラス: [Scene_Title](Scene_Title.md)
+関連クラス: [Scene_Title](Scene_Title.md), [Window_Options](Window_Options.md)
 
 ### Properties:
 

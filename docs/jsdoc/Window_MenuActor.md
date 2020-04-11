@@ -3,9 +3,9 @@
 ## Extends: [Window_MenuStatus](Window_MenuStatus.md)
 
 ### new Window_MenuActor ()
-アイテムやスキルの使用対象としてアクターを選択するウィンドウ。
+[アイテム][スキル][装備][ステータス] メニューで、アクターを選択するのに使われるウィンドウ。
 
-関連クラス: [Scene_ItemBase](Scene_ItemBase.md), [Scene_Item](Scene_Item.md), [Scene_Skill](Scene_Skill.md)
+関連クラス: [Scene_ItemBase](Scene_ItemBase.md), [Scene_Item](Scene_Item.md), [Scene_Skill](Scene_Skill.md), [Scene_Equip](Scene_Equip.md), [Scene_Status](Scene_Status.md)
 
 ### Inherited From
 

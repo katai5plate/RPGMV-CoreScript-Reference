@@ -5,7 +5,7 @@
 ### new Window_Options ()
 [オプション]コマンド( [常時ダッシュ][コマンド記憶][BGM 音量][BGS 音量][ME 音量][SE 音量] )のウィンドウ。
 
-関連クラス: [Scene_Options](Scene_Options.md)
+関連クラス: [Scene_Options](Scene_Options.md), [Window_TitleCommand](Window_TitleCommand.md), [Window_MenuCommand](Window_MenuCommand.md)
 
 ### Inherited From
 

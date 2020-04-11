@@ -3,7 +3,7 @@
 ## Extends: [Window_HorzCommand](Window_HorzCommand.md)
 
 ### new Window_ItemCategory ()
-[アイテム]や[ショップの処理]で水平に並ぶコマンド( [購入する][売却する][やめる] )のウィンドウ。
+[アイテム]や、[ショップの処理]の[売却]で水平に並ぶコマンド( [アイテム][武器][防具][大事なもの] )のウィンドウ。
 
 関連クラス: [Scene_Item](Scene_Item.md), [Scene_Shop](Scene_Shop.md)
 

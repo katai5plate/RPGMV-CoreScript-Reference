@@ -24,8 +24,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_formationMode` | Boolean |  |
-| `_pendingIndex` | [Number](Number.md) |  |
+| `_formationMode` | Boolean | [並び替え]モードか |
+| `_pendingIndex` | [Number](Number.md) | 待ち番号 |
 
 
 ### Inherited From
