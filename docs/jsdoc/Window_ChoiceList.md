@@ -242,7 +242,7 @@
 
 #### [Window_Command](Window_Command.md)
 
-* [addCommand (name, symbol, enabled, ext)](Window_Command.md#addcommand-name-symbol-enabled-ext)
+* [addCommand (name, symbol, enabled, ext)](Window_Command.md#addcommand-name-symbol-enabled-opt-ext-opt)
 * [commandName (index)](Window_Command.md#commandname-index--string)
 * [commandSymbol (index)](Window_Command.md#commandsymbol-index--string)
 * [currentData ()](Window_Command.md#currentdata---object)
