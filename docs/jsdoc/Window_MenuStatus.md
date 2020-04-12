@@ -3,9 +3,10 @@
 ## Extends: [Window_Selectable](Window_Selectable.md)
 
 ### new Window_MenuStatus (x, y)
-メニューでパーティメンバーのステータスを表示するウィンドウ。
+メニューでパーティメンバーのステータスを表示するウィンドウ。<br />
+[スキル][装備][ステータス]のアクター選択に使われ、[並べ替え]にも使われる。
 
-関連クラス: [Scene_Menu](Scene_Menu.md), [Window_MenuCommand](Window_MenuCommand.md), [Window_Gold](Window_Gold.md)
+関連クラス: [Scene_Menu](Scene_Menu.md), [Window_MenuCommand](Window_MenuCommand.md)
 
 #### Parameters:
 
