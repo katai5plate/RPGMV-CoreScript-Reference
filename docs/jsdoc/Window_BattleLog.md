@@ -7,6 +7,8 @@
 
 このウィンドウのメソッドの多くは、[push()](Window_BattleLog.md#push-methodname-args) によって _methods プロパティに保存され順次実行される。
 
+メッセージの表示だけではなく、サイドビューのアクションなども処理する、マネージャ的な役割も持っている。
+
 関連クラス: [Scene_Battle](Scene_Battle.md), [RPG.State](RPG.State.md), [Game_ActionResult](Game_ActionResult.md)
 
 
@@ -18,9 +20,16 @@
 | `_lines` | [Array](Array.md).&lt;[String](String.md)&gt; | 行の配列 |
 | `_methods` | [Array](Array.md).&lt;[MV.BattleLogMethod](MV.BattleLogMethod.md)&gt; | メソッドの配列 |
 | `_waitCount` | [Number](Number.md) | 待ち時間 |
-| `_waitMode` | [String](String.md) | 待機状態( 'effect', 'movement' ) |
-| `_baseLineStack` | [Array](Array.md).&lt;[Number](Number.md)&gt; | ベースラインのスタック |
+| `_waitMode` | [String](String.md) | [待機状態](Window_BattleLog.md#待機状態) |
+| `_baseLineStack` | [Array](Array.md).&lt;[Number](Number.md)&gt; | 区切り行数のスタック |
 | `_spriteset` | [Spriteset_Battle](Spriteset_Battle.md) | 戦闘スプライトセット |
+
+#### 待機状態
+
+| Name | Description |
+| --- | --- |
+| 'effect' | エフェクト |
+| 'movement' | 移動 |
 
 
 ### Inherited From
@@ -80,10 +89,10 @@
 * [contentsWidth ()](Window_Base.md#contentswidth---number)
 * [convertEscapeCharacters (text)](Window_Base.md#convertescapecharacters-text--string)
 * [createContents ()](Window_Base.md#createcontents-)
-* [crisisColor ()](Window_Base.md#crisiscolor---string)
-* [deathColor ()](Window_Base.md#deathcolor---string)
-* [dimColor1 ()](Window_Base.md#dimcolor1---string)
-* [dimColor2 ()](Window_Base.md#dimcolor2---string)
+* [crisisColor ()](Window_Base.md#crisiscolor---mvcsscolor)
+* [deathColor ()](Window_Base.md#deathcolor---mvcsscolor)
+* [dimColor1 ()](Window_Base.md#dimcolor1---mvcsscolor)
+* [dimColor2 ()](Window_Base.md#dimcolor2---mvcsscolor)
 * [drawActorCharacter (actor, x, y)](Window_Base.md#drawactorcharacter-actor-x-y)
 * [drawActorClass (actor, x, y, width)](Window_Base.md#drawactorclass-actor-x-y-width)
 * [drawActorFace (actor, x, y, width, height)](Window_Base.md#drawactorface-actor-x-y-width-height)
@@ -105,31 +114,31 @@
 * [drawText (text, x, y, maxWidth, align)](Window_Base.md#drawtext-text-x-y-maxwidth-align)
 * [drawTextEx (text, x, y)](Window_Base.md#drawtextex-text-x-y--number)
 * [fittingHeight (numLines)](Window_Base.md#fittingheight-numlines--number)
-* [gaugeBackColor ()](Window_Base.md#gaugebackcolor---string)
+* [gaugeBackColor ()](Window_Base.md#gaugebackcolor---mvcsscolor)
 * [hide ()](Window_Base.md#hide-)
 * [hideBackgroundDimmer ()](Window_Base.md#hidebackgrounddimmer-)
-* [hpColor (actor)](Window_Base.md#hpcolor-actor--string)
-* [hpGaugeColor1 ()](Window_Base.md#hpgaugecolor1---string)
-* [hpGaugeColor2 ()](Window_Base.md#hpgaugecolor2---string)
+* [hpColor (actor)](Window_Base.md#hpcolor-actor--mvcsscolor)
+* [hpGaugeColor1 ()](Window_Base.md#hpgaugecolor1---mvcsscolor)
+* [hpGaugeColor2 ()](Window_Base.md#hpgaugecolor2---mvcsscolor)
 * [isClosing ()](Window_Base.md#isclosing---boolean)
 * [isOpening ()](Window_Base.md#isopening---boolean)
 * [lineHeight ()](Window_Base.md#lineheight---number)
 * [loadWindowskin ()](Window_Base.md#loadwindowskin-)
 * [makeFontBigger ()](Window_Base.md#makefontbigger-)
 * [makeFontSmaller ()](Window_Base.md#makefontsmaller-)
-* [mpColor (actor)](Window_Base.md#mpcolor-actor--string)
-* [mpCostColor ()](Window_Base.md#mpcostcolor---string)
-* [mpGaugeColor1 ()](Window_Base.md#mpgaugecolor1---string)
-* [mpGaugeColor2 ()](Window_Base.md#mpgaugecolor2---string)
-* [normalColor ()](Window_Base.md#normalcolor---string)
+* [mpColor (actor)](Window_Base.md#mpcolor-actor--mvcsscolor)
+* [mpCostColor ()](Window_Base.md#mpcostcolor---mvcsscolor)
+* [mpGaugeColor1 ()](Window_Base.md#mpgaugecolor1---mvcsscolor)
+* [mpGaugeColor2 ()](Window_Base.md#mpgaugecolor2---mvcsscolor)
+* [normalColor ()](Window_Base.md#normalcolor---mvcsscolor)
 * [obtainEscapeCode (textState)](Window_Base.md#obtainescapecode-textstate)
 * [obtainEscapeParam (textState)](Window_Base.md#obtainescapeparam-textstate--numberstring)
 * [open ()](Window_Base.md#open-)
-* [paramchangeTextColor (change)](Window_Base.md#paramchangetextcolor-change--string)
+* [paramchangeTextColor (change)](Window_Base.md#paramchangetextcolor-change--mvcsscolor)
 * [partyMemberName (partyMemberIndex)](Window_Base.md#partymembername-partymemberindex--string)
-* [pendingColor ()](Window_Base.md#pendingcolor---string)
-* [powerDownColor ()](Window_Base.md#powerdowncolor---string)
-* [powerUpColor ()](Window_Base.md#powerupcolor---string)
+* [pendingColor ()](Window_Base.md#pendingcolor---mvcsscolor)
+* [powerDownColor ()](Window_Base.md#powerdowncolor---mvcsscolor)
+* [powerUpColor ()](Window_Base.md#powerupcolor---mvcsscolor)
 * [processCharacter (textState)](Window_Base.md#processcharacter-textstate)
 * [processDrawIcon (iconIndex, textState)](Window_Base.md#processdrawicon-iconindex-textstate)
 * [processEscapeCharacter (code, textState)](Window_Base.md#processescapecharacter-code-textstate)
@@ -147,14 +156,14 @@
 * [standardFontFace ()](Window_Base.md#standardfontface---string)
 * [standardFontSize ()](Window_Base.md#standardfontsize---number)
 * [standardPadding ()](Window_Base.md#standardpadding---number)
-* [systemColor ()](Window_Base.md#systemcolor---string)
-* [textColor (n)](Window_Base.md#textcolor-n--string)
+* [systemColor ()](Window_Base.md#systemcolor---mvcsscolor)
+* [textColor (n)](Window_Base.md#textcolor-n--mvcsscolor)
 * [textPadding ()](Window_Base.md#textpadding---number)
 * [textWidth (text)](Window_Base.md#textwidth-text--number)
-* [tpColor (actor)](Window_Base.md#tpcolor-actor--string)
-* [tpCostColor ()](Window_Base.md#tpcostcolor---string)
-* [tpGaugeColor1 ()](Window_Base.md#tpgaugecolor1---string)
-* [tpGaugeColor2 ()](Window_Base.md#tpgaugecolor2---string)
+* [tpColor (actor)](Window_Base.md#tpcolor-actor--mvcsscolor)
+* [tpCostColor ()](Window_Base.md#tpcostcolor---mvcsscolor)
+* [tpGaugeColor1 ()](Window_Base.md#tpgaugecolor1---mvcsscolor)
+* [tpGaugeColor2 ()](Window_Base.md#tpgaugecolor2---mvcsscolor)
 * [translucentOpacity ()](Window_Base.md#translucentopacity---number)
 * [updateBackgroundDimmer ()](Window_Base.md#updatebackgrounddimmer-)
 * [updateBackOpacity ()](Window_Base.md#updatebackopacity-)
@@ -268,7 +277,7 @@ See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 次のアニメーションまでの遅延時間( 規定値: 12フレーム )を返す。
 
 
-#### backColor () → {[String](String.md)}
+#### backColor () → {[MV.CssColor](MV.CssColor.md)}
 背景色( 規定値: '#000000' )を返す。
 
 
@@ -286,7 +295,7 @@ See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 
 #### clear ()
-表示を消去。<br />
+表示を消去。区切り行数の記録も消去。<br />
 See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 
@@ -714,7 +723,7 @@ See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 
 #### popBaseLine ()
-規定線を取り出す。<br />
+記録した区切り行数に戻る。<br />
 See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 
@@ -742,7 +751,7 @@ See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 
 #### pushBaseLine ()
-規定線を追加。<br />
+区切り行数を記録。<br />
 See: [MV.BattleLogMethod](MV.BattleLogMethod.md)
 
 

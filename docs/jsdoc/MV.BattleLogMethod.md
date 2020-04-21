@@ -1,7 +1,7 @@
 # Class: [MV](MV.md).BattleLogMethod
 
 ## Type: Object
-戦闘ログ( [Window_BattleLog](Window_BattleLog.md) )のメソッドを、後から呼ぶために貯めておくパラメータ。
+[Window_BattleLog](Window_BattleLog.md) のメソッドを、後から呼ぶために貯めておくパラメータ。
 
 関連クラス: [TextManager](TextManager.md)
 
@@ -15,6 +15,10 @@
 
 
 #### メソッド名
+BaseLine は表示の区切り行数で、連続してダメージを与えた場合など、一旦表示した後その行数まで戻す処理で使う。<br />
+なお、popBaseLine で記録上の行は戻るが、次に行が表示されるまで表示は消えない。
+
+行数は
 
 | Method | Description | param1 | param2 | param3 |
 | --- | --- | --- | --- | --- |
@@ -32,9 +36,9 @@
 | [performRecovery](Window_BattleLog.md#performrecovery-target) | 回復を適用 | [Game_Battler](Game_Battler.md) |
 | [performReflection](Window_BattleLog.md#performreflection-target) | 反射を適用 | [Game_Battler](Game_Battler.md) |
 | [performSubstitute](Window_BattleLog.md#performsubstitute-target) | [かばう]行動を適用 | [Game_Battler](Game_Battler.md) |
-| [popBaseLine](Window_BattleLog.md#popbaseline-) | 規定線を取り出す |
+| [popBaseLine](Window_BattleLog.md#popbaseline-) | 記録した区切り行数に戻る |
 | [popupDamage](Window_BattleLog.md#popupdamage-target) | ダメージを表示 | [Game_Battler](Game_Battler.md) |
-| [pushBaseLine](Window_BattleLog.md#pushbaseline-) | 規定線を追加 |
+| [pushBaseLine](Window_BattleLog.md#pushbaseline-) | 区切り行数を記録 |
 | [showAnimation](Window_BattleLog.md#showanimation-subject-targets-animationid) | アニメを表示 | [Game_Battler](Game_Battler.md) | [Array](Array.md).&lt;[Game_Battler](Game_Battler.md)&gt; | [Number](Number.md) |
 | [wait](Window_BattleLog.md#wait-) | 待つ |
 | [waitForEffect](Window_BattleLog.md#waitforeffect-) | エフェクトを待つ |
