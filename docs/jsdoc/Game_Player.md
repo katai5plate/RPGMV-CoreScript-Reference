@@ -181,7 +181,7 @@
 
 
 #### center (x, y)
- 画面中心を基準にマップを表示。 [Game_Map#setDisplayPos](Game_Map.html#setDisplayPos) は左上を基準とする。
+ 画面中心を基準にマップを表示。 [Game_Map.setDisplayPos()](Game_Map.md#setDisplayPos-x-y) は左上を基準とする。
 
 ##### Parameters:
 
@@ -220,17 +220,7 @@
 
 
 #### checkEventTriggerTouch (x, y) → {Boolean}
- 指定位置にあるイベントトリガを起動。
-
-##### Overrides:
-[Game_CharacterBase#checkEventTriggerTouch (x, y)](Game_CharacterBase.md#checkeventtriggertouch-x-y--boolean)
-
-##### Parameters:
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
+Overrides: [Game_CharacterBase](Game_CharacterBase.md#checkeventtriggertouch-x-y--boolean)
 
 
 #### clearTransferInfo ()
