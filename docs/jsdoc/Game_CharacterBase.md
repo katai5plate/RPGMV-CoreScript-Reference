@@ -114,8 +114,8 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `x` | [Number](Number.md) |  タイル数 |
-| `y` | [Number](Number.md) |  タイル数 |
+| `x` | [Number](Number.md) | x座標(タイル数) |
+| `y` | [Number](Number.md) | y座標(タイル数) |
 
 
 #### checkEventTriggerTouchFront (d)
