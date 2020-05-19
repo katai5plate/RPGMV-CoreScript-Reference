@@ -251,16 +251,17 @@ y座標2点間のタイル距離を(ループも考慮して)返す。
  マップ表示のY座標(タイル数)を返す。
 
 
-#### distance (x1, x2, y1, y2) → {[Number](Number.md)}
-2点間の距離を返す。
+#### distance (x1, y1, x2, y2) → {[Number](Number.md)}
+2点間の距離を返す。<br />
+直線距離ではなく、4方向移動でかかるタイル数。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `x1` | [Number](Number.md) | x位置(タイル数) |
-| `x2` | [Number](Number.md) | x位置(タイル数) |
 | `y1` | [Number](Number.md) | y位置(タイル数) |
+| `x2` | [Number](Number.md) | x位置(タイル数) |
 | `y2` | [Number](Number.md) | y位置(タイル数) |
 
 
