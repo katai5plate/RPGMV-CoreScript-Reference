@@ -6,7 +6,7 @@ JSONファイルを扱う静的ビルトインクラス [JSON](https://developer
 
 Namespace [RPG](RPG.md) に分類しているのがJSONデータ。
 
-関連クラス: [PluginManager](PluginManager.md), [DataManager](DataManager.md)
+関連クラス: [PluginManager](PluginManager.md), [MV.PluginSettings](MV.PluginSettings.md), [DataManager](DataManager.md)
 
 ### Properties:
 
@@ -108,7 +108,8 @@ IDを生成して返す。
 
 
 #### (static) parse (json) → {Object}
-JSON文字列をオブジェクトに変換して返す。
+JSON文字列をオブジェクトに変換して返す。<br />
+正確にはJSON文字列でない、配列なども変換する。
 
 ##### Parameters:
 
