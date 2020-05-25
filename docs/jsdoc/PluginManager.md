@@ -41,7 +41,8 @@
 
 
 #### (static) parameters (name) → {Object}
-指定プラグイン名に対応するパラメータをオブジェクトで返す。 詳細は本体ヘルプの「プラグイン仕様」の項目を参照。
+指定プラグイン名に対応するパラメータをオブジェクトで返す。<br />
+返り値の内容は [MV.PluginSettings](MV.PluginSettings.md) の項目を参照。
 
 ##### Parameters:
 
