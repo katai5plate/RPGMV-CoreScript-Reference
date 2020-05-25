@@ -17,7 +17,7 @@
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `_data` | [Array](Array.md).&lt;[Number](Number.md)&gt; | 値の配列( [RPG.Damage](RPG.Damage.md) の[計算式] の v ) |
+| `_data` | [Array](Array.md).&lt;[Number](Number.md)&gt; | 変数の内容の配列 |
 
 
 ### Methods
