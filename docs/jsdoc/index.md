@@ -9,14 +9,19 @@
 * [ファイル](index.md#ファイル)
 * [音声](index.md#音声)
 
+### オプジェクト構造データ
 
-データベース(JSON)
+* [Objects](index.md#Objects) 
+* [Arrays](index.md#Arrays) 
+* [Strings](index.md#Strings) 
+
+### データベース(JSON)
 
 * [イベントコマンド](index.md#イベントコマンド)
 *  [メモつきデータ(MetaData)](index.md#メモつきデータmetadata)
 * [その他データベース](index.md#その他データベース)
 
-オブジェクト
+### オブジェクト
 
 * [システム](index.md#システム)
 * [スイッチ・変数](index.md#スイッチ変数)
@@ -24,7 +29,7 @@
 * [バトルキャラクタ](index.md#バトルキャラクタ)
 * [その他オブジェクト](index.md#その他オブジェクト)
 
-画像
+### 画像
 
 * [コア機能](index.md#コア機能)
 * [レンダラ](index.md#レンダラ)
@@ -32,14 +37,17 @@
 * [コンテナ(PIXI.Container)](index.md#コンテナpixicontainer)
 	* [スプライト(Sprite)](index.md#スプライトsprite)
 	* [シーン(Scene_Base)](index.md#シーンscene_base)
-	* [ウィンドウ(Window_Base)](index.md#ウィンドウwindow_base)
-		* [選択ウィンドウ(Window_Selectable)](index.md#選択ウィンドウwindow_selectable)
-			* [コマンドウィンドウ(Window_Command)](index.md#コマンドウィンドウwindow_command)
+
+### ウィンドウ
+
+* [ウィンドウ(Window_Base)](index.md#ウィンドウwindow_base)
+	* [選択ウィンドウ(Window_Selectable)](index.md#選択ウィンドウwindow_selectable)
+		* [コマンドウィンドウ(Window_Command)](index.md#コマンドウィンドウwindow_command)
 
 ※ 以下で表われる「→ Extends」は継承先へのリンク。
 
 
-### JavaScript拡張
+## JavaScript拡張
 
 * [Array](Array.md)
 * [Math](Math.md)
@@ -47,34 +55,34 @@
 * [String](String.md)
 
 
-### マネージャ
+## マネージャ
 
 * [AudioManager](AudioManager.md)
 * [BattleManager](BattleManager.md)
 * [ConfigManager](ConfigManager.md)
 * [DataManager](DataManager.md)
 * [ImageManager](ImageManager.md)
-* [PluginManager](PluginManager.md)
+* [PluginManager](PluginManager.md) ([プラグインファイルの設定](MV.PluginSettings.md#プラグインファイルの設定))
 * [SceneManager](SceneManager.md)
 * [SoundManager](SoundManager.md)
 * [StorageManager](StorageManager.md)
 * [TextManager](TextManager.md)
 
 
-### ユーティリティ
+## ユーティリティ
 
 * [JsonEx](JsonEx.md)
 * [ResourceHandler](ResourceHandler.md)
 * [Utils](Utils.md)
 
 
-### 入力
+## 入力
 
 * [Input](Input.md)
 * [TouchInput](TouchInput.md)
 
 
-### ファイル
+## ファイル
 
 * [CacheEntry](CacheEntry.md)
 * [CacheMap](CacheMap.md)
@@ -83,15 +91,47 @@
 * [Decrypter](Decrypter.md)
 
 
-### 音声
+## 音声
 
 * [WebAudio](WebAudio.md)
 * [Html5Audio](Html5Audio.md)
 
 
-### データベース(JSON)
+## オブジェクト構造データ
 
-#### イベントコマンド
+### Objects
+
+* [AudioParameters](MV.AudioParameters.md)
+* [BattleLogMethod](MV.BattleLogMethod.md)
+* [BattlerAnimation](MV.BattlerAnimation.md)
+* [BattleRewards](MV.BattleRewards.md)
+* [CommandItem](MV.CommandItem.md)
+* [ConfigData](MV.ConfigData.md)
+* [DatabaseFile](MV.DatabaseFile.md)
+* [Matrix](MV.Matrix.md)
+* [Motion](MV.Motion.md)
+* [PluginSettings](MV.PluginSettings.md)
+* [SaveContents](MV.SaveContents.md)
+* [SaveFileInfo](MV.SaveFileInfo.md)
+* [TextState](MV.TextState.md)
+* [TouchInputEvents](MV.TouchInputEvents.md)
+
+
+### Arrays
+
+* [Color](MV.Color.md)
+* [Tone](MV.Tone.md)
+
+
+### Strings
+
+* [CssColor](MV.CssColor.md)
+
+
+
+## データベース(JSON)
+
+### イベントコマンド
 
 * [BattleEventPage](RPG.BattleEventPage.md) . [Conditions](RPG.BattleEventPage.Conditions.md)
 * [CommonEvent](RPG.CommonEvent.md)([$dataCommonEvents](global.md#datacommonevents-arrayrpgcommonevent))
@@ -100,7 +140,7 @@
 * [MoveCommand](RPG.MoveCommand.md)
 * [MoveRoute](RPG.MoveRoute.md)
 
-#### メモつきデータ(MetaData)
+### メモつきデータ(MetaData)
 
 * [MetaData](RPG.MetaData.md)
 	* [Actor](RPG.Actor.md)([$dataActors](global.md#dataactors-arrayrpgactor))
@@ -118,7 +158,7 @@
 	        * [Armor](RPG.Armor.md)([$dataArmors](global.md#dataarmors-arrayrpgarmor))
 	        * [Weapon](RPG.Weapon.md)([$dataWeapons](global.md#dataweapons-arrayrpgweapon))
 
-#### その他データベース
+### その他データベース
 
 * [Animation](RPG.Animation.md)([$dataAnimations](global.md#dataanimations-arrayrpganimation)) . [Timing](RPG.Animation.Timing.md)
 * [AudioFile](RPG.AudioFile.md)
@@ -131,9 +171,9 @@
 
 
 
-### オブジェクト
+## オブジェクト
 
-#### システム
+### システム
 
 * [Game_CommonEvent](Game_CommonEvent.md)
 * [Game_Interpreter](Game_Interpreter.md)
@@ -141,13 +181,13 @@
 * [Game_Temp](Game_Temp.md)([$gameTemp](global.md#gametemp-game_temp))
 * [Game_Timer](Game_Timer.md)([$gameTimer](global.md#gametimer-game_timer))
 
-#### スイッチ・変数
+### スイッチ・変数
 
 * [Game_Switches](Game_Switches.md)([$gameSwitches](global.md#gameswitches-game_switches))
 * [Game_SelfSwitches](Game_SelfSwitches.md)([$gameSelfSwitches](global.md#gameselfswitches-game_selfswitches))
 * [Game_Variables](Game_Variables.md)([$gameVariables](global.md#gamevariables-game_variables))
 
-#### マップキャラクタ
+### マップキャラクタ
 
 * [Game_Followers](Game_Followers.md)
 * [Game_CharacterBase](Game_CharacterBase.md)
@@ -157,7 +197,7 @@
         * [Game_Event](Game_Event.md)
         * [Game_Vehicle](Game_Vehicle.md)
 
-#### バトルキャラクタ
+### バトルキャラクタ
 
 * [Game_Action](Game_Action.md)
 * [Game_ActionResult](Game_ActionResult.md)
@@ -170,7 +210,7 @@
         * [Game_Actor](Game_Actor.md)
         * [Game_Enemy](Game_Enemy.md)
 
-#### その他オブジェクト
+### その他オブジェクト
 
 * [Game_Item](Game_Item.md)
 * [Game_Map](Game_Map.md)([$gameMap](global.md#gamemap-game_map))
@@ -180,9 +220,9 @@
 
 
 
-### 画像
+## 画像
 
-#### コア機能
+### コア機能
 
 * [Bitmap](Bitmap.md)
 * [Graphics](Graphics.md)
@@ -199,7 +239,7 @@
         * [PIXI.Container](PIXI.Container.md) → [Extends](index.md#コンテナpixicontainer)
 
 
-#### レンダラ
+### レンダラ
 
 * [PIXI.WebGLManager](https://pixijs.download/release/docs/PIXI.WebGLManager.html)
     * [PIXI.ObjectRenderer](https://pixijs.download/release/docs/PIXI.ObjectRenderer.html)
@@ -212,7 +252,7 @@
 * [PIXI.tilemap.CanvasTileRenderer](https://github.com/pixijs/pixi-tilemap/blob/master/src/CanvasTileRenderer.ts)
 
 
-#### シェーダ
+### シェーダ
 
 * GLShader
     * [PIXI.Shader](http://pixijs.download/release/docs/PIXI.Shader.html)
@@ -222,7 +262,7 @@
             * [PIXI.tilemap.RectTileShader](https://github.com/pixijs/pixi-tilemap/blob/master/src/RectTileShader.ts)
 
 
-#### [コンテナ(PIXI.Container)](PIXI.Container.md)
+### [コンテナ(PIXI.Container)](PIXI.Container.md)
 
 * [ScreenSprite](ScreenSprite.md)
 * [ToneSprite](ToneSprite.md)
@@ -243,7 +283,7 @@
     * [Window_Base](Window_Base.md) → [Extends](index.md#ウィンドウwindow_base)
 
 
-#### [スプライト(Sprite)](Sprite.md)
+### [スプライト(Sprite)](Sprite.md)
 
 * [Sprite_Animation](Sprite_Animation.md)
 * [Sprite_Button](Sprite_Button.md)
@@ -265,7 +305,7 @@
         * [Sprite_Enemy](Sprite_Enemy.md)
 
 
-#### [シーン(Scene_Base)](Scene_Base.md)
+### [シーン(Scene_Base)](Scene_Base.md)
 
 * [Scene_Battle](Scene_Battle.md)
 * [Scene_Boot](Scene_Boot.md)
@@ -289,7 +329,9 @@
         * [Scene_Skill](Scene_Skill.md)
 
 
-#### [ウィンドウ(Window_Base)](Window_Base.md)
+## ウィンドウ
+
+### [ウィンドウ(Window_Base)](Window_Base.md)
 
 * [Window_EquipStatus](Window_EquipStatus.md)
 * [Window_Gold](Window_Gold.md)
@@ -303,7 +345,7 @@
 * [Window_Selectable](Window_Selectable.md) → [Extends](index.md#選択ウィンドウwindow_selectable)
 
 
-#### [選択ウィンドウ(Window_Selectable)](Window_Selectable.md)
+### [選択ウィンドウ(Window_Selectable)](Window_Selectable.md)
 
 * [Window_BattleEnemy](Window_BattleEnemy.md)
 * [Window_BattleLog](Window_BattleLog.md)
@@ -330,7 +372,7 @@
 * [Window_Command](Window_Command.md) → [Extends](index.md#コマンドウィンドウwindow_command)
 
 
-#### [コマンドウィンドウ(Window_Command)](Window_Command.md)
+### [コマンドウィンドウ(Window_Command)](Window_Command.md)
 
 * [Window_ActorCommand](Window_ActorCommand.md)
 * [Window_ChoiceList](Window_ChoiceList.md)
