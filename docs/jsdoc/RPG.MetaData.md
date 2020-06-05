@@ -2,7 +2,7 @@
  多くのデータに含まれる[メモ]のデータ。
  
  note から meta への変換は[DataManager.extractMetadata](DataManager.md#static-extractmetadata-data)メソッドで行われる。<br />
- meta プロパティに記録されたデータは、主にプラグイン用のパラメータとして使う。
+ meta プロパティに記録されたデータは、プラグイン用のパラメータとして使う。
 
 
 ### Sub Classes
