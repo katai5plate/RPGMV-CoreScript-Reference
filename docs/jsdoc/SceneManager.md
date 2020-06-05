@@ -17,10 +17,10 @@
 | `_exiting` | Boolean | [static] 抜けているか |
 | `_previousClass` | Function | [static]前のシーンなど |
 | `_backgroundBitmap` | [Bitmap](Bitmap.md) | [static] 背景画像 |
-| `_screenWidth` | [Number](Number.md) | [static] ゲーム画面の幅(ピクセル) |
-| `_screenHeight` | [Number](Number.md) | [static] ゲーム画面の高さ(ピクセル) |
-| `_boxWidth` | [Number](Number.md) | [static] UI領域の幅(ピクセル) |
-| `_boxHeight` | [Number](Number.md) | [static] UI領域の高さ(ピクセル) |
+| `_screenWidth` | [Number](Number.md) | [static] ゲーム画面の幅(ピクセル) (規定値: 816) |
+| `_screenHeight` | [Number](Number.md) | [static] ゲーム画面の高さ(ピクセル) (規定値: 624) |
+| `_boxWidth` | [Number](Number.md) | [static] UI領域の幅(ピクセル) (規定値: 816) |
+| `_boxHeight` | [Number](Number.md) | [static] UI領域の高さ(ピクセル) (規定値: 624) |
 | `_deltaTime` | [Number](Number.md) | [static] 単位時間 |
 | `_currentTime` | [Number](Number.md) | [static] 現在の時刻 |
 | `_accumulator` | [Number](Number.md) | [static] _deltaTimeまでの経過時間 |

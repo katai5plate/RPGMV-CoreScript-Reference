@@ -3,6 +3,10 @@
 
 通常の画面を中心に、ビデオ、ローディングやエラー表示、FPSメータなどの表示要素も取り扱う。
 
+ウィンドウサイズは、プロジェクト直下の package.json ファイルで決められていて、この width, heigth に合わせて再設定される。<br />
+なので package.json の値と揃えておくと、ゲーム起動時にウィンドウの大きさが変わってパタつくのを防げる。
+
+
 関連クラス: [Bitmap](Bitmap.md), [ImageManager](ImageManager.md), [SceneManager](SceneManager.md), [Game_Screen](Game_Screen.md), [Window](Window.md)
 
 
@@ -16,10 +20,10 @@ BLEND_ から始まるプロパティは PIXI.blendModes と同じ画像の[[合
 | `BLEND_MULTIPLY` | [Number](Number.md) | [static] 乗算 |
 | `BLEND_SCREEN` | [Number](Number.md) | [static] スクリーン |
 | `frameCount` | [Number](Number.md) | [static] フレームカウント |
-| `width` | [Number](Number.md) | [static] ゲーム画面の幅(ピクセル) |
-| `height` | [Number](Number.md) | [static] ゲーム画面の高さ(ピクセル) |
-| `boxWidth` | [Number](Number.md) | [static] UI領域の幅(ピクセル) |
-| `boxHeight` | [Number](Number.md) | [static] UI領域の高さ(ピクセル) |
+| `width` | [Number](Number.md) | [static] ゲーム画面の幅(ピクセル) (規定値: 816) |
+| `height` | [Number](Number.md) | [static] ゲーム画面の高さ(ピクセル) (規定値: 624) |
+| `boxWidth` | [Number](Number.md) | [static] UI領域の幅(ピクセル) (規定値: 816) |
+| `boxHeight` | [Number](Number.md) | [static] UI領域の高さ(ピクセル) (規定値: 624) |
 | `scale` | [Number](Number.md) | [static] 拡大率 |
 | `_width` | [Number](Number.md) | [static] ゲーム画面の幅(ピクセル) |
 | `_height` | [Number](Number.md) | [static] ゲーム画面の高さ(ピクセル) |
