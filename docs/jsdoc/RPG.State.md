@@ -4,7 +4,7 @@
 
 | データベース| JSONファイル | 大域変数 | スプライト |
 | --- | --- | --- | --- |
-| [ステート] | States.json | [$dataStates](global.md#datastates-arrayrpgstate)(配列) | [Sprite_StateIcon](Sprite_StateIcon) |
+| [ステート] | States.json | [$dataStates](global.md#datastates-arrayrpgstate)(配列) | [Sprite_StateIcon](Sprite_StateIcon.md) |
 
 エディタ上の利用方法については公式の [RPGツクールMV 初心者講座 ステート作成例](https://tkool.jp/mv/guide/004_007c.html) を参照。
 
