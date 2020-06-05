@@ -320,16 +320,17 @@ WebGL を持っている(ブラウザ)環境か。
 FPSメータを隠す。
 
 
-#### (static) initialize (width, height, type)
-画像機能の初期化。
+#### (static) initialize (width opt, height opt, type opt)
+画像機能の初期化。<br />
+通常 [SceneManager](SceneManager.md) の `_screenWidth`, `_screenHeight`が引数に使われるので、x:816, y:624 が初期値となる。
 
 ##### Parameters:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `width` | [Number](Number.md) | ゲーム画面の幅(ピクセル) |
-| `height` | [Number](Number.md) | ゲーム画面の高さ(ピクセル) |
-| `type` | [String](String.md) | [レンダラタイプ](Graphics.md#レンダラタイプ)  |
+| `width` | [Number](Number.md) | ゲーム画面の幅(ピクセル) (規定値:800)|
+| `height` | [Number](Number.md) | ゲーム画面の高さ(ピクセル) (規定値:600) |
+| `type` | [String](String.md) | [レンダラタイプ](Graphics.md#レンダラタイプ) (規定値:auto) |
 
 
 #### (static) isFontLoaded (name) → {Boolean}
