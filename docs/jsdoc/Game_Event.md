@@ -171,7 +171,7 @@ Overrides: [Game_Character](Game_Character.md#checkeventtriggertouch-x-y--boolea
 
 
 #### clearPageSettings ()
- イベントページの設定を削除。
+[[EVページ]](RPG.EventPage)の設定を削除。
 
 
 #### clearStartingFlag ()
@@ -244,11 +244,11 @@ Overrides: [Game_CharacterBase](Game_CharacterBase.md#isoriginalpattern---boolea
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `triggers` | [Array](Array.md).<[Number](Number.md)> | トリガーの配列 |
+| `triggers` | [Array](Array.md).<[Number](Number.md)> | [[トリガー]](RPG.EventPage.md#トリガー)の配列 |
 
 
 #### list () → {[Array](Array.md).<[RPG.EventCommand](RPG.EventCommand.md)>}
- 現在の[イベントページ]の[イベントコマンド]の配列を返す。
+ 現在の[[EVページ]](RPG.EventPage)の[イベントコマンド]の配列を返す。
 
 
 #### locate (x, y)
@@ -256,7 +256,7 @@ Overrides: [Game_CharacterBase](Game_CharacterBase.md#locate-x-y)
 
 
 #### lock ()
- ロックする。
+プレイヤーを向いて固定。
 
 
 #### meetsConditions (page) → {Boolean}
@@ -282,7 +282,7 @@ Overrides: [Game_CharacterBase](Game_CharacterBase.md#locate-x-y)
 
 
 #### page () → {[RPG.EventPage](RPG.EventPage.md)}
- 現在の[イベントページ]情報オブジェクトを返す。
+ 現在の[EVページ]情報オブジェクトを返す。
 
 
 #### refresh ()
@@ -294,15 +294,15 @@ Overrides: [Game_CharacterBase](Game_CharacterBase.md#resetpattern-)
 
 
 #### setupPage ()
- イベントページを準備。
+[[EVページ]](RPG.EventPage)を準備。
 
 
 #### setupPageSettings ()
- イベントページの設定を準備。
+[[EVページ]](RPG.EventPage)の設定を準備。
 
 
 #### start ()
-[イベント]を開始。
+[実行内容]を開始。
 
 
 #### stopCountThreshold () → {[Number](Number.md)}
@@ -310,7 +310,7 @@ Overrides: [Game_CharacterBase](Game_CharacterBase.md#resetpattern-)
 
 
 #### unlock ()
- ロックを解除。
+プレイヤーを向いて固定状態を解除。
 
 
 #### update ()
