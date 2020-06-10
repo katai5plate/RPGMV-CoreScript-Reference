@@ -47,16 +47,16 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 
 | z | Object | 内容 |
 | --- | --- | --- |
-| 0 | [Sprite](Sprite.md) | 低層タイル |
-| 1 | [Sprite_Character](Sprite_Character.md) | 低層キャラクタ |
-| 2 | | 通常タイル(未使用) |
-| 3 | [Sprite_Character](Sprite_Character.md) | 通常キャラクタ |
-| 4 | [Sprite](Sprite.md) | 高層タイル |
-| 5 | [Sprite_Character](Sprite_Character.md) | 高層キャラクタ |
-| 6 | [Sprite](Sprite.md) | 飛行船の影 |
-| 7 | [Sprite_Balloon](Sprite_Balloon.md) | フキダシ |
-| 8 | [Sprite_Animation](Sprite_Animation.md) | アニメーション |
 | 9 | [Sprite_Destination](Sprite_Destination.md) | タッチ位置表示 |
+| 8 | [Sprite_Animation](Sprite_Animation.md) | アニメーション |
+| 7 | [Sprite_Balloon](Sprite_Balloon.md) | フキダシ |
+| 6 | [Sprite](Sprite.md) | 飛行船の影 |
+| 5 | [Sprite_Character](Sprite_Character.md) | 高層キャラクタ |
+| 4 | [Sprite](Sprite.md) | 高層タイル |
+| 3 | [Sprite_Character](Sprite_Character.md) | 通常キャラクタ |
+| 2 | | 通常タイル(未使用) |
+| 1 | [Sprite_Character](Sprite_Character.md) | 低層キャラクタ |
+| 0 | [Sprite](Sprite.md) | 低層タイル |
 
 #### [合成方法]
 番号は [Graphics](Graphics.md) の静的クラス定数として定義されている。例えば Graphics.BLEND_ADD の形で使う。
