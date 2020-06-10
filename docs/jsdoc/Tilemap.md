@@ -321,20 +321,8 @@ A5(通常)のタイルか。
 #### _compareChildOrder (a, b)
 [\_sortChildren](#_sortchildren-)用ソート条件のコールバック関数。<br />
 childrenプロパティに含まれる子オブジェクトが、a, b に渡される。<br />
-順番は渡されたオブジェクトの z, y, spriteIdプロパティによって評価される。
-
-| z | Object | 内容 |
-| --- | --- | --- |
-| 0 | [Sprite](Sprite.md) | 低層タイル |
-| 1 | [Sprite_Character](Sprite_Character.md) | 低層キャラクタ |
-| 2 | | 通常タイル(未使用) |
-| 3 | [Sprite_Character](Sprite_Character.md) | 通常キャラクタ |
-| 4 | [Sprite](Sprite.md) | 高層タイル |
-| 5 | [Sprite_Character](Sprite_Character.md) | 高層キャラクタ |
-| 6 | [Sprite](Sprite.md) | 飛行船の影 |
-| 7 | [Sprite_Balloon](Sprite_Balloon.md) | 吹き出し |
-| 8 | [Sprite_Animation](Sprite_Animation.md) | アニメーション |
-| 9 | [Sprite_Destination](Sprite_Destination.md) | タッチ位置表示 |
+順番は渡されたオブジェクトの z, y, spriteIdプロパティによって評価される。<br />
+z の内容は、[重なりの優先度](Sprite.md#重なりの優先度)を参照。
 
 ##### Parameters:
 
