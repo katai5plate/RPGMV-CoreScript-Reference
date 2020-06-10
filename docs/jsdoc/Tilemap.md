@@ -44,8 +44,8 @@ TILE_ から始まる定数はタイルブロックのタイルIDの開始番号
 | `flags` | [Array](Array.md).&lt;[Number](Number.md)&gt; |  フラグ(See:[RPG.Tileset](RPG.Tileset.md)) |
 | `tileHeight` | [Number](Number.md) | タイル高さ(規定値:48 ピクセル) |
 | `tileWidth` | [Number](Number.md) | タイル幅(規定値:48 ピクセル) |
-| `height` | [Number](Number.md) | 画面高さ(ピクセル) |
-| `width` | [Number](Number.md) | 画面幅(ピクセル) |
+| `height` | [Number](Number.md) | 画面高さ(規定値:816 ピクセル) |
+| `width` | [Number](Number.md) | 画面幅(規定値:624 ピクセル) |
 | `horizontalWrap` | Boolean | 横方向にループするか |
 | `verticalWrap` | Boolean | 縦方向にループするか |
 
