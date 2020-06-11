@@ -39,7 +39,7 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | `opacity` | [Number](Number.md) | 不透明度 (0 〜 255) |
 | `visible` | Boolean |  表示中か |
 | `z` | [Number](Number.md) | [重なりの優先度](Sprite.md#重なりの優先度) |
-| `point` | [Point](Point.md) | 位置(x, y を同時に指定) positionと同じ |
+| `point` | [Point](Point.md) | 位置(x, y を同時に指定) [PIXI.DisplayObject](PIXI.DisplayObject.md)のpositionと同じ |
 | `blendMode` | [Number](Number.md) | [[合成方法]](Sprite.md#合成方法) |
 
 #### 重なりの優先度
@@ -51,12 +51,12 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | 8 | [Sprite_Animation](Sprite_Animation.md) | アニメーション |
 | 7 | [Sprite_Balloon](Sprite_Balloon.md) | フキダシ |
 | 6 | [Sprite](Sprite.md) | 飛行船の影 |
-| 5 | [Sprite_Character](Sprite_Character.md) | 高層キャラクタ |
-| 4 | [Sprite](Sprite.md) | 高層タイル |
-| 3 | [Sprite_Character](Sprite_Character.md) | 通常キャラクタ |
-| 2 | | 通常タイル(未使用) |
-| 1 | [Sprite_Character](Sprite_Character.md) | 低層キャラクタ |
-| 0 | [Sprite](Sprite.md) | 低層タイル |
+| 5 | [Sprite_Character](Sprite_Character.md) | プライオリティ [通常キャラの上]  |
+| 4 | [Sprite](Sprite.md) | 高層タイル[☆] |
+| 3 | [Sprite_Character](Sprite_Character.md) | プライオリティ[通常キャラと同じ] |
+| 2 | | 通常タイル(未使用)プラグインで影を置く場合など |
+| 1 | [Sprite_Character](Sprite_Character.md) | プライオリティ [通常キャラの下] |
+| 0 | [Sprite](Sprite.md) | 低層タイル( A・影ペン・[○]・[×] ) |
 
 #### [合成方法]
 番号は [Graphics](Graphics.md) の静的クラス定数として定義されている。例えば Graphics.BLEND_ADD の形で使う。
