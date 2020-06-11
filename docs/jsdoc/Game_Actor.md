@@ -272,7 +272,7 @@ Overrides:[Game_BattlerBase](Game_BattlerBase.md#attackelements---arraynumber)
 
 
 #### basicFloorDamage () → {[Number](Number.md)}
-基本フロアダメージを返す。
+基本フロアダメージを返す(規定値:10)
 
 
 #### battlerName () → {[String](String.md)}
