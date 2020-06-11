@@ -48,6 +48,14 @@ TILE_ から始まる定数はタイルブロックのタイルIDの開始番号
 | `width` | [Number](Number.md) | 画面幅(規定値:624 ピクセル) |
 | `horizontalWrap` | Boolean | 横方向にループするか |
 | `verticalWrap` | Boolean | 縦方向にループするか |
+| `_lowerBitmap ` | [Bitmap](Bitmap.md) | 下層ビットマップ |
+| `_upperBitmap ` | [Bitmap](Bitmap.md) | 上層ビットマップ |
+| `_layerWidth ` | [Number](Number.md) | レイヤーの幅 |
+| `_layerHeight ` | [Number](Number.md) | レイヤーの高さ |
+| `_lowerLayer ` | [Sprite](Sprite.md) | 下層レイヤー( z = 0 ) |
+| `_upperLayer ` | [Sprite](Sprite.md) | 上層レイヤー( z = 4 ) |
+| `_lastTiles ` | [Array](Array.md) | 最新のタイル情報 |
+
 
 ### Inherited From
 
@@ -465,7 +473,7 @@ OverpassTile.js プラグインで使われている。
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `i` | [Number](Number.md) |  レイヤー階層(0: 低層, 1: 高層) |
+| `i` | [Number](Number.md) | レイヤー階層(0: 低層, 1: 高層) |
 | `x` | [Number](Number.md) | x座標(タイル数) |
 | `y` | [Number](Number.md) | y座標(タイル数) |
 
