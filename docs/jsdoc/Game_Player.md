@@ -228,7 +228,8 @@ Overrides: [Game_CharacterBase](Game_CharacterBase.md#checkeventtriggertouch-x-y
 
 
 #### encounterProgressValue () → {[Number](Number.md)}
-[エンカウント]の発生カウントダウン量。 スキルや船の上などで減っている場合、茂みで増えている場合がある。
+[エンカウント]の発生カウントダウン量。 スキルや船の上などで減っている場合がある。<br />
+[茂み]設定で倍に増える(敵に遭遇しやすくなる)。
 
 
 #### executeEncounter () → {Boolean}
