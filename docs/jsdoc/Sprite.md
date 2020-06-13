@@ -51,7 +51,7 @@ PRGツクールMVでは、[ImageManager](ImageManager.md)で画像ファイル�
 | 8 | [Sprite_Animation](Sprite_Animation.md) | アニメーション |
 | 7 | [Sprite_Balloon](Sprite_Balloon.md) | フキダシ |
 | 6 | [Sprite](Sprite.md) | 飛行船の影 |
-| 5 | [Sprite_Character](Sprite_Character.md) | プライオリティ [通常キャラの上]  |
+| 5 | [Sprite_Character](Sprite_Character.md) | プライオリティ [通常キャラの上] ・立体交差の上 |
 | 4 | [Sprite](Sprite.md) | 高層タイル[☆] |
 | 3 | [Sprite_Character](Sprite_Character.md) | プライオリティ[通常キャラと同じ] |
 | 2 | | 通常タイル(未使用) |
