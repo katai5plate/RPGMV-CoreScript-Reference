@@ -21,13 +21,13 @@
 | `_y` | [Number](Number.md) | y座標(ピクセル) |
 | `_scaleX` | [Number](Number.md) | x拡大率 |
 | `_scaleY` | [Number](Number.md) | y拡大率 |
-| `_opacity` | [Number](Number.md) | 不透明度 |
+| `_opacity` | [Number](Number.md) | [不透明度]\(0〜255) |
 | `_blendMode` | [Number](Number.md) | [[合成方法]](Sprite.md#合成方法) |
 | `_targetX` | [Number](Number.md) | 目標 x座標 |
 | `_targetY` | [Number](Number.md) | 目標 y座標 |
 | `_targetScaleX` | [Number](Number.md) | 目標拡大率(幅) |
 | `_targetScaleY` | [Number](Number.md) | 目標拡大率(高さ) |
-| `_targetOpacity` | [Number](Number.md) | 目標不透明度 |
+| `_targetOpacity` | [Number](Number.md) | 目標不透明度(0〜255) |
 | `_duration` | [Number](Number.md) | 継続時間(フレーム) |
 | `_tone` | [MV.Tone](MV.Tone.md) | [色調] |
 | `_toneTarget` | [MV.Tone](MV.Tone.md) | 色調目標 |
@@ -90,7 +90,7 @@
 | `y` | [Number](Number.md) | y座標(ピクセル) |
 | `scaleX` | [Number](Number.md) | 拡大率[幅] |
 | `scaleY` | [Number](Number.md) | 拡大率[高さ] |
-| `opacity` | [Number](Number.md) | [不透明度] |
+| `opacity` | [Number](Number.md) | [不透明度]\(0〜255) |
 | `blendMode` | [Number](Number.md) | [[合成方法]](Sprite.md#合成方法) |
 | `duration` | [Number](Number.md) | 継続時間(フレーム) |
 
@@ -100,7 +100,7 @@
 
 
 #### opacity () → {[Number](Number.md)}
-不透明度を返す。
+[不透明度]\(0〜255)を返す。
 
 
 #### origin () → {[Number](Number.md)}
@@ -138,7 +138,7 @@
 | `y` | [Number](Number.md) | y座標(ピクセル) |
 | `scaleX` | [Number](Number.md) | 拡大率[幅] |
 | `scaleY` | [Number](Number.md) | 拡大率[高さ] |
-| `opacity` | [Number](Number.md) | [不透明度] |
+| `opacity` | [Number](Number.md) | [不透明度]\(0〜255) |
 | `blendMode` | [Number](Number.md) | [[合成方法]](Sprite.md#合成方法) |
 
 
