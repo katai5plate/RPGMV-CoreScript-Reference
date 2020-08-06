@@ -29,5 +29,5 @@
 | `profile` | [String](String.md) | [プロフィール]の文 |
 | `traits` | [Array](Array.md).&lt;[RPG.Trait](RPG.Trait.md)&gt; | [特徴]の配列 |
 
-
+`faceName`、`faceIndex` は [Game_Message](Game_Message.md) で顔画像を表示する場合に利用される。
 

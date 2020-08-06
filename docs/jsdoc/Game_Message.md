@@ -10,7 +10,7 @@
 Game_Message はデータを保持しているだけで、表示の際はウィンドウ側から参照される。<br />
 なお、メッセージの終了待ちには [Game_Interpreter.setWaitMode()](Game_Interpreter.md#setwaitmode-waitmode) メソッドが使われる。
 
-関連クラス: [Window_Base](Window_Base.md), [Window_Message](Window_Message.md), [Window_ChoiceList](Window_ChoiceList.md), [Window_NumberInput](Window_NumberInput.md), [Window_EventItem](Window_EventItem.md), [Window_ScrollText](Window_ScrollText.md)
+関連クラス: [Window_Base](Window_Base.md), [Window_Message](Window_Message.md), [Window_ChoiceList](Window_ChoiceList.md), [Window_NumberInput](Window_NumberInput.md), [Window_EventItem](Window_EventItem.md), [Window_ScrollText](Window_ScrollText.md), [RPG.Actor](RPG.Actor.md)
 
 
 ### Properties:
