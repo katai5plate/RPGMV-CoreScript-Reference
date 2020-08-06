@@ -122,7 +122,7 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `pictureId` | [Number](Number.md) | ピクチャID |
-| `origin` | [Number](Number.md) | 原点 |
+| `origin` | [Number](Number.md) | [[原点]](Game_Picture.md#原点) |
 | `x` | [Number](Number.md) | x座標(ピクセル) |
 | `y` | [Number](Number.md) | y座標(ピクセル) |
 | `scaleX` | [Number](Number.md) | 拡大率[幅] |
@@ -192,7 +192,7 @@
 | --- | --- | --- |
 | `pictureId` | [Number](Number.md) | ピクチャID |
 | `name` | [String](String.md) | 名前 |
-| `origin` | [Number](Number.md) | 原点 |
+| `origin` | [Number](Number.md) | [[原点]](Game_Picture.md#原点) |
 | `x` | [Number](Number.md) | x座標(ピクセル) |
 | `y` | [Number](Number.md) | y座標(ピクセル) |
 | `scaleX` | [Number](Number.md) | 拡大率[幅] |

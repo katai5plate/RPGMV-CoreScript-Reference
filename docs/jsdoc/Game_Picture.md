@@ -16,13 +16,13 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | `_name` | [String](String.md) | ファイル名 |
-| `_origin` | [Number](Number.md) | 原点 |
+| `_origin` | [Number](Number.md) | [[原点]](Game_Picture.md#原点) |
 | `_x` | [Number](Number.md) | x座標(ピクセル) |
 | `_y` | [Number](Number.md) | y座標(ピクセル) |
 | `_scaleX` | [Number](Number.md) | x拡大率 |
 | `_scaleY` | [Number](Number.md) | y拡大率 |
 | `_opacity` | [Number](Number.md) | 不透明度 |
-| `_blendMode` | [Number](Number.md) | [合成方法] |
+| `_blendMode` | [Number](Number.md) | [[合成方法]](Sprite.md#合成方法) |
 | `_targetX` | [Number](Number.md) | 目標 x座標 |
 | `_targetY` | [Number](Number.md) | 目標 y座標 |
 | `_targetScaleX` | [Number](Number.md) | 目標拡大率(幅) |
@@ -35,6 +35,14 @@
 | `_angle` | [Number](Number.md) | 回転角(度) |
 | `_rotationSpeed` | [Number](Number.md) | 回転速度 |
 
+#### 原点
+画面に対して、どの位置に表示するか指定するための番号。
+
+| 番号 | 説明 |
+| --- | --- |
+| 0 | 左上 |
+| 1 | 中央 |
+
 
 ### Methods
 
@@ -43,7 +51,7 @@
 
 
 #### blendMode () → {[Number](Number.md)}
-[合成方法]を返す。
+[[合成方法]](Sprite.md#合成方法)を返す。
 
 
 #### erase ()
@@ -131,7 +139,7 @@
 | `scaleX` | [Number](Number.md) | 拡大率[幅] |
 | `scaleY` | [Number](Number.md) | 拡大率[高さ] |
 | `opacity` | [Number](Number.md) | [不透明度] |
-| `blendMode` | [Number](Number.md) | [合成方法] |
+| `blendMode` | [Number](Number.md) | [[合成方法]](Sprite.md#合成方法) |
 
 
 #### tint (tone, duration)
