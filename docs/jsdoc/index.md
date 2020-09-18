@@ -9,7 +9,7 @@
 * [ファイル](index.md#ファイル)
 * [音声](index.md#音声)
 
-### オプジェクト構造データ
+### オブジェクト構造データ
 
 * [Objects](index.md#Objects) 
 * [Arrays](index.md#Arrays) 
