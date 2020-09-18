@@ -397,7 +397,7 @@ Overrides: [Window_Base](Window_Base.md#initialize-x-y-width-height)
 
 
 #### isHorizontal () → {Boolean}
-縦一列のコマンド並びか。
+横一列のコマンド並びか。
 
 
 #### isOkEnabled () → {Boolean}
