@@ -10,7 +10,7 @@
 
 プラグインに書かれるパラメータ設定の解説もここに書く。
 
-関連クラス: [PluginManager](PluginManager.md),  [JsonEx](JsonEx.md)
+関連クラス: [PluginManager](PluginManager.md)
 
 ### Properties:
 
@@ -26,7 +26,7 @@
 <code>{ "名前": "値", … }</code>のようにプラグインパラメータの[名前]と[値]を組み合わせ、パラメータの数だけ並べたオブジェクト。
 
 値は常に <code>String</code> なので、パラメータの値として文字列以外を指定していた場合、プラグイン個々で構文解析(パース)や型変換(キャスト)をする必要がある。<br />
-その際に便利な [JsonEx.parse()](JsonEx.md#static-parse-json--object) が用意されている。
+その際に便利な `JSON.parse()` が JavaScript に用意されている。
 
 以下でプラグインファイルのコメント文でのパラメータ設定を解説している。
 
@@ -80,12 +80,14 @@
 データに親子関係を持たせたい場合、`@type *[]` や `@type struct<*>`を検討しても良い。
 
 ##### Example
-``` * @param group
+```
+ * @param group
  * @text --- グループ名 ---
  *
  * @param childData
  * @parent group
-```
+```
+
 #### @type (ver1.5.0 以降)
 パラメータの型(詳細は後述)<br />
 入力時のUIが型に合わせて変わるが、プラグインに渡される値は全て文字列。
@@ -149,7 +151,7 @@
 ```
 
 ### @type \*[]
-配列( \* の部分に任意のタイプを書く )  プラグイン側は [JsonEx.parse()](JsonEx.md#static-parse-json--object) で解析する。<br />
+配列( \* の部分に任意のタイプを書く )  プラグイン側は `JSON.parse()` で解析する。<br />
 ちなみに[プラグイン管理]上で各項目はドラッグで入れ替え可能。
 
 ##### Example
@@ -162,10 +164,10 @@
 ```
 
 ### @type struct&lt;\*&gt;
-データ構造( \* の部分に構造名を書く ) プラグイン側は [JsonEx.parse()](JsonEx.md#static-parse-json--object) で解析する。<br />
+データ構造( \* の部分に構造名を書く ) プラグイン側は `JSON.parse()` で解析する。<br />
 構造の内容は別に以下のような記述をしておく。通常の型と同じ記述が可能。<br />
 多言語対応をする場合、例えば `構造名_ja` というように言語ごとに異なる構造名にして、言語に合わせた構造を指定する。<br />
-`@default` の値は構造体側より本体の値が優先される。<br />
+`@default` の値はデータ構造側より本体の値が優先される。<br />
 構造名には _ などの記号は使えない。
 
 ##### Example
