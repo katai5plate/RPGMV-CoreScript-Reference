@@ -17,8 +17,10 @@
 | `_battleField` | [Sprite](Sprite.md) | 戦闘フィールド |
 | `_back1Sprite` | [TilingSprite](TilingSprite.md) | 背景1スプライト |
 | `_back2Sprite` | [TilingSprite](TilingSprite.md) | 背景2スプライト |
+| `_baseSprite` | [Sprite](Sprite.md) | スプライト |
 | `_enemySprites` | [Array](Array.md).&lt;[Sprite_Enemy](Sprite_Enemy.md)&gt; | [敵キャラ]スプライトの配列 |
 | `_actorSprites` | [Array](Array.md).&lt;[Sprite_Actor](Sprite_Actor.md)&gt; | [アクター]スプライトの配列 |
+
 
 
 ### Inherited From
