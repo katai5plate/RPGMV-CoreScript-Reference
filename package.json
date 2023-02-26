@@ -5,17 +5,11 @@
   "repository": "https://github.com/katai5plate/RPGMV-CoreScript-Reference.git",
   "author": "katai5plate <katai5plate.sub@gmail.com>",
   "license": "MIT",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-breakdance": "^1.0.1",
-    "gulp-html-beautify": "^1.0.1",
-    "gulp-rename": "^1.4.0",
-    "gulp-replace": "^1.0.0",
-    "jsdoc": "^3.5.5"
-  },
   "scripts": {
-    "jsdoc": "rd /s/q _jsdoc & jsdoc -c ./jsdoc.conf.json -d ./_jsdoc/",
-    "2md": "rd /s/q \"docs/jsdoc\" & gulp normal && gulp convert",
-    "build": "yarn jsdoc && yarn 2md"
+    "format": "node format"
+  },
+  "dependencies": {
+    "@types/node": "^18.14.1",
+    "prettier": "^2.8.4"
   }
 }

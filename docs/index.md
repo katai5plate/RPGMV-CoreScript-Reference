@@ -1,8 +1,8 @@
-# RPGツクールMV JavaScript 非公式リファレンス
+# RPG ツクール MV JavaScript 非公式リファレンス
 
-KADOKAWA から発売されている 'RPGツクールMV' の JavaScript リファレンスです。<br />
+KADOKAWA から発売されている 'RPG ツクール MV' の JavaScript リファレンスです。<br />
 有志によって制作されているもので、オフィシャルなものではありません。<br />
 
-※Githubにアカウント持ってる人は、お気軽に参加できます。Github ってなに?って人は見るだけにしておいた方が無難です。
+※Github にアカウント持ってる人は、お気軽に参加できます。Github ってなに?って人は見るだけにしておいた方が無難です。
 
 # [クラスツリー](jsdoc/)

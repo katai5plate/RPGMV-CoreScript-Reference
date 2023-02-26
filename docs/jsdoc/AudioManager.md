@@ -1,342 +1,345 @@
 # Class: AudioManager
-BGM, BGS, ME, SE を扱う静的クラス。
 
+BGM, BGS, ME, SE を扱う静的クラス。
 
 ### Properties:
 
-| Name | Type | Description |
-| --- | --- | --- |
-| `masterVolume` | [Number](Number.md) | [static] 主音量 |
-| `bgmVolume` | [Number](Number.md) | [static] BGM音量 |
-| `bgsVolume` | [Number](Number.md) | [static] BGS音量 |
-| `meVolume` | [Number](Number.md) | [static] ME音量 |
-| `seVolume` | [Number](Number.md) | [static] SE音量 |
-| `_bgmVolume` | [Number](Number.md) | [static] BGM音量 |
-| `_bgsVolume` | [Number](Number.md) | [static] BGS音量 |
-| `_meVolume` | [Number](Number.md) | [static] ME音量 |
-| `_seVolume` | [Number](Number.md) | [static] SE音量 |
-| `_currentBgm` | [MV.AudioParameters](MV.AudioParameters.md) | [static] 現在のBGM |
-| `_currentBgs` | [MV.AudioParameters](MV.AudioParameters.md) | [static] 現在のBGS |
-| `_bgmBuffer` | Html5AudioStatic \| [WebAudio](WebAudio.md) | [static] BGMバッファ |
-| `_bgsBuffer` | Html5AudioStatic \| [WebAudio](WebAudio.md) | [static] BGSバッファ |
-| `_meBuffer` | Html5AudioStatic \| [WebAudio](WebAudio.md) | [static] MEバッファ |
-| `_seBuffers` | [Array](Array.md).&lt;Html5AudioStatic \| [WebAudio](WebAudio.md)&gt; | [static] SEバッファ |
-| `_staticBuffers ` | [Array](Array.md).&lt;Html5AudioStatic \| [WebAudio](WebAudio.md)&gt; | [static] 静的バッファ |
-| `_replayFadeTime` | [Number](Number.md) | [static] リプレイフェード時間 |
-| `_path` | [String](String.md) | [static] 音声フォルダのパス(規定値: 'audio/') |
-| `_blobUrl` | [String](String.md) | [static] URL |
-
+| Name              | Type                                                                  | Description                                   |
+| ----------------- | --------------------------------------------------------------------- | --------------------------------------------- |
+| `masterVolume`    | [Number](Number.md)                                                   | [static] 主音量                               |
+| `bgmVolume`       | [Number](Number.md)                                                   | [static] BGM 音量                             |
+| `bgsVolume`       | [Number](Number.md)                                                   | [static] BGS 音量                             |
+| `meVolume`        | [Number](Number.md)                                                   | [static] ME 音量                              |
+| `seVolume`        | [Number](Number.md)                                                   | [static] SE 音量                              |
+| `_bgmVolume`      | [Number](Number.md)                                                   | [static] BGM 音量                             |
+| `_bgsVolume`      | [Number](Number.md)                                                   | [static] BGS 音量                             |
+| `_meVolume`       | [Number](Number.md)                                                   | [static] ME 音量                              |
+| `_seVolume`       | [Number](Number.md)                                                   | [static] SE 音量                              |
+| `_currentBgm`     | [MV.AudioParameters](MV.AudioParameters.md)                           | [static] 現在の BGM                           |
+| `_currentBgs`     | [MV.AudioParameters](MV.AudioParameters.md)                           | [static] 現在の BGS                           |
+| `_bgmBuffer`      | Html5AudioStatic \| [WebAudio](WebAudio.md)                           | [static] BGM バッファ                         |
+| `_bgsBuffer`      | Html5AudioStatic \| [WebAudio](WebAudio.md)                           | [static] BGS バッファ                         |
+| `_meBuffer`       | Html5AudioStatic \| [WebAudio](WebAudio.md)                           | [static] ME バッファ                          |
+| `_seBuffers`      | [Array](Array.md).&lt;Html5AudioStatic \| [WebAudio](WebAudio.md)&gt; | [static] SE バッファ                          |
+| `_staticBuffers ` | [Array](Array.md).&lt;Html5AudioStatic \| [WebAudio](WebAudio.md)&gt; | [static] 静的バッファ                         |
+| `_replayFadeTime` | [Number](Number.md)                                                   | [static] リプレイフェード時間                 |
+| `_path`           | [String](String.md)                                                   | [static] 音声フォルダのパス(規定値: 'audio/') |
+| `_blobUrl`        | [String](String.md)                                                   | [static] URL                                  |
 
 ### Methods
 
 #### (static) audioFileExt () → {[String](String.md)}
+
 音声ファイルの拡張子( '.ogg', '.m4a' )
 
-
 #### (static) checkErrors ()
+
 エラーチェック。
 
-
 #### (static) checkWebAudioError (webAudio)
-指定Webオーディオのエラーチェック。
+
+指定 Web オーディオのエラーチェック。
 
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
-| `webAudio` | [WebAudio](WebAudio.md) | Webオーディオ |
-
+| Name       | Type                    | Description    |
+| ---------- | ----------------------- | -------------- |
+| `webAudio` | [WebAudio](WebAudio.md) | Web オーディオ |
 
 #### (static) createBuffer () → {Html5AudioStatic|[WebAudio](WebAudio.md)}
+
 バッファの生成。
 
-
 #### (static) createDecryptBuffer (url, bgm, pos opt)
+
 復号されたバッファを生成。
 
 ##### Parameters:
 
-| Name | Type | Attributes | Description |
-| --- | --- | --- | --- |
-| `url` | [String](String.md) |  | URL |
-| `bgm` | [MV.AudioParameters](MV.AudioParameters.md) |  | 音声オブジェクト |
-| `pos` | [Number](Number.md) | &lt;optional&gt; | 再生位置 |
-
+| Name  | Type                                        | Attributes       | Description      |
+| ----- | ------------------------------------------- | ---------------- | ---------------- |
+| `url` | [String](String.md)                         |                  | URL              |
+| `bgm` | [MV.AudioParameters](MV.AudioParameters.md) |                  | 音声オブジェクト |
+| `pos` | [Number](Number.md)                         | &lt;optional&gt; | 再生位置         |
 
 #### (static) fadeInBgm (duration)
-BGMのフェードイン。
+
+BGM のフェードイン。
 
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name       | Type                | Description        |
+| ---------- | ------------------- | ------------------ |
 | `duration` | [Number](Number.md) | フェードの継続時間 |
-
 
 #### (static) fadeInBgs (duration)
-BGSのフェードイン。
+
+BGS のフェードイン。
 
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name       | Type                | Description        |
+| ---------- | ------------------- | ------------------ |
 | `duration` | [Number](Number.md) | フェードの継続時間 |
-
 
 #### (static) fadeOutBgm (duration)
-BGMのフェードアウト。
+
+BGM のフェードアウト。
 
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name       | Type                | Description        |
+| ---------- | ------------------- | ------------------ |
 | `duration` | [Number](Number.md) | フェードの継続時間 |
-
 
 #### (static) fadeOutBgs (duration)
-BGSのフェードアウト。
+
+BGS のフェードアウト。
 
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name       | Type                | Description        |
+| ---------- | ------------------- | ------------------ |
 | `duration` | [Number](Number.md) | フェードの継続時間 |
-
 
 #### (static) fadeOutMe (duration)
-MEのフェードアウト。
+
+ME のフェードアウト。
 
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name       | Type                | Description        |
+| ---------- | ------------------- | ------------------ |
 | `duration` | [Number](Number.md) | フェードの継続時間 |
 
-
 #### (static) isCurrentBgm (bgm) → {Boolean}
-指定BGMが現在のBGMか。
+
+指定 BGM が現在の BGM か。
 
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name  | Type                                        | Description      |
+| ----- | ------------------------------------------- | ---------------- |
 | `bgm` | [MV.AudioParameters](MV.AudioParameters.md) | 音声オブジェクト |
 
-
 #### (static) isCurrentBgs (bgs) → {Boolean}
-指定BGSが現在のBGSか。
+
+指定 BGS が現在の BGS か。
 
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name  | Type                                        | Description      |
+| ----- | ------------------------------------------- | ---------------- |
 | `bgs` | [MV.AudioParameters](MV.AudioParameters.md) | 音声オブジェクト |
-
 
 #### (static) isStaticSe (se) → {Boolean}
 
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name | Type                                        | Description      |
+| ---- | ------------------------------------------- | ---------------- |
 | `se` | [MV.AudioParameters](MV.AudioParameters.md) | 音声オブジェクト |
-
 
 #### (static) loadStaticSe (se)
-SEを読み込む。
+
+SE を読み込む。
 
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name | Type                                        | Description      |
+| ---- | ------------------------------------------- | ---------------- |
 | `se` | [MV.AudioParameters](MV.AudioParameters.md) | 音声オブジェクト |
-
 
 #### (static) makeEmptyAudioObject () → {[MV.AudioParameters](MV.AudioParameters.md)}
+
 空の音声オブジェクトを生成して返す。
 
-
 #### (static) playBgm (bgm, pos opt)
-BGMを再生。
+
+BGM を再生。
 
 ##### Parameters:
 
-| Name | Type | Attributes | Description |
-| --- | --- | --- | --- |
-| `bgm` | [MV.AudioParameters](MV.AudioParameters.md) |  | 音声オブジェクト |
-| `pos` | [Number](Number.md) | &lt;optional&gt; | 再生位置 |
-
+| Name  | Type                                        | Attributes       | Description      |
+| ----- | ------------------------------------------- | ---------------- | ---------------- |
+| `bgm` | [MV.AudioParameters](MV.AudioParameters.md) |                  | 音声オブジェクト |
+| `pos` | [Number](Number.md)                         | &lt;optional&gt; | 再生位置         |
 
 #### (static) playBgs (bgs, pos opt)
-BGSを再生。
+
+BGS を再生。
 
 ##### Parameters:
 
-| Name | Type | Attributes | Description |
-| --- | --- | --- | --- |
-| `bgs` | [MV.AudioParameters](MV.AudioParameters.md) |  | 音声オブジェクト |
-| `pos` | [Number](Number.md) | &lt;optional&gt; | 再生位置 |
-
+| Name  | Type                                        | Attributes       | Description      |
+| ----- | ------------------------------------------- | ---------------- | ---------------- |
+| `bgs` | [MV.AudioParameters](MV.AudioParameters.md) |                  | 音声オブジェクト |
+| `pos` | [Number](Number.md)                         | &lt;optional&gt; | 再生位置         |
 
 #### (static) playEncryptedBgm (bgm, pos opt)
-暗号化されたBGMを再生。
+
+暗号化された BGM を再生。
 
 ##### Parameters:
 
-| Name | Type | Attributes | Description |
-| --- | --- | --- | --- |
-| `bgm` | [MV.AudioParameters](MV.AudioParameters.md) |  | 音声オブジェクト |
-| `pos` | [Number](Number.md) | &lt;optional&gt; | 再生位置 |
-
+| Name  | Type                                        | Attributes       | Description      |
+| ----- | ------------------------------------------- | ---------------- | ---------------- |
+| `bgm` | [MV.AudioParameters](MV.AudioParameters.md) |                  | 音声オブジェクト |
+| `pos` | [Number](Number.md)                         | &lt;optional&gt; | 再生位置         |
 
 #### (static) playMe (me)
-MEを再生。
+
+ME を再生。
 
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name | Type                                        | Description      |
+| ---- | ------------------------------------------- | ---------------- |
 | `me` | [MV.AudioParameters](MV.AudioParameters.md) | 音声オブジェクト |
-
 
 #### (static) playSe (se)
-SEを再生。
+
+SE を再生。
 
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name | Type                                        | Description      |
+| ---- | ------------------------------------------- | ---------------- |
 | `se` | [MV.AudioParameters](MV.AudioParameters.md) | 音声オブジェクト |
-
 
 #### (static) playStaticSe (se)
-静的なSEを再生。
+
+静的な SE を再生。
 
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name | Type                                        | Description      |
+| ---- | ------------------------------------------- | ---------------- |
 | `se` | [MV.AudioParameters](MV.AudioParameters.md) | 音声オブジェクト |
 
-
 #### (static) replayBgm (bgm)
-BGMをリプレイ。
+
+BGM をリプレイ。
 
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name  | Type                                        | Description      |
+| ----- | ------------------------------------------- | ---------------- |
 | `bgm` | [MV.AudioParameters](MV.AudioParameters.md) | 音声オブジェクト |
-
 
 #### (static) replayBgs (bgs)
-BGSをリプレイ。
+
+BGS をリプレイ。
 
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name  | Type                                        | Description      |
+| ----- | ------------------------------------------- | ---------------- |
 | `bgs` | [MV.AudioParameters](MV.AudioParameters.md) | 音声オブジェクト |
-
 
 #### (static) saveBgm () → {[MV.AudioParameters](MV.AudioParameters.md)}
-BGMの状態を保存。
 
+BGM の状態を保存。
 
 #### (static) saveBgs () → {[MV.AudioParameters](MV.AudioParameters.md)}
-BGSの状態を保存。
 
+BGS の状態を保存。
 
 #### (static) shouldUseHtml5Audio () → {Boolean}
-Html5Audioを使用する必要があるか。
 
+Html5Audio を使用する必要があるか。
 
 #### (static) stopAll ()
+
 全停止。
 
-
 #### (static) stopBgm ()
-BGMを停止。
 
+BGM を停止。
 
 #### (static) stopBgs ()
-BGSを停止。
 
+BGS を停止。
 
 #### (static) stopMe ()
-MEを停止。
 
+ME を停止。
 
 #### (static) stopSe ()
-SEを停止。
 
+SE を停止。
 
 #### (static) updateBgmParameters (bgm)
-BGMのパラメータをアップデート。
+
+BGM のパラメータをアップデート。
 
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name  | Type                                        | Description      |
+| ----- | ------------------------------------------- | ---------------- |
 | `bgm` | [MV.AudioParameters](MV.AudioParameters.md) | 音声オブジェクト |
-
 
 #### (static) updateBgsParameters (bgs)
-BGSのパラメータをアップデート。
+
+BGS のパラメータをアップデート。
+
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name  | Type                                        | Description      |
+| ----- | ------------------------------------------- | ---------------- |
 | `bgs` | [MV.AudioParameters](MV.AudioParameters.md) | 音声オブジェクト |
-
 
 #### (static) updateBufferParameters (buffer, configVolume, audio)
-バッファのパラメータをアップデート。
+
+バッファのパラメータをアップデート。
+
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
-| `buffer` | [MV.AudioParameters](MV.AudioParameters.md) | 音声オブジェクト |
-| `configVolume` | [Number](Number.md) |  |
-| `audio` | [MV.AudioParameters](MV.AudioParameters.md) | 音声オブジェクト |
-
+| Name           | Type                                        | Description      |
+| -------------- | ------------------------------------------- | ---------------- |
+| `buffer`       | [MV.AudioParameters](MV.AudioParameters.md) | 音声オブジェクト |
+| `configVolume` | [Number](Number.md)                         |                  |
+| `audio`        | [MV.AudioParameters](MV.AudioParameters.md) | 音声オブジェクト |
 
 #### (static) updateCurrentBgm (bgm, pos)
-現在のBGMをアップデート。
+
+現在の BGM をアップデート。
+
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name  | Type                                        | Description      |
+| ----- | ------------------------------------------- | ---------------- |
 | `bgm` | [MV.AudioParameters](MV.AudioParameters.md) | 音声オブジェクト |
-| `pos` | [Number](Number.md) | 再生位置 |
-
+| `pos` | [Number](Number.md)                         | 再生位置         |
 
 #### (static) updateCurrentBgs (bgs, pos)
-現在のBGSをアップデート。##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
+現在の BGS をアップデート。
+
+##### Parameters:
+
+| Name  | Type                                        | Description      |
+| ----- | ------------------------------------------- | ---------------- |
 | `bgs` | [MV.AudioParameters](MV.AudioParameters.md) | 音声オブジェクト |
-| `pos` | [Number](Number.md) | 再生位置 |
-
+| `pos` | [Number](Number.md)                         | 再生位置         |
 
 #### (static) updateMeParameters (me)
-MEのパラメータをアップデート。
+
+ME のパラメータをアップデート。
+
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name | Type                                        | Description      |
+| ---- | ------------------------------------------- | ---------------- |
 | `me` | [MV.AudioParameters](MV.AudioParameters.md) | 音声オブジェクト |
 
-
 #### (static) updateSeParameters (buffer, se)
-SEのパラメータをアップデート。
+
+SE のパラメータをアップデート。
 
 ##### Parameters:
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name     | Type                                        | Description      |
+| -------- | ------------------------------------------- | ---------------- |
 | `buffer` | [MV.AudioParameters](MV.AudioParameters.md) | 音声オブジェクト |
-| `se` | [MV.AudioParameters](MV.AudioParameters.md) |  |
-
-
+| `se`     | [MV.AudioParameters](MV.AudioParameters.md) |                  |
