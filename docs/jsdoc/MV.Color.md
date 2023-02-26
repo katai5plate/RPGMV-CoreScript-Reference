@@ -8,13 +8,11 @@
 
 関連クラス: [Sprite](Sprite.md), [MV.Tone](MV.Tone.md), [MV.CssColor](MV.CssColor.md)
 
-
 ### Contents:
 
-| Index | Description |
-| --- | --- |
-| 0 | 赤( 0〜255 ) |
-| 1 | 緑( 0〜255 ) |
-| 2 | 青( 0〜255 ) |
-| 3 | 不透明度( 0〜255 ) |
-
+| Index | Description        |
+| ----- | ------------------ |
+| 0     | 赤( 0〜255 )       |
+| 1     | 緑( 0〜255 )       |
+| 2     | 青( 0〜255 )       |
+| 3     | 不透明度( 0〜255 ) |
