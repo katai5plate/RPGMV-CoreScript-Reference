@@ -1,7 +1,7 @@
 # Class: ImageManager
 画像ファイルの読み込み、保持(キャッシュ)、管理を行う静的オブジェクト。
 
-読み込みには、キャッシュの方式などが異なる loadXxxx()、reserveXxxx()、reserveXxxx() の3系統がある。
+読み込みには、キャッシュの方式などが異なる loadXxxx()、reserveXxxx()、requestXxxx() の3系統がある。
 
 #### loadXxxx()
 主に使われる、基本的な画像読み込み。<br />
